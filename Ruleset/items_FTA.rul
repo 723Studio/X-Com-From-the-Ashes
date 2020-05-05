@@ -1,0 +1,1759 @@
+items:
+#deletes
+  - delete: STR_PISTOL
+  - delete: STR_PISTOL_CLIP
+  - delete: STR_RIFLE
+  - delete: STR_RIFLE_CLIP
+  - delete: STR_HEAVY_CANNON
+  - delete: STR_HC_AP_AMMO
+  - delete: STR_HC_HE_AMMO
+  - delete: STR_HC_I_AMMO
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_AC_I_AMMO
+  - delete: STR_ROCKET_LAUNCHER
+  - delete: STR_SMALL_ROCKET
+  - delete: STR_LARGE_ROCKET
+  - delete: STR_INCENDIARY_ROCKET
+  - delete: STR_GRENADE
+  - delete: STR_SMOKE_GRENADE
+  - delete: STR_PROXIMITY_GRENADE #
+  # - delete: STR_MOTION_SCANNER #
+  # - delete: STR_MEDI_KIT #
+  - delete: STR_STUN_ROD #
+  - delete: STR_ELECTRO_FLARE #
+#corpses
+  - type: STR_XCOM_EX_COMMANDER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 1000
+    weight: 32
+    bigSprite: 100
+    floorSprite: 100
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_XCOM_EX_COMMANDER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 0
+    listOrder: 146000
+  - type: STR_MIB_AGENT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 1000
+    weight: 32
+    bigSprite: 101
+    floorSprite: 101
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_ENFORCER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 1000
+    weight: 37
+    bigSprite: 102
+    floorSprite: 102
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 10
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_AGENT
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 0
+    listOrder: 146000
+  - type: STR_MIB_ENFORCER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 2000
+    listOrder: 146030
+#melee
+  - type: STR_POLICE_BATON
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 300
+    costSell: 240
+    weight: 4
+    landOnly: true
+    bigSprite: 318
+    floorSprite: 318
+    handSprite: 280
+    meleeHitSound: 55
+    meleeAnimation: 0
+    power: 14
+    damageType: 6
+    damageBonus:
+      strength: 0.1
+      melee: 0.3
+    damageAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToHealth: 0.2
+    accuracyMelee: 90
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 8
+      energy: 3
+    costThrow:
+      energy: 8
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 17850
+  - type: STR_COMBAT_KNIFE #TODO balance
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 260
+    costSell: 180
+    weight: 4
+    bigSprite: 316
+    floorSprite: 316
+    handSprite: 264
+    meleeSound: 56
+    meleeHitSound: 57
+    meleeAnimation: 8
+    power: 20
+    damageType: 7
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+    accuracyMelee: 75
+    tuMelee: 8
+    flatRate: true
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 7
+      energy: 2
+    costThrow:
+      energy: 8
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 6
+    listOrder: 18000
+#pistols
+  - type: STR_PISTOL
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 2250
+    costSell: 1500
+    weight: 5
+    landOnly: true
+    bigSprite: 3
+    floorSprite: 3
+    handSprite: 96
+    bulletSprite: 1
+    fireSound: 4 #75 xcf
+    compatibleAmmo:
+      - STR_PISTOL_CLIP
+      - STR_PISTOL_AA_CLIP
+    accuracyCloseQuarters: 133
+    accuracySnap: 80
+    accuracyAimed: 88
+    tuSnap: 18
+    tuAimed: 30
+    tuLoad: 15
+    aimRange: 22
+    kneelBonus: 105
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 20330
+  - type: STR_PISTOL_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.02
+    costBuy: 200
+    costSell: 150
+    weight: 2
+    landOnly: true
+    bigSprite: 4
+    floorSprite: 4
+    handSprite: 136
+    hitSound: 58
+    hitAnimation: 26
+    power: 26 #30 xcf
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 12
+    attraction: 8
+    listOrder: 20340
+  - type: STR_PISTOL_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    size: 0.02
+    costSell: 500
+    weight: 2
+    landOnly: true
+    bigSprite: 301
+    floorSprite: 4
+    handSprite: 136
+    hitSound: 58
+    hitAnimation: 26
+    power: 40
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 12
+    attraction: 8
+    listOrder: 20350
+#SMG
+  - type: STR_PDW
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.15
+    costBuy: 7000
+    costSell: 5000
+    weight: 6
+    landOnly: true
+    bigSprite: 331
+    floorSprite: 331
+    handSprite: 344
+    bulletSprite: 17
+    fireSound: 59
+    compatibleAmmo:
+      - STR_PDW_CLIP
+      - STR_PDW_AA_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 65
+    accuracyAuto: 50
+    tuSnap: 30
+    tuAuto: 40
+    autoRange: 11
+    # confSnap:
+    #   shots: 3
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    autoShots: 4
+    sprayWaypoints: 2
+    attraction: 7
+    listOrder: 20700
+  - type: STR_PDW_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.03
+    costBuy: 250
+    costSell: 75
+    weight: 3
+    landOnly: true
+    bigSprite: 332
+    floorSprite: 332
+    handSprite: 360
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    twoHanded: true
+    oneHandedPenalty: 15
+    armor: 30
+    attraction: 7
+    listOrder: 20710
+  - type: STR_PDW_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
+    size: 0.03
+    costSell: 150
+    weight: 3
+    landOnly: true
+    bigSprite: 333
+    floorSprite: 333
+    handSprite: 368
+    hitSound: 22
+    hitAnimation: 26
+    power: 32
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    armor: 30
+    attraction: 7
+    listOrder: 20720
+  - type: STR_SMG
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.17
+    costBuy: 3000
+    costSell: 2500
+    weight: 6
+    landOnly: true
+    bigSprite: 334
+    floorSprite: 334
+    handSprite: 352
+    bulletSprite: 17
+    fireSound: 59
+    compatibleAmmo:
+      - STR_SMG_CLIP
+      - STR_SMG_AA_CLIP
+    accuracyCloseQuarters: 120
+    accuracyAuto: 50
+    accuracySnap: 70
+    accuracyAimed: 90
+    tuAuto: 32
+    tuSnap: 24
+    tuAimed: 45
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoRange: 11
+    snapRange: 18
+    aimRange: 25
+    attraction: 12
+    listOrder: 20740
+  - type: STR_SMG_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.05
+    costBuy: 240
+    costSell: 200
+    weight: 3
+    landOnly: true
+    bigSprite: 335
+    floorSprite: 335
+    handSprite: 360
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    damageType: 1
+    clipSize: 24
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 20750
+  - type: STR_SMG_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
+    size: 0.05
+    costSell: 200
+    weight: 3
+    landOnly: true
+    bigSprite: 336
+    floorSprite: 336
+    handSprite: 368
+    hitSound: 22
+    hitAnimation: 26
+    power: 35
+    damageType: 1
+    clipSize: 24
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    listOrder: 20756
+#rifles
+  - type: STR_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 8000
+    costSell: 6400
+    weight: 8
+    landOnly: true
+    bigSprite: 1
+    floorSprite: 1
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 64 #4?
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_AA_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 45
+    accuracySnap: 70
+    accuracyAimed: 125
+    tuAuto: 36
+    tuSnap: 25
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    snapRange: 20
+    autoRange: 11
+    attraction: 8
+    listOrder: 21300
+  - type: STR_ASSAULT_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 10000
+    costSell: 8250
+    weight: 8
+    landOnly: true
+    bigSprite: 337
+    floorSprite: 337
+    handSprite: 376
+    bulletSprite: 2
+    fireSound: 64 #mb 4?
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_AA_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 55
+    accuracySnap: 70
+    accuracyAimed: 85
+    tuAuto: 43
+    tuSnap: 23
+    tuAimed: 45
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 55
+    invWidth: 1
+    invHeight: 3
+    autoShots: 4
+    sprayWaypoints: 2
+    aimRange: 25
+    snapRange: 16
+    autoRange: 11
+    attraction: 8
+    listOrder: 21305
+  - type: STR_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.02
+    costBuy: 350
+    costSell: 250
+    weight: 3
+    landOnly: true
+    bigSprite: 2
+    floorSprite: 2
+    handSprite: 144
+    hitAnimation: 26
+    hitSound: 22
+    power: 30
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    attraction: 8
+    listOrder: 21310
+  - type: STR_RIFLE_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
+    size: 0.02
+    costSell: 650
+    weight: 3
+    landOnly: true
+    bigSprite: 302
+    floorSprite: 2
+    handSprite: 144
+    hitSound: 22
+    hitAnimation: 26
+    power: 40
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    attraction: 8
+    listOrder: 21320
+#sniper rifles
+  - type: STR_SNIPER_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.25
+    costBuy: 28000
+    costSell: 22500
+    weight: 12
+    landOnly: true
+    bigSprite: 328
+    floorSprite: 328
+    handSprite: 320
+    bulletSprite: 14
+    fireSound: 63
+    compatibleAmmo:
+      - STR_SNIPER_RIFLE_CLIP
+      - STR_SNIPER_RIFLE_AA_CLIP
+    accuracyCloseQuarters: 30
+    accuracySnap: 80
+    accuracyAimed: 150
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+    tuSnap: 45
+    tuAimed: 75
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 160
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    snapRange: 30
+    minRange: 15
+    dropoff: 3
+    attraction: 9
+    listOrder: 22140
+  - type: STR_SNIPER_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.02
+    costBuy: 550
+    costSell: 400
+    weight: 3
+    landOnly: true
+    bigSprite: 329
+    floorSprite: 329
+    handSprite: 328
+    hitSound: 62
+    hitAnimation: 26
+    power: 30
+    damageBonus:
+      firing: 0.25
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+    damageType: 1
+    clipSize: 10
+    battleType: 2
+    armor: 20
+    attraction: 9
+    listOrder: 22150
+  - type: STR_SNIPER_RIFLE_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
+    size: 0.02
+    costSell: 3200
+    weight: 2
+    landOnly: true
+    bigSprite: 330
+    floorSprite: 330
+    handSprite: 336
+    hitSound: 62
+    hitAnimation: 26
+    power: 40
+    damageBonus:
+      firing: 0.25
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+    damageType: 1
+    clipSize: 10
+    battleType: 2
+    armor: 20
+    attraction: 9
+    listOrder: 22160
+#shotguns
+  - type: STR_PUMP_ACTION_SHOTGUN
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 1200
+    costSell: 900
+    weight: 8
+    landOnly: true
+    bigSprite: 319
+    floorSprite: 319
+    handSprite: 288
+    bulletSprite: 3
+    fireSound: 65
+    compatibleAmmo:
+      - STR_PUMP_ACTION_SHELLS
+    accuracyCloseQuarters: 100
+    accuracySnap: 110
+    accuracyAimed: 160
+    tuSnap: 32
+    tuAimed: 60
+    aimRange: 12
+    snapRange: 8
+    dropoff: 6
+    shotgunChoke: 70
+    tuLoad: 30
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 7
+    listOrder: 22440
+  - type: STR_PUMP_ACTION_SHELLS
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.04
+    costBuy: 50
+    costSell: 30
+    weight: 3
+    landOnly: true
+    bigSprite: 320
+    floorSprite: 322
+    handSprite: 304
+    hitSound: 67 #mb 13?
+    hitAnimation: 26
+    power: 15
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 5
+    bulletSpeed: 2
+    attraction: 7
+    listOrder: 22450
+  - type: STR_SEMI_AUTO_SHOTGUN
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 2200
+    costSell: 1800
+    weight: 12
+    landOnly: true
+    bigSprite: 321
+    floorSprite: 321
+    handSprite: 296
+    bulletSprite: 3
+    fireSound: 66 #63 - xcf
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS_BS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_BATON
+      - STR_SHOTGUN_SHELLS_BS_AA
+      - STR_SHOTGUN_SHELLS_AP_AA
+    accuracyCloseQuarters: 100
+    accuracySnap: 135
+    accuracyAimed: 155
+    tuSnap: 36
+    tuAimed: 68
+    aimRange: 14
+    snapRange: 8
+    dropoff: 6
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 8
+    listOrder: 22520
+  - type: STR_SHOTGUN
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 4500
+    costSell: 3600
+    weight: 12
+    landOnly: true
+    bigSprite: 327
+    floorSprite: 327
+    handSprite: 296
+    bulletSprite: 3
+    fireSound: 66
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS_BS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_BATON
+      - STR_SHOTGUN_SHELLS_BS_AA
+      - STR_SHOTGUN_SHELLS_AP_AA
+    accuracyCloseQuarters: 100
+    accuracySnap: 110
+    accuracyAimed: 145
+    tuSnap: 28
+    tuAimed: 62
+    aimRange: 14
+    snapRange: 8
+    dropoff: 6
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 8
+    listOrder: 22530
+  - type: STR_SHOTGUN_SHELLS_BS
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.01
+    costBuy: 50
+    costSell: 40
+    weight: 3
+    bigSprite: 323
+    floorSprite: 322
+    handSprite: 304
+    hitSound: 67 #13?
+    hitAnimation: 26
+    power: 15
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    bulletSpeed: 2
+    attraction: 8
+    listOrder: 22540
+  - type: STR_SHOTGUN_SHELLS_AP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.01
+    costBuy: 100
+    costSell: 80
+    weight: 3
+    bigSprite: 322
+    floorSprite: 322
+    handSprite: 304
+    hitSound: 13
+    hitAnimation: 26
+    power: 40
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    attraction: 8
+    listOrder: 22550
+  - type: STR_SHOTGUN_SHELLS_BATON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.01
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 324
+    floorSprite: 322
+    handSprite: 304
+    hitSound: 13
+    hitAnimation: 26
+    power: 25
+    damageAlter:
+      ToHealth: 0.35
+      ToTile: 0.2
+      ArmorEffectiveness: 1.25
+    damageType: 6
+    blastRadius: 0
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    attraction: 8
+    listOrder: 22555
+  - type: STR_SHOTGUN_SHELLS_BS_AA
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.01
+    costSell: 800
+    weight: 3
+    bigSprite: 326
+    floorSprite: 325
+    handSprite: 312
+    hitSound: 67
+    hitAnimation: 26
+    power: 20
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    bulletSpeed: 2
+    attraction: 8
+    listOrder: 22560
+  - type: STR_SHOTGUN_SHELLS_AP_AA
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.01
+    costSell: 1050
+    weight: 3
+    bigSprite: 325
+    floorSprite: 325
+    handSprite: 312
+    hitSound: 13
+    hitAnimation: 26
+    power: 50
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    attraction: 8
+    listOrder: 22570
+#cannons
+  - type: STR_LIGHT_CANNON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.25
+    costBuy: 24000
+    costSell: 20000
+    weight: 16
+    landOnly: true
+    bigSprite: 303
+    floorSprite: 303
+    handSprite: 152
+    bulletSprite: 3
+    fireSound: 68 #12 vanilla 78 xcf
+    compatibleAmmo:
+      - STR_LC_AP_AMMO
+      - STR_LC_BS_AMMO
+      - STR_LC_HE_AMMO
+      - STR_LC_AA_AMMO
+      - STR_LC_BS_AA_AMMO
+      - STR_LC_I_AMMO
+    accuracyCloseQuarters: 50
+    accuracySnap: 50
+    accuracyAimed: 75
+    tuSnap: 30
+    tuAimed: 70
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    aimRange: 20
+    armor: 35
+    invWidth: 1
+    invHeight: 3
+    attraction: 9
+    listOrder: 23120
+  - type: STR_LC_AP_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.08
+    costBuy: 350
+    costSell: 300
+    weight: 4
+    landOnly: true
+    bigSprite: 304
+    floorSprite: 304
+    handSprite: 160
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 48
+    damageAlter:
+      ArmorEffectiveness: 0.7
+    damageType: 1
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23130
+  - type: STR_LC_BS_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.08
+    costBuy: 300
+    costSell: 260
+    weight: 4
+    landOnly: true
+    bigSprite: 305
+    floorSprite: 305
+    handSprite: 160
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 25
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 6
+    damageType: 1
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23140
+  - type: STR_LC_HE_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.08
+    costBuy: 850
+    costSell: 700
+    weight: 4
+    landOnly: true
+    bigSprite: 306
+    floorSprite: 306
+    handSprite: 160
+    hitSound: 0
+    hitAnimation: 0
+    power: 44
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23150
+  - type: STR_LC_AA_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.08
+    costSell: 3000
+    weight: 4
+    landOnly: true
+    bigSprite: 307
+    floorSprite: 304
+    handSprite: 160
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 62
+    damageAlter:
+      ArmorEffectiveness: 0.7
+    damageType: 1
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23170
+  - type: STR_LC_BS_AA_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.08
+    costSell: 2800
+    weight: 4
+    landOnly: true
+    bigSprite: 308
+    floorSprite: 305
+    handSprite: 160
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 33
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 6
+    damageType: 1
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23180
+  - type: STR_LC_I_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.08
+    costBuy: 700
+    costSell: 550
+    weight: 4
+    landOnly: true
+    bigSprite: 309
+    floorSprite: 309
+    handSprite: 160
+    hitSound: 0
+    hitAnimation: 0
+    power: 50
+    damageAlter:
+      ToHealth: 1.5
+      ToMorale: 15.0
+    damageType: 2
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23160
+  - type: STR_HEAVY_CANNON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.3
+    costBuy: 32000
+    costSell: 24800
+    weight: 36
+    landOnly: true
+    bigSprite: 11
+    floorSprite: 11
+    handSprite: 24
+    bulletSprite: 4
+    fireSound: 12 #80 xcf
+    compatibleAmmo:
+      - STR_HC_AP_AMMO
+      - STR_HC_HE_AMMO
+      - STR_HC_I_AMMO
+      - STR_HC_BS_AMMO
+      - STR_HC_AA_BS_AMMO
+      - STR_HC_AA_AMMO
+    accuracyCloseQuarters: 45
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuSnap: 33
+    tuAimed: 80
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    aimRange: 25
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    attraction: 9
+    listOrder: 23200
+  - type: STR_HC_AP_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 600
+    costSell: 425
+    weight: 6
+    landOnly: true
+    bigSprite: 12
+    floorSprite: 12
+    handSprite: 168
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 70
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 0.65
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23210
+  - type: STR_HC_HE_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 1000
+    costSell: 750
+    weight: 6
+    landOnly: true
+    bigSprite: 13
+    floorSprite: 13
+    handSprite: 184
+    hitSound: 0
+    hitAnimation: 0
+    power: 65
+    damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23220
+  - type: STR_HC_I_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 800
+    costSell: 625
+    weight: 6
+    landOnly: true
+    bigSprite: 14
+    floorSprite: 14
+    handSprite: 192
+    hitSound: 0
+    hitAnimation: 0
+    power: 75
+    damageAlter:
+      ToHealth: 1.75
+      ToMorale: 15.0
+    damageType: 2
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23230
+  - type: STR_HC_AA_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.1
+    costSell: 6000
+    weight: 6
+    landOnly: true
+    bigSprite: 310
+    floorSprite: 12
+    handSprite: 168
+    hitSound: 13
+    hitAnimation: 26
+    power: 88
+    damageAlter:
+      ArmorEffectiveness: 0.75
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23250
+  - type: STR_HC_BS_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 450
+    costSell: 325
+    weight: 6
+    landOnly: true
+    bigSprite: 312
+    floorSprite: 12
+    handSprite: 176
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 33
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 8
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23240
+  - type: STR_HC_AA_BS_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.1
+    costSell: 5500
+    weight: 6
+    landOnly: true
+    bigSprite: 311
+    floorSprite: 12
+    handSprite: 176
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 42
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 8
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23260
+  - type: STR_AUTO_CANNON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.3
+    costBuy: 37000
+    costSell: 32000
+    weight: 29
+    landOnly: true
+    bigSprite: 7
+    floorSprite: 7
+    handSprite: 32
+    bulletSprite: 3
+    fireSound: 68 #12 vanilla 78 xcf
+    compatibleAmmo:
+      - STR_AC_AP_AMMO
+      - STR_AC_HE_AMMO
+      - STR_AC_I_AMMO
+      - STR_AC_BS_AMMO
+      - STR_AC_AA_BS_AMMO
+      - STR_AC_AA_AMMO
+    accuracyCloseQuarters: 55
+    accuracyAuto: 40
+    accuracySnap: 56
+    accuracyAimed: 82
+    tuAuto: 40
+    tuSnap: 33
+    tuAimed: 80
+    autoShots: 7
+    sprayWaypoints: 2
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 80
+    aimRange: 22
+    invWidth: 2
+    invHeight: 3
+    attraction: 8
+    listOrder: 23300
+  - type: STR_AC_AP_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 800
+    costSell: 600
+    weight: 5
+    landOnly: true
+    bigSprite: 8
+    floorSprite: 8
+    handSprite: 200
+    hitSound: 13 #79 xcf
+    hitAnimation: 26
+    power: 52
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 0.75
+    clipSize: 14
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 8
+    listOrder: 23310
+  - type: STR_AC_HE_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 1100
+    costSell: 900
+    weight: 5
+    landOnly: true
+    bigSprite: 9
+    floorSprite: 9
+    handSprite: 200
+    hitSound: 0
+    hitAnimation: 0
+    power: 55
+    damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    clipSize: 14
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 8
+    listOrder: 23320
+  - type: STR_AC_I_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 1000
+    costSell: 750
+    weight: 5
+    landOnly: true
+    bigSprite: 10
+    floorSprite: 10
+    handSprite: 216
+    hitSound: 0
+    hitAnimation: 0
+    power: 52
+    damageAlter:
+      ToHealth: 1.5
+      ToMorale: 15.0
+    damageType: 2
+    clipSize: 14
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 8
+    listOrder: 23330
+  - type: STR_AC_BS_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.1
+    costSell: 525
+    weight: 5
+    landOnly: true
+    bigSprite: 315
+    floorSprite: 10
+    handSprite: 208
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 28
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 6
+    damageType: 1
+    clipSize: 14
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23340
+  - type: STR_AC_AA_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.1
+    costSell: 6500
+    weight: 5
+    landOnly: true
+    bigSprite: 313
+    floorSprite: 8
+    handSprite: 200
+    hitSound: 13
+    hitAnimation: 26
+    power: 70
+    damageAlter:
+      ArmorEffectiveness: 0.85
+    damageType: 1
+    clipSize: 14
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 8
+    listOrder: 23350
+  - type: STR_AC_AA_BS_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.1
+    costSell: 6000
+    weight: 5
+    landOnly: true
+    bigSprite: 314
+    floorSprite: 10
+    handSprite: 208
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 37
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 6
+    damageType: 1
+    clipSize: 14
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23360
+#launchers
+  - type: STR_SINGLE_ROCKET_LAUNCHER #TODO balance here
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 3200
+    costSell: 15000
+    weight: 6
+    landOnly: true
+    bigSprite: 317
+    floorSprite: 317
+    handSprite: 712
+    bulletSprite: 0 #18 awguns
+    bulletSpeed: 3
+    hitSound: 0 #138 awguns
+    hitAnimation: 0
+    fireSound: 69
+    accuracyAuto: 0
+    accuracySnap: 0
+    accuracyAimed: 95
+    tuAuto: 0
+    tuSnap: 0
+    tuAimed: 66
+    power: 225
+    damageType: 1
+    clipSize: 1
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 1
+    invHeight: 3
+    armor: 16
+    maxRange: 25
+    aimRange: 20
+    snapRange: 15
+    autoRange: 0
+    minRange: 5
+    dropoff: 5
+    listOrder: 33840
+  - type: STR_ROCKET_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.3
+    costBuy: 38000
+    costSell: 27000
+    weight: 10
+    landOnly: true
+    bigSprite: 15
+    floorSprite: 15
+    handSprite: 72
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_SMALL_ROCKET
+      - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+      # - STR_SHRAPNEL_ROCKET
+      # - STR_TRITANIUM_SHRAPNEL_ROCKET
+    accuracyCloseQuarters: 33
+    accuracySnap: 55
+    accuracyAimed: 115
+    tuSnap: 45
+    tuAimed: 75
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 32
+    attraction: 12
+    listOrder: 33970
+  - type: STR_SMALL_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 2000
+    costSell: 1800
+    weight: 6
+    landOnly: true
+    bigSprite: 16
+    floorSprite: 16
+    handSprite: 224
+    hitSound: 0
+    hitAnimation: 0
+    power: 94
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 28
+    attraction: 8
+    listOrder: 33980
+  - type: STR_LARGE_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 5000
+    costSell: 3750
+    weight: 8
+    landOnly: true
+    bigSprite: 17
+    floorSprite: 17
+    handSprite: 232
+    hitSound: 0
+    hitAnimation: 0
+    power: 125
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 28
+    attraction: 8
+    listOrder: 33990
+  - type: STR_INCENDIARY_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.2
+    costBuy: 2800
+    costSell: 2300
+    weight: 8
+    bigSprite: 18
+    floorSprite: 18
+    handSprite: 240
+    hitSound: 0
+    hitAnimation: 0
+    power: 90
+    damageAlter:
+      ToHealth: 1.9
+      ToMorale: 15.0
+    damageType: 2
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 28
+    attraction: 8
+    listOrder: 34000
+#grenades
+  - type: STR_GRENADE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.05
+    costBuy: 300
+    costSell: 240
+    weight: 3
+    landOnly: true
+    bigSprite: 19
+    floorSprite: 19
+    power: 50
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    blastRadius: 5
+    listOrder: 38000
+  - type: STR_SMOKE_GRENADE
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_SPORTS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.05
+    costBuy: 150
+    costSell: 120
+    weight: 3
+    bigSprite: 20
+    floorSprite: 20
+    handSprite: 248
+    hitAnimation: 88
+    power: 60
+    damageType: 9
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    blastRadius: 5
+    listOrder: 38700
+  - type: STR_PROXIMITY_GRENADE
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.05
+    costBuy: 1500
+    costSell: 1200
+    weight: 4
+    bigSprite: 21
+    floorSprite: 21
+    handSprite: 256
+    power: 70
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 5
+    blastRadius: 5
+    armor: 30
+    attraction: 6
+    listOrder: 38950
+  - type: STR_FLASHBANG_GRENADE
+    categories: [STR_HUMAN_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.05
+    costBuy: 120
+    costSell: 80
+    weight: 3
+    landOnly: true
+    bigSprite: 300
+    floorSprite: 300
+    handSprite: 128
+    bulletSprite: 18
+    fireSound: 39
+    hitAnimation: 88
+    explosionHitSound: 70 #0 or 284 xcf
+    power: 50
+    hidePower: true
+    damageType: 1
+    damageAlter:
+      ResistType: 6
+      RandomType: 2
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToStun: 0.1
+      ToMorale: 0.1
+      ToHealth: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 6
+    accuracyAimed: 100
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    costAimed:
+      time: 30
+      energy: 6
+    confAimed:
+      name: STR_USE_FLASHBANG
+    costThrow:
+      energy: 6
+      time: 30
+    flatThrow:
+      time: true
+    clipSize: 1
+    battleType: 1
+    arcingShot: true
+    maxRange: 20
+    recoveryPoints: 2
+    kneelBonus: 100
+    experienceTrainingMode: 7
+    listOrder: 38600
+#tools
+  - type: STR_MEDI_PACK
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    size: 0.4
+    costBuy: 10000
+    costSell: 5000
+    weight: 15
+    landOnly: true
+    bigSprite: 338
+    floorSprite: 338
+    handSprite: 384
+    battleType: 6
+    invWidth: 2
+    invHeight: 2
+    painKiller: 3
+    heal: 3
+    stimulant: 3
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 5
+    energyRecovery: 36
+    costUse:
+      time: 20
+      morale: -5
+    flatRate: false
+    attraction: 5
+    experienceTrainingMode: 19
+    listOrder: 48150
+  - type: STR_TRAUMA_PACK
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.4
+    costBuy: 30000
+    costSell: 15000
+    weight: 17
+    landOnly: true
+    bigSprite: 339
+    floorSprite: 339
+    handSprite: 392
+    battleType: 6
+    invWidth: 2
+    invHeight: 2
+    painKiller: 5
+    heal: 5
+    stimulant: 5
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 8
+    energyRecovery: 42
+    costUse:
+      time: 18
+      morale: -5
+    flatRate: false
+    attraction: 5
+    experienceTrainingMode: 19
+    listOrder: 48160
+# built-in weapons
+  - type: STR_UNARMED
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 822
+    meleeHitSound: 109
+    meleeAnimation: 0
+    power: 0
+    damageType: 6
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+      reactions: 0.1
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.5
+      ToHealth: 0.15
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.5
+      reactions: 0.5
+    confMelee:
+      name: STR_PUNCH
+    costMelee:
+      time: 8
+      energy: 2
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
+
+
+
+
+
+
+

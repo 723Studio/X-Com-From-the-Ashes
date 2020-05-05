@@ -1,0 +1,55 @@
+research:
+  - delete: STR_LASER_WEAPONS
+  - delete: STR_MOTION_SCANNER
+  - delete: STR_MEDI_KIT
+#   - delete: STR_LASER_PISTOL
+#   - delete: STR_LASER_RIFLE
+#   - delete: STR_HEAVY_LASER
+#   - delete: STR_LASER_DEFENSE
+#   - delete: STR_FUSION_MISSILE
+#   - delete: STR_PLASMA_DEFENSE
+#   - delete: STR_PLASMA_CANNON_DEP1
+#   - delete: STR_PLASMA_CANNON_DEP2
+#   - delete: STR_PLASMA_CANNON
+#   - delete: STR_PSI_LAB
+#   - delete: STR_ALIEN_ORIGINS
+#   - delete: STR_REAPER
+#   - delete: STR_REAPER_TERRORIST
+#   - delete: STR_HYPER_WAVE_DECODER
+#   - delete: STR_STUN_ROD
+#   - delete: STR_COMMANDER_PLUS
+#technical part
+  - name: STR_HELLO #hardcoded, do not rename! used to start the game propertly
+    needItem: true
+  - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at is not avalible to be discovered in the game
+    needItem: true
+  - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
+    needItem: true
+#story
+  - name: STR_INTRODUCTION
+    needItem: true
+  - name: STR_RND_STATUS_REPORT
+    cost: 500
+    points: 0
+
+
+#technology
+  - name: STR_LASER_WEAPONS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_TODOIUM
+#items
+  - name: STR_MOTION_SCANNER
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_TODOIUM
+  - name: STR_MEDI_KIT
+    cost: 210
+    points: 20
+    dependencies:
+      - STR_TODOIUM
+  - name: STR_FLASHBANG_GRENADE
+    dependencies:
+      - STR_TODOIUM

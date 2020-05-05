@@ -1,0 +1,134 @@
+startingBase:
+  randomSoldiers:
+    STR_SOLDIER: 12
+  scientists: 6
+  engineers: 3
+  facilities:
+    - type: STR_ACCESS_LIFT
+      x: 2
+      y: 2  
+    - type: STR_HANGAR
+      x: 2
+      y: 0
+    - type: STR_HANGAR
+      x: 0
+      y: 4
+    - type: STR_PRISON_CELLS
+      x: 3
+      y: 2
+    - type: STR_GENERAL_STORES
+      x: 2
+      y: 3
+    - type: STR_LIVING_QUARTERS
+      x: 1
+      y: 2
+    - type: STR_HQ
+      x: 0
+      y: 2
+    - type: STR_GYM
+      x: 1
+      y: 3
+    - type: STR_SICK_BAY
+      x: 1
+      y: 1
+    - type: STR_CLOSED_LAB
+      x: 3
+      y: 3
+  items:
+    STR_POLICE_BATON: 3
+    STR_COMBAT_KNIFE: 2
+    STR_PISTOL: 4
+    STR_PISTOL_CLIP: 13
+    STR_PDW: 2
+    STR_PDW_CLIP: 7
+    STR_SMG: 2
+    STR_SMG_CLIP: 6
+    STR_RIFLE: 5
+    STR_ASSAULT_RIFLE: 3
+    STR_RIFLE_CLIP: 20
+    STR_SNIPER_RIFLE: 1
+    STR_SNIPER_RIFLE_CLIP: 6
+    STR_SHOTGUN: 2
+    STR_SHOTGUN_SHELLS_BS: 10
+    STR_SHOTGUN_SHELLS_AP: 6
+    STR_SHOTGUN_SHELLS_BATON: 4
+    STR_AUTO_CANNON: 1
+    STR_AC_AP_AMMO: 4
+    STR_AC_BS_AMMO: 2
+    STR_AC_HE_AMMO: 2
+    STR_LIGHT_CANNON: 2
+    STR_LC_AP_AMMO: 8
+    STR_LC_BS_AMMO: 4
+    STR_LC_HE_AMMO: 2
+    STR_LC_I_AMMO: 2
+    STR_ROCKET_LAUNCHER: 1
+    STR_SMALL_ROCKET: 4
+    STR_LARGE_ROCKET: 2
+    STR_INCENDIARY_ROCKET: 2
+    STR_GRENADE: 8
+    STR_SMOKE_GRENADE: 5
+    STR_TRAUMA_PACK: 2
+    STR_STINGRAY_LAUNCHER: 1
+    STR_STINGRAY_MISSILES: 25
+    STR_CANNON: 1
+    STR_CANNON_ROUNDS_X50: 10
+  crafts:
+    - type: STR_DRAGONFLY
+      id: 1
+      fuel: 0
+      damage: 10
+      status: STR_REPAIRS
+    - type: STR_INTERCEPTOR
+      id: 1
+      fuel: 0
+      damage: 8
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 200
+      status: STR_REPAIRS
+  # soldiers: #look at save section for rules. for patron reward!
+  #   - type: STR_SOLDIER
+  #     id: 1
+  #     name: Natashа Romanova
+  #     nationality: 21
+  #     initialStats:
+  #       tu: 50
+  #       stamina: 60
+  #       health: 39
+  #       bravery: 60
+  #       reactions: 30
+  #       firing: 46
+  #       throwing: 53
+  #       strength: 33
+  #       psiStrength: 20
+  #       psiSkill: 0
+  #       melee: 28
+  #       mana: 0
+  #     currentStats:
+  #       tu: 50
+  #       stamina: 60
+  #       health: 39
+  #       bravery: 60
+  #       reactions: 30
+  #       firing: 46
+  #       throwing: 53
+  #       strength: 33
+  #       psiStrength: 20
+  #       psiSkill: 0
+  #       melee: 28
+  #       mana: 0
+  #     rank: 3
+  #     gender: 0
+  #     look: 3
+  #     lookVariant: 50
+  #     missions: 0
+  #     kills: 0
+  #     armor: STR_NONE_UC
+  #     improvement: 0
+  #     psiStrImprovement: 0
+  #     diary:
+  #       missionIdList:
+  #         - 0
+  #     tags: ~

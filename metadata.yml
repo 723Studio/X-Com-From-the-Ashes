@@ -1,0 +1,9 @@
+name: "X-Com: From the Ashes"
+version: "0.0.1"
+requiredExtendedVersion: "6.4"
+author: "Finnik"
+description: "From the ashes of XCOM will rise the Phoenix, the defender of the innocent, crushing the foreigners!"
+id: From the Ashes
+isMaster: true
+master: xcom1
+reservedSpace: 2

@@ -1,0 +1,130 @@
+armors:
+  - type: STR_XCOM_EX_COMMANDER_ARMOR
+    spriteSheet: XCOM_EX_COMMANDER.PCK
+    spriteInv: inventory_XCOM_EX_COMMANDER
+    corpseBattle:
+      - STR_XCOM_EX_COMMANDER_CORPSE
+    visibilityAtDark: 10
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED
+    loftempsSet: [ 3 ]
+  - type: STR_MIB_AGENT_ARMOR
+    spriteSheet: MIB_AGENT.PCK
+    spriteInv: inventory_MIB_AGENT
+    corpseBattle:
+      - STR_MIB_AGENT_CORPSE
+    visibilityAtDark: 10
+    frontArmor: 8
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.33
+      bravery: 0.2
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED
+    loftempsSet: [ 3 ]
+  - type: STR_MIB_ENFORCER_ARMOR
+    spriteSheet: MIB_ENFORCER.PCK
+    spriteInv: inventory_MIB_ENFORCER
+    corpseBattle:
+      - STR_MIB_ENFORCER_CORPSE
+    visibilityAtDark: 10
+    frontArmor: 40
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      energy:
+        flatHundred: 0.08
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.07
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.85
+      - 0.8
+      - 0.65
+      - 0.9
+      - 0.7
+      - 1.0
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED
+    loftempsSet: [ 3 ]

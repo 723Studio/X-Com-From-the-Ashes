@@ -1,0 +1,13 @@
+events:
+#Introduction
+  - name: STR_RND_STATUS_REPORT_EVENT
+    #description: STR_INTRODUCTION_TEXT
+    timer: 60
+    timerRandom: 0
+    #music: Hello_Commander
+    researchList: [STR_RND_STATUS_REPORT] #если надо, можно через запятую перечислить ещё!
+
+#Resistance
+  - name: STR_RESISTANCE_DISCOVER
+    description: STR_RESISTANCE_DISCOVER_DESCRIPTION
+    #background: BACKGROUND_MIB.SCR

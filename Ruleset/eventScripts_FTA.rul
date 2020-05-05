@@ -1,0 +1,9 @@
+eventScripts:
+#introduction
+  - type: STR_RND_STATUS_REPORT_SCRIPT
+    oneTimeSequentialEvents: [STR_RND_STATUS_REPORT_EVENT]
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4

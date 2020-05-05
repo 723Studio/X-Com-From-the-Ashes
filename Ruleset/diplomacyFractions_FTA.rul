@@ -1,0 +1,42 @@
+diplomacyFactions:
+  - name: STR_RESISTANCE
+    description: STR_RESISTANCE_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
+    cardBackground: STR_RESISTANCE_BACKGROUND.SCR
+    #discoverResearch: STR_LASER_WEAPONS
+    discoverEvent: STR_RESISTANCE_DISCOVER
+    startingReputation: 27
+    # genMissionFreq: 100 #100% chance to run the script
+    # helpTreatyMissions:
+    #   testScript: 100
+    sellingSet:
+      STR_STINGRAY_LAUNCHER: 0
+      STR_STINGRAY_MISSILES: -1
+      STR_AVALANCHE_LAUNCHER: 0
+      STR_AVALANCHE_MISSILES: 3
+      STR_PISTOL: 0
+      STR_PISTOL_CLIP: -1
+      STR_SKYRANGER: 2
+      STR_INTERCEPTOR: 0
+      STR_SCIENTIST: 0
+      STR_ENGINEER: 1
+      STR_SOLDIER: 3
+      STR_PERSONAL_ARMOR: 2
+  - name: STR_VOID_CORP
+    description: STR_VOID_CORP_DESCRIPTION
+    background: CHURCH_OF_DAGON_BACKGROUND.SCR
+    cardBackground: CHURCH_OF_DAGON_BACKGROUND.SCR
+  - name: STR_ENIGMA
+    description: STR_ENIGMA_DESCRIPTION
+    background: OFFICE_LADY_BACKGROUND.SCR
+    cardBackground: OFFICE_LADY_BACKGROUND.SCR
+
+missionScripts:
+  - type: testScript
+    missionWeights:
+      0:
+        STR_ALIEN_TERROR: 100
+    useTable: false
+    startDelay: 150
+
+

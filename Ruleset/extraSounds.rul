@@ -1,0 +1,19 @@
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      55: Resources/Weapons/Sounds/ClubHit.wav
+      56: Resources/Weapons/Sounds/KnifeAttack.wav
+      57: Resources/Weapons/Sounds/KnifeHit.ogg
+      58: Resources/Weapons/Sounds/HumanBulletHit.wav
+      59: Resources/Weapons/Sounds/SMGFire.ogg
+      60: Resources/Weapons/Sounds/SniperFire.wav
+      61: Resources/Weapons/Sounds/SniperFire2.wav
+      62: Resources/Weapons/Sounds/SniperHit.wav
+      63: Resources/Weapons/Sounds/SniperFire3.ogg
+      64: Resources/Weapons/Sounds/PistolFire2.wav
+      65: Resources/Weapons/Sounds/ShotgunFirePumpAction.wav
+      66: Resources/Weapons/Sounds/ShotgunFirePumpAction2.wav
+      67: Resources/Weapons/Sounds/ShotgunBSHit.wav
+      68: Resources/Weapons/Sounds/LCanonFire.wav
+      69: Resources/Weapons/Sounds/RocketFire.wav
+      70: Resources/Weapons/Sounds/Flashbang_explosion.wav

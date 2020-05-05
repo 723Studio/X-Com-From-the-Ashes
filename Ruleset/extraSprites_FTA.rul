@@ -1,0 +1,354 @@
+extraSprites:
+#UI, geoscape
+  - type: DayNightIndicator
+    width: 72
+    height: 24
+    subX: 24
+    subY: 24
+    files:
+      0: Resources/UI/Mun.png
+  - type: GlobeMarkers
+    width: 90
+    height: 3
+    subX: 3
+    subY: 3
+    files:
+      0: Resources/Geoscape/globe_ufo_expanded.png
+  - type: BigBurnIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/burning.png
+  - type: BigStunIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Zzz.png
+  - type: BigWoundIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Bleed.png
+  - type: BigShockIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Shock.png
+  - type: FloorBurnIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/burning.png
+  - type: FloorStunIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Zzz.png
+  - type: FloorWoundIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Bleed.png
+  - type: FloorShockIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Shock.png
+  - type: CustomArmorPreviews
+    width: 744
+    height: 60
+    subX: 12
+    subY: 20
+    files:
+      0: Resources/UI/GUI_Soldiers.png
+  - typeSingle: BACK08.SCR
+    fileSingle: Resources/UI/EQP_Blue7.png
+  - type: AvatarBackground
+    singleImage: true
+    files:
+      0: Resources/UI/avatar-background.png
+  - type: TinyRanks
+    width: 42
+    height: 7
+    subX: 7
+    subY: 7
+    files:
+      0: Resources/UI/TinyRanks.png
+  - type: Commendations
+    width: 31
+    height: 48
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/UI/MedalBars.png
+  - type: CommendationDecorations
+    width: 31
+    height: 80
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/UI/Decorations.png
+#Projectiles, MeleeAnimations, ExplosionAnimations, HitAnimations, specialIcons
+  - type: Projectiles #index step 35
+    height: 3
+    width: 65
+    subX: 3
+    subY: 3
+    files:
+      385: Resources/Weapons/Projectiles/LMG_bullet.png
+      420: Resources/Weapons/Projectiles/Magnum_bullet.png
+      455: Resources/Weapons/Projectiles/Taser_bullet.png
+      490: Resources/Weapons/Projectiles/Sniper_bullet.png #14
+      525: Resources/Weapons/Projectiles/Toxic_bullet.png
+      560: Resources/Weapons/Projectiles/PsiBeam_bullet.png
+      595: Resources/Weapons/Projectiles/SMG_bullet.png #17
+      630: Resources/Weapons/Projectiles/Gauss_bullet.png
+      665: Resources/Weapons/Projectiles/MassDriver_bullet.png
+      700: Resources/Weapons/Projectiles/BlueLaser_bullet.png
+      735: Resources/Weapons/Projectiles/BlueHeavyLaser_bullet.png
+      770: Resources/Weapons/Projectiles/ThrowingKnife_bullet.png
+      805: Resources/Weapons/Projectiles/Arrow_bullet.png
+      840: Resources/Weapons/Projectiles/Fireball_bullet.png
+      875: Resources/Weapons/Projectiles/SonicPistol_bullet.png
+      910: Resources/Weapons/Projectiles/PurpleLaser_bullet.png
+      945: Resources/Weapons/Projectiles/PurpleHeavyLaser_bullet.png
+      980: Resources/Weapons/Projectiles/RedLightLaser_bullet.png
+      1015: Resources/Weapons/Projectiles/RedMediumLaser_bullet.png
+      1050: Resources/Weapons/Projectiles/RedHeavyLaser_bullet.png
+      1085: Resources/Weapons/Projectiles/Boomeroid_bullet.png
+      1120: Resources/Weapons/Projectiles/Cero_green_bullet.png
+      1155: Resources/Weapons/Projectiles/Cero_red_bullet.png
+      1190: Resources/Weapons/Projectiles/Dreamsprite_bullet.png
+      1225: Resources/Weapons/Projectiles/ElectroPlasma_bullet.png
+      1260: Resources/Weapons/Projectiles/Harpoon_bullet.png
+      1295: Resources/Weapons/Projectiles/Purple_Fireball_bullet.png
+  - type: HIT.PCK #MeleeAnimations, index step 4
+    height: 40
+    width: 128
+    subX: 32
+    subY: 40
+    files:
+      4: Resources/Weapons/MeleeAnimations/StunRod.png
+      8: Resources/Weapons/MeleeAnimations/Sword.png
+  - type: X1.PCK #ExplosionAnimations, index step 8
+    width: 1024
+    height: 64
+    subX: 128
+    subY: 64
+    files:
+      80: Resources/Weapons/ExplosionAnimations/Triple_Ripple_exp.png
+      88: Resources/Weapons/ExplosionAnimations/Grey_Skull_exp.png
+  - type: SMOKE.PCK #HitAnimations, index step 10
+    height: 80
+    width: 160
+    subX: 32
+    subY: 40
+    files:
+      56: Resources/Weapons/HitAnimations/Taser_hit.png
+      66: Resources/Weapons/HitAnimations/Toxic_hit.png
+  # - type: SPICONS.DAT #special icons, index step 1
+  #   width: 32
+  #   height: 24  
+  #   files:  
+  #     108: Resources/Doge/SpIcon_Smell.png
+  #     109: Resources/Races_Compilation/ZombieRace/SpIcon_VampireBite.png
+  #     110: Resources/Races_Compilation/DeepOneRace/SpIcon_GillmanArc.png
+#objects
+  - type: BIGOBS.PCK
+    files:
+      #44: Resources/Armors_Compilation/PowerSuit/bigob_POWER_SUIT.png
+    #100&200 - corpses
+      100: Resources/Armors/Enemies/Special/bigob_XCOM_EX_COMMANDER.png
+      101: Resources/Armors/Enemies/MiB/bigob_MIB_AGENT.png
+      102: Resources/Armors/Enemies/MiB/bigob_MIB_ENFORCER.png
+    #300 - weapons
+      300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
+      301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
+      302: Resources/Weapons/Earthbound/Xcom/bigob_Rifle_AA_Clip.png
+      303: Resources/Weapons/Earthbound/Xcom/bigob_LightCannon.png
+      304: Resources/Weapons/Earthbound/Xcom/bigob_LightCannonClipAP.png
+      305: Resources/Weapons/Earthbound/Xcom/bigob_LightCannonClipBS.png
+      306: Resources/Weapons/Earthbound/Xcom/bigob_LightCannonClipHE.png
+      307: Resources/Weapons/Earthbound/Xcom/bigob_LightCannonClipAA.png
+      308: Resources/Weapons/Earthbound/Xcom/bigob_LightCannonClipBSAA.png
+      309: Resources/Weapons/Earthbound/Xcom/bigob_LightCannonClipIN.png
+      310: Resources/Weapons/Earthbound/Xcom/bigob_HeavyCannonClipAA.png
+      311: Resources/Weapons/Earthbound/Xcom/bigob_HeavyCannonClipAABS.png
+      312: Resources/Weapons/Earthbound/Xcom/bigob_HeavyCannonClipBS.png
+      313: Resources/Weapons/Earthbound/Xcom/bigob_AutoCannonClipAA.png
+      314: Resources/Weapons/Earthbound/Xcom/bigob_AutoCannonClipAABS.png
+      315: Resources/Weapons/Earthbound/Xcom/bigob_AutoCannonClipBS.png
+      316: Resources/Weapons/Earthbound/General/bigob_CombatKnife.png
+      317: Resources/Weapons/Earthbound/General/bigob_SingleRocket.png
+      318: Resources/Weapons/Earthbound/General/bigob_PoliceBaton.png
+      319: Resources/Weapons/Earthbound/General/bigob_PumpActionShotgun.png
+      320: Resources/Weapons/Earthbound/General/bigob_PumpActionShotgunShells.png
+      321: Resources/Weapons/Earthbound/General/bigob_SemiAuto_Shotgun.png
+      322: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_AP.png
+      323: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_BS.png
+      324: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_Baton.png
+      325: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_AP_AA.png
+      326: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_BS_AA.png
+      327: Resources/Weapons/Earthbound/Xcom/bigob_Shotgun.png
+      328: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifle.png
+      329: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifleClip.png
+      330: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifleClipAA.png
+      331: Resources/Weapons/Earthbound/Xcom/bigob_PDW.png
+      332: Resources/Weapons/Earthbound/Xcom/bigob_PDWClip.png
+      333: Resources/Weapons/Earthbound/Xcom/bigob_PDWClipAA.png
+      334: Resources/Weapons/Earthbound/Xcom/bigob_SMG.png
+      335: Resources/Weapons/Earthbound/Xcom/bigob_SMGClip.png
+      336: Resources/Weapons/Earthbound/Xcom/bigob_SMGClipAA.png
+      337: Resources/Weapons/Earthbound/Xcom/bigob_AssaultRifle.png
+      338: Resources/Weapons/Earthbound/Utilities/bigob_MediPack.png
+      339: Resources/Weapons/Earthbound/Utilities/bigob_TraumaPack.png
+      340: Resources/Weapons/Unarmed/bigob_BasicFist.png
+      
+  - type: FLOOROB.PCK
+    files:
+      #41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
+    #100&200 - corpses
+      100: Resources/Armors/Enemies/Special/floorob_XCOM_EX_COMMANDER.png
+      101: Resources/Armors/Enemies/MiB/floorob_MIB_AGENT.png
+      102: Resources/Armors/Enemies/MiB/floorob_MIB_ENFORCER.png
+    #300 - weapons
+      300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
+      303: Resources/Weapons/Earthbound/Xcom/floorob_LightCannon.png
+      304: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipAP.png
+      305: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipBS.png
+      306: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipHE.png
+      309: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipIN.png
+      316: Resources/Weapons/Earthbound/General/floorob_CombatKnife.png
+      317: Resources/Weapons/Earthbound/General/floorob_SingleRocket.png
+      318: Resources/Weapons/Earthbound/General/floorob_PoliceBaton.png
+      319: Resources/Weapons/Earthbound/General/floorob_PumpActionShotgun.png
+      321: Resources/Weapons/Earthbound/General/floorob_Shotgun.png
+      322: Resources/Weapons/Earthbound/General/floorob_ShotgunShells.png
+      325: Resources/Weapons/Earthbound/General/floorob_ShotgunShellsAA.png
+      327: Resources/Weapons/Earthbound/Xcom/floorob_Shotgun.png
+      328: Resources/Weapons/Earthbound/Xcom/floorob_SniperRifle.png
+      329: Resources/Weapons/Earthbound/Xcom/floorob_SniperRifleClip.png
+      330: Resources/Weapons/Earthbound/Xcom/floorob_SniperRifleClipAA.png
+      331: Resources/Weapons/Earthbound/Xcom/floorob_PDW.png
+      332: Resources/Weapons/Earthbound/Xcom/floorob_PDWClip.png
+      333: Resources/Weapons/Earthbound/Xcom/floorob_PDWClipAA.png
+      334: Resources/Weapons/Earthbound/Xcom/floorob_SMG.png
+      335: Resources/Weapons/Earthbound/Xcom/floorob_SMGClip.png
+      336: Resources/Weapons/Earthbound/Xcom/floorob_SMGClipAA.png
+      337: Resources/Weapons/Earthbound/Xcom/floorob_AssaultRifle.png
+      338: Resources/Weapons/Earthbound/Utilities/floorob_MediPack.png
+      339: Resources/Weapons/Earthbound/Utilities/floorob_TraumaPack.png
+
+  - type: HANDOB.PCK #Hindex step 8
+    height: 40
+    width: 256
+    subX: 32
+    subY: 40
+    files:
+      128: Resources/Weapons/Earthbound/Grenades/handob_FlashbangGrenade.png
+      136: Resources/Weapons/Earthbound/Xcom/handob_PistolClip.png
+      144: Resources/Weapons/Earthbound/Xcom/handob_RifleClip.png
+      152: Resources/Weapons/Earthbound/Xcom/handob_LightCannon.png
+      160: Resources/Weapons/Earthbound/Xcom/handob_LightCannonClipAP.png
+      168: Resources/Weapons/Earthbound/Xcom/handob_HeavyCannonClipAP.png
+      176: Resources/Weapons/Earthbound/Xcom/handob_HeavyCannonClipBS.png
+      184: Resources/Weapons/Earthbound/Xcom/handob_HeavyCannonClipHE.png
+      192: Resources/Weapons/Earthbound/Xcom/handob_HeavyCannonClipIN.png
+      200: Resources/Weapons/Earthbound/Xcom/handob_AutoCannonClipAP.png
+      208: Resources/Weapons/Earthbound/Xcom/handob_AutoCannonClipBS.png
+      216: Resources/Weapons/Earthbound/Xcom/handob_AutoCannonClipIN.png
+      224: Resources/Weapons/Earthbound/Xcom/handob_RocketSM.png
+      232: Resources/Weapons/Earthbound/Xcom/handob_RocketLG.png
+      240: Resources/Weapons/Earthbound/Xcom/handob_RocketIN.png
+      248: Resources/Weapons/Earthbound/Grenades/handob_SmokeGrenade.png
+      256: Resources/Weapons/Earthbound/Grenades/handob_ProxyGrenade.png
+      264: Resources/Weapons/Earthbound/General/handob_CombatKnife.png
+      272: Resources/Weapons/Earthbound/General/handob_SingleRocket.png
+      280: Resources/Weapons/Earthbound/General/handob_PoliceBaton.png
+      288: Resources/Weapons/Earthbound/General/handob_PumpActionShotgun.png
+      296: Resources/Weapons/Earthbound/General/handob_Shotgun.png
+      304: Resources/Weapons/Earthbound/General/handob_ShotgunShells.png
+      312: Resources/Weapons/Earthbound/General/handob_ShotgunShellsAA.png
+      320: Resources/Weapons/Earthbound/Xcom/handob_SniperRifle.png
+      328: Resources/Weapons/Earthbound/Xcom/handob_SniperRifleClip.png
+      336: Resources/Weapons/Earthbound/Xcom/handob_SniperRifleClipAA.png
+      344: Resources/Weapons/Earthbound/Xcom/handob_PDW.png
+      352: Resources/Weapons/Earthbound/Xcom/handob_SMG.png
+      360: Resources/Weapons/Earthbound/Xcom/handob_SMGClip.png
+      368: Resources/Weapons/Earthbound/Xcom/handob_SMGClipAA.png
+      376: Resources/Weapons/Earthbound/Xcom/handob_AssaultRifle.png
+      384: Resources/Weapons/Earthbound/Utilities/handob_MediPack.png
+      392: Resources/Weapons/Earthbound/Utilities/handob_TraumaPack.png
+#baseScape
+  - type: INTICON.PCK #crafts, craft weapons
+    files:
+      800: Resources/Crafts/Inticon/Dragonfly_minimised.png
+      811: Resources/Crafts/Inticon/Dragonfly_dogfight.png
+  - type: BASEBITS.PCK
+    files:
+      300: Resources/Facilities/HQ.png
+      301: Resources/Facilities/Prison_Cells.png
+      302: Resources/Facilities/Gym.png
+      303: Resources/Facilities/Sick_Bay.png
+      304: Resources/Facilities/Closed_Lab.png
+      833: Resources/Crafts/Basebits/Dragonfly_base.png
+#armors, inventory screens
+  - type: XCOM_EX_COMMANDER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/Special/XCOM_EX_COMMANDER.png
+  - type: inventory_XCOM_EX_COMMANDER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Special/inventory_XCOM_EX_COMMANDER.png
+  - type: MIB_AGENT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/MIB_AGENT.png
+  - type: inventory_MIB_AGENT
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
+  - type: MIB_ENFORCER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/MIB_ENFORCER.png
+  - type: inventory_MIB_AGENT
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
+
+#ufopedia
+  - type: DRAGONFLY_CPAL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Ufopedia/Dragonfly_ufopedia_CPAL.png
+  - type: RND_CHEIF.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/R&D_Cheif.png
+#backgrounds
+  - type: CHURCH_OF_DAGON_BACKGROUND.SCR #TODO
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CHURCH_OF_DAGON_BACKGROUND.png
+  - type: STR_RESISTANCE_BACKGROUND.SCR #TODO
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/ADVENT_BACKGROUND.png
+  - type: OFFICE_LADY_BACKGROUND.SCR #TODO
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/OFFICE_LADY_BACKGROUND.png
+### PAPERDOLL LAYERS ###
