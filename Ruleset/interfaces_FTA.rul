@@ -17,3 +17,32 @@ interfaces:
         color: 239   # bright green
       - id: name
         color: 138   # yellow
+  - type: covertOperationsMenu
+    backgroundImage: BACK13.SCR #BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 1     # burgundy
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 246   # purple
+        border: 218  # blue
+      - id: button
+        color: 246   # purple
+  - type: newCovertOperationsMenu
+    backgroundImage: BACK13.SCR 
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 1     # burgundy
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: button
+        color: 218   # blue

@@ -1,0 +1,16 @@
+covertOperations:
+  - name: STR_REGIONAL_HQ
+    description: STR_REGIONAL_HQ_DESCRIPTION
+    successEvent: STR_REGIONAL_HQ_FOUND_EVENT
+    requires:
+      - STR_INTEL_STATUS_REPORT
+    soldierSlots: 2
+    baseChances: 100
+    costs: 5
+  - name: STR_TEST_OPERATION
+    description: STR_TEST_OPERATION_DESCRIPTION
+    # soldierSlots: 2
+    # optionalSoldierSlots: 1
+    # scientistSlots: 3
+    # engineerSlots: 4
+    # successEvent: STR_REGIONAL_HQ_FOUND_EVENT

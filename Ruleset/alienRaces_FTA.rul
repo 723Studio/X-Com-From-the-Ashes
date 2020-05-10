@@ -30,18 +30,18 @@ alienRaces:
       - STR_MIB_AGENT # 12 - Special Guest 2 / Non-Combatant 1
       - STR_MIB_AGENT # 13 - Non-Combatant 2
       - STR_MIB_AGENT # 14 - Special Guest 3
-  # - id: STR_ADVENT_START #hardcoded, do not rename!
-  #   members:
-  #     - STR_SECTOID_COMMANDER # Commander
-  #     - STR_SECTOID_LEADER # Leader
-  #     - STR_SECTOID_ENGINEER # Engineer
-  #     - STR_SECTOID_MEDIC # Medic
-  #     - STR_SECTOID_NAVIGATOR # Navigator
-  #     - STR_SECTOID_SOLDIER # Soldier
-  #     - STR_CYBERDISC_TERRORIST # Terrorist 1
-  #     - STR_CYBERDISC_TERRORIST # Terrorist 2
-  #     - STR_CYBERDISC_TERRORIST # Special Guest 1
-  #     - STR_SECTOID_GUARDIAN # Heavy Trooper / Underwater Terrorist 1
-  #     - STR_SECTOID_GUARDIAN # Assault Trooper / Underwater Terrorist 2
-  #     - STR_SECTOID_GUARD_CAPTAIN # Special Guest 2 / Non-Combatant 1
-  #     - STR_SECTOID_GUARDIAN # Non-Combatant 2
+  - id: STR_ADVENT_START #hardcoded, do not rename!
+    members:
+      - STR_SECTOID_COMMANDER # Commander
+      - STR_SECTOID_LEADER # Leader
+      - STR_SECTOID_ENGINEER # Engineer
+      - STR_SECTOID_MEDIC # Medic
+      - STR_SECTOID_NAVIGATOR # Navigator
+      - STR_SECTOID_SOLDIER # Soldier
+      - STR_CYBERDISC_TERRORIST # Terrorist 1
+      - STR_CYBERDISC_TERRORIST # Terrorist 2
+      - STR_CYBERDISC_TERRORIST # Special Guest 1
+      - STR_SECTOID_GUARDIAN # Heavy Trooper / Underwater Terrorist 1
+      - STR_SECTOID_GUARDIAN # Assault Trooper / Underwater Terrorist 2
+      - STR_SECTOID_GUARD_CAPTAIN # Special Guest 2 / Non-Combatant 1
+      - STR_SECTOID_GUARDIAN # Non-Combatant 2

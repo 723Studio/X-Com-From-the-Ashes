@@ -30,4 +30,11 @@ Niklas Jansson (http://androidarts.com/) and Riccardo Gasperi, authors of Terror
 
 Nord, author of The World of (Terrifying) Silence (https://openxcom.mod.io/the-world-of-terrifying-silence) - various graphic assets
 
-ohartenstein23, big thanks for y-scripts, big thanks for code guidence.
+ohartenstein23, y-scripts, big thanks for code guidence.
+
+============
+CONTRIBUTION
+============
+I want to express my great gratitude to those people who help me develop my mod by creating content for it. Thank you so much, I really appreciate your contribution!
+KoTiK03 - Sick bay facility sprite rework
+wolwerin - full sprite set for alien pistol (have not decided what exactly it would be, so no exact name yet)

@@ -29,10 +29,13 @@ research:
   - name: STR_INTRODUCTION
     needItem: true
   - name: STR_RND_STATUS_REPORT
-    cost: 500
-    points: 0
-
-
+    needItem: true
+  - name: STR_INTEL_STATUS_REPORT
+    needItem: true
+  - name: STR_ENGENEER_STATUS_REPORT
+    needItem: true
+  - name: STR_REGIONAL_HQ_FOUND
+    needItem: true
 #technology
   - name: STR_LASER_WEAPONS
     cost: 50

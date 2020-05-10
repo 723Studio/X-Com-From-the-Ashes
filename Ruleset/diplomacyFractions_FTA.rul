@@ -2,7 +2,7 @@ diplomacyFactions:
   - name: STR_RESISTANCE
     description: STR_RESISTANCE_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
-    cardBackground: STR_RESISTANCE_BACKGROUND.SCR
+    cardBackground: RESISTANCE_DIPLOMACY_CARD.SCR
     #discoverResearch: STR_LASER_WEAPONS
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 27

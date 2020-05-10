@@ -1,12 +1,28 @@
 events:
 #Introduction
   - name: STR_RND_STATUS_REPORT_EVENT
-    #description: STR_INTRODUCTION_TEXT
+    description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 60
     timerRandom: 0
     #music: Hello_Commander
     researchList: [STR_RND_STATUS_REPORT] #если надо, можно через запятую перечислить ещё!
+  - name: STR_INTEL_STATUS_REPORT_EVENT
+    description: STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION
+    timer: 90
+    timerRandom: 30
+    researchList: [STR_INTEL_STATUS_REPORT]
+  - name: STR_ENGENEER_STATUS_REPORT_EVENT
+    description: STR_ENGENEER_STATUS_REPORT_EVENT_DESCRIPTION
+    timer: 180
+    timerRandom: 90
+    researchList: [STR_ENGENEER_STATUS_REPORT]
+#covertOperation events
 
+  - name: STR_REGIONAL_HQ_FOUND_EVENT
+    description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
+    timer: 180
+    timerRandom: 90
+    researchList: [STR_REGIONAL_HQ_FOUND]
 #Resistance
   - name: STR_RESISTANCE_DISCOVER
     description: STR_RESISTANCE_DISCOVER_DESCRIPTION

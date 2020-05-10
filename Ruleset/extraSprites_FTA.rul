@@ -333,18 +333,24 @@ extraSprites:
     files:
       0: Resources/UfopediaPics/R&D_Cheif.png
 #backgrounds
+  - type: STR_RESISTANCE_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/RESISTANCE_LOGO_BACKGROUND.png
+  - type: RESISTANCE_DIPLOMACY_CARD.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/RESISTANCE_DIPLOMACY_CARD.png
   - type: CHURCH_OF_DAGON_BACKGROUND.SCR #TODO
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/CHURCH_OF_DAGON_BACKGROUND.png
-  - type: STR_RESISTANCE_BACKGROUND.SCR #TODO
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/Backgrounds/ADVENT_BACKGROUND.png
   - type: OFFICE_LADY_BACKGROUND.SCR #TODO
     singleImage: true
     width: 320
