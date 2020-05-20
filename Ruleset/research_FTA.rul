@@ -42,6 +42,21 @@ research:
     points: 10
     dependencies:
       - STR_TODOIUM
+#crafts
+  - name: STR_INTERCEPTOR
+    #requiresBaseFunc: [STDLAB]
+    cost: 500
+    points: 100
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 7460
+  - name: STR_SKYRANGER
+    #requiresBaseFunc: [STDLAB]
+    cost: 300
+    points: 10
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 7410
 #items
   - name: STR_MOTION_SCANNER
     cost: 180

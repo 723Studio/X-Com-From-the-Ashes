@@ -34,6 +34,29 @@ crafts:
           width: 10
           length: 20
     listOrder: 7380
+  - type: STR_PURSUER
+    costBuy: 0 #TODO
+    costRent: 600000 #TODO
+    costSell: 260000 #TODO
+    # weaponTypes:
+    #   - 0
+    #   - 2
+    # weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    maxItems: 999
+    sprite: 801
+    fuelMax: 440
+    damageMax: 27
+    speedMax: 1700
+    accel: 3
+    weapons: 2
+    refuelRate: 40
+    transferTime: 96
+    score: 100
+    allowLanding: false
+    listOrder: 7400
   - type: STR_INTERCEPTOR
     costBuy: 0
     costRent: 600000
@@ -55,15 +78,7 @@ crafts:
     refuelRate: 50
     transferTime: 96
     score: 250
-    battlescapeTerrainData:
-      name: INTERCEPTOR
-      mapDataSets:
-        - BLANKS
-        - INTRCEPT
-      mapBlocks:
-        - name: INTERCEPTOR
-          width: 10
-          length: 10
+    allowLanding: false
     listOrder: 7460
   - type: STR_VAN
     requires:

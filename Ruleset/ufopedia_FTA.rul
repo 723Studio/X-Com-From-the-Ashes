@@ -43,3 +43,31 @@ ufopaedia:
     requires:
       - STR_RND_STATUS_REPORT
     text: STR_RND_STATUS_REPORT_UFOPEDIA
+  - id: STR_DRAGONFLY
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: DRAGONFLY_CPAL.SPK
+    rect_stats:
+      x: 200
+      y: 10
+      width: 160
+      height: 80
+    rect_text:
+      x: 5
+      y: 40
+      width: 120
+      height: 160
+  - id: STR_PURSUER
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: PURSUER_CPAL.SPK
+    rect_stats:
+      x: 200
+      y: 10
+      width: 160
+      height: 80
+    rect_text:
+      x: 5
+      y: 40
+      width: 120
+      height: 160

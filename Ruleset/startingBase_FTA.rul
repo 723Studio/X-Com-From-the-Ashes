@@ -13,6 +13,9 @@ startingBase:
     - type: STR_HANGAR
       x: 0
       y: 4
+    - type: STR_HANGAR
+      x: 2
+      y: 4
     - type: STR_PRISON_CELLS
       x: 3
       y: 2
@@ -77,6 +80,16 @@ startingBase:
       id: 1
       fuel: 0
       damage: 10
+      status: STR_REPAIRS
+    - type: STR_PURSUER
+      id: 1
+      fuel: 0
+      damage: 8
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 200
       status: STR_REPAIRS
     - type: STR_INTERCEPTOR
       id: 1

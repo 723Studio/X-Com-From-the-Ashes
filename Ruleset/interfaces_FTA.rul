@@ -18,7 +18,7 @@ interfaces:
       - id: name
         color: 138   # yellow
   - type: covertOperationsMenu
-    backgroundImage: BACK13.SCR #BACK05.SCR
+    backgroundImage: COVEROPSHQ_BACKGROUND.SCR #BACK05.SCR
     palette: PAL_BASESCAPE
     elements:
       - id: palette
@@ -34,7 +34,7 @@ interfaces:
       - id: button
         color: 246   # purple
   - type: newCovertOperationsMenu
-    backgroundImage: BACK13.SCR 
+    backgroundImage: COVEROPSHQ_BACKGROUND.SCR 
     palette: PAL_BASESCAPE
     elements:
       - id: palette
@@ -46,3 +46,43 @@ interfaces:
         color2: 208  # white
       - id: button
         color: 218   # blue
+  - type: operationEquipment
+    backgroundImage: BACK04.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 241   # pink
+      - id: text
+        color: 241   # pink
+        color2: 208  # white
+      - id: button
+        color: 241   # pink
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 241  # pink
+      - id: ammoColor
+        color: 246   # purple
+      - id: errorPalette
+        color: 2     # orange
+      - id: errorMessage
+        color: 241   # pink
+  - type: operationArmor
+    backgroundImage: BACK14.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 4     # aqua
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+      - id: button
+        color: 218   # blue
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+      - id: otherCraft
+        color: 246   # purple

@@ -275,7 +275,9 @@ extraSprites:
   - type: INTICON.PCK #crafts, craft weapons
     files:
       800: Resources/Crafts/Inticon/Dragonfly_minimised.png
+      801: Resources/Crafts/Inticon/Pursuer_minimised.png
       811: Resources/Crafts/Inticon/Dragonfly_dogfight.png
+      812: Resources/Crafts/Inticon/Pursuer_dogfight.png
   - type: BASEBITS.PCK
     files:
       300: Resources/Facilities/HQ.png
@@ -284,6 +286,7 @@ extraSprites:
       303: Resources/Facilities/Sick_Bay.png
       304: Resources/Facilities/Closed_Lab.png
       833: Resources/Crafts/Basebits/Dragonfly_base.png
+      834: Resources/Crafts/Basebits/Pursuer_base.png
 #armors, inventory screens
   - type: XCOM_EX_COMMANDER.PCK
     width: 512
@@ -326,6 +329,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Ufopedia/Dragonfly_ufopedia_CPAL.png
+  - type: PURSUER_CPAL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Ufopedia/Pursuer_ufopedia_CPAL.png
   - type: RND_CHEIF.SPK
     singleImage: true
     width: 320
@@ -357,4 +366,10 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/OFFICE_LADY_BACKGROUND.png
+  - type: COVEROPSHQ_BACKGROUND.SCR #TODO
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/COVEROPSHQ_BACKGROUND.png
 ### PAPERDOLL LAYERS ###

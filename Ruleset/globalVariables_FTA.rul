@@ -14,6 +14,15 @@ constants:
   extendedRunningCost: true
   damageRange: 85 #for good or bad
 
+mana: #TODO
+  enabled: true
+  battleUI: true
+  unlockResearch: STR_HELLO
+  trainingPrimary: false
+  trainingSecondary: false
+  woundThreshold: 200             # default is 200
+  replenishAfterMission: true
+
 fixedUserOptions:
   customInitialBase: false
   storageLimitsEnforced: false #until ill handle selling with diplomacy in debrieafing
