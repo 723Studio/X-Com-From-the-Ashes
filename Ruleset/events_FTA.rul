@@ -23,6 +23,17 @@ events:
     timer: 180
     timerRandom: 90
     researchList: [STR_REGIONAL_HQ_FOUND]
+  - name: STR_SUCCESS_COVERT_OPERATION
+    description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
+    timer: 0
+    timerRandom: 0
+    researchList: [STR_REGIONAL_HQ_FOUND]
+  - name: STR_FAILURE_COVERT_OPERATION
+    description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
+    timer: 0
+    timerRandom: 0
+    researchList: [STR_REGIONAL_HQ_FOUND]
+
 #Resistance
   - name: STR_RESISTANCE_DISCOVER
     description: STR_RESISTANCE_DISCOVER_DESCRIPTION

@@ -86,3 +86,19 @@ interfaces:
         color2: 208  # white
       - id: otherCraft
         color: 246   # purple
+  - type: covertOperationSoldierArmor
+    backgroundImage: BACK14.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 4     # green
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 213   # gold
+      - id: list
+        color: 208   # white
+        color2: 246   # purple
+        border: 213  # gold
+      - id: button
+        color: 213   # gold

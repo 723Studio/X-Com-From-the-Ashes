@@ -9,9 +9,17 @@ covertOperations:
     costs: 5
   - name: STR_TEST_OPERATION
     description: STR_TEST_OPERATION_DESCRIPTION
-    baseChances: 75
-    soldierSlots: 2
-    optionalSoldierSlots: 1
+    itemSpaceLimit: 5
+    baseChances: 10
+    costs: 5
+    soldierSlots: 3
+    optionalSoldierSlots: 0
     scientistSlots: 3
     engineerSlots: 2
-    # successEvent: STR_REGIONAL_HQ_FOUND_EVENT
+    allowedArmor:
+      - STR_NONE_UC
+    successEvent: STR_SUCCESS_COVERT_OPERATION
+    failureEvent: STR_FAILURE_COVERT_OPERATION
+    instantTrapDeployment: 
+      STR_GENERAL_TRAP: 100
+    trapChance: 100

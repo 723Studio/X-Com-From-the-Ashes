@@ -1,5 +1,4 @@
 items:
-#deletes
   - delete: STR_PISTOL
   - delete: STR_PISTOL_CLIP
   - delete: STR_RIFLE
@@ -23,6 +22,35 @@ items:
   # - delete: STR_MEDI_KIT #
   - delete: STR_STUN_ROD #
   - delete: STR_ELECTRO_FLARE #
+#test items
+  - type: STR_PSI_AMP_TEST
+    size: 0.1
+    costSell: 194700
+    weight: 10
+    bigSprite: 33
+    floorSprite: 32
+    handSprite: 1680
+    hitSound: 36
+    battleType: 9
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    costPanic:
+      energy: 15
+      stun: 9
+      time: 15
+      mana: 1
+    costMindControl:
+      energy: 23
+      stun: 14
+      morale: 20
+      time: 25
+      mana: 7
+    flatRate: true
+    maxRange: 25
+    LOSRequired: true
+    listOrder: 44000
+#deletes
 #corpses
   - type: STR_XCOM_EX_COMMANDER_CORPSE
     categories: [STR_CORPSES]

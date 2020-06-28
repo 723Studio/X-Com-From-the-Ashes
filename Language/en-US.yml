@@ -11,6 +11,7 @@ en-US:
   STR_NEUTRAL: "Neutral"
   STR_UNFRIENDLY: "Unfriendly"
 #UI
+  STR_BONUSES_BUTTON: " " #add special simbol for bonuses in Soldier Info State
   STR_FUNDING_UC: "DIPLOMACY"
   STR_SELL_SACK_UC: "DIPLOMACY"
   STR_PURCHASE_RECRUIT: "COVERT OPERATIONS"
@@ -50,6 +51,11 @@ en-US:
   STR_OPERATION_CHANCES_US: "APPROX. ODDS>{ALT}{0}"
   STR_SELECT_SQUAD_FOR_OPERATION: "Select squad for operation: {ALT}{0}"
   STR_ASSIGNED_UC: "ASSIGNED"
+  STR_COVERT_OPERATION_UC: "COVERT OP."
+  STR_OPERATION_: "COVERT OP.> {ALT}{0}"
+  STR_IN_PSI_TRAINING_UC: "PSI TRAINING"
+  STR_NO_OUT: "OUT"
+  STR_UNAVAILABLE_TRAINING: "-"
   STR_NOT_ENOUGH_OPERATION_SPACE: "Soldiers number exceeds the limit for the operation!"
   STR_NOT_ENOUGH_SCIENTISTS: "There is no free scientists on the base!"
   STR_NOT_ENOUGH_ENGINEERS: "There is no free engineers on the base!"

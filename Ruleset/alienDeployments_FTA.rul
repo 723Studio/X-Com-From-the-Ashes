@@ -274,6 +274,66 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+  - type: STR_GENERAL_TRAP
+    race: STR_ADVENT_START
+    width: 50
+    length: 50
+    height: 6
+    terrains:
+      - CULTA
+      - DESERT
+    shade: 0
+    script: TRAP
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_GENERAL_TRAP_BRIEFING
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+
+mapScripts: #for tests
+  - type: TRAP
+    commands:
+    - type: addCraft
+      craftName: STR_SKYRANGER
+    # - type: addBlock
+    #   terrain: XBASE
+    #   blocks:
+    #     - 1 
+    # - type: addBlock
+    #   terrain: XBASE
+    #   blocks:
+    #     - 2 
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
 
 cutscenes: #for tests
   - type: dimensionXsecured
