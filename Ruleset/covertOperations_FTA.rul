@@ -1,25 +1,32 @@
 covertOperations:
-  - name: STR_REGIONAL_HQ
-    description: STR_REGIONAL_HQ_DESCRIPTION
-    successEvent: STR_REGIONAL_HQ_FOUND_EVENT
-    requires:
-      - STR_INTEL_STATUS_REPORT
-    soldierSlots: 2
-    baseChances: 100
-    costs: 5
+  # - name: STR_REGIONAL_HQ
+  #   description: STR_REGIONAL_HQ_DESCRIPTION
+  #   successEvent: STR_REGIONAL_HQ_FOUND_EVENT
+  #   requires:
+  #     - STR_INTEL_STATUS_REPORT
+  #   soldierSlots: 2
+  #   baseChances: 100
+  #   costs: 5
   - name: STR_TEST_OPERATION
     description: STR_TEST_OPERATION_DESCRIPTION
     itemSpaceLimit: 5
-    baseChances: 10
-    costs: 5
-    soldierSlots: 3
-    optionalSoldierSlots: 0
-    scientistSlots: 3
-    engineerSlots: 2
-    allowedArmor:
-      - STR_NONE_UC
+    baseChances: 100
+    costs: 2
+    soldierSlots: 2
+    requiresBuyBaseFunc: [HQ]
+    requiredReputationLvl:
+      STR_RESISTANCE: 1
+    # optionalSoldierSlots: 1
+    # scientistSlots: 2
+    # engineerSlots: 1
+    # allowedArmor:
+    #   - STR_NONE_UC
     successEvent: STR_SUCCESS_COVERT_OPERATION
     failureEvent: STR_FAILURE_COVERT_OPERATION
+    successDescription: "Congratz on making some cool test operation with success!"
+    failureDescription: "Oink! This test operation fails in the name of covert operation system testing!"
+    successScore: 100
+    successFunds: -15
     instantTrapDeployment: 
       STR_GENERAL_TRAP: 100
     trapChance: 100

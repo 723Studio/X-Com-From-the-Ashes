@@ -102,3 +102,48 @@ interfaces:
         border: 213  # gold
       - id: button
         color: 213   # gold
+  - type: covertOperationFinishSuccess
+    backgroundImage:  COVEROPSHQ_BACKGROUND.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 138   # yellow
+        color2: 239  # bright green
+      - id: text2
+        color: 239   # bright green
+        color2: 133  # minty green
+      - id: button
+        color: 239   # bright green
+  - type: covertOperationFinishFailure
+    backgroundImage:  COVEROPSHQ_BACKGROUND.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 138   # yellow
+        color2: 239  # bright green
+      - id: text2
+        color: 239   # bright green
+        color2: 133  # minty green
+      - id: button
+        color: 239   # bright green
+  - type: covertOperationFinishDetails
+    backgroundImage:  BACK01.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 138   # yellow
+        color2: 239  # bright green
+      - id: text2
+        color: 239   # bright green
+        color2: 133  # minty green
+      - id: button
+        color: 239   # bright green

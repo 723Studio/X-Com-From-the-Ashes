@@ -279,11 +279,10 @@ alienDeployments:
     width: 50
     length: 50
     height: 6
+    customUfo: STR_MEDIUM_SCOUT
     terrains:
-      - CULTA
-      - DESERT
+      - URBAN
     shade: 0
-    script: TRAP
     briefing:
       textOffset: -16
       background: BACK01.SCR
@@ -321,7 +320,7 @@ mapScripts: #for tests
   - type: TRAP
     commands:
     - type: addCraft
-      craftName: STR_SKYRANGER
+    - type: addUFO
     # - type: addBlock
     #   terrain: XBASE
     #   blocks:
@@ -332,7 +331,7 @@ mapScripts: #for tests
     #     - 2 
     - type: addBlock
       size: 2
-      executions: 2
+      executions: 5
     - type: fillArea
 
 cutscenes: #for tests
