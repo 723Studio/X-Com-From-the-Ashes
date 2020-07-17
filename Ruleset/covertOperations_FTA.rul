@@ -10,13 +10,13 @@ covertOperations:
   - name: STR_TEST_OPERATION
     description: STR_TEST_OPERATION_DESCRIPTION
     itemSpaceLimit: 5
-    baseChances: 100
-    costs: 2
+    baseChances: 0
+    costs: 5
     soldierSlots: 2
     requiresBuyBaseFunc: [HQ]
     requiredReputationLvl:
       STR_RESISTANCE: 1
-    # optionalSoldierSlots: 1
+    # optionalSoldierSlots: 2
     # scientistSlots: 2
     # engineerSlots: 1
     # allowedArmor:
@@ -30,30 +30,36 @@ covertOperations:
       STR_STINGRAY_MISSILES: 5
       STR_AVALANCHE_LAUNCHER: 1
       STR_AVALANCHE_MISSILES: 3   
-      STR_XCOM_EX_COMMANDER_CORPSE: 2
-      STR_MIB_AGENT_CORPSE: 3 
-      STR_POLICE_BATON: 10
-      STR_COMBAT_KNIFE: 2
-      STR_PISTOL: 1
-      STR_PISTOL_CLIP: 1
-      STR_PISTOL_AA_CLIP: 1
-      STR_PDW: 1
-      STR_PDW_AA_CLIP: 1
-      STR_SMG: 1
-      STR_SMG_CLIP: 1
-      STR_SMG_AA_CLIP: 1
-      STR_RIFLE: 1
-      STR_RIFLE_CLIP: 1
-      STR_RIFLE_AA_CLIP: 1
-      STR_SNIPER_RIFLE: 1
-      STR_SNIPER_RIFLE_CLIP: 1
+      # STR_XCOM_EX_COMMANDER_CORPSE: 2
+      # STR_MIB_AGENT_CORPSE: 3 
+      # STR_POLICE_BATON: 10
+      # STR_COMBAT_KNIFE: 2
+      # STR_PISTOL: 1
+      # STR_PISTOL_CLIP: 1
+      # STR_PISTOL_AA_CLIP: 1
+      # STR_PDW: 1
+      # STR_PDW_AA_CLIP: 1
+      # STR_SMG: 1
+      # STR_SMG_CLIP: 1
+      # STR_SMG_AA_CLIP: 1
+      # STR_RIFLE: 1
+      # STR_RIFLE_CLIP: 1
+      # STR_RIFLE_AA_CLIP: 1
+      # STR_SNIPER_RIFLE: 1
+      # STR_SNIPER_RIFLE_CLIP: 1
     successScore: 100
     successFunds: -15
+    #successMusic: GMNEWMAR
+    successResearchList:
+      - STR_MOTION_SCANNER
     successReputationScore:
       STR_RESISTANCE: 5
-    instantTrapDeployment: 
-      STR_GENERAL_TRAP: 100
-    trapChance: 100
+    # instantTrapDeployment: 
+    #   STR_GENERAL_TRAP: 100
+    # trapChance: 100
+    # instantSuccessDeployment:
+    #   STR_GENERAL_TRAP: 100
+    #specialRule: STR_REGIONAL_HQ_DICOVERY
   - name: STR_TEST_OPERATION2
     description: STR_TEST_OPERATION_DESCRIPTION2
     baseChances: 100

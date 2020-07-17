@@ -1,4 +1,5 @@
 items:
+#deletes
   - delete: STR_PISTOL
   - delete: STR_PISTOL_CLIP
   - delete: STR_RIFLE
@@ -50,7 +51,6 @@ items:
     maxRange: 25
     LOSRequired: true
     listOrder: 44000
-#deletes
 #corpses
   - type: STR_XCOM_EX_COMMANDER_CORPSE
     categories: [STR_CORPSES]
