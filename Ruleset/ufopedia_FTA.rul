@@ -29,12 +29,12 @@ ufopaedia:
   # - delete: STR_FIRESTORM
   # - delete: STR_AVENGER
 #story reports
-  - id: STR_INTRODUCTION
+  - id: STR_LOG1
     type_id: 8
     section: STR_XCOM_REPORTS_UC
     requires:
-      - STR_INTRODUCTION
-    text: STR_INTRODUCTION_UFOPEDIA
+      - STR_LOG1
+    text: STR_LOG1_UFOPEDIA
   - id: STR_RND_STATUS_REPORT
     type_id: 7
     image_id: RND_CHEIF.SPK
@@ -43,6 +43,32 @@ ufopaedia:
     requires:
       - STR_RND_STATUS_REPORT
     text: STR_RND_STATUS_REPORT_UFOPEDIA
+  - id: STR_INTEL_STATUS_REPORT
+    type_id: 7
+    image_id: INTEL_CHEIF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_INTEL_STATUS_REPORT
+    text: STR_INTEL_STATUS_REPORT_UFOPEDIA
+  - id: STR_ENGENEER_STATUS_REPORT
+    type_id: 7
+    image_id: ENGENEER_CHEIF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_ENGENEER_STATUS_REPORT
+    text: STR_ENGENEER_STATUS_REPORT_UFOPEDIA
+  - id: STR_VEHICLES_STATUS_REPORT
+    type_id: 7
+    image_id: ENGENEER_CHEIF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_VEHICLES_STATUS_REPORT
+    text: STR_VEHICLES_STATUS_REPORT_UFOPEDIA
+
+#aircrafts
   - id: STR_DRAGONFLY
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -57,10 +83,10 @@ ufopaedia:
       y: 40
       width: 120
       height: 160
-  - id: STR_PURSUER
+  - id: STR_STALKER
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: PURSUER_CPAL.SPK
+    image_id: STR_STALKER_CPAL.SPK
     rect_stats:
       x: 200
       y: 10

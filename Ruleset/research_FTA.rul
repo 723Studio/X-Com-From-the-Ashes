@@ -25,14 +25,18 @@ research:
     needItem: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
     needItem: true
-#story
-  - name: STR_INTRODUCTION
+#story 
+  - name: STR_STORY_1
+    needItem: true
+  - name: STR_LOG1
     needItem: true
   - name: STR_RND_STATUS_REPORT
     needItem: true
   - name: STR_INTEL_STATUS_REPORT
     needItem: true
   - name: STR_ENGENEER_STATUS_REPORT
+    needItem: true
+  - name: STR_VEHICLES_STATUS_REPORT
     needItem: true
   - name: STR_REGIONAL_HQ_FOUND
     needItem: true

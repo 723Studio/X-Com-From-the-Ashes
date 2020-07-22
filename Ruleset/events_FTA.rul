@@ -1,21 +1,31 @@
 events:
 #Introduction
+  # - name: STR_LOG1_EVENT
+  #   description: STR_LOG1_EVENT_DESCRIPTION
+  #   timer: 0
+  #   timerRandom: 0
+  #   researchList: [STR_LOG1]
   - name: STR_RND_STATUS_REPORT_EVENT
     description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
-    timer: 60
+    timer: 90
     timerRandom: 0
     #music: Hello_Commander
     researchList: [STR_RND_STATUS_REPORT] #если надо, можно через запятую перечислить ещё!
   - name: STR_INTEL_STATUS_REPORT_EVENT
     description: STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION
-    timer: 90
-    timerRandom: 30
+    timer: 120
+    timerRandom: 60
     researchList: [STR_INTEL_STATUS_REPORT]
   - name: STR_ENGENEER_STATUS_REPORT_EVENT
     description: STR_ENGENEER_STATUS_REPORT_EVENT_DESCRIPTION
-    timer: 180
-    timerRandom: 90
+    timer: 210
+    timerRandom: 60
     researchList: [STR_ENGENEER_STATUS_REPORT]
+  - name: STR_VEHICLES_STATUS_REPORT_EVENT
+    description: STR_VEHICLES_STATUS_REPORT_DESCRIPTION
+    timer: 840
+    timerRandom: 0
+    researchList: [STR_VEHICLES_STATUS_REPORT]
 #covertOperation events
 
   - name: STR_REGIONAL_HQ_FOUND_EVENT

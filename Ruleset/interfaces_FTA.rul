@@ -150,34 +150,10 @@ interfaces:
         color: 133   # minty green
       - id: button
         color: 239   # bright green
-      - id: errorPalette
-        color: 0     # brown
-      - id: errorMessage
+      - id: damaged
         color: 133   # minty green
   - type: covertOperationInfoState
     backgroundImage: COVEROPSHQ_BACKGROUND.SCR
-    palette: PAL_BASESCAPE
-    elements:
-      - id: palette
-        color: 1     # burgundy
-      - id: window
-        color: 218   # blue
-      - id: text
-        color: 218   # blue
-        color2: 208  # white
-      - id: list
-        color: 246   # purple
-        color2: 241  # pink
-        border: 218  # blue
-      - id: listExtended
-        color: 208   # white
-        color2: 213  # gold
-      - id: button
-        color: 246   # purple
-      - id: button2
-        color: 213  # gold
-  - type: covertOperationConfirmTerminateState
-    backgroundImage: BACK01.SCR
     palette: PAL_BASESCAPE
     elements:
       - id: palette

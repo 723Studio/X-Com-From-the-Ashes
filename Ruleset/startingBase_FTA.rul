@@ -78,7 +78,7 @@ startingBase:
       fuel: 0
       damage: 10
       status: STR_REPAIRS
-    - type: STR_PURSUER
+    - type: STR_STALKER
       id: 1
       fuel: 0
       damage: 8

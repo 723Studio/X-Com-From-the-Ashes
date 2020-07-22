@@ -1,26 +1,34 @@
 covertOperations:
-  # - name: STR_REGIONAL_HQ
-  #   description: STR_REGIONAL_HQ_DESCRIPTION
-  #   successEvent: STR_REGIONAL_HQ_FOUND_EVENT
-  #   requires:
-  #     - STR_INTEL_STATUS_REPORT
-  #   soldierSlots: 2
-  #   baseChances: 100
-  #   costs: 5
+  - name: STR_REGIONAL_HQ
+    description: STR_REGIONAL_HQ_DESCRIPTION
+    successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
+    requires:
+      - STR_INTEL_STATUS_REPORT
+    soldierSlots: 2
+    optionalSoldierSlots: 1
+    scientistSlots: 1
+    baseChances: 70
+    danger: 3
+    costs: 12
+    allowedArmor:
+      - STR_NONE_UC
+    
+    specialRule: STR_REGIONAL_HQ_DICOVERY
   - name: STR_TEST_OPERATION
     description: STR_TEST_OPERATION_DESCRIPTION
     itemSpaceLimit: 5
-    baseChances: 0
-    costs: 5
+    baseChances: 100
+    costs: 20
     soldierSlots: 2
+    danger: 5
     requiresBuyBaseFunc: [HQ]
     requiredReputationLvl:
       STR_RESISTANCE: 1
-    # optionalSoldierSlots: 2
-    # scientistSlots: 2
-    # engineerSlots: 1
-    # allowedArmor:
-    #   - STR_NONE_UC
+    optionalSoldierSlots: 2
+    scientistSlots: 2
+    engineerSlots: 1
+    allowedArmor:
+      - STR_NONE_UC
     successEvent: STR_SUCCESS_COVERT_OPERATION
     failureEvent: STR_FAILURE_COVERT_OPERATION
     successDescription: "Congratz on making some cool test operation with success!"
@@ -60,8 +68,3 @@ covertOperations:
     # instantSuccessDeployment:
     #   STR_GENERAL_TRAP: 100
     #specialRule: STR_REGIONAL_HQ_DICOVERY
-  - name: STR_TEST_OPERATION2
-    description: STR_TEST_OPERATION_DESCRIPTION2
-    baseChances: 100
-    costs: 2
-    soldierSlots: 2

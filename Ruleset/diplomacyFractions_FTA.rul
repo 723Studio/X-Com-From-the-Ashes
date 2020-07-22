@@ -6,9 +6,9 @@ diplomacyFactions:
     #discoverResearch: STR_LASER_WEAPONS
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 27
-    # genMissionFreq: 100 #100% chance to run the script
-    # helpTreatyMissions:
-    #   testScript: 100
+    genMissionFreq: 100 #100% chance to run the script
+    helpTreatyMissions:
+      testScript: 100
     sellingSet:
       STR_STINGRAY_LAUNCHER: 0
       STR_STINGRAY_MISSILES: -1

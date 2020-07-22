@@ -34,7 +34,7 @@ crafts:
           width: 10
           length: 20
     listOrder: 7380
-  - type: STR_PURSUER
+  - type: STR_STALKER
     costBuy: 0 #TODO
     costRent: 600000 #TODO
     costSell: 260000 #TODO
