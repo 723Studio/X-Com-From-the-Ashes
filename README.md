@@ -20,6 +20,7 @@ I'd like to give special thanks to the contributors to my mod:
 * **wolwerin** - weapon assets;
 * **efrenespartano** - image assets, inspiration, info support;
 * **Brain_322** - image assets;
+* **KoTiK03** - base sprite asset;
 
 ## Support
 I realize I have a tremendous amount of work to do. I'll be happy to have any kind of support. Visit our [Discord server](https://discord.gg/epmtzH9), share your thoughts, ideas, and suggestions. You make an issue here on GitHub, or if you want to get involved in development - write to me, I will be glad of any help. Feel free to make fork and pull requests or propose changes directly.
