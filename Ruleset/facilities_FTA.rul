@@ -21,7 +21,7 @@ facilities:
   - type: STR_HQ
     spriteShape: 1
     spriteFacility: 300
-    provideBaseFunc: [HQ]
+    provideBaseFunc: [HQ, INTLAB]
     maxAllowedPerBase: 1
     buildCost: 2500000
     buildTime: 40

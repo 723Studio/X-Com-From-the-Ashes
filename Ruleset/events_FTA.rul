@@ -1,10 +1,5 @@
 events:
 #Introduction
-  # - name: STR_LOG1_EVENT
-  #   description: STR_LOG1_EVENT_DESCRIPTION
-  #   timer: 0
-  #   timerRandom: 0
-  #   researchList: [STR_LOG1]
   - name: STR_RND_STATUS_REPORT_EVENT
     description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 90
@@ -26,8 +21,13 @@ events:
     timer: 840
     timerRandom: 0
     researchList: [STR_VEHICLES_STATUS_REPORT]
-#covertOperation events
+  - name: STR_NO_SUPPLY_WARNING_EVENT
+    description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION
+    timer: 20160
+    timerRandom: 1300
+    researchList: [STR_NO_SUPPLY_WARNING]
 
+#covertOperation events 
   - name: STR_REGIONAL_HQ_FOUND_EVENT
     description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
     timer: 180

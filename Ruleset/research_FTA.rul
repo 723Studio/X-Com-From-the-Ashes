@@ -25,6 +25,9 @@ research:
     needItem: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
     needItem: true
+  - name: STR_GAME_LOST #if the player hit that, its over
+    cutscene: loseGame
+    needItem: true
 #story 
   - name: STR_STORY_1
     needItem: true
@@ -40,12 +43,105 @@ research:
     needItem: true
   - name: STR_REGIONAL_HQ_FOUND
     needItem: true
+  - name: STR_NO_SUPPLY_WARNING
+    needItem: true
+  - name: STR_NO_SUPPLY_GAME_LOST #needs ufopedia
+    needItem: true
+
+#game start
+  - name: STR_UFOPEDIA
+    requiresBaseFunc: [HQ]
+    cost: 20
+    points: 15
+    dependencies:
+      - STR_RND_STATUS_REPORT
+    listOrder: 7460
+  - name: STR_XCOM_EQUIPMENT
+    requiresBaseFunc: [HQ]
+    cost: 15
+    points: 30
+    dependencies:
+      - STR_UFOPEDIA
+    listOrder: 7460
+  - name: STR_XCOM_LORE
+    requiresBaseFunc: [HQ]
+    cost: 25
+    points: 50
+    dependencies:
+      - STR_UFOPEDIA
+    listOrder: 7460
+  - name: STR_COMMUNICATION
+    requiresBaseFunc: [HQ]
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    listOrder: 7460
+  - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
+    requiresBaseFunc: [HQ]
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    listOrder: 7460
+  - name: STR_COVERT_OPERATIONS
+    requiresBaseFunc: [HQ]
+    cost: 5
+    points: 20
+    dependencies:
+      - STR_COMMUNICATION
+    listOrder: 7460
+  - name: STR_RESISTANCE_CONTACT
+    requiresBaseFunc: [HQ]
+    cost: 15
+    points: 40
+    dependencies:
+      - STR_COMMUNICATION
+    listOrder: 7460
+  - name: STR_SUPPLIES
+    requiresBaseFunc: [HQ]
+    cost: 10
+    points: 15
+    dependencies:
+      - STR_ENGENEER_STATUS_REPORT
+    listOrder: 7460
+  - name: STR_FACILITIES_BLUEPRINTS
+    requiresBaseFunc: [HQ]
+    cost: 20
+    points: 15
+    dependencies:
+      - STR_SUPPLIES
+      - STR_UFOPEDIA
+    listOrder: 7460
+
 #technology
   - name: STR_LASER_WEAPONS
     cost: 50
     points: 10
     dependencies:
       - STR_TODOIUM
+#enemies
+  - name: STR_XCOM_EX_COMMANDER #TODO add to ufopedia
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 40
+    needItem: true
+    destroyItem: true
+    listOrder: 146000
+  - name: STR_MIB_AGENT #TODO add to ufopedia
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 40
+    needItem: true
+    destroyItem: true
+    listOrder: 146000
+#combat analysis 
+  - name: STR_MIB_AGENT_ARMOR #TODO add to ufopedia
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MIB_AGENT
+
 #crafts
   - name: STR_INTERCEPTOR
     #requiresBaseFunc: [STDLAB]

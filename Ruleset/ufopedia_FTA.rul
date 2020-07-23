@@ -67,6 +67,72 @@ ufopaedia:
     requires:
       - STR_VEHICLES_STATUS_REPORT
     text: STR_VEHICLES_STATUS_REPORT_UFOPEDIA
+  - id: STR_NO_SUPPLY_WARNING
+    type_id: 7
+    image_id: ENGENEER_CHEIF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_NO_SUPPLY_WARNING
+    text: STR_NO_SUPPLY_WARNING_UFOPEDIA
+
+#game start    
+  - id: STR_UFOPEDIA
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 210
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_UFOPEDIA
+    text: STR_VEHICLES_STATUS_REPORT_UFOPEDIA #STR_UFOPEDIA_UFOPEDIA #yeah, I know =)
+  - id: STR_XCOM_EQUIPMENT
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_XCOM_EQUIPMENT_UFOPEDIA
+  - id: STR_XCOM_LORE
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_LORE
+    text: STR_XCOM_LORE_UFOPEDIA
+  - id: STR_COMMUNICATION
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_COMMUNICATION
+    text: STR_COMMUNICATION_UFOPEDIA
+  - id: STR_BASE_DEFENSE_COMBAT_ANALYSIS
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_BASE_DEFENSE_COMBAT_ANALYSIS
+    text: STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA
+  - id: STR_COVERT_OPERATIONS
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_COVERT_OPERATIONS
+    text: STR_COVERT_OPERATIONS_UFOPEDIA
+  - id: STR_RESISTANCE_CONTACT
+    type_id: 8 #TODO converting to 
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_COVERT_OPERATIONS
+    text: STR_COVERT_OPERATIONS_UFOPEDIA
+  - id: STR_SUPPLIES
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_SUPPLIES
+    text: STR_FACILITIES_BLUEPRINTS
+  - id: STR_FACILITIES_BLUEPRINTS
+    type_id: 8 #TODO may be 7?
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+    text: STR_FACILITIES_BLUEPRINTS_UFOPEDIA
 
 #aircrafts
   - id: STR_DRAGONFLY

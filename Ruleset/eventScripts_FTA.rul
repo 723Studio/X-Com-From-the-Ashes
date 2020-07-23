@@ -28,3 +28,12 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
+  - type: STR_NO_SUPPLY_WARNING_SCRIPT
+    oneTimeSequentialEvents: [STR_NO_SUPPLY_WARNING_EVENT]
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+
+

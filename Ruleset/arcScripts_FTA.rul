@@ -6,3 +6,12 @@ arcScripts:
     lastMonth: 0 # don't run after this month. -1 denotes no limit (default -1)
     executionOdds: 100 # % chances of this command executing (default 100)
     maxArcs: 1
+  - type: notSurvived
+    sequentialArcs:
+      - STR_GAME_LOST #currently not working. maybe not to GAME_LOST itself, but explain why?
+    firstMonth: 1
+    lastMonth: 1
+    researchTriggers:
+      STR_SUPPLIES: false
+    executionOdds: 100
+    maxArcs: 1

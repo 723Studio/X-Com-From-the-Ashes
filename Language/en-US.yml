@@ -128,6 +128,8 @@ en-US:
   STR_ENGENEER_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Storage facility."
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to the 1st Hangar."
+  STR_NO_SUPPLY_WARNING_EVENT: "STR_NO_SUPPLY_WARNING_EVENT" #TODO
+  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION" #TODO
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"
   STR_STALKER: "STALKER"
@@ -142,3 +144,22 @@ en-US:
   STR_ENGENEER_STATUS_REPORT_UFOPEDIA: "Greetings, Commander! Our base was in a very poor condition even before the attack. Due to a lack of funding, we were forced to close several facilities and sell off some valuable equipment. After closing the workshop, our production capacity is at a minimum, we are trying to assemble spare parts from improvised materials. It is absolutely unclear where we will get the supplies from now, at least the most basic ones. Intelligence has forbidden my guys to leave the base, and from where will we get everything we need for maintaining, not to mention building modules? Maybe R&D folks would think about the secure source of the general supplies?"
   STR_VEHICLES_STATUS_REPORT: "Vehicles Status"
   STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have radar anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
+  STR_NO_SUPPLY_WARNING: "STR_NO_SUPPLY_WARNING" #TODO
+  STR_NO_SUPPLY_WARNING_UFOPEDIA: "STR_NO_SUPPLY_WARNING_UFOPEDIA" #TODO
+  STR_UFOPEDIA: "STR_UFOPEDIA" #TODO
+  STR_UFOPEDIA_UFOPEDIA: "STR_UFOPEDIA_UFOPEDIA" #TODO
+  STR_XCOM_EQUIPMENT: "STR_XCOM_EQUIPMENT" #TODO
+  STR_XCOM_EQUIPMENT_UFOPEDIA: "STR_XCOM_EQUIPMENT_UFOPEDIA" #TODO
+  STR_XCOM_LORE: "STR_XCOM_LORE" #TODO
+  STR_XCOM_LORE_UFOPEDIA: "STR_XCOM_LORE_UFOPEDIA" #TODO
+  STR_COMMUNICATION: "STR_COMMUNICATION" #TODO
+  STR_COMMUNICATION_UFOPEDIA: "STR_COMMUNICATION_UFOPEDIA" #TODO
+  STR_BASE_DEFENSE_COMBAT_ANALYSIS: "STR_BASE_DEFENSE_COMBAT_ANALYSIS" #TODO
+  STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA" #TODO
+  STR_COVERT_OPERATIONS_UFOPEDIA: "STR_COVERT_OPERATIONS_UFOPEDIA" #TODO
+  STR_RESISTANCE_CONTACT: "STR_RESISTANCE_CONTACT" #TODO
+  STR_RESISTANCE_CONTACT_UFOPEDIA: "STR_RESISTANCE_CONTACT_UFOPEDIA" #TODO
+  STR_SUPPLIES: "STR_SUPPLIES" #TODO
+  STR_SUPPLIES_UFOPEDIA: "STR_SUPPLIES_UFOPEDIA" #TODO
+  STR_FACILITIES_BLUEPRINTS: "STR_FACILITIES_BLUEPRINTS" #TODO
+  STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "STR_FACILITIES_BLUEPRINTS_UFOPEDIA" #TODO

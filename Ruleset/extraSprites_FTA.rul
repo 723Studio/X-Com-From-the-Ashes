@@ -323,6 +323,12 @@ extraSprites:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
 
 #ufopedia
+  - type: WIP_UFOPEDIA.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/WIP_UFOPEDIA.png
   - type: DRAGONFLY_CPAL.SPK
     singleImage: true
     width: 320
@@ -340,7 +346,7 @@ extraSprites:
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/R&D_Cheif.png
+      0: Resources/UfopediaPics/RnD_Cheif.png
   - type: INTEL_CHEIF.SPK
     singleImage: true
     width: 320
