@@ -46,7 +46,7 @@ armors:
     corpseBattle:
       - STR_MIB_AGENT_CORPSE
     visibilityAtDark: 10
-    frontArmor: 8
+    frontArmor: 5
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
@@ -70,7 +70,7 @@ armors:
     overKill: 1.5
     damageModifier:
       - 1.0
-      - 0.8
+      - 1.0
       - 1.5
       - 1.0
       - 1.0

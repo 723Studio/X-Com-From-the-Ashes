@@ -231,7 +231,7 @@ extraSprites:
       338: Resources/Weapons/Earthbound/Utilities/floorob_MediPack.png
       339: Resources/Weapons/Earthbound/Utilities/floorob_TraumaPack.png
 
-  - type: HANDOB.PCK #Hindex step 8
+  - type: HANDOB.PCK #Index step 8
     height: 40
     width: 256
     subX: 32
@@ -274,8 +274,8 @@ extraSprites:
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
-      800: Resources/Crafts/Inticon/Dragonfly_minimised.png
-      801: Resources/Crafts/Inticon/Stalker_minimised.png
+      800: Resources/Crafts/Inticon/Dragonfly_minimized.png
+      801: Resources/Crafts/Inticon/Stalker_minimized.png
       811: Resources/Crafts/Inticon/Dragonfly_dogfight.png
       812: Resources/Crafts/Inticon/Stalker_dogfight.png
   - type: BASEBITS.PCK
@@ -341,24 +341,24 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Ufopedia/Stalker_ufopedia_CPAL.png
-  - type: RND_CHEIF.SPK
+  - type: RND_CHIEF.SPK
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/RnD_Cheif.png
-  - type: INTEL_CHEIF.SPK
+      0: Resources/UfopediaPics/RnD_CHIEF.png
+  - type: INTEL_CHIEF.SPK
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UfopediaPics/Intel_lady.png
-  - type: ENGENEER_CHEIF.SPK
+  - type: ENGINEER_CHIEF.SPK
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/Cheid_Engeneer.png
+      0: Resources/UfopediaPics/Engineer_Chief.png
 #backgrounds
   - type: STR_RESISTANCE_BACKGROUND.SCR
     singleImage: true
@@ -390,4 +390,11 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/COVEROPSHQ_BACKGROUND.png
+#enemies
+  - type: UFOPEDIA_IMG_MIB_AGENT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_MIB_AGENT.png  
 ### PAPERDOLL LAYERS ###

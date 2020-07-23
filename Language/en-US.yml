@@ -124,12 +124,21 @@ en-US:
   STR_RND_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the R&D center."
   STR_INTEL_STATUS_REPORT_EVENT: "Intelligence report is ready!"
   STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Headquarters."
-  STR_ENGENEER_STATUS_REPORT_EVENT: "Base status report is ready!"
-  STR_ENGENEER_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Storage facility."
+  STR_ENGINEER_STATUS_REPORT_EVENT: "Base status report is ready!"
+  STR_ENGINEER_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Storage facility."
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to the 1st Hangar."
-  STR_NO_SUPPLY_WARNING_EVENT: "STR_NO_SUPPLY_WARNING_EVENT" #TODO
-  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION" #TODO
+  STR_NO_SUPPLY_WARNING_EVENT: "Our supplies running low!"
+  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies on our base. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our men alive."
+#enemies
+  STR_MIB_AGENT: "MiB Agent"
+  STR_MIB_AGENT_UFOPEDIA: "STR_MIB_AGENT_UFOPEDIA" #TODO
+  STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
+  STR_MIB_AGENT_ARMOR_UFOPEDIA: "STR_MIB_AGENT_ARMOR_UFOPEDIA" #TODO
+  STR_XCOM_EX_COMMANDER: "Former X-Com Commander"
+  STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-Com Commander Examination"
+  STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA" #TODO
+
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"
   STR_STALKER: "STALKER"
@@ -140,26 +149,32 @@ en-US:
   STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death, I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopedia is encrypted, and that's what's bothering me the most right now. Jim, the data analyst, says there's still hope! I suggest we begin decrypting immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
   STR_INTEL_STATUS_REPORT: "Intelligence Report"
   STR_INTEL_STATUS_REPORT_UFOPEDIA: "Oh, Commander! Recent events have tied our hands entirely, all secret government communication channels have been cut off, we will have to build our agent network from scratch. You can assign a couple of scientists to set up new encrypted communication channels. It is essential to set up covert operations conducted by our agents to gather intelligence assets.{NEWLINE}Additionally, we can establish secure contact with our remaining friends, I have a few people I've been watching for a long time. Their help will be invaluable in the given circumstances."
-  STR_ENGENEER_STATUS_REPORT: "Engeneer's Report"
-  STR_ENGENEER_STATUS_REPORT_UFOPEDIA: "Greetings, Commander! Our base was in a very poor condition even before the attack. Due to a lack of funding, we were forced to close several facilities and sell off some valuable equipment. After closing the workshop, our production capacity is at a minimum, we are trying to assemble spare parts from improvised materials. It is absolutely unclear where we will get the supplies from now, at least the most basic ones. Intelligence has forbidden my guys to leave the base, and from where will we get everything we need for maintaining, not to mention building modules? Maybe R&D folks would think about the secure source of the general supplies?"
+  STR_ENGINEER_STATUS_REPORT: "Engineer's Report"
+  STR_ENGINEER_STATUS_REPORT_UFOPEDIA: "Greetings, Commander! Our base was in a very poor condition even before the attack. Due to a lack of funding, we were forced to close several facilities and sell off some valuable equipment. After closing the workshop, our production capacity is at a minimum, we are trying to assemble spare parts from improvised materials. It is absolutely unclear where we will get the supplies from now, at least the most basic ones. Intelligence has forbidden my guys to leave the base, and from where will we get everything we need for maintaining, not to mention building modules? Maybe R&D folks would think about the secure source of the general supplies?"
   STR_VEHICLES_STATUS_REPORT: "Vehicles Status"
   STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have radar anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
-  STR_NO_SUPPLY_WARNING: "STR_NO_SUPPLY_WARNING" #TODO
-  STR_NO_SUPPLY_WARNING_UFOPEDIA: "STR_NO_SUPPLY_WARNING_UFOPEDIA" #TODO
-  STR_UFOPEDIA: "STR_UFOPEDIA" #TODO
+  STR_PRISONER_INTERROGATIONS: "Prisoner Interrogations"
+  STR_PRISONER_INTERROGATIONS_UFOPEDIA: "I am proficient in many forms of interrogating suspects and believe that this is the most effective way to obtain crucial insights that will help shed light on unfolding events. While some suspects may not have any vital knowledge, I advise you to interrogate all our captives. In addition to strategic intelligence, this will help us determine specific combat features of our enemies and identify their strengths and vulnerabilities. Our prison can hold up to 10 human prisoners, but for more exotic creatures we will have to design suitable containment units according to their biology."
+  STR_UFOPEDIA: "Ufopedia decryption"
   STR_UFOPEDIA_UFOPEDIA: "STR_UFOPEDIA_UFOPEDIA" #TODO
-  STR_XCOM_EQUIPMENT: "STR_XCOM_EQUIPMENT" #TODO
+  STR_XCOM_EQUIPMENT: "X-Com Equipment Ufopedia files"
   STR_XCOM_EQUIPMENT_UFOPEDIA: "STR_XCOM_EQUIPMENT_UFOPEDIA" #TODO
-  STR_XCOM_LORE: "STR_XCOM_LORE" #TODO
+  STR_XCOM_LORE: "X-Com Secret Files"
   STR_XCOM_LORE_UFOPEDIA: "STR_XCOM_LORE_UFOPEDIA" #TODO
-  STR_COMMUNICATION: "STR_COMMUNICATION" #TODO
+  STR_COMMUNICATION: "Communication"
   STR_COMMUNICATION_UFOPEDIA: "STR_COMMUNICATION_UFOPEDIA" #TODO
-  STR_BASE_DEFENSE_COMBAT_ANALYSIS: "STR_BASE_DEFENSE_COMBAT_ANALYSIS" #TODO
+  STR_BASE_DEFENSE_COMBAT_ANALYSIS: "Base defense tactical analysis"
   STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA" #TODO
   STR_COVERT_OPERATIONS_UFOPEDIA: "STR_COVERT_OPERATIONS_UFOPEDIA" #TODO
-  STR_RESISTANCE_CONTACT: "STR_RESISTANCE_CONTACT" #TODO
+  STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "STR_RESISTANCE_CONTACT_UFOPEDIA" #TODO
-  STR_SUPPLIES: "STR_SUPPLIES" #TODO
+  STR_SUPPLIES: "Supplies"
   STR_SUPPLIES_UFOPEDIA: "STR_SUPPLIES_UFOPEDIA" #TODO
-  STR_FACILITIES_BLUEPRINTS: "STR_FACILITIES_BLUEPRINTS" #TODO
-  STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "STR_FACILITIES_BLUEPRINTS_UFOPEDIA" #TODO
+  STR_FACILITY_BLUEPRINTS: "Facility blueprints"
+  STR_FACILITY_BLUEPRINTS_UFOPEDIA: "STR_FACILITY_BLUEPRINTS_UFOPEDIA" #TODO
+  STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
+  STR_XCOM_FILES_1_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
+  STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO
+  STR_XCOM_FILES_2_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
+  STR_XCOM_FILES_3: "STR_XCOM_FILES_1" #TODO
+  STR_XCOM_FILES_3_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO

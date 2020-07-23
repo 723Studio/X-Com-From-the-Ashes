@@ -4,18 +4,17 @@ events:
     description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 90
     timerRandom: 0
-    #music: Hello_Commander
-    researchList: [STR_RND_STATUS_REPORT] #если надо, можно через запятую перечислить ещё!
+    researchList: [STR_RND_STATUS_REPORT]
   - name: STR_INTEL_STATUS_REPORT_EVENT
     description: STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 120
     timerRandom: 60
     researchList: [STR_INTEL_STATUS_REPORT]
-  - name: STR_ENGENEER_STATUS_REPORT_EVENT
-    description: STR_ENGENEER_STATUS_REPORT_EVENT_DESCRIPTION
+  - name: STR_ENGINEER_STATUS_REPORT_EVENT
+    description: STR_ENGINEER_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 210
     timerRandom: 60
-    researchList: [STR_ENGENEER_STATUS_REPORT]
+    researchList: [STR_ENGINEER_STATUS_REPORT]
   - name: STR_VEHICLES_STATUS_REPORT_EVENT
     description: STR_VEHICLES_STATUS_REPORT_DESCRIPTION
     timer: 840
@@ -24,6 +23,7 @@ events:
   - name: STR_NO_SUPPLY_WARNING_EVENT
     description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION
     timer: 20160
+    interruptResearch: STR_SUPPLIES
     timerRandom: 1300
     researchList: [STR_NO_SUPPLY_WARNING]
 

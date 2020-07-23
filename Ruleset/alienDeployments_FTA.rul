@@ -7,7 +7,7 @@ alienDeployments:
     terrains:
       - XBASE
     shade: 5
-    unlockedResearch: STR_HELLO #костыль
+    unlockedResearch: STR_HELLO #heh, whatever
     briefing:
       palette: 0
       background: BACK01.SCR
@@ -172,7 +172,7 @@ alienDeployments:
       desc: STR_INITIAL_BASE_DEFENSE_BRIEFING
       showCraft: false
       cutscene: intro2
-    unlockedResearch: STR_HELLO #костыль
+    unlockedResearch: STR_HELLO #heh, whatever
     data:
       - alienRank: 0 #commander
         lowQty: 1

@@ -3,7 +3,7 @@ covertOperations:
     description: STR_REGIONAL_HQ_DESCRIPTION
     successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
     requires:
-      - STR_INTEL_STATUS_REPORT
+      - STR_COVERT_OPERATIONS
     soldierSlots: 2
     optionalSoldierSlots: 1
     scientistSlots: 1
@@ -12,7 +12,6 @@ covertOperations:
     costs: 12
     allowedArmor:
       - STR_NONE_UC
-    
     specialRule: STR_REGIONAL_HQ_DICOVERY
   - name: STR_TEST_OPERATION
     description: STR_TEST_OPERATION_DESCRIPTION
@@ -67,4 +66,3 @@ covertOperations:
     # trapChance: 100
     # instantSuccessDeployment:
     #   STR_GENERAL_TRAP: 100
-    #specialRule: STR_REGIONAL_HQ_DICOVERY

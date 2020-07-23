@@ -37,7 +37,7 @@ ufopaedia:
     text: STR_LOG1_UFOPEDIA
   - id: STR_RND_STATUS_REPORT
     type_id: 7
-    image_id: RND_CHEIF.SPK
+    image_id: RND_CHIEF.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -45,46 +45,70 @@ ufopaedia:
     text: STR_RND_STATUS_REPORT_UFOPEDIA
   - id: STR_INTEL_STATUS_REPORT
     type_id: 7
-    image_id: INTEL_CHEIF.SPK
+    image_id: INTEL_CHIEF.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_INTEL_STATUS_REPORT
     text: STR_INTEL_STATUS_REPORT_UFOPEDIA
-  - id: STR_ENGENEER_STATUS_REPORT
+  - id: STR_ENGINEER_STATUS_REPORT
     type_id: 7
-    image_id: ENGENEER_CHEIF.SPK
+    image_id: ENGINEER_CHIEF.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
-      - STR_ENGENEER_STATUS_REPORT
-    text: STR_ENGENEER_STATUS_REPORT_UFOPEDIA
+      - STR_ENGINEER_STATUS_REPORT
+    text: STR_ENGINEER_STATUS_REPORT_UFOPEDIA
   - id: STR_VEHICLES_STATUS_REPORT
     type_id: 7
-    image_id: ENGENEER_CHEIF.SPK
+    image_id: ENGINEER_CHIEF.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_VEHICLES_STATUS_REPORT
     text: STR_VEHICLES_STATUS_REPORT_UFOPEDIA
-  - id: STR_NO_SUPPLY_WARNING
+  - id: STR_PRISONER_INTERROGATIONS
     type_id: 7
-    image_id: ENGENEER_CHEIF.SPK
+    image_id: INTEL_CHIEF.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
-      - STR_NO_SUPPLY_WARNING
-    text: STR_NO_SUPPLY_WARNING_UFOPEDIA
+      - STR_PRISONER_INTERROGATIONS
+    text: STR_PRISONER_INTERROGATIONS_UFOPEDIA
+  - id: STR_XCOM_FILES_1
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_1
+    text: STR_XCOM_FILES_1_UFOPEDIA
+  - id: STR_XCOM_FILES_2
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_2
+    text: STR_XCOM_FILES_2_UFOPEDIA
+  - id: STR_XCOM_FILES_3
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_3
+    text: STR_XCOM_FILES_3_UFOPEDIA
 
 #game start    
   - id: STR_UFOPEDIA
     type_id: 7
-    image_id: WIP_UFOPEDIA.SPK
-    text_width: 210
+    image_id: RND_CHIEF.SPK
+    text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_UFOPEDIA
-    text: STR_VEHICLES_STATUS_REPORT_UFOPEDIA #STR_UFOPEDIA_UFOPEDIA #yeah, I know =)
+    text: STR_UFOPEDIA_UFOPEDIA #yeah, I know =)
   - id: STR_XCOM_EQUIPMENT
     type_id: 8
     section: STR_XCOM_REPORTS_UC
@@ -116,25 +140,60 @@ ufopaedia:
       - STR_COVERT_OPERATIONS
     text: STR_COVERT_OPERATIONS_UFOPEDIA
   - id: STR_RESISTANCE_CONTACT
-    type_id: 8 #TODO converting to 
+    type_id: 8 #TODO converting to 7
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_COVERT_OPERATIONS
-    text: STR_COVERT_OPERATIONS_UFOPEDIA
+    text: STR_RESISTANCE_CONTACT_UFOPEDIA
   - id: STR_SUPPLIES
     type_id: 8
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_SUPPLIES
-    text: STR_FACILITIES_BLUEPRINTS
-  - id: STR_FACILITIES_BLUEPRINTS
+    text: STR_SUPPLIES_UFOPEDIA
+  - id: STR_FACILITY_BLUEPRINTS
     type_id: 8 #TODO may be 7?
     section: STR_XCOM_REPORTS_UC
     requires:
-      - STR_FACILITIES_BLUEPRINTS
-    text: STR_FACILITIES_BLUEPRINTS_UFOPEDIA
+      - STR_UFOPEDIA
+    text: STR_FACILITY_BLUEPRINTS_UFOPEDIA
 
-#aircrafts
+
+  - id: STR_UFOPEDIA
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_UFOPEDIA
+    text: STR_UFOPEDIA_UFOPEDIA #yeah, I know =)
+#enemies
+  - id: STR_MIB_AGENT
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_MIB_AGENT
+    text: STR_MIB_AGENT_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_AGENT
+    listOrder: 146000
+  - id: STR_XCOM_EX_COMMANDER_EXAMINATION
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_EX_COMMANDER
+    text: STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA #yeah, I know =)
+#tactic analysis
+  - id: STR_MIB_AGENT_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    text: STR_MIB_AGENT_ARMOR_UFOPEDIA
+    requires:
+      - STR_MIB_AGENT_ARMOR
+    listOrder: 146001
+#aircraft
   - id: STR_DRAGONFLY
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT

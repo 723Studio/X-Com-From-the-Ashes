@@ -19,7 +19,7 @@ research:
 #   - delete: STR_STUN_ROD
 #   - delete: STR_COMMANDER_PLUS
 #technical part
-  - name: STR_HELLO #hardcoded, do not rename! used to start the game propertly
+  - name: STR_HELLO #hardcoded, do not rename! used to start the game property
     needItem: true
   - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at is not avalible to be discovered in the game
     needItem: true
@@ -37,7 +37,7 @@ research:
     needItem: true
   - name: STR_INTEL_STATUS_REPORT
     needItem: true
-  - name: STR_ENGENEER_STATUS_REPORT
+  - name: STR_ENGINEER_STATUS_REPORT
     needItem: true
   - name: STR_VEHICLES_STATUS_REPORT
     needItem: true
@@ -45,9 +45,31 @@ research:
     needItem: true
   - name: STR_NO_SUPPLY_WARNING
     needItem: true
-  - name: STR_NO_SUPPLY_GAME_LOST #needs ufopedia
+  - name: STR_NO_SUPPLY_GAME_LOST #needs ufopedia, engine fix, not used in alpha 1
     needItem: true
-
+  - name: STR_PRISONER_INTERROGATIONS
+    needItem: true
+  - name: STR_XCOM_FILES_1
+    requiresBaseFunc: [HQ]
+    cost: 30
+    points: 40
+    dependencies:
+      - STR_XCOM_LORE
+    listOrder: 7460
+  - name: STR_XCOM_FILES_2
+    requiresBaseFunc: [HQ]
+    cost: 35
+    points: 45
+    dependencies:
+      - STR_XCOM_FILES_1
+    listOrder: 7460  
+  - name: STR_XCOM_FILES_3
+    requiresBaseFunc: [HQ]
+    cost: 35
+    points: 45
+    dependencies:
+      - STR_XCOM_FILES_2
+    listOrder: 7460    
 #game start
   - name: STR_UFOPEDIA
     requiresBaseFunc: [HQ]
@@ -103,7 +125,7 @@ research:
     cost: 10
     points: 15
     dependencies:
-      - STR_ENGENEER_STATUS_REPORT
+      - STR_ENGINEER_STATUS_REPORT
     listOrder: 7460
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [HQ]
@@ -121,24 +143,29 @@ research:
     dependencies:
       - STR_TODOIUM
 #enemies
-  - name: STR_XCOM_EX_COMMANDER #TODO add to ufopedia
+  - name: STR_XCOM_EX_COMMANDER
     requiresBaseFunc: [INTLAB]
     cost: 25
     points: 40
     needItem: true
-    destroyItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
     listOrder: 146000
-  - name: STR_MIB_AGENT #TODO add to ufopedia
+  - name: STR_MIB_AGENT
     requiresBaseFunc: [INTLAB]
     cost: 20
     points: 40
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
     listOrder: 146000
 #combat analysis 
-  - name: STR_MIB_AGENT_ARMOR #TODO add to ufopedia
-    cost: 0
-    points: 0
+  - name: STR_MIB_AGENT_ARMOR
+    cost: 6
+    points: 10
     dependencies:
       - STR_MIB_AGENT
 
