@@ -71,7 +71,7 @@ research:
       - STR_XCOM_FILES_2
     listOrder: 7460    
 #game start
-  - name: STR_UFOPEDIA
+  - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [HQ]
     cost: 20
     points: 15
@@ -83,14 +83,14 @@ research:
     cost: 15
     points: 30
     dependencies:
-      - STR_UFOPEDIA
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
   - name: STR_XCOM_LORE
     requiresBaseFunc: [HQ]
     cost: 25
     points: 50
     dependencies:
-      - STR_UFOPEDIA
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
   - name: STR_COMMUNICATION
     requiresBaseFunc: [HQ]
@@ -98,6 +98,8 @@ research:
     points: 10
     dependencies:
       - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_COVERT_OPERATIONS
     listOrder: 7460
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     requiresBaseFunc: [HQ]
@@ -108,8 +110,6 @@ research:
     listOrder: 7460
   - name: STR_COVERT_OPERATIONS
     requiresBaseFunc: [HQ]
-    cost: 5
-    points: 20
     dependencies:
       - STR_COMMUNICATION
     listOrder: 7460
@@ -133,7 +133,7 @@ research:
     points: 15
     dependencies:
       - STR_SUPPLIES
-      - STR_UFOPEDIA
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
 
 #technology
@@ -168,6 +168,7 @@ research:
     points: 10
     dependencies:
       - STR_MIB_AGENT
+#weapons and equipment
 
 #crafts
   - name: STR_INTERCEPTOR

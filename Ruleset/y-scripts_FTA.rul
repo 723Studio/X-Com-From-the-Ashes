@@ -889,6 +889,19 @@ extended:
 
   scripts:
     damageUnit:
+      - offset: 1 #test category script
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int check;
+
+          damaging_item.getRuleItem itemRuleset; 
+          # itemRuleset.getHaveCategory check "STR_SNIPER_RIFLES";
+          if eq check 1;
+            # debug_log 2 723;
+          end;
+
+          return;
+
       - offset: 1 #Flashbang damage script
         code: |
           var ptr RuleItem itemRuleset;

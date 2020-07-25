@@ -1,0 +1,612 @@
+ufopaedia:
+  - delete: STR_PISTOL
+  - delete: STR_PISTOL_CLIP
+  - delete: STR_RIFLE
+  - delete: STR_RIFLE_CLIP
+  - delete: STR_HEAVY_CANNON
+  - delete: STR_HC_AP_AMMO
+  - delete: STR_HC_HE_AMMO
+  - delete: STR_HC_I_AMMO
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_AC_I_AMMO
+  - delete: STR_ROCKET_LAUNCHER
+  - delete: STR_SMALL_ROCKET
+  - delete: STR_LARGE_ROCKET
+  - delete: STR_INCENDIARY_ROCKET
+  # - delete: STR_LASER_PISTOL
+  # - delete: STR_LASER_RIFLE
+  # - delete: STR_HEAVY_LASER
+  # - delete: STR_ALIEN_HARVEST
+  # - delete: STR_ALIEN_INFILTRATION
+  # - delete: STR_ALIEN_TERROR
+  # - delete: STR_ALIEN_SUPPLY
+  # - delete: STR_ALIEN_RESEARCH
+  # - delete: STR_ALIEN_RETALIATION
+  # - delete: STR_ALIEN_ABDUCTION
+  # - delete: STR_ALIEN_BASE
+  # - delete: STR_ALIEN_ORIGINS
+  # - delete: STR_THE_MARTIAN_SOLUTION
+  # - delete: STR_CYDONIA_OR_BUST
+  # - delete: STR_FUSION_BALL_UC
+  # - delete: STR_FUSION_BALL_DEFENSES
+  # - delete: STR_STINGRAY
+  # - delete: STR_AVALANCHE
+  # - delete: STR_STUN_ROD
+  # - delete: STR_TANK_CANNON
+  # - delete: STR_TANK_ROCKET_LAUNCHER
+  # - delete: STR_TANK_LASER_CANNON
+  # - delete: STR_HOVERTANK_PLASMA
+  # - delete: STR_HOVERTANK_LAUNCHER
+  # - delete: STR_SKYRANGER
+  # - delete: STR_INTERCEPTOR
+  # - delete: STR_LIGHTNING
+  # - delete: STR_FIRESTORM
+  # - delete: STR_AVENGER
+#story reports
+  - id: STR_LOG1
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_LOG1
+    text: STR_LOG1_UFOPEDIA
+  - id: STR_RND_STATUS_REPORT
+    type_id: 7
+    image_id: RND_CHIEF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_RND_STATUS_REPORT
+    text: STR_RND_STATUS_REPORT_UFOPEDIA
+  - id: STR_INTEL_STATUS_REPORT
+    type_id: 7
+    image_id: INTEL_CHIEF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_INTEL_STATUS_REPORT
+    text: STR_INTEL_STATUS_REPORT_UFOPEDIA
+  - id: STR_ENGINEER_STATUS_REPORT
+    type_id: 7
+    image_id: ENGINEER_CHIEF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_ENGINEER_STATUS_REPORT
+    text: STR_ENGINEER_STATUS_REPORT_UFOPEDIA
+  - id: STR_VEHICLES_STATUS_REPORT
+    type_id: 7
+    image_id: ENGINEER_CHIEF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_VEHICLES_STATUS_REPORT
+    text: STR_VEHICLES_STATUS_REPORT_UFOPEDIA
+  - id: STR_PRISONER_INTERROGATIONS
+    type_id: 7
+    image_id: INTEL_CHIEF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_PRISONER_INTERROGATIONS
+    text: STR_PRISONER_INTERROGATIONS_UFOPEDIA
+  - id: STR_XCOM_FILES_1
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_1
+    text: STR_XCOM_FILES_1_UFOPEDIA
+  - id: STR_XCOM_FILES_2
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_2
+    text: STR_XCOM_FILES_2_UFOPEDIA
+  - id: STR_XCOM_FILES_3
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_3
+    text: STR_XCOM_FILES_3_UFOPEDIA
+
+#game start    
+  - id: STR_UFOPEDIA
+    type_id: 7
+    image_id: RND_CHIEF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_UFOPEDIA_DECRYPTION
+    text: STR_UFOPEDIA_UFOPEDIA #yeah, I know =)
+  - id: STR_XCOM_EQUIPMENT
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_XCOM_EQUIPMENT_UFOPEDIA
+  - id: STR_XCOM_LORE
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_LORE
+    text: STR_XCOM_LORE_UFOPEDIA
+  - id: STR_COMMUNICATION
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_COMMUNICATION
+    text: STR_COMMUNICATION_UFOPEDIA
+  - id: STR_BASE_DEFENSE_COMBAT_ANALYSIS
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_BASE_DEFENSE_COMBAT_ANALYSIS
+    text: STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA
+  - id: STR_COVERT_OPERATIONS
+    type_id: 7
+    image_id: INTEL_CHIEF.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_COVERT_OPERATIONS
+    text: STR_COVERT_OPERATIONS_UFOPEDIA
+  - id: STR_RESISTANCE_CONTACT
+    type_id: 8 #TODO converting to 7
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_COVERT_OPERATIONS
+    text: STR_RESISTANCE_CONTACT_UFOPEDIA
+  - id: STR_SUPPLIES
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_SUPPLIES
+    text: STR_SUPPLIES_UFOPEDIA
+  - id: STR_FACILITY_BLUEPRINTS
+    type_id: 8 #TODO may be 7?
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_UFOPEDIA
+    text: STR_FACILITY_BLUEPRINTS_UFOPEDIA
+
+#enemies
+  - id: STR_MIB_AGENT
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_MIB_AGENT
+    text: STR_MIB_AGENT_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_AGENT
+    listOrder: 146000
+  - id: STR_XCOM_EX_COMMANDER_EXAMINATION
+    type_id: 7
+    image_id: WIP_UFOPEDIA.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_EX_COMMANDER
+    text: STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA #yeah, I know =)
+#tactic analysis
+  - id: STR_MIB_AGENT_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    text: STR_MIB_AGENT_ARMOR_UFOPEDIA
+    requires:
+      - STR_MIB_AGENT_ARMOR
+    listOrder: 146001
+#weapons and equipment
+  #melee
+  - id: STR_POLICE_BATON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_POLICE_BATON_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT
+    listOrder: 20330
+  - id: STR_COMBAT_KNIFE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_COMBAT_KNIFE_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT
+    listOrder: 20330
+  #pistols
+  - id: STR_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_PISTOL_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT
+    listOrder: 20330
+  - id: STR_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_PISTOL_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_PISTOL_AA_CLIP
+    section: STR_NOT_AVAILABLE
+  #SMG
+  - id: STR_PDW
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_PDW_UFOPEDIA
+    listOrder: 21300
+  - id: STR_PDW_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_PDW_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_PDW_AA_CLIP
+    section: STR_NOT_AVAILABLE
+  - id: STR_SMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_SMG_UFOPEDIA
+    listOrder: 21300
+  - id: STR_SMG_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_SMG_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_SMG_AA_CLIP
+    section: STR_NOT_AVAILABLE
+  #rifles
+  - id: STR_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_RIFLE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_ASSAULT_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_ASSAULT_RIFLE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_RIFLE_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_RIFLE_AA_CLIP
+    section: STR_NOT_AVAILABLE
+  #sniper rifles
+  - id: STR_SNIPER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_SNIPER_RIFLE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_SNIPER_RIFLE_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_SNIPER_RIFLE_AA_CLIP
+    section: STR_NOT_AVAILABLE
+  #shotguns
+  - id: STR_PUMP_ACTION_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+    text: STR_PUMP_ACTION_SHOTGUN_UFOPEDIA
+    listOrder: 21300
+  - id: STR_PUMP_ACTION_SHELLS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+  - id: STR_SEMI_AUTO_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_SEMI_AUTO_SHOTGUN_UFOPEDIA
+    listOrder: 21300
+  - id: STR_SHOTGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_SHOTGUN_UFOPEDIA
+    pages:
+      - title: STR_SHOTGUN
+        text: STR_SHOTGUN_UFOPEDIA
+      - title: STR_SHOTGUN_CONT
+        text: STR_SHOTGUN_CONT_UFOPEDIA
+    listOrder: 21300
+  - id: STR_SHOTGUN_SHELLS_BS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_SHOTGUN_SHELLS_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_SHOTGUN_SHELLS_BATON
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_SHOTGUN_SHELLS_BS_AA
+    type_id: 4
+    requires:
+      - STR_SHOTGUN_SHELLS_BS_AA
+    section: STR_NOT_AVAILABLE
+  - id: STR_SHOTGUN_SHELLS_AP_AA
+    type_id: 4
+    requires:
+      - STR_SHOTGUN_SHELLS_AP_AA
+    section: STR_NOT_AVAILABLE
+  #cannons
+  - id: STR_LIGHT_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_LIGHT_CANNON_UFOPEDIA
+    pages:
+      - title: STR_LIGHT_CANNON
+        text: STR_LIGHT_CANNON_UFOPEDIA
+      - title: STR_LIGHT_CANNON_CONT
+        text: STR_LIGHT_CANNON_UFOPEDIA
+    listOrder: 21300
+  - id: STR_LC_AP_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_LC_BS_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_LC_HE_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_LC_I_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_LC_AA_AMMO
+    type_id: 4
+    requires:
+      - STR_LC_AA_AMMO
+    section: STR_NOT_AVAILABLE
+  - id: STR_LC_BS_AA_AMMO
+    type_id: 4
+    requires:
+      - STR_LC_BS_AA_AMMO
+    section: STR_NOT_AVAILABLE
+  - id: STR_HEAVY_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_HEAVY_CANNON_UFOPEDIA
+    pages:
+      - title: STR_HEAVY_CANNON
+        text: STR_HEAVY_CANNON_UFOPEDIA
+      - title: STR_HEAVY_CANNON_CONT
+        text: STR_HEAVY_CANNON_UFOPEDIA
+    listOrder: 21300
+  - id: STR_HC_AP_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_HC_BS_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_HC_HE_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_HC_I_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_HC_AA_AMMO
+    type_id: 4
+    requires:
+      - STR_HC_AA_AMMO
+    section: STR_NOT_AVAILABLE
+  - id: STR_HC_AA_BS_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HC_AA_BS_AMMO
+  - id: STR_AUTO_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_AUTO_CANNON_UFOPEDIA
+    pages:
+      - title: STR_AUTO_CANNON
+        text: STR_AUTO_CANNON_UFOPEDIA
+      - title: STR_AUTO_CANNON_CONT
+        text: STR_AUTO_CANNON_UFOPEDIA
+    listOrder: 21300
+  - id: STR_AC_AP_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_AC_BS_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_AC_HE_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_AC_I_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_AC_AA_AMMO
+    type_id: 4
+    requires:
+      - STR_AC_AA_AMMO
+    section: STR_NOT_AVAILABLE
+  - id: STR_AC_AA_BS_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_AC_AA_BS_AMMO
+  #launchers
+  - id: STR_SINGLE_ROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_TODOIUM #TODO  
+    text: STR_SINGLE_ROCKET_UFOPEDIA
+    listOrder: 21300
+  - id: STR_ROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_ROCKET_LAUNCHER_UFOPEDIA
+    listOrder: 21300
+  - id: STR_SMALL_ROCKET
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_LARGE_ROCKET
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  - id: STR_INCENDIARY_ROCKET
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT
+  #grenades
+  - id: STR_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_GRENADE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_SMOKE_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_SMOKE_GRENADE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_PROXIMITY_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_PROXIMITY_GRENADE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_FLASHBANG_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_FLASHBANG_GRENADE_UFOPEDIA
+    listOrder: 21300
+  #equipment
+  - id: STR_MEDI_PACK
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+    text: STR_MEDI_PACK_UFOPEDIA
+    listOrder: 21300
+  - id: STR_TRAUMA_PACK
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT
+    text: STR_TRAUMA_PACK_UFOPEDIA
+    listOrder: 21300
+
+#aircraft
+  - id: STR_DRAGONFLY
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: DRAGONFLY_CPAL.SPK
+    rect_stats:
+      x: 200
+      y: 10
+      width: 160
+      height: 80
+    rect_text:
+      x: 5
+      y: 40
+      width: 120
+      height: 160
+    text: STR_DRAGONFLY_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT
+    listOrder: 7480
+  - id: STR_STALKER
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: STR_STALKER_CPAL.SPK
+    rect_stats:
+      x: 200
+      y: 10
+      width: 160
+      height: 80
+    rect_text:
+      x: 5
+      y: 40
+      width: 120
+      height: 160
+    text: STR_STALKER_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT
+    listOrder: 7480

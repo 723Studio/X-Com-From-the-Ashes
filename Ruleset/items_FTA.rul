@@ -977,6 +977,31 @@ items:
     invHeight: 1
     attraction: 9
     listOrder: 23150
+  - type: STR_LC_I_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.08
+    costBuy: 700
+    costSell: 550
+    weight: 4
+    landOnly: true
+    bigSprite: 309
+    floorSprite: 309
+    handSprite: 160
+    hitSound: 0
+    hitAnimation: 0
+    power: 50
+    damageAlter:
+      ToHealth: 1.5
+      ToMorale: 15.0
+    damageType: 2
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23160
   - type: STR_LC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.08
@@ -1020,31 +1045,7 @@ items:
     invHeight: 1
     attraction: 9
     listOrder: 23180
-  - type: STR_LC_I_AMMO
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
-    requiresBuy:
-      - STR_TODOIUM
-    size: 0.08
-    costBuy: 700
-    costSell: 550
-    weight: 4
-    landOnly: true
-    bigSprite: 309
-    floorSprite: 309
-    handSprite: 160
-    hitSound: 0
-    hitAnimation: 0
-    power: 50
-    damageAlter:
-      ToHealth: 1.5
-      ToMorale: 15.0
-    damageType: 2
-    clipSize: 4
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
-    attraction: 9
-    listOrder: 23160
+
   - type: STR_HEAVY_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -1106,6 +1107,31 @@ items:
     invHeight: 1
     attraction: 9
     listOrder: 23210
+  - type: STR_HC_BS_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    costBuy: 450
+    costSell: 325
+    weight: 6
+    landOnly: true
+    bigSprite: 312
+    floorSprite: 12
+    handSprite: 176
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 33
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 8
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23240
   - type: STR_HC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -1177,31 +1203,6 @@ items:
     invHeight: 1
     attraction: 9
     listOrder: 23250
-  - type: STR_HC_BS_AMMO
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
-    requiresBuy:
-      - STR_TODOIUM
-    size: 0.1
-    costBuy: 450
-    costSell: 325
-    weight: 6
-    landOnly: true
-    bigSprite: 312
-    floorSprite: 12
-    handSprite: 176
-    hitSound: 13 #81 xcf
-    hitAnimation: 26
-    power: 33
-    shotgunBehavior: 1
-    shotgunSpread: 40
-    shotgunPellets: 8
-    damageType: 1
-    clipSize: 6
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
-    attraction: 9
-    listOrder: 23240
   - type: STR_HC_AA_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.1
@@ -1287,6 +1288,28 @@ items:
     invHeight: 1
     attraction: 8
     listOrder: 23310
+  - type: STR_AC_BS_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.1
+    costSell: 525
+    weight: 5
+    landOnly: true
+    bigSprite: 315
+    floorSprite: 10
+    handSprite: 208
+    hitSound: 13 #81 xcf
+    hitAnimation: 26
+    power: 28
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 6
+    damageType: 1
+    clipSize: 14
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23340
   - type: STR_AC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -1337,28 +1360,6 @@ items:
     invHeight: 1
     attraction: 8
     listOrder: 23330
-  - type: STR_AC_BS_AMMO
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
-    size: 0.1
-    costSell: 525
-    weight: 5
-    landOnly: true
-    bigSprite: 315
-    floorSprite: 10
-    handSprite: 208
-    hitSound: 13 #81 xcf
-    hitAnimation: 26
-    power: 28
-    shotgunBehavior: 1
-    shotgunSpread: 50
-    shotgunPellets: 6
-    damageType: 1
-    clipSize: 14
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
-    attraction: 9
-    listOrder: 23340
   - type: STR_AC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.1

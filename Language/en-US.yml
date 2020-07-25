@@ -103,7 +103,7 @@ en-US:
   manaRecoveryPerDay: "Mana per day"
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-Com project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
-  STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-Com has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopedia (X-Com's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
+  STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-Com has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-Com's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
   STR_INTRO2_SLIDE3_CAPTION: "All colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal, and there was a steep decrease of empathy. We have already documented such personality changes of some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
   STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, he was not a trained spy and was caught trying to back up the Ufopedia. An MiB agent shot him on sight, and the Commander didn't even blink!"
   STR_INTRO2_SLIDE5_CAPTION: "There are still people who are loyal to fighting the alien invasion. To arms!"
@@ -132,21 +132,109 @@ en-US:
   STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies on our base. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our men alive."
 #enemies
   STR_MIB_AGENT: "MiB Agent"
-  STR_MIB_AGENT_UFOPEDIA: "STR_MIB_AGENT_UFOPEDIA" #TODO
+  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't clearly tell us who he is and how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent, but we're pretty sure he's not lying. Unfortunately, all attempts to get more information have led to nothing."
   STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
-  STR_MIB_AGENT_ARMOR_UFOPEDIA: "STR_MIB_AGENT_ARMOR_UFOPEDIA" #TODO
+  STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
   STR_XCOM_EX_COMMANDER: "Former X-Com Commander"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-Com Commander Examination"
-  STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA" #TODO
+  STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."
+#items - weapons and equipment
+  STR_POLICE_BATON: "Police Baton"
+  STR_POLICE_BATON_UFOPEDIA: "To be done" #TODO
+  STR_COMBAT_KNIFE: "Combat knife"
+  STR_COMBAT_KNIFE_UFOPEDIA: "To be done" #TODO
+  STR_PISTOL: ""
+  STR_PISTOL_UFOPEDIA: "To be done" #TODO
+  STR_PISTOL_CLIP: ""
+  STR_PISTOL_AA_CLIP: "STR_PISTOL_AA_CLIP"
+  STR_PDW: "Personal Defense Weapon"
+  STR_PDW_UFOPEDIA: "To be done" #TODO
+  STR_PDW_CLIP: ""
+  STR_PDW_AA_CLIP: "STR_PDW_AA_CLIP"
+  STR_SMG: ""
+  STR_SMG_UFOPEDIA: "To be done" #TODO
+  STR_SMG_CLIP: ""
+  STR_SMG_AA_CLIP: "STR_SMG_AA_CLIP"
+  STR_RIFLE: ""
+  STR_RIFLE_UFOPEDIA: "To be done" #TODO
+  STR_ASSAULT_RIFLE: ""
+  STR_ASSAULT_RIFLE_UFOPEDIA: "To be done" #TODO
+  STR_RIFLE_CLIP: ""
+  STR_RIFLE_AA_CLIP: "STR_RIFLE_AA_CLIP"
+  STR_SNIPER_RIFLE: ""
+  STR_SNIPER_RIFLE_UFOPEDIA: "To be done" #TODO
+  STR_SNIPER_RIFLE_CLIP: ""
+  STR_SNIPER_RIFLE_AA_CLIP: "STR_SNIPER_RIFLE_AA_CLIP"
+  STR_PUMP_ACTION_SHOTGUN: ""
+  STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "To be done" #TODO
+  STR_PUMP_ACTION_SHELLS: ""
+  STR_SEMI_AUTO_SHOTGUN: ""
+  STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "To be done" #TODO
+  STR_SHOTGUN: ""
+  STR_SHOTGUN_UFOPEDIA: "To be done" #TODO
+  STR_SHOTGUN_CONT: ""
+  STR_SHOTGUN_CONT_UFOPEDIA: "To be done" #TODO
+  STR_SHOTGUN_SHELLS_BS: ""
+  STR_SHOTGUN_SHELLS_AP: ""
+  STR_SHOTGUN_SHELLS_BATON: ""
+  STR_SHOTGUN_SHELLS_BS_AA: "STR_SHOTGUN_SHELLS_BS_AA"
+  STR_SHOTGUN_SHELLS_AP_AA: "STR_SHOTGUN_SHELLS_AP_AA"
+  STR_LIGHT_CANNON: ""
+  STR_LIGHT_CANNON_UFOPEDIA: "To be done" #TODO
+  STR_LIGHT_CANNON_CONT: "To be done" #TODO
+  STR_LC_AP_AMMO: ""
+  STR_LC_BS_AMMO: ""
+  STR_LC_HE_AMMO: ""
+  STR_LC_I_AMMO: ""
+  STR_LC_AA_AMMO: "STR_LC_AA_AMMO"
+  STR_LC_BS_AA_AMMO: "STR_LC_BS_AA_AMMO"
+  STR_HEAVY_CANNON: ""
+  STR_HEAVY_CANNON_UFOPEDIA: "To be done" #TODO
+  STR_HEAVY_CANNON_CONT: "To be done" #TODO
+  STR_HC_AP_AMMO: ""
+  STR_HC_BS_AMMO: ""
+  STR_HC_I_AMMO: ""
+  STR_HC_AA_AMMO: "STR_HC_AA_AMMO"
+  STR_HC_AA_BS_AMMO: "STR_HC_AA_BS_AMMO"
+  STR_AUTO_CANNON: ""
+  STR_AUTO_CANNON_UFOPEDIA: "To be done" #TODO
+  STR_AUTO_CANNON_CONT: "To be done" #TODO
+  STR_AC_AP_AMMO: ""
+  STR_AC_BS_AMMO: ""
+  STR_AC_HE_AMMO: ""
+  STR_AC_I_AMMO: ""
+  STR_AC_AA_AMMO: "STR_AC_AA_AMMO"
+  STR_AC_AA_BS_AMMO: STR_AC_AA_BS_AMMO
+  STR_SINGLE_ROCKET_LAUNCHER: ""
+  STR_SINGLE_ROCKET_UFOPEDIA: "To be done" #TODO
+  STR_ROCKET_LAUNCHER: ""
+  STR_ROCKET_LAUNCHER_UFOPEDIA: "To be done" #TODO
+  STR_SMALL_ROCKET: ""
+  STR_LARGE_ROCKET: ""
+  STR_INCENDIARY_ROCKET: ""
+  STR_GRENADE: ""
+  STR_GRENADE_UFOPEDIA: "To be done" #TODO
+  STR_SMOKE_GRENADE: ""
+  STR_SMOKE_GRENADE_UFOPEDIA: "To be done" #TODO
+  STR_PROXIMITY_GRENADE: ""
+  STR_PROXIMITY_GRENADE_UFOPEDIA: "To be done" #TODO
+  STR_FLASHBANG_GRENADE: ""
+  STR_FLASHBANG_GRENADE_UFOPEDIA: "To be done" #TODO
+  STR_MEDI_PACK: ""
+  STR_MEDI_PACK_UFOPEDIA: "To be done" #TODO
+  STR_TRAUMA_PACK: ""
+  STR_TRAUMA_PACK_UFOPEDIA: "To be done" #TODO
 
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"
+  STR_DRAGONFLY_UFOPEDIA: "To be done" #TODO
   STR_STALKER: "STALKER"
+  STR_STALKER_UFOPEDIA: "To be done" #TODO
 #ufopedia
   STR_LOG1: "Commander log #001"
   STR_LOG1_UFOPEDIA: "As senior officer, I took command. I hope my experience is enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, remained men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation is no worse - we have lost a funding and supply source and know very little about our enemy. Apparently, alien agents have managed to infiltrate deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to go. We need to get reports from the chiefs of research, intelligence and logistics. Orders have already been submitted, it will take several hours for analysis. After that, it will be possible to plan further actions."
   STR_RND_STATUS_REPORT: "R&D Status Report"
-  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death, I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopedia is encrypted, and that's what's bothering me the most right now. Jim, the data analyst, says there's still hope! I suggest we begin decrypting immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
+  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death, I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopaedia is encrypted, and that's what's bothering me the most right now. Jim, the data analyst, says there's still hope! I suggest we begin decrypting immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
   STR_INTEL_STATUS_REPORT: "Intelligence Report"
   STR_INTEL_STATUS_REPORT_UFOPEDIA: "Oh, Commander! Recent events have tied our hands entirely, all secret government communication channels have been cut off, we will have to build our agent network from scratch. You can assign a couple of scientists to set up new encrypted communication channels. It is essential to set up covert operations conducted by our agents to gather intelligence assets.{NEWLINE}Additionally, we can establish secure contact with our remaining friends, I have a few people I've been watching for a long time. Their help will be invaluable in the given circumstances."
   STR_ENGINEER_STATUS_REPORT: "Engineer's Report"
@@ -155,9 +243,10 @@ en-US:
   STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have radar anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
   STR_PRISONER_INTERROGATIONS: "Prisoner Interrogations"
   STR_PRISONER_INTERROGATIONS_UFOPEDIA: "I am proficient in many forms of interrogating suspects and believe that this is the most effective way to obtain crucial insights that will help shed light on unfolding events. While some suspects may not have any vital knowledge, I advise you to interrogate all our captives. In addition to strategic intelligence, this will help us determine specific combat features of our enemies and identify their strengths and vulnerabilities. Our prison can hold up to 10 human prisoners, but for more exotic creatures we will have to design suitable containment units according to their biology."
-  STR_UFOPEDIA: "Ufopedia decryption"
-  STR_UFOPEDIA_UFOPEDIA: "STR_UFOPEDIA_UFOPEDIA" #TODO
-  STR_XCOM_EQUIPMENT: "X-Com Equipment Ufopedia files"
+  STR_UFOPEDIA_DECRYPTION: "Ufopaedia decryption"
+  STR_UFOPEDIA: "Ufopaedia"
+  STR_UFOPEDIA_UFOPEDIA: "We managed to break through the primary protection of the blocked Ufopaedia archive! Sadly, once we had accessed the system, we found inner layers of data encryption. One section seems to hold all the technical data on the equipment we use. It won't be difficult to decipher that part. The other is much better protected and it seems that only the commander had access to it before the lockdown. I can't say for sure, but it most likely contains strategic data about the project history and its formation background. Perhaps the analysis of past events will allow us to avoid these errors in the future."
+  STR_XCOM_EQUIPMENT: "X-Com Equipment Ufopaedia files"
   STR_XCOM_EQUIPMENT_UFOPEDIA: "STR_XCOM_EQUIPMENT_UFOPEDIA" #TODO
   STR_XCOM_LORE: "X-Com Secret Files"
   STR_XCOM_LORE_UFOPEDIA: "STR_XCOM_LORE_UFOPEDIA" #TODO
@@ -165,11 +254,11 @@ en-US:
   STR_COMMUNICATION_UFOPEDIA: "STR_COMMUNICATION_UFOPEDIA" #TODO
   STR_BASE_DEFENSE_COMBAT_ANALYSIS: "Base defense tactical analysis"
   STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA" #TODO
-  STR_COVERT_OPERATIONS_UFOPEDIA: "STR_COVERT_OPERATIONS_UFOPEDIA" #TODO
+  STR_COVERT_OPERATIONS_UFOPEDIA: "Due to the clear dominance of our enemy, the preferred strategy will be keeping a low profile when dealing with important strategic tasks. We can send our agents to covert operations for more subtle methods of solving a problem than an aggressive attack. The secure channels we've developed allow us to coordinate agents remotely, and for some operations, it is also important to involve scientists for analytical work and engineers to design the special gear. A covert operation is always a risk, and in order to increase your success odds you should be careful when choosing your team and equipment, any little thing, in the end, can play a key role." 
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "STR_RESISTANCE_CONTACT_UFOPEDIA" #TODO
   STR_SUPPLIES: "Supplies"
-  STR_SUPPLIES_UFOPEDIA: "Where the fuck Ufopaedia is?" #TODO
+  STR_SUPPLIES_UFOPEDIA: "STR_SUPPLIES_UFOPEDIA" #TODO
   STR_FACILITY_BLUEPRINTS: "Facility blueprints"
   STR_FACILITY_BLUEPRINTS_UFOPEDIA: "STR_FACILITY_BLUEPRINTS_UFOPEDIA" #TODO
   STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
