@@ -205,7 +205,7 @@ items:
     attraction: 6
     listOrder: 18000
 #pistols
-  - type: STR_PISTOL
+  - type: STR_PISTOL #TODO rework sprites
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
       - STR_TODOIUM
@@ -430,7 +430,7 @@ items:
     armor: 30
     listOrder: 20756
 #rifles
-  - type: STR_RIFLE
+  - type: STR_RIFLE #TODO rework sprites
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
       - STR_TODOIUM
@@ -699,10 +699,7 @@ items:
     fireSound: 66 #63 - xcf
     compatibleAmmo:
       - STR_SHOTGUN_SHELLS_BS
-      - STR_SHOTGUN_SHELLS_AP
-      - STR_SHOTGUN_SHELLS_BATON
       - STR_SHOTGUN_SHELLS_BS_AA
-      - STR_SHOTGUN_SHELLS_AP_AA
     accuracyCloseQuarters: 100
     accuracySnap: 135
     accuracyAimed: 155
