@@ -140,90 +140,91 @@ en-US:
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
-  STR_POLICE_BATON_UFOPEDIA: "To be done" #TODO
+  STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon, used by law-enforcement officers, security guards and military personnel around the whole world. Good enough to knockout unarmored enemies.{NEWLINE}>Concealable" 
   STR_COMBAT_KNIFE: "Combat knife"
-  STR_COMBAT_KNIFE_UFOPEDIA: "To be done" #TODO
-  STR_PISTOL: ""
-  STR_PISTOL_UFOPEDIA: "To be done" #TODO
-  STR_PISTOL_CLIP: ""
-  STR_PISTOL_AA_CLIP: "STR_PISTOL_AA_CLIP"
+  STR_COMBAT_KNIFE_UFOPEDIA: "This sharp and balanced fighting knife is very handy in close combat encounters and could be very deadly in well trained hands.{NEWLINE}>Concealable"
+  STR_PISTOL: "SpecOps Pistol"
+  STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides good fire rate and accuracy on short distances.{NEWLINE}>Concealable"
+  STR_PISTOL_CLIP: "Pistol Clip"
+  STR_PISTOL_AA_CLIP: "Pistol AA Clip"
   STR_PDW: "Personal Defense Weapon"
-  STR_PDW_UFOPEDIA: "To be done" #TODO
-  STR_PDW_CLIP: ""
-  STR_PDW_AA_CLIP: "STR_PDW_AA_CLIP"
-  STR_SMG: ""
-  STR_SMG_UFOPEDIA: "To be done" #TODO
-  STR_SMG_CLIP: ""
-  STR_SMG_AA_CLIP: "STR_SMG_AA_CLIP"
-  STR_RIFLE: ""
-  STR_RIFLE_UFOPEDIA: "To be done" #TODO
-  STR_ASSAULT_RIFLE: ""
-  STR_ASSAULT_RIFLE_UFOPEDIA: "To be done" #TODO
-  STR_RIFLE_CLIP: ""
-  STR_RIFLE_AA_CLIP: "STR_RIFLE_AA_CLIP"
-  STR_SNIPER_RIFLE: ""
-  STR_SNIPER_RIFLE_UFOPEDIA: "To be done" #TODO
-  STR_SNIPER_RIFLE_CLIP: ""
-  STR_SNIPER_RIFLE_AA_CLIP: "STR_SNIPER_RIFLE_AA_CLIP"
-  STR_PUMP_ACTION_SHOTGUN: ""
-  STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "To be done" #TODO
-  STR_PUMP_ACTION_SHELLS: ""
-  STR_SEMI_AUTO_SHOTGUN: ""
-  STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "To be done" #TODO
-  STR_SHOTGUN: ""
-  STR_SHOTGUN_UFOPEDIA: "To be done" #TODO
-  STR_SHOTGUN_CONT: ""
-  STR_SHOTGUN_CONT_UFOPEDIA: "To be done" #TODO
-  STR_SHOTGUN_SHELLS_BS: ""
-  STR_SHOTGUN_SHELLS_AP: ""
-  STR_SHOTGUN_SHELLS_BATON: ""
-  STR_SHOTGUN_SHELLS_BS_AA: "STR_SHOTGUN_SHELLS_BS_AA"
-  STR_SHOTGUN_SHELLS_AP_AA: "STR_SHOTGUN_SHELLS_AP_AA"
-  STR_LIGHT_CANNON: ""
-  STR_LIGHT_CANNON_UFOPEDIA: "To be done" #TODO
-  STR_LIGHT_CANNON_CONT: "To be done" #TODO
-  STR_LC_AP_AMMO: ""
-  STR_LC_BS_AMMO: ""
-  STR_LC_HE_AMMO: ""
-  STR_LC_I_AMMO: ""
-  STR_LC_AA_AMMO: "STR_LC_AA_AMMO"
-  STR_LC_BS_AA_AMMO: "STR_LC_BS_AA_AMMO"
-  STR_HEAVY_CANNON: ""
-  STR_HEAVY_CANNON_UFOPEDIA: "To be done" #TODO
-  STR_HEAVY_CANNON_CONT: "To be done" #TODO
-  STR_HC_AP_AMMO: ""
-  STR_HC_BS_AMMO: ""
-  STR_HC_I_AMMO: ""
-  STR_HC_AA_AMMO: "STR_HC_AA_AMMO"
-  STR_HC_AA_BS_AMMO: "STR_HC_AA_BS_AMMO"
-  STR_AUTO_CANNON: ""
-  STR_AUTO_CANNON_UFOPEDIA: "To be done" #TODO
-  STR_AUTO_CANNON_CONT: "To be done" #TODO
-  STR_AC_AP_AMMO: ""
-  STR_AC_BS_AMMO: ""
-  STR_AC_HE_AMMO: ""
-  STR_AC_I_AMMO: ""
-  STR_AC_AA_AMMO: "STR_AC_AA_AMMO"
-  STR_AC_AA_BS_AMMO: STR_AC_AA_BS_AMMO
-  STR_SINGLE_ROCKET_LAUNCHER: ""
-  STR_SINGLE_ROCKET_UFOPEDIA: "To be done" #TODO
-  STR_ROCKET_LAUNCHER: ""
-  STR_ROCKET_LAUNCHER_UFOPEDIA: "To be done" #TODO
-  STR_SMALL_ROCKET: ""
-  STR_LARGE_ROCKET: ""
-  STR_INCENDIARY_ROCKET: ""
-  STR_GRENADE: ""
-  STR_GRENADE_UFOPEDIA: "To be done" #TODO
-  STR_SMOKE_GRENADE: ""
-  STR_SMOKE_GRENADE_UFOPEDIA: "To be done" #TODO
-  STR_PROXIMITY_GRENADE: ""
-  STR_PROXIMITY_GRENADE_UFOPEDIA: "To be done" #TODO
-  STR_FLASHBANG_GRENADE: ""
-  STR_FLASHBANG_GRENADE_UFOPEDIA: "To be done" #TODO
-  STR_MEDI_PACK: ""
-  STR_MEDI_PACK_UFOPEDIA: "To be done" #TODO
-  STR_TRAUMA_PACK: ""
-  STR_TRAUMA_PACK_UFOPEDIA: "To be done" #TODO
+  STR_PDW_UFOPEDIA: "A hybrid between a submachine gun and an assault rifle. It utilizes scaled-down intermediate rifle cartridge, which gives better effective range, accuracy and armor-penetrating capability than submachine guns.{NEWLINE}>Concealable"
+  STR_PDW_CLIP: "PDW Clip"
+  STR_PDW_AA_CLIP: "PDW AA Clip"
+  STR_SMG: "Submachine Gun"
+  STR_SMG_UFOPEDIA: "This lightweight weapon optimized for the short combat ranges. Fills the role of pistol and carbine easily, being able to be fired accurately with one hand.{NEWLINE}>Concealable"
+  STR_SMG_CLIP: "SMG Clip"
+  STR_SMG_AA_CLIP: "SMG AA Clip"
+  STR_RIFLE: "Designated Marksman Rifle" #need to draw sight on bigob pic
+  STR_RIFLE_UFOPEDIA: "This advanded prescision rifle utilizes a scope with higher magnification level. DMR fills the engagement range gap between a regular assault rifle and a sniper rifle."
+  STR_ASSAULT_RIFLE: "Assaul Rifle"
+  STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle design allows for easy handling in Auto and Snap modes, but decreases long range accuracy."
+  STR_RIFLE_CLIP: "Rifle Clip"
+  STR_RIFLE_AA_CLIP: "RIfle AA Clip"
+  STR_SNIPER_RIFLE: "Sniper Rifle"
+  STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision rifle is more powerful than a standard rifle and has excellent accuracy. However, it is harder to use on a short range and has a low rate of fire"
+  STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
+  STR_SNIPER_RIFLE_AA_CLIP: "Sniper Rifle AA Clip"
+  STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
+  STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "A classic shotgun, used by police forces as well as civilians in some countries for self-defense."
+  STR_PUMP_ACTION_SHELLS: "Pump Action BS Ammo"
+  STR_SEMI_AUTO_SHOTGUN: "Semi-auto Shotgun"
+  STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "An improved version of the classic Shotgun. Its firing speed was drastically improved, with only minor accuracy loss."
+  STR_SHOTGUN: "Riot Shotgun"
+  STR_SHOTGUN_UFOPEDIA: "This shotgun is commonly used as a door breaching, guard and patrol weapon by law enforcement and security personnel, as well as a home defense weapon by civilians."
+  STR_SHOTGUN_CONT: "Riot Shotgun (continued)"
+  STR_SHOTGUN_CONT_UFOPEDIA: "This shotgun is commonly used as a door breaching, guard and patrol weapon by law enforcement and security personnel, as well as a home defense weapon by civilians."
+  STR_SHOTGUN_SHELLS_BS: "Shotgun BS Ammo"
+  STR_SHOTGUN_SHELLS_AP: "Shotgun AP Shells"
+  STR_SHOTGUN_SHELLS_BATON: "Shotgun Baton Shells"
+  STR_SHOTGUN_SHELLS_BS_AA: "Shotgun AA-BS Ammo"
+  STR_SHOTGUN_SHELLS_AP_AA: "Shotgun AA-AP Shells"
+  STR_LIGHT_CANNON: "Light Cannon."
+  STR_LIGHT_CANNON_UFOPEDIA: "This high-caliber hand weapon can use armor-piercing, high-explosive and buckshot ammo. It has great stopping power."
+  STR_LIGHT_CANNON_CONT: "Light Cannon (Continued)"
+  STR_LC_AP_AMMO: "LC-AP Ammo"
+  STR_LC_BS_AMMO: "LC-BS Ammo"
+  STR_LC_HE_AMMO: "LC-HE Ammo"
+  STR_LC_I_AMMO: "LC-I Ammo"
+  STR_LC_AA_AMMO: "LC-AA Ammo"
+  STR_LC_BS_AA_AMMO: "LC-BS-AA Ammo"
+  STR_HEAVY_CANNON: "Heavy Cannon"
+  STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating but cumbersome weapon. It can take multiple types of ammunition: slugs, buckshot and incendiary."
+  STR_HEAVY_CANNON_CONT: "Heavy Cannon (continued)"
+  STR_HC_AP_AMMO: "HC-AP Clip"
+  STR_HC_BS_AMMO: "HC-BS Clip"
+  STR_HC_I_AMMO: "HC-I Clip"
+  STR_HC_HE_AMMO: "HC-HE Clip"
+  STR_HC_AA_AMMO: "HC-AA-AP Clip"
+  STR_HC_AA_BS_AMMO: "HC-AA-BS Clip"
+  STR_AUTO_CANNON: "Auto-Cannon"
+  STR_AUTO_CANNON_UFOPEDIA: "The Auto-Cannon combines the versatility and power of a heavy cannon with a faster fire rate. Improved ammunition makes it more devastating, than ever."
+  STR_AUTO_CANNON_CONT: "Auto-Cannon (continued)"
+  STR_AC_AP_AMMO: "AC-AP Clip"
+  STR_AC_BS_AMMO: "AC-BS Clip"
+  STR_AC_HE_AMMO: "AC-HE Clip"
+  STR_AC_I_AMMO: "AC-I Clip"
+  STR_AC_AA_AMMO: "AC-AA-AP Clip"
+  STR_AC_AA_BS_AMMO: "AC-AA-BS Clip"
+  STR_SINGLE_ROCKET_LAUNCHER: "Light Anti-Tank Weapon"
+  STR_SINGLE_ROCKET_UFOPEDIA: "This unrechargeable portable one-shot unguided weapon fires solid rocket and provides great firepower against armored units."
+  STR_ROCKET_LAUNCHER: "Rocket Launcher"
+  STR_ROCKET_LAUNCHER_UFOPEDIA: "The rocket launcher is a laser guided system which can fire a wide range of missiles."
+  STR_SMALL_ROCKET: "Small Rocket"
+  STR_LARGE_ROCKET: "Large Rocket"
+  STR_INCENDIARY_ROCKET: "Incendiary Rocket"
+  STR_GRENADE: "Grenade"
+  STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precision control.{NEWLINE}>Concealable"
+  STR_SMOKE_GRENADE: "Smoke Grenade"
+  STR_SMOKE_GRENADE_UFOPEDIA: "Smoke grenades are useful for providing cover in exposed combat situations. Use with care because they can benefit the enemy as well.{NEWLINE}>Concealable"
+  STR_PROXIMITY_GRENADE: "Proximity Grenade"
+  STR_PROXIMITY_GRENADE_UFOPEDIA: "A proximity grenade can be thrown like an ordinary grenade but is triggered by nearby movement after it lands. Great skill and care is required to use these devices properly.{NEWLINE}>Concealable"
+  STR_FLASHBANG_GRENADE: "Flashbang Grenade"
+  STR_FLASHBANG_GRENADE_UFOPEDIA: "A Flashbang Grenade is designed to overwhelm a person's senses in order to blind and disorient them with a bright light coupled with a loud sound. Such non-lethal devices are in use by the army, law enforcement and special forces.{NEWLINE}A target hit by the grenade halves the number of available TUs, as well as decreases the Reactions by 25-35, Firing and Throwing by 20-30, and Melee by 10-20 for 2 turns.{NEWLINE}>Concealable"
+  STR_MEDI_PACK: "Medipack"
+  STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable" #TODO
+  STR_TRAUMA_PACK: "Trauma Pack"
+  STR_TRAUMA_PACK_UFOPEDIA: "This advanced First Aid Kit holds more healing supplies, is a bit faster to use and recovers a little more Stamina and Stun, but is significantly heavier. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable" #TODO
 
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"
