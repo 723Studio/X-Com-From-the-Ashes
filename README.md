@@ -15,7 +15,7 @@ Mod From the Ashes - assets, rulesets and other configs distributed under a [Cre
 ## Credits
 I widely use various assets, created by OpenXcom modding community. Credits to licensed mods, that I'm using in my work provided in this file. As you can see, there are a lot of mods that are also using assets from other mods. I'm rather new to the community and I don't want to investigate this web, so I provide credits to a mod where I found assets, though it can be not original. If you feel that I should include credit to your mod and it is licensed, please let me know!
 I'd like to give special thanks to the contributors to my mod:
-* **X-Man** for ideas, balance concepts;
+* **X-Man** - en strings contribution, balance concepts and ideas, spirit support;
 * **Drosan** - engine coding;
 * **wolwerin** - weapon assets;
 * **efrenespartano** - image assets, inspiration, info support;
