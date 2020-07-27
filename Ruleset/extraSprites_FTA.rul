@@ -195,6 +195,10 @@ extraSprites:
       338: Resources/Weapons/Earthbound/Utilities/bigob_MediPack.png
       339: Resources/Weapons/Earthbound/Utilities/bigob_TraumaPack.png
       340: Resources/Weapons/Unarmed/bigob_BasicFist.png
+      341: Resources/Weapons/Earthbound/Faction/bigob_HuntingRifle.png
+      342: Resources/Weapons/Earthbound/Faction/bigob_HuntingRifleClip.png
+      343: Resources/Weapons/Earthbound/Faction/bigob_RiotRifle.png
+      344: Resources/Weapons/Earthbound/Faction/bigob_RiotRifleClip.png
       
   - type: FLOOROB.PCK
     files:
@@ -230,6 +234,10 @@ extraSprites:
       337: Resources/Weapons/Earthbound/Xcom/floorob_AssaultRifle.png
       338: Resources/Weapons/Earthbound/Utilities/floorob_MediPack.png
       339: Resources/Weapons/Earthbound/Utilities/floorob_TraumaPack.png
+      341: Resources/Weapons/Earthbound/Faction/floorob_HuntingRifle.png
+      342: Resources/Weapons/Earthbound/Faction/floorob_HuntingRifleClip.png
+      343: Resources/Weapons/Earthbound/Faction/floorob_RiotRifle.png
+      344: Resources/Weapons/Earthbound/Faction/floorob_RiotRifleClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -271,6 +279,10 @@ extraSprites:
       376: Resources/Weapons/Earthbound/Xcom/handob_AssaultRifle.png
       384: Resources/Weapons/Earthbound/Utilities/handob_MediPack.png
       392: Resources/Weapons/Earthbound/Utilities/handob_TraumaPack.png
+      400: Resources/Weapons/Earthbound/Faction/handob_HuntingRifle.png
+      408: Resources/Weapons/Earthbound/Faction/handob_HuntingRifleClip.png
+      416: Resources/Weapons/Earthbound/Faction/handob_RiotRifle.png
+      424: Resources/Weapons/Earthbound/Faction/handob_RiotRifleClip.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

@@ -118,7 +118,7 @@ en-US:
 #covertOps
   STR_REGIONAL_HQ: "ADVENT Regional HQ"
   STR_TEST_OPERATION: "Test Operation"
-  STR_TEST_OPERATION_DESCRIPTION: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi."
+  STR_TEST_OPERATION_DESCRIPTION: "STR_TEST_OPERATION_DESCRIPTION"
 #events
   STR_RND_STATUS_REPORT_EVENT: "R&D status report is ready!"
   STR_RND_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the R&D center."
@@ -162,7 +162,7 @@ en-US:
   STR_RIFLE_CLIP: "Rifle Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_SNIPER_RIFLE: "Sniper Rifle"
-  STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle is more powerful than standard rifle and has superior accuracy on a long distance. The enlarged projectiles have high initial velocity and penetrate medium armor pretty easily.{NEWLINE}However, it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
+  STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy on a long distance. The enlarged projectiles have high initial velocity can penetrate medium armor pretty easily. However, it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
   STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
   STR_SNIPER_RIFLE_AA_CLIP: "Sniper Rifle AA Clip"
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
@@ -172,7 +172,7 @@ en-US:
   STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "This shotgun is able to fire a shell after every trigger pull, without needing to manually chamber another round. Thus, the rate of fire increases significantly, but accuracy decreases slightly due to the high recoil, compared to the pump-action shotgun."
   STR_SHOTGUN: "SpecOps Shotgun"
   STR_SHOTGUN_UFOPEDIA: "This shotgun was designed specifically for elite special forces units and used as an effective breaching weapon. It has a unique mechanism for loading charges and switching fire modes, which allows the use of various special ammunition."
-  STR_SHOTGUN_CONT: "Riot Shotgun (continued)"
+  STR_SHOTGUN_CONT: "SpecOps Shotgun (continued)"
   STR_SHOTGUN_CONT_UFOPEDIA: "This shotgun was designed specifically for elite special forces units and used as an effective breaching weapon. It has a unique mechanism for loading charges and switching fire modes, which allows the use of various special ammunition."
   STR_SHOTGUN_SHELLS_BS: "Shotgun BS Ammo"
   STR_SHOTGUN_SHELLS_AP: "Shotgun AP Shells"
@@ -248,16 +248,18 @@ en-US:
   STR_UFOPEDIA: "Ufopaedia"
   STR_UFOPEDIA_UFOPEDIA: "We managed to break through the primary protection of the blocked Ufopaedia archive! Sadly, once we had accessed the system, we found inner layers of data encryption. One section seems to hold all the technical data on the equipment we use. It won't be difficult to decipher that part. The other is much better protected and it seems that only the commander had access to it before the lockdown. I can't say for sure, but it most likely contains strategic data about the project history and its formation background. Perhaps the analysis of past events will allow us to avoid these errors in the future."
   STR_XCOM_EQUIPMENT: "X-Com Equipment Ufopaedia files"
-  STR_XCOM_EQUIPMENT_UFOPEDIA: "STR_XCOM_EQUIPMENT_UFOPEDIA" #TODO
+  STR_XCOM_EQUIPMENT_ARTICLE_HEADER: "X-Com Equipment"
+  STR_XCOM_EQUIPMENT_UNLOCKED: "X-Com Equipment"
+  STR_XCOM_EQUIPMENT_UFOPEDIA: "We gained access to the main sections of Ufopaedia, a database with tactical and technical information on XCOM equipment and hardware used, manufacturer's instructions, and service recommendations. It is unlikely that we would have been able to access this data so extensively from other sources, as we' ve been cut from support from the Council and world governments who probably do not know that we still exist. In any case, you can now clarify any information you are interested in in the relevant section of Ufopaedia, which is now accessible from your work computer."
   STR_XCOM_LORE: "X-Com Secret Files"
-  STR_XCOM_LORE_UFOPEDIA: "STR_XCOM_LORE_UFOPEDIA" #TODO
+  #STR_XCOM_LORE_UFOPEDIA: "STR_XCOM_LORE_UFOPEDIA" #TODO
   STR_COMMUNICATION: "Communication"
-  STR_COMMUNICATION_UFOPEDIA: "STR_COMMUNICATION_UFOPEDIA" #TODO
+  STR_COMMUNICATION_UFOPEDIA: "Most of the old government communication channels are no longer available to us, the rest are probably controlled by alien agents. Centralized use of direct radio links, even if encrypted, is not reasonable either - our enemies will be able to track the source of the signals and destroy it. Fortunately, we live in an age of booming decentralized computer networks! By hacking hundreds of thousands of personal computers online, our IT specialists have deployed an entire system of sophisticated proxy servers. Our encrypted messages are embedded in massive data flows and mixed with a vast amount of false messages being sent. Meanwhile, any attempt to track or intercept our traffic will immediately be detected and the data will be securely rerouted to another path, potentially enveloping the entire planet."
   STR_BASE_DEFENSE_COMBAT_ANALYSIS: "Base defense tactical analysis"
   STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA" #TODO
   STR_COVERT_OPERATIONS_UFOPEDIA: "Due to the clear dominance of our enemy, the preferred strategy will be keeping a low profile when dealing with important strategic tasks. We can send our agents to covert operations for more subtle methods of solving a problem than an aggressive attack. The secure channels we've developed allow us to coordinate agents remotely, and for some operations, it is also important to involve scientists for analytical work and engineers to design the special gear. A covert operation is always a risk, and in order to increase your success odds you should be careful when choosing your team and equipment, any little thing, in the end, can play a key role." 
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
-  STR_RESISTANCE_CONTACT_UFOPEDIA: "STR_RESISTANCE_CONTACT_UFOPEDIA" #TODO
+  STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the aliens, and consolidate all mankind against an extraterrestrial threat."
   STR_SUPPLIES: "Supplies"
   STR_SUPPLIES_UFOPEDIA: "STR_SUPPLIES_UFOPEDIA" #TODO
   STR_FACILITY_BLUEPRINTS: "Facility blueprints"

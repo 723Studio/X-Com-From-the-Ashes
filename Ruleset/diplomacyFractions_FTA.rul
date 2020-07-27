@@ -3,7 +3,7 @@ diplomacyFactions:
     description: STR_RESISTANCE_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
     cardBackground: RESISTANCE_DIPLOMACY_CARD.SCR
-    #discoverResearch: STR_LASER_WEAPONS
+    discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 27
     genMissionFreq: 100 #100% chance to run the script
@@ -26,10 +26,12 @@ diplomacyFactions:
     description: STR_VOID_CORP_DESCRIPTION
     background: CHURCH_OF_DAGON_BACKGROUND.SCR
     cardBackground: CHURCH_OF_DAGON_BACKGROUND.SCR
+    discoverResearch: STR_VOID_CONTACT
   - name: STR_ENIGMA
     description: STR_ENIGMA_DESCRIPTION
     background: OFFICE_LADY_BACKGROUND.SCR
     cardBackground: OFFICE_LADY_BACKGROUND.SCR
+    discoverResearch: STR_ENIGMA_CONTACT
 
 missionScripts:
   - type: testScript

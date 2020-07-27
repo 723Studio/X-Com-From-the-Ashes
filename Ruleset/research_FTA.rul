@@ -28,6 +28,10 @@ research:
   - name: STR_GAME_LOST #if the player hit that, its over
     cutscene: loseGame
     needItem: true
+  - name: STR_VOID_CONTACT #TODO scheduled to alpha 2
+    needItem: true    
+  - name: STR_ENIGMA_CONTACT #TODO scheduled to alpha 3
+    needItem: true  
 #story 
   - name: STR_STORY_1
     needItem: true
@@ -49,27 +53,15 @@ research:
     needItem: true
   - name: STR_PRISONER_INTERROGATIONS
     needItem: true
+  - name: STR_XCOM_EQUIPMENT_UNLOCKED
+    dependencies:
+      - STR_XCOM_EQUIPMENT
   - name: STR_XCOM_FILES_1
-    requiresBaseFunc: [HQ]
-    cost: 30
-    points: 40
-    dependencies:
-      - STR_XCOM_LORE
-    listOrder: 7460
+    needItem: true
   - name: STR_XCOM_FILES_2
-    requiresBaseFunc: [HQ]
-    cost: 35
-    points: 45
-    dependencies:
-      - STR_XCOM_FILES_1
-    listOrder: 7460  
+    needItem: true
   - name: STR_XCOM_FILES_3
-    requiresBaseFunc: [HQ]
-    cost: 35
-    points: 45
-    dependencies:
-      - STR_XCOM_FILES_2
-    listOrder: 7460    
+    needItem: true
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [HQ]
@@ -87,10 +79,15 @@ research:
     listOrder: 7460
   - name: STR_XCOM_LORE
     requiresBaseFunc: [HQ]
-    cost: 25
+    cost: 30
     points: 50
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
+    sequentialGetOneFree: true
+    getOneFree:
+      - STR_XCOM_FILES_1
+      - STR_XCOM_FILES_2
+      - STR_XCOM_FILES_3
     listOrder: 7460
   - name: STR_COMMUNICATION
     requiresBaseFunc: [HQ]

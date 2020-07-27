@@ -33,7 +33,12 @@ ufopaedia:
   # - delete: STR_FUSION_BALL_DEFENSES
   # - delete: STR_STINGRAY
   # - delete: STR_AVALANCHE
-  # - delete: STR_STUN_ROD
+  - delete: STR_GRENADE
+  - delete: STR_SMOKE_GRENADE
+  - delete: STR_PROXIMITY_GRENADE
+  - delete: STR_HIGH_EXPLOSIVE
+  - delete: STR_STUN_ROD
+  - delete: STR_ELECTRO_FLARE
   # - delete: STR_TANK_CANNON
   # - delete: STR_TANK_ROCKET_LAUNCHER
   # - delete: STR_TANK_LASER_CANNON
@@ -125,18 +130,20 @@ ufopaedia:
     requires:
       - STR_UFOPEDIA_DECRYPTION
     text: STR_UFOPEDIA_UFOPEDIA #yeah, I know =)
-  - id: STR_XCOM_EQUIPMENT
-    type_id: 8
+  - id: STR_XCOM_EQUIPMENT_ARTICLE_HEADER
+    type_id: 7
+    image_id: RND_CHIEF.SPK
+    text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_XCOM_EQUIPMENT
     text: STR_XCOM_EQUIPMENT_UFOPEDIA
-  - id: STR_XCOM_LORE
-    type_id: 8
-    section: STR_XCOM_REPORTS_UC
-    requires:
-      - STR_XCOM_LORE
-    text: STR_XCOM_LORE_UFOPEDIA
+  # - id: STR_XCOM_LORE #probably not needed...
+  #   type_id: 8
+  #   section: STR_XCOM_REPORTS_UC
+  #   requires:
+  #     - STR_XCOM_LORE
+  #   text: STR_XCOM_LORE_UFOPEDIA
   - id: STR_COMMUNICATION
     type_id: 8
     section: STR_XCOM_REPORTS_UC
@@ -209,14 +216,14 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_POLICE_BATON_UFOPEDIA
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 20330
   - id: STR_COMBAT_KNIFE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_COMBAT_KNIFE_UFOPEDIA
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 20330
   #pistols
   - id: STR_PISTOL
@@ -224,13 +231,13 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_PISTOL_UFOPEDIA
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 20330
   - id: STR_PISTOL_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_PISTOL_AA_CLIP
     type_id: 4
     requires:
@@ -241,14 +248,14 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_PDW_UFOPEDIA
     listOrder: 21300
   - id: STR_PDW_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_PDW_AA_CLIP
     type_id: 4
     requires:
@@ -258,14 +265,14 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_SMG_UFOPEDIA
     listOrder: 21300
   - id: STR_SMG_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_SMG_AA_CLIP
     type_id: 4
     requires:
@@ -276,21 +283,21 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_RIFLE_UFOPEDIA
     listOrder: 21300
   - id: STR_ASSAULT_RIFLE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_ASSAULT_RIFLE_UFOPEDIA
     listOrder: 21300
   - id: STR_RIFLE_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_RIFLE_AA_CLIP
     type_id: 4
     requires:
@@ -301,14 +308,14 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_SNIPER_RIFLE_UFOPEDIA
     listOrder: 21300
   - id: STR_SNIPER_RIFLE_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_SNIPER_RIFLE_AA_CLIP
     type_id: 4
     requires:
@@ -331,14 +338,14 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_SEMI_AUTO_SHOTGUN_UFOPEDIA
     listOrder: 21300
-  - id: STR_SHOTGUN
+  - id: STR_SHOTGUN #TODO refactor paging or add one more ammo at start
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_SHOTGUN_UFOPEDIA
     pages:
       - title: STR_SHOTGUN
@@ -350,17 +357,17 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_SHOTGUN_SHELLS_AP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_SHOTGUN_SHELLS_BATON
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_SHOTGUN_SHELLS_BS_AA
     type_id: 4
     requires:
@@ -376,7 +383,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_LIGHT_CANNON_UFOPEDIA
     pages:
       - title: STR_LIGHT_CANNON
@@ -388,22 +395,22 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_LC_BS_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_LC_HE_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_LC_I_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_LC_AA_AMMO
     type_id: 4
     requires:
@@ -418,7 +425,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_HEAVY_CANNON_UFOPEDIA
     pages:
       - title: STR_HEAVY_CANNON
@@ -430,22 +437,22 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_HC_BS_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_HC_HE_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_HC_I_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_HC_AA_AMMO
     type_id: 4
     requires:
@@ -460,7 +467,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_AUTO_CANNON_UFOPEDIA
     pages:
       - title: STR_AUTO_CANNON
@@ -472,22 +479,22 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_AC_BS_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_AC_HE_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_AC_I_AMMO
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_AC_AA_AMMO
     type_id: 4
     requires:
@@ -510,51 +517,51 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_ROCKET_LAUNCHER_UFOPEDIA
     listOrder: 21300
   - id: STR_SMALL_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_LARGE_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_INCENDIARY_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   #grenades
   - id: STR_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_GRENADE_UFOPEDIA
     listOrder: 21300
   - id: STR_SMOKE_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_SMOKE_GRENADE_UFOPEDIA
     listOrder: 21300
   - id: STR_PROXIMITY_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_PROXIMITY_GRENADE_UFOPEDIA
     listOrder: 21300
   - id: STR_FLASHBANG_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FLASHBANG_GRENADE_UFOPEDIA
     listOrder: 21300
   #equipment
@@ -569,7 +576,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_TRAUMA_PACK_UFOPEDIA
     listOrder: 21300
 
@@ -590,7 +597,7 @@ ufopaedia:
       height: 160
     text: STR_DRAGONFLY_UFOPEDIA
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 7480
   - id: STR_STALKER
     type_id: 1
@@ -608,5 +615,5 @@ ufopaedia:
       height: 160
     text: STR_STALKER_UFOPEDIA
     requires:
-      - STR_XCOM_EQUIPMENT
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 7480
