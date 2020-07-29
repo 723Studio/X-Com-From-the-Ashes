@@ -53,6 +53,8 @@ research:
     needItem: true
   - name: STR_PRISONER_INTERROGATIONS
     needItem: true
+  - name: STR_LOYALTY
+    needItem: true
   - name: STR_XCOM_EQUIPMENT_UNLOCKED
     dependencies:
       - STR_XCOM_EQUIPMENT
@@ -123,6 +125,8 @@ research:
     points: 15
     dependencies:
       - STR_ENGINEER_STATUS_REPORT
+    getOneFree:
+      - STR_LOYALTY
     listOrder: 7460
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [HQ]
@@ -139,6 +143,7 @@ research:
     points: 10
     dependencies:
       - STR_TODOIUM
+
 #enemies
   - name: STR_XCOM_EX_COMMANDER
     requiresBaseFunc: [INTLAB]

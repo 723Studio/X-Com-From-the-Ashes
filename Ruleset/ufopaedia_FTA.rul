@@ -176,6 +176,12 @@ ufopaedia:
     requires:
       - STR_SUPPLIES
     text: STR_SUPPLIES_UFOPEDIA
+  - id: STR_SUPPLIES
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_SUPPLIES
+    text: STR_SUPPLIES_UFOPEDIA
   - id: STR_FACILITY_BLUEPRINTS
     type_id: 8 #TODO may be 7?
     section: STR_XCOM_REPORTS_UC
