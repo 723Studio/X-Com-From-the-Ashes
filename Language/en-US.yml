@@ -1,6 +1,6 @@
 en-US:
   STR_OPENXCOM: "From the Ashes v. 0.0.1"
-  STR_XCOM: "X-Com"
+  STR_XCOM: "X-COM"
   STR_ADVENT: "ADVENT"
   STR_LAST_STAND: "Last Stand"
 #diplomacy
@@ -102,8 +102,8 @@ en-US:
   mana: "Mana"
   manaRecoveryPerDay: "Mana per day"
 #cutscenes
-  STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-Com project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
-  STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-Com has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-Com's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
+  STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-COM project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
+  STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-Com's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
   STR_INTRO2_SLIDE3_CAPTION: "All colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal, and there was a steep decrease of empathy. We have already documented such personality changes of some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
   STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, he was not a trained spy and was caught trying to back up the Ufopedia. An MiB agent shot him on sight, and the Commander didn't even blink!"
   STR_INTRO2_SLIDE5_CAPTION: "There are still people who are loyal to fighting the alien invasion. To arms!"
@@ -114,7 +114,7 @@ en-US:
   STR_SICK_BAY: "Sick Bay"
   STR_CLOSED_LAB: "Closed Laboratory"
 #missions
-  STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-Com Commander with them, who is most likely under the mind control. We must stop the intruders at all costs, retreating now would mean final defeat."
+  STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them, who is most likely under the mind control. We must stop the intruders at all costs, retreating now would mean final defeat."
 #covertOps
   STR_REGIONAL_HQ: "ADVENT Regional HQ"
   STR_TEST_OPERATION: "Test Operation"
@@ -135,8 +135,8 @@ en-US:
   STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't clearly tell us who he is and how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent, but we're pretty sure he's not lying. Unfortunately, all attempts to get more information have led to nothing."
   STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
   STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
-  STR_XCOM_EX_COMMANDER: "Former X-Com Commander"
-  STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-Com Commander Examination"
+  STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
+  STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
@@ -247,11 +247,11 @@ en-US:
   STR_UFOPEDIA_DECRYPTION: "Ufopaedia decryption"
   STR_UFOPEDIA: "Ufopaedia"
   STR_UFOPEDIA_UFOPEDIA: "We managed to break through the primary protection of the blocked Ufopaedia archive! Sadly, once we had accessed the system, we found inner layers of data encryption. One section seems to hold all the technical data on the equipment we use. It won't be difficult to decipher that part. The other is much better protected and it seems that only the commander had access to it before the lockdown. I can't say for sure, but it most likely contains strategic data about the project history and its formation background. Perhaps the analysis of past events will allow us to avoid these errors in the future."
-  STR_XCOM_EQUIPMENT: "X-Com Equipment Ufopaedia files"
-  STR_XCOM_EQUIPMENT_ARTICLE_HEADER: "X-Com Equipment"
-  STR_XCOM_EQUIPMENT_UNLOCKED: "X-Com Equipment"
-  STR_XCOM_EQUIPMENT_UFOPEDIA: "We gained access to the main sections of Ufopaedia, a database with tactical and technical information on XCOM equipment and hardware used, manufacturer's instructions, and service recommendations. It is unlikely that we would have been able to access this data so extensively from other sources, as we' ve been cut from support from the Council and world governments who probably do not know that we still exist. In any case, you can now clarify any information you are interested in in the relevant section of Ufopaedia, which is now accessible from your work computer."
-  STR_XCOM_LORE: "X-Com Secret Files"
+  STR_XCOM_EQUIPMENT: "X-COM Equipment Ufopaedia files"
+  STR_XCOM_EQUIPMENT_ARTICLE_HEADER: "X-COM Equipment"
+  STR_XCOM_EQUIPMENT_UNLOCKED: "X-COM Equipment"
+  STR_XCOM_EQUIPMENT_UFOPEDIA: "We gained access to the main sections of Ufopaedia, a database with tactical and technical information on X-COM equipment and hardware used, manufacturer's instructions, and service recommendations. It is unlikely that we would have been able to access this data so extensively from other sources, as we' ve been cut from support from the Council and world governments who probably do not know that we still exist. In any case, you can now clarify any information you are interested in in the relevant section of Ufopaedia, which is now accessible from your work computer."
+  STR_XCOM_LORE: "X-COM Secret Files"
   #STR_XCOM_LORE_UFOPEDIA: "STR_XCOM_LORE_UFOPEDIA" #probably not needed
   STR_COMMUNICATION: "Communication"
   STR_COMMUNICATION_UFOPEDIA: "Most of the old government communication channels are no longer available to us, the rest are probably controlled by alien agents. Centralized use of direct radio links, even if encrypted, is not reasonable either - our enemies will be able to track the source of the signals and destroy it. Fortunately, we live in an age of booming decentralized computer networks! By hacking hundreds of thousands of personal computers online, our IT specialists have deployed an entire system of sophisticated proxy servers. Our encrypted messages are embedded in massive data flows and mixed with a vast amount of false messages being sent. Meanwhile, any attempt to track or intercept our traffic will immediately be detected and the data will be securely rerouted to another path, potentially enveloping the entire planet."
@@ -263,9 +263,9 @@ en-US:
   STR_SUPPLIES: "Supplies"
   STR_SUPPLIES_UFOPEDIA: "In the current circumstances, we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project on a voluntary basis.  We just need to take care of providing them with everything they need to work, and it would be good to encourage them if possible."
   STR_LOYALTY: "Loyalty"
-  STR_LOYALTY_UFOPEDIA: "After the X-Com project was officially shut down, we can only count on ourselves, and our people decided to fight for the idea of insubordination to the alien invaders. The spirit of the X-Com team today is more important than ever and it is essential not to let the morale go down. There are many things that can influence the morale of our men - the accomplishments in battles against the aliens and their servants and the achievement of objectives, major scientific breakthroughs, and progress towards understanding the nature of our enemies, as well as strategic choices. A cohesive team can help us through many challenges, but a loss of trust can put an end to everything."
+  STR_LOYALTY_UFOPEDIA: "After the X-COM project was officially shut down, we can only count on ourselves, and our people decided to fight for the idea of insubordination to the alien invaders. The spirit of the X-COM team today is more important than ever and it is essential not to let the morale go down. There are many things that can influence the morale of our men - the accomplishments in battles against the aliens and their servants and the achievement of objectives, major scientific breakthroughs, and progress towards understanding the nature of our enemies, as well as strategic choices. A cohesive team can help us through many challenges, but a loss of trust can put an end to everything."
   STR_FACILITY_BLUEPRINTS: "Facility blueprints"
-  STR_FACILITY_BLUEPRINTS_UFOPEDIA: "STR_FACILITY_BLUEPRINTS_UFOPEDIA" #TODO
+  STR_FACILITY_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segment containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to obtain it."
   STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_1_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO

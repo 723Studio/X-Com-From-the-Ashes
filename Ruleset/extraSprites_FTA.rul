@@ -371,6 +371,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Engineer_Chief.png
+  - type: FACILITY_DECRYPTION.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Facility_decryption.png
 #backgrounds
   - type: STR_RESISTANCE_BACKGROUND.SCR
     singleImage: true

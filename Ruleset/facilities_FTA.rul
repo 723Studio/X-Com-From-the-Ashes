@@ -23,6 +23,8 @@ facilities:
     spriteFacility: 300
     provideBaseFunc: [HQ, INTLAB]
     maxAllowedPerBase: 1
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 2500000
     buildTime: 40
     monthlyCost: 5000 #20000
@@ -38,6 +40,8 @@ facilities:
   - type: STR_PRISON_CELLS
     spriteShape: 1
     spriteFacility: 301
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 120000
     buildTime: 16
     monthlyCost: 8000
@@ -49,6 +53,8 @@ facilities:
   - type: STR_GYM
     spriteShape: 1
     spriteFacility: 302
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     buildCost: 140000
     buildTime: 20
     monthlyCost: 35000
@@ -60,6 +66,8 @@ facilities:
     spriteShape: 1
     spriteFacility: 303
     maxAllowedPerBase: 1
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     buildCost: 450000
     buildTime: 22
     monthlyCost: 30000
@@ -84,15 +92,19 @@ facilities:
   - type: STR_ACCESS_LIFT
     spriteShape: 2
     spriteFacility: 17
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     manaRecoveryPerDay: 1
     lift: true
-    buildCost: 200000 #300000
+    buildCost: 300000
     buildTime: 1
     monthlyCost: 2000 #4000
     mapName: XBASE_00
   - type: STR_LIVING_QUARTERS
     spriteShape: 1
     spriteFacility: 18
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     buildCost: 400000
     buildTime: 16
     monthlyCost: 10000
@@ -103,6 +115,8 @@ facilities:
   - type: STR_GENERAL_STORES
     spriteShape: 1
     spriteFacility: 24
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     buildCost: 150000
     buildTime: 10
     monthlyCost: 5000
@@ -111,6 +125,8 @@ facilities:
   - type: STR_HANGAR
     spriteShape: 9
     spriteFacility: 9
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     canBeBuiltOver: true
     size: 2
     buildCost: 200000
@@ -119,12 +135,17 @@ facilities:
     crafts: 1
     workshops: 5
     storage: 35
-    #storageTiles: [[-1, -1, -1]] #add after engine update to 1.1 with merging to OXCE
+    #storageTiles: [[-1, -1, -1]] #TODO add after engine update to 1.1 with merging to OXCE
     mapName: XBASE_16
-
   - type: STR_LABORATORY
     spriteShape: 1
     spriteFacility: 19
+    requires:
+      - STR_FACILITIES_BLUEPRINT
+    buildCostItems:
+     STR_LABORATORY_EQUIPMENT:
+       build: 5
+       refund: 4
     buildCost: 750000
     buildTime: 26
     monthlyCost: 30000
@@ -133,6 +154,8 @@ facilities:
   - type: STR_WORKSHOP
     spriteShape: 1
     spriteFacility: 20
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     buildCost: 800000
     buildTime: 32
     monthlyCost: 35000
@@ -141,15 +164,23 @@ facilities:
   - type: STR_SMALL_RADAR_SYSTEM
     spriteShape: 2
     spriteFacility: 21
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     buildCost: 500000
+    buildCostItems:
+     STR_RADAR_SYSTEM:
+       build: 1
+       refund: 1
     buildTime: 12
     monthlyCost: 10000
     radarRange: 1695
     radarChance: 10
     mapName: XBASE_04
-  - type: STR_LARGE_RADAR_SYSTEM
+  - type: STR_LARGE_RADAR_SYSTEM #TODO 
     spriteShape: 1
     spriteFacility: 22
+    requires:
+      - STR_LARGE_RADAR_SYSTEM
     buildCost: 800000
     buildTime: 25
     monthlyCost: 15000
@@ -159,6 +190,8 @@ facilities:
   - type: STR_MISSILE_DEFENSES
     spriteShape: 2
     spriteFacility: 23
+    requires:
+      - STR_MISSILE_DEFENSES
     buildCost: 200000
     buildTime: 16
     monthlyCost: 5000
@@ -170,6 +203,8 @@ facilities:
   - type: STR_GENERAL_STORES
     spriteShape: 1
     spriteFacility: 24
+    requires:
+      - STR_FACILITIES_BLUEPRINT
     buildCost: 150000
     buildTime: 10
     monthlyCost: 5000
@@ -178,6 +213,8 @@ facilities:
   - type: STR_ALIEN_CONTAINMENT
     spriteShape: 1
     spriteFacility: 25
+    requires:
+      - STR_ALIEN_CONTAINMENT
     buildCost: 400000
     buildTime: 18
     monthlyCost: 15000

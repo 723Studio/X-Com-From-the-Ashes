@@ -23,7 +23,7 @@ items:
   # - delete: STR_MEDI_KIT #
   - delete: STR_STUN_ROD #
   - delete: STR_ELECTRO_FLARE #
-#test items
+#test items, dont mind
   - type: STR_PSI_AMP_TEST
     size: 0.1
     costSell: 194700
@@ -51,79 +51,6 @@ items:
     maxRange: 25
     LOSRequired: true
     listOrder: 44000
-#corpses
-  - type: STR_XCOM_EX_COMMANDER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    costSell: 1000
-    weight: 32
-    bigSprite: 100
-    floorSprite: 100
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
-    recoveryPoints: 1
-    recover: true
-    recoverCorpse: false
-    listOrder: 67800
-  - type: STR_XCOM_EX_COMMANDER
-    categories: [STR_HUMANS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 0
-    listOrder: 146000
-  - type: STR_MIB_AGENT_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    costSell: 1000
-    weight: 32
-    bigSprite: 101
-    floorSprite: 101
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
-    recoveryPoints: 5
-    recover: true
-    recoverCorpse: false
-    listOrder: 67800
-  - type: STR_MIB_ENFORCER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    costSell: 1000
-    weight: 37
-    bigSprite: 102
-    floorSprite: 102
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 10
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
-    listOrder: 67800
-  - type: STR_MIB_AGENT
-    categories: [STR_HUMANS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 0
-    listOrder: 146000
-  - type: STR_MIB_ENFORCER
-    categories: [STR_HUMANS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 2000
-    listOrder: 146030
 #melee
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
@@ -1780,9 +1707,96 @@ items:
     recover: false
     specialUseEmptyHand: true
 
+#unit-related
+  - type: STR_XCOM_EX_COMMANDER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 1000
+    weight: 32
+    bigSprite: 100
+    floorSprite: 100
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_XCOM_EX_COMMANDER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 0
+    listOrder: 146000
+  - type: STR_MIB_AGENT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 1000
+    weight: 32
+    bigSprite: 101
+    floorSprite: 101
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: 5
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_ENFORCER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 1000
+    weight: 37
+    bigSprite: 102
+    floorSprite: 102
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 10
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_AGENT
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 0
+    listOrder: 146000
+  - type: STR_MIB_ENFORCER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 2000
+    listOrder: 146030
 
-
-
-
+#geoscape-only
+  - type: STR_RADAR_SYSTEM
+    categories: [STR_HUMANS, STR_COMPONENTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 900000 #TODO
+    listOrder: 146030
+  - type: STR_LABORATORY_EQUIPMENT
+    categories: [STR_HUMANS, STR_COMPONENTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 900000 #TODO
+    listOrder: 146030
 
 

@@ -1,4 +1,25 @@
 ufopaedia:
+  - delete: STR_SKYRANGER
+  - delete: STR_INTERCEPTOR
+  - delete: STR_LIGHTNING
+  - delete: STR_FIRESTORM
+  - delete: STR_AVENGER
+  - delete: STR_STINGRAY
+  - delete: STR_AVALANCHE
+  - delete: STR_CANNON_UC
+  - delete: STR_FUSION_BALL_UC
+  - delete: STR_LASER_CANNON_UC
+  - delete: STR_PLASMA_BEAM_UC
+  - delete: STR_TANK_CANNON
+  - delete: STR_TANK_ROCKET_LAUNCHER
+  - delete: STR_TANK_LASER_CANNON
+  - delete: STR_HOVERTANK_PLASMA
+  - delete: STR_HOVERTANK_LAUNCHER
+  - delete: STR_PERSONAL_ARMOR_UC
+  - delete: STR_POWER_SUIT_UC
+  - delete: STR_FLYING_SUIT_UC
+  - delete: STR_HOVERTANK_PLASMA
+  - delete: STR_HOVERTANK_PLASMA
   - delete: STR_PISTOL
   - delete: STR_PISTOL_CLIP
   - delete: STR_RIFLE
@@ -15,40 +36,60 @@ ufopaedia:
   - delete: STR_SMALL_ROCKET
   - delete: STR_LARGE_ROCKET
   - delete: STR_INCENDIARY_ROCKET
-  # - delete: STR_LASER_PISTOL
-  # - delete: STR_LASER_RIFLE
-  # - delete: STR_HEAVY_LASER
-  # - delete: STR_ALIEN_HARVEST
-  # - delete: STR_ALIEN_INFILTRATION
-  # - delete: STR_ALIEN_TERROR
-  # - delete: STR_ALIEN_SUPPLY
-  # - delete: STR_ALIEN_RESEARCH
-  # - delete: STR_ALIEN_RETALIATION
-  # - delete: STR_ALIEN_ABDUCTION
-  # - delete: STR_ALIEN_BASE
-  # - delete: STR_ALIEN_ORIGINS
-  # - delete: STR_THE_MARTIAN_SOLUTION
-  # - delete: STR_CYDONIA_OR_BUST
-  # - delete: STR_FUSION_BALL_UC
-  # - delete: STR_FUSION_BALL_DEFENSES
-  # - delete: STR_STINGRAY
-  # - delete: STR_AVALANCHE
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
   - delete: STR_GRENADE
   - delete: STR_SMOKE_GRENADE
   - delete: STR_PROXIMITY_GRENADE
   - delete: STR_HIGH_EXPLOSIVE
+  - delete: STR_MOTION_SCANNER
+  - delete: STR_MEDI_KIT
+  - delete: STR_PSI_AMP
   - delete: STR_STUN_ROD
-  - delete: STR_ELECTRO_FLARE
-  # - delete: STR_TANK_CANNON
-  # - delete: STR_TANK_ROCKET_LAUNCHER
-  # - delete: STR_TANK_LASER_CANNON
-  # - delete: STR_HOVERTANK_PLASMA
-  # - delete: STR_HOVERTANK_LAUNCHER
-  # - delete: STR_SKYRANGER
-  # - delete: STR_INTERCEPTOR
-  # - delete: STR_LIGHTNING
-  # - delete: STR_FIRESTORM
-  # - delete: STR_AVENGER
+  - delete: STR_ELECTRO_FLARE #TODO Add lights to the game, come on!
+  - delete: STR_HEAVY_PLASMA
+  - delete: STR_HEAVY_PLASMA_CLIP
+  - delete: STR_PLASMA_RIFLE
+  - delete: STR_PLASMA_RIFLE_CLIP
+  - delete: STR_PLASMA_PISTOL
+  - delete: STR_PLASMA_PISTOL_CLIP
+  - delete: STR_BLASTER_LAUNCHER
+  - delete: STR_SMALL_LAUNCHER
+  - delete: STR_STUN_BOMB
+  - delete: STR_ALIEN_GRENADE
+  - delete: STR_ELERIUM_115
+  - delete: STR_MIND_PROBE
+  - delete: STR_ACCESS_LIFT
+  - delete: STR_LIVING_QUARTERS
+  - delete: STR_LABORATORY
+  - delete: STR_WORKSHOP
+  - delete: STR_SMALL_RADAR_SYSTEM
+  - delete: STR_LARGE_RADAR_SYSTEM
+  - delete: STR_MISSILE_DEFENSES
+  - delete: STR_GENERAL_STORES
+  - delete: STR_ALIEN_CONTAINMENT
+  - delete: STR_LASER_DEFENSES
+  - delete: STR_PLASMA_DEFENSES
+  - delete: STR_FUSION_BALL_DEFENSES
+  - delete: STR_GRAV_SHIELD
+  - delete: STR_MIND_SHIELD
+  - delete: STR_PSIONIC_LABORATORY
+  - delete: STR_HYPER_WAVE_DECODER
+  - delete: STR_HANGAR
+
+  - delete: STR_ALIEN_HARVEST
+  - delete: STR_ALIEN_INFILTRATION
+  - delete: STR_ALIEN_TERROR
+  - delete: STR_ALIEN_SUPPLY
+  - delete: STR_ALIEN_RESEARCH
+  - delete: STR_ALIEN_RETALIATION
+  - delete: STR_ALIEN_ABDUCTION
+  - delete: STR_ALIEN_BASE
+  - delete: STR_ALIEN_ORIGINS
+  - delete: STR_THE_MARTIAN_SOLUTION
+  - delete: STR_CYDONIA_OR_BUST
+
 #story reports
   - id: STR_LOG1
     type_id: 8
@@ -176,18 +217,89 @@ ufopaedia:
     requires:
       - STR_SUPPLIES
     text: STR_SUPPLIES_UFOPEDIA
-  - id: STR_SUPPLIES
+  - id: STR_LOYALTY
     type_id: 8
     section: STR_XCOM_REPORTS_UC
     requires:
-      - STR_SUPPLIES
-    text: STR_SUPPLIES_UFOPEDIA
+      - STR_LOYALTY
+    text: STR_LOYALTY_UFOPEDIA
   - id: STR_FACILITY_BLUEPRINTS
-    type_id: 8 #TODO may be 7?
+    type_id: 7
+    image_id: FACILITY_DECRYPTION.SPK
+    text_width: 153
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_UFOPEDIA
     text: STR_FACILITY_BLUEPRINTS_UFOPEDIA
+
+#facilities
+  - id: STR_ACCESS_LIFT
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_ACCESS_LIFT_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_HQ
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_HQ_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_LIVING_QUARTERS
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_LIVING_QUARTERS_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_GENERAL_STORES
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_GENERAL_STORES_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_LABORATORY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_LABORATORY_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_PRISON_CELLS
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_PRISON_CELLS_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_WORKSHOP
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_WORKSHOP_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_GYM
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_GYM_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_SICK_BAY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_SICK_BAY
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+
+  - id: STR_SMALL_RADAR_SYSTEM
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_SMALL_RADAR_SYSTEM_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_HANGAR
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_HANGAR_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
 
 #enemies
   - id: STR_MIB_AGENT
@@ -200,9 +312,9 @@ ufopaedia:
       - STR_MIB_AGENT
     listOrder: 146000
   - id: STR_XCOM_EX_COMMANDER_EXAMINATION
-    type_id: 7
-    image_id: WIP_UFOPEDIA.SPK
-    text_width: 158
+    type_id: 8
+    #image_id: WIP_UFOPEDIA.SPK
+    #text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_XCOM_EX_COMMANDER
