@@ -892,13 +892,16 @@ extended:
       - offset: 1 #test category script
         code: |
           var ptr RuleItem itemRuleset;
+          var ptre GeoscapeGame geoGame;
           var int check;
 
-          damaging_item.getRuleItem itemRuleset; 
+          # damaging_item.getRuleItem itemRuleset; 
+          battle_game.getGeoscapeGame geoGame;
+          geoGame.getLoyalty check;
           # itemRuleset.getHaveCategory check "STR_SNIPER_RIFLES";
-          if eq check 1;
-            # debug_log 2 723;
-          end;
+          # if eq check 1;
+          debug_log "loyalty: " check;
+          #end;
 
           return;
 

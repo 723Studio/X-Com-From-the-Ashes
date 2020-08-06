@@ -20,12 +20,15 @@ en-US:
   STR_ENIGMA_DESCRIPTION: "STR_ENIGMA_DESCRIPTION"
 #UI
   STR_BONUSES_BUTTON: " " #add special symbol for bonuses in Soldier Info State
+  STR_CONTAINMENTLIMITSENFORCED: "Containment limits for captured enemies" #containmentLimitsEnforced
+  STR_STORAGELIMITSENFORCED_DESC: "Enforces general store limits for artifacts recovered from missions."
+  STR_CONTAINMENTLIMITSENFORCED_DESC: "Enforces alien containment limits for live aliens recovered from missions."
   STR_FUNDING_UC: "DIPLOMACY"
   STR_SELL_SACK_UC: "DIPLOMACY"
   STR_PURCHASE_RECRUIT: "COVERT OPERATIONS"
   STR_DIPLOMACY_RELATIONS: "Diplomacy Relations"
   STR_INFO: "INFO"
-  STR_BUY: "BUY"
+  STR_PURCHASE: "PURCHASE"
   STR_NEGOTIATION: "NEGOTIATION"
   STR_CHOOSE_BASE: "Choose base for trading:"
   STR_COVERT_OPERATIONS: "Covert Operations"
@@ -109,6 +112,20 @@ en-US:
   RandomMana: "Mana dmg RNG?"
   mana: "Mana"
   manaRecoveryPerDay: "Mana per day"
+#mod UI
+  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY_1: "Captive has been executed as there is no free prison space."
+  STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO ALIEN CONTAINMENT FOR TRANSFER!{SMALLLINE}For security reasons, live aliens can only be kept in specially appointed alien containment facility."
+  STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER_1: "NO PRISON SPACE FOR TRANSFER!{SMALLLINE}Holding captives require special facilities on site."
+  STR_MANAGE_CONTAINMENT_1: "Manage Prison Cells"
+  STR_CONTAINMENT_EXCEEDED: "ALIEN CONTAINMENT LIMITS EXCEEDED!{SMALLLINE}Insufficient containment space at {0}. You must remove excess aliens from containment (who will then die)."
+  STR_CONTAINMENT_EXCEEDED_1: "PRISON CELLS LIMITS EXCEEDED!{SMALLLINE}Insufficient holding cells at {0}. You must remove excess captives from facility (who will then be executed)."
+  STR_LIVE_ALIENS_1: "Captives"
+  STR_DEAD_ALIENS_1: "Captives{NEWLINE}Execute"
+  STR_ALIEN_1: "Prisoners"
+  STR_REMOVE_SELECTED_1: "Execute Selected"
+  STR_UNDER_INTERROGATION: "Being{NEWLINE}Studied"
+  STR_UNDER_INTERROGATION_1: "Being{NEWLINE}interrogated"
+
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-COM project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
   STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."

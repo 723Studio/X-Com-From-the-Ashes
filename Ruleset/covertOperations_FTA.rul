@@ -12,11 +12,11 @@ covertOperations:
     costs: 12
     allowedArmor:
       - STR_NONE_UC
-    specialRule: STR_REGIONAL_HQ_DICOVERY
+    specialRule: STR_REGIONAL_HQ_DISCOVERY
   - name: STR_TEST_OPERATION
     description: STR_TEST_OPERATION_DESCRIPTION
     itemSpaceLimit: 5
-    baseChances: 100
+    baseChances: 0
     costs: 20
     soldierSlots: 2
     danger: 5
@@ -61,8 +61,8 @@ covertOperations:
       - STR_MOTION_SCANNER
     successReputationScore:
       STR_RESISTANCE: 5
-    # instantTrapDeployment: 
-    #   STR_GENERAL_TRAP: 100
-    # trapChance: 100
+    instantTrapDeployment: 
+      STR_GENERAL_TRAP: 100
+    trapChance: 100
     # instantSuccessDeployment:
     #   STR_GENERAL_TRAP: 100

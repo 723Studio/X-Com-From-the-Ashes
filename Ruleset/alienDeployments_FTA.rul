@@ -437,10 +437,11 @@ alienDeployments:
             - STR_ALIEN_GRENADE
   - type: STR_GENERAL_TRAP
     race: STR_ADVENT_START
+    alternativeDeployment: STR_GENERAL_TRAP_ALT
+    alternativeDeploymentResearch: STR_NONE
     width: 50
     length: 50
     height: 6
-    customUfo: STR_MEDIUM_SCOUT
     terrains:
       - URBAN
     shade: 0
@@ -476,6 +477,47 @@ alienDeployments:
             []
           -
             []
+  - type: STR_GENERAL_TRAP_ALT
+    race: STR_MUTON
+    width: 50
+    length: 50
+    height: 6
+    terrains:
+      - FOREST
+    shade: 0
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_GENERAL_TRAP_BRIEFING
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+
 
 mapScripts: #for tests
   - type: TRAP

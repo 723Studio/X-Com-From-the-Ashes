@@ -1,5 +1,5 @@
 ﻿#globals
-ftaGame: true #new property that enables all FTA stuff
+ftaGame: true # a new property that enables all FTA stuff
 
 #difficulty
 startingDifficulty: 2
@@ -23,9 +23,19 @@ mana: #TODO
   woundThreshold: 200             # default is 200
   replenishAfterMission: true
 
+loyaltySettings:
+  coefBattlescape: 99
+  coefGeoscape: 98
+  coefDogfight: 87
+  coefResearch: 60
+  coefAlienMission: 110
+  coefUfo: 70
+  coefAlienBase: 65
+
 fixedUserOptions:
   customInitialBase: false
-  storageLimitsEnforced: false #until ill handle selling with diplomacy in debrieafing
+  storageLimitsEnforced: false
+  containmentLimitsEnforced: true
   battleInstantGrenade: false
   alienBleeding: true
   allowPsiStrengthImprovement: false
@@ -41,3 +51,4 @@ pediaReplaceCraftFuelWithRangeType: 1
 extraNerdyPediaInfo: true
 statisticalBulletConservation: true
 stunningImprovesMorale: true
+ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered

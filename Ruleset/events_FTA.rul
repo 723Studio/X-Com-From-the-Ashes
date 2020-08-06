@@ -4,7 +4,7 @@ events:
     description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 90
     timerRandom: 0
-    researchList: [STR_RND_STATUS_REPORT]
+    researchList: [STR_RND_STATUS_REPORT] 
   - name: STR_INTEL_STATUS_REPORT_EVENT
     description: STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 120
@@ -47,4 +47,4 @@ events:
 #Resistance
   - name: STR_RESISTANCE_DISCOVER
     description: STR_RESISTANCE_DISCOVER_DESCRIPTION
-    #background: BACKGROUND_MIB.SCR
+    background: STR_RESISTANCE_BACKGROUND.SCR

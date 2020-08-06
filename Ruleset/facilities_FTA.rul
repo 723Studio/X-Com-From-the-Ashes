@@ -29,7 +29,7 @@ facilities:
     buildTime: 40
     monthlyCost: 5000 #20000
     canBeBuiltOver: true
-    storage: 25
+    storage: 15
     labs: 7
     manaRecoveryPerDay: 1
     rightClickActionType: 3
@@ -47,7 +47,8 @@ facilities:
     monthlyCost: 8000
     aliens: 10
     prisonType: 1
-    storage: 20
+    storage: 10
+    rightClickActionType: 1
     mapName: XBASF_03
     listOrder: 7030
   - type: STR_GYM
@@ -59,7 +60,8 @@ facilities:
     buildTime: 20
     monthlyCost: 35000
     trainingRooms: 10
-    storage: 20
+    storage: 10
+    rightClickActionType: 4
     mapName: XBASF_04
     listOrder: 6960
   - type: STR_SICK_BAY
@@ -71,6 +73,7 @@ facilities:
     buildCost: 450000
     buildTime: 22
     monthlyCost: 30000
+    rightClickActionType: 6
     sickBayAbsoluteBonus: 0.25
     sickBayRelativeBonus: 1.0
     manaRecoveryPerDay: 1
@@ -85,7 +88,9 @@ facilities:
       - STR_TROLLIUM
     buildCost: 0
     buildTime: 6
-    monthlyCost: 2000
+    rightClickActionType: 3
+    storage: 30
+    monthlyCost: 500
     mapName: XBASF_06
     listOrder: 6810
 #vanilla
@@ -111,6 +116,7 @@ facilities:
     personnel: 50
     manaRecoveryPerDay: 5
     storage: 10
+    rightClickActionType: 6
     mapName: XBASE_01
   - type: STR_GENERAL_STORES
     spriteShape: 1
@@ -208,7 +214,7 @@ facilities:
     buildCost: 150000
     buildTime: 10
     monthlyCost: 5000
-    storage: 50
+    storage: 60
     mapName: XBASE_07
   - type: STR_ALIEN_CONTAINMENT
     spriteShape: 1

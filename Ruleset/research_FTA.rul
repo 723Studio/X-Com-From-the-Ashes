@@ -32,7 +32,8 @@ research:
   - name: STR_VOID_CONTACT #TODO scheduled to alpha 2
     needItem: true    
   - name: STR_ENIGMA_CONTACT #TODO scheduled to alpha 3
-    needItem: true  
+    needItem: true 
+  - name: STR_NONE 
 #story 
   - name: STR_STORY_1
     needItem: true

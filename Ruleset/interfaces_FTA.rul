@@ -1,5 +1,5 @@
 interfaces:
-  - type: diplimacyMainWindow
+  - type: diplomacyMainWindow
     backgroundImage: BACK13.SCR
     elements:
       - id: palette
