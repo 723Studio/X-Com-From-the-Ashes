@@ -1,20 +1,5 @@
 alienRaces:
-  # - id: STR_TEMPLATE
-  #   members:
-  #     - STR_COMMANDER (0)
-  #     - STR_LEADER (1)
-  #     - STR_ENGINEER (2)
-  #     - STR_MEDIC (3)
-  #     - STR_NAVIGATOR (4)
-  #     - STR_SOLDIER (5)
-  #     - STR_TERRORIST_1 (6)
-  #     - STR_TERRORIST_2 (7)
-  #     - STR_SPECIAL_GUEST_1 (8)
-  #     - STR_HEAVY_TROOPER / STR_UNDERWATER_TERRORIST_1 (9)
-  #     - STR_ASSAULT_TROOPER / STR_UNDERWATER_TERRORIST_2 (10)
-  #     - STR_SPECIAL_GUEST_2 / STR_NONCOM_1 (11)
-  #     - STR_NONCOM_2 (12)
-  - id: STR_INITIAL_BASE_DEFENSE_RACE
+  - id: STR_INITIAL_BASE_DEFENSE_RACE #hardcoded, do not rename!
     members:
       - STR_XCOM_EX_COMMANDER # 0 - Commander
       - STR_MIB_AGENT # 1 - Leader
@@ -32,16 +17,33 @@ alienRaces:
       - STR_MIB_AGENT # 14 - Special Guest 3
   - id: STR_ADVENT_START #hardcoded, do not rename!
     members:
-      - STR_SECTOID_COMMANDER # Commander
-      - STR_SECTOID_LEADER # Leader
-      - STR_SECTOID_ENGINEER # Engineer
-      - STR_SECTOID_MEDIC # Medic
-      - STR_SECTOID_NAVIGATOR # Navigator
-      - STR_SECTOID_SOLDIER # Soldier
-      - STR_CYBERDISC_TERRORIST # Terrorist 1
-      - STR_CYBERDISC_TERRORIST # Terrorist 2
-      - STR_CYBERDISC_TERRORIST # Special Guest 1
-      - STR_SECTOID_GUARDIAN # Heavy Trooper / Underwater Terrorist 1
-      - STR_SECTOID_GUARDIAN # Assault Trooper / Underwater Terrorist 2
-      - STR_SECTOID_GUARD_CAPTAIN # Special Guest 2 / Non-Combatant 1
-      - STR_SECTOID_GUARDIAN # Non-Combatant 2
+      - STR_XCOM_EX_COMMANDER # 0 - Commander
+      - STR_MIB_AGENT # 1 - Leader
+      - STR_MIB_AGENT # 2 - Engineer
+      - STR_MIB_AGENT # 3 - Medic
+      - STR_MIB_ENFORCER # 4 - Navigator
+      - STR_MIB_AGENT # 5 - Soldier
+      - STR_MIB_AGENT # 6 - Terrorist 1
+      - STR_MIB_AGENT # 7 - Terrorist 2
+      - STR_MIB_AGENT # 8 - Special Guest 1
+      - STR_MIB_AGENT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_MIB_AGENT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_MIB_AGENT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_MIB_AGENT # 13 - Non-Combatant 2
+      - STR_MIB_AGENT # 14 - Special Guest 3
+  - id: STR_SPAWNS #hardcoded, do not rename!
+    members:
+      - STR_XCOM_EX_COMMANDER # 0 - Commander
+      - STR_MIB_AGENT # 1 - Leader
+      - STR_MIB_AGENT # 2 - Engineer
+      - STR_MIB_AGENT # 3 - Medic
+      - STR_MIB_ENFORCER # 4 - Navigator
+      - STR_MIB_AGENT # 5 - Soldier
+      - STR_MIB_AGENT # 6 - Terrorist 1
+      - STR_MIB_AGENT # 7 - Terrorist 2
+      - STR_MIB_AGENT # 8 - Special Guest 1
+      - STR_MIB_AGENT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_MIB_AGENT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_MIB_AGENT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_MIB_AGENT # 13 - Non-Combatant 2
+      - STR_MIB_AGENT # 14 - Special Guest 3

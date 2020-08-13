@@ -29,5 +29,7 @@ cutscenes:
           captionSize: [160, 184]
           captionPos: [3, 3]
           captionColor: 244
-
-
+  - delete: intro
+  - type: intro
+    videos:
+      - Resources/Slides/intro.flc

@@ -1,5 +1,6 @@
 alienDeployments:
   - delete: STR_BASE_DEFENSE
+  - delete: STR_MEDIUM_SCOUT
   - type: STR_BASE_DEFENSE
     width: 60
     length: 60
@@ -288,6 +289,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_ALIEN_EMBASSY_DESCRIPTION
     alienBase: true    # this is only to tell new battle mode what to do with this deployment
+    isHidden: true
     objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
     objectivePopup: STR_CONTROL_CENTER_DESTROYED
     points: 5
@@ -518,6 +520,47 @@ alienDeployments:
           -
             []
 
+  - type: STR_MEDIUM_SCOUT
+    width: 40
+    length: 40
+    height: 4
+    civilians: 1
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    data:
+      # - alienRank: 5
+      #   lowQty: 2
+      #   highQty: 4
+      #   dQty: 2
+      #   percentageOutsideUfo: 60
+      #   itemSets:
+      #     -
+      #       - STR_PLASMA_PISTOL
+      #       - STR_PLASMA_PISTOL_CLIP
+      #       - STR_PLASMA_PISTOL_CLIP
+      #     -
+      #       - STR_PLASMA_RIFLE
+      #       - STR_PLASMA_RIFLE_CLIP
+      #       - STR_PLASMA_RIFLE_CLIP
+      #     -
+      #       - STR_HEAVY_PLASMA
+      #       - STR_HEAVY_PLASMA_CLIP
+      #       - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
 
 mapScripts: #for tests
   - type: TRAP

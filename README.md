@@ -15,12 +15,13 @@ Mod From the Ashes - assets, rulesets and other configs distributed under a [Cre
 ## Credits
 I widely use various assets, created by OpenXcom modding community. Credits to licensed mods, that I'm using in my work provided in this file. As you can see, there are a lot of mods that are also using assets from other mods. I'm rather new to the community and I don't want to investigate this web, so I provide credits to a mod where I found assets, though it can be not original. If you feel that I should include credit to your mod and it is licensed, please let me know!
 I'd like to give special thanks to the contributors to my mod:
-* **X-Man** - en strings contribution, balance concepts and ideas, spirit support;
-* **Drosan** - engine coding;
-* **wolwerin** - weapon assets;
-* **efrenespartano** - image assets, inspiration, info support;
-* **Brain_322** - image assets;
-* **KoTiK03** - base sprite asset;
+* **X-Man** - en strings contribution, balance concepts and ideas, spirital support;
+* **Drosan** - engine development, bugfixes;
+* **wolwerin** - weapon inventory image assets;
+* **efrenespartano** - weapon inventory image assets, inspiration, info support;
+* **Brain_322** - weapon inventory image assets;
+* **KoTiK03** - base facility sprite;
+* **Dr. Hans Woofington** - armor (inventory, battlscape) image assets;
 
 ## Support
 I realize I have a tremendous amount of work to do. I'll be happy to have any kind of support. Visit our [Discord server](https://discord.gg/epmtzH9), share your thoughts, ideas, and suggestions. You make an issue here on GitHub, or if you want to get involved in development - write to me, I will be glad of any help. Feel free to make fork and pull requests or propose changes directly.

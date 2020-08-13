@@ -46,9 +46,13 @@ fixedUserOptions:
 maxViewDistance: 40
 enableCloseQuartersCombat: 1
 
+#geoscape
+baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
+
 #pedia
 pediaReplaceCraftFuelWithRangeType: 1
 extraNerdyPediaInfo: true
+researchTreeDisabled: true
 statisticalBulletConservation: true
 stunningImprovesMorale: true
 ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered

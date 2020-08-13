@@ -1,4 +1,5 @@
 units:
+#MIB
   - type: STR_XCOM_EX_COMMANDER
     race: STR_INITIAL_BASE_DEFENSE_RACE
     rank: STR_LIVE_COMMANDER
@@ -71,6 +72,49 @@ units:
     standHeight: 22
     kneelHeight: 14
     value: 40
+    deathSound: *MaleDeathSounds
+    #panicSound: *MalePanicSounds
+    #berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+
+#Civilians
+  - type: STR_RESISTANCE_SCIENTIST
+    race: STR_SPAWNS
+    rank: STR_LIVE_NAVIGATOR
+    stats: #TODO
+      tu: 60
+      stamina: 90
+      health: 30
+      bravery: 40
+      reactions: 49
+      firing: 58
+      throwing: 64
+      strength: 45
+      psiStrength: 50
+      psiSkill: 0
+      melee: 35
+    statsRandom:
+      tu: 10
+      stamina: 10
+      health: 5
+      bravery: 20
+      reactions: 10
+      firing: 10
+      throwing: 10
+      strength: 15
+      psiStrength: 50
+      melee: 10
+      mana: 2
+    armor: STR_RESISTANCE_SCIENTIST_ARMOR
+    standHeight: 22
+    kneelHeight: 14 
+    civilianRecoveryType: STR_SOLDIER
+    specialObjectiveType: STR_FRIENDLY_VIP
+    value: 100
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds

@@ -26,9 +26,6 @@ research:
     needItem: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
     needItem: true
-  - name: STR_GAME_LOST #if the player hit that, its over
-    cutscene: loseGame
-    needItem: true
   - name: STR_VOID_CONTACT #TODO scheduled to alpha 2
     needItem: true    
   - name: STR_ENIGMA_CONTACT #TODO scheduled to alpha 3
@@ -138,6 +135,15 @@ research:
       - STR_SUPPLIES
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
+  - name: STR_BASE_CONSTRUCTION #TODO
+    requiresBaseFunc: [HQ]
+    cost: 60
+    points: 15
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_TODOIUM 
+    listOrder: 7460
+
 
 #technology
   - name: STR_LASER_WEAPONS

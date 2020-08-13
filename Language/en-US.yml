@@ -27,6 +27,7 @@ en-US:
   STR_SELL_SACK_UC: "DIPLOMACY"
   STR_PURCHASE_RECRUIT: "COVERT OPERATIONS"
   STR_DIPLOMACY_RELATIONS: "Diplomacy Relations"
+  STR_WE_CANT_BUILD_BASE: "CURRENTLY WE CAN'T BUILD ANOTHER BASE"
   STR_INFO: "INFO"
   STR_PURCHASE: "PURCHASE"
   STR_NEGOTIATION: "NEGOTIATION"
@@ -94,6 +95,21 @@ en-US:
   STR_MIA: "M.I.A"
   STR_NEW_DATA_ACQUIRED: "New data acquired."
   STR_REGIONAL_HQ_FOUND: "We discovered the MiB regional headquarters!"
+  STR_EVACUATION: "Evacuation"
+  STR_EVACUATION_COMPLETE: "Evacuation complete"
+  STR_EVACUATION_SUCCESSFUL: "Successful evacuation"
+  STR_EVACUATION_FAILED: "Evacuation failed"
+  STR_VIP_SAVED: "V.I.P. SAVED"
+  STR_VIP_KILLED_BY_ALIENS: "V.I.P. KILLED BY ALIENS"
+  STR_VIP_KILLED_BY_XCOM_OPERATIVES: "V.I.P. KILLED BY X-COM OPERATIVES"
+  STR_VIP_LOST: "V.I.P. LOST"
+  STR_ITEM_EXTRACTION: "Item extraction"
+  STR_ITEM_EXTRACTION_FAILED: "Item extraction failed"
+  STR_ALL_OBJECTIVES_SECURED: "All objectives secured"
+  STR_OBJECTIVES_PARTIALLY_RECOVERED: "Objectives partially recovered"
+  STR_MISSION_SUCCESSFUL: 
+  STR_ITEMS_RECOVERED: "ITEMS RECOVERED"
+  STR_OBJECTIVE_SECURED: "OBJECTIVE SECURED"
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
   STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation, it's very important to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tune to ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   #mana stuff
@@ -140,6 +156,7 @@ en-US:
   STR_CLOSED_LAB: "Closed Laboratory"
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them, who is most likely under the mind control. We must stop the intruders at all costs, retreating now would mean final defeat."
+  STR_REGIONAL_HQ_: "ADVENT Regional HQ"
 #covertOps
   STR_REGIONAL_HQ: "ADVENT Regional HQ"
   STR_TEST_OPERATION: "Test Operation"
@@ -289,8 +306,10 @@ en-US:
   STR_SUPPLIES_UFOPEDIA: "In the current circumstances, we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project on a voluntary basis.  We just need to take care of providing them with everything they need to work, and it would be good to encourage them if possible."
   STR_LOYALTY: "Loyalty"
   STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down, and now we can only count on ourselves. The loss of the Council’s support is a severe blow to our organization, but despite all hard circumstances our people are determined to fight against alien invaders at all costs. Ad victoriam – that’s our new motto! Today isn’t money determining our future, but how strong our men’s spirit is. It is essential not to let the morale go down, and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, as well as progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that’s why we should be extremely careful and wise in our strategic and tactical choices."
-  STR_FACILITY_BLUEPRINTS: "Facility blueprints"
-  STR_FACILITY_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segment containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to obtain it."
+  STR_FACILITIES_BLUEPRINTS: "Facility blueprints"
+  STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segment containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to obtain it."
+  STR_BASE_CONSTRUCTION: "New Base Construction"
+  STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #TODO
   STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_1_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO

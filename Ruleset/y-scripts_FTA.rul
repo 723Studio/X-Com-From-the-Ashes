@@ -2161,6 +2161,12 @@ extended:
 
           return power part side;
 
+      - offset: 0.2 #Anti-psiker weapon
+        code: |
+          set power -100;
+
+          return power part side;
+
       - offset: 1
         code: |
           # Handle item energy shields on hit
