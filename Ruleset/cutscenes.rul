@@ -31,5 +31,8 @@ cutscenes:
           captionColor: 244
   - delete: intro
   - type: intro
+    useUfoAudioSequence: true
+    audioTracks:
+      - GMTACTIC
     videos:
       - Resources/Slides/intro.flc

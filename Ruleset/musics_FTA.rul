@@ -54,7 +54,7 @@ musics:
   - type: GMTACTIC6
   - type: GMTACTIC7
   - type: GMTACTIC8
-  - type: GMTACTIC9
+  #- type: GMTACTIC9
   - type: GMTACTIC10
   - type: GMWIN
     catPos: 11
