@@ -107,7 +107,10 @@ en-US:
   STR_ITEM_EXTRACTION_FAILED: "Item extraction failed"
   STR_ALL_OBJECTIVES_SECURED: "All objectives secured"
   STR_OBJECTIVES_PARTIALLY_RECOVERED: "Objectives partially recovered"
-  STR_MISSION_SUCCESSFUL: 
+  STR_MISSION_SUCCESSFUL: "Mission successful"
+  STR_INCOMING_ENEMY_REINFORCEMENTS: "Incoming enemy reinforcements!"
+  STR_INCOMING_FRIENDLY_REINFORCEMENTS: "Friendly reinforcements arrived!"
+  STR_INCOMING_ALLY_REINFORCEMENTS: "Our reinforcements arrived!"
   STR_ITEMS_RECOVERED: "ITEMS RECOVERED"
   STR_OBJECTIVE_SECURED: "OBJECTIVE SECURED"
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"

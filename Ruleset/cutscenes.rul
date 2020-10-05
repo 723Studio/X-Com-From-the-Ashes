@@ -1,4 +1,11 @@
 cutscenes:
+  - delete: intro
+  - type: intro
+    useUfoAudioSequence: true
+    audioTracks:
+      - GMTACTIC
+    videos:
+      - Resources/Slides/intro.flc
   - type: intro2
     slideshow:
       transitionSeconds: 50
@@ -29,10 +36,3 @@ cutscenes:
           captionSize: [160, 184]
           captionPos: [3, 3]
           captionColor: 244
-  - delete: intro
-  - type: intro
-    useUfoAudioSequence: true
-    audioTracks:
-      - GMTACTIC
-    videos:
-      - Resources/Slides/intro.flc

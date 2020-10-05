@@ -1,0 +1,17 @@
+mapScripts: #for tests
+  - type: TRAP
+    commands:
+    - type: addCraft
+    - type: addUFO
+    # - type: addBlock
+    #   terrain: XBASE
+    #   blocks:
+    #     - 1 
+    # - type: addBlock
+    #   terrain: XBASE
+    #   blocks:
+    #     - 2 
+    - type: addBlock
+      size: 2
+      executions: 5
+    - type: fillArea

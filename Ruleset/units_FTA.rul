@@ -45,6 +45,7 @@ units:
     standHeight: 22
     kneelHeight: 14
     value: 20
+    spawnedUnitSound: &SpawnSounds [41]
     deathSound: &MaleDeathSounds [41, 42, 43]
     #panicSound: &MalePanicSounds [701, 702, 703, 704, 705, 706, 707, 708, 709]
     #berserkSound: &MaleBerserkSounds [801, 802, 803, 804, 805]

@@ -889,21 +889,21 @@ extended:
 
   scripts:
     damageUnit:
-      - offset: 1 #test category script
-        code: |
-          var ptr RuleItem itemRuleset;
-          var ptre GeoscapeGame geoGame;
-          var int check;
+      # - offset: 1 #test category script
+      #   code: |
+      #     var ptr RuleItem itemRuleset;
+      #     var ptre GeoscapeGame geoGame;
+      #     var int check;
 
-          # damaging_item.getRuleItem itemRuleset; 
-          battle_game.getGeoscapeGame geoGame;
-          geoGame.getLoyalty check;
-          # itemRuleset.getHaveCategory check "STR_SNIPER_RIFLES";
-          # if eq check 1;
-          debug_log "loyalty: " check;
-          #end;
+      #     # damaging_item.getRuleItem itemRuleset; 
+      #     battle_game.getGeoscapeGame geoGame;
+      #     geoGame.getLoyalty check;
+      #     # itemRuleset.getHaveCategory check "STR_SNIPER_RIFLES";
+      #     # if eq check 1;
+      #     debug_log "loyalty: " check;
+      #     #end;
 
-          return;
+      #     return;
 
       - offset: 1 #Flashbang damage script
         code: |
@@ -2158,12 +2158,6 @@ extended:
             #debug_log 2 addPower; #for good
             add power addPower;
           end;
-
-          return power part side;
-
-      - offset: 0.2 #Anti-psiker weapon
-        code: |
-          set power -100;
 
           return power part side;
 

@@ -172,3 +172,16 @@ interfaces:
         color2: 213  # gold
       - id: button
         color: 246   # purple
+  - type: newPossibleCovertOperationState
+    backgroundImage: COVEROPSHQ_BACKGROUND.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 239   # bright green
+      - id: text2
+        color: 138   # yellow
+      - id: button
+        color: 133   # minty green

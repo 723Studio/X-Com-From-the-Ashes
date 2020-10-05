@@ -526,6 +526,7 @@ alienDeployments:
     height: 4
     civilians: 1
     extendedObjectiveType: STR_ITEM_EXTRACTION
+    battleScript: TEST_SCRIPT
     data:
       # - alienRank: 5
       #   lowQty: 2
@@ -561,33 +562,3 @@ alienDeployments:
           -
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
-
-mapScripts: #for tests
-  - type: TRAP
-    commands:
-    - type: addCraft
-    - type: addUFO
-    # - type: addBlock
-    #   terrain: XBASE
-    #   blocks:
-    #     - 1 
-    # - type: addBlock
-    #   terrain: XBASE
-    #   blocks:
-    #     - 2 
-    - type: addBlock
-      size: 2
-      executions: 5
-    - type: fillArea
-
-cutscenes: #for tests
-  - type: dimensionXsecured
-    slideshow:
-      transitionSeconds: 50
-      musicId: GMENBASE
-      slides:
-        - imagePath: Resources/Slides/DimensionGate.png
-          caption: STR_TODO_SLIDE_CAPTION
-          captionSize: [160, 184]
-          captionPos: [3, 3]
-          captionColor: 244
