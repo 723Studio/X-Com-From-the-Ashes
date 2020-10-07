@@ -153,6 +153,8 @@ extraSprites:
       100: Resources/Armors/Enemies/Special/bigob_XCOM_EX_COMMANDER.png
       101: Resources/Armors/Enemies/MiB/bigob_MIB_AGENT.png
       102: Resources/Armors/Enemies/MiB/bigob_MIB_ENFORCER.png
+      103: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SOLDIER.png
+      104: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCIENTIST.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -199,6 +201,8 @@ extraSprites:
       342: Resources/Weapons/Earthbound/Faction/bigob_HuntingRifleClip.png
       343: Resources/Weapons/Earthbound/Faction/bigob_RiotRifle.png
       344: Resources/Weapons/Earthbound/Faction/bigob_RiotRifleClip.png
+      345: Resources/Weapons/Earthbound/Faction/bigob_RiotPistol.png
+      346: Resources/Weapons/Earthbound/Faction/bigob_RiotPistolClip.png
       
   - type: FLOOROB.PCK
     files:
@@ -207,6 +211,8 @@ extraSprites:
       100: Resources/Armors/Enemies/Special/floorob_XCOM_EX_COMMANDER.png
       101: Resources/Armors/Enemies/MiB/floorob_MIB_AGENT.png
       102: Resources/Armors/Enemies/MiB/floorob_MIB_ENFORCER.png
+      103: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SOLDIER.png
+      104: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SCIENTIST.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
       303: Resources/Weapons/Earthbound/Xcom/floorob_LightCannon.png
@@ -238,6 +244,8 @@ extraSprites:
       342: Resources/Weapons/Earthbound/Faction/floorob_HuntingRifleClip.png
       343: Resources/Weapons/Earthbound/Faction/floorob_RiotRifle.png
       344: Resources/Weapons/Earthbound/Faction/floorob_RiotRifleClip.png
+      345: Resources/Weapons/Earthbound/Faction/bigob_RiotPistol.png
+      346: Resources/Weapons/Earthbound/Faction/bigob_RiotPistolClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -283,6 +291,8 @@ extraSprites:
       408: Resources/Weapons/Earthbound/Faction/handob_HuntingRifleClip.png
       416: Resources/Weapons/Earthbound/Faction/handob_RiotRifle.png
       424: Resources/Weapons/Earthbound/Faction/handob_RiotRifleClip.png
+      430: Resources/Weapons/Earthbound/Faction/handob_RiotPistol.png
+      436: Resources/Weapons/Earthbound/Faction/handob_RiotPistolClip.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
@@ -333,7 +343,24 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
-
+  - type: RESISTANCE_SOLDIER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SOLDIER.png
+  - type: inventory_RESISTANCE_SOLDIER
+    singleImage: true
+    files:
+      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SOLDIER.png
+#interwins
+  - type: interception_jammed
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/interception_jammed.png
 #ufopedia
   - type: WIP_UFOPEDIA.SPK
     singleImage: true

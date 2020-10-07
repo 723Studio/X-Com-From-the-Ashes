@@ -31,6 +31,25 @@ alienRaces:
       - STR_MIB_AGENT # 12 - Special Guest 2 / Non-Combatant 1
       - STR_MIB_AGENT # 13 - Non-Combatant 2
       - STR_MIB_AGENT # 14 - Special Guest 3
+
+  - id: STR_ZOMBIES #hardcoded, do not rename!
+    members:
+      - STR_XCOM_EX_COMMANDER # 0 - Commander
+      - STR_MIB_AGENT # 1 - Leader
+      - STR_MIB_AGENT # 2 - Engineer
+      - STR_MIB_AGENT # 3 - Medic
+      - STR_MIB_ENFORCER # 4 - Navigator
+      - STR_MIB_AGENT # 5 - Soldier
+      - STR_MIB_AGENT # 6 - Terrorist 1
+      - STR_MIB_AGENT # 7 - Terrorist 2
+      - STR_MIB_AGENT # 8 - Special Guest 1
+      - STR_MIB_AGENT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_MIB_AGENT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_MIB_AGENT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_MIB_AGENT # 13 - Non-Combatant 2
+      - STR_MIB_AGENT # 14 - Special Guest 3
+
+
   - id: STR_SPAWNS #hardcoded, do not rename!
     members:
       - STR_XCOM_EX_COMMANDER # 0 - Commander

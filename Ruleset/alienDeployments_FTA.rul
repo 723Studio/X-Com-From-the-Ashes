@@ -437,6 +437,51 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+
+  - type: STR_RESISTANCE_FARM_PARASITE
+    race: STR_ZOMBIES
+    width: 80
+    length: 80
+    height: 8
+    terrains:
+      - CULTA
+    script: RESISTANCE_FARM
+    shade: 0
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_GENERAL_TRAP_BRIEFING
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+
+
+
   - type: STR_GENERAL_TRAP
     race: STR_ADVENT_START
     alternativeDeployment: STR_GENERAL_TRAP_ALT

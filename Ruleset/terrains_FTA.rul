@@ -1,5 +1,6 @@
 terrains:
   - delete: XBASE
+  - delete: CULTA
   - name: XBASE
     mapDataSets:
       - BLANKS
@@ -90,3 +91,507 @@ terrains:
       - name: XBASF_06
         width: 10
         length: 10
+  - name: CULTA
+    script: FARM
+    mapDataSets:
+      - BLANKS
+      - CULTIVAT
+      - BARN
+      - ROADS
+      - CULTMACHINES
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_MALE_FORESTER
+    #   - STR_DOGE
+    #   - STR_COW
+    #   - STR_PIG
+    #   - STR_SHEEP
+    #   - STR_CHICKEN
+    mapBlocks: &AnchorVanillaFarm
+      - name: CULTA00
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA01
+        width: 10
+        length: 10
+      - name: CULTA02
+        width: 10
+        length: 10
+      - name: CULTA03
+        width: 10
+        length: 10
+      - name: CULTA04
+        width: 10
+        length: 10
+      - name: CULTA05
+        width: 10
+        length: 10
+      - name: CULTA06
+        width: 10
+        length: 10
+      - name: CULTA07
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA08
+        width: 10
+        length: 10
+      - name: CULTA09
+        width: 10
+        length: 10
+      - name: CULTA10
+        width: 10
+        length: 10
+      - name: CULTA11
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA12
+        width: 10
+        length: 10
+      - name: CULTA13
+        width: 10
+        length: 10
+      - name: CULTA14
+        width: 10
+        length: 10
+      - name: CULTA15
+        width: 10
+        length: 10
+      - name: CULTA16
+        width: 10
+        length: 10
+      - name: CULTA17
+        width: 10
+        length: 10
+      - name: CULTA18
+        width: 10
+        length: 10
+      - name: CULT_NEW00
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULT_NEW01
+        width: 10
+        length: 10
+      - name: CULT_NEW02
+        width: 10
+        length: 10
+      - name: CULT_NEW03
+        width: 10
+        length: 10
+      - name: CULT_NEW04
+        width: 10
+        length: 10
+      - name: CULT_NEW05
+        width: 10
+        length: 10
+      - name: CULT_NEW06
+        width: 10
+        length: 10
+      - name: CULT_NEW07
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULT_NEW08
+        width: 10
+        length: 10
+      - name: CULT_NEW09
+        width: 10
+        length: 10
+      - name: CULT_NEW10
+        width: 10
+        length: 10
+      - name: CULT_NEW11
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULT_NEW12
+        width: 10
+        length: 10
+      - name: CULT_NEW13
+        width: 10
+        length: 10
+      - name: CULT_NEW14
+        width: 10
+        length: 10
+      - name: CULT_NEW15
+        width: 10
+        length: 10
+      - name: CULT_NEW16
+        width: 10
+        length: 10
+      - name: CULT_NEW17
+        width: 10
+        length: 10
+      - name: CULT_NEW18
+        width: 10
+        length: 10
+      - name: CULTAFARM00
+        width: 20
+        length: 20
+      - name: CULTAFARM01
+        width: 10
+        length: 10
+      - name: CULTAFARM02
+        width: 10
+        length: 10
+      - name: CULTAFARM03
+        width: 10
+        length: 10
+      - name: CULTAFARM04
+        width: 10
+        length: 10
+      - name: CULTAFARM05
+        width: 10
+        length: 10
+      - name: CULTAFARM06
+        width: 10
+        length: 10
+      - name: CULTAFARM07
+        width: 20
+        length: 20
+      - name: CULTAFARM08
+        width: 20
+        length: 20
+      - name: CULTAFARM09
+        width: 20
+        length: 20
+      - name: CULTAFARM10
+        width: 10
+        length: 10
+      - name: CULTAFARM11
+        width: 10
+        length: 10
+      - name: CULTAFARM12
+        width: 10
+        length: 10
+      - name: CULTAFARM13
+        width: 10
+        length: 10
+      - name: CULTAFARM14
+        width: 20
+        length: 20
+      - name: CULTAFARM15
+        width: 20
+        length: 20
+      - name: CULTAFARM16
+        width: 10
+        length: 10
+      - name: CULTAFARM17
+        width: 20
+        length: 20
+      - name: CULTAFARM18
+        width: 20
+        length: 20
+      - name: CULTAFARM19
+        width: 10
+        length: 10
+      - name: CULTAFARM20
+        width: 10
+        length: 10
+      - name: CULTAFARM21
+        width: 10
+        length: 10
+      - name: CULTAFARM22
+        width: 20
+        length: 20
+      - name: CULTASOL00
+        width: 20
+        length: 20
+      - name: CULTASOL01
+        width: 10
+        length: 10
+      - name: CULTASOL02
+        width: 20
+        length: 20
+      - name: CULTABIG01
+        width: 20
+        length: 20
+      - name: CULTABIG02
+        width: 20
+        length: 20
+      - name: CULTABIG03
+        width: 20
+        length: 20
+      - name: CULTABIG04
+        width: 20
+        length: 20
+      - name: CULTABIG05
+        width: 20
+        length: 20
+      - name: CULTABIG06
+        width: 20
+        length: 20
+      - name: CULTABIG07
+        width: 20
+        length: 20
+      - name: CULTABIG08
+        width: 20
+        length: 20
+      - name: CULT_FINNIK00
+        width: 10
+        length: 10
+      - name: CULTACIV00
+        width: 10
+        length: 10
+      - name: CULTACIV01
+        width: 10
+        length: 10
+      - name: CULTACIV02
+        width: 10
+        length: 10
+      - name: CULTA_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTA_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: CULTA_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
+  - name: CULTB
+    script: FARM
+    mapDataSets:
+      - BLANKS
+      - CULTIVAT2
+      - BARN2
+      - ROADS
+      - CULTMACHINES
+    mapBlocks: *AnchorVanillaFarm
+  - name: RURAL
+    mapDataSets:
+      - BLANKS
+      - VILROADS
+      - VILBITS
+      - VILBAN
+      - VILFRNITURE
+    civilianTypes:
+      - MALE_CIVILIAN
+      - MALE_CIVILIAN
+      - MALE_CIVILIAN
+      # - STR_MALE_GREASER
+      # - STR_MALE_GREASER
+      # - STR_MALE_FORESTER
+      # - STR_MALE_FORESTER
+      # - STR_MALE_CIVILIAN_HUNTER
+      # - STR_FEMALE_CIVILIAN_HUNTER
+      # - STR_FEMALE_CASUAL
+      # - STR_FEMALE_CASUAL
+      # - STR_FEMALE_CASUAL
+      # - STR_MALE_CIVILIAN_WORKER
+      # - STR_MALE_CIVILIAN_WORKER
+      # - STR_MALE_CIVILIAN_WORKER
+      # - STR_MALE_CIVILIAN_FARMER
+      # - STR_MALE_CIVILIAN_FARMER
+      # - STR_MALE_CIVILIAN_FARMER
+      # - STR_MALE_CIVILIAN_FARMER
+      # - STR_MALE_CIVILIAN_FARMER
+      # - STR_FEMALE_CIVILIAN_FARMER
+      # - STR_FEMALE_CIVILIAN_FARMER
+      # - STR_FEMALE_CIVILIAN_FARMER
+      # - STR_FEMALE_CIVILIAN_FARMER
+      # - STR_FEMALE_CIVILIAN_FARMER
+      # - STR_PRIEST
+      # - STR_MALE_DOCTOR
+      # - STR_FEMALE_DOCTOR
+      # - STR_MALE_CIVILIAN_HOOLIGAN
+      # - STR_MALE_CIVILIAN_HOOLIGAN
+      # - STR_MALE_CIVILIAN_HOOLIGAN
+      # - STR_BIKINI_BABE
+      # - STR_POLICEMAN
+      # - STR_POLICEWOMAN
+      # - STR_DOGE
+      # - STR_DOGE
+      # - STR_DOGE
+      # - STR_DOGE
+      # - STR_DOGE
+      # - STR_COW
+      # - STR_COW
+      # - STR_COW
+      # - STR_PIG
+      # - STR_PIG
+      # - STR_PIG
+      # - STR_SHEEP
+      # - STR_SHEEP
+      # - STR_SHEEP
+      # - STR_CHICKEN
+      # - STR_CHICKEN
+      # - STR_CHICKEN
+    script: RURAL
+    mapBlocks: &AnchorRural
+      - name: VILBAN00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: VILBAN01
+        width: 10
+        length: 10
+      - name: VILBAN02
+        width: 10
+        length: 10
+      - name: VILBAN03
+        width: 10
+        length: 10
+      - name: VILBAN04
+        width: 10
+        length: 10
+      - name: VILBAN05
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN06
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN07
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN08
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN09
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN10
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN11
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN12
+        width: 20
+        length: 20
+        groups: [0, 5]
+      - name: VILBAN13
+        width: 10
+        length: 10
+      - name: VILBAN14
+        width: 20
+        length: 20
+      - name: VILBAN15
+        width: 20
+        length: 20
+      - name: VILBAN16
+        width: 20
+        length: 20
+      - name: VILBAN17
+        width: 10
+        length: 10
+      - name: VILBAN18
+        width: 10
+        length: 10
+      - name: VILBAN19
+        width: 10
+        length: 10
+      - name: VILBAN20 #WE ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: VILBAN21 #WE ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: VILBAN22 #WE ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: VILBAN23 #WE ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: VILBAN24 #WE ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: VILBAN25 #WE ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: VILBAN26 #WE ROAD
+        width: 10
+        length: 10
+        groups: 2
+      - name: VILBAN30 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN31 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN32 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN33 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN34 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN35 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN36 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN37 #NS ROAD
+        width: 10
+        length: 10
+        groups: 3
+      - name: VILBAN40 #crossroad
+        width: 10
+        length: 10
+        groups: 4
+      - name: VILBAN50
+        width: 10
+        length: 10
+      - name: VILBAN51
+        width: 20
+        length: 20
+      - name: VILBAN52
+        width: 10
+        length: 10
+      - name: VILBAN53
+        width: 20
+        length: 20
+      - name: VILBAN54
+        width: 10
+        length: 10
+      - name: VILBAN55
+        width: 10
+        length: 10
+      - name: VILBAN56
+        width: 20
+        length: 20
+      - name: VILBAN57
+        width: 10
+        length: 10
+  - name: RURAL2
+    mapDataSets:
+      - BLANKS
+      - VILROADS2
+      - VILBITS2
+      - VILBAN2
+      - VILFRNITURE2
+    civilianTypes:
+      - STR_MALE_CIVILIAN_HOOLIGAN
+    mapBlocks: *AnchorRural
+

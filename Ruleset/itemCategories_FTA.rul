@@ -76,13 +76,15 @@
   - type: STR_CONCEALABLE
     listOrder: 400
   - type: STR_HUMAN_TECH
-    listOrder: 500
+    listOrder: 500 
+  - type: STR_RESISTANCE
+    listOrder: 510      
   - type: STR_XCOM_TECH
-    listOrder: 510
+    listOrder: 550
   - type: STR_ALIEN_TECH
-    listOrder: 520
+    listOrder: 600
   - type: STR_TLETH_TECH
-    listOrder: 522
+    listOrder: 700
   - type: STR_WRECKS
     listOrder: 800
   - type: STR_CORPSES

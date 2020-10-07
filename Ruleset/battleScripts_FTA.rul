@@ -3,10 +3,12 @@ battleScripts:
     commands:
     - type: spawnUnit
       executions: 2
+      executionChances: 100
       startTurn: 4
       endTurn: 6
       packSize: 3
-      scriptUnitSpawnSound: 70
+      randomPackSize: true
+      unitSide: 1
       minDifficulty: 1
       maxDifficulty: 3
       rects:
