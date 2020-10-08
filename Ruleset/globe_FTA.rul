@@ -1,0 +1,5 @@
+globe:
+  textures:
+    - id: -4
+      deployments:
+        STR_RESISTANCE_FARM: 100

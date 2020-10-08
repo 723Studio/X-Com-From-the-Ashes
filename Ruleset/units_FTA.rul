@@ -81,6 +81,9 @@ units:
     spotter: 2
     canSurrender: true
 
+#monsters
+
+
 #Civilians
   - type: STR_RESISTANCE_SCIENTIST
     race: STR_SPAWNS
@@ -154,29 +157,47 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
-    # builtInWeaponSets:
-    #   - - STR_SNUBNOSE_PISTOL
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #   - - STR_SNUBNOSE_PISTOL
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #   - - STR_SNUBNOSE_PISTOL
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #   - - STR_SNUBNOSE_PISTOL
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #   - - STR_SNUBNOSE_PISTOL
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #   - - STR_SNUBNOSE_PISTOL
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #     - STR_SNUBNOSE_PISTOL_CLIP
-    #   - - STR_USP_MATCH
-    #     - STR_USP_9_MM_CLIP
-    #     - STR_FLOPPY_LOG
-    #   - - STR_COLT45
-    #     - STR_COLT45_CLIP
-    #     - STR_FLOPPY_LOG
-    #   - - STR_COLT45
-    #     - STR_COLT45_CLIP
-    #   - - STR_DESERT_EAGLE
-    #     - STR_DESERT_EAGLE_CLIP
-    #     - STR_DESERT_EAGLE_CLIP
+    builtInWeaponSets:
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+      - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_FIRST_AID
+      - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_COMBAT_KNIFE
+      - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_LIQUID_FLAME
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+      - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_GRENADE
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_FIRST_AID

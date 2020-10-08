@@ -37,3 +37,9 @@ eventScripts:
     maxDifficulty: 4
 
 
+  - type: testEventScript
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4

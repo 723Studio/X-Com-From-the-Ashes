@@ -63,6 +63,8 @@ research:
     needItem: true
   - name: STR_XCOM_FILES_3
     needItem: true
+  - name: STR_RESISTANCE_FIRST_HELP
+    needItem: true
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [HQ]

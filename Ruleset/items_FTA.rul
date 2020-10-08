@@ -105,6 +105,54 @@ items:
     attraction: 6
     listOrder: 18000
 #pistols
+  - type: STR_SNUBNOSE_PISTOL
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 900
+    costSell: 400
+    weight: 5
+    bigSprite: 351
+    floorSprite: 351
+    handSprite: 480
+    bulletSprite: 1
+    fireSound: 4
+    compatibleAmmo:
+      - STR_SNUBNOSE_PISTOL_CLIP
+    accuracyCloseQuarters: 145
+    accuracySnap: 70
+    accuracyAimed: 80
+    tuSnap: 20
+    tuAimed: 30
+    tuLoad: 15
+    aimRange: 18
+    dropoff: 4
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 1
+    attraction: 8
+    listOrder: 19980
+  - type: STR_SNUBNOSE_PISTOL_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 80
+    costSell: 40
+    weight: 2
+    bigSprite: 352
+    floorSprite: 352
+    handSprite: 488
+    hitSound: 22
+    hitAnimation: 26
+    power: 26
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    attraction: 8
+    listOrder: 19990
   - type: STR_RIOT_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     size: 0.1
@@ -226,11 +274,64 @@ items:
     attraction: 8
     listOrder: 20350
 #SMG
+  # - type: STR_SKORPION #TODO
+  #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
+  #   landOnly: true
+  #   size: 0.15
+  #   costBuy: 350
+  #   costSell: 250
+  #   weight: 6
+  #   bigSprite: 404
+  #   floorSprite: 150
+  #   handSprite: 144
+  #   bulletSprite: 17
+  #   fireSound: 58
+  #   compatibleAmmo:
+  #     - STR_SKORPION_CLIP
+  #   accuracyCloseQuarters: 125
+  #   accuracySnap: 55
+  #   accuracyAuto: 45
+  #   tuSnap: 26
+  #   tuAuto: 36
+  #   costThrow:
+  #     energy: 12
+  #   autoRange: 9
+  #   snapRange: 12
+  #   confSnap:
+  #     shots: 3
+  #   kneelBonus: 105
+  #   battleType: 1
+  #   twoHanded: false
+  #   invWidth: 1
+  #   invHeight: 2
+  #   armor: 30
+  #   autoShots: 5
+  #   sprayWaypoints: 2
+  #   attraction: 7
+  #   listOrder: 20700
+  # - type: STR_SKORPION_CLIP
+  #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
+  #   landOnly: true
+  #   size: 0.1
+  #   costBuy: 100
+  #   costSell: 50
+  #   weight: 3
+  #   bigSprite: 405
+  #   floorSprite: 151
+  #   hitSound: 22
+  #   hitAnimation: 26
+  #   power: 20
+  #   damageType: 1
+  #   clipSize: 24
+  #   battleType: 2
+  #   armor: 30
+  #   attraction: 7
+  #   listOrder: 20710
   - type: STR_PDW
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     requiresBuy:
       - STR_TODOIUM
-    size: 0.15
+    size: 0.03
     costBuy: 7000
     costSell: 5000
     weight: 6
@@ -535,6 +636,58 @@ items:
     attraction: 8
     listOrder: 21320
 #sniper rifles
+  - type: STR_HUNTING_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
+    size: 0.2
+    landOnly: true
+    costBuy: 4000
+    costSell: 3000
+    weight: 11
+    bigSprite: 341
+    floorSprite: 341
+    handSprite: 400
+    bulletSprite: 2
+    fireSound: 72
+    compatibleAmmo:
+      - STR_HUNTING_RIFLE_CLIP
+    accuracyCloseQuarters: 66
+    accuracySnap: 72
+    accuracyAimed: 125
+    tuSnap: 33
+    tuAimed: 70
+    tuLoad: 20
+    snapRange: 25
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    attraction: 7
+    listOrder: 21035
+  - type: STR_HUNTING_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
+    size: 0.04
+    landOnly: true
+    costBuy: 100
+    costSell: 70
+    weight: 2
+    bigSprite: 342
+    floorSprite: 342
+    handSprite: 408
+    hitSound: 58
+    hitAnimation: 26
+    power: 33
+    damageAlter:
+      RandomType: 7
+    damageType: 1
+    clipSize: 5 #TODO bolt-action
+    battleType: 2
+    armor: 30
+    attraction: 7
+    listOrder: 21036
   - type: STR_SNIPER_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     requiresBuy:
@@ -623,6 +776,122 @@ items:
     attraction: 9
     listOrder: 22160
 #shotguns
+  - type: STR_SAWED_OFF
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 800
+    costSell: 500
+    weight: 7
+    bigSprite: 347
+    floorSprite: 347
+    handSprite: 448
+    bulletSprite: 1
+    fireSound: 73
+    compatibleAmmo:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+      - STR_DOUBLE_BARRELED_BUCKSHOT_AA
+    accuracyCloseQuarters: 150
+    accuracyMultiplier:
+      firing: 0.5
+      flatHundred: 0.5
+    accuracySnap: 130
+    accuracyAuto: 105
+    tuSnap: 21
+    tuAuto: 23
+    snapRange: 6
+    autoRange: 5
+    dropoff: 11
+    autoShots: 2
+    battleType: 1
+    shotgunChoke: 100
+    kneelBonus: 110
+    invWidth: 1
+    invHeight: 2
+    armor: 40
+    attraction: 7
+    listOrder: 22459
+  - type: STR_DOUBLE_BARRELED
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    landOnly: true
+    size: 0.2
+    costBuy: 800
+    costSell: 500
+    weight: 11
+    bigSprite: 348
+    floorSprite: 348
+    handSprite: 456
+    bulletSprite: 1
+    fireSound: 73
+    compatibleAmmo:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+      - STR_DOUBLE_BARRELED_BUCKSHOT_AA
+    accuracyCloseQuarters: 100
+    accuracySnap: 130
+    accuracyAimed: 200
+    accuracyAuto: 110
+    tuSnap: 26
+    tuAimed: 55
+    tuAuto: 28
+    snapRange: 10
+    aimRange: 15
+    autoRange: 7
+    dropoff: 4
+    autoShots: 2
+    tuLoad: 10
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 7
+    listOrder: 22460
+  - type: STR_DOUBLE_BARRELED_BUCKSHOT
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.01
+    costBuy: 25
+    costSell: 15
+    weight: 2
+    bigSprite: 349
+    floorSprite: 349
+    handSprite: 464
+    hitSound: 13
+    hitAnimation: 26
+    power: 16
+    damageType: 1
+    clipSize: 2
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    bulletSpeed: 2
+    attraction: 7
+    listOrder: 22461
+  - type: STR_DOUBLE_BARRELED_BUCKSHOT_AA
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.01
+    costSell: 300
+    weight: 2
+    bigSprite: 350
+    floorSprite: 350
+    handSprite: 472
+    hitSound: 13
+    hitAnimation: 26
+    power: 20
+    damageType: 1
+    clipSize: 2
+    battleType: 2
+    armor: 25
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    bulletSpeed: 2
+    attraction: 7
+    listOrder: 22465
   - type: STR_PUMP_ACTION_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
@@ -1556,6 +1825,31 @@ items:
     attraction: 8
     listOrder: 34000
 #grenades
+  - type: STR_LIQUID_FLAME
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 250
+    costSell: 200
+    weight: 4
+    bigSprite: 353
+    floorSprite: 353
+    handSprite: 496
+    power: 35
+    damageAlter:
+      ToMorale: 15.0
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 60
+    unprimeActionName: STR_UNPRIME_GRENADE
+    damageType: 2
+    battleType: 4
+    armor: 20
+    attraction: 6
+    listOrder: 38400
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
@@ -1687,9 +1981,80 @@ items:
     kneelBonus: 100
     experienceTrainingMode: 7
     listOrder: 38600
-#tools
-  - type: STR_MEDI_PACK
+#medical
+  - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.4
+    costBuy: 1000
+    costSell: 750
+    weight: 5
+    bigSprite: 354
+    floorSprite: 354
+    handSprite: 504
+    battleType: 6
+    invWidth: 2
+    invHeight: 1
+    painKiller: 1
+    heal: 1
+    stimulant: 1
+    woundRecovery: 1
+    healthRecovery: 1
+    stunRecovery: 5
+    energyRecovery: 15
+    costUse:
+      time: 12
+      morale: -5
+    flatRate: false
+    attraction: 5
+    experienceTrainingMode: 19
+    listOrder: 48125
+  - type: STR_PAINKILLER
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 500
+    costSell: 400
+    weight: 3
+    bigSprite: 355
+    floorSprite: 355
+    handSprite: 512
+    hitSound: 74
+    battleType: 6
+    medikitType: 3
+    medikitTargetSelf: true
+    isConsumable: true
+    painKiller: 1
+    costUse:
+      time: 10
+      morale: -5
+    invWidth: 1
+    invHeight: 1
+    listOrder: 48050
+  - type: STR_STIMS
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 500
+    costSell: 400
+    weight: 3
+    bigSprite: 356
+    floorSprite: 356
+    handSprite: 520
+    hitSound: 74
+    battleType: 6
+    stimulant: 1
+    medikitType: 2
+    medikitTargetSelf: true
+    isConsumable: true
+    stunRecovery: 10
+    energyRecovery: 42
+    tuUse: 10
+    invWidth: 1
+    invHeight: 1
+    listOrder: 48000
+  - type: STR_MEDI_PACK
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     size: 0.4
     costBuy: 10000
     costSell: 5000
@@ -1716,7 +2081,7 @@ items:
     experienceTrainingMode: 19
     listOrder: 48150
   - type: STR_TRAUMA_PACK
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     requiresBuy:
       - STR_TODOIUM
     size: 0.4

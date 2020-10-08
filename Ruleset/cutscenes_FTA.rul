@@ -18,7 +18,7 @@ cutscenes:
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_2.png
           caption: STR_INTRO2_SLIDE2_CAPTION
-          captionSize: [160, 184]
+          captionSize: [110, 184]
           captionPos: [3, 3]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_3.png

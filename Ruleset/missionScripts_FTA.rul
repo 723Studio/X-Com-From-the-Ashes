@@ -1,0 +1,64 @@
+missionScripts:
+#delete vanilla
+  - delete: gameStart
+  - delete: recon
+  - delete: invasion
+  - delete: researchRetaliation
+  - delete: beginnerRetaliation
+  - delete: experiencedRetaliation
+  - delete: veteranRetaliation
+  - delete: geniusRetaliation
+  - delete: superhumanRetaliation
+  - delete: recurringTerror
+
+  # - type: gertrudeEllisonAmbush
+  #   firstMonth: 0
+  #   executionOdds: 40
+  #   missionWeights:
+  #     0:
+  #       STR_GERTRUDE_ELLISON_AMBUSH: 100
+  #   regionWeights:
+  #     0:
+  #       REGION_GERTRUDE_ELLISON_AMBUSH: 100
+  #   useTable: false
+  #   maxRuns: 1
+  #   varName: GERTRUDE_ELLISON_AMBUSH
+  #   researchTriggers:
+  #     STR_DOSSIER_GERTRUDE_ELLISON: true
+  #   startDelay: 20
+  #   randomDelay: 43500
+
+#aliens
+  - type: startTrolling
+    missionWeights:
+      0:
+        STR_EARLY_GAME_TROLLING: 100
+    lastMonth: 0
+    targetBaseOdds: 100
+    raceWeights:
+      0:
+        STR_SECTOID: 100
+    startDelay: 20
+    randomDelay: 43500
+
+
+
+#resistance
+  - type: heavenDefenceFirstTime
+    firstMonth: 0
+    executionOdds: 100
+    #allowedProcessor: 2
+    missionWeights:
+      0:
+        STR_RESISTANCE_HEAVEN_DEFENCE: 100
+    regionWeights:
+      0:
+        RESISTANCE_START_ZONE: 100
+    raceWeights:
+      0:
+        STR_ZOMBIES: 100
+    # researchTriggers:
+    #   STR_RESISTANCE_FIRST_HELP: false
+    useTable: false
+    startDelay: 30
+    randomDelay: 300

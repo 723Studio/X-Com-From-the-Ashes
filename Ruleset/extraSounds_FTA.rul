@@ -18,3 +18,6 @@ extraSounds:
       69: Resources/Weapons/Sounds/RocketFire.wav
       70: Resources/Weapons/Sounds/Flashbang_explosion.wav
       71: Resources/Weapons/Sounds/HumanRifleFire.wav
+      72: Resources/Weapons/Sounds/Sztucer.wav
+      73: Resources/Weapons/Sounds/SluggaFire.wav
+      74: Resources/Weapons/Sounds/Inject.wav

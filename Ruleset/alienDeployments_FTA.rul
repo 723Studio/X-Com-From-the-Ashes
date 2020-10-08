@@ -438,8 +438,7 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
 
-  - type: STR_RESISTANCE_FARM_PARASITE
-    race: STR_ZOMBIES
+  - type: STR_RESISTANCE_FARM
     width: 80
     length: 80
     height: 8

@@ -203,6 +203,16 @@ extraSprites:
       344: Resources/Weapons/Earthbound/Faction/bigob_RiotRifleClip.png
       345: Resources/Weapons/Earthbound/Faction/bigob_RiotPistol.png
       346: Resources/Weapons/Earthbound/Faction/bigob_RiotPistolClip.png
+      347: Resources/Weapons/Earthbound/Faction/bigob_SawedOff.png
+      348: Resources/Weapons/Earthbound/Faction/bigob_DB_Shotgun.png
+      349: Resources/Weapons/Earthbound/Faction/bigob_DB_ShotgunBuckshot.png
+      350: Resources/Weapons/Earthbound/Faction/bigob_DB_ShotgunBuckshotAA.png
+      351: Resources/Weapons/Earthbound/General/bigob_SnubnosePistol.png
+      352: Resources/Weapons/Earthbound/General/bigob_SnubnosePistolDrum.png
+      353: Resources/Weapons/Earthbound/Grenades/bigob_LiquidFlame.png
+      354: Resources/Weapons/Earthbound/Utilities/bigob_FirstAid.png
+      355: Resources/Weapons/Earthbound/Utilities/bigob_Painkillers.png
+      356: Resources/Weapons/Earthbound/Utilities/bigob_Stims.png
       
   - type: FLOOROB.PCK
     files:
@@ -246,6 +256,16 @@ extraSprites:
       344: Resources/Weapons/Earthbound/Faction/floorob_RiotRifleClip.png
       345: Resources/Weapons/Earthbound/Faction/bigob_RiotPistol.png
       346: Resources/Weapons/Earthbound/Faction/bigob_RiotPistolClip.png
+      347: Resources/Weapons/Earthbound/Faction/floorob_SawedOff.png
+      348: Resources/Weapons/Earthbound/Faction/floorob_DB_Shotgun.png
+      349: Resources/Weapons/Earthbound/Faction/floorob_DB_ShotgunBuckshot.png
+      350: Resources/Weapons/Earthbound/Faction/floorob_DB_ShotgunBuckshotAA.png
+      351: Resources/Weapons/Earthbound/General/floorob_SnubnosePistol.png
+      352: Resources/Weapons/Earthbound/General/floorob_SnubnosePistolDrum.png
+      353: Resources/Weapons/Earthbound/Grenades/floorob_LiquidFlame.png
+      354: Resources/Weapons/Earthbound/Utilities/floorob_FirstAid.png
+      355: Resources/Weapons/Earthbound/Utilities/floorob_Painkillers.png
+      356: Resources/Weapons/Earthbound/Utilities/floorob_Stims.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -291,8 +311,18 @@ extraSprites:
       408: Resources/Weapons/Earthbound/Faction/handob_HuntingRifleClip.png
       416: Resources/Weapons/Earthbound/Faction/handob_RiotRifle.png
       424: Resources/Weapons/Earthbound/Faction/handob_RiotRifleClip.png
-      430: Resources/Weapons/Earthbound/Faction/handob_RiotPistol.png
-      436: Resources/Weapons/Earthbound/Faction/handob_RiotPistolClip.png
+      432: Resources/Weapons/Earthbound/Faction/handob_RiotPistol.png
+      440: Resources/Weapons/Earthbound/Faction/handob_RiotPistolClip.png
+      448: Resources/Weapons/Earthbound/Faction/handob_SawedOff.png
+      456: Resources/Weapons/Earthbound/Faction/handob_DB_Shotgun.png
+      464: Resources/Weapons/Earthbound/Faction/handob_DB_ShotgunBuckshot.png
+      472: Resources/Weapons/Earthbound/Faction/handob_DB_ShotgunBuckshotAA.png
+      480: Resources/Weapons/Earthbound/General/handob_SnubnosePistol.png
+      488: Resources/Weapons/Earthbound/General/handob_SnubnosePistolClip.png
+      496: Resources/Weapons/Earthbound/Grenades/handob_LiquidFlame.png
+      504: Resources/Weapons/Earthbound/Utilities/handob_FirstAid.png
+      512: Resources/Weapons/Earthbound/Utilities/handob_Painkillers.png
+      520: Resources/Weapons/Earthbound/Utilities/handob_Stims.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

@@ -1,0 +1,8 @@
+
+regions:
+  - type: RESISTANCE_START_ZONE #TODO add more nodes
+    missionZones:
+      -
+        - [13.39, 13.39, -53.26, -53.26, -4]
+        - [11.83, 11.83, -52.76, -52.76, -4]
+        - [11.4, 11.4, -50.38, -50.38, -4]

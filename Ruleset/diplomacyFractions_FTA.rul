@@ -6,12 +6,12 @@ diplomacyFactions:
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 27
-    genMissionFreq: 100 #100% chance to run the script
-    helpTreatyMissions:
-      testScript: 100
-    genEventFreq: 100
-    helpTreatyEvents:
-      testEventScript: 100
+    # genMissionFreq: 100 #100% chance to run the script
+    # helpTreatyMissions:
+    #   heavenDefenceFirstTime: 100
+    # genEventFreq: 100
+    # helpTreatyEvents:
+    #   testEventScript: 100 #TODO
     sellingSet:
       STR_STINGRAY_LAUNCHER: 0
       STR_STINGRAY_MISSILES: -1
@@ -36,19 +36,5 @@ diplomacyFactions:
     cardBackground: OFFICE_LADY_BACKGROUND.SCR
     discoverResearch: STR_ENIGMA_CONTACT
 
-missionScripts:
-  - type: testScript
-    missionWeights:
-      0:
-        STR_ALIEN_TERROR: 100
-    useTable: false
-    startDelay: 150
 
-eventScripts:
-  - type: testEventScript
-    firstMonth: 0
-    lastMonth: 0
-    executionOdds: 100
-    minDifficulty: 0
-    maxDifficulty: 4
 
