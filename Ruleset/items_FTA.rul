@@ -70,7 +70,7 @@ items:
   - type: STR_COMBAT_KNIFE #TODO balance
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 260
     costSell: 180
@@ -277,6 +277,8 @@ items:
   - type: STR_MACHINE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     landOnly: true
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.15
     costBuy: 400
     costSell: 300
@@ -312,6 +314,8 @@ items:
   - type: STR_MACHINE_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.02
     costBuy: 100
     costSell: 50
@@ -485,6 +489,8 @@ items:
 #rifles
   - type: STR_RIOT_RIFLE
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES]
+    requiresBuy:
+        - STR_TODOIUM
     size: 0.2
     costBuy: 2500
     costSell: 1550
@@ -515,6 +521,8 @@ items:
     listOrder: 21125
   - type: STR_RIOT_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
+    requiresBuy:
+        - STR_TODOIUM
     size: 0.1
     costBuy: 200
     costSell: 100
@@ -639,6 +647,8 @@ items:
 #sniper rifles
   - type: STR_HUNTING_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     landOnly: true
     costBuy: 4000
@@ -670,6 +680,8 @@ items:
     listOrder: 21035
   - type: STR_HUNTING_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.04
     landOnly: true
     costBuy: 100
@@ -780,6 +792,8 @@ items:
   - type: STR_SAWED_OFF
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     landOnly: true
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 800
     costSell: 500
@@ -815,6 +829,8 @@ items:
   - type: STR_DOUBLE_BARRELED
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     landOnly: true
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     costBuy: 800
     costSell: 500
@@ -851,6 +867,8 @@ items:
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.01
     costBuy: 25
     costSell: 15
@@ -1829,6 +1847,8 @@ items:
   - type: STR_LIQUID_FLAME
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
     landOnly: true
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 250
     costSell: 200
@@ -1985,11 +2005,13 @@ items:
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     landOnly: true
     size: 0.4
     costBuy: 1000
     costSell: 750
-    weight: 5
+    weight: 4
     bigSprite: 354
     floorSprite: 354
     handSprite: 504
@@ -2012,11 +2034,13 @@ items:
     listOrder: 48125
   - type: STR_PAINKILLER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     landOnly: true
     size: 0.1
     costBuy: 500
     costSell: 400
-    weight: 3
+    weight: 2
     bigSprite: 355
     floorSprite: 355
     handSprite: 512
@@ -2034,11 +2058,13 @@ items:
     listOrder: 48050
   - type: STR_STIMS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     landOnly: true
     size: 0.1
     costBuy: 500
     costSell: 400
-    weight: 3
+    weight: 2
     bigSprite: 356
     floorSprite: 356
     handSprite: 520
@@ -2059,7 +2085,7 @@ items:
     size: 0.4
     costBuy: 10000
     costSell: 5000
-    weight: 15
+    weight: 17
     landOnly: true
     bigSprite: 338
     floorSprite: 338
@@ -2088,7 +2114,7 @@ items:
     size: 0.4
     costBuy: 30000
     costSell: 15000
-    weight: 17
+    weight: 10
     landOnly: true
     bigSprite: 339
     floorSprite: 339
@@ -2189,6 +2215,7 @@ items:
     tags:
         FTAG_SELFKILL_WEAPON: 1
 #unit-related
+  #MIBs
   - type: STR_XCOM_EX_COMMANDER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -2261,6 +2288,7 @@ items:
     prisonType: 1
     costSell: 2000
     listOrder: 146030
+  #Resistance units
   - type: STR_SPAWN_RESISTANCE_SOLDIER
     spawnUnit: STR_RESISTANCE_SOLDIER
     spawnUnitFaction: 0
@@ -2307,6 +2335,7 @@ items:
     recoveryPoints: -200
     recover: true
     listOrder: 67800
+  #Zombies
   - type: STR_FACEHUGGER
     categories: [STR_BEASTS]
     size: 0.0
@@ -2370,6 +2399,40 @@ items:
     battleType: 11
     armor: 20
     listOrder: 62310
+
+  - type: STR_MALE_CIVILIAN_FARMER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 40
+    bigSprite: 109
+    floorSprite: 109
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: -20
+    recover: true
+    recoverCorpse: false
+  - type: STR_FEMALE_CIVILIAN_FARMER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 30
+    bigSprite: 110
+    floorSprite: 110
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: -20
+    recover: true
+    recoverCorpse: false
+    listOrder: 72101
+
 
 #geoscape-only
   - type: STR_RADAR_SYSTEM #TODO

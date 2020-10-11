@@ -65,6 +65,9 @@ research:
     needItem: true
   - name: STR_RESISTANCE_FIRST_HELP
     needItem: true
+  - name: STR_RESISTANCE_BASIC_EQUIPMENT
+    needItem: true
+
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [HQ]

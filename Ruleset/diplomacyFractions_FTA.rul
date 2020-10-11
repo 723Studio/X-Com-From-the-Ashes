@@ -6,12 +6,13 @@ diplomacyFactions:
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 27
-    genMissionFreq: 100 #100% chance to run the script
+    genMissionFreq: 50 #100% chance to run the script
     helpTreatyMissions:
       heavenDefenceFirstTime: 100
-    # genEventFreq: 100
-    # helpTreatyEvents:
-    #   testEventScript: 100 #TODO
+      heavenDefenceContinues: 100
+    genEventFreq: 100
+    helpTreatyEvents:
+       STR_RESISTANCE_HEAVEN_SAVED_SCRIPT: 100
     sellingSet:
       STR_STINGRAY_LAUNCHER: 0
       STR_STINGRAY_MISSILES: -1

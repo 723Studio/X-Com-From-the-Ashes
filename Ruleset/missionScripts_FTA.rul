@@ -61,5 +61,23 @@ missionScripts:
     researchTriggers:
       STR_RESISTANCE_FIRST_HELP: false
     useTable: false
+    startDelay: 6000
+    randomDelay: 3000
+  - type: heavenDefenceContinues
+    firstMonth: 0
+    executionOdds: 10
+    allowedProcessor: 2
+    missionWeights:
+      0:
+        STR_RESISTANCE_HEAVEN_DEFENCE: 100
+    regionWeights:
+      0:
+        RESISTANCE_START_ZONE: 100
+    raceWeights:
+      0:
+        STR_ZOMBIES: 100
+    researchTriggers:
+      STR_RESISTANCE_FIRST_HELP: true
+    useTable: false
     startDelay: 1200
-    randomDelay: 300
+    randomDelay: 43500

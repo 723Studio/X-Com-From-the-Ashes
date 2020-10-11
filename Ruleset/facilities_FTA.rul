@@ -30,6 +30,7 @@ facilities:
     monthlyCost: 5000 #20000
     canBeBuiltOver: true
     storage: 15
+    storageTiles: [[-1, -1, -1]]
     labs: 7
     manaRecoveryPerDay: 1
     rightClickActionType: 3
@@ -48,6 +49,7 @@ facilities:
     aliens: 10
     prisonType: 1
     storage: 10
+    storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
     mapName: XBASF_03
     listOrder: 7030
@@ -61,6 +63,7 @@ facilities:
     monthlyCost: 35000
     trainingRooms: 10
     storage: 10
+    storageTiles: [[-1, -1, -1]]
     rightClickActionType: 4
     mapName: XBASF_04
     listOrder: 6960
@@ -90,6 +93,7 @@ facilities:
     buildTime: 6
     rightClickActionType: 3
     storage: 30
+    storageTiles: [[-1, -1, -1]]
     monthlyCost: 500
     mapName: XBASF_06
     listOrder: 6810
@@ -116,6 +120,7 @@ facilities:
     personnel: 50
     manaRecoveryPerDay: 5
     storage: 10
+    storageTiles: [[-1, -1, -1]]
     rightClickActionType: 6
     mapName: XBASE_01
   - type: STR_GENERAL_STORES
@@ -127,6 +132,14 @@ facilities:
     buildTime: 10
     monthlyCost: 5000
     storage: 100
+    storageTiles:
+        - [3, 6, 2]
+        - [4, 6, 2]
+        - [2, 2, 2]
+        - [8, 2, 2]
+        - [6, 5, 2]
+        - [9, 2, 1]
+        - [8, 7, 1]
     mapName: XBASF_02
   - type: STR_HANGAR
     spriteShape: 9
@@ -141,7 +154,7 @@ facilities:
     crafts: 1
     workshops: 5
     storage: 35
-    #storageTiles: [[-1, -1, -1]] #TODO add after engine update to 1.1 with merging to OXCE
+    storageTiles: [[-1, -1, -1]]
     mapName: XBASE_16
   - type: STR_LABORATORY
     spriteShape: 1
@@ -206,16 +219,6 @@ facilities:
     fireSound: 5
     hitSound: 10
     mapName: XBASE_06
-  - type: STR_GENERAL_STORES
-    spriteShape: 1
-    spriteFacility: 24
-    requires:
-      - STR_FACILITIES_BLUEPRINT
-    buildCost: 150000
-    buildTime: 10
-    monthlyCost: 5000
-    storage: 60
-    mapName: XBASE_07
   - type: STR_ALIEN_CONTAINMENT
     spriteShape: 1
     spriteFacility: 25

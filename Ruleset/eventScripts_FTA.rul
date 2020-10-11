@@ -36,8 +36,11 @@ eventScripts:
   #   minDifficulty: 0
   #   maxDifficulty: 4
 
-
-  - type: testEventScript
+#resistance
+  - type: STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
+    oneTimeSequentialEvents: [STR_RESISTANCE_HEAVEN_SAVED_EVENT]
+    researchTriggers:
+        STR_RESISTANCE_FIRST_HELP: true
     firstMonth: 0
     lastMonth: 0
     executionOdds: 100

@@ -168,6 +168,131 @@ units:
       - - STR_ZOMBIE_WEAPON
 
 #Civilians
+  - type: STR_MALE_CIVILIAN_FARMER
+    race: STR_HUMAN
+    stats:
+      tu: 46
+      stamina: 40
+      health: 35
+      bravery: 60
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 30
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+      mana: 50
+    armor: STR_MALE_CIVILIAN_FARMER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_SAWED_OFF #- STR_PITCHFORK
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED #- STR_PITCHFORK
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED #- STR_AXE
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_PUMP_ACTION
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP #- []
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP #- []
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT #- STR_AXE
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+  - type: STR_FEMALE_CIVILIAN_FARMER
+    race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 44
+      stamina: 50
+      health: 38
+      bravery: 60
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+      mana: 50
+    armor: STR_FEMALE_FARMER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
+    # panicSound: *FemalePanicSounds
+    # berserkSound: *FemaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - []
+      - []
+      - []
+      - - STR_DOUBLE_BARRELED #- STR_PITCHFORK
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - []
+      - []
+      - - STR_DOUBLE_BARRELED #- STR_WOODEN_CLUB
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_HUNTING_RIFLE #- STR_AXE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+
+#Resistance
   - type: STR_RESISTANCE_SCIENTIST
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
