@@ -184,15 +184,46 @@ en-US:
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."
+  STR_FACEHUGGER: "Facehugger"
+  STR_FACEHUGGER_UFOPEDIA: #TODO
+  STR_FACEHUGGER_CORPSE: "Facehugger corpse"
+  STR_FACEHUGGER_AUTOPSY: "Facehugger autopsy"
+  STR_FACEHUGGER_AUTOPSY_UFOPEDIA: #TODO
+  STR_FACEHUGGER_ARMOR: "Facehugger Combat Analysis"
+  STR_FACEHUGGER_ARMOR_UFOPEDIA: #TODO
+  STR_ZOMBIE_STERILE_TERRORIST: "Zombie"
+  STR_ZOMBIE_STERILE_UFOPEDIA: #TODO
+  STR_ZOMBIE_STERILE_CORPSE: "Zombie corpse"
+  STR_ZOMBIE_STERILE_AUTOPSY: "Zombie autopsy"
+  STR_ZOMBIE_STERILE_AUTOPSY_UFOPEDIA: #TODO
+  STR_ZOMBIE_STERILE_ARMOR: "Zombie Combat Analysis"
+  STR_ZOMBIE_STERILE_ARMOR_UFOPEDIA: #TODO
+  STR_ZOMBIE_GRUBAS_TERRORIST: "Fat Zombie"
+  STR_ZOMBIE_GRUBAS_UFOPEDIA: #TODO
+  STR_ZOMBIE_GRUBAS_CORPSE: "Fat Zombie corpse"
+  STR_ZOMBIE_GRUBAS_AUTOPSY: "Fat Zombie autopsy"
+  STR_ZOMBIE_GRUBAS_AUTOPSY_UFOPEDIA: #TODO
+  STR_ZOMBIE_GRUBAS_ARMOR: "Fat Zombie Combat Analysis"
+  STR_ZOMBIE_GRUBAS_ARMOR_UFOPEDIA: #TODO 
+
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
   STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon, used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knockout unarmored enemies.{NEWLINE}>Concealable" 
   STR_COMBAT_KNIFE: "Combat knife"
   STR_COMBAT_KNIFE_UFOPEDIA: "This sharp and balanced fighting knife is very handy in close combat encounters and could be very deadly in well-trained hands.{NEWLINE}>Concealable"
+  STR_SNUBNOSE_PISTOL: "Snubnose pistol"
+  STR_SNUBNOSE_PISTOL_UFOPEDIA: STR_SNUBNOSE_PISTOL_UFOPEDIA #TODO
+  STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
+  STR_RIOT_PISTOL: "Riot Pistol"
+  STR_RIOT_PISTOL_UFOPEDIA: STR_RIOT_PISTOL_UFOPEDIA #TODO
+  STR_RIOT_PISTOL_CLIP: "Riot Pistol Clip"
   STR_PISTOL: "SpecOps Pistol"
   STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides good fire rate and accuracy on short distances.{NEWLINE}>Concealable"
   STR_PISTOL_CLIP: "Pistol Clip"
   STR_PISTOL_AA_CLIP: "Pistol AA Clip"
+  STR_MACHINE_PISTOL: "Machine Pistol"
+  STR_MACHINE_PISTOL_UFOPEDIA: "To be done.{NEWLINE}>Concealable" #TODO
+  STR_MACHINE_PISTOL_CLIP: "Machine Pistol"
   STR_PDW: "Personal Defense Weapon"
   STR_PDW_UFOPEDIA: "A hybrid between a submachine gun and an assault rifle. It utilizes scaled-down intermediate rifle cartridge, which gives better effective range, accuracy, and armor-penetrating capability than submachine guns.{NEWLINE}>Concealable"
   STR_PDW_CLIP: "PDW Clip"
@@ -202,18 +233,26 @@ en-US:
   STR_SMG_CLIP: "SMG Clip"
   STR_SMG_AA_CLIP: "SMG AA Clip"
   STR_RIOT_RIFLE: "Riot Rifle"
+  STR_RIOT_RIFLE_UFOPEDIA: STR_RIOT_RIFLE_UFOPEDIA #TODO
   STR_RIOT_RIFLE_CLIP: "Riot Rifle Clip"
-  STR_RIOT_RIFLE_UFOPEDIA: "To be done." #TODO
   STR_RIFLE: "Precision Rifle"
   STR_RIFLE_UFOPEDIA: "This advanced precision rifle fills the engagement range gap between a regular assault rifle and a sniper rifle."
   STR_ASSAULT_RIFLE: "Assault Rifle"
   STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is not the highest accuracy in long-range sights and not the best scope for Aimed firing."
   STR_RIFLE_CLIP: "Rifle Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
+  STR_HUNTING_RIFLE: "Hunting Rifle"
+  STR_HUNTING_RIFLE_UFOPEDIA: STR_HUNTING_RIFLE_UFOPEDIA #TODO
+  STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip"
   STR_SNIPER_RIFLE: "Sniper Rifle"
   STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy on a long distance. The enlarged projectiles have high initial velocity can penetrate medium armor pretty easily. However, it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
   STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
   STR_SNIPER_RIFLE_AA_CLIP: "Sniper Rifle AA Clip"
+  STR_SAWED_OFF: "Sawed-Off"
+  STR_SAWED_OFF_UFOPEDIA: STR_SAWED_OFF_UFOPEDIA #TODO
+  STR_DOUBLE_BARRELED: "Double-Barreled Shotgun"
+  STR_DOUBLE_BARRELED_UFOPEDIA: STR_DOUBLE_BARRELED_UFOPEDIA #TODO
+  STR_DOUBLE_BARRELED_BUCKSHOT: "D-B Shotgun BS Ammo"
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
   STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "A classic shotgun, used by police forces as well as civilians in some countries for self-defense."
   STR_PUMP_ACTION_SHELLS: "Pump Action BS Ammo"
@@ -270,6 +309,12 @@ en-US:
   STR_PROXIMITY_GRENADE_UFOPEDIA: "A proximity grenade can be thrown like an ordinary grenade but is triggered by nearby movement after it lands. Great skill and care is required to use these devices properly.{NEWLINE}>Concealable"
   STR_FLASHBANG_GRENADE: "Flashbang Grenade"
   STR_FLASHBANG_GRENADE_UFOPEDIA: "A Flashbang Grenade is designed to overwhelm a person's senses in order to blind and disorient them with a bright light coupled with a loud sound. Such non-lethal devices are in use by the army, law enforcement and special forces.{NEWLINE}A target hit by the grenade halves the number of available TUs, as well as decreases the Reactions by 25-35, Firing and Throwing by 20-30, and Melee by 10-20 for 2 turns.{NEWLINE}>Concealable"
+  STR_FIRST_AID: "First Aid"
+  STR_FIRST_AID_UFOPEDIA: STR_FIRST_AID_UFOPEDIA #TODO
+  STR_PAINKILLER: "Painkillers"
+  STR_PAINKILLER_UFOPEDIA: STR_PAINKILLER_UFOPEDIA #TODO
+  STR_STIMS: "Stims"
+  STR_RESISTANCE_BASIC_EQUIPMENT: STR_RESISTANCE_BASIC_EQUIPMENT #TODO
   STR_MEDI_PACK: "Medipack"
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_TRAUMA_PACK: "Trauma Pack"

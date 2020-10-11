@@ -81,12 +81,95 @@ units:
     spotter: 2
     canSurrender: true
 
-#monsters
-
+#Zombies
+  - type: STR_FACEHUGGER
+    race: STR_ZOMBIE
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 80
+      stamina: 140
+      health: 20
+      bravery: 110
+      reactions: 45
+      firing: 0
+      throwing: 0
+      strength: 10
+      psiStrength: 100
+      psiSkill: 0
+      melee: 75
+    armor: STR_FACEHUGGER_ARMOR
+    standHeight: 6
+    value: 12
+    aggroSound: 77
+    deathSound: 78
+    moveSound: 80
+    intelligence: 4
+    aggression: 9
+    energyRecovery: 50
+    livingWeapon: true
+    isLeeroyJenkins: true
+    builtInWeaponSets:
+      - - STR_FACEHUGGER_WEAPON
+  - type: STR_ZOMBIE_STERILE_TERRORIST
+    race: STR_ZOMBIE
+    rank: STR_LIVE_TERRORIST
+    stats: #TODO
+      tu: 40
+      stamina: 110
+      health: 124
+      bravery: 110
+      reactions: 40
+      firing: 0
+      throwing: 0
+      strength: 84
+      psiStrength: 80
+      psiSkill: 0
+      melee: 80
+      mana: 70
+    armor: STR_ZOMBIE_STERILE_ARMOR
+    standHeight: 22
+    kneelHeight: 22
+    value: 4
+    intelligence: 3
+    aggression: 6
+    isLeeroyJenkins: true
+    livingWeapon: true
+    aggroSound: 75
+    deathSound: 76
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+  - type: STR_ZOMBIE_GRUBAS_TERRORIST
+    race: STR_ZOMBIE
+    rank: STR_LIVE_TERRORIST
+    stats: #TODO
+      tu: 44
+      stamina: 150
+      health: 184
+      bravery: 110
+      reactions: 44
+      firing: 0
+      throwing: 0
+      strength: 104
+      psiStrength: 80
+      psiSkill: 0
+      melee: 90
+      mana: 70
+    armor: STR_ZOMBIE_GRUBAS_ARMOR
+    standHeight: 22
+    kneelHeight: 22
+    value: 6
+    intelligence: 4
+    aggression: 5
+    isLeeroyJenkins: true
+    livingWeapon: true
+    aggroSound: 75
+    deathSound: 76
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
 
 #Civilians
   - type: STR_RESISTANCE_SCIENTIST
-    race: STR_SPAWNS
+    race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
       tu: 44
@@ -116,28 +199,28 @@ units:
     spotter: 2
     canSurrender: true
   - type: STR_RESISTANCE_SOLDIER
-    race: STR_SPAWNS
+    race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats: #TODO
       tu: 44
       stamina: 45
       health: 34
-      bravery: 60
-      reactions: 30
-      firing: 30
+      bravery: 35
+      reactions: 35
+      firing: 40
       throwing: 30
       strength: 26
-      psiStrength: 40
+      psiStrength: 50
       psiSkill: 0
       melee: 22
       mana: 3
     statsRandom:
-      tu: 10
-      stamina: 10
-      health: 5
-      bravery: 20
-      reactions: 10
-      firing: 10
+      tu: 20
+      stamina: 20
+      health: 10
+      bravery: 25
+      reactions: 15
+      firing: 20
       throwing: 10
       strength: 15
       psiStrength: 50

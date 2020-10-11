@@ -6,9 +6,9 @@ diplomacyFactions:
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 27
-    # genMissionFreq: 100 #100% chance to run the script
-    # helpTreatyMissions:
-    #   heavenDefenceFirstTime: 100
+    genMissionFreq: 100 #100% chance to run the script
+    helpTreatyMissions:
+      heavenDefenceFirstTime: 100
     # genEventFreq: 100
     # helpTreatyEvents:
     #   testEventScript: 100 #TODO

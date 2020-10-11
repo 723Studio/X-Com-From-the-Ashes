@@ -1,4 +1,5 @@
 armors:
+#MIB
   - type: STR_XCOM_EX_COMMANDER_ARMOR
     spriteSheet: XCOM_EX_COMMANDER.PCK
     spriteInv: inventory_XCOM_EX_COMMANDER
@@ -129,6 +130,126 @@ armors:
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
 
+
+#Zombies
+  - type: STR_FACEHUGGER_ARMOR
+    spriteSheet: FACEHUGGER.PCK
+    corpseBattle:
+      - STR_FACEHUGGER_CORPSE #TODO
+    visibilityAtDark: 16
+    heatVision: 10
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 4
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.7
+    meleeDodgeBackPenalty: 0.4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 0.5
+      - 1.0
+      - 2.0
+    loftempsSet: [ 1 ]
+  - type: STR_ZOMBIE_STERILE_ARMOR
+    spriteSheet: ZOMBIE_STERILE.PCK
+    spriteInv: inventory_ZOMBIE
+    allowInv: false
+    corpseBattle:
+      - STR_ZOMBIE_STERILE_CORPSE
+    visibilityAtDark: 12
+    heatVision: 10
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 4
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 0.5
+      - 1.0
+      - 2.0
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 50
+  - type: STR_ZOMBIE_GRUBAS_ARMOR
+    spriteSheet: ZOMBIE_GRUBAS.PCK
+    spriteInv: inventory_ZOMBIE_GRUBAS
+    allowInv: false
+    corpseBattle:
+      - STR_ZOMBIE_GRUBAS_CORPSE
+    visibilityAtDark: 12
+    heatVision: 10
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 0.5
+      - 1.0
+      - 3.0
+    loftempsSet: [ 4 ]
+
+#Resistance
   - type: STR_RESISTANCE_SCIENTIST_ARMOR #TODO
     spriteSheet: MIB_AGENT.PCK #TODO
     spriteInv: inventory_MIB_AGENT #TODO
@@ -213,3 +334,7 @@ armors:
       - 0.0
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
+
+
+#XCOM
+

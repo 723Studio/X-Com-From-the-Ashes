@@ -22,7 +22,7 @@ research:
 #technical part
   - name: STR_HELLO #hardcoded, do not rename! used to start the game property
     needItem: true
-  - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at is not avalible to be discovered in the game
+  - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at something not avalible to be discovered in the game
     needItem: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
     needItem: true
@@ -30,7 +30,7 @@ research:
     needItem: true    
   - name: STR_ENIGMA_CONTACT #TODO scheduled to alpha 3
     needItem: true 
-  - name: STR_NONE 
+  - name: STR_NONE
 #story 
   - name: STR_STORY_1
     needItem: true
@@ -154,6 +154,67 @@ research:
     dependencies:
       - STR_TODOIUM
 
+#creature study
+  - name: STR_STRANGE_CREATURE_AUTOPSY
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_FACEHUGGER_CORPSE
+      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_ZOMBIE_GRUBAS_CORPSE
+    unlocks:
+        - STR_LIVE_CREATURES_RESEARCH
+  - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
+    cost: 2
+    points: 5
+    dependencies:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_STRANGE_CREATURE #for future tech tree dev
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_FACEHUGGER
+      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_ZOMBIE_GRUBAS_TERRORIST
+    # unlocks:
+    #     - STR_LIVE_CREATURES_RESEARCH #
+  - name: STR_ZOMBIE_BIOLOGY
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_LIVE_INFECTOR
+      - STR_TODOIUM
+  - name: STR_INFECTOR_AUTOPSY
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_FACEHUGGER_CORPSE
+  - name: STR_LIVE_INFECTOR
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_FACEHUGGER
+  - name: STR_ZOMBIE_AUTOPSY
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_ZOMBIE_GRUBAS_CORPSE
+  - name: STR_LIVE_ZOMBIE
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_ZOMBIE_GRUBAS_TERRORIST
+  - name: STR_ZOMBIE_BIOLOGY
+    cost: 15
+    points: 100
+    dependencies:
+      - STR_INFECTOR_AUTOPSY
+      - STR_LIVE_INFECTOR
+      - STR_ZOMBIE_AUTOPSY
+      - STR_LIVE_ZOMBIE
+
 #facilities
   - name: STR_LARGE_RADAR_SYSTEM
     cost: 50
@@ -170,14 +231,21 @@ research:
     points: 10
     dependencies:
       - STR_BASE_DEFENSE_SYSTEMS
+  - name: STR_CREATURE_CONTAINMENT
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_LIVE_CREATURES_RESEARCH
   - name: STR_ALIEN_CONTAINMENT
     cost: 50
     points: 10
     dependencies:
+      - STR_FACILITIES_BLUEPRINTS
       - STR_TODOIUM
 
 
-#enemies
+#enemies - humanoids
   - name: STR_XCOM_EX_COMMANDER
     requiresBaseFunc: [INTLAB]
     cost: 25
@@ -197,14 +265,193 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     listOrder: 146000
+#enemies - creatures
+  - name: STR_FACEHUGGER_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 30
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_INFECTOR_AUTOPSY
+    listOrder: 62310
+  - name: STR_FACEHUGGER
+    requiresBaseFunc: [BIOLAB]
+    cost: 30
+    points: 100
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+      - STR_LIVE_INFECTOR
+    listOrder: 115410
+  - name: STR_ZOMBIE_STERILE_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 30
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_ZOMBIE_AUTOPSY #TODO
+    listOrder: 62300
+  - name: STR_ZOMBIE_STERILE_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    cost: 25
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+      - STR_LIVE_ZOMBIE #TODO
+    listOrder: 62300
+  - name: STR_ZOMBIE_GRUBAS_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 25
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_ZOMBIE_AUTOPSY
+    listOrder: 62310
+  - name: STR_ZOMBIE_GRUBAS_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    cost: 30
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+      - STR_LIVE_ZOMBIE #TODO
+    listOrder: 115410
+
+#enemies - aliens
+
 #combat analysis 
   - name: STR_MIB_AGENT_ARMOR
     cost: 6
     points: 10
     dependencies:
       - STR_MIB_AGENT
-#weapons and equipment
+    listOrder: 146000
+  - name: STR_FACEHUGGER_ARMOR
+    cost: 20
+    points: 40
+    dependencies:
+      - STR_FACEHUGGER
+  - name: STR_ZOMBIE_STERILE_ARMOR
+    cost: 20
+    points: 40
+    dependencies:
+      - STR_ZOMBIE_STERILE_TERRORIST
+  - name: STR_ZOMBIE_GRUBAS_ARMOR
+    cost: 22
+    points: 45
+    dependencies:
+      - STR_ZOMBIE_GRUBAS_TERRORIST
 
+
+#weapons and equipment
+  - name: STR_SNUBNOSE_PISTOL
+    cost: 2
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_SNUBNOSE_PISTOL_CLIP
+    listOrder: 7410
+  - name: STR_SNUBNOSE_PISTOL_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SNUBNOSE_PISTOL
+  - name: STR_RIOT_PISTOL
+    cost: 2
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_RIOT_PISTOL_CLIP
+    listOrder: 7410
+  - name: STR_RIOT_PISTOL_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RIOT_PISTOL
+  - name: STR_MACHINE_PISTOL
+    cost: 2
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_MACHINE_PISTOL_CLIP
+    listOrder: 7410
+  - name: STR_MACHINE_PISTOL_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MACHINE_PISTOL
+  - name: STR_RIOT_RIFLE
+    cost: 3
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_RIOT_RIFLE_CLIP
+    listOrder: 7410
+  - name: STR_RIOT_RIFLE_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RIOT_RIFLE
+  - name: STR_HUNTING_RIFLE
+    cost: 2
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_HUNTING_RIFLE_CLIP
+    listOrder: 7410
+  - name: STR_HUNTING_RIFLE_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HUNTING_RIFLE
+  - name: STR_SAWED_OFF
+    cost: 2
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+    listOrder: 7410
+  - name: STR_DOUBLE_BARRELED
+    cost: 2
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+    listOrder: 7410
+  - name: STR_DOUBLE_BARRELED_BUCKSHOT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOUBLE_BARRELED
+      - STR_SAWED_OFF
+
+  - name: STR_MOTION_SCANNER
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 7410
+  - name: STR_MEDI_KIT
+    cost: 210
+    points: 20
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 7410
+  - name: STR_FLASHBANG_GRENADE
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 7410
+    
 #crafts
   - name: STR_INTERCEPTOR
     #requiresBaseFunc: [STDLAB]
@@ -220,17 +467,6 @@ research:
     dependencies:
       - STR_TODOIUM
     listOrder: 7410
-#items
-  - name: STR_MOTION_SCANNER
-    cost: 180
-    points: 20
-    dependencies:
-      - STR_TODOIUM
-  - name: STR_MEDI_KIT
-    cost: 210
-    points: 20
-    dependencies:
-      - STR_TODOIUM
-  - name: STR_FLASHBANG_GRENADE
-    dependencies:
-      - STR_TODOIUM
+
+#craft items
+

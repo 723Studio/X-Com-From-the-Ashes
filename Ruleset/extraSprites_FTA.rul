@@ -155,6 +155,9 @@ extraSprites:
       102: Resources/Armors/Enemies/MiB/bigob_MIB_ENFORCER.png
       103: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SOLDIER.png
       104: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCIENTIST.png
+      105: Resources/Armors/Enemies/Zombies/bigob_ZOMBIE_STERILE_CORPSE.png
+      106: Resources/Armors/Enemies/Zombies/bigob_GRUBAS_CORPSE.png
+      107: Resources/Armors/Enemies/Zombies/bigobs_FACEHUGGER_CORPSE.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -213,6 +216,10 @@ extraSprites:
       354: Resources/Weapons/Earthbound/Utilities/bigob_FirstAid.png
       355: Resources/Weapons/Earthbound/Utilities/bigob_Painkillers.png
       356: Resources/Weapons/Earthbound/Utilities/bigob_Stims.png
+      357: Resources/Weapons/Unarmed/bigob_ZombieAttack.png
+      358: Resources/Armors/Enemies/Zombies/bigob_PARASITE.png
+      359: Resources/Weapons/Earthbound/Faction/bigob_MachinePistol.png
+      360: Resources/Weapons/Earthbound/Faction/bigob_MachinePistolClip.png
       
   - type: FLOOROB.PCK
     files:
@@ -223,6 +230,9 @@ extraSprites:
       102: Resources/Armors/Enemies/MiB/floorob_MIB_ENFORCER.png
       103: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SOLDIER.png
       104: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SCIENTIST.png
+      105: Resources/Armors/Enemies/Zombies/floorob_ZOMBIE_STERILE_CORPSE.png
+      106: Resources/Armors/Enemies/Zombies/floorob_GRUBAS_CORPSE.png
+      107: Resources/Armors/Enemies/Zombies/floorob_FACEHUGGER_CORPSE.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
       303: Resources/Weapons/Earthbound/Xcom/floorob_LightCannon.png
@@ -266,6 +276,8 @@ extraSprites:
       354: Resources/Weapons/Earthbound/Utilities/floorob_FirstAid.png
       355: Resources/Weapons/Earthbound/Utilities/floorob_Painkillers.png
       356: Resources/Weapons/Earthbound/Utilities/floorob_Stims.png
+      359: Resources/Weapons/Earthbound/Faction/floorob_MachinePistol.png
+      360: Resources/Weapons/Earthbound/Faction/floorob_MachinePistolClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -323,6 +335,8 @@ extraSprites:
       504: Resources/Weapons/Earthbound/Utilities/handob_FirstAid.png
       512: Resources/Weapons/Earthbound/Utilities/handob_Painkillers.png
       520: Resources/Weapons/Earthbound/Utilities/handob_Stims.png
+      528: Resources/Weapons/Earthbound/Faction/handob_MachinePistol.png
+      536: Resources/Weapons/Earthbound/Faction/handob_MachinePistolClip.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
@@ -384,6 +398,35 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SOLDIER.png
+  - type: FACEHUGGER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Armors/Enemies/Zombies/FACEHUGGER.png
+  - type: ZOMBIE_STERILE.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Armors/Enemies/Zombies/ZOMBIE_STERILE.png
+  - type: inventory_ZOMBIE
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE.png
+  - type: ZOMBIE_GRUBAS.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Armors/Enemies/Zombies/ZOMBIE_GRUBAS.png
+  - type: inventory_ZOMBIE_GRUBAS
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE_GRUBAS.png
 #interwins
   - type: interception_jammed
     singleImage: true
@@ -472,4 +515,41 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_MIB_AGENT.png  
+  - type: UFOPEDIA_IMG_FACEHUGGER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopaedia_FACEHUGGER.png
+  - type: UFOPEDIA_IMG_FACEHUGGER_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopaedia_FACEHUGGER_AUTOPSY.png 
+  - type: UFOPEDIA_IMG_ZOMBIE_STERILE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_ZOMBIE_STERILE.png 
+  - type: UFOPEDIA_IMG_ZOMBIE_STERILE_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_ZOMBIE_STERILE_AUTOPSY.png 
+  - type: UFOPEDIA_IMG_ZOMBIE_GRUBAS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_ZOMBIE_GRUBAS.png
+  - type: UFOPEDIA_IMG_ZOMBIE_GRUBAS_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_ZOMBIE_GRUBAS_AUTOPSY.png 
+
 ### PAPERDOLL LAYERS ###

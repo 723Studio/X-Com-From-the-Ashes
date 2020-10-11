@@ -21,3 +21,10 @@ extraSounds:
       72: Resources/Weapons/Sounds/Sztucer.wav
       73: Resources/Weapons/Sounds/SluggaFire.wav
       74: Resources/Weapons/Sounds/Inject.wav
+      75: Resources/Armors/Enemies/Zombies/Zombie_aggro.wav
+      76: Resources/Armors/Enemies/Zombies/Zombie_death.wav
+      77: Resources/Armors/Enemies/Zombies/FACEHUGGER_aggro.ogg
+      78: Resources/Armors/Enemies/Zombies/FACEHUGGER_death.ogg
+      79: Resources/Armors/Enemies/Zombies/FACEHUGGER_melee.ogg
+      80: Resources/Armors/Enemies/Zombies/FACEHUGGER_move.ogg
+      81: Resources/Weapons/Sounds/SlashHit.wav

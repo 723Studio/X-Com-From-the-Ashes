@@ -13,6 +13,8 @@ constants:
   extendedItemReloadCost: true
   extendedRunningCost: true
   damageRange: 85 #for good or bad
+  #extendedTerrainMelee: 4 #uncomment once added to engine
+  #extendedUnderwaterThrowFactor: 60
 
 mana: #TODO
   enabled: true
@@ -56,3 +58,5 @@ researchTreeDisabled: true
 statisticalBulletConservation: true
 stunningImprovesMorale: true
 ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered
+
+

@@ -809,6 +809,7 @@ extended:
       FTAG_DAZE_VALUE: int
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
+      FTAG_SELFKILL_WEAPON: int
     RuleArmor:
       #rotting
       FTAG_ROTTINGMIN: int
@@ -894,13 +895,14 @@ extended:
       #     var ptr RuleItem itemRuleset;
       #     var ptre GeoscapeGame geoGame;
       #     var int check;
+          
 
-      #     # damaging_item.getRuleItem itemRuleset; 
-      #     battle_game.getGeoscapeGame geoGame;
-      #     geoGame.getLoyalty check;
+      #     #damaging_item.getRuleItem itemRuleset; 
+      #     #battle_game.getGeoscapeGame geoGame;
+      #     #geoGame.getLoyalty check;
       #     # itemRuleset.getHaveCategory check "STR_SNIPER_RIFLES";
       #     # if eq check 1;
-      #     debug_log "loyalty: " check;
+      #     #debug_log "loyalty: " check;
       #     #end;
 
       #     return;
@@ -981,6 +983,19 @@ extended:
             add endTurn dazeTime; #define end turn for debuff
             unit.setTag Tag.FTAG_DAZE_ENDTURN endTurn;
 
+          return;
+
+      - offset: 2 #facehugger weapon
+        code: |
+          var ptre BattleUnit attackingUnit;
+          var ptr RuleItem itemRuleset;
+          var int check;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getTag check Tag.FTAG_SELFKILL_WEAPON;
+          if eq check 1;
+            attacker.setHealth 0;
+          end;
           return;
 
       - offset: 3

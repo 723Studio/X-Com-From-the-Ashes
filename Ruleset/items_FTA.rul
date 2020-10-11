@@ -274,64 +274,65 @@ items:
     attraction: 8
     listOrder: 20350
 #SMG
-  # - type: STR_SKORPION #TODO
-  #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
-  #   landOnly: true
-  #   size: 0.15
-  #   costBuy: 350
-  #   costSell: 250
-  #   weight: 6
-  #   bigSprite: 404
-  #   floorSprite: 150
-  #   handSprite: 144
-  #   bulletSprite: 17
-  #   fireSound: 58
-  #   compatibleAmmo:
-  #     - STR_SKORPION_CLIP
-  #   accuracyCloseQuarters: 125
-  #   accuracySnap: 55
-  #   accuracyAuto: 45
-  #   tuSnap: 26
-  #   tuAuto: 36
-  #   costThrow:
-  #     energy: 12
-  #   autoRange: 9
-  #   snapRange: 12
-  #   confSnap:
-  #     shots: 3
-  #   kneelBonus: 105
-  #   battleType: 1
-  #   twoHanded: false
-  #   invWidth: 1
-  #   invHeight: 2
-  #   armor: 30
-  #   autoShots: 5
-  #   sprayWaypoints: 2
-  #   attraction: 7
-  #   listOrder: 20700
-  # - type: STR_SKORPION_CLIP
-  #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
-  #   landOnly: true
-  #   size: 0.1
-  #   costBuy: 100
-  #   costSell: 50
-  #   weight: 3
-  #   bigSprite: 405
-  #   floorSprite: 151
-  #   hitSound: 22
-  #   hitAnimation: 26
-  #   power: 20
-  #   damageType: 1
-  #   clipSize: 24
-  #   battleType: 2
-  #   armor: 30
-  #   attraction: 7
-  #   listOrder: 20710
+  - type: STR_MACHINE_PISTOL
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.15
+    costBuy: 400
+    costSell: 300
+    weight: 6
+    bigSprite: 359
+    floorSprite: 359
+    handSprite: 528
+    bulletSprite: 17
+    fireSound: 58
+    compatibleAmmo:
+      - STR_MACHINE_PISTOL_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 55
+    accuracyAuto: 45
+    tuSnap: 26
+    tuAuto: 36
+    costThrow:
+      energy: 12
+    autoRange: 9
+    snapRange: 12
+    confSnap:
+      shots: 3
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    autoShots: 5
+    sprayWaypoints: 2
+    attraction: 7
+    listOrder: 20600
+  - type: STR_MACHINE_PISTOL_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.02
+    costBuy: 100
+    costSell: 50
+    weight: 3
+    bigSprite: 360
+    floorSprite: 360
+    handSprite: 536
+    hitSound: 22
+    hitAnimation: 26
+    power: 20
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    armor: 30
+    attraction: 7
+    listOrder: 20610
   - type: STR_PDW
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     requiresBuy:
       - STR_TODOIUM
-    size: 0.03
+    size: 0.16
     costBuy: 7000
     costSell: 5000
     weight: 6
@@ -2146,7 +2147,47 @@ items:
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-
+  - type: STR_ZOMBIE_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 357
+    meleeSound: 48
+    meleeHitSound: 55
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      ArmorEffectiveness: 1.35
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    flatRate: true
+  - type: STR_FACEHUGGER_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 358
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 49
+    meleeHitSound: 81
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 80
+    tuMelee: 25
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    zombieUnit: STR_ZOMBIE_STERILE_TERRORIST
+    flatRate: true
+    tags:
+        FTAG_SELFKILL_WEAPON: 1
 #unit-related
   - type: STR_XCOM_EX_COMMANDER_CORPSE
     categories: [STR_CORPSES]
@@ -2266,23 +2307,79 @@ items:
     recoveryPoints: -200
     recover: true
     listOrder: 67800
+  - type: STR_FACEHUGGER
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 0
+    costSell: 20000
+    listOrder: 115400
+  - type: STR_FACEHUGGER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.1
+    costSell: 6000
+    weight: 30
+    bigSprite: 105
+    floorSprite: 105
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 20
+    listOrder: 62300
+  - type: STR_ZOMBIE_STERILE_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 20000
+    listOrder: 115400
+  - type: STR_ZOMBIE_STERILE_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.2
+    costSell: 6000
+    weight: 30
+    bigSprite: 105
+    floorSprite: 105
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 20
+    listOrder: 62300
+  - type: STR_ZOMBIE_GRUBAS_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 30000
+    listOrder: 115410
+  - type: STR_ZOMBIE_GRUBAS_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.2
+    costSell: 10000
+    weight: 45
+    bigSprite: 106
+    floorSprite: 106
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 10
+    battleType: 11
+    armor: 20
+    listOrder: 62310
 
 #geoscape-only
-  - type: STR_RADAR_SYSTEM
+  - type: STR_RADAR_SYSTEM #TODO
     categories: [STR_HUMANS, STR_COMPONENTS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 900000 #TODO
     listOrder: 146030
-  - type: STR_LABORATORY_EQUIPMENT
+  - type: STR_LABORATORY_EQUIPMENT #TODO
     categories: [STR_HUMANS, STR_COMPONENTS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 900000 #TODO
     listOrder: 146030
 
-
+extended:
+  tags:
+    RuleItem:
+      FTAG_SELFKILL_WEAPON: int #facehugger weapon

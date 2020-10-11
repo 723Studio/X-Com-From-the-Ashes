@@ -81,8 +81,8 @@ mapScripts: #for tests
           - [2, 2, 4, 4]
       UFOName: STR_RESISTANCE_SHELTER_FARM
     - type: addUFO
-      executionChances: 45
-      executions: 3
+      executionChances: 40
+      executions: 2
       rects: 
           - [2, 2, 4, 4]
       UFOName: STR_RESISTANCE_SHELTER_FARM

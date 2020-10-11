@@ -442,20 +442,26 @@ alienDeployments:
     width: 80
     length: 80
     height: 8
+    alert: STR_RESISTANCE_HEAVEN_ATTACKED
+    alertBackground: BACK03.SCR #TODO
+    markerName: STR_RESISTANCE_HEAVEN
+    duration: [4, 10]
+    despawnPenalty: 800
+    extendedObjectiveType: STR_EVACUATION 
+    briefing:
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_RESISTANCE_FARM_BRIEFING
     terrains:
       - CULTA
     script: RESISTANCE_FARM
-    shade: 0
-    briefing:
-      textOffset: -16
-      background: BACK01.SCR
-      showTarget: false
-      desc: STR_GENERAL_TRAP_BRIEFING
+    battleScript: ZOMBIE_ATTACK
     data:
       - alienRank: 6
-        lowQty: 1
-        highQty: 3
-        dQty: 1
+        lowQty: 4
+        highQty: 8
+        dQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -564,7 +570,7 @@ alienDeployments:
           -
             []
 
-  - type: STR_MEDIUM_SCOUT
+  - type: STR_MEDIUM_SCOUT #TODO - remove - engine testing
     width: 40
     length: 40
     height: 4

@@ -1,4 +1,3 @@
-
 regions:
   - type: RESISTANCE_START_ZONE #TODO add more nodes
     missionZones:

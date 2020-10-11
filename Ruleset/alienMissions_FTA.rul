@@ -13,8 +13,8 @@ alienMissions:
     points: 20
     waves:
       - ufo: STR_ABDUCTOR #TODO buff aliens!
-        count: 2
-        trajectory: F0
+        count: 1
+        trajectory: P0
         timer: 1200
 
 #resistance scripts

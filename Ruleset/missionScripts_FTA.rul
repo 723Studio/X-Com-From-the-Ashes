@@ -39,6 +39,7 @@ missionScripts:
       0:
         STR_SECTOID: 100
     startDelay: 20
+    useTable: false
     randomDelay: 43500
 
 
@@ -47,7 +48,7 @@ missionScripts:
   - type: heavenDefenceFirstTime
     firstMonth: 0
     executionOdds: 100
-    #allowedProcessor: 2
+    allowedProcessor: 2
     missionWeights:
       0:
         STR_RESISTANCE_HEAVEN_DEFENCE: 100
@@ -57,8 +58,8 @@ missionScripts:
     raceWeights:
       0:
         STR_ZOMBIES: 100
-    # researchTriggers:
-    #   STR_RESISTANCE_FIRST_HELP: false
+    researchTriggers:
+      STR_RESISTANCE_FIRST_HELP: false
     useTable: false
-    startDelay: 30
+    startDelay: 1200
     randomDelay: 300
