@@ -98,3 +98,4 @@ mapScripts: #for tests
     #farm
     - type: fillArea
       blocks: 6
+

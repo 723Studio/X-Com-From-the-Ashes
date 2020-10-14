@@ -21,7 +21,7 @@ crafts:
     costSell: 200000
     repairRate: 4
     refuelRate: 50
-    fuelMax: 600
+    fuelMax: 490
     transferTime: 72
     score: 100
     battlescapeTerrainData:

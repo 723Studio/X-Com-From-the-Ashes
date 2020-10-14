@@ -455,7 +455,7 @@ alienDeployments:
     unlockedResearch: STR_RESISTANCE_FIRST_HELP
     briefing:
       textOffset: -16
-      background: STR_RESISTANCE_BACKGROUND.SCR
+      background: STR_RESISTANCE_BACKGROUND.SCR #TODO
       showTarget: false
       desc: STR_RESISTANCE_FARM_BRIEFING
     terrains:
@@ -489,7 +489,82 @@ alienDeployments:
             []
           -
             []
+      - alienRank: 5
+        lowQty: 5
+        highQty: 10
+        dQty: 3
+        percentageOutsideUfo: 80
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
 
+  - type: STR_SCIENTIST_REFUGE
+    width: 60
+    length: 60
+    height: 8
+    alert: STR_SCIENTIST_REFUGE_ALERT #TODO
+    alertBackground: BACK03.SCR #TODO
+    alertDescription: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
+    markerName: STR_RESISTANCE_HEAVEN #TODO
+    duration: [4, 10]
+    despawnPenalty: 800
+    extendedObjectiveType: STR_EVACUATION 
+    unlockedResearch: STR_RESISTANCE_FIRST_HELP
+    briefing:
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_SCIENTIST_REFUGE_BRIEFING
+    terrains:
+      - FOREST
+    customUfo: STR_SCIENTIST_REFUGE
+    #script: SCIENTIST_REFUGE
+    #battleScript: ZOMBIE_ATTACK #TODO
+    data:
+      - alienRank: 6
+        lowQty: 5
+        highQty: 10
+        dQty: 3
+        percentageOutsideUfo: 80
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
 
 
   - type: STR_GENERAL_TRAP

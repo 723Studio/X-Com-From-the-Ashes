@@ -30,7 +30,8 @@ facilities:
     monthlyCost: 5000 #20000
     canBeBuiltOver: true
     storage: 15
-    storageTiles: [[-1, -1, -1]]
+    storageTiles: 
+     - [8, 8, 0]
     labs: 7
     manaRecoveryPerDay: 1
     rightClickActionType: 3
@@ -133,13 +134,13 @@ facilities:
     monthlyCost: 5000
     storage: 100
     storageTiles:
-        - [3, 6, 2]
-        - [4, 6, 2]
-        - [2, 2, 2]
-        - [8, 2, 2]
-        - [6, 5, 2]
-        - [9, 2, 1]
-        - [8, 7, 1]
+        - [6, 3, 1]
+        - [5, 4, 1]
+        - [2, 2, 1]
+        - [8, 2, 1]
+        - [6, 5, 1]
+        - [8, 2, 0]
+        - [8, 7, 0]
     mapName: XBASF_02
   - type: STR_HANGAR
     spriteShape: 9

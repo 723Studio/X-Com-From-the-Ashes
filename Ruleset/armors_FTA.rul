@@ -43,6 +43,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_MIB_AGENT_ARMOR
@@ -89,6 +90,49 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED
+    loftempsSet: [ 3 ]
+  - type: STR_MIB_SPECOPS_ARMOR
+    spriteSheet: MIB_SPECOPS.PCK
+    spriteInv: inventory_MIB_SPECOPS
+    corpseBattle:
+      - STR_MIB_SPECOPS_CORPSE
+    visibilityAtDark: 13
+    heatVision: 12
+    weight: 6
+    frontArmor: 40
+    sideArmor: 20
+    rearArmor: 25
+    underArmor: 13
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      energy:
+        flatHundred: 0.06
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_MIB_ENFORCER_ARMOR
@@ -131,6 +175,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
 
@@ -180,6 +225,7 @@ armors:
       - 0.5
       - 1.0
       - 2.0
+      - 1.0
     loftempsSet: [ 1 ]
   - type: STR_ZOMBIE_STERILE_ARMOR
     spriteSheet: ZOMBIE_STERILE.PCK
@@ -215,6 +261,7 @@ armors:
       - 0.5
       - 1.0
       - 2.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -251,6 +298,7 @@ armors:
       - 0.5
       - 1.0
       - 3.0
+      - 1.0
     loftempsSet: [ 4 ]
 
 #Civilians
@@ -294,6 +342,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     #specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_FARMER_ARMOR
@@ -336,13 +385,14 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     #specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
 
 #Resistance
-  - type: STR_RESISTANCE_SCIENTIST_ARMOR #TODO
-    spriteSheet: MIB_AGENT.PCK #TODO
-    spriteInv: inventory_MIB_AGENT #TODO
+  - type: STR_RESISTANCE_SCIENTIST_ARMOR
+    spriteSheet: RESISTANCE_SCIENTIST.PCK
+    spriteInv: inventory_RESISTANCE_SCIENTIST
     corpseBattle:
       - STR_RESISTANCE_SCIENTIST_CORPSE
     visibilityAtDark: 10
@@ -380,6 +430,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_RESISTANCE_SOLDIER_ARMOR
@@ -422,6 +473,7 @@ armors:
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
 

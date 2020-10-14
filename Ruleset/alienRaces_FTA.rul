@@ -39,7 +39,7 @@ alienRaces:
       - STR_ZOMBIE_STERILE_TERRORIST # 2 - Engineer
       - STR_ZOMBIE_STERILE_TERRORIST # 3 - Medic
       - STR_ZOMBIE_GRUBAS_TERRORIST # 4 - Navigator
-      - STR_ZOMBIE_STERILE_TERRORIST # 5 - Soldier
+      - STR_ZOMBIE_STERILE_TERRORIST_SECOND # 5 - Soldier
       - STR_ZOMBIE_STERILE_TERRORIST # 6 - Terrorist 1
       - STR_ZOMBIE_GRUBAS_TERRORIST # 7 - Terrorist 2
       - STR_FACEHUGGER # 8 - Special Guest 1

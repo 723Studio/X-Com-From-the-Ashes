@@ -114,6 +114,9 @@ en-US:
   STR_INCOMING_ALLY_REINFORCEMENTS: "Our reinforcements arrived!"
   STR_ITEMS_RECOVERED: "ITEMS RECOVERED"
   STR_OBJECTIVE_SECURED: "OBJECTIVE SECURED"
+  STR_LIVE_ALIENS_SURRENDERED: "LIVE ENEMIES SURRENDERED" #TODO change code!
+  STR_LIVE_ALIENS_RECOVERED: "LIVE ENEMIES RECOVERED"
+  STR_ALIEN_CORPSES_RECOVERED: "ENEMY CORPSES RECOVERED"
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
   STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation, it's very important to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tune to ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   #mana stuff
@@ -161,9 +164,11 @@ en-US:
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them, who is most likely under the mind control. We must stop the intruders at all costs, retreating now would mean final defeat."
   STR_REGIONAL_HQ_: "ADVENT Regional HQ"
+  STR_RESISTANCE_FARM: "Resistance Heaven"
   STR_RESISTANCE_HEAVEN_ATTACKED: "Resistance Heaven Attacked"
   STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION: #TODO
   STR_RESISTANCE_FARM_BRIEFING: #TODO
+  STR_SCIENTIST_REFUGE: "Scientist Refuge"
 
 #covertOps
   STR_REGIONAL_HQ: "ADVENT Regional HQ"
@@ -194,6 +199,7 @@ en-US:
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."
+  STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"
   STR_FACEHUGGER_UFOPEDIA: #TODO
@@ -216,6 +222,10 @@ en-US:
   STR_ZOMBIE_GRUBAS_AUTOPSY_UFOPEDIA: #TODO
   STR_ZOMBIE_GRUBAS_ARMOR: "Fat Zombie Combat Analysis"
   STR_ZOMBIE_GRUBAS_ARMOR_UFOPEDIA: #TODO 
+  STR_RESISTANCE_SOLDIER: "Resistance Soldier"
+  STR_RESISTANCE_SOLDIER_CORPSE: STR_RESISTANCE_SOLDIER_CORPSE #TODO
+  STR_RESISTANCE_SCIENTIST: "Scientist"
+  STR_RESISTANCE_SCIENTIST_CORPSE: "Scientists Corpse"
   STR_HUMAN: "Human"
   STR_MALE_CIVILIAN_FARMER: "Farmer"
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"

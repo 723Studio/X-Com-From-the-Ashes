@@ -158,9 +158,10 @@ extraSprites:
       105: Resources/Armors/Enemies/Zombies/bigob_ZOMBIE_STERILE_CORPSE.png
       106: Resources/Armors/Enemies/Zombies/bigob_GRUBAS_CORPSE.png
       107: Resources/Armors/Enemies/Zombies/bigobs_FACEHUGGER_CORPSE.png
-      108: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCIENTIST.png
+      108: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCIENTIST.png #TODO duplicating! replace with infector!
       109: Resources/Armors/Civilians/Citizens/bigob_FARMER_CORPSE.png
       110: Resources/Armors/Civilians/Citizens/bigob_FEMALE_FARMER_CORPSE.png
+      111: Resources/Armors/Enemies/MiB/bigob_MIB_SPECOPS.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -239,6 +240,7 @@ extraSprites:
       107: Resources/Armors/Enemies/Zombies/floorob_FACEHUGGER_CORPSE.png
       109: Resources/Armors/Civilians/Citizens/floorob_FARMER_CORPSE.png
       110: Resources/Armors/Civilians/Citizens/floorob_FEMALE_FARMER_CORPSE.png
+      111: Resources/Armors/Enemies/MiB/floorob_MIB_SPECOPS.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -508,6 +510,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
+  - type: MIB_SPECOPS.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1480
+    files:
+      0: Resources/Armors/Enemies/MiB/MIB_SPECOPS.png
+  - type: inventory_MIB_SPECOPS
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_SPECOPS.png
   - type: MIB_ENFORCER.PCK
     width: 512
     height: 720
@@ -515,10 +528,10 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/MIB_ENFORCER.png
-  - type: inventory_MIB_AGENT
+  - type: inventory_MIB_ENFORCER
     singleImage: true
     files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_ENFORCER.png
   - type: RESISTANCE_SOLDIER.PCK
     width: 512
     height: 720
@@ -530,6 +543,19 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SOLDIER.png
+
+  - type: RESISTANCE_SCIENTIST.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SCIENTIST.png
+  - type: inventory_RESISTANCE_SCIENTIST
+    singleImage: true
+    files:
+      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCIENTIST.png
+
   - type: FACEHUGGER.PCK
     subX: 32
     subY: 40

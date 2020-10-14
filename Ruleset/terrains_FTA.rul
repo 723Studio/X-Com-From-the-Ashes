@@ -1,6 +1,17 @@
 terrains:
   - delete: XBASE
   - delete: CULTA
+  - name: SOIL
+    mapDataSets:
+      - BLANKS
+      - CULTIVAT
+      - BARN
+      - ROADS
+      - CULTMACHINES
+    mapBlocks:
+      - name: XBASE_20
+        width: 10
+        length: 10    
   - name: XBASE
     mapDataSets:
       - BLANKS

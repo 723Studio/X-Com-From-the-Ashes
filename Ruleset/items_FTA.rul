@@ -2220,7 +2220,6 @@ items:
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    costSell: 1000
     weight: 32
     bigSprite: 100
     floorSprite: 100
@@ -2244,7 +2243,6 @@ items:
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    costSell: 1000
     weight: 32
     bigSprite: 101
     floorSprite: 101
@@ -2252,23 +2250,7 @@ items:
     invHeight: 3
     battleType: 11
     armor: 30
-    recoveryPoints: 5
-    recover: true
-    recoverCorpse: false
-    listOrder: 67800
-  - type: STR_MIB_ENFORCER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    costSell: 1000
-    weight: 37
-    bigSprite: 102
-    floorSprite: 102
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 10
-    battleType: 11
-    armor: 30
+    recoveryPoints: 2
     recover: true
     recoverCorpse: false
     listOrder: 67800
@@ -2280,6 +2262,46 @@ items:
     prisonType: 1
     costSell: 0
     listOrder: 146000
+  - type: STR_MIB_SPECOPS_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 500
+    weight: 32
+    bigSprite: 111
+    floorSprite: 111
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: 3
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_SPECOPS
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 0
+    listOrder: 146000
+  - type: STR_MIB_ENFORCER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    #costSell: 1000
+    weight: 37
+    bigSprite: 102
+    floorSprite: 102
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 10
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
   - type: STR_MIB_ENFORCER
     categories: [STR_HUMANS]
     size: 0.0
@@ -2288,53 +2310,6 @@ items:
     prisonType: 1
     costSell: 2000
     listOrder: 146030
-  #Resistance units
-  - type: STR_SPAWN_RESISTANCE_SOLDIER
-    spawnUnit: STR_RESISTANCE_SOLDIER
-    spawnUnitFaction: 0
-    bigSprite: 0
-    battleType: 4
-    invWidth: 0
-    invHeight: 0
-    recover: false
-  - type: STR_RESISTANCE_SOLDIER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    costSell: -2000
-    weight: 32
-    bigSprite: 103
-    floorSprite: 103
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
-    recoveryPoints: -200
-    recover: true
-    listOrder: 67800
-  - type: STR_SPAWN_RESISTANCE_SCIENTIST #TODO
-    spawnUnit: STR_RESISTANCE_SCIENTIST
-    spawnUnitFaction: 0
-    bigSprite: 0
-    battleType: 4
-    invWidth: 0
-    invHeight: 0
-    recover: false
-  - type: STR_RESISTANCE_SCIENTIST_CORPSE #TODO
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    costSell: -1000
-    weight: 32
-    bigSprite: 104
-    floorSprite: 104
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
-    recoveryPoints: -200
-    recover: true
-    listOrder: 67800
   #Zombies
   - type: STR_FACEHUGGER
     categories: [STR_BEASTS]
@@ -2399,7 +2374,54 @@ items:
     battleType: 11
     armor: 20
     listOrder: 62310
-
+  #Resistance units
+  - type: STR_SPAWN_RESISTANCE_SOLDIER
+    spawnUnit: STR_RESISTANCE_SOLDIER
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_RESISTANCE_SOLDIER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: -2000
+    weight: 32
+    bigSprite: 103
+    floorSprite: 103
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: -200
+    recover: true
+    listOrder: 67800
+  - type: STR_SPAWN_RESISTANCE_SCIENTIST
+    spawnUnit: STR_RESISTANCE_SCIENTIST
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_RESISTANCE_SCIENTIST_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: -1000
+    weight: 30
+    bigSprite: 104
+    floorSprite: 104
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: -200
+    recover: true
+    listOrder: 67800
+  #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE

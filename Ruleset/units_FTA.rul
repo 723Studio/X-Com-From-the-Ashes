@@ -53,6 +53,34 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
+  - type: STR_MIB_SPECOPS
+    race: STR_MIB
+    stats: #TODO
+      tu: 58
+      stamina: 85
+      health: 45
+      bravery: 90
+      reactions: 50
+      firing: 62
+      throwing: 50
+      strength: 44
+      psiStrength: 45
+      psiSkill: 5
+      melee: 50
+      mana: 50
+    armor: STR_MIB_SPECOPS_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 5
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    canSurrender: true
+    energyRecovery: 25
   - type: STR_MIB_ENFORCER
     race: STR_MIB
     rank: STR_LIVE_NAVIGATOR
@@ -223,7 +251,7 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-      - - STR_PUMP_ACTION
+      - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
       - - STR_HUNTING_RIFLE
@@ -297,19 +325,31 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 44
+      tu: 48
       stamina: 45
       health: 34
-      bravery: 60
+      bravery: 35
       reactions: 30
       firing: 30
       throwing: 30
       strength: 26
-      psiStrength: 40
+      psiStrength: 50
       psiSkill: 0
       melee: 22
-      mana: 10
-    armor: STR_RESISTANCE_SCIENTIST_ARMOR #TODO
+      mana: 5
+    statsRandom:
+      tu: 5
+      stamina: 4
+      health: 10
+      bravery: 25
+      reactions: 15
+      firing: 10
+      throwing: 10
+      strength: 8
+      psiStrength: 40
+      melee: 10
+      mana: 2
+    armor: STR_RESISTANCE_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SCIENTIST
@@ -327,17 +367,17 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats: #TODO
-      tu: 44
-      stamina: 45
-      health: 34
-      bravery: 35
-      reactions: 35
-      firing: 40
-      throwing: 30
-      strength: 26
-      psiStrength: 50
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 90
+      reactions: 46
+      firing: 55
+      throwing: 60
+      strength: 45
+      psiStrength: 35
       psiSkill: 0
-      melee: 22
+      melee: 25
       mana: 3
     statsRandom:
       tu: 20
