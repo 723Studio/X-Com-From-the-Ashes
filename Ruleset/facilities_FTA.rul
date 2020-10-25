@@ -139,8 +139,8 @@ facilities:
         - [2, 2, 1]
         - [8, 2, 1]
         - [6, 5, 1]
-        - [8, 2, 0]
-        - [8, 7, 0]
+        - [7, 1, 0]
+        - [7, 6, 0]
     mapName: XBASF_02
   - type: STR_HANGAR
     spriteShape: 9

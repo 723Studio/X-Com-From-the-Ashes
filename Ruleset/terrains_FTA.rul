@@ -1,17 +1,6 @@
 terrains:
   - delete: XBASE
-  - delete: CULTA
-  - name: SOIL
-    mapDataSets:
-      - BLANKS
-      - CULTIVAT
-      - BARN
-      - ROADS
-      - CULTMACHINES
-    mapBlocks:
-      - name: XBASE_20
-        width: 10
-        length: 10    
+  - delete: CULTA  
   - name: XBASE
     mapDataSets:
       - BLANKS
@@ -605,4 +594,23 @@ terrains:
     civilianTypes:
       - STR_MALE_CIVILIAN_HOOLIGAN
     mapBlocks: *AnchorRural
-
+  - name: MIB_SEWERS
+    mapDataSets:
+      - BLANKS
+      - MIB_SEWERS
+      - CRATES
+      - DOORS1
+      - DOORSSEC
+    mapBlocks:
+        - name: MIB_SEWERS00
+          width: 50
+          length: 70
+          groups: 1
+        - name: MIB_SEWERS_FILLER1
+          width: 10
+          length: 10
+          groups: 6
+        - name: MIB_SEWERS_FILLER2
+          width: 20
+          length: 20
+          groups: 6

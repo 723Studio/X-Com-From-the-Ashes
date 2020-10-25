@@ -1893,6 +1893,7 @@ items:
     costUnprime:
       time: 25
     unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
     battleType: 4
     blastRadius: 5
     listOrder: 38000
@@ -1917,6 +1918,7 @@ items:
     costUnprime:
       time: 25
     unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
     battleType: 4
     blastRadius: 5
     listOrder: 38700
@@ -1942,6 +1944,7 @@ items:
     costUnprime:
       time: 25
     unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
     battleType: 5
     blastRadius: 5
     armor: 30
@@ -2214,6 +2217,31 @@ items:
     flatRate: true
     tags:
         FTAG_SELFKILL_WEAPON: 1
+  - type: STR_SEEKER_DRONE_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 361
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 20
+    fireSound: 86
+    hitSound: 85
+    hitAnimation: 36 # XCF 86
+    power: 32
+    damageType: 4
+    accuracyCloseQuarters: 145
+    accuracySnap: 70
+    accuracyAuto: 30
+    tuSnap: 30
+    tuAuto: 55
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 1
+    invHeight: 1
+    clipSize: -1
+    autoShots: 6
+    sprayWaypoints: 2
+    recover: false
 #unit-related
   #MIBs
   - type: STR_XCOM_EX_COMMANDER_CORPSE
@@ -2262,6 +2290,29 @@ items:
     prisonType: 1
     costSell: 0
     listOrder: 146000
+  - type: MIB_ARMORED_AGENT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 32
+    bigSprite: 113
+    floorSprite: 113
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: 2
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_ARMORED_AGENT
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 0
+    listOrder: 146000
   - type: STR_MIB_SPECOPS_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -2286,6 +2337,27 @@ items:
     prisonType: 1
     costSell: 0
     listOrder: 146000
+  - type: STR_SEEKER_DRONE_TERRORIST
+    categories: [STR_ALIEN_TECH, STR_ROBOTS]
+    size: 0.0
+    costSell: 75000
+    recover: true
+    listOrder: 145800
+  - type: STR_SEEKER_DRONE_CORPSE
+    categories: [STR_ALIEN_TECH, STR_WRECKS]
+    size: 0.2
+    costSell: 15000
+    weight: 6
+    bigSprite: 112
+    floorSprite: 112
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 5
+    battleType: 11
+    recover: true
+    power: 65
+    armor: 12
+    listOrder: 84500
   - type: STR_MIB_ENFORCER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE

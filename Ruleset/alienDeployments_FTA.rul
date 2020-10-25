@@ -270,173 +270,53 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP     
   - type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
-    race: STR_ADVENT_START
-    width: 50 #TODO here 
-    length: 50
-    height: 2
+    race: STR_ADVENT_START #TODO
+    width: 80
+    length: 70
+    height: 8
     terrains:
-      - UBASE
-    shade: 15
-    script: ALIENBASE
+      - FOREST
+    script: MIB_SEWERS
     briefing:
       textOffset: -16
-      background: BACK01.SCR
+      background: BACK01.SCR #TODO
       showTarget: false
     objectiveType: 3
-    markerName: STR_REGIONAL_HQ
-    markerIcon: 7
-    alert: STR_ALERT_ALIEN_EMBASSY
-    alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_ALIEN_EMBASSY_DESCRIPTION
-    alienBase: true    # this is only to tell new battle mode what to do with this deployment
+    markerName: STR_MIB_REGIONAL_HQ
+    markerIcon: 7 #TODO
+    alert: STR_ALERT_MIB_REGIONAL_HQ
+    alertBackground: STR_RESISTANCE_BACKGROUND.SCR #TODO
+    alertDescription: STR_MIB_REGIONAL_HQ_DESCRIPTION
+    alienBase: true
     isHidden: true
-    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
-    objectivePopup: STR_CONTROL_CENTER_DESTROYED
     points: 5
-    data:
+    data: #TODO
       - alienRank: 6
-        lowQty: 1
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 0
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 5
         lowQty: 5
-        highQty: 7
-        dQty: 4
-        percentageOutsideUfo: 0
+        highQty: 10
+        dQty: 3
+        percentageOutsideUfo: 80
         itemSets:
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            []
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            []
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
+            []
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            []
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            []
           -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 3
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
+            []
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
+            []
           -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
+            []
           -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-      - alienRank: 2
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
+            []
           -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 1
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 0
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
+            []
 
   - type: STR_RESISTANCE_FARM
     civiliansByType:
@@ -446,16 +326,16 @@ alienDeployments:
     length: 80
     height: 8
     alert: STR_RESISTANCE_HEAVEN_ATTACKED
-    alertBackground: BACK03.SCR #TODO
+    alertBackground: BACK03.SCR #TODO?
     alertDescription: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION
     markerName: STR_RESISTANCE_HEAVEN
     duration: [4, 10]
-    despawnPenalty: 800
+    despawnPenalty: 700
     extendedObjectiveType: STR_EVACUATION 
     unlockedResearch: STR_RESISTANCE_FIRST_HELP
     briefing:
       textOffset: -16
-      background: STR_RESISTANCE_BACKGROUND.SCR #TODO
+      background: RESISTANCE_FARM.SCR
       showTarget: false
       desc: STR_RESISTANCE_FARM_BRIEFING
     terrains:
@@ -489,11 +369,34 @@ alienDeployments:
             []
           -
             []
-      - alienRank: 5
-        lowQty: 5
-        highQty: 10
-        dQty: 3
-        percentageOutsideUfo: 80
+
+  - type: STR_SCIENTIST_REFUGE
+    width: 80
+    length: 80
+    height: 8
+    alert: STR_SCIENTIST_REFUGE_ALERT
+    alertBackground: BACK03.SCR #TODO
+    alertDescription: STR_SCIENTIST_REFUGE_DESCRIPTION
+    markerName: STR_AGENT_EXTRACTION
+    duration: [4, 10]
+    despawnPenalty: 850
+    extendedObjectiveType: STR_EVACUATION 
+    unlockedResearch: STR_RESISTANCE_FIRST_HELP
+    briefing:
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_SCIENTIST_REFUGE_BRIEFING
+    terrains:
+      - FOREST
+    customUfo: STR_SCIENTIST_REFUGE
+    script: REFUGE_ATTACKED
+    battleScript: MIB_ATTACK
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1
+        percentageOutsideUfo: 100
         itemSets:
           -
             []
@@ -516,55 +419,6 @@ alienDeployments:
           -
             []
 
-  - type: STR_SCIENTIST_REFUGE
-    width: 60
-    length: 60
-    height: 8
-    alert: STR_SCIENTIST_REFUGE_ALERT #TODO
-    alertBackground: BACK03.SCR #TODO
-    alertDescription: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
-    markerName: STR_RESISTANCE_HEAVEN #TODO
-    duration: [4, 10]
-    despawnPenalty: 800
-    extendedObjectiveType: STR_EVACUATION 
-    unlockedResearch: STR_RESISTANCE_FIRST_HELP
-    briefing:
-      textOffset: -16
-      background: STR_RESISTANCE_BACKGROUND.SCR
-      showTarget: false
-      desc: STR_SCIENTIST_REFUGE_BRIEFING
-    terrains:
-      - FOREST
-    customUfo: STR_SCIENTIST_REFUGE
-    #script: SCIENTIST_REFUGE
-    #battleScript: ZOMBIE_ATTACK #TODO
-    data:
-      - alienRank: 6
-        lowQty: 5
-        highQty: 10
-        dQty: 3
-        percentageOutsideUfo: 80
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
 
 
   - type: STR_GENERAL_TRAP
@@ -649,46 +503,3 @@ alienDeployments:
             []
           -
             []
-
-  - type: STR_MEDIUM_SCOUT #TODO - remove - engine testing
-    width: 40
-    length: 40
-    height: 4
-    civilians: 1
-    extendedObjectiveType: STR_ITEM_EXTRACTION
-    battleScript: TEST_SCRIPT
-    data:
-      # - alienRank: 5
-      #   lowQty: 2
-      #   highQty: 4
-      #   dQty: 2
-      #   percentageOutsideUfo: 60
-      #   itemSets:
-      #     -
-      #       - STR_PLASMA_PISTOL
-      #       - STR_PLASMA_PISTOL_CLIP
-      #       - STR_PLASMA_PISTOL_CLIP
-      #     -
-      #       - STR_PLASMA_RIFLE
-      #       - STR_PLASMA_RIFLE_CLIP
-      #       - STR_PLASMA_RIFLE_CLIP
-      #     -
-      #       - STR_HEAVY_PLASMA
-      #       - STR_HEAVY_PLASMA_CLIP
-      #       - STR_ALIEN_GRENADE
-      - alienRank: 4
-        lowQty: 1
-        highQty: 1 #2
-        dQty: 1
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MIND_PROBE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP

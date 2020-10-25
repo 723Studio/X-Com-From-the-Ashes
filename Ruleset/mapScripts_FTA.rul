@@ -1,16 +1,8 @@
-mapScripts: #for tests
-  - type: TRAP
+mapScripts: 
+  - type: TRAP #for tests
     commands:
     - type: addCraft
     - type: addUFO
-    # - type: addBlock
-    #   terrain: XBASE
-    #   blocks:
-    #     - 1 
-    # - type: addBlock
-    #   terrain: XBASE
-    #   blocks:
-    #     - 2 
     - type: addBlock
       size: 2
       executions: 5
@@ -99,3 +91,62 @@ mapScripts: #for tests
     - type: fillArea
       blocks: 6
 
+  - type: REFUGE_ATTACKED
+    commands:
+    - type: addCraft
+      rects: 
+       - [2, 2, 5, 5]
+    - type: addUFO
+      rects: 
+       - [2, 2, 5, 5]
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: addBlock
+      size: 2
+      executions: 3
+      executionChances: 65
+    - type: fillArea
+
+
+  - type: MIB_SEWERS
+    commands:
+
+        - type: addBlock
+          terrain: MIB_SEWERS
+          #groups: 1
+          canBeSkipped: false
+          blocks: 0
+          rects:
+              - [0, 0, 7, 7]
+        - type: addBlock
+          terrain: MIB_SEWERS
+          groups: 6
+          blocks: 2
+          executionChances: 60
+          executions: 2
+        - type: fillArea
+          terrain: MIB_SEWERS
+          groups: 6
+          blocks: 1
+        - type: fillArea
+          terrain: FOREST
+          # terrain: MIB_SEWERS
+          # groups: 6
+
+  - type: TEST_SCRIPT
+    commands:
+    - type: addCraft
+    - type: addUFO
+      UFOName: STR_MEDIUM_SCOUT
+    - type: fillArea
+      verticalLevels:
+      - type: ground
+        terrain: XBASE
+        # groups: 3
+        size: [1, 1, 2]
+      - type: middle
+        terrain: FOREST
+        groups:
+            - 0
+        size: [1, 1, 4]

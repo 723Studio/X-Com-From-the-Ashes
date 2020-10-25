@@ -162,6 +162,8 @@ extraSprites:
       109: Resources/Armors/Civilians/Citizens/bigob_FARMER_CORPSE.png
       110: Resources/Armors/Civilians/Citizens/bigob_FEMALE_FARMER_CORPSE.png
       111: Resources/Armors/Enemies/MiB/bigob_MIB_SPECOPS.png
+      112: Resources/Armors/Enemies/MiB/bigob_SEEKER_DRONE.png
+      113: Resources/Armors/Enemies/MiB/bigob_MIB_ARMORED_AGENT.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -225,6 +227,7 @@ extraSprites:
       358: Resources/Armors/Enemies/Zombies/bigob_PARASITE.png
       359: Resources/Weapons/Earthbound/Faction/bigob_MachinePistol.png
       360: Resources/Weapons/Earthbound/Faction/bigob_MachinePistolClip.png
+      361: Resources/Weapons/Alien/Laser/bigob_DroneWeapon.png
       
   - type: FLOOROB.PCK
     files:
@@ -241,6 +244,8 @@ extraSprites:
       109: Resources/Armors/Civilians/Citizens/floorob_FARMER_CORPSE.png
       110: Resources/Armors/Civilians/Citizens/floorob_FEMALE_FARMER_CORPSE.png
       111: Resources/Armors/Enemies/MiB/floorob_MIB_SPECOPS.png
+      112: Resources/Armors/Enemies/MiB/floorob_SEEKER_DRONE.png
+      113: Resources/Armors/Enemies/MiB/floorob_MIB_ARMORED_AGENT.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -287,6 +292,7 @@ extraSprites:
       356: Resources/Weapons/Earthbound/Utilities/floorob_Stims.png
       359: Resources/Weapons/Earthbound/Faction/floorob_MachinePistol.png
       360: Resources/Weapons/Earthbound/Faction/floorob_MachinePistolClip.png
+      
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -443,6 +449,19 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/COVEROPSHQ_BACKGROUND.png
+  - type: RESISTANCE_FARM.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/RESISTANCE_FARM.png
+  - type: FOREST_DARK.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/FOREST_DARK.png
+
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT
     singleImage: true
@@ -510,6 +529,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
+  - type: MIB_ARMORED_AGENT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/MIB_ARMORED_AGENT.png
+  - type: inventory_MIB_ARMORED_AGENT
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_ARMORED_AGENT.png
   - type: MIB_SPECOPS.PCK
     subX: 32
     subY: 40
@@ -521,6 +551,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_SPECOPS.png
+  - type: SEEKER_DRONE.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/Armors/Enemies/MiB/SEEKER_DRONE.png
+  - type: inventory_SEEKER_DRONE
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/inventory_SeekerDrone.png
   - type: MIB_ENFORCER.PCK
     width: 512
     height: 720
@@ -532,6 +573,7 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_ENFORCER.png
+
   - type: RESISTANCE_SOLDIER.PCK
     width: 512
     height: 720
@@ -543,7 +585,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SOLDIER.png
-
   - type: RESISTANCE_SCIENTIST.PCK
     width: 512
     height: 720

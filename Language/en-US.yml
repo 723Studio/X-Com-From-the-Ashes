@@ -163,17 +163,23 @@ en-US:
   STR_CLOSED_LAB: "Closed Laboratory"
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them, who is most likely under the mind control. We must stop the intruders at all costs, retreating now would mean final defeat."
-  STR_REGIONAL_HQ_: "ADVENT Regional HQ"
+  STR_INITIAL_REGIONAL_HQ: "MIB Regional HQ"
+  STR_ALERT_MIB_REGIONAL_HQ: #TODO
+  STR_MIB_REGIONAL_HQ_DESCRIPTION: #TODO
+  STR_MIB_REGIONAL_HQ: "MIB Regional HQ"
   STR_RESISTANCE_FARM: "Resistance Heaven"
   STR_RESISTANCE_HEAVEN_ATTACKED: "Resistance Heaven Attacked"
   STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION: #TODO
   STR_RESISTANCE_FARM_BRIEFING: #TODO
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
+  STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
+  STR_SCIENTIST_REFUGE_DESCRIPTION: #TODO
+  STR_AGENT_EXTRACTION: "Agent Extraction"
+  STR_SCIENTIST_REFUGE_BRIEFING: #TODO
+
 
 #covertOps
-  STR_REGIONAL_HQ: "ADVENT Regional HQ"
-  STR_TEST_OPERATION: "Test Operation"
-  STR_TEST_OPERATION_DESCRIPTION: "STR_TEST_OPERATION_DESCRIPTION"
+  STR_REGIONAL_HQ: "MIB Regional HQ"
 #events
   STR_RND_STATUS_REPORT_EVENT: "R&D status report is ready!"
   STR_RND_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the R&D center."

@@ -1,5 +1,7 @@
 ﻿#globals
 ftaGame: true # a new property that enables all FTA stuff
+#useCustomCategories: true
+displayCustomCategories: 1
 
 #difficulty
 startingDifficulty: 2
@@ -13,13 +15,13 @@ constants:
   extendedItemReloadCost: true
   extendedRunningCost: true
   damageRange: 85 #for good or bad
-  #extendedTerrainMelee: 4 #uncomment once added to engine
-  #extendedUnderwaterThrowFactor: 60
+  extendedTerrainMelee: 4
+  extendedUnderwaterThrowFactor: 60
 
 mana: #TODO
   enabled: true
   battleUI: true
-  unlockResearch: STR_HELLO
+  unlockResearch: STR_TODOIUM
   trainingPrimary: false
   trainingSecondary: false
   woundThreshold: 200             # default is 200

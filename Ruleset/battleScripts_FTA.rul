@@ -66,3 +66,55 @@ battleScripts:
           - [7, 0, 1, 8]
           - [0, 7, 8, 1]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
+
+  - type: MIB_ATTACK
+    commands:
+    - type: spawnUnit #for low diff
+      executions: 1
+      executionChances: 100
+      packSize: 4
+      randomPackSize: true
+      unitSide: 1
+      maxDifficulty: 3
+      rects: 
+          - [0, 0, 1, 8]
+          - [0, 0, 8, 1]
+          - [7, 0, 1, 8]
+          - [0, 7, 8, 1]
+      unitSet: [STR_FACEHUGGER]
+    - type: spawnUnit #random additional
+      executions: 1
+      executionChances: 40
+      packSize: 4
+      randomPackSize: true
+      unitSide: 1
+      rects: 
+          - [0, 0, 1, 8]
+          - [0, 0, 8, 1]
+          - [7, 0, 1, 8]
+          - [0, 7, 8, 1]
+      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
+    - type: spawnUnit #high diff
+      executions: 2
+      packSize: 5
+      randomPackSize: true
+      unitSide: 1
+      minDifficulty: 4
+      rects: 
+          - [0, 0, 1, 8]
+          - [0, 0, 8, 1]
+          - [7, 0, 1, 8]
+          - [0, 7, 8, 1]
+      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
+    - type: spawnUnit #extra SH gift
+      executions: 1
+      executionChances: 10
+      packSize: 6
+      randomPackSize: false
+      unitSide: 1
+      rects: 
+          - [0, 0, 1, 8]
+          - [0, 0, 8, 1]
+          - [7, 0, 1, 8]
+          - [0, 7, 8, 1]
+      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]

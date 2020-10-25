@@ -9,7 +9,7 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of OpenXcom Ex
 =========
 CREDITS
 =========
-Solarius Scorch, author of Final Mod Pack (https://openxcom.mod.io/final-mod-pack) and The X-Com files (https://openxcom.mod.io/the-x-com-files), distributed under CC BY-NC 4.0 - graphic assets, terrains, mapblocks; general guidance, inspiration, teacher, sensei and senpai.
+Solarius Scorch, author of Final Mod Pack (https://openxcom.mod.io/final-mod-pack) and The X-Com files (https://openxcom.mod.io/the-x-com-files), distributed under CC BY-NC 4.0 - graphic and sound assets, config data, terrains, mapblocks; general guidance, inspiration, teacher, sensei and senpai.
 
 Meridian and Yankes, developers of OpenXcom Extended (https://openxcom.mod.io/openxcom-extended), distributed under GNU General Public License v3.0 - game engine, based on OpenXcom engine. ~99.9% of engine functionality, used in FTA is generally provided by OpenXcom Extended, all differences listed here: (url). Also big thanks for guidance trough coding.
 

@@ -53,7 +53,87 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
-  - type: STR_MIB_SPECOPS
+  - &STR_MIB_ARMORED_AGENT
+    type: STR_MIB_ARMORED_AGENT 
+    race: STR_MIB
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 60
+      stamina: 94
+      health: 30
+      bravery: 90
+      reactions: 49
+      firing: 58
+      throwing: 62
+      strength: 48
+      psiStrength: 38
+      psiSkill: 0
+      melee: 27
+    armor: STR_MIB_AGENT_VEST_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 2
+    sniper: 25
+    spotter: 1
+    canSurrender: true
+  - type: STR_MIB_ARMORED_AGENT_SPAWN
+    refNode: *STR_MIB_ARMORED_AGENT
+    altRecoveredUnit: STR_MIB_ARMORED_AGENT
+    builtInWeaponSets:
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_GRENADE
+      - - STR_PDW
+        - STR_PDW_CLIP
+        - STR_PDW_CLIP
+        - STR_PDW_CLIP
+        - STR_GRENADE
+      - - STR_SMG
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_FLASHBANG_GRENADE
+      - - STR_SMG
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_GRENADE
+      - - STR_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_ASSAULT_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+      - - STR_PDW
+        - STR_PDW_CLIP
+        - STR_PDW_CLIP
+        - STR_PDW_CLIP
+        - STR_FLASHBANG_GRENADE
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+      - - STR_ASSAULT_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_FLASHBANG_GRENADE
+  - &STR_MIB_SPECOPS
+    type: STR_MIB_SPECOPS 
     race: STR_MIB
     stats: #TODO
       tu: 58
@@ -81,6 +161,82 @@ units:
     spotter: 1
     canSurrender: true
     energyRecovery: 25
+  - type: STR_MIB_SPECOPS_SPAWN
+    refNode: *STR_MIB_ARMORED_AGENT
+    altRecoveredUnit: STR_MIB_ARMORED_AGENT
+    builtInWeaponSets:
+      - - STR_PDW
+        - STR_PDW_CLIP
+        - STR_PDW_CLIP
+        - STR_PDW_CLIP
+        - STR_GRENADE
+      - - STR_SMG
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_FLASHBANG_GRENADE
+      - - STR_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+      - - STR_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_ASSAULT_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+      - - STR_ASSAULT_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_SNIPER_RIFLE
+        - STR_SNIPER_RIFLE_CLIP
+        - STR_SNIPER_RIFLE_CLIP
+        - STR_SNIPER_RIFLE_CLIP
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+      - - STR_ASSAULT_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_FLASHBANG_GRENADE
+      - - STR_LIGHT_CANNON
+        - STR_LC_HE_AMMO
+        - STR_LC_I_AMMO
+  - type: STR_SEEKER_DRONE_TERRORIST
+    race: STR_MIB
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 95
+      stamina: 150
+      health: 26
+      bravery: 110
+      reactions: 50
+      firing: 60
+      throwing: 0
+      strength: 18
+      psiStrength: 110
+      psiSkill: 0
+      melee: 0
+    armor: STR_SEEKER_DRONE_ARMOR
+    standHeight: 11
+    kneelHeight: 16
+    floatHeight: 12
+    value: 8
+    deathSound: 23
+    moveSound: 40
+    specab: 1
+    intelligence: 3
+    aggression: 0
+    spotter: 1
+    builtInWeaponSets:
+      - - STR_SEEKER_DRONE_WEAPON
   - type: STR_MIB_ENFORCER
     race: STR_MIB
     rank: STR_LIVE_NAVIGATOR
@@ -321,7 +477,8 @@ units:
         - STR_HUNTING_RIFLE_CLIP
 
 #Resistance
-  - type: STR_RESISTANCE_SCIENTIST
+  - &STR_RESISTANCE_SCIENTIST
+    type: STR_RESISTANCE_SCIENTIST
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
@@ -339,21 +496,20 @@ units:
       mana: 5
     statsRandom:
       tu: 5
-      stamina: 4
-      health: 10
+      stamina: 15
+      health: 7
       bravery: 25
-      reactions: 15
-      firing: 10
-      throwing: 10
-      strength: 8
-      psiStrength: 40
-      melee: 10
-      mana: 2
+      reactions: 7
+      firing: 12
+      throwing: 15
+      strength: 10
+      psiStrength: 50
+      melee: 25
+      mana: 5
     armor: STR_RESISTANCE_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SCIENTIST
-    specialObjectiveType: STR_FRIENDLY_VIP
     value: 200
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
@@ -363,40 +519,63 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
+  - type: STR_RESISTANCE_SCIENTIST_VIP
+    refNode: *STR_RESISTANCE_SCIENTIST
+    specialObjectiveType: STR_FRIENDLY_VIP
+    value: 300
+    builtInWeaponSets:
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
   - type: STR_RESISTANCE_SOLDIER
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
-    stats: #TODO
-      tu: 56
-      stamina: 90
-      health: 30
-      bravery: 90
-      reactions: 46
-      firing: 55
-      throwing: 60
-      strength: 45
-      psiStrength: 35
-      psiSkill: 0
-      melee: 25
-      mana: 3
-    statsRandom:
-      tu: 20
-      stamina: 20
-      health: 10
-      bravery: 25
-      reactions: 15
-      firing: 20
-      throwing: 10
-      strength: 15
+    stats:
+      tu: 55
+      stamina: 55
+      health: 32
+      bravery: 35
+      reactions: 37
+      firing: 57
+      throwing: 50
+      strength: 30
       psiStrength: 50
-      melee: 10
-      mana: 2
+      psiSkill: 0
+      melee: 45
+      mana: 10
+    statsRandom:
+      tu: 5
+      stamina: 15
+      health: 7
+      bravery: 25
+      reactions: 7
+      firing: 12
+      throwing: 15
+      strength: 10
+      psiStrength: 50
+      melee: 25
+      mana: 5
     armor: STR_RESISTANCE_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SOLDIER #TODO
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 100
+    value: 200
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -448,4 +627,4 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_FIRST_AID
+        - STR_FIRST_AID 

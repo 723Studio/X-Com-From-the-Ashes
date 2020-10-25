@@ -28,3 +28,16 @@ extraSounds:
       79: Resources/Armors/Enemies/Zombies/FACEHUGGER_melee.ogg
       80: Resources/Armors/Enemies/Zombies/FACEHUGGER_move.ogg
       81: Resources/Weapons/Sounds/SlashHit.wav
+      82: Resources/Weapons/Sounds/LaserCannonFire.wav
+      83: Resources/Weapons/Sounds/LaserCannonHit.wav
+      84: Resources/Weapons/Sounds/LaserHeavyFire.wav
+      85: Resources/Weapons/Sounds/LaserHit.wav
+      86: Resources/Weapons/Sounds/LaserPistolFire.wav
+      87: Resources/Weapons/Sounds/LaserRifleFire.wav
+      88: Resources/Weapons/Sounds/PlasmaBlade_slice.wav
+      89: Resources/Weapons/Sounds/PlasmaHeavyFire.wav
+      90: Resources/Weapons/Sounds/PlasmaHit.wav
+      91: Resources/Weapons/Sounds/PlasmaMelee_hit.wav
+      92: Resources/Weapons/Sounds/PlasmaPistolFire.wav
+      93: Resources/Weapons/Sounds/PlasmaRifleFire.wav
+      94: Resources/Weapons/Sounds/PlasmaSword_slice.wav
