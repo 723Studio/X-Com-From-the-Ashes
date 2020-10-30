@@ -17,7 +17,7 @@ SupSuper and Warboy, developers of OpenXcom (https://openxcom.org/), distributed
 
 Luke83, efrenespartano, Solarius_Scorch, ohartenstein23, hellrazor, Bulletdesigner & wolwerin and other members of I.D.T. and OpenXcom community, developers of Community Map Pack (https://openxcom.mod.io/community-map-pack) - terrains, maps
 
-robin, author of From the Apocalypse 0.11.1 (https://openxcom.org/forum/index.php/topic,3319.0.html) - various graphic assets
+robin, author of From the Apocalypse (https://openxcom.org/forum/index.php/topic,3319.0.html) - various graphic assets
 
 Radu Martin (aka CanadianBeaver), author of Awesome Guns (http://devbian.ca/AwesomeGuns/) distributed under CC BY-NC-SA 4.0 - various graphic assets
 
@@ -30,6 +30,8 @@ Luke83 & efrenespartano, authors of OXC Factions (https://openxcom.mod.io/oxc-fa
 Niklas Jansson (http://androidarts.com/) and Riccardo Gasperi, authors of TerrorWeapons, distributed under reative Commons Attribution-ShareAlike 4.0 International License
 
 Nord, author of The World of (Terrifying) Silence (https://openxcom.mod.io/the-world-of-terrifying-silence) - various graphic assets
+
+Nord, author of X-Chronicles (https://openxcom.org/forum/index.php/topic,6792.0.html) - various graphic assets
 
 Dr Reach, author of original artwork for SCP Foundation website (http://www.scp-wiki.net/reach-s-blueprint-folder), distributed under Creative Commons Attribution-ShareAlike 3.0 Unported - art that was used for facility blueprints ufopaedia article image.
 

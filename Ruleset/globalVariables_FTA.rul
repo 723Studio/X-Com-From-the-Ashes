@@ -10,6 +10,7 @@ startingDifficulty: 2
 ai:
   extendedFireModeChoice: true
   pickUpWeaponsMoreActively: true
+  destroyBaseFacilities: true # default false
 
 constants:
   extendedItemReloadCost: true
@@ -49,6 +50,8 @@ fixedUserOptions:
 #battlescape
 maxViewDistance: 40
 enableCloseQuartersCombat: 1
+lighting:
+  enhanced: 7
 
 #geoscape
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION

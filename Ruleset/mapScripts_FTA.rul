@@ -111,29 +111,28 @@ mapScripts:
 
   - type: MIB_SEWERS
     commands:
-
-        - type: addBlock
-          terrain: MIB_SEWERS
-          #groups: 1
-          canBeSkipped: false
-          blocks: 0
-          rects:
-              - [0, 0, 7, 7]
-        - type: addBlock
-          terrain: MIB_SEWERS
-          groups: 6
-          blocks: 2
-          executionChances: 60
-          executions: 2
-        - type: fillArea
-          terrain: MIB_SEWERS
-          groups: 6
-          blocks: 1
-        - type: fillArea
-          terrain: FOREST
-          # terrain: MIB_SEWERS
-          # groups: 6
-
+    - type: addBlock
+      rects:
+          - [0, 0, 6, 7]
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        # groups: 1
+        blocks: 0
+        size: [5, 7, 5]
+      - type: middle
+        terrain: MIB_CORP_SURFACE
+        blocks: 0
+        size: [5, 7, 5]
+    - type: fillArea
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        blocks: [1]
+        size: [1, 1, 5]
+      - type: middle
+        terrain: FOREST
+        size: [1, 1, 4]
   - type: TEST_SCRIPT
     commands:
     - type: addCraft

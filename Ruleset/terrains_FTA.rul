@@ -614,3 +614,14 @@ terrains:
           width: 20
           length: 20
           groups: 6
+  - name: MIB_CORP_SURFACE
+    mapDataSets:
+      - BLANKS
+      - MIB_URBAN
+      - MIB_URBAN_OBJ
+      - MIB_CORP
+    mapBlocks:
+        - name: MIB_CORP_SURFACE00
+          width: 50
+          length: 70
+          groups: 1

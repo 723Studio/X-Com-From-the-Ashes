@@ -273,9 +273,9 @@ alienDeployments:
     race: STR_ADVENT_START #TODO
     width: 80
     length: 70
-    height: 8
+    height: 12
     terrains:
-      - FOREST
+      - MIB_SEWERS
     script: MIB_SEWERS
     briefing:
       textOffset: -16
