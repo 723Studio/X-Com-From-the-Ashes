@@ -2005,6 +2005,9 @@ items:
     kneelBonus: 100
     experienceTrainingMode: 7
     listOrder: 38600
+    tags:
+      FTAG_DAZE_VALUE: 100
+      FTAG_DAZE_TIME: 1
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
