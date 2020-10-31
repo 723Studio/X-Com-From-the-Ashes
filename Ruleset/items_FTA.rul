@@ -2539,4 +2539,21 @@ items:
 extended:
   tags:
     RuleItem:
+      PHYSICAL_SHIELD_ARMOR: int
+      ITEM_IS_MELEE: int
+      ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT: int
+      ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT: int
+      #psi-shield
+      ITEM_ENERGY_SHIELD_NEEDS_PRIMING: int
+      ITEM_ENERGY_SHIELD_CAPACITY: int
+      ITEM_ENERGY_SHIELD_PER_TURN: int
+      ITEM_ENERGY_SHIELD_TYPE: int
+      ITEM_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
+      ITEM_ENERGY_SHIELD_INDICATOR_COLOR: int # Color group for item's indicator
+      ITEM_ENERGY_SHIELD_COLOR_REPLACED_BY_INDICATOR: int # Color group that is replaced by indicator
+      ITEM_ENERGY_SHIELD_DOWN_COLOR: int # Indicator switches to this color group when down
+      #flashbang
+      FTAG_DAZE_VALUE: int
+      FTAG_DAZE_TIME: int
+      FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon

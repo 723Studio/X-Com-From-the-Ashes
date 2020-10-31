@@ -347,8 +347,6 @@ armors:
       - 2.0
       - 1.0
     loftempsSet: [ 3 ]
-    tags:
-      HANDCUFF_PROTECTION: 50
   - type: STR_ZOMBIE_GRUBAS_ARMOR
     spriteSheet: ZOMBIE_GRUBAS.PCK
     spriteInv: inventory_ZOMBIE_GRUBAS
@@ -675,30 +673,23 @@ armors:
     camouflageAtDark: -2
     visibilityAtDark: 9
     personalLight: 5
-    stats:
-      stamina: 5
-      melee: 5
-    frontArmor: 12
-    sideArmor: 8
-    rearArmor: 8
-    underArmor: 6 # durathread lingerie
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
-    meleeDodge:
-      reactions: 0.4 # bonus for snazziness
-    meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-      time:
-        tu: 0.5
       energy:
+        flatHundred: 0.13
         healthCurrent: 0.25
       stun:
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
+        healthCurrent: 0.1
+        health: -0.05
       health:
         stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.6
+    meleeDodgeBackPenalty: 0.5
     overKill: 1.5
     damageModifier:
       - 1.0
@@ -720,3 +711,13 @@ armors:
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+
+
+extended:
+  tags: # Remember to add tag definitions to same file as item/armor rulesets!
+    RuleArmor:
+      #psi-shield      
+      ARMOR_ENERGY_SHIELD_CAPACITY: int
+      ARMOR_ENERGY_SHIELD_PER_TURN: int
+      ARMOR_ENERGY_SHIELD_TYPE: int
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit

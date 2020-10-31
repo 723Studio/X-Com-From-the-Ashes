@@ -1,0 +1,20 @@
+soldierTransformation:
+  - name: STR_SNIPER_TRAINING
+    #minRank: 1
+    requiredMinStats:
+       firing: 40 #65 
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    recoveryTime: 8
+    flatMin:
+      tu: -2
+      firing: 7
+    flatMax:
+      tu: 2
+      firing: 16
+    soldierBonusType: STR_SNIPER
