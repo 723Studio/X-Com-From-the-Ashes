@@ -1,27 +1,31 @@
-items:
-  - type: STR_FLASHBANG_GRENADE
-    tags:
-      FTAG_DAZE_VALUE: 100 #percentage
-      FTAG_DAZE_TIME: 2
-  - type: STR_LAUNCHER_FLASHBANG
-    tags:
-      FTAG_DAZE_VALUE: 100 #percentage
-      FTAG_DAZE_TIME: 2
-
 soldierBonuses:
   - name: STR_SNIPER
     tags:
-      SNIPER_CRIT_CHANCE: 20    #bonus chance to land a critical hit
-      SNIPER_CRIT_VALUE: 150    #bonus % power of critical hit
-      AIM: 1                    #(1/0) enables 30% bonus accuracy when kneeling on the position you were kneeling on the start of the turn
-      #DEATH_FROM_ABOVE: 10      #bonus % damage when damaging from above
+      CENTER_MASS: 20           #bonus chance to land a critical hit (x1.5 damage for a sniper rifle, x1.2 for rifle)
+      AIM: 1                    #(1/0) enables 20% bonus accuracy with a sniper rifle when kneeling on the position you were kneeling at the start of the turn
+      DEATH_FROM_ABOVE: 1       #(1/0) enables additional damage to morale and suppress next reaction from the target if damaged with sniper rifle aim shot and distance is greater than 300 (~15 tiles)
+  - name: STR_HEAVY
+    tags:
+      SHREDDER: 10              #bonus % of resulting damage adds as to_armor damage if using heavy weapons
+      STEADY_GRIP: 10           #bonus to accuracy with heavy weapons
+  - name: STR_ASSAULT
+    tags:
+      #SENTINEL: 1              # (1/0) enables returning of TU on after reaction action hit the target
+      EVER_VIGILANT: 1          # (1/0) restores 20-30% of TU on beginning of enemy turn 
+      RAPID_TARGETING: 5        # bonus to accuracy with snap and auto-shots with pistols, SMG, rifles, shotguns and LMG
+
+
 
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
     RuleSoldierBonus:
-      SNIPER_CRIT_CHANCE: int
-      SNIPER_CRIT_VALUE: int
+      CENTER_MASS: int
       AIM: int
+      SHREDDER: int
+      STEADY_GRIP: int
+      DEATH_FROM_ABOVE: int
+      EVER_VIGILANT: int
+      RAPID_TARGETING: int
     RuleItem:
       PHYSICAL_SHIELD_ARMOR: int
       ITEM_IS_MELEE: int
@@ -71,11 +75,21 @@ extended:
       AIM_X: int
       AIM_Y: int
       AIM_Z: int
+      CENTER_MASS_STATE: int
+      DEATH_FROM_ABOVE_STATE: int # 0 - nothing special, 1 - unit has this perk, 2 - unit activate the perk
+      DEATH_FROM_ABOVE_HIT_STATE: int # 0 - nothing special, 1 - unit is under death from above reaction suppressing effect
+      DEATH_FROM_ABOVE_UNIT_ID: int # ID of a unit that land DfA hit with damage
+      #heavy
+      SHREDDER_STATE: int
+      STEADY_GRIP_STATE: int
+      #assault
+      EVER_VIGILANT_STATE: int # 0 - nothing special, 1 - unit has this perk, 2 - unit activate additional bonus
+      RAPID_TARGETING_STATE: int
+
 
   scripts:
-    createUnit:
-        #*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
-      - offset: 1
+    createUnit: 
+      - offset: 1     # Sets the frequency and offset for periodic unit recolors for buffs and debuffs
         code: |
           var int recolorPeriod;
           var int desync;
@@ -87,10 +101,8 @@ extended:
 
           return;
 
-      - offset: 2
+      - offset: 2     # Set energy shields on unit armor at beginning of the battle
         code: |
-          # Set energy shields on unit armor at beginning of the battle
-
           var ptr RuleArmor armorRuleset;
           var int shieldCapacity;
 
@@ -106,10 +118,8 @@ extended:
           return;
 
     createItem:
-      - offset: 1
+      - offset: 1     # Set energy shields on items at beginning of the battle
         code: |
-          # Set energy shields on items at beginning of the battle
-
           var ptr RuleItem itemRuleset;
           var int shieldCapacity;
           var int temp;
@@ -126,33 +136,8 @@ extended:
           return;
 
     newTurnUnit:
-      - offset: 1   # Define aim initial properties
-        code: |
-          var int is_kneeling;
-          var int pos_x;
-          var int pos_y;
-          var int pos_z;
-          var int aim;
-          var int kneeling;
-          if eq side 0; # xcom turns
-            unit.getTag aim Tag.AIM_STATE;
-            unit.isKneeled kneeling;
 
-            if and gt aim 0 gt kneeling 0;
-              unit.getPosition.getX pos_x;
-              unit.getPosition.getY pos_y;
-              unit.getPosition.getZ pos_z;
-
-              unit.setTag Tag.AIM_STATE 2; # was kneeling at the beginning of the turn
-              
-              unit.setTag Tag.AIM_X pos_x;
-              unit.setTag Tag.AIM_Y pos_y;
-              unit.setTag Tag.AIM_Z pos_z;
-            end;
-          end;
-          return;
-
-      - offset: 2 # Handle energy shield on armor regeneration/degeneration every turn
+      - offset: 2     # Handle energy shield on armor regeneration/degeneration every turn
         code: |
           var ptr RuleArmor armorRuleset;
           var int shieldCapacity;
@@ -179,7 +164,7 @@ extended:
 
           return;
 
-      - offset: 4 #Flashbang ongoing check script
+      - offset: 4     # Handle flashbang ongoing check script
         code: |
           var int currTurn;
           var int endTurn;
@@ -219,8 +204,89 @@ extended:
 
           return;
 
+      - offset: 20   # Define aim initial properties
+        code: |
+          var int is_kneeling;
+          var int pos_x;
+          var int pos_y;
+          var int pos_z;
+          var int aim;
+          var int kneeling;
+          if eq side 0; # xcom turns
+            unit.getTag aim Tag.AIM_STATE;
+            unit.isKneeled kneeling;
+
+            if and gt aim 0 gt kneeling 0;
+              unit.getPosition.getX pos_x;
+              unit.getPosition.getY pos_y;
+              unit.getPosition.getZ pos_z;
+
+              unit.setTag Tag.AIM_STATE 2; # was kneeling at the beginning of the turn
+              debug_log "AIM_STATE 2 !";
+              
+              unit.setTag Tag.AIM_X pos_x;
+              unit.setTag Tag.AIM_Y pos_y;
+              unit.setTag Tag.AIM_Z pos_z;
+            end;
+          end;
+          return;
+
+      - offset: 30   # Handle death from above tags reset
+        code: |
+          var int deathFromAbove;
+          var int deathFromAboveHit;
+          
+          if eq side 0; # xcom turns
+            unit.getTag deathFromAbove Tag.DEATH_FROM_ABOVE_STATE;
+            if eq deathFromAbove 2; # we want to clear the state
+              unit.setTag Tag.DEATH_FROM_ABOVE_STATE 1;
+              debug_log unit " - Death from above reset.";
+            end;
+          end;
+
+          #just in case remove suppress tag too
+          unit.getTag deathFromAboveHit Tag.DEATH_FROM_ABOVE_HIT_STATE;
+          if eq deathFromAboveHit 1;
+            unit.setTag Tag.DEATH_FROM_ABOVE_HIT_STATE 0;
+            unit.setTag Tag.DEATH_FROM_ABOVE_UNIT_ID 0;
+            debug_log unit " - Death from above reaction suppress effect reset on new turn!";
+          end;
+
+          return;
+
+
+      - offset: 32   # Handle ever vigilant main effect
+        code: |
+          var int vigilant;
+          var int tu_max;
+          var int tu;
+          var int roll;
+          var int bonus;
+
+          unit.getTag vigilant Tag.EVER_VIGILANT_STATE;
+          if eq vigilant 2; #unit have extra vigilance
+            unit.setTag Tag.EVER_VIGILANT_STATE 1; #reset back to normal state
+          end;
+
+          if and eq side 1 eq vigilant 1; # ever vigilant only triggers on enemy turns
+            battle_game.randomRange roll 20 35; # roll for crit
+            unit.getTimeUnits tu;
+            unit.getTimeUnitsMax tu_max;
+            set bonus tu_max;
+            muldiv bonus roll 100;
+            debug_log unit " - Ever vigilant activated. roll, current TU, max, bonus:" roll tu tu_max bonus;
+            add tu bonus;
+            unit.setTimeUnits tu;
+            if gt tu tu_max;
+              # we have extra bonus
+              unit.setTag Tag.EVER_VIGILANT_STATE 2;
+            end;
+          end;
+
+          return;
+
     newTurnItem:
-      - offset: 2 # Handle energy shield on items regeneration/degeneration every turn
+      - offset: 2     # Handle energy shield on items regeneration/degeneration every turn
         code: |
           var ptr RuleItem shieldRule;
           var int shieldCapacity;
@@ -279,8 +345,124 @@ extended:
 
           return;
 
+    accuracyMultiplierBonusStats:
+      - offset: 10    # Handle sniper aim main effect
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+          var int pos_x;
+          var int pos_y;
+          var int pos_z;
+          var int aim_x;
+          var int aim_y;
+          var int aim_z;
+          var int aim;
+          var int kneeling;
+
+          unit.getTag aim Tag.AIM_STATE;
+
+          if eq aim 2; # was aiming at the beginning of the turn
+          unit.isKneeled kneeling; # check pos and kneeling
+            if gt kneeling 0;
+              if eq battle_action 9; #aim shots only
+                weapon.getRuleItem itemRuleset;
+                itemRuleset.hasCategory catCheck "STR_SNIPER_RIFLES";
+                if eq catCheck 1;
+                  unit.getPosition.getX pos_x;
+                  unit.getPosition.getY pos_y;
+                  unit.getPosition.getZ pos_z;
+
+                  unit.getTag aim_x Tag.AIM_X;
+                  unit.getTag aim_y Tag.AIM_Y;
+                  unit.getTag aim_z Tag.AIM_Z;
+
+                  if and eq pos_x aim_x eq pos_y aim_y eq pos_z aim_z;
+                    add bonus 20;
+                  end;
+                end;
+              end;
+            end;
+          end;
+
+          return bonus;
+
+      - offset: 15    # Handle steady grip main effect
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+          var int stateBonus;
+
+          unit.getTag stateBonus Tag.STEADY_GRIP_STATE;
+
+          if gt stateBonus 0; # was aiming at the beginning of the turn
+            weapon.getRuleItem itemRuleset;
+            itemRuleset.hasCategory catCheck "STR_HEAVY_WEAPONS";
+            if eq catCheck 1;
+              add bonus stateBonus;
+            end;
+          end;
+
+          return bonus;
+
+      - offset: 20    # Handle ever vigilance extra effect
+        code: |
+          var int state;
+
+          unit.getTag state Tag.EVER_VIGILANT_STATE;
+
+          if eq state 2; # unit has extra vigilance effect
+            add bonus 15;
+          end;
+
+          return bonus;
+
+      - offset: 15    # Handle rapid targeting main effect
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int pistolCat;
+          var int smgCat;
+          var int rifleCat;
+          var int shotgunCat;
+          var int lmgCat;
+          var int catCheck;
+          var int stateBonus;
+
+          unit.getTag stateBonus Tag.RAPID_TARGETING_STATE;
+
+          if gt stateBonus 0; # was aiming at the beginning of the turn
+            if or eq battle_action 7 eq battle_action 8; #only auto and snap shots
+              weapon.getRuleItem itemRuleset;
+              itemRuleset.hasCategory pistolCat "STR_PISTOLS";
+              itemRuleset.hasCategory smgCat "STR_SMGS";
+              itemRuleset.hasCategory rifleCat "STR_RIFLES";
+              itemRuleset.hasCategory shotgunCat "STR_SHOTGUNS";
+              itemRuleset.hasCategory lmgCat "STR_MACHINE_GUNS";
+              if or gt pistolCat 0 gt smgCat 0 gt rifleCat 0 gt shotgunCat 0 gt lmgCat 0;
+                set catCheck 1;
+              end;
+              # if gt smgCat 0;
+              #   set catCheck 1;
+              # end;
+              # if gt rifleCat 0;
+              #   set catCheck 1;
+              # end;
+              # if gt shotgunCat 0;
+              #   set catCheck 1;
+              # end;
+              # if gt lmgCat 0;
+              #   set catCheck 1;
+              # end;
+
+              if eq catCheck 1;
+                add bonus stateBonus;
+              end;
+            end;
+          end;
+
+          return bonus;
+
     hitUnit:
-      - offset: 0.1 #Anti-psiker weapon
+      - offset: 10    # Anti-psiker weapon
         code: |
           var ptr RuleItem itemRuleset;
           var int addPower;
@@ -300,7 +482,47 @@ extended:
 
           return power part side;
 
-      - offset: 1 # Handle item energy shields on hit
+      - offset: 19   # for critical strike (center mass effect)
+        code: |
+          var int critChance;
+          var int critValue;
+          var int critSource; # 1 - Center mass, 
+          var int roll;
+          var int centerMass;
+          var int catCheck;
+          var int gun_type;
+          var ptr RuleItem itemRuleset;
+
+          attacker.getTag centerMass Tag.CENTER_MASS_STATE;
+
+          set critChance centerMass; #TODO for now, we have only one crit chance source.
+          set critSource 1; 
+
+          if gt critChance 0;
+            battle_game.randomRange roll 1 100; # roll for crit
+            if gt critChance roll; 
+              
+              weapon_item.getRuleItem itemRuleset;
+              if eq critSource 1; # we have sniper's Center Mass crit
+                itemRuleset.hasCategory catCheck "STR_RIFLES";
+                if gt catCheck 0;
+                  set critValue 120;
+                end;
+                itemRuleset.hasCategory catCheck "STR_SNIPER_RIFLES";
+                if gt catCheck 0;
+                  set critValue 150;
+                end;
+              end;
+              if gt critValue 0;
+                debug_log "Critical hit rolled! Original power:" power;
+                muldiv power critValue 100;
+                debug_log " - power increased to:" power;
+              end;
+            end;
+          end;
+          return power part side;
+
+      - offset: 20    # Handle item energy shields on hit
         code: |
           var ptre BattleItem shieldItem;
           var ptr RuleItem shieldRule;
@@ -542,7 +764,7 @@ extended:
           # return modified power
           return power part side;
 
-      - offset: 2 # Handle energy shields on armor on hit
+      - offset: 22    # Handle energy shields on armor on hit
         code: |
           var ptr RuleArmor armorRuleset;
           var int shieldHp;
@@ -706,7 +928,7 @@ extended:
 
           return power part side;
 
-      - offset: 3 # arm shield thing
+      - offset: 23    # Arm shield thing
         code: |
           var ptr BattleItem shieldItem;
           var ptr RuleItem damagingRuleset;
@@ -797,26 +1019,19 @@ extended:
 
           return power part side;
 
+      - offset: 38    # Handle aim reset
+        code: |
+          var int aim;
+          attacker.getTag aim Tag.AIM_STATE;
+
+          if eq aim 2; # was aiming
+            unit.setTag Tag.AIM_STATE 1;  # reset aim bonus after first hit
+            debug_log "Aim bonus reset!";
+          end;
+          return power part side;
 
     damageUnit:
-      # - offset: 1 #test category script
-      #   code: |
-      #     var ptr RuleItem itemRuleset;
-      #     var ptre GeoscapeGame geoGame;
-      #     var int check;
-          
-
-      #     #damaging_item.getRuleItem itemRuleset; 
-      #     #battle_game.getGeoscapeGame geoGame;
-      #     #geoGame.getLoyalty check;
-      #     # itemRuleset.getHaveCategory check "STR_SNIPER_RIFLES";
-      #     # if eq check 1;
-      #     #debug_log "loyalty: " check;
-      #     #end;
-
-      #     return;
-
-      - offset: 1 #Flashbang damage script
+      - offset: 1     # Flashbang damage script
         code: |
           var ptr RuleItem itemRuleset;
           var ptr RuleArmor armor_rule;
@@ -898,7 +1113,7 @@ extended:
 
           return;
 
-      - offset: 2 #facehugger weapon
+      - offset: 2     # facehugger weapon
         code: |
           var ptre BattleUnit attackingUnit;
           var ptr RuleItem itemRuleset;
@@ -909,12 +1124,10 @@ extended:
           if eq check 1;
             attacker.setHealth 0;
           end;
+
           return;
 
-    # Global fix to Transformation attacks like Chryssalid zombification
-    # Requires at least 1 hit point of damage before zombification triggers
-    # This applies to *every* weapon that zombifies.  It *has* to get through armor to work.
-      - offset: 4
+      - offset: 4     # Global fix to Transformation attacks like Chryssalid zombification
         code: |
           if gt to_transform 0;
             if eq to_health 0;
@@ -922,6 +1135,93 @@ extended:
             end;
           end;
           return;
+
+      - offset: 25   # Handle death from above debuff apply
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+          var int attacker_height_level;
+          var int victim_height_level;
+          var int has_death_from_above;
+          var int attackerId;
+          var int moraleDamage;
+
+          attacker.getTag has_death_from_above Tag.DEATH_FROM_ABOVE_STATE;
+
+          if gt has_death_from_above 0;
+            attacker.getPosition.getZ attacker_height_level;
+            unit.getPosition.getZ victim_height_level;
+            if gt attacker_height_level victim_height_level;
+              itemRuleset.hasCategory catCheck "STR_SNIPER_RIFLES";
+              if eq battle_action battle_action_aimshoot; # must be aim attack
+                unit.setTag Tag.DEATH_FROM_ABOVE_HIT_STATE 1;  # apply reaction suppressor effect
+                attacker.setTag Tag.DEATH_FROM_ABOVE_STATE 2;  # apply perk active state
+                attacker.getId attackerId;
+                unit.setTag Tag.DEATH_FROM_ABOVE_UNIT_ID attackerId;  # remember who hit us
+                debug_log "Death from above effect applied, unit / attacherId: " unit attackerId;
+                set moraleDamage currPower;
+                div moraleDamage 2;
+                debug_log "Additional damage to morale calculating (orig./add.): " to_morale moraleDamage;
+                add to_morale moraleDamage;
+                debug_log "New to_morale damage: " to_morale;
+              end;
+            end;
+          end;
+
+          return;
+
+      - offset: 29   # Handle Shredder mechanic
+        code: |
+          var int weapon_state;
+          var int shredder;
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+
+          attacker.getTag shredder Tag.SHREDDER_STATE;
+
+          if gt shredder 0;
+            weapon_item.getRuleItem itemRuleset;
+            itemRuleset.hasCategory catCheck "STR_HEAVY_WEAPONS";
+            if eq catCheck 1;
+              debug_log "Shredder activated, original to_armor / addition %:" to_armor shredder;
+              add shredder 100;
+              muldiv to_armor shredder 100;
+              debug_log "Shredder applied, resulting to_armor damage:" to_armor;
+            end;
+          end;
+
+          return;
+
+    reactionUnitAction:
+      - offset: 23   # Handle death from above main effect
+        code: |
+          var int unitState;
+          var int actionUnitId;
+          var int dfaUnitId;
+          var int actionUnitState;
+          var int reaction_id;
+
+          reaction_unit.getTag unitState Tag.DEATH_FROM_ABOVE_HIT_STATE;
+          if gt unitState 0;
+            action_unit.getId actionUnitId;
+            debug_log "actionUnitId:" actionUnitId;
+            reaction_unit.getTag dfaUnitId Tag.DEATH_FROM_ABOVE_UNIT_ID;
+            debug_log "dfaUnitId:" dfaUnitId;
+            if eq actionUnitId dfaUnitId;
+              debug_log "Units IDs matched!";
+              action_unit.getTag actionUnitState Tag.DEATH_FROM_ABOVE_STATE;
+              if eq actionUnitState 2;
+                debug_log "Reaction distance:" distance;
+                if gt distance 300;
+                  debug_log "Reaction chance before DfA activation:" reaction_chance;
+                  div reaction_chance 4;
+                  debug_log "New reaction chance:" reaction_chance;
+                end;
+              end;
+            end;
+          end;
+
+          return reaction_chance;
 
     recolorUnitSprite:
       - offset: 0.1 #Handles periodic recolors due to daze
@@ -1153,3 +1453,59 @@ extended:
 
           return new_pixel;        
 
+    applySoldierBonuses:
+      - offset: 23
+        code: |
+          var int id;
+          var int has_aim;
+          var int centerMass;
+          var int has_death_from_above;
+          var int has_shredder;
+          var int has_steady_grip;
+          var int has_ever_vigilant;
+          var int has_rapid_targeting;
+
+          unit.getId id;
+
+          soldier_bonus.getTag has_aim Tag.AIM;
+          soldier_bonus.getTag centerMass Tag.CENTER_MASS;
+          soldier_bonus.getTag has_death_from_above Tag.DEATH_FROM_ABOVE;
+
+          soldier_bonus.getTag has_shredder Tag.SHREDDER;
+          soldier_bonus.getTag has_steady_grip Tag.STEADY_GRIP;
+
+          soldier_bonus.getTag has_ever_vigilant Tag.EVER_VIGILANT;
+          soldier_bonus.getTag has_rapid_targeting Tag.RAPID_TARGETING;
+
+          if gt has_aim 0;
+            # debug_log "Unit" id "- Aim perk found!";
+            unit.setTag Tag.AIM_STATE 1;
+          end;
+          if gt centerMass 0;
+            debug_log "Unit" id "- Center Mass perk: " centerMass;
+            unit.setTag Tag.CENTER_MASS_STATE centerMass;
+          end;
+          if gt has_death_from_above 0;
+            debug_log "Unit" id "- Death from above perk!";
+            unit.setTag Tag.DEATH_FROM_ABOVE_STATE 1;
+          end;
+
+          if gt has_shredder 0;
+            debug_log "Unit" id "- Shredder perk: " has_shredder;
+            unit.setTag Tag.SHREDDER_STATE has_shredder;
+          end;
+          if gt has_steady_grip 0;
+            debug_log "Unit" id "- Steady grip perk: " has_steady_grip;
+            unit.setTag Tag.STEADY_GRIP_STATE has_steady_grip;
+          end;
+
+          if gt has_ever_vigilant 0;
+            debug_log "Unit" id "- Ever vigilant perk found!";
+            unit.setTag Tag.EVER_VIGILANT_STATE 1;
+          end;
+          if gt has_rapid_targeting 0;
+            debug_log "Unit" id "- Rapid targeting perk: " has_rapid_targeting;
+            unit.setTag Tag.RAPID_TARGETING_STATE has_rapid_targeting;
+          end;
+
+          return;

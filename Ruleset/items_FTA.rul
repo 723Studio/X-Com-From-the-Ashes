@@ -790,7 +790,7 @@ items:
     listOrder: 22160
 #shotguns
   - type: STR_SAWED_OFF
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT

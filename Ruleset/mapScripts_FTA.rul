@@ -109,7 +109,7 @@ mapScripts:
     - type: fillArea
 
 
-  - type: MIB_SEWERS
+  - type: MIB_SEWERS2
     commands:
     - type: addBlock
       rects:
