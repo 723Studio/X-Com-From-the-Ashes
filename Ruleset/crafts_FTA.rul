@@ -171,24 +171,27 @@ crafts:
     repairRate: 25
     score: 300
     battlescapeTerrainData:
-      name: LIGHTNI2
+      name: LIGHTNIN
       mapDataSets:
         - BLANKS
         - LIGHTNIN
-        - U_WALL02
       mapBlocks:
-        - name: LIGHTNI2
-          width: 10
+        - name: LIGHTNIN
+          width: 20
           length: 10
     deployment:
-       - [4, 6, 1, 0]
-       - [5, 6, 1, 0]
-       - [4, 7, 1, 0]
-       - [5, 7, 1, 0]
-       - [3, 5, 1, 0]
-       - [6, 5, 1, 0]
-       - [3, 4, 1, 0]
-       - [6, 4, 1, 0]
+      - [10, 5, 1, 2]
+      - [10, 6, 1, 2]
+      - [10, 4, 1, 2]
+      - [9, 7, 1, 2]
+      - [9, 3, 1, 2]
+      - [8, 7, 1, 2]
+      - [8, 3, 1, 2]
+      - [7, 7, 1, 2]
+      - [7, 3, 1, 2]
+      - [6, 6, 1, 2]
+      - [6, 4, 1, 2]
+      - [6, 5, 1, 2]
     listOrder: 7650
   - type: STR_FIRESTORM
     requires:
@@ -216,18 +219,7 @@ crafts:
     score: 250
     avoidBonus: 24
     repairRate: 16
-    battlescapeTerrainData:
-      name: LIGHTNI2
-      mapDataSets:
-        - BLANKS
-        - LIGHTNIN
-        - U_WALL02
-      mapBlocks:
-        - name: LIGHTNI2
-          width: 10
-          length: 10
-    deployment:
-       - [4, 6, 1, 0]
+    allowLanding: false
     listOrder: 7680
   - type: STR_AVENGER
     requires:

@@ -276,7 +276,7 @@ alienDeployments:
     height: 12
     terrains:
       - MIB_SEWERS
-    script: MIB_SEWERS2
+    script: MIB_SEWERS
     briefing:
       textOffset: -16
       background: BACK01.SCR #TODO

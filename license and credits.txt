@@ -2,7 +2,9 @@
 =========
 LICENSING
 =========
-Mod From the Ashes - artwork, sounds and other assets, rulesets and configs distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License http://creativecommons.org/licenses/by-nc-sa/4.0/. You are free to share and adapt the materials only for non-commercial purposes and when providing appropriate attribution. Any derivatives must be distributed under the same license!
+Mod From the Ashes - artwork, sounds and other assets, rulesets and configs (with a few exceptions, listed below) distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License http://creativecommons.org/licenses/by-nc-sa/4.0/. You are free to share and adapt the materials only for non-commercial purposes and when providing appropriate attribution. Any derivatives must be distributed under the same license!
+Some music assets were bought by me and I have personal right to use it in my project - X-Com: From the Ashes, they are distributed under all rights reserved. You can not redistribute or adapt it anyhow without my personal agree. Sorry, it is not my personal greed, but part of agreement with its author. To streamers and letsplayers - this music is safe for you, it is not listed in any contentID systems. Here is a list of that music tracks: 
+ENEMY_TERRITORY.ogg; 
 
 OXCE/FTA game engine, that is distributed with this mod is a fork of OpenXcom Extended (by Meridian and Yankes, https://openxcom.mod.io/openxcom-extended) and distributed under GNU General Public License v3.0. Source code can be found on https://github.com/Finnik723/OpenXcom_FTA.
 
@@ -32,6 +34,8 @@ Niklas Jansson (http://androidarts.com/) and Riccardo Gasperi, authors of Terror
 Nord, author of The World of (Terrifying) Silence (https://openxcom.mod.io/the-world-of-terrifying-silence) - various graphic assets
 
 Nord, author of X-Chronicles (https://openxcom.org/forum/index.php/topic,6792.0.html) - various graphic assets
+
+lorcán, author of UFO: Cydonia's Fall OGG Music for OpenXcom - music, that replaces original
 
 Dr Reach, author of original artwork for SCP Foundation website (http://www.scp-wiki.net/reach-s-blueprint-folder), distributed under Creative Commons Attribution-ShareAlike 3.0 Unported - art that was used for facility blueprints ufopaedia article image.
 

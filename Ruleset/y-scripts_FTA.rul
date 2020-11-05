@@ -1,19 +1,30 @@
 soldierBonuses:
   - name: STR_SNIPER
     tags:
-      CENTER_MASS: 20           #bonus chance to land a critical hit (x1.5 damage for a sniper rifle, x1.2 for rifle)
-      AIM: 1                    #(1/0) enables 20% bonus accuracy with a sniper rifle when kneeling on the position you were kneeling at the start of the turn
-      DEATH_FROM_ABOVE: 1       #(1/0) enables additional damage to morale and suppress next reaction from the target if damaged with sniper rifle aim shot and distance is greater than 300 (~15 tiles)
+      CENTER_MASS: 20           # bonus chance to land a critical hit (x1.5 damage for a sniper rifle, x1.2 for rifle)
+      AIM: 1                    # (1/0) enables 20% bonus accuracy with a sniper rifle when kneeling on the position you were kneeling at the start of the turn
+      DEATH_FROM_ABOVE: 1       # (1/0) enables additional damage to morale and suppress next reaction from the target if damaged with sniper rifle aim shot and distance is greater than 300 (~15 tiles)
   - name: STR_HEAVY
     tags:
-      SHREDDER: 10              #bonus % of resulting damage adds as to_armor damage if using heavy weapons
-      STEADY_GRIP: 10           #bonus to accuracy with heavy weapons
+      SHREDDER: 10              # bonus % of resulting damage adds as to_armor damage if using heavy weapons
+      STEADY_GRIP: 10           # bonus to accuracy with heavy weapons
   - name: STR_ASSAULT
     tags:
-      #SENTINEL: 1              # (1/0) enables returning of TU on after reaction action hit the target
       EVER_VIGILANT: 1          # (1/0) restores 20-30% of TU on beginning of enemy turn 
       RAPID_TARGETING: 5        # bonus to accuracy with snap and auto-shots with pistols, SMG, rifles, shotguns and LMG
-
+  - name: STR_RANGER
+    tags:
+      REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
+      DASH: 30                  # x value to reduce reaction chance in close distance
+  - name: STR_RANGER
+    tags:
+      REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
+      DASH: 30                  # (1-XXX) percent reduction of reaction chance in close distance
+  - name: STR_SPECIALIST
+    tags:
+      FIELD_SURGEON: 15         #X (1-XXX) percent reduction in recovery time if healed by field surgeon.
+      SAVIOR: 3                 #X (1-XXX) max amount of health restored when using heal
+      UTILITY_SPECIALIST: 1     # (1/0) enables additional accuracy of utility grenades throwing, using utilities refund 2-4% TU
 
 
 extended:
@@ -26,6 +37,11 @@ extended:
       DEATH_FROM_ABOVE: int
       EVER_VIGILANT: int
       RAPID_TARGETING: int
+      REAPER: int
+      DASH: int
+      FIELD_SURGEON: int
+      SAVIOR: int
+      UTILITY_SPECIALIST: int
     RuleItem:
       PHYSICAL_SHIELD_ARMOR: int
       ITEM_IS_MELEE: int
@@ -85,6 +101,12 @@ extended:
       #assault
       EVER_VIGILANT_STATE: int # 0 - nothing special, 1 - unit has this perk, 2 - unit activate additional bonus
       RAPID_TARGETING_STATE: int
+      REAPER_STATE: int
+      DASH_STATE: int
+      FIELD_SURGEON_STATE: int
+      HEALED_BY_FIELD_SURGEON: int
+      SAVIOR_STATE: int
+      UTILITY_SPECIALIST_STATE: int
 
 
   scripts:
@@ -254,7 +276,6 @@ extended:
 
           return;
 
-
       - offset: 32   # Handle ever vigilant main effect
         code: |
           var int vigilant;
@@ -269,7 +290,7 @@ extended:
           end;
 
           if and eq side 1 eq vigilant 1; # ever vigilant only triggers on enemy turns
-            battle_game.randomRange roll 20 35; # roll for crit
+            battle_game.randomRange roll 20 35;
             unit.getTimeUnits tu;
             unit.getTimeUnitsMax tu_max;
             set bonus tu_max;
@@ -1152,6 +1173,7 @@ extended:
             attacker.getPosition.getZ attacker_height_level;
             unit.getPosition.getZ victim_height_level;
             if gt attacker_height_level victim_height_level;
+              weapon_item.getRuleItem itemRuleset;
               itemRuleset.hasCategory catCheck "STR_SNIPER_RIFLES";
               if eq battle_action battle_action_aimshoot; # must be aim attack
                 unit.setTag Tag.DEATH_FROM_ABOVE_HIT_STATE 1;  # apply reaction suppressor effect
@@ -1161,13 +1183,102 @@ extended:
                 debug_log "Death from above effect applied, unit / attacherId: " unit attackerId;
                 set moraleDamage currPower;
                 div moraleDamage 2;
-                debug_log "Additional damage to morale calculating (orig./add.): " to_morale moraleDamage;
                 add to_morale moraleDamage;
-                debug_log "New to_morale damage: " to_morale;
               end;
             end;
           end;
 
+          return;
+
+      - offset: 27   # Handle Reaper mechanic
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int unit_health;
+          var int unit_half_max_health;
+          var int has_reaper;
+          var int addTu;
+          var int attackerTu;
+          var int critChance;
+          var int bonusToHealth;
+          var int bonusToStun;
+          var int power;
+          var int catCheck;
+          var int slain;
+          var int roll;
+          var int stun;
+
+
+          attacker.getTag has_reaper Tag.REAPER_STATE;
+
+          if eq has_reaper 1; # attacker has reaper perk
+            
+            if eq battle_action battle_action_hit; # must be melee attack
+              weapon_item.getRuleItem itemRuleset;
+              itemRuleset.hasCategory catCheck "STR_MELEE";
+              if eq catCheck 1;
+                unit.getHealth unit_health;
+                unit.getHealthMax unit_half_max_health;
+                weapon_item.getRuleItem itemRuleset;
+                div unit_half_max_health 2;
+                set critChance 4; #reaper has 4% crit by default with melee
+
+                #handle reaper crit
+                  if lt unit_health unit_half_max_health; # attacked unit hp < 50%
+                    add critChance 30;
+                  end;
+                  if eq side 3; #attack coming from behind
+                    add critChance 35; 
+                  end;
+
+                  battle_game.randomChance critChance;
+                  if eq critChance 1;  # rolled a crit
+                    debug_log "Reaper crit!  to_health to_stun to_morale" to_health to_stun to_morale;
+                    if gt to_health 0;
+                      set bonusToHealth to_health;
+                      muldiv bonusToHealth 50 100;
+                      add to_health bonusToHealth;
+                      add to_health 10;
+                    end;
+                    if gt to_stun 0;
+                      set bonusToStun to_stun;
+                      muldiv bonusToStun 50 100;
+                      add to_stun bonusToStun;
+                      add to_stun 5;
+                    end;
+                    if or gt bonusToStun 0 gt bonusToHealth 0;
+                      set power orig_power;
+                      div power 2;
+                      add to_morale power;
+                    end;
+                    debug_log " - Damaged increased to" to_health to_stun to_morale;
+                  end;
+
+                #handle reaper TU regeneration
+                  if ge to_health unit_health; # would be a kill
+                    debug_log unit " - unit would be killed!";
+                    set slain 1;
+                  end;
+                  unit.getStun stun;
+                  add stun to_health;
+                  add stun to_stun;
+                  if ge stun unit_health;
+                    debug_log unit " - unit would be stunned!";
+                    set slain 1; 
+                  end;
+
+                  if gt slain 1;
+                    attacker.getTimeUnitsMax addTu;
+                    attacker.getTimeUnits attackerTu;
+                    battle_game.randomRange roll 4 7;
+                    muldiv addTu roll 100;
+                    debug_log unit " - Reaper activated. roll, current TU, max, bonus:" roll attackerTu addTu;
+                    add attackerTu addTu;
+                    unit.setTimeUnits attackerTu;
+                    debug_log unit " - Reaper bonus applied, new TU value:" attackerTu;
+                  end; 
+              end;
+            end;
+          end;
           return;
 
       - offset: 29   # Handle Shredder mechanic
@@ -1222,6 +1333,89 @@ extended:
           end;
 
           return reaction_chance;
+
+      - offset: 24   # Handle dash main effect
+        code: |
+          var int unitState;
+          var int reactionReduction;
+
+          reaction_unit.getTag unitState Tag.DASH_STATE;
+          
+          if gt unitState 0;
+            debug_log "Reaction distance:" distance;
+            if lt distance 50;
+              debug_log "Original reaction chance:" reaction_chance;
+              set reactionReduction reaction_chance;
+              muldiv reactionReduction unitState 100;
+
+              div reaction_chance 3;
+              debug_log "New reaction chance:" reaction_chance;
+            end;
+          end;
+
+          return reaction_chance;
+
+    healUnit:
+      - offset: 24   # Handle savior main effect
+        code: |
+          var int savior;
+          var int health_to_heal;
+
+          actor.getTag savior Tag.SAVIOR_STATE;
+
+          if gt savior 0;
+            if eq medikit_action_type 1; # heal
+              if gt health_recovery;
+              debug_log "Savior activated.";
+              debug_log " - Health recovered (org.):" health_recovery;
+              battle_game.randomRange savior 0 savior; # roll bonus heal amount
+              add health_recovery savior;
+              debug_log " - Health recovered (adj.):" health_recovery;
+            end;
+          end;
+
+          return;
+
+      - offset: 25   # Handle field surgeon buff
+        code: |
+          var int fieldSurgeon;
+          var int max_health;
+          var int cur_health;
+
+          actor.getTag fieldSurgeon Tag.FIELD_SURGEON_STATE;
+
+          if gt fieldSurgeon 0;           
+            target.getHealthMax max_health;
+            target.getHealth cur_health;
+            if and eq medikit_action_type 1 gt max_health cur_health; # heal
+              debug_log target "was healed by field surgeon.";
+              target.setTag Tag.HEALED_BY_FIELD_SURGEON fieldSurgeon;
+            end;
+          end;
+
+          return;
+
+    returnFromMissionUnit:
+      - offset: 23   # Handle field surgeon main effect
+        code: |
+          var int healed_by_field_surgeon;
+          var int factor;
+          var int max_health;
+          var int recover_min;
+          var int recover_max;
+
+          unit.getTag healed_by_field_surgeon Tag.HEALED_BY_FIELD_SURGEON;
+
+          if gt healed_by_field_surgeon 0;
+            unit.getHealthMax max_health;
+            debug_log unit " is under Field Surgeon effect. Recovery time changed from" recovery_time;
+            set factor 100;
+            sub factor healed_by_field_surgeon;
+            muldiv recovery_time factor 100;
+            debug_log unit " - to" recovery_time;
+          end;
+
+          return;
 
     recolorUnitSprite:
       - offset: 0.1 #Handles periodic recolors due to daze
@@ -1464,6 +1658,11 @@ extended:
           var int has_steady_grip;
           var int has_ever_vigilant;
           var int has_rapid_targeting;
+          var int has_reaper;
+          var int has_dash;
+          var int has_field_surgeon;
+          var int has_savior;
+          var int has_utility_spec;
 
           unit.getId id;
 
@@ -1476,6 +1675,13 @@ extended:
 
           soldier_bonus.getTag has_ever_vigilant Tag.EVER_VIGILANT;
           soldier_bonus.getTag has_rapid_targeting Tag.RAPID_TARGETING;
+
+          soldier_bonus.getTag has_reaper Tag.REAPER;
+          soldier_bonus.getTag has_dash Tag.DASH;
+
+          soldier_bonus.getTag has_field_surgeon Tag.FIELD_SURGEON;
+          soldier_bonus.getTag has_savior Tag.SAVIOR;
+          soldier_bonus.getTag has_utility_spec Tag.UTILITY_SPECIALIST;
 
           if gt has_aim 0;
             # debug_log "Unit" id "- Aim perk found!";
@@ -1506,6 +1712,28 @@ extended:
           if gt has_rapid_targeting 0;
             debug_log "Unit" id "- Rapid targeting perk: " has_rapid_targeting;
             unit.setTag Tag.RAPID_TARGETING_STATE has_rapid_targeting;
+          end;
+
+          if gt has_reaper 0;
+            debug_log "Unit" id "- Reaper perk found!" has_reaper;
+            unit.setTag Tag.REAPER_STATE 1;
+          end;
+          if gt has_dash 0;
+            debug_log "Unit" id "- Dash perk: " has_dash;
+            unit.setTag Tag.DASH_STATE has_dash;
+          end;
+
+          if gt has_field_surgeon 0;
+            debug_log "Unit" id "- Field Surgeon perk: " has_field_surgeon;
+            unit.setTag Tag.FIELD_SURGEON_STATE has_field_surgeon;
+          end;
+          if gt has_savior 0;
+            debug_log "Unit" id "- Saviour perk: " has_savior;
+            unit.setTag Tag.SAVIOR_STATE has_savior;
+          end;
+          if gt has_utility_spec 0;
+            debug_log "Unit" id "- Utility Specialist perk: " has_utility_spec;
+            unit.setTag Tag.UTILITY_SPECIALIST_STATE 1;
           end;
 
           return;
