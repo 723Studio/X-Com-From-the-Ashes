@@ -17,12 +17,12 @@ soldierBonuses:
     tags:
       REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
       DASH: 30                  # value to reduce reaction chance in close distance
+      UNIFIGHT: 10              # bonus to accuracy with trowing weapons
   - name: STR_SPECIALIST
     tags:
       FIELD_SURGEON: 15         #X (1-XXX) percent reduction in recovery time if healed by field surgeon.
       SAVIOR: 3                 #X (1-XXX) max amount of health restored when using heal
       UTILITY_SPECIALIST: 1     # (1/0) enables additional accuracy of utility grenades throwing, using utilities refund 2-4% TU
-
 
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
@@ -37,6 +37,7 @@ extended:
       RAPID_TARGETING: int
       REAPER: int
       DASH: int
+      UNIFIGHT: int
       FIELD_SURGEON: int
       SAVIOR: int
       UTILITY_SPECIALIST: int
@@ -103,6 +104,7 @@ extended:
       #ranger
       REAPER_STATE: int
       DASH_STATE: int
+      UNIFIGHT_STATE: int
       #specialist
       FIELD_SURGEON_STATE: int
       HEALED_BY_FIELD_SURGEON: int
@@ -452,6 +454,18 @@ extended:
 
           if eq state 2; # unit has extra vigilance effect
             add bonus 15;
+          end;
+
+          return bonus;
+
+      - offset: 22    # Handle unifight main effect
+        code: |
+          var int state;
+
+          unit.getTag state Tag.UTILITY_SPECIALIST_STATE;
+
+          if eq state 2;
+            add bonus state;
           end;
 
           return bonus;
@@ -1726,6 +1740,7 @@ extended:
           var int has_rapid_targeting;
           var int has_reaper;
           var int has_dash;
+          var int has_unifight;
           var int has_field_surgeon;
           var int has_savior;
           var int has_utility_spec;
@@ -1745,6 +1760,7 @@ extended:
 
           soldier_bonus.getTag has_reaper Tag.REAPER;
           soldier_bonus.getTag has_dash Tag.DASH;
+          soldier_bonus.getTag has_unifight Tag.UNIFIGHT;
 
           soldier_bonus.getTag has_field_surgeon Tag.FIELD_SURGEON;
           soldier_bonus.getTag has_savior Tag.SAVIOR;
@@ -1792,6 +1808,10 @@ extended:
           if gt has_dash 0;
             debug_log "Unit" id "- Dash perk: " has_dash;
             unit.setTag Tag.DASH_STATE has_dash;
+          end;
+          if gt has_unifight 0;
+            debug_log "Unit" id "- Unifight perk: " has_unifight;
+            unit.setTag Tag.UNIFIGHT_STATE has_unifight;
           end;
 
           if gt has_field_surgeon 0;

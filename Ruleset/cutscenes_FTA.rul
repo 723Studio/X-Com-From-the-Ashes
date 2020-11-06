@@ -1,10 +1,10 @@
 cutscenes:
   - delete: intro
   - type: intro
-    #useUfoAudioSequence: true
+    useUfoAudioSequence: false
     customCutscene: true
     audioTracks:
-      - DISCOVERY #GMTACTIC
+      - GMMARS #GMTACTIC
     videos:
       - Resources/Slides/intro.flc
   - type: intro2
