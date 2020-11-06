@@ -104,6 +104,48 @@ items:
     experienceTrainingMode: 13
     attraction: 6
     listOrder: 18000
+#throwing
+  - type: STR_THROWING_KNIVE
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.06
+    landOnly: true
+    costBuy: 2000
+    costSell: 1400
+    weight: 4
+    bigSprite: 362
+    floorSprite: 362
+    handSprite: 544
+    bulletSprite: 22
+    fireSound: 39
+    hitSound: 95
+    hitAnimation: 26
+    power: 5
+    damageType: 7
+    damageBonus:
+      throwing: [0.0, 0.01]
+    damageAlter:
+      ArmorEffectiveness: 1.3
+    accuracySnap: 70
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: [0.0, 0.028]
+    costSnap:
+      time: 20
+      energy: 10
+    costThrow:
+      energy: 8
+    flatRate: true
+    clipSize: 5
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    maxRange: 8
+    bulletSpeed: -2
+    experienceTrainingMode: 7
+    attraction: 6
+    listOrder: 17600
 #pistols
   - type: STR_SNUBNOSE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
@@ -1898,10 +1940,11 @@ items:
     blastRadius: 5
     listOrder: 38000
   - type: STR_SMOKE_GRENADE
-    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_SPORTS, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
     requiresBuy:
       - STR_TODOIUM
     size: 0.05
+    landOnly: true
     costBuy: 150
     costSell: 120
     weight: 3
@@ -1923,10 +1966,11 @@ items:
     blastRadius: 5
     listOrder: 38700
   - type: STR_PROXIMITY_GRENADE
-    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
       - STR_TODOIUM
     size: 0.05
+    landOnly: true
     costBuy: 1500
     costSell: 1200
     weight: 4
@@ -1951,14 +1995,14 @@ items:
     attraction: 6
     listOrder: 38950
   - type: STR_FLASHBANG_GRENADE
-    categories: [STR_HUMAN_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     requiresBuy:
       - STR_TODOIUM
     size: 0.05
+    landOnly: true
     costBuy: 120
     costSell: 80
     weight: 3
-    landOnly: true
     bigSprite: 300
     floorSprite: 300
     handSprite: 128

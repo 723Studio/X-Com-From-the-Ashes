@@ -8,6 +8,7 @@ soldierBonuses:
     tags:
       SHREDDER: 10              # bonus % of resulting damage adds as to_armor damage if using heavy weapons
       STEADY_GRIP: 10           # bonus to accuracy with heavy weapons
+      BULKY: 5                  # bonus % of reducing incoming stun damage
   - name: STR_ASSAULT
     tags:
       EVER_VIGILANT: 1          # (1/0) restores 20-30% of TU on beginning of enemy turn 
@@ -15,11 +16,7 @@ soldierBonuses:
   - name: STR_RANGER
     tags:
       REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
-      DASH: 30                  # x value to reduce reaction chance in close distance
-  - name: STR_RANGER
-    tags:
-      REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
-      DASH: 30                  # (1-XXX) percent reduction of reaction chance in close distance
+      DASH: 30                  # value to reduce reaction chance in close distance
   - name: STR_SPECIALIST
     tags:
       FIELD_SURGEON: 15         #X (1-XXX) percent reduction in recovery time if healed by field surgeon.
@@ -34,6 +31,7 @@ extended:
       AIM: int
       SHREDDER: int
       STEADY_GRIP: int
+      BULKY: int
       DEATH_FROM_ABOVE: int
       EVER_VIGILANT: int
       RAPID_TARGETING: int
@@ -98,11 +96,14 @@ extended:
       #heavy
       SHREDDER_STATE: int
       STEADY_GRIP_STATE: int
+      BULKY_STATE: int
       #assault
       EVER_VIGILANT_STATE: int # 0 - nothing special, 1 - unit has this perk, 2 - unit activate additional bonus
       RAPID_TARGETING_STATE: int
+      #ranger
       REAPER_STATE: int
       DASH_STATE: int
+      #specialist
       FIELD_SURGEON_STATE: int
       HEALED_BY_FIELD_SURGEON: int
       SAVIOR_STATE: int
@@ -407,6 +408,24 @@ extended:
 
           return bonus;
 
+      - offset: 12    # Handle utility specialist firing (with flashbang) effect
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+          var int stateBonus;
+
+          unit.getTag stateBonus Tag.UTILITY_SPECIALIST_STATE;
+
+          if gt stateBonus 0;
+            weapon.getRuleItem itemRuleset;
+            itemRuleset.hasCategory catCheck "STR_UTILITY";
+            if eq catCheck 1;
+              add bonus 20; #TODO balance it!
+            end;
+          end;
+
+          return bonus;
+
       - offset: 15    # Handle steady grip main effect
         code: |
           var ptr RuleItem itemRuleset;
@@ -437,7 +456,7 @@ extended:
 
           return bonus;
 
-      - offset: 15    # Handle rapid targeting main effect
+      - offset: 25    # Handle rapid targeting main effect
         code: |
           var ptr RuleItem itemRuleset;
           var int pistolCat;
@@ -477,6 +496,25 @@ extended:
               if eq catCheck 1;
                 add bonus stateBonus;
               end;
+            end;
+          end;
+
+          return bonus;
+
+    throwMultiplierBonusStats:
+      - offset: 10    # Handle utility specialist throwing effect
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+          var int stateBonus;
+
+          unit.getTag stateBonus Tag.UTILITY_SPECIALIST_STATE;
+
+          if gt stateBonus 0;
+            weapon.getRuleItem itemRuleset;
+            itemRuleset.hasCategory catCheck "STR_UTILITY";
+            if eq catCheck 1;
+              add bonus 20; #TODO balance it!
             end;
           end;
 
@@ -1285,12 +1323,39 @@ extended:
         code: |
           var int weapon_state;
           var int shredder;
+          var int bonus;
           var ptr RuleItem itemRuleset;
           var int catCheck;
 
           attacker.getTag shredder Tag.SHREDDER_STATE;
 
           if gt shredder 0;
+            weapon_item.getRuleItem itemRuleset;
+            itemRuleset.hasCategory catCheck "STR_HEAVY_WEAPONS";
+            if eq catCheck 1;
+              debug_log "Shredder activated, original to_armor / addition %:" to_armor shredder;
+              set bonus to_armor;
+              muldiv bonus shredder 100;
+              add to_armor bonus;
+              debug_log "Shredder applied, resulting to_armor damage:" to_armor;
+            end;
+          end;
+
+          return;
+
+      - offset: 30   # Handle Bulky main effect
+        code: |
+          var int state;
+          var int bonus;
+
+          unit.getTag state Tag.BULKY_STATE;
+
+          if gt state 0;
+            if gt to_stun 0;
+              set bonus to_stun;
+              muldiv bonus state 100;
+              sub to_stun bonus;
+            end;
             weapon_item.getRuleItem itemRuleset;
             itemRuleset.hasCategory catCheck "STR_HEAVY_WEAPONS";
             if eq catCheck 1;
@@ -1656,6 +1721,7 @@ extended:
           var int has_death_from_above;
           var int has_shredder;
           var int has_steady_grip;
+          var int has_bulky;
           var int has_ever_vigilant;
           var int has_rapid_targeting;
           var int has_reaper;
@@ -1672,6 +1738,7 @@ extended:
 
           soldier_bonus.getTag has_shredder Tag.SHREDDER;
           soldier_bonus.getTag has_steady_grip Tag.STEADY_GRIP;
+          soldier_bonus.getTag has_bulky Tag.BULKY;
 
           soldier_bonus.getTag has_ever_vigilant Tag.EVER_VIGILANT;
           soldier_bonus.getTag has_rapid_targeting Tag.RAPID_TARGETING;
@@ -1703,6 +1770,10 @@ extended:
           if gt has_steady_grip 0;
             debug_log "Unit" id "- Steady grip perk: " has_steady_grip;
             unit.setTag Tag.STEADY_GRIP_STATE has_steady_grip;
+          end;
+          if gt has_bulky 0;
+            debug_log "Unit" id "- Bulky perk: " has_bulky;
+            unit.setTag Tag.BULKY_STATE has_bulky;
           end;
 
           if gt has_ever_vigilant 0;

@@ -9,6 +9,8 @@
     listOrder: 20
   - type: STR_PISTOLS
     listOrder: 30
+  - type: STR_THROWING
+    listOrder: 35
   - type: STR_SMGS
     listOrder: 40
   - type: STR_SHOTGUNS

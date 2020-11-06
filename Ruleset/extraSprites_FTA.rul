@@ -228,6 +228,7 @@ extraSprites:
       359: Resources/Weapons/Earthbound/Faction/bigob_MachinePistol.png
       360: Resources/Weapons/Earthbound/Faction/bigob_MachinePistolClip.png
       361: Resources/Weapons/Alien/Laser/bigob_DroneWeapon.png
+      362: Resources/Weapons/Earthbound/General/bigob_ThrowingKnife.png
       
   - type: FLOOROB.PCK
     files:
@@ -292,6 +293,7 @@ extraSprites:
       356: Resources/Weapons/Earthbound/Utilities/floorob_Stims.png
       359: Resources/Weapons/Earthbound/Faction/floorob_MachinePistol.png
       360: Resources/Weapons/Earthbound/Faction/floorob_MachinePistolClip.png
+      362: Resources/Weapons/Earthbound/General/floorob_ThrowingKnife.png
       
 
   - type: HANDOB.PCK #Index step 8
@@ -352,6 +354,7 @@ extraSprites:
       520: Resources/Weapons/Earthbound/Utilities/handob_Stims.png
       528: Resources/Weapons/Earthbound/Faction/handob_MachinePistol.png
       536: Resources/Weapons/Earthbound/Faction/handob_MachinePistolClip.png
+      544: Resources/Weapons/Earthbound/General/handob_ThrowingKnife.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

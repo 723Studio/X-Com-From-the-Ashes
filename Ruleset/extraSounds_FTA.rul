@@ -41,3 +41,4 @@ extraSounds:
       92: Resources/Weapons/Sounds/PlasmaPistolFire.wav
       93: Resources/Weapons/Sounds/PlasmaRifleFire.wav
       94: Resources/Weapons/Sounds/PlasmaSword_slice.wav
+      95: Resources/Weapons/Sounds/StabHit.wav

@@ -1,8 +1,8 @@
 soldierTransformation:
   - name: STR_SNIPER_TRAINING
-    # minRank: 1
-    # requiredMinStats:
-    #    firing: 65 
+    minRank: 1
+    requiredMinStats:
+       firing: 65 
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -10,7 +10,7 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_SOLDIER
-    transferTime: 1 #72
+    transferTime: 72
     flatMin:
       tu: -2
       firing: 7
@@ -18,3 +18,93 @@ soldierTransformation:
       tu: 2
       firing: 16
     soldierBonusType: STR_SNIPER
+  - name: STR_HEAVY_TRAINING
+    minRank: 1
+    requiredMinStats:
+       stamina: 60
+       strength: 33
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    transferTime: 72
+    flatMin:
+      health: 3
+      stamina: 1
+      throwing: 2
+      strength: 6
+    flatMax:
+      health: 7
+      stamina: 3
+      throwing: 5
+      strength: 14
+    soldierBonusType: STR_HEAVY
+  - name: STR_ASSAULT_TRAINING
+    minRank: 1
+    requiredMinStats:
+       reactions: 57
+       firing: 55
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    transferTime: 72
+    flatMin:
+      reactions: 6
+      firing: 3
+      tu: 1
+    flatMax:
+      reactions: 12
+      firing: 6
+      tu: 3
+    soldierBonusType: STR_ASSAULT
+  - name: STR_RANGER_TRAINING
+    minRank: 1
+    requiredMinStats:
+       stamina: 60
+       reactions: 52
+       melee: 58
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    transferTime: 72
+    flatMin:
+      tu: 3
+      stamina: 4
+      melee: 8
+    flatMax:
+      tu: 5
+      stamina: 8
+      melee: 15
+    soldierBonusType: STR_RANGER
+  - name: STR_SPECIALIST_TRAINING
+    minRank: 1
+    requiredMinStats:
+       bravery: 60
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    transferTime: 72
+    flatMin:
+      tu: -1
+      bravery: 10
+      throwing: 4
+    flatMax:
+      tu: 2
+      bravery: 20
+      throwing: 8
+    soldierBonusType: STR_SPECIALIST
