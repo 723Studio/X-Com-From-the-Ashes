@@ -656,27 +656,27 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_FIRST_AID 
-  - type: STR_RESISTANCE_RADIO
-    race: STR_RESISTANCE
-    rank: STR_LIVE_NAVIGATOR
-    stats:
-      tu: 55
-      stamina: 0
-      health: 30
-      bravery: 100
-      reactions: 1
-      firing: 0
-      throwing: 0
-      strength: 0
-      psiStrength: 100
-      psiSkill: 85
-      melee: 0
-    armor: STR_RESISTANCE_RADIO_ARMOR
-    standHeight: 20
-    kneelHeight: 15
-    deathSound: 9 #TODO
-    aggroSound: 1 #TODO
-    intelligence: 7
-    aggression: 1
-    capturable: false
-    showFullNameInAlienInventory: 1
+  # - type: STR_RESISTANCE_RADIO
+  #   race: STR_RESISTANCE
+  #   rank: STR_LIVE_NAVIGATOR
+  #   stats:
+  #     tu: 55
+  #     stamina: 0
+  #     health: 30
+  #     bravery: 100
+  #     reactions: 1
+  #     firing: 0
+  #     throwing: 0
+  #     strength: 0
+  #     psiStrength: 100
+  #     psiSkill: 85
+  #     melee: 0
+  #   armor: STR_RESISTANCE_RADIO_ARMOR
+  #   standHeight: 20
+  #   kneelHeight: 15
+  #   deathSound: 9 #TODO
+  #   aggroSound: 1 #TODO
+  #   intelligence: 7
+  #   aggression: 1
+  #   capturable: false
+  #   showFullNameInAlienInventory: 1
