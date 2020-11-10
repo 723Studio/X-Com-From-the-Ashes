@@ -326,7 +326,7 @@ alienDeployments:
     length: 80
     height: 8
     alert: STR_RESISTANCE_HEAVEN_ATTACKED
-    alertBackground: BACK03.SCR #TODO?
+    alertBackground: BACK03.SCR
     alertDescription: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION
     markerName: STR_RESISTANCE_HEAVEN
     duration: [4, 10]
@@ -419,7 +419,108 @@ alienDeployments:
           -
             []
 
+  - type: STR_JABBER_HUNT
+    race: STR_JABBERES
+    # civiliansByType:
+    #   STR_MALE_CIVILIAN_FARMER: 2
+    #   STR_FEMALE_CIVILIAN_FARMER: 1
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_JABBER_HUNT_ALERT
+    alertBackground: BACK03.SCR #TODO?
+    alertDescription: STR_JABBER_HUNT_ALERT_DESCRIPTION
+    markerName: STR_JABBER_HUNT
+    duration: [10, 10]
+    despawnPenalty: 300
+    extendedObjectiveType: STR_EVACUATION 
+    #unlockedResearch: STR_RESISTANCE_FIRST_HELP
+    briefing:
+      textOffset: -16
+      #background: RESISTANCE_FARM.SCR
+      showTarget: false
+      desc: STR_MONSTER_HUNT_BRIEFING
+    terrains:
+      - CULTA
+      - FOREST
+      - DESERT
+    data:
+      - alienRank: 6
+        lowQty: 2
+        highQty: 4
+        dQty: 5
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
 
+  - type: STR_JABBER_HUNT_TRAP
+    race: STR_JABBERES
+    # civiliansByType:
+    #   STR_MALE_CIVILIAN_FARMER: 2
+    #   STR_FEMALE_CIVILIAN_FARMER: 1
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_JABBER_HUNT_ALERT
+    alertBackground: BACK03.SCR #TODO?
+    alertDescription: STR_JABBER_HUNT_ALERT_DESCRIPTION
+    markerName: STR_JABBER_HUNT
+    duration: [10, 10]
+    despawnPenalty: 300
+    extendedObjectiveType: STR_EVACUATION 
+    #unlockedResearch: STR_RESISTANCE_FIRST_HELP
+    briefing:
+      textOffset: -16
+      #background: RESISTANCE_FARM.SCR
+      showTarget: false
+      desc: STR_MONSTER_HUNT_BRIEFING
+    terrains:
+      - CULTA
+      - FOREST
+    data:
+      - alienRank: 6
+        lowQty: 12
+        highQty: 20
+        dQty: 5
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
 
   - type: STR_GENERAL_TRAP
     race: STR_ADVENT_START
@@ -463,43 +564,4 @@ alienDeployments:
             []
           -
             []
-  - type: STR_GENERAL_TRAP_ALT
-    race: STR_MUTON
-    width: 50
-    length: 50
-    height: 6
-    terrains:
-      - FOREST
-    shade: 0
-    briefing:
-      textOffset: -16
-      background: BACK01.SCR
-      showTarget: false
-      desc: STR_GENERAL_TRAP_BRIEFING
-    data:
-      - alienRank: 6
-        lowQty: 1
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+

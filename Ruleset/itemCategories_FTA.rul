@@ -33,6 +33,8 @@
     listOrder: 130
   - type: STR_EXPLOSIVES
     listOrder: 140
+  - type: STR_EXPLOSIVE_CHARGES
+    listOrder: 145
   - type: STR_INCENDIARIES
     listOrder: 150
   - type: STR_LASER
@@ -103,6 +105,8 @@
     listOrder: 930
   - type: STR_EVIDENCE
     listOrder: 960
+  - type: STR_DISGUISE
+    listOrder: 965
   - type: STR_COMPONENTS
     listOrder: 980
   - type: STR_BUILT_INS

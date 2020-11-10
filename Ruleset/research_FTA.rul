@@ -67,6 +67,11 @@ research:
     needItem: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT
     needItem: true
+  - name: STR_MONSTER_HUNT_START_PREREQ
+    needItem: true
+  - name: STR_MONSTER_HUNT_RUMORS_PREREQ
+    needItem: true
+
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
@@ -102,6 +107,14 @@ research:
     dependencies:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
+      - STR_COVERT_OPERATIONS
+    listOrder: 7460
+  - name: STR_MONSTER_HUNT_START
+    requiresBaseFunc: [HQ]
+    cost: 2
+    points: 3
+    dependencies:
+      - STR_MONSTER_HUNT_START_PREREQ
       - STR_COVERT_OPERATIONS
     listOrder: 7460
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
@@ -148,7 +161,14 @@ research:
       - STR_FACILITIES_BLUEPRINTS
       - STR_TODOIUM 
     listOrder: 7460
-
+  - name: STR_MONSTER_HUNT_RUMORS
+    requiresBaseFunc: [HQ]
+    cost: 5
+    points: 18
+    dependencies:
+      - STR_MONSTER_HUNT_RUMORS_PREREQ
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 7460
 
 #technology
   - name: STR_LASER_WEAPONS
@@ -165,6 +185,7 @@ research:
       - STR_FACEHUGGER_CORPSE
       - STR_ZOMBIE_STERILE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
+      - STR_JABBER_CORPSE
     unlocks:
         - STR_LIVE_CREATURES_RESEARCH
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
@@ -297,7 +318,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
-      - STR_ZOMBIE_AUTOPSY #TODO
+      - STR_ZOMBIE_AUTOPSY
     listOrder: 62300
   - name: STR_ZOMBIE_STERILE_TERRORIST
     requiresBaseFunc: [BIOLAB]
@@ -307,7 +328,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_STRANGE_CREATURE
-      - STR_LIVE_ZOMBIE #TODO
+      - STR_LIVE_ZOMBIE
     listOrder: 62300
   - name: STR_ZOMBIE_GRUBAS_CORPSE
     requiresBaseFunc: [BIOLAB]
@@ -327,7 +348,25 @@ research:
     destroyItem: true
     unlocks:
       - STR_STRANGE_CREATURE
-      - STR_LIVE_ZOMBIE #TODO
+      - STR_LIVE_ZOMBIE
+    listOrder: 115410
+  - name: STR_JABBER_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 20
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 62310
+  - name: STR_JABBER
+    requiresBaseFunc: [BIOLAB]
+    cost: 20
+    points: 80
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
     listOrder: 115410
 
 #enemies - aliens
@@ -344,6 +383,7 @@ research:
     points: 40
     dependencies:
       - STR_FACEHUGGER
+      - STR_FACEHUGGER_CORPSE
   - name: STR_ZOMBIE_STERILE_ARMOR
     cost: 20
     points: 40
@@ -354,7 +394,13 @@ research:
     points: 45
     dependencies:
       - STR_ZOMBIE_GRUBAS_TERRORIST
-
+      - STR_ZOMBIE_STERILE_CORPSE
+  - name: STR_JABBER_ARMOR
+    cost: 18
+    points: 35
+    dependencies:
+      - STR_JABBER
+      - STR_JABBER_CORPSE
 
 #weapons and equipment
   - name: STR_SNUBNOSE_PISTOL

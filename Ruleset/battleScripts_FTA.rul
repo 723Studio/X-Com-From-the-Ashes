@@ -11,8 +11,7 @@ battleScripts:
       unitSide: 1
       minDifficulty: 1
       maxDifficulty: 3
-      rects:
-        - [0, 0, 4, 1]
+
       unitSet: [STR_XCOM_EX_COMMANDER]
 
   - type: ZOMBIE_ATTACK
@@ -24,11 +23,7 @@ battleScripts:
       randomPackSize: true
       unitSide: 1
       maxDifficulty: 3
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER]
     - type: spawnUnit #random additional
       executions: 1
@@ -36,23 +31,15 @@ battleScripts:
       packSize: 4
       randomPackSize: true
       unitSide: 1
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #high diff
       executions: 2
       packSize: 5
       randomPackSize: true
       unitSide: 1
-      minDifficulty: 4
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      minDifficulty: 3
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #extra SH gift
       executions: 1
@@ -60,11 +47,8 @@ battleScripts:
       packSize: 6
       randomPackSize: false
       unitSide: 1
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      minDifficulty: 4
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
 
   - type: MIB_ATTACK
@@ -76,11 +60,7 @@ battleScripts:
       randomPackSize: true
       unitSide: 1
       maxDifficulty: 3
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER]
     - type: spawnUnit #random additional
       executions: 1
@@ -88,23 +68,15 @@ battleScripts:
       packSize: 4
       randomPackSize: true
       unitSide: 1
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #high diff
       executions: 2
       packSize: 5
       randomPackSize: true
       unitSide: 1
-      minDifficulty: 4
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      minDifficulty: 3
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #extra SH gift
       executions: 1
@@ -112,9 +84,6 @@ battleScripts:
       packSize: 6
       randomPackSize: false
       unitSide: 1
-      rects: 
-          - [0, 0, 1, 8]
-          - [0, 0, 8, 1]
-          - [7, 0, 1, 8]
-          - [0, 7, 8, 1]
+      minDifficulty: 4
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]

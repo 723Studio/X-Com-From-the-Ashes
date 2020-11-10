@@ -164,6 +164,7 @@ extraSprites:
       111: Resources/Armors/Enemies/MiB/bigob_MIB_SPECOPS.png
       112: Resources/Armors/Enemies/MiB/bigob_SEEKER_DRONE.png
       113: Resources/Armors/Enemies/MiB/bigob_MIB_ARMORED_AGENT.png
+      114: Resources/Armors/Enemies/Monsters/bigob_JABBER_CORPSE.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -229,6 +230,9 @@ extraSprites:
       360: Resources/Weapons/Earthbound/Faction/bigob_MachinePistolClip.png
       361: Resources/Weapons/Alien/Laser/bigob_DroneWeapon.png
       362: Resources/Weapons/Earthbound/General/bigob_ThrowingKnife.png
+      363: Resources/Weapons/Earthbound/Faction/bigob_ExplosiveCharge.png
+      364: Resources/Armors/Enemies/Monsters/bigob_JabberWeapon.png
+      365: Resources/MiscItems/bigob_FakeID.png
       
   - type: FLOOROB.PCK
     files:
@@ -247,6 +251,7 @@ extraSprites:
       111: Resources/Armors/Enemies/MiB/floorob_MIB_SPECOPS.png
       112: Resources/Armors/Enemies/MiB/floorob_SEEKER_DRONE.png
       113: Resources/Armors/Enemies/MiB/floorob_MIB_ARMORED_AGENT.png
+      114: Resources/Armors/Enemies/Monsters/floorob_JABBER_CORPSE.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -294,8 +299,9 @@ extraSprites:
       359: Resources/Weapons/Earthbound/Faction/floorob_MachinePistol.png
       360: Resources/Weapons/Earthbound/Faction/floorob_MachinePistolClip.png
       362: Resources/Weapons/Earthbound/General/floorob_ThrowingKnife.png
+      363: Resources/Weapons/Earthbound/Faction/floorob_ExplosiveCharge.png
+      365: Resources/MiscItems/floorob_FakeID.png
       
-
   - type: HANDOB.PCK #Index step 8
     height: 40
     width: 256
@@ -355,6 +361,7 @@ extraSprites:
       528: Resources/Weapons/Earthbound/Faction/handob_MachinePistol.png
       536: Resources/Weapons/Earthbound/Faction/handob_MachinePistolClip.png
       544: Resources/Weapons/Earthbound/General/handob_ThrowingKnife.png
+      552: Resources/Weapons/Earthbound/Faction/handob_ExplosiveCharge.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
@@ -508,6 +515,18 @@ extraSprites:
     height: 200
     files:
        0: Resources/UfopediaPics/Enemies/ufopedia_ZOMBIE_GRUBAS_AUTOPSY.png 
+  - type: UFOPEDIA_IMG_JABBER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_JABBER.png
+  - type: UFOPEDIA_IMG_JABBER_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_JABBER_AUTOPSY.png 
 
 #armors, inventory screens
   - type: XCOM_EX_COMMANDER.PCK
@@ -629,6 +648,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE_GRUBAS.png
+  - type: JABBER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Armors/Enemies/Monsters/JABBER.png
+  - type: inventory_JABBER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Monsters/inventory_JABBER.png
   - type: FARMER.PCK
     width: 512
     height: 720

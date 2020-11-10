@@ -35,6 +35,14 @@ eventScripts:
   #   executionOdds: 100
   #   minDifficulty: 0
   #   maxDifficulty: 4
+  - type: STR_MONSTER_HUNT_START
+    oneTimeSequentialEvents: [STR_MONSTER_HUNT_START_EVENT]
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+
 
 #resistance
   - type: STR_RESISTANCE_HEAVEN_SAVED_SCRIPT

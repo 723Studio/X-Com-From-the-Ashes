@@ -18,7 +18,7 @@ items:
   - delete: STR_INCENDIARY_ROCKET
   - delete: STR_GRENADE
   - delete: STR_SMOKE_GRENADE
-  - delete: STR_PROXIMITY_GRENADE #
+  - delete: STR_PROXIMITY_GRENADE
   # - delete: STR_MOTION_SCANNER #
   # - delete: STR_MEDI_KIT #
   - delete: STR_STUN_ROD #
@@ -992,7 +992,7 @@ items:
     requiresBuy:
       - STR_TODOIUM
     size: 0.04
-    stackSize: 5
+    #stackSize: 5
     costBuy: 50
     costSell: 30
     weight: 3
@@ -1885,7 +1885,7 @@ items:
     armor: 28
     attraction: 8
     listOrder: 34000
-#grenades
+#grenades and chargers
   - type: STR_LIQUID_FLAME
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
     landOnly: true
@@ -2052,6 +2052,36 @@ items:
     tags:
       FTAG_DAZE_VALUE: 100
       FTAG_DAZE_TIME: 1
+  - type: STR_EXPLOSIVE_CHARGE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EXPLOSIVE_CHARGES]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.1
+    landOnly: true
+    costBuy: 650
+    costSell: 500
+    weight: 4
+    bigSprite: 363
+    floorSprite: 363
+    handSprite: 552
+    power: 30
+    damageAlter:
+      IgnoreOverKill: false
+    costThrow:
+      energy: 35
+      time: 40
+    costPrime:
+      time: 65
+    costUnprime:
+      time: 70
+    damageType: 3
+    battleType: 5
+    armor: 40
+    blastRadius: 1
+    invWidth: 1
+    invHeight: 1
+    attraction: 6
+    listOrder: 38900
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -2289,6 +2319,51 @@ items:
     autoShots: 6
     sprayWaypoints: 2
     recover: false
+  - type: STR_JABBER_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 364
+    floorSprite: 31
+    handSprite: 104 
+    meleeSound: 48
+    meleeHitSound: 108 #
+    clipSize: -1
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 1.25
+      ToTile: 0.33
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 8
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+#other
+  - type: STR_FAKE_AGENT_ID
+    categories: [STR_CONCEALABLE, STR_DISGUISE]
+    landOnly: true
+    size: 0.01
+    costSell: 18000
+    weight: 1
+    bigSprite: 365
+    floorSprite: 365
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    listOrder: 58860
+
+#geoscape-only
+  - type: STR_RADAR_SYSTEM #TODO
+    categories: [STR_HUMANS, STR_COMPONENTS]
+    listOrder: 146030
+  - type: STR_LABORATORY_EQUIPMENT #TODO
+    categories: [STR_HUMANS, STR_COMPONENTS]
+    listOrder: 146030
+
 #unit-related
   #MIBs
   - type: STR_XCOM_EX_COMMANDER_CORPSE
@@ -2435,7 +2510,7 @@ items:
     size: 0.0
     recover: true
     liveAlien: true
-    prisonType: 0
+    prisonType: 0 #TODO
     costSell: 20000
     listOrder: 115400
   - type: STR_FACEHUGGER_CORPSE
@@ -2493,6 +2568,28 @@ items:
     battleType: 11
     armor: 20
     listOrder: 62310
+  #Monsters
+  - type: STR_JABBER
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 0 #TODO
+    costSell: 20000
+    listOrder: 115400
+  - type: STR_JABBER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.1
+    costSell: 3000
+    weight: 30
+    bigSprite: 114
+    floorSprite: 114
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 20
+    listOrder: 62300
   #Resistance units
   - type: STR_SPAWN_RESISTANCE_SOLDIER
     spawnUnit: STR_RESISTANCE_SOLDIER
@@ -2574,14 +2671,6 @@ items:
     recoverCorpse: false
     listOrder: 72101
 
-
-#geoscape-only
-  - type: STR_RADAR_SYSTEM #TODO
-    categories: [STR_HUMANS, STR_COMPONENTS]
-    listOrder: 146030
-  - type: STR_LABORATORY_EQUIPMENT #TODO
-    categories: [STR_HUMANS, STR_COMPONENTS]
-    listOrder: 146030
 
 extended:
   tags:

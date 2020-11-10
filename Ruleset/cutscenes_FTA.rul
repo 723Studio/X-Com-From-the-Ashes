@@ -4,7 +4,7 @@ cutscenes:
     useUfoAudioSequence: false
     customCutscene: true
     audioTracks:
-      - GMMARS #GMTACTIC
+      - DISCOVERY #GMTACTIC
     videos:
       - Resources/Slides/intro.flc
   - type: intro2

@@ -20,7 +20,9 @@ units:
     standHeight: 22
     kneelHeight: 14
     value: 20
-    deathSound: [41, 42, 43]
+    deathSound: &MaleDeathSounds [41, 42, 43]
+    #panicSound: &MalePanicSounds [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    #berserkSound: &MaleBerserkSounds [801, 802, 803, 804, 805]
     intelligence: 4
     aggression: 1
     sniper: 75
@@ -45,9 +47,7 @@ units:
     standHeight: 22
     kneelHeight: 14
     value: 20
-    deathSound: &MaleDeathSounds [41, 42, 43]
-    #panicSound: &MalePanicSounds [701, 702, 703, 704, 705, 706, 707, 708, 709]
-    #berserkSound: &MaleBerserkSounds [801, 802, 803, 804, 805]
+    deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 1
     sniper: 75
@@ -57,6 +57,7 @@ units:
     type: STR_MIB_ARMORED_AGENT 
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
+    altRecoveredUnit: STR_MIB_AGENT
     stats:
       tu: 60
       stamina: 94
@@ -72,10 +73,8 @@ units:
     armor: STR_MIB_AGENT_VEST_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 15
+    value: 25
     deathSound: *MaleDeathSounds
-    # panicSound: *MalePanicSounds
-    # berserkSound: *MaleBerserkSounds
     intelligence: 4
     aggression: 2
     sniper: 25
@@ -83,7 +82,7 @@ units:
     canSurrender: true
   - type: STR_MIB_ARMORED_AGENT_SPAWN
     refNode: *STR_MIB_ARMORED_AGENT
-    altRecoveredUnit: STR_MIB_ARMORED_AGENT
+    value: 2
     builtInWeaponSets:
       - - STR_PISTOL
         - STR_PISTOL_CLIP
@@ -135,26 +134,23 @@ units:
   - &STR_MIB_SPECOPS
     type: STR_MIB_SPECOPS 
     race: STR_MIB
-    stats: #TODO
-      tu: 58
-      stamina: 85
+    stats:
+      tu: 64
+      stamina: 88
       health: 45
       bravery: 90
-      reactions: 50
-      firing: 62
-      throwing: 50
+      reactions: 53
+      firing: 68
+      throwing: 64
       strength: 44
       psiStrength: 45
-      psiSkill: 5
+      psiSkill: 0
       melee: 50
-      mana: 50
     armor: STR_MIB_SPECOPS_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 5
+    value: 27
     deathSound: *MaleDeathSounds
-    # panicSound: *MalePanicSounds
-    # berserkSound: *MaleBerserkSounds
     intelligence: 3
     aggression: 3
     sniper: 50
@@ -163,7 +159,7 @@ units:
     energyRecovery: 25
   - type: STR_MIB_SPECOPS_SPAWN
     refNode: *STR_MIB_ARMORED_AGENT
-    altRecoveredUnit: STR_MIB_ARMORED_AGENT
+    value: 5
     builtInWeaponSets:
       - - STR_PDW
         - STR_PDW_CLIP
@@ -228,7 +224,7 @@ units:
     standHeight: 11
     kneelHeight: 16
     floatHeight: 12
-    value: 8
+    value: 15
     deathSound: 23
     moveSound: 40
     specab: 1
@@ -476,6 +472,38 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
 
+#Monsters
+  - type: STR_JABBER
+    race: STR_JABBER
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 90
+      stamina: 110
+      health: 30
+      bravery: 100
+      reactions: 75
+      firing: 0
+      throwing: 0
+      strength: 28
+      psiStrength: 50
+      psiSkill: 0
+      melee: 80
+    armor: STR_JABBER_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 10
+    # aggroSound: 123 #TODO
+    deathSound: 7 #TODO
+    # panicSound: 265
+    # berserkSound: 266
+    intelligence: 3
+    aggression: 4
+    energyRecovery: 35
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_JABBER_WEAPON
+
+
 #Resistance
   - &STR_RESISTANCE_SCIENTIST
     type: STR_RESISTANCE_SCIENTIST
@@ -628,3 +656,27 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_FIRST_AID 
+  - type: STR_RESISTANCE_RADIO
+    race: STR_RESISTANCE
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 55
+      stamina: 0
+      health: 30
+      bravery: 100
+      reactions: 1
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 100
+      psiSkill: 85
+      melee: 0
+    armor: STR_RESISTANCE_RADIO_ARMOR
+    standHeight: 20
+    kneelHeight: 15
+    deathSound: 9 #TODO
+    aggroSound: 1 #TODO
+    intelligence: 7
+    aggression: 1
+    capturable: false
+    showFullNameInAlienInventory: 1

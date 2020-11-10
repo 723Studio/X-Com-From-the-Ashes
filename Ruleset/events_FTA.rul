@@ -20,6 +20,11 @@ events:
     timer: 840
     timerRandom: 0
     researchList: [STR_VEHICLES_STATUS_REPORT]
+  - name: STR_MONSTER_HUNT_START_EVENT
+    description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
+    timer: 13000
+    timerRandom: 3000
+    researchList: [STR_MONSTER_HUNT_START_PREREQ]
   - name: STR_NO_SUPPLY_WARNING_EVENT
     description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION
     timer: 20160

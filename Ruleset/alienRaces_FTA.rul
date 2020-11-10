@@ -66,6 +66,23 @@ alienRaces:
       - STR_ZOMBIE_STERILE_TERRORIST # 13 - Non-Combatant 2
       - STR_ZOMBIE_STERILE_TERRORIST # 14 - Special Guest 3
 
+  - id: STR_JABBERES
+    members:
+      - STR_JABBER # 0 - Commander
+      - STR_JABBER # 1 - Leader
+      - STR_JABBER # 2 - Engineer
+      - STR_JABBER # 3 - Medic
+      - STR_JABBER # 4 - Navigator
+      - STR_JABBER # 5 - Soldier
+      - STR_JABBER # 6 - Terrorist 1
+      - STR_JABBER # 7 - Terrorist 2
+      - STR_JABBER # 8 - Special Guest 1
+      - STR_JABBER # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_JABBER # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_JABBER # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_JABBER # 13 - Non-Combatant 2
+      - STR_JABBER # 14 - Special Guest 3
+
   # - id: STR_SPAWNS
   #   members:
   #     - STR_XCOM_EX_COMMANDER # 0 - Commander

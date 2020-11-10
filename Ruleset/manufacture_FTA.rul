@@ -1,0 +1,11 @@
+manufacture:
+  - name: STR_FAKE_AGENT_IDS
+    category: STR_COVERT_TOOLS
+    requires:
+      - STR_MONSTER_HUNT_START
+    space: 1
+    time: 3
+    cost: 22000
+    producedItems:
+      STR_FAKE_AGENT_ID: 1
+    listOrder: 220030

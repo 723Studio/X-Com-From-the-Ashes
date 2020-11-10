@@ -422,7 +422,9 @@ extended:
             weapon.getRuleItem itemRuleset;
             itemRuleset.hasCategory catCheck "STR_UTILITY";
             if eq catCheck 1;
+              debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat:" bonus;
               add bonus 20; #TODO balance it!
+              debug_log "UTILITY_SPECIALIST_STATE activated, new stat:" bonus;
             end;
           end;
 
@@ -440,7 +442,9 @@ extended:
             weapon.getRuleItem itemRuleset;
             itemRuleset.hasCategory catCheck "STR_HEAVY_WEAPONS";
             if eq catCheck 1;
+              debug_log "Activating perk STEADY_GRIP_STATE, initial stat:" bonus;
               add bonus stateBonus;
+              debug_log "STEADY_GRIP_STATE activated, new stat:" bonus;
             end;
           end;
 
@@ -453,7 +457,9 @@ extended:
           unit.getTag state Tag.EVER_VIGILANT_STATE;
 
           if eq state 2; # unit has extra vigilance effect
+            debug_log "Activating perk EVER_VIGILANT_STATE, initial stat:" bonus;
             add bonus 15;
+            debug_log "EVER_VIGILANT_STATE activated, new stat:" bonus;
           end;
 
           return bonus;
@@ -462,10 +468,12 @@ extended:
         code: |
           var int state;
 
-          unit.getTag state Tag.UTILITY_SPECIALIST_STATE;
+          unit.getTag state Tag.UNIFIGHT_STATE;
 
           if eq state 2;
+            debug_log "Activating perk UNIFIGHT_STATE, initial stat:" bonus;
             add bonus state;
+            debug_log "UNIFIGHT_STATE activated, new stat:" bonus;
           end;
 
           return bonus;
@@ -508,7 +516,9 @@ extended:
               # end;
 
               if eq catCheck 1;
+                debug_log "Activating perk RAPID_TARGETING_STATE, initial stat:" bonus;
                 add bonus stateBonus;
+                debug_log "RAPID_TARGETING_STATE activated, new stat:" bonus;
               end;
             end;
           end;
@@ -528,8 +538,27 @@ extended:
             weapon.getRuleItem itemRuleset;
             itemRuleset.hasCategory catCheck "STR_UTILITY";
             if eq catCheck 1;
+              debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat:" bonus;
               add bonus 20; #TODO balance it!
+              debug_log "UTILITY_SPECIALIST_STATE activated, new stat:" bonus;
             end;
+          end;
+
+          return bonus;
+
+      - offset: 15    # Handle throwing penalty for explosive charges
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+          var int stateBonus;
+
+          weapon.getRuleItem itemRuleset;
+          itemRuleset.hasCategory catCheck "STR_EXPLOSIVE_CHARGES";
+
+          if eq catCheck 1;
+            debug_log "Activating STR_EXPLOSIVE_CHARGES category penalty, initial stat:" bonus;
+            sub bonus 60; #TODO balance it!
+            debug_log "STR_EXPLOSIVE_CHARGES category penalty activated, new stat:" bonus;
           end;
 
           return bonus;

@@ -13,8 +13,39 @@ covertOperations:
     allowedArmor:
       - STR_NONE_UC
     specialRule: STR_REGIONAL_HQ_DISCOVERY
+  - name: STR_MONSTER_HUNT_OPERATION
+    description: STR_MONSTER_HUNT_OPERATION_DESCRIPTION
+    requires:
+      - STR_MONSTER_HUNT_START
+    itemSpaceLimit: 10
+    baseChances: 75
+    costs: 5
+    soldierSlots: 2
+    danger: 2
+    requiresBuyBaseFunc: [HQ]
+    requiredItems:
+      STR_FAKE_AGENT_IDS: 2
+    scientistSlots: 1
+    allowedArmor:
+      - STR_NONE_UC
+    successScore: 100
+    successResearchList:
+      - STR_MONSTER_HUNT_RUMORS_PREREQ
+    failureResearchList:
+      - STR_MONSTER_HUNT_RUMORS_PREREQ
+    successReputationScore:
+      STR_RESISTANCE: 5
+    instantTrapDeployment: 
+      STR_JABBER_HUNT_TRAP: 100
+    trapChance: 100
+    instantSuccessDeployment:
+      STR_JABBER_HUNT: 100
+
+
   - name: STR_TEST_OPERATION
     description: STR_TEST_OPERATION_DESCRIPTION
+    requires:
+      - STR_TROLLIUM
     itemSpaceLimit: 5
     baseChances: 0
     costs: 20
