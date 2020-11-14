@@ -14,48 +14,6 @@ armors:
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
-    recovery:
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
-      stun:
-        healthCurrent: 0.1
-        health: -0.05
-      health:
-        stunNormalized: -0.1
-    meleeDodge:
-      reactions: 0.5
-    meleeDodgeBackPenalty: 0.5
-    overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-    specialWeapon: STR_UNARMED
-    loftempsSet: [ 3 ]
-  - type: STR_MIB_AGENT_ARMOR
-    spriteSheet: MIB_AGENT.PCK
-    spriteInv: inventory_MIB_AGENT
-    corpseBattle:
-      - STR_MIB_AGENT_CORPSE
-    visibilityAtDark: 10
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: &StandardDynamicPsiDefence
       psiStrength: 1.0
       psiSkill: 0.2
@@ -74,23 +32,50 @@ armors:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: &ClothSuiteResist
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.5 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.2 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
+    specialWeapon: STR_UNARMED
+    loftempsSet: [ 3 ]
+  - type: STR_MIB_AGENT_ARMOR
+    spriteSheet: MIB_AGENT.PCK
+    spriteInv: inventory_MIB_AGENT
+    corpseBattle:
+      - STR_MIB_AGENT_CORPSE
+    visibilityAtDark: 10
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier: *ClothSuiteResist
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_MIB_AGENT_VEST_ARMOR
@@ -117,23 +102,23 @@ armors:
         healthCurrent: 0.1
         health: -0.05
     overKill: 1.5
-    damageModifier: &SyndicateAgentResists
-      - 1.0
-      - 0.8
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: &ArmoredVestResists
+      - 1.0 #0 - None - special
+      - 0.8 #1 - AP - kinetic
+      - 1.4 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.2 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 0.0 #14 - Pressure
+      - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_MIB_SPECOPS_ARMOR
@@ -145,9 +130,9 @@ armors:
     heatVision: 100
     weight: 6
     frontArmor: 40
-    sideArmor: 20
-    rearArmor: 25
-    underArmor: 13
+    sideArmor: 30
+    rearArmor: 35
+    underArmor: 20
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -159,23 +144,23 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: &MilitaryArmor
+      - 1.0 #0 - None - special
+      - 0.8 #1 - AP - kinetic
+      - 1.1 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.0 #7 - Melee - Cutting
+      - 1.2 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 0.9 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_SEEKER_DRONE_ARMOR
@@ -187,10 +172,10 @@ armors:
     heatVision: 100
     camouflageAtDay: 30
     camouflageAtDark: -3
-    frontArmor: 10
+    frontArmor: 20
     sideArmor: 20
     rearArmor: 20
-    underArmor: 10
+    underArmor: 20
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -202,22 +187,22 @@ armors:
     psiDefence: &MachineDynamicPsiDefence
       flatHundred: 10.0
     damageModifier:
-      - 1.0
-      - 1.0
-      - 0.6
-      - 1.0
-      - 1.3
-      - 1.1
-      - 0.0
-      - 1.4
-      - 0.4
-      - 0.0
-      - 1.5
-      - 1.5
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+      - 1.0 #0 - None - special
+      - 0.8 #1 - AP - kinetic
+      - 0.6 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.1 #4 - Laser
+      - 1.1 #5 - Plasma
+      - 0.0 #6 - Stun
+      - 0.6 #7 - Melee - Cutting
+      - 1.4 #8 - Acid
+      - 0.0 #9 - Smoke - Choke
+      - 2.0 #10 - EMP
+      - 1.5 #11 - Electric
+      - 0.0 #12 - Psi
+      - 0.5 #13 - Warp
+      - 0.8 #14 - Pressure
+      - 0.0 #15 - Bio
     loftempsSet: [ 2 ]
   - type: STR_MIB_ENFORCER_ARMOR
     spriteSheet: MIB_ENFORCER.PCK
@@ -244,22 +229,22 @@ armors:
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
     damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.8
-      - 0.65
-      - 0.9
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 #0 - None - special
+      - 0.85 #1 - AP - kinetic
+      - 0.8 #2 - Incendiary
+      - 0.85 #3 - High Explosive - Explosive
+      - 0.8 #4 - Laser
+      - 0.9 #5 - Plasma
+      - 0.65 #6 - Stun
+      - 0.7 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 0.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 0.9 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
 
@@ -270,7 +255,7 @@ armors:
     corpseBattle:
       - STR_FACEHUGGER_CORPSE #TODO
     visibilityAtDark: 16
-    heatVision: 10
+    heatVision: 30
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -294,22 +279,22 @@ armors:
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
     damageModifier:
-      - 1.0
-      - 1.0
-      - 2.0
-      - 1.0
-      - 0.7
-      - 0.7
-      - 0.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 0.5
-      - 1.0
-      - 2.0
-      - 1.0
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.2 #2 - Incendiary
+      - 1.2 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.0 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 1.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 0.9 #15 - Bio
     loftempsSet: [ 1 ]
   - type: STR_ZOMBIE_STERILE_ARMOR
     spriteSheet: ZOMBIE_STERILE.PCK
@@ -318,7 +303,7 @@ armors:
     corpseBattle:
       - STR_ZOMBIE_STERILE_CORPSE
     visibilityAtDark: 12
-    heatVision: 10
+    heatVision: 20
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -330,22 +315,22 @@ armors:
     createsMeleeThreat: false
     overKill: 1.5
     damageModifier:
-      - 1.0
-      - 1.0
-      - 2.0
-      - 1.0
-      - 0.7
-      - 0.7
-      - 0.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 0.5
-      - 1.0
-      - 2.0
-      - 1.0
+      - 1.0 #0 - None - special
+      - 1.1 #1 - AP - kinetic
+      - 1.8 #2 - Incendiary
+      - 1.2 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 0.3 #6 - Stun
+      - 1.1 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 0.1 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.4 #11 - Electric
+      - 0.5 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 0.8 #15 - Bio
     loftempsSet: [ 3 ]
   - type: STR_ZOMBIE_GRUBAS_ARMOR
     spriteSheet: ZOMBIE_GRUBAS.PCK
@@ -354,7 +339,7 @@ armors:
     corpseBattle:
       - STR_ZOMBIE_GRUBAS_CORPSE
     visibilityAtDark: 12
-    heatVision: 10
+    heatVision: 20
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -365,22 +350,22 @@ armors:
     createsMeleeThreat: false
     overKill: 1.5
     damageModifier:
-      - 1.0
-      - 1.0
-      - 2.0
-      - 1.0
-      - 0.7
-      - 0.7
-      - 0.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 0.5
-      - 1.0
-      - 3.0
-      - 1.0
+      - 1.0 #0 - None - special
+      - 1.1 #1 - AP - kinetic
+      - 1.8 #2 - Incendiary
+      - 1.2 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 0.3 #6 - Stun
+      - 1.1 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 0.1 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.4 #11 - Electric
+      - 0.5 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 0.8 #15 - Bio
     loftempsSet: [ 4 ]
 
 #Monsters
@@ -413,22 +398,22 @@ armors:
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
     damageModifier:
-      - 1.0
-      - 0.9
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 4.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
+      - 1.0 #0 - None - special
+      - 0.9 #1 - AP - kinetic
+      - 1.0 #2 - Incendiary
+      - 0.9 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 0.8 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 3.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 0.7 #15 - Bio
     loftempsSet: [ 2 ]
 
 #Civilians
@@ -456,23 +441,23 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: &NoArmorHumanResistance
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.5 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.0 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
     #specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_FARMER_ARMOR
@@ -499,23 +484,7 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *NoArmorHumanResistance
     #specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
 
@@ -544,23 +513,7 @@ armors:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_RESISTANCE_SOLDIER_ARMOR
@@ -587,26 +540,47 @@ armors:
       reactions: 0.6
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
-
+  - type: STR_RESISTANCE_RADIO_ARMOR
+    spriteSheet: RESISTANCE_RADIO.PCK
+    allowInv: false
+    corpseBattle:
+      - STR_RESISTANCE_RADIO_REMAINS
+    visibilityAtDark: 20
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    drawingRoutine: 9
+    constantAnimation: true
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    psiDefence:
+      flatHundred: 100
+    overKill: 3
+    createsMeleeThreat: false
+    damageModifier:
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 0.8 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 0.0 #6 - Stun
+      - 0.6 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 0.0 #9 - Smoke - Choke
+      - 5.0 #10 - EMP
+      - 3.0 #11 - Electric
+      - 0.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 0.0 #14 - Pressure
+      - 0.0 #15 - Bio
+    loftempsSet: [ 3 ]
 
 #XCOM
   - type: STR_JUMPSUIT_UC
@@ -739,22 +713,7 @@ armors:
       reactions: 0.6
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
     units:
       - STR_SOLDIER

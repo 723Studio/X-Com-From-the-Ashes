@@ -65,7 +65,7 @@ research:
     needItem: true
   - name: STR_RESISTANCE_FIRST_HELP
     needItem: true
-  - name: STR_RESISTANCE_BASIC_EQUIPMENT
+  - name: STR_RESISTANCE_BASIC_EQUIPMENT #TODO split for 2 tech
     needItem: true
   - name: STR_MONSTER_HUNT_START_PREREQ
     needItem: true
@@ -153,14 +153,7 @@ research:
       - STR_SUPPLIES
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
-  - name: STR_BASE_CONSTRUCTION #TODO
-    requiresBaseFunc: [HQ]
-    cost: 60
-    points: 15
-    dependencies:
-      - STR_FACILITIES_BLUEPRINTS
-      - STR_TODOIUM 
-    listOrder: 7460
+
   - name: STR_MONSTER_HUNT_RUMORS
     requiresBaseFunc: [HQ]
     cost: 5
@@ -171,11 +164,65 @@ research:
     listOrder: 7460
 
 #technology
+  - name: STR_ELECTRIC_WEAPONS_PREREQ
+    needItem: true
+  - name: STR_ELECTRIC_WEAPONS #TODO Articles
+    cost: 8
+    points: 12
+    unlocks:
+      - STR_DAMAGE_11 # "ELECTRIC" damage
+    dependencies:
+      - STR_ELECTRIC_WEAPONS_PREREQ
   - name: STR_LASER_WEAPONS
     cost: 50
     points: 10
     dependencies:
       - STR_TODOIUM
+
+  - name: STR_PSIONIC
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_TODOIUM
+
+
+#damage types
+  - name: STR_DAMAGE_ARMOR_PIERCING #TODO Articles
+  - name: STR_DAMAGE_INCENDIARY #TODO Articles
+  - name: STR_DAMAGE_HIGH_EXPLOSIVE #TODO Articles
+  - name: STR_DAMAGE_LASER_BEAM 
+    dependencies:
+      - STR_LASER_WEAPONS
+  - name: STR_DAMAGE_PLASMA_BEAM
+    dependencies:
+      - STR_TODOIUM  
+  - name: STR_DAMAGE_STUN #TODO Articles
+  - name: STR_DAMAGE_MELEE #TODO Articles
+  - name: STR_DAMAGE_ACID
+    dependencies:
+      - STR_TODOIUM  
+  - name: STR_DAMAGE_SMOKE #TODO Articles
+  - name: STR_DAMAGE_ACID
+    dependencies:
+      - STR_TODOIUM  
+  - name: STR_DAMAGE_10 # "EMP" 
+    dependencies:
+      - STR_TODOIUM  
+  - name: STR_DAMAGE_11 # "ELECTRIC" #TODO Articles
+    dependencies:
+      - STR_ELECTRIC_WEAPONS  
+  - name: STR_DAMAGE_12 # "PSI"
+    dependencies:
+      - STR_TODOIUM  
+  - name: STR_DAMAGE_13 # "WARP"
+    dependencies:
+      - STR_TODOIUM        
+  - name: STR_DAMAGE_14 # "PRESSURE"
+    dependencies:
+      - STR_TODOIUM  
+  - name: STR_DAMAGE_15 # "BIO"
+    dependencies:
+      - STR_TODOIUM  
 
 #creature study
   - name: STR_STRANGE_CREATURE_AUTOPSY
@@ -238,36 +285,6 @@ research:
       - STR_LIVE_INFECTOR
       - STR_ZOMBIE_AUTOPSY
       - STR_LIVE_ZOMBIE
-
-#facilities
-  - name: STR_LARGE_RADAR_SYSTEM
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_TODOIUM
-  - name: STR_BASE_DEFENSE_SYSTEMS
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_TODOIUM
-  - name: STR_MISSILE_DEFENSES
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_BASE_DEFENSE_SYSTEMS
-  - name: STR_CREATURE_CONTAINMENT
-    cost: 20
-    points: 10
-    dependencies:
-      - STR_FACILITIES_BLUEPRINTS
-      - STR_LIVE_CREATURES_RESEARCH
-  - name: STR_ALIEN_CONTAINMENT
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_FACILITIES_BLUEPRINTS
-      - STR_TODOIUM
-
 
 #enemies - humanoids
   - name: STR_XCOM_EX_COMMANDER
@@ -519,3 +536,45 @@ research:
 
 #craft items
 
+#facilities
+  - name: STR_LARGE_RADAR_SYSTEM
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_TODOIUM
+  - name: STR_BASE_DEFENSE_SYSTEMS
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_TODOIUM
+  - name: STR_MISSILE_DEFENSES
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_BASE_DEFENSE_SYSTEMS
+  - name: STR_CREATURE_CONTAINMENT
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_LIVE_CREATURES_RESEARCH
+  - name: STR_ALIEN_CONTAINMENT
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_TODOIUM
+  - name: STR_BASE_CONSTRUCTION #TODO
+    cost: 60
+    points: 15
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_TODOIUM 
+    listOrder: 7460
+  - name: STR_UNDERWATER_BASES #TODO
+    cost: 60
+    points: 15
+    dependencies:
+      - STR_BASE_CONSTRUCTION
+      - STR_TODOIUM 
+    listOrder: 7460

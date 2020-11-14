@@ -135,6 +135,17 @@ en-US:
   RandomMana: "Mana dmg RNG?"
   mana: "Mana"
   manaRecoveryPerDay: "Mana per day"
+  #damage types
+  STR_DAMAGE_ARMOR_PIERCING: "KINETIC"
+  STR_DAMAGE_MELEE: "CUTTING"
+  STR_DAMAGE_NONE: "SPECIAL"
+  STR_DAMAGE_SMOKE: "CHOKE"
+  STR_DAMAGE_10: "EMP"
+  STR_DAMAGE_11: "ELECTRIC"
+  STR_DAMAGE_12: "PSI"
+  STR_DAMAGE_13: "WARP"
+  STR_DAMAGE_14: "PRESSURE"
+  STR_DAMAGE_15: "BIO"
 #mod UI
   STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY_1: "Captive has been executed as there is no free prison space."
   STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO ALIEN CONTAINMENT FOR TRANSFER!{SMALLLINE}For security reasons, live aliens can only be kept in specially appointed alien containment facility."

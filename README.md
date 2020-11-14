@@ -7,22 +7,25 @@ Mod is on it's initial development stage, all its aspects are WIP and im looking
 
 ## OpenXcom engine
 This mod is developing togeter with [dedicated engine](https://github.com/Finnik723/OpenXcom_FTA), that is a fork of [OpenXcom Extended](https://github.com/MeridianOXC/OpenXcom). 
-Though FtA megamod can be launched on conventions versions on the game engine, it's balance and plot highly depends on my engine's features, like diplomacy and alternative start. When mod would be released, it would be distributed together with demanded version of the OpenXcom engine.
+Though FtA megamod can be launched on conventions versions on the game engine, it's balance and plot highly depends on my engine's features, like diplomacy, covert operations and other exclusive mechanics. When mod would be released, it would be distributed together with demanded version of the OpenXcom engine.
 
 ## Licensing
-Mod From the Ashes - assets, rulesets and other configs distributed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to **share** and **adapt** the materials only for **non-commercial purposes** and when **providing [appropriate attribution](https://en.wikipedia.org/wiki/Creative_Commons_license)**. Any derivatives **must be distributed under the same license**.
+The most content of From the Ashes megamod - assets, rulesets and other configs distributed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to **share** and **adapt** the materials only for **non-commercial purposes** and when **providing [appropriate attribution](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart)**. Any derivatives **must be distributed under the same license**. There are **exceptions to it**, some sound and image assets were bought specifically for this project are distributed under an **All Rights Reserved license**. You **may not redistribute, adapt or re-use** these assets without express permission. See more info [here] (https://github.com/723Studio/X-Com-From-the-Ashes/blob/master/license%20and%20credits.txt).
 
 ## Credits
 I widely use various assets, created by OpenXcom modding community. Credits to licensed mods and other materials, that I'm using in my work provided in [this file](https://github.com/723Studio/X-Com-From-the-Ashes/blob/master/license%20and%20credits.txt). As you can see, there are a lot of mods that are also using assets from other mods. I'm rather new to the community and I don't want to investigate this web, so I provide credits to a mod where I found assets, though it can be not original. If you feel that I should include credit to your mod and it is licensed, please let me know!
-I'd like to give special thanks to the contributors to my mod:
-* **X-Man** - en strings contribution, balance concepts and ideas, spirital support;
+I'd like to give special thanks to the contributors to my project (in order of appearance):
+* **X-Man** - EN strings contribution, balance concepts and ideas help;
 * **Drosan** - engine development, bugfixes;
-* **wolwerin** - weapon inventory image assets;
-* **efrenespartano** - weapon inventory image assets, inspiration, info support;
-* **Brain_322** - weapon inventory image assets;
+* **wolwerin** - weapon image assets;
+* **efrenespartano** - full weapon image assets, inspiration, info support;
+* **Brain_322** - full unit and weapon, terrain image assets, general help with image art;
 * **KoTiK03** - base facility sprite;
-* **Dr. Hans Woofington** - armor (inventory, battlscape) image assets;
+* **Dr. Hans Woofington** - units (inventory, battlscape, autopsy) and weapons image assets, work on intro logo scene;
+* **Evil_bI** - music direction and support, reference help, info support;
+* **Ushna** - image reference help;
+* **Ruslan Makovkin** - unit inventory and ufopedia image assets;
 
 ## Support
 I realize I have a tremendous amount of work to do. I'll be happy to have any kind of support. Visit my [Discord server](https://discord.gg/epmtzH9), share your thoughts, ideas, and suggestions. You make an issue here on GitHub, or if you want to get involved in development - write to me, I will be glad of any help. Feel free to make fork and pull requests or propose changes directly.
-If you are motivated to support me financially, check out [this site](http://x-comfromtheashes.tilda.ws/). Your donations will be spent on creating professional visual assets - music, full-size images and so on. You can also visit my [Patreon](https://www.patreon.com/Finnik) where I am posting my dev blog, and you can also subscribe it to get unique awards in the game.
+If you are motivated to support me financially, check out [this site](http://x-comfromtheashes.tilda.ws/). Your donations will be spent on creating professional visual assets - music, full-size images, animated cutscenes and so on. You can also visit my [Patreon](https://www.patreon.com/Finnik) where I am posting my dev blog, and you can also subscribe it to get unique awards in the game.

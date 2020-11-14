@@ -1,16 +1,89 @@
-﻿#globals
-ftaGame: true # a new property that enables all FTA stuff
-#useCustomCategories: true
+﻿ftaGame: true # a new property that enables all FTA stuff
+
+#Campaign
+startingTime:
+  second: 34
+  minute: 15
+  hour: 14
+  weekday: 1 #4
+  day: 1 #10
+  month: 3
+  year: 1999
+initialFunding: 580
+baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
+fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
+ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered
+psiUnlockResearch: STR_PSIONIC
+allowAlienBasesOnWrongTextures: false
+chanceToStopRetaliation: 70
+lessAliensDuringBaseDefense: true
+gameOver: #TODO
+  loseMoney: loseGame       # cutscene ID that should be played when the player loses due to poor economy management
+  loseRating: loseGame      # cutscene ID that should be played when the player loses due to poor rating
+  loseDefeat: loseGame      # cutscene ID that should be played when the player loses the last base
+
+#Basescape/Personnel
+timePersonnel: 96
+costEngineer: 5000
+costHireEngineer: 70000
+costScientist: 8000
+costHireScientist: 100000
 displayCustomCategories: 1
+
+#Interception
+drawEnemyRadarCircles: 0
+showDogfightDistanceInKm: true
+crewEmergencyEvacuationSurvivalChance: 90
+pilotsEmergencyEvacuationSurvivalChance: 95
+
+#pedia
+pediaReplaceCraftFuelWithRangeType: 2
+extraNerdyPediaInfo: true
+researchTreeDisabled: true
 
 #difficulty
 startingDifficulty: 2
+aimAndArmorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.1]
+# statGrowthMultipliers:
+#       tu: 1
+#       stamina: 1
+#       health: 1
+#       bravery: 1
+#       reactions: 1
+#       firing: 2
+#       throwing: 1
+#       strength: 1
+#       psiStrength: 1
+#       psiSkill: 1
+#       melee: 1
+
+
+#battlescape
+maxViewDistance: 40
+enableCloseQuartersCombat: 1
+lighting:
+  enhanced: 7
+noLOSAccuracyPenaltyGlobal: 60
+oneHandedPenaltyGlobal: 50
+closeQuartersTuCostGlobal: 6      # TUs required to attempt CQC; unsuccessful attempt doesn't spend the TUs, successful does
+closeQuartersEnergyCostGlobal: 5   # Energy required to attempt CQC; unsuccessful attempt doesn't spend the Energy, successful does
+tooMuchSmokeThreshold: 13
+giveScoreAlsoForResearchedArtifacts: true
+statisticalBulletConservation: true
+stunningImprovesMorale: true
+tuRecoveryWakeUpNewTurn: 50
+minReactionAccuracy: 30
+turnAIUseGrenade: 2 #TODO Consider if changing back to 1
+turnAIUseBlaster: 2 
+surrenderMode: 0 #TODO Consider
 
 
 ai:
   extendedFireModeChoice: true
   pickUpWeaponsMoreActively: true
-  destroyBaseFacilities: true # default false
+  destroyBaseFacilities: true
+  fireChoiceIntelCoeff: 4 # Make the choice of attack more RNG dependent
+  fireChoiceAggroCoeff: 1 # Aggression doesn't matter as much  
 
 constants:
   extendedItemReloadCost: true
@@ -18,9 +91,11 @@ constants:
   damageRange: 85 #for good or bad
   extendedTerrainMelee: 4
   extendedUnderwaterThrowFactor: 60
+  extendedMeleeReactions: 2
 
-mana: #TODO
-  enabled: true
+
+mana:
+  enabled: false #true #TODO
   battleUI: true
   unlockResearch: STR_TODOIUM
   trainingPrimary: false
@@ -46,22 +121,33 @@ fixedUserOptions:
   allowPsiStrengthImprovement: false
   allowPsionicCapture: true
   anytimePsiTraining: true
+  canSellLiveAliens: false #TODO consider
+  psiStrengthEval: false
+  retainCorpses: false #TODO consider
+  sneakyAI: true #TODO consider
+  battleUFOExtenderAccuracy: true
+  includePrimeStateInSavedLayout: false
+  battleExplosionHeight: 3
+  weaponSelfDestruction: false
 
-#battlescape
-maxViewDistance: 40
-enableCloseQuartersCombat: 1
-lighting:
-  enhanced: 7
+recommendedUserOptions:
+  playIntro: false #TODO - remove
+  aggressiveRetaliation: false
+  allowBuildingQueue: false
+  anytimePsiTraining: true
+  canTransferCraftsWhileAirborne: true
+  fieldPromotions: true
+  strafe: true
+  noAlienPanicMessages: true
+
 
 #geoscape
-baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 
-#pedia
-pediaReplaceCraftFuelWithRangeType: 1
-extraNerdyPediaInfo: true
-researchTreeDisabled: true
-statisticalBulletConservation: true
-stunningImprovesMorale: true
-ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered
+
+
+
+
+
+
 
 

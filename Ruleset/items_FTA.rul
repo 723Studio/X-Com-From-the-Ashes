@@ -68,10 +68,11 @@ items:
     attraction: 7
     listOrder: 17850
   - type: STR_COMBAT_KNIFE #TODO balance
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
+    landOnly: false
     costBuy: 260
     costSell: 180
     weight: 4
@@ -104,6 +105,46 @@ items:
     experienceTrainingMode: 13
     attraction: 6
     listOrder: 18000
+  - type: STR_SABRE
+    categories: [STR_HUMAN_TECH, STR_MELEE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+    size: 0.2
+    landOnly: true
+    costBuy: 3000
+    costSell: 1800
+    weight: 8
+    bigSprite: 366
+    floorSprite: 366
+    handSprite: 560
+    meleeHitSound: 81
+    meleeAnimation: 4
+    power: 30
+    damageType: 7
+    damageBonus:
+      strength: 0.4
+      melee: 0.4
+    damageAlter:
+      ArmorEffectiveness: 1.2
+      ToTile: 0.2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 10
+      energy: 6
+    costThrow:
+      energy: 14
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 55
+    experienceTrainingMode: 13
+    attraction: 9
+    listOrder: 18520
+
 #throwing
   - type: STR_THROWING_KNIVE
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE]
@@ -2484,7 +2525,7 @@ items:
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    #costSell: 1000
+    costSell: 1000
     weight: 37
     bigSprite: 102
     floorSprite: 102
@@ -2636,6 +2677,17 @@ items:
     armor: 30
     recoveryPoints: -200
     recover: true
+    listOrder: 67800
+  - type: STR_RESISTANCE_RADIO_REMAINS
+    categories: [STR_REMAINS]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: -1000
+    weight: 40
+    floorSprite: 104
+    battleType: 11
+    armor: 30
+    recover: false
     listOrder: 67800
   #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_CORPSE

@@ -165,6 +165,7 @@ extraSprites:
       112: Resources/Armors/Enemies/MiB/bigob_SEEKER_DRONE.png
       113: Resources/Armors/Enemies/MiB/bigob_MIB_ARMORED_AGENT.png
       114: Resources/Armors/Enemies/Monsters/bigob_JABBER_CORPSE.png
+      115: Resources/MiscItems/bigob_FakeID.png #TODO 115 index used, replace with something without floor obj
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -233,6 +234,7 @@ extraSprites:
       363: Resources/Weapons/Earthbound/Faction/bigob_ExplosiveCharge.png
       364: Resources/Armors/Enemies/Monsters/bigob_JabberWeapon.png
       365: Resources/MiscItems/bigob_FakeID.png
+      366: Resources/Weapons/Earthbound/Faction/bigob_Sword.png
       
   - type: FLOOROB.PCK
     files:
@@ -252,6 +254,7 @@ extraSprites:
       112: Resources/Armors/Enemies/MiB/floorob_SEEKER_DRONE.png
       113: Resources/Armors/Enemies/MiB/floorob_MIB_ARMORED_AGENT.png
       114: Resources/Armors/Enemies/Monsters/floorob_JABBER_CORPSE.png
+      115: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_RADIO.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -301,6 +304,7 @@ extraSprites:
       362: Resources/Weapons/Earthbound/General/floorob_ThrowingKnife.png
       363: Resources/Weapons/Earthbound/Faction/floorob_ExplosiveCharge.png
       365: Resources/MiscItems/floorob_FakeID.png
+      366: Resources/Weapons/Earthbound/Faction/floorob_Sword.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -362,6 +366,7 @@ extraSprites:
       536: Resources/Weapons/Earthbound/Faction/handob_MachinePistolClip.png
       544: Resources/Weapons/Earthbound/General/handob_ThrowingKnife.png
       552: Resources/Weapons/Earthbound/Faction/handob_ExplosiveCharge.png
+      560: Resources/Weapons/Earthbound/Faction/handob_Sword.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
@@ -595,30 +600,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_ENFORCER.png
-
-  - type: RESISTANCE_SOLDIER.PCK
-    width: 512
-    height: 720
-    subX: 32
-    subY: 40
-    files:
-      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SOLDIER.png
-  - type: inventory_RESISTANCE_SOLDIER
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SOLDIER.png
-  - type: RESISTANCE_SCIENTIST.PCK
-    width: 512
-    height: 720
-    subX: 32
-    subY: 40
-    files:
-      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SCIENTIST.png
-  - type: inventory_RESISTANCE_SCIENTIST
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCIENTIST.png
-
   - type: FACEHUGGER.PCK
     subX: 32
     subY: 40
@@ -659,6 +640,37 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Monsters/inventory_JABBER.png
+
+  - type: RESISTANCE_SOLDIER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SOLDIER.png
+  - type: inventory_RESISTANCE_SOLDIER
+    singleImage: true
+    files:
+      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SOLDIER.png
+  - type: RESISTANCE_SCIENTIST.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SCIENTIST.png
+  - type: inventory_RESISTANCE_SCIENTIST
+    singleImage: true
+    files:
+      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCIENTIST.png
+  - type: RESISTANCE_RADIO.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 160
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_RADIO.png
+
   - type: FARMER.PCK
     width: 512
     height: 720

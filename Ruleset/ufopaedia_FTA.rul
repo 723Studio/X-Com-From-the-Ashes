@@ -245,14 +245,6 @@ ufopaedia:
     requires:
       - STR_FACILITIES_BLUEPRINTS
     text: STR_FACILITIES_BLUEPRINTS_UFOPEDIA
-  - id: STR_BASE_CONSTRUCTION
-    type_id: 7
-    # image_id: FACILITY_DECRYPTION.SPK
-    # text_width: 153
-    section: STR_BASE_CONSTRUCTION
-    requires:
-      - STR_BASE_CONSTRUCTION
-    text: STR_BASE_CONSTRUCTION_UFOPEDIA
 
 #facilities
   - id: STR_ACCESS_LIFT
@@ -322,6 +314,18 @@ ufopaedia:
     text: STR_HANGAR_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
+  - id: STR_BASE_CONSTRUCTION
+    type_id: 7
+    section: STR_BASE_FACILITIES
+    requires:
+      - STR_BASE_CONSTRUCTION
+    text: STR_BASE_CONSTRUCTION_UFOPEDIA
+  - id: STR_UNDERWATER_BASES
+    type_id: 7
+    section: STR_BASE_FACILITIES
+    requires:
+      - STR_UNDERWATER_BASES
+    text: STR_UNDERWATER_BASES_UFOPEDIA
 
 #enemies - humanoids
   - id: STR_MIB_AGENT

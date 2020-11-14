@@ -1299,7 +1299,6 @@ extended:
               if eq catCheck 1;
                 unit.getHealth unit_health;
                 unit.getHealthMax unit_half_max_health;
-                weapon_item.getRuleItem itemRuleset;
                 div unit_half_max_health 2;
                 set critChance 4; #reaper has 4% crit by default with melee
 
@@ -1364,10 +1363,10 @@ extended:
 
       - offset: 29   # Handle Shredder mechanic
         code: |
+          var ptr RuleItem itemRuleset;
           var int weapon_state;
           var int shredder;
           var int bonus;
-          var ptr RuleItem itemRuleset;
           var int catCheck;
 
           attacker.getTag shredder Tag.SHREDDER_STATE;
@@ -1388,6 +1387,7 @@ extended:
 
       - offset: 30   # Handle Bulky main effect
         code: |
+          var ptr RuleItem itemRuleset;
           var int state;
           var int bonus;
 
@@ -1398,14 +1398,6 @@ extended:
               set bonus to_stun;
               muldiv bonus state 100;
               sub to_stun bonus;
-            end;
-            weapon_item.getRuleItem itemRuleset;
-            itemRuleset.hasCategory catCheck "STR_HEAVY_WEAPONS";
-            if eq catCheck 1;
-              debug_log "Shredder activated, original to_armor / addition %:" to_armor shredder;
-              add shredder 100;
-              muldiv to_armor shredder 100;
-              debug_log "Shredder applied, resulting to_armor damage:" to_armor;
             end;
           end;
 
@@ -1473,7 +1465,7 @@ extended:
 
           if gt savior 0;
             if eq medikit_action_type 1; # heal
-              if gt health_recovery;
+              if gt health_recovery 0;
               debug_log "Savior activated.";
               debug_log " - Health recovered (org.):" health_recovery;
               battle_game.randomRange savior 0 savior; # roll bonus heal amount
