@@ -220,15 +220,22 @@ research:
     dependencies:
       - STR_TODOIUM  
 
-#creature study
+#MIB arc
+  - name: STR_STRANGE_CREATURE_AUTOPSY
+    needItem: true
+    # unlocks:
+    #     - STR_MORE_MIB_STUFF_HERE <--- #TODO
+
+#shared creatures arc
   - name: STR_STRANGE_CREATURE_AUTOPSY
     cost: 0
     points: 0
-    dependencies:
-      - STR_FACEHUGGER_CORPSE
-      - STR_ZOMBIE_STERILE_CORPSE
-      - STR_ZOMBIE_GRUBAS_CORPSE
-      - STR_JABBER_CORPSE
+    needItem: true
+    # dependencies:
+    #   - STR_FACEHUGGER_CORPSE
+    #   - STR_ZOMBIE_STERILE_CORPSE
+    #   - STR_ZOMBIE_GRUBAS_CORPSE
+    #   - STR_JABBER_CORPSE
     unlocks:
         - STR_LIVE_CREATURES_RESEARCH
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
@@ -243,8 +250,6 @@ research:
       - STR_FACEHUGGER
       - STR_ZOMBIE_STERILE_TERRORIST
       - STR_ZOMBIE_GRUBAS_TERRORIST
-    # unlocks:
-    #     - STR_LIVE_CREATURES_RESEARCH #
   - name: STR_ZOMBIE_BIOLOGY
     cost: 50
     points: 10
@@ -291,8 +296,11 @@ research:
     dependencies:
       - STR_INTEL_STATUS_REPORT
     listOrder: 146000
+  - name: STR_MIB_AGENT_LOOKUP
+    needItem: true
   - name: STR_MIB_AGENT
     requiresBaseFunc: [INTLAB]
+    lookup: STR_MIB_AGENT_LOOKUP
     cost: 20
     points: 40
     needItem: true
@@ -301,6 +309,33 @@ research:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
+  - name: STR_MIB_ARMORED_AGENT
+    requiresBaseFunc: [INTLAB]
+    lookup: STR_MIB_AGENT_LOOKUP
+    cost: 20
+    points: 40
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
+  - name: STR_MIB_SPECOPS
+    requiresBaseFunc: [INTLAB]
+    lookup: STR_MIB_AGENT_LOOKUP
+    cost: 20
+    points: 40
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_FRESH_MIB_AGENT
     listOrder: 146000
 #enemies - creatures
   - name: STR_FACEHUGGER_CORPSE
