@@ -185,30 +185,26 @@ research:
     dependencies:
       - STR_TODOIUM
 
-
 #damage types
-  - name: STR_DAMAGE_ARMOR_PIERCING #TODO Articles
-  - name: STR_DAMAGE_INCENDIARY #TODO Articles
-  - name: STR_DAMAGE_HIGH_EXPLOSIVE #TODO Articles
+  - name: STR_DAMAGE_ARMOR_PIERCING
+  - name: STR_DAMAGE_INCENDIARY
+  - name: STR_DAMAGE_HIGH_EXPLOSIVE
   - name: STR_DAMAGE_LASER_BEAM 
     dependencies:
       - STR_LASER_WEAPONS
   - name: STR_DAMAGE_PLASMA_BEAM
     dependencies:
       - STR_TODOIUM  
-  - name: STR_DAMAGE_STUN #TODO Articles
-  - name: STR_DAMAGE_MELEE #TODO Articles
+  - name: STR_DAMAGE_STUN
+  - name: STR_DAMAGE_MELEE
   - name: STR_DAMAGE_ACID
     dependencies:
       - STR_TODOIUM  
-  - name: STR_DAMAGE_SMOKE #TODO Articles
-  - name: STR_DAMAGE_ACID
-    dependencies:
-      - STR_TODOIUM  
+  - name: STR_DAMAGE_SMOKE 
   - name: STR_DAMAGE_10 # "EMP" 
     dependencies:
       - STR_TODOIUM  
-  - name: STR_DAMAGE_11 # "ELECTRIC" #TODO Articles
+  - name: STR_DAMAGE_11 # "ELECTRIC"
     dependencies:
       - STR_ELECTRIC_WEAPONS  
   - name: STR_DAMAGE_12 # "PSI"

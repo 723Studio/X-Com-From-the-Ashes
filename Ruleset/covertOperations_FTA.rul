@@ -5,7 +5,7 @@ covertOperations:
     requires:
       - STR_COVERT_OPERATIONS
     soldierSlots: 2
-    optionalSoldierSlots: 1
+    optionalSoldierSlots: 20
     scientistSlots: 1
     baseChances: 70
     danger: 3
@@ -21,8 +21,8 @@ covertOperations:
     baseChances: 75
     costs: 5
     soldierSlots: 2
+    #requiresBaseFunc: [HQ]
     danger: 2
-    requiresBuyBaseFunc: [HQ]
     requiredItems:
       STR_FAKE_AGENT_IDS: 2
     scientistSlots: 1

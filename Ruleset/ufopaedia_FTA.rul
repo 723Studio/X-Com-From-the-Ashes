@@ -55,6 +55,7 @@ ufopaedia:
   - delete: STR_PLASMA_PISTOL
   - delete: STR_PLASMA_PISTOL_CLIP
   - delete: STR_BLASTER_LAUNCHER
+  - delete: STR_BLASTER_BOMB
   - delete: STR_SMALL_LAUNCHER
   - delete: STR_STUN_BOMB
   - delete: STR_ALIEN_GRENADE
@@ -419,42 +420,150 @@ ufopaedia:
     text: STR_JABBER_AUTOPSY_UFOPEDIA
     text_width: 149
     listOrder: 164100
+
 #tactic analysis
+  - id: STR_DAMAGE_ARMOR_PIERCING_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA
+    requires:
+      - STR_DAMAGE_ARMOR_PIERCING
+    listOrder: 20300
+  - id: STR_DAMAGE_INCENDIARY_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_INCENDIARY_UFOPEDIA
+    requires:
+      - STR_DAMAGE_INCENDIARY
+    listOrder: 20300
+  - id: STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA
+    requires:
+      - STR_DAMAGE_HIGH_EXPLOSIVE
+    listOrder: 20300
+  - id: STR_DAMAGE_LASER_BEAM_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_LASER_BEAM_UFOPEDIA
+    requires:
+      - STR_DAMAGE_LASER_BEAM
+    listOrder: 20300
+  - id: STR_DAMAGE_PLASMA_BEAM_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA
+    requires:
+      - STR_DAMAGE_PLASMA_BEAM
+    listOrder: 20300
+  - id: STR_DAMAGE_STUN_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_STUN_UFOPEDIA
+    requires:
+      - STR_DAMAGE_STUN
+    listOrder: 20300
+  - id: STR_DAMAGE_MELEE_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_MELEE_UFOPEDIA
+    requires:
+      - STR_DAMAGE_MELEE
+    listOrder: 20300
+  - id: STR_DAMAGE_ACID_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_ACID_UFOPEDIA
+    requires:
+      - STR_DAMAGE_ACID
+    listOrder: 20300
+  - id: STR_DAMAGE_SMOKE_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_SMOKE_UFOPEDIA
+    requires:
+      - STR_DAMAGE_SMOKE
+    listOrder: 20300
+  - id: STR_DAMAGE_EMP_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_EMP_UFOPEDIA
+    requires:
+      - STR_DAMAGE_10
+    listOrder: 20300
+  - id: STR_DAMAGE_ELECTRIC_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_ELECTRIC_UFOPEDIA
+    requires:
+      - STR_DAMAGE_11
+    listOrder: 20300
+  - id: STR_DAMAGE_PSI_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_PSI_UFOPEDIA
+    requires:
+      - STR_DAMAGE_12
+    listOrder: 20300
+  - id: STR_DAMAGE_WARP_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_WARP_UFOPEDIA
+    requires:
+      - STR_DAMAGE_13
+    listOrder: 20300
+  - id: STR_DAMAGE_PRESSURE_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_PRESSURE_UFOPEDIA
+    requires:
+      - STR_DAMAGE_14
+    listOrder: 20300
+  - id: STR_DAMAGE_BIO_TOPIC
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DAMAGE_BIO_UFOPEDIA
+    requires:
+      - STR_DAMAGE_15
+    listOrder: 20300
+
   - id: STR_MIB_AGENT_ARMOR
     type_id: 5
-    section: STR_ALIEN_LIFE_FORMS
+    section: STR_TACTICAL_ANALYSIS
     text: STR_MIB_AGENT_ARMOR_UFOPEDIA
     requires:
       - STR_MIB_AGENT_ARMOR
-    listOrder: 146001
+    listOrder: 20300
   - id: STR_FACEHUGGER_ARMOR
     type_id: 5
-    section: STR_ALIEN_LIFE_FORMS
+    section: STR_TACTICAL_ANALYSIS
     text: STR_FACEHUGGER_ARMOR_UFOPEDIA
     requires:
       - STR_FACEHUGGER_ARMOR
-    listOrder: 164095
+    listOrder: 20300
   - id: STR_ZOMBIE_STERILE_ARMOR
     type_id: 5
-    section: STR_ALIEN_LIFE_FORMS
+    section: STR_TACTICAL_ANALYSIS
     text: STR_ZOMBIE_STERILE_ARMOR_UFOPEDIA
     requires:
       - STR_ZOMBIE_STERILE_ARMOR
-    listOrder: 164095
+    listOrder: 20300
   - id: STR_ZOMBIE_GRUBAS_ARMOR
     type_id: 5
-    section: STR_ALIEN_LIFE_FORMS
+    section: STR_TACTICAL_ANALYSIS
     text: STR_ZOMBIE_GRUBAS_ARMOR_UFOPEDIA
     requires:
       - STR_ZOMBIE_GRUBAS_ARMOR
-    listOrder: 164095
+    listOrder: 20300
   - id: STR_JABBER_ARMOR
     type_id: 5
-    section: STR_ALIEN_LIFE_FORMS
+    section: STR_TACTICAL_ANALYSIS
     text: STR_JABBER_ARMOR_UFOPEDIA
     requires:
       - STR_FACEHUGGER_ARMOR
-    listOrder: 164095
+    listOrder: 20300
+
 #weapons and equipment
   #melee
   - id: STR_POLICE_BATON

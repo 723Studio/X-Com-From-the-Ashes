@@ -105,7 +105,7 @@ items:
     experienceTrainingMode: 13
     attraction: 6
     listOrder: 18000
-  - type: STR_SABRE
+  - type: STR_SWORD
     categories: [STR_HUMAN_TECH, STR_MELEE]
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT #TODO

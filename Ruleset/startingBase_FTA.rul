@@ -1,6 +1,6 @@
 startingBase:
   randomSoldiers:
-    STR_SOLDIER: 15
+    STR_SOLDIER: 25 #15
   scientists: 6
   engineers: 3
   facilities:

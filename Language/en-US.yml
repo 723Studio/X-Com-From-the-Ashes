@@ -146,6 +146,36 @@ en-US:
   STR_DAMAGE_13: "WARP"
   STR_DAMAGE_14: "PRESSURE"
   STR_DAMAGE_15: "BIO"
+  STR_DAMAGE_ARMOR_PIERCING_TOPIC: "Kinetic Damage"
+  STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: Weapons with kinetic damage are one of the most reliable and common types of weapons that we use. Kinetic damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding gases). When hitting a certain part of the enemy's body, it can cause bleeding, and the resulting damage reduces its combat ability. Due to the widespread of this type of weapons symmetrically develop means of armor, which represents a significant defense against kinetic damage.  Some types of weapons have a certain armor penetration rate, which depends mainly on the projectile kind and its speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective protection against kinetic damage.
+  STR_DAMAGE_INCENDIARY_TOPIC: "Incendiary Damage"
+  STR_DAMAGE_INCENDIARY_UFOPEDIA: 
+  STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC: "High Explosive Damage"
+  STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA:
+  STR_DAMAGE_LASER_BEAM_TOPIC: "Laser Beam Damage"
+  STR_DAMAGE_LASER_BEAM_UFOPEDIA:
+  STR_DAMAGE_PLASMA_BEAM_TOPIC: "Plasma Beam Damage"
+  STR_DAMAGE_PLASMA_BEAM_UFOPEDIA: 
+  STR_DAMAGE_STUN_TOPIC: "Stun Damage"
+  STR_DAMAGE_STUN_UFOPEDIA:
+  STR_DAMAGE_MELEE_TOPIC: "Cutting Damage"
+  STR_DAMAGE_MELEE_UFOPEDIA:
+  STR_DAMAGE_ACID_TOPIC: "Acid Damage"
+  STR_DAMAGE_ACID_UFOPEDIA: 
+  STR_DAMAGE_SMOKE_TOPIC: "Choke Damage"
+  STR_DAMAGE_SMOKE_UFOPEDIA: 
+  STR_DAMAGE_EMP_TOPIC: "EMP Damage"
+  STR_DAMAGE_EMP_UFOPEDIA: 
+  STR_DAMAGE_ELECTRIC_TOPIC: "Electric Damage"
+  STR_DAMAGE_ELECTRIC_UFOPEDIA: 
+  STR_DAMAGE_PSI_TOPIC: "Psionic Damage"
+  STR_DAMAGE_PSI_UFOPEDIA: 
+  STR_DAMAGE_WARP_TOPIC: "Warp Damage"
+  STR_DAMAGE_WARP_UFOPEDIA: 
+  STR_DAMAGE_PRESSURE_TOPIC: "High Pressure Damage"
+  STR_DAMAGE_PRESSURE_UFOPEDIA: 
+  STR_DAMAGE_BIO_TOPIC: "Bio-damage"
+  STR_DAMAGE_BIO_UFOPEDIA: 
 #mod UI
   STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY_1: "Captive has been executed as there is no free prison space."
   STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO ALIEN CONTAINMENT FOR TRANSFER!{SMALLLINE}For security reasons, live aliens can only be kept in specially appointed alien containment facility."
@@ -256,7 +286,6 @@ en-US:
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
   STR_FEMALE_CIVILIAN_FARMER: "Farmer"
   STR_FEMALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
-
 
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"

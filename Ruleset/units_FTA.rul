@@ -57,7 +57,6 @@ units:
     type: STR_MIB_ARMORED_AGENT 
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
-    altRecoveredUnit: STR_MIB_AGENT
     stats:
       tu: 60
       stamina: 94
@@ -83,6 +82,7 @@ units:
   - type: STR_MIB_ARMORED_AGENT_SPAWN
     refNode: *STR_MIB_ARMORED_AGENT
     value: 2
+    altRecoveredUnit: STR_MIB_ARMORED_AGENT
     builtInWeaponSets:
       - - STR_PISTOL
         - STR_PISTOL_CLIP
