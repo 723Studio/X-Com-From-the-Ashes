@@ -189,6 +189,9 @@ en-US:
   STR_REMOVE_SELECTED_1: "Execute Selected"
   STR_UNDER_INTERROGATION: "Being{NEWLINE}Studied"
   STR_UNDER_INTERROGATION_1: "Being{NEWLINE}interrogated"
+  STR_XCOM_REPORTS_UC: "X-COM REPORTS"
+  STR_ALIEN_LIFE_FORMS: "ENEMIES AND ALIEN LIFE FORMS"
+  STR_ALIEN_RESEARCH_UC: "ALIEN BIOLOGY AND LORE"
 
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-COM project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
