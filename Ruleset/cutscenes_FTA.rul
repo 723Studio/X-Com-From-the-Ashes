@@ -14,26 +14,26 @@ cutscenes:
       slides:
         - imagePath: Resources/Slides/Intro2/intro2_1.png
           caption: STR_INTRO2_SLIDE1_CAPTION
-          captionSize: [160, 184]
-          captionPos: [3, 3]
+          captionSize: [314, 192]
+          captionPos: [3, 65]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_2.png
           caption: STR_INTRO2_SLIDE2_CAPTION
-          captionSize: [110, 184]
+          captionSize: [120, 192]
           captionPos: [3, 3]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_3.png
           caption: STR_INTRO2_SLIDE3_CAPTION
-          captionSize: [160, 184]
-          captionPos: [3, 3]
+          captionSize: [122, 192]
+          captionPos: [195, 3]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_4.png
           caption: STR_INTRO2_SLIDE4_CAPTION
-          captionSize: [160, 184]
+          captionSize: [160, 192]
           captionPos: [3, 3]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_5.png
           caption: STR_INTRO2_SLIDE5_CAPTION
-          captionSize: [160, 184]
-          captionPos: [3, 3]
+          captionSize: [234, 192]
+          captionPos: [43, 70]
           captionColor: 244

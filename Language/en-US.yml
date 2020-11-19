@@ -114,9 +114,14 @@ en-US:
   STR_INCOMING_ALLY_REINFORCEMENTS: "Our reinforcements arrived!"
   STR_ITEMS_RECOVERED: "ITEMS RECOVERED"
   STR_OBJECTIVE_SECURED: "OBJECTIVE SECURED"
-  STR_LIVE_ALIENS_SURRENDERED: "LIVE ENEMIES SURRENDERED" #TODO change code!
+  STR_LIVE_ALIENS_SURRENDERED: "LIVE ENEMIES SURRENDERED" #TODO change after code fixed !
   STR_LIVE_ALIENS_RECOVERED: "LIVE ENEMIES RECOVERED"
   STR_ALIEN_CORPSES_RECOVERED: "ENEMY CORPSES RECOVERED"
+  STR_STUFF_NO_MONEY1: STR_STUFF_NO_MONEY1 #TODO
+  STR_STUFF_NO_MONEY2: STR_STUFF_NO_MONEY2 #TODO
+  STR_STUFF_NO_MONEY5: STR_STUFF_NO_MONEY5 #TODO
+  STR_STUFF_NO_MONEY10: STR_STUFF_NO_MONEY10 #TODO
+  STR_STUFF_NO_MONEY20: STR_STUFF_NO_MONEY20 #TODO
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
   STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation, it's very important to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tune to ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   #mana stuff
@@ -192,6 +197,8 @@ en-US:
   STR_XCOM_REPORTS_UC: "X-COM REPORTS"
   STR_ALIEN_LIFE_FORMS: "ENEMIES AND ALIEN LIFE FORMS"
   STR_ALIEN_RESEARCH_UC: "ALIEN BIOLOGY AND LORE"
+  STR_XCOM_PROJECT_MONTHLY_REPORT: "Monthly Report"
+  STR_COUNCIL_REDUCE_DEBTS: 
 
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-COM project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
@@ -248,6 +255,8 @@ en-US:
   STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't clearly tell us who he is and how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent, but we're pretty sure he's not lying. Unfortunately, all attempts to get more information have led to nothing."
   STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
   STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
+  STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
+  STR_SEEKER_DRONE_UFOPEDIA: "To be done" #TODO
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."

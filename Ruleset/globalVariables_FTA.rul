@@ -1,14 +1,14 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
 
 #Campaign
-startingTime:
-  second: 34
-  minute: 15
-  hour: 14
-  weekday: 1 #4
-  day: 1 #10
-  month: 3
-  year: 1999
+# startingTime:
+#   second: 34
+#   minute: 15
+#   hour: 14
+#   weekday: 1 #4
+#   day: 1 #10
+#   month: 3
+#   year: 1999
 initialFunding: 580
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
@@ -111,6 +111,18 @@ loyaltySettings:
   coefAlienMission: 110
   coefUfo: 70
   coefAlienBase: 65
+  noFundsPenalty: 300
+  noFundsValue: -50000
+
+loyaltyRatings:
+   5000: STR_L_RATING_AMAZING
+   2000: STR_L_RATING_PERFECT
+   1000: STR_L_RATING_VERY_GOOD
+   500: STR_L_RATING_GOOD
+   250: STR_L_RATING_OK
+   0: STR_L_RATING_MEH
+   -350: STR_L_RATING_BAD
+   -99999: STR_L_RATING_TERRIBLE
 
 fixedUserOptions:
   customInitialBase: false
@@ -140,8 +152,6 @@ recommendedUserOptions:
   strafe: true
   noAlienPanicMessages: true
 
-
-#geoscape
 
 
 

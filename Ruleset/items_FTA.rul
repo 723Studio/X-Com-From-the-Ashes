@@ -146,8 +146,8 @@ items:
     listOrder: 18520
 
 #throwing
-  - type: STR_THROWING_KNIVE
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE]
+  - type: STR_THROWING_KNIFE
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.06
@@ -245,7 +245,7 @@ items:
     landOnly: true
     bigSprite: 345
     floorSprite: 345
-    handSprite: 430
+    handSprite: 432
     bulletSprite: 1
     fireSound: 64
     compatibleAmmo:
@@ -276,7 +276,7 @@ items:
     landOnly: true
     bigSprite: 346
     floorSprite: 346
-    handSprite: 436
+    handSprite: 440
     hitSound: 22
     hitAnimation: 26
     power: 24
@@ -296,7 +296,7 @@ items:
     costSell: 1500
     weight: 5
     landOnly: true
-    bigSprite: 3
+    bigSprite: 367
     floorSprite: 3
     handSprite: 96
     bulletSprite: 1
@@ -948,7 +948,7 @@ items:
     attraction: 7
     listOrder: 22460
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT
@@ -1131,7 +1131,7 @@ items:
     attraction: 8
     listOrder: 22530
   - type: STR_SHOTGUN_SHELLS_BS
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
       - STR_TODOIUM
     size: 0.01
@@ -1155,7 +1155,7 @@ items:
     attraction: 8
     listOrder: 22540
   - type: STR_SHOTGUN_SHELLS_AP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
       - STR_TODOIUM
     size: 0.01
@@ -1175,7 +1175,7 @@ items:
     attraction: 8
     listOrder: 22550
   - type: STR_SHOTGUN_SHELLS_BATON
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS]
     requiresBuy:
       - STR_TODOIUM
     size: 0.01
@@ -1200,7 +1200,7 @@ items:
     attraction: 8
     listOrder: 22555
   - type: STR_SHOTGUN_SHELLS_BS_AA
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     size: 0.01
     costSell: 800
     weight: 3
@@ -1221,7 +1221,7 @@ items:
     attraction: 8
     listOrder: 22560
   - type: STR_SHOTGUN_SHELLS_AP_AA
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     size: 0.01
     costSell: 1050
     weight: 3
@@ -1788,9 +1788,9 @@ items:
     bigSprite: 317
     floorSprite: 317
     handSprite: 272
-    bulletSprite: 0 #18 awguns
+    bulletSprite: 0 #18 awg
     bulletSpeed: 3
-    hitSound: 0 #138 awguns
+    hitSound: 0 #138 awg
     hitAnimation: 0
     fireSound: 69
     accuracyAuto: 0
@@ -1902,7 +1902,7 @@ items:
     attraction: 8
     listOrder: 33990
   - type: STR_INCENDIARY_ROCKET
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE]
     requiresBuy:
       - STR_TODOIUM
     size: 0.2
@@ -2261,7 +2261,7 @@ items:
   - type: STR_UNARMED
     categories: [STR_BUILT_INS]
     weight: 0
-    bigSprite: 822
+    bigSprite: 340
     meleeHitSound: 109
     meleeAnimation: 0
     power: 0
@@ -2679,7 +2679,7 @@ items:
     recover: true
     listOrder: 67800
   - type: STR_RESISTANCE_RADIO_REMAINS
-    categories: [STR_REMAINS]
+    categories: [STR_WRECKS]
     name: STR_CORPSE
     size: 0.4
     costSell: -1000

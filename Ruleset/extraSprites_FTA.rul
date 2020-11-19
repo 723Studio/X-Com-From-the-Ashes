@@ -235,6 +235,7 @@ extraSprites:
       364: Resources/Armors/Enemies/Monsters/bigob_JabberWeapon.png
       365: Resources/MiscItems/bigob_FakeID.png
       366: Resources/Weapons/Earthbound/Faction/bigob_Sword.png
+      367: Resources/Weapons/Earthbound/Xcom/bigob_Pistol.png
       
   - type: FLOOROB.PCK
     files:
@@ -305,6 +306,7 @@ extraSprites:
       363: Resources/Weapons/Earthbound/Faction/floorob_ExplosiveCharge.png
       365: Resources/MiscItems/floorob_FakeID.png
       366: Resources/Weapons/Earthbound/Faction/floorob_Sword.png
+      367: Resources/Weapons/Earthbound/Faction/floorob_Sword.png #duplicate as 367 is used
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -478,12 +480,20 @@ extraSprites:
       0: Resources/Backgrounds/FOREST_DARK.png
 
 #enemies
-  - type: UFOPEDIA_IMG_MIB_AGENT
+  - type: UFOPEDIA_IMG_MIB_AGENT_CPAL
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/Enemies/ufopedia_MIB_AGENT.png  
+      0: Resources/UfopediaPics/Enemies/ufopedia_MIB_AGENT_CPAL.png  
+
+  - type: UFOPEDIA_SEEKER_DRONE_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_SeekerDrone_CPAL.png 
+
   - type: UFOPEDIA_IMG_FACEHUGGER
     singleImage: true
     width: 320

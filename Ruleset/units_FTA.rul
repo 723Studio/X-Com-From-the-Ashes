@@ -521,7 +521,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 22
-      mana: 5
+      mana: 0
     statsRandom:
       tu: 5
       stamina: 15
@@ -533,7 +533,7 @@ units:
       strength: 10
       psiStrength: 50
       melee: 25
-      mana: 5
+      mana: 0
     armor: STR_RESISTANCE_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14 

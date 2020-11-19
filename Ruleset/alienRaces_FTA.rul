@@ -32,7 +32,7 @@ alienRaces:
       - STR_MIB_AGENT # 13 - Non-Combatant 2
       - STR_MIB_AGENT # 14 - Special Guest 3
 
-  - id: STR_ZOMBIES
+  - id: STR_MIB
     members:
       - STR_ZOMBIE_STERILE_TERRORIST # 0 - Commander
       - STR_ZOMBIE_STERILE_TERRORIST # 1 - Leader

@@ -22,7 +22,7 @@ research:
 #technical part
   - name: STR_HELLO #hardcoded, do not rename! used to start the game property
     needItem: true
-  - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at something not avalible to be discovered in the game
+  - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at something not available to be discovered in the game
     needItem: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
     needItem: true
@@ -337,6 +337,11 @@ research:
       STR_PRISONER_INTERROGATIONS: #TODO ADD MORE LORE HERE!
         - STR_FRESH_MIB_AGENT
     listOrder: 146000
+  - name: STR_SEEKER_DRONE_TERRORIST #TODO
+    requiresBaseFunc: [INTLAB]
+    cost: 60
+    points: 100
+    needItem: true
 #enemies - creatures
   - name: STR_FACEHUGGER_CORPSE
     requiresBaseFunc: [BIOLAB]

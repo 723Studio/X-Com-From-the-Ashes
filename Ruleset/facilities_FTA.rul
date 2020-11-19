@@ -21,7 +21,7 @@ facilities:
   - type: STR_HQ
     spriteShape: 1
     spriteFacility: 300
-    provideBaseFunc: [HQ, INTLAB]
+    provideBaseFunc: [HQ, INTLAB, BIOLAB]
     maxAllowedPerBase: 1
     requires:
       - STR_FACILITIES_BLUEPRINTS
@@ -58,7 +58,7 @@ facilities:
     spriteShape: 1
     spriteFacility: 302
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 140000
     buildTime: 20
     monthlyCost: 35000
@@ -73,7 +73,7 @@ facilities:
     spriteFacility: 303
     maxAllowedPerBase: 1
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 450000
     buildTime: 22
     monthlyCost: 30000
@@ -103,7 +103,7 @@ facilities:
     spriteShape: 2
     spriteFacility: 17
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     manaRecoveryPerDay: 1
     lift: true
     buildCost: 300000
@@ -114,7 +114,7 @@ facilities:
     spriteShape: 1
     spriteFacility: 18
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 400000
     buildTime: 16
     monthlyCost: 10000
@@ -128,7 +128,7 @@ facilities:
     spriteShape: 1
     spriteFacility: 24
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 150000
     buildTime: 10
     monthlyCost: 5000
@@ -146,7 +146,7 @@ facilities:
     spriteShape: 9
     spriteFacility: 9
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     canBeBuiltOver: true
     size: 2
     buildCost: 200000
@@ -161,7 +161,7 @@ facilities:
     spriteShape: 1
     spriteFacility: 19
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     buildCostItems:
      STR_LABORATORY_EQUIPMENT:
        build: 5
@@ -175,7 +175,7 @@ facilities:
     spriteShape: 1
     spriteFacility: 20
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 800000
     buildTime: 32
     monthlyCost: 35000
@@ -185,7 +185,7 @@ facilities:
     spriteShape: 2
     spriteFacility: 21
     requires:
-      - STR_FACILITIES_BLUEPRINT
+      - STR_FACILITIES_BLUEPRINTS
     buildCost: 500000
     buildCostItems:
      STR_RADAR_SYSTEM:

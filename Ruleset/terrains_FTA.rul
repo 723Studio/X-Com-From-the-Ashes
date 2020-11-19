@@ -1,6 +1,7 @@
 terrains:
   - delete: XBASE
   - delete: CULTA  
+  
   - name: XBASE
     mapDataSets:
       - BLANKS
@@ -394,11 +395,11 @@ terrains:
       # - STR_MALE_CIVILIAN_FARMER
       # - STR_MALE_CIVILIAN_FARMER
       # - STR_MALE_CIVILIAN_FARMER
-      # - STR_FEMALE_CIVILIAN_FARMER
-      # - STR_FEMALE_CIVILIAN_FARMER
-      # - STR_FEMALE_CIVILIAN_FARMER
-      # - STR_FEMALE_CIVILIAN_FARMER
-      # - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
       # - STR_PRIEST
       # - STR_MALE_DOCTOR
       # - STR_FEMALE_DOCTOR
@@ -413,18 +414,6 @@ terrains:
       # - STR_DOGE
       # - STR_DOGE
       # - STR_DOGE
-      # - STR_COW
-      # - STR_COW
-      # - STR_COW
-      # - STR_PIG
-      # - STR_PIG
-      # - STR_PIG
-      # - STR_SHEEP
-      # - STR_SHEEP
-      # - STR_SHEEP
-      # - STR_CHICKEN
-      # - STR_CHICKEN
-      # - STR_CHICKEN
     script: RURAL
     mapBlocks: &AnchorRural
       - name: VILBAN00
@@ -584,16 +573,6 @@ terrains:
       - name: VILBAN57
         width: 10
         length: 10
-  - name: RURAL2
-    mapDataSets:
-      - BLANKS
-      - VILROADS2
-      - VILBITS2
-      - VILBAN2
-      - VILFRNITURE2
-    civilianTypes:
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *AnchorRural
   - name: MIB_SEWERS
     mapDataSets:
       - BLANKS

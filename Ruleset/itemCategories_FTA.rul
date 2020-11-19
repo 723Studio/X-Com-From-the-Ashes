@@ -63,12 +63,16 @@
     listOrder: 220
   - type: STR_GRENADES
     listOrder: 230
-  - type: STR_MEDICAL
+  - type: STR_MEDICAL 
     listOrder: 240
+  - type: STR_UTILITY 
+    listOrder: 245
   - type: STR_EQUIPMENT
     listOrder: 250
+  - type: STR_COVERT_TOOLS
+    listOrder: 254
   - type: STR_ACCESSORIES
-    listOrder: 255
+    listOrder: 257
   - type: STR_JUNK
     listOrder: 265
   - type: STR_SHIELDS

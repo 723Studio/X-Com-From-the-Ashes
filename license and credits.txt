@@ -10,6 +10,11 @@ I am also ordered some art assets from professional pixel-artists in order to pr
 Engineer_Chief.png
 Intel_lady.png
 RnD_Chief.png
+intro2_2.png
+intro2_3.png
+ufopedia_SeekerDrone_CPAL.png
+ufopedia_MIB_AGENT_CPAL.png
+ufopedia_SeekerDrone_autopsy_CPAL.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under CC BY-NC-SA 4.0
 
