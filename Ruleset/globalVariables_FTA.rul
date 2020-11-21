@@ -9,7 +9,7 @@
 #   day: 1 #10
 #   month: 3
 #   year: 1999
-initialFunding: 580
+initialFunding: 0
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
 ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered
@@ -97,7 +97,7 @@ constants:
 mana:
   enabled: false #true #TODO
   battleUI: true
-  unlockResearch: STR_TODOIUM
+  unlockResearch: STR_TODOIU
   trainingPrimary: false
   trainingSecondary: false
   woundThreshold: 200             # default is 200

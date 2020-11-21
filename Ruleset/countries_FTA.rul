@@ -15,3 +15,10 @@ countries:
   - delete: STR_SOUTH_AFRICA
   - delete: STR_EGYPT
   - delete: STR_CANADA
+  - type: STR_PLACEHOLDER_COUNTRY
+    fundingBase: 0
+    fundingCap: 0
+    labelLon: 227
+    labelLat: 17
+    areas:
+      - [227, 227, 17, 17]

@@ -6,8 +6,8 @@ crafts:
   - delete: STR_AVENGER
 #starting crafts
   - type: STR_DRAGONFLY #TODO
-    requires:
-      - STR_DRAGONFLY
+    # requires:
+    #   - STR_DRAGONFLY
     sprite: 800
     damageMax: 50
     speedMax: 560
