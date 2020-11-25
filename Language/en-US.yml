@@ -15,7 +15,7 @@ en-US:
   STR_RESISTANCE: "Resistance"
   STR_VOID_CORP: "VOID Corp."
   STR_ENIGMA: "Enigma"
-  STR_RESISTANCE_DESCRIPTION: "A group of people who do not want to submit to an alien invasion and are extremely hostile to any of their accomplices. They help people who have become the target of extermination, seek to survive in a rapidly changing world and sabotage aliens' sinister plans. To achieve their goals, they rely on a network of guerrilla cells, and they value self-sacrifice and courage in people."
+  STR_RESISTANCE_DESCRIPTION: "A group of people who do not want to submit to an alien invasion and are extremely hostile to any of their accomplices. They help those who have become the target of persecution, seek to survive in a rapidly changing world and sabotage aliens' sinister plans. To achieve their goals they rely on a network of guerrilla cells, and they value self-sacrifice and courage in people."
   STR_VOID_CORP_DESCRIPTION: "STR_VOID_CORP_DESCRIPTION" 
   STR_ENIGMA_DESCRIPTION: "STR_ENIGMA_DESCRIPTION"
 #UI
@@ -27,7 +27,7 @@ en-US:
   STR_SELL_SACK_UC: "DIPLOMACY"
   STR_PURCHASE_RECRUIT: "COVERT OPERATIONS"
   STR_DIPLOMACY_RELATIONS: "Diplomacy Relations"
-  STR_WE_CANT_BUILD_BASE: "CURRENTLY WE CAN'T BUILD ANOTHER BASE"
+  STR_WE_CANT_BUILD_BASE: "CURRENTLY WE CANNOT BUILD ANOTHER BASE"
   STR_INFO: "INFO"
   STR_PURCHASE: "PURCHASE"
   STR_NEGOTIATION: "NEGOTIATION"
@@ -73,7 +73,7 @@ en-US:
   STR_SUCCESS_US: "SUCCESS"
   STR_FAILURE_US: "FAILURE"
   STR_DETAILS_BUTTON: "Details"
-  STR_NOT_ENOUGH_OPERATION_SPACE: "Soldiers number exceeds the limit for the operation!"
+  STR_NOT_ENOUGH_OPERATION_SPACE: "Selected personel exceeds the limit for the operation!"
   STR_NOT_ENOUGH_SCIENTISTS: "There is no free scientists on the base!"
   STR_NOT_ENOUGH_ENGINEERS: "There is no free engineers on the base!"
   STR_OVER_ITEM_SIZE_LIMIT:
@@ -124,7 +124,7 @@ en-US:
   STR_STUFF_NO_MONEY10: STR_STUFF_NO_MONEY10 #TODO
   STR_STUFF_NO_MONEY20: STR_STUFF_NO_MONEY20 #TODO
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
-  STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation, it's very important to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tune to ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
+  STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation! It's very important for me to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tuned for ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   #mana stuff
   STR_MANA: "MANA"
   STR_MANA_POOL: "MANA POOL"
@@ -153,7 +153,7 @@ en-US:
   STR_DAMAGE_14: "PRESSURE"
   STR_DAMAGE_15: "BIO"
   STR_DAMAGE_ARMOR_PIERCING_TOPIC: "Kinetic Damage"
-  STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: Weapons with kinetic damage are one of the most reliable and common types of weapons that we use. Kinetic damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding gases). When hitting a certain part of the enemy's body, it can cause bleeding, and the resulting damage reduces its combat ability. Due to the widespread of this type of weapons symmetrically develop means of armor, which represents a significant defense against kinetic damage.  Some types of weapons have a certain armor penetration rate, which depends mainly on the projectile kind and its speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective protection against kinetic damage.
+  STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: Weapons dealing kinetic damage are one of the most reliable and common types of weapons we use use. This type of damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding propellant gases). It can cause bleeding on impact and the resulting damage reduces target's combat ability. Due to the widespread of this type of weapons varous means to protect from them are just as common.  Some types of weapons have a certain armor penetration rate, which depends mainly on the type of the projectile and it's speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective protection against kinetic damage.
   STR_DAMAGE_INCENDIARY_TOPIC: "Incendiary Damage"
   STR_DAMAGE_INCENDIARY_UFOPEDIA: 
   STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC: "High Explosive Damage"
@@ -202,11 +202,11 @@ en-US:
   STR_COUNCIL_REDUCE_DEBTS: 
 
 #cutscenes
-  STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-COM project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
+  STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of it's members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as  the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens and it seems that they are trying to cover up any traces of their activity."
   STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
-  STR_INTRO2_SLIDE3_CAPTION: "All colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal, and there was a steep decrease of empathy. We have already documented such personality changes of some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
-  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, he was not a trained spy and was caught trying to back up the Ufopedia. An MiB agent shot him on sight, and the Commander didn't even blink!"
-  STR_INTRO2_SLIDE5_CAPTION: "There are still people who are loyal to fighting the alien invasion. To arms!"
+  STR_INTRO2_SLIDE3_CAPTION: "All of his colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal and there was a steep decrease of empathy. We have already documented such personality changes of some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
+  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, espionage was not his main field and he was caught trying to back up the Ufopedia. An MiB agent shot him on sight, and the Commander didn't even blink!"
+  STR_INTRO2_SLIDE5_CAPTION: "There are still people loyal to our cause of driving the invaders back! To arms!"
 #facilities
   STR_HQ: "Headquarters"
   STR_PRISON_CELLS: "Prison Cells"
@@ -214,7 +214,7 @@ en-US:
   STR_SICK_BAY: "Sick Bay"
   STR_CLOSED_LAB: "Closed Laboratory"
 #missions
-  STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them, who is most likely under the mind control. We must stop the intruders at all costs, retreating now would mean final defeat."
+  STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "MIB Regional HQ"
   STR_ALERT_MIB_REGIONAL_HQ: STR_ALERT_MIB_REGIONAL_HQ #TODO
   STR_MIB_REGIONAL_HQ_DESCRIPTION: STR_MIB_REGIONAL_HQ_DESCRIPTION #TODO
@@ -242,25 +242,25 @@ en-US:
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to the 1st Hangar."
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies running low!"
-  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies on our base. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our men alive."
+  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our forces alive."
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: #TODO
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
-  STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defence"
+  STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
   STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION: #TODO
 
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "MiB Agent"
-  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't clearly tell us who he is and how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent, but we're pretty sure he's not lying. Unfortunately, all attempts to get more information have led to nothing."
+  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't tell us who he is and how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent, but we're pretty sure he's not lying. Unfortunately, all attempts to get more information have led to nothing."
   STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
   STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
   STR_SEEKER_DRONE_UFOPEDIA: "To be done" #TODO
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
-  STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."
+  STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He shows aggression and refuses to communicate at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic as, for example, he had a chance and bit off a finger of a former colleague."
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"
@@ -302,7 +302,7 @@ en-US:
 
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
-  STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon, used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knockout unarmored enemies.{NEWLINE}>Concealable" 
+  STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knockout unarmored enemies.{NEWLINE}>Concealable" 
   STR_COMBAT_KNIFE: "Combat knife"
   STR_COMBAT_KNIFE_UFOPEDIA: "This sharp and balanced fighting knife is very handy in close combat encounters and could be very deadly in well-trained hands.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
@@ -332,7 +332,7 @@ en-US:
   STR_RIFLE: "Precision Rifle"
   STR_RIFLE_UFOPEDIA: "This advanced precision rifle fills the engagement range gap between a regular assault rifle and a sniper rifle."
   STR_ASSAULT_RIFLE: "Assault Rifle"
-  STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is not the highest accuracy in long-range sights and not the best scope for Aimed firing."
+  STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is decreased effectiveness at longer distances, even with aimed, careful shots."
   STR_RIFLE_CLIP: "Rifle Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_HUNTING_RIFLE: "Hunting Rifle"
