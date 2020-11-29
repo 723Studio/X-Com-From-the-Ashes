@@ -2621,10 +2621,31 @@ items:
   - type: STR_JABBER_CORPSE
     categories: [STR_CORPSES]
     size: 0.1
-    costSell: 3000
+    costSell: 1500
     weight: 30
     bigSprite: 114
     floorSprite: 114
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 20
+    listOrder: 62300
+  - type: STR_CHUPACABRA
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 0 #TODO
+    costSell: 20000
+    listOrder: 115400
+  - type: STR_CHUPACABRA_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.1
+    costSell: 2000
+    weight: 30
+    bigSprite: 116
+    floorSprite: 116
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5

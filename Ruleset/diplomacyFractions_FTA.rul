@@ -5,7 +5,7 @@ diplomacyFactions:
     cardBackground: RESISTANCE_DIPLOMACY_CARD.SCR
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
-    startingReputation: 27
+    startingReputation: 270
     genMissionFreq: 50 #100% chance to run the script
     helpTreatyMissions:
       heavenDefenceFirstTime: 100

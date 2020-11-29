@@ -502,6 +502,35 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_JABBER_WEAPON
+  - type: STR_CHUPACABRA
+    race: STR_CHUPACABRA
+    rank: STR_LIVE_TERRORIST
+    stats: #TODO
+      tu: 90
+      stamina: 110
+      health: 30
+      bravery: 100
+      reactions: 75
+      firing: 0
+      throwing: 0
+      strength: 28
+      psiStrength: 50
+      psiSkill: 0
+      melee: 80
+    armor: STR_CHUPACABRA_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 10
+    # aggroSound: 123 #TODO
+    deathSound: 7 #TODO
+    # panicSound: 265
+    # berserkSound: 266
+    intelligence: 3
+    aggression: 4
+    energyRecovery: 35
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_JABBER_WEAPON #TODO
 
 
 #Resistance

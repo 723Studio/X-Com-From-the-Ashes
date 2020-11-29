@@ -270,7 +270,7 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP     
   - type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
-    race: STR_ADVENT_START #TODO
+    race: STR_MIB_REGIONAL_HQ
     width: 80
     length: 70
     height: 12
@@ -420,7 +420,7 @@ alienDeployments:
             []
 
   - type: STR_JABBER_HUNT
-    race: STR_JABBERES
+    race: STR_JABBER
     # civiliansByType:
     #   STR_MALE_CIVILIAN_FARMER: 2
     #   STR_FEMALE_CIVILIAN_FARMER: 1
@@ -472,7 +472,7 @@ alienDeployments:
             []
 
   - type: STR_JABBER_HUNT_TRAP
-    race: STR_JABBERES
+    race: STR_JABBER
     # civiliansByType:
     #   STR_MALE_CIVILIAN_FARMER: 2
     #   STR_FEMALE_CIVILIAN_FARMER: 1
@@ -523,7 +523,7 @@ alienDeployments:
             []
 
   - type: STR_GENERAL_TRAP
-    race: STR_ADVENT_START
+    race: STR_MIB
     #alternativeDeployment: STR_GENERAL_TRAP_ALT
     alternativeDeploymentResearch: STR_NONE
     width: 50
@@ -566,7 +566,7 @@ alienDeployments:
             []
 
   - type: STR_GENERAL_TRAP_ALT
-    race: STR_ADVENT_START
+    race: STR_MIB
     #alternativeDeployment: STR_GENERAL_TRAP_ALT
     alternativeDeploymentResearch: STR_NONE
     width: 50

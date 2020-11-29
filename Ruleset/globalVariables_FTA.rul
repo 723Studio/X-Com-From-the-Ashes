@@ -5,11 +5,11 @@
 #   second: 34
 #   minute: 15
 #   hour: 14
-#   weekday: 1 #4
-#   day: 1 #10
+#   weekday: 4
+#   day: 10
 #   month: 3
 #   year: 1999
-initialFunding: 0
+initialFunding: 532
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
 ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered
@@ -17,6 +17,7 @@ psiUnlockResearch: STR_PSIONIC
 allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70
 lessAliensDuringBaseDefense: true
+defeatFunds: -300
 gameOver: #TODO
   loseMoney: loseGame       # cutscene ID that should be played when the player loses due to poor economy management
   loseRating: loseGame      # cutscene ID that should be played when the player loses due to poor rating
@@ -88,7 +89,7 @@ ai:
 constants:
   extendedItemReloadCost: true
   extendedRunningCost: true
-  damageRange: 85 #for good or bad
+  damageRange: 80 #for good or bad
   extendedTerrainMelee: 4
   extendedUnderwaterThrowFactor: 60
   extendedMeleeReactions: 2
@@ -97,7 +98,7 @@ constants:
 mana:
   enabled: false #true #TODO
   battleUI: true
-  unlockResearch: STR_TODOIU
+  unlockResearch: STR_TODOIUM
   trainingPrimary: false
   trainingSecondary: false
   woundThreshold: 200             # default is 200
@@ -124,6 +125,15 @@ loyaltyRatings:
    -350: STR_L_RATING_BAD
    -99999: STR_L_RATING_TERRIBLE
 
+reputationLevels:
+   2000: STR_ALLY
+   500: STR_HONORED
+   250: STR_FRIENDLY
+   0: STR_NEUTRAL
+   -350: STR_UNFRIENDLY
+   -750: STR_HOSTILE
+   -1500: STR_HATED
+
 fixedUserOptions:
   customInitialBase: false
   storageLimitsEnforced: false
@@ -143,7 +153,7 @@ fixedUserOptions:
   weaponSelfDestruction: false
 
 recommendedUserOptions:
-  playIntro: false #TODO - remove
+  playIntro: false #TODO - set true
   aggressiveRetaliation: false
   allowBuildingQueue: false
   anytimePsiTraining: true

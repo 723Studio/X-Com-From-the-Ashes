@@ -251,11 +251,6 @@ research:
       - STR_ZOMBIE_GRUBAS_TERRORIST
 
 #Zombie arc
-  - name: STR_ZOMBIE_BIOLOGY
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_LIVE_INFECTOR
   - name: STR_INFECTOR_AUTOPSY
     cost: 0
     points: 15

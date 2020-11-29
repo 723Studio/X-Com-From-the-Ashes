@@ -916,6 +916,24 @@ ufopaedia:
     text: STR_FACEHUGGER_AUTOPSY_UFOPEDIA
     text_width: 149
     listOrder: 164100
+  - id: STR_CHUPACABRA #TODO
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    # requires:
+    #   - STR_CHUPACABRA
+    image_id: UFOPEDIA_IMG_CHUPACABRA_CPAL
+    text: STR_CHUPACABRA_UFOPEDIA #TODO
+    text_width: 158
+    listOrder: 164090
+  - id: STR_CHUPACABRA_AUTOPSY #TODO
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    # requires:
+    #   - STR_CHUPACABRA_AUTOPSY
+    image_id: UFOPEDIA_IMG_CHUPACABRA_AUTOPSY_CPAL
+    text: STR_CHUPACABRA_AUTOPSY_UFOPEDIA #TODO
+    text_width: 149
+    listOrder: 164100
   - id: STR_ZOMBIE_STERILE_TERRORIST
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
