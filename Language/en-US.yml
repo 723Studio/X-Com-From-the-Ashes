@@ -15,7 +15,7 @@ en-US:
   STR_RESISTANCE: "Resistance"
   STR_VOID_CORP: "VOID Corp."
   STR_ENIGMA: "Enigma"
-  STR_RESISTANCE_DESCRIPTION: "A group of people who do not want to submit to an alien invasion and are extremely hostile to any of their accomplices. They help people who have become the target of extermination, seek to survive in a rapidly changing world and sabotage aliens' sinister plans. To achieve their goals, they rely on a network of guerrilla cells, and they value self-sacrifice and courage in people."
+  STR_RESISTANCE_DESCRIPTION: "A group of people who do not want to submit to an alien invasion and are extremely hostile to any of their accomplices. They help those who have become the target of persecution, seek to survive in a rapidly changing world and sabotage aliens' sinister plans. To achieve their goals they rely on a network of guerrilla cells, and they value self-sacrifice and courage in people."
   STR_VOID_CORP_DESCRIPTION: "STR_VOID_CORP_DESCRIPTION" 
   STR_ENIGMA_DESCRIPTION: "STR_ENIGMA_DESCRIPTION"
 #UI
@@ -27,7 +27,7 @@ en-US:
   STR_SELL_SACK_UC: "DIPLOMACY"
   STR_PURCHASE_RECRUIT: "COVERT OPERATIONS"
   STR_DIPLOMACY_RELATIONS: "Diplomacy Relations"
-  STR_WE_CANT_BUILD_BASE: "CURRENTLY WE CAN'T BUILD ANOTHER BASE"
+  STR_WE_CANT_BUILD_BASE: "CURRENTLY WE CANNOT BUILD ANOTHER BASE"
   STR_INFO: "INFO"
   STR_PURCHASE: "PURCHASE"
   STR_NEGOTIATION: "NEGOTIATION"
@@ -73,9 +73,9 @@ en-US:
   STR_SUCCESS_US: "SUCCESS"
   STR_FAILURE_US: "FAILURE"
   STR_DETAILS_BUTTON: "Details"
-  STR_NOT_ENOUGH_OPERATION_SPACE: "Soldiers number exceeds the limit for the operation!"
-  STR_NOT_ENOUGH_SCIENTISTS: "There is no free scientists on the base!"
-  STR_NOT_ENOUGH_ENGINEERS: "There is no free engineers on the base!"
+  STR_NOT_ENOUGH_OPERATION_SPACE: "Selected personel exceeds the limit for the operation!"
+  STR_NOT_ENOUGH_SCIENTISTS: "There are no free scientists on the base!"
+  STR_NOT_ENOUGH_ENGINEERS: "There are no free engineers on the base!"
   STR_OVER_ITEM_SIZE_LIMIT:
     one: "NO MORE EQUIPMENT ALLOWED!{SMALLLINE}The maximum total size of items for this covert operation is exceeded.{NEWLINE}You can take items with a total size of less than {N}."
     other: "NO MORE EQUIPMENT ALLOWED!{SMALLLINE}The maximum total size of items for this covert operation is exceeded.{NEWLINE}You can take items with a total size of less than {N}."
@@ -124,7 +124,7 @@ en-US:
   STR_STUFF_NO_MONEY10: STR_STUFF_NO_MONEY10 #TODO
   STR_STUFF_NO_MONEY20: STR_STUFF_NO_MONEY20 #TODO
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
-  STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation, it's very important to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tune to ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
+  STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation! It's very important for me to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tuned for ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   #mana stuff
   STR_MANA: "MANA"
   STR_MANA_POOL: "MANA POOL"
@@ -153,7 +153,7 @@ en-US:
   STR_DAMAGE_14: "PRESSURE"
   STR_DAMAGE_15: "BIO"
   STR_DAMAGE_ARMOR_PIERCING_TOPIC: "Kinetic Damage"
-  STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: Weapons with kinetic damage are one of the most reliable and common types of weapons that we use. Kinetic damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding gases). When hitting a certain part of the enemy's body, it can cause bleeding, and the resulting damage reduces its combat ability. Due to the widespread of this type of weapons symmetrically develop means of armor, which represents a significant defense against kinetic damage.  Some types of weapons have a certain armor penetration rate, which depends mainly on the projectile kind and its speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective protection against kinetic damage.
+  STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: Weapons dealing kinetic damage are one of the most reliable and common types of weapons we use use. This type of damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding propellant gases). It can cause bleeding on impact and the resulting damage reduces target's combat ability. Due to the widespread use of this type of weapons, various means to protect from them are just as common.  Some types of weapons have a certain armor penetration rate, which depends mainly on the type of the projectile and it's speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective ways of protecting against kinetic damage.
   STR_DAMAGE_INCENDIARY_TOPIC: "Incendiary Damage"
   STR_DAMAGE_INCENDIARY_UFOPEDIA: 
   STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC: "High Explosive Damage"
@@ -202,11 +202,11 @@ en-US:
   STR_COUNCIL_REDUCE_DEBTS: "We can't pay bills!" #TODO - add fluff here! Original here - "The funding council is not happy with your financial position. You must reduce your debts below $1 million or the project will be terminated."
 
 #cutscenes
-  STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations is closing the X-COM project and terminating of all its activities. Perhaps this has something to do with the recent changes of Council membership, with several Council members facing clearly fabricated charges. Agents of a top secret intergovernmental organization known to us as the Men in Black have been assigned to the Council as exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and it seems that they are trying to cover up any traces of their activity."
+  STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of it's members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens and it seems that they are trying to cover up any traces of their activity."
   STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
-  STR_INTRO2_SLIDE3_CAPTION: "All colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal, and there was a steep decrease of empathy. We have already documented such personality changes of some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
-  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, he was not a trained spy and was caught trying to back up the Ufopedia. An MiB agent shot him on sight, and the Commander didn't even blink!"
-  STR_INTRO2_SLIDE5_CAPTION: "There are still people who are loyal to fighting the alien invasion. To arms!"
+  STR_INTRO2_SLIDE3_CAPTION: "All of his colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal and there was a steep decrease of empathy. We have already documented such personality changes in some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
+  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, espionage was not his main field and he was caught trying to back up the Ufopedia. An MiB agent shot him on sight, and the Commander didn't even blink!"
+  STR_INTRO2_SLIDE5_CAPTION: "There are still people loyal to our cause of driving the invaders back! To arms!"
 #facilities
   STR_HQ: "Headquarters"
   STR_PRISON_CELLS: "Prison Cells"
@@ -214,7 +214,7 @@ en-US:
   STR_SICK_BAY: "Sick Bay"
   STR_CLOSED_LAB: "Closed Laboratory"
 #missions
-  STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them, who is most likely under the mind control. We must stop the intruders at all costs, retreating now would mean final defeat."
+  STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "MIB Regional HQ"
   STR_ALERT_MIB_REGIONAL_HQ: STR_ALERT_MIB_REGIONAL_HQ #TODO
   STR_MIB_REGIONAL_HQ_DESCRIPTION: STR_MIB_REGIONAL_HQ_DESCRIPTION #TODO
@@ -242,25 +242,25 @@ en-US:
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to the 1st Hangar."
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies running low!"
-  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies on our base. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our men alive."
+  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our forces alive."
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: #TODO
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
-  STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defence"
+  STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
   STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION: #TODO
 
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "MiB Agent"
-  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't clearly tell us who he is and how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent, but we're pretty sure he's not lying. Unfortunately, all attempts to get more information have led to nothing."
+  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't tell us who he is nor how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent but, as far as we can tell, his story seems genuine. Unfortunately, all attempts to get more information have led to nothing."
   STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
   STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
   STR_SEEKER_DRONE_UFOPEDIA: "To be done" #TODO
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
-  STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. At every opportunity, he shows aggression and refuses to communicate. All of our interrogation methods have proven ineffective, and the method aliens use to remain control is still unclear to us. During the physical examination, there were no signs of any surgical intervention, all medical tests within the normal range (except for adrenaline). Safekeeping is problematic, for example, once he had a chance and bite off a finger of a former colleague."
+  STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He refuses to communicate and shows aggression at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to maintain control is still unclear to us. During the physical examination there were no signs of any surgical intervention, with all medical tests within the normal range (except for adrenaline). Safekeeping can be problematic as, for example, he had a chance to bite off a finger of a former colleague, which he took, successfully."
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"
@@ -302,7 +302,7 @@ en-US:
 
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
-  STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon, used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knockout unarmored enemies.{NEWLINE}>Concealable" 
+  STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knock out unarmored enemies.{NEWLINE}>Concealable" 
   STR_COMBAT_KNIFE: "Combat knife"
   STR_COMBAT_KNIFE_UFOPEDIA: "This sharp and balanced fighting knife is very handy in close combat encounters and could be very deadly in well-trained hands.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
@@ -312,18 +312,18 @@ en-US:
   STR_RIOT_PISTOL_UFOPEDIA: STR_RIOT_PISTOL_UFOPEDIA #TODO
   STR_RIOT_PISTOL_CLIP: "Riot Pistol Clip"
   STR_PISTOL: "SpecOps Pistol"
-  STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides good fire rate and accuracy on short distances.{NEWLINE}>Concealable"
+  STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides a good rate of fire and accuracy on short distances.{NEWLINE}>Concealable"
   STR_PISTOL_CLIP: "Pistol Clip"
   STR_PISTOL_AA_CLIP: "Pistol AA Clip"
   STR_MACHINE_PISTOL: "Machine Pistol"
   STR_MACHINE_PISTOL_UFOPEDIA: "To be done.{NEWLINE}>Concealable" #TODO
   STR_MACHINE_PISTOL_CLIP: "Machine Pistol"
   STR_PDW: "Personal Defense Weapon"
-  STR_PDW_UFOPEDIA: "A hybrid between a submachine gun and an assault rifle. It utilizes scaled-down intermediate rifle cartridge, which gives better effective range, accuracy, and armor-penetrating capability than submachine guns.{NEWLINE}>Concealable"
+  STR_PDW_UFOPEDIA: "A hybrid between a submachine gun and an assault rifle. It utilizes a scaled-down intermediate rifle cartridge, which offers better effective range, accuracy, and armor-penetrating capability than pistol-caliber submachine guns.{NEWLINE}>Concealable"
   STR_PDW_CLIP: "PDW Clip"
   STR_PDW_AA_CLIP: "PDW AA Clip"
   STR_SMG: "Submachine Gun"
-  STR_SMG_UFOPEDIA: "This lightweight weapon optimized for the short combat ranges. Fills the role of pistol and carbine easily, being able to be fired accurately with one hand.{NEWLINE}>Concealable"
+  STR_SMG_UFOPEDIA: "This lightweight weapon is optimized for close combat . Fills the role of pistol and carbine easily while being able to be fired accurately with one hand.{NEWLINE}>Concealable"
   STR_SMG_CLIP: "SMG Clip"
   STR_SMG_AA_CLIP: "SMG AA Clip"
   STR_RIOT_RIFLE: "Riot Rifle"
@@ -332,14 +332,14 @@ en-US:
   STR_RIFLE: "Precision Rifle"
   STR_RIFLE_UFOPEDIA: "This advanced precision rifle fills the engagement range gap between a regular assault rifle and a sniper rifle."
   STR_ASSAULT_RIFLE: "Assault Rifle"
-  STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is not the highest accuracy in long-range sights and not the best scope for Aimed firing."
+  STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is decreased effectiveness at longer distances, even with Aimed, careful shots."
   STR_RIFLE_CLIP: "Rifle Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_HUNTING_RIFLE: "Hunting Rifle"
   STR_HUNTING_RIFLE_UFOPEDIA: STR_HUNTING_RIFLE_UFOPEDIA #TODO
   STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip"
   STR_SNIPER_RIFLE: "Sniper Rifle"
-  STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy on a long distance. The enlarged projectiles have high initial velocity can penetrate medium armor pretty easily. However, it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
+  STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy at long distances. The enlarged projectiles have high initial velocity and can penetrate medium armor easily. However it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
   STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
   STR_SNIPER_RIFLE_AA_CLIP: "Sniper Rifle AA Clip"
   STR_SAWED_OFF: "Sawed-Off"
@@ -350,19 +350,19 @@ en-US:
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
   STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "A classic shotgun, used by police forces as well as civilians in some countries for self-defense."
   STR_PUMP_ACTION_SHELLS: "Pump Action BS Ammo"
-  STR_SEMI_AUTO_SHOTGUN: "Semi-auto Shotgun"
-  STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "This shotgun is able to fire a shell after every trigger pull, without needing to manually chamber another round. Thus, the rate of fire increases significantly, but accuracy decreases slightly due to the high recoil, compared to the pump-action shotgun."
+  STR_SEMI_AUTO_SHOTGUN: "Semiauto Shotgun"
+  STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "This shotgun is able to fire a shell after every trigger pull, without needing to manually chamber the next round. Thus, the rate of fire increases significantly but accuracy decreases slightly due to the high recoil in comparison to the pump-action shotgun."
   STR_SHOTGUN: "SpecOps Shotgun"
-  STR_SHOTGUN_UFOPEDIA: "This shotgun was designed specifically for elite special forces units and used as an effective breaching weapon. It has a unique mechanism for loading charges and switching fire modes, which allows the use of various special ammunition."
+  STR_SHOTGUN_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
   STR_SHOTGUN_CONT: "SpecOps Shotgun (continued)"
-  STR_SHOTGUN_CONT_UFOPEDIA: "This shotgun was designed specifically for elite special forces units and used as an effective breaching weapon. It has a unique mechanism for loading charges and switching fire modes, which allows the use of various special ammunition."
+  STR_SHOTGUN_CONT_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
   STR_SHOTGUN_SHELLS_BS: "Shotgun BS Ammo"
   STR_SHOTGUN_SHELLS_AP: "Shotgun AP Shells"
   STR_SHOTGUN_SHELLS_BATON: "Shotgun Baton Shells"
   STR_SHOTGUN_SHELLS_BS_AA: "Shotgun AA-BS Ammo"
   STR_SHOTGUN_SHELLS_AP_AA: "Shotgun AA-AP Shells"
   STR_LIGHT_CANNON: "Light Cannon."
-  STR_LIGHT_CANNON_UFOPEDIA: "This high-caliber hand weapon can use armor-piercing, slug, high-explosive and incendiary ammo. It has great stopping power and it's AP rounds can penetrate medium armor."
+  STR_LIGHT_CANNON_UFOPEDIA: "This high-caliber hand weapon can use armor-piercing, buckshot, high-explosive and incendiary ammo. It has great stopping power and it's AP rounds can penetrate medium armor."
   STR_LIGHT_CANNON_CONT: "Light Cannon (Continued)"
   STR_LC_AP_AMMO: "LC-AP Ammo"
   STR_LC_BS_AMMO: "LC-BS Ammo"
@@ -371,7 +371,7 @@ en-US:
   STR_LC_AA_AMMO: "LC-AA Ammo"
   STR_LC_BS_AA_AMMO: "LC-BS-AA Ammo"
   STR_HEAVY_CANNON: "Heavy Cannon"
-  STR_HEAVY_CANNON_UFOPEDIA: "This high-caliber heavy cannon has tremendous destruction potential and combines power and versatility of use, as it can use special ammunition, and standard armor-piercing rounds are effective against even heavy armor."
+  STR_HEAVY_CANNON_UFOPEDIA: "This high-caliber heavy cannon provides tremendous destructive potential and combines power and versatility as it can use special ammunition, and standard armor-piercing rounds are effective against even heavy armor."
   STR_HEAVY_CANNON_CONT: "Heavy Cannon (continued)"
   STR_HC_AP_AMMO: "HC-AP Clip"
   STR_HC_BS_AMMO: "HC-BS Clip"
@@ -380,7 +380,7 @@ en-US:
   STR_HC_AA_AMMO: "HC-AA-AP Clip"
   STR_HC_AA_BS_AMMO: "HC-AA-BS Clip"
   STR_AUTO_CANNON: "Auto-Cannon"
-  STR_AUTO_CANNON_UFOPEDIA: "The Auto-Cannon combines the versatility and power of a heavy cannon with a faster fire rate in devastating burst, that can be sprayed in a cone. As other cannons can be armed with armor-piercing rounds, slugs, explosive and incendiary ammo."
+  STR_AUTO_CANNON_UFOPEDIA: "The Auto-Cannon combines the versatility and power of a heavy cannon with a higher fire rate of a devastating burst that can be sprayed in a cone. Like other cannons it can be armed with armor-piercing, buckshot, explosive and incendiary ammo."
   STR_AUTO_CANNON_CONT: "Auto-Cannon (continued)"
   STR_AC_AP_AMMO: "AC-AP Clip"
   STR_AC_BS_AMMO: "AC-BS Clip"
@@ -396,13 +396,13 @@ en-US:
   STR_LARGE_ROCKET: "Large Rocket"
   STR_INCENDIARY_ROCKET: "Incendiary Rocket"
   STR_GRENADE: "Grenade"
-  STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precision control.{NEWLINE}>Concealable"
+  STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precise control.{NEWLINE}>Concealable"
   STR_SMOKE_GRENADE: "Smoke Grenade"
   STR_SMOKE_GRENADE_UFOPEDIA: "Smoke grenades are useful for providing cover in exposed combat situations. Use with care because they can benefit the enemy as well.{NEWLINE}>Concealable"
   STR_PROXIMITY_GRENADE: "Proximity Grenade"
   STR_PROXIMITY_GRENADE_UFOPEDIA: "A proximity grenade can be thrown like an ordinary grenade but is triggered by nearby movement after it lands. Great skill and care is required to use these devices properly.{NEWLINE}>Concealable"
   STR_FLASHBANG_GRENADE: "Flashbang Grenade"
-  STR_FLASHBANG_GRENADE_UFOPEDIA: "A Flashbang Grenade is designed to overwhelm a person's senses in order to blind and disorient them with a bright light coupled with a loud sound. Such non-lethal devices are in use by the army, law enforcement and special forces.{NEWLINE}A target hit by the grenade halves the number of available TUs, as well as decreases the Reactions by 25-35, Firing and Throwing by 20-30, and Melee by 10-20 for 2 turns.{NEWLINE}>Concealable"
+  STR_FLASHBANG_GRENADE_UFOPEDIA: "A Flashbang Grenade is designed to overwhelm a person's senses in order to blind and disorient them with a bright light coupled with a loud sound. Such non-lethal devices are in use by the army, law enforcement and special forces.{NEWLINE}A target hit by the grenade has it's available TUs halved, as well as decreased Reactions by 25-35, Firing and Throwing by 20-30, and Melee by 10-20 for 2 turns.{NEWLINE}>Concealable"
   STR_FIRST_AID: "First Aid"
   STR_FIRST_AID_UFOPEDIA: STR_FIRST_AID_UFOPEDIA #TODO
   STR_PAINKILLER: "Painkillers"
@@ -410,7 +410,7 @@ en-US:
   STR_STIMS: "Stims"
   STR_RESISTANCE_BASIC_EQUIPMENT: STR_RESISTANCE_BASIC_EQUIPMENT #TODO
   STR_MEDI_PACK: "Medipack"
-  STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
+  STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_TRAUMA_PACK: "Trauma Pack"
   STR_TRAUMA_PACK_UFOPEDIA: "This advanced First Aid Kit holds more healing supplies, is a bit faster to use and recovers a little more Stamina and Stun, but is significantly heavier. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_PUNCH: "Punch"
@@ -424,17 +424,17 @@ en-US:
   STR_STALKER_UFOPEDIA: "To be done" #TODO
 #ufopedia
   STR_LOG1: "Commander log #001"
-  STR_LOG1_UFOPEDIA: "As senior officer, I took command. I hope my experience is enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, remained men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation is no worse - we have lost a funding and supply source and know very little about our enemy. Apparently, alien agents have managed to infiltrate deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to go. We need to get reports from the chiefs of research, intelligence and logistics. Orders have already been submitted, it will take several hours for analysis. After that, it will be possible to plan further actions."
+  STR_LOG1_UFOPEDIA: "As a senior officer, I took command. I hope I'm experienced enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, remaining men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation overall is hardly better - we have lost the funding and supply source and know very little about our enemy. Apparently, alien agents have managed to infiltrate deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to do. We need to get reports from the chiefs of research, intelligence and logistics. Orders have already been submitted, it will take several hours for analysis. After that, it will be possible to plan further actions."
   STR_RND_STATUS_REPORT: "R&D Status Report"
-  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death, I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopaedia is encrypted, and that's what's bothering me the most right now. Jim, the data analyst, says there's still hope! I suggest we begin decrypting immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
+  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopaedia is encrypted, and that's what's bothering me the most right now but Jim, the data analyst, says there's still hope! I suggest we begin decrypting it immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
   STR_INTEL_STATUS_REPORT: "Intelligence Report"
-  STR_INTEL_STATUS_REPORT_UFOPEDIA: "Oh, Commander! Recent events have tied our hands entirely, all secret government communication channels have been cut off, we will have to build our agent network from scratch. You can assign a couple of scientists to set up new encrypted communication channels. It is essential to set up covert operations conducted by our agents to gather intelligence assets.{NEWLINE}Additionally, we can establish secure contact with our remaining friends, I have a few people I've been watching for a long time. Their help will be invaluable in the given circumstances."
+  STR_INTEL_STATUS_REPORT_UFOPEDIA: "Oh, Commander! Recent events have tied our hands entirely, all secret government communication channels have been cut off - we will have to build our agent network from scratch. You can assign a couple of scientists to set up new encrypted communication channels. It is essential to set up covert operations conducted by our agents to gather intelligence assets.{NEWLINE}Additionally, we can establish secure contact with our remaining friends, I have a few people I've been watching for a long time. Their help will be invaluable in the given circumstances."
   STR_ENGINEER_STATUS_REPORT: "Engineer's Report"
-  STR_ENGINEER_STATUS_REPORT_UFOPEDIA: "Greetings, Commander! Our base was in a very poor condition even before the attack. Due to a lack of funding, we were forced to close several facilities and sell off some valuable equipment. After closing the workshop, our production capacity is at a minimum, we are trying to assemble spare parts from improvised materials. It is absolutely unclear where we will get the supplies from now, at least the most basic ones. Intelligence has forbidden my guys to leave the base, and from where will we get everything we need for maintaining, not to mention building modules? Maybe R&D folks would think about the secure source of the general supplies?"
+  STR_ENGINEER_STATUS_REPORT_UFOPEDIA: "Greetings, Commander! Our base was in a very poor condition even before the attack. Due to a lack of funding, we were forced to close several facilities and sell off some valuable equipment. After closing the workshop our production capacity is at a minimum, we are trying to assemble spare parts from improvised materials. It is absolutely unclear where we will get the supplies from now, even the most basic ones. Intelligence has forbidden my guys to leave the base, and from where will we get everything we need for maintaining, not to mention building modules? Maybe R&D folks would think about the secure source of the general supplies?"
   STR_VEHICLES_STATUS_REPORT: "Vehicles Status"
-  STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have radar anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
+  STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have a radar system anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
   STR_PRISONER_INTERROGATIONS: "Prisoner Interrogations"
-  STR_PRISONER_INTERROGATIONS_UFOPEDIA: "I am proficient in many forms of interrogating suspects and believe that this is the most effective way to obtain crucial insights that will help shed light on unfolding events. While some suspects may not have any vital knowledge, I advise you to interrogate all our captives. In addition to strategic intelligence, this will help us determine specific combat features of our enemies and identify their strengths and vulnerabilities. Our prison can hold up to 10 human prisoners, but for more exotic creatures we will have to design suitable containment units according to their biology."
+  STR_PRISONER_INTERROGATIONS_UFOPEDIA: "I am proficient in many forms of interrogating suspects and I believe that this is the most effective way to obtain crucial insights that will help shed light on unfolding events. While some suspects may not have any vital knowledge, I advise you to interrogate all our captives. In addition to strategic intelligence, this will help us determine specific combat features of our enemies and identify their strengths and vulnerabilities. Our prison can hold up to 10 human prisoners, but for more exotic creatures we will have to design suitable containment units according to their biology."
   STR_UFOPEDIA_DECRYPTION: "Ufopaedia decryption"
   STR_UFOPEDIA: "Ufopaedia"
   STR_UFOPEDIA_UFOPEDIA: "We managed to break through the primary protection of the blocked Ufopaedia archive! Sadly, once we had accessed the system, we found inner layers of data encryption. One section seems to hold all the technical data on the equipment we use. It won't be difficult to decipher that part. The other is much better protected and it seems that only the commander had access to it before the lockdown. I can't say for sure, but it most likely contains strategic data about the project history and its formation background. Perhaps the analysis of past events will allow us to avoid these errors in the future."
@@ -445,22 +445,22 @@ en-US:
   STR_XCOM_LORE: "X-COM Secret Files"
   #STR_XCOM_LORE_UFOPEDIA: "STR_XCOM_LORE_UFOPEDIA" #probably not needed
   STR_COMMUNICATION: "Communication"
-  STR_COMMUNICATION_UFOPEDIA: "Most of the old government communication channels are no longer available to us, the rest are probably controlled by alien agents. Centralized use of direct radio links, even if encrypted, is not reasonable either - our enemies will be able to track the source of the signals and destroy it. Fortunately, we live in an age of booming decentralized computer networks! By hacking hundreds of thousands of personal computers online, our IT specialists have deployed an entire system of sophisticated proxy servers. Our encrypted messages are embedded in massive data flows and mixed with a vast amount of false messages being sent. Meanwhile, any attempt to track or intercept our traffic will immediately be detected and the data will be securely rerouted to another path, potentially enveloping the entire planet."
+  STR_COMMUNICATION_UFOPEDIA: "Most of the old government communication channels are no longer available to us, the rest are probably controlled by alien agents. Centralized use of direct radio links, even if encrypted, is not reasonable either - our enemies will be able to track the source of the signals and destroy it. Fortunately, we live in an age of booming decentralized computer networks! By hacking hundreds of thousands of personal computers online, our IT specialists have deployed an entire system of sophisticated proxy servers. Our encrypted messages are embedded in massive data flows and mixed with a vast amount of false messages being sent. Meanwhile, any attempt to track or intercept our traffic will immediately be detected and the data will be securely rerouted to another path, potentially enveloping the entire planet." #Onion routing FTW! -D
   STR_BASE_DEFENSE_COMBAT_ANALYSIS: "Base defense tactical analysis"
-  STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "Tactical analysis of the recent assault on our base has exposed several significant security vulnerabilities. Despite the fact that most of the complex is underground, some of its modules have a direct connection to the surface. The obvious point of enemy penetration into the base is the entry lift. In addition, our aircraft perform vertical take-off from the hangars. Despite our attempts to disguise the closing casements of our hangars, they can still be easily detected from the ground. Enemies blasted a few holes in the casements and went down on ropes inside. There is a good chance that our enemies will use the hangars to break into the base in the future as well. Unfortunately, these circumstances were not taken into account in the initial base design, and now we need to think about how to improve the defense systems, and also to pay more attention to the base layout."
-  STR_COVERT_OPERATIONS_UFOPEDIA: "Due to the clear dominance of our enemy, the preferred strategy will be keeping a low profile when dealing with important strategic tasks. We can send our agents to covert operations for more subtle methods of solving a problem than an aggressive attack. The secure channels we've developed allow us to coordinate agents remotely, and for some operations, it is also important to involve scientists for analytical work and engineers to design the special gear. A covert operation is always a risk, and in order to increase your success odds you should be careful when choosing your team and equipment, any little thing, in the end, can play a key role." 
+  STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "Tactical analysis of the recent assault on our base has exposed several significant security vulnerabilities. Despite the fact that most of the complex is underground, some of its modules have a direct connection to the surface. The obvious point of enemy penetration into the base is the entry lift. In addition, our aircraft perform vertical take-off from the hangars. Despite our attempts to disguise the closing casements of our hangars they can still be easily detected from the ground. Enemies blasted a few holes in the casements and went down on ropes inside. There is a good chance that our enemies will use the hangars to break into the base in the future as well. Unfortunately, these circumstances were not taken into account in the initial base design, and now we need to think about how to improve the defense systems, and also to pay more attention to the base layout."
+  STR_COVERT_OPERATIONS_UFOPEDIA: "Due to the clear dominance of our enemy, the preferred strategy will be keeping a low profile when dealing with important strategic tasks. We can send our agents to covert operations for more subtle methods of solving a problem than an open attack. The secure channels we've developed allow us to coordinate agents remotely, and for some operations, it is also important to involve scientists for analytical work and engineers to design the special gear. A covert operation is always a risk, and in order to increase your success odds you should be careful when choosing your team and equipment. Any little thing, in the end, can play a key role." 
   STR_MONSTER_HUNT_START: "Strange creatures"
   STR_MONSTER_HUNT_START_UFOPEDIA: "STR_MONSTER_HUNT_START_UFOPEDIA" #TODO
   STR_MONSTER_HUNT_RUMORS: "STR_MONSTER_HUNT_RUMORS" #TODO
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: STR_MONSTER_HUNT_RUMORS_UFOPEDIA #TODO
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
-  STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the aliens, and consolidate all mankind against an extraterrestrial threat."
+  STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
   STR_SUPPLIES: "Supplies"
-  STR_SUPPLIES_UFOPEDIA: "In the current circumstances, we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project on a voluntary basis.  We just need to take care of providing them with everything they need to work, and it would be good to encourage them if possible."
+  STR_SUPPLIES_UFOPEDIA: "In the current circumstances we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project on a voluntary basis.  We just need to take care of providing them with everything they need to work, and it would be good to encourage them if possible."
   STR_LOYALTY: "Loyalty"
-  STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down, and now we can only count on ourselves. The loss of the Council’s support is a severe blow to our organization, but despite all hard circumstances our people are determined to fight against alien invaders at all costs. Ad victoriam – that’s our new motto! Today isn’t money determining our future, but how strong our men’s spirit is. It is essential not to let the morale go down, and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, as well as progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that’s why we should be extremely careful and wise in our strategic and tactical choices."
+  STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down and now we can only count on ourselves. The loss of the Council’s support is a severe blow to our organization but despite all hard circumstances our people are determined to fight against alien invaders at all costs. Ad victoriam – that’s our new motto! Today isn’t money determining our future, but how strong our men’s spirit is. It is essential not to let the morale go down and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, as well as progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that’s why we should be extremely careful and wise in our strategic and tactical choices."
   STR_FACILITIES_BLUEPRINTS: "Facility blueprints"
-  STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segment containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to obtain it."
+  STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segments containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year and some had never been built. Since we have figured out how to get basic construction materials we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment and we will have to figure out how to obtain it."
   STR_BASE_CONSTRUCTION: "New Base Construction"
   STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #TODO
   STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
