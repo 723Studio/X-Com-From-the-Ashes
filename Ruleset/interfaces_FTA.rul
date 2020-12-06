@@ -1,6 +1,7 @@
 interfaces:
+  - delete: storesInfo
   - type: diplomacyMainWindow
-    backgroundImage: BACK13.SCR
+    backgroundImage: PLACEHOLDER_BACKGROUND.SCR
     elements:
       - id: palette
         color: 0     # brown
@@ -22,30 +23,30 @@ interfaces:
     palette: PAL_BASESCAPE
     elements:
       - id: palette
-        color: 1     # burgundy
+        color: 7     # violet
       - id: window
-        color: 218   # blue
+        color: 213   # gold
       - id: text
-        color: 218   # blue
+        color: 213   # gold
         color2: 208  # white
       - id: list
         color: 246   # purple
-        border: 218  # blue
+        color2: 213  # gold
       - id: button
-        color: 246   # purple
+        color: 213   # gold
   - type: newCovertOperationsMenu
     backgroundImage: COVEROPSHQ_BACKGROUND.SCR 
     palette: PAL_BASESCAPE
     elements:
       - id: palette
-        color: 1     # burgundy
+        color: 7     # violet
       - id: window
-        color: 218   # blue
+        color: 213   # gold
       - id: text
-        color: 218   # blue
+        color: 213   # gold
         color2: 208  # white
       - id: button
-        color: 218   # blue
+        color: 213   # gold
   - type: operationEquipment
     backgroundImage: BACK04.SCR
     palette: PAL_BASESCAPE
@@ -103,7 +104,7 @@ interfaces:
       - id: button
         color: 213   # gold
   - type: covertOperationFinishSuccess
-    backgroundImage:  COVEROPSHQ_BACKGROUND.SCR
+    backgroundImage: COVEROPSHQ_BACKGROUND.SCR
     elements:
       - id: palette
         color: 0     # brown
@@ -118,7 +119,7 @@ interfaces:
       - id: button
         color: 239   # bright green
   - type: covertOperationFinishFailure
-    backgroundImage:  COVEROPSHQ_BACKGROUND.SCR
+    backgroundImage: COVEROPSHQ_BACKGROUND.SCR
     elements:
       - id: palette
         color: 0     # brown
@@ -157,21 +158,21 @@ interfaces:
     palette: PAL_BASESCAPE
     elements:
       - id: palette
-        color: 1     # burgundy
+        color: 7     # violet
       - id: window
-        color: 218   # blue
+        color: 213   # gold
       - id: text
-        color: 218   # blue
+        color: 213   # gold
         color2: 208  # white
       - id: list
         color: 246   # purple
-        color2: 241  # pink
+        color2: 213  # gold
         border: 218  # blue
       - id: listExtended
         color: 208   # white
         color2: 213  # gold
       - id: button
-        color: 246   # purple
+        color: 213   # gold
   - type: newPossibleCovertOperationState
     backgroundImage: COVEROPSHQ_BACKGROUND.SCR
     elements:
@@ -185,3 +186,35 @@ interfaces:
         color: 138   # yellow
       - id: button
         color: 133   # minty green
+  - type: storesInfo
+    backgroundImage: STORES_STATE.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+      - id: list
+        color: 218   # blue
+      - id: button
+        color: 218   # blue
+  - type: disposeState
+    backgroundImage: STORES_STATE.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+      - id: ammoColor
+        color: 246   # purple
+      - id: button
+        color: 218   # blue

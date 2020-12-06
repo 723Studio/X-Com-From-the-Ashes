@@ -43,3 +43,13 @@ extraSounds:
       94: Resources/Weapons/Sounds/PlasmaSword_slice.wav
       95: Resources/Weapons/Sounds/StabHit.wav
       96: Resources/Armors/Civilians/Resistance/RESISTANCE_RADIO_DEATH.ogg
+      97: Resources/Armors/Civilians/Citizens/FemaleScream1.wav
+      98: Resources/Armors/Civilians/Animals/DogeAttack1.wav
+      99: Resources/Armors/Civilians/Animals/DogeAttack2.wav
+      100: Resources/Armors/Civilians/Animals/DogeAttack3.wav
+      101: Resources/Armors/Civilians/Animals/DogeDeath1.wav
+      102: Resources/Armors/Civilians/Animals/DogeDeath2.wav
+      103: Resources/Armors/Civilians/Animals/DogeDeath3.wav
+      104: Resources/Armors/Civilians/Animals/DogeSpotted.wav
+      105: Resources/Weapons/Sounds/Dog_Bark.wav
+      106: Resources/Weapons/Sounds/Dog_growl.wav

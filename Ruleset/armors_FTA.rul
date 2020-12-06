@@ -534,6 +534,118 @@ armors:
     #specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
 
+  - type: STR_MALE_CITIZEN_ARMOR
+    spriteSheet: MALE_CITIZEN.PCK
+    spriteInv: inventory_MALE_CITIZEN
+    corpseBattle:
+      - STR_MALE_CITIZEN_CORPSE
+    visibilityAtDark: 6
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    #specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
+  - type: STR_MALE_POLICE_ARMOR
+    spriteSheet: MALE_POLICE.PCK
+    spriteInv: inventory_MALE_POLICE
+    corpseBattle:
+      - STR_MALE_POLICE_CORPSE
+    visibilityAtDark: 6
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    #specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
+
+  - type: STR_DOGE_ARMOR
+    spriteSheet: DOGE.PCK
+    spriteInv: inventory_DOGE
+    corpseBattle:
+      - STR_DOGE_CORPSE
+    storeItem: STR_NONE
+    visibilityAtDark: 15
+    personalLight: 5
+    heatVision: 20
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.05
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 60
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    movementType: 0
+    drawingRoutine: 4
+    overKill: 1.5
+    damageModifier: &BasicDogArmorResists
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.5
+      - 1.0
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    builtInWeapons:
+      # - STR_DOGE_BARK
+      - STR_DOGE_BITE
+    loftempsSet: [ 2 ]
+
+
 #Resistance
   - type: STR_RESISTANCE_SCIENTIST_ARMOR
     spriteSheet: RESISTANCE_SCIENTIST.PCK

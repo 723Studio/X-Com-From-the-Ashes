@@ -1,9 +1,4 @@
 #helps testing
-research:
-  - name: STR_TESTING_TOOLS
-    cost: 50
-    points: 10
-    needItem: true
 facilities:
   - type: STR_SUPER_FACILITY
     spriteShape: 1
@@ -23,4 +18,4 @@ facilities:
     storage: 999
     mapName: XBASE_05
     requires:
-      - STR_TESTING_TOOLS
+      - STR_TROLLIUM

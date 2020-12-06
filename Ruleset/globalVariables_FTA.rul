@@ -114,6 +114,8 @@ loyaltySettings:
   coefAlienBase: 65
   noFundsPenalty: 300
   noFundsValue: -50000
+  performanceCap: 300
+  performanceFactor: 10
 
 loyaltyRatings:
    5000: STR_L_RATING_AMAZING
@@ -141,7 +143,7 @@ fixedUserOptions:
   battleInstantGrenade: false
   alienBleeding: true
   allowPsiStrengthImprovement: false
-  allowPsionicCapture: true
+  allowPsionicCapture: false #TODO consider
   anytimePsiTraining: true
   canSellLiveAliens: false #TODO consider
   psiStrengthEval: false

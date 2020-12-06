@@ -87,3 +87,43 @@ battleScripts:
       minDifficulty: 4
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
+
+  - type: STR_LOCALS_TRAP_BAT_SCRIPT
+    commands:
+    - type: spawnUnit #for low diff
+      executions: 1
+      executionChances: 100
+      packSize: 4
+      unitSide: 1
+      maxDifficulty: 3
+      #startTurn: 5
+      groups: [1, 4]
+      spawnBlocks: ["N", S]
+      unitSet: [STR_MALE_POLICE]
+    - type: spawnUnit #random additional
+      executions: 1
+      executionChances: 40
+      startTurn: 6
+      packSize: 2
+      unitSide: 1
+      groups: [1, 4]
+      spawnBlocks: ["N", S]
+      unitSet: [STR_MALE_POLICE]
+    - type: spawnUnit #high diff
+      executions: 1
+      packSize: 6
+      unitSide: 1
+      minDifficulty: 4
+      groups: [1, 4]
+      spawnBlocks: ["N", S]
+      unitSet: [STR_MALE_POLICE]
+    - type: spawnUnit #extra SH gift
+      executions: 2
+      executionChances: 10
+      packSize: 6
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 4
+      groups: [1, 4]
+      spawnBlocks: ["N", S]
+      unitSet: [STR_MALE_POLICE] #TODO - add soldiers here

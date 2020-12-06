@@ -51,7 +51,7 @@ Nord, author of The World of (Terrifying) Silence (https://openxcom.mod.io/the-w
 
 Nord, author of X-Chronicles (https://openxcom.org/forum/index.php/topic,6792.0.html) - various graphic assets
 
-lorcán, author of UFO: Cydonia's Fall OGG Music for OpenXcom (https://openxcom.mod.io/ufo-cydonias-fall-ogg-music) - music, that replaces original
+Sycraft, author of Sycraft's Xcom OST Version 6.00 (http://sycraft.org/content/audio/xcom.shtml) - music, that replaces original
 
 Dr Reach, author of original artwork for SCP Foundation website (http://www.scp-wiki.net/reach-s-blueprint-folder), distributed under Creative Commons Attribution-ShareAlike 3.0 Unported - art that was used for facility blueprints ufopaedia article image.
 

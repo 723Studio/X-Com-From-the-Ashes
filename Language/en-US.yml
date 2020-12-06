@@ -23,11 +23,22 @@ en-US:
   STR_CONTAINMENTLIMITSENFORCED: "Containment limits for captured enemies" #containmentLimitsEnforced
   STR_STORAGELIMITSENFORCED_DESC: "Enforces general store limits for artifacts recovered from missions."
   STR_CONTAINMENTLIMITSENFORCED_DESC: "Enforces alien containment limits for live aliens recovered from missions."
+  STR_IRONMAN_ALPHA_DESC: "Ironman mode disabled for alpha"
   STR_FUNDING_UC: "DIPLOMACY"
   STR_SELL_SACK_UC: "DIPLOMACY"
   STR_PURCHASE_RECRUIT: "COVERT OPERATIONS"
   STR_DIPLOMACY_RELATIONS: "Diplomacy Relations"
   STR_WE_CANT_BUILD_BASE: "CURRENTLY WE CANNOT BUILD ANOTHER BASE"
+  STR_DISPOSE_DISMISS_LC: "Dispose/Dismiss"
+  STR_TRANSFERS_LC: "Transfers"
+  STR_MONTHLY_COSTS: "Monthly Costs"
+  STR_STORES_LC: "Stores"
+  STR_DISPOSE_DISMISS: "Dispose/Dismiss"
+  STR_DISPOSE_ITEMS_DISMISS_PERSONNEL: "Dispose Items/Dismiss Personnel"
+  STR_QUANTITY_SPACE: "Quantity/Space used"
+  STR_DISPOSAL_VALUE: "DISPOSAL VALUE> {ALT}{0}"
+  STR_SELL_ITEMS_SACK_PERSONNEL: "Sell Items"
+  STR_SELL_SACK: "Sell"
   STR_INFO: "INFO"
   STR_PURCHASE: "PURCHASE"
   STR_NEGOTIATION: "NEGOTIATION"
@@ -68,6 +79,8 @@ en-US:
   STR_IN_PSI_TRAINING_UC: "PSI TRAINING"
   STR_NO_OUT: "OUT"
   STR_UNAVAILABLE_TRAINING: "-"
+  STR_LAB_ICON: "¤"
+  STR_WORKSHOP_ICON: "¥"
   STR_OPERATION_RESULT: "Operation result"
   STR_OPERATION_BASE: "Operation base"
   STR_SUCCESS_US: "SUCCESS"
@@ -118,6 +131,9 @@ en-US:
   STR_LIVE_ALIENS_RECOVERED: "LIVE ENEMIES RECOVERED"
   STR_ALIEN_CORPSES_RECOVERED: "ENEMY CORPSES RECOVERED"
   STR_PLACEHOLDER_COUNTRY: " "
+  STR_WE_DISCOVERED_FACTION: "We established contact with a new faction - "
+  STR_THEIR_ATTITUDE_TO_US: "Their attitude towards us is "
+  STR_ATTITUDE_BECOME: "'s attitude to us has become "
   STR_STUFF_NO_MONEY1: STR_STUFF_NO_MONEY1 #TODO
   STR_STUFF_NO_MONEY2: STR_STUFF_NO_MONEY2 #TODO
   STR_STUFF_NO_MONEY5: STR_STUFF_NO_MONEY5 #TODO
@@ -200,6 +216,8 @@ en-US:
   STR_ALIEN_RESEARCH_UC: "ALIEN BIOLOGY AND LORE"
   STR_XCOM_PROJECT_MONTHLY_REPORT: "Monthly Report"
   STR_COUNCIL_REDUCE_DEBTS: "We can't pay bills!" #TODO - add fluff here! Original here - "The funding council is not happy with your financial position. You must reduce your debts below $1 million or the project will be terminated."
+  STR_YOU_HAVE_NOT_SUCCEEDED: "You have not succeeded in dealing with the alien invasion and the council of funding nations has regrettably decided to terminate the project. Each nation shall deal with the problem as they see fit. We can only hope that we can come to some accommodation with these apparently hostile forces, and that the general population will come to terms with the alien visitors." #TODO - redo council to your stuff does not treat you as leader and scatter
+  STR_COUNCIL_IS_DISSATISFIED: "The council of funding nations is dissatisfied with your performance. You must improve your effectiveness in dealing with the alien menace or risk termination of the project." #TODO - redo in FtA fashion
 
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of it's members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens and it seems that they are trying to cover up any traces of their activity."
@@ -228,6 +246,7 @@ en-US:
   STR_SCIENTIST_REFUGE_DESCRIPTION: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
   STR_AGENT_EXTRACTION: "Agent Extraction"
   STR_SCIENTIST_REFUGE_BRIEFING: STR_SCIENTIST_REFUGE_BRIEFING #TODO
+  STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
 
 
 #covertOps
