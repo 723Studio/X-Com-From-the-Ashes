@@ -111,7 +111,7 @@ research:
     listOrder: 7460
   - name: STR_MONSTER_HUNT_START
     requiresBaseFunc: [HQ]
-    cost: 2
+    cost: 8 #/
     points: 3
     dependencies:
       - STR_MONSTER_HUNT_START_PREREQ
@@ -158,6 +158,7 @@ research:
     requiresBaseFunc: [HQ]
     cost: 5
     points: 18
+    spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ
       - STR_UFOPEDIA_DECRYPTION
@@ -178,6 +179,58 @@ research:
     points: 10
     dependencies:
       - STR_TODOIUM
+
+  - name: STR_ALLOY_AMMO
+    cost: 2000
+    points: 10
+    dependencies:
+      - STR_TODOIUM
+  - name: STR_PISTOL_AA_CLIP
+    cost: 100
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+  - name: STR_PDW_AA_CLIP
+    cost: 120
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+  - name: STR_SMG_AA_CLIP
+    cost: 120
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+  - name: STR_RIFLE_AA_CLIP
+    cost: 200
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+  - name: STR_SNIPER_RIFLE_AA_CLIP
+    cost: 230
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+  - name: STR_SHOTGUN_SHELLS_AA
+    cost: 250
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO         
+  - name: STR_LC_AA_AMMO
+    cost: 280
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+  - name: STR_HC_AA_AMMO
+    cost: 350
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO      
+  - name: STR_AC_AA_AMMO
+    cost: 350
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO     
+
 
   - name: STR_PSIONIC
     cost: 50
@@ -251,11 +304,6 @@ research:
       - STR_ZOMBIE_GRUBAS_TERRORIST
 
 #Zombie arc
-  - name: STR_ZOMBIE_BIOLOGY
-    cost: 50
-    points: 10
-    dependencies:
-      - STR_LIVE_INFECTOR
   - name: STR_INFECTOR_AUTOPSY
     cost: 0
     points: 15

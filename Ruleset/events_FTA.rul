@@ -38,16 +38,25 @@ events:
     timer: 180
     timerRandom: 90
     researchList: [STR_REGIONAL_HQ_FOUND]
-  - name: STR_SUCCESS_COVERT_OPERATION
-    description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
+  - name: STR_MONSTER_HUNT_INVESTIGATION
+    description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     timer: 0
     timerRandom: 0
-    researchList: [STR_REGIONAL_HQ_FOUND]
-  - name: STR_FAILURE_COVERT_OPERATION
-    description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
+    researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ]
+  - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
+    description: STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION
     timer: 0
     timerRandom: 0
-    researchList: [STR_REGIONAL_HQ_FOUND]
+    points: -200
+    researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ]
+
+#Monsters
+  - name: STR_MONSTER_HUNT_RUMORS
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    #researchList: [???]
+    timer: 0
+    timerRandom: 0
+
 
 #Resistance
   - name: STR_RESISTANCE_DISCOVER

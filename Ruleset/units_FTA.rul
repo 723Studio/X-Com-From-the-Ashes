@@ -347,131 +347,6 @@ units:
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 
-#Civilians
-  - type: STR_MALE_CIVILIAN_FARMER
-    race: STR_HUMAN
-    stats:
-      tu: 46
-      stamina: 40
-      health: 35
-      bravery: 60
-      reactions: 30
-      firing: 40
-      throwing: 30
-      strength: 30
-      psiStrength: 35
-      psiSkill: 0
-      melee: 30
-      mana: 50
-    armor: STR_MALE_CIVILIAN_FARMER_ARMOR
-    standHeight: 22
-    kneelHeight: 14
-    value: 30
-    deathSound: *MaleDeathSounds
-    # panicSound: *MalePanicSounds
-    # berserkSound: *MaleBerserkSounds
-    energyRecovery: 25
-    intelligence: 1
-    aggression: 2
-    canSurrender: true
-    builtInWeaponSets:
-      - - STR_DOUBLE_BARRELED
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
-      - - STR_SAWED_OFF #- STR_PITCHFORK
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - - STR_DOUBLE_BARRELED #- STR_PITCHFORK
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - - STR_DOUBLE_BARRELED #- STR_AXE
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - - STR_PUMP_ACTION_SHOTGUN
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-      - - STR_HUNTING_RIFLE
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP #- []
-      - - STR_HUNTING_RIFLE
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP #- []
-      - - STR_SAWED_OFF
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT #- STR_AXE
-      - - STR_SAWED_OFF
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-  - type: STR_FEMALE_CIVILIAN_FARMER
-    race: STR_HUMAN
-    rank: STR_LIVE_SOLDIER
-    stats:
-      tu: 44
-      stamina: 50
-      health: 38
-      bravery: 60
-      reactions: 30
-      firing: 40
-      throwing: 30
-      strength: 25
-      psiStrength: 35
-      psiSkill: 0
-      melee: 30
-      mana: 50
-    armor: STR_FEMALE_FARMER_ARMOR
-    standHeight: 22
-    kneelHeight: 14
-    value: 30
-    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
-    # panicSound: *FemalePanicSounds
-    # berserkSound: *FemaleBerserkSounds
-    energyRecovery: 25
-    intelligence: 1
-    aggression: 2
-    canSurrender: true
-    builtInWeaponSets:
-      - []
-      - []
-      - []
-      - - STR_DOUBLE_BARRELED #- STR_PITCHFORK
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - - STR_DOUBLE_BARRELED
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
-      - []
-      - - STR_DOUBLE_BARRELED #- STR_WOODEN_CLUB
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - - STR_HUNTING_RIFLE #- STR_AXE
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
-      - - STR_HUNTING_RIFLE
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
-
 #Monsters
   - type: STR_JABBER
     race: STR_JABBER
@@ -502,6 +377,306 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_JABBER_WEAPON
+  - type: STR_CHUPACABRA
+    race: STR_CHUPACABRA
+    rank: STR_LIVE_TERRORIST
+    stats: #TODO
+      tu: 90
+      stamina: 110
+      health: 30
+      bravery: 100
+      reactions: 75
+      firing: 0
+      throwing: 0
+      strength: 28
+      psiStrength: 50
+      psiSkill: 0
+      melee: 80
+    armor: STR_CHUPACABRA_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 10
+    # aggroSound: 123 #TODO
+    deathSound: 7 #TODO
+    # panicSound: 265
+    # berserkSound: 266
+    intelligence: 3
+    aggression: 4
+    energyRecovery: 35
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_JABBER_WEAPON #TODO
+
+#Militia
+  - type: STR_MALE_MILITIA_CITIZEN
+    race: STR_HUMAN
+    stats:
+      tu: 46
+      stamina: 40
+      health: 35
+      bravery: 60
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 30
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+    armor: STR_MALE_CITIZEN_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -80
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - []
+      - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_SAWED_OFF #- STR_PITCHFORK
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - []
+      - - STR_DOUBLE_BARRELED #- STR_AXE
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - []
+      - []
+      - []
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+  - type: STR_DOGE
+    race: STR_DOGE
+    stats:
+      tu: 80
+      stamina: 90
+      health: 25
+      bravery: 70
+      reactions: 60
+      firing: 0
+      throwing: 0
+      strength: 2
+      psiStrength: 40
+      psiSkill: 0
+      melee: 80
+    armor: STR_DOGE_ARMOR
+    standHeight: 12
+    kneelHeight: 12
+    value: 2
+    deathSound: [101, 102, 103] #TODO
+    aggroSound: 104
+    energyRecovery: 30
+    livingWeapon: true
+    intelligence: 3
+    aggression: 6
+    spotter: 1
+  - type: STR_MALE_POLICE
+    race: STR_HUMAN
+    stats:
+      tu: 46
+      stamina: 40
+      health: 35
+      bravery: 60
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 30
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+    armor: STR_MALE_POLICE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -100
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_POLICE_BATON
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_POLICE_BATON
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_POLICE_BATON
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_POLICE_BATON
+      - - STR_PUMP_ACTION_SHOTGUN
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+      - - STR_PUMP_ACTION_SHOTGUN
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+      - - STR_PUMP_ACTION_SHOTGUN
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+      - - STR_SEMI_AUTO_SHOTGUN
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+      - - STR_SEMI_AUTO_SHOTGUN
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+      - - STR_SEMI_AUTO_SHOTGUN
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_FLASHBANG_GRENADE
+
+#Civilians
+  - type: STR_MALE_CIVILIAN_FARMER
+    race: STR_HUMAN
+    stats:
+      tu: 46
+      stamina: 40
+      health: 35
+      bravery: 60
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 30
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+    armor: STR_MALE_CIVILIAN_FARMER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_SAWED_OFF #- STR_PITCHFORK
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - []
+      - - STR_DOUBLE_BARRELED #- STR_AXE
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_PUMP_ACTION_SHOTGUN
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+      - []
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP #- []
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT #- STR_AXE
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+  - type: STR_FEMALE_CIVILIAN_FARMER
+    race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 44
+      stamina: 50
+      health: 38
+      bravery: 60
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 25
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+    armor: STR_FEMALE_FARMER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
+    # panicSound: *FemalePanicSounds
+    # berserkSound: *FemaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - []
+      - []
+      - []
+      - []
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - []
+      - []
+      - - STR_DOUBLE_BARRELED #- STR_WOODEN_CLUB
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_HUNTING_RIFLE #- STR_AXE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
 
 
 #Resistance
@@ -518,7 +693,7 @@ units:
       firing: 30
       throwing: 30
       strength: 26
-      psiStrength: 50
+      psiStrength: 51
       psiSkill: 0
       melee: 22
       mana: 0
@@ -531,7 +706,7 @@ units:
       firing: 12
       throwing: 15
       strength: 10
-      psiStrength: 50
+      psiStrength: 49
       melee: 25
       mana: 0
     armor: STR_RESISTANCE_SCIENTIST_ARMOR
@@ -582,10 +757,9 @@ units:
       firing: 57
       throwing: 50
       strength: 30
-      psiStrength: 50
+      psiStrength: 51
       psiSkill: 0
       melee: 45
-      mana: 10
     statsRandom:
       tu: 5
       stamina: 15
@@ -595,15 +769,14 @@ units:
       firing: 12
       throwing: 15
       strength: 10
-      psiStrength: 50
+      psiStrength: 49
       melee: 25
-      mana: 5
     armor: STR_RESISTANCE_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SOLDIER #TODO
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 200
+    value: 100
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
