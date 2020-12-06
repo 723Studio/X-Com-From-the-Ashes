@@ -2,4 +2,9 @@ ru:
   STR_INFO: "ИНФО"
   STR_REGIONAL_HQ: "Региональный штаб пришествия"
   STR_TEST_OPERATION: "Тестовая операция"
+
+  STR_TRANSFERS_LC: "Поставки"
+  STR_STORES_LC: "Склады"
+  STR_MONTHLY_COSTS: "Содержание"
+
   

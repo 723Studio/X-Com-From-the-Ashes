@@ -573,6 +573,19 @@ terrains:
       - name: VILBAN57
         width: 10
         length: 10
+
+#sub-terrains
+  - name: TRANSPORT_EVAC
+    mapDataSets:
+      - BLANKS
+      - TRANSPORT_EVAC
+      - ROADS
+    mapBlocks:
+      - name: CAR01
+        width: 10
+        length: 10
+        groups: 7
+
   - name: MIB_SEWERS
     mapDataSets:
       - BLANKS

@@ -91,6 +91,26 @@ mapScripts:
     - type: fillArea
       blocks: 6
 
+  - type: RURAL
+    commands:
+    - type: addCraft
+    - type: addUFO
+    - type: addLine
+      label: 1
+      direction: horizontal
+      executionChances: 33
+    - type: addLine
+      label: 2
+      direction: vertical
+      conditionals: -1
+      executionChances: 50
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+    - type: addBlock
+      size: 2
+      executions: 6
+    - type: fillArea
   - type: REFUGE_ATTACKED
     commands:
     - type: addCraft
@@ -108,6 +128,72 @@ mapScripts:
       executionChances: 65
     - type: fillArea
 
+  - type: STR_LOCALS_TRAP_SCRIPT
+    commands:
+    - type: addLine
+      direction: vertical
+      terrain: URBAN #TODO
+      rects:
+        - [2, 2, 1, 1]
+    - type: addBlock
+      terrain: URBAN #TODO
+      size: 2
+      executionChances: 70
+    - type: addBlock
+      terrain: URBAN #TODO
+      size: 2
+      executions: 2
+      executionChances: 10
+    - type: addBlock
+      terrain: URBAN #TODO
+      size: 2
+      executions: 2
+      executionChances: 30
+      rects:
+        - [0, 0, 1, 4]
+        - [4, 0, 1, 4]
+    - type: fillArea
+      terrain: URBAN #TODO
+      rects:
+        - [1, 0, 1, 4]
+    - type: fillArea
+      terrain: URBAN #TODO
+      rects:
+        - [3, 0, 1, 4]
+    - type: removeBlock
+      rects:
+        - [2, 0, 1, 1]
+    - type: removeBlock
+      rects:
+        - [2, 4, 1, 1]
+    - type: addBlock
+      groups: 7
+      terrain: TRANSPORT_EVAC
+      label: 1
+      executionChances: 50
+      rects:
+        - [2, 0, 1, 1]
+    - type: addBlock
+      groups: 7
+      terrain: TRANSPORT_EVAC
+      label: 2
+      conditionals: [-1]
+      rects:
+        - [2, 4, 1, 1]
+    - type: addBlock
+      groups: 3
+      terrain: URBAN #TODO
+      conditionals: 2
+      rects:
+        - [2, 0, 1, 1]
+    - type: addBlock
+      groups: 3
+      terrain: URBAN #TODO
+      conditionals: 1
+      rects:
+        - [2, 4, 1, 1]
+    # - type: addCraft
+    - type: fillArea
 
   - type: MIB_SEWERS
     commands:
@@ -133,19 +219,21 @@ mapScripts:
       - type: middle
         terrain: FOREST
         size: [1, 1, 4]
-  - type: TEST_SCRIPT
-    commands:
-    - type: addCraft
-    - type: addUFO
-      UFOName: STR_MEDIUM_SCOUT
-    - type: fillArea
-      verticalLevels:
-      - type: ground
-        terrain: XBASE
-        # groups: 3
-        size: [1, 1, 2]
-      - type: middle
-        terrain: FOREST
-        groups:
-            - 0
-        size: [1, 1, 4]
+
+
+  # - type: TEST_SCRIPT
+  #   commands:
+  #   - type: addCraft
+  #   - type: addUFO
+  #     UFOName: STR_MEDIUM_SCOUT
+  #   - type: fillArea
+  #     verticalLevels:
+  #     - type: ground
+  #       terrain: XBASE
+  #       # groups: 3
+  #       size: [1, 1, 2]
+  #     - type: middle
+  #       terrain: FOREST
+  #       groups:
+  #           - 0
+  #       size: [1, 1, 4]

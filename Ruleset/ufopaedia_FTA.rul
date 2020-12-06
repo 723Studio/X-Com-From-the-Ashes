@@ -457,11 +457,6 @@ ufopaedia:
       - STR_MACHINE_PISTOL
     text: STR_MACHINE_PISTOL_UFOPEDIA
     listOrder: 21300
-  - id: STR_MACHINE_PISTOL
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_MACHINE_PISTOL_CLIP
   - id: STR_PDW
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -632,12 +627,12 @@ ufopaedia:
   - id: STR_SHOTGUN_SHELLS_BS_AA
     type_id: 4
     requires:
-      - STR_SHOTGUN_SHELLS_BS_AA
+      - STR_SHOTGUN_SHELLS_AA
     section: STR_NOT_AVAILABLE
   - id: STR_SHOTGUN_SHELLS_AP_AA
     type_id: 4
     requires:
-      - STR_SHOTGUN_SHELLS_AP_AA
+      - STR_SHOTGUN_SHELLS_AA
     section: STR_NOT_AVAILABLE
 #cannons
   - id: STR_LIGHT_CANNON
@@ -680,7 +675,7 @@ ufopaedia:
   - id: STR_LC_BS_AA_AMMO
     type_id: 4
     requires:
-      - STR_LC_BS_AA_AMMO
+      - STR_LC_AA_AMMO
     section: STR_NOT_AVAILABLE
   - id: STR_HEAVY_CANNON
     type_id: 4
@@ -723,7 +718,7 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_HC_AA_BS_AMMO
+      - STR_HC_AA_AMMO
   - id: STR_AUTO_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -765,7 +760,7 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_AC_AA_BS_AMMO
+      - STR_AC_AA_AMMO
 #launchers
   - id: STR_SINGLE_ROCKET_LAUNCHER
     type_id: 4
@@ -914,6 +909,24 @@ ufopaedia:
       - STR_FACEHUGGER_CORPSE
     image_id: UFOPEDIA_IMG_FACEHUGGER_AUTOPSY
     text: STR_FACEHUGGER_AUTOPSY_UFOPEDIA
+    text_width: 149
+    listOrder: 164100
+  - id: STR_CHUPACABRA #TODO
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    # requires:
+    #   - STR_CHUPACABRA
+    image_id: UFOPEDIA_IMG_CHUPACABRA_CPAL
+    text: STR_CHUPACABRA_UFOPEDIA #TODO
+    text_width: 158
+    listOrder: 164090
+  - id: STR_CHUPACABRA_AUTOPSY #TODO
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    # requires:
+    #   - STR_CHUPACABRA_AUTOPSY
+    image_id: UFOPEDIA_IMG_CHUPACABRA_AUTOPSY_CPAL
+    text: STR_CHUPACABRA_AUTOPSY_UFOPEDIA #TODO
     text_width: 149
     listOrder: 164100
   - id: STR_ZOMBIE_STERILE_TERRORIST

@@ -159,5 +159,27 @@ ufos:
             STR_SPAWN_RESISTANCE_SCIENTIST: [0, 0]
 
 
-
+  - type: STR_CAR_EVACUATION
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: SCI_HOUSE2
+      mapDataSets:
+        - BLANKS
+        - SCI_HOUSE
+        - SCI_HOUSE2
+        - FRNITURE
+        - LAMP_WALL
+      mapBlocks:
+        - name: SCI_HOUSE2
+          width: 10
+          length: 10
 
