@@ -268,11 +268,18 @@ en-US:
   STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
   STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
   STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION: #TODO
-
+  STR_RESCUED_RESISTANCE: "Resistance rescue: success"
+  STR_RESCUED_SCIENTIST: "Scientist slip: success"
+  STR_NOT_RESCUED_RESISTANCE: "Resistance rescue: failiure"
+  STR_NOT_RESCUED_SCIENTIST: "Scientist slip: failiure"
+  STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuees their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> +x"
+  STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab."
+  STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score >-y"
+  STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person."
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "MiB Agent"
-  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented and even frightened. He couldn't tell us who he is nor how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent but, as far as we can tell, his story seems genuine. Unfortunately, all attempts to get more information have led to nothing."
+  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented, and even frightened. He couldn't tell us who he is nor how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent but, as far as we can tell, his story seems genuine. Unfortunately, all attempts to get more information have led to nothing."
   STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
   STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
