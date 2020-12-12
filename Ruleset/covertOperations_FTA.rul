@@ -1,8 +1,24 @@
 covertOperations:
+#main path
+  - name: STR_CHASING_MIB
+    description: STR_CHASING_MIB_DESCRIPTION
+    successDescription: STR_CHASING_MIB_SUCCESS_DESCRIPTION
+    requires:
+      - STR_COVERT_OPERATIONS
+    soldierSlots: 4
+    optionalSoldierSlots: 3
+    optionalSoldierEffect: 5
+    baseChances: 70
+    successResearchList:
+      - ""
+    danger: 2
+    costs: 40
+
   - name: STR_REGIONAL_HQ
     description: STR_REGIONAL_HQ_DESCRIPTION
     successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
     requires:
+      - STR_TODOIUM
       - STR_COVERT_OPERATIONS
     soldierSlots: 2
     scientistSlots: 1
@@ -10,17 +26,18 @@ covertOperations:
     requiredItems:
       STR_POLICE_BATON: 2
     danger: 3
-    costs: 12
+    costs: 120
     allowedArmor:
       - STR_NONE_UC
     specialRule: STR_REGIONAL_HQ_DISCOVERY
 
+#monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_START
     itemSpaceLimit: 10
-    baseChances: 1 #75
+    baseChances: 75
     costs: 5
     soldierSlots: 2
     optionalSoldierSlots: 2
@@ -34,12 +51,9 @@ covertOperations:
     successScore: 100
     successEvent: STR_MONSTER_HUNT_INVESTIGATION
     failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
-    successReputationScore:
-      STR_RESISTANCE: 5
     instantTrapDeployment: 
       STR_LOCALS_TRAP: 100
     trapChance: 100
-
   - name: STR_MONSTER_HUNT_INVESTIGATION_CONT
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     requires:
@@ -59,8 +73,6 @@ covertOperations:
     successScore: 100
     #successEvent: #TODO - continue the arc?
     failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
-    successReputationScore:
-      STR_RESISTANCE: 5
     instantTrapDeployment: 
       STR_LOCALS_TRAP: 50
       STR_CHUPACABRA_HUNT_TRAP: 50

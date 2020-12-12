@@ -879,14 +879,33 @@ ufopaedia:
     text: STR_MIB_AGENT_UFOPEDIA
     text_width: 158
     requires:
-      - STR_MIB_AGENT_LOOKUP
+      - STR_MIB_AGENT
     listOrder: 146000
+  - id: STR_MIB_SPECOPS
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_MIB_SPECOPS_CPAL
+    text: STR_MIB_SPECOPS_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_SPECOPS
+    listOrder: 146000
+
 
   - id: STR_SEEKER_DRONE_TERRORIST
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
     image_id: UFOPEDIA_SEEKER_DRONE_CPAL
     text: STR_SEEKER_DRONE_UFOPEDIA
+    text_width: 140
+    requires:
+      - STR_SEEKER_DRONE_TERRORIST
+    listOrder: 146000
+  - id: STR_SEEKER_DRONE_CORPSE
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_SEEKER_DRONE_CPAL
+    text: STR_SEEKER_DRONE_CORPSE_UFOPEDIA
     text_width: 140
     requires:
       - STR_SEEKER_DRONE_TERRORIST
@@ -1104,6 +1123,27 @@ ufopaedia:
     text: STR_MIB_AGENT_ARMOR_UFOPEDIA
     requires:
       - STR_MIB_AGENT_ARMOR
+    listOrder: 20300
+  - id: STR_MIB_AGENT_VEST_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_MIB_AGENT_VEST_ARMOR_UFOPEDIA
+    requires:
+      - STR_MIB_AGENT_VEST_ARMOR
+    listOrder: 20300
+  - id: STR_MIB_SPECOPS_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_MIB_SPECOPS_ARMOR_UFOPEDIA
+    requires:
+      - STR_MIB_SPECOPS_ARMOR
+    listOrder: 20300
+  - id: STR_SEEKER_DRONE_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_SEEKER_DRONE_ARMOR_UFOPEDIA
+    requires:
+      - STR_MIB_SPECOPS_ARMOR
     listOrder: 20300
   - id: STR_FACEHUGGER_ARMOR
     type_id: 5

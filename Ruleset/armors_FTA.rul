@@ -82,7 +82,7 @@ armors:
     spriteSheet: MIB_ARMORED_AGENT.PCK
     spriteInv: inventory_MIB_ARMORED_AGENT
     corpseBattle:
-      - MIB_ARMORED_AGENT_CORPSE
+      - STR_MIB_ARMORED_AGENT_CORPSE
     visibilityAtDark: 9
     frontArmor: 20
     sideArmor: 10
@@ -623,28 +623,27 @@ armors:
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier: &BasicDogArmorResists
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.5
-      - 1.0
-      - 4.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier:
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.4 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.0 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
     builtInWeapons:
       # - STR_DOGE_BARK
       - STR_DOGE_BITE
     loftempsSet: [ 2 ]
-
 
 #Resistance
   - type: STR_RESISTANCE_SCIENTIST_ARMOR

@@ -242,6 +242,7 @@ extraSprites:
       367: Resources/Weapons/Earthbound/Xcom/bigob_Pistol.png
       368: Resources/Weapons/Unarmed/bigob_DOGE_BITE.png
       369: Resources/Weapons/Unarmed/bigob_DOGE_BARK.png
+      370: Resources/MiscItems/bigob_FloppyBlue.png
       
   - type: FLOOROB.PCK
     files:
@@ -296,8 +297,8 @@ extraSprites:
       342: Resources/Weapons/Earthbound/Faction/floorob_HuntingRifleClip.png
       343: Resources/Weapons/Earthbound/Faction/floorob_RiotRifle.png
       344: Resources/Weapons/Earthbound/Faction/floorob_RiotRifleClip.png
-      345: Resources/Weapons/Earthbound/Faction/bigob_RiotPistol.png
-      346: Resources/Weapons/Earthbound/Faction/bigob_RiotPistolClip.png
+      345: Resources/Weapons/Earthbound/Faction/floorob_RiotPistol.png
+      346: Resources/Weapons/Earthbound/Faction/floorob_RiotPistolClip.png
       347: Resources/Weapons/Earthbound/Faction/floorob_SawedOff.png
       348: Resources/Weapons/Earthbound/Faction/floorob_DB_Shotgun.png
       349: Resources/Weapons/Earthbound/Faction/floorob_DB_ShotgunBuckshot.png
@@ -314,7 +315,7 @@ extraSprites:
       363: Resources/Weapons/Earthbound/Faction/floorob_ExplosiveCharge.png
       365: Resources/MiscItems/floorob_FakeID.png
       366: Resources/Weapons/Earthbound/Faction/floorob_Sword.png
-      367: Resources/Weapons/Earthbound/Faction/floorob_Sword.png #duplicate as 367 is used
+      370: Resources/MiscItems/floorob_FloppyBlue.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -377,6 +378,7 @@ extraSprites:
       544: Resources/Weapons/Earthbound/General/handob_ThrowingKnife.png
       552: Resources/Weapons/Earthbound/Faction/handob_ExplosiveCharge.png
       560: Resources/Weapons/Earthbound/Faction/handob_Sword.png
+      568: Resources/MiscItems/handob_FloppyBlue.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
@@ -512,6 +514,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_MIB_AGENT_CPAL.png  
+  - type: UFOPEDIA_IMG_MIB_SPECOPS_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_MIB_SPECOPS_CPAL.png  
 
   - type: UFOPEDIA_SEEKER_DRONE_CPAL
     singleImage: true
