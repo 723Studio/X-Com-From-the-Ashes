@@ -1,24 +1,7 @@
 battleScripts:
-  - type: TEST_SCRIPT
-    commands:
-    - type: spawnUnit
-      executions: 2
-      executionChances: 100
-      startTurn: 4
-      endTurn: 6
-      packSize: 3
-      randomPackSize: true
-      unitSide: 1
-      minDifficulty: 1
-      maxDifficulty: 3
-
-      unitSet: [STR_XCOM_EX_COMMANDER]
-
   - type: ZOMBIE_ATTACK
     commands:
     - type: spawnUnit #for low diff
-      executions: 1
-      executionChances: 100
       packSize: 4
       randomPackSize: true
       unitSide: 1
@@ -26,7 +9,6 @@ battleScripts:
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER]
     - type: spawnUnit #random additional
-      executions: 1
       executionChances: 40
       packSize: 4
       randomPackSize: true
@@ -34,15 +16,13 @@ battleScripts:
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #high diff
-      executions: 2
-      packSize: 5
+      packSize: 6
       randomPackSize: true
       unitSide: 1
       minDifficulty: 3
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #extra SH gift
-      executions: 1
       executionChances: 10
       packSize: 6
       randomPackSize: false
@@ -53,40 +33,80 @@ battleScripts:
 
   - type: MIB_ATTACK
     commands:
-    - type: spawnUnit #for low diff
-      executions: 1
-      executionChances: 100
+    - type: spawnUnit #for low diff start
+      executionChances: 85
       packSize: 4
       randomPackSize: true
+      endTurn: 2
       unitSide: 1
-      maxDifficulty: 3
+      maxDifficulty: 2
+      groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER]
-    - type: spawnUnit #random additional
-      executions: 1
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #for low diff start
       executionChances: 40
+      startTurn: 3
       packSize: 4
       randomPackSize: true
+      endTurn: 2
       unitSide: 1
+      maxDifficulty: 2
+      groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
-    - type: spawnUnit #high diff
-      executions: 2
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #random additional
+      executionChances: 30
+      packSize: 3
+      randomPackSize: false
+      unitSide: 1
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #for high diff start
+      executionChances: 85
       packSize: 5
       randomPackSize: true
+      endTurn: 2
       unitSide: 1
       minDifficulty: 3
+      groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
-    - type: spawnUnit #extra SH gift
-      executions: 1
-      executionChances: 10
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #for high diff cont
+      executionChances: 40
+      startTurn: 3
       packSize: 6
+      randomPackSize: true
+      endTurn: 2
+      unitSide: 1
+      minDifficulty: 3
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #extra SH gift
+      executionChances: 20
+      packSize: 3
       randomPackSize: false
       unitSide: 1
       minDifficulty: 4
+      groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+    - type: spawnUnit #extra SH gift
+      executionChances: 10
+      packSize: 8
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 4
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+    # - type: showMessage #TODO uncomment
+    #   messages:
+    #     0:
+    #       title: STR_RECOVER_RESEARCH_LOGS_TITLE
+    #       content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+
 
   - type: STR_LOCALS_TRAP_BAT_SCRIPT
     commands:
@@ -127,3 +147,27 @@ battleScripts:
       groups: [1, 4]
       spawnBlocks: ["N", S]
       unitSet: [STR_MALE_POLICE] #TODO - add soldiers here
+
+  # - type: TEST_SCRIPT
+  #   commands:
+  #   - type: showMessage
+  #     executions: 1
+  #     messages:
+  #       0:
+  #         title: STR_SOME_TEXT
+  #         content: STR_SOME_TEXT
+  #         answer: STR_SOME_TEXT
+  #         background: SOME_EXTRA_SPRITE.PCK
+  #       1:
+  #         content: content2
+  #   - type: spawnUnit
+  #     executions: 2
+  #     executionChances: 100
+  #     startTurn: 4
+  #     endTurn: 6
+  #     packSize: 3
+  #     randomPackSize: true
+  #     unitSide: 1
+  #     minDifficulty: 1
+  #     maxDifficulty: 3
+  #     unitSet: [STR_XCOM_EX_COMMANDER]

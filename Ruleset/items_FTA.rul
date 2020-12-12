@@ -2358,7 +2358,6 @@ items:
     invHeight: 1
     clipSize: -1
     autoShots: 6
-    sprayWaypoints: 2
     recover: false
   - type: STR_JABBER_WEAPON
     categories: [STR_BUILT_INS]
@@ -2461,6 +2460,21 @@ items:
     invWidth: 1
     invHeight: 1
     listOrder: 58860
+  - type: STR_FLOPPY_SCIENTISTS_LOG
+    categories: [STR_EVIDENCE]
+    landOnly: true
+    size: 0.01
+    costSell: 950000 #Should be only sellable to VOID
+    missionObjective: true #just for marker
+    weight: 1
+    bigSprite: 370
+    floorSprite: 370
+    handSprite: 568
+    battleType: 11
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 150
+    listOrder: 58860
 
 #geoscape-only
   - type: STR_RADAR_SYSTEM #TODO
@@ -2518,7 +2532,7 @@ items:
     prisonType: 1
     costSell: 0
     listOrder: 146000
-  - type: MIB_ARMORED_AGENT_CORPSE
+  - type: STR_MIB_ARMORED_AGENT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
@@ -2743,6 +2757,14 @@ items:
     listOrder: 67800
   - type: STR_SPAWN_RESISTANCE_SCIENTIST
     spawnUnit: STR_RESISTANCE_SCIENTIST
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_RESISTANCE_SCIENTIST_VIP
+    spawnUnit: STR_RESISTANCE_SCIENTIST_VIP
     spawnUnitFaction: 0
     bigSprite: 0
     battleType: 4

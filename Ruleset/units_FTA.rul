@@ -28,7 +28,8 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
-  - type: STR_MIB_AGENT
+  - &STR_MIB_AGENT
+    type: STR_MIB_AGENT
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
     stats:
@@ -53,37 +54,11 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
-  - &STR_MIB_ARMORED_AGENT
-    type: STR_MIB_ARMORED_AGENT 
-    race: STR_MIB
-    rank: STR_LIVE_SOLDIER
-    stats:
-      tu: 60
-      stamina: 94
-      health: 30
-      bravery: 90
-      reactions: 49
-      firing: 58
-      throwing: 62
-      strength: 48
-      psiStrength: 38
-      psiSkill: 0
-      melee: 27
-    armor: STR_MIB_AGENT_VEST_ARMOR
-    standHeight: 22
-    kneelHeight: 14
-    value: 25
-    deathSound: *MaleDeathSounds
-    intelligence: 4
-    aggression: 2
-    sniper: 25
-    spotter: 1
-    canSurrender: true
-  - type: STR_MIB_ARMORED_AGENT_SPAWN
-    refNode: *STR_MIB_ARMORED_AGENT
-    value: 2
-    altRecoveredUnit: STR_MIB_ARMORED_AGENT
-    builtInWeaponSets:
+  - type: STR_MIB_AGENT_SPAWN
+    refNode: *STR_MIB_AGENT
+    value: 1
+    altRecoveredUnit: STR_MIB_AGENT
+    builtInWeaponSets: &MIBAgentLoadout
       - - STR_PISTOL
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
@@ -131,6 +106,38 @@ units:
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
         - STR_FLASHBANG_GRENADE
+  - &STR_MIB_ARMORED_AGENT
+    type: STR_MIB_ARMORED_AGENT 
+    race: STR_MIB
+    rank: STR_LIVE_SOLDIER
+    altRecoveredUnit: STR_MIB_AGENT
+    stats:
+      tu: 60
+      stamina: 94
+      health: 30
+      bravery: 90
+      reactions: 49
+      firing: 58
+      throwing: 62
+      strength: 48
+      psiStrength: 38
+      psiSkill: 0
+      melee: 27
+    armor: STR_MIB_AGENT_VEST_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 25
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 2
+    sniper: 25
+    spotter: 1
+    canSurrender: true
+  - type: STR_MIB_ARMORED_AGENT_SPAWN
+    refNode: *STR_MIB_ARMORED_AGENT
+    value: 2
+    altRecoveredUnit: STR_MIB_AGENT
+    builtInWeaponSets: *MIBAgentLoadout
   - &STR_MIB_SPECOPS
     type: STR_MIB_SPECOPS 
     race: STR_MIB
@@ -158,7 +165,8 @@ units:
     canSurrender: true
     energyRecovery: 25
   - type: STR_MIB_SPECOPS_SPAWN
-    refNode: *STR_MIB_ARMORED_AGENT
+    refNode: *STR_MIB_SPECOPS
+    altRecoveredUnit: STR_MIB_SPECOPS
     value: 5
     builtInWeaponSets:
       - - STR_PDW
@@ -686,34 +694,34 @@ units:
     rank: STR_LIVE_NAVIGATOR
     stats:
       tu: 48
-      stamina: 45
+      stamina: 50
       health: 34
-      bravery: 35
-      reactions: 30
-      firing: 30
-      throwing: 30
-      strength: 26
+      bravery: 20
+      reactions: 20
+      firing: 20
+      throwing: 15
+      strength: 20
       psiStrength: 51
       psiSkill: 0
-      melee: 22
+      melee: 20
       mana: 0
     statsRandom:
-      tu: 5
-      stamina: 15
-      health: 7
-      bravery: 25
-      reactions: 7
-      firing: 12
-      throwing: 15
-      strength: 10
+      tu: 2
+      stamina: 3
+      health: 3
+      bravery: 10
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
       psiStrength: 49
-      melee: 25
+      melee: 6
       mana: 0
     armor: STR_RESISTANCE_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SCIENTIST
-    value: 200
+    value: 150
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -725,7 +733,7 @@ units:
   - type: STR_RESISTANCE_SCIENTIST_VIP
     refNode: *STR_RESISTANCE_SCIENTIST
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 300
+    value: 200
     builtInWeaponSets:
       - []
       - []
@@ -776,7 +784,7 @@ units:
     kneelHeight: 14 
     civilianRecoveryType: STR_SOLDIER #TODO
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 100
+    value: 90
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds

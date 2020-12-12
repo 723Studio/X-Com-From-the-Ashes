@@ -33,11 +33,6 @@ events:
     researchList: [STR_NO_SUPPLY_WARNING]
 
 #covertOperation events 
-  - name: STR_REGIONAL_HQ_FOUND_EVENT
-    description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
-    timer: 180
-    timerRandom: 90
-    researchList: [STR_REGIONAL_HQ_FOUND]
   - name: STR_MONSTER_HUNT_INVESTIGATION
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     timer: 0
@@ -49,6 +44,12 @@ events:
     timerRandom: 0
     points: -200
     researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ]
+
+  - name: STR_REGIONAL_HQ_FOUND_EVENT
+    description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
+    timer: 180
+    timerRandom: 90
+    researchList: [STR_REGIONAL_HQ_FOUND]
 
 #Monsters
   - name: STR_MONSTER_HUNT_RUMORS
@@ -66,13 +67,49 @@ events:
     description: STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_BASIC_EQUIPMENT]
-
-#Postproelium
+    timer: 1200
+    timerRandom: 300
   - name: STR_RESCUED_RESISTANCE
     description: STR_RESCUED_RESISTANCE_DESCRIPTION
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 100
   - name: STR_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
+    reputationScore:
+      STR_RESISTANCE: 130
   - name: STR_NOT_RESCUED_RESISTANCE
     description: STR_RESCUED_RESISTANCE_DESCRIPTION
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -150
   - name: STR_NOT_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
+    reputationScore:
+      STR_RESISTANCE: -200
+
+
+
+
+
+
+
+  # - name: STR_SNIPPET
+  #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
+  #   customAnswers:
+  #     0:
+  #       title: STR_ANSWER0
+  #       spawnEvent: [STR_ANSWER0_EVENT]
+  #       description: "STR_SOME_WISE_WORDS"
+  #     1:
+  #       title: STR_ANSWER1
+  #       spawnEvent: [STR_ANSWER1_EVENT]
+  #     2:
+  #       title: STR_ANSWER2
+  #       spawnEvent: [STR_ANSWER2_EVENT]
+  #     3:
+  #       title: STR_ANSWER3
+  #       spawnEvent: [STR_ANSWER3_EVENT, STR_ANSWER4_EVENT]
+  #   timer: 90
+  #   timerRandom: 0
+  #   researchList: [STR_RND_STATUS_REPORT] 

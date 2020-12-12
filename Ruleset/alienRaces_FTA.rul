@@ -34,20 +34,20 @@ alienRaces:
 
   - id: STR_MIB
     members:
-      - STR_ZOMBIE_STERILE_TERRORIST # 0 - Commander
-      - STR_ZOMBIE_STERILE_TERRORIST # 1 - Leader
-      - STR_ZOMBIE_STERILE_TERRORIST # 2 - Engineer
-      - STR_ZOMBIE_STERILE_TERRORIST # 3 - Medic
-      - STR_ZOMBIE_GRUBAS_TERRORIST # 4 - Navigator
-      - STR_ZOMBIE_STERILE_TERRORIST # 5 - Soldier
-      - STR_MIB_ARMORED_AGENT_SPAWN # 6 - Terrorist 1
-      - STR_ZOMBIE_GRUBAS_TERRORIST # 7 - Terrorist 2
-      - STR_FACEHUGGER # 8 - Special Guest 1
-      - STR_ZOMBIE_STERILE_TERRORIST # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_ZOMBIE_STERILE_TERRORIST # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_ZOMBIE_STERILE_TERRORIST # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_ZOMBIE_STERILE_TERRORIST # 13 - Non-Combatant 2
-      - STR_ZOMBIE_STERILE_TERRORIST # 14 - Special Guest 3
+      - STR_MIB_AGENT # 0 - Commander
+      - STR_MIB_AGENT # 1 - Leader
+      - STR_MIB_AGENT # 2 - Engineer
+      - STR_MIB_ENFORCER # 3 - Medic
+      - STR_MIB_ARMORED_AGENT # 4 - Navigator
+      - STR_MIB_AGENT # 5 - Soldier
+      - STR_SEEKER_DRONE_TERRORIST # 6 - Terrorist 1
+      - STR_SEEKER_DRONE_TERRORIST # 7 - Terrorist 2
+      - STR_MIB_AGENT # 8 - Special Guest 1
+      - STR_MIB_SPECOPS # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_MIB_SPECOPS # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_MIB_SPECOPS # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_MIB_SPECOPS # 13 - Non-Combatant 2
+      - STR_MIB_SPECOPS # 14 - Special Guest 3
 
   - id: STR_ZOMBIES
     members:
@@ -57,7 +57,7 @@ alienRaces:
       - STR_ZOMBIE_STERILE_TERRORIST # 3 - Medic
       - STR_ZOMBIE_GRUBAS_TERRORIST # 4 - Navigator
       - STR_ZOMBIE_STERILE_TERRORIST # 5 - Soldier
-      - STR_MIB_ARMORED_AGENT_SPAWN # 6 - Terrorist 1
+      - STR_FACEHUGGER # 6 - Terrorist 1
       - STR_ZOMBIE_GRUBAS_TERRORIST # 7 - Terrorist 2
       - STR_FACEHUGGER # 8 - Special Guest 1
       - STR_ZOMBIE_STERILE_TERRORIST # 9 - Heavy Trooper / Underwater Terrorist 1

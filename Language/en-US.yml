@@ -171,21 +171,21 @@ en-US:
   STR_DAMAGE_ARMOR_PIERCING_TOPIC: "Kinetic Damage"
   STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: Weapons dealing kinetic damage are one of the most reliable and common types of weapons we use use. This type of damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding propellant gases). It can cause bleeding on impact and the resulting damage reduces target's combat ability. Due to the widespread use of this type of weapons, various means to protect from them are just as common.  Some types of weapons have a certain armor penetration rate, which depends mainly on the type of the projectile and it's speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective ways of protecting against kinetic damage.
   STR_DAMAGE_INCENDIARY_TOPIC: "Incendiary Damage"
-  STR_DAMAGE_INCENDIARY_UFOPEDIA: 
+  STR_DAMAGE_INCENDIARY_UFOPEDIA: #TODO
   STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC: "High Explosive Damage"
-  STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA:
+  STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA: #TODO
   STR_DAMAGE_LASER_BEAM_TOPIC: "Laser Beam Damage"
   STR_DAMAGE_LASER_BEAM_UFOPEDIA: STR_DAMAGE_LASER_BEAM_UFOPEDIA #TODO
   STR_DAMAGE_PLASMA_BEAM_TOPIC: "Plasma Beam Damage"
   STR_DAMAGE_PLASMA_BEAM_UFOPEDIA: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA #TODO
   STR_DAMAGE_STUN_TOPIC: "Stun Damage"
-  STR_DAMAGE_STUN_UFOPEDIA:
+  STR_DAMAGE_STUN_UFOPEDIA: #TODO
   STR_DAMAGE_MELEE_TOPIC: "Cutting Damage"
-  STR_DAMAGE_MELEE_UFOPEDIA:
+  STR_DAMAGE_MELEE_UFOPEDIA: #TODO
   STR_DAMAGE_ACID_TOPIC: "Acid Damage"
   STR_DAMAGE_ACID_UFOPEDIA: STR_DAMAGE_ACID_UFOPEDIA #TODO
   STR_DAMAGE_SMOKE_TOPIC: "Choke Damage"
-  STR_DAMAGE_SMOKE_UFOPEDIA: 
+  STR_DAMAGE_SMOKE_UFOPEDIA: #TODO
   STR_DAMAGE_EMP_TOPIC: "EMP Damage"
   STR_DAMAGE_EMP_UFOPEDIA: STR_DAMAGE_EMP_UFOPEDIA #TODO
   STR_DAMAGE_ELECTRIC_TOPIC: "Electric Damage"
@@ -244,6 +244,8 @@ en-US:
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
   STR_SCIENTIST_REFUGE_DESCRIPTION: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
+  STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
+  STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy disk upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
   STR_AGENT_EXTRACTION: "Agent Extraction"
   STR_SCIENTIST_REFUGE_BRIEFING: STR_SCIENTIST_REFUGE_BRIEFING #TODO
   STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
@@ -270,20 +272,37 @@ en-US:
   STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION: #TODO
   STR_RESCUED_RESISTANCE: "Resistance rescue: success"
   STR_RESCUED_SCIENTIST: "Scientist slip: success"
-  STR_NOT_RESCUED_RESISTANCE: "Resistance rescue: failiure"
-  STR_NOT_RESCUED_SCIENTIST: "Scientist slip: failiure"
-  STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuees their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> +x"
-  STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab."
-  STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score >-y"
-  STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person."
+  STR_NOT_RESCUED_RESISTANCE: "Resistance rescue: failure"
+  STR_NOT_RESCUED_SCIENTIST: "Scientist slip: failure"
+  STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuees their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> +100"
+  STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> +130"
+  STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> -150"
+  STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> -200"
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "MiB Agent"
+  STR_MIB_AGENT_SPAWN: "MiB Agent"
+  STR_MIB_AGENT_CORPSE: "MiB Agent Corpse"
+  MIB_ARMORED_AGENT_CORPSE: "MiB Agent Corpse"
   STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented, and even frightened. He couldn't tell us who he is nor how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent but, as far as we can tell, his story seems genuine. Unfortunately, all attempts to get more information have led to nothing."
   STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
   STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
+  STR_MIB_ARMORED_AGENT: "MiB Armored Agent"
+  STR_MIB_ARMORED_AGENT_SPAWN: "MiB Armored Agent"
+  STR_MIB_AGENT_VEST_ARMOR: "MiB Armored Agent Combat Analysis"
+  STR_MIB_AGENT_VEST_ARMOR_UFOPEDIA: STR_MIB_AGENT_VEST_ARMOR_UFOPEDIA #TODO
+  STR_MIB_SPECOPS: "MiB SpecOps"
+  STR_MIB_SPECOPS_SPAWN: "MiB SpecOps"
+  STR_MIB_SPECOPS_CORPSE: "MiB SpecOps Corpse"
+  STR_MIB_SPECOPS_UFOPEDIA: STR_MIB_SPECOPS_UFOPEDIA #TODO
+  STR_MIB_SPECOPS_ARMOR: "MiB SpecOps Combat Analysis"
+  STR_MIB_SPECOPS_ARMOR_UFOPEDIA: STR_MIB_SPECOPS_ARMOR_UFOPEDIA #TODO
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
-  STR_SEEKER_DRONE_UFOPEDIA: "To be done" #TODO
+  STR_SEEKER_DRONE_CORPSE: "Seeker Drone Corpse"
+  STR_SEEKER_DRONE_UFOPEDIA: STR_SEEKER_DRONE_UFOPEDIA #TODO
+  STR_SEEKER_DRONE_CORPSE_UFOPEDIA: STR_SEEKER_DRONE_CORPSE_UFOPEDIA #TODO
+  STR_SEEKER_DRONE_ARMOR: "Seeker Drone Combat Analysis"
+  STR_SEEKER_DRONE_ARMOR_UFOPEDIA: "To be done" #TODO
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He refuses to communicate and shows aggression at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to maintain control is still unclear to us. During the physical examination there were no signs of any surgical intervention, with all medical tests within the normal range (except for adrenaline). Safekeeping can be problematic as, for example, he had a chance to bite off a finger of a former colleague, which he took, successfully."
@@ -319,6 +338,7 @@ en-US:
   STR_RESISTANCE_SOLDIER: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_CORPSE: STR_RESISTANCE_SOLDIER_CORPSE #TODO
   STR_RESISTANCE_SCIENTIST: "Scientist"
+  STR_RESISTANCE_SCIENTIST_VIP: "Scientist"
   STR_RESISTANCE_SCIENTIST_CORPSE: "Scientists Corpse"
   STR_HUMAN: "Human"
   STR_MALE_CIVILIAN_FARMER: "Farmer"
