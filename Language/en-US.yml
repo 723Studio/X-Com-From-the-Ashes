@@ -171,21 +171,21 @@ en-US:
   STR_DAMAGE_ARMOR_PIERCING_TOPIC: "Kinetic Damage"
   STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: "Weapons dealing kinetic damage are one of the most reliable and common types of weapons we use. This type of damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding propellant gases). It can cause bleeding on impact and the resulting damage reduces the target's combat ability. Because of the widespread use of this type of weapons various means to protect from them are just as common.  Some types of weapons have a certain armor penetration rate, which depends mainly on the type of the projectile and it's speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective ways of protecting against kinetic damage."
   STR_DAMAGE_INCENDIARY_TOPIC: "Incendiary Damage"
-  STR_DAMAGE_INCENDIARY_UFOPEDIA: #TODO
+  STR_DAMAGE_INCENDIARY_UFOPEDIA: "Incendiary weaponry is often brought into action for denying chokepoints or when standard ordonance is ineffective. A target set ablaze will take a small but not insignificant amount of damage over time for a while, regulated only by the target's flame resistance, rather than armor values too - afterall, the only ultimate difference between being cooked or charred alive is that in case of the former the remains can end up slightly less scorched. Burning targets will, understandably, loose more morale upon being hit than with other damage types too. Furthermore, enemies with at least a semblance of self-preservation instincts will avoid crossing burning areas unless absolutely necessary."
   STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC: "High Explosive Damage"
-  STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA: #TODO
+  STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA: Explosives are a tried and proven way of dislocating obstacles for accessing new routes and hostiles should there be too many of them to take out one by one or when there isn't a good opportunity to target them otherwise in the first place. Explosives, especially the ones specifically designed for that purpose, can also prove invaluable when dealing with highly armored opponents and vehicles. Care and restraint should be taken when using explosives, as a misplaced explosive can prove more detrimental to the user(s) than the designated target."
   STR_DAMAGE_LASER_BEAM_TOPIC: "Laser Beam Damage"
   STR_DAMAGE_LASER_BEAM_UFOPEDIA: STR_DAMAGE_LASER_BEAM_UFOPEDIA #TODO
   STR_DAMAGE_PLASMA_BEAM_TOPIC: "Plasma Beam Damage"
   STR_DAMAGE_PLASMA_BEAM_UFOPEDIA: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA #TODO
   STR_DAMAGE_STUN_TOPIC: "Stun Damage"
-  STR_DAMAGE_STUN_UFOPEDIA: #TODO
+  STR_DAMAGE_STUN_UFOPEDIA: "Sometimes killing an opponent can be unpreferable as they might hold important data to be extracted or ransomed away if absolutely necessary. That's where less-lethal tools come into play - batons, rubber rounds or even hand-to-hand combat with sufficient skill and training are the readily availabe means of pacifying a target, and they are by no means the only ones. However, as the name implies, these weapons are not entirely harmless - most of them also cause normal wounds, limiting their repeatability on a single target. They can also cause shock, resulting in a slow but constant loss of vital signs, until expiration.{NEWLINE}The Aliens also seem to have a ranged version of less-lethal weapons, of an area-of-effect type to boot."
   STR_DAMAGE_MELEE_TOPIC: "Cutting Damage"
-  STR_DAMAGE_MELEE_UFOPEDIA: #TODO
+  STR_DAMAGE_MELEE_UFOPEDIA: "Melee weapons are among the simplest yet still effective types of weapons, bar armored opponents. At close range it might be preferable to dispatch an enemy using by the means of a combat knife or a similar implement given how quick they are to use, especially if the hostiles are the ones approaching. However, using it in other circumstances is inadvisable - risking overextension for an attack that might end up failing is always a bad decision but wanting to engage in melee combat can result in the worst cases of it should there be any complications. It's also relatively easy to be protected from cutting weapons; that goes either way."
   STR_DAMAGE_ACID_TOPIC: "Acid Damage"
   STR_DAMAGE_ACID_UFOPEDIA: STR_DAMAGE_ACID_UFOPEDIA #TODO
   STR_DAMAGE_SMOKE_TOPIC: "Choke Damage"
-  STR_DAMAGE_SMOKE_UFOPEDIA: #TODO
+  STR_DAMAGE_SMOKE_UFOPEDIA: "Smoke can provide a helpful, if intangible, cover from enemy fire. It can also become a hazard - inhaling smoke from any source will eventually result in loss of consciousness from decreased access to oxygen. It can be used to facilitate captures but overstaying in smoke could end up in a shock not unlike the one caused by abuse of stun weaponry. Thus it's ill-adviced for wounded troops to stay long, or in worst cases at all, in smokescreens, grenade-made or otherwise."
   STR_DAMAGE_EMP_TOPIC: "EMP Damage"
   STR_DAMAGE_EMP_UFOPEDIA: STR_DAMAGE_EMP_UFOPEDIA #TODO
   STR_DAMAGE_ELECTRIC_TOPIC: "Electric Damage"
