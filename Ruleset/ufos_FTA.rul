@@ -26,6 +26,19 @@ ufos:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [3, 3, 0]
               - [4, 2, 1]
+          randomizedItems:
+              - position: [1, 5, 0]
+                amount: 5
+                mixed: true
+                itemList: &generalResistanceStash [STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL_CLIP, STR_RIOT_PISTOL, STR_RIOT_PISTOL, STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SAWED_OFF, STR_SAWED_OFF, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID]
+              - position: [4, 5, 1]
+                amount: 3
+                mixed: true
+                itemList: &explosiveResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
+              - position: [3, 0, 0]
+                amount: 2
+                mixed: true
+                itemList: &suppliesResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULTA18
@@ -34,6 +47,15 @@ ufos:
           items:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [1, 5, 0]
+          randomizedItems:
+              - position: [0, 6, 0]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [0, 6, 0]
+                amount: 2
+                mixed: true
+                itemList: *suppliesResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULTAFARM01
@@ -43,6 +65,19 @@ ufos:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [4, 1, 0]
               - [4, 6, 2]
+          randomizedItems:
+              - position: [6, 1, 2]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 6, 2]
+                amount: 3
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [1, 2, 2]
+                amount: 1
+                mixed: true
+                itemList: *explosiveResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULTAFARM20
@@ -52,6 +87,19 @@ ufos:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [3, 5, 0]
               - [1, 6, 2]
+          randomizedItems:
+              - position: [5, 6, 2]
+                amount: 6
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [5, 6, 2]
+                amount: 4
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [5, 6, 2]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULTAFARM21
@@ -60,6 +108,19 @@ ufos:
           items:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [6, 6, 1]
+          randomizedItems:
+              - position: [3, 6, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [6, 0, 1]
+                amount: 5
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [6, 0, 1]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULT_NEW16
@@ -68,6 +129,15 @@ ufos:
           items:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [3, 1, 1]
+          randomizedItems:
+              - position: [1, 5, 1]
+                amount: 6
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 5, 1]
+                amount: 1
+                mixed: true
+                itemList: *suppliesResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULT_NEW18
@@ -77,6 +147,15 @@ ufos:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [5, 2, 0]
               - [1, 5, 1]
+          randomizedItems:
+              - position: [0, 0, 1]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 0, 1]
+                amount: 2
+                mixed: true
+                itemList: *suppliesResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULT_FINNIK00
@@ -86,6 +165,11 @@ ufos:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [1, 2, 0]
               - [4, 1, 0]
+          randomizedItems:
+              - position: [4, 0, 0]
+                amount: 7
+                mixed: true
+                itemList: *generalResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
         - name: CULTACIV01
@@ -95,8 +179,186 @@ ufos:
             STR_SPAWN_RESISTANCE_SOLDIER:
               - [2, 6, 0]
               - [6, 3, 1]
+          randomizedItems:
+              - position: [6, 7, 1]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_SOLDIER: [0, 0]
+  - type: STR_RESISTANCE_SHELTER_FARM_RADIO
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: RESISTANCE_SHELTER_FARM
+      mapDataSets:
+        - BLANKS
+        - CULTIVAT
+        - BARN
+        - ROADS
+        - CULTMACHINES
+      mapBlocks:
+        - name: CULTA16
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [3, 1, 1]
+          randomizedItems:
+              - position: [1, 5, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [4, 5, 1]
+                amount: 3
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [3, 0, 0]
+                amount: 2
+                mixed: true
+                itemList: *suppliesResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULTA18
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [3, 1, 1]
+          randomizedItems:
+              - position: [0, 6, 0]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [0, 6, 0]
+                amount: 2
+                mixed: true
+                itemList: *suppliesResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULTAFARM01
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [6, 4, 1]
+          randomizedItems:
+              - position: [6, 1, 2]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 6, 2]
+                amount: 3
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [1, 2, 2]
+                amount: 1
+                mixed: true
+                itemList: *explosiveResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULTAFARM20
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [6, 1, 2]
+          randomizedItems:
+              - position: [5, 6, 2]
+                amount: 6
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [5, 6, 2]
+                amount: 4
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [5, 6, 2]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULTAFARM21
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [2, 2, 1]
+          randomizedItems:
+              - position: [3, 6, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [6, 0, 1]
+                amount: 5
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [6, 0, 1]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULT_NEW16
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [3, 4, 1]
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULT_NEW18
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [1, 1, 1]
+          randomizedItems:
+              - position: [0, 0, 1]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 0, 1]
+                amount: 2
+                mixed: true
+                itemList: *suppliesResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULT_FINNIK00
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [1, 3, 1]
+          randomizedItems:
+              - position: [4, 0, 0]
+                amount: 7
+                mixed: true
+                itemList: *generalResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+        - name: CULTACIV01
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_RADIO:
+              - [2, 4, 1]
+          randomizedItems:
+              - position: [6, 7, 1]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+          fuseTimers:
+           STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+
 
   - type: STR_SCIENTIST_REFUGE
     size: STR_MEDIUM_UC

@@ -10,10 +10,6 @@ armors:
     corpseBattle:
       - STR_XCOM_EX_COMMANDER_CORPSE
     visibilityAtDark: 10
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: &StandardDynamicPsiDefence
       psiStrength: 1.0
       psiSkill: 0.2
@@ -56,11 +52,7 @@ armors:
     spriteInv: inventory_MIB_AGENT
     corpseBattle:
       - STR_MIB_AGENT_CORPSE
-    visibilityAtDark: 10
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
+    visibilityAtDark: 8
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -129,9 +121,9 @@ armors:
     visibilityAtDark: 13
     heatVision: 100
     weight: 6
-    frontArmor: 40
-    sideArmor: 30
-    rearArmor: 35
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 30
     underArmor: 20
     psiDefence: *StandardDynamicPsiDefence
     recovery:
@@ -171,11 +163,11 @@ armors:
     visibilityAtDark: 20
     heatVision: 100
     camouflageAtDay: 30
-    camouflageAtDark: -3
-    frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 20
+    camouflageAtDark: 0
+    frontArmor: 25
+    sideArmor: 25
+    rearArmor: 25
+    underArmor: 25
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -256,10 +248,6 @@ armors:
       - STR_FACEHUGGER_CORPSE #TODO
     visibilityAtDark: 16
     heatVision: 30
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     bleedImmune: true
@@ -304,10 +292,6 @@ armors:
       - STR_ZOMBIE_STERILE_CORPSE
     visibilityAtDark: 12
     heatVision: 20
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     bleedImmune: true
@@ -340,10 +324,6 @@ armors:
       - STR_ZOMBIE_GRUBAS_CORPSE
     visibilityAtDark: 12
     heatVision: 20
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
@@ -423,10 +403,10 @@ armors:
       - STR_CHUPACABRA_CORPSE
     visibilityAtDark: 20
     heatVision: 95
-    frontArmor: 9
-    sideArmor: 9
-    rearArmor: 9
-    underArmor: 6
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
     psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
@@ -469,10 +449,6 @@ armors:
     corpseBattle:
       - STR_MALE_CIVILIAN_FARMER_CORPSE
     visibilityAtDark: 6
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
@@ -512,10 +488,6 @@ armors:
     corpseBattle:
       - STR_FEMALE_CIVILIAN_FARMER_CORPSE 
     visibilityAtDark: 6
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
@@ -540,10 +512,6 @@ armors:
     corpseBattle:
       - STR_MALE_CITIZEN_CORPSE
     visibilityAtDark: 6
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
@@ -567,10 +535,6 @@ armors:
     corpseBattle:
       - STR_MALE_POLICE_CORPSE
     visibilityAtDark: 6
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
@@ -598,10 +562,6 @@ armors:
     visibilityAtDark: 15
     personalLight: 5
     heatVision: 20
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
@@ -652,10 +612,6 @@ armors:
     corpseBattle:
       - STR_RESISTANCE_SCIENTIST_CORPSE
     visibilityAtDark: 10
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -679,10 +635,6 @@ armors:
     corpseBattle:
       - STR_RESISTANCE_SOLDIER_CORPSE
     visibilityAtDark: 10
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -852,10 +804,6 @@ armors:
     camouflageAtDark: -2
     visibilityAtDark: 9
     personalLight: 5
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:

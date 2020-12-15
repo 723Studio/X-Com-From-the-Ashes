@@ -53,3 +53,7 @@ extraSounds:
       104: Resources/Armors/Civilians/Animals/DogeSpotted.wav
       105: Resources/Weapons/Sounds/Dog_Bark.wav
       106: Resources/Weapons/Sounds/Dog_growl.wav
+      107: Resources/Weapons/Sounds/TaserZap.wav
+      108: Resources/Weapons/Sounds/Harpoon.wav
+      109: Resources/Weapons/Sounds/ArrowHit.wav
+      110: Resources/Weapons/Sounds/BowFire.ogg

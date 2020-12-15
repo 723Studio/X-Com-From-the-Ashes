@@ -67,17 +67,19 @@ mapScripts:
     - type: addCraft
       rects: 
       - [2, 2, 4, 4]
+      #habitable
     - type: addUFO
       executions: 2
       rects: 
           - [2, 2, 4, 4]
       UFOName: STR_RESISTANCE_SHELTER_FARM
     - type: addUFO
-      executionChances: 40
-      executions: 2
+      executionChances: 60
+      executions: 1
       rects: 
           - [2, 2, 4, 4]
       UFOName: STR_RESISTANCE_SHELTER_FARM
+    
     - type: addBlock
       size: 2
       executions: 2

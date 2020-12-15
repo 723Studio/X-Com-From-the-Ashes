@@ -243,6 +243,16 @@ extraSprites:
       368: Resources/Weapons/Unarmed/bigob_DOGE_BITE.png
       369: Resources/Weapons/Unarmed/bigob_DOGE_BARK.png
       370: Resources/MiscItems/bigob_FloppyBlue.png
+      371: Resources/Weapons/Earthbound/Special/bigob_SportsBow.png
+      372: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow.png
+      373: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_HE.png
+      374: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_IN.png
+      375: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_Stun.png
+      376: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_Poison.png
+      377: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_Electric.png
+      378: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_EMP.png
+      379: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_AA.png
+      
       
   - type: FLOOROB.PCK
     files:
@@ -316,6 +326,8 @@ extraSprites:
       365: Resources/MiscItems/floorob_FakeID.png
       366: Resources/Weapons/Earthbound/Faction/floorob_Sword.png
       370: Resources/MiscItems/floorob_FloppyBlue.png
+      371: Resources/Weapons/Earthbound/Special/floorob_SportsBow.png
+      372: Resources/Weapons/Earthbound/Special/floorob_SportsBow_Arrow.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -379,6 +391,8 @@ extraSprites:
       552: Resources/Weapons/Earthbound/Faction/handob_ExplosiveCharge.png
       560: Resources/Weapons/Earthbound/Faction/handob_Sword.png
       568: Resources/MiscItems/handob_FloppyBlue.png
+      576: Resources/Weapons/Earthbound/Special/handob_SportsBow.png
+      584: Resources/Weapons/Earthbound/Special/handob_SportsBow_Arrow.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

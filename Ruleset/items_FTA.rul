@@ -39,17 +39,17 @@ items:
     handSprite: 280
     meleeHitSound: 55
     meleeAnimation: 0
-    power: 14
-    damageType: 6
+    power: 7
+    damageType: 7
     damageBonus:
       strength: 0.1
       melee: 0.3
     damageAlter:
       RandomType: 2
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.0
-      ToHealth: 0.2
+      ArmorEffectiveness: 1.45
+      ToStun: 2
+      ToHealth: 0.4
+      ToTile: 0.2
     accuracyMelee: 90
     meleeMultiplier:
       melee: 1.0
@@ -87,6 +87,10 @@ items:
     damageBonus:
       strength: 0.2
       melee: 0.2
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1.5
+      ToTile: 0.2
     accuracyMelee: 75
     tuMelee: 8
     flatRate: true
@@ -125,7 +129,8 @@ items:
       strength: 0.4
       melee: 0.4
     damageAlter:
-      ArmorEffectiveness: 1.2
+      RandomType: 2
+      ArmorEffectiveness: 1.45
       ToTile: 0.2
     accuracyMelee: 100
     meleeMultiplier:
@@ -167,26 +172,96 @@ items:
     damageBonus:
       throwing: [0.0, 0.01]
     damageAlter:
-      ArmorEffectiveness: 1.3
+      RandomType: 2
+      ArmorEffectiveness: 1.5
+      ToTile: 0.2
     accuracySnap: 70
     accuracyMultiplier:
-      firing: 0.0
-      throwing: [0.0, 0.028]
+      firing: 0.2
+      throwing: 0.8
     costSnap:
       time: 20
       energy: 10
     costThrow:
       energy: 8
     flatRate: true
-    clipSize: 5
+    clipSize: 1
+    #stackSize: 5 #TODO
     battleType: 1
     invWidth: 1
     invHeight: 2
     maxRange: 8
     bulletSpeed: -2
-    experienceTrainingMode: 7
+    experienceTrainingMode: 11
     attraction: 6
     listOrder: 17600
+  - type: STR_SPORT_BOW
+    categories: [STR_HUMAN_TECH,  STR_THROWING, STR_BOWS, STR_CONCEALABLE]
+    size: 0.2
+    costBuy: 800
+    costSell: 500
+    weight: 4
+    bigSprite: 371
+    floorSprite: 371
+    handSprite: 576
+    bulletSprite: 23
+    fireSound: 110
+    compatibleAmmo:
+      - STR_BOW_ARROW
+    accuracyAimed: 110
+    accuracyCloseQuarters: 95
+    accuracyMultiplier:
+      firing: 0.7
+      throwing: 0.3
+    costAimed:
+      time: 30
+      energy: 5
+    costThrow:
+      energy: 8
+    tuLoad: 5
+    flatRate: true
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    aimRange: 20
+    dropoff: 4
+    maxRange: 52
+    bulletSpeed: -3
+    kneelBonus: 100
+    experienceTrainingMode: 11
+    attraction: 20
+    listOrder: 17620
+  - type: STR_BOW_ARROW
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
+    size: 0.08
+    costBuy: 80
+    costSell: 50
+    weight: 1
+    bigSprite: 372
+    floorSprite: 372
+    handSprite: 584
+    hitSound: 109
+    hitAnimation: 26
+    power: 25
+    damageType: 7
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1.5
+      ToTile: 0.2
+    damageBonus:
+     firing: 0.1
+    clipSize: 1
+    #stackSize: 10 #TODO
+    costThrow:
+      energy: 8
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    attraction: 15
+    listOrder: 17630
+
 #pistols
   - type: STR_SNUBNOSE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
@@ -779,7 +854,10 @@ items:
     damageAlter:
       RandomType: 7
     damageType: 1
+    damageBonus:
+      firing: 0.15
     clipSize: 5 #TODO bolt-action
+    #stackSize: 5 #TODO
     battleType: 2
     armor: 30
     attraction: 7
@@ -1781,9 +1859,8 @@ items:
       - STR_TODOIUM
     size: 0.2
     costBuy: 3200
-    costSell: 15000
-    weight: 6
-    #missionObjective: true
+    costSell: 2700
+    weight: 9
     landOnly: true
     bigSprite: 317
     floorSprite: 317
@@ -1795,12 +1872,14 @@ items:
     fireSound: 69
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 95
+    accuracyAimed: 80
     tuAuto: 0
     tuSnap: 0
-    tuAimed: 66
-    power: 225
-    damageType: 1
+    tuAimed: 60
+    power: 80
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
     clipSize: 1
     battleType: 1
     twoHanded: true
@@ -1808,13 +1887,7 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 16
-    maxRange: 25
-    aimRange: 20
-    snapRange: 15
-    autoRange: 0
-    minRange: 5
-    dropoff: 5
-    recoveryPoints: 50
+    attraction: 12
     listOrder: 33840
   - type: STR_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE]
@@ -1823,7 +1896,7 @@ items:
     size: 0.3
     costBuy: 38000
     costSell: 27000
-    weight: 10
+    weight: 19
     landOnly: true
     bigSprite: 15
     floorSprite: 15
@@ -1839,7 +1912,7 @@ items:
     accuracyCloseQuarters: 33
     accuracySnap: 55
     accuracyAimed: 115
-    tuSnap: 45
+    #tuSnap: 45
     tuAimed: 75
     tuLoad: 20
     battleType: 1
@@ -2786,6 +2859,14 @@ items:
     recoveryPoints: -200
     recover: true
     listOrder: 67800
+  - type: STR_SPAWN_RESISTANCE_RADIO
+    spawnUnit: STR_RESISTANCE_RADIO
+    spawnUnitFaction: -1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_RESISTANCE_RADIO_REMAINS
     categories: [STR_WRECKS]
     name: STR_CORPSE
