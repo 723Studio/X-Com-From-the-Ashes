@@ -444,6 +444,18 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
+  - id: STR_HEAVY_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HEAVY_PISTOL_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 20330
+  - id: STR_HEAVY_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_PISTOL_AA_CLIP
     type_id: 4
     requires:
@@ -456,6 +468,12 @@ ufopaedia:
     requires:
       - STR_MACHINE_PISTOL
     text: STR_MACHINE_PISTOL_UFOPEDIA
+    listOrder: 21300
+  - id: STR_MACHINE_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MACHINE_PISTOL_CLIP
     listOrder: 21300
   - id: STR_PDW
     type_id: 4
@@ -504,13 +522,6 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_RIOT_RIFLE_CLIP
-  - id: STR_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
-    text: STR_RIFLE_UFOPEDIA
-    listOrder: 21300
   - id: STR_ASSAULT_RIFLE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -518,11 +529,30 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_ASSAULT_RIFLE_UFOPEDIA
     listOrder: 21300
+  - id: STR_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_RIFLE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_PRECISION_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_PRECISION_RIFLE_UFOPEDIA
+    listOrder: 21300
   - id: STR_RIFLE_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
+  - id: STR_RIFLE_EXP_CLIP
+    type_id: 4
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    section: STR_NOT_AVAILABLE
   - id: STR_RIFLE_AA_CLIP
     type_id: 4
     requires:
@@ -574,6 +604,11 @@ ufopaedia:
       - STR_DOUBLE_BARRELED
     listOrder: 20330
   - id: STR_DOUBLE_BARRELED_BUCKSHOT
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+  - id: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
@@ -635,6 +670,18 @@ ufopaedia:
       - STR_SHOTGUN_SHELLS_AA
     section: STR_NOT_AVAILABLE
 #cannons
+  - id: STR_LMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_LMG_UFOPEDIA
+    listOrder: 21300
+  - id: STR_LMG_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_LIGHT_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

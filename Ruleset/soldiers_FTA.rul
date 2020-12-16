@@ -14,7 +14,7 @@ soldiers:
       psiStrength: 0
       psiSkill: 0
       melee: 20
-      mana: 5
+      mana: 0
     maxStats:
       tu: 60
       stamina: 70
@@ -27,20 +27,20 @@ soldiers:
       psiStrength: 100
       psiSkill: 0
       melee: 70
-      mana: 15
+      mana: 0
     statCaps:
-      tu: 80
-      stamina: 100
+      tu: 90
+      stamina: 110
       health: 70
       bravery: 100
       reactions: 100
       firing: 120
       throwing: 90
-      strength: 70
+      strength: 80
       psiStrength: 100
       psiSkill: 100
       melee: 120
-      mana: 45
+      mana: 80
     trainingStatCaps:
       tu: 70
       stamina: 90

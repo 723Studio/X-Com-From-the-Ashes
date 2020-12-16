@@ -3,6 +3,7 @@ soldierTransformation:
     minRank: 1
     requiredMinStats:
        firing: 65 
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -23,6 +24,7 @@ soldierTransformation:
     requiredMinStats:
        stamina: 60
        strength: 33
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -47,6 +49,7 @@ soldierTransformation:
     requiredMinStats:
        reactions: 57
        firing: 55
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -70,6 +73,7 @@ soldierTransformation:
        stamina: 60
        reactions: 52
        melee: 58
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -90,7 +94,8 @@ soldierTransformation:
   - name: STR_SPECIALIST_TRAINING
     minRank: 1
     requiredMinStats:
-       bravery: 60
+       bravery: 50
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false

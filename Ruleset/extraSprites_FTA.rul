@@ -252,6 +252,13 @@ extraSprites:
       377: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_Electric.png
       378: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_EMP.png
       379: Resources/Weapons/Earthbound/Special/bigob_SportsBow_Arrow_AA.png
+      380: Resources/Weapons/Earthbound/Xcom/bigob_Rifle_Exp_Clip.png
+      381: Resources/Weapons/Earthbound/Xcom/bigob_PrecisionRifle.png
+      382: Resources/Weapons/Earthbound/Xcom/bigob_HeavyPistol.png
+      383: Resources/Weapons/Earthbound/Xcom/bigob_HeavyPistolClip.png
+      384: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_Exp_Clip.png
+      385: Resources/Weapons/Earthbound/Xcom/bigob_LMG.png
+      386: Resources/Weapons/Earthbound/Xcom/bigob_LMGClip.png
       
       
   - type: FLOOROB.PCK
@@ -328,6 +335,11 @@ extraSprites:
       370: Resources/MiscItems/floorob_FloppyBlue.png
       371: Resources/Weapons/Earthbound/Special/floorob_SportsBow.png
       372: Resources/Weapons/Earthbound/Special/floorob_SportsBow_Arrow.png
+      381: Resources/Weapons/Earthbound/Xcom/floorob_PrecisionRifle.png
+      382: Resources/Weapons/Earthbound/Xcom/floorob_HeavyPistol.png
+      383: Resources/Weapons/Earthbound/Xcom/floorob_HeavyPistolClip.png
+      385: Resources/Weapons/Earthbound/Xcom/floorob_LMG.png
+      386: Resources/Weapons/Earthbound/Xcom/floorob_LMGClip.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -393,6 +405,11 @@ extraSprites:
       568: Resources/MiscItems/handob_FloppyBlue.png
       576: Resources/Weapons/Earthbound/Special/handob_SportsBow.png
       584: Resources/Weapons/Earthbound/Special/handob_SportsBow_Arrow.png
+      592: Resources/Weapons/Earthbound/Xcom/handob_PrecisionRifle.png
+      600: Resources/Weapons/Earthbound/Xcom/handob_HeavyPistol.png
+      608: Resources/Weapons/Earthbound/Xcom/handob_HeavyPistolClip.png
+      616: Resources/Weapons/Earthbound/Xcom/handob_LMG.png
+
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

@@ -794,10 +794,10 @@ units:
     spotter: 2
     canSurrender: true
     builtInWeaponSets:
-      - - STR_SNUBNOSE_PISTOL
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_MACHINE_PISTOL
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_MACHINE_PISTOL_CLIP
       - - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP

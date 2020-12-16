@@ -355,12 +355,16 @@ en-US:
   STR_SNUBNOSE_PISTOL_UFOPEDIA: STR_SNUBNOSE_PISTOL_UFOPEDIA #TODO
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
   STR_RIOT_PISTOL: "Riot Pistol"
-  STR_RIOT_PISTOL_UFOPEDIA: STR_RIOT_PISTOL_UFOPEDIA #TODO
+  STR_RIOT_PISTOL_UFOPEDIA: "STR_RIOT_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO
   STR_RIOT_PISTOL_CLIP: "Riot Pistol Clip"
   STR_PISTOL: "SpecOps Pistol"
   STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides a good rate of fire and accuracy on short distances.{NEWLINE}>Concealable"
   STR_PISTOL_CLIP: "Pistol Clip"
+  STR_PISTOL_EXP_CLIP: "Pistol Exp. Clip"
   STR_PISTOL_AA_CLIP: "Pistol AA Clip"
+  STR_HEAVY_PISTOL: "Heavy Pistol"
+  STR_HEAVY_PISTOL_UFOPEDIA: "STR_HEAVY_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO
+  STR_HEAVY_PISTOL_CLIP: "Heavy Pistol Clip"
   STR_MACHINE_PISTOL: "Machine Pistol"
   STR_MACHINE_PISTOL_UFOPEDIA: "To be done.{NEWLINE}>Concealable" #TODO
   STR_MACHINE_PISTOL_CLIP: "Machine Pistol"
@@ -375,15 +379,18 @@ en-US:
   STR_RIOT_RIFLE: "Riot Rifle"
   STR_RIOT_RIFLE_UFOPEDIA: STR_RIOT_RIFLE_UFOPEDIA #TODO
   STR_RIOT_RIFLE_CLIP: "Riot Rifle Clip"
-  STR_RIFLE: "Precision Rifle"
-  STR_RIFLE_UFOPEDIA: "This advanced precision rifle fills the engagement range gap between a regular assault rifle and a sniper rifle."
   STR_ASSAULT_RIFLE: "Assault Rifle"
   STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is decreased effectiveness at longer distances, even with Aimed, careful shots."
+  STR_RIFLE: "Battle Rifle"
+  STR_RIFLE_UFOPEDIA: "Rugged, well balanced firearm made to be effective in most situations at the cost of hardly excelling at any given range over specialized approaches, apart from a better adaptation for firing expanding rounds."
+  STR_PRECISION_RIFLE: "Precision Rifle"
+  STR_PRECISION_RIFLE_UFOPEDIA: "An accurized rifle designed for long-range engagements while also offering acceptable mobility and rapid fire for close quarters emergencies."
   STR_RIFLE_CLIP: "Rifle Clip"
+  STR_RIFLE_EXP_CLIP: "Rifle Exp. Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_HUNTING_RIFLE: "Hunting Rifle"
   STR_HUNTING_RIFLE_UFOPEDIA: STR_HUNTING_RIFLE_UFOPEDIA #TODO
-  STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip"
+  STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip" 
   STR_SNIPER_RIFLE: "Sniper Rifle"
   STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy at long distances. The enlarged projectiles have high initial velocity and can penetrate medium armor easily. However it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
   STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
@@ -407,7 +414,10 @@ en-US:
   STR_SHOTGUN_SHELLS_BATON: "Shotgun Baton Shells"
   STR_SHOTGUN_SHELLS_BS_AA: "Shotgun AA-BS Ammo"
   STR_SHOTGUN_SHELLS_AP_AA: "Shotgun AA-AP Shells"
-  STR_LIGHT_CANNON: "Light Cannon."
+  STR_LMG: "Light Machine Gun"
+  STR_LMG_UFOPEDIA: STR_LMG_UFOPEDIA #TODO
+  STR_LMG_CLIP: "LMG Ammo Belt"
+  STR_LIGHT_CANNON: "Light Cannon"
   STR_LIGHT_CANNON_UFOPEDIA: "This high-caliber hand weapon can use armor-piercing, buckshot, high-explosive and incendiary ammo. It has great stopping power and it's AP rounds can penetrate medium armor."
   STR_LIGHT_CANNON_CONT: "Light Cannon (Continued)"
   STR_LC_AP_AMMO: "LC-AP Ammo"
@@ -462,6 +472,8 @@ en-US:
   STR_PUNCH: "Punch"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
+#armors
+  STR_JUMPSUIT_UC: "X-COM UNIFORM"
 
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"

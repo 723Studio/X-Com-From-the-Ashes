@@ -57,3 +57,6 @@ extraSounds:
       108: Resources/Weapons/Sounds/Harpoon.wav
       109: Resources/Weapons/Sounds/ArrowHit.wav
       110: Resources/Weapons/Sounds/BowFire.ogg
+      111: Resources/Weapons/Sounds/Magnumfire.wav
+      112: Resources/Weapons/Sounds/SwingAttack.ogg
+      113: Resources/Weapons/Sounds/LMGfire.wav

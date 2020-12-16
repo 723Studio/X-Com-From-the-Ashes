@@ -77,6 +77,7 @@ minReactionAccuracy: 30
 turnAIUseGrenade: 2 #TODO Consider if changing back to 1
 turnAIUseBlaster: 2 
 surrenderMode: 0 #TODO Consider
+#closeQuartersSneakUpGlobal: 40 #TODO Uncomment
 
 
 ai:
@@ -97,7 +98,7 @@ constants:
 
 mana:
   enabled: false #true #TODO
-  battleUI: true
+  battleUI: false #true #TODO
   unlockResearch: STR_TODOIUM
   trainingPrimary: false
   trainingSecondary: false
