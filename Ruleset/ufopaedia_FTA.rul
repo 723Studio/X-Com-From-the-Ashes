@@ -407,6 +407,13 @@ ufopaedia:
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 20330
+  - id: STR_MACHETE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MACHETE_UFOPEDIA
+    requires:
+      - STR_MACHETE
+    listOrder: 20330    
 #pistols
   - id: STR_SNUBNOSE_PISTOL
     type_id: 4

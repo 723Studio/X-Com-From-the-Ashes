@@ -521,6 +521,11 @@ research:
       - STR_JABBER_CORPSE
 
 #weapons and equipment
+  - name: STR_MACHETE
+    cost: 1
+    points: 1
+    needItem: true
+    listOrder: 7410
   - name: STR_SNUBNOSE_PISTOL
     cost: 2
     points: 1
