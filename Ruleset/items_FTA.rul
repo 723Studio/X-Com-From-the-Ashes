@@ -109,6 +109,48 @@ items:
     experienceTrainingMode: 13
     attraction: 6
     listOrder: 18000
+  - type: STR_MACHETE 
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.1
+    landOnly: false
+    costBuy: 260
+    costSell: 180
+    weight: 4
+    bigSprite: 387
+    floorSprite: 387
+    handSprite: 624
+    meleeSound: 56
+    meleeHitSound: 57
+    meleeAnimation: 8
+    power: 20
+    damageType: 7
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1.5
+      ToTile: 0.2
+    accuracyMelee: 75
+    tuMelee: 8
+    flatRate: true
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 7
+      energy: 2
+    costThrow:
+      energy: 8
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 6
+    listOrder: 18000    
   - type: STR_SWORD
     categories: [STR_HUMAN_TECH, STR_MELEE]
     requiresBuy:

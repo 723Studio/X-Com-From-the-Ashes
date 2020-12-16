@@ -259,6 +259,7 @@ extraSprites:
       384: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_Exp_Clip.png
       385: Resources/Weapons/Earthbound/Xcom/bigob_LMG.png
       386: Resources/Weapons/Earthbound/Xcom/bigob_LMGClip.png
+      387: Resources/Weapons/Earthbound/General/bigob_Machete.png
       
       
   - type: FLOOROB.PCK
@@ -340,6 +341,7 @@ extraSprites:
       383: Resources/Weapons/Earthbound/Xcom/floorob_HeavyPistolClip.png
       385: Resources/Weapons/Earthbound/Xcom/floorob_LMG.png
       386: Resources/Weapons/Earthbound/Xcom/floorob_LMGClip.png
+      387: Resources/Weapons/Earthbound/General/floorob_Machete.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -409,6 +411,7 @@ extraSprites:
       600: Resources/Weapons/Earthbound/Xcom/handob_HeavyPistol.png
       608: Resources/Weapons/Earthbound/Xcom/handob_HeavyPistolClip.png
       616: Resources/Weapons/Earthbound/Xcom/handob_LMG.png
+      624: Resources/Weapons/Earthbound/General/handob_Machete.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

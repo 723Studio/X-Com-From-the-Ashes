@@ -349,8 +349,10 @@ en-US:
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
   STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knock out unarmored enemies.{NEWLINE}>Concealable" 
-  STR_COMBAT_KNIFE: "Combat knife"
+  STR_COMBAT_KNIFE: "Combat Knife"
   STR_COMBAT_KNIFE_UFOPEDIA: "This sharp and balanced fighting knife is very handy in close combat encounters and could be very deadly in well-trained hands.{NEWLINE}>Concealable"
+  STR_MACHETE: "Machete"  
+  STR_MACHETE_UFOPEDIA: "STR_MACHETE_UFOPEDIA" #TODO
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
   STR_SNUBNOSE_PISTOL_UFOPEDIA: STR_SNUBNOSE_PISTOL_UFOPEDIA #TODO
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
