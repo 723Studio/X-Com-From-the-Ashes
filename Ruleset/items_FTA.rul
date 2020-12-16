@@ -124,22 +124,22 @@ items:
     meleeSound: 56
     meleeHitSound: 57
     meleeAnimation: 8
-    power: 20
+    power: 23
     damageType: 7
     damageBonus:
-      strength: 0.2
-      melee: 0.2
+      strength: 0.3
+      melee: 0.1
     damageAlter:
       RandomType: 2
       ArmorEffectiveness: 1.5
       ToTile: 0.2
-    accuracyMelee: 75
-    tuMelee: 8
+    accuracyMelee: 65
+    tuMelee: 10
     flatRate: true
     meleeMultiplier:
-      melee: 1.0
+      melee: 0.9
     costMelee:
-      time: 7
+      time: 10
       energy: 2
     costThrow:
       energy: 8
