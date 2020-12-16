@@ -414,6 +414,21 @@ ufopaedia:
     requires:
       - STR_MACHETE
     listOrder: 20330    
+  - id: STR_SWORD
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SWORD_UFOPEDIA
+    requires:
+      - STR_SWORD
+    listOrder: 20330  
+#throwing
+  - id: STR_THROWING_KNIFE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_THROWING_KNIFE_UFOPEDIA
+    requires:
+      - STR_THROWING_KNIFE
+    listOrder: 20330 
 #pistols
   - id: STR_SNUBNOSE_PISTOL
     type_id: 4
@@ -451,6 +466,11 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
+  - id: STR_PISTOL_EXP_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_PISTOL_EXP_CLIP
   - id: STR_HEAVY_PISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -558,7 +578,7 @@ ufopaedia:
   - id: STR_RIFLE_EXP_CLIP
     type_id: 4
     requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
+      - STR_RIFLE_EXP_CLIP
     section: STR_NOT_AVAILABLE
   - id: STR_RIFLE_AA_CLIP
     type_id: 4
@@ -820,7 +840,7 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_TODOIUM #TODO  
+      - STR_SINGLE_ROCKET_LAUNCHER
     text: STR_SINGLE_ROCKET_UFOPEDIA
     listOrder: 21300
   - id: STR_ROCKET_LAUNCHER

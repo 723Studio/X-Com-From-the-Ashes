@@ -303,7 +303,6 @@ items:
     invHeight: 3
     attraction: 15
     listOrder: 17630
-
 #pistols
   - type: STR_SNUBNOSE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
@@ -2590,7 +2589,7 @@ items:
     attraction: 5
     experienceTrainingMode: 19
     listOrder: 48160
-# built-in weapons
+#built-in weapons
   - type: STR_UNARMED
     categories: [STR_BUILT_INS]
     weight: 0

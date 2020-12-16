@@ -352,9 +352,13 @@ en-US:
   STR_COMBAT_KNIFE: "Combat Knife"
   STR_COMBAT_KNIFE_UFOPEDIA: "This sharp and balanced fighting knife is very handy in close combat encounters and could be very deadly in well-trained hands.{NEWLINE}>Concealable"
   STR_MACHETE: "Machete"  
-  STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone."
+  STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone.{NEWLINE}>Concealable"
+  STR_SWORD: "Sword"
+  STR_SWORD_UFOPEDIA: STR_SWORD_UFOPEDIA #TODO
+  STR_THROWING_KNIFE: "Throwing Knife"
+  STR_THROWING_KNIFE_UFOPEDIA: "STR_THROWING_KNIFE_UFOPEDIA{NEWLINE}>Concealable" #TODO
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
-  STR_SNUBNOSE_PISTOL_UFOPEDIA: STR_SNUBNOSE_PISTOL_UFOPEDIA #TODO
+  STR_SNUBNOSE_PISTOL_UFOPEDIA: "STR_SNUBNOSE_PISTOL_UFOPEDIA{NEWLINE}>Concealable" #TODO
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
   STR_RIOT_PISTOL: "Riot Pistol"
   STR_RIOT_PISTOL_UFOPEDIA: "STR_RIOT_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO

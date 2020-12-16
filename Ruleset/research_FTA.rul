@@ -76,21 +76,21 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [HQ]
-    cost: 20
+    cost: 200
     points: 15
     dependencies:
       - STR_RND_STATUS_REPORT
     listOrder: 7460
   - name: STR_XCOM_EQUIPMENT
     requiresBaseFunc: [HQ]
-    cost: 15
+    cost: 150
     points: 30
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
   - name: STR_XCOM_LORE
     requiresBaseFunc: [HQ]
-    cost: 30
+    cost: 300
     points: 50
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
@@ -102,7 +102,7 @@ research:
     listOrder: 7460
   - name: STR_COMMUNICATION
     requiresBaseFunc: [HQ]
-    cost: 10
+    cost: 100
     points: 10
     dependencies:
       - STR_INTEL_STATUS_REPORT
@@ -111,7 +111,7 @@ research:
     listOrder: 7460
   - name: STR_MONSTER_HUNT_START
     requiresBaseFunc: [HQ]
-    cost: 8 #/
+    cost: 80
     points: 3
     dependencies:
       - STR_MONSTER_HUNT_START_PREREQ
@@ -119,7 +119,7 @@ research:
     listOrder: 7460
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     requiresBaseFunc: [HQ]
-    cost: 10
+    cost: 100
     points: 10
     dependencies:
       - STR_INTEL_STATUS_REPORT
@@ -131,14 +131,14 @@ research:
     listOrder: 7460
   - name: STR_RESISTANCE_CONTACT
     requiresBaseFunc: [HQ]
-    cost: 15
+    cost: 70
     points: 40
     dependencies:
       - STR_COMMUNICATION
     listOrder: 7460
   - name: STR_SUPPLIES
     requiresBaseFunc: [HQ]
-    cost: 10
+    cost: 100
     points: 15
     dependencies:
       - STR_ENGINEER_STATUS_REPORT
@@ -147,7 +147,7 @@ research:
     listOrder: 7460
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [HQ]
-    cost: 20
+    cost: 280
     points: 15
     dependencies:
       - STR_SUPPLIES
@@ -156,7 +156,7 @@ research:
 
   - name: STR_MONSTER_HUNT_RUMORS
     requiresBaseFunc: [HQ]
-    cost: 5
+    cost: 70
     points: 18
     spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
@@ -180,11 +180,31 @@ research:
     dependencies:
       - STR_TODOIUM
 
+  - name: STR_EXPANDABLE_AMMO_PREREQ #TODO
+    needItem: true
+  - name: STR_EXPANDABLE_AMMO
+    cost: 100
+    points: 10
+    unlocks:
+      - STR_PISTOL_EXP_CLIP
+      - STR_RIFLE_EXP_CLIP
+    dependencies:
+      - STR_EXPANDABLE_AMMO_PREREQ
+      - STR_XCOM_EQUIPMENT
+  - name: STR_PISTOL_EXP_CLIP
+    dependencies:
+      - STR_EXPANDABLE_AMMO
+  - name: STR_RIFLE_EXP_CLIP
+    dependencies:
+      - STR_EXPANDABLE_AMMO
+
+
   - name: STR_ALLOY_AMMO
     cost: 2000
     points: 10
     dependencies:
       - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT
   - name: STR_PISTOL_AA_CLIP
     cost: 100
     points: 5
@@ -522,12 +542,22 @@ research:
 
 #weapons and equipment
   - name: STR_MACHETE
-    cost: 1
+    cost: 6
+    points: 1
+    needItem: true
+    listOrder: 7410
+  - name: STR_SWORD
+    cost: 6
+    points: 1
+    needItem: true
+    listOrder: 7410
+  - name: STR_THROWING_KNIFE
+    cost: 6
     points: 1
     needItem: true
     listOrder: 7410
   - name: STR_SNUBNOSE_PISTOL
-    cost: 2
+    cost: 8
     points: 1
     needItem: true
     unlocks:
@@ -539,7 +569,7 @@ research:
     dependencies:
       - STR_SNUBNOSE_PISTOL
   - name: STR_RIOT_PISTOL
-    cost: 2
+    cost: 8
     points: 1
     needItem: true
     unlocks:
@@ -551,7 +581,7 @@ research:
     dependencies:
       - STR_RIOT_PISTOL
   - name: STR_MACHINE_PISTOL
-    cost: 2
+    cost: 10
     points: 5
     needItem: true
     unlocks:
@@ -563,7 +593,7 @@ research:
     dependencies:
       - STR_MACHINE_PISTOL
   - name: STR_RIOT_RIFLE
-    cost: 3
+    cost: 16
     points: 10
     needItem: true
     unlocks:
@@ -575,7 +605,7 @@ research:
     dependencies:
       - STR_RIOT_RIFLE
   - name: STR_HUNTING_RIFLE
-    cost: 2
+    cost: 15
     points: 1
     needItem: true
     unlocks:
@@ -587,14 +617,14 @@ research:
     dependencies:
       - STR_HUNTING_RIFLE
   - name: STR_SAWED_OFF
-    cost: 2
+    cost: 14
     points: 1
     needItem: true
     unlocks:
       - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 7410
   - name: STR_DOUBLE_BARRELED
-    cost: 2
+    cost: 14
     points: 1
     needItem: true
     unlocks:
@@ -607,6 +637,11 @@ research:
       - STR_DOUBLE_BARRELED
       - STR_SAWED_OFF
     listOrder: 7410
+  - name: STR_SINGLE_ROCKET_LAUNCHER
+    cost: 40
+    points: 10
+    needItem: true
+    listOrder: 7410 
   - name: STR_MOTION_SCANNER
     cost: 180
     points: 20
@@ -619,13 +654,12 @@ research:
     dependencies:
       - STR_TODOIUM
     listOrder: 7410
-  - name: STR_FLASHBANG_GRENADE
-    dependencies:
-      - STR_TODOIUM
-    listOrder: 7410
+
 
 #evidence
   - name: STR_FLOPPY_SCIENTISTS_LOG
+    cost: 6
+    points: 80
     dependencies: #TODO remove
       - STR_TODOIUM
     # getOneFree: #TODO add
