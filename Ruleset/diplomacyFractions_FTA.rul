@@ -8,11 +8,11 @@ diplomacyFactions:
     startingReputation: 270
     genMissionFreq: 50 #100% chance to run the script
     helpTreatyMissions:
-      heavenDefenceFirstTime: 100
-      heavenDefenceContinues: 100
+      - heavenDefenceFirstTime
+      - heavenDefenceContinues
     genEventFreq: 100
     helpTreatyEvents:
-       STR_RESISTANCE_HEAVEN_SAVED_SCRIPT: 100
+       - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
     sellingSet:
       STR_STINGRAY_LAUNCHER: 0
       STR_STINGRAY_MISSILES: -1

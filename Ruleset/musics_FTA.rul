@@ -12,13 +12,14 @@ musics:
     catPos: 18
     normalization: 1.0
   - type: GMGEO3
-  - type: GMGEO4
-  - type: GMGEO5
-  - type: GMGEO6
-  - type: GMGEO7
-  - type: GMGEO8
-  - type: GMGEO9
-  - type: GMGEO10
+    normalization: 1.1
+  # - type: GMGEO4
+  # - type: GMGEO5
+  # - type: GMGEO6
+  # - type: GMGEO7
+  # - type: GMGEO8
+  # - type: GMGEO9
+  # - type: GMGEO10
   - type: GMINTER
     catPos: 2
     normalization: 0.74
@@ -46,18 +47,20 @@ musics:
   - type: GMTACTIC
     catPos: 17
     normalization: 1.14
-  - type: GMTACTIC1
-  - type: GMTACTIC2
-  - type: GMTACTIC3
-  - type: GMTACTIC4
-  - type: GMTACTIC5
-  - type: GMTACTIC6
-  - type: GMTACTIC7
-  - type: GMTACTIC8
-  #- type: GMTACTIC9
-  - type: GMTACTIC10
+  # - type: GMTACTIC1
+  # - type: GMTACTIC2
+  # - type: GMTACTIC3
+  # - type: GMTACTIC4
+  # - type: GMTACTIC5
+  # - type: GMTACTIC6
+  # - type: GMTACTIC7
+  # - type: GMTACTIC8
+  # - type: GMTACTIC9
+  # - type: GMTACTIC10
   - type: GMWIN
     catPos: 11
     normalization: 0.84
   - type: DISCOVERY
     normalization: 10
+  - type: ENEMY_TERRITORY
+    normalization: 1

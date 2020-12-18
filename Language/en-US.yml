@@ -73,6 +73,7 @@ en-US:
   STR_START_OPERATION_US: "START OPERATION"
   STR_OPERATION_CHANCES_US: "APPROX. ODDS>{ALT}{0}"
   STR_SELECT_SQUAD_FOR_OPERATION: "Select squad for operation: {ALT}{0}"
+  STR_ASSIGNMENT: "ASSIGNMENT"
   STR_ASSIGNED_UC: "ASSIGNED"
   STR_COVERT_OPERATION_UC: "COVERT OP."
   STR_OPERATION_: "COVERT OP.> {ALT}{0}"
@@ -228,7 +229,7 @@ en-US:
 #facilities
   STR_HQ: "Headquarters"
   STR_PRISON_CELLS: "Prison Cells"
-  STR_GYM: "Gym"
+  STR_GYM: "Training Center"
   STR_SICK_BAY: "Sick Bay"
   STR_CLOSED_LAB: "Closed Laboratory"
 #missions

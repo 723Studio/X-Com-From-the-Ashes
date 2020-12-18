@@ -2589,6 +2589,20 @@ items:
     attraction: 5
     experienceTrainingMode: 19
     listOrder: 48160
+#utilities
+  - type: STR_ELECTRO_FLARE
+    size: 0.1
+    costBuy: 60
+    costSell: 40
+    weight: 3
+    bigSprite: 55
+    floorSprite: 72
+    power: 15
+    battleType: 10
+    armor: 8
+    coneSize: 1
+
+    
 #built-in weapons
   - type: STR_UNARMED
     categories: [STR_BUILT_INS]
