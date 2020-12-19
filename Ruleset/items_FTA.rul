@@ -2590,6 +2590,20 @@ items:
     experienceTrainingMode: 19
     listOrder: 48160
 #utilities
+  - type: STR_FLASHLIGHT
+    size: 0.1
+
+    costBuy: 60
+    costSell: 40
+    weight: 3
+    bigSprite: 388
+    floorSprite: 72 #TODO
+    power: 30
+    battleType: 10
+    invWidth: 1
+    invHeight: 2
+    armor: 8
+    coneSize: 1
   - type: STR_ELECTRO_FLARE
     size: 0.1
     costBuy: 60
@@ -2600,8 +2614,6 @@ items:
     power: 15
     battleType: 10
     armor: 8
-    coneSize: 1
-
     
 #built-in weapons
   - type: STR_UNARMED

@@ -260,6 +260,7 @@ extraSprites:
       385: Resources/Weapons/Earthbound/Xcom/bigob_LMG.png
       386: Resources/Weapons/Earthbound/Xcom/bigob_LMGClip.png
       387: Resources/Weapons/Earthbound/General/bigob_Machete.png
+      388: Resources/Weapons/Earthbound/Utilities/bigob_MagLite.png
       
       
   - type: FLOOROB.PCK
