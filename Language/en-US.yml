@@ -104,7 +104,7 @@ en-US:
   STR_SCORE_UC: "SCORE"
   STR_REPUTATION_CHANGE: "REPUTATION CHANGE"
   STR_SOLDIERS_STATUS: "X-COM AGENT STATUS"
-  STR_XCOM_OPERATIVES_WOUNDED: "X_COM OPERATIVES WOUNDED"
+  STR_XCOM_OPERATIVES_WOUNDED: "X-COM OPERATIVES WOUNDED"
   STR_MIA: "M.I.A"
   STR_NEW_DATA_ACQUIRED: "New data acquired."
   STR_REGIONAL_HQ_FOUND: "We discovered the MiB regional headquarters!"
@@ -141,6 +141,12 @@ en-US:
   STR_STUFF_NO_MONEY20: STR_STUFF_NO_MONEY20 #TODO
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
   STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation! It's very important for me to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tuned for ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
+  STR_TRAINING: "Combat training"
+  STR_TRANSFORMATIONS_OVERVIEW: "Special training courses"
+  STR_TRANSFORMATION_TIME: "Training time> {ALT}{0}"
+  STR_IN_TRANSFORMATION_UC: "SPECIALIZING"
+  STR_NO_TRANSFORMATION: "-"
+  STR_TRANSFORMING_FINISHED: "Special Training Finished{NEWLINE}at {0}"
   #mana stuff
   STR_MANA: "MANA"
   STR_MANA_POOL: "MANA POOL"
@@ -218,7 +224,11 @@ en-US:
   STR_COUNCIL_REDUCE_DEBTS: "We are lacking funds necessary to sustain our operations - we need to maintain our account at above (x)$ or face an insurmountable shortage of supplies." #TODO - add fluff here! Original here - "The funding council is not happy with your financial position. You must reduce your debts below $1 million or the project will be terminated."
   STR_YOU_HAVE_NOT_SUCCEEDED: "You have not succeeded in dealing with the alien invasion and the council of funding nations has regrettably decided to terminate the project. Each nation shall deal with the problem as they see fit. We can only hope that we can come to some accommodation with these apparently hostile forces, and that the general population will come to terms with the alien visitors." #TODO - redo council to your stuff does not treat you as leader and scatter
   STR_COUNCIL_IS_DISSATISFIED: "The council of funding nations is dissatisfied with your performance. You must improve your effectiveness in dealing with the alien menace or risk termination of the project." #TODO - redo in FtA fashion
-
+  STR_SNIPER_TRAINING: "Sniper Specialization"
+  STR_HEAVY_TRAINING: "Heavy Specialization"
+  STR_ASSAULT_TRAINING: "Assault Specialization"
+  STR_RANGER_TRAINING: "Ranger Specialization"
+  STR_SPECIALIST_TRAINING: "Support Specialization"
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of its members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and they are trying to cover up any traces of their activity."
   STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."

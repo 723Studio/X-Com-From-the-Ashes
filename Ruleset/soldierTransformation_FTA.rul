@@ -1,6 +1,7 @@
 soldierTransformation:
   - name: STR_SNIPER_TRAINING
     minRank: 1
+    transformationTime: 240
     requiredMinStats:
        firing: 65 
     showMinMax: true
@@ -11,7 +12,7 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_SOLDIER
-    transferTime: 72
+    # transferTime: 72
     flatMin:
       tu: -2
       firing: 7
@@ -19,8 +20,15 @@ soldierTransformation:
       tu: 2
       firing: 16
     soldierBonusType: STR_SNIPER
+    forbiddenPreviousTransformations:
+      - STR_SNIPER_TRAINING
+      - STR_HEAVY_TRAINING
+      - STR_ASSAULT_TRAINING
+      - STR_RANGER_TRAINING
+      - STR_SPECIALIST_TRAINING
   - name: STR_HEAVY_TRAINING
     minRank: 1
+    transformationTime: 240
     requiredMinStats:
        stamina: 60
        strength: 33
@@ -44,8 +52,15 @@ soldierTransformation:
       throwing: 5
       strength: 14
     soldierBonusType: STR_HEAVY
+    forbiddenPreviousTransformations:
+      - STR_SNIPER_TRAINING
+      - STR_HEAVY_TRAINING
+      - STR_ASSAULT_TRAINING
+      - STR_RANGER_TRAINING
+      - STR_SPECIALIST_TRAINING
   - name: STR_ASSAULT_TRAINING
     minRank: 1
+    transformationTime: 240
     requiredMinStats:
        reactions: 57
        firing: 55
@@ -67,8 +82,15 @@ soldierTransformation:
       firing: 6
       tu: 3
     soldierBonusType: STR_ASSAULT
+    forbiddenPreviousTransformations:
+      - STR_SNIPER_TRAINING
+      - STR_HEAVY_TRAINING
+      - STR_ASSAULT_TRAINING
+      - STR_RANGER_TRAINING
+      - STR_SPECIALIST_TRAINING
   - name: STR_RANGER_TRAINING
     minRank: 1
+    transformationTime: 240
     requiredMinStats:
        stamina: 60
        reactions: 52
@@ -91,8 +113,15 @@ soldierTransformation:
       stamina: 8
       melee: 15
     soldierBonusType: STR_RANGER
+    forbiddenPreviousTransformations:
+      - STR_SNIPER_TRAINING
+      - STR_HEAVY_TRAINING
+      - STR_ASSAULT_TRAINING
+      - STR_RANGER_TRAINING
+      - STR_SPECIALIST_TRAINING
   - name: STR_SPECIALIST_TRAINING
     minRank: 1
+    transformationTime: 240
     requiredMinStats:
        bravery: 50
     showMinMax: true
@@ -113,3 +142,9 @@ soldierTransformation:
       bravery: 20
       throwing: 8
     soldierBonusType: STR_SPECIALIST
+    forbiddenPreviousTransformations:
+      - STR_SNIPER_TRAINING
+      - STR_HEAVY_TRAINING
+      - STR_ASSAULT_TRAINING
+      - STR_RANGER_TRAINING
+      - STR_SPECIALIST_TRAINING

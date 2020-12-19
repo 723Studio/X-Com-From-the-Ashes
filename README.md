@@ -26,6 +26,7 @@ I would like to give special thanks to the contributors to my project (in order 
 * **Ushna** - background image and sound reference help, weapon image and audio assets;
 * **Ruslan Makovkin** - unit inventory and ufopedia image assets;
 * **DaManWithGun** - lore articles, stylistic and grammar changes in English localization;
+* **pedroterzero** - engine features development;
 
 ## Support
 I realize I have a tremendous amount of work to do. I'll be happy to have any kind of support. Visit my [Discord server](https://discord.gg/epmtzH9), share your thoughts, ideas, and suggestions. You make an issue here on GitHub, or if you want to get involved in development - write to me, I will be glad of any help. Feel free to make fork and pull requests or propose changes directly.
