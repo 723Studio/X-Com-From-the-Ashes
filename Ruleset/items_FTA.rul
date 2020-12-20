@@ -2591,8 +2591,8 @@ items:
     listOrder: 48160
 #utilities
   - type: STR_FLASHLIGHT
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
-
     costBuy: 60
     costSell: 40
     weight: 3
@@ -2604,7 +2604,9 @@ items:
     invHeight: 2
     armor: 8
     coneSize: 1
+    listOrder: 48160
   - type: STR_ELECTRO_FLARE
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
     costBuy: 60
     costSell: 40
@@ -2614,6 +2616,8 @@ items:
     power: 15
     battleType: 10
     armor: 8
+    # coneSize: 5
+    listOrder: 48160
     
 #built-in weapons
   - type: STR_UNARMED
