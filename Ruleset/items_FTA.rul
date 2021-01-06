@@ -918,6 +918,8 @@ items:
     accuracyAuto: 35
     accuracySnap: 70
     accuracyAimed: 125
+    accuracyMultiplier:
+      firing: 0.1
     tuAuto: 38
     tuSnap: 30
     tuAimed: 75
@@ -2373,7 +2375,7 @@ items:
       - STR_TODOIUM
     size: 0.05
     landOnly: true
-    costBuy: 120
+    costBuy: 2200000
     costSell: 80
     weight: 3
     bigSprite: 300

@@ -4,9 +4,11 @@ cutscenes:
     useUfoAudioSequence: false
     customCutscene: true
     audioTracks:
-      - DISCOVERY #GMTACTIC
+      - GMGEO3
+      - GMGEO3
     videos:
       - Resources/Slides/intro.flc
+      - Resources/Slides/intro_blue.flc
   - type: intro2
     slideshow:
       transitionSeconds: 50
@@ -35,5 +37,5 @@ cutscenes:
         - imagePath: Resources/Slides/Intro2/intro2_5.png
           caption: STR_INTRO2_SLIDE5_CAPTION
           captionSize: [234, 192]
-          captionPos: [43, 70]
+          captionPos: [0, 0]
           captionColor: 244

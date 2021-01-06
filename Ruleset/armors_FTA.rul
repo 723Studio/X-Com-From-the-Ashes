@@ -803,7 +803,7 @@ armors:
     camouflageAtDay: 30
     camouflageAtDark: -2
     visibilityAtDark: 9
-    personalLight: 0 #6
+    personalLight: 10
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:

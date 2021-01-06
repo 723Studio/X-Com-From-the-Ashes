@@ -111,7 +111,7 @@ research:
     listOrder: 7460
   - name: STR_MONSTER_HUNT_START
     requiresBaseFunc: [HQ]
-    cost: 80
+    cost: 30
     points: 3
     dependencies:
       - STR_MONSTER_HUNT_START_PREREQ

@@ -156,7 +156,7 @@ fixedUserOptions:
   weaponSelfDestruction: false
 
 recommendedUserOptions:
-  playIntro: false #TODO - set true
+  playIntro: true
   aggressiveRetaliation: false
   allowBuildingQueue: false
   anytimePsiTraining: true
