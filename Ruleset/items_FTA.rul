@@ -879,6 +879,7 @@ items:
     fireSound: 64 #4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
+      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 40
@@ -912,7 +913,6 @@ items:
     fireSound: 64 #4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
-      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 35
@@ -2375,7 +2375,7 @@ items:
       - STR_TODOIUM
     size: 0.05
     landOnly: true
-    costBuy: 2200000
+    costBuy: 150
     costSell: 80
     weight: 3
     bigSprite: 300
@@ -2619,6 +2619,40 @@ items:
     battleType: 10
     armor: 8
     # coneSize: 5
+    listOrder: 48160
+  - type: STR_COMBAT_SHIELD
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_SHIELDS]
+    landOnly: true
+    costBuy: 6000
+    costSell: 4000
+    size: 0.4
+    weight: 15
+    bigSprite: 389
+    floorSprite: 389
+    handSprite: 632
+    battleType: 3
+    meleeHitSound: 55 #70
+    meleeAnimation: 0
+    power: 0
+    damageType: 6
+    damageBonus:
+      strength: 0.8
+    damageAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToHealth: 0.25
+      ToTile: 0.0
+    accuracyMelee: 90
+    costMelee:
+      time: 14
+      energy: 12
+    hidePower: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: 60
+    armor: 40
     listOrder: 48160
     
 #built-in weapons

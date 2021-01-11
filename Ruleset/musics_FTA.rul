@@ -63,4 +63,4 @@ musics:
   - type: DISCOVERY
     normalization: 10
   - type: ENEMY_TERRITORY
-    normalization: 1
+    normalization: 10

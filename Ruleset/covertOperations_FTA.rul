@@ -28,7 +28,7 @@ covertOperations:
     danger: 3
     costs: 120
     allowedArmor:
-      - STR_NONE_UC
+      - STR_JUMPSUIT_UC
     specialRule: STR_REGIONAL_HQ_DISCOVERY
 
 #monster hunt
@@ -47,7 +47,7 @@ covertOperations:
       STR_FAKE_AGENT_ID: 2
     scientistSlots: 1
     allowedArmor:
-      - STR_NONE_UC
+      - STR_JUMPSUIT_UC
     successScore: 100
     successEvent: STR_MONSTER_HUNT_INVESTIGATION
     failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
@@ -69,7 +69,7 @@ covertOperations:
       STR_FAKE_AGENT_ID: 2
     scientistSlots: 1
     allowedArmor:
-      - STR_NONE_UC
+      - STR_JUMPSUIT_UC
     successScore: 100
     #successEvent: #TODO - continue the arc?
     failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED

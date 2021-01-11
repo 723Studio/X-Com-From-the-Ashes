@@ -479,6 +479,8 @@ en-US:
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_TRAUMA_PACK: "Trauma Pack"
   STR_TRAUMA_PACK_UFOPEDIA: "This advanced First Aid Kit holds more healing supplies, is a bit faster to use and recovers a little more Stamina and Stun, but is significantly heavier. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
+  STR_COMBAT_SHIELD: "Combat Shield"
+  STR_COMBAT_SHIELD_UFOPEDIA: STR_COMBAT_SHIELD_UFOPEDIA #TODO
   STR_PUNCH: "Punch"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"

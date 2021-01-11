@@ -161,7 +161,6 @@ extended:
           return;
 
     newTurnUnit:
-
       - offset: 2     # Handle energy shield on armor regeneration/degeneration every turn
         code: |
           var ptr RuleArmor armorRuleset;
@@ -578,7 +577,6 @@ extended:
             mul addPower psiStrength;
             
             div addPower 100;
-            #debug_log 2 addPower; #for good
             add power addPower;
           end;
 
@@ -1032,68 +1030,90 @@ extended:
 
       - offset: 23    # Arm shield thing
         code: |
-          var ptr BattleItem shieldItem;
+          var ptre BattleItem shieldItem;
           var ptr RuleItem damagingRuleset;
           var ptr RuleItem shieldRuleset;
+          var int catCheck;
+          var int hp;
+
           var int shieldArmor;
           var int shieldResistCoeff;
-          var int shieldMeleeDodge;
-          var int shieldReactionsDodge;
           var int unitMelee;
           var int unitReactions;
+          var int attackerMelee;
+          var int attackerReactions;
+
           var int temp;
 
           # Check for shield in left hand first, then right.  If no shield, skip the script
           unit.getLeftHandWeapon shieldItem;
           shieldItem.getRuleItem shieldRuleset;
-          shieldRuleset.getTag shieldArmor Tag.PHYSICAL_SHIELD_ARMOR;
-          shieldRuleset.getTag shieldMeleeDodge Tag.ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT;
-          shieldRuleset.getTag shieldReactionsDodge Tag.ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT;
+          shieldRuleset.hasCategory catCheck "STR_SHIELDS";
 
-          if eq shieldArmor 0;
+          if eq catCheck 0;
             unit.getRightHandWeapon shieldItem;
             shieldItem.getRuleItem shieldRuleset;
-            shieldRuleset.getTag shieldArmor Tag.PHYSICAL_SHIELD_ARMOR;
-            shieldRuleset.getTag shieldMeleeDodge Tag.ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT;
-            shieldRuleset.getTag shieldReactionsDodge Tag.ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT;
-            if eq shieldArmor 0;
+            shieldRuleset.hasCategory catCheck "STR_SHIELDS";
+            if eq catCheck 0;
               return power part side;
             end;
           end;
 
           # Check which damage type and set shield's 'resistance'
           # If it's special, choking, heat, or cold, just skip the rest
-          if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
-            return power part side;
-          end;
+          #if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
+            #if or eq damaging_type 12 eq damaging_type 14 eq damaging_type 15;
+              #debug_log "We cant resist damaging_type!" damaging_type;
+              #return power part side;
+            #end;
+          #end;
 
+          shieldItem.getAmmoQuantity hp;
+          debug_log "We are hitting the shield!";
+          debug_log "Original power: " power;
+          
           # Check to see if the shield blocks all damage from a melee hit, like melee dodge
           damaging_item.getRuleItem damagingRuleset;
           damagingRuleset.getTag temp Tag.ITEM_IS_MELEE;
-          if or neq 0 temp eq battle_action BA_HIT;
+          damagingRuleset.hasCategory catCheck "STR_MELEE";
+          if and eq 0 catCheck eq battle_action BA_HIT;
             # Get the stats for melee dodge
             unit.Stats.getMelee unitMelee;
             unit.Stats.getReactions unitReactions;
-            muldiv shieldMeleeDodge unitMelee 100;
-            muldiv shieldReactionsDodge unitReactions 100;
-            add shieldMeleeDodge shieldReactionsDodge;
+            attacker.Stats.getMelee attackerMelee;
+            attacker.Stats.getReactions attackerReactions;
 
-            # Modify by where the unit was hit
-            if or eq side SIDE_LEFT eq side SIDE_RIGHT;
-              div shieldMeleeDodge 2;
-            else or eq side SIDE_REAR eq side SIDE_UNDER;
-              div shieldMeleeDodge 4;
-            end;
+            sub unitMelee attackerMelee;
+            sub unitReactions attackerReactions;
+            div unitReactions 2;
+            debug_log "Effective melee: " unitMelee;
+            debug_log "Effective reactions: " unitReactions;
 
-            battle_game.randomChance temp;
-            if lt temp shieldMeleeDodge;
-              set power 0;
-              return power part side;
+            add unitMelee unitReactions;
+            add unitMelee 30;
+            div unitMelee 2;
+
+            if gt unitMelee 0;
+              debug_log "Attempting to dodge with chance: " unitMelee;
+              # Modify by where the unit was hit
+              if or eq side SIDE_LEFT eq side SIDE_RIGHT;
+                div unitMelee 3;
+              else or eq side SIDE_REAR eq side SIDE_UNDER;
+                div unitMelee 6;
+              end;
+              battle_game.randomChance temp;
+              debug_log "Game roll for dodge: " temp;
+              if lt temp unitMelee;
+                debug_log "Dodge successful!";
+                set power 0;
+                return power part side;
+              end;
+              debug_log "Dodge failed!";
             end;
-          end;
   
+          debug_log "Calculating resistance";
           # Default resistances for all physical shields
-          if eq damaging_type 3; # Concussive
+          if eq damaging_type 3; # Explosive
             set shieldResistCoeff 90;
           else eq damaging_type 6; # Daze
             set shieldResistCoeff 80;
@@ -1104,9 +1124,13 @@ extended:
           else; # All other damage types
             set shieldResistCoeff 100;
           end;
+          debug_log "Shield resistance: " shieldResistCoeff;
 
           # Calculate the shield's effectiveness and subtract it from the damage
-          muldiv shieldArmor 100 shieldResistCoeff;
+          muldiv hp 100 shieldResistCoeff;
+
+          # Calculate resulting power reduction
+          set shieldArmor hp;
 
           if or eq side SIDE_LEFT eq side SIDE_RIGHT;
             div shieldArmor 2;
@@ -1115,9 +1139,19 @@ extended:
           else eq side SIDE_REAR;
             set shieldArmor 0;
           end;
-
+          debug_log "Shield armor: " shieldArmor;
+          if gt shieldArmor power;
+            set shieldArmor power;
+          end;
+          
           sub power shieldArmor;
-          limit_lower power 0;
+          debug_log "Power reduction: " shieldArmor;
+
+          # Update shield hit points
+          sub hp shieldArmor;
+          shieldItem.setAmmoQuantity hp;
+
+          debug_log "Resulting power " power;
 
           return power part side;
 

@@ -5,7 +5,7 @@ cutscenes:
     customCutscene: true
     audioTracks:
       - GMGEO3
-      - GMGEO3
+      - DISCOVERY
     videos:
       - Resources/Slides/intro.flc
       - Resources/Slides/intro_blue.flc
