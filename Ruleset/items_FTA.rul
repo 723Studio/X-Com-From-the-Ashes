@@ -92,7 +92,6 @@ items:
       ArmorEffectiveness: 1.5
       ToTile: 0.2
     accuracyMelee: 75
-    tuMelee: 8
     flatRate: true
     meleeMultiplier:
       melee: 1.0
@@ -134,7 +133,6 @@ items:
       ArmorEffectiveness: 1.5
       ToTile: 0.2
     accuracyMelee: 65
-    tuMelee: 10
     flatRate: true
     meleeMultiplier:
       melee: 0.9
@@ -2171,7 +2169,7 @@ items:
       # - STR_SHRAPNEL_ROCKET
       # - STR_TRITANIUM_SHRAPNEL_ROCKET
     accuracyCloseQuarters: 33
-    accuracySnap: 55
+    #accuracySnap: 55
     accuracyAimed: 115
     #tuSnap: 45
     tuAimed: 75
@@ -2657,7 +2655,7 @@ items:
     
 #built-in weapons
   - type: STR_UNARMED
-    categories: [STR_BUILT_INS]
+    categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
     bigSprite: 340
     meleeHitSound: 55
@@ -2693,7 +2691,7 @@ items:
     recover: false
     specialUseEmptyHand: true
   - type: STR_ZOMBIE_WEAPON
-    categories: [STR_BUILT_INS]
+    categories: [STR_BUILT_INS, STR_MELEE]
     weight: 3
     bigSprite: 357
     meleeSound: 48
@@ -2712,7 +2710,7 @@ items:
     recover: false
     flatRate: true
   - type: STR_FACEHUGGER_WEAPON
-    categories: [STR_BUILT_INS]
+    categories: [STR_BUILT_INS, STR_MELEE]
     weight: 3
     bigSprite: 358
     floorSprite: 31
@@ -2758,7 +2756,7 @@ items:
     autoShots: 6
     recover: false
   - type: STR_JABBER_WEAPON
-    categories: [STR_BUILT_INS]
+    categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
     bigSprite: 364
     floorSprite: 31
@@ -2781,7 +2779,7 @@ items:
     recover: false
     flatRate: true
   - type: STR_DOGE_BITE
-    categories: [STR_BUILT_INS]
+    categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
     bigSprite: 368
     floorSprite: 0

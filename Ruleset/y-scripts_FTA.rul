@@ -297,7 +297,7 @@ extended:
             unit.getTimeUnitsMax tu_max;
             set bonus tu_max;
             muldiv bonus roll 100;
-            debug_log unit " - Ever vigilant activated. roll, current TU, max, bonus:" roll tu tu_max bonus;
+            debug_log unit " - Ever vigilant activated. roll, current TU, max, bonus: " roll tu tu_max bonus;
             add tu bonus;
             unit.setTimeUnits tu;
             if gt tu tu_max;
@@ -414,6 +414,7 @@ extended:
           var ptr RuleItem itemRuleset;
           var int catCheck;
           var int stateBonus;
+          var int temp;
 
           unit.getTag stateBonus Tag.UTILITY_SPECIALIST_STATE;
 
@@ -421,9 +422,11 @@ extended:
             weapon.getRuleItem itemRuleset;
             itemRuleset.hasCategory catCheck "STR_UTILITY";
             if eq catCheck 1;
-              debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat:" bonus;
-              add bonus 20; #TODO balance it!
-              debug_log "UTILITY_SPECIALIST_STATE activated, new stat:" bonus;
+              debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat: " bonus;
+              set temp 20;
+              add bonus temp; #TODO balance it!
+              debug_log "UTILITY_SPECIALIST_STATE activated, new stat: " bonus;
+              debug_log "Script effect should be balanced, now it's value is: " temp;
             end;
           end;
 
@@ -441,9 +444,9 @@ extended:
             weapon.getRuleItem itemRuleset;
             itemRuleset.hasCategory catCheck "STR_HEAVY_WEAPONS";
             if eq catCheck 1;
-              debug_log "Activating perk STEADY_GRIP_STATE, initial stat:" bonus;
+              debug_log "Activating perk STEADY_GRIP_STATE, initial stat: " bonus;
               add bonus stateBonus;
-              debug_log "STEADY_GRIP_STATE activated, new stat:" bonus;
+              debug_log "STEADY_GRIP_STATE activated, new stat: " bonus;
             end;
           end;
 
@@ -456,9 +459,9 @@ extended:
           unit.getTag state Tag.EVER_VIGILANT_STATE;
 
           if eq state 2; # unit has extra vigilance effect
-            debug_log "Activating perk EVER_VIGILANT_STATE, initial stat:" bonus;
+            debug_log "Activating perk EVER_VIGILANT_STATE, initial stat: " bonus;
             add bonus 15;
-            debug_log "EVER_VIGILANT_STATE activated, new stat:" bonus;
+            debug_log "EVER_VIGILANT_STATE activated, new stat: " bonus;
           end;
 
           return bonus;
@@ -470,9 +473,9 @@ extended:
           unit.getTag state Tag.UNIFIGHT_STATE;
 
           if eq state 2;
-            debug_log "Activating perk UNIFIGHT_STATE, initial stat:" bonus;
+            debug_log "Activating perk UNIFIGHT_STATE, initial stat: " bonus;
             add bonus state;
-            debug_log "UNIFIGHT_STATE activated, new stat:" bonus;
+            debug_log "UNIFIGHT_STATE activated, new stat: " bonus;
           end;
 
           return bonus;
@@ -501,23 +504,11 @@ extended:
               if or gt pistolCat 0 gt smgCat 0 gt rifleCat 0 gt shotgunCat 0 gt lmgCat 0;
                 set catCheck 1;
               end;
-              # if gt smgCat 0;
-              #   set catCheck 1;
-              # end;
-              # if gt rifleCat 0;
-              #   set catCheck 1;
-              # end;
-              # if gt shotgunCat 0;
-              #   set catCheck 1;
-              # end;
-              # if gt lmgCat 0;
-              #   set catCheck 1;
-              # end;
 
               if eq catCheck 1;
-                debug_log "Activating perk RAPID_TARGETING_STATE, initial stat:" bonus;
+                debug_log "Activating perk RAPID_TARGETING_STATE, initial stat: " bonus;
                 add bonus stateBonus;
-                debug_log "RAPID_TARGETING_STATE activated, new stat:" bonus;
+                debug_log "RAPID_TARGETING_STATE activated, new stat: " bonus;
               end;
             end;
           end;
@@ -530,6 +521,7 @@ extended:
           var ptr RuleItem itemRuleset;
           var int catCheck;
           var int stateBonus;
+          var int temp;
 
           unit.getTag stateBonus Tag.UTILITY_SPECIALIST_STATE;
 
@@ -537,9 +529,11 @@ extended:
             weapon.getRuleItem itemRuleset;
             itemRuleset.hasCategory catCheck "STR_UTILITY";
             if eq catCheck 1;
-              debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat:" bonus;
-              add bonus 20; #TODO balance it!
-              debug_log "UTILITY_SPECIALIST_STATE activated, new stat:" bonus;
+              debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat: " bonus;
+              set temp 60;
+              add bonus temp; #TODO balance it!
+              debug_log "UTILITY_SPECIALIST_STATE activated, new stat: " bonus;
+              debug_log "Script effect should be balanced, now it's value is: " temp;
             end;
           end;
 
@@ -550,14 +544,17 @@ extended:
           var ptr RuleItem itemRuleset;
           var int catCheck;
           var int stateBonus;
+          var int temp;
 
           weapon.getRuleItem itemRuleset;
           itemRuleset.hasCategory catCheck "STR_EXPLOSIVE_CHARGES";
 
           if eq catCheck 1;
-            debug_log "Activating STR_EXPLOSIVE_CHARGES category penalty, initial stat:" bonus;
-            sub bonus 60; #TODO balance it!
-            debug_log "STR_EXPLOSIVE_CHARGES category penalty activated, new stat:" bonus;
+            debug_log "Activating STR_EXPLOSIVE_CHARGES category penalty, initial stat: " bonus;
+            set temp 60;
+            sub bonus temp; #TODO balance it!
+            debug_log "STR_EXPLOSIVE_CHARGES category penalty activated, new stat: " bonus;
+            debug_log "Script effect should be balanced, now it's value is: " temp;
           end;
 
           return bonus;
@@ -614,9 +611,9 @@ extended:
                 end;
               end;
               if gt critValue 0;
-                debug_log "Critical hit rolled! Original power:" power;
+                debug_log "Critical hit rolled! Original power: " power;
                 muldiv power critValue 100;
-                debug_log " - power increased to:" power;
+                debug_log " - power increased to: " power;
               end;
             end;
           end;
@@ -1035,14 +1032,12 @@ extended:
           var ptr RuleItem shieldRuleset;
           var int catCheck;
           var int hp;
-
           var int shieldArmor;
           var int shieldResistCoeff;
           var int unitMelee;
           var int unitReactions;
           var int attackerMelee;
           var int attackerReactions;
-
           var int temp;
 
           # Check for shield in left hand first, then right.  If no shield, skip the script
@@ -1060,58 +1055,16 @@ extended:
           end;
 
           # Check which damage type and set shield's 'resistance'
-          # If it's special, choking, heat, or cold, just skip the rest
-          #if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
-            #if or eq damaging_type 12 eq damaging_type 14 eq damaging_type 15;
-              #debug_log "We cant resist damaging_type!" damaging_type;
-              #return power part side;
-            #end;
-          #end;
+          if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
+            if or eq damaging_type 12 eq damaging_type 14 eq damaging_type 15;
+              debug_log "We cant resist damaging_type: " damaging_type;
+              return power part side;
+            end;
+          end;
 
           shieldItem.getAmmoQuantity hp;
           debug_log "We are hitting the shield!";
           debug_log "Original power: " power;
-          
-          # Check to see if the shield blocks all damage from a melee hit, like melee dodge
-          damaging_item.getRuleItem damagingRuleset;
-          damagingRuleset.getTag temp Tag.ITEM_IS_MELEE;
-          damagingRuleset.hasCategory catCheck "STR_MELEE";
-          if and eq 0 catCheck eq battle_action BA_HIT;
-            # Get the stats for melee dodge
-            unit.Stats.getMelee unitMelee;
-            unit.Stats.getReactions unitReactions;
-            attacker.Stats.getMelee attackerMelee;
-            attacker.Stats.getReactions attackerReactions;
-
-            sub unitMelee attackerMelee;
-            sub unitReactions attackerReactions;
-            div unitReactions 2;
-            debug_log "Effective melee: " unitMelee;
-            debug_log "Effective reactions: " unitReactions;
-
-            add unitMelee unitReactions;
-            add unitMelee 30;
-            div unitMelee 2;
-
-            if gt unitMelee 0;
-              debug_log "Attempting to dodge with chance: " unitMelee;
-              # Modify by where the unit was hit
-              if or eq side SIDE_LEFT eq side SIDE_RIGHT;
-                div unitMelee 3;
-              else or eq side SIDE_REAR eq side SIDE_UNDER;
-                div unitMelee 6;
-              end;
-              battle_game.randomChance temp;
-              debug_log "Game roll for dodge: " temp;
-              if lt temp unitMelee;
-                debug_log "Dodge successful!";
-                set power 0;
-                return power part side;
-              end;
-              debug_log "Dodge failed!";
-            end;
-  
-          debug_log "Calculating resistance";
           # Default resistances for all physical shields
           if eq damaging_type 3; # Explosive
             set shieldResistCoeff 90;
@@ -1146,13 +1099,9 @@ extended:
           
           sub power shieldArmor;
           debug_log "Power reduction: " shieldArmor;
-
-          # Update shield hit points
           sub hp shieldArmor;
           shieldItem.setAmmoQuantity hp;
-
           debug_log "Resulting power " power;
-
           return power part side;
 
       - offset: 38    # Handle aim reset
@@ -1299,6 +1248,7 @@ extended:
                 set moraleDamage currPower;
                 div moraleDamage 2;
                 add to_morale moraleDamage;
+                debug_log "Additional moral damage: " to_morale;
               end;
             end;
           end;
@@ -1822,7 +1772,7 @@ extended:
           soldier_bonus.getTag has_utility_spec Tag.UTILITY_SPECIALIST;
 
           if gt has_aim 0;
-            # debug_log "Unit" id "- Aim perk found!";
+            debug_log "Unit" id "- Aim perk found!";
             unit.setTag Tag.AIM_STATE 1;
           end;
           if gt centerMass 0;
