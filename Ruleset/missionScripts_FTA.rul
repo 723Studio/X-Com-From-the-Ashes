@@ -42,6 +42,27 @@ missionScripts:
     useTable: false
     randomDelay: 43500
 
+  - type: gameStart
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 100
+    lastMonth: 0
+    targetBaseOdds: 100
+    raceWeights:
+      0:
+        STR_SECTOID: 100
+    startDelay: 120
+
+  # - type: test
+  #   missionWeights:
+  #     0:
+  #       STR_EARLY_GAME_TROLLING: 100
+  #   raceWeights:
+  #     0:
+  #       STR_SECTOID: 100
+  #   useTable: false
+  #   spawnGap: 40
+  #   randomSpawnGap: 5
 
 
 #resistance

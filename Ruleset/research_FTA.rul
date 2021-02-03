@@ -111,7 +111,7 @@ research:
     listOrder: 7460
   - name: STR_MONSTER_HUNT_START
     requiresBaseFunc: [HQ]
-    cost: 80
+    cost: 30
     points: 3
     dependencies:
       - STR_MONSTER_HUNT_START_PREREQ
@@ -726,3 +726,14 @@ research:
       - STR_BASE_CONSTRUCTION
       - STR_TODOIUM 
     listOrder: 7460
+
+
+#Resistance tech tree
+  - name: STR_RESISTANCE_TECH_TREE_START
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RESISTANCE_DUTY
+    cost: 15
+    points: 15
+    dependencies:
+      - STR_RESISTANCE_TECH_TREE_START

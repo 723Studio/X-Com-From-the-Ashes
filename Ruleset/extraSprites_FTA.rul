@@ -260,6 +260,8 @@ extraSprites:
       385: Resources/Weapons/Earthbound/Xcom/bigob_LMG.png
       386: Resources/Weapons/Earthbound/Xcom/bigob_LMGClip.png
       387: Resources/Weapons/Earthbound/General/bigob_Machete.png
+      388: Resources/Weapons/Earthbound/Utilities/bigob_MagLite.png
+      389: Resources/Weapons/Earthbound/Utilities/bigob_CombatShield.png
       
       
   - type: FLOOROB.PCK
@@ -342,6 +344,7 @@ extraSprites:
       385: Resources/Weapons/Earthbound/Xcom/floorob_LMG.png
       386: Resources/Weapons/Earthbound/Xcom/floorob_LMGClip.png
       387: Resources/Weapons/Earthbound/General/floorob_Machete.png
+      389: Resources/Weapons/Earthbound/Utilities/floorob_CombatShield.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -412,6 +415,7 @@ extraSprites:
       608: Resources/Weapons/Earthbound/Xcom/handob_HeavyPistolClip.png
       616: Resources/Weapons/Earthbound/Xcom/handob_LMG.png
       624: Resources/Weapons/Earthbound/General/handob_Machete.png
+      632: Resources/Weapons/Earthbound/Utilities/handob_CombatShield.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

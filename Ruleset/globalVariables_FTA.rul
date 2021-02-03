@@ -154,9 +154,10 @@ fixedUserOptions:
   includePrimeStateInSavedLayout: false
   battleExplosionHeight: 3
   weaponSelfDestruction: false
+  oxceLinks: true
 
 recommendedUserOptions:
-  playIntro: false #TODO - set true
+  playIntro: true
   aggressiveRetaliation: false
   allowBuildingQueue: false
   anytimePsiTraining: true

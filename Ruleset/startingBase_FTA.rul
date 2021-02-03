@@ -1,8 +1,8 @@
 startingBase:
   randomSoldiers:
-    STR_SOLDIER: 25 #15
+    STR_SOLDIER: 15
   scientists: 6
-  engineers: 3
+  engineers: 4
   facilities:
     - type: STR_ACCESS_LIFT
       x: 2
@@ -68,6 +68,7 @@ startingBase:
     STR_GRENADE: 8
     STR_SMOKE_GRENADE: 5
     STR_TRAUMA_PACK: 2
+    STR_COMBAT_SHIELD: 2
     STR_STINGRAY_LAUNCHER: 1
     STR_STINGRAY_MISSILES: 25
     STR_CANNON: 1

@@ -10,7 +10,7 @@ This mod is developing togeter with [dedicated engine](https://github.com/Finnik
 Though FtA megamod can be launched on conventions versions on the game engine, it's balance and plot highly depends on my engine's features, like diplomacy, covert operations and other exclusive mechanics. When mod would be released, it would be distributed together with demanded version of the OpenXcom engine.
 
 ## Licensing
-The most content of From the Ashes megamod - assets, rulesets and other configs distributed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to **share** and **adapt** the materials only for **non-commercial purposes** and when **providing [appropriate attribution](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart)**. Any derivatives **must be distributed under the same license**. There are **exceptions to it**, some sound and image assets were bought specifically for this project are distributed under an **All Rights Reserved license**. You **may not redistribute, adapt or re-use** these assets without express permission. See more info [here] (https://github.com/723Studio/X-Com-From-the-Ashes/blob/master/license%20and%20credits.txt).
+The most content of From the Ashes megamod - assets, rulesets and other configs distributed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to **share** and **adapt** the materials only for **non-commercial purposes** and when **providing [appropriate attribution](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart)**. Any derivatives **must be distributed under the same license**. There are **exceptions to it**, some sound and image assets were bought specifically for this project are distributed under an **All Rights Reserved license**. You **may not redistribute, adapt or re-use** these assets without express permission. See more info [here] (https://github.com/723Studio/X-Com-From-the-Ashes/blob/master/LICENSE.md).
 
 ## Credits
 I widely use various assets, created by OpenXcom modding community. Credits to licensed mods and other materials, that I'm using in my work provided in [this file](https://github.com/723Studio/X-Com-From-the-Ashes/blob/master/license%20and%20credits.txt). As you can see, there are a lot of mods that are also using assets from other mods. I'm rather new to the community and I don't want to investigate this web, so I provide credits to a mod where I found assets, though it can be not original. If you feel that I should include credit to your mod and it is licensed, please let me know!
@@ -23,7 +23,7 @@ I would like to give special thanks to the contributors to my project (in order 
 * **KoTiK03** - base facility sprite;
 * **Dr. Hans Woofington** - units (inventory, battlscape, autopsy) and weapons image assets, work on intro logo scene;
 * **Evil_bI** - music direction and support, reference help, info support;
-* **Ushna** - background image and sound reference help, weapon image and audio assets;
+* **Ushna** - background image and sound reference help, weapon image and audio assets, weapon and related to it ruleset contribution;
 * **Ruslan Makovkin** - unit inventory and ufopedia image assets;
 * **DaManWithGun** - lore articles, stylistic and grammar changes in English localization;
 * **pedroterzero** - engine features development;
