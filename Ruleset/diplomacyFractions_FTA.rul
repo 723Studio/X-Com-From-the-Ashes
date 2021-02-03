@@ -6,6 +6,17 @@ diplomacyFactions:
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 270
+    startingFunds: 50000000
+    startingPower: 350
+    stockMod: 10
+    startingResearches:
+      - STR_RESISTANCE_TECH_TREE_START
+      - STR_SCIENTIST
+    startingStaff:
+      STR_SOLDIER: 10
+      STR_SCIENTIST: 12
+      STR_ENGINEER: 5
+      STR_SKYRANGER: 1
     genMissionFreq: 80 #80% chance to run the script
     helpTreatyMissions:
       - heavenDefenceFirstTime
@@ -13,6 +24,8 @@ diplomacyFactions:
     genEventFreq: 95
     helpTreatyEvents:
        - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
+    factionalEvents:
+       - STR_TEST
     startingItems:
       STR_MEDI_PACK: 7
       STR_PROXIMITY_GRENADE: 17
@@ -20,12 +33,14 @@ diplomacyFactions:
       STR_PERSONAL_ARMOR: 2
       STR_STINGRAY_LAUNCHER: 10
       STR_AVALANCHE_MISSILES: 5
-    startingStaff:
-      STR_SOLDIER: 10
-      STR_SCIENTIST: 2
-      STR_ENGINEER: 5
-      STR_SKYRANGER: 1
-
+    wishList:
+      STR_MEDI_PACK: 90
+      STR_PROXIMITY_GRENADE: 60
+      #STR_FLASHLIGHT: 900
+      #STR_PERSONAL_ARMOR: 2000
+      STR_STINGRAY_LAUNCHER: 25
+    staffWeights:
+      STR_SCIENTIST: 50    
     # sellingSet:
     #   STR_STINGRAY_LAUNCHER: 0
     #   STR_STINGRAY_MISSILES: -1

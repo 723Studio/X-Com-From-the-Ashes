@@ -154,6 +154,7 @@ fixedUserOptions:
   includePrimeStateInSavedLayout: false
   battleExplosionHeight: 3
   weaponSelfDestruction: false
+  oxceLinks: true
 
 recommendedUserOptions:
   playIntro: true

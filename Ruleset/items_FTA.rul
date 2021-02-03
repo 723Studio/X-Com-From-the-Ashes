@@ -50,7 +50,7 @@ items:
       ToStun: 2
       ToHealth: 0.4
       ToTile: 0.2
-    accuracyMelee: 90
+    accuracyMelee: 100
     meleeMultiplier:
       melee: 1.0
     costMelee:
@@ -91,10 +91,10 @@ items:
       RandomType: 2
       ArmorEffectiveness: 1.5
       ToTile: 0.2
-    accuracyMelee: 75
+    accuracyMelee: 85
     flatRate: true
     meleeMultiplier:
-      melee: 1.0
+      melee: 1.1
     costMelee:
       time: 7
       energy: 2
@@ -132,7 +132,7 @@ items:
       RandomType: 2
       ArmorEffectiveness: 1.5
       ToTile: 0.2
-    accuracyMelee: 65
+    accuracyMelee: 75
     flatRate: true
     meleeMultiplier:
       melee: 0.9
@@ -172,7 +172,7 @@ items:
       RandomType: 2
       ArmorEffectiveness: 1.45
       ToTile: 0.2
-    accuracyMelee: 100
+    accuracyMelee: 70
     meleeMultiplier:
       melee: 1.0
     costMelee:
@@ -345,6 +345,8 @@ items:
     hitSound: 22
     hitAnimation: 26
     power: 22
+    damageAlter:
+      ArmorEffectiveness: 1.15
     damageType: 1
     clipSize: 6
     battleType: 2
@@ -397,6 +399,8 @@ items:
     hitAnimation: 26
     power: 24
     damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.05
     clipSize: 9
     costThrow:
       energy: 4
@@ -474,8 +478,8 @@ items:
     damageType: 1
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.2
-      ToHealth: 1.3
+      ArmorEffectiveness: 1.4
+      ToHealth: 1.4
       ToWound: 2
       ToTime: 0.2
       ToStun: 0.2
@@ -969,7 +973,7 @@ items:
       RandomType: 2
       ArmorEffectiveness: 1.2
       ToHealth: 1.3
-      ToWound: 2
+      ToWound: 2.5
       ToTime: 0.2
       ToStun: 0.2
       ToTile: 0.4
@@ -1106,8 +1110,7 @@ items:
     damageBonus:
       firing: 0.25
     damageAlter:
-      RandomType: 7
-      ArmorEffectiveness: 0.75
+      ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -1229,6 +1232,8 @@ items:
     hitAnimation: 26
     power: 16
     damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.1
     clipSize: 2
     battleType: 2
     armor: 20
@@ -1311,6 +1316,8 @@ items:
     hitAnimation: 26
     power: 15
     damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.05
     clipSize: 8
     battleType: 2
     armor: 20
@@ -1411,6 +1418,8 @@ items:
     hitAnimation: 26
     power: 15
     damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.05
     clipSize: 6
     battleType: 2
     armor: 20
@@ -1453,11 +1462,12 @@ items:
     handSprite: 304
     hitSound: 13
     hitAnimation: 26
-    power: 25
+    power: 32
     damageAlter:
-      ToHealth: 0.35
-      ToTile: 0.2
-      ArmorEffectiveness: 1.25
+      ToHealth: 0.2
+      ToWound: 0
+      ToTile: 0.05
+      ArmorEffectiveness: 1.2
     damageType: 6
     blastRadius: 0
     clipSize: 6
@@ -2338,6 +2348,56 @@ items:
     battleType: 4
     blastRadius: 5
     listOrder: 38700
+  - type: STR_SMOKE_GRENADE_FIRING
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.05
+    landOnly: true
+    weight: 3
+    bigSprite: 20 #TODO
+    floorSprite: 20 #TODO
+    handSprite: 248 #TODO
+    hitAnimation: 88
+    power: 60
+    damageType: 9
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
+    battleType: 4
+    blastRadius: 5
+    listOrder: 38700
+  - type: STR_SMOKE_GRENADE_DEPLOYED
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.05
+    landOnly: true
+    costBuy: 150
+    costSell: 120
+    weight: 3
+    bigSprite: 20 #TODO
+    floorSprite: 20 #TODO
+    handSprite: 248 #TODO
+    hitAnimation: 88
+    power: 60
+    damageType: 9
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
+    battleType: 4
+    blastRadius: 5
+    listOrder: 38700
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
@@ -2624,7 +2684,7 @@ items:
     costBuy: 6000
     costSell: 4000
     size: 0.4
-    weight: 15
+    weight: 22
     bigSprite: 389
     floorSprite: 389
     handSprite: 632
@@ -2634,22 +2694,23 @@ items:
     power: 0
     damageType: 6
     damageBonus:
-      strength: 0.8
+      strength: 0.6
     damageAlter:
       RandomType: 2
       FixRadius: 0
       IgnoreDirection: false
-      ArmorEffectiveness: 1.0
-      ToHealth: 0.25
+      ArmorEffectiveness: 0.8
+      ToStun: 0.25
       ToTile: 0.0
-    accuracyMelee: 90
+    accuracyMelee: 70
     costMelee:
       time: 14
       energy: 12
     hidePower: true
     invWidth: 2
     invHeight: 3
-    clipSize: 60
+    supportedInventorySections: [STR_LEFT_HAND]
+    clipSize: 80
     armor: 40
     listOrder: 48160
     
@@ -2877,6 +2938,11 @@ items:
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
   - type: STR_LABORATORY_EQUIPMENT #TODO
+    categories: [STR_HUMANS, STR_COMPONENTS]
+    listOrder: 146030
+  - type: STR_TRADIUM #TODO
+    costBuy: 1000000
+    costSell: 500000
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
 

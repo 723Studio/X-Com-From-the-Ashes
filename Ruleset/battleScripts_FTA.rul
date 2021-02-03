@@ -101,11 +101,11 @@ battleScripts:
       groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
-    # - type: showMessage #TODO uncomment
-    #   messages:
-    #     0:
-    #       title: STR_RECOVER_RESEARCH_LOGS_TITLE
-    #       content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+    - type: showMessage #TODO uncomment
+      messages:
+        0:
+          title: STR_RECOVER_RESEARCH_LOGS_TITLE
+          content: STR_RECOVER_RESEARCH_LOGS_CONTENT
 
 
   - type: STR_LOCALS_TRAP_BAT_SCRIPT
@@ -148,26 +148,24 @@ battleScripts:
       spawnBlocks: ["N", S]
       unitSet: [STR_MALE_POLICE] #TODO - add soldiers here
 
-  # - type: TEST_SCRIPT
-  #   commands:
-  #   - type: showMessage
-  #     executions: 1
-  #     messages:
-  #       0:
-  #         title: STR_SOME_TEXT
-  #         content: STR_SOME_TEXT
-  #         answer: STR_SOME_TEXT
-  #         background: SOME_EXTRA_SPRITE.PCK
-  #       1:
-  #         content: content2
-  #   - type: spawnUnit
-  #     executions: 2
-  #     executionChances: 100
-  #     startTurn: 4
-  #     endTurn: 6
-  #     packSize: 3
-  #     randomPackSize: true
-  #     unitSide: 1
-  #     minDifficulty: 1
-  #     maxDifficulty: 3
-  #     unitSet: [STR_XCOM_EX_COMMANDER]
+  - type: TEST_SCRIPT
+    commands:
+    - type: showMessage
+      executions: 1
+      minAlarmLevel: 1
+      messages:
+        0:
+          title: STR_ALARM_TEXT
+          content: STR_ALARM_TEXT
+          #answer: STR_SOME_TEXT
+          #background: SOME_EXTRA_SPRITE.PCK
+        # 1:
+        #   content: content2
+    - type: spawnUnit
+      executions: 2
+      minAlarmLevel: 1
+      executionChances: 100
+      packSize: 3
+      randomPackSize: true
+      unitSide: 1
+      unitSet: [STR_XCOM_EX_COMMANDER]

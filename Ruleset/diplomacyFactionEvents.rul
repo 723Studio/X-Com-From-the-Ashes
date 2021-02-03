@@ -1,0 +1,10 @@
+diplomacyFactionEvents:
+  - type: STR_TEST
+    executionOdds: 100
+    powerChange: -15
+    vigilanceChange: 20
+    fundsChange: 50000
+    itemsToAdd: 
+      STR_SMOKE_GRENADE: 15
+    discoveredResearches:
+      - STR_BASE_CONSTRUCTION

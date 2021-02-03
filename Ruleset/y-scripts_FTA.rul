@@ -1450,11 +1450,12 @@ extended:
           if gt savior 0;
             if eq medikit_action_type 1; # heal
               if gt health_recovery 0;
-              debug_log "Savior activated.";
-              debug_log " - Health recovered (org.):" health_recovery;
-              battle_game.randomRange savior 0 savior; # roll bonus heal amount
-              add health_recovery savior;
-              debug_log " - Health recovered (adj.):" health_recovery;
+                debug_log "Savior activated.";
+                debug_log " - Health recovered (org.):" health_recovery;
+                battle_game.randomRange savior 0 savior; # roll bonus heal amount
+                add health_recovery savior;
+                debug_log " - Health recovered (adj.):" health_recovery;
+              end;
             end;
           end;
 
