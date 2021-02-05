@@ -11,10 +11,9 @@ diplomacyFactions:
     stockMod: 10
     startingResearches:
       - STR_RESISTANCE_TECH_TREE_START
-      - STR_SCIENTIST
     startingStaff:
       STR_SOLDIER: 10
-      STR_SCIENTIST: 12
+      #STR_SCIENTIST: 12
       STR_ENGINEER: 5
       STR_SKYRANGER: 1
     genMissionFreq: 80 #80% chance to run the script
@@ -24,8 +23,8 @@ diplomacyFactions:
     genEventFreq: 95
     helpTreatyEvents:
        - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
-    factionalEvents:
-       - STR_TEST
+    # factionalEvents:
+    #    - STR_TEST
     startingItems:
       STR_MEDI_PACK: 7
       STR_PROXIMITY_GRENADE: 17
@@ -41,19 +40,6 @@ diplomacyFactions:
       STR_STINGRAY_LAUNCHER: 25
     staffWeights:
       STR_SCIENTIST: 50    
-    # sellingSet:
-    #   STR_STINGRAY_LAUNCHER: 0
-    #   STR_STINGRAY_MISSILES: -1
-    #   STR_AVALANCHE_LAUNCHER: 0
-    #   STR_AVALANCHE_MISSILES: 3
-    #   STR_PISTOL: 0
-    #   STR_PISTOL_CLIP: -1
-    #   STR_SKYRANGER: 2
-    #   STR_INTERCEPTOR: 0
-    #   STR_SCIENTIST: 0
-    #   STR_ENGINEER: 1
-    #   STR_SOLDIER: 3
-    #   STR_PERSONAL_ARMOR: 2
   # - name: STR_VOID_CORP
   #   description: STR_VOID_CORP_DESCRIPTION
   #   background: CHURCH_OF_DAGON_BACKGROUND.SCR

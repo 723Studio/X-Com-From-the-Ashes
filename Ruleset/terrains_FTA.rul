@@ -617,3 +617,15 @@ terrains:
           width: 50
           length: 70
           groups: 1
+
+
+#sub-terrains
+  - name: MIB_CHASING
+    mapDataSets:
+      - BLANKS
+      - MIB_CHASING
+    mapBlocks:
+        - name: MIB_CHASING00
+          width: 20
+          length: 60
+          groups: 5

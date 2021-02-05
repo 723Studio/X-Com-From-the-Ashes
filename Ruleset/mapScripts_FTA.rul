@@ -1,12 +1,4 @@
 mapScripts: 
-  - type: TRAP #for tests
-    commands:
-    - type: addCraft
-    - type: addUFO
-    - type: addBlock
-      size: 2
-      executions: 5
-    - type: fillArea
   - type: RESISTANCE_FARM
     commands:
     #roads
@@ -222,6 +214,16 @@ mapScripts:
         terrain: FOREST
         size: [1, 1, 4]
 
+  - type: MIB_CHASING
+    commands:
+    - type: addBlock
+      terrain: MIB_CHASING
+      blocks: [0]
+      size: [2, 6, 4]
+      # rects:
+      #   - [1, 0, 4, 4]
+    # - type: addCraft
+    - type: fillArea
 
   # - type: TEST_SCRIPT
   #   commands:

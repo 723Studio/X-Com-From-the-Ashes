@@ -5,14 +5,17 @@ covertOperations:
     successDescription: STR_CHASING_MIB_SUCCESS_DESCRIPTION
     requires:
       - STR_COVERT_OPERATIONS
-    soldierSlots: 4
+    soldierSlots: 2
     optionalSoldierSlots: 3
-    optionalSoldierEffect: 5
-    baseChances: 70
-    successResearchList:
-      - ""
-    danger: 2
+    optionalSoldierEffect: 1
+    baseChances: 65
+    danger: 5
     costs: 40
+    instantSuccessDeployment: 
+      STR_MIB_CHASING: 100
+    instantTrapDeployment: 
+      STR_MIB_CHASING: 100 #TODO
+    trapChance: 100
 
   - name: STR_REGIONAL_HQ
     description: STR_REGIONAL_HQ_DESCRIPTION
@@ -27,8 +30,6 @@ covertOperations:
       STR_POLICE_BATON: 2
     danger: 3
     costs: 120
-    allowedArmor:
-      - STR_JUMPSUIT_UC
     specialRule: STR_REGIONAL_HQ_DISCOVERY
 
 #monster hunt

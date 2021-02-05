@@ -21,21 +21,37 @@ cutscenes:
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_2.png
           caption: STR_INTRO2_SLIDE2_CAPTION
-          captionSize: [120, 192]
-          captionPos: [3, 3]
+          captionSize: [130, 180]
+          captionPos: [5, 5]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_3.png
           caption: STR_INTRO2_SLIDE3_CAPTION
-          captionSize: [122, 192]
-          captionPos: [195, 3]
+          captionSize: [120, 180]
+          captionPos: [5, 5]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_4.png
           caption: STR_INTRO2_SLIDE4_CAPTION
-          captionSize: [160, 192]
-          captionPos: [3, 3]
+          captionSize: [120, 180]
+          captionPos: [5, 45]
           captionColor: 244
         - imagePath: Resources/Slides/Intro2/intro2_5.png
           caption: STR_INTRO2_SLIDE5_CAPTION
-          captionSize: [234, 192]
-          captionPos: [0, 0]
+          captionSize: [120, 180]
+          captionPos: [5, 75]
+          captionColor: 244
+
+  - type: mib_chasing
+    slideshow:
+      transitionSeconds: 50
+      musicId: GMINTER
+      slides:
+        - imagePath: Resources/Slides/placeholder_full_CPAL.png
+          caption: STR_MIB_CHASING_SLIDE1_CAPTION
+          captionSize: [314, 192]
+          captionPos: [3, 65]
+          captionColor: 244
+        - imagePath: Resources/Slides/placeholder_full_CPAL.png
+          caption: STR_MIB_CHASING_SLIDE2_CAPTION
+          captionSize: [130, 180]
+          captionPos: [5, 5]
           captionColor: 244

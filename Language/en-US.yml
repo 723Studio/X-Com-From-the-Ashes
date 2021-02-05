@@ -243,8 +243,10 @@ en-US:
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of its members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and they are trying to cover up any traces of their activity."
   STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
   STR_INTRO2_SLIDE3_CAPTION: "All of his colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal and there was a steep decrease of empathy. We have already documented such personality changes in some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
-  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, espionage was not his main field and he was caught trying to back up the Ufopedia. An MiB agent shot him on sight, and the Commander didn't even blink!"
-  STR_INTRO2_SLIDE5_CAPTION: "There are still people loyal to our cause of driving the invaders back! To arms!"
+  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, espionage was not his main field and he was caught trying to back up the Ufopedia.{NEWLINE}An MiB agent shot him on sight, and the Commander didn't even blink!"
+  STR_INTRO2_SLIDE5_CAPTION: "There are still people loyal to our cause of driving the invaders back!{NEWLINE}To arms!"
+  STR_MIB_CHASING_SLIDE1_CAPTION: "Some fancy text here..." #TODO
+  STR_MIB_CHASING_SLIDE2_CAPTION: "Some fancy text here too!" #TODO
 #facilities
   STR_HQ: "Headquarters"
   STR_PRISON_CELLS: "Prison Cells"
