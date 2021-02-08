@@ -6,11 +6,12 @@ covertOperations:
     requires:
       - STR_COVERT_OPERATIONS
     soldierSlots: 2
-    optionalSoldierSlots: 3
+    optionalSoldierSlots: 2
     optionalSoldierEffect: 1
-    baseChances: 65
+    baseChances: 70
     danger: 5
-    costs: 40
+    costs: 60
+    itemSpaceLimit: 10
     instantSuccessDeployment: 
       STR_MIB_CHASING: 100
     instantTrapDeployment: 

@@ -45,12 +45,12 @@ cutscenes:
       transitionSeconds: 50
       musicId: GMINTER
       slides:
-        - imagePath: Resources/Slides/placeholder_full_CPAL.png
+        - imagePath: Resources/Slides/MiB_Chasing/mib_chasing1_CPAL.png
           caption: STR_MIB_CHASING_SLIDE1_CAPTION
           captionSize: [314, 192]
           captionPos: [3, 65]
           captionColor: 244
-        - imagePath: Resources/Slides/placeholder_full_CPAL.png
+        - imagePath: Resources/Slides/MiB_Chasing/mib_chasing2_CPAL.png
           caption: STR_MIB_CHASING_SLIDE2_CAPTION
           captionSize: [130, 180]
           captionPos: [5, 5]

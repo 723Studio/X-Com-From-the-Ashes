@@ -262,7 +262,7 @@ en-US:
   STR_RESISTANCE_FARM: "Resistance Heaven"
   STR_RESISTANCE_HEAVEN_ATTACKED: "Resistance Heaven Attacked"
   STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION #TODO
-  STR_RESISTANCE_FARM_BRIEFING: STR_RESISTANCE_FARM_BRIEFING #TODO
+  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: STR_RESISTANCE_ZOMBIE_FARM_BRIEFING #TODO
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
   STR_SCIENTIST_REFUGE_DESCRIPTION: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
@@ -286,6 +286,10 @@ en-US:
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to the 1st Hangar."
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies running low!"
   STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our forces alive."
+  STR_NO_SUPPLY_SECOND_WARNING_EVENT: "We are running out supplies!"
+  STR_NO_SUPPLY_SECOND_WARNING_DESCRIPTION: #TODO
+  STR_NO_SUPPLY_THIRD_WARNING_EVENT: "Starvation!"
+  STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: #TODO
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: #TODO
   STR_RESISTANCE_DISCOVER: "Resistance"
@@ -300,6 +304,7 @@ en-US:
   STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> +130"
   STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> -150"
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> -200"
+
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "MiB Agent"
@@ -385,11 +390,11 @@ en-US:
   STR_RIOT_PISTOL: "Riot Pistol"
   STR_RIOT_PISTOL_UFOPEDIA: "STR_RIOT_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO
   STR_RIOT_PISTOL_CLIP: "Riot Pistol Clip"
-  STR_PISTOL: "SpecOps Pistol"
+  STR_PISTOL: "Light Pistol"
   STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides a good rate of fire and accuracy on short distances.{NEWLINE}>Concealable"
-  STR_PISTOL_CLIP: "Pistol Clip"
-  STR_PISTOL_EXP_CLIP: "Pistol Exp. Clip"
-  STR_PISTOL_AA_CLIP: "Pistol AA Clip"
+  STR_PISTOL_CLIP: "Light Pistol Clip"
+  STR_PISTOL_EXP_CLIP: "Light Pistol Exp. Clip"
+  STR_PISTOL_AA_CLIP: "Light Pistol AA Clip"
   STR_HEAVY_PISTOL: "Heavy Pistol"
   STR_HEAVY_PISTOL_UFOPEDIA: "STR_HEAVY_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO
   STR_HEAVY_PISTOL_CLIP: "Heavy Pistol Clip"
@@ -433,9 +438,9 @@ en-US:
   STR_PUMP_ACTION_SHELLS: "Pump Action BS Ammo"
   STR_SEMI_AUTO_SHOTGUN: "Semiauto Shotgun"
   STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "This shotgun is able to fire a shell after every trigger pull, without needing to manually chamber the next round. Thus, the rate of fire increases significantly but accuracy decreases slightly due to the high recoil in comparison to the pump-action shotgun."
-  STR_SHOTGUN: "SpecOps Shotgun"
+  STR_SHOTGUN: "Shotgun"
   STR_SHOTGUN_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
-  STR_SHOTGUN_CONT: "SpecOps Shotgun (continued)"
+  STR_SHOTGUN_CONT: "Shotgun (continued)"
   STR_SHOTGUN_CONT_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
   STR_SHOTGUN_SHELLS_BS: "Shotgun BS Ammo"
   STR_SHOTGUN_SHELLS_AP: "Shotgun AP Shells"
@@ -504,6 +509,7 @@ en-US:
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
+  STR_LEATHER_COAT_UC: "LEATHER COAT"
 
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"

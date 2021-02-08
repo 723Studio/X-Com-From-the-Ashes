@@ -46,10 +46,6 @@ research:
     needItem: true
   - name: STR_REGIONAL_HQ_FOUND
     needItem: true
-  - name: STR_NO_SUPPLY_WARNING
-    needItem: true
-  - name: STR_NO_SUPPLY_GAME_LOST #needs ufopedia, engine fix, not used in alpha 1
-    needItem: true
   - name: STR_PRISONER_INTERROGATIONS
     needItem: true
   - name: STR_LOYALTY
@@ -71,7 +67,8 @@ research:
     needItem: true
   - name: STR_MONSTER_HUNT_RUMORS_PREREQ
     needItem: true
-
+  - name: STR_MIB_CHASING
+    needItem: true
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION

@@ -35,6 +35,24 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
+  - type: STR_NO_SUPPLY_SECOND_WARNING_SCRIPT
+    oneTimeSequentialEvents: [STR_NO_SUPPLY_SECOND_WARNING_EVENT]
+    firstMonth: 1
+    lastMonth: 1
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+    researchTriggers:
+      STR_SUPPLIES: false
+  - type: STR_NO_SUPPLY_THIRD_WARNING_SCRIPT
+    oneTimeSequentialEvents: [ STR_NO_SUPPLY_THIRD_WARNING_EVENT]
+    firstMonth: 2
+    lastMonth: -1
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+    researchTriggers:
+      STR_SUPPLIES: false
   - type: STR_MONSTER_HUNT_START
     oneTimeSequentialEvents: [STR_MONSTER_HUNT_START_EVENT]
     firstMonth: 0

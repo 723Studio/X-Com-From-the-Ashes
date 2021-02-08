@@ -22,15 +22,28 @@ events:
     researchList: [STR_VEHICLES_STATUS_REPORT]
   - name: STR_MONSTER_HUNT_START_EVENT
     description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
-    timer: 13000
-    timerRandom: 3000
+    timer: 12960 # 9 days
+    timerRandom: 2880 # 2 days
     researchList: [STR_MONSTER_HUNT_START_PREREQ]
   - name: STR_NO_SUPPLY_WARNING_EVENT
     description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION
-    timer: 20160
-    interruptResearch: STR_SUPPLIES
+    timer: 20160 # 14 days
     timerRandom: 1300
-    researchList: [STR_NO_SUPPLY_WARNING]
+    interruptResearch: STR_SUPPLIES
+    #loyalty: -100 #TODO uncomment on 0.1.8 engine
+  - name: STR_NO_SUPPLY_SECOND_WARNING_EVENT
+    description: STR_NO_SUPPLY_SECOND_WARNING_DESCRIPTION
+    timer: 1200
+    timerRandom: 900
+    interruptResearch: STR_SUPPLIES
+    funds: -45000
+    #loyalty: -500 #TODO uncomment on 0.1.8 engine
+  - name: STR_NO_SUPPLY_THIRD_WARNING_EVENT
+    description: STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION
+    timer: 20160 # 14 days
+    timerRandom: 10080 # 7 days
+    interruptResearch: STR_SUPPLIES
+    #loyalty: -900 #TODO uncomment on 0.1.8 engine
 
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION
@@ -48,6 +61,11 @@ events:
 
   - name: STR_MIB_CHASING_SUCCESS
     description: STR_MIB_CHASING_SUCCESS_DESCRIPTION
+    timer: 30
+    timerRandom: 0
+    researchList: [STR_MIB_CHASING]
+  - name: STR_MIB_CHASING_FAIL
+    description: STR_MIB_CHASING_FAIL_DESCRIPTION
     timer: 30
     timerRandom: 0
     researchList: [STR_MIB_CHASING]
