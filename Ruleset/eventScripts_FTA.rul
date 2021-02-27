@@ -72,3 +72,13 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
+
+
+
+  - type: STR_TEST_EVENT_SCRIPT
+    oneTimeSequentialEvents: [STR_TEST_EVENT]
+    firstMonth: 1
+    lastMonth: 2
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4    

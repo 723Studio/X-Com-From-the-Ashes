@@ -102,7 +102,7 @@ ufopaedia:
     listOrder: 10
   - id: STR_RND_STATUS_REPORT
     type_id: 7
-    image_id: RND_CHIEF.SPK
+    image_id: RND_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -111,7 +111,7 @@ ufopaedia:
     listOrder: 100
   - id: STR_INTEL_STATUS_REPORT
     type_id: 7
-    image_id: INTEL_CHIEF.SPK
+    image_id: INTEL_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -138,7 +138,7 @@ ufopaedia:
     listOrder: 130
   - id: STR_UFOPEDIA
     type_id: 7
-    image_id: RND_CHIEF.SPK
+    image_id: RND_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -147,7 +147,7 @@ ufopaedia:
     listOrder: 140
   - id: STR_COVERT_OPERATIONS
     type_id: 7
-    image_id: INTEL_CHIEF.SPK
+    image_id: INTEL_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -177,7 +177,7 @@ ufopaedia:
     listOrder: 180
   - id: STR_XCOM_EQUIPMENT_ARTICLE_HEADER
     type_id: 7
-    image_id: RND_CHIEF.SPK
+    image_id: RND_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -229,7 +229,7 @@ ufopaedia:
 
   - id: STR_PRISONER_INTERROGATIONS
     type_id: 7
-    image_id: INTEL_CHIEF.SPK
+    image_id: INTEL_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -239,7 +239,7 @@ ufopaedia:
 
   - id: STR_MONSTER_HUNT_START
     type_id: 7
-    image_id: INTEL_CHIEF.SPK
+    image_id: INTEL_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -377,13 +377,13 @@ ufopaedia:
     requires:
       - STR_FACILITIES_BLUEPRINTS
   - id: STR_BASE_CONSTRUCTION
-    type_id: 7
+    type_id: 8 #TODO image here, so 7
     section: STR_BASE_FACILITIES
     requires:
       - STR_BASE_CONSTRUCTION
     text: STR_BASE_CONSTRUCTION_UFOPEDIA
   - id: STR_UNDERWATER_BASES
-    type_id: 7
+    type_id: 8 #TODO image here, so 7
     section: STR_BASE_FACILITIES
     requires:
       - STR_UNDERWATER_BASES
@@ -1085,7 +1085,79 @@ ufopaedia:
     text_width: 149
     listOrder: 164100
 
-#tactic analysis
+#STR_ALIEN_RESEARCH_UC 160-249k
+  - id: STR_EMPTY_MIB_EARLY_LORE1
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE1
+    text: STR_EMPTY_MIB_EARLY_LORE1_UFOPEDIA
+    listOrder: 160010
+  - id: STR_EMPTY_MIB_EARLY_LORE2
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE2
+    text: STR_EMPTY_MIB_EARLY_LORE2_UFOPEDIA
+    listOrder: 160012
+  - id: STR_EMPTY_MIB_EARLY_LORE3
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE3
+    text: STR_EMPTY_MIB_EARLY_LORE3_UFOPEDIA
+    listOrder: 160014
+  - id: STR_EMPTY_MIB_EARLY_LORE4
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE4
+    text: STR_EMPTY_MIB_EARLY_LORE4_UFOPEDIA
+    listOrder: 160016
+  - id: STR_EMPTY_MIB_EARLY_LORE5
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE5
+    text: STR_EMPTY_MIB_EARLY_LORE5_UFOPEDIA
+    listOrder: 160018
+  - id: STR_EMPTY_MIB_EARLY_LORE6
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE6
+    text: STR_EMPTY_MIB_EARLY_LORE6_UFOPEDIA
+    listOrder: 160020
+  - id: STR_EMPTY_MIB_EARLY_LORE7
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE7
+    text: STR_EMPTY_MIB_EARLY_LORE7_UFOPEDIA
+    listOrder: 160022
+  - id: STR_EMPTY_MIB_EARLY_LORE8
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE8
+    text: STR_EMPTY_MIB_EARLY_LORE8_UFOPEDIA
+    listOrder: 160024
+  - id: STR_EMPTY_MIB_EARLY_LORE9
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE9
+    text: STR_EMPTY_MIB_EARLY_LORE9_UFOPEDIA
+    listOrder: 160026
+  - id: STR_EMPTY_MIB_EARLY_LORE10
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE10
+    text: STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA
+    listOrder: 160028
+
+#STR_TACTICAL_ANALYSIS 250-1999k
   - id: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     type_id: 8
     section: STR_TACTICAL_ANALYSIS

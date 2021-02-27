@@ -226,7 +226,7 @@ items:
       energy: 8
     flatRate: true
     clipSize: 1
-    #stackSize: 5 #TODO
+    stackSize: 5 #TODO
     battleType: 1
     invWidth: 1
     invHeight: 2
@@ -293,7 +293,7 @@ items:
     damageBonus:
      firing: 0.1
     clipSize: 1
-    #stackSize: 10 #TODO
+    stackSize: 10 #TODO
     costThrow:
       energy: 8
     battleType: 2
@@ -1051,7 +1051,7 @@ items:
     damageBonus:
       firing: 0.15
     clipSize: 5 #TODO bolt-action
-    #stackSize: 5 #TODO
+    stackSize: 5 #TODO
     battleType: 2
     armor: 30
     attraction: 7
@@ -1304,7 +1304,7 @@ items:
     requiresBuy:
       - STR_TODOIUM
     size: 0.04
-    #stackSize: 5
+    stackSize: 5
     costBuy: 50
     costSell: 30
     weight: 3

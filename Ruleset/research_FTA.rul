@@ -37,13 +37,13 @@ research:
   - name: STR_LOG1
     needItem: true
   - name: STR_RND_STATUS_REPORT
-    needItem: true
+    hidden: true
   - name: STR_INTEL_STATUS_REPORT
-    needItem: true
+    hidden: true
   - name: STR_ENGINEER_STATUS_REPORT
-    needItem: true
+    hidden: true
   - name: STR_VEHICLES_STATUS_REPORT
-    needItem: true
+    hidden: true
   - name: STR_REGIONAL_HQ_FOUND
     needItem: true
   - name: STR_PRISONER_INTERROGATIONS
@@ -291,10 +291,34 @@ research:
       - STR_TODOIUM  
 
 #MIB arc
+  #key lore
   - name: STR_FRESH_MIB_AGENT
-    needItem: true
+    dependencies:
+      - STR_TODOIUM
     # unlocks:
     #     - STR_MORE_MIB_STUFF_HERE <--- #TODO
+
+  #empty lore
+  - name: STR_EMPTY_MIB_EARLY_LORE1
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE2
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE3
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE4
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE5
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE6
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE7
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE8
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE9
+    hidden: true
+  - name: STR_EMPTY_MIB_EARLY_LORE10
+    hidden: true
 
 #shared creatures arc
   - name: STR_STRANGE_CREATURE_AUTOPSY
@@ -360,6 +384,8 @@ research:
     needItem: true
     dependencies:
       - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
     listOrder: 146000
   - name: STR_MIB_AGENT
     requiresBaseFunc: [INTLAB]
@@ -372,9 +398,19 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected: 
-      STR_PRISONER_INTERROGATIONS: #TODO ADD MORE LORE HERE!
+      STR_PRISONER_INTERROGATIONS:
         - STR_FRESH_MIB_AGENT
-        - STR_MIB_AGENT_VEST_ARMOR
+      STR_FRESH_MIB_AGENT:
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+        - STR_EMPTY_MIB_EARLY_LORE4
+        - STR_EMPTY_MIB_EARLY_LORE5
+        - STR_EMPTY_MIB_EARLY_LORE6
+        - STR_EMPTY_MIB_EARLY_LORE7
+        - STR_EMPTY_MIB_EARLY_LORE8
+        - STR_EMPTY_MIB_EARLY_LORE9
+        - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 146000
   - name: STR_MIB_SPECOPS
     requiresBaseFunc: [INTLAB]
@@ -389,7 +425,6 @@ research:
     getOneFreeProtected: 
       STR_PRISONER_INTERROGATIONS: #TODO ADD MORE LORE HERE!
         - STR_FRESH_MIB_AGENT
-        - STR_MIB_AGENT_VEST_ARMOR
     listOrder: 146000
   - name: STR_SEEKER_DRONE_TERRORIST #TODO
     requiresBaseFunc: [HQ]

@@ -2,13 +2,12 @@ covertOperations:
 #main path
   - name: STR_CHASING_MIB
     description: STR_CHASING_MIB_DESCRIPTION
-    successDescription: STR_CHASING_MIB_SUCCESS_DESCRIPTION
     requires:
       - STR_COVERT_OPERATIONS
     soldierSlots: 2
     optionalSoldierSlots: 2
     optionalSoldierEffect: 1
-    baseChances: 70
+    baseChances: 0 #70
     danger: 5
     costs: 60
     itemSpaceLimit: 10
@@ -74,7 +73,7 @@ covertOperations:
       - STR_JUMPSUIT_UC
     successScore: 100
     #successEvent: #TODO - continue the arc?
-    failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
+    #failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     instantTrapDeployment: 
       STR_LOCALS_TRAP: 50
       STR_CHUPACABRA_HUNT_TRAP: 50

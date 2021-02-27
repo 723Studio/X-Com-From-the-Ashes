@@ -86,14 +86,14 @@ en-US:
   STR_IN_PSI_TRAINING_UC: "PSI TRAINING"
   STR_NO_OUT: "OUT"
   STR_UNAVAILABLE_TRAINING: "-"
-  STR_LAB_ICON: "¤"
-  STR_WORKSHOP_ICON: "¥"
+  STR_LAB_ICON: "*" #"¤"
+  STR_WORKSHOP_ICON: "*" #"¥"
   STR_OPERATION_RESULT: "Operation result"
   STR_OPERATION_BASE: "Operation base"
   STR_SUCCESS_US: "SUCCESS"
   STR_FAILURE_US: "FAILURE"
   STR_DETAILS_BUTTON: "Details"
-  STR_NOT_ENOUGH_OPERATION_SPACE: "Selected personel exceeds the limit for the operation!"
+  STR_NOT_ENOUGH_OPERATION_SPACE: "Selected personnel exceeds the limit for the operation!"
   STR_NOT_ENOUGH_SCIENTISTS: "There are no free scientists on the base!"
   STR_NOT_ENOUGH_ENGINEERS: "There are no free engineers on the base!"
   STR_OVER_ITEM_SIZE_LIMIT:
@@ -563,4 +563,23 @@ en-US:
   STR_XCOM_FILES_2_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_3: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_3_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
-  STR_TEST: "This is a test. Hello world."
+  STR_EMPTY_MIB_EARLY_LORE1: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE1_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE2: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE2_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE3: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE3_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE4: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE4_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE5: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE5_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE6: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE6_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE7: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE7_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE8: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE8_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE9: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE9_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE10: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA: "Some general MiB lore here" #TODO

@@ -216,7 +216,7 @@ extended:
 
           if eq dazeTag 69;
             if eq currTurn endTurn;
-              unit.Stats.setTimeUnits originalTimeUnits; #revent debuff
+              unit.Stats.setTimeUnits originalTimeUnits; #revert debuff
               unit.Stats.setReactions originalReactions; 
               unit.Stats.setFiring originalFiring; 
               unit.Stats.setThrowing originalThrowing; 

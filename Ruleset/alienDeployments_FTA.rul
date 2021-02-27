@@ -335,10 +335,10 @@ alienDeployments:
       - FOREST
     shade: 6
     script: MIB_CHASING
-    successEvents:
-      STR_MIB_CHASING_SUCCESS: 100
-    failureEvents:
-      STR_MIB_CHASING_FAIL: 100
+    # successEvents:
+    #   STR_MIB_CHASING_SUCCESS: 100
+    # failureEvents:
+    #   STR_MIB_CHASING_FAIL: 100
     startingCondition: STR_COVERT_AGENT_GEAR
     data:
       - alienRank: 5
@@ -605,9 +605,6 @@ alienDeployments:
     width: 50
     length: 50
     height: 8
-    alert: STR_MONSTER_HUNT_ALERT
-    alertBackground: BACK03.SCR #TODO?
-    alertDescription: STR_MONSTER_HUNT_ALERT_DESCRIPTION
     markerName: STR_MONSTER_HUNT
     duration: [10, 10]
     despawnPenalty: 300
@@ -617,7 +614,6 @@ alienDeployments:
       showTarget: false
       desc: STR_MONSTER_HUNT_BRIEFING
     terrains:
-      - CULTA
       - FOREST
     data:
       - alienRank: 6
@@ -1051,7 +1047,7 @@ alienDeployments:
   - type: STR_GENERAL_TRAP_ALT
     race: STR_MIB
     #alternativeDeployment: STR_GENERAL_TRAP_ALT
-    alternativeDeploymentResearch: STR_NONE
+    #alternativeDeploymentResearch: STR_NONE
     width: 50
     length: 50
     height: 6

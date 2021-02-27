@@ -1,14 +1,15 @@
-
 # LICENSING
 The most content of From the Ashes megamod - artwork, sounds and other assets, rulesets and configs (with some exceptions exceptions, listed below) distributed under a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License** [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt the materials only for non-commercial purposes and when providing [appropriate attribution](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart). **Any** derivatives must be distributed **under the same license!**
 Some music assets were bought by me and I have personal right to use it in my project - X-Com: From the Ashes, they are distributed under **All Rights Reserved license**. You **can not** redistribute or adapt it anyhow without my personal agree. Sorry, it is not my personal greed, but part of agreement with its author. To streamers and letsplayers - this music is safe for you, it is not listed in any contentID systems. 
 Here is a list of those music tracks: 
 * ENEMY_TERRITORY.ogg; 
 
-I am also ordered some art assets from professional pixel-artists in order to provide the best experience to my players I can offer. Those orders are partially funded by Patreon support and mostly from my personal budget and I have personal rights to use it. So I maid a decision to distribute those (and only those) assets under **All Rights Reserved license.** 
+I am also ordered some art assets from professional pixel-artists in order to provide the best experience to my players I can offer. Those orders are partially funded by Patreon support and donations, and mostly from my personal budget, so I have personal rights to use it. I maid a decision to distribute those (and only those) assets under **All Rights Reserved license.** 
 Here is a list of that assets:
 * Engineer_Chief.png
+* Intel_lady_CPAL.png
 * Intel_lady.png
+* RnD_Chief_CPAL.png
 * RnD_Chief.png
 * intro2_2.png
 * intro2_3.png
