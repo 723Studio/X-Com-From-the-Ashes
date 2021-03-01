@@ -293,11 +293,29 @@ research:
 #MIB arc
   #key lore
   - name: STR_FRESH_MIB_AGENT
+    hidden: true
+  - name: STR_MIB_HEAD_CHIP_PREREQ
+    hidden: true
+  - name: STR_MIB_AGENT_LOBOTOMY
+    requiresBaseFunc: [SURGERY]
+    cost: 216
+    points: 100
+    spawnedItem: STR_MIB_HEAD_CHIP
+  - name: STR_MIB_HEAD_CHIP
+    requiresBaseFunc: [INTLAB]
+    cost: 840
+    points: 200
+    needItem: true
     dependencies:
-      - STR_TODOIUM
-    # unlocks:
-    #     - STR_MORE_MIB_STUFF_HERE <--- #TODO
-
+      - STR_MIB_AGENT_LOBOTOMY
+    listOrder: 146000
+  - name: STR_MIB_DATA_TRANSFER_DECRYPTION
+    requiresBaseFunc: [INTLAB]
+    cost: 900
+    points: 250
+    dependencies:
+      - STR_MIB_HEAD_CHIP
+    listOrder: 146000
   #empty lore
   - name: STR_EMPTY_MIB_EARLY_LORE1
     hidden: true
@@ -400,11 +418,12 @@ research:
     getOneFreeProtected: 
       STR_PRISONER_INTERROGATIONS:
         - STR_FRESH_MIB_AGENT
-      STR_FRESH_MIB_AGENT:
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
         - STR_EMPTY_MIB_EARLY_LORE4
+      STR_FRESH_MIB_AGENT:
+        - STR_MIB_HEAD_CHIP_PREREQ
         - STR_EMPTY_MIB_EARLY_LORE5
         - STR_EMPTY_MIB_EARLY_LORE6
         - STR_EMPTY_MIB_EARLY_LORE7
@@ -423,8 +442,20 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected: 
-      STR_PRISONER_INTERROGATIONS: #TODO ADD MORE LORE HERE!
+      STR_PRISONER_INTERROGATIONS:
         - STR_FRESH_MIB_AGENT
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+        - STR_EMPTY_MIB_EARLY_LORE4
+      STR_FRESH_MIB_AGENT:
+        - STR_MIB_HEAD_CHIP_PREREQ
+        # - STR_EMPTY_MIB_EARLY_LORE5
+        # - STR_EMPTY_MIB_EARLY_LORE6
+        - STR_EMPTY_MIB_EARLY_LORE7
+        - STR_EMPTY_MIB_EARLY_LORE8
+        - STR_EMPTY_MIB_EARLY_LORE9
+        - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 146000
   - name: STR_SEEKER_DRONE_TERRORIST #TODO
     requiresBaseFunc: [HQ]

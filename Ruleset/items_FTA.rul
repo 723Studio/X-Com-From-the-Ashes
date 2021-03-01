@@ -2934,6 +2934,9 @@ items:
     listOrder: 58860
 
 #geoscape-only
+  - type: STR_MIB_HEAD_CHIP
+    categories: [STR_EVIDENCE]
+    listOrder: 146030
   - type: STR_RADAR_SYSTEM #TODO
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
@@ -2945,6 +2948,8 @@ items:
     costSell: 500000
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
+
+
 
 #unit-related
 #MIBs

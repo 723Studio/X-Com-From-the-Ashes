@@ -30,20 +30,20 @@ events:
     timer: 20160 # 14 days
     timerRandom: 1300
     interruptResearch: STR_SUPPLIES
-    #loyalty: -100 #TODO uncomment on 0.1.8 engine
+    loyalty: -100
   - name: STR_NO_SUPPLY_SECOND_WARNING_EVENT
     description: STR_NO_SUPPLY_SECOND_WARNING_DESCRIPTION
     timer: 1200
     timerRandom: 900
     interruptResearch: STR_SUPPLIES
     funds: -45000
-    #loyalty: -500 #TODO uncomment on 0.1.8 engine
+    loyalty: -500
   - name: STR_NO_SUPPLY_THIRD_WARNING_EVENT
     description: STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION
     timer: 20160 # 14 days
     timerRandom: 10080 # 7 days
     interruptResearch: STR_SUPPLIES
-    #loyalty: -900 #TODO uncomment on 0.1.8 engine
+    loyalty: -900
 
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION
@@ -69,6 +69,9 @@ events:
     timer: 30
     timerRandom: 0
     researchList: [STR_MIB_CHASING]
+
+
+    
   - name: STR_REGIONAL_HQ_FOUND_EVENT
     description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
     timer: 180
@@ -78,7 +81,7 @@ events:
 #Monsters
   - name: STR_MONSTER_HUNT_RUMORS
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
-    #researchList: [???]
+    #researchList: [???] #TODO
     timer: 0
     timerRandom: 0
 
@@ -137,8 +140,3 @@ events:
   #   timer: 90
   #   timerRandom: 0
   #   researchList: [STR_RND_STATUS_REPORT] 
-
-  - name: STR_TEST_EVENT
-    description: STR_TEST_OPERATION_DESCRIPTION
-    timer: 0
-    removedCovertOperationsList: [STR_CHASING_MIB]

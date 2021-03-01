@@ -21,7 +21,7 @@ facilities:
   - type: STR_HQ
     spriteShape: 1
     spriteFacility: 300
-    provideBaseFunc: [HQ, INTLAB, BIOLAB]
+    provideBaseFunc: [HQ, INTLAB]
     maxAllowedPerBase: 1
     requires:
       - STR_FACILITIES_BLUEPRINTS
@@ -81,7 +81,7 @@ facilities:
     sickBayAbsoluteBonus: 0.25
     sickBayRelativeBonus: 1.0
     manaRecoveryPerDay: 1
-    provideBaseFunc: [MEDBAY]
+    provideBaseFunc: [MEDBAY, SURGERY]
     mapName: XBASF_05
     listOrder: 6920
   - type: STR_CLOSED_LAB
