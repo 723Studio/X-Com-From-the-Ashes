@@ -38,7 +38,28 @@ facilities:
     radarRange: 10800
     radarChance: 2
     mapName: XBASF_01
-    listOrder: 6830 
+    listOrder: 6830
+  - type: STR_BIOLAB
+    spriteShape: 1
+    spriteFacility: 305
+    provideBaseFunc: [BIOLAB]
+    maxAllowedPerBase: 1
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+    buildCostItems:
+     STR_LABORATORY_EQUIPMENT:
+       build: 2
+       refund: 1
+     STR_BIOLIGY_EQUIPMENT:
+       build: 1
+       refund: 1         
+    buildCost: 750000
+    buildTime: 20
+    monthlyCost: 25000
+    labs: 5
+    storage: 5
+    storageTiles: [[-1, -1, -1]]
+    mapName: XBASE_02 #TODO
   - type: STR_PRISON_CELLS
     spriteShape: 1
     spriteFacility: 301

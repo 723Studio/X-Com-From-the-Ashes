@@ -102,6 +102,8 @@ battleScripts:
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
     - type: showMessage #TODO uncomment
+      executions: 1 #not working yet :]
+      endTurn: 1
       messages:
         0:
           title: STR_RECOVER_RESEARCH_LOGS_TITLE

@@ -116,7 +116,14 @@ events:
       STR_RESISTANCE: -200
 
 
-
+#xcom
+  - name: STR_BIOLAB_PREREQ_EVENT
+    description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION
+    #background: STR_RESISTANCE_BACKGROUND.SCR
+    researchList: [STR_BIOLAB_PREREQ]
+    timer: 120
+    timerRandom: 60
+    interruptResearch: STR_BIOLAB_PREREQ
 
 
 

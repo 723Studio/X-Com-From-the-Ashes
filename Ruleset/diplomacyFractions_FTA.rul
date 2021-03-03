@@ -21,7 +21,7 @@ diplomacyFactions:
       - heavenDefenceFirstTime
       - heavenDefenceContinues
     genEventFreq: 95
-    helpTreatyEvents:
+    helpTreatyEventScripts:
        - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
     # factionalEvents:
     #    - STR_TEST

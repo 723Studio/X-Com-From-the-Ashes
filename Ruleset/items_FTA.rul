@@ -920,8 +920,6 @@ items:
     accuracyAuto: 35
     accuracySnap: 70
     accuracyAimed: 125
-    accuracyMultiplier:
-      firing: 0.1
     tuAuto: 38
     tuSnap: 30
     tuAimed: 75
@@ -2936,6 +2934,16 @@ items:
 #geoscape-only
   - type: STR_MIB_HEAD_CHIP
     categories: [STR_EVIDENCE]
+    listOrder: 146030
+  - type: STR_LABORATORY_EQUIPMENT
+    categories: [STR_HUMANS, STR_COMPONENTS]
+    costBuy: 200000
+    costSell: 180000
+    listOrder: 146030
+  - type: STR_BIOLIGY_EQUIPMENT
+    categories: [STR_HUMANS, STR_COMPONENTS]
+    costBuy: 350000
+    costSell: 300000
     listOrder: 146030
   - type: STR_RADAR_SYSTEM #TODO
     categories: [STR_HUMANS, STR_COMPONENTS]

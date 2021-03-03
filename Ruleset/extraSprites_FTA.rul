@@ -433,6 +433,7 @@ extraSprites:
       302: Resources/Facilities/Gym.png
       303: Resources/Facilities/Sick_Bay.png
       304: Resources/Facilities/Closed_Lab.png
+      305: Resources/Facilities/Bio_Lab.png
       833: Resources/Crafts/Basebits/Dragonfly_base.png
       834: Resources/Crafts/Basebits/Stalker_base.png
 #interwins

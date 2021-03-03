@@ -21,7 +21,7 @@ research:
 #   - delete: STR_COMMANDER_PLUS
 #technical part
   - name: STR_HELLO #hardcoded, do not rename! used to start the game property
-    needItem: true
+    hidden: true
   - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at something not available to be discovered in the game
     needItem: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
@@ -748,6 +748,14 @@ research:
 #craft items
 
 #facilities
+  - name: STR_BIOLAB_PREREQ
+    hidden: true
+  - name: STR_BIOLAB
+    cost: 200
+    points: 30
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_BIOLAB_PREREQ
   - name: STR_LARGE_RADAR_SYSTEM
     cost: 50
     points: 10

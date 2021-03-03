@@ -61,24 +61,91 @@ eventScripts:
     minDifficulty: 0
     maxDifficulty: 4
 
-
-#resistance
-  - type: STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
-    oneTimeSequentialEvents: [STR_RESISTANCE_HEAVEN_SAVED_EVENT]
+#xcom
+  - type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
     researchTriggers:
-        STR_RESISTANCE_FIRST_HELP: true
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
+    itemTriggers:
+      STR_FACEHUGGER_CORPSE: true
     firstMonth: 0
-    lastMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
+    itemTriggers:
+      STR_ZOMBIE_STERILE_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_STERILE
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
+    itemTriggers:
+      STR_ZOMBIE_STERILE_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_GRUBAS
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
+    itemTriggers:
+      STR_ZOMBIE_GRUBAS_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_BIOLAB_PREREQ_SCRIPT_JABBER
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
+    itemTriggers:
+      STR_JABBER_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_BIOLAB_PREREQ_SCRIPT_CHUPACABRA
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
+    itemTriggers:
+      STR_CHUPACABRA_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
 
 
 
-  - type: STR_TEST_EVENT_SCRIPT
-    oneTimeSequentialEvents: [STR_TEST_EVENT]
-    firstMonth: 1
-    lastMonth: 2
+#resistance
+  - type: STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
+    oneTimeSequentialEvents: [STR_RESISTANCE_HEAVEN_SAVED_EVENT]
+    researchTriggers:
+      STR_RESISTANCE_FIRST_HELP: true
+    firstMonth: 0
+    lastMonth: 0
+    allowedProcessor: 1 #faction
     executionOdds: 100
     minDifficulty: 0
-    maxDifficulty: 4    
+    maxDifficulty: 4
+   

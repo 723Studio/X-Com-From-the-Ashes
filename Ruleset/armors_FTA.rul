@@ -76,10 +76,10 @@ armors:
     corpseBattle:
       - STR_MIB_ARMORED_AGENT_CORPSE
     visibilityAtDark: 9
-    frontArmor: 20
-    sideArmor: 10
+    frontArmor: 15
+    sideArmor: 5
     rearArmor: 10
-    underArmor: 6
+    underArmor: 2
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
@@ -121,10 +121,10 @@ armors:
     visibilityAtDark: 13
     heatVision: 100
     weight: 6
-    frontArmor: 30
-    sideArmor: 25
-    rearArmor: 30
-    underArmor: 20
+    frontArmor: 25
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 10
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -202,10 +202,10 @@ armors:
     corpseBattle:
       - STR_MIB_ENFORCER_CORPSE
     visibilityAtDark: 10
-    frontArmor: 40
+    frontArmor: 35
     sideArmor: 25
     rearArmor: 20
-    underArmor: 20
+    underArmor: 10
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -222,7 +222,7 @@ armors:
     overKill: 1.5
     damageModifier:
       - 1.0 #0 - None - special
-      - 0.85 #1 - AP - kinetic
+      - 0.75 #1 - AP - kinetic
       - 0.8 #2 - Incendiary
       - 0.85 #3 - High Explosive - Explosive
       - 0.8 #4 - Laser
@@ -809,16 +809,12 @@ armors:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-      time:
-        tu: 0.5
       energy:
+        flatHundred: 0.12
         healthCurrent: 0.25
-      stun: &StandardAgentStunRes
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -944,13 +940,12 @@ armors:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
     recovery:
-      morale:
-        flatHundred: -0.1
-      time:
-        tu: 0.5
       energy:
+        flatHundred: 0.1
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
       health:
         stunNormalized: -0.1
     overKill: 1.5
