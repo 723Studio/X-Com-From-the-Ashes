@@ -124,8 +124,13 @@ events:
     timer: 120
     timerRandom: 60
     interruptResearch: STR_BIOLAB_PREREQ
-
-
+  - name: STR_BIOLAB_STUFF
+    description: STR_BIOLAB_STUFF_DESCRIPTION
+    #background: STR_RESISTANCE_BACKGROUND.SCR
+    researchList: [STR_BIOLAB_STUFF]
+    timer: 30
+    timerRandom: 0
+    interruptResearch: STR_BIOLAB_PREREQ
 
 
   # - name: STR_SNIPPET

@@ -334,12 +334,12 @@ ufopaedia:
     text: STR_GENERAL_STORES_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
-  - id: STR_LABORATORY
+  - id: STR_BIOLAB
     type_id: 6
     section: STR_BASE_FACILITIES
-    text: STR_LABORATORY_UFOPEDIA
+    text: STR_BIOLAB_UFOPEDIA
     requires:
-      - STR_FACILITIES_BLUEPRINTS
+      - STR_BIOLAB
   - id: STR_PRISON_CELLS
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -376,6 +376,12 @@ ufopaedia:
     text: STR_HANGAR_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
+  - id: STR_LABORATORY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_LABORATORY_UFOPEDIA
+    requires:
+      - STR_TODOIUM
   - id: STR_BASE_CONSTRUCTION
     type_id: 8 #TODO image here, so 7
     section: STR_BASE_FACILITIES

@@ -254,6 +254,7 @@ en-US:
   STR_GYM: "Training Center"
   STR_SICK_BAY: "Sick Bay"
   STR_CLOSED_LAB: "Closed Laboratory"
+  STR_BIOLAB: "Biolaboratory"
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "MIB Regional HQ"
@@ -520,6 +521,7 @@ en-US:
   STR_DRAGONFLY_UFOPEDIA: "To be done" #TODO
   STR_STALKER: "STALKER"
   STR_STALKER_UFOPEDIA: "To be done" #TODO
+
 #ufopedia
   STR_LOG1: "Commander log #001"
   STR_LOG1_UFOPEDIA: "As a senior officer, I took command. I hope I'm experienced enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, the remaining men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation overall is hardly better - we have lost the funding and supply source and know very little about our enemy. Apparently, alien agents have infiltrated deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to do. We need to get reports from the chiefs of research, intelligence and logistics. I have already submitted orders, it will take several hours for analysis. After that, it will be possible to plan further actions."
@@ -561,6 +563,7 @@ en-US:
   STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segments containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to get it."
   STR_BASE_CONSTRUCTION: "New Base Construction"
   STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #TODO
+  STR_BIOLAB_UFOPEDIA: #TODO
   STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_1_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO

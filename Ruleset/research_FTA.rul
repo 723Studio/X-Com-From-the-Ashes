@@ -23,19 +23,19 @@ research:
   - name: STR_HELLO #hardcoded, do not rename! used to start the game property
     hidden: true
   - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at something not available to be discovered in the game
-    needItem: true
+    hidden: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
-    needItem: true
+    hidden: true
   - name: STR_VOID_CONTACT #TODO scheduled to alpha 2
-    needItem: true    
+    hidden: true    
   - name: STR_ENIGMA_CONTACT #TODO scheduled to alpha 3
-    needItem: true 
+    hidden: true 
   - name: STR_NONE
 #story 
   - name: STR_STORY_1
-    needItem: true
+    hidden: true
   - name: STR_LOG1
-    needItem: true
+    hidden: true
   - name: STR_RND_STATUS_REPORT
     hidden: true
   - name: STR_INTEL_STATUS_REPORT
@@ -45,30 +45,28 @@ research:
   - name: STR_VEHICLES_STATUS_REPORT
     hidden: true
   - name: STR_REGIONAL_HQ_FOUND
-    needItem: true
+    hidden: true
   - name: STR_PRISONER_INTERROGATIONS
-    needItem: true
+    hidden: true
   - name: STR_LOYALTY
-    needItem: true
+    hidden: true
   - name: STR_XCOM_EQUIPMENT_UNLOCKED
     dependencies:
       - STR_XCOM_EQUIPMENT
   - name: STR_XCOM_FILES_1
-    needItem: true
+    hidden: true
   - name: STR_XCOM_FILES_2
-    needItem: true
+    hidden: true
   - name: STR_XCOM_FILES_3
-    needItem: true
+    hidden: true
   - name: STR_RESISTANCE_FIRST_HELP
-    needItem: true
-  - name: STR_RESISTANCE_BASIC_EQUIPMENT
-    needItem: true
+    hidden: true
   - name: STR_MONSTER_HUNT_START_PREREQ
-    needItem: true
+    hidden: true
   - name: STR_MONSTER_HUNT_RUMORS_PREREQ
-    needItem: true
+    hidden: true
   - name: STR_MIB_CHASING
-    needItem: true
+    hidden: true
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
@@ -163,7 +161,7 @@ research:
 
 #technology
   - name: STR_ELECTRIC_WEAPONS_PREREQ
-    needItem: true
+    hidden: true
   - name: STR_ELECTRIC_WEAPONS #TODO Articles
     cost: 8
     points: 12
@@ -176,9 +174,8 @@ research:
     points: 10
     dependencies:
       - STR_TODOIUM
-
   - name: STR_EXPANDABLE_AMMO_PREREQ #TODO
-    needItem: true
+    hidden: true
   - name: STR_EXPANDABLE_AMMO
     cost: 100
     points: 10
@@ -195,10 +192,38 @@ research:
     dependencies:
       - STR_EXPANDABLE_AMMO
 
+  - name: STR_RESISTANCE_STARTING_EQUIPMENT_PREREQ
+    hidden: true
+  - name: STR_RESISTANCE_STARTING_EQUIPMENT
+    cost: 8
+    points: 30
+    dependencies:
+      - STR_RESISTANCE_STARTING_EQUIPMENT_PREREQ
+      - STR_UFOPEDIA_DECRYPTION
+    unlocks:
+      - STR_MACHETE
+      - STR_SWORD
+      - STR_THROWING_KNIFE
+      - STR_SNUBNOSE_PISTOL
+      - STR_SNUBNOSE_PISTOL_CLIP
+      - STR_RIOT_PISTOL
+      - STR_RIOT_PISTOL_CLIP
+      - STR_MACHINE_PISTOL
+      - STR_MACHINE_PISTOL_CLIP
+      # - STR_RIOT_RIFLE
+      # - STR_RIOT_RIFLE_CLIP
+      - STR_HUNTING_RIFLE
+      - STR_HUNTING_RIFLE_CLIP
+      - STR_SAWED_OFF
+      - STR_DOUBLE_BARRELED
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+      # - STR_SINGLE_ROCKET_LAUNCHER
+
+
 
   - name: STR_ALLOY_AMMO
     cost: 2000
-    points: 10
+    points: 100
     dependencies:
       - STR_TODOIUM
       - STR_XCOM_EQUIPMENT
@@ -301,6 +326,8 @@ research:
     cost: 216
     points: 100
     spawnedItem: STR_MIB_HEAD_CHIP
+    dependencies:
+      - STR_MIB_HEAD_CHIP_PREREQ
   - name: STR_MIB_HEAD_CHIP
     requiresBaseFunc: [INTLAB]
     cost: 840
@@ -708,8 +735,7 @@ research:
   - name: STR_MOTION_SCANNER
     cost: 180
     points: 20
-    dependencies:
-      - STR_TODOIUM
+    needItem: true
     listOrder: 7410
   - name: STR_MEDI_KIT
     cost: 210
@@ -753,9 +779,12 @@ research:
   - name: STR_BIOLAB
     cost: 200
     points: 30
+    spawnedEvent: STR_BIOLAB_STUFF
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_BIOLAB_PREREQ
+  - name: STR_BIOLAB_STUFF
+    hidden: true
   - name: STR_LARGE_RADAR_SYSTEM
     cost: 50
     points: 10

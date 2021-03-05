@@ -424,8 +424,10 @@ extraSprites:
     files:
       800: Resources/Crafts/Inticon/Dragonfly_minimized.png
       801: Resources/Crafts/Inticon/Stalker_minimized.png
-      811: Resources/Crafts/Inticon/Dragonfly_dogfight.png
+      802: Resources/Crafts/Inticon/Stalker_minimized.png
+      811: Resources/Crafts/Inticon/Copter_minimised.png
       812: Resources/Crafts/Inticon/Stalker_dogfight.png
+      813: Resources/Crafts/Inticon/Copter_dogfight.png
   - type: BASEBITS.PCK
     files:
       300: Resources/Facilities/HQ.png
@@ -436,6 +438,7 @@ extraSprites:
       305: Resources/Facilities/Bio_Lab.png
       833: Resources/Crafts/Basebits/Dragonfly_base.png
       834: Resources/Crafts/Basebits/Stalker_base.png
+      835: Resources/Crafts/Basebits/Copter_base.png
 #interwins
   - type: interception_jammed
     singleImage: true

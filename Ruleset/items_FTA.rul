@@ -28,7 +28,7 @@ items:
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.1
     costBuy: 300
     costSell: 240
@@ -70,7 +70,7 @@ items:
   - type: STR_COMBAT_KNIFE #TODO balance
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.1
     landOnly: false
     costBuy: 260
@@ -110,8 +110,6 @@ items:
     listOrder: 18000
   - type: STR_MACHETE 
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
-    requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     landOnly: false
     costBuy: 260
@@ -152,7 +150,7 @@ items:
   - type: STR_SWORD
     categories: [STR_HUMAN_TECH, STR_MELEE]
     requiresBuy:
-      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+      - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.2
     landOnly: true
     costBuy: 3000
@@ -194,7 +192,7 @@ items:
   - type: STR_THROWING_KNIFE
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     requiresBuy:
-      - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.06
     landOnly: true
     costBuy: 2000
@@ -235,7 +233,7 @@ items:
     experienceTrainingMode: 11
     attraction: 6
     listOrder: 17600
-  - type: STR_SPORT_BOW
+  - type: STR_SPORTS_BOW
     categories: [STR_HUMAN_TECH,  STR_THROWING, STR_BOWS, STR_CONCEALABLE]
     size: 0.2
     costBuy: 800
@@ -568,7 +566,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.15
     costBuy: 400
     costSell: 300
@@ -605,7 +603,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.02
     costBuy: 100
     costSell: 50
@@ -1000,7 +998,7 @@ items:
   - type: STR_HUNTING_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.2
     landOnly: true
     costBuy: 4000
@@ -1031,7 +1029,7 @@ items:
   - type: STR_HUNTING_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.04
     landOnly: true
     costBuy: 100
@@ -1143,7 +1141,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.1
     costBuy: 800
     costSell: 500
@@ -1180,7 +1178,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.2
     costBuy: 800
     costSell: 500
@@ -1218,7 +1216,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.01
     costBuy: 25
     costSell: 15
@@ -2271,7 +2269,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.1
     costBuy: 250
     costSell: 200
@@ -2517,7 +2515,7 @@ items:
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     landOnly: true
     size: 0.4
     costBuy: 1000
@@ -2546,7 +2544,7 @@ items:
   - type: STR_PAINKILLER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     landOnly: true
     size: 0.1
     costBuy: 500
@@ -2570,7 +2568,7 @@ items:
   - type: STR_STIMS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     landOnly: true
     size: 0.1
     costBuy: 500
@@ -2932,6 +2930,36 @@ items:
     listOrder: 58860
 
 #geoscape-only
+  - type: STR_CANNON
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
+    size: 1.5
+    costBuy: 30000
+    costSell: 22500
+    transferTime: 48
+    listOrder: 8900
+  - type: STR_CANNON_ROUNDS_X50
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
+    size: 0.1
+    costBuy: 1240
+    costSell: 1012
+    transferTime: 48
+    clipSize: 50
+    listOrder: 8910
+  - type: STR_STINGRAY_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
+    size: 0.6
+    costBuy: 32000
+    costSell: 24000
+    transferTime: 48
+    listOrder: 7750
+  - type: STR_STINGRAY_MISSILES
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
+    size: 0.4
+    costBuy: 6000
+    costSell: 4800
+    transferTime: 48
+    clipSize: 1
+    listOrder: 7760
   - type: STR_MIB_HEAD_CHIP
     categories: [STR_EVIDENCE]
     listOrder: 146030
