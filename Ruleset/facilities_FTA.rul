@@ -42,30 +42,30 @@ facilities:
   - type: STR_BIOLAB
     spriteShape: 1
     spriteFacility: 305
-    provideBaseFunc: [BIOLAB]
+    provideBaseFunc: [BIOLAB, SURGERY]
     maxAllowedPerBase: 1
     requires:
-      - STR_FACILITIES_BLUEPRINTS
+      - STR_BIOLAB
     buildCostItems:
      STR_LABORATORY_EQUIPMENT:
        build: 2
        refund: 1
-     STR_BIOLIGY_EQUIPMENT:
+     STR_BIOLOGY_EQUIPMENT:
        build: 1
        refund: 1         
-    buildCost: 750000
+    buildCost: 620000
     buildTime: 20
     monthlyCost: 25000
     labs: 5
     storage: 5
     storageTiles: [[-1, -1, -1]]
-    mapName: XBASE_02 #TODO
+    mapName: XBASF_07
   - type: STR_PRISON_CELLS
     spriteShape: 1
     spriteFacility: 301
     requires:
       - STR_FACILITIES_BLUEPRINTS
-    buildCost: 120000
+    buildCost: 160000
     buildTime: 16
     monthlyCost: 8000
     aliens: 10
@@ -111,7 +111,7 @@ facilities:
     canBeBuiltOver: true
     requires:
       - STR_TROLLIUM
-    buildCost: 0
+    buildCost: 80000 #just to reduce build over cost
     buildTime: 6
     rightClickActionType: 3
     storage: 30

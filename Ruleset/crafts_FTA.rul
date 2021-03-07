@@ -35,18 +35,19 @@ crafts:
           length: 20
     listOrder: 7380
   - type: STR_STALKER
+    sprite: 801
     costBuy: 0 #TODO
     costRent: 40000 #TODO
     costSell: 260000 #TODO
-    # weaponTypes:
-    #   - 0
-    #   - 2
-    # weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
+    weaponTypes:
+      - 0
+      - 2
+    weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
     soldiers: 1
     vehicles: 0
     pilots: 1
     maxItems: 999
-    sprite: 801
+
     fuelMax: 440
     damageMax: 27
     speedMax: 1700
@@ -57,63 +58,44 @@ crafts:
     score: 100
     allowLanding: false
     listOrder: 7400
-  - type: STR_INTERCEPTOR
-    costBuy: 0
-    costRent: 600000
-    costSell: 260000
-    # weaponTypes:
-    #   - 0
-    #   - 2
-    # weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
-    soldiers: 1
+  - type: STR_HELICOPTER
+    sprite: 802
+    fuelMax: 560
+    damageMax: 20
+    speedMax: 230
+    accel: 1
+    soldiers: 6
     vehicles: 0
     pilots: 1
+    weapons: 1
+    weaponTypes:
+      - 0
+    weaponStrings: [STR_CANNON]
     maxItems: 999
-    sprite: 3
-    fuelMax: 1000
-    damageMax: 100
-    speedMax: 2100
-    accel: 3
-    weapons: 2
+    costBuy: 100000
+    costRent: 6000
     refuelRate: 50
-    transferTime: 96
-    score: 250
-    allowLanding: false
-    listOrder: 7460
-  # - type: STR_VAN
-  #   requires:
-  #     - STR_VAN
-  #   sprite: 829
-  #   fuelMax: 9999
-  #   damageMax: 5
-  #   speedMax: 75
-  #   accel: 1
-  #   soldiers: 4
-  #   vehicles: 0
-  #   pilots: 1
-  #   maxItems: 999
-  #   costBuy: 20000
-  #   costRent: 1000
-  #   costSell: 0
-  #   refuelRate: 9999
-  #   repairRate: 1
-  #   transferTime: 1
-  #   score: 5
-  #   battlescapeTerrainData:
-  #     name: XVAN
-  #     mapDataSets:
-  #       - BLANKS
-  #       - XCARS
-  #     mapBlocks:
-  #       - name: XVAN
-  #         width: 10
-  #         length: 10
-  #   deployment:
-  #     - [4, 3, 0, 0]
-  #     - [4, 6, 0, 4]
-  #     - [5, 3, 0, 1]
-  #     - [5, 6, 0, 3]
-  #   listOrder: 7294
+    repairRate: 4
+    transferTime: 72
+    score: 40
+    battlescapeTerrainData:
+      name: LITTLE_BIRD
+      mapDataSets:
+        - BLANKS
+        - LITTLE_BIRD
+      mapBlocks:
+        - name: LITTLE_BIRD
+          width: 10
+          length: 10
+    craftInventoryTile: [7, 8, 0]
+    deployment:
+      - [7, 8, 0, 3]
+      - [2, 8, 0, 5]
+      - [7, 7, 0, 2]
+      - [2, 7, 0, 6]
+      - [7, 6, 0, 1]
+      - [2, 6, 0, 7]
+    listOrder: 7390
 
 #vanilla crafts
   - type: STR_SKYRANGER
@@ -145,6 +127,31 @@ crafts:
           width: 10
           length: 20
     listOrder: 7410
+  - type: STR_INTERCEPTOR
+    requires:
+      - STR_INTERCEPTOR
+    costBuy: 0
+    costRent: 600000
+    costSell: 260000
+    weaponTypes:
+      - 0
+      - 2
+    weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    maxItems: 999
+    sprite: 3
+    fuelMax: 1000
+    damageMax: 100
+    speedMax: 2100
+    accel: 3
+    weapons: 2
+    refuelRate: 50
+    transferTime: 96
+    score: 250
+    allowLanding: false
+    listOrder: 7460
   - type: STR_LIGHTNING
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER

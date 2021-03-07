@@ -21,6 +21,13 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
+  - type: STR_MILITARY_STATUS_REPORT_SCRIPT
+    oneTimeSequentialEvents: [STR_MILITARY_STATUS_REPORT_EVENT]
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_VEHICLES_STATUS_REPORT_SCRIPT
     oneTimeSequentialEvents: [STR_VEHICLES_STATUS_REPORT_EVENT]
     firstMonth: 0

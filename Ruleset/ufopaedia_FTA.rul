@@ -127,6 +127,15 @@ ufopaedia:
       - STR_ENGINEER_STATUS_REPORT
     text: STR_ENGINEER_STATUS_REPORT_UFOPEDIA
     listOrder: 120
+  - id: STR_MILITARY_STATUS_REPORT
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_MILITARY_STATUS_REPORT
+    text: STR_MILITARY_STATUS_REPORT_UFOPEDIA
+    listOrder: 110
   - id: STR_VEHICLES_STATUS_REPORT
     type_id: 7
     image_id: ENGINEER_CHIEF.SPK
@@ -261,13 +270,20 @@ ufopaedia:
       - STR_RESISTANCE_CONTACT
     text: STR_RESISTANCE_CONTACT_UFOPEDIA
     listOrder: 2500
+  - id: STR_RESISTANCE_STARTING_EQUIPMENT
+    type_id: 8 #TODO converting to 7
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_RESISTANCE_STARTING_EQUIPMENT
+    text: STR_RESISTANCE_STARTING_EQUIPMENT_UFOPEDIA
+    listOrder: 2510
   - id: STR_RESISTANCE_BASIC_EQUIPMENT
     type_id: 8 #TODO converting to 7
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     text: STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA
-    listOrder: 2510
+    listOrder: 2520
 
 #STR_TECHNOLOGY 7000
 
@@ -289,6 +305,24 @@ ufopaedia:
     text: STR_DRAGONFLY_UFOPEDIA
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 7000
+  - id: STR_HELICOPTER #TODO
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: STR_HELICOPTER_CPAL.SPK
+    rect_stats:
+      x: 200
+      y: 10
+      width: 160
+      height: 80
+    rect_text:
+      x: 5
+      y: 40
+      width: 120
+      height: 160
+    text: STR_HELICOPTER_UFOPEDIA
+    requires:
+      - STR_HELICOPTER
     listOrder: 7000
   - id: STR_STALKER #TODO
     type_id: 1
@@ -334,12 +368,12 @@ ufopaedia:
     text: STR_GENERAL_STORES_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
-  - id: STR_LABORATORY
+  - id: STR_BIOLAB
     type_id: 6
     section: STR_BASE_FACILITIES
-    text: STR_LABORATORY_UFOPEDIA
+    text: STR_BIOLAB_UFOPEDIA
     requires:
-      - STR_FACILITIES_BLUEPRINTS
+      - STR_BIOLAB
   - id: STR_PRISON_CELLS
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -376,6 +410,12 @@ ufopaedia:
     text: STR_HANGAR_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
+  - id: STR_LABORATORY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_LABORATORY_UFOPEDIA
+    requires:
+      - STR_TODOIUM
   - id: STR_BASE_CONSTRUCTION
     type_id: 8 #TODO image here, so 7
     section: STR_BASE_FACILITIES
@@ -644,14 +684,14 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+      - STR_PUMP_ACTION_SHOTGUN
     text: STR_PUMP_ACTION_SHOTGUN_UFOPEDIA
     listOrder: 21300
   - id: STR_PUMP_ACTION_SHELLS
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+      - STR_PUMP_ACTION_SHOTGUN 
   - id: STR_SEMI_AUTO_SHOTGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -899,28 +939,28 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+      - STR_FIRST_AID
     text: STR_FIRST_AID_UFOPEDIA
     listOrder: 21300
   - id: STR_PAINKILLER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_PAINKILLER_UFOPEDIA
     listOrder: 21300
   - id: STR_STIMS
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_STIMS_UFOPEDIA
     listOrder: 21300
   - id: STR_MEDI_PACK
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+      - STR_MEDI_PACK
     text: STR_MEDI_PACK_UFOPEDIA
     listOrder: 21300
   - id: STR_TRAUMA_PACK
@@ -937,7 +977,13 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_COMBAT_SHIELD_UFOPEDIA
     listOrder: 21300
-
+  - id: STR_COMBAT_SHIELD
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_COMBAT_SHIELD_UFOPEDIA
+    listOrder: 21300
 
 #STR_ALIEN_ARTIFACTS 30-44
 
