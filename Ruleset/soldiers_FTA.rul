@@ -43,16 +43,16 @@ soldiers:
       mana: 80
     trainingStatCaps:
       tu: 70
-      stamina: 90
+      stamina: 95
       health: 50
       bravery: 100
       reactions: 50
-      firing: 80
-      throwing: 70
+      firing: 85
+      throwing: 75
       strength: 50
       psiStrength: 100
       psiSkill: 100
-      melee: 80
+      melee: 90
     dogfightExperience:
       bravery: 10
       reactions: 30

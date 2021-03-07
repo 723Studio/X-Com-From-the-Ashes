@@ -165,6 +165,7 @@ recommendedUserOptions:
   fieldPromotions: true
   strafe: true
   noAlienPanicMessages: true
+  oxceEnableOffCentreShooting: true
 
 
 

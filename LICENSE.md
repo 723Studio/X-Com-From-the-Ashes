@@ -38,6 +38,8 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom E
 
 * **robin**, author of [From the Apocalypse](https://openxcom.org/forum/index.php/topic,3319.0.html) - various graphic assets.
 
+* **Dioxine**, author of [X-Piratez](https://www.moddb.com/mods/x-piratez) - various visual assets.
+
 * **Radu Martin** (aka **CanadianBeaver**), author of [Awesome Guns](http://devbian.ca/AwesomeGuns/) distributed under CC BY-NC-SA 4.0 - various graphic assets.
 
 * **XOps**, author of [XenoOperations](https://openxcom.org/forum/index.php/topic,2913.0.html) - various assets.

@@ -40,6 +40,8 @@ research:
     hidden: true
   - name: STR_INTEL_STATUS_REPORT
     hidden: true
+  - name: STR_MILITARY_STATUS_REPORT
+    hidden: true
   - name: STR_ENGINEER_STATUS_REPORT
     hidden: true
   - name: STR_VEHICLES_STATUS_REPORT
@@ -210,16 +212,26 @@ research:
       - STR_RIOT_PISTOL_CLIP
       - STR_MACHINE_PISTOL
       - STR_MACHINE_PISTOL_CLIP
-      # - STR_RIOT_RIFLE
-      # - STR_RIOT_RIFLE_CLIP
       - STR_HUNTING_RIFLE
       - STR_HUNTING_RIFLE_CLIP
       - STR_SAWED_OFF
       - STR_DOUBLE_BARRELED
       - STR_DOUBLE_BARRELED_BUCKSHOT
-      # - STR_SINGLE_ROCKET_LAUNCHER
-
-
+      - STR_FIRST_AID
+  - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
+    hidden: true
+  - name: STR_RESISTANCE_BASIC_EQUIPMENT
+    cost: 12
+    points: 30
+    dependencies:
+      - STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
+      - STR_UFOPEDIA_DECRYPTION
+    unlocks:
+      - STR_RIOT_RIFLE
+      - STR_RIOT_RIFLE_CLIP
+      - STR_SINGLE_ROCKET_LAUNCHER
+      - STR_MEDI_PACK
+      - STR_HELICOPTER
 
   - name: STR_ALLOY_AMMO
     cost: 2000
@@ -727,6 +739,19 @@ research:
       - STR_DOUBLE_BARRELED
       - STR_SAWED_OFF
     listOrder: 7410
+  - name: STR_PUMP_ACTION_SHOTGUN
+    cost: 18
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_PUMP_ACTION_SHELLS
+    listOrder: 7410
+  - name: STR_PUMP_ACTION_SHELLS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PUMP_ACTION_SHOTGUN
+    listOrder: 7410
   - name: STR_SINGLE_ROCKET_LAUNCHER
     cost: 40
     points: 10
@@ -734,6 +759,16 @@ research:
     listOrder: 7410 
   - name: STR_MOTION_SCANNER
     cost: 180
+    points: 20
+    needItem: true
+    listOrder: 7410
+  - name: STR_FIRST_AID
+    cost: 48
+    points: 20
+    needItem: true
+    listOrder: 7410
+  - name: STR_MEDI_PACK
+    cost: 48
     points: 20
     needItem: true
     listOrder: 7410
@@ -749,6 +784,7 @@ research:
   - name: STR_FLOPPY_SCIENTISTS_LOG
     cost: 6
     points: 80
+    needItem: true
     dependencies: #TODO remove
       - STR_TODOIUM
     # getOneFree: #TODO add
@@ -756,6 +792,9 @@ research:
     listOrder: 7410
 
 #crafts
+  - name: STR_HELICOPTER
+    hidden: true
+    listOrder: 7460
   - name: STR_INTERCEPTOR
     #requiresBaseFunc: [STDLAB]
     cost: 500

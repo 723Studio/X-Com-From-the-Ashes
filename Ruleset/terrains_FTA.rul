@@ -92,6 +92,9 @@ terrains:
       - name: XBASF_06
         width: 10
         length: 10
+      - name: XBASF_07
+        width: 10
+        length: 10
   - name: CULTA
     script: FARM
     mapDataSets:

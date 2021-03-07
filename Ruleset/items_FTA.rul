@@ -2968,7 +2968,7 @@ items:
     costBuy: 200000
     costSell: 180000
     listOrder: 146030
-  - type: STR_BIOLIGY_EQUIPMENT
+  - type: STR_BIOLOGY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     costBuy: 350000
     costSell: 300000
@@ -3100,7 +3100,7 @@ items:
     recoveryPoints: 5
     battleType: 11
     recover: true
-    power: 65
+    power: 30
     armor: 12
     listOrder: 84500
   - type: STR_MIB_ENFORCER_CORPSE

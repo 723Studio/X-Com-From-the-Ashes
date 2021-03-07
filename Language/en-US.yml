@@ -114,7 +114,7 @@ en-US:
   STR_XCOM_OPERATIVES_WOUNDED: "X-COM OPERATIVES WOUNDED"
   STR_MIA: "M.I.A"
   STR_NEW_DATA_ACQUIRED: "New data acquired."
-  STR_REGIONAL_HQ_FOUND: "We discovered the MiB regional headquarters!"
+  STR_REGIONAL_HQ_FOUND: "We discovered the M.I.B. regional headquarters!"
   STR_ALLOCATE_OPERATION: "Allocate operation"
   STR_EVACUATION: "Evacuation"
   STR_EVACUATION_COMPLETE: "Evacuation complete"
@@ -150,7 +150,7 @@ en-US:
   STR_STUFF_NO_MONEY10: STR_STUFF_NO_MONEY10 #TODO
   STR_STUFF_NO_MONEY20: STR_STUFF_NO_MONEY20 #TODO
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
-  STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation! It's very important for me to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tuned for ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) and Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
+  STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation! It's very important for me to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tuned for ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) or Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   STR_TRAINING: "Combat training"
   STR_TRANSFORMATIONS_OVERVIEW: "Special training courses"
   STR_TRANSFORMATION_TIME: "Training time> {ALT}{0}"
@@ -188,7 +188,7 @@ en-US:
   STR_DAMAGE_ARMOR_PIERCING_TOPIC: "Kinetic Damage"
   STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA: "Weapons dealing kinetic damage are one of the most reliable and common types of weapons we use. This type of damage is inflicted by accelerating the projectile to a high speed (e.g., by the pressure of expanding propellant gases). It can cause bleeding on impact and the resulting damage reduces the target's combat ability. Because of the widespread use of this type of weapons various means to protect from them are just as common.  Some types of weapons have a certain armor penetration rate, which depends mainly on the type of the projectile and it's speed.{NEWLINE}Additionally, based on previous unfortunate encounters with aliens, we can assume that they have very effective ways of protecting against kinetic damage."
   STR_DAMAGE_INCENDIARY_TOPIC: "Incendiary Damage"
-  STR_DAMAGE_INCENDIARY_UFOPEDIA: "Incendiary weaponry is often brought into action for denying chokepoints or when standard ordonance is ineffective. A target set ablaze will take a small but not insignificant amount of damage over time for a while, regulated only by the target's flame resistance, rather than armor values too - afterall, the only ultimate difference between being cooked or charred alive is that in case of the former the remains can end up slightly less scorched. Burning targets will, understandably, loose more morale upon being hit than with other damage types too. Furthermore, enemies with at least a semblance of self-preservation instincts will avoid crossing burning areas unless absolutely necessary."
+  STR_DAMAGE_INCENDIARY_UFOPEDIA: "Incendiary weaponry is often brought into action for denying chokepoints or when standard ordonnance is ineffective. A target set ablaze will take a small but not insignificant amount of damage over time for a while, regulated only by the target's flame resistance, rather than armor values too - afterall, the only ultimate difference between being cooked or charred alive is that in case of the former the remains can end up slightly less scorched. Burning targets will, understandably, loose more morale upon being hit than with other damage types too. Furthermore, enemies with at least a semblance of self-preservation instincts will avoid crossing burning areas unless absolutely necessary."
   STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC: "High Explosive Damage"
   STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA: Explosives are a tried and proven way of dislocating obstacles for accessing new routes and hostiles should there be too many of them to take out one by one or when there isn't a good opportunity to target them otherwise in the first place. Explosives, especially the ones specifically designed for that purpose, can also prove invaluable when dealing with highly armored opponents and vehicles. Care and restraint should be taken when using explosives, as a misplaced explosive can prove more detrimental to the user(s) than the designated target."
   STR_DAMAGE_LASER_BEAM_TOPIC: "Laser Beam Damage"
@@ -196,13 +196,13 @@ en-US:
   STR_DAMAGE_PLASMA_BEAM_TOPIC: "Plasma Beam Damage"
   STR_DAMAGE_PLASMA_BEAM_UFOPEDIA: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA #TODO
   STR_DAMAGE_STUN_TOPIC: "Stun Damage"
-  STR_DAMAGE_STUN_UFOPEDIA: "Sometimes killing an opponent can be unpreferable as they might hold important data to be extracted or ransomed away if absolutely necessary. That's where less-lethal tools come into play - batons, rubber rounds or even hand-to-hand combat with sufficient skill and training are the readily availabe means of pacifying a target, and they are by no means the only ones. However, as the name implies, these weapons are not entirely harmless - most of them also cause normal wounds, limiting their repeatability on a single target. They can also cause shock, resulting in a slow but constant loss of vital signs, until expiration.{NEWLINE}The Aliens also seem to have a ranged version of less-lethal weapons, of an area-of-effect type to boot."
+  STR_DAMAGE_STUN_UFOPEDIA: "Sometimes killing an opponent can be unpreferable as they might hold important data to be extracted or ransomed away if absolutely necessary. That's where less-lethal tools come into play - batons, rubber rounds or even hand-to-hand combat with sufficient skill and training are the readily available means of pacifying a target, and they are by no means the only ones. However, as the name implies, these weapons are not entirely harmless - most of them also cause normal wounds, limiting their repeatability on a single target. They can also cause shock, resulting in a slow but constant loss of vital signs, until expiration.{NEWLINE}The Aliens also seem to have a ranged version of less-lethal weapons, of an area-of-effect type to boot."
   STR_DAMAGE_MELEE_TOPIC: "Cutting Damage"
   STR_DAMAGE_MELEE_UFOPEDIA: "Melee weapons are among the simplest yet still effective types of weapons, bar armored opponents. At close range it might be preferable to dispatch an enemy using by the means of a combat knife or a similar implement given how quick they are to use, especially if the hostiles are the ones approaching. However, using it in other circumstances is inadvisable - risking overextension for an attack that might end up failing is always a bad decision but wanting to engage in melee combat can result in the worst cases of it should there be any complications. It's also relatively easy to be protected from cutting weapons; that goes either way."
   STR_DAMAGE_ACID_TOPIC: "Acid Damage"
   STR_DAMAGE_ACID_UFOPEDIA: STR_DAMAGE_ACID_UFOPEDIA #TODO
   STR_DAMAGE_SMOKE_TOPIC: "Choke Damage"
-  STR_DAMAGE_SMOKE_UFOPEDIA: "Smoke can provide a helpful, if intangible, cover from enemy fire. It can also become a hazard - inhaling smoke from any source will eventually result in loss of consciousness from decreased access to oxygen. It can be used to facilitate captures but overstaying in smoke could end up in a shock not unlike the one caused by abuse of stun weaponry. Thus it's ill-adviced for wounded troops to stay long, or in worst cases at all, in smokescreens, grenade-made or otherwise."
+  STR_DAMAGE_SMOKE_UFOPEDIA: "Smoke can provide a helpful, if intangible, cover from enemy fire. It can also become a hazard - inhaling smoke from any source will eventually result in loss of consciousness from decreased access to oxygen. It can be used to facilitate captures but overstaying in smoke could end up in a shock not unlike the one caused by abuse of stun weaponry. Thus it's ill-advised for wounded troops to stay long, or in worst cases at all, in smokescreens, grenade-made or otherwise."
   STR_DAMAGE_EMP_TOPIC: "EMP Damage"
   STR_DAMAGE_EMP_UFOPEDIA: STR_DAMAGE_EMP_UFOPEDIA #TODO
   STR_DAMAGE_ELECTRIC_TOPIC: "Electric Damage"
@@ -242,9 +242,9 @@ en-US:
   STR_SPECIALIST_TRAINING: "Support Specialization"
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of its members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and they are trying to cover up any traces of their activity."
-  STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by MiB agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
+  STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by M.I.B. agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
   STR_INTRO2_SLIDE3_CAPTION: "All of his colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal and there was a steep decrease of empathy. We have already documented such personality changes in some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
-  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, espionage was not his main field and he was caught trying to back up the Ufopedia.{NEWLINE}An MiB agent shot him on sight, and the Commander didn't even blink!"
+  STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, espionage was not his main field and he was caught trying to back up the Ufopedia.{NEWLINE}An M.I.B. agent shot him on sight, and the Commander didn't even blink!"
   STR_INTRO2_SLIDE5_CAPTION: "There are still people loyal to our cause of driving the invaders back!{NEWLINE}To arms!"
   STR_MIB_CHASING_SLIDE1_CAPTION: "Some fancy text here..." #TODO
   STR_MIB_CHASING_SLIDE2_CAPTION: "Some fancy text here too!" #TODO
@@ -254,13 +254,13 @@ en-US:
   STR_GYM: "Training Center"
   STR_SICK_BAY: "Sick Bay"
   STR_CLOSED_LAB: "Closed Laboratory"
-  STR_BIOLAB: "Biolaboratory"
+  STR_BIOLAB: "Bio-laboratory"
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
-  STR_INITIAL_REGIONAL_HQ: "MIB Regional HQ"
+  STR_INITIAL_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_ALERT_MIB_REGIONAL_HQ: STR_ALERT_MIB_REGIONAL_HQ #TODO
   STR_MIB_REGIONAL_HQ_DESCRIPTION: STR_MIB_REGIONAL_HQ_DESCRIPTION #TODO
-  STR_MIB_REGIONAL_HQ: "MIB Regional HQ"
+  STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_RESISTANCE_FARM: "Resistance Heaven"
   STR_RESISTANCE_HEAVEN_ATTACKED: "Resistance Heaven Attacked"
   STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION #TODO
@@ -276,7 +276,24 @@ en-US:
 
 
 #covertOps
-  STR_REGIONAL_HQ: "MIB Regional HQ"
+  STR_CHASING_MIB: "Chasing M.I.B."
+  STR_CHASING_MIB_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ: "M.I.B. Regional HQ"
+  STR_REGIONAL_HQ_DESCRIPTION: #TODO
+
+  STR_MONSTER_HUNT_INVESTIGATION: "Monster Activity Investigation"
+  STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: #TODO
+  STR_MONSTER_HUNT_INVESTIGATION_CONT: #TODO
+  STR_MONSTER_HUNT_INVESTIGATION_CONT_DESCRIPTION: #TODO
+
+  STR_LAB_EQUIPMENT_ACQUISITION: "Lab Equipment Acquisition"
+  STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION: #TODO
+  STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
+  STR_LAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
+  STR_BIOLAB_EQUIPMENT_ACQUISITION: "Biology Science Equipment Acquisition"
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: #TODO
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
 #events
   STR_RND_STATUS_REPORT_EVENT: "R&D status report is ready!"
   STR_RND_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the R&D center."
@@ -284,6 +301,8 @@ en-US:
   STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Headquarters."
   STR_ENGINEER_STATUS_REPORT_EVENT: "Base status report is ready!"
   STR_ENGINEER_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Storage facility."
+  STR_MILITARY_STATUS_REPORT_EVENT: #TODO
+  STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION: "Commender, please proceed to the Training Center."
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to the 1st Hangar."
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies running low!"
@@ -312,22 +331,22 @@ en-US:
 
 #enemies
   STR_MIB: "Men In Black"
-  STR_MIB_AGENT: "MiB Agent"
-  STR_MIB_AGENT_SPAWN: "MiB Agent"
-  STR_MIB_AGENT_CORPSE: "MiB Agent Corpse"
-  MIB_ARMORED_AGENT_CORPSE: "MiB Agent Corpse"
-  STR_MIB_AGENT_UFOPEDIA: "After the MiB agent regained consciousness he looked very disoriented, and even frightened. He couldn't tell us who he is nor how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent but, as far as we can tell, his story seems genuine. Unfortunately, all attempts to get more information have led to nothing."
-  STR_MIB_AGENT_ARMOR: "MiB Agent Combat Analysis"
-  STR_MIB_AGENT_ARMOR_UFOPEDIA: "MiB agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
-  STR_MIB_ARMORED_AGENT: "MiB Armored Agent"
-  STR_MIB_ARMORED_AGENT_SPAWN: "MiB Armored Agent"
-  STR_MIB_AGENT_VEST_ARMOR: "MiB Armored Agent Combat Analysis"
+  STR_MIB_AGENT: "M.I.B. Agent"
+  STR_MIB_AGENT_SPAWN: "M.I.B. Agent"
+  STR_MIB_AGENT_CORPSE: "M.I.B. Agent Corpse"
+  MIB_ARMORED_AGENT_CORPSE: "M.I.B. Agent Corpse"
+  STR_MIB_AGENT_UFOPEDIA: "After the M.I.B. agent regained consciousness he looked very disoriented, and even frightened. He couldn't tell us who he is nor how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent but, as far as we can tell, his story seems genuine. Unfortunately, all attempts to get more information have led to nothing."
+  STR_MIB_AGENT_ARMOR: "M.I.B. Agent Combat Analysis"
+  STR_MIB_AGENT_ARMOR_UFOPEDIA: "M.I.B. agents have good combat training and mastery of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, while retaining camouflage and mobility."
+  STR_MIB_ARMORED_AGENT: "M.I.B. Armored Agent"
+  STR_MIB_ARMORED_AGENT_SPAWN: "M.I.B. Armored Agent"
+  STR_MIB_AGENT_VEST_ARMOR: "M.I.B. Armored Agent Combat Analysis"
   STR_MIB_AGENT_VEST_ARMOR_UFOPEDIA: STR_MIB_AGENT_VEST_ARMOR_UFOPEDIA #TODO
-  STR_MIB_SPECOPS: "MiB SpecOps"
-  STR_MIB_SPECOPS_SPAWN: "MiB SpecOps"
-  STR_MIB_SPECOPS_CORPSE: "MiB SpecOps Corpse"
+  STR_MIB_SPECOPS: "M.I.B. SpecOps"
+  STR_MIB_SPECOPS_SPAWN: "M.I.B. SpecOps"
+  STR_MIB_SPECOPS_CORPSE: "M.I.B. SpecOps Corpse"
   STR_MIB_SPECOPS_UFOPEDIA: STR_MIB_SPECOPS_UFOPEDIA #TODO
-  STR_MIB_SPECOPS_ARMOR: "MiB SpecOps Combat Analysis"
+  STR_MIB_SPECOPS_ARMOR: "M.I.B. SpecOps Combat Analysis"
   STR_MIB_SPECOPS_ARMOR_UFOPEDIA: STR_MIB_SPECOPS_ARMOR_UFOPEDIA #TODO
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
   STR_SEEKER_DRONE_CORPSE: "Seeker Drone Corpse"
@@ -441,7 +460,7 @@ en-US:
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
   STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "A classic shotgun, used by police forces as well as civilians in some countries for self-defense."
   STR_PUMP_ACTION_SHELLS: "Pump Action BS Ammo"
-  STR_SEMI_AUTO_SHOTGUN: "Semiauto Shotgun"
+  STR_SEMI_AUTO_SHOTGUN: "Semi-auto Shotgun"
   STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "This shotgun is able to fire a shell after every trigger pull, without needing to manually chamber the next round. Thus, the rate of fire increases significantly but accuracy decreases slightly due to the high recoil in comparison to the pump-action shotgun."
   STR_SHOTGUN: "Shotgun"
   STR_SHOTGUN_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
@@ -526,11 +545,13 @@ en-US:
   STR_LOG1: "Commander log #001"
   STR_LOG1_UFOPEDIA: "As a senior officer, I took command. I hope I'm experienced enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, the remaining men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation overall is hardly better - we have lost the funding and supply source and know very little about our enemy. Apparently, alien agents have infiltrated deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to do. We need to get reports from the chiefs of research, intelligence and logistics. I have already submitted orders, it will take several hours for analysis. After that, it will be possible to plan further actions."
   STR_RND_STATUS_REPORT: "R&D Status Report"
-  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopaedia is encrypted, and that's what's bothering me the most right now but Jim, the data analyst, says there's still hope! I suggest we begin decrypting it immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
+  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopedia is encrypted, and that's what's bothering me the most right now but Jim, the data analyst, says there's still hope! I suggest we begin decrypting it immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
   STR_INTEL_STATUS_REPORT: "Intelligence Report"
   STR_INTEL_STATUS_REPORT_UFOPEDIA: "Oh, Commander! Recent events have tied our hands entirely, all secret government communication channels have been cut off - we will have to build our agent network from scratch. You can assign a couple of scientists to set up new encrypted communication channels. It is essential to set up covert operations conducted by our agents to gather intelligence assets.{NEWLINE}Additionally, we can establish secure contact with our remaining friends, I have a few people I've been watching for a long time. Their help will be invaluable in the given circumstances."
   STR_ENGINEER_STATUS_REPORT: "Engineer's Report"
   STR_ENGINEER_STATUS_REPORT_UFOPEDIA: "Greetings, Commander! Our base was in a very poor condition even before the attack. Due to a lack of funding, we were forced to close several facilities and sell off some valuable equipment. After closing the workshop our production capacity is at a minimum, we are trying to assemble spare parts from improvised materials. It is absolutely unclear where we will get the supplies from now, even the most basic ones. Intelligence has forbidden my guys to leave the base, and from where will we get everything we need for maintaining, not to mention building modules? Maybe R&D folks would think about the secure source of the general supplies?"
+  STR_MILITARY_STATUS_REPORT: #TODO
+  STR_MILITARY_STATUS_REPORT_UFOPEDIA: "Status report, Commander! The XCOM squad is set for the next mission! Though recent events have left us rather bruised, and with very few experienced fighters left in the ranks, our new recruits show great promise. Participating in combat actions and continually training at the base will enhance their capabilities and they can be promoted for their accomplishments on the battlefield. Starting at the rank of Squaddie, soldiers can distinguish themselves and they can be assigned a specialization. Our combat training program contains all the necessary courses that will make soldiers noticeably more effective in their chosen area of expertise."
   STR_VEHICLES_STATUS_REPORT: "Vehicles Status"
   STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have a radar system anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
   STR_PRISONER_INTERROGATIONS: "Prisoner Interrogations"
@@ -558,7 +579,7 @@ en-US:
   STR_SUPPLIES: "Supplies"
   STR_SUPPLIES_UFOPEDIA: "In the current circumstances we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project voluntarily, as long as we take care of providing them with everything they need to work, and it would be good to keep the morale high."
   STR_LOYALTY: "Loyalty"
-  STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down and now we can only count on ourselves. The loss of the Council’s support is a severe blow to our organization but despite all hard circumstances our people are determined to fight against alien invaders at all costs. Ad victoriam - that’s our new motto! Today isn’t money determining our future, but how strong our men’s spirit is. It is essential not to let the morale go down and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, and progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that’s why we should be extremely careful and wise in our strategic and tactical choices."
+  STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down and now we can only count on ourselves. The loss of the Council’s support is a severe blow to our organization but despite all hard circumstances our people are determined to fight against alien invaders at all costs. 'Ad victoriam' - that’s our new motto! Today isn’t money determining our future, but how strong our men’s spirit is. It is essential not to let the morale go down and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, and progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that’s why we should be extremely careful and wise in our strategic and tactical choices."
   STR_FACILITIES_BLUEPRINTS: "Facility blueprints"
   STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segments containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to get it."
   STR_BASE_CONSTRUCTION: "New Base Construction"

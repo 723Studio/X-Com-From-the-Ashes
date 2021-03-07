@@ -425,7 +425,7 @@ extraSprites:
       800: Resources/Crafts/Inticon/Dragonfly_minimized.png
       801: Resources/Crafts/Inticon/Stalker_minimized.png
       802: Resources/Crafts/Inticon/Stalker_minimized.png
-      811: Resources/Crafts/Inticon/Copter_minimised.png
+      811: Resources/Crafts/Inticon/Copter_minimized.png
       812: Resources/Crafts/Inticon/Stalker_dogfight.png
       813: Resources/Crafts/Inticon/Copter_dogfight.png
   - type: BASEBITS.PCK
@@ -465,6 +465,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Ufopedia/Stalker_ufopedia_CPAL.png
+  - type: STR_HELICOPTER_CPAL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Crafts/Ufopedia/Helicopter_CPAL.png
   - type: RND_CHIEF.SPK
     singleImage: true
     width: 320
@@ -495,6 +501,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Engineer_Chief.png
+  - type: COMMANDO_CPAL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Commando_CPAL.png
   - type: FACILITY_DECRYPTION.SPK
     singleImage: true
     width: 320

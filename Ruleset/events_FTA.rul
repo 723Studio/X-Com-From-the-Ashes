@@ -15,6 +15,11 @@ events:
     timer: 210
     timerRandom: 60
     researchList: [STR_ENGINEER_STATUS_REPORT]
+  - name: STR_MILITARY_STATUS_REPORT_EVENT
+    description: STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION
+    timer: 400
+    timerRandom: 90
+    researchList: [STR_MILITARY_STATUS_REPORT]
   - name: STR_VEHICLES_STATUS_REPORT_EVENT
     description: STR_VEHICLES_STATUS_REPORT_DESCRIPTION
     timer: 840
@@ -78,6 +83,18 @@ events:
     timerRandom: 90
     researchList: [STR_REGIONAL_HQ_FOUND]
 
+  - name: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
+    description: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
+    timer: 109500
+    timerRandom: 20160
+    removedCovertOperationsList:
+      - STR_LAB_EQUIPMENT_ACQUISITION
+  - name: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
+    description: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
+    timer: 153300
+    timerRandom: 30240
+    removedCovertOperationsList:
+      - STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
 #Monsters
   - name: STR_MONSTER_HUNT_RUMORS
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
