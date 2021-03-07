@@ -1371,9 +1371,15 @@ ufopaedia:
     section: STR_TACTICAL_ANALYSIS
     text: STR_JABBER_ARMOR_UFOPEDIA
     requires:
-      - STR_FACEHUGGER_ARMOR
+      - STR_JABBER_ARMOR
     listOrder: 20300
-
+  - id: STR_CHUPACABRA_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_CHUPACABRA_ARMOR_UFOPEDIA
+    requires:
+      - STR_CHUPACABRA_ARMOR
+    listOrder: 20300
 
 #list orders
   # STR_XCOM_REPORTS_UC 0-6999
