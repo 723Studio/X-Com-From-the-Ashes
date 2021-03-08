@@ -74,21 +74,21 @@ research:
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [HQ]
     cost: 300
-    points: 15
+    points: 80
     dependencies:
       - STR_RND_STATUS_REPORT
     listOrder: 7460
   - name: STR_XCOM_EQUIPMENT
     requiresBaseFunc: [HQ]
     cost: 150
-    points: 30
+    points: 50
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
   - name: STR_XCOM_LORE
     requiresBaseFunc: [HQ]
     cost: 450
-    points: 50
+    points: 130
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
     sequentialGetOneFree: true
@@ -100,7 +100,7 @@ research:
   - name: STR_COMMUNICATION
     requiresBaseFunc: [HQ]
     cost: 180
-    points: 10
+    points: 50
     dependencies:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
@@ -136,7 +136,7 @@ research:
   - name: STR_SUPPLIES
     requiresBaseFunc: [HQ]
     cost: 200
-    points: 15
+    points: 120
     dependencies:
       - STR_ENGINEER_STATUS_REPORT
     getOneFree:
@@ -145,7 +145,7 @@ research:
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [HQ]
     cost: 280
-    points: 15
+    points: 65
     dependencies:
       - STR_SUPPLIES
       - STR_UFOPEDIA_DECRYPTION
@@ -154,7 +154,7 @@ research:
   - name: STR_MONSTER_HUNT_RUMORS
     requiresBaseFunc: [HQ]
     cost: 70
-    points: 18
+    points: 10
     spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ
@@ -180,7 +180,7 @@ research:
     hidden: true
   - name: STR_EXPANDABLE_AMMO
     cost: 170
-    points: 10
+    points: 20
     unlocks:
       - STR_PISTOL_EXP_CLIP
       - STR_RIFLE_EXP_CLIP
@@ -198,7 +198,7 @@ research:
     hidden: true
   - name: STR_RESISTANCE_STARTING_EQUIPMENT
     cost: 120
-    points: 10
+    points: 20
     dependencies:
       - STR_RESISTANCE_STARTING_EQUIPMENT_PREREQ
       - STR_UFOPEDIA_DECRYPTION
@@ -222,7 +222,7 @@ research:
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT
     cost: 150
-    points: 10
+    points: 30
     dependencies:
       - STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
       - STR_UFOPEDIA_DECRYPTION
@@ -335,22 +335,22 @@ research:
   - name: STR_MIB_AGENT_LOBOTOMY
     requiresBaseFunc: [SURGERY]
     cost: 216
-    points: 10
+    points: 50
     spawnedItem: STR_MIB_HEAD_CHIP
     dependencies:
       - STR_MIB_HEAD_CHIP_PREREQ
   - name: STR_MIB_HEAD_CHIP
     requiresBaseFunc: [INTLAB]
-    cost: 840
-    points: 20
+    cost: 600
+    points: 150
     needItem: true
     dependencies:
       - STR_MIB_AGENT_LOBOTOMY
     listOrder: 146000
   - name: STR_MIB_DATA_TRANSFER_DECRYPTION
     requiresBaseFunc: [INTLAB]
-    cost: 900
-    points: 25
+    cost: 700
+    points: 180
     dependencies:
       - STR_MIB_HEAD_CHIP
     listOrder: 146000
@@ -385,11 +385,9 @@ research:
       - STR_ZOMBIE_STERILE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_JABBER_CORPSE
-    unlocks:
-        - STR_LIVE_CREATURES_RESEARCH
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 72
-    points: 2
+    points: 17
     dependencies:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_STRANGE_CREATURE #for future tech tree dev
@@ -425,7 +423,7 @@ research:
       - STR_ZOMBIE_GRUBAS_TERRORIST
   - name: STR_ZOMBIE_BIOLOGY
     cost: 480
-    points: 60
+    points: 75
     dependencies:
       - STR_INFECTOR_AUTOPSY
       - STR_LIVE_INFECTOR
@@ -436,7 +434,7 @@ research:
   - name: STR_XCOM_EX_COMMANDER
     requiresBaseFunc: [INTLAB]
     cost: 200
-    points: 15
+    points: 50
     needItem: true
     dependencies:
       - STR_INTEL_STATUS_REPORT
@@ -446,7 +444,7 @@ research:
   - name: STR_MIB_AGENT
     requiresBaseFunc: [INTLAB]
     cost: 240
-    points: 10
+    points: 32
     needItem: true
     destroyItem: true
     dependencies:
@@ -472,7 +470,7 @@ research:
   - name: STR_MIB_SPECOPS
     requiresBaseFunc: [INTLAB]
     cost: 300
-    points: 15
+    points: 40
     needItem: true
     destroyItem: true
     dependencies:
@@ -498,7 +496,7 @@ research:
   - name: STR_SEEKER_DRONE_TERRORIST #TODO
     requiresBaseFunc: [HQ]
     cost: 1200
-    points: 30
+    points: 150
     needItem: true
     destroyItem: true
     spawnedItem: STR_SEEKER_DRONE_CORPSE
@@ -612,7 +610,7 @@ research:
 #combat analysis 
   - name: STR_MIB_AGENT_ARMOR
     cost: 50
-    points: 9
+    points: 7
     dependencies:
       - STR_MIB_AGENT
     listOrder: 146000
@@ -637,29 +635,30 @@ research:
     
   - name: STR_FACEHUGGER_ARMOR
     cost: 150
-    points: 30
+    points: 25
+
     dependencies:
       - STR_FACEHUGGER
       - STR_FACEHUGGER_CORPSE
   - name: STR_ZOMBIE_STERILE_ARMOR
     cost: 160
-    points: 40
+    points: 20
     dependencies:
       - STR_ZOMBIE_BIOLOGY
   - name: STR_ZOMBIE_GRUBAS_ARMOR
     cost: 180
-    points: 45
+    points: 23
     dependencies:
       - STR_ZOMBIE_BIOLOGY
   - name: STR_JABBER_ARMOR
     cost: 150
-    points: 35
+    points: 20
     dependencies:
       - STR_JABBER
       - STR_JABBER_CORPSE
   - name: STR_CHUPACABRA_ARMOR
     cost: 180
-    points: 45
+    points: 25
     dependencies:
       - STR_JABBER
       - STR_CHUPACABRA_CORPSE
@@ -706,7 +705,7 @@ research:
       - STR_RIOT_PISTOL
   - name: STR_MACHINE_PISTOL
     cost: 10
-    points: 5
+    points: 2
     needItem: true
     unlocks:
       - STR_MACHINE_PISTOL_CLIP
@@ -718,7 +717,7 @@ research:
       - STR_MACHINE_PISTOL
   - name: STR_RIOT_RIFLE
     cost: 16
-    points: 10
+    points: 2
     needItem: true
     unlocks:
       - STR_RIOT_RIFLE_CLIP
@@ -730,7 +729,7 @@ research:
       - STR_RIOT_RIFLE
   - name: STR_HUNTING_RIFLE
     cost: 15
-    points: 1
+    points: 2
     needItem: true
     unlocks:
       - STR_HUNTING_RIFLE_CLIP
@@ -742,14 +741,14 @@ research:
       - STR_HUNTING_RIFLE
   - name: STR_SAWED_OFF
     cost: 14
-    points: 1
+    points: 2
     needItem: true
     unlocks:
       - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 7410
   - name: STR_DOUBLE_BARRELED
     cost: 14
-    points: 1
+    points: 2
     needItem: true
     unlocks:
       - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -762,8 +761,8 @@ research:
       - STR_SAWED_OFF
     listOrder: 7410
   - name: STR_PUMP_ACTION_SHOTGUN
-    cost: 18
-    points: 1
+    cost: 15
+    points: 2
     needItem: true
     unlocks:
       - STR_PUMP_ACTION_SHELLS
@@ -776,12 +775,12 @@ research:
     listOrder: 7410
   - name: STR_SINGLE_ROCKET_LAUNCHER
     cost: 40
-    points: 3
+    points: 5
     needItem: true
     listOrder: 7410 
   - name: STR_MOTION_SCANNER
     cost: 180
-    points: 20
+    points: 30
     needItem: true
     listOrder: 7410
   - name: STR_FIRST_AID
@@ -805,7 +804,7 @@ research:
 #evidence
   - name: STR_FLOPPY_SCIENTISTS_LOG
     cost: 8
-    points: 80
+    points: 60
     needItem: true
     dependencies: #TODO remove
       - STR_TODOIUM
@@ -863,7 +862,7 @@ research:
       - STR_BASE_DEFENSE_SYSTEMS
   - name: STR_CREATURE_CONTAINMENT
     cost: 300
-    points: 10
+    points: 60
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_LIVE_CREATURES_RESEARCH
