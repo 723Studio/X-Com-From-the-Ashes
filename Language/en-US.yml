@@ -409,7 +409,7 @@ en-US:
   STR_THROWING_KNIFE: "Throwing Knife"
   STR_THROWING_KNIFE_UFOPEDIA: "This traditional throwing weapon is not very useful in the hands of beginners and ineffective against armored opponents. However, its lightness and concealability can be very useful where the work should be done without any fuss.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
-  STR_SNUBNOSE_PISTOL_UFOPEDIA: "STR_SNUBNOSE_PISTOL_UFOPEDIA{NEWLINE}>Concealable" #TODO
+  STR_SNUBNOSE_PISTOL_UFOPEDIA: "A mini-revolver, designed primarily for self-defense purposes, loaded by .22 Short caliber bullets. It’s not very powerful, but low recoil and good inherent accuracy makes this weapon relatively dangerous against unarmored enemies – a good choice for damsels in distress and agents under cover.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
   STR_RIOT_PISTOL: "Riot Pistol"
   STR_RIOT_PISTOL_UFOPEDIA: "STR_RIOT_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO
