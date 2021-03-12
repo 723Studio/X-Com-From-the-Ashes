@@ -405,9 +405,9 @@ en-US:
   STR_MACHETE: "Machete"  
   STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone.{NEWLINE}>Concealable"
   STR_SWORD: "Sword"
-  STR_SWORD_UFOPEDIA: STR_SWORD_UFOPEDIA #TODO
+  STR_SWORD_UFOPEDIA: "Good old sword, light and sharp. Great for both melee combat and knight initiatiation. If we ever establish an Order of X-Com Knights, of course..."
   STR_THROWING_KNIFE: "Throwing Knife"
-  STR_THROWING_KNIFE_UFOPEDIA: "STR_THROWING_KNIFE_UFOPEDIA{NEWLINE}>Concealable" #TODO
+  STR_THROWING_KNIFE_UFOPEDIA: "This traditional throwing weapon is not very useful in the hands of beginners and ineffective against armored opponents. However, its lightness and concealability can be very useful where the work should be done without any fuss.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
   STR_SNUBNOSE_PISTOL_UFOPEDIA: "STR_SNUBNOSE_PISTOL_UFOPEDIA{NEWLINE}>Concealable" #TODO
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
@@ -472,7 +472,7 @@ en-US:
   STR_SHOTGUN_SHELLS_BS_AA: "Shotgun AA-BS Ammo"
   STR_SHOTGUN_SHELLS_AP_AA: "Shotgun AA-AP Shells"
   STR_LMG: "Light Machine Gun"
-  STR_LMG_UFOPEDIA: STR_LMG_UFOPEDIA #TODO
+  STR_LMG_UFOPEDIA: "This squad automatic weapon is equipped with a bipod and designed for operating by one soldier. A high rate of fire and slight armor piercing capability makes LMG an excellent infantry support weapon." 
   STR_LMG_CLIP: "LMG Ammo Belt"
   STR_LIGHT_CANNON: "Light Cannon"
   STR_LIGHT_CANNON_UFOPEDIA: "This high-caliber hand weapon can use armor-piercing, buckshot, high-explosive and incendiary ammo. It has great stopping power and it's AP rounds can penetrate medium armor."
