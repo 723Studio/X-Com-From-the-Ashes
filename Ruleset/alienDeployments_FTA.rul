@@ -322,9 +322,6 @@ alienDeployments:
     width: 60
     length: 60
     height: 6
-    markerName: STR_MIB_CHASING
-    duration: [10, 10]
-    despawnPenalty: 300
     briefing:
       textOffset: -16
       background: MIB_CHASE_BACKGROUND.SCR
@@ -335,10 +332,10 @@ alienDeployments:
       - FOREST
     shade: 6
     script: MIB_CHASING
-    # successEvents:
-    #   STR_MIB_CHASING_SUCCESS: 100
-    # failureEvents:
-    #   STR_MIB_CHASING_FAIL: 100
+    successEvents:
+      STR_MIB_CHASING_SUCCESS: 100
+    failureEvents:
+      STR_MIB_CHASING_FAIL: 100
     startingCondition: STR_COVERT_AGENT_GEAR
     data:
       - alienRank: 5
@@ -648,9 +645,6 @@ alienDeployments:
     width: 60
     length: 60
     height: 6
-    markerName: STR_MIB_CHASING
-    duration: [10, 10]
-    despawnPenalty: 300
     briefing:
       textOffset: -16
       background: MIB_CHASE_BACKGROUND.SCR
@@ -685,6 +679,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
@@ -814,6 +809,176 @@ alienDeployments:
             - STR_SEMI_AUTO_SHOTGUN
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_BS  
+
+  - type: STR_MIB_EARLY_TRAP_ESCAPE #TODO
+    race: STR_MIB
+    width: 80
+    length: 40
+    height: 6
+    briefing:
+      textOffset: -16
+      background: MIB_CHASE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MIB_CHASING_BRIEFING
+    terrains:
+      - FOREST
+    shade: 6
+    script: MIB_TRAP_ESCAPE
+    successEvents:
+      STR_MIB_CHASING_SUCCESS: 100
+    failureEvents:
+      STR_MIB_CHASING_FAIL: 100
+    startingCondition: STR_COVERT_AGENT_GEAR
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP 
+            - STR_FLASHBANG_GRENADE
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP  
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP  
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP 
+      - alienRank: 4
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP 
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP  
+          -
+            - STR_SEMI_AUTO_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS  
+
 
   - type: STR_LOCALS_TRAP
     race: STR_MILITIA

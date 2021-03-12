@@ -1,4 +1,147 @@
 mapScripts: 
+#general terrain scripts
+  - type: RURAL
+    commands:
+    - type: addCraft
+    - type: addUFO
+    - type: addLine
+      label: 1
+      direction: horizontal
+      executionChances: 33
+    - type: addLine
+      label: 2
+      direction: vertical
+      conditionals: -1
+      executionChances: 50
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+    - type: addBlock
+      size: 2
+      executions: 6
+    - type: fillArea
+  - type: URBAN_LOW
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      terrain: URBAN_ROADS
+      label: 1
+      direction: vertical
+      executionChances: 10
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine #single railroad
+      terrain: URBAN_ROADS
+      label: 2
+      conditionals: -1
+      verticalGroup: 13
+      direction: vertical
+      executionChances: 10
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      terrain: URBAN_ROADS
+      label: 3
+      conditionals: [-1, -2]
+      executionChances: 45
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      terrain: URBAN_ROADS
+      label: 4
+      conditionals: [-1, -2, -3]
+      executionChances: 90
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addLine #railroad crossing
+      terrain: URBAN_ROADS
+      label: 5
+      conditionals: [-1, -2, -3, -4]
+      direction: both
+      crossingGroup: 14
+      verticalGroup: 13
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      terrain: URBAN_SPORTS
+      executionChances: 15
+      size: 2
+    - type: addBlock
+      terrain: URBAN_SPORTS
+      executionChances: 20
+    - type: addBlock
+      terrain: URBAN_MEDICAL
+      executionChances: 20
+      size: 2
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET_BAR
+      executionChances: 20
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET
+      executionChances: 20
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET
+      executionChances: 25
+    - type: addBlock
+      terrain: URBAN_MARKET
+      executionChances: 20
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET
+      executionChances: 15
+    - type: addBlock
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 15
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 15
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 15
+    - type: addBlock
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 15
+    - type: addBlock
+      terrain: URBAN_MARKET
+      executionChances: 15
+    - type: addBlock
+      terrain: URBAN_MARKET_BAR
+      executionChances: 20
+    - type: addBlock
+      terrain: URBAN_MARKET_BAR
+      executionChances: 20
+    - type: addBlock
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 15
+    - type: addBlock
+      size: 2
+      terrain: URBAN
+      executionChances: 7
+    - type: addBlock
+      terrain: URBAN
+      executionChances: 10
+    - type: addBlock
+      size: 2
+      executionChances: 80
+    - type: addBlock
+      size: 2
+      executionChances: 80
+    - type: addBlock
+      size: 2
+      executionChances: 80
+    - type: addBlock
+      size: 2
+      executionChances: 80
+    - type: fillArea
+#mission specific scripts
   - type: RESISTANCE_FARM
     commands:
     #roads
@@ -71,7 +214,6 @@ mapScripts:
       rects: 
           - [2, 2, 4, 4]
       UFOName: STR_RESISTANCE_SHELTER_FARM
-    
     - type: addBlock
       size: 2
       executions: 2
@@ -85,26 +227,6 @@ mapScripts:
     - type: fillArea
       blocks: 6
 
-  - type: RURAL
-    commands:
-    - type: addCraft
-    - type: addUFO
-    - type: addLine
-      label: 1
-      direction: horizontal
-      executionChances: 33
-    - type: addLine
-      label: 2
-      direction: vertical
-      conditionals: -1
-      executionChances: 50
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-    - type: addBlock
-      size: 2
-      executions: 6
-    - type: fillArea
   - type: REFUGE_ATTACKED
     commands:
     - type: addCraft
@@ -187,6 +309,102 @@ mapScripts:
       rects:
         - [2, 4, 1, 1]
     # - type: addCraft
+    - type: fillArea
+
+  - type: URBAN_LOW_TRAP_ESCAPE
+    commands:
+    - type: addCraft #TODO
+    - type: addLine
+      terrain: URBAN_ROADS
+      label: 1
+      direction: vertical
+      rects:
+        - [1, 1, 4, 1] #TODO
+    - type: addLine #single railroad
+      terrain: URBAN_ROADS
+      label: 2
+      conditionals: -1
+      verticalGroup: 13
+      direction: vertical
+      executionChances: 20
+      rects:
+        - [1, 1, 4, 1] #TODO
+    - type: addLine
+      terrain: URBAN_ROADS
+      label: 3
+      conditionals: -2
+      executionChances: 20
+      direction: vertical #another road
+      rects:
+        - [1, 1, 1, 4]
+    - type: addBlock
+      terrain: URBAN_SPORTS
+      executionChances: 10
+      size: 2
+    - type: addBlock
+      terrain: URBAN_SPORTS
+      executionChances: 15
+    - type: addBlock
+      terrain: URBAN_MEDICAL
+      executionChances: 10
+      size: 2
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET_BAR
+      executionChances: 10
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET
+      executionChances: 10
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET
+      executionChances: 10
+    - type: addBlock
+      terrain: URBAN_MARKET
+      executionChances: 15
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET
+      executionChances: 10
+    - type: addBlock
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 12
+    - type: addBlock
+      size: 2
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 10
+    - type: addBlock
+      terrain: URBAN_MARKET
+      executionChances: 5
+    - type: addBlock
+      terrain: URBAN_MARKET_BAR
+      executionChances: 15
+    - type: addBlock
+      terrain: URBAN_MARKET_BAR
+      executionChances: 5
+    - type: addBlock
+      terrain: URBAN_MARKET_CLOTHING
+      executionChances: 5
+    - type: addBlock
+      size: 2
+      terrain: URBAN
+      executionChances: 3
+    - type: addBlock
+      terrain: URBAN
+      executionChances: 5
+    - type: addBlock
+      size: 2
+      executionChances: 80
+    - type: addBlock
+      size: 2
+      executionChances: 60
+    - type: addBlock
+      size: 2
+      executionChances: 40
+    - type: addBlock
+      size: 2
+      executionChances: 20
     - type: fillArea
 
   - type: MIB_SEWERS

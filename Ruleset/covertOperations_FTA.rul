@@ -14,10 +14,41 @@ covertOperations:
     instantSuccessDeployment: 
       STR_MIB_CHASING: 100
     instantTrapDeployment: 
-      STR_MIB_CHASING: 100 #TODO
+      STR_MIB_CHASING_TRAP: 100
     trapChance: 100
 
-  - name: STR_REGIONAL_HQ
+  - name: STR_REGIONAL_HQ_AREA_SURVEY
+    description: STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
+    requires:
+      - STR_MIB_CHASING_SUCCESS
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    baseChances: 70
+    danger: 7
+    costs: 120
+    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
+    successResearchList:
+      - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+    failureResearchList:
+      - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+    successScore: 150
+    failureScore: -120
+  - name: STR_REGIONAL_HQ_AREA_SURVEY_LONG
+    description: STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
+    requires:
+      - STR_MIB_CHASING_FAIL
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    baseChances: 65
+    danger: 8
+    costs: 216
+    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION   
+
+
+
+  - name: STR_REGIONAL_HQ #TODO
     description: STR_REGIONAL_HQ_DESCRIPTION
     successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
     requires:
@@ -50,7 +81,9 @@ covertOperations:
     allowedArmor:
       - STR_JUMPSUIT_UC
     successScore: 100
-    successEvent: STR_MONSTER_HUNT_INVESTIGATION #TODO consider if not with just a description and research!
+    successDescription: STR_MONSTER_HUNT_INVESTIGATION_SUCCESS_DESCRIPTION
+    successResearchList:
+      - STR_MONSTER_HUNT_RUMORS_PREREQ
     failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     instantTrapDeployment: 
       STR_LOCALS_TRAP: 100

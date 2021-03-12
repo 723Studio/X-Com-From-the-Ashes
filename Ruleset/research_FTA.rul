@@ -67,7 +67,11 @@ research:
     hidden: true
   - name: STR_MONSTER_HUNT_RUMORS_PREREQ
     hidden: true
-  - name: STR_MIB_CHASING
+  - name: STR_MIB_CHASING_SUCCESS
+    hidden: true
+  - name: STR_MIB_CHASING_FAIL
+    hidden: true
+  - name: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     hidden: true
 
 #game start
