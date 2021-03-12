@@ -68,12 +68,12 @@ events:
     description: STR_MIB_CHASING_SUCCESS_DESCRIPTION
     timer: 30
     timerRandom: 0
-    researchList: [STR_MIB_CHASING]
+    researchList: [STR_MIB_CHASING_SUCCESS]
   - name: STR_MIB_CHASING_FAIL
     description: STR_MIB_CHASING_FAIL_DESCRIPTION
     timer: 30
     timerRandom: 0
-    researchList: [STR_MIB_CHASING]
+    researchList: [STR_MIB_CHASING_FAIL]
 
 
     

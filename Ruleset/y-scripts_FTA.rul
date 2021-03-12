@@ -142,6 +142,45 @@ extended:
 
           return;
 
+      - offset: 3     # Lower enemy unit TUs
+        code: |
+          var int unitTUs;
+          var int divisor;
+          var int difficulty;
+          var int lower;
+          var int upper;
+          
+          if eq side 0; #don't affect XCOM
+            return;
+          end;
+
+          set difficulty battle_game.difficultyLevel;
+          if eq difficulty 0; #DIFF_BEGINNER
+            set lower 25;
+            set upper 50;
+          end;
+          if eq difficulty 1; #DIFF_EXPERIENCED
+            set lower 33;
+            set upper 66;
+          end;
+          if eq difficulty 2; #DIFF_VETERAN
+            set lower 40;
+            set upper 85;
+          end;
+          if eq difficulty 3; #DIFF_GENIUS
+            set lower 50;
+            set upper 100;
+          end;
+          if eq difficulty 4; #DIFF_SUPERHUMAN
+            return; # }:>
+          end;
+          
+          unit.getTimeUnits unitTUs;
+          battle_game.randomRange divisor lower upper; 
+          muldiv unitTUs divisor 100;
+          unit.setTimeUnits unitTUs;
+          return;
+
     createItem:
       - offset: 1     # Set energy shields on items at beginning of the battle
         code: |

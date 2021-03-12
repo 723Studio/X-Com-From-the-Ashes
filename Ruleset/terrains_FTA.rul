@@ -576,8 +576,502 @@ terrains:
       - name: VILBAN57
         width: 10
         length: 10
+  - name: URBAN_LOW
+    mapDataSets:
+      - BLANKS
+      - URBAN_LOW_OBJ
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    script: URBAN_LOW
+    mapBlocks:
+      - name: URBANLOWF00 # small 2-story industrial block
+        width: 10
+        length: 10
+      - name: URBANLOWF01 # landing zone
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBANLOWF02 # landing zone
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBANLOWF03 # landing zone
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBANLOWF04 # landing zone
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBANLOWF05 # landing zone
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBANLOWF06 # microhouse
+        width: 10
+        length: 10
+      - name: URBANLOWF07 # small house
+        width: 10
+        length: 10
+      - name: URBANLOWF08 # tiny warehouse with backyard
+        width: 10
+        length: 10
+      - name: URBANLOWF09 # small office
+        width: 10
+        length: 10
+      - name: URBANLOWF10 # small storage with 4 flats 1
+        width: 10
+        length: 10
+      - name: URBANLOWF11 # small storage with 4 flats 2
+        width: 10
+        length: 10
+      - name: URBANLOWF12 # small living house
+        width: 10
+        length: 10
+      - name: URBANLOWS00 # landing zone
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBANLOWS01 # basic street EW
+        width: 10
+        length: 10
+        groups: 2
+      - name: URBANLOWS02 # basic street NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: URBANLOWS03 # basic crossroads
+        width: 10
+        length: 10
+        groups: 4
+      - name: URBANLOWS04 # small house
+        width: 10
+        length: 10
+      - name: URBANLOWS05 # small abandoned site
+        width: 10
+        length: 10
+      - name: URBANLOWS06 # tiny warehouse
+        width: 10
+        length: 10
+      - name: URBANLOWS07 # small 2-story house
+        width: 10
+        length: 10
+      - name: URBANLOWS08 # large 3-story house
+        width: 20
+        length: 20
+      - name: URBANLOWS09 # large 2-story house
+        width: 20
+        length: 20
+      - name: URBANLOWS10 # small house
+        width: 10
+        length: 10
+      - name: URBANLOWS11 # small house
+        width: 10
+        length: 10
+      - name: URBANLOWS12 # tiny decrepit park
+        width: 10
+        length: 10
+      - name: URBANLOWS13 # double familok 1
+        width: 20
+        length: 20
+      - name: URBANLOWS14 # small decrepit park
+        width: 20
+        length: 20
+      - name: URBANLOWS15 # furniture store
+        width: 20
+        length: 20
+      - name: URBANLOWS16 # small illegal dump
+        width: 10
+        length: 10
+      - name: URBANLOWS17 # double familok 2
+        width: 20
+        length: 20
+      - name: URBANLOWS18 # double familok 3
+        width: 20
+        length: 20
+      # - name: URBANLOWS19 # observation tower
+      #   width: 10
+      #   length: 10
 
 #sub-terrains
+  - name: URBAN_MARKET
+    mapDataSets:
+      - BLANKS
+      - URBAN_MARKET
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMARKET00 # Winter Palace Department Store
+        width: 20
+        length: 20
+      - name: URBANMARKET01 # small foood storage
+        width: 10
+        length: 10
+      - name: URBANMARKET02 # small warehouse
+        width: 10
+        length: 10
+      - name: URBANMARKET03 # small computer shop
+        width: 10
+        length: 10
+      - name: URBANMARKET04 # fuel station
+        width: 20
+        length: 20
+      - name: URBANMARKET05 # fast food hut
+        width: 10
+        length: 10
+      - name: URBANMARKET06 # general store
+        width: 20
+        length: 20
+      - name: URBANMARKET07 # double general store
+        width: 20
+        length: 20
+      - name: URBANMARKET08 # general store with a cafe upstairs
+        width: 20
+        length: 20
+  - name: URBAN_MARKET_CLOTHING
+    mapDataSets:
+      - BLANKS
+      - URBAN_MARKET_CLOTHING
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMARKETCLOTHING00 # small thrift shop
+        width: 10
+        length: 10
+      - name: URBANMARKETCLOTHING01 # small clothing shop
+        width: 10
+        length: 10
+      - name: URBANMARKETCLOTHING02 # second-hand outlet
+        width: 20
+        length: 20
+      - name: URBANMARKETCLOTHING03 # small market
+        width: 10
+        length: 10
+      - name: URBANMARKETCLOTHING04 # small clothing shop
+        width: 10
+        length: 10
+      - name: URBANMARKETCLOTHING05 # medium clothing shop with a plaza
+        width: 20
+        length: 20
+      - name: URBANMARKETCLOTHING06 # small clothing shop
+        width: 10
+        length: 10
+  - name: URBAN_MARKET_BAR
+    mapDataSets:
+      - BLANKS
+      - URBAN_MARKET_BAR
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMARKETBAR00 # small bar
+        width: 10
+        length: 10
+      - name: URBANMARKETBAR01 # night club
+        width: 20
+        length: 20
+      - name: URBANMARKETBAR02 # bar
+        width: 20
+        length: 20
+      - name: URBANMARKETBAR03 # loft bar
+        width: 20
+        length: 20
+      - name: URBANMARKETBAR04 # small bar
+        width: 10
+        length: 10
+      - name: URBANMARKETBAR05 # restaurant with an upstairs lounge
+        width: 20
+        length: 20
+  - name: URBAN_MEDICAL
+    mapDataSets:
+      - BLANKS
+      - URBAN_MEDICAL
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMEDICAL00 # health centre
+        width: 20
+        length: 20
+  - name: URBAN_SPORTS
+    mapDataSets:
+      - BLANKS
+      - URBAN_SPORTS
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANSPORTS00
+        width: 10
+        length: 10
+      - name: URBANSPORTS01
+        width: 10
+        length: 10
+      - name: URBANSPORTS02
+        width: 10
+        length: 10
+      - name: URBANSPORTS03
+        width: 20
+        length: 20
+  - name: URBAN_ROADS
+    mapDataSets:
+      - BLANKS
+      - URBAN_ROADS1
+      - RAILCROSSING
+      - URBAN_ROADS2
+    mapBlocks:
+    #railroad
+      - name: URBANRAILROADCRF00 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF01 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF02 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF03 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF04 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF05 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADF00 # simple railroad
+        width: 10
+        length: 10
+        groups: [13]
+    #crossings
+      - name: URBANROADCRF00 # simple crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF01 # simple crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF02 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF03 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF04 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF05 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF06 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF07 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF08 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF09 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF10 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+    #horizontal roads
+      - name: URBANROADHF00 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF01 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF02 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF03 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF04 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF05 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF06 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF07 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF08 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF09 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF10 # horizontal road with black van
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF11 # horizontal road with white van
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF12 # horizontal road with bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF13 # horizontal road with bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF14 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF15 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF16 # horizontal road with crashed bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF17 # horizontal road with bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF18 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF19 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF20 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF21 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+    #vertical roads
+      - name: URBANROADVF00 # simple vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF01 # simple vertical road
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF02 # simple vertical road
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF03 # simple vertical road
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF04 # simple vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF05 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF06 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF07 # vertical road with grey car
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF08 # vertical road with silver car
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF09 # vertical road with bike
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF10 # vertical road with bike
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF11 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF12 # vertical road with bus stop
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF13 # vertical road with crashed bus stop
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF14 # vertical road with bus stop
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF15 # vertical road with green car
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF16 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF17 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF18 # vertical road with grass
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF19 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF20 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF21 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+
+
+#mission-specific terrains
   - name: TRANSPORT_EVAC
     mapDataSets:
       - BLANKS
@@ -588,7 +1082,6 @@ terrains:
         width: 10
         length: 10
         groups: 7
-
   - name: MIB_SEWERS
     mapDataSets:
       - BLANKS
@@ -621,8 +1114,6 @@ terrains:
           length: 70
           groups: 1
 
-
-#sub-terrains
   - name: MIB_CHASING
     mapDataSets:
       - BLANKS
@@ -645,3 +1136,6 @@ terrains:
           width: 20
           length: 60
           groups: 5
+
+
+
