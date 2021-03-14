@@ -15,9 +15,9 @@
     listOrder: 38
   - type: STR_SMGS
     listOrder: 40
-  - type: STR_SHOTGUNS
-    listOrder: 50
   - type: STR_RIFLES
+    listOrder: 50
+  - type: STR_SHOTGUNS
     listOrder: 60
   - type: STR_SNIPER_RIFLES
     listOrder: 70

@@ -272,12 +272,18 @@ en-US:
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy disk upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
   STR_AGENT_EXTRACTION: "Agent Extraction"
   STR_SCIENTIST_REFUGE_BRIEFING: STR_SCIENTIST_REFUGE_BRIEFING #TODO
+  STR_LOCALS_TRAP: #TODO
   STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
 
 
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
   STR_CHASING_MIB_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_AREA_SURVEY: #TODO
+  STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_AREA_SURVEY_LONG: #Same as STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
   STR_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_REGIONAL_HQ_DESCRIPTION: #TODO
 
@@ -386,6 +392,14 @@ en-US:
   STR_JABBER_AUTOPSY_UFOPEDIA: "STR_JABBER_AUTOPSY_UFOPEDIA" #TODO
   STR_JABBER_ARMOR: "Jabber Combat Analysis"
   STR_JABBER_ARMOR_UFOPEDIA: STR_JABBER_ARMOR_UFOPEDIA #TODO
+  
+  STR_CHUPACABRA: "Jabber"
+  STR_CHUPACABRA_UFOPEDIA: STR_JABBER_UFOPEDIA #TODO
+  STR_CHUPACABRA_AUTOPSY: "Jabber Autopsy"
+  STR_CHUPACABRA_AUTOPSY_UFOPEDIA: "STR_JABBER_AUTOPSY_UFOPEDIA" #TODO
+  STR_CHUPACABRA_ARMOR: "Jabber Combat Analysis"
+  STR_CHUPACABRA_ARMOR_UFOPEDIA: STR_JABBER_ARMOR_UFOPEDIA #TODO
+  
   STR_RESISTANCE_SOLDIER: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_CORPSE: STR_RESISTANCE_SOLDIER_CORPSE #TODO
   STR_RESISTANCE_SCIENTIST: "Scientist"
@@ -396,6 +410,36 @@ en-US:
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
   STR_FEMALE_CIVILIAN_FARMER: "Farmer"
   STR_FEMALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
+
+#categories
+  STR_MELEE: "Melee Weapons"
+  STR_PISTOLS: "Pistols"
+  STR_THROWING: "Throwing"
+  STR_BOWS: "Bows"
+  STR_SMGS: "SMGs"
+  STR_RIFLES: "Rifles"
+  STR_SHOTGUNS: "Shotguns"
+  STR_SNIPER_RIFLES: "Sniper Rifles"
+  STR_MACHINE_GUNS: "Machine Guns"
+  STR_CANNONS: "Cannons"
+  STR_LAUNCHERS: "Launchers"
+  STR_HEAVY_WEAPONS: "Heavy Weapons"
+  STR_FIREARMS: "Firearms"
+  STR_EXPLOSIVES: "Explosives"
+  STR_EXPLOSIVE_CHARGES: "Explosive Charges"
+  STR_INCENDIARIES: "Incendiaries"
+  STR_INCAPACITATE: "Stun Weapons"
+  STR_SMOKE: "Smoke"
+  STR_CLIPS: "Ammo"
+  STR_GRENADES: "Grenades"
+  STR_MEDICAL: "Medical Items"
+  STR_UTILITY: "Utility Items"
+  STR_SHIELDS: "Shields"
+  STR_UNDERWATER: "All Underwater-Capable"
+  STR_SPACE: "All Space-Capable"
+  STR_CONCEALABLE: "All Concealable"
+  STR_HUMAN_TECH: "All Human Tech"
+  STR_XCOM_TECH: "All X-Com Tech"
 
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
@@ -408,6 +452,9 @@ en-US:
   STR_SWORD_UFOPEDIA: "Good old sword, light and sharp. Great for both melee combat and knight initiatiation. If we ever establish an Order of X-Com Knights, of course..."
   STR_THROWING_KNIFE: "Throwing Knife"
   STR_THROWING_KNIFE_UFOPEDIA: "This traditional throwing weapon is not very useful in the hands of beginners and ineffective against armored opponents. However, its lightness and concealability can be very useful where the work should be done without any fuss.{NEWLINE}>Concealable"
+  STR_SPORTS_BOW: "Sprits Bow"
+  STR_SPORTS_BOW_UFOPEDIA: #TODO
+  STR_BOW_ARROW: "Bow Arrow"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
   STR_SNUBNOSE_PISTOL_UFOPEDIA: "STR_SNUBNOSE_PISTOL_UFOPEDIA{NEWLINE}>Concealable" #TODO
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
@@ -457,6 +504,7 @@ en-US:
   STR_DOUBLE_BARRELED: "Double-Barreled Shotgun"
   STR_DOUBLE_BARRELED_UFOPEDIA: STR_DOUBLE_BARRELED_UFOPEDIA #TODO
   STR_DOUBLE_BARRELED_BUCKSHOT: "D-B Shotgun BS Ammo"
+  STR_DOUBLE_BARRELED_BUCKSHOT_AA: "D-B Shotgun AA-BS Ammo"
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
   STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "A classic shotgun, used by police forces as well as civilians in some countries for self-defense."
   STR_PUMP_ACTION_SHELLS: "Pump Action BS Ammo"
@@ -508,6 +556,8 @@ en-US:
   STR_SMALL_ROCKET: "Small Rocket"
   STR_LARGE_ROCKET: "Large Rocket"
   STR_INCENDIARY_ROCKET: "Incendiary Rocket"
+  STR_LIQUID_FLAME: "Liquid Flame"
+  STR_LIQUID_FLAME_UFOPEDIA: #TODO
   STR_GRENADE: "Grenade"
   STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precise control.{NEWLINE}>Concealable"
   STR_SMOKE_GRENADE: "Smoke Grenade"
@@ -516,11 +566,14 @@ en-US:
   STR_PROXIMITY_GRENADE_UFOPEDIA: "A proximity grenade can be thrown like an ordinary grenade but is triggered by nearby movement after it lands. Great skill and care is required to use these devices properly.{NEWLINE}>Concealable"
   STR_FLASHBANG_GRENADE: "Flashbang Grenade"
   STR_FLASHBANG_GRENADE_UFOPEDIA: "A Flashbang Grenade is designed to overwhelm a person's senses in order to blind and disorient them with a bright light coupled with a loud sound. Such non-lethal devices are in use by the army, law enforcement and special forces.{NEWLINE}A target hit by the grenade has it's available TUs halved, as well as decreased Reactions by 25-35, Firing and Throwing by 20-30, and Melee by 10-20 for 2 turns.{NEWLINE}>Concealable"
+  STR_EXPLOSIVE_CHARGE: "Explosive Charge"
+  STR_EXPLOSIVE_CHARGE_UFOPEDIA: #TODO
   STR_FIRST_AID: "First Aid"
   STR_FIRST_AID_UFOPEDIA: STR_FIRST_AID_UFOPEDIA #TODO
   STR_PAINKILLER: "Painkillers"
   STR_PAINKILLER_UFOPEDIA: STR_PAINKILLER_UFOPEDIA #TODO
   STR_STIMS: "Stims"
+  STR_STIMS_UFOPEDIA: #TODO
   STR_RESISTANCE_BASIC_EQUIPMENT: STR_RESISTANCE_BASIC_EQUIPMENT #TODO
   STR_MEDI_PACK: "Medipack"
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
@@ -528,6 +581,8 @@ en-US:
   STR_TRAUMA_PACK_UFOPEDIA: "This advanced First Aid Kit holds more healing supplies, is a bit faster to use and recovers a little more Stamina and Stun, but is significantly heavier. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_COMBAT_SHIELD: "Combat Shield"
   STR_COMBAT_SHIELD_UFOPEDIA: STR_COMBAT_SHIELD_UFOPEDIA #TODO
+  STR_FLASHLIGHT: "Flashlight"
+  STR_FLASHLIGHT_UFOPEDIA: #TODO
   STR_PUNCH: "Punch"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
@@ -547,12 +602,12 @@ en-US:
   STR_LOG1: "Commander log #001"
   STR_LOG1_UFOPEDIA: "As a senior officer, I took command. I hope I'm experienced enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, the remaining men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation overall is hardly better - we have lost the funding and supply source and know very little about our enemy. Apparently, alien agents have infiltrated deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to do. We need to get reports from the chiefs of research, intelligence and logistics. I have already submitted orders, it will take several hours for analysis. After that, it will be possible to plan further actions."
   STR_RND_STATUS_REPORT: "R&D Status Report"
-  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death I'm in charge of the R&D department. Please don't look at my age, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopedia is encrypted, and that's what's bothering me the most right now but Jim, the data analyst, says there's still hope! I suggest we begin decrypting it immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
+  STR_RND_STATUS_REPORT_UFOPEDIA: "Hello, Central... Oh, I'm sorry, I mean, hello, Commander! It seems that since Dr. Meyer's death I'm in charge of the R&D department. Please don't worry about my competence, I have two PhDs in microbiology and high energy physics and I've been helping Dr. Meyer organize work last six months.{NEWLINE}Now to the point, if you'll let me. Ufopedia is encrypted, and that's what's bothering me the most right now but Jim, the data analyst, says there's still hope! I suggest we begin decrypting it immediately.{NEWLINE}Also, we need to interrogate the prisoners we're capturing, perhaps this will help shed some light on what's happening..."
   STR_INTEL_STATUS_REPORT: "Intelligence Report"
   STR_INTEL_STATUS_REPORT_UFOPEDIA: "Oh, Commander! Recent events have tied our hands entirely, all secret government communication channels have been cut off - we will have to build our agent network from scratch. You can assign a couple of scientists to set up new encrypted communication channels. It is essential to set up covert operations conducted by our agents to gather intelligence assets.{NEWLINE}Additionally, we can establish secure contact with our remaining friends, I have a few people I've been watching for a long time. Their help will be invaluable in the given circumstances."
   STR_ENGINEER_STATUS_REPORT: "Engineer's Report"
   STR_ENGINEER_STATUS_REPORT_UFOPEDIA: "Greetings, Commander! Our base was in a very poor condition even before the attack. Due to a lack of funding, we were forced to close several facilities and sell off some valuable equipment. After closing the workshop our production capacity is at a minimum, we are trying to assemble spare parts from improvised materials. It is absolutely unclear where we will get the supplies from now, even the most basic ones. Intelligence has forbidden my guys to leave the base, and from where will we get everything we need for maintaining, not to mention building modules? Maybe R&D folks would think about the secure source of the general supplies?"
-  STR_MILITARY_STATUS_REPORT: #TODO
+  STR_MILITARY_STATUS_REPORT: "Chief Staff Officer Report"
   STR_MILITARY_STATUS_REPORT_UFOPEDIA: "Status report, Commander! The XCOM squad is set for the next mission! Though recent events have left us rather bruised, and with very few experienced fighters left in the ranks, our new recruits show great promise. Participating in combat actions and continually training at the base will enhance their capabilities and they can be promoted for their accomplishments on the battlefield. Starting at the rank of Squaddie, soldiers can distinguish themselves and they can be assigned a specialization. Our combat training program contains all the necessary courses that will make soldiers noticeably more effective in their chosen area of expertise."
   STR_VEHICLES_STATUS_REPORT: "Vehicles Status"
   STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have a radar system anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
@@ -575,6 +630,7 @@ en-US:
   STR_MONSTER_HUNT_START: "Strange creatures"
   STR_MONSTER_HUNT_START_UFOPEDIA: "STR_MONSTER_HUNT_START_UFOPEDIA" #TODO
   STR_MONSTER_HUNT_RUMORS: "STR_MONSTER_HUNT_RUMORS" #TODO
+  STR_MONSTER_HUNT_RUMORS_DESCRIPTION: #TODO
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: STR_MONSTER_HUNT_RUMORS_UFOPEDIA #TODO
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."

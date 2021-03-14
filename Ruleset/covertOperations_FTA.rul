@@ -88,10 +88,10 @@ covertOperations:
     instantTrapDeployment: 
       STR_LOCALS_TRAP: 100
     trapChance: 100
-  - name: STR_MONSTER_HUNT_INVESTIGATION_CONT
-    description: STR_MONSTER_HUNT_INVESTIGATION_CONT_DESCRIPTION
+  - name: STR_MONSTER_HUNT_RUMORS_CHUPA
+    description: STR_MONSTER_HUNT_RUMORS_CHUPA_DESCRIPTION
     requires:
-      - STR_MONSTER_HUNT_RUMORS
+      - STR_MONSTER_HUNT_RUMORS_CHUPA
     itemSpaceLimit: 10
     baseChances: 75
     costs: 5

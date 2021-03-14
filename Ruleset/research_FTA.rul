@@ -155,17 +155,9 @@ research:
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
 
-  - name: STR_MONSTER_HUNT_RUMORS
-    requiresBaseFunc: [HQ]
-    cost: 70
-    points: 10
-    spawnedEvent: STR_MONSTER_HUNT_RUMORS
-    dependencies:
-      - STR_MONSTER_HUNT_RUMORS_PREREQ
-      - STR_UFOPEDIA_DECRYPTION
-    listOrder: 7460
-
 #technology
+  - name: STR_BASIC_EQUIPMENT_ACQUISITION #TODO probably, technology would be redone later
+    hidden: true
   - name: STR_ELECTRIC_WEAPONS_PREREQ
     hidden: true
   - name: STR_ELECTRIC_WEAPONS #TODO Articles
@@ -221,6 +213,7 @@ research:
       - STR_SAWED_OFF
       - STR_DOUBLE_BARRELED
       - STR_DOUBLE_BARRELED_BUCKSHOT
+      - STR_LIQUID_FLAME
       - STR_FIRST_AID
   - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
     hidden: true
@@ -233,6 +226,7 @@ research:
     unlocks:
       - STR_RIOT_RIFLE
       - STR_RIOT_RIFLE_CLIP
+      - STR_EXPLOSIVE_CHARGE
       - STR_SINGLE_ROCKET_LAUNCHER
       - STR_MEDI_PACK
       - STR_HELICOPTER
@@ -381,6 +375,29 @@ research:
     hidden: true
 
 #shared creatures arc
+  - name: STR_MONSTER_HUNT_RUMORS
+    requiresBaseFunc: [HQ]
+    cost: 70
+    points: 10
+    spawnedEvent: STR_MONSTER_HUNT_RUMORS
+    dependencies:
+      - STR_MONSTER_HUNT_RUMORS_PREREQ
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 7460
+  - name: STR_MONSTER_HUNT_RUMORS_ANALYSIS
+    requiresBaseFunc: [HQ]
+    unlocks: [STR_MONSTER_HUNT_RUMORS_PREREQ]
+    cost: 504
+    points: 15 
+    spawnedEvent: STR_MONSTER_HUNT_RUMORS
+    dependencies:
+      - STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
+    listOrder: 7460
+  - name: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
+    hidden: true  
+  - name: STR_MONSTER_HUNT_RUMORS_CHUPA
+    hidden: true   
+
   - name: STR_STRANGE_CREATURE_AUTOPSY
     cost: 0
     points: 0
@@ -777,6 +794,16 @@ research:
     dependencies:
       - STR_PUMP_ACTION_SHOTGUN
     listOrder: 7410
+  - name: STR_LIQUID_FLAME
+    cost: 10
+    points: 1
+    needItem: true
+    listOrder: 7410 
+  - name: STR_EXPLOSIVE_CHARGE
+    cost: 18
+    points: 4
+    needItem: true
+    listOrder: 7410 
   - name: STR_SINGLE_ROCKET_LAUNCHER
     cost: 40
     points: 5

@@ -2295,7 +2295,7 @@ items:
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_BASIC_EQUIPMENT_ACQUISITION
     size: 0.05
     costBuy: 300
     costSell: 240
@@ -2321,7 +2321,7 @@ items:
   - type: STR_SMOKE_GRENADE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_BASIC_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
     costBuy: 150
@@ -2331,62 +2331,12 @@ items:
     floorSprite: 20
     handSprite: 248
     hitAnimation: 88
-    power: 60
+    power: 40 #60
     damageType: 9
     costThrow:
       energy: 6
     costPrime:
-      time: 30
-    costUnprime:
-      time: 25
-    unprimeActionName: STR_UNPRIME_GRENADE
-    isExplodingInHands: true
-    battleType: 4
-    blastRadius: 5
-    listOrder: 38700
-  - type: STR_SMOKE_GRENADE_FIRING
-    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
-    requiresBuy:
-      - STR_TODOIUM
-    size: 0.05
-    landOnly: true
-    weight: 3
-    bigSprite: 20 #TODO
-    floorSprite: 20 #TODO
-    handSprite: 248 #TODO
-    hitAnimation: 88
-    power: 60
-    damageType: 9
-    costThrow:
-      energy: 6
-    costPrime:
-      time: 30
-    costUnprime:
-      time: 25
-    unprimeActionName: STR_UNPRIME_GRENADE
-    isExplodingInHands: true
-    battleType: 4
-    blastRadius: 5
-    listOrder: 38700
-  - type: STR_SMOKE_GRENADE_DEPLOYED
-    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
-    requiresBuy:
-      - STR_TODOIUM
-    size: 0.05
-    landOnly: true
-    costBuy: 150
-    costSell: 120
-    weight: 3
-    bigSprite: 20 #TODO
-    floorSprite: 20 #TODO
-    handSprite: 248 #TODO
-    hitAnimation: 88
-    power: 60
-    damageType: 9
-    costThrow:
-      energy: 6
-    costPrime:
-      time: 30
+      time: 35
     costUnprime:
       time: 25
     unprimeActionName: STR_UNPRIME_GRENADE
@@ -2397,7 +2347,7 @@ items:
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_BASIC_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
     costBuy: 1500
@@ -2426,7 +2376,7 @@ items:
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_BASIC_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
     costBuy: 150
@@ -2568,7 +2518,7 @@ items:
   - type: STR_STIMS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
+        - STR_BASIC_EQUIPMENT_ACQUISITION
     landOnly: true
     size: 0.1
     costBuy: 500

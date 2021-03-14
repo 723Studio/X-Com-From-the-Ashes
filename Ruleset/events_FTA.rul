@@ -51,17 +51,12 @@ events:
     loyalty: -900
 
 #covertOperation events 
-  - name: STR_MONSTER_HUNT_INVESTIGATION
-    description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
-    timer: 0
-    timerRandom: 0
-    researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ]
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     description: STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION
     timer: 0
     timerRandom: 0
     points: -200
-    researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ]
+    researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ_HARD]
 
 
   - name: STR_MIB_CHASING_SUCCESS
@@ -98,7 +93,8 @@ events:
 #Monsters
   - name: STR_MONSTER_HUNT_RUMORS
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
-    #researchList: [???] #TODO
+    researchList:
+      - STR_MONSTER_HUNT_RUMORS_CHUPA
     timer: 0
     timerRandom: 0
 

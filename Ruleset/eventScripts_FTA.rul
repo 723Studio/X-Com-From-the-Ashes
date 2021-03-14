@@ -60,7 +60,7 @@ eventScripts:
     maxDifficulty: 4
     researchTriggers:
       STR_SUPPLIES: false
-  - type: STR_MONSTER_HUNT_START
+  - type: STR_MONSTER_HUNT_START #Start of monster hunt arc
     oneTimeSequentialEvents: [STR_MONSTER_HUNT_START_EVENT]
     firstMonth: 0
     lastMonth: 0

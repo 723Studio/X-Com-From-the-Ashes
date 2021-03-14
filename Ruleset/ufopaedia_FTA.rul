@@ -235,7 +235,6 @@ ufopaedia:
       - STR_XCOM_FILES_3
     text: STR_XCOM_FILES_3_UFOPEDIA
     listOrder: 520
-
   - id: STR_PRISONER_INTERROGATIONS
     type_id: 7
     image_id: INTEL_CHIEF_CPAL.SPK
@@ -245,7 +244,6 @@ ufopaedia:
       - STR_PRISONER_INTERROGATIONS
     text: STR_PRISONER_INTERROGATIONS_UFOPEDIA
     listOrder: 700
-
   - id: STR_MONSTER_HUNT_START
     type_id: 7
     image_id: INTEL_CHIEF_CPAL.SPK
@@ -262,7 +260,6 @@ ufopaedia:
       - STR_MONSTER_HUNT_RUMORS
     text: STR_MONSTER_HUNT_RUMORS_UFOPEDIA
     listOrder: 2010
-
   - id: STR_RESISTANCE_CONTACT
     type_id: 8 #TODO converting to 7
     section: STR_XCOM_REPORTS_UC
@@ -977,19 +974,18 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_COMBAT_SHIELD_UFOPEDIA
     listOrder: 21300
-  - id: STR_COMBAT_SHIELD
+  - id: STR_FLASHLIGHT
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
-    text: STR_COMBAT_SHIELD_UFOPEDIA
+    text: STR_FLASHLIGHT_UFOPEDIA
     listOrder: 21300
 
 #STR_ALIEN_ARTIFACTS 30-44
 
 #STR_ALIEN_LIFE_FORMS 45-160
 #enemies - humanoids
-
   - id: STR_XCOM_EX_COMMANDER_EXAMINATION
     type_id: 8 #change to 7
     #image_id: WIP_UFOPEDIA.SPK
@@ -999,7 +995,6 @@ ufopaedia:
       - STR_XCOM_EX_COMMANDER
     text: STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA
     listOrder: 146000
-
   - id: STR_MIB_AGENT
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -1058,24 +1053,6 @@ ufopaedia:
     text: STR_FACEHUGGER_AUTOPSY_UFOPEDIA
     text_width: 149
     listOrder: 164100
-  - id: STR_CHUPACABRA #TODO
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    # requires:
-    #   - STR_CHUPACABRA
-    image_id: UFOPEDIA_IMG_CHUPACABRA_CPAL
-    text: STR_CHUPACABRA_UFOPEDIA #TODO
-    text_width: 158
-    listOrder: 164090
-  - id: STR_CHUPACABRA_AUTOPSY #TODO
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    # requires:
-    #   - STR_CHUPACABRA_AUTOPSY
-    image_id: UFOPEDIA_IMG_CHUPACABRA_AUTOPSY_CPAL
-    text: STR_CHUPACABRA_AUTOPSY_UFOPEDIA #TODO
-    text_width: 149
-    listOrder: 164100
   - id: STR_ZOMBIE_STERILE_TERRORIST
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -1128,6 +1105,24 @@ ufopaedia:
       - STR_JABBER_CORPSE
     image_id: UFOPEDIA_IMG_JABBER_AUTOPSY
     text: STR_JABBER_AUTOPSY_UFOPEDIA
+    text_width: 149
+    listOrder: 164100
+  - id: STR_CHUPACABRA
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CHUPACABRA
+    image_id: UFOPEDIA_IMG_CHUPACABRA_CPAL
+    text: STR_CHUPACABRA_UFOPEDIA
+    text_width: 158
+    listOrder: 164090
+  - id: STR_CHUPACABRA_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_CHUPACABRA_CORPSE
+    image_id: UFOPEDIA_IMG_CHUPACABRA_AUTOPSY_CPAL
+    text: STR_CHUPACABRA_AUTOPSY_UFOPEDIA
     text_width: 149
     listOrder: 164100
 
