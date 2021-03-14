@@ -456,10 +456,10 @@ en-US:
   STR_SPORTS_BOW_UFOPEDIA: #TODO
   STR_BOW_ARROW: "Bow Arrow"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
-  STR_SNUBNOSE_PISTOL_UFOPEDIA: "STR_SNUBNOSE_PISTOL_UFOPEDIA{NEWLINE}>Concealable" #TODO
+  STR_SNUBNOSE_PISTOL_UFOPEDIA: "A mini-revolver, designed primarily for self-defense purposes, loaded by .22 Short caliber bullets. It’s not very powerful, but low recoil and good inherent accuracy makes this weapon relatively dangerous against unarmored enemies – a good choice for damsels in distress and agents under cover.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
   STR_RIOT_PISTOL: "Riot Pistol"
-  STR_RIOT_PISTOL_UFOPEDIA: "STR_RIOT_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO
+  STR_RIOT_PISTOL_UFOPEDIA: "This light semi-automatic pistol uses standard 9 mm bullets. The firepower and accuracy of this weapon is unlikely to impress anyone's imagination, but due to its convenience it could be recommendet for use by any novice.{NEWLINE}>Concealable"
   STR_RIOT_PISTOL_CLIP: "Riot Pistol Clip"
   STR_PISTOL: "Light Pistol"
   STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides a good rate of fire and accuracy on short distances.{NEWLINE}>Concealable"
@@ -467,42 +467,42 @@ en-US:
   STR_PISTOL_EXP_CLIP: "Light Pistol Exp. Clip"
   STR_PISTOL_AA_CLIP: "Light Pistol AA Clip"
   STR_HEAVY_PISTOL: "Heavy Pistol"
-  STR_HEAVY_PISTOL_UFOPEDIA: "STR_HEAVY_PISTOL_UFOPEDIA.{NEWLINE}>Concealable" #TODO
+  STR_HEAVY_PISTOL_UFOPEDIA: "A convenient and accurate pistol with a frame reinforced for a high caliber ammo. Each of the nine bullets contained in the clip is ready to tear the flesh of any enemy, if he did not take care of his armor.{NEWLINE}>Concealable"
   STR_HEAVY_PISTOL_CLIP: "Heavy Pistol Clip"
   STR_MACHINE_PISTOL: "Machine Pistol"
-  STR_MACHINE_PISTOL_UFOPEDIA: "To be done.{NEWLINE}>Concealable" #TODO
+  STR_MACHINE_PISTOL_UFOPEDIA: "An automatic pistol with increased clip capacity. Low accuracy makes it ineffective for use at long and medium range, but due to its rate of fire the owner of this handgun is able to tip the scales in his favor in any firefight at close range.{NEWLINE}>Concealable"
   STR_MACHINE_PISTOL_CLIP: "Machine Pistol"
   STR_PDW: "Personal Defense Weapon"
   STR_PDW_UFOPEDIA: "A hybrid between a submachine gun and an assault rifle. It utilizes a scaled-down intermediate rifle cartridge, which offers better effective range, accuracy, and armor-penetrating capability than pistol-caliber submachine guns.{NEWLINE}>Concealable"
   STR_PDW_CLIP: "PDW Clip"
   STR_PDW_AA_CLIP: "PDW AA Clip"
   STR_SMG: "Submachine Gun"
-  STR_SMG_UFOPEDIA: "This lightweight weapon is optimized for close combat . Fills the role of pistol and carbine easily while being able to be fired accurately with one hand.{NEWLINE}>Concealable"
+  STR_SMG_UFOPEDIA: "This lightweight weapon is optimized for close combat. Fills the role of pistol and carbine easily while being able to be fired accurately with one hand.{NEWLINE}>Concealable"
   STR_SMG_CLIP: "SMG Clip"
   STR_SMG_AA_CLIP: "SMG AA Clip"
   STR_RIOT_RIFLE: "Riot Rifle"
-  STR_RIOT_RIFLE_UFOPEDIA: STR_RIOT_RIFLE_UFOPEDIA #TODO
+  STR_RIOT_RIFLE_UFOPEDIA: "Don’t look at a bit archaic design of this weapon. Its low cost, reliability of construction and wide availability contribute to the top-1 assault rifle among different armies and outlaws all over the world. A high recoil causes automatic fire mode less effective in a greeny’s hands."
   STR_RIOT_RIFLE_CLIP: "Riot Rifle Clip"
   STR_ASSAULT_RIFLE: "Assault Rifle"
   STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is decreased effectiveness at longer distances, even with Aimed, careful shots."
   STR_RIFLE: "Battle Rifle"
   STR_RIFLE_UFOPEDIA: "Rugged, well balanced firearm made to be effective in most situations at the cost of hardly excelling at any given range over specialized approaches, apart from a better adaptation for firing expanding rounds."
-  STR_PRECISION_RIFLE: "Precision Rifle"
+  STR_PRECISION_RIFLE: "Marksman Rifle"
   STR_PRECISION_RIFLE_UFOPEDIA: "An accurized rifle designed for long-range engagements while also offering acceptable mobility and rapid fire for close quarters emergencies."
   STR_RIFLE_CLIP: "Rifle Clip"
   STR_RIFLE_EXP_CLIP: "Rifle Exp. Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_HUNTING_RIFLE: "Hunting Rifle"
-  STR_HUNTING_RIFLE_UFOPEDIA: STR_HUNTING_RIFLE_UFOPEDIA #TODO
+  STR_HUNTING_RIFLE_UFOPEDIA: "A light five-shot rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapons is very easy and pleasant for both four- and two-legged animals."
   STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip" 
   STR_SNIPER_RIFLE: "Sniper Rifle"
   STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy at long distances. The enlarged projectiles have high initial velocity and can penetrate medium armor easily. However it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
   STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
   STR_SNIPER_RIFLE_AA_CLIP: "Sniper Rifle AA Clip"
   STR_SAWED_OFF: "Sawed-Off"
-  STR_SAWED_OFF_UFOPEDIA: STR_SAWED_OFF_UFOPEDIA #TODO
+  STR_SAWED_OFF_UFOPEDIA: "The younger brother of the double-barreled shotgun, without a stock and with a shortened barrel. It's just as deadly as big one, but less accurate. Due to its size, it can be hidden both under outerwear and in the most unexpected places. For example, in a box with flowers.{NEWLINE}>Concealable"
   STR_DOUBLE_BARRELED: "Double-Barreled Shotgun"
-  STR_DOUBLE_BARRELED_UFOPEDIA: STR_DOUBLE_BARRELED_UFOPEDIA #TODO
+  STR_DOUBLE_BARRELED_UFOPEDIA: "An ordinary double-barreled shotgun charged with buckshot ammo. A point-blank shot is guaranteed to turn the unprotected flesh of any enemy into a bloody mess. Doubled gun doubles the fun, isn't it?"
   STR_DOUBLE_BARRELED_BUCKSHOT: "D-B Shotgun BS Ammo"
   STR_DOUBLE_BARRELED_BUCKSHOT_AA: "D-B Shotgun AA-BS Ammo"
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
@@ -569,9 +569,9 @@ en-US:
   STR_EXPLOSIVE_CHARGE: "Explosive Charge"
   STR_EXPLOSIVE_CHARGE_UFOPEDIA: #TODO
   STR_FIRST_AID: "First Aid"
-  STR_FIRST_AID_UFOPEDIA: STR_FIRST_AID_UFOPEDIA #TODO
+  STR_FIRST_AID_UFOPEDIA: "This bag contains a minimum set of medical items that allow for temporary stopping of bleeding, treatment of the circumference of wounds and the application of primary bandage. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_PAINKILLER: "Painkillers"
-  STR_PAINKILLER_UFOPEDIA: STR_PAINKILLER_UFOPEDIA #TODO
+  STR_PAINKILLER_UFOPEDIA: "These pills quickly alleviate pain-related effects on an agent's performance.{NEWLINE}>Concealable"
   STR_STIMS: "Stims"
   STR_STIMS_UFOPEDIA: #TODO
   STR_RESISTANCE_BASIC_EQUIPMENT: STR_RESISTANCE_BASIC_EQUIPMENT #TODO
@@ -580,7 +580,7 @@ en-US:
   STR_TRAUMA_PACK: "Trauma Pack"
   STR_TRAUMA_PACK_UFOPEDIA: "This advanced First Aid Kit holds more healing supplies, is a bit faster to use and recovers a little more Stamina and Stun, but is significantly heavier. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_COMBAT_SHIELD: "Combat Shield"
-  STR_COMBAT_SHIELD_UFOPEDIA: STR_COMBAT_SHIELD_UFOPEDIA #TODO
+  STR_COMBAT_SHIELD_UFOPEDIA: "A heavy tactical shield, which grants to its bearer good front protection against any conventional damage. It could be used as stun weapon in a strong trained hand."
   STR_FLASHLIGHT: "Flashlight"
   STR_FLASHLIGHT_UFOPEDIA: #TODO
   STR_PUNCH: "Punch"
