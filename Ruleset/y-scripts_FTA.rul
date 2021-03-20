@@ -149,12 +149,18 @@ extended:
           var int difficulty;
           var int lower;
           var int upper;
-          
-          if eq side 0; #don't affect XCOM
+          var int faction;
+
+          unit.getFaction faction;
+          debug_log unit " is processing in lowering TUs";
+          debug_log faction " units faction";
+          if eq faction 0; #don't affect XCOM
+            debug_log faction " its 0, we are dealing with XCOM unit, return";
             return;
           end;
 
-          set difficulty battle_game.difficultyLevel;
+          battle_game.difficultyLevel difficulty;
+          debug_log difficulty " difficulty lvl";
           if eq difficulty 0; #DIFF_BEGINNER
             set lower 25;
             set upper 50;
@@ -168,16 +174,20 @@ extended:
             set upper 85;
           end;
           if eq difficulty 3; #DIFF_GENIUS
-            set lower 50;
+            set lower 80;
             set upper 100;
           end;
           if eq difficulty 4; #DIFF_SUPERHUMAN
             return; # }:>
           end;
           
+          debug_log lower upper " lower upper";
           unit.getTimeUnits unitTUs;
-          battle_game.randomRange divisor lower upper; 
+          debug_log unitTUs " unit original TUs";
+          battle_game.randomRange divisor lower upper;
+          debug_log divisor " divisor";
           muldiv unitTUs divisor 100;
+          debug_log unitTUs " unit result TUs";
           unit.setTimeUnits unitTUs;
           return;
 
