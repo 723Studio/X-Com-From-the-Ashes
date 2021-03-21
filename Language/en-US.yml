@@ -449,17 +449,17 @@ en-US:
   STR_MACHETE: "Machete"  
   STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone.{NEWLINE}>Concealable"
   STR_SWORD: "Sword"
-  STR_SWORD_UFOPEDIA: "Good old sword, light and sharp. Great for both melee combat and knight initiatiation. If we ever establish an Order of X-Com Knights, of course..."
+  STR_SWORD_UFOPEDIA: "Good old sword, light and sharp. Great for both melee combat and, after some incrustation with jewelry, knight initiation. If we ever establish an Order of X-Com Knights, of course..."
   STR_THROWING_KNIFE: "Throwing Knife"
   STR_THROWING_KNIFE_UFOPEDIA: "This traditional throwing weapon is not very useful in the hands of beginners and ineffective against armored opponents. However, its lightness and concealability can be very useful where the work should be done without any fuss.{NEWLINE}>Concealable"
-  STR_SPORTS_BOW: "Sprits Bow"
-  STR_SPORTS_BOW_UFOPEDIA: #TODO
+  STR_SPORTS_BOW: "Compound Bow"
+  STR_SPORTS_BOW_UFOPEDIA: "A very popular bow in modern archery, used for hunting and sport targeting. The technical features of compound bow offer 70–85% let off once it’s pulled to full draw, so the shooter can be fully concentrated on the target. That makes compound bow more efficient than most of other bows." 
   STR_BOW_ARROW: "Bow Arrow"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
-  STR_SNUBNOSE_PISTOL_UFOPEDIA: "A mini-revolver, designed primarily for self-defense purposes, loaded by .22 Short caliber bullets. It’s not very powerful, but low recoil and good inherent accuracy makes this weapon relatively dangerous against unarmored enemies – a good choice for damsels in distress and agents under cover.{NEWLINE}>Concealable"
+  STR_SNUBNOSE_PISTOL_UFOPEDIA: "A mini-revolver, designed primarily for self-defense purposes, loaded by .22 Short caliber bullets. It’s not very powerful, but low recoil and good inherent accuracy makes this weapon relatively dangerous against unarmored enemies - a good choice for damsels in distress and agents under cover.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"
   STR_RIOT_PISTOL: "Riot Pistol"
-  STR_RIOT_PISTOL_UFOPEDIA: "This light semi-automatic pistol uses standard 9 mm bullets. The firepower and accuracy of this weapon is unlikely to impress anyone's imagination, but due to its convenience it could be recommendet for use by any novice.{NEWLINE}>Concealable"
+  STR_RIOT_PISTOL_UFOPEDIA: "This light semi-automatic pistol uses standard 9 mm bullets. The firepower and accuracy of this weapon is unlikely to impress anyone's imagination, but due to its convenience it could be recommended for use by any novice.{NEWLINE}>Concealable"
   STR_RIOT_PISTOL_CLIP: "Riot Pistol Clip"
   STR_PISTOL: "Light Pistol"
   STR_PISTOL_UFOPEDIA: "Used by many special government and non-government military forces, this advanced high-powered handgun provides a good rate of fire and accuracy on short distances.{NEWLINE}>Concealable"
@@ -485,7 +485,7 @@ en-US:
   STR_RIOT_RIFLE_CLIP: "Riot Rifle Clip"
   STR_ASSAULT_RIFLE: "Assault Rifle"
   STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is decreased effectiveness at longer distances, even with Aimed, careful shots."
-  STR_RIFLE: "Battle Rifle"
+  STR_RIFLE: "Automatic Carbine"
   STR_RIFLE_UFOPEDIA: "Rugged, well balanced firearm made to be effective in most situations at the cost of hardly excelling at any given range over specialized approaches, apart from a better adaptation for firing expanding rounds."
   STR_PRECISION_RIFLE: "Marksman Rifle"
   STR_PRECISION_RIFLE_UFOPEDIA: "An accurized rifle designed for long-range engagements while also offering acceptable mobility and rapid fire for close quarters emergencies."
@@ -493,7 +493,7 @@ en-US:
   STR_RIFLE_EXP_CLIP: "Rifle Exp. Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_HUNTING_RIFLE: "Hunting Rifle"
-  STR_HUNTING_RIFLE_UFOPEDIA: "A light five-shot rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapons is very easy and pleasant for both four- and two-legged animals."
+  STR_HUNTING_RIFLE_UFOPEDIA: "A light five-shot rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapon is very easy and pleasant for both four- and two-legged animals."
   STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip" 
   STR_SNIPER_RIFLE: "Sniper Rifle"
   STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy at long distances. The enlarged projectiles have high initial velocity and can penetrate medium armor easily. However it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
@@ -502,7 +502,7 @@ en-US:
   STR_SAWED_OFF: "Sawed-Off"
   STR_SAWED_OFF_UFOPEDIA: "The younger brother of the double-barreled shotgun, without a stock and with a shortened barrel. It's just as deadly as big one, but less accurate. Due to its size, it can be hidden both under outerwear and in the most unexpected places. For example, in a box with flowers.{NEWLINE}>Concealable"
   STR_DOUBLE_BARRELED: "Double-Barreled Shotgun"
-  STR_DOUBLE_BARRELED_UFOPEDIA: "An ordinary double-barreled shotgun charged with buckshot ammo. A point-blank shot is guaranteed to turn the unprotected flesh of any enemy into a bloody mess. Doubled gun doubles the fun, isn't it?"
+  STR_DOUBLE_BARRELED_UFOPEDIA: "An ordinary double-barreled shotgun charged with buckshot ammo. A point-blank shot is guaranteed to turn the unprotected flesh into a bloody mess. A doubled gun doubles the fun, isn't it?"
   STR_DOUBLE_BARRELED_BUCKSHOT: "D-B Shotgun BS Ammo"
   STR_DOUBLE_BARRELED_BUCKSHOT_AA: "D-B Shotgun AA-BS Ammo"
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
@@ -557,7 +557,7 @@ en-US:
   STR_LARGE_ROCKET: "Large Rocket"
   STR_INCENDIARY_ROCKET: "Incendiary Rocket"
   STR_LIQUID_FLAME: "Liquid Flame"
-  STR_LIQUID_FLAME_UFOPEDIA: #TODO
+  STR_LIQUID_FLAME_UFOPEDIA: "A breakable glass bottle containing a flammable substance like gasoline, with a source of ignition such as a burning cloth wick. When the bottle smashes on impact it causes an immediate fireball followed by spreading flames. Be sure, this simple incendiary weapon will cause a havoc among the enemy’s lines."
   STR_GRENADE: "Grenade"
   STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precise control.{NEWLINE}>Concealable"
   STR_SMOKE_GRENADE: "Smoke Grenade"
@@ -567,14 +567,14 @@ en-US:
   STR_FLASHBANG_GRENADE: "Flashbang Grenade"
   STR_FLASHBANG_GRENADE_UFOPEDIA: "A Flashbang Grenade is designed to overwhelm a person's senses in order to blind and disorient them with a bright light coupled with a loud sound. Such non-lethal devices are in use by the army, law enforcement and special forces.{NEWLINE}A target hit by the grenade has it's available TUs halved, as well as decreased Reactions by 25-35, Firing and Throwing by 20-30, and Melee by 10-20 for 2 turns.{NEWLINE}>Concealable"
   STR_EXPLOSIVE_CHARGE: "Explosive Charge"
-  STR_EXPLOSIVE_CHARGE_UFOPEDIA: #TODO
+  STR_EXPLOSIVE_CHARGE_UFOPEDIA: "A simple plastic explosive charge with timer mechanism. It’s unlikely be useful to make a big badaboom party, but it is perfect for disabling light vehicles, equipment, obstacles… And manpower, of course. Be sure to evacuate personnel from the blast zone."
   STR_FIRST_AID: "First Aid"
   STR_FIRST_AID_UFOPEDIA: "This bag contains a minimum set of medical items that allow for temporary stopping of bleeding, treatment of the circumference of wounds and the application of primary bandage. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_PAINKILLER: "Painkillers"
   STR_PAINKILLER_UFOPEDIA: "These pills quickly alleviate pain-related effects on an agent's performance.{NEWLINE}>Concealable"
   STR_STIMS: "Stims"
-  STR_STIMS_UFOPEDIA: #TODO
-  STR_RESISTANCE_BASIC_EQUIPMENT: STR_RESISTANCE_BASIC_EQUIPMENT #TODO
+  STR_STIMS_UFOPEDIA: "Stims help to restore agent's energy and may force an incapacitated person to regain consciousness.{NEWLINE}>Concealable"
+  STR_RESISTANCE_BASIC_EQUIPMENT: "Establishing ties with the Resistance has paid off - now we can buy from them some weapons and equipment for our needs! Of course, these guys would be happy to help us completely free of charge, but it should be understood that it’s not so easy to get anything, so we must compensate some associated costs with proportional amount of money. Of course, the equipment we are purchasing is far from cutting-edge technology, but at least it will allow us to maintain the average combat capability of our agents and be ready to conduct various operations."
   STR_MEDI_PACK: "Medipack"
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_TRAUMA_PACK: "Trauma Pack"
@@ -582,7 +582,7 @@ en-US:
   STR_COMBAT_SHIELD: "Combat Shield"
   STR_COMBAT_SHIELD_UFOPEDIA: "A heavy tactical shield, which grants to its bearer good front protection against any conventional damage. It could be used as stun weapon in a strong trained hand."
   STR_FLASHLIGHT: "Flashlight"
-  STR_FLASHLIGHT_UFOPEDIA: #TODO
+  STR_FLASHLIGHT_UFOPEDIA: "An ordinary flashlight powered by reusable batteries. It shines brightly, but the sparks from the opponent's eyes will shine even brighter if you hit him on the forehead with this heavy tool."
   STR_PUNCH: "Punch"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
@@ -593,8 +593,8 @@ en-US:
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"
   STR_DRAGONFLY_UFOPEDIA: "To be done" #TODO
-  STR_STALKER: "STALKER"
-  STR_STALKER_UFOPEDIA: "To be done" #TODO
+  STR_STALKER: "RAZOR"
+  STR_STALKER_UFOPEDIA: "A small historical reference. During the first test of the aircraft, the pilot accidentally cut off the branches of high-growing trees with his wing during a low-level flight, and someone who watched the tests exclaimed " Wow, cutted with a razor!". Since then, the plane has been called the Razor. This jet fighter has excellent flight characteristics and is able to compete on equal terms in air combat with any aircraft. At least with the aircraft we know of..."
   STR_HELICOPTER: "HELICOPTER"
   STR_HELICOPTER_UFOPEDIA: #TODO
 
