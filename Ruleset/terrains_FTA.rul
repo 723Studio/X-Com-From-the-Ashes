@@ -694,6 +694,16 @@ terrains:
       #   length: 10
 
 #sub-terrains
+  - name: URBAN_OPERATIONS
+    mapDataSets:
+      - BLANKS
+      - URBAN_LOW_OBJ
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBAN_OPERSTART00 # Winter Palace Department Store
+        width: 10
+        length: 10
   - name: URBAN_MARKET
     mapDataSets:
       - BLANKS
@@ -704,7 +714,7 @@ terrains:
       - name: URBANMARKET00 # Winter Palace Department Store
         width: 20
         length: 20
-      - name: URBANMARKET01 # small foood storage
+      - name: URBANMARKET01 # small food storage
         width: 10
         length: 10
       - name: URBANMARKET02 # small warehouse
