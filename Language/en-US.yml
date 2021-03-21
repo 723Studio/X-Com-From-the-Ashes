@@ -594,7 +594,7 @@ en-US:
   STR_DRAGONFLY: "DRAGONFLY"
   STR_DRAGONFLY_UFOPEDIA: "To be done" #TODO
   STR_STALKER: "RAZOR"
-  STR_STALKER_UFOPEDIA: "A small historical reference. During the first test of the aircraft, the pilot accidentally cut off the branches of high-growing trees with his wing during a low-level flight, and someone who watched the tests exclaimed " Wow, cutted with a razor!". Since then, the plane has been called the Razor. This jet fighter has excellent flight characteristics and is able to compete on equal terms in air combat with any aircraft. At least with the aircraft we know of..."
+  STR_STALKER_UFOPEDIA: "A small historical reference. During the first test of the aircraft, the pilot accidentally cut off the branches of high-growing trees with his wing during a low-level flight, and someone who watched the tests exclaimed 'Wow, cutted with a razor!'. Since then, the plane has been called the Razor. This jet fighter has excellent flight characteristics and is able to compete on equal terms in air combat with any aircraft. At least with the aircraft we know of..."
   STR_HELICOPTER: "HELICOPTER"
   STR_HELICOPTER_UFOPEDIA: #TODO
 
