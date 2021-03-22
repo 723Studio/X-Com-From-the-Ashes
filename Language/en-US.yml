@@ -158,6 +158,7 @@ en-US:
   STR_NO_TRANSFORMATION: "-"
   STR_TRANSFORMING_FINISHED: "Special Training Finished{NEWLINE}at {0}"
   STR_MELEE_SHORT: "Ml>{ALT}{0}"
+  STR_BUTTON_HINT: "RMB for details"
   #mana stuff
   STR_MANA: "MANA"
   STR_MANA_POOL: "MANA POOL"
