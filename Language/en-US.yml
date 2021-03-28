@@ -78,7 +78,7 @@ en-US:
   STR_OPERATION_CHANCES_UC: "Approximate chances of success>{ALT}{0}"
   STR_START_OPERATION_US: "START OPERATION"
   STR_OPERATION_CHANCES_US: "APPROX. ODDS>{ALT}{0}"
-  STR_SELECT_SQUAD_FOR_OPERATION: "Select squad for operation: {ALT}{0}"
+  STR_SELECT_SQUAD_FOR_OPERATION: "Select squad for operation"
   STR_ASSIGNMENT: "ASSIGNMENT"
   STR_ASSIGNED_UC: "ASSIGNED"
   STR_COVERT_OPERATION_UC: "COVERT OP."
@@ -274,7 +274,7 @@ en-US:
   STR_SCIENTIST_REFUGE_BRIEFING: STR_SCIENTIST_REFUGE_BRIEFING #TODO
   STR_LOCALS_TRAP: #TODO
   STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
-
+  STR_MIB_CHASING_BRIEFING: #TODO
 
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
@@ -333,7 +333,10 @@ en-US:
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> -200"
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
   STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: #TODO
-
+  STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"
+  STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
+  STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
+  STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: #TODO
 
 #enemies
   STR_MIB: "Men In Black"

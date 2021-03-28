@@ -701,9 +701,10 @@ terrains:
       - URBAN_LOW_FRN
       - URBAN_LOW
     mapBlocks:
-      - name: URBAN_OPERSTART00 # Winter Palace Department Store
+      - name: URBAN_OPERSTART00
         width: 10
         length: 10
+        groups: 5
   - name: URBAN_MARKET
     mapDataSets:
       - BLANKS

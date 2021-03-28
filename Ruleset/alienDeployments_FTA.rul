@@ -810,25 +810,26 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_BS  
 
-  - type: STR_MIB_EARLY_TRAP_ESCAPE #TODO
+  - type: STR_MIB_EARLY_TRAP_ESCAPE
     race: STR_MIB
     width: 30
-    length: 70
+    length: 80
     height: 6
     briefing:
       textOffset: -16
-      background: MIB_CHASE_BACKGROUND.SCR
+      background: MIB_TRAP.SCR
       showTarget: false
       desc: STR_MIB_CHASING_BRIEFING
     terrains:
-      - FOREST
-    shade: 6
+      - URBAN_LOW
+    shade: 9
     script: URBAN_LOW_TRAP_ESCAPE
+    battleScript: MIB_TRAP_ESCAPE_EARLY
     data:
       - alienRank: 5 #STR_MIB_AGENT
-        lowQty: 1
-        highQty: 4
-        dQty: 2
+        lowQty: 4
+        highQty: 5
+        dQty: 1
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -853,12 +854,11 @@ alienDeployments:
             - STR_PISTOL
             - STR_PISTOL_CLIP
             - STR_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
+            - STR_GRENADE
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
             - STR_PISTOL_CLIP 
-            - STR_GRENADE
             - STR_FLASHBANG_GRENADE
           -
             - STR_SMG
@@ -866,78 +866,35 @@ alienDeployments:
             - STR_SMG_CLIP
             - STR_SMG_CLIP
           -
-            - STR_ASSAULT_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-          -
-            - STR_PDW
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP  
-      - alienRank: 5 #STR_MIB_AGENT
-        lowQty: 1
-        highQty: 4
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
           -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_FLASHBANG_GRENADE
-          -
             - STR_PDW
             - STR_PDW_CLIP
-            - STR_PDW_CLIP 
-          -
-            - STR_ASSAULT_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_PRECISION_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_AP  
-          -
-            - STR_SEMI_AUTO_SHOTGUN
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-      - alienRank: 4 #STR_MIB_ARMORED_AGENT
+            - STR_PDW_CLIP
+      - alienRank: 4
         lowQty: 1
         highQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_GRENADE
+            - STR_FLASHBANG_GRENADE
           -
-            - STR_PDW
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP  
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+            - STR_FLASHBANG_GRENADE
           -
             - STR_ASSAULT_RIFLE
             - STR_RIFLE_CLIP
@@ -945,7 +902,15 @@ alienDeployments:
           -
             - STR_RIFLE
             - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP  
+            - STR_RIFLE_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
           -
             - STR_RIFLE
             - STR_RIFLE_EXP_CLIP
@@ -953,24 +918,17 @@ alienDeployments:
           -
             - STR_PRECISION_RIFLE
             - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP 
+            - STR_RIFLE_CLIP
           -
             - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS_AP
-            - STR_SHOTGUN_SHELLS_AP
-            - STR_SHOTGUN_SHELLS_AP
-          -
-            - STR_LMG
-            - STR_LMG_CLIP
-            - STR_LMG_CLIP
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP 
           -
             - STR_SNIPER_RIFLE
             - STR_SNIPER_RIFLE_CLIP
             - STR_SNIPER_RIFLE_CLIP
-          -
-            - STR_LIGHT_CANNON
-            - STR_LC_AP_AMMO
-            - STR_LC_AP_AMMO
+            - STR_SNIPER_RIFLE_CLIP 
+
   - type: STR_LOCALS_TRAP
     race: STR_MILITIA
     width: 50

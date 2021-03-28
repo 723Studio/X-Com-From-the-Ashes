@@ -24,10 +24,13 @@ covertOperations:
     soldierSlots: 3
     optionalSoldierSlots: 2
     baseChances: 70
-    danger: 7
+    danger: 8
     costs: 120
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
+    trapChance: 70
+    instantTrapDeployment: 
+      STR_MIB_CHASING_TRAP: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -41,10 +44,13 @@ covertOperations:
     soldierSlots: 3
     optionalSoldierSlots: 2
     baseChances: 65
-    danger: 8
+    danger: 9
     costs: 216
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
-    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION   
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
+    trapChance: 85
+    instantTrapDeployment: 
+      STR_MIB_CHASING_TRAP: 100
 
 
 

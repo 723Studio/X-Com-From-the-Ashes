@@ -101,14 +101,57 @@ battleScripts:
       groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
-    - type: showMessage #TODO uncomment
+    - type: showMessage
       executions: 1 #not working yet :]
       endTurn: 1
       messages:
         0:
           title: STR_RECOVER_RESEARCH_LOGS_TITLE
           content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+  - type: MIB_TRAP_ESCAPE_EARLY
+    commands:
+    - type: spawnUnit #easy
+      executionChances: 50
+      maxDifficulty: 1
+      packSize: 3
+      randomPackSize: true
+      startTurn: 3
+      unitSide: 1
+      minAlarmLevel: 2
+      #groups: [1, 2, 3, 4]
+      spawnBlocks: ["N", W, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #med
+      executionChances: 60
+      minDifficulty: 1
+      maxDifficulty: 3
+      packSize: 3
+      randomPackSize: true
+      startTurn: 2
+      unitSide: 1
+      minAlarmLevel: 1
+      #groups: [1, 2, 3, 4]
+      spawnBlocks: ["N", W, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #sh
+      executionChances: 80
+      minDifficulty: 4
+      packSize: 4
+      randomPackSize: true
+      #startTurn: 2
+      unitSide: 1
+      minAlarmLevel: 1
+      groups: [1, 2, 3, 4]
+      spawnBlocks: ["N", W, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
 
+    # - type: showMessage #TODO uncomment
+    #   executions: 1 #not working yet :]
+    #   endTurn: 1
+    #   messages:
+    #     0:
+    #       title: STR_RECOVER_RESEARCH_LOGS_TITLE
+    #       content: STR_RECOVER_RESEARCH_LOGS_CONTENT
 
   - type: STR_LOCALS_TRAP_BAT_SCRIPT
     commands:
@@ -128,7 +171,7 @@ battleScripts:
       startTurn: 6
       packSize: 2
       unitSide: 1
-      groups: [1, 4]
+      groups: [1, 2, 3, 4]
       spawnBlocks: ["N", S]
       unitSet: [STR_MALE_POLICE]
     - type: spawnUnit #high diff
@@ -136,7 +179,7 @@ battleScripts:
       packSize: 6
       unitSide: 1
       minDifficulty: 4
-      groups: [1, 4]
+      groups: [1, 2, 3, 4]
       spawnBlocks: ["N", S]
       unitSet: [STR_MALE_POLICE]
     - type: spawnUnit #extra SH gift
@@ -146,7 +189,7 @@ battleScripts:
       randomPackSize: false
       unitSide: 1
       minDifficulty: 4
-      groups: [1, 4]
+      groups: [1, 2, 3, 4]
       spawnBlocks: ["N", S]
       unitSet: [STR_MALE_POLICE] #TODO - add soldiers here
 

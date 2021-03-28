@@ -579,7 +579,14 @@ extraSprites:
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/MIB_CHASE_BACKGROUND.png
+      0: Resources/Backgrounds/MIB_CHASE_BACKGROUND2.png
+  - type: MIB_TRAP.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/PLACEHOLDER_BACKGROUND.png #TODO
+
 
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT_CPAL

@@ -313,30 +313,41 @@ mapScripts:
 
   - type: URBAN_LOW_TRAP_ESCAPE
     commands:
-    - type: addCraft #TODO
-    - type: addLine
+    # - type: addBlock 
+    #   terrain: URBAN_OPERATIONS
+    #   groups: 5
+    #   rects:
+    #     - [0, 7, 3, 1]
+    - type: addCraft 
+      craftName: STR_HELICOPTER
+      rects:
+        - [0, 7, 3, 1]
+    - type: addUFO
+      UFOName: EVAC_ZONE_N
+      rects:
+        - [0, 0, 3, 1]
+    - type: addLine #always one road
+      terrain: URBAN_ROADS
+      direction: horizontal
+      executionChances: 100
+      rects:
+        - [0, 1, 3, 6]
+    - type: addLine #possible railroad
       terrain: URBAN_ROADS
       label: 1
-      direction: vertical
+      verticalGroup: 13
+      direction: horizontal
+      executionChances: 15
       rects:
-        - [1, 1, 4, 1] #TODO
-    - type: addLine #single railroad
+        - [0, 1, 3, 6]
+    - type: addLine
       terrain: URBAN_ROADS
       label: 2
       conditionals: -1
-      verticalGroup: 13
-      direction: vertical
-      executionChances: 20
+      executionChances: 45
+      direction: horizontal #another road
       rects:
-        - [1, 1, 4, 1] #TODO
-    - type: addLine
-      terrain: URBAN_ROADS
-      label: 3
-      conditionals: -2
-      executionChances: 20
-      direction: vertical #another road
-      rects:
-        - [1, 1, 1, 4]
+        - [0, 1, 3, 6]
     - type: addBlock
       terrain: URBAN_SPORTS
       executionChances: 10
@@ -344,10 +355,6 @@ mapScripts:
     - type: addBlock
       terrain: URBAN_SPORTS
       executionChances: 15
-    - type: addBlock
-      terrain: URBAN_MEDICAL
-      executionChances: 10
-      size: 2
     - type: addBlock
       size: 2
       terrain: URBAN_MARKET_BAR

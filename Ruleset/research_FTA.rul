@@ -67,12 +67,7 @@ research:
     hidden: true
   - name: STR_MONSTER_HUNT_RUMORS_PREREQ
     hidden: true
-  - name: STR_MIB_CHASING_SUCCESS
-    hidden: true
-  - name: STR_MIB_CHASING_FAIL
-    hidden: true
-  - name: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
-    hidden: true
+
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
@@ -325,6 +320,20 @@ research:
       - STR_TODOIUM  
 
 #MIB arc
+  #story
+  - name: STR_MIB_CHASING_SUCCESS
+    hidden: true
+  - name: STR_MIB_CHASING_FAIL
+    hidden: true
+  - name: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+    hidden: true
+  - name: STR_REGIONAL_HQ_LOCATION
+    cost: 340
+    points: 100
+    dependencies:
+      - STR_MIB_DATA_TRANSFER_DECRYPTION
+      - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+    listOrder: 146000
   #key lore
   - name: STR_FRESH_MIB_AGENT
     hidden: true
@@ -337,6 +346,7 @@ research:
     spawnedItem: STR_MIB_HEAD_CHIP
     dependencies:
       - STR_MIB_HEAD_CHIP_PREREQ
+    listOrder: 146000   
   - name: STR_MIB_HEAD_CHIP
     requiresBaseFunc: [INTLAB]
     cost: 600

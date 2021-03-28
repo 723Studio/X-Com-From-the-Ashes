@@ -358,8 +358,6 @@ ufos:
                 itemList: *generalResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_RADIO: [0, 0]
-
-
   - type: STR_SCIENTIST_REFUGE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -410,5 +408,23 @@ ufos:
           #       itemList: [STR_ALIEN_ELECTRONICS, STR_ALIEN_DATA_SLATE, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_3]
           fuseTimers:
             STR_SPAWN_RESISTANCE_SCIENTIST_VIP: [0, 0]
-
-
+  - type: EVAC_ZONE_N
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: EVAC_ZONE_N
+      mapDataSets:
+        - BLANKS
+        - TRANSPORT_EVAC
+      mapBlocks:
+        - name: EVACZONE_N
+          width: 10
+          length: 10
