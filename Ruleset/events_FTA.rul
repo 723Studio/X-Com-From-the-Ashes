@@ -61,9 +61,6 @@ events:
     description: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION
     timer: 0
     timerRandom: 0
-    points: -200
-    researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ_HARD]
-
   - name: STR_MIB_CHASING_SUCCESS
     description: STR_MIB_CHASING_SUCCESS_DESCRIPTION
     timer: 30

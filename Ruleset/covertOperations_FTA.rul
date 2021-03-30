@@ -51,7 +51,12 @@ covertOperations:
     trapChance: 85
     instantTrapDeployment: 
       STR_MIB_CHASING_TRAP: 100
-
+    successResearchList:
+      - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+    failureResearchList:
+      - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+    successScore: 150
+    failureScore: -120
 
 
   - name: STR_REGIONAL_HQ #TODO

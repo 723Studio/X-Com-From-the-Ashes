@@ -19,6 +19,7 @@ en-US:
   STR_VOID_CORP_DESCRIPTION: "STR_VOID_CORP_DESCRIPTION" 
   STR_ENIGMA_DESCRIPTION: "STR_ENIGMA_DESCRIPTION"
 #UI
+  STR_BUTTON_HINT: "RMB for details"
   STR_BONUSES_BUTTON: " " #add special symbol for bonuses in Soldier Info State
   STR_CONTAINMENTLIMITSENFORCED: "Containment limits for captured enemies" #containmentLimitsEnforced
   STR_STORAGELIMITSENFORCED_DESC: "Enforces general store limits for artifacts recovered from missions."

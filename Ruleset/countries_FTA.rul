@@ -1,4 +1,4 @@
-countries:
+countries: #boo, no countries in FtA except Imaginaria
   - delete: STR_USA
   - delete: STR_RUSSIA
   - delete: STR_UK
@@ -15,7 +15,7 @@ countries:
   - delete: STR_SOUTH_AFRICA
   - delete: STR_EGYPT
   - delete: STR_CANADA
-  - type: STR_PLACEHOLDER_COUNTRY
+  - type: STR_PLACEHOLDER_COUNTRY #Imaginaria =)
     fundingBase: 0
     fundingCap: 0
     labelLon: 227
