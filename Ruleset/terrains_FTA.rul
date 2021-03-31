@@ -1,98 +1,1105 @@
 terrains:
+  - delete: FOREST
+  - delete: URBAN
   - delete: XBASE
-  - delete: CULTA  
-  
-  - name: XBASE
+  - delete: CULTA
+  - delete: DESERT
+  - delete: MOUNT
+  - delete: POLAR
+  - delete: JUNGLE
+
+#Globe terrains
+  - name: FOREST
     mapDataSets:
       - BLANKS
-      - XBASE1
-      - XBASE2
-      - XBASEF1
-      - XBASEF2
-    script: XBASE
+      - FOREST
+      - FORESTBITS
+      - ROADS
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_HOSTESS
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_DOGE
+    script: FOREST
+    mapBlocks: &AnchorVanillaForest
+      - name: FOREST00
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST01
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST02
+        width: 10
+        length: 10
+      - name: FOREST03
+        width: 10
+        length: 10
+      - name: FOREST04
+        width: 10
+        length: 10
+      - name: FOREST05
+        width: 10
+        length: 10
+      - name: FOREST06
+        width: 10
+        length: 10
+      - name: FOREST07
+        width: 10
+        length: 10
+      - name: FOREST08
+        width: 10
+        length: 10
+      - name: FOREST09
+        width: 10
+        length: 10
+      - name: FOREST10
+        width: 20
+        length: 20
+      - name: FOREST11
+        width: 20
+        length: 20
+      - name: SOLFOREST12
+        width: 10
+        length: 10
+      - name: SOLFOREST13
+        width: 10
+        length: 10
+      - name: SOLFOREST14
+        width: 10
+        length: 10
+      - name: SOLFOREST15
+        width: 10
+        length: 10
+      - name: SOLFOREST16
+        width: 10
+        length: 10
+      - name: SOLFOREST17
+        width: 20
+        length: 20
+      - name: FINNIKFOREST00
+        width: 10
+        length: 10
+      - name: FINNIKFOREST01
+        width: 10
+        length: 10
+      - name: FINNIKFOREST02
+        width: 10
+        length: 10
+      - name: FINNIKFOREST03
+        width: 10
+        length: 10
+      - name: FINNIKFOREST04
+        width: 10
+        length: 10
+      - name: FINNIKFOREST05
+        width: 10
+        length: 10
+      - name: FINNIKFOREST06
+        width: 10
+        length: 10
+      - name: BRAINFOREST00
+        width: 20
+        length: 20
+      - name: CIVFOREST00
+        width: 20
+        length: 20
+      - name: CIVFOREST01
+        width: 10
+        length: 10
+      - name: CIVFOREST02
+        width: 10
+        length: 10
+      - name: CIVFOREST03
+        width: 20
+        length: 20
+      - name: FOREST_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE01 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE02 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN01 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN02 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
+  - name: FORESTSWAMP
+    mapDataSets:
+      - BLANKS
+      - FOREST
+      - FORESTSWAMPBITS
+      - ROADS
+      - FORESTSWAMP
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_HOSTESS
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_DOGE
+    script: FOREST
+    mapBlocks: &AnchorForestSwamp
+      - name: FOREST00
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST01
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST02
+        width: 10
+        length: 10
+      - name: FOREST03
+        width: 10
+        length: 10
+      - name: FOREST04
+        width: 10
+        length: 10
+      - name: FOREST05
+        width: 10
+        length: 10
+      - name: FOREST06
+        width: 10
+        length: 10
+      - name: FOREST07
+        width: 10
+        length: 10
+      - name: FOREST08
+        width: 10
+        length: 10
+      - name: FOREST09
+        width: 10
+        length: 10
+      - name: FOREST10
+        width: 20
+        length: 20
+      - name: FOREST11
+        width: 20
+        length: 20
+      - name: SOLFOREST12
+        width: 10
+        length: 10
+      - name: SOLFOREST13
+        width: 10
+        length: 10
+      - name: SOLFOREST14
+        width: 10
+        length: 10
+      - name: SOLFOREST15
+        width: 10
+        length: 10
+      - name: SOLFOREST16
+        width: 10
+        length: 10
+      - name: SOLFOREST17
+        width: 20
+        length: 20
+      - name: FINNIKFOREST00
+        width: 10
+        length: 10
+      - name: FINNIKFOREST01
+        width: 10
+        length: 10
+      - name: FINNIKFOREST02
+        width: 10
+        length: 10
+      - name: FINNIKFOREST03
+        width: 10
+        length: 10
+      - name: FINNIKFOREST04
+        width: 10
+        length: 10
+      - name: FINNIKFOREST05
+        width: 10
+        length: 10
+      - name: FINNIKFOREST06
+        width: 10
+        length: 10
+      - name: BRAINFOREST00
+        width: 20
+        length: 20
+      - name: CIVFOREST00
+        width: 20
+        length: 20
+      - name: CIVFOREST01
+        width: 10
+        length: 10
+      - name: CIVFOREST02
+        width: 10
+        length: 10
+      - name: CIVFOREST03
+        width: 20
+        length: 20
+      - name: FOREST_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE01 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE02 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN01 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN02 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
+      - name: FORESTSWAMP00
+        width: 10
+        length: 10
+      - name: FORESTSWAMP01
+        width: 20
+        length: 20
+      - name: FORESTSWAMP02
+        width: 20
+        length: 20
+      - name: FORESTSWAMP03
+        width: 10
+        length: 10
+      - name: FORESTSWAMP04
+        width: 10
+        length: 10
+      - name: FORESTSWAMP05
+        width: 10
+        length: 10
+      - name: FORESTSWAMP06
+        width: 10
+        length: 10
+      - name: FORESTSWAMP07
+        width: 20
+        length: 20
+      - name: FORESTSWAMP08
+        width: 20
+        length: 20
+      - name: FORESTSWAMP09
+        width: 10
+        length: 10
+      - name: FORESTSWAMP10
+        width: 20
+        length: 20
+      - name: FORESTSWAMP11
+        width: 20
+        length: 20
+      - name: FORESTSWAMP12
+        width: 20
+        length: 20
+      - name: FORESTSWAMP13
+        width: 10
+        length: 10
+      - name: FORESTSWAMP14
+        width: 10
+        length: 10
+      - name: FORESTSWAMP15
+        width: 10
+        length: 10
+      - name: FORESTSWAMP16
+        width: 10
+        length: 10
+      - name: FORESTSWAMP17
+        width: 20
+        length: 20
+      - name: FORESTSWAMP18
+        width: 20
+        length: 20
+      - name: FORESTSWAMP19
+        width: 10
+        length: 10
+      - name: FORESTSWAMP20
+        width: 20
+        length: 20
+  - name: FOREST_SNOW
+    mapDataSets:
+      - BLANKS
+      - FOREST_SNOW
+      - FORESTBITS_SNOW
+      - ROADS_SNOW
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_DOGE
+    script: FOREST
+    mapBlocks: *AnchorVanillaForest
+  - name: FORESTSWAMP_SNOW
+    mapDataSets:
+      - BLANKS
+      - FOREST_SNOW
+      - FORESTBITS_SNOW
+      - ROADS_SNOW
+      - FORESTSWAMP_SNOW
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_HOSTESS
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_DOGE
+    script: FOREST
+    mapBlocks: *AnchorForestSwamp
+
+  - name: JUNGLE
+    mapDataSets:
+      - BLANKS
+      - JUNGLE
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_BIKINI_BABE
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    script: JUNGLE
+    mapBlocks: &AnchorVanillaJungle
+      - name: JUNGLE00
+        width: 10
+        length: 10
+        groups: 1
+      - name: JUNGLE01
+        width: 10
+        length: 10
+        groups: 1
+      - name: JUNGLE02
+        width: 10
+        length: 10
+        groups: 1
+      - name: JUNGLE03
+        width: 10
+        length: 10
+      - name: JUNGLE04
+        width: 10
+        length: 10
+      - name: JUNGLE05
+        width: 10
+        length: 10
+      - name: JUNGLE06
+        width: 10
+        length: 10
+      - name: JUNGLE07
+        width: 10
+        length: 10
+      - name: JUNGLE08
+        width: 10
+        length: 10
+      - name: JUNGLE09
+        width: 10
+        length: 10
+      - name: JUNGLE10
+        width: 10
+        length: 10
+      - name: JUNGLE11
+        width: 10
+        length: 10
+      - name: JUNGLE12
+        width: 10
+        length: 10
+      - name: JUNGLE13
+        width: 10
+        length: 10
+      - name: JUNGLE14
+        width: 10
+        length: 10
+        groups: 1
+      - name: JUNGLE_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: JUNGLE_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: JUNGLE_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
+
+  - name: DESERT
+    mapDataSets:
+      - BLANKS
+      - DESERT
+      - DESERTBITS
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_DOGE
+    script: DESERT
+    mapBlocks: &AnchorVanillaDesert
+      - name: DESERT00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT01
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT02
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT03
+        width: 10
+        length: 10
+      - name: DESERT04
+        width: 10
+        length: 10
+      - name: DESERT05
+        width: 10
+        length: 10
+      - name: DESERT06
+        width: 10
+        length: 10
+      - name: DESERT07
+        width: 10
+        length: 10
+      - name: DESERT08
+        width: 10
+        length: 10
+      - name: DESERT09
+        width: 20
+        length: 20
+      - name: DESERT10
+        width: 20
+        length: 20
+      - name: DESERT11
+        width: 20
+        length: 20
+      - name: DESERT12
+        width: 10
+        length: 10
+      - name: DESERT13
+        width: 10
+        length: 10
+      - name: DESERT14
+        width: 20
+        length: 20
+      - name: DESERT15
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT16
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: DESERT17
+        width: 10
+        length: 10
+  - name: XOPSDESERT_NOCACTI
+    mapDataSets:
+      - BLANKS
+      - XOPSDESERT_NOCACTI
+      - DESERTBITS
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_BEDUIN
+    #   - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
+    #   - STR_MALE_CIVILIAN_ARAB
+    #   - STR_FEMALE_CIVILIAN_ARAB
+    script: DESERT
+    mapBlocks: *AnchorVanillaDesert
+
+  - name: PLAINS_TUNDRA
+    mapDataSets:
+      - BLANKS
+      - MOUNTSNOW
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    script: MOUNTAIN
+    mapBlocks: &AnchorBDPlains
+      - name: PLAINS00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: PLAINS01
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: PLAINS02
+        width: 10
+        length: 10
+        groups: 1
+      - name: PLAINS03
+        width: 10
+        length: 10
+      - name: PLAINS04
+        width: 10
+        length: 10
+      - name: PLAINS05
+        width: 10
+        length: 10
+      - name: PLAINS06
+        width: 10
+        length: 10
+      - name: PLAINS07
+        width: 10
+        length: 10
+      - name: PLAINS08
+        width: 10
+        length: 10
+      - name: PLAINS09
+        width: 10
+        length: 10
+      - name: PLAINS10
+        width: 10
+        length: 10
+      - name: PLAINS11
+        width: 20
+        length: 20
+      - name: PLAINS12
+        width: 20
+        length: 20
+  - name: PLAINS_DEAD
+    mapDataSets:
+      - BLANKS
+      - MOUNTWASTE
+    # civilianTypes:
+    #   - STR_MALE_FORESTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_MUD
+    mapDataSets:
+      - BLANKS
+      - MOUNTMUD
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_ARBOREAL
+    mapDataSets:
+      - BLANKS
+      - MOUNTGRASS
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_SANDY
+    mapDataSets:
+      - BLANKS
+      - MOUNTSAND
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_SANDY_NOCACTI
+    mapDataSets:
+      - BLANKS
+      - MOUNTSAND_NOCACTI
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_BEDUIN
+    #   - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
+    #   - STR_MALE_CIVILIAN_ARAB
+    #   - STR_FEMALE_CIVILIAN_ARAB
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_ERODED
+    mapDataSets:
+      - BLANKS
+      - MOUNTROCK
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_HOSTESS
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_TROPICAL
+    mapDataSets:
+      - BLANKS
+      - MOUNTTROP
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_BIKINI_BABE
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+
+  - name: MOUNT
+    mapDataSets:
+      - BLANKS
+      - MOUNT
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_HOSTESS
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    mapBlocks: &AnchorVanillaMount
+      - name: MOUNT00
+        width: 10
+        length: 10
+        groups: 1
+      - name: MOUNT01
+        width: 10
+        length: 10
+        groups: 1
+      - name: MOUNT02
+        width: 10
+        length: 10
+        groups: 1
+      - name: MOUNT03
+        width: 10
+        length: 10
+      - name: MOUNT04
+        width: 10
+        length: 10
+      - name: MOUNT05
+        width: 10
+        length: 10
+      - name: MOUNT06
+        width: 10
+        length: 10
+      - name: MOUNT07
+        width: 10
+        length: 10
+      - name: MOUNT08
+        width: 10
+        length: 10
+      - name: MOUNT09
+        width: 10
+        length: 10
+      - name: MOUNT10
+        width: 10
+        length: 10
+      - name: MOUNT11
+        width: 20
+        length: 20
+      - name: MOUNT12
+        width: 20
+        length: 20
+  - name: MOUNTBD_DEAD
+    mapDataSets:
+      - BLANKS
+      - MOUNTWASTE
+    # civilianTypes:
+    #   - STR_MALE_FORESTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: &AnchorBDMount
+      - name: MOUNTBD00
+        width: 10
+        length: 10
+        groups: 1
+      - name: MOUNTBD01
+        width: 10
+        length: 10
+        groups: 1
+      - name: MOUNTBD02
+        width: 10
+        length: 10
+        groups: 1
+      - name: MOUNTBD03
+        width: 10
+        length: 10
+      - name: MOUNTBD04
+        width: 10
+        length: 10
+      - name: MOUNTBD05
+        width: 10
+        length: 10
+      - name: MOUNTBD06
+        width: 10
+        length: 10
+      - name: MOUNTBD07
+        width: 10
+        length: 10
+      - name: MOUNTBD08
+        width: 10
+        length: 10
+      - name: MOUNTBD09
+        width: 10
+        length: 10
+      - name: MOUNTBD10
+        width: 10
+        length: 10
+      - name: MOUNTBD11
+        width: 20
+        length: 20
+      - name: MOUNTBD12
+        width: 20
+        length: 20
+  - name: MOUNTBD_SNOW
+    mapDataSets:
+      - BLANKS
+      - MOUNTSNOW
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDMount
+  - name: MOUNTBD_ERODED
+    mapDataSets:
+      - BLANKS
+      - MOUNTROCK
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_HOSTESS
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDMount
+  - name: MOUNTBD_ARBOREAL
+    mapDataSets:
+      - BLANKS
+      - MOUNTGRASS
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDMount
+  - name: MOUNTBD_SANDY
+    mapDataSets:
+      - BLANKS
+      - MOUNTSAND
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDMount
+  - name: MOUNTBD_SANDY_NOCACTI
+    mapDataSets:
+      - BLANKS
+      - MOUNTSAND_NOCACTI
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_BEDUIN
+    #   - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
+    #   - STR_MALE_CIVILIAN_ARAB
+    #   - STR_FEMALE_CIVILIAN_ARAB
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDMount
+  - name: MOUNTBD_MUD
+    mapDataSets:
+      - BLANKS
+      - MOUNTMUD
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_FORESTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_FARMER
+    #   - STR_FEMALE_CIVILIAN_FARMER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDMount
+  - name: MOUNTBD_TROPICAL
+    mapDataSets:
+      - BLANKS
+      - MOUNTTROP
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_BIKINI_BABE
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDMount
+
+  - name: POLAR
+    mapDataSets:
+      - BLANKS
+      - POLAR
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_POLARNIK
+    #   - STR_FEMALE_CIVILIAN_POLARNIK
+    script: POLAR
+    mapBlocks: &AnchorVanillaPolar
+      - name: POLAR00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: POLAR01
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: POLAR02
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: POLAR03
+        width: 10
+        length: 10
+      - name: POLAR04
+        width: 10
+        length: 10
+      - name: POLAR05
+        width: 10
+        length: 10
+      - name: POLAR06
+        width: 10
+        length: 10
+      - name: POLAR07
+        width: 10
+        length: 10
+      - name: POLAR08
+        width: 10
+        length: 10
+      - name: POLAR09
+        width: 10
+        length: 10
+      - name: POLAR10
+        width: 10
+        length: 10
+      - name: POLAR11
+        width: 10
+        length: 10
+      - name: POLAR12
+        width: 20
+        length: 20
+      - name: POLAR13
+        width: 20
+        length: 20
+      - name: POLAR14
+        width: 10
+        length: 10
+      - name: POLAR15
+        width: 10
+        length: 10
+      - name: POLAR16
+        width: 10
+        length: 10
+      - name: POLAR17
+        width: 20
+        length: 20
+
+  - name: RICE_FARM
+    script: RICE_FARM
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_DOGE
+    mapDataSets:
+      - BLANKS
+      - IDT_FARM
+      - IDT_ASIA
+      - IDT_FARM_WATER
+      - IDT_BARNFLOOR
+      - IDT_HUMAN
+      - URBAN_GOODS
     mapBlocks:
-      - name: XBASE_00
+      - name: ALT_BARN_1
         width: 10
         length: 10
-      - name: XBASE_01
+      - name: ALT_BARN_2
         width: 10
         length: 10
-      - name: XBASE_02
+      - name: ALT_BARN_3
         width: 10
         length: 10
-      - name: XBASE_03
+      - name: ALT_BARN_4
+        width: 10
+        length: 20
+      - name: ALT_BARN_5
+        width: 20
+        length: 10
+      - name: ALT_BARN_6
         width: 10
         length: 10
-      - name: XBASE_04
+        groups: [0, 1]  # LANDING ZONE
+      - name: ALT_BARN_7
         width: 10
         length: 10
-      - name: XBASE_05
+        groups: [0, 1]  # LANDING ZONE
+      - name: ALT_BARN_8
+        width: 20
+        length: 10
+      - name: ALT_BARN_9
+        width: 10
+        length: 20
+      - name: ALT_BARN_10
+        width: 20
+        length: 20
+      - name: ALT_BARN_11
+        width: 20
+        length: 10
+      - name: ALT_BARN_12
+        width: 20
+        length: 10
+      - name: ALT_BARN_13
+        width: 20
+        length: 20
+      - name: ALT_BARN_14
+        width: 20
+        length: 20
+      - name: ALT_BARN_15
         width: 10
         length: 10
-      - name: XBASE_06
+      - name: ALT_BARN_16
         width: 10
         length: 10
-      - name: XBASE_07
-        width: 10
-        length: 10
-      - name: XBASE_08
-        width: 10
-        length: 10
-      - name: XBASE_09
-        width: 10
-        length: 10
-      - name: XBASE_10
-        width: 10
-        length: 10
-      - name: XBASE_11
-        width: 10
-        length: 10
-      - name: XBASE_12
-        width: 10
-        length: 10
-      - name: XBASE_13
-        width: 10
-        length: 10
-      - name: XBASE_14
-        width: 10
-        length: 10
-      - name: XBASE_15
-        width: 10
-        length: 10
-      - name: XBASE_16
-        width: 10
-        length: 10
-      - name: XBASE_17
-        width: 10
-        length: 10
-      - name: XBASE_18
-        width: 10
-        length: 10
-      - name: XBASE_19
-        width: 10
-        length: 10
-      - name: XBASE_20
-        width: 10
-        length: 10
-      - name: XBASF_01
-        width: 10
-        length: 10
-      - name: XBASF_02
-        width: 10
-        length: 10
-      - name: XBASF_03
-        width: 10
-        length: 10
-      - name: XBASF_04
-        width: 10
-        length: 10
-      - name: XBASF_05
-        width: 10
-        length: 10
-      - name: XBASF_06
-        width: 10
-        length: 10
-      - name: XBASF_07
+      - name: ALT_BARN_17
         width: 10
         length: 10
   - name: CULTA
@@ -576,6 +1583,417 @@ terrains:
       - name: VILBAN57
         width: 10
         length: 10
+  - name: INDUSTRIALSLUM
+    mapDataSets:
+      - BLANKS
+      - PORTROADS
+      - INDUSLUM
+      - ROADS
+      - URBITS_INDUSLUM
+      - SLUM_FURNITURE
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_CIVILIAN_GANGER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_POLICEMAN
+    #   - STR_POLICEWOMAN
+    #   - STR_MALE_CIVILIAN_CITY_BOY
+    #   - STR_FEMALE_CIVILIAN_CITY_GIRL
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_DOCTOR
+    #   - STR_FEMALE_DOCTOR
+    script: INDUSTRIALSLUM
+    mapBlocks: &AnchorIndustrialSlum
+      - name: INDUSTRIALSLUM00
+        width: 20
+        length: 20
+      - name: INDUSTRIALSLUM01
+        width: 20
+        length: 20
+      - name: INDUSTRIALSLUM02
+        width: 20
+        length: 20
+      - name: INDUSTRIALSLUM03
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM04
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM05
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM06
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM07
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM08
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM09
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM10
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM11
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM12
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM13
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM14
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM15
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM16
+        width: 10
+        length: 10
+        groups: [1]
+      - name: INDUSTRIALSLUM17
+        width: 10
+        length: 10
+        groups: [1]
+      - name: INDUSTRIALSLUM18
+        width: 10
+        length: 10
+        groups: [1]
+      - name: INDUSTRIALSLUM19
+        width: 20
+        length: 20
+      - name: INDUSTRIALSLUM30
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM31
+        width: 20
+        length: 20
+      - name: INDUSTRIALSLUM32
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM33
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM34
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUM35
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO14
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO15
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO16
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO17
+        width: 20
+        length: 20
+      - name: INDUSTRIALSLUMDIO18
+        width: 10
+        length: 10
+        groups: [1]
+      - name: INDUSTRIALSLUMDIO19
+        width: 10
+        length: 10
+        groups: [1]
+      - name: INDUSTRIALSLUMDIO20
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO21
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO22
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO23
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMROADWE2
+        width: 10
+        length: 10
+        groups: 2
+      - name: INDUSTRIALSLUMROADNS2
+        width: 10
+        length: 10
+        groups: 3
+      - name: INDUSTRIALSLUMROADCROSS2
+        width: 10
+        length: 10
+        groups: 4
+      - name: INDUSTRIALSLUMROADRAILNS
+        width: 10
+        length: 10
+        groups: 7
+      - name: INDUSTRIALSLUMROADRAILCROSS
+        width: 10
+        length: 10
+        groups: 8
+  - name: URBANJUNK
+    mapDataSets:
+      - BLANKS
+      - JUNGLE
+      - BARN_JUNK
+      - FRNITURE
+      - URBITS_JUNK
+      - CULTIVAT
+    script: URBANJUNK
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_HOSTESS
+    #   - STR_BIKINI_BABE
+    #   - STR_POLICEMAN
+    #   - STR_POLICEWOMAN
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_PRIEST
+    #   - STR_MALE_DOCTOR
+    #   - STR_FEMALE_DOCTOR
+    #   - STR_DOGE
+    mapBlocks: &AnchorUrbanJunk
+      - name: URBANJUNK00
+        width: 10
+        length: 10
+        groups: 1
+      - name: URBANJUNK01
+        width: 10
+        length: 10
+      - name: URBANJUNK02
+        width: 10
+        length: 10
+      - name: URBANJUNK03
+        width: 10
+        length: 10
+      - name: URBANJUNK04
+        width: 10
+        length: 10
+      - name: URBANJUNK05
+        width: 10
+        length: 10
+      - name: URBANJUNK06
+        width: 10
+        length: 10
+      - name: URBANJUNK07
+        width: 10
+        length: 10
+      - name: URBANJUNK08
+        width: 10
+        length: 10
+      - name: URBANJUNK09
+        width: 10
+        length: 10
+      - name: URBANJUNK10
+        width: 10
+        length: 10
+      - name: URBANJUNK11
+        width: 10
+        length: 10
+      - name: URBANJUNK12
+        width: 10
+        length: 10
+      - name: URBANJUNK13
+        width: 10
+        length: 10
+      - name: URBANJUNK14
+        width: 10
+        length: 10
+      - name: URBANJUNK15
+        width: 10
+        length: 10
+      - name: URBANJUNK16
+        width: 10
+        length: 10
+      - name: URBANJUNK17
+        width: 10
+        length: 10
+      - name: URBANJUNK18
+        width: 10
+        length: 10
+      - name: URBANJUNK19
+        width: 10
+        length: 10
+      - name: URBANJUNK20
+        width: 10
+        length: 10
+      - name: URBANJUNK21
+        width: 20
+        length: 20
+      - name: URBANJUNK22
+        width: 20
+        length: 20
+      - name: URBANJUNK23
+        width: 20
+        length: 20
+      - name: URBANJUNK24
+        width: 20
+        length: 20
+      - name: URBANJUNK25
+        width: 20
+        length: 20
+      - name: URBANJUNK26
+        width: 20
+        length: 20
+      - name: URBANJUNK27
+        width: 20
+        length: 20
+      - name: URBANJUNK28
+        width: 20
+        length: 20
+      - name: URBANJUNK29
+        width: 20
+        length: 20
+      - name: URBANJUNK30
+        width: 20
+        length: 20
+      - name: URBANJUNK31
+        width: 20
+        length: 20
+      - name: URBANJUNK32
+        width: 10
+        length: 10
+      - name: URBANJUNK33
+        width: 10
+        length: 10
+      - name: URBANJUNK34
+        width: 10
+        length: 10
+      - name: URBANJUNK35
+        width: 10
+        length: 10
+      - name: URBANJUNK36
+        width: 10
+        length: 10
+      - name: URBANJUNK37
+        width: 20
+        length: 20
+      - name: URBANJUNK38
+        width: 20
+        length: 20
+      - name: URBANJUNK39
+        width: 20
+        length: 20
+      - name: URBANJUNK40
+        width: 20
+        length: 20
+      - name: URBANJUNK41
+        width: 20
+        length: 20
+      - name: URBANJUNK42
+        width: 20
+        length: 20
+      - name: URBANJUNK43
+        width: 20
+        length: 20
+      - name: URBANJUNK44
+        width: 20
+        length: 20
+      - name: URBANJUNK45
+        width: 10
+        length: 10
+      - name: URBANJUNK46
+        width: 10
+        length: 10
+      - name: URBANJUNKDIO_00
+        width: 20
+        length: 20
+      - name: URBANJUNK_ROAD_00a
+        width: 10
+        length: 10
+        groups: 2
+      - name: URBANJUNK_ROAD_00b
+        width: 10
+        length: 10
+        groups: 2
+      - name: URBANJUNK_ROAD_00c
+        width: 10
+        length: 10
+        groups: 2
+      - name: URBANJUNK_ROAD_00d
+        width: 10
+        length: 10
+        groups: 2
+      - name: URBANJUNK_ROAD_01a
+        width: 10
+        length: 10
+        groups: 3
+      - name: URBANJUNK_ROAD_01b
+        width: 10
+        length: 10
+        groups: 3
+      - name: URBANJUNK_ROAD_01c
+        width: 10
+        length: 10
+        groups: 3
+      - name: URBANJUNK_ROAD_01d
+        width: 10
+        length: 10
+        groups: 3
+      - name: URBANJUNK_ROAD_02
+        width: 10
+        length: 10
+        groups: 4
+  - name: URBANNATIVE
+    mapDataSets:
+      - BLANKS
+      - JUNGLE
+      - BARN
+      - FRNITURE
+      - URBITS
+      - CULTIVAT
+    script: URBANJUNK
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_HUNTER
+    #   - STR_FEMALE_CIVILIAN_HUNTER
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_ENGINEER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_HOSTESS
+    #   - STR_HOSTESS
+    #   - STR_HOSTESS
+    #   - STR_BIKINI_BABE
+    #   - STR_BIKINI_BABE
+    #   - STR_POLICEMAN
+    #   - STR_POLICEMAN
+    #   - STR_POLICEWOMAN
+    #   - STR_POLICEWOMAN
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_BLACK_AFRICAN_FIGHTER1
+    #   - STR_MALE_BLACK_AFRICAN_FIGHTER2
+    #   - STR_MALE_BLACK_AFRICAN_FIGHTER3
+    #   - STR_PRIEST
+    #   - STR_PRIEST
+    #   - STR_MALE_DOCTOR
+    #   - STR_MALE_DOCTOR
+    #   - STR_FEMALE_DOCTOR
+    #   - STR_FEMALE_DOCTOR
+    #   - STR_DOGE
+    mapBlocks: *AnchorUrbanJunk
   - name: URBAN_LOW
     mapDataSets:
       - BLANKS
@@ -692,6 +2110,498 @@ terrains:
       # - name: URBANLOWS19 # observation tower
       #   width: 10
       #   length: 10
+  - name: URBAN
+    mapDataSets:
+      - BLANKS
+      - ROADS
+      - URBITS
+      - URBAN
+      - FRNITURE
+      - MADDECOR
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_MALE_FORESTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_HOSTESS
+    #   - STR_POLICEMAN
+    #   - STR_POLICEWOMAN
+    #   - STR_MALE_CIVILIAN_CITY_BOY
+    #   - STR_FEMALE_CIVILIAN_CITY_GIRL
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_PRIEST
+    #   - STR_MALE_DOCTOR
+    #   - STR_FEMALE_DOCTOR
+    #   - STR_DOGE
+    script: URBAN
+    mapBlocks: &AnchorVanillaUrban
+      - name: URBAN00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: URBAN01 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: URBAN02 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
+      - name: URBAN03
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBAN04
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: URBAN05
+        width: 20
+        length: 20
+      - name: URBAN06
+        width: 20
+        length: 20
+      - name: URBAN07
+        width: 20
+        length: 20
+      - name: URBAN08
+        width: 20
+        length: 20
+      - name: URBAN09
+        width: 20
+        length: 20
+      - name: URBAN14
+        width: 10
+        length: 10
+      - name: URBAN15
+        width: 10
+        length: 10
+      - name: URBAN16
+        width: 10
+        length: 10
+      - name: URBAN17
+        width: 10
+        length: 10
+      - name: URBAN18
+        width: 10
+        length: 10
+      - name: EXPANDEDTERROR00 #Landingzone Dirt 1
+        width: 10
+        length: 10
+        groups: 1
+      - name: EXPANDEDTERROR01 #Landingzone Dirt 2
+        width: 10
+        length: 10
+        groups: 1
+      - name: EXPANDEDTERROR02 #Landing Zone Grass
+        width: 10
+        length: 10
+        groups: 1
+      - name: EXPANDEDTERROR03 #Road WE
+        width: 10
+        length: 10
+        groups: 2
+      - name: EXPANDEDTERROR04 #Road WE with Garbage
+        width: 10
+        length: 10
+        groups: 2
+      - name: EXPANDEDTERROR05 #Road WE with Bus Station
+        width: 10
+        length: 10
+        groups: 2
+      - name: EXPANDEDTERROR06 #Road WE with Postbox
+        width: 10
+        length: 10
+        groups: 2
+      - name: EXPANDEDTERROR07 #Road NS
+        width: 10
+        length: 10
+        groups: 3
+      - name: EXPANDEDTERROR08 #Road NS 2 Sewer
+        width: 10
+        length: 10
+        groups: 3
+      - name: EXPANDEDTERROR09 #Road NS Bus Station
+        width: 10
+        length: 10
+        groups: 3
+      - name: EXPANDEDTERROR10 #Road NS Garbage
+        width: 10
+        length: 10
+        groups: 3
+      - name: EXPANDEDTERROR11 #Crossroad Garbage
+        width: 10
+        length: 10
+        groups: 4
+      - name: EXPANDEDTERROR12 #Crossroad Telephon Box
+        width: 10
+        length: 10
+        groups: 4
+      - name: EXPANDEDTERROR13 #2 Level Small Slum House
+        width: 10
+        length: 10
+      - name: EXPANDEDTERROR14 #1 Level Small Slum House
+        width: 10
+        length: 10
+      - name: EXPANDEDTERROR15 #NS Small Park
+        width: 10
+        length: 10
+      - name: EXPANDEDTERROR16 #2 Level Small Appartment
+        width: 10
+        length: 10
+      - name: EXPANDEDTERROR17 #2 Level Large Storage and Shop
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR18 #Parking Lot with Shop
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR19 #Large Park with Telephon Box
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR20 #2 Level Slum Buildings with Telephone Box
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR21 #Restaurant
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR22 #2 Level Appartment with Parking Lot
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR23 #4 Level Appartment Building
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR24 #2 Level Family House with Garage
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR25 #2 Level Storage with Office
+        width: 20
+        length: 20
+      - name: EXPANDEDTERROR26 #2 Level Double Family House
+        width: 20
+        length: 20
+      - name: SOLURBAN39
+        width: 10
+        length: 10
+      - name: SOLURBAN40
+        width: 10
+        length: 10
+      - name: CIVURBAN41 # house by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN42 # house by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN43 # house by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN44 # house by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN45 # small park by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN46 # small dump by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN47 # tiny store by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN48 # raised house by Civilian
+        width: 20
+        length: 20
+      - name: CIVURBAN49 # arrest by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN50 # raised restaurant by Civilian
+        width: 20
+        length: 20
+      - name: CIVURBAN51 # apartment with garages by Civilian
+        width: 20
+        length: 20
+      - name: CIVURBAN52 # raised apartment by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN53 # store with parking by Civilian
+        width: 20
+        length: 20
+      - name: CIVURBAN54 # tiny house by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN55 # tiny garage by Civilian
+        width: 10
+        length: 10
+      - name: CIVURBAN56 # two-story hotel by Civilian
+        width: 20
+        length: 20
+      - name: CIVURBAN57 # hipermarket by Civilian
+        width: 40
+        length: 40
+      - name: URBANSANYASKILLPRO00 # school by Sanya Skill Pro
+        width: 40
+        length: 40
+      - name: URBANSANYASKILLPRO01 # restaurant by Sanya Skill Pro
+        width: 20
+        length: 20
+      - name: URBANAMUYS00 # bar by Amuys
+        width: 20
+        length: 20
+  - name: URBAN_DAWN
+    mapDataSets:
+      - BLANKS
+      - ROADS
+      - URBITS_DAWN
+      - URBAN_DAWN
+      - FRNITURE
+      - MADDECOR
+    # civilianTypes:
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_ENGINEER
+    #   - STR_MALE_FORESTER
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_HOSTESS
+    #   - STR_POLICEMAN
+    #   - STR_POLICEWOMAN
+    #   - STR_MALE_CIVILIAN_CITY_BOY
+    #   - STR_FEMALE_CIVILIAN_CITY_GIRL
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_PRIEST
+    #   - STR_MALE_DOCTOR
+    #   - STR_FEMALE_DOCTOR
+    #   - STR_DOGE
+    script: URBAN
+    mapBlocks: *AnchorVanillaUrban
+  - name: COMRCURBAN
+    mapDataSets:
+      - BLANKS
+      - COMROADS
+      - COMBITS
+      - COMMERCE
+      - COMFRN2
+      - COMDECOR
+    # civilianTypes:
+    #   - STR_MALE_CIVILIAN_BODYGUARD
+    #   - STR_MALE_CIVILIAN_HOOLIGAN
+    #   - STR_MALE_CIVILIAN_HOOLIGAN
+    #   - STR_MALE_CIVILIAN_ARAB
+    #   - STR_FEMALE_CIVILIAN_ARAB
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_BLACK
+    #   - STR_MALE_CIVILIAN_CITY_BOY
+    #   - STR_MALE_CIVILIAN_CITY_BOY
+    #   - STR_FEMALE_CIVILIAN_CITY_GIRL
+    #   - STR_FEMALE_CIVILIAN_CITY_GIRL
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - MALE_CIVILIAN
+    #   - STR_MALE_CIVILIAN_GANGER
+    #   - STR_MALE_CIVILIAN_GANGER
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_GREASER
+    #   - STR_MALE_SAILOR
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_CIVILIAN_WORKER
+    #   - STR_MALE_FAT_TOURIST
+    #   - STR_MALE_FAT_TOURIST
+    #   - STR_MALE_FAT_TOURIST
+    #   - STR_MALE_VIP
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_CASUAL
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_FEMALE_GLAMOUR
+    #   - STR_HOSTESS
+    #   - STR_BIKINI_BABE
+    #   - STR_BIKINI_BABE
+    #   - STR_BIKINI_BABE
+    #   - STR_PRIEST
+    #   - STR_MALE_DOCTOR
+    #   - STR_FEMALE_DOCTOR
+    #   - STR_POLICEMAN
+    #   - STR_POLICEMAN
+    #   - STR_POLICEWOMAN
+    #   - STR_POLICEWOMAN
+    script: COMRCURBAN
+    mapBlocks:
+      - name: COMRCURBAN00
+        width: 10
+        length: 10
+        groups: [0, 5]
+      - name: COMRCURBAN01
+        width: 10
+        length: 10
+        groups: [0, 5]
+      - name: COMRCURBAN02
+        width: 10
+        length: 10
+        groups: [0, 5]
+      - name: COMRCURBAN03
+        width: 10
+        length: 10
+        groups: [0, 4, 5]
+      - name: COMRCURBAN04
+        width: 10
+        length: 10
+        groups: [0, 5]
+      - name: COMRCURBAN05
+        width: 20
+        length: 20
+      - name: COMRCURBAN06
+        width: 20
+        length: 20
+      - name: COMRCURBAN07
+        width: 20
+        length: 20
+      - name: COMRCURBAN08
+        width: 20
+        length: 20
+      - name: COMRCURBAN09
+        width: 20
+        length: 20
+      - name: COMRCURBAN10
+        width: 20
+        length: 20
+      - name: COMRCURBAN11
+        width: 20
+        length: 20
+      - name: COMRCURBAN12
+        width: 20
+        length: 20
+      - name: COMRCURBAN13
+        width: 10
+        length: 10
+        groups: [0, 5]
+      - name: COMRCURBAN14
+        width: 10
+        length: 10
+      - name: COMRCURBAN15
+        width: 10
+        length: 10
+      - name: COMRCURBAN16
+        width: 10
+        length: 10
+      - name: COMRCURBAN17
+        width: 10
+        length: 10
+      - name: COMRCURBAN18
+        width: 10
+        length: 10
+      - name: COMRCURBAN19
+        width: 10
+        length: 10
+        groups: [1, 4]
+      - name: COMRCURBAN20
+        width: 10
+        length: 10
+        groups: [0, 5]
+      - name: COMRCURBAN21
+        width: 10
+        length: 10
+        groups: [0, 5]
+      - name: COMRCURBAN22
+        width: 10
+        length: 10
+      - name: COMRCURBAN23
+        width: 10
+        length: 10
+      - name: COMRCURBAN24
+        width: 20
+        length: 20
+      - name: COMRCURBAN25
+        width: 10
+        length: 10
+      - name: COMRCURBAN26
+        width: 20
+        length: 20
+        groups: [0, 6]
+      - name: COMRCURBAN27
+        width: 20
+        length: 20
+        groups: [0, 7]
+      - name: COMRCURBAN28
+        width: 10
+        length: 10
+        groups: [2]
+      - name: COMRCURBAN29
+        width: 10
+        length: 10
+        groups: [2]
+      - name: COMRCURBAN30
+        width: 10
+        length: 10
+        groups: [3]
+      - name: COMRCURBAN31
+        width: 10
+        length: 10
+        groups: [3]
+      - name: COMRCURBAN32
+        width: 10
+        length: 10
+        groups: [2]
+      - name: COMRCURBAN33
+        width: 10
+        length: 10
+        groups: [3]
+      - name: COMRCURBAN34
+        width: 10
+        length: 10
+        groups: [2]
+      - name: COMRCURBAN35
+        width: 10
+        length: 10
+        groups: [3]
+      - name: COMRCURBAN36
+        width: 10
+        length: 10
+        groups: [2]
+      - name: COMRCURBAN37
+        width: 10
+        length: 10
+        groups: [3]
+      - name: COMRCURBAN38
+        width: 10
+        length: 10
+        groups: [2]
+      - name: COMRCURBAN39
+        width: 10
+        length: 10
+        groups: [3]
+      - name: COMRCURBAN40
+        width: 10
+        length: 10
+      - name: COMRCURBAN41
+        width: 10
+        length: 10
+      - name: COMRCURBAN42
+        width: 20
+        length: 20
+      - name: COMRCURBAN43
+        width: 20
+        length: 20
+      - name: COMRCURBAN44
+        width: 10
+        length: 10
+        groups: [4]
+      - name: COMRCURBAN45
+        width: 10
+        length: 10
+      - name: COMRCURBAN46
+        width: 10
+        length: 10
+      - name: COMRCURBAN47
+        width: 10
+        length: 10
+      - name: COMRCURBAN50
+        width: 10
+        length: 10
+      - name: COMRCURBAN51
+        width: 10
+        length: 10
 
 #sub-terrains
   - name: URBAN_OPERATIONS
@@ -1083,6 +2993,99 @@ terrains:
 
 
 #mission-specific terrains
+  - name: XBASE
+    mapDataSets:
+      - BLANKS
+      - XBASE1
+      - XBASE2
+      - XBASEF1
+      - XBASEF2
+    script: XBASE
+    mapBlocks:
+      - name: XBASE_00
+        width: 10
+        length: 10
+      - name: XBASE_01
+        width: 10
+        length: 10
+      - name: XBASE_02
+        width: 10
+        length: 10
+      - name: XBASE_03
+        width: 10
+        length: 10
+      - name: XBASE_04
+        width: 10
+        length: 10
+      - name: XBASE_05
+        width: 10
+        length: 10
+      - name: XBASE_06
+        width: 10
+        length: 10
+      - name: XBASE_07
+        width: 10
+        length: 10
+      - name: XBASE_08
+        width: 10
+        length: 10
+      - name: XBASE_09
+        width: 10
+        length: 10
+      - name: XBASE_10
+        width: 10
+        length: 10
+      - name: XBASE_11
+        width: 10
+        length: 10
+      - name: XBASE_12
+        width: 10
+        length: 10
+      - name: XBASE_13
+        width: 10
+        length: 10
+      - name: XBASE_14
+        width: 10
+        length: 10
+      - name: XBASE_15
+        width: 10
+        length: 10
+      - name: XBASE_16
+        width: 10
+        length: 10
+      - name: XBASE_17
+        width: 10
+        length: 10
+      - name: XBASE_18
+        width: 10
+        length: 10
+      - name: XBASE_19
+        width: 10
+        length: 10
+      - name: XBASE_20
+        width: 10
+        length: 10
+      - name: XBASF_01
+        width: 10
+        length: 10
+      - name: XBASF_02
+        width: 10
+        length: 10
+      - name: XBASF_03
+        width: 10
+        length: 10
+      - name: XBASF_04
+        width: 10
+        length: 10
+      - name: XBASF_05
+        width: 10
+        length: 10
+      - name: XBASF_06
+        width: 10
+        length: 10
+      - name: XBASF_07
+        width: 10
+        length: 10
   - name: TRANSPORT_EVAC
     mapDataSets:
       - BLANKS

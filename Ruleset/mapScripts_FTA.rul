@@ -1,5 +1,59 @@
 mapScripts: 
 #general terrain scripts
+  - type: FOREST
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 5
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 5
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 3
+      direction: both
+    - type: addBlock
+      size: 2
+      executions: 4
+    - type: fillArea
+  - type: DESERT
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+  - type: MOUNTAIN
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 5
+    - type: fillArea
+  - type: RICE_FARM
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      # executionChances: 50
+      size: 2
+      executions: 1
+    - type: addBlock
+      # executionChances: 50
+      size: [2, 1]
+      executions: 2
+    - type: addBlock
+      # executionChances: 50
+      size: [1, 2]
+      executions: 2
+    - type: fillArea
   - type: RURAL
     commands:
     - type: addCraft
@@ -19,6 +73,54 @@ mapScripts:
     - type: addBlock
       size: 2
       executions: 6
+    - type: fillArea
+  - type: INDUSTRIALSLUM
+    commands:
+    - type: addCraft
+    - type: addUFO
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 25
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      label: 3
+      conditionals: [-1, -2]
+      executionChances: 50
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addLine
+      label: 4
+      conditionals: [-1, -2, -3]
+      direction: vertical
+      executionChances: 50
+      verticalGroup: 7
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 5
+      conditionals: [-1, -2, -3, -4]
+      executionChances: 50
+      direction: both
+      verticalGroup: 7
+      crossingGroup: 8
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: addBlock
+      conditionals: [-3, -5]
+      size: 2
     - type: fillArea
   - type: URBAN_LOW
     commands:
@@ -141,6 +243,82 @@ mapScripts:
       size: 2
       executionChances: 80
     - type: fillArea
+  - type: URBANJUNK
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 20
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 33
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+    - type: addBlock
+      size: 2
+      executions: 4
+    - type: fillArea
+  - type: URBAN
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 33
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 4
+      executionChances: 50
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+  - type: COMRCURBAN
+    commands:
+    - type: addCraft
+    - type: addUFO
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 30
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 45
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+
 #mission specific scripts
   - type: RESISTANCE_FARM
     commands:
