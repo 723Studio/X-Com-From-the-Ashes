@@ -1,7 +1,10 @@
 ‏נףFנ‏ננFFEFנF‏Fנענננ‏סHEננEFנססנ‏עEנHננEנפנננסננףנ‏
-נEננננFננEEסנפננFFFנ‏FFFEנססננףנץנסף‏ףננFEEGנסננףEעףנץEEפננFנננףנGFנEנפננFFFנננננננEEסנףFףנףJננסףננננננננףנץנףףננף‏נ‏נףנץEEנננננננEע‏ף‏נננננEנננEFEס‏HGנFEננFFFננ‏נסFGנ‏סףנÿ‏נףFנ‏ננFFEFנF‏Fנענננ‏סHEנFEFFסFסנ‏עEנHFנEנפנFנסFנףFנ‏
-נEננננFננEEסFנפננFFFנ‏FFFEנסFסFנףFץנFסFFF‏ףננFEEFFסננףFעףנץEEפננFFננFףנGFנEFפננFFFננFFנננFEסנףFףנףJננסFףנFFננFננFנץFFףףננף‏נ‏נףנץFEנFנננFנEע‏ף‏נננננEנננEFEס‏HGנFEFנFFFננ‏נסFGנ‏סףנÿ‏נףFנ‏ננFFEFנF‏FUVעVWננ‏סHEUנFUFVססנ‏עEנHננEנפנננUVנננ‏
-נEנננUVננEנVנVWFנ‏FFFEנVנVWVVWWף‏ףננFEEVVWWEנVVנVVEEפננFנננףנGFנEנVVנVVFFנננננננEEסנףFףנףJננסףנUUVנףנץנףףננף‏נ‏נףנץEEVWUVFננVVV‏ף‏נננVWFUFVUס‏HGנUVננUVFנ‏נסFGנ‏סףנÿ‏נףנ‏ננVVV‏VנVעUנV‏VWננVUUנVUנננ‏VWUנננננWVננUנ‏
+נEננננFננEEסנפננFFFנ‏FFFEנססננףנץנסף‏ףננFEEGנסננףEעףנץEEפננFנננ‏GFנEנפננFFFנננננננEEסנףF‏ננסףננננננננףנץנ‏
+נףנץEEנננננננEע‏נננננEנננEFEס‏HGנFEננFFFננ‏נסFGנ‏סףנÿ‏נףFנ‏ננFFEFנF‏Fנענננ‏סHEנFEFFסFסנ‏עEנHFנEנפנFנסFנףFנ‏
+נEננננFננEEסFנפננFFFנ‏FFFEנסFסFנףFץנFסFFF‏ףננFEEFFסננףFעףנץEEפננFFננF‏GFנEFפננFFFננFFנננFEסנףF‏ננסFףנFFננFננFנץFF‏
+נףנץFEנFנננFנEע‏נננננEנננEFEס‏HGנFEFנFFFננ‏נסFGנ‏סףנÿ‏נףFנ‏ננFFEFנF‏FUVעVWננ‏סHEUנFUFVססנ‏עEנHננEנפנננUVנננ‏
+נEנננUVננEנVנVWFנ‏FFFEנVנVWVVWWף‏ףננFEEVVWWEנVVנVVEEפננFנננ‏GFנEנVVנVVFFנננננננEEסנףF‏ננסףנUUVנףנץנ‏
+נףנץEEVWUVFננVVV‏נננVWFUFVUס‏HGנUVננUVFנ‏נסFGנ‏סףנÿ‏נףנ‏ננVVV‏VנVעUנV‏VWננVUUנVUנננ‏VWUנננננWVננUנ‏
 ננננUVננWUVנUUUססנ‏UUנVנVWנVUנVUVסננף‏UננUVVVWWננUUנפננVV‏נVסנVVנVVנננVף‏VWVנסUננUUVנףנץנ‏
 VVננVWUVנVVVV‏סנףVWVUVUV‏נננUVננUVVW‏UVV‏ףסףÿ‏נףנ‏נWVWWנW‏נWWXWVYYWVVנ‏VVWXWVVXYXXWVנW‏VXWXYXWנVXVYXVWXWנ‏
 נVXYYXYWVVXנVXVסXWסנ‏VWYXWWWVVXYXVנVנעYXWVף‏ףVנVVWXYWWVWVXXXWVVVXYYXWVנננ‏VWYXVVVVXYYWVVXYYXWWVף‏WXVVVסVWXYXVXWVYXWWץVנ‏
@@ -10,16 +13,19 @@ VVננVWUVנVVVV‏סנףVWVUVUV‏נננUVננUVVW‏UVV‏ףסףÿ‏נףנ‏נW
 YY[ףY[Yפ[Zףס‏WXZYYYYXY[\[YףYףף\[ZYץס‏פWסWWXYZYYXעYX[[[ZYYY[\\[ZY	סססס‏WXZZXע	XXZ\\ZYY[\\[ZZXץ‏XYWWXףעYZ[[Y[ZY\[ZZקXע‏
 ססXY[ZX[\Z[[ZYXXX‏עWX[XZ[ZZ[YXף‏WXWYZYXYעע‏	X	ע‏ÿ‏][\^‏\^][^][^‏^\^___^^^^^]‏^[[__^_^]^^]^][^‏_^^__^^^^^]]]]^^]^\[‏
 ]]_^^^^][X_[^\_^[^^__[Z^‏^][]__^]]X]^][]^\]^[^^^^_[^]‏[\^^]]_^^^]\]^]_]]Z^]]]^^_^]][^]‏][\^__^]]\[]]Z^^\[\\]^\^ZX]^‏][__^^]]\]\]]\]_][^^][[^‏
-[Z^^^]]\X\^]\[\]]_[^‏^^Z^][^^\\X]X^][‏]^Z]\^][\X]^‏^[^]\X]]‏\_[^ÿ‏F‏G‏F‏IF‏E‏E‏GנףFנ‏G‏F‏F‏GננFFEFנF‏G‏GFGעEנGנ‏F‏G‏סHIנFGEFGסIסGE‏G‏IעEנHHנEIפGFFסHנףIFנI‏F‏GנHנGננFננHEIFנפננFHFHנG‏FIFEנIFסFנGFHנFסFFGFI‏ףננHEEFFHננףGIעףנGGEפנIFHננFףנGFנEFפננFIFHננFFנIIFEסHנףFףנףJננסFHנFFננFHHFנץFFףףננף‏נ‏נףנץFEנGנננGנEע‏ף‏נננננIננGIFEס‏HGנHGFIFHFננ‏נIסHFGנ‏Hסףנÿ‏‏
+[Z^^^]]\X\^]\[\]]_[^‏^^Z^][^^\\X]X^][‏]^Z]\^][\X]^‏^[^]\X]]‏\_[^ÿ‏F‏G‏F‏IF‏E‏E‏GנףFנ‏G‏F‏F‏GננFFEFנF‏G‏GFGעEנGנ‏F‏G‏סHIנFGEFGסIסGE‏G‏IעEנHHנEIפGFFסHנףIFנI‏F‏GנHנGננFננHEIFנפננFHFHנG‏FIFEנIFסFנGFHנFסFFGFI‏ףננHEEFFHננףGIעףנGGEפנIFHננF‏GFנEFפננFIFHננFFנIIFEסHנףF‏ננסFHנFFננFHHFנץFF‏
+נףנץFEנGנננGנEע‏נננננIננGIFEס‏HGנHGFIFHFננ‏נIסHFGנ‏Hסףנÿ‏‏
 ‏\‏]‏‏E‏^נף]נ‏
 ‏^‏^‏Gננ]]]]ע‏\‏\Gץ	^ף]_‏^‏G‏ס_	\ף	^\פ]_\]‏]‏Iע^_]ף]^ר\
 ]פ]ףצ_]ע]‏F‏^נHע\ףףפפ\_ףקףף]_]]עG‏\_ע_פ
 ^ץ_]_פ	_פ^	]]]I‏ףננ_
 _ףפר\_ק
 
-קפ]\]קף]]_ננFףנG_נפףץ__ץץ]_פ]_]]ע]נף]ףנףJננס]
+קפ]\]קף]]_ננF‏G_נפףץ__ץץ]_פ]_]]ע]נף]‏ננס]
 _
-פ__פף_]_]סץFףףננף‏נ‏נףנץס]ףףפ	^סFף‏ף‏נננננ]סס]\Eס‏נ]^]_ננ‏נ\ס]_נ‏]סףנÿ‏F‏J‏G‏FI‏IJG‏E‏EGJנףHHJG‏F‏J‏J‏GJGFFJIIF‏GJJ‏JGFIFGHHJJJGGנJJ‏HHGJIJIGJKGJIסJGE‏G‏JIJGHHHJIפJLHHHJHHFנI‏F‏GנJHHHנFJKHEIFILJJFJFHנG‏FIFJKJIJJJLGFHנJJLJJGFI‏ףננHEEJLJJJJGIJKJJGLJJIFHננFףנGFנEFJLנJJFJJנFLJLJFLסHנףFףנףJננJLFLHLנFFנJFHHFנץFFףףננף‏נ‏נףנץFEנLJJLGנEע‏ף‏נננננIננGIFEס‏HGנHGFIFHFננ‏נIסHFGנ‏Hסףנÿ‏
+פ__פף_]_]סץF‏
+נףנץס]ףףפ	^סFף‏נננננ]סס]\Eס‏נ]^]_ננ‏נ\ס]_נ‏]סףנÿ‏F‏J‏G‏FI‏IJG‏E‏EGJנףHHJG‏F‏J‏J‏GJGFFJIIF‏GJJ‏JGFIFGHHJJJGGנJJ‏HHGJIJIGJKGJIסJGE‏G‏JIJGHHHJIפJLHHHJHHFנI‏F‏GנJHHHנFJKHEIFILJJFJFHנG‏FIFJKJIJJJLGFHנJJLJJGFI‏ףננHEEJLJJJJGIJKJJGLJJIFHננF‏GFנEFJLנJJFJJנFLJLJFLסHנףF‏ננJLFLHLנFFנJFHHFנץFF‏
+נףנץFEנLJJLGנEע‏נננננIננGIFEס‏HGנHGFIFHFננ‏נIסHFGנ‏Hסףנÿ‏
 	‏ננ	‏ננע
 
 

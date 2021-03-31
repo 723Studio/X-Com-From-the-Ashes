@@ -166,6 +166,7 @@ alienDeployments:
     width: 40
     length: 40
     height: 4
+    isHidden: true
     briefing:
       palette: 0
       background: BACK01.SCR
@@ -322,6 +323,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 6
+    isHidden: true
     briefing:
       textOffset: -16
       background: MIB_CHASE_BACKGROUND.SCR
@@ -645,6 +647,7 @@ alienDeployments:
     width: 60
     length: 60
     height: 6
+    isHidden: true
     briefing:
       textOffset: -16
       background: MIB_CHASE_BACKGROUND.SCR
@@ -815,6 +818,7 @@ alienDeployments:
     width: 30
     length: 80
     height: 6
+    isHidden: true
     briefing:
       textOffset: -16
       background: MIB_TRAP.SCR
@@ -934,6 +938,7 @@ alienDeployments:
     width: 50
     length: 50
     height: 8
+    isHidden: true
     escapeType: 1
     briefing:
       textOffset: -16
@@ -1032,6 +1037,7 @@ alienDeployments:
     width: 50
     length: 50
     height: 8
+    isHidden: true
     markerName: STR_MONSTER_HUNT
     duration: [10, 10]
     despawnPenalty: 300
@@ -1079,6 +1085,7 @@ alienDeployments:
     markerName: STR_MONSTER_HUNT
     duration: [10, 10]
     despawnPenalty: 300
+    isHidden: true
     briefing:
       textOffset: -16
       background: PLACEHOLDER_BACKGROUND.SCR
@@ -1122,6 +1129,7 @@ alienDeployments:
     width: 50
     length: 50
     height: 6
+    isHidden: true
     terrains:
       - URBAN
     shade: 0
@@ -1165,6 +1173,7 @@ alienDeployments:
     width: 50
     length: 50
     height: 6
+    isHidden: true
     terrains:
       - URBAN
     shade: 0
