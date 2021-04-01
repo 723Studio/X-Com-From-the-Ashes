@@ -3091,8 +3091,8 @@ items:
     size: 0.1
     costSell: 6000
     weight: 30
-    bigSprite: 105
-    floorSprite: 105
+    bigSprite: 107
+    floorSprite: 107
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
@@ -3251,7 +3251,7 @@ items:
     categories: [STR_WRECKS]
     name: STR_CORPSE
     size: 0.4
-    costSell: -1000
+    costDispose: -1000
     weight: 40
     floorSprite: 104
     battleType: 11

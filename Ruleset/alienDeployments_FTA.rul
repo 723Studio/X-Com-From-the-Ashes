@@ -439,7 +439,8 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_AP  
 
-  - type: STR_RESISTANCE_FARM
+  - type: STR_RESISTANCE_FARM_ZOMBIE
+    race: STR_ZOMBIES
     civiliansByType:
       STR_MALE_CIVILIAN_FARMER: 2
       STR_FEMALE_CIVILIAN_FARMER: 1
@@ -467,7 +468,7 @@ alienDeployments:
     script: RESISTANCE_FARM
     battleScript: ZOMBIE_ATTACK
     data:
-      - alienRank: 6
+      - alienRank: 5
         lowQty: 5
         highQty: 10
         dQty: 3

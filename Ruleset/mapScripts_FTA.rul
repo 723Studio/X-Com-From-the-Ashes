@@ -382,20 +382,22 @@ mapScripts:
       - [2, 2, 4, 4]
       #habitable
     - type: addUFO
-      executions: 2
+      rects: 
+          - [2, 2, 4, 4]
+      UFOName: STR_RESISTANCE_SHELTER_FARM_RADIO
+    - type: addUFO
       rects: 
           - [2, 2, 4, 4]
       UFOName: STR_RESISTANCE_SHELTER_FARM
     - type: addUFO
-      executionChances: 60
-      executions: 1
+      executionChances: 50
       rects: 
           - [2, 2, 4, 4]
       UFOName: STR_RESISTANCE_SHELTER_FARM
     - type: addBlock
       size: 2
       executions: 2
-      executionChances: 70
+      executionChances: 50
       rects: 
           - [2, 2, 4, 4]
     - type: fillArea #farm filler

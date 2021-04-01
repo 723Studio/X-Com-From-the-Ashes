@@ -35,15 +35,26 @@ units:
     stats:
       tu: 56
       stamina: 90
-      health: 30
+      health: 35
       bravery: 90
-      reactions: 46
+      reactions: 50
       firing: 55
       throwing: 60
       strength: 45
-      psiStrength: 35
+      melee: 40
+      psiStrength: 45
       psiSkill: 0
-      melee: 25
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
     armor: STR_MIB_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -112,17 +123,28 @@ units:
     rank: STR_LIVE_SOLDIER
     altRecoveredUnit: STR_MIB_AGENT
     stats:
-      tu: 60
-      stamina: 94
-      health: 30
+      tu: 56
+      stamina: 90
+      health: 35
       bravery: 90
-      reactions: 49
-      firing: 58
-      throwing: 62
-      strength: 48
-      psiStrength: 38
+      reactions: 50
+      firing: 55
+      throwing: 60
+      strength: 45
+      melee: 40
+      psiStrength: 45
       psiSkill: 0
-      melee: 27
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
     armor: STR_MIB_AGENT_VEST_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -143,16 +165,27 @@ units:
     race: STR_MIB
     stats:
       tu: 64
-      stamina: 88
-      health: 45
-      bravery: 90
-      reactions: 53
+      stamina: 100
+      health: 40
+      bravery: 100
+      reactions: 58
       firing: 68
       throwing: 64
       strength: 44
+      melee: 50
       psiStrength: 45
       psiSkill: 0
-      melee: 50
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
     armor: STR_MIB_SPECOPS_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -217,17 +250,28 @@ units:
     race: STR_MIB
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 95
-      stamina: 150
-      health: 26
-      bravery: 110
-      reactions: 50
-      firing: 60
-      throwing: 0
-      strength: 18
-      psiStrength: 110
+      tu: 64
+      stamina: 100
+      health: 40
+      bravery: 100
+      reactions: 58
+      firing: 68
+      throwing: 64
+      strength: 44
+      melee: 50
+      psiStrength: 45
       psiSkill: 0
-      melee: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
     armor: STR_SEEKER_DRONE_ARMOR
     standHeight: 11
     kneelHeight: 16
@@ -247,15 +291,26 @@ units:
     stats:
       tu: 60
       stamina: 90
-      health: 30
+      health: 45
       bravery: 90
       reactions: 49
       firing: 58
       throwing: 64
       strength: 45
-      psiStrength: 35
-      psiSkill: 0
       melee: 35
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 10
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 5
+      psiStrength: 15
     armor: STR_MIB_ENFORCER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -282,9 +337,20 @@ units:
       firing: 0
       throwing: 0
       strength: 10
-      psiStrength: 100
-      psiSkill: 0
       melee: 75
+      psiStrength: 60
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 15
+      health: 2
+      bravery: 20
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 1
+      melee: 10
+      psiStrength: 4
     armor: STR_FACEHUGGER_ARMOR
     standHeight: 6
     value: 12
@@ -292,7 +358,7 @@ units:
     deathSound: 78
     moveSound: 80
     intelligence: 4
-    aggression: 9
+    aggression: 8
     energyRecovery: 50
     livingWeapon: true
     isLeeroyJenkins: true
@@ -301,25 +367,35 @@ units:
   - type: STR_ZOMBIE_STERILE_TERRORIST
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
-    stats: #TODO
-      tu: 40
-      stamina: 110
+    stats:
+      tu: 55
+      stamina: 120
       health: 124
       bravery: 110
       reactions: 40
       firing: 0
       throwing: 0
       strength: 84
-      psiStrength: 80
-      psiSkill: 0
       melee: 80
-      mana: 70
+      psiStrength: 30
+      psiSkill: 0
+    statsRandom:
+      tu: 3
+      stamina: 5
+      health: 15
+      bravery: 10
+      reactions: 3
+      firing: 0
+      throwing: 0
+      strength: 10
+      melee: 15
+      psiStrength: 4
     armor: STR_ZOMBIE_STERILE_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 4
     intelligence: 3
-    aggression: 6
+    aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
     aggroSound: 75
@@ -329,8 +405,8 @@ units:
   - type: STR_ZOMBIE_GRUBAS_TERRORIST
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
-    stats: #TODO
-      tu: 44
+    stats:
+      tu: 48
       stamina: 150
       health: 184
       bravery: 110
@@ -338,16 +414,26 @@ units:
       firing: 0
       throwing: 0
       strength: 104
-      psiStrength: 80
-      psiSkill: 0
       melee: 90
-      mana: 70
+      psiStrength: 30
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 15
+      health: 20
+      bravery: 10
+      reactions: 3
+      firing: 0
+      throwing: 0
+      strength: 20
+      melee: 10
+      psiStrength: 4
     armor: STR_ZOMBIE_GRUBAS_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 6
-    intelligence: 4
-    aggression: 5
+    intelligence: 3
+    aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
     aggroSound: 75
@@ -368,9 +454,9 @@ units:
       firing: 0
       throwing: 0
       strength: 28
+      melee: 80
       psiStrength: 50
       psiSkill: 0
-      melee: 80
     armor: STR_JABBER_ARMOR
     standHeight: 18
     kneelHeight: 12
@@ -389,17 +475,28 @@ units:
     race: STR_CHUPACABRA
     rank: STR_LIVE_TERRORIST
     stats: #TODO
-      tu: 90
-      stamina: 110
-      health: 30
+      tu: 100
+      stamina: 140
+      health: 35
       bravery: 100
       reactions: 75
       firing: 0
       throwing: 0
       strength: 28
-      psiStrength: 50
-      psiSkill: 0
       melee: 80
+      psiStrength: 60
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 15
+      health: 2
+      bravery: 20
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 1
+      melee: 10
+      psiStrength: 4
     armor: STR_CHUPACABRA_ARMOR
     standHeight: 18
     kneelHeight: 12
@@ -427,9 +524,20 @@ units:
       firing: 40
       throwing: 30
       strength: 30
+      melee: 30
       psiStrength: 35
       psiSkill: 0
-      melee: 30
+    statsRandom:
+      tu: 5
+      stamina: 5
+      health: 2
+      bravery: 10
+      reactions: 3
+      firing: 3
+      throwing: 3
+      strength: 3
+      melee: 3
+      psiStrength: 5
     armor: STR_MALE_CITIZEN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -481,9 +589,20 @@ units:
       firing: 0
       throwing: 0
       strength: 2
-      psiStrength: 40
-      psiSkill: 0
       melee: 80
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 10
+      stamina: 15
+      health: 3
+      bravery: 10
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 1
+      melee: 10
+      psiStrength: 15  
     armor: STR_DOGE_ARMOR
     standHeight: 12
     kneelHeight: 12
@@ -506,9 +625,21 @@ units:
       firing: 40
       throwing: 30
       strength: 30
-      psiStrength: 35
-      psiSkill: 0
       melee: 30
+      psiStrength: 45
+      psiSkill: 0
+      
+    statsRandom:
+      tu: 5
+      stamina: 5
+      health: 2
+      bravery: 10
+      reactions: 3
+      firing: 3
+      throwing: 3
+      strength: 3
+      melee: 3
+      psiStrength: 15
     armor: STR_MALE_POLICE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -765,9 +896,9 @@ units:
       firing: 57
       throwing: 50
       strength: 30
-      psiStrength: 51
-      psiSkill: 0
       melee: 45
+      psiStrength: 45
+      psiSkill: 0
     statsRandom:
       tu: 5
       stamina: 15
@@ -777,8 +908,8 @@ units:
       firing: 12
       throwing: 15
       strength: 10
-      psiStrength: 49
-      melee: 25
+      melee: 20
+      psiStrength: 15
     armor: STR_RESISTANCE_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14 
@@ -841,7 +972,7 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 55
+      tu: 0
       stamina: 0
       health: 30
       bravery: 100
@@ -850,7 +981,7 @@ units:
       throwing: 0
       strength: 0
       psiStrength: 100
-      psiSkill: 85
+      psiSkill: 0
       melee: 0
     armor: STR_RESISTANCE_RADIO_ARMOR
     standHeight: 20
@@ -859,5 +990,8 @@ units:
     intelligence: 7
     aggression: 1
     capturable: false
+    canPanic: false
+    canBeMindControlled: false
+    berserkChance: 0
     showFullNameInAlienInventory: 1
-    value: 200
+    value: 400

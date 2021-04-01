@@ -11,9 +11,9 @@ soldiers:
       firing: 45
       throwing: 35
       strength: 20
-      psiStrength: 0
-      psiSkill: 0
       melee: 20
+      psiStrength: 30
+      psiSkill: 0
       mana: 0
     maxStats:
       tu: 60
@@ -24,9 +24,9 @@ soldiers:
       firing: 70
       throwing: 65
       strength: 40
-      psiStrength: 100
-      psiSkill: 0
+      psiStrength: 60
       melee: 70
+      psiSkill: 0
       mana: 0
     statCaps:
       tu: 90
@@ -50,9 +50,9 @@ soldiers:
       firing: 85
       throwing: 75
       strength: 50
-      psiStrength: 100
-      psiSkill: 100
       melee: 90
+      psiStrength: 60
+      psiSkill: 0
     dogfightExperience:
       bravery: 10
       reactions: 30

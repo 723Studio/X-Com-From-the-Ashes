@@ -370,7 +370,7 @@ globe:
         STR_TERROR_MISSION: 100
     - id: -4
       deployments:
-        STR_RESISTANCE_FARM: 100
+        STR_RESISTANCE_FARM_ZOMBIE: 100
 #GIS  
   polygons:
     - - 1

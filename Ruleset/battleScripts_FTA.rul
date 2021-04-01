@@ -7,14 +7,14 @@ battleScripts:
       unitSide: 1
       maxDifficulty: 3
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER]
+      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #random additional
       executionChances: 40
       packSize: 4
       randomPackSize: true
       unitSide: 1
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
+      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #high diff
       packSize: 6
       randomPackSize: true
