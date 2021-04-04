@@ -10,6 +10,7 @@ soldierTransformation:
     needsCorpseRecovered: false
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
     # transferTime: 72
@@ -38,6 +39,7 @@ soldierTransformation:
     needsCorpseRecovered: false
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
     transferTime: 72
@@ -70,6 +72,7 @@ soldierTransformation:
     needsCorpseRecovered: false
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
     transferTime: 72
@@ -101,6 +104,7 @@ soldierTransformation:
     needsCorpseRecovered: false
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
     transferTime: 72
@@ -130,6 +134,7 @@ soldierTransformation:
     needsCorpseRecovered: false
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
     transferTime: 72

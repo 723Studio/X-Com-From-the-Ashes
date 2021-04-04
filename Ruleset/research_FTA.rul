@@ -411,11 +411,12 @@ research:
   - name: STR_STRANGE_CREATURE_AUTOPSY
     cost: 0
     points: 0
+    spawnedEvent: STR_STRANGE_CREATURE_AUTOPSY
     dependencies:
       - STR_FACEHUGGER_CORPSE
       - STR_ZOMBIE_STERILE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
-      - STR_JABBER_CORPSE
+      - STR_CHUPACABRA_CORPSE
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 72
     points: 17
@@ -884,6 +885,14 @@ research:
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_BIOLAB_PREREQ
+  - name: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
+    hidden: true
+  - name: STR_CREATURES_CONTAINMENT
+    cost: 950
+    points: 50
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
   - name: STR_BIOLAB_STUFF
     hidden: true
   - name: STR_LARGE_RADAR_SYSTEM

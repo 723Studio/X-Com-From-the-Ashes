@@ -244,6 +244,15 @@ ufopaedia:
       - STR_PRISONER_INTERROGATIONS
     text: STR_PRISONER_INTERROGATIONS_UFOPEDIA
     listOrder: 700
+  - id: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
+    type_id: 7
+    image_id: RND_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
+    text: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA
+    listOrder: 700
   - id: STR_MONSTER_HUNT_START
     type_id: 7
     image_id: INTEL_CHIEF_CPAL.SPK
@@ -321,10 +330,10 @@ ufopaedia:
     requires:
       - STR_HELICOPTER
     listOrder: 7000
-  - id: STR_STALKER #TODO
+  - id: STR_RAZOR #TODO
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: STR_STALKER_CPAL.SPK
+    image_id: STR_RAZOR_CPAL.SPK
     rect_stats:
       x: 200
       y: 10
@@ -335,7 +344,7 @@ ufopaedia:
       y: 40
       width: 120
       height: 160
-    text: STR_STALKER_UFOPEDIA
+    text: STR_RAZOR_UFOPEDIA
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 7010
@@ -365,18 +374,30 @@ ufopaedia:
     text: STR_GENERAL_STORES_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
-  - id: STR_BIOLAB
-    type_id: 6
-    section: STR_BASE_FACILITIES
-    text: STR_BIOLAB_UFOPEDIA
-    requires:
-      - STR_BIOLAB
   - id: STR_PRISON_CELLS
     type_id: 6
     section: STR_BASE_FACILITIES
     text: STR_PRISON_CELLS_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
+  - id: STR_CREATURES_CONTAINMENT
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_CREATURES_CONTAINMENT_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+  - id: STR_LABORATORY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_LABORATORY_UFOPEDIA
+    requires:
+      - STR_TODOIUM
+  - id: STR_BIOLAB
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_BIOLAB_UFOPEDIA
+    requires:
+      - STR_BIOLAB
   - id: STR_WORKSHOP
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -407,12 +428,7 @@ ufopaedia:
     text: STR_HANGAR_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
-  - id: STR_LABORATORY
-    type_id: 6
-    section: STR_BASE_FACILITIES
-    text: STR_LABORATORY_UFOPEDIA
-    requires:
-      - STR_TODOIUM
+
   - id: STR_BASE_CONSTRUCTION
     type_id: 8 #TODO image here, so 7
     section: STR_BASE_FACILITIES

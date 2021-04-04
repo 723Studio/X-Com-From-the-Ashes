@@ -1029,7 +1029,6 @@ alienDeployments:
           -
             []
 
-
   - type: STR_JABBER_HUNT_TRAP
     race: STR_JABBER
     # civiliansByType:

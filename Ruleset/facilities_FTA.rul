@@ -29,7 +29,7 @@ facilities:
     buildTime: 40
     monthlyCost: 5000 #20000
     canBeBuiltOver: true
-    storage: 15
+    storage: 10
     storageTiles: 
      - [8, 8, 0]
     labs: 7
@@ -57,7 +57,7 @@ facilities:
     buildTime: 20
     monthlyCost: 25000
     labs: 5
-    storage: 5
+    storage: 3
     storageTiles: [[-1, -1, -1]]
     mapName: XBASF_07
   - type: STR_PRISON_CELLS
@@ -70,10 +70,23 @@ facilities:
     monthlyCost: 8000
     aliens: 10
     prisonType: 1
-    storage: 10
+    storage: 3
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
     mapName: XBASF_03
+    listOrder: 7030
+  - type: STR_CREATURES_CONTAINMENT
+    spriteShape: 1
+    spriteFacility: 306
+    requires:
+      - STR_CREATURES_CONTAINMENT
+    buildCost: 230000
+    buildTime: 20
+    monthlyCost: 10000
+    aliens: 10
+    prisonType: 2
+    rightClickActionType: 1
+    mapName: XBASF_08
     listOrder: 7030
   - type: STR_GYM
     spriteShape: 1
@@ -82,9 +95,9 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 140000
     buildTime: 20
-    monthlyCost: 35000
+    monthlyCost: 5000
     trainingRooms: 10
-    storage: 10
+    storage: 4
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 4
     mapName: XBASF_04
@@ -125,7 +138,6 @@ facilities:
     spriteFacility: 17
     requires:
       - STR_FACILITIES_BLUEPRINTS
-    manaRecoveryPerDay: 1
     lift: true
     buildCost: 300000
     buildTime: 1
@@ -153,7 +165,7 @@ facilities:
     buildCost: 150000
     buildTime: 10
     monthlyCost: 5000
-    storage: 100
+    storage: 80
     storageTiles:
         - [6, 3, 1]
         - [5, 4, 1]
@@ -175,7 +187,7 @@ facilities:
     monthlyCost: 25000
     crafts: 1
     workshops: 5
-    storage: 35
+    storage: 25
     storageTiles: [[-1, -1, -1]]
     mapName: XBASE_16
   - type: STR_LABORATORY

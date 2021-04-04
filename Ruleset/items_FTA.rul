@@ -2603,8 +2603,9 @@ items:
     costSell: 40
     weight: 3
     bigSprite: 388
-    floorSprite: 72 #TODO
-    power: 30
+    floorSprite: 388
+    handSprite: 632
+    power: 20
     battleType: 10
     invWidth: 1
     invHeight: 2
@@ -2633,7 +2634,7 @@ items:
     weight: 22
     bigSprite: 389
     floorSprite: 389
-    handSprite: 632
+    handSprite: 640
     battleType: 3
     meleeHitSound: 55 #70
     meleeAnimation: 0

@@ -3083,6 +3083,9 @@ terrains:
       - name: XBASF_07
         width: 10
         length: 10
+      - name: XBASF_08
+        width: 10
+        length: 10
   - name: TRANSPORT_EVAC
     mapDataSets:
       - BLANKS

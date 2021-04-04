@@ -146,6 +146,13 @@ events:
     timer: 30
     timerRandom: 0
     interruptResearch: STR_BIOLAB_PREREQ
+  - name: STR_STRANGE_CREATURE_AUTOPSY
+    description: STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION
+    #background: STR_RESISTANCE_BACKGROUND.SCR
+    researchList: [STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT]
+    timer: 1440
+    timerRandom: 2880
+    interruptResearch: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
 
 
   # - name: STR_SNIPPET

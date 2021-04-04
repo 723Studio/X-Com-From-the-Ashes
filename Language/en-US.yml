@@ -175,6 +175,8 @@ en-US:
   RandomMana: "Mana dmg RNG?"
   mana: "Mana"
   manaRecoveryPerDay: "Mana per day"
+  stackSize: "Stack size"
+  coneSize: "Light cone size"
   #damage types
   STR_DAMAGE_ARMOR_PIERCING: "KINETIC"
   STR_DAMAGE_MELEE: "CUTTING"
@@ -256,6 +258,7 @@ en-US:
   STR_SICK_BAY: "Sick Bay"
   STR_CLOSED_LAB: "Closed Laboratory"
   STR_BIOLAB: "Bio-laboratory"
+  STR_CREATURES_CONTAINMENT: "Dangerous Creatures Containment"
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "M.I.B. Regional HQ"
@@ -320,6 +323,8 @@ en-US:
   STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: #TODO
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: #TODO
+  STR_STRANGE_CREATURE_AUTOPSY: "Live creature study" #TODO
+  STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION: #TODO
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
   STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
@@ -599,8 +604,8 @@ en-US:
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"
   STR_DRAGONFLY_UFOPEDIA: "To be done" #TODO
-  STR_STALKER: "RAZOR"
-  STR_STALKER_UFOPEDIA: "A small historical reference. During the first test of the aircraft, the pilot accidentally cut off the branches of high-growing trees with his wing during a low-level flight, and someone who watched the tests exclaimed 'Wow, cutted with a razor!'. Since then, the plane has been called the Razor. This jet fighter has excellent flight characteristics and is able to compete on equal terms in air combat with any aircraft. At least with the aircraft we know of..."
+  STR_RAZOR: "RAZOR"
+  STR_RAZOR_UFOPEDIA: "A small historical reference. During the first test of the aircraft, the pilot accidentally cut off the branches of high-growing trees with his wing during a low-level flight, and someone who watched the tests exclaimed 'Wow, cutted with a razor!'. Since then, the plane has been called the Razor. This jet fighter has excellent flight characteristics and is able to compete on equal terms in air combat with any aircraft. At least with the aircraft we know of..."
   STR_HELICOPTER: "HELICOPTER"
   STR_HELICOPTER_UFOPEDIA: #TODO
 
@@ -616,7 +621,7 @@ en-US:
   STR_MILITARY_STATUS_REPORT: "Chief Staff Officer Report"
   STR_MILITARY_STATUS_REPORT_UFOPEDIA: "Status report, Commander! The XCOM squad is set for the next mission! Though recent events have left us rather bruised, and with very few experienced fighters left in the ranks, our new recruits show great promise. Participating in combat actions and continually training at the base will enhance their capabilities and they can be promoted for their accomplishments on the battlefield. Starting at the rank of Squaddie, soldiers can distinguish themselves and they can be assigned a specialization. Our combat training program contains all the necessary courses that will make soldiers noticeably more effective in their chosen area of expertise."
   STR_VEHICLES_STATUS_REPORT: "Vehicles Status"
-  STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have a radar system anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
+  STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our vehicles are repaired, refueled, and ready to use. It's just that we don't have a radar system anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Razor-1 is ready for takeoff. Hopefully, it will get luckier than Razor-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
   STR_PRISONER_INTERROGATIONS: "Prisoner Interrogations"
   STR_PRISONER_INTERROGATIONS_UFOPEDIA: "I am proficient in many forms of interrogating suspects and I believe that this is the most effective way to obtain crucial insights that will help shed light on unfolding events. While some suspects may not have any vital knowledge, I advise you to interrogate all our captives. In addition to strategic intelligence, this will help us determine specific combat features of our enemies and identify their strengths and vulnerabilities. Our prison can hold up to 10 human prisoners, but for more exotic creatures we will have to design suitable containment units according to their biology."
   STR_UFOPEDIA_DECRYPTION: "Ufopaedia decryption"
@@ -649,6 +654,7 @@ en-US:
   STR_BASE_CONSTRUCTION: "New Base Construction"
   STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #TODO
   STR_BIOLAB_UFOPEDIA: #TODO
+  STR_CREATURES_CONTAINMENT_UFOPEDIA: #TODO
   STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_1_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO
@@ -675,7 +681,8 @@ en-US:
   STR_EMPTY_MIB_EARLY_LORE9_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_EMPTY_MIB_EARLY_LORE10: "Some MiB lore article" #TODO
   STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA: "Some general MiB lore here" #TODO
-
+  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: #TODO
+  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: #TODO
 
 #other
   MAP_URBAN: "Urban"

@@ -268,8 +268,8 @@ extraSprites:
       385: Resources/Weapons/Earthbound/Xcom/bigob_LMG.png
       386: Resources/Weapons/Earthbound/Xcom/bigob_LMGClip.png
       387: Resources/Weapons/Earthbound/General/bigob_Machete.png
-      388: Resources/Weapons/Earthbound/Utilities/bigob_MagLite.png
-      389: Resources/Weapons/Earthbound/Utilities/bigob_CombatShield.png
+      388: Resources/Weapons/Earthbound/Utilities/bigob_Flashlight.png
+      389: Resources/Weapons/Earthbound/Utilities/bigob_GreenShield.png
       
       
   - type: FLOOROB.PCK
@@ -353,7 +353,8 @@ extraSprites:
       385: Resources/Weapons/Earthbound/Xcom/floorob_LMG.png
       386: Resources/Weapons/Earthbound/Xcom/floorob_LMGClip.png
       387: Resources/Weapons/Earthbound/General/floorob_Machete.png
-      389: Resources/Weapons/Earthbound/Utilities/floorob_CombatShield.png
+      388: Resources/Weapons/Earthbound/Utilities/floorob_Flashlight.png
+      389: Resources/Weapons/Earthbound/Utilities/floorob_GreenShield.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -424,16 +425,17 @@ extraSprites:
       608: Resources/Weapons/Earthbound/Xcom/handob_HeavyPistolClip.png
       616: Resources/Weapons/Earthbound/Xcom/handob_LMG.png
       624: Resources/Weapons/Earthbound/General/handob_Machete.png
-      632: Resources/Weapons/Earthbound/Utilities/handob_CombatShield.png
+      632: Resources/Weapons/Earthbound/Utilities/handob_Flashlight.png
+      640: Resources/Weapons/Earthbound/Utilities/handob_GreenShield.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
       800: Resources/Crafts/Inticon/Dragonfly_minimized.png
-      801: Resources/Crafts/Inticon/Stalker_minimized.png
-      802: Resources/Crafts/Inticon/Stalker_minimized.png
+      801: Resources/Crafts/Inticon/Razor_minimized.png
+      802: Resources/Crafts/Inticon/Razor_minimized.png
       811: Resources/Crafts/Inticon/Copter_minimized.png
-      812: Resources/Crafts/Inticon/Stalker_dogfight.png
+      812: Resources/Crafts/Inticon/Razor_dogfight.png
       813: Resources/Crafts/Inticon/Copter_dogfight.png
   - type: BASEBITS.PCK
     files:
@@ -443,8 +445,9 @@ extraSprites:
       303: Resources/Facilities/Sick_Bay.png
       304: Resources/Facilities/Closed_Lab.png
       305: Resources/Facilities/Bio_Lab.png
+      306: Resources/Facilities/Bio_Lab.png #TODO - replace art!
       833: Resources/Crafts/Basebits/Dragonfly_base.png
-      834: Resources/Crafts/Basebits/Stalker_base.png
+      834: Resources/Crafts/Basebits/Razor_base.png
       835: Resources/Crafts/Basebits/Copter_base.png
 #interwins
   - type: interception_jammed
@@ -466,12 +469,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Ufopedia/Dragonfly_ufopedia_CPAL.png
-  - type: STR_STALKER_CPAL.SPK
+  - type: STR_RAZOR_CPAL.SPK
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Crafts/Ufopedia/Stalker_ufopedia_CPAL.png
+      0: Resources/Crafts/Ufopedia/Razor_ufopedia_CPAL.png
   - type: STR_HELICOPTER_CPAL.SPK
     singleImage: true
     width: 320
