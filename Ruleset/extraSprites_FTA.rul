@@ -270,6 +270,9 @@ extraSprites:
       387: Resources/Weapons/Earthbound/General/bigob_Machete.png
       388: Resources/Weapons/Earthbound/Utilities/bigob_Flashlight.png
       389: Resources/Weapons/Earthbound/Utilities/bigob_GreenShield.png
+      390: Resources/Weapons/Earthbound/Utilities/bigob_IFAK.png
+      391: Resources/Weapons/Earthbound/Utilities/bigob_Stims_Injector.png
+      392: Resources/Weapons/Earthbound/Utilities/bigob_FireExtinguisher.png
       
       
   - type: FLOOROB.PCK
@@ -355,6 +358,9 @@ extraSprites:
       387: Resources/Weapons/Earthbound/General/floorob_Machete.png
       388: Resources/Weapons/Earthbound/Utilities/floorob_Flashlight.png
       389: Resources/Weapons/Earthbound/Utilities/floorob_GreenShield.png
+      390: Resources/Weapons/Earthbound/Utilities/floorob_IFAK.png
+      391: Resources/Weapons/Earthbound/Utilities/floorob_Stims_Injector.png
+      392: Resources/Weapons/Earthbound/Utilities/floorob_FireExtinguisher.png
       
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -427,6 +433,9 @@ extraSprites:
       624: Resources/Weapons/Earthbound/General/handob_Machete.png
       632: Resources/Weapons/Earthbound/Utilities/handob_Flashlight.png
       640: Resources/Weapons/Earthbound/Utilities/handob_GreenShield.png
+      648: Resources/Weapons/Earthbound/Utilities/handob_IFAK.png
+      656: Resources/Weapons/Earthbound/Utilities/handob_Stims_Injector.png
+      664: Resources/Weapons/Earthbound/Utilities/handob_FireExtinguisher.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

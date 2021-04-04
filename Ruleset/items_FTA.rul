@@ -2475,15 +2475,9 @@ items:
     floorSprite: 354
     handSprite: 504
     battleType: 6
-    invWidth: 2
-    invHeight: 1
-    painKiller: 1
+    medikitType: 2
     heal: 1
-    stimulant: 1
-    woundRecovery: 1
     healthRecovery: 1
-    stunRecovery: 5
-    energyRecovery: 15
     costUse:
       time: 12
       morale: -5
@@ -2533,9 +2527,9 @@ items:
     medikitType: 2
     medikitTargetSelf: true
     isConsumable: true
-    stunRecovery: 10
-    energyRecovery: 42
-    tuUse: 10
+    stunRecovery: 4
+    energyRecovery: 30
+    tuUse: 15
     invWidth: 1
     invHeight: 1
     listOrder: 48000
@@ -2558,7 +2552,7 @@ items:
     woundRecovery: 1
     healthRecovery: 3
     stunRecovery: 5
-    energyRecovery: 36
+    energyRecovery: 25
     costUse:
       time: 20
       morale: -5
@@ -2566,6 +2560,59 @@ items:
     attraction: 5
     experienceTrainingMode: 19
     listOrder: 48150
+  - type: STR_STIMS_INJECTOR
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    requiresBuy:
+        - STR_TODOIUM
+    landOnly: true
+    size: 0.1
+    costBuy: 1600
+    costSell: 1000
+    weight: 2
+    bigSprite: 391
+    floorSprite: 391
+    handSprite: 656
+    hitSound: 74
+    battleType: 6
+    stimulant: 1
+    medikitType: 2
+    medikitTargetSelf: true
+    isConsumable: true
+    stunRecovery: 13
+    energyRecovery: 55
+    tuUse: 19
+    invWidth: 1
+    invHeight: 2
+    listOrder: 48160
+  - type: STR_IFAK
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.4
+    costBuy: 2500
+    costSell: 1500
+    weight: 3
+    landOnly: true
+    bigSprite: 390
+    floorSprite: 390
+    handSprite: 648
+    invWidth: 1
+    invHeight: 2
+    battleType: 6
+    medikitType: 2
+    heal: 2
+    woundRecovery: 2
+    healthRecovery: 4
+    medikitTargetSelf: true
+    isConsumable: true
+    costUse:
+      time: 18
+      morale: -5
+      stun: -3
+    flatRate: false
+    attraction: 5
+    experienceTrainingMode: 19
+    listOrder: 48160
   - type: STR_TRAUMA_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     requiresBuy:
@@ -2584,10 +2631,10 @@ items:
     painKiller: 5
     heal: 5
     stimulant: 5
-    woundRecovery: 1
-    healthRecovery: 3
-    stunRecovery: 8
-    energyRecovery: 42
+    woundRecovery: 2
+    healthRecovery: 4
+    stunRecovery: 10
+    energyRecovery: 35
     costUse:
       time: 18
       morale: -5
@@ -2605,7 +2652,7 @@ items:
     bigSprite: 388
     floorSprite: 388
     handSprite: 632
-    power: 20
+    power: 25
     battleType: 10
     invWidth: 1
     invHeight: 2
@@ -2660,7 +2707,71 @@ items:
     clipSize: 80
     armor: 40
     listOrder: 48160
-    
+  - type: STR_FIRE_EXTINGUISHER
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
+    requiresBuy:
+        - STR_RESISTANCE_STARTING_EQUIPMENT
+    size: 0.2
+    costBuy: 100
+    costSell: 50
+    weight: 9
+    bigSprite: 392
+    floorSprite: 392
+    handSprite: 664
+    bulletSprite: 1
+    fireSound: 114
+    explosionHitSound: 115
+    hitAnimation: 88
+    power: 20
+    hidePower: true
+    accuracyAimed: 100
+    accuracyCloseQuarters: 115
+    tuAimed: 64
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 1
+      ToStun: 0.2
+      ToTime: 0.05
+    battleType: 1
+    costThrow:
+      energy: 18
+    clipSize: 2
+    isFireExtinguisher: true
+    arcingShot: true
+    maxRange: 6
+    invWidth: 2
+    invHeight: 2
+    bulletSpeed: 80
+    #Gun Butt segment
+    meleeHitSound: 55
+    meleeAnimation: 0
+    meleeType: 6
+    meleePower: 15
+    meleeBonus:
+      strength: 0.8
+    meleeAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 2.0
+      ToStun: 1.4
+      ToHealth: 0.3
+      ToTile: 0.25
+    accuracyMelee: 60
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 16
+      energy: 6
+    flatMelee:
+      time: true
+    experienceTrainingMode: 21
+    #Gun Butt segment end
+    attraction: 15
+    listOrder: 140950
+
 #built-in weapons
   - type: STR_UNARMED
     categories: [STR_BUILT_INS, STR_MELEE]

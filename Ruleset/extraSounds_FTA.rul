@@ -60,3 +60,5 @@ extraSounds:
       111: Resources/Weapons/Sounds/Magnumfire.wav
       112: Resources/Weapons/Sounds/SwingAttack.ogg
       113: Resources/Weapons/Sounds/LMGfire.wav
+      114: Resources/Weapons/Sounds/FlameThrower.wav
+      115: Resources/Weapons/Sounds/Ex_Fire.wav
