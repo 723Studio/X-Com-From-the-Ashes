@@ -152,15 +152,11 @@ extended:
           var int faction;
 
           unit.getFaction faction;
-          debug_log unit " is processing in lowering TUs";
-          debug_log faction " units faction";
           if eq faction 0; #don't affect XCOM
-            debug_log faction " its 0, we are dealing with XCOM unit, return";
             return;
           end;
 
           battle_game.difficultyLevel difficulty;
-          debug_log difficulty " difficulty lvl";
           if eq difficulty 0; #DIFF_BEGINNER
             set lower 25;
             set upper 50;
@@ -181,13 +177,9 @@ extended:
             return; # }:>
           end;
           
-          debug_log lower upper " lower upper";
           unit.getTimeUnits unitTUs;
-          debug_log unitTUs " unit original TUs";
           battle_game.randomRange divisor lower upper;
-          debug_log divisor " divisor";
           muldiv unitTUs divisor 100;
-          debug_log unitTUs " unit result TUs";
           unit.setTimeUnits unitTUs;
           return;
 
@@ -1079,10 +1071,15 @@ extended:
           var ptre BattleItem shieldItem;
           var ptr RuleItem damagingRuleset;
           var ptr RuleItem shieldRuleset;
+          var ptr RuleDamageType ruleDamage;
           var int catCheck;
           var int hp;
           var int shieldArmor;
           var int shieldResistCoeff;
+          var int toArmor;
+          var int toItem;
+          var int armorEffect;
+          var int toArmorPre;
           var int unitMelee;
           var int unitReactions;
           var int attackerMelee;
@@ -1095,25 +1092,25 @@ extended:
           shieldRuleset.hasCategory catCheck "STR_SHIELDS";
 
           if eq catCheck 0;
-            unit.getRightHandWeapon shieldItem;
-            shieldItem.getRuleItem shieldRuleset;
-            shieldRuleset.hasCategory catCheck "STR_SHIELDS";
-            if eq catCheck 0;
-              return power part side;
-            end;
+            return power part side;
           end;
 
           # Check which damage type and set shield's 'resistance'
           if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
             if or eq damaging_type 12 eq damaging_type 14 eq damaging_type 15;
-              debug_log "We cant resist damaging_type: " damaging_type;
               return power part side;
             end;
           end;
 
+          if neq side 0;
+            return power part side;
+          end;
+
           shieldItem.getAmmoQuantity hp;
-          debug_log "We are hitting the shield!";
-          debug_log "Original power: " power;
+          if le hp 1;
+            return power part side;
+          end;
+
           # Default resistances for all physical shields
           if eq damaging_type 3; # Explosive
             set shieldResistCoeff 90;
@@ -1126,31 +1123,40 @@ extended:
           else; # All other damage types
             set shieldResistCoeff 100;
           end;
-          debug_log "Shield resistance: " shieldResistCoeff;
+
+          set shieldArmor hp; 
+      
+          damaging_item.getRuleItem damagingRuleset;
+          damagingRuleset.getDamageType ruleDamage;
+          ruleDamage.getDamageToArmor toArmor power;
+          ruleDamage.getDamageToItem toItem power;
+          ruleDamage.getDamageToArmorPre toArmorPre power;
+          ruleDamage.getArmorEffectiveness armorEffect;
+          add toArmor toItem;
+
+          # let's subtract pure damage from power, we will add it in the end
+          sub power toArmorPre;
 
           # Calculate the shield's effectiveness and subtract it from the damage
-          muldiv hp 100 shieldResistCoeff;
+          if gt armorEffect 0;
+            add shieldResistCoeff armorEffect;
+            sub shieldResistCoeff 100;
+          end;
+          muldiv shieldArmor shieldResistCoeff 100;
 
           # Calculate resulting power reduction
-          set shieldArmor hp;
-
-          if or eq side SIDE_LEFT eq side SIDE_RIGHT;
-            div shieldArmor 2;
-          else eq side SIDE_UNDER;
-            div shieldArmor 4;
-          else eq side SIDE_REAR;
-            set shieldArmor 0;
-          end;
-          debug_log "Shield armor: " shieldArmor;
           if gt shieldArmor power;
             set shieldArmor power;
           end;
           
           sub power shieldArmor;
-          debug_log "Power reduction: " shieldArmor;
+
+          #Calculate damage to the shield
+          add shieldArmor toArmor;
           sub hp shieldArmor;
           shieldItem.setAmmoQuantity hp;
-          debug_log "Resulting power " power;
+          # Don't forget to add ToArmorPre in the end!
+          add power toArmorPre;
           return power part side;
 
       - offset: 38    # Handle aim reset

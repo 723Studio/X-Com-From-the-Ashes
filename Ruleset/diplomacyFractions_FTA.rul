@@ -11,6 +11,7 @@ diplomacyFactions:
     stockMod: 10
     startingResearches:
       - STR_RESISTANCE_TECH_TREE_START
+      - STR_RESISTANCE_STARTING_EQUIPMENT
     startingStaff:
       STR_SOLDIER: 10
       #STR_SCIENTIST: 12
@@ -27,11 +28,11 @@ diplomacyFactions:
     #    - STR_TEST
     startingItems:
       STR_MEDI_PACK: 7
-      STR_PROXIMITY_GRENADE: 17
-      STR_FLASHLIGHT: 1
-      STR_PERSONAL_ARMOR: 2
-      STR_STINGRAY_LAUNCHER: 10
-      STR_AVALANCHE_MISSILES: 5
+      # STR_PROXIMITY_GRENADE: 17
+      # STR_FLASHLIGHT: 1
+      # STR_PERSONAL_ARMOR: 2
+      # STR_STINGRAY_LAUNCHER: 10
+      # STR_AVALANCHE_MISSILES: 5
     wishList:
       STR_MEDI_PACK: 90
       STR_PROXIMITY_GRENADE: 60

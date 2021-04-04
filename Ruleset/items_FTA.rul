@@ -1107,6 +1107,8 @@ items:
       firing: 0.25
     damageAlter:
       ArmorEffectiveness: 0.8
+      ToArmor: 0.5
+      ToArmorPre: 0.2
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -2512,7 +2514,7 @@ items:
   - type: STR_STIMS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-        - STR_BASIC_EQUIPMENT_ACQUISITION
+        - STR_RESISTANCE_STARTING_EQUIPMENT
     landOnly: true
     size: 0.1
     costBuy: 500
@@ -2535,6 +2537,8 @@ items:
     listOrder: 48000
   - type: STR_MEDI_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
+    requiresBuy:
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.4
     costBuy: 10000
     costSell: 5000
@@ -2596,8 +2600,8 @@ items:
     bigSprite: 390
     floorSprite: 390
     handSprite: 648
-    invWidth: 1
-    invHeight: 2
+    invWidth: 2
+    invHeight: 1
     battleType: 6
     medikitType: 2
     heal: 2
@@ -2646,8 +2650,8 @@ items:
   - type: STR_FLASHLIGHT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
-    costBuy: 60
-    costSell: 40
+    costBuy: 85
+    costSell: 50
     weight: 3
     bigSprite: 388
     floorSprite: 388
@@ -2674,6 +2678,8 @@ items:
     listOrder: 48160
   - type: STR_COMBAT_SHIELD
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_SHIELDS]
+    requiresBuy:
+      - STR_TODOIUM
     landOnly: true
     costBuy: 6000
     costSell: 4000

@@ -588,12 +588,18 @@ en-US:
   STR_RESISTANCE_BASIC_EQUIPMENT: "Establishing ties with the Resistance has paid off - now we can buy from them some weapons and equipment for our needs! Of course, these guys would be happy to help us completely free of charge, but it should be understood that it’s not so easy to get anything, so we must compensate some associated costs with proportional amount of money. Of course, the equipment we are purchasing is far from cutting-edge technology, but at least it will allow us to maintain the average combat capability of our agents and be ready to conduct various operations."
   STR_MEDI_PACK: "Medipack"
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
+  STR_STIMS_INJECTOR: "Stims Injector"
+  STR_STIMS_INJECTOR_UFOPEDIA: #TODO
+  STR_IFAK: "I.F.A.K"
+  STR_IFAK_UFOPEDIA: "personal first aid kit" #TODO "индивидуальный набор первой помощи"
   STR_TRAUMA_PACK: "Trauma Pack"
   STR_TRAUMA_PACK_UFOPEDIA: "This advanced First Aid Kit holds more healing supplies, is a bit faster to use and recovers a little more Stamina and Stun, but is significantly heavier. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_COMBAT_SHIELD: "Combat Shield"
   STR_COMBAT_SHIELD_UFOPEDIA: "A heavy tactical shield, which grants to its bearer good front protection against any conventional damage. It could be used as stun weapon in a strong trained hand."
   STR_FLASHLIGHT: "Flashlight"
   STR_FLASHLIGHT_UFOPEDIA: "An ordinary flashlight powered by reusable batteries. It shines brightly, but the sparks from the opponent's eyes will shine even brighter if you hit him on the forehead with this heavy tool."
+  STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
+  STR_FIRE_EXTINGUISHER_UFOPEDIA: #TODO
   STR_PUNCH: "Punch"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"

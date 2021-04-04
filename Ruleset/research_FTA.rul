@@ -210,6 +210,9 @@ research:
       - STR_DOUBLE_BARRELED_BUCKSHOT
       - STR_LIQUID_FLAME
       - STR_FIRST_AID
+      - STR_PAINKILLER
+      - STR_STIMS
+      - STR_FIRE_EXTINGUISHER
   - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT
@@ -830,11 +833,30 @@ research:
     points: 20
     needItem: true
     listOrder: 7410
+  - name: STR_PAINKILLER
+    cost: 40
+    points: 15
+    needItem: true
+    listOrder: 7410
+  - name: STR_STIMS
+    cost: 40
+    points: 15
+    needItem: true
+    listOrder: 7410
   - name: STR_MEDI_PACK
     cost: 55
     points: 25
     needItem: true
     listOrder: 7410
+  - name: STR_FIRE_EXTINGUISHER
+    cost: 15
+    points: 10
+    needItem: true
+    listOrder: 7410
+
+
+
+
   - name: STR_MEDI_KIT
     cost: 2100
     points: 200

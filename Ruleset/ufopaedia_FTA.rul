@@ -48,7 +48,7 @@ ufopaedia:
   - delete: STR_MEDI_KIT
   - delete: STR_PSI_AMP
   - delete: STR_STUN_ROD
-  - delete: STR_ELECTRO_FLARE #TODO Add lights to the game, come on!
+  - delete: STR_ELECTRO_FLARE
   - delete: STR_HEAVY_PLASMA
   - delete: STR_HEAVY_PLASMA_CLIP
   - delete: STR_PLASMA_RIFLE
@@ -959,14 +959,14 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
+      - STR_PAINKILLER
     text: STR_PAINKILLER_UFOPEDIA
     listOrder: 21300
   - id: STR_STIMS
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
+      - STR_STIMS
     text: STR_STIMS_UFOPEDIA
     listOrder: 21300
   - id: STR_MEDI_PACK
@@ -976,19 +976,26 @@ ufopaedia:
       - STR_MEDI_PACK
     text: STR_MEDI_PACK_UFOPEDIA
     listOrder: 21300
+  - id: STR_STIMS_INJECTOR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_STIMS_INJECTOR_UFOPEDIA
+    listOrder: 21300
+  - id: STR_IFAK
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_IFAK_UFOPEDIA
+    listOrder: 21300
   - id: STR_TRAUMA_PACK
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_TRAUMA_PACK_UFOPEDIA
-    listOrder: 21300
-  - id: STR_COMBAT_SHIELD
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
-    text: STR_COMBAT_SHIELD_UFOPEDIA
     listOrder: 21300
   - id: STR_FLASHLIGHT
     type_id: 4
@@ -997,6 +1004,29 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FLASHLIGHT_UFOPEDIA
     listOrder: 21300
+  - id: STR_ELECTRO_FLARE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_ELECTRO_FLARE_UFOPEDIA
+    listOrder: 21300
+  - id: STR_COMBAT_SHIELD
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_COMBAT_SHIELD_UFOPEDIA
+    listOrder: 21300
+  - id: STR_FIRE_EXTINGUISHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_FIRE_EXTINGUISHER_UFOPEDIA
+    listOrder: 21300
+
+
 
 #STR_ALIEN_ARTIFACTS 30-44
 
