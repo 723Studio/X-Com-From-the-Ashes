@@ -273,6 +273,9 @@ extraSprites:
       390: Resources/Weapons/Earthbound/Utilities/bigob_IFAK.png
       391: Resources/Weapons/Earthbound/Utilities/bigob_Stims_Injector.png
       392: Resources/Weapons/Earthbound/Utilities/bigob_FireExtinguisher.png
+      393: Resources/Weapons/Earthbound/Xcom/bigob_Minigun.png
+      394: Resources/Weapons/Earthbound/Xcom/bigob_MinigunBelt.png
+      395: Resources/Weapons/Earthbound/Xcom/bigob_MinigunBeltAA.png
       
       
   - type: FLOOROB.PCK
@@ -361,7 +364,10 @@ extraSprites:
       390: Resources/Weapons/Earthbound/Utilities/floorob_IFAK.png
       391: Resources/Weapons/Earthbound/Utilities/floorob_Stims_Injector.png
       392: Resources/Weapons/Earthbound/Utilities/floorob_FireExtinguisher.png
-      
+      393: Resources/Weapons/Earthbound/Xcom/floorob_Minigun.png
+      394: Resources/Weapons/Earthbound/Xcom/floorob_MinigunBelt.png
+      395: Resources/Weapons/Earthbound/Xcom/floorob_MinigunBeltAA.png
+
   - type: HANDOB.PCK #Index step 8
     height: 40
     width: 256
@@ -436,6 +442,7 @@ extraSprites:
       648: Resources/Weapons/Earthbound/Utilities/handob_IFAK.png
       656: Resources/Weapons/Earthbound/Utilities/handob_Stims_Injector.png
       664: Resources/Weapons/Earthbound/Utilities/handob_FireExtinguisher.png
+      672: Resources/Weapons/Earthbound/Xcom/handob_Minigun.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

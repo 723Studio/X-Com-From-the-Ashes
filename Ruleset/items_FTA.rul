@@ -1106,9 +1106,9 @@ items:
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.8
-      ToArmor: 0.5
-      ToArmorPre: 0.2
+      ToArmorPre: 0.01
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -1132,6 +1132,7 @@ items:
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 0.75
+      ToArmorPre: 0.01
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -1573,6 +1574,28 @@ items:
     invHeight: 1
     attraction: 15
     listOrder: 31010
+  - type: STR_LMG_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
+    size: 0.1
+    costSell: 3700
+    weight: 6
+    landOnly: true
+    bigSprite: 386
+    floorSprite: 386
+    hitSound: 22
+    hitAnimation: 26
+    power: 48
+    damageAlter:
+      ArmorEffectiveness: 0.85
+      ToTime: 0.1
+    damageType: 1
+    clipSize: 40
+    battleType: 2
+    armor: 30
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 31010
   - type: STR_LIGHT_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -1628,6 +1651,7 @@ items:
       ArmorEffectiveness: 0.7
       ToTime: 0.15
       ToStun: 0.05
+      ToArmorPre: 0.03
     damageType: 1
     clipSize: 4
     battleType: 2
@@ -1650,6 +1674,8 @@ items:
     hitSound: 13 #81 xcf
     hitAnimation: 26
     power: 25
+    damageAlter:
+      ToTime: 0.05
     shotgunBehavior: 1
     shotgunSpread: 40
     shotgunPellets: 6
@@ -1726,6 +1752,7 @@ items:
       ArmorEffectiveness: 0.7
       ToTime: 0.15
       ToStun: 0.05
+      ToArmorPre: 0.03
     damageType: 1
     clipSize: 4
     battleType: 2
@@ -1745,6 +1772,8 @@ items:
     hitSound: 13 #81 xcf
     hitAnimation: 26
     power: 33
+    damageAlter:
+      ToTime: 0.05
     shotgunBehavior: 1
     shotgunSpread: 40
     shotgunPellets: 6
@@ -1813,6 +1842,7 @@ items:
       ArmorEffectiveness: 0.65
       ToTime: 0.2
       ToStun: 0.2
+      ToArmorPre: 0.05
     clipSize: 6
     battleType: 2
     invWidth: 2
@@ -1834,6 +1864,9 @@ items:
     hitSound: 13 #81 xcf
     hitAnimation: 26
     power: 33
+    damageAlter:
+      ToTime: 0.1
+      ToStun: 0.03
     shotgunBehavior: 1
     shotgunSpread: 40
     shotgunPellets: 8
@@ -1907,7 +1940,10 @@ items:
     hitAnimation: 26
     power: 88
     damageAlter:
-      ArmorEffectiveness: 0.75
+      ArmorEffectiveness: 0.65
+      ToTime: 0.2
+      ToStun: 0.2
+      ToArmorPre: 0.05
     damageType: 1
     clipSize: 6
     battleType: 2
@@ -1927,6 +1963,9 @@ items:
     hitSound: 13 #81 xcf
     hitAnimation: 26
     power: 42
+    damageAlter:
+      ToTime: 0.1
+      ToStun: 0.03
     shotgunBehavior: 1
     shotgunSpread: 40
     shotgunPellets: 8
@@ -1996,6 +2035,7 @@ items:
       ArmorEffectiveness: 0.75
       ToTime: 0.1
       ToStun: 0.05
+      ToArmorPre: 0.02
     clipSize: 14
     battleType: 2
     invWidth: 2
@@ -2014,6 +2054,8 @@ items:
     hitSound: 13 #81 xcf
     hitAnimation: 26
     power: 28
+    damageAlter:
+      ToTime: 0.05
     shotgunBehavior: 1
     shotgunSpread: 50
     shotgunPellets: 6
@@ -2090,6 +2132,7 @@ items:
       ArmorEffectiveness: 0.75
       ToTime: 0.1
       ToStun: 0.05
+      ToArmorPre: 0.02
     damageType: 1
     clipSize: 14
     battleType: 2
@@ -2109,6 +2152,8 @@ items:
     hitSound: 13 #81 xcf
     hitAnimation: 26
     power: 37
+    damageAlter:
+      ToTime: 0.05
     shotgunBehavior: 1
     shotgunSpread: 50
     shotgunPellets: 6
@@ -2119,6 +2164,91 @@ items:
     invHeight: 1
     attraction: 9
     listOrder: 23360
+  - type: STR_MINIGUN
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.6
+    costBuy: 33000
+    costSell: 10000
+    weight: 29
+    bigSprite: 393
+    floorSprite: 393
+    handSprite: 672
+    bulletSprite: 3
+    fireSound: 68 #12 vanilla 78 xcf
+    compatibleAmmo:
+      - STR_MINIGUN_CLIP
+      - STR_MINIGUN_AA_CLIP
+    accuracyCloseQuarters: 33
+    accuracyAuto: 25
+    tuAuto: 45
+    tuLoad: 30
+    dropoff: 2
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoRange: 20
+    autoShots: 16
+    sprayWaypoints: 2
+    bulletSpeed: -30
+    kneelBonus: 200
+    attraction: 26
+    listOrder: 30780
+  - type: STR_MINIGUN_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.3
+    costBuy: 3000
+    costSell: 2400
+    weight: 14
+    bigSprite: 394
+    floorSprite: 394
+    hitSound: 22
+    hitAnimation: -1
+    power: 42
+    damageAlter:
+      ArmorEffectiveness: 0.85
+      ToTime: 0.15
+      ToArmorPre: 0.01
+    damageType: 1
+    clipSize: 120
+    battleType: 2
+    armor: 30
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    explosionSpeed: 5
+    attraction: 15
+    listOrder: 30790
+  - type: STR_MINIGUN_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
+    size: 0.3
+    costSell: 93000
+    weight: 15
+    bigSprite: 395
+    floorSprite: 395
+    hitSound: 22
+    hitAnimation: -1
+    power: 55
+    damageAlter:
+      ArmorEffectiveness: 0.85
+      ToTime: 0.15
+      ToArmorPre: 0.01
+    damageType: 1
+    clipSize: 120
+    battleType: 2
+    armor: 30
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    explosionSpeed: 5
+    attraction: 15
+    listOrder: 30800
 #launchers
   - type: STR_SINGLE_ROCKET_LAUNCHER #TODO balance here
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]

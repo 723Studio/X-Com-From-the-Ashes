@@ -253,12 +253,18 @@ en-US:
   STR_MIB_CHASING_SLIDE2_CAPTION: "Some fancy text here too!" #TODO
 #facilities
   STR_HQ: "Headquarters"
+  STR_HQ_UFOPEDIA: "STR_HQ_UFOPEDIA"
   STR_PRISON_CELLS: "Prison Cells"
+  STR_PRISON_CELLS_UFOPEDIA: "STR_PRISON_CELLS_UFOPEDIA"
   STR_GYM: "Training Center"
+  STR_GYM_UFOPEDIA: "STR_GYM_UFOPEDIA" #TODO
   STR_SICK_BAY: "Sick Bay"
+  STR_SICK_BAY_UFOPEDIA: #TODO
   STR_CLOSED_LAB: "Closed Laboratory"
   STR_BIOLAB: "Bio-laboratory"
+  STR_BIOLAB_UFOPEDIA: #TODO
   STR_CREATURES_CONTAINMENT: "Dangerous Creatures Containment"
+  STR_CREATURES_CONTAINMENT_UFOPEDIA: #TODO
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "M.I.B. Regional HQ"
@@ -279,7 +285,6 @@ en-US:
   STR_LOCALS_TRAP: #TODO
   STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
   STR_MIB_CHASING_BRIEFING: #TODO
-
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
   STR_CHASING_MIB_DESCRIPTION: #TODO
@@ -343,7 +348,6 @@ en-US:
   STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: #TODO
-
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "M.I.B. Agent"
@@ -407,7 +411,6 @@ en-US:
   STR_CHUPACABRA_AUTOPSY_UFOPEDIA: "STR_JABBER_AUTOPSY_UFOPEDIA" #TODO
   STR_CHUPACABRA_ARMOR: "Jabber Combat Analysis"
   STR_CHUPACABRA_ARMOR_UFOPEDIA: STR_JABBER_ARMOR_UFOPEDIA #TODO
-  
 #other units
   STR_RESISTANCE_SOLDIER: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_CORPSE: "Resistance Soldier Corpse"
@@ -421,7 +424,6 @@ en-US:
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
   STR_FEMALE_CIVILIAN_FARMER: "Farmer"
   STR_FEMALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
-
 #categories
   STR_MELEE: "Melee Weapons"
   STR_PISTOLS: "Pistols"
@@ -451,7 +453,6 @@ en-US:
   STR_CONCEALABLE: "All Concealable"
   STR_HUMAN_TECH: "All Human Tech"
   STR_XCOM_TECH: "All X-Com Tech"
-
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
   STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knock out unarmored enemies.{NEWLINE}>Concealable" 
@@ -533,6 +534,7 @@ en-US:
   STR_LMG: "Light Machine Gun"
   STR_LMG_UFOPEDIA: "This squad automatic weapon is equipped with a bipod and designed for operating by one soldier. A high rate of fire and slight armor piercing capability makes LMG an excellent infantry support weapon." 
   STR_LMG_CLIP: "LMG Ammo Belt"
+  STR_LMG_AA_CLIP: "LMG AA-Ammo Belt"
   STR_LIGHT_CANNON: "Light Cannon"
   STR_LIGHT_CANNON_UFOPEDIA: "This high-caliber hand weapon can use armor-piercing, buckshot, high-explosive and incendiary ammo. It has great stopping power and it's AP rounds can penetrate medium armor."
   STR_LIGHT_CANNON_CONT: "Light Cannon (Continued)"
@@ -560,6 +562,10 @@ en-US:
   STR_AC_I_AMMO: "AC-I Clip"
   STR_AC_AA_AMMO: "AC-AA-AP Clip"
   STR_AC_AA_BS_AMMO: "AC-AA-BS Clip"
+  STR_MINIGUN: "Minigun"
+  STR_MINIGUN_CLIP: "Minigun Ammo Belt"
+  STR_MINIGUN_AA_CLIP: "Minigun AA-Ammo Belt"
+  STR_MINIGUN_UFOPEDIA: "Military four-barrel rotary machine gun with extremely high rate of fire. Considerable muscle power is required to carry and operate this intimidating weapon. It has been proven effective in suppressing the enemy."
   STR_SINGLE_ROCKET_LAUNCHER: "Single Rocket Launcher"
   STR_SINGLE_ROCKET_UFOPEDIA: "This portable single charge launcher fires an unguided rocket that causes significant damage to enemy troops and light armored vehicles."
   STR_ROCKET_LAUNCHER: "Rocket Launcher"
@@ -585,7 +591,6 @@ en-US:
   STR_PAINKILLER_UFOPEDIA: "These pills quickly alleviate pain-related effects on an agent's performance.{NEWLINE}>Concealable"
   STR_STIMS: "Stims"
   STR_STIMS_UFOPEDIA: "Stims help to restore agent's energy and may force an incapacitated person to regain consciousness.{NEWLINE}>Concealable"
-  STR_RESISTANCE_BASIC_EQUIPMENT: "Establishing ties with the Resistance has paid off - now we can buy from them some weapons and equipment for our needs! Of course, these guys would be happy to help us completely free of charge, but it should be understood that it’s not so easy to get anything, so we must compensate some associated costs with proportional amount of money. Of course, the equipment we are purchasing is far from cutting-edge technology, but at least it will allow us to maintain the average combat capability of our agents and be ready to conduct various operations."
   STR_MEDI_PACK: "Medipack"
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_STIMS_INJECTOR: "Stims Injector"
@@ -606,7 +611,6 @@ en-US:
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
   STR_LEATHER_COAT_UC: "LEATHER COAT"
-
 #crafts
   STR_DRAGONFLY: "DRAGONFLY"
   STR_DRAGONFLY_UFOPEDIA: "To be done" #TODO
@@ -614,8 +618,8 @@ en-US:
   STR_RAZOR_UFOPEDIA: "A small historical reference. During the first test of the aircraft, the pilot accidentally cut off the branches of high-growing trees with his wing during a low-level flight, and someone who watched the tests exclaimed 'Wow, cutted with a razor!'. Since then, the plane has been called the Razor. This jet fighter has excellent flight characteristics and is able to compete on equal terms in air combat with any aircraft. At least with the aircraft we know of..."
   STR_HELICOPTER: "HELICOPTER"
   STR_HELICOPTER_UFOPEDIA: #TODO
-
 #ufopedia
+  STR_TACTICAL_ANALYSIS: "Tactical Analysis"
   STR_LOG1: "Commander log #001"
   STR_LOG1_UFOPEDIA: "As a senior officer, I took command. I hope I'm experienced enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, the remaining men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation overall is hardly better - we have lost the funding and supply source and know very little about our enemy. Apparently, alien agents have infiltrated deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to do. We need to get reports from the chiefs of research, intelligence and logistics. I have already submitted orders, it will take several hours for analysis. After that, it will be possible to plan further actions."
   STR_RND_STATUS_REPORT: "R&D Status Report"
@@ -651,6 +655,10 @@ en-US:
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: STR_MONSTER_HUNT_RUMORS_UFOPEDIA #TODO
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
+  STR_RESISTANCE_STARTING_EQUIPMENT: "Resistance Equipment"
+  STR_RESISTANCE_STARTING_EQUIPMENT_UFOPEDIA: "Establishing ties with the Resistance has paid off - now we can buy from them some weapons and equipment for our needs! Of course, these guys would be happy to help us completely free of charge, but it should be understood that it’s not so easy to get anything, so we must compensate some associated costs with proportional amount of money. Of course, the equipment we are purchasing is far from cutting-edge technology, but at least it will allow us to maintain the average combat capability of our agents and be ready to conduct various operations."
+  STR_RESISTANCE_BASIC_EQUIPMENT: "Resistance Military Equipment"
+  STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA: STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA #TODO
   STR_SUPPLIES: "Supplies"
   STR_SUPPLIES_UFOPEDIA: "In the current circumstances we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project voluntarily, as long as we take care of providing them with everything they need to work, and it would be good to keep the morale high."
   STR_LOYALTY: "Loyalty"
@@ -659,8 +667,8 @@ en-US:
   STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segments containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to get it."
   STR_BASE_CONSTRUCTION: "New Base Construction"
   STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #TODO
-  STR_BIOLAB_UFOPEDIA: #TODO
-  STR_CREATURES_CONTAINMENT_UFOPEDIA: #TODO
+  STR_UNDERWATER_BASES: "Underwater Bases"
+  STR_UNDERWATER_BASES_UFOPEDIA: "STR_UNDERWATER_BASES_UFOPEDIA" #TODO
   STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_1_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO
@@ -689,7 +697,6 @@ en-US:
   STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: #TODO
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: #TODO
-
 #other
   MAP_URBAN: "Urban"
   MAP_URBAN_LOW: "Urban Low"
@@ -725,24 +732,4 @@ en-US:
   MAP_RICE_FARM: "Rice Farm"
   MAP_RURAL: "Rural"
   MAP_XOPSDESERT_NOCACTI: "African Desert"
-  MAP_INDUSTRIALSLUM: "Postindustrial"
-
-  # WIP STRINGS
-  # REFERENCES TO SATISFY THE WARNINGS OF OPENXCOM.LOG
-  STR_TACTICAL_ANALYSIS: "STR_TACTICAL_ANALYSIS"
-  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: "STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT"
-  STR_RESISTANCE_STARTING_EQUIPMENT: "STR_RESISTANCE_STARTING_EQUIPMENT"
-  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: "STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA"
-  STR_RESISTANCE_STARTING_EQUIPMENT_UFOPEDIA: "STR_RESISTANCE_STARTING_EQUIPMENT_UFOPEDIA"
-  STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA: "STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA"
-  STR_HELICOPTER_UFOPEDIA: "STR_HELICOPTER_UFOPEDIA"
-  STR_HQ_UFOPEDIA: "STR_HQ_UFOPEDIA"
-  STR_PRISON_CELLS_UFOPEDIA: "STR_PRISON_CELLS_UFOPEDIA"
-  STR_CREATURES_CONTAINMENT_UFOPEDIA: "STR_CREATURES_CONTAINMENT_UFOPEDIA"
-  STR_BIOLAB_UFOPEDIA: "STR_BIOLAB_UFOPEDIA"
-  STR_GYM_UFOPEDIA: "STR_GYM_UFOPEDIA"
-  STR_UNDERWATER_BASES: "STR_UNDERWATER_BASES"
-  STR_UNDERWATER_BASES_UFOPEDIA: "STR_UNDERWATER_BASES_UFOPEDIA"
-  STR_DAMAGE_ELECTRIC_UFOPEDIA: "STR_DAMAGE_ELECTRIC_UFOPEDIA"
-  STR_FIRE_EXTINGUISHER_UFOPEDIA: "STR_FIRE_EXTINGUISHER_UFOPEDIA"
-  STR_STIMS_INJECTOR_UFOPEDIA: "STR_STIMS_INJECTOR_UFOPEDIA"
+  MAP_INDUSTRIALSLUM: "Postindustrial" 

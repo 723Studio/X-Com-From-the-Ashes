@@ -264,7 +264,12 @@ research:
     cost: 900
     points: 5
     dependencies:
-      - STR_ALLOY_AMMO         
+      - STR_ALLOY_AMMO      
+  - name: STR_LMG_AA_CLIP
+    cost: 920
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO     
   - name: STR_LC_AA_AMMO
     cost: 950
     points: 5
@@ -280,6 +285,12 @@ research:
     points: 5
     dependencies:
       - STR_ALLOY_AMMO     
+  - name: STR_MINIGUN_AA_CLIP
+    cost: 1000
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO  
+ 
 
   - name: STR_PSIONIC
     cost: 8000

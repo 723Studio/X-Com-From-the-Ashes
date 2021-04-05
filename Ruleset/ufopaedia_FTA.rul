@@ -374,6 +374,12 @@ ufopaedia:
     text: STR_GENERAL_STORES_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
+  - id: STR_SICK_BAY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_SICK_BAY_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
   - id: STR_PRISON_CELLS
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -762,6 +768,11 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
+  - id: STR_LMG_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_LMG_AA_CLIP
+    section: STR_NOT_AVAILABLE
   - id: STR_LIGHT_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -888,6 +899,23 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_AC_AA_AMMO
+  - id: STR_MINIGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_MINIGUN_UFOPEDIA
+    listOrder: 21300
+  - id: STR_MINIGUN_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+  - id: STR_MINIGUN_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_MINIGUN_AA_CLIP
+    section: STR_NOT_AVAILABLE
 #launchers
   - id: STR_SINGLE_ROCKET_LAUNCHER
     type_id: 4
