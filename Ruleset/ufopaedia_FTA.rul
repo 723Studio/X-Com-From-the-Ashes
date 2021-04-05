@@ -1253,105 +1253,105 @@ ufopaedia:
     text: STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA
     listOrder: 20300
   - id: STR_DAMAGE_ARMOR_PIERCING_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA
     requires:
       - STR_DAMAGE_ARMOR_PIERCING
     listOrder: 20300
   - id: STR_DAMAGE_INCENDIARY_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_INCENDIARY_UFOPEDIA
     requires:
       - STR_DAMAGE_INCENDIARY
     listOrder: 20300
   - id: STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA
     requires:
       - STR_DAMAGE_HIGH_EXPLOSIVE
     listOrder: 20300
   - id: STR_DAMAGE_LASER_BEAM_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_LASER_BEAM_UFOPEDIA
     requires:
       - STR_DAMAGE_LASER_BEAM
     listOrder: 20300
   - id: STR_DAMAGE_PLASMA_BEAM_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA
     requires:
       - STR_DAMAGE_PLASMA_BEAM
     listOrder: 20300
   - id: STR_DAMAGE_STUN_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_STUN_UFOPEDIA
     requires:
       - STR_DAMAGE_STUN
     listOrder: 20300
   - id: STR_DAMAGE_MELEE_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_MELEE_UFOPEDIA
     requires:
       - STR_DAMAGE_MELEE
     listOrder: 20300
   - id: STR_DAMAGE_ACID_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_ACID_UFOPEDIA
     requires:
       - STR_DAMAGE_ACID
     listOrder: 20300
   - id: STR_DAMAGE_SMOKE_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_SMOKE_UFOPEDIA
     requires:
       - STR_DAMAGE_SMOKE
     listOrder: 20300
   - id: STR_DAMAGE_EMP_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_EMP_UFOPEDIA
     requires:
       - STR_DAMAGE_10
     listOrder: 20300
   - id: STR_DAMAGE_ELECTRIC_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_ELECTRIC_UFOPEDIA
     requires:
       - STR_DAMAGE_11
     listOrder: 20300
   - id: STR_DAMAGE_PSI_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_PSI_UFOPEDIA
     requires:
       - STR_DAMAGE_12
     listOrder: 20300
   - id: STR_DAMAGE_WARP_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_WARP_UFOPEDIA
     requires:
       - STR_DAMAGE_13
     listOrder: 20300
   - id: STR_DAMAGE_PRESSURE_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_PRESSURE_UFOPEDIA
     requires:
       - STR_DAMAGE_14
     listOrder: 20300
   - id: STR_DAMAGE_BIO_TOPIC
-    type_id: 5
+    type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_BIO_UFOPEDIA
     requires:
