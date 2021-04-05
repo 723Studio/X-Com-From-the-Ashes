@@ -333,7 +333,7 @@ ufopaedia:
   - id: STR_RAZOR #TODO
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: STR_RAZOR_CPAL.SPK
+    image_id: WIP_UFOPEDIA.SPK # STR_RAZOR_CPAL.SPK
     rect_stats:
       x: 200
       y: 10
