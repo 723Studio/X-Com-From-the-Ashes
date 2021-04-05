@@ -244,6 +244,7 @@ armors:
 #Zombies
   - type: STR_FACEHUGGER_ARMOR
     spriteSheet: FACEHUGGER.PCK
+    spriteInv: inventory_ZOMBIE # TODO # replace dummy
     corpseBattle:
       - STR_FACEHUGGER_CORPSE #TODO
     visibilityAtDark: 16
