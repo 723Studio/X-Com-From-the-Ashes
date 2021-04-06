@@ -79,7 +79,6 @@ ufopaedia:
   - delete: STR_PSIONIC_LABORATORY
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_HANGAR
-
   - delete: STR_ALIEN_HARVEST
   - delete: STR_ALIEN_INFILTRATION
   - delete: STR_ALIEN_TERROR

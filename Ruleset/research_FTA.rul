@@ -20,7 +20,7 @@ research:
 #   - delete: STR_STUN_ROD
 #   - delete: STR_COMMANDER_PLUS
 #technical part
-  - name: STR_HELLO #hardcoded, do not rename! used to start the game property
+  - name: STR_LOG1 #hardcoded, do not rename! used to start the game property
     hidden: true
   - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at something not available to be discovered in the game
     hidden: true
@@ -32,10 +32,6 @@ research:
     hidden: true 
   - name: STR_NONE
 #story 
-  - name: STR_STORY_1
-    hidden: true
-  - name: STR_LOG1
-    hidden: true
   - name: STR_RND_STATUS_REPORT
     hidden: true
   - name: STR_INTEL_STATUS_REPORT

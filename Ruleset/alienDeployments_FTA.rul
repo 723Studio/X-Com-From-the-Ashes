@@ -8,7 +8,7 @@ alienDeployments:
     terrains:
       - XBASE
     shade: 5
-    unlockedResearch: STR_HELLO #heh, whatever
+    unlockedResearch: STR_LOG1 #HARDCODED, DO NOT RENAME!
     briefing:
       palette: 0
       background: BACK01.SCR
