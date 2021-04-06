@@ -47,12 +47,12 @@ items:
     damageAlter:
       RandomType: 2
       ArmorEffectiveness: 1.45
-      ToStun: 2
+      ToStun: 2.1
       ToHealth: 0.4
       ToTile: 0.2
     accuracyMelee: 100
     meleeMultiplier:
-      melee: 1.0
+      melee: 1.1
     costMelee:
       time: 8
       energy: 3
@@ -94,7 +94,7 @@ items:
     accuracyMelee: 85
     flatRate: true
     meleeMultiplier:
-      melee: 1.1
+      melee: 1.2
     costMelee:
       time: 7
       energy: 2
@@ -133,7 +133,7 @@ items:
     accuracyMelee: 75
     flatRate: true
     meleeMultiplier:
-      melee: 0.9
+      melee: 1.0
     costMelee:
       time: 10
       energy: 2
@@ -164,11 +164,11 @@ items:
     power: 30
     damageType: 7
     damageBonus:
-      strength: 0.4
+      strength: 0.45
       melee: 0.4
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.45
+      ArmorEffectiveness: 1.2
       ToTile: 0.2
     accuracyMelee: 70
     meleeMultiplier:
@@ -205,7 +205,7 @@ items:
     fireSound: 39
     hitSound: 95
     hitAnimation: 26
-    power: 5
+    power: 8
     damageType: 7
     damageBonus:
       throwing: [0.0, 0.01]
@@ -213,10 +213,10 @@ items:
       RandomType: 2
       ArmorEffectiveness: 1.5
       ToTile: 0.2
-    accuracySnap: 70
+    accuracySnap: 75
     accuracyMultiplier:
-      firing: 0.2
-      throwing: 0.8
+      firing: 0.1
+      throwing: 0.93
     costSnap:
       time: 20
       energy: 10
@@ -1461,11 +1461,12 @@ items:
     handSprite: 304
     hitSound: 13
     hitAnimation: 26
-    power: 32
+    power: 34
     damageAlter:
-      ToHealth: 0.2
+      ToHealth: 0.30
+      ToStun: 0.3
       ToWound: 0
-      ToTile: 0.05
+      ToTile: 0.02
       ArmorEffectiveness: 1.2
     damageType: 6
     blastRadius: 0
@@ -2401,26 +2402,37 @@ items:
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
+      - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.1
     costBuy: 250
     costSell: 200
     weight: 4
+    battleType: 1
     bigSprite: 353
     floorSprite: 353
     handSprite: 496
-    power: 35
+    bulletSprite: 18
+    fireSound: 39
+    hitSound: 116
+    damageType: 2
+    power: 25
     damageAlter:
       ToMorale: 15.0
-    costThrow:
-      energy: 6
-    costPrime:
+    clipSize: -1
+    accuracyAimed: 100
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    costAimed:
       time: 45
-    costUnprime:
-      time: 60
-    unprimeActionName: STR_UNPRIME_GRENADE
-    damageType: 2
-    battleType: 4
+      energy: 6
+    confAimed:
+      name: "STR_FIRE_AND_THROW"
+    arcingShot: true
+    maxRange: 20
+    kneelBonus: 100
+    experienceTrainingMode: 8
     armor: 20
     attraction: 6
     listOrder: 38400
@@ -2733,7 +2745,7 @@ items:
     invWidth: 2
     invHeight: 1
     battleType: 6
-    medikitType: 2
+    medikitType: 1
     heal: 2
     woundRecovery: 2
     healthRecovery: 4

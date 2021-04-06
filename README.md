@@ -27,6 +27,7 @@ I would like to give special thanks to the contributors to my project (in order 
 * **Ruslan Makovkin** - unit inventory and ufopedia image assets;
 * **DaManWithGun** - lore articles, stylistic and grammar changes in English localization;
 * **pedroterzero** - help with cone lightning engine feature development;
+* **Buscher** - great help with testing, fixing bugs in the engine code and rulesets.
 
 ## Support
 I realize I have a tremendous amount of work to do. I'll be happy to have any kind of support. Visit my [Discord server](https://discord.gg/epmtzH9), share your thoughts, ideas, and suggestions. You make an issue here on GitHub, or if you want to get involved in development - write to me, I will be glad of any help. Feel free to make fork and pull requests or propose changes directly.

@@ -138,6 +138,7 @@ en-US:
   STR_INCOMING_ALLY_REINFORCEMENTS: "Our reinforcements arrived!"
   STR_ITEMS_RECOVERED: "ITEMS RECOVERED"
   STR_OBJECTIVE_SECURED: "OBJECTIVE SECURED"
+  STR_ALIENS_KILLED: "ENEMIES KILLED" #TODO change after code fixed !
   STR_LIVE_ALIENS_SURRENDERED: "LIVE ENEMIES SURRENDERED" #TODO change after code fixed !
   STR_LIVE_ALIENS_RECOVERED: "LIVE ENEMIES RECOVERED"
   STR_ALIEN_CORPSES_RECOVERED: "ENEMY CORPSES RECOVERED"
@@ -177,7 +178,7 @@ en-US:
   manaRecoveryPerDay: "Mana per day"
   stackSize: "Stack size"
   coneSize: "Light cone size"
-  #damage types
+#damage types
   STR_DAMAGE_ARMOR_PIERCING: "KINETIC"
   STR_DAMAGE_MELEE: "CUTTING"
   STR_DAMAGE_NONE: "SPECIAL"
@@ -243,6 +244,7 @@ en-US:
   STR_ASSAULT_TRAINING: "Assault Specialization"
   STR_RANGER_TRAINING: "Ranger Specialization"
   STR_SPECIALIST_TRAINING: "Support Specialization"
+  STR_FIRE_AND_THROW: "Fire and throw it."
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of its members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and they are trying to cover up any traces of their activity."
   STR_INTRO2_SLIDE2_CAPTION: "The Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by M.I.B. agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
@@ -272,6 +274,7 @@ en-US:
   STR_MIB_REGIONAL_HQ_DESCRIPTION: STR_MIB_REGIONAL_HQ_DESCRIPTION #TODO
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_RESISTANCE_FARM: "Resistance Heaven"
+  STR_RESISTANCE_HEAVEN: "Resistance Heaven"
   STR_RESISTANCE_HEAVEN_ATTACKED: "Resistance Heaven Attacked"
   STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION #TODO
   STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: STR_RESISTANCE_ZOMBIE_FARM_BRIEFING #TODO
@@ -595,7 +598,7 @@ en-US:
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_STIMS_INJECTOR: "Stims Injector"
   STR_STIMS_INJECTOR_UFOPEDIA: #TODO
-  STR_IFAK: "I.F.A.K"
+  STR_IFAK: "I.F.A.K."
   STR_IFAK_UFOPEDIA: "personal first aid kit" #TODO "индивидуальный набор первой помощи"
   STR_TRAUMA_PACK: "Trauma Pack"
   STR_TRAUMA_PACK_UFOPEDIA: "This advanced First Aid Kit holds more healing supplies, is a bit faster to use and recovers a little more Stamina and Stun, but is significantly heavier. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
