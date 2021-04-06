@@ -174,7 +174,7 @@ alienDeployments:
       desc: STR_INITIAL_BASE_DEFENSE_BRIEFING
       showCraft: false
       cutscene: intro2
-    unlockedResearch: STR_HELLO #heh, whatever
+    unlockedResearch: STR_LOG1 #heh, whatever
     data:
       - alienRank: 0 #commander
         lowQty: 1
