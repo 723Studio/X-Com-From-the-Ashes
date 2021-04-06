@@ -220,6 +220,7 @@ en-US:
   STR_DAMAGE_BIO_TOPIC: "Bio-damage"
   STR_DAMAGE_BIO_UFOPEDIA: STR_DAMAGE_PRESSURE_UFOPEDIA #TODO
 #mod UI
+  STR_QD_SLOT: "QD"
   STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY_1: "Captive has been executed as there is no free prison space."
   STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO ALIEN CONTAINMENT FOR TRANSFER!{SMALLLINE}For security reasons, live aliens can only be kept in specially appointed alien containment facility."
   STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER_1: "NO PRISON SPACE FOR TRANSFER!{SMALLLINE}Holding captives require special facilities on site."

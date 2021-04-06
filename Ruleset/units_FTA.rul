@@ -5,17 +5,17 @@ units:
     rank: STR_LIVE_COMMANDER
     showFullNameInAlienInventory: 1
     stats:
-      tu: 56
-      stamina: 90
-      health: 30
+      tu: 50
+      stamina: 65
+      health: 25
       bravery: 90
-      reactions: 46
-      firing: 55
-      throwing: 60
-      strength: 45
-      psiStrength: 35
-      psiSkill: 0
+      reactions: 35
+      firing: 48
+      throwing: 36
+      strength: 26
       melee: 25
+      psiStrength: 45
+      psiSkill: 0
     armor: STR_XCOM_EX_COMMANDER_ARMOR
     standHeight: 22
     kneelHeight: 14
