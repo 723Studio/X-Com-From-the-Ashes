@@ -1,18 +1,4 @@
 battleScripts:
-  - type: STR_INITIAL_BASE_DEFENSE_BS
-    commands:
-    - type: spawnUnit #for low diff start
-      executionChances: 85
-      packSize: 4
-      randomPackSize: true
-      executions: 2
-      startTurn: 2
-      maxRuns: 1
-      variable: spawnUnit
-      unitSide: 1
-      maxDifficulty: 2
-      groups: [0, 2, 3, 4]
-      unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN,  STR_MIB_AGENT_SPAWN]
   - type: ZOMBIE_ATTACK
     commands:
     - type: spawnUnit #for low diff

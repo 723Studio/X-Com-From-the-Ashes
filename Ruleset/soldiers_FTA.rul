@@ -1,6 +1,7 @@
 soldiers:
-  - type: STR_SOLDIER
-    costBuy: 40000
+  - &STR_SOLDIER
+    type: STR_SOLDIER
+    costBuy: 50000
     costSalary: 2000
     minStats:
       tu: 50
@@ -16,7 +17,7 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 60
+      tu: 65
       stamina: 70
       health: 40
       bravery: 60
@@ -24,8 +25,8 @@ soldiers:
       firing: 70
       throwing: 65
       strength: 40
-      psiStrength: 60
       melee: 70
+      psiStrength: 60
       psiSkill: 0
       mana: 0
     statCaps:
@@ -35,14 +36,14 @@ soldiers:
       bravery: 100
       reactions: 100
       firing: 120
-      throwing: 90
+      throwing: 100
       strength: 80
+      melee: 120
       psiStrength: 100
       psiSkill: 100
-      melee: 120
       mana: 80
     trainingStatCaps:
-      tu: 70
+      tu: 75
       stamina: 95
       health: 50
       bravery: 100
@@ -67,9 +68,43 @@ soldiers:
     # soldierNames:
     #   - delete
     #   - AgentName/
-    deathMale: [41, 42, 43] #, 135, 136, 137, 138, 139, 140, 141]
-    deathFemale: [44, 45, 46] #, 160, 161, 162, 163]
+    deathMale: &MaleDeathSounds [41, 42, 43] #, 135, 136, 137, 138, 139, 140, 141]
+    deathFemale: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163]
     # panicMale: [701, 702, 703, 704, 705, 706, 707, 708, 709]
     # panicFemale: [731, 732, 733, 734, 735, 736, 737]
     # berserkMale: [801, 802, 803, 804, 805]
     # berserkFemale: [831, 832, 833]
+  - type: STR_RESISTANCE_AGENT
+    refNode: *STR_SOLDIER
+    costBuy: 15000
+    costSalary: 2000
+    minStats:
+      tu: 40
+      stamina: 40
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 40
+      throwing: 35
+      strength: 20
+      melee: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
+    maxStats:
+      tu: 50
+      stamina: 60
+      health: 30
+      bravery: 60
+      reactions: 40
+      firing: 50
+      throwing: 45
+      strength: 35
+      melee: 35
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+    dogfightExperience:
+      bravery: 10
+      reactions: 20
+      firing: 15

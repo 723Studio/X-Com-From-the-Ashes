@@ -8,6 +8,7 @@ alienDeployments:
     terrains:
       - XBASE
     shade: 5
+    unlockedResearch: STR_LOG1 #HARDCODED, DO NOT RENAME!
     briefing:
       palette: 0
       background: BACK01.SCR
@@ -174,7 +175,6 @@ alienDeployments:
       showCraft: false
       cutscene: intro2
     unlockedResearch: STR_LOG1 #heh, whatever
-    #battleScript: STR_INITIAL_BASE_DEFENSE_BS
     data:
       - alienRank: 0 #commander
         lowQty: 1

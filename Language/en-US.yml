@@ -104,7 +104,7 @@ en-US:
   STR_ENGINEERS_N: "Engineers>{ALT}{0}"
   STR_SOLDIERS_N: "Soldiers on operation:"
   STR_ADDITIONAL_INFO: "Additional info:"
-  STR_OPERATION_PROGRESS: "Operation progress>{ALT}{0}"
+  STR_OPERATION_PROGRESS: "Day of operation>{ALT}{0}"
   STR_DANGER_LEVEL: "Danger level>{ALT}{0}"
   STR_TEAM_HAS_PSIONIC_POWER: "The team has psionic powers."
   STR_RESULTS: "RESULTS"
@@ -245,6 +245,7 @@ en-US:
   STR_ASSAULT_TRAINING: "Assault Specialization"
   STR_RANGER_TRAINING: "Ranger Specialization"
   STR_SPECIALIST_TRAINING: "Support Specialization"
+  STR_UNARMED_COMBAT_TRAINING: "Unarmed Combat Training"
   STR_FIRE_AND_THROW: "Fire and throw it."
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of its members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and they are trying to cover up any traces of their activity."
@@ -416,6 +417,9 @@ en-US:
   STR_CHUPACABRA_ARMOR: "Jabber Combat Analysis"
   STR_CHUPACABRA_ARMOR_UFOPEDIA: STR_JABBER_ARMOR_UFOPEDIA #TODO
 #other units
+  STR_RESISTANCE_AGENT: "Resistance Agent"
+  STR_RESISTANCE_AGENT_VIP: "Resistance Agent"
+  STR_RESISTANCE_AGENT_CORPSE: "Resistance Agent Corpse"
   STR_RESISTANCE_SOLDIER: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_CORPSE: "Resistance Soldier Corpse"
   STR_RESISTANCE_SCIENTIST: "Scientist"
@@ -429,6 +433,7 @@ en-US:
   STR_FEMALE_CIVILIAN_FARMER: "Farmer"
   STR_FEMALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
 #categories
+  STR_UNARMED: "Unarmed"
   STR_MELEE: "Melee Weapons"
   STR_PISTOLS: "Pistols"
   STR_THROWING: "Throwing"
@@ -659,6 +664,8 @@ en-US:
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: STR_MONSTER_HUNT_RUMORS_UFOPEDIA #TODO
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
+  STR_STARTING_EQUIPMENT: "Common Equipment"
+  STR_STARTING_EQUIPMENT_UFOPEDIA: "Since the X-COM project was discontinued, we have lost our regular armament and gear suppliers. But we continue to fight, and we vitally need new sources of weaponry and ammunition. Maybe our new friends can help out with that? Regrettably, lacking established illegal arms channels, they can only offer us weapons that are available for purchase by civilians. Our contact in the Resistance transferred the tactical specifications of the items we can buy from them, all information analyzed and uploaded to Ufopedia."
   STR_RESISTANCE_STARTING_EQUIPMENT: "Resistance Equipment"
   STR_RESISTANCE_STARTING_EQUIPMENT_UFOPEDIA: "Establishing ties with the Resistance has paid off - now we can buy from them some weapons and equipment for our needs! Of course, these guys would be happy to help us completely free of charge, but it should be understood that it’s not so easy to get anything, so we must compensate some associated costs with proportional amount of money. Of course, the equipment we are purchasing is far from cutting-edge technology, but at least it will allow us to maintain the average combat capability of our agents and be ready to conduct various operations."
   STR_RESISTANCE_BASIC_EQUIPMENT: "Resistance Military Equipment"

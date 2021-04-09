@@ -147,9 +147,63 @@ research:
     listOrder: 7460
 
 #technology
-  - name: STR_BASIC_EQUIPMENT_ACQUISITION #TODO probably, technology would be redone later
+  - name: STR_STARTING_EQUIPMENT_PREREQ
     hidden: true
-  - name: STR_ELECTRIC_WEAPONS_PREREQ
+  - name: STR_STARTING_EQUIPMENT
+    cost: 120
+    points: 20
+    dependencies:
+      - STR_STARTING_EQUIPMENT_PREREQ
+      - STR_UFOPEDIA_DECRYPTION
+    unlocks:
+      - STR_MACHETE
+      - STR_THROWING_KNIFE
+      - STR_SPORTS_BOW
+      - STR_SNUBNOSE_PISTOL
+      - STR_SNUBNOSE_PISTOL_CLIP
+      - STR_HUNTING_RIFLE
+      - STR_HUNTING_RIFLE_CLIP
+      - STR_SAWED_OFF
+      - STR_DOUBLE_BARRELED
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+      - STR_FIRST_AID
+      - STR_PAINKILLER
+      - STR_STIMS
+      - STR_FIRE_EXTINGUISHER
+
+  - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
+    hidden: true
+  - name: STR_RESISTANCE_BASIC_EQUIPMENT
+    cost: 150
+    points: 30
+    dependencies:
+      - STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
+      - STR_UFOPEDIA_DECRYPTION
+    unlocks:
+      - STR_SWORD
+      - STR_RIOT_PISTOL
+      - STR_RIOT_PISTOL_CLIP
+      - STR_MACHINE_PISTOL
+      - STR_MACHINE_PISTOL_CLIP
+      - STR_RIOT_RIFLE
+      - STR_RIOT_RIFLE_CLIP
+      - STR_PUMP_ACTION_SHOTGUN
+      - STR_EXPLOSIVE_CHARGE
+      - STR_LIQUID_FLAME
+      - STR_SINGLE_ROCKET_LAUNCHER
+      - STR_MEDI_PACK
+      - STR_HELICOPTER
+
+  - name: STR_XCOM_EQUIPMENT_ACQUISITION_PREREQ #TODO - add ways to unlock it
+    hidden: true
+  - name: STR_XCOM_EQUIPMENT_ACQUISITION
+    cost: 50
+    points: 40
+    dependencies:
+      - STR_XCOM_EQUIPMENT_ACQUISITION_PREREQ
+      - STR_UFOPEDIA_DECRYPTION
+
+  - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - add ways to unlock it
     hidden: true
   - name: STR_ELECTRIC_WEAPONS #TODO Articles
     cost: 192
@@ -180,50 +234,6 @@ research:
   - name: STR_RIFLE_EXP_CLIP
     dependencies:
       - STR_EXPANDABLE_AMMO
-
-  - name: STR_RESISTANCE_STARTING_EQUIPMENT_PREREQ
-    hidden: true
-  - name: STR_RESISTANCE_STARTING_EQUIPMENT
-    cost: 120
-    points: 20
-    dependencies:
-      - STR_RESISTANCE_STARTING_EQUIPMENT_PREREQ
-      - STR_UFOPEDIA_DECRYPTION
-    unlocks:
-      - STR_MACHETE
-      - STR_SWORD
-      - STR_THROWING_KNIFE
-      - STR_SNUBNOSE_PISTOL
-      - STR_SNUBNOSE_PISTOL_CLIP
-      - STR_RIOT_PISTOL
-      - STR_RIOT_PISTOL_CLIP
-      - STR_MACHINE_PISTOL
-      - STR_MACHINE_PISTOL_CLIP
-      - STR_HUNTING_RIFLE
-      - STR_HUNTING_RIFLE_CLIP
-      - STR_SAWED_OFF
-      - STR_DOUBLE_BARRELED
-      - STR_DOUBLE_BARRELED_BUCKSHOT
-      - STR_LIQUID_FLAME
-      - STR_FIRST_AID
-      - STR_PAINKILLER
-      - STR_STIMS
-      - STR_FIRE_EXTINGUISHER
-  - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
-    hidden: true
-  - name: STR_RESISTANCE_BASIC_EQUIPMENT
-    cost: 150
-    points: 30
-    dependencies:
-      - STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
-      - STR_UFOPEDIA_DECRYPTION
-    unlocks:
-      - STR_RIOT_RIFLE
-      - STR_RIOT_RIFLE_CLIP
-      - STR_EXPLOSIVE_CHARGE
-      - STR_SINGLE_ROCKET_LAUNCHER
-      - STR_MEDI_PACK
-      - STR_HELICOPTER
 
   - name: STR_ALLOY_AMMO
     cost: 7000
@@ -257,6 +267,11 @@ research:
     dependencies:
       - STR_ALLOY_AMMO
   - name: STR_SHOTGUN_SHELLS_AA
+    cost: 900
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO  
+  - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     cost: 900
     points: 5
     dependencies:
@@ -721,6 +736,16 @@ research:
     points: 1
     needItem: true
     listOrder: 7410
+  - name: STR_SPORTS_BOW
+    cost: 6
+    points: 1
+    needItem: true
+    listOrder: 7410
+  - name: STR_BOW_ARROW
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BOW_ARROW
   - name: STR_SNUBNOSE_PISTOL
     cost: 8
     points: 1

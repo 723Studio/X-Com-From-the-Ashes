@@ -1,14 +1,14 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
 
 #Campaign
-# startingTime:
-#   second: 34
-#   minute: 15
-#   hour: 14
-#   weekday: 4
-#   day: 10
-#   month: 3
-#   year: 1999
+startingTime:
+  second: 34
+  minute: 15
+  hour: 14
+  weekday: 4
+  day: 3
+  month: 3
+  year: 1999
 initialFunding: 532
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
@@ -17,7 +17,7 @@ psiUnlockResearch: STR_PSIONIC
 allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70
 lessAliensDuringBaseDefense: true
-defeatFunds: -300
+defeatFunds: -300 #much lower vanilla because loose logic is different
 gameOver: #TODO
   loseMoney: loseGame       # cutscene ID that should be played when the player loses due to poor economy management
   loseRating: loseGame      # cutscene ID that should be played when the player loses due to poor rating
@@ -44,20 +44,21 @@ researchTreeDisabled: true
 
 #difficulty
 startingDifficulty: 2
+difficultyCoefficient: [0, 1, 2, 3, 5] #extra +1 for SH :>
 aimAndArmorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.1]
-# statGrowthMultipliers:
-#       tu: 1
-#       stamina: 1
-#       health: 1
-#       bravery: 1
-#       reactions: 1
-#       firing: 2
-#       throwing: 1
-#       strength: 1
-#       psiStrength: 1
-#       psiSkill: 1
-#       melee: 1
-
+sellPriceCoefficient: [110, 105, 100, 95, 80]
+statGrowthMultipliers:
+  tu: 5
+  stamina: 4
+  health: 2
+  bravery: 0
+  reactions: 6
+  firing: 6
+  throwing: 3
+  strength: 2
+  psiStrength: 4
+  psiSkill: 4
+  melee: 5
 
 #battlescape
 maxViewDistance: 40
@@ -99,7 +100,7 @@ constants:
 mana:
   enabled: false #true #TODO
   battleUI: false #true #TODO
-  unlockResearch: STR_TODOIUM
+  unlockResearch: STR_PSIONIC
   trainingPrimary: false
   trainingSecondary: false
   woundThreshold: 200             # default is 200

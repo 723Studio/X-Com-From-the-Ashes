@@ -5,6 +5,8 @@
     listOrder: 4
   - type: STR_OUTFITS
     listOrder: 5
+  - type: STR_UNARMED
+    listOrder: 10
   - type: STR_MELEE
     listOrder: 20
   - type: STR_PISTOLS

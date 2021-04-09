@@ -630,6 +630,30 @@ armors:
     damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
+
+  - type: STR_RESISTANCE_AGENT_ARMOR #TODO!
+    spriteSheet: RESISTANCE_SOLDIER.PCK 
+    spriteInv: inventory_RESISTANCE_SOLDIER
+    corpseBattle:
+      - STR_RESISTANCE_SOLDIER_CORPSE
+    visibilityAtDark: 10
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      energy:
+        flatHundred: 0.13
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.6
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    specialWeapon: STR_UNARMED
+    loftempsSet: [ 3 ]
   - type: STR_RESISTANCE_SOLDIER_ARMOR
     spriteSheet: RESISTANCE_SOLDIER.PCK
     spriteInv: inventory_RESISTANCE_SOLDIER

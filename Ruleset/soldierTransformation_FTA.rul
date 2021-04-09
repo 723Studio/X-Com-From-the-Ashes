@@ -1,7 +1,7 @@
 soldierTransformation:
   - name: STR_SNIPER_TRAINING
     minRank: 1
-    transformationTime: 240
+    transformationTime: 300
     requiredMinStats:
        firing: 65 
     showMinMax: true
@@ -13,6 +13,7 @@ soldierTransformation:
     allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
+      - STR_RESISTANCE_AGENT
     # transferTime: 72
     flatMin:
       tu: -2
@@ -29,10 +30,10 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_HEAVY_TRAINING
     minRank: 1
-    transformationTime: 240
+    transformationTime: 300
     requiredMinStats:
        stamina: 60
-       strength: 33
+       strength: 35
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false
@@ -42,7 +43,8 @@ soldierTransformation:
     allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
-    transferTime: 72
+      - STR_RESISTANCE_AGENT
+    #transferTime: 72
     flatMin:
       health: 3
       stamina: 1
@@ -62,7 +64,7 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_ASSAULT_TRAINING
     minRank: 1
-    transformationTime: 240
+    transformationTime: 300
     requiredMinStats:
        reactions: 57
        firing: 55
@@ -75,7 +77,8 @@ soldierTransformation:
     allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
-    transferTime: 72
+      - STR_RESISTANCE_AGENT
+    #transferTime: 72
     flatMin:
       reactions: 6
       firing: 3
@@ -93,7 +96,7 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_RANGER_TRAINING
     minRank: 1
-    transformationTime: 240
+    transformationTime: 300
     requiredMinStats:
        stamina: 60
        reactions: 52
@@ -107,7 +110,8 @@ soldierTransformation:
     allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
-    transferTime: 72
+      - STR_RESISTANCE_AGENT
+    #transferTime: 72
     flatMin:
       tu: 3
       stamina: 4
@@ -125,7 +129,7 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_SPECIALIST_TRAINING
     minRank: 1
-    transformationTime: 240
+    transformationTime: 300
     requiredMinStats:
        bravery: 50
     showMinMax: true
@@ -137,7 +141,8 @@ soldierTransformation:
     allowsWoundedSoldiers: false
     allowedSoldierTypes:
       - STR_SOLDIER
-    transferTime: 72
+      - STR_RESISTANCE_AGENT
+    #transferTime: 72
     flatMin:
       tu: -1
       bravery: 10
@@ -153,3 +158,35 @@ soldierTransformation:
       - STR_ASSAULT_TRAINING
       - STR_RANGER_TRAINING
       - STR_SPECIALIST_TRAINING
+  - name: STR_UNARMED_COMBAT_TRAINING
+    minRank: 1
+    transformationTime: 250
+    # requiredMinStats:
+    #   stamina: 55
+    #   reactions: 40
+    #   strength: 52
+    #   melee: 50
+    showMinMax: true
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_RESISTANCE_AGENT
+    #transferTime: 72
+    flatMin:
+      stamina: 2
+      reactions: 2
+      strength: 2
+      melee: 5
+    flatMax:
+      stamina: 4
+      reactions: 3
+      strength: 3
+      melee: 9
+    soldierBonusType: STR_UNARMED_FIGHTER
+    forbiddenPreviousTransformations:
+      - STR_UNARMED_COMBAT_TRAINING

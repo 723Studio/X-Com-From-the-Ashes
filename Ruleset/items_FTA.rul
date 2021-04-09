@@ -27,8 +27,6 @@ items:
 #melee
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
-    requiresBuy:
-      - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.1
     costBuy: 300
     costSell: 240
@@ -40,15 +38,14 @@ items:
     meleeHitSound: 55
     meleeAnimation: 0
     power: 7
-    damageType: 7
+    damageType: 6
     damageBonus:
       strength: 0.1
       melee: 0.3
     damageAlter:
       RandomType: 2
       ArmorEffectiveness: 1.45
-      ToStun: 2.1
-      ToHealth: 0.4
+      ToHealth: 0.3
       ToTile: 0.2
     accuracyMelee: 100
     meleeMultiplier:
@@ -70,7 +67,7 @@ items:
   - type: STR_COMBAT_KNIFE #TODO balance
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
     requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
+        - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     landOnly: false
     costBuy: 260
@@ -150,7 +147,7 @@ items:
   - type: STR_SWORD
     categories: [STR_HUMAN_TECH, STR_MELEE]
     requiresBuy:
-      - STR_RESISTANCE_STARTING_EQUIPMENT
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     landOnly: true
     costBuy: 3000
@@ -191,8 +188,6 @@ items:
 #throwing
   - type: STR_THROWING_KNIFE
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
-    requiresBuy:
-      - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.06
     landOnly: true
     costBuy: 2000
@@ -315,11 +310,11 @@ items:
     compatibleAmmo:
       - STR_SNUBNOSE_PISTOL_CLIP
     accuracyCloseQuarters: 145
-    accuracySnap: 70
-    accuracyAimed: 80
+    accuracySnap: 56
+    accuracyAimed: 68
     tuSnap: 20
-    tuAimed: 30
-    tuLoad: 15
+    tuAimed: 28
+    tuLoad: 20
     aimRange: 17
     snapRange: 14
     dropoff: 4
@@ -353,6 +348,8 @@ items:
     listOrder: 19990
   - type: STR_RIOT_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 350
     costSell: 250
@@ -366,8 +363,8 @@ items:
     compatibleAmmo:
       - STR_RIOT_PISTOL_CLIP
     accuracyCloseQuarters: 133
-    accuracySnap: 65
-    accuracyAimed: 75
+    accuracySnap: 60
+    accuracyAimed: 72
     tuSnap: 16
     tuAimed: 30
     tuLoad: 15
@@ -375,7 +372,7 @@ items:
       energy: 8
     battleType: 1
     aimRange: 19
-    snapRange: 15
+    snapRange: 16
     dropoff: 3
     kneelBonus: 105
     invWidth: 1
@@ -385,6 +382,8 @@ items:
     listOrder: 20040
   - type: STR_RIOT_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.025
     costBuy: 30
     costSell: 22
@@ -398,7 +397,7 @@ items:
     power: 24
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.05
+      ArmorEffectiveness: 1.1
     clipSize: 9
     costThrow:
       energy: 4
@@ -408,7 +407,7 @@ items:
   - type: STR_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 2250
     costSell: 1500
@@ -423,13 +422,13 @@ items:
       - STR_PISTOL_CLIP
       - STR_PISTOL_AA_CLIP
     accuracyCloseQuarters: 133
-    accuracySnap: 80
-    accuracyAimed: 88
+    accuracySnap: 65
+    accuracyAimed: 80
     tuSnap: 18
     tuAimed: 30
     tuLoad: 15
     aimRange: 22
-    snapRange: 17
+    snapRange: 18
     dropoff: 3
     kneelBonus: 105
     battleType: 1
@@ -440,7 +439,7 @@ items:
   - type: STR_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
     costBuy: 200
     costSell: 150
@@ -452,6 +451,8 @@ items:
     hitSound: 58
     hitAnimation: 26
     power: 27 #30 xcf
+    damageAlter:
+      ArmorEffectiveness: 1.1
     damageType: 1
     clipSize: 12
     battleType: 2
@@ -461,7 +462,7 @@ items:
   - type: STR_PISTOL_EXP_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
     costBuy: 200
     costSell: 150
@@ -472,7 +473,7 @@ items:
     handSprite: 136
     hitSound: 58
     hitAnimation: 26
-    power: 24
+    power: 25
     damageType: 1
     damageAlter:
       RandomType: 2
@@ -481,7 +482,7 @@ items:
       ToWound: 2
       ToTime: 0.2
       ToStun: 0.2
-      ToTile: 0.4
+      ToTile: 0.2
     clipSize: 12
     battleType: 2
     armor: 12
@@ -508,7 +509,7 @@ items:
   - type: STR_HEAVY_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 2500
     costSell: 2000
@@ -522,8 +523,8 @@ items:
     compatibleAmmo:
       - STR_HEAVY_PISTOL_CLIP
     accuracyCloseQuarters: 133
-    accuracySnap: 72
-    accuracyAimed: 80
+    accuracySnap: 67
+    accuracyAimed: 75
     tuSnap: 22
     tuAimed: 35
     tuLoad: 18
@@ -541,7 +542,7 @@ items:
   - type: STR_HEAVY_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     landOnly: true
     costBuy: 320
@@ -566,7 +567,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.15
     costBuy: 400
     costSell: 300
@@ -603,7 +604,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.02
     costBuy: 100
     costSell: 50
@@ -623,7 +624,7 @@ items:
   - type: STR_PDW
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.16
     costBuy: 7000
     costSell: 5000
@@ -658,7 +659,7 @@ items:
   - type: STR_PDW_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.03
     costBuy: 250
     costSell: 75
@@ -699,7 +700,7 @@ items:
   - type: STR_SMG
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.17
     costBuy: 3000
     costSell: 2500
@@ -736,7 +737,7 @@ items:
   - type: STR_SMG_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     costBuy: 240
     costSell: 200
@@ -778,7 +779,7 @@ items:
   - type: STR_RIOT_RIFLE
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
-        - STR_TODOIUM
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     costBuy: 2500
     costSell: 1550
@@ -810,7 +811,7 @@ items:
   - type: STR_RIOT_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
-        - STR_TODOIUM
+        - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 200
     costSell: 100
@@ -830,7 +831,7 @@ items:
   - type: STR_ASSAULT_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 10000
     costSell: 8250
@@ -866,7 +867,7 @@ items:
   - type: STR_RIFLE #battle rifle
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 8700
     costSell: 7000
@@ -900,7 +901,7 @@ items:
   - type: STR_PRECISION_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 12000
     costSell: 9200
@@ -932,7 +933,7 @@ items:
   - type: STR_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
     costBuy: 350
     costSell: 250
@@ -952,7 +953,7 @@ items:
   - type: STR_RIFLE_EXP_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
     costBuy: 380
     costSell: 260
@@ -997,8 +998,6 @@ items:
 #sniper rifles
   - type: STR_HUNTING_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.2
     landOnly: true
     costBuy: 4000
@@ -1028,8 +1027,6 @@ items:
     listOrder: 21035
   - type: STR_HUNTING_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.04
     landOnly: true
     costBuy: 100
@@ -1055,7 +1052,7 @@ items:
   - type: STR_SNIPER_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.25
     costBuy: 28000
     costSell: 22500
@@ -1091,7 +1088,7 @@ items:
   - type: STR_SNIPER_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
     costBuy: 550
     costSell: 400
@@ -1143,8 +1140,6 @@ items:
   - type: STR_SAWED_OFF
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CONCEALABLE]
     landOnly: true
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.1
     costBuy: 800
     costSell: 500
@@ -1180,8 +1175,6 @@ items:
   - type: STR_DOUBLE_BARRELED
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     landOnly: true
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.2
     costBuy: 800
     costSell: 500
@@ -1218,8 +1211,6 @@ items:
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.01
     costBuy: 25
     costSell: 15
@@ -1267,7 +1258,7 @@ items:
   - type: STR_PUMP_ACTION_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     costBuy: 1200
     costSell: 900
@@ -1301,7 +1292,7 @@ items:
   - type: STR_PUMP_ACTION_SHELLS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.04
     stackSize: 5
     costBuy: 50
@@ -1329,7 +1320,7 @@ items:
   - type: STR_SEMI_AUTO_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 2200
     costSell: 1800
@@ -1367,7 +1358,7 @@ items:
   - type: STR_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 4500
     costSell: 3600
@@ -1405,7 +1396,7 @@ items:
   - type: STR_SHOTGUN_SHELLS_BS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.01
     costBuy: 50
     costSell: 40
@@ -1431,7 +1422,7 @@ items:
   - type: STR_SHOTGUN_SHELLS_AP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.01
     costBuy: 100
     costSell: 80
@@ -1451,7 +1442,7 @@ items:
   - type: STR_SHOTGUN_SHELLS_BATON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.01
     costBuy: 200
     costSell: 150
@@ -1517,7 +1508,7 @@ items:
   - type: STR_LMG
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
     costBuy: 34000
     costSell: 24000
@@ -1553,7 +1544,7 @@ items:
   - type: STR_LMG_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 480
     costSell: 350
@@ -1600,7 +1591,7 @@ items:
   - type: STR_LIGHT_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.25
     costBuy: 24000
     costSell: 20000
@@ -1636,7 +1627,7 @@ items:
   - type: STR_LC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.08
     costBuy: 350
     costSell: 300
@@ -1663,7 +1654,7 @@ items:
   - type: STR_LC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.08
     costBuy: 300
     costSell: 260
@@ -1690,7 +1681,7 @@ items:
   - type: STR_LC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.08
     costBuy: 850
     costSell: 700
@@ -1715,7 +1706,7 @@ items:
   - type: STR_LC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.08
     costBuy: 700
     costSell: 550
@@ -1788,7 +1779,7 @@ items:
   - type: STR_HEAVY_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
     costBuy: 32000
     costSell: 24800
@@ -1826,7 +1817,7 @@ items:
   - type: STR_HC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 600
     costSell: 425
@@ -1853,7 +1844,7 @@ items:
   - type: STR_HC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 450
     costSell: 325
@@ -1881,7 +1872,7 @@ items:
   - type: STR_HC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 1000
     costSell: 750
@@ -1906,7 +1897,7 @@ items:
   - type: STR_HC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 800
     costSell: 625
@@ -1980,7 +1971,7 @@ items:
   - type: STR_AUTO_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
     costBuy: 37000
     costSell: 32000
@@ -2019,7 +2010,7 @@ items:
   - type: STR_AC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 800
     costSell: 600
@@ -2045,6 +2036,8 @@ items:
     listOrder: 23310
   - type: STR_AC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costSell: 525
     weight: 5
@@ -2070,7 +2063,7 @@ items:
   - type: STR_AC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 1100
     costSell: 900
@@ -2095,7 +2088,7 @@ items:
   - type: STR_AC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 1000
     costSell: 750
@@ -2168,7 +2161,7 @@ items:
   - type: STR_MINIGUN
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.6
     costBuy: 33000
     costSell: 10000
@@ -2202,7 +2195,7 @@ items:
   - type: STR_MINIGUN_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
     costBuy: 3000
     costSell: 2400
@@ -2254,7 +2247,7 @@ items:
   - type: STR_SINGLE_ROCKET_LAUNCHER #TODO balance here
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     costBuy: 3200
     costSell: 2700
@@ -2270,7 +2263,7 @@ items:
     fireSound: 69
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 80
+    accuracyAimed: 75
     tuAuto: 0
     tuSnap: 0
     tuAimed: 60
@@ -2282,6 +2275,7 @@ items:
     battleType: 1
     twoHanded: true
     blockBothHands: true
+    kneelBonus: 140
     invWidth: 1
     invHeight: 3
     armor: 16
@@ -2290,7 +2284,7 @@ items:
   - type: STR_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
     costBuy: 38000
     costSell: 27000
@@ -2309,13 +2303,14 @@ items:
       # - STR_TRITANIUM_SHRAPNEL_ROCKET
     accuracyCloseQuarters: 33
     #accuracySnap: 55
-    accuracyAimed: 115
+    accuracyAimed: 95
     #tuSnap: 45
     tuAimed: 75
     tuLoad: 20
     battleType: 1
     twoHanded: true
     blockBothHands: true
+    kneelBonus: 150
     invWidth: 2
     invHeight: 3
     armor: 32
@@ -2324,7 +2319,7 @@ items:
   - type: STR_SMALL_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 2000
     costSell: 1800
@@ -2335,7 +2330,7 @@ items:
     handSprite: 224
     hitSound: 0
     hitAnimation: 0
-    power: 94
+    power: 96
     damageAlter:
       IgnoreOverKill: false
     damageType: 3
@@ -2349,7 +2344,7 @@ items:
   - type: STR_LARGE_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 5000
     costSell: 3750
@@ -2360,7 +2355,7 @@ items:
     handSprite: 232
     hitSound: 0
     hitAnimation: 0
-    power: 125
+    power: 130
     damageAlter:
       IgnoreOverKill: false
       ToTile: 0.66
@@ -2375,7 +2370,7 @@ items:
   - type: STR_INCENDIARY_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 2800
     costSell: 2300
@@ -2385,7 +2380,7 @@ items:
     handSprite: 240
     hitSound: 0
     hitAnimation: 0
-    power: 90
+    power: 95
     damageAlter:
       ToHealth: 1.9
       ToMorale: 15.0
@@ -2402,7 +2397,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-      - STR_RESISTANCE_STARTING_EQUIPMENT
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 250
     costSell: 200
@@ -2439,7 +2434,7 @@ items:
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
-      - STR_BASIC_EQUIPMENT_ACQUISITION
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     costBuy: 300
     costSell: 240
@@ -2465,7 +2460,7 @@ items:
   - type: STR_SMOKE_GRENADE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
     requiresBuy:
-      - STR_BASIC_EQUIPMENT_ACQUISITION
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
     costBuy: 150
@@ -2491,7 +2486,7 @@ items:
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
-      - STR_BASIC_EQUIPMENT_ACQUISITION
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
     costBuy: 1500
@@ -2520,7 +2515,7 @@ items:
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     requiresBuy:
-      - STR_BASIC_EQUIPMENT_ACQUISITION
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
     costBuy: 150
@@ -2578,7 +2573,7 @@ items:
   - type: STR_EXPLOSIVE_CHARGE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EXPLOSIVE_CHARGES]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     landOnly: true
     costBuy: 650
@@ -2608,8 +2603,6 @@ items:
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     landOnly: true
     size: 0.4
     costBuy: 1000
@@ -2631,8 +2624,6 @@ items:
     listOrder: 48125
   - type: STR_PAINKILLER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     landOnly: true
     size: 0.1
     costBuy: 500
@@ -2655,8 +2646,6 @@ items:
     listOrder: 48050
   - type: STR_STIMS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     landOnly: true
     size: 0.1
     costBuy: 500
@@ -2671,7 +2660,7 @@ items:
     medikitType: 2
     medikitTargetSelf: true
     isConsumable: true
-    stunRecovery: 4
+    stunRecovery: 6
     energyRecovery: 30
     tuUse: 15
     invWidth: 1
@@ -2709,7 +2698,7 @@ items:
   - type: STR_STIMS_INJECTOR
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-        - STR_TODOIUM
+        - STR_XCOM_EQUIPMENT_ACQUISITION
     landOnly: true
     size: 0.1
     costBuy: 1600
@@ -2733,7 +2722,7 @@ items:
   - type: STR_IFAK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.4
     costBuy: 2500
     costSell: 1500
@@ -2762,7 +2751,7 @@ items:
   - type: STR_TRAUMA_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.4
     costBuy: 30000
     costSell: 15000
@@ -2821,7 +2810,7 @@ items:
   - type: STR_COMBAT_SHIELD
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_SHIELDS]
     requiresBuy:
-      - STR_TODOIUM
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     landOnly: true
     costBuy: 6000
     costSell: 4000
@@ -2857,8 +2846,6 @@ items:
     listOrder: 48160
   - type: STR_FIRE_EXTINGUISHER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
-    requiresBuy:
-        - STR_RESISTANCE_STARTING_EQUIPMENT
     size: 0.2
     costBuy: 100
     costSell: 50
@@ -2922,7 +2909,7 @@ items:
 
 #built-in weapons
   - type: STR_UNARMED
-    categories: [STR_BUILT_INS, STR_MELEE]
+    categories: [STR_BUILT_INS, STR_MELEE, STR_UNARMED]
     weight: 0
     bigSprite: 340
     meleeHitSound: 55
@@ -2942,12 +2929,12 @@ items:
     accuracyMelee: 100
     meleeMultiplier:
       melee: 0.5
-      reactions: 0.5
+      reactions: 0.3
     confMelee:
       name: STR_PUNCH
     costMelee:
-      time: 8
-      energy: 2
+      time: 9
+      energy: 3
     flatRate: true
     battleType: 3
     clipSize: -1
@@ -3445,6 +3432,38 @@ items:
     armor: 20
     listOrder: 62300
 #Resistance units
+
+  - type: STR_SPAWN_RESISTANCE_AGENT
+    spawnUnit: STR_RESISTANCE_AGENT
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_RESISTANCE_AGENT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: -2000
+    weight: 32
+    bigSprite: 103
+    floorSprite: 103
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: -200
+    recover: true
+    listOrder: 67800
+  - type: STR_SPAWN_RESISTANCE_AGENT_VIP
+    spawnUnit: STR_RESISTANCE_AGENT_VIP
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_RESISTANCE_SOLDIER
     spawnUnit: STR_RESISTANCE_SOLDIER
     spawnUnitFaction: 0
@@ -3513,7 +3532,7 @@ items:
     size: 0.4
     costDispose: -1000
     weight: 40
-    floorSprite: 104
+    floorSprite: 115
     battleType: 11
     armor: 30
     recover: false

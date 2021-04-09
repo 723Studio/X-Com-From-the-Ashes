@@ -23,6 +23,9 @@ soldierBonuses:
       FIELD_SURGEON: 15         #X (1-XXX) percent reduction in recovery time if healed by field surgeon.
       SAVIOR: 3                 #X (1-XXX) max amount of health restored when using heal
       UTILITY_SPECIALIST: 1     # (1/0) enables additional accuracy of utility grenades throwing, using utilities refund 2-4% TU
+  - name: STR_UNARMED_FIGHTER
+    tags:
+      STR_UNARMED_FIGHTER: 15         #X (1-XXX) bonus for unarmed hit accuracy, doubles if both hands are free.
 
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
@@ -41,6 +44,7 @@ extended:
       FIELD_SURGEON: int
       SAVIOR: int
       UTILITY_SPECIALIST: int
+      STR_UNARMED_FIGHTER: int
     RuleItem:
       PHYSICAL_SHIELD_ARMOR: int
       ITEM_IS_MELEE: int
@@ -110,7 +114,8 @@ extended:
       HEALED_BY_FIELD_SURGEON: int
       SAVIOR_STATE: int
       UTILITY_SPECIALIST_STATE: int
-
+      #unarmed
+      STR_UNARMED_FIGHTER_STATE: int
 
   scripts:
     createUnit: 
@@ -596,6 +601,29 @@ extended:
             sub bonus temp; #TODO balance it!
             debug_log "STR_EXPLOSIVE_CHARGES category penalty activated, new stat: " bonus;
             debug_log "Script effect should be balanced, now it's value is: " temp;
+          end;
+
+          return bonus;
+
+    meleeBonusBonusStats:
+      - offset: 10    # Unarmed combat #TODO - Fix me pls!
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int catCheck;
+          var int stateBonus;
+          var int temp;
+
+          unit.getTag stateBonus Tag.STR_UNARMED_FIGHTER_STATE;
+
+          if gt stateBonus 0;
+            debug_log "STR_UNARMED_FIGHTER_STATE";
+            weapon.getRuleItem itemRuleset;
+            itemRuleset.hasCategory catCheck "STR_UNARMED";
+            if eq catCheck 1;
+              debug_log "Activating perk UNARMED_FIGHTER, bonus value: " bonus;
+              add bonus stateBonus;
+              debug_log "UTILITY_SPECIALIST_STATE activated, new stat: " bonus;
+            end;
           end;
 
           return bonus;
@@ -1805,6 +1833,7 @@ extended:
           var int has_field_surgeon;
           var int has_savior;
           var int has_utility_spec;
+          var int has_unarmed;
 
           unit.getId id;
 
@@ -1826,6 +1855,8 @@ extended:
           soldier_bonus.getTag has_field_surgeon Tag.FIELD_SURGEON;
           soldier_bonus.getTag has_savior Tag.SAVIOR;
           soldier_bonus.getTag has_utility_spec Tag.UTILITY_SPECIALIST;
+
+          soldier_bonus.getTag has_unarmed Tag.STR_UNARMED_FIGHTER;
 
           if gt has_aim 0;
             debug_log "Unit" id "- Aim perk found!";
@@ -1886,6 +1917,11 @@ extended:
           if gt has_utility_spec 0;
             debug_log "Unit" id "- Utility Specialist perk: " has_utility_spec;
             unit.setTag Tag.UTILITY_SPECIALIST_STATE 1;
+          end;
+
+          if gt has_unarmed 0;
+          debug_log "Unit" id "- Unarmed fighter perk: " has_unarmed;
+            unit.setTag Tag.STR_UNARMED_FIGHTER_STATE has_unarmed;
           end;
 
           return;

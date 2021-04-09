@@ -1,0 +1,97 @@
+config:
+  builtinTypes:
+    alienDeployments.extendedObjectiveType:
+    - STR_EVACUATION
+    - STR_FRIENDLY_VIP
+    - STR_ITEM_EXTRACTION
+    units.specialObjectiveType:
+    - STR_FRIENDLY_VIP
+    covertOperations.specialRule:
+    - STR_REGIONAL_HQ_DISCOVERY
+    battleScripts.commands[].type:
+    - spawnUnit
+    - showMessage
+    battleScripts.commands[].spawnBlocks:
+    - "N"
+    - W
+    - E
+    - S
+    - NW
+    - NE
+    - SW
+    - SE
+  ignoreTypes:
+  - battleScripts.commands[].variable
+  #- battleScripts.commands[].spawnBlocks
+  #- battleScripts.commands[].type
+  #- covertOperations.specialRule
+  stringTypes:
+  - alienDeployments.missionCompleteText
+  - alienDeployments.missionFailedText
+  - "/^battleScripts.commands\\[\\]\\.messages\\.\\d+\\.(answer|content|title)$/"
+  - covertOperations.description
+  - covertOperations.failureDescription
+  - covertOperations.successDescription
+  - diplomacyFactions.description
+  - events.description
+  - "/^globalVariables\\.loyaltyRatings\\.-?\\d+$/"
+  - "/^globalVariables\\.reputationLevels\\.-?\\d+$/"
+  typeLinks:
+    alienDeployments.battleScript:
+    - battleScripts
+    battleScripts.commands[].unitSet:
+    - units
+    "/^battleScripts\\.commands\\[\\]\\.messages\\.\\d+\\.background$/":
+    - extraSprites
+    covertOperations.successEvent:
+    - events
+    covertOperations.failureEvent:
+    - events
+    covertOperations.progressEvent:
+    - events
+    covertOperations.successWeightedItemList:
+    - items
+    covertOperations.failureWeightedItemList:
+    - items
+    covertOperations.successResearchList:
+    - research
+    covertOperations.failureResearchList:
+    - research
+    covertOperations.successMissions:
+    - alienMissions
+    covertOperations.failureMissions:
+    - alienMissions
+    covertOperations.instantTrapDeployment:
+    - alienDeployments
+    covertOperations.instantSuccessDeployment:
+    - alienDeployments
+    covertOperations.successReputationScore:
+    - diplomacyFactions
+    covertOperations.failureReputationScore:
+    - diplomacyFactions
+    covertOperations.requires:
+    - research
+    covertOperations.requiresBaseFunc:
+    - facilities.provideBaseFunc
+    covertOperations.requiredItems:
+    - items
+    covertOperations.allowedArmor:
+    - armors
+    covertOperations.soldierTypeEffectiveness:
+    - soldiers
+    "/^events\\.customAnswers\\.[0-3]\\.title$/":
+    - events
+    diplomacyFactions.discoverResearch:
+    - research
+    diplomacyFactions.discoverEvent:
+    - events
+    diplomacyFactions.helpTreatyMissions:
+    - missionScripts
+    diplomacyFactions.helpTreatyEvents:
+    - eventScripts
+    globalVariables.baseConstructionUnlockResearch:
+    - research
+    globalVariables.ufopaediaUnlockResearch:
+    - research
+    units.altRecoveredUnit:
+    - units

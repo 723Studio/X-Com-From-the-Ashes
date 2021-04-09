@@ -10,7 +10,7 @@ covertOperations:
     baseChances: 70
     danger: 5
     costs: 60
-    itemSpaceLimit: 10
+    #itemSpaceLimit: 10 #TODO - uncomment after bug fixed
     instantSuccessDeployment: 
       STR_MIB_CHASING: 100
     instantTrapDeployment: 
@@ -30,7 +30,7 @@ covertOperations:
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
     trapChance: 70
     instantTrapDeployment: 
-      STR_MIB_CHASING_TRAP: 100
+      STR_MIB_EARLY_TRAP_ESCAPE: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -50,7 +50,7 @@ covertOperations:
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
     trapChance: 85
     instantTrapDeployment: 
-      STR_MIB_CHASING_TRAP: 100
+      STR_MIB_EARLY_TRAP_ESCAPE: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -79,7 +79,7 @@ covertOperations:
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_START
-    itemSpaceLimit: 10
+    #itemSpaceLimit: 10
     baseChances: 75
     costs: 5
     soldierSlots: 2
@@ -103,7 +103,7 @@ covertOperations:
     description: STR_MONSTER_HUNT_RUMORS_CHUPA_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
-    itemSpaceLimit: 10
+    #itemSpaceLimit: 10
     baseChances: 75
     costs: 5
     soldierSlots: 2
@@ -138,7 +138,7 @@ covertOperations:
     baseChances: 60
     danger: 0
     costs: 120
-    itemSpaceLimit: 10
+    #itemSpaceLimit: 10
     successDescription: STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_LAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
     successFunds: -420000
@@ -162,7 +162,7 @@ covertOperations:
     baseChances: 60
     danger: 0
     costs: 120
-    itemSpaceLimit: 10
+    #itemSpaceLimit: 10
     successDescription: STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
     successFunds: -370000
@@ -180,7 +180,7 @@ covertOperations:
   #   description: STR_TEST_OPERATION_DESCRIPTION
   #   # requires:
   #   #   - STR_TROLLIUM
-  #   itemSpaceLimit: 5
+  #   #itemSpaceLimit: 5
   #   baseChances: 0
   #   costs: 20
   #   soldierSlots: 2
