@@ -3326,6 +3326,32 @@ items:
     prisonType: 1
     costSell: 2000
     listOrder: 146030
+  - type: STR_MIB_BUTCHER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: 1000
+    weight: 48
+    bigSprite: 120
+    floorSprite: 120
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 10
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_BUTCHER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 2000
+    listOrder: 146030
+
+
 #Zombies
   - type: STR_FACEHUGGER
     categories: [STR_BEASTS]

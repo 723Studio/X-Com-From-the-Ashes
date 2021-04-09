@@ -38,13 +38,13 @@ alienRaces:
       - STR_MIB_AGENT # 1 - Leader
       - STR_MIB_AGENT # 2 - Engineer
       - STR_MIB_ENFORCER # 3 - Medic
-      - STR_MIB_ARMORED_AGENT # 4 - Navigator
-      - STR_MIB_AGENT # 5 - Soldier
+      - STR_MIB_BUTCHER # 4 - Navigator
+      - STR_MIB_BUTCHER # 5 - Soldier
       - STR_SEEKER_DRONE_TERRORIST # 6 - Terrorist 1
       - STR_SEEKER_DRONE_TERRORIST # 7 - Terrorist 2
       - STR_MIB_AGENT # 8 - Special Guest 1
       - STR_MIB_SPECOPS # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_MIB_SPECOPS # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_MIB_BUTCHER # 10 - Assault Trooper / Underwater Terrorist 2
       - STR_MIB_SPECOPS # 12 - Special Guest 2 / Non-Combatant 1
       - STR_MIB_SPECOPS # 13 - Non-Combatant 2
       - STR_MIB_SPECOPS # 14 - Special Guest 3

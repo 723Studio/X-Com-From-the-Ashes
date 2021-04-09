@@ -550,6 +550,32 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE9
         - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 146000
+  - name: STR_MIB_BUTCHER
+    requiresBaseFunc: [INTLAB]
+    cost: 270
+    points: 40
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected: 
+      STR_PRISONER_INTERROGATIONS:
+        - STR_FRESH_MIB_AGENT
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+        - STR_EMPTY_MIB_EARLY_LORE4
+      STR_FRESH_MIB_AGENT:
+        - STR_MIB_HEAD_CHIP_PREREQ
+        # - STR_EMPTY_MIB_EARLY_LORE5
+        # - STR_EMPTY_MIB_EARLY_LORE6
+        - STR_EMPTY_MIB_EARLY_LORE7
+        - STR_EMPTY_MIB_EARLY_LORE8
+        - STR_EMPTY_MIB_EARLY_LORE9
+        - STR_EMPTY_MIB_EARLY_LORE10
+    listOrder: 146000
   - name: STR_SEEKER_DRONE_TERRORIST #TODO
     requiresBaseFunc: [HQ]
     cost: 1200
@@ -680,6 +706,13 @@ research:
     points: 11
     dependencies:
       - STR_MIB_SPECOPS
+    listOrder: 146000
+  - name: STR_MIB_BUTCHER_ARMOR
+    cost: 70
+    points: 11
+    dependencies:
+      - STR_MIB_BUTCHER
+      - STR_TODOIUM #something about MIB body enchantment here pls
     listOrder: 146000
   - name: STR_SEEKER_DRONE_ARMOR
     cost: 130

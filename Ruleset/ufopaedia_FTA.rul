@@ -1100,6 +1100,15 @@ ufopaedia:
     requires:
       - STR_MIB_SPECOPS
     listOrder: 146000
+  - id: STR_MIB_BUTCHER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: WIP_UFOPEDIA.SPK
+    text: STR_MIB_BUTCHER_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_BUTCHER
+    listOrder: 146000
 
 
   - id: STR_SEEKER_DRONE_TERRORIST
@@ -1284,6 +1293,13 @@ ufopaedia:
       - STR_EMPTY_MIB_EARLY_LORE10
     text: STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA
     listOrder: 160028
+  - id: STR_FRESH_MIB_AGENT
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FRESH_MIB_AGENT
+    text: STR_FRESH_MIB_AGENT_UFOPEDIA
+    listOrder: 160028
 
 #STR_TACTICAL_ANALYSIS 250-1999k
   - id: STR_BASE_DEFENSE_COMBAT_ANALYSIS
@@ -1420,12 +1436,19 @@ ufopaedia:
     requires:
       - STR_MIB_SPECOPS_ARMOR
     listOrder: 20300
+  - id: STR_MIB_BUTCHER_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_MIB_BUTCHER_ARMOR_UFOPEDIA
+    requires:
+      - STR_MIB_BUTCHER_ARMOR
+    listOrder: 20300
   - id: STR_SEEKER_DRONE_ARMOR
     type_id: 5
     section: STR_TACTICAL_ANALYSIS
     text: STR_SEEKER_DRONE_ARMOR_UFOPEDIA
     requires:
-      - STR_MIB_SPECOPS_ARMOR
+      - STR_SEEKER_DRONE_ARMOR
     listOrder: 20300
   - id: STR_FACEHUGGER_ARMOR
     type_id: 5

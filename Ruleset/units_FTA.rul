@@ -246,6 +246,39 @@ units:
       - - STR_LIGHT_CANNON
         - STR_LC_HE_AMMO
         - STR_LC_I_AMMO
+  - type: STR_MIB_BUTCHER
+    race: STR_MIB
+    stats:
+      tu: 58
+      stamina: 110
+      health: 85
+      bravery: 120
+      reactions: 45
+      firing: 40
+      throwing: 55
+      strength: 70
+      melee: 80
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 10
+      reactions: 3
+      firing: 3
+      throwing: 5
+      strength: 8
+      melee: 10
+      psiStrength: 15
+    armor: STR_MIB_BUTCHER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 35
+    deathSound: *MaleDeathSounds
+    intelligence: 2
+    aggression: 8
+    energyRecovery: 25
   - type: STR_SEEKER_DRONE_TERRORIST
     race: STR_MIB
     rank: STR_LIVE_TERRORIST

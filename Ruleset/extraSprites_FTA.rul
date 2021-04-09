@@ -178,6 +178,7 @@ extraSprites:
       117: Resources/Armors/Civilians/Police/bigob_POLICEMAN.png
       118: Resources/Armors/Civilians/Animals/bigob_DOGE_CORPSE.png
       119: Resources/Armors/Xcom/CoatArmor/bigob_COAT_CORPSE.png
+      120: Resources/Armors/Enemies/MiB/bigob_MIB_BUTCHER.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -301,6 +302,7 @@ extraSprites:
       117: Resources/Armors/Civilians/Police/floorob_POLICEMAN.png
       118: Resources/Armors/Civilians/Animals/floorob_DOGE_CORPSE.png
       119: Resources/Armors/Xcom/CoatArmor/floorob_COAT_CORPSE.png
+      120: Resources/Armors/Enemies/MiB/floorob_MIB_BUTCHER.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
       303: Resources/Weapons/Earthbound/Xcom/floorob_LightCannon.png
@@ -628,6 +630,13 @@ extraSprites:
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_MIB_SPECOPS_CPAL.png  
 
+  - type: UFOPEDIA_IMG_MIB_BUTCHER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/WIP_UFOPEDIA.png #TODO - Insert art here!
+
   - type: UFOPEDIA_SEEKER_DRONE_CPAL
     singleImage: true
     width: 320
@@ -741,6 +750,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_SPECOPS.png
+  - type: MIB_BUTCHER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/MIB_BUTCHER.png
+  - type: inventory_MIB_BUTCHER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png #TODO - insert art here!
   - type: SEEKER_DRONE.PCK
     subX: 32
     subY: 40

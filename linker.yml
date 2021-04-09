@@ -22,9 +22,6 @@ config:
     - SE
   ignoreTypes:
   - battleScripts.commands[].variable
-  #- battleScripts.commands[].spawnBlocks
-  #- battleScripts.commands[].type
-  #- covertOperations.specialRule
   stringTypes:
   - alienDeployments.missionCompleteText
   - alienDeployments.missionFailedText
