@@ -628,7 +628,7 @@ en-US:
   STR_HELICOPTER: "HELICOPTER"
   STR_HELICOPTER_UFOPEDIA: #TODO
 #ufopedia
-  STR_TACTICAL_ANALYSIS: "Tactical Analysis"
+  STR_TACTICAL_ANALYSIS: "TACTICAL ANALYSIS"
   STR_LOG1: "Commander log #001"
   STR_LOG1_UFOPEDIA: "As a senior officer, I took command. I hope I'm experienced enough to cope with the situation.{NEWLINE}Our enigmatic foe is retreating. When our soldiers got to the ground level of the base, the remaining men in black plunged into two black vans and fled eastwards. The attempt to follow them has failed.{NEWLINE}If you think about it, the situation overall is hardly better - we have lost the funding and supply source and know very little about our enemy. Apparently, alien agents have infiltrated deep into government structures, probably even the Council itself. What is clear is that now we can only count on ourselves.{NEWLINE}In the meantime, it is necessary to gather status reports on the core units and understand what we still have to do. We need to get reports from the chiefs of research, intelligence and logistics. I have already submitted orders, it will take several hours for analysis. After that, it will be possible to plan further actions."
   STR_RND_STATUS_REPORT: "R&D Status Report"

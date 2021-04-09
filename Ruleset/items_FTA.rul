@@ -2611,6 +2611,8 @@ items:
     bigSprite: 354
     floorSprite: 354
     handSprite: 504
+    invWidth: 2
+    invHeight: 1
     battleType: 6
     medikitType: 2
     heal: 1
@@ -3624,7 +3626,9 @@ items:
     battleType: 11
     armor: 30
     recover: false
-
+  - type: STR_LEATHER_COAT
+    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    size: 0.9
 
 extended:
   tags:

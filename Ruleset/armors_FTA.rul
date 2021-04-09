@@ -559,7 +559,6 @@ armors:
     spriteInv: inventory_DOGE
     corpseBattle:
       - STR_DOGE_CORPSE
-    storeItem: STR_NONE
     visibilityAtDark: 15
     personalLight: 5
     heatVision: 20
@@ -954,7 +953,7 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
     # customArmorPreviewIndex: 2
-    storeItem: STR_NONE # STR_LEATHER_COAT
+    storeItem: STR_LEATHER_COAT
     weight: 3
     corpseBattle:
       - STR_CORPSE_LEATHER_COAT
