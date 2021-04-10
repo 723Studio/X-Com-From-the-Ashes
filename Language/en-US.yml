@@ -489,6 +489,8 @@ en-US:
   STR_SPORTS_BOW: "Compound Bow"
   STR_SPORTS_BOW_UFOPEDIA: "A very popular bow in modern archery, used for hunting and sport targeting. The technical features of compound bow offer 70–85% let off once it’s pulled to full draw, so the shooter can be fully concentrated on the target. That makes compound bow more efficient than most of other bows." 
   STR_BOW_ARROW: "Bow Arrow"
+  STR_TASER: "Taser"
+  STR_TASER_UFOPEDIA: #TODO
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
   STR_SNUBNOSE_PISTOL_UFOPEDIA: "A mini-revolver, designed primarily for self-defense purposes, loaded by .22 Short caliber bullets. It’s not very powerful, but low recoil and good inherent accuracy makes this weapon relatively dangerous against unarmored enemies - a good choice for damsels in distress and agents under cover.{NEWLINE}>Concealable"
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"

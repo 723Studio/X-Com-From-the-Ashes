@@ -502,6 +502,18 @@ ufopaedia:
     requires:
       - STR_BOW_ARROW
 #pistols
+  - id: STR_TASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_TASER_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 20330
+  - id: STR_TASER_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_SNUBNOSE_PISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

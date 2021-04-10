@@ -96,7 +96,7 @@ extraSprites:
     files:
       385: Resources/Weapons/Projectiles/LMG_bullet.png
       420: Resources/Weapons/Projectiles/Magnum_bullet.png
-      455: Resources/Weapons/Projectiles/Taser_bullet.png
+      455: Resources/Weapons/Projectiles/Taser_bullet.png #13
       490: Resources/Weapons/Projectiles/Sniper_bullet.png #14
       525: Resources/Weapons/Projectiles/Toxic_bullet.png
       560: Resources/Weapons/Projectiles/PsiBeam_bullet.png
@@ -277,6 +277,8 @@ extraSprites:
       393: Resources/Weapons/Earthbound/Xcom/bigob_Minigun.png
       394: Resources/Weapons/Earthbound/Xcom/bigob_MinigunBelt.png
       395: Resources/Weapons/Earthbound/Xcom/bigob_MinigunBeltAA.png
+      396: Resources/Weapons/Earthbound/Xcom/bigob_Taser.png
+      397: Resources/Weapons/Earthbound/Xcom/bigob_Taser_Clip.png
       
       
   - type: FLOOROB.PCK
@@ -369,6 +371,8 @@ extraSprites:
       393: Resources/Weapons/Earthbound/Xcom/floorob_Minigun.png
       394: Resources/Weapons/Earthbound/Xcom/floorob_MinigunBelt.png
       395: Resources/Weapons/Earthbound/Xcom/floorob_MinigunBeltAA.png
+      396: Resources/Weapons/Earthbound/Xcom/floorob_Taser.png
+      397: Resources/Weapons/Earthbound/Xcom/floorob_Taser_Clip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -445,6 +449,7 @@ extraSprites:
       656: Resources/Weapons/Earthbound/Utilities/handob_Stims_Injector.png
       664: Resources/Weapons/Earthbound/Utilities/handob_FireExtinguisher.png
       672: Resources/Weapons/Earthbound/Xcom/handob_Minigun.png
+      680: Resources/Weapons/Earthbound/Xcom/HandOb_Taser.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
