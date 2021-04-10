@@ -781,6 +781,13 @@ ufopaedia:
       - STR_SHOTGUN_SHELLS_AA
     section: STR_NOT_AVAILABLE
 #cannons
+  - id: STR_TASER_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_TASER_CANNON
+    text: STR_TASER_CANNON_UFOPEDIA
+    listOrder: 21300
   - id: STR_LMG
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

@@ -279,6 +279,8 @@ extraSprites:
       395: Resources/Weapons/Earthbound/Xcom/bigob_MinigunBeltAA.png
       396: Resources/Weapons/Earthbound/Xcom/bigob_Taser.png
       397: Resources/Weapons/Earthbound/Xcom/bigob_Taser_Clip.png
+      398: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannon.png
+      399: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannonClip.png
       
       
   - type: FLOOROB.PCK
@@ -373,6 +375,9 @@ extraSprites:
       395: Resources/Weapons/Earthbound/Xcom/floorob_MinigunBeltAA.png
       396: Resources/Weapons/Earthbound/Xcom/floorob_Taser.png
       397: Resources/Weapons/Earthbound/Xcom/floorob_Taser_Clip.png
+      398: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannon.png
+      399: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png
+
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -450,6 +455,8 @@ extraSprites:
       664: Resources/Weapons/Earthbound/Utilities/handob_FireExtinguisher.png
       672: Resources/Weapons/Earthbound/Xcom/handob_Minigun.png
       680: Resources/Weapons/Earthbound/Xcom/HandOb_Taser.png
+      688: Resources/Weapons/Earthbound/Xcom/handob_TaserCannon.png
+      696: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
