@@ -171,6 +171,9 @@ research:
       - STR_STIMS
       - STR_FIRE_EXTINGUISHER
 
+  - name: STR_SPORTS_BOW_TINKERING
+    hidden: true
+
   - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT

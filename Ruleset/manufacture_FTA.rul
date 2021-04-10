@@ -24,8 +24,49 @@ manufacture:
     requires:
       - STR_TASER_CANNON
     space: 2
-    time: 80
+    time: 120
     cost: 15000
     producedItems:
       STR_TASER_CANNON_CLIP: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_HE
+    category: STR_CLIPS
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+    space: 2
+    time: 15
+    cost: 800
+    producedItems:
+      STR_BOW_ARROW_HE: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_IN
+    category: STR_CLIPS
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+    space: 2
+    time: 22
+    cost: 950
+    producedItems:
+      STR_BOW_ARROW_IN: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_STUN
+    category: STR_CLIPS
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+    space: 3
+    time: 36
+    cost: 1300
+    producedItems:
+      STR_BOW_ARROW_STUN: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_ELECTRIC
+    category: STR_CLIPS
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+      - STR_DAMAGE_11
+    space: 4
+    time: 70
+    cost: 4000
+    producedItems:
+      STR_BOW_ARROW_ELECTRIC: 1
     listOrder: 220030

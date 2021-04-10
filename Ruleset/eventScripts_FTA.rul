@@ -69,6 +69,25 @@ eventScripts:
     maxDifficulty: 4
 
 #xcom
+  - &STR_SPORTS_BOW_TINKERING_SCRIPT
+    type: STR_SPORTS_BOW_TINKERING_SCRIPT
+    oneTimeSequentialEvents: [STR_SPORTS_BOW_TINKERING]
+    # researchTriggers:
+    #   STR_BIOLAB_PREREQ: false
+    #   STR_BIOLAB: false
+    itemTriggers:
+      STR_SPORTS_BOW: true
+      STR_BOW_ARROW: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 85
+    minDifficulty: 0
+    maxDifficulty: 3
+  - type: STR_SPORTS_BOW_TINKERING_SCRIPT_SH #extra SH copy
+    refNode: *STR_SPORTS_BOW_TINKERING_SCRIPT
+    executionOdds: 30
+    minDifficulty: 4
+    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER
     oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
     researchTriggers:

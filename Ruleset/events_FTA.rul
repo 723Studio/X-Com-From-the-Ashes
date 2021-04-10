@@ -132,6 +132,13 @@ events:
 
 
 #xcom
+  - name: STR_SPORTS_BOW_TINKERING
+    description: STR_SPORTS_BOW_TINKERING_DESCRIPTION
+    #background: STR_RESISTANCE_BACKGROUND.SCR
+    researchList: [STR_SPORTS_BOW_TINKERING]
+    timer: 120
+    timerRandom: 60
+    interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_BIOLAB_PREREQ_EVENT
     description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION
     #background: STR_RESISTANCE_BACKGROUND.SCR

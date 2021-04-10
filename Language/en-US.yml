@@ -261,7 +261,7 @@ en-US:
   STR_MIB_CHASING_SLIDE2_CAPTION: "Some fancy text here too!" #TODO
 #facilities
   STR_HQ: "Headquarters"
-  STR_HQ_UFOPEDIA: "STR_HQ_UFOPEDIA"
+  STR_HQ_UFOPEDIA: "STR_HQ_UFOPEDIA" #TODO
   STR_PRISON_CELLS: "Prison Cells"
   STR_PRISON_CELLS_UFOPEDIA: "STR_PRISON_CELLS_UFOPEDIA"
   STR_GYM: "Training Center"
@@ -352,13 +352,15 @@ en-US:
   STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> +130"
   STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> -150"
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> -200"
+  STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"
+  STR_SPORTS_BOW_TINKERING_DESCRIPTION: #TODO
+
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
   STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: #TODO
   STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"
   STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
   STR_MIB_CHASING_SUCCESS: "'Chasing M.I.B.' Operation Results"
-  STR_MIB_CHASING_SUCCESS_DESCRIPTION: 
-  
+  STR_MIB_CHASING_SUCCESS_DESCRIPTION: #TODO
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: #TODO
 #enemies
@@ -475,6 +477,9 @@ en-US:
   STR_CONCEALABLE: "All Concealable"
   STR_HUMAN_TECH: "All Human Tech"
   STR_XCOM_TECH: "All X-Com Tech"
+  #manufacturing
+  STR_WEAPONS: "Weapons"
+  STR_COVERT_TOOLS: "Covert Tools"
 #items - weapons and equipment
   STR_POLICE_BATON: "Police Baton"
   STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knock out unarmored enemies.{NEWLINE}>Concealable" 
@@ -489,7 +494,12 @@ en-US:
   STR_SPORTS_BOW: "Compound Bow"
   STR_SPORTS_BOW_UFOPEDIA: "A very popular bow in modern archery, used for hunting and sport targeting. The technical features of compound bow offer 70–85% let off once it’s pulled to full draw, so the shooter can be fully concentrated on the target. That makes compound bow more efficient than most of other bows." 
   STR_BOW_ARROW: "Bow Arrow"
+  STR_BOW_ARROW_HE: "Bow Arrow - HE"
+  STR_BOW_ARROW_IN: "Bow Arrow - IN"
+  STR_BOW_ARROW_STUN: "Bow Arrow - Stun"
+  STR_BOW_ARROW_ELECTRIC: "Bow Arrow - Electric"
   STR_TASER: "Taser"
+  STR_TASER_CLIP: "Taser Clip"
   STR_TASER_UFOPEDIA: #TODO
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
   STR_SNUBNOSE_PISTOL_UFOPEDIA: "A mini-revolver, designed primarily for self-defense purposes, loaded by .22 Short caliber bullets. It’s not very powerful, but low recoil and good inherent accuracy makes this weapon relatively dangerous against unarmored enemies - a good choice for damsels in distress and agents under cover.{NEWLINE}>Concealable"
@@ -764,6 +774,3 @@ en-US:
   MAP_RURAL: "Rural"
   MAP_XOPSDESERT_NOCACTI: "African Desert"
   MAP_INDUSTRIALSLUM: "Postindustrial" 
-  STR_WEAPONS: "Weapons"
-  STR_COVERT_TOOLS: "Covert Tools"
-  STR_CLIPS: "Clips"

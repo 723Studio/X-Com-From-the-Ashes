@@ -241,6 +241,10 @@ items:
     fireSound: 110
     compatibleAmmo:
       - STR_BOW_ARROW
+      - STR_BOW_ARROW_HE
+      - STR_BOW_ARROW_IN
+      - STR_BOW_ARROW_STUN
+      - STR_BOW_ARROW_ELECTRIC
     accuracyAimed: 110
     accuracyCloseQuarters: 95
     accuracyMultiplier:
@@ -281,12 +285,12 @@ items:
     damageType: 7
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.5
+      ArmorEffectiveness: 1.45
       ToTile: 0.2
     damageBonus:
      firing: 0.1
     clipSize: 1
-    stackSize: 10 #TODO
+    #stackSize: 10
     costThrow:
       energy: 8
     battleType: 2
@@ -294,6 +298,71 @@ items:
     invHeight: 3
     attraction: 15
     listOrder: 17630
+  - &STR_BOW_ARROW_SPECIAL
+    type: STR_BOW_ARROW_HE
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_EXPLOSIVES, STR_CONCEALABLE, STR_CLIPS]
+    size: 0.09
+    costSell: 350
+    weight: 1
+    bigSprite: 373
+    floorSprite: 372
+    handSprite: 584
+    power: 30
+    damageType: 3
+    clipSize: 1
+    #stackSize: 10
+    costThrow:
+      energy: 8
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    attraction: 15
+    listOrder: 17630
+  - type: STR_BOW_ARROW_IN
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_INCENDIARIES, STR_CONCEALABLE, STR_CLIPS]
+    refNode: *STR_BOW_ARROW_SPECIAL
+    bigSprite: 374
+    # hitSound: 109
+    # hitAnimation: 26
+    power: 27
+    damageType: 2
+    listOrder: 17630
+  - type: STR_BOW_ARROW_STUN
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
+    refNode: *STR_BOW_ARROW_SPECIAL
+    bigSprite: 375
+    hitSound: 109
+    hitAnimation: 26
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1.3
+      ToTile: 0.1
+    power: 27
+    damageType: 6
+    listOrder: 17630
+  - type: STR_BOW_ARROW_ELECTRIC
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
+    refNode: *STR_BOW_ARROW_SPECIAL
+    bigSprite: 377
+    hitSound: 54
+    hitAnimation: 56
+    blastRadius: 0
+    power: 25
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.1
+      ToTile: 0.0
+    listOrder: 17630
+
 #pistols
   - type: STR_TASER
     categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE]
@@ -2710,6 +2779,7 @@ items:
     power: 30
     damageAlter:
       IgnoreOverKill: false
+      ToTile: 1.0
     costThrow:
       energy: 35
       time: 40
