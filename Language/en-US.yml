@@ -555,6 +555,9 @@ en-US:
   STR_SHOTGUN_SHELLS_BATON: "Shotgun Baton Shells"
   STR_SHOTGUN_SHELLS_BS_AA: "Shotgun AA-BS Ammo"
   STR_SHOTGUN_SHELLS_AP_AA: "Shotgun AA-AP Shells"
+  STR_TASER_CANNON: "Taser Cannon"
+  STR_TASER_CANNON_CLIP: "Taser Cannon Clip"
+  STR_TASER_CANNON_UFOPEDIA: #TODO
   STR_LMG: "Light Machine Gun"
   STR_LMG_UFOPEDIA: "This squad automatic weapon is equipped with a bipod and designed for operating by one soldier. A high rate of fire and slight armor piercing capability makes LMG an excellent infantry support weapon." 
   STR_LMG_CLIP: "LMG Ammo Belt"
@@ -761,3 +764,6 @@ en-US:
   MAP_RURAL: "Rural"
   MAP_XOPSDESERT_NOCACTI: "African Desert"
   MAP_INDUSTRIALSLUM: "Postindustrial" 
+  STR_WEAPONS: "Weapons"
+  STR_COVERT_TOOLS: "Covert Tools"
+  STR_CLIPS: "Clips"

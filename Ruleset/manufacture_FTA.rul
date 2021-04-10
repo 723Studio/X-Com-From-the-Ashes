@@ -9,3 +9,23 @@ manufacture:
     producedItems:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
+  - name: STR_TASER_CANNON
+    category: STR_WEAPONS
+    requires:
+      - STR_TASER_CANNON
+    space: 4
+    time: 450
+    cost: 34000
+    producedItems:
+      STR_TASER_CANNON: 1
+    listOrder: 220030
+  - name: STR_TASER_CANNON_CLIP
+    category: STR_CLIPS
+    requires:
+      - STR_TASER_CANNON
+    space: 2
+    time: 80
+    cost: 15000
+    producedItems:
+      STR_TASER_CANNON_CLIP: 1
+    listOrder: 220030

@@ -1568,63 +1568,68 @@ items:
     attraction: 8
     listOrder: 22570
 #cannons
-  # - type: STR_TASER_CANNON
-  #   categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_UNDERWATER, STR_LAND]
-  #   size: 0.3
-  #   costSell: 10000
-  #   weight: 16
-  #   bigSprite: 1079 #
-  #   floorSprite: 925 #
-  #   handSprite: 1936 #
-  #   bulletSprite: 13 #
-  #   fireSound: 61 #
-  #   invWidth: 2
-  #   invHeight: 3
-  #   accuracyCloseQuarters: 35
-  #   accuracyAimed: 90
-  #   tuAimed: 40
-  #   tuLoad: 25
-  #   battleType: 1
-  #   twoHanded: true
-  #   oneHandedPenalty: 65
-  #   armor: 18
-  #   maxRange: 10
-  #   powerRangeReduction: 30
-  #   experienceTrainingMode: 4
-  #   attraction: 24
-  #   listOrder: 18916
-  # - type: STR_TASER_CANNON_CLIP
-  #   categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_UNDERWATER, STR_LAND]
-  #   size: 0.1
-  #   costSell: 850
-  #   weight: 22
-  #   bigSprite: 1080 #
-  #   floorSprite: 926 #
-  #   hitSound: 54 #
-  #   hitAnimation: 56 #
-  #   invWidth: 2
-  #   invHeight: 2
-  #   blastRadius: 0
-  #   power: 65
-  #   damageType: 11
-  #   damageAlter:
-  #     ToHealth: 0.05
-  #     ToStun: 1.12
-  #     ToArmor: 0.0
-  #     ToWound: 0.0
-  #     RandomWound: false
-  #     RandomStun: false
-  #     IgnorePainImmunity: true
-  #     IgnoreSelfDestruct: true
-  #     RandomType: 2
-  #     IgnoreDirection: false
-  #     ArmorEffectiveness: 0.7
-  #     ToTile: 0.0
-  #   clipSize: 2
-  #   battleType: 2
-  #   armor: 16
-  #   attraction: 15
-  #   listOrder: 18917
+  - type: STR_TASER_CANNON
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS]
+    compatibleAmmo: 
+      - STR_TASER_CANNON_CLIP
+    landOnly: true
+    size: 0.3
+    costSell: 10000
+    weight: 14
+    bigSprite: 398 
+    floorSprite: 398 
+    handSprite: 688 
+    bulletSprite: 13 
+    fireSound: 107
+    invWidth: 2
+    invHeight: 3
+    accuracyCloseQuarters: 35
+    accuracyAimed: 90
+    tuAimed: 40
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 65
+    armor: 18
+    maxRange: 10
+    powerRangeReduction: 30
+    experienceTrainingMode: 4
+    attraction: 24
+    listOrder: 18916
+  - type: STR_TASER_CANNON_CLIP
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    landOnly: true
+    size: 0.1
+    costSell: 850
+    weight: 20
+    bigSprite: 399
+    floorSprite: 399
+    handSprite: 696
+    hitSound: 54 #
+    hitAnimation: 56 #
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 0
+    power: 65
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 1.12
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.7
+      ToTile: 0.0
+    clipSize: 2
+    battleType: 2
+    armor: 16
+    attraction: 15
+    listOrder: 18917
   - type: STR_LMG
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
     requiresBuy:

@@ -193,6 +193,11 @@ research:
       - STR_SINGLE_ROCKET_LAUNCHER
       - STR_MEDI_PACK
       - STR_HELICOPTER
+  - name: STR_TASER_CANNON
+    cost: 70
+    points: 40
+    dependencies:
+      - STR_DAMAGE_11
 
   - name: STR_XCOM_EQUIPMENT_ACQUISITION_PREREQ #TODO - add ways to unlock it
     hidden: true
