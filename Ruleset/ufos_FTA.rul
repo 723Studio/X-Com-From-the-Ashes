@@ -1,4 +1,7 @@
 ufos:
+#real ufos
+
+#points of interest
   - type: STR_RESISTANCE_SHELTER_FARM
     size: STR_MEDIUM_UC
     modSprite: interception_jammed

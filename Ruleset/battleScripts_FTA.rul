@@ -100,6 +100,76 @@ battleScripts:
       groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+
+  - type: MIB_ATTACK_SCIENTIST
+    commands:
+    - type: spawnUnit #for low diff start
+      executionChances: 85
+      packSize: 4
+      randomPackSize: true
+      executions: 2
+      endTurn: 2
+      unitSide: 1
+      maxDifficulty: 2
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #for low diff continue
+      executionChances: 40
+      startTurn: 3
+      packSize: 4
+      randomPackSize: true
+      unitSide: 1
+      maxDifficulty: 2
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #random additional
+      executionChances: 30
+      packSize: 3
+      randomPackSize: false
+      unitSide: 1
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #for high diff start
+      executionChances: 85
+      packSize: 5
+      randomPackSize: true
+      endTurn: 2
+      unitSide: 1
+      minDifficulty: 3
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #for high diff cont
+      executionChances: 40
+      startTurn: 3
+      packSize: 6
+      randomPackSize: true
+      unitSide: 1
+      minDifficulty: 3
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #extra SH gift
+      executionChances: 20
+      packSize: 3
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 4
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+    - type: spawnUnit #extra SH gift
+      executionChances: 10
+      packSize: 8
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 4
+      groups: [0, 2, 3, 4]
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
     - type: showMessage
       maxRuns: 1
       variable: showMessage

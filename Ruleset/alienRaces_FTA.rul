@@ -36,10 +36,10 @@ alienRaces:
     members:
       - STR_MIB_AGENT # 0 - Commander
       - STR_MIB_AGENT # 1 - Leader
-      - STR_MIB_AGENT # 2 - Engineer
-      - STR_MIB_ENFORCER # 3 - Medic
-      - STR_MIB_BUTCHER # 4 - Navigator
-      - STR_MIB_BUTCHER # 5 - Soldier
+      - STR_MIB_ENFORCER # 2 - Engineer
+      - STR_MIB_BUTCHER # 3 - Medic
+      - STR_MIB_ARMORED_AGENT # 4 - Navigator
+      - STR_MIB_AGENT # 5 - Soldier
       - STR_SEEKER_DRONE_TERRORIST # 6 - Terrorist 1
       - STR_SEEKER_DRONE_TERRORIST # 7 - Terrorist 2
       - STR_MIB_AGENT # 8 - Special Guest 1

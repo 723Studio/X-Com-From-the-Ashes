@@ -520,7 +520,7 @@ alienDeployments:
       - FOREST
     customUfo: STR_SCIENTIST_REFUGE
     script: REFUGE_ATTACKED
-    battleScript: MIB_ATTACK
+    battleScript: MIB_ATTACK_SCIENTIST
     data:
       - alienRank: 6
         lowQty: 1
