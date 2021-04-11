@@ -5,8 +5,8 @@ startingTime:
   second: 34
   minute: 15
   hour: 14
-  weekday: 4
-  day: 3
+  weekday: 6
+  day: 5
   month: 3
   year: 1999
 initialFunding: 532
@@ -44,9 +44,9 @@ researchTreeDisabled: true
 
 #difficulty
 startingDifficulty: 2
-difficultyCoefficient: [0, 1, 2, 3, 5] #extra +1 for SH :>
+difficultyCoefficient: [0, 1, 2, 3, 4]
 aimAndArmorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.1]
-sellPriceCoefficient: [110, 105, 100, 95, 80]
+sellPriceCoefficient: [110, 105, 100, 90, 75]
 statGrowthMultipliers:
   tu: 5
   stamina: 4
@@ -66,9 +66,9 @@ enableCloseQuartersCombat: 1
 lighting:
   enhanced: 7
 noLOSAccuracyPenaltyGlobal: 60
-oneHandedPenaltyGlobal: 50
-closeQuartersTuCostGlobal: 6      # TUs required to attempt CQC; unsuccessful attempt doesn't spend the TUs, successful does
-closeQuartersEnergyCostGlobal: 5   # Energy required to attempt CQC; unsuccessful attempt doesn't spend the Energy, successful does
+#oneHandedPenaltyGlobal: 50
+#closeQuartersTuCostGlobal: 6      # TUs required to attempt CQC; unsuccessful attempt doesn't spend the TUs, successful does
+#closeQuartersEnergyCostGlobal: 5   # Energy required to attempt CQC; unsuccessful attempt doesn't spend the Energy, successful does
 tooMuchSmokeThreshold: 13
 giveScoreAlsoForResearchedArtifacts: true
 statisticalBulletConservation: true
