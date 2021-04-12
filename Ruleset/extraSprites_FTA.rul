@@ -87,6 +87,10 @@ extraSprites:
     subY: 8
     files:
       0: Resources/UI/Decorations.png
+  - type: HackingUI
+    singleImage: true
+    files:
+      0: Resources/UI/Hacking_UI.png
 #Projectiles, MeleeAnimations, ExplosionAnimations, HitAnimations, specialIcons
   - type: Projectiles #index step 35
     height: 3
@@ -281,6 +285,7 @@ extraSprites:
       397: Resources/Weapons/Earthbound/Xcom/bigob_Taser_Clip.png
       398: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannon.png
       399: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannonClip.png
+      400: Resources/Weapons/Earthbound/Utilities/handob_TraumaPack.png #temp
       
       
   - type: FLOOROB.PCK
@@ -377,6 +382,7 @@ extraSprites:
       397: Resources/Weapons/Earthbound/Xcom/floorob_Taser_Clip.png
       398: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannon.png
       399: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png
+      400: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png #temp for hacking
 
 
   - type: HANDOB.PCK #Index step 8
@@ -457,6 +463,7 @@ extraSprites:
       680: Resources/Weapons/Earthbound/Xcom/HandOb_Taser.png
       688: Resources/Weapons/Earthbound/Xcom/handob_TaserCannon.png
       696: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png
+      704: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png #temp for hacking
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

@@ -190,8 +190,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     size: 0.06
     landOnly: true
-    costBuy: 2000
-    costSell: 1400
+    costBuy: 150
+    costSell: 1
     weight: 4
     bigSprite: 362
     floorSprite: 362
@@ -290,7 +290,7 @@ items:
     damageBonus:
      firing: 0.1
     clipSize: 1
-    #stackSize: 10
+    stackSize: 10
     costThrow:
       energy: 8
     battleType: 2
@@ -310,7 +310,7 @@ items:
     power: 30
     damageType: 3
     clipSize: 1
-    #stackSize: 10
+    stackSize: 10
     costThrow:
       energy: 8
     battleType: 2
@@ -1273,8 +1273,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CONCEALABLE]
     landOnly: true
     size: 0.1
-    costBuy: 800
-    costSell: 500
+    costBuy: 1300
+    costSell: 800
     weight: 7
     bigSprite: 347
     floorSprite: 347
@@ -1308,8 +1308,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     landOnly: true
     size: 0.2
-    costBuy: 800
-    costSell: 500
+    costBuy: 2200
+    costSell: 1300
     weight: 11
     bigSprite: 348
     floorSprite: 348
@@ -2845,8 +2845,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     landOnly: true
     size: 0.1
-    costBuy: 500
-    costSell: 400
+    costBuy: 640
+    costSell: 380
     weight: 2
     bigSprite: 356
     floorSprite: 356
@@ -2868,7 +2868,7 @@ items:
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.4
-    costBuy: 10000
+    costBuy: 7000
     costSell: 5000
     weight: 17
     landOnly: true
@@ -3045,7 +3045,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.2
     costBuy: 100
-    costSell: 50
+    costSell: 60
     weight: 9
     bigSprite: 392
     floorSprite: 392
@@ -3850,6 +3850,28 @@ items:
   - type: STR_LEATHER_COAT
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     size: 0.9
+
+
+
+  - type: STR_HACKING_TOOL
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
+    requiresBuy:
+        - STR_TODOIUM
+    size: 0.4
+    weight: 1
+    landOnly: true
+    bigSprite: 400 #temp
+    floorSprite: 400 #temp
+    handSprite: 704 #temp
+    battleType: 12 #new type for hacking
+    invWidth: 2
+    invHeight: 1
+    costUse:
+      time: 20
+    flatRate: false
+    attraction: 5
+    #experienceTrainingMode: 19
+    listOrder: 48150
 
 extended:
   tags:
