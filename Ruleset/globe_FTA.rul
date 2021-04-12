@@ -371,6 +371,9 @@ globe:
     - id: -4
       deployments:
         STR_RESISTANCE_FARM_ZOMBIE: 100
+    - id: -6
+      deployments:
+        STR_SCIENTIST_REFUGE: 100
 #GIS  
   polygons:
     - - 1

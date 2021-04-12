@@ -105,12 +105,6 @@ events:
   - name: STR_RESISTANCE_DISCOVER
     description: STR_RESISTANCE_DISCOVER_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
-  - name: STR_RESISTANCE_HEAVEN_SAVED_EVENT
-    description: STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION
-    background: STR_RESISTANCE_BACKGROUND.SCR
-    researchList: [STR_RESISTANCE_BASIC_EQUIPMENT]
-    timer: 1200
-    timerRandom: 300
   - name: STR_RESCUED_RESISTANCE
     description: STR_RESCUED_RESISTANCE_DESCRIPTION
     researchList: [STR_RESISTANCE_FIRST_HELP]
@@ -118,6 +112,7 @@ events:
       STR_RESISTANCE: 100
   - name: STR_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
+    researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: 130
   - name: STR_NOT_RESCUED_RESISTANCE
@@ -127,6 +122,7 @@ events:
       STR_RESISTANCE: -150
   - name: STR_NOT_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
+    researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: -200
 
@@ -134,10 +130,10 @@ events:
 #xcom
   - name: STR_SPORTS_BOW_TINKERING
     description: STR_SPORTS_BOW_TINKERING_DESCRIPTION
-    #background: STR_RESISTANCE_BACKGROUND.SCR
+    background: PLACEHOLDER_BACKGROUND.SCR
     researchList: [STR_SPORTS_BOW_TINKERING]
-    timer: 120
-    timerRandom: 60
+    timer: 640
+    timerRandom: 300
     interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_BIOLAB_PREREQ_EVENT
     description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION

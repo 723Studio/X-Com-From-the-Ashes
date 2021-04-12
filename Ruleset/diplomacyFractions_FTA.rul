@@ -6,41 +6,78 @@ diplomacyFactions:
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 270
-    startingFunds: 50000000
+    startingFunds: 50000000 #TODO!
     startingPower: 350
     stockMod: 10
     startingResearches:
       - STR_RESISTANCE_TECH_TREE_START
       - STR_RESISTANCE_STARTING_EQUIPMENT
     startingStaff:
-      STR_SOLDIER: 10
+      STR_ENGINEER: 2
+      STR_RESISTANCE_AGENT: 15
+
+      #STR_SOLDIER: 10
       #STR_SCIENTIST: 12
-      STR_ENGINEER: 5
-      STR_SKYRANGER: 1
+      
+      #STR_SKYRANGER: 1
     genMissionFreq: 80 #80% chance to run the script
     helpTreatyMissions:
       - heavenDefenceFirstTime
       - heavenDefenceContinues
-    genEventFreq: 95
-    helpTreatyEventScripts:
-       - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
+      - resistanceScientist
+    genEventFreq: 100
+    # helpTreatyEventScripts:
+    #    - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
     # factionalEvents:
     #    - STR_TEST
     startingItems:
-      STR_MEDI_PACK: 7
-      # STR_PROXIMITY_GRENADE: 17
-      # STR_FLASHLIGHT: 1
-      # STR_PERSONAL_ARMOR: 2
-      # STR_STINGRAY_LAUNCHER: 10
-      # STR_AVALANCHE_MISSILES: 5
-    wishList:
-      STR_MEDI_PACK: 90
-      STR_PROXIMITY_GRENADE: 60
-      #STR_FLASHLIGHT: 900
-      #STR_PERSONAL_ARMOR: 2000
-      STR_STINGRAY_LAUNCHER: 25
+      STR_POLICE_BATON: 3
+      STR_MACHETE: 4
+      STR_SWORD: 2
+      STR_THROWING_KNIFE: 30
+      STR_SPORTS_BOW: 2
+      STR_BOW_ARROW: 80
+      STR_SNUBNOSE_PISTOL: 4
+      STR_SNUBNOSE_PISTOL_CLIP: 28
+      STR_HUNTING_RIFLE: 10
+      STR_HUNTING_RIFLE_CLIP: 130
+      STR_SAWED_OFF: 6
+      STR_DOUBLE_BARRELED: 4
+      STR_DOUBLE_BARRELED_BUCKSHOT: 200
+      STR_FIRST_AID: 10
+      STR_PAINKILLER: 8
+      STR_STIMS: 6
+      STR_MEDI_PACK: 4
+      STR_FLASHLIGHT: 8
+      STR_ELECTRO_FLARE: 15
+      STR_FIRE_EXTINGUISHER: 2
+    wishList: #TODO
+      STR_POLICE_BATON: 3
+      STR_MACHETE: 4
+      STR_SWORD: 2
+      STR_THROWING_KNIFE: 30
+      STR_SPORTS_BOW: 2
+      STR_BOW_ARROW: 80
+      STR_SNUBNOSE_PISTOL: 4
+      STR_SNUBNOSE_PISTOL_CLIP: 28
+      STR_HUNTING_RIFLE: 10
+      STR_HUNTING_RIFLE_CLIP: 130
+      STR_SAWED_OFF: 6
+      STR_DOUBLE_BARRELED: 4
+      STR_DOUBLE_BARRELED_BUCKSHOT: 200
+      STR_FIRST_AID: 10
+      STR_PAINKILLER: 8
+      STR_STIMS: 6
+      STR_MEDI_PACK: 4
+      STR_FLASHLIGHT: 8
+      STR_ELECTRO_FLARE: 15
+      STR_FIRE_EXTINGUISHER: 2
     staffWeights:
-      STR_SCIENTIST: 50    
+      STR_SCIENTIST: 50
+      STR_RESISTANCE_AGENT: 40  
+
+
+
   # - name: STR_VOID_CORP
   #   description: STR_VOID_CORP_DESCRIPTION
   #   background: CHURCH_OF_DAGON_BACKGROUND.SCR

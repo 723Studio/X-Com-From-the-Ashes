@@ -164,14 +164,14 @@ eventScripts:
 
 
 #resistance
-  - type: STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
-    oneTimeSequentialEvents: [STR_RESISTANCE_HEAVEN_SAVED_EVENT]
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: true
-    firstMonth: 0
-    lastMonth: 0
-    allowedProcessor: 1 #faction
-    executionOdds: 100
-    minDifficulty: 0
-    maxDifficulty: 4
+  # - type: STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
+  #   oneTimeSequentialEvents: [STR_RESISTANCE_HEAVEN_SAVED_EVENT]
+  #   researchTriggers:
+  #     STR_RESISTANCE_FIRST_HELP: true
+  #   firstMonth: 0
+  #   lastMonth: 0
+  #   allowedProcessor: 1 #faction
+  #   executionOdds: 100
+  #   minDifficulty: 0
+  #   maxDifficulty: 4
    
