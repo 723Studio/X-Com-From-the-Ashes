@@ -3151,5 +3151,12 @@ terrains:
           length: 60
           groups: 5
 
-
-
+  - name: RESISTANCE_FOREST_HOUSE
+    mapDataSets:
+      - BLANKS
+      - FORESTSWAMP
+      - RESISTANCE_FOREST_HOUSE_01
+    mapBlocks:
+        - name: RESISTANCE_FOREST_HOUSE_01
+          width: 20
+          length: 20

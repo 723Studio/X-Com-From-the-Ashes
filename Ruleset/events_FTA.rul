@@ -129,6 +129,14 @@ events:
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
     reputationScore:
       STR_RESISTANCE: -200
+  - name: STR_RESCUED_AGENT
+    description: STR_RESCUED_AGENT_DESCRIPTION
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_NOT_RESCUED_AGENT
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION
+    reputationScore:
+      STR_RESISTANCE: -110
 
 
 #xcom

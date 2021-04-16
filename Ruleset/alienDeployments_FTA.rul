@@ -548,6 +548,85 @@ alienDeployments:
           -
             []
 
+  - type: STR_FOREST_HOUSE
+    width: 50
+    length: 50
+    height: 6
+    genMissionLimit: 0
+    alert: STR_FOREST_HOUSE_ALERT
+    alertBackground: STR_RESISTANCE_BACKGROUND.SCR
+    alertDescription: STR_FOREST_HOUSE_DESCRIPTION
+    markerName: STR_AGENT_EXTRACTION
+    duration: [4, 8]
+    despawnPenalty: 600
+    extendedObjectiveType: STR_EVACUATION 
+    successEvents:
+      STR_RESCUED_AGENT: 100
+    failureEvents:
+      STR_NOT_RESCUED_AGENT: 100
+    briefing:
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_FOREST_HOUSE_DESCRIPTION
+    terrains:
+      - FOREST
+    customUfo: STR_RESISTANCE_SHELTER_FARM #CHANGE
+    script: FOREST_HOUSE
+    battleScript: AGENT_ATTACKED
+    data:
+      - alienRank: 6
+        lowQty: 5
+        highQty: 12
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP 
+            - STR_FLASHBANG_GRENADE 
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP  
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP  
+
   - type: STR_JABBER_HUNT
     race: STR_JABBER
     # civiliansByType:

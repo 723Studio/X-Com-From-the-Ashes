@@ -287,6 +287,9 @@ en-US:
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
   STR_SCIENTIST_REFUGE_DESCRIPTION: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
+  STR_FOREST_HOUSE: "Life Saving"
+  STR_FOREST_HOUSE_ALERT: "Resistance agent extraction"
+  STR_FOREST_HOUSE_DESCRIPTION: "The MIB have surrounded one of our secret points. Most of the people have managed to evacuate, but one of us is still inside. We need to help him, because he is our friend and comrade-in-arms."
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy disk upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
   STR_AGENT_EXTRACTION: "Agent Extraction"
@@ -358,6 +361,10 @@ en-US:
   STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
   STR_MIB_CHASING_SUCCESS: "'Chasing M.I.B.' Operation Results"
   STR_MIB_CHASING_SUCCESS_DESCRIPTION: 
+  STR_RESCUED_AGENT: "You saved his life"
+  STR_RESCUED_AGENT_DESCRIPTION: "We have managed to rescue our agent, it was difficult but we did it. After these events, his confidence in himself and in the resistance in general increased significantly and he promised to avenge the innocent deaths of our brothers.{NEWLINE}Resistance reputation score> +80"
+  STR_NOT_RESCUED_AGENT: "You didn't save his life"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION: "We couldn't save our man from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}Resistance reputation score> -110"
   
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: #TODO
