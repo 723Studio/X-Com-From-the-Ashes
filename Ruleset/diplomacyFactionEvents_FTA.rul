@@ -1,10 +1,92 @@
 diplomacyFactionEvents:
-  - type: STR_TEST
-    executionOdds: 100
-    powerChange: -15
-    vigilanceChange: 20
+#basic destabilizing events
+  - type: STR_POWER_DROP_LOW
+    executionOdds: 8
+    powerChange: 3
+  - type: STR_POWER_DROP_MED
+    executionOdds: 5
+    powerChange: -7
+  - type: STR_POWER_DROP_HIGH
+    executionOdds: 2
+    powerChange: -16
+  - type: STR_VIGILANCE_LOW
+    executionOdds: 10
+    vigilanceChange: 4
+  - type: STR_VIGILANCE_MED
+    executionOdds: 5
+    vigilanceChange: 8
+  - type: STR_VIGILANCE_HIGH
+    executionOdds: 2
+    vigilanceChange: 14
+  - type: STR_FUNDS_RISE_LOW
+    executionOdds: 10
     fundsChange: 50000
-    itemsToAdd: 
-      STR_SMOKE_GRENADE: 15
-    discoveredResearches:
-      - STR_BASE_CONSTRUCTION
+  - type: STR_FUNDS_RISE_MED
+    executionOdds: 5
+    fundsChange: 100000
+  - type: STR_FUNDS_RISE_HIGH
+    executionOdds: 2
+    fundsChange: 150000
+  - type: STR_FUNDS_DROP_LOW
+    executionOdds: 10
+    fundsChange: -50000
+  - type: STR_FUNDS_DROP_MED
+    executionOdds: 5
+    minFunds: 10000
+    fundsChange: -100000
+  - type: STR_FUNDS_DROP_HIGH
+    executionOdds: 2
+    minFunds: 50000
+    fundsChange: -150000
+
+#Resistance
+  - type: STR_EXTRA_INCOME_EG_LOW
+    executionOdds: 10
+    fundsChange: 14851
+    lastMonth: 7
+  - type: STR_EXTRA_INCOME_EG_MED
+    executionOdds: 5
+    fundsChange: 32238
+    lastMonth: 7
+  - type: STR_EXTRA_INCOME_EG_HIGH
+    executionOdds: 2
+    fundsChange: 62476
+    lastMonth: 7  
+  - type: STR_RESISTANCE_REINFORCEMENTS_LOW
+    executionOdds: 10
+    staffToAdd: 
+      STR_RESISTANCE_AGENT: 2
+  - type: STR_RESISTANCE_REINFORCEMENTS_MED
+    executionOdds: 5
+    staffToAdd: 
+      STR_RESISTANCE_AGENT: 3
+  - type: STR_RESISTANCE_REINFORCEMENTS_HIGH
+    executionOdds: 2
+    staffToAdd: 
+      STR_RESISTANCE_AGENT: 4
+  - type: STR_RESISTANCE_NEW_SCIENTIST_EG
+    executionOdds: 5
+    firstMonth: 2
+    lastMonth: 4
+    staffToAdd: 
+      STR_SCIENTIST: 1
+  - type: STR_RESISTANCE_NEW_SCIENTIST_MG
+    executionOdds: 1
+    firstMonth: 5
+    staffToAdd: 
+      STR_SCIENTIST: 1
+  - type: STR_RESISTANCE_NEW_ENGINEER
+    executionOdds: 3
+    firstMonth: 1
+    staffToAdd: 
+      STR_ENGINEER: 1
+
+  # - type: STR_SNIPPET
+  #   executionOdds: 5
+  #   powerChange: -15
+  #   vigilanceChange: 20
+  #   fundsChange: 50000
+  #   itemsToAdd: 
+  #     STR_SMOKE_GRENADE: 15
+  #   discoveredResearches:
+  #     - STR_BASE_CONSTRUCTION

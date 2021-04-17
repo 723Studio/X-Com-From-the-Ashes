@@ -15,7 +15,7 @@ manufacture:
       - STR_TASER_CANNON
     space: 4
     time: 450
-    cost: 34000
+    cost: 43000
     producedItems:
       STR_TASER_CANNON: 1
     listOrder: 220030

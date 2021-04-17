@@ -947,7 +947,7 @@ units:
     armor: STR_RESISTANCE_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14 
-    civilianRecoveryType: STR_SOLDIER #TODO
+    civilianRecoveryType: STR_RESISTANCE_AGENT
     specialObjectiveType: STR_FRIENDLY_VIP
     value: 30 #90
     deathSound: *MaleDeathSounds

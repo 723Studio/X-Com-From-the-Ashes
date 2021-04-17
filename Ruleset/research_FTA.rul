@@ -22,6 +22,8 @@ research:
 #technical part
   - name: STR_LOG1 #hardcoded, do not rename! used to start the game property
     hidden: true
+    getOneFree:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
   - name: STR_TROLLIUM #if that research is in dependency section, that means that research we are looking at something not available to be discovered in the game
     hidden: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
@@ -203,15 +205,6 @@ research:
     points: 40
     dependencies:
       - STR_DAMAGE_11
-
-  - name: STR_XCOM_EQUIPMENT_ACQUISITION_PREREQ #TODO - add ways to unlock it
-    hidden: true
-  - name: STR_XCOM_EQUIPMENT_ACQUISITION
-    cost: 50
-    points: 40
-    dependencies:
-      - STR_XCOM_EQUIPMENT_ACQUISITION_PREREQ
-      - STR_UFOPEDIA_DECRYPTION
 
   - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - add ways to unlock it
     hidden: true
@@ -1044,3 +1037,9 @@ research:
     points: 15
     dependencies:
       - STR_RESISTANCE_TECH_TREE_START
+
+  - name: STR_XCOM_EQUIPMENT_ACQUISITION #TODO - add ways to unlock it
+    cost: 50
+    points: 800
+    dependencies:
+     - STR_TROLLIUM

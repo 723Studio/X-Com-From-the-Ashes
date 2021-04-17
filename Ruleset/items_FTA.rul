@@ -150,8 +150,8 @@ items:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     landOnly: true
-    costBuy: 3000
-    costSell: 1800
+    costBuy: 2100
+    costSell: 1500
     weight: 8
     bigSprite: 366
     floorSprite: 366
@@ -190,8 +190,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     size: 0.06
     landOnly: true
-    costBuy: 150
-    costSell: 1
+    costBuy: 100
+    costSell: 60
     weight: 4
     bigSprite: 362
     floorSprite: 362
@@ -273,8 +273,8 @@ items:
   - type: STR_BOW_ARROW
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
     size: 0.08
-    costBuy: 80
-    costSell: 50
+    costBuy: 35
+    costSell: 25
     weight: 1
     bigSprite: 372
     floorSprite: 372
@@ -302,7 +302,7 @@ items:
     type: STR_BOW_ARROW_HE
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_EXPLOSIVES, STR_CONCEALABLE, STR_CLIPS]
     size: 0.09
-    costSell: 350
+    costSell: 150
     weight: 1
     bigSprite: 373
     floorSprite: 372
@@ -432,7 +432,7 @@ items:
     landOnly: true
     size: 0.1
     costBuy: 900
-    costSell: 400
+    costSell: 600
     weight: 5
     bigSprite: 351
     floorSprite: 351
@@ -483,8 +483,8 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
-    costBuy: 350
-    costSell: 250
+    costBuy: 1100
+    costSell: 800
     weight: 4
     landOnly: true
     bigSprite: 345
@@ -517,8 +517,8 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.025
-    costBuy: 30
-    costSell: 22
+    costBuy: 160
+    costSell: 70
     weight: 2
     landOnly: true
     bigSprite: 346
@@ -701,8 +701,8 @@ items:
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.15
-    costBuy: 400
-    costSell: 300
+    costBuy: 2600
+    costSell: 1800
     weight: 6
     bigSprite: 359
     floorSprite: 359
@@ -738,8 +738,8 @@ items:
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.02
-    costBuy: 100
-    costSell: 50
+    costBuy: 140
+    costSell: 80
     weight: 3
     bigSprite: 360
     floorSprite: 360
@@ -794,7 +794,7 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.03
     costBuy: 250
-    costSell: 75
+    costSell: 175
     weight: 3
     landOnly: true
     bigSprite: 332
@@ -814,7 +814,7 @@ items:
   - type: STR_PDW_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     size: 0.03
-    costSell: 150
+    costSell: 600
     weight: 3
     landOnly: true
     bigSprite: 333
@@ -871,8 +871,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
-    costBuy: 240
-    costSell: 200
+    costBuy: 320
+    costSell: 250
     weight: 3
     landOnly: true
     bigSprite: 335
@@ -891,7 +891,7 @@ items:
   - type: STR_SMG_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
     size: 0.05
-    costSell: 200
+    costSell: 1100
     weight: 3
     landOnly: true
     bigSprite: 336
@@ -945,8 +945,8 @@ items:
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
-    costBuy: 200
-    costSell: 100
+    costBuy: 220
+    costSell: 150
     weight: 3
     landOnly: true
     bigSprite: 344
@@ -1001,8 +1001,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
-    costBuy: 8700
-    costSell: 7000
+    costBuy: 9400
+    costSell: 8000
     weight: 9
     landOnly: true
     bigSprite: 1
@@ -1067,8 +1067,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
-    costBuy: 350
-    costSell: 250
+    costBuy: 400
+    costSell: 320
     weight: 3
     landOnly: true
     bigSprite: 2
@@ -1087,8 +1087,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
-    costBuy: 380
-    costSell: 260
+    costBuy: 420
+    costSell: 350
     weight: 3
     landOnly: true
     bigSprite: 380
@@ -1113,7 +1113,7 @@ items:
   - type: STR_RIFLE_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     size: 0.02
-    costSell: 650
+    costSell: 1320
     weight: 3
     landOnly: true
     bigSprite: 302
@@ -1132,8 +1132,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     size: 0.2
     landOnly: true
-    costBuy: 4000
-    costSell: 3000
+    costBuy: 3500
+    costSell: 2600
     weight: 11
     bigSprite: 341
     floorSprite: 341
@@ -1222,7 +1222,7 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
-    costBuy: 550
+    costBuy: 650
     costSell: 400
     weight: 3
     landOnly: true
@@ -1247,7 +1247,7 @@ items:
   - type: STR_SNIPER_RIFLE_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
     size: 0.02
-    costSell: 3200
+    costSell: 2200
     weight: 2
     landOnly: true
     bigSprite: 330
@@ -1273,8 +1273,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CONCEALABLE]
     landOnly: true
     size: 0.1
-    costBuy: 1300
-    costSell: 800
+    costBuy: 1500
+    costSell: 1100
     weight: 7
     bigSprite: 347
     floorSprite: 347
@@ -1344,8 +1344,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
-    costBuy: 25
-    costSell: 15
+    costBuy: 40
+    costSell: 30
     weight: 2
     bigSprite: 349
     floorSprite: 349
@@ -1392,8 +1392,8 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
-    costBuy: 1200
-    costSell: 900
+    costBuy: 3700
+    costSell: 2800
     weight: 8
     landOnly: true
     bigSprite: 319
@@ -1412,7 +1412,7 @@ items:
     snapRange: 8
     dropoff: 6
     shotgunChoke: 70
-    tuLoad: 30
+    tuLoad: 45
     battleType: 1
     twoHanded: true
     blockBothHands: true
@@ -1454,9 +1454,9 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
-    costBuy: 2200
+    costBuy: 9800
     costSell: 1800
-    weight: 12
+    weight: 13
     landOnly: true
     bigSprite: 321
     floorSprite: 321
@@ -1477,7 +1477,7 @@ items:
     aimRange: 14
     snapRange: 8
     dropoff: 6
-    tuLoad: 25
+    tuLoad: 35
     battleType: 1
     twoHanded: true
     blockBothHands: true
@@ -1492,8 +1492,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
-    costBuy: 4500
-    costSell: 3600
+    costBuy: 9500
+    costSell: 7300
     weight: 12
     landOnly: true
     bigSprite: 327
@@ -1515,7 +1515,7 @@ items:
     aimRange: 14
     snapRange: 8
     dropoff: 6
-    tuLoad: 25
+    tuLoad: 35
     battleType: 1
     twoHanded: true
     blockBothHands: true
@@ -1643,7 +1643,7 @@ items:
       - STR_TASER_CANNON_CLIP
     landOnly: true
     size: 0.3
-    costSell: 10000
+    costSell: 18000
     weight: 14
     bigSprite: 398 
     floorSprite: 398 
@@ -1669,7 +1669,7 @@ items:
     categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     landOnly: true
     size: 0.1
-    costSell: 850
+    costSell: 1200
     weight: 20
     bigSprite: 399
     floorSprite: 399
@@ -1705,7 +1705,7 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
     costBuy: 34000
-    costSell: 24000
+    costSell: 25000
     weight: 18
     landOnly: true
     bigSprite: 385
@@ -2416,7 +2416,7 @@ items:
   - type: STR_MINIGUN_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     size: 0.3
-    costSell: 93000
+    costSell: 80000
     weight: 15
     bigSprite: 395
     floorSprite: 395
@@ -2443,8 +2443,8 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
-    costBuy: 3200
-    costSell: 2700
+    costBuy: 5100
+    costSell: 3200
     weight: 9
     landOnly: true
     bigSprite: 317
@@ -2593,8 +2593,8 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
-    costBuy: 250
-    costSell: 200
+    costBuy: 220
+    costSell: 170
     weight: 4
     battleType: 1
     bigSprite: 353
@@ -2630,8 +2630,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
-    costBuy: 300
-    costSell: 240
+    costBuy: 600
+    costSell: 500
     weight: 3
     landOnly: true
     bigSprite: 19
@@ -2657,8 +2657,8 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
-    costBuy: 150
-    costSell: 120
+    costBuy: 480
+    costSell: 350
     weight: 3
     bigSprite: 20
     floorSprite: 20
@@ -2683,8 +2683,8 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
-    costBuy: 1500
-    costSell: 1200
+    costBuy: 1700
+    costSell: 1300
     weight: 4
     bigSprite: 21
     floorSprite: 21
@@ -2712,8 +2712,8 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
-    costBuy: 150
-    costSell: 80
+    costBuy: 400
+    costSell: 350
     weight: 3
     bigSprite: 300
     floorSprite: 300
@@ -2770,8 +2770,8 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     landOnly: true
-    costBuy: 650
-    costSell: 500
+    costBuy: 780
+    costSell: 600
     weight: 4
     bigSprite: 363
     floorSprite: 363
@@ -2868,8 +2868,8 @@ items:
     requiresBuy:
         - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.4
-    costBuy: 7000
-    costSell: 5000
+    costBuy: 5000
+    costSell: 4100
     weight: 17
     landOnly: true
     bigSprite: 338
@@ -3010,7 +3010,7 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     landOnly: true
     costBuy: 6000
-    costSell: 4000
+    costSell: 4100
     size: 0.4
     weight: 22
     bigSprite: 389
@@ -3044,8 +3044,8 @@ items:
   - type: STR_FIRE_EXTINGUISHER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.2
-    costBuy: 100
-    costSell: 60
+    costBuy: 140
+    costSell: 90
     weight: 9
     bigSprite: 392
     floorSprite: 392
@@ -3863,7 +3863,7 @@ items:
     bigSprite: 400 #temp
     floorSprite: 400 #temp
     handSprite: 704 #temp
-    battleType: 12 #new type for hacking
+    #battleType: 12 #new type for hacking
     invWidth: 2
     invHeight: 1
     costUse:

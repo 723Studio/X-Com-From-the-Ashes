@@ -150,6 +150,7 @@ extraSprites:
       56: Resources/Weapons/HitAnimations/Taser_hit.png
       66: Resources/Weapons/HitAnimations/Toxic_hit.png
       76: Resources/Weapons/HitAnimations/Sound_hit.png
+      86: Resources/Weapons/HitAnimations/MeleeShock_hit.png
   # - type: SPICONS.DAT #special icons, index step 1
   #   width: 32
   #   height: 24  
