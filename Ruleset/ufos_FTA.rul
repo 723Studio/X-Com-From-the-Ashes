@@ -428,3 +428,51 @@ ufos:
         - name: EVACZONE_N
           width: 10
           length: 10
+  - type: STR_RESISTANCE_FOREST_HOUSE
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_RESISTANCE_FOREST_HOUSE
+      mapDataSets:
+        - BLANKS
+        - RESISTANCE_FOREST_HOUSE_01
+        - FORESTSWAMP
+      mapBlocks:
+        - name: RESISTANCE_FOREST_HOUSE_01
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_SCIENTIST_VIP:
+              - [7, 4, 0]
+            STR_FLOPPY_SCIENTISTS_LOG:
+              - [1, 1, 1]
+          # randomizedItems: #TODO
+          #     - position: [9, 10, 0]
+          #       amount: 1
+          #       mixed: true
+          #       itemList: [STR_ALIEN_ELECTRONICS, STR_ALIEN_DATA_SLATE, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_3]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_SCIENTIST_VIP: [0, 0]
+        - name: RESISTANCE_FOREST_HOUSE_02
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_SCIENTIST_VIP:
+              - [7, 1, 0]
+            STR_FLOPPY_SCIENTISTS_LOG:
+              - [1, 1, 1]
+          # randomizedItems: #TODO
+          #     - position: [9, 10, 0]
+          #       amount: 1
+          #       mixed: true
+          #       itemList: [STR_ALIEN_ELECTRONICS, STR_ALIEN_DATA_SLATE, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_3]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_SCIENTIST_VIP: [0, 0]

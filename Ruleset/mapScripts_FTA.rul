@@ -424,7 +424,7 @@ mapScripts:
       executionChances: 65
     - type: fillArea
 
-  - type: FOREST_HOUSE
+  - type: RESISTANCE_FOREST_HOUSE
     commands:
     - type: addCraft
       rects: 

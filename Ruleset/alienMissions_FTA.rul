@@ -28,7 +28,7 @@ alienMissions:
         trajectory: CA_SPAWN
         timer: 4000
         objective: true
-  - type: STR_FOREST_HOUSE
+  - type: STR_RESISTANCE_FOREST_HOUSE
     despawnEvenIfTargeted: true
     objective: 3
     spawnZone: 0
@@ -36,5 +36,5 @@ alienMissions:
       - ufo: dummy
         count: 1
         trajectory: CA_SPAWN
-        timer: 4000
+        timer: 4000 
         objective: true

@@ -3160,3 +3160,6 @@ terrains:
         - name: RESISTANCE_FOREST_HOUSE_01
           width: 20
           length: 20
+        - name: RESISTANCE_FOREST_HOUSE_02
+          width: 20
+          length: 20

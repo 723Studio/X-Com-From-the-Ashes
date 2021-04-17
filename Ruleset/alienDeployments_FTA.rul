@@ -548,14 +548,14 @@ alienDeployments:
           -
             []
 
-  - type: STR_FOREST_HOUSE
+  - type: STR_RESISTANCE_FOREST_HOUSE
     width: 50
     length: 50
     height: 6
     genMissionLimit: 0
-    alert: STR_FOREST_HOUSE_ALERT
+    alert: STR_RESISTANCE_FOREST_HOUSE_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_FOREST_HOUSE_DESCRIPTION
+    alertDescription: STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION
     markerName: STR_AGENT_EXTRACTION
     duration: [4, 8]
     despawnPenalty: 600
@@ -568,11 +568,11 @@ alienDeployments:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
-      desc: STR_FOREST_HOUSE_DESCRIPTION
+      desc: STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION
     terrains:
-      - FOREST
+      - FORESTSWAMP
     customUfo: STR_RESISTANCE_SHELTER_FARM #CHANGE
-    script: FOREST_HOUSE
+    script: RESISTANCE_FOREST_HOUSE
     battleScript: AGENT_ATTACKED
     data:
       - alienRank: 6
