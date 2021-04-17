@@ -443,36 +443,24 @@ ufos:
       name: STR_RESISTANCE_FOREST_HOUSE
       mapDataSets:
         - BLANKS
-        - RESISTANCE_FOREST_HOUSE_01
         - FORESTSWAMP
+        - RESISTANCE_FOREST_HOUSE_01
       mapBlocks:
         - name: RESISTANCE_FOREST_HOUSE_01
           width: 20
           length: 20
           items:
-            STR_SPAWN_RESISTANCE_SCIENTIST_VIP:
-              - [7, 4, 0]
-            STR_FLOPPY_SCIENTISTS_LOG:
-              - [1, 1, 1]
-          # randomizedItems: #TODO
-          #     - position: [9, 10, 0]
-          #       amount: 1
-          #       mixed: true
-          #       itemList: [STR_ALIEN_ELECTRONICS, STR_ALIEN_DATA_SLATE, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_3]
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [5, 5, 0]
+              - [10, 3, 0]
           fuseTimers:
-            STR_SPAWN_RESISTANCE_SCIENTIST_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
         - name: RESISTANCE_FOREST_HOUSE_02
           width: 20
           length: 20
           items:
-            STR_SPAWN_RESISTANCE_SCIENTIST_VIP:
-              - [7, 1, 0]
-            STR_FLOPPY_SCIENTISTS_LOG:
-              - [1, 1, 1]
-          # randomizedItems: #TODO
-          #     - position: [9, 10, 0]
-          #       amount: 1
-          #       mixed: true
-          #       itemList: [STR_ALIEN_ELECTRONICS, STR_ALIEN_DATA_SLATE, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_SECRET_FILES_3]
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [5, 5, 0]
+              - [8, 3, 0]
           fuseTimers:
-            STR_SPAWN_RESISTANCE_SCIENTIST_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
