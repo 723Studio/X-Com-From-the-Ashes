@@ -245,4 +245,4 @@ battleScripts:
       unitSide: 1
       minDifficulty: 4
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_ENFORCER_SPAWN, STR_MIB_ENFORCER_SPAWN, STR_MIB_ENFORCER_SPAWN]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
