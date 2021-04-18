@@ -571,7 +571,7 @@ alienDeployments:
       desc: STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION
     terrains:
       - FORESTSWAMP
-    customUfo: STR_RESISTANCE_SHELTER_FARM #CHANGE
+    customUfo: STR_RESISTANCE_FOREST_HOUSE
     script: RESISTANCE_FOREST_HOUSE
     battleScript: AGENT_ATTACKED
     data:
@@ -579,12 +579,12 @@ alienDeployments:
         lowQty: 4
         highQty: 8
         dQty: 2
-        percentageOutsideUfo: 100
+        percentageOutsideUfo: 0
         itemSets:
           -
             - STR_PISTOL
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
