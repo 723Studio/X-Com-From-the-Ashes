@@ -2,19 +2,19 @@ alienRaces:
   - id: STR_INITIAL_BASE_DEFENSE_RACE #hardcoded, do not rename!
     members:
       - STR_XCOM_EX_COMMANDER # 0 - Commander
-      - STR_MIB_AGENT # 1 - Leader
-      - STR_MIB_AGENT # 2 - Engineer
-      - STR_MIB_AGENT # 3 - Medic
-      - STR_MIB_ENFORCER # 4 - Navigator
+      - STR_FREE_SPOT # 1 - Leader
+      - STR_FREE_SPOT # 2 - Engineer
+      - STR_FREE_SPOT # 3 - Medic
+      - STR_FREE_SPOT # 4 - Navigator
       - STR_MIB_AGENT # 5 - Soldier
-      - STR_MIB_AGENT # 6 - Terrorist 1
-      - STR_MIB_AGENT # 7 - Terrorist 2
-      - STR_MIB_AGENT # 8 - Special Guest 1
-      - STR_MIB_AGENT # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_MIB_AGENT # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_MIB_AGENT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_MIB_AGENT # 13 - Non-Combatant 2
-      - STR_MIB_AGENT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 6 - Terrorist 1
+      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 13 - Non-Combatant 2
+      - STR_FREE_SPOT # 14 - Special Guest 3
   - id: STR_MIB_REGIONAL_HQ
     members:
       - STR_MIB_AGENT # 0 - Commander
@@ -34,88 +34,88 @@ alienRaces:
 
   - id: STR_MIB
     members:
-      - STR_MIB_AGENT # 0 - Commander
-      - STR_MIB_AGENT # 1 - Leader
-      - STR_MIB_ENFORCER # 2 - Engineer
+      - STR_FREE_SPOT # 0 - Commander
+      - STR_FREE_SPOT # 1 - Leader
+      - STR_FREE_SPOT # 2 - Engineer
       - STR_MIB_BUTCHER # 3 - Medic
       - STR_MIB_ARMORED_AGENT # 4 - Navigator
       - STR_MIB_AGENT # 5 - Soldier
       - STR_SEEKER_DRONE_TERRORIST # 6 - Terrorist 1
-      - STR_SEEKER_DRONE_TERRORIST # 7 - Terrorist 2
-      - STR_MIB_AGENT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_MIB_SPECOPS # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_MIB_BUTCHER # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_MIB_SPECOPS # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_MIB_SPECOPS # 13 - Non-Combatant 2
-      - STR_MIB_SPECOPS # 14 - Special Guest 3
+      - STR_MIB_ENFORCER # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 13 - Non-Combatant 2
+      - STR_FREE_SPOT # 14 - Special Guest 3
 
   - id: STR_ZOMBIES
     members:
-      - STR_ZOMBIE_STERILE_TERRORIST # 0 - Commander
-      - STR_ZOMBIE_STERILE_TERRORIST # 1 - Leader
-      - STR_ZOMBIE_STERILE_TERRORIST # 2 - Engineer
-      - STR_ZOMBIE_STERILE_TERRORIST # 3 - Medic
+      - STR_FREE_SPOT # 0 - Commander
+      - STR_FREE_SPOT # 1 - Leader
+      - STR_FREE_SPOT # 2 - Engineer
+      - STR_FREE_SPOT # 3 - Medic
       - STR_ZOMBIE_GRUBAS_TERRORIST # 4 - Navigator
       - STR_ZOMBIE_STERILE_TERRORIST # 5 - Soldier
       - STR_FACEHUGGER # 6 - Terrorist 1
-      - STR_ZOMBIE_GRUBAS_TERRORIST # 7 - Terrorist 2
-      - STR_FACEHUGGER # 8 - Special Guest 1
-      - STR_ZOMBIE_STERILE_TERRORIST # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_ZOMBIE_STERILE_TERRORIST # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_ZOMBIE_STERILE_TERRORIST # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_ZOMBIE_STERILE_TERRORIST # 13 - Non-Combatant 2
-      - STR_ZOMBIE_STERILE_TERRORIST # 14 - Special Guest 3
+      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 13 - Non-Combatant 2
+      - STR_FREE_SPOT # 14 - Special Guest 3
 
   - id: STR_JABBER
     members:
-      - STR_JABBER # 0 - Commander
-      - STR_JABBER # 1 - Leader
-      - STR_JABBER # 2 - Engineer
-      - STR_JABBER # 3 - Medic
-      - STR_JABBER # 4 - Navigator
+      - STR_FREE_SPOT # 0 - Commander
+      - STR_FREE_SPOT # 1 - Leader
+      - STR_FREE_SPOT # 2 - Engineer
+      - STR_FREE_SPOT # 3 - Medic
+      - STR_FREE_SPOT # 4 - Navigator
       - STR_JABBER # 5 - Soldier
-      - STR_JABBER # 6 - Terrorist 1
-      - STR_JABBER # 7 - Terrorist 2
-      - STR_JABBER # 8 - Special Guest 1
-      - STR_JABBER # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_JABBER # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_JABBER # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_JABBER # 13 - Non-Combatant 2
-      - STR_JABBER # 14 - Special Guest 3
+      - STR_FREE_SPOT # 6 - Terrorist 1
+      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 13 - Non-Combatant 2
+      - STR_FREE_SPOT # 14 - Special Guest 3
 
   - id: STR_CHUPACABRA
     members:
-      - STR_CHUPACABRA # 0 - Commander
-      - STR_CHUPACABRA # 1 - Leader
-      - STR_CHUPACABRA # 2 - Engineer
-      - STR_CHUPACABRA # 3 - Medic
-      - STR_CHUPACABRA # 4 - Navigator
+      - STR_FREE_SPOT # 0 - Commander
+      - STR_FREE_SPOT # 1 - Leader
+      - STR_FREE_SPOT # 2 - Engineer
+      - STR_FREE_SPOT # 3 - Medic
+      - STR_FREE_SPOT # 4 - Navigator
       - STR_CHUPACABRA # 5 - Soldier
-      - STR_CHUPACABRA # 6 - Terrorist 1
-      - STR_CHUPACABRA # 7 - Terrorist 2
-      - STR_CHUPACABRA # 8 - Special Guest 1
-      - STR_CHUPACABRA # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_CHUPACABRA # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_CHUPACABRA # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_CHUPACABRA # 13 - Non-Combatant 2
-      - STR_CHUPACABRA # 14 - Special Guest 3
+      - STR_FREE_SPOT # 6 - Terrorist 1
+      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 13 - Non-Combatant 2
+      - STR_FREE_SPOT # 14 - Special Guest 3
 
   - id: STR_MILITIA
     members:
-      - STR_MALE_POLICE # 0 - Commander
-      - STR_MALE_POLICE # 1 - Leader
+      - STR_FREE_SPOT # 0 - Commander
+      - STR_FREE_SPOT # 1 - Leader
       - STR_MALE_POLICE # 2 - Engineer
-      - STR_MALE_MILITIA_CITIZEN # 3 - Medic
-      - STR_MALE_MILITIA_CITIZEN # 4 - Navigator
+      - STR_FREE_SPOT # 3 - Medic
+      - STR_FREE_SPOT # 4 - Navigator
       - STR_MALE_MILITIA_CITIZEN # 5 - Soldier
       - STR_DOGE # 6 - Terrorist 1
-      - STR_DOGE # 7 - Terrorist 2
-      - STR_MALE_MILITIA_CITIZEN # 8 - Special Guest 1
-      - STR_MALE_POLICE # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_MALE_POLICE # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_MALE_POLICE # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_MALE_MILITIA_CITIZEN # 13 - Non-Combatant 2
-      - STR_MALE_MILITIA_CITIZEN # 14 - Special Guest 3
+      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 13 - Non-Combatant 2
+      - STR_FREE_SPOT # 14 - Special Guest 3
 
   # - id: STR_SPAWNS
   #   members:

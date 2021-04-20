@@ -156,6 +156,7 @@ fixedUserOptions:
   battleExplosionHeight: 3
   weaponSelfDestruction: false
   oxceLinks: true
+  oxceUpdateCheck: false
 
 recommendedUserOptions:
   playIntro: true

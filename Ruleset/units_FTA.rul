@@ -1118,3 +1118,11 @@ units:
     berserkChance: 0
     showFullNameInAlienInventory: 1
     value: 400
+
+
+
+
+
+
+  - type: STR_FREE_SPOT #placeholder unit to make alien race more clear to read
+    refNode: *STR_MIB_AGENT    
