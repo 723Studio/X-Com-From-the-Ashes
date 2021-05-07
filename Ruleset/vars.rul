@@ -78,15 +78,15 @@ minReactionAccuracy: 30
 turnAIUseGrenade: 2 #TODO Consider if changing back to 1
 turnAIUseBlaster: 2 
 surrenderMode: 0 #TODO Consider
-#closeQuartersSneakUpGlobal: 40 #TODO Uncomment
+closeQuartersSneakUpGlobal: 40
 
 
 ai:
   extendedFireModeChoice: true
   pickUpWeaponsMoreActively: true
   destroyBaseFacilities: true
-  fireChoiceIntelCoeff: 4 # Make the choice of attack more RNG dependent
-  fireChoiceAggroCoeff: 1 # Aggression doesn't matter as much  
+  fireChoiceIntelCoeff: 4 # Make the choice of attack less RNG dependent (default 5)
+  fireChoiceAggroCoeff: 3 # Aggression doesn't matter as much (default 5)
 
 constants:
   extendedItemReloadCost: true
@@ -144,6 +144,7 @@ fixedUserOptions:
   containmentLimitsEnforced: true
   battleInstantGrenade: false
   alienBleeding: true
+  globeSeasons: true
   allowPsiStrengthImprovement: false
   allowPsionicCapture: false #TODO consider
   anytimePsiTraining: true
@@ -162,12 +163,21 @@ recommendedUserOptions:
   playIntro: true
   aggressiveRetaliation: false
   allowBuildingQueue: false
-  anytimePsiTraining: true
   canTransferCraftsWhileAirborne: true
+  battleAutoEnd: true
   fieldPromotions: true
   strafe: true
+  forceFire: true
   noAlienPanicMessages: true
   oxceEnableOffCentreShooting: true
+  oxceHighlightNewTopics: true
+  weaponSelfDestruction: false
+  oxceUfoLandingAlert: false
+  oxceAutoSell: true
+  craftLaunchAlways: true
+  showMoreStatsInInventoryView: true
+  battleHairBleach: true
+  soldierDiaries: true
 
 alienItemLevels:
   - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
