@@ -1,6 +1,96 @@
 ufos:
 #real ufos
-
+  - delete: STR_SMALL_SCOUT
+  - delete: STR_ABDUCTOR
+  - type: STR_SMALL_SCOUT
+    size: STR_VERY_SMALL
+    sprite: 0
+    damageMax: 50
+    avoidBonus: 20
+    shieldCapacity: 20
+    shieldRecharge: 45 #35 % to get 1 SP per sec
+    shieldRechargeInGeoscape: 200
+    shieldBleedThrough: 100
+    speedMax: 2140
+    accel: 12
+    power: 10
+    range: 30
+    score: 50
+    reload: 50
+    #hitBonus: 5
+    breakOffTime: 1200
+    unmanned: true #fight to death
+    battlescapeTerrainData:
+      name: UFO1A
+      mapDataSets:
+        - BLANKS
+        - UFO1
+      mapBlocks:
+        - name: UFO1A
+          width: 10
+          length: 10
+        - name: UFO1B
+          width: 10
+          length: 10
+        - name: UFO1C
+          width: 10
+          length: 10
+  - type: STR_ABDUCTOR
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    shieldCapacity: 200
+    shieldRecharge: 115 #1*100% + 15 % to get 1 SP per sec
+    shieldRechargeInGeoscape: 200
+    shieldBleedThrough: 100
+    speedMax: 3940
+    accel: 8
+    power: 50
+    range: 40
+    reload: 70
+    breakOffTime: 3000
+    score: 800
+    missionScore: 3
+    battlescapeTerrainData:
+      name: UFO_ABDUCTOR
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_OPER2
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: ABDUCT00
+          width: 20
+          length: 20
+        - name: ABDUCT01
+          width: 20
+          length: 20
+        - name: ABDUCT02
+          width: 20
+          length: 20
+        - name: ABDUCT03
+          width: 20
+          length: 20
+        - name: ABDUCT04
+          width: 20
+          length: 20
+        - name: ABDUCT05
+          width: 20
+          length: 20
+        - name: ABDUCT06
+          width: 20
+          length: 20
+        - name: ABDUCT07
+          width: 20
+          length: 20
+        - name: ABDUCT08
+          width: 20
+          length: 20
+        - name: ABDUCT09
+          width: 20
+          length: 20
 #points of interest
   - type: STR_RESISTANCE_SHELTER_FARM
     size: STR_MEDIUM_UC

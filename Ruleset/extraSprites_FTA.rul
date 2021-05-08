@@ -184,6 +184,7 @@ extraSprites:
       118: Resources/Armors/Civilians/Animals/bigob_DOGE_CORPSE.png
       119: Resources/Armors/Xcom/CoatArmor/bigob_COAT_CORPSE.png
       120: Resources/Armors/Enemies/MiB/bigob_MIB_BUTCHER.png
+      121: Resources/Armors/Enemies/Aliens/Sectoids/bigob_SECTOID_COMMANDER.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -726,6 +727,21 @@ extraSprites:
        0: Resources/UfopediaPics/Enemies/ufopedia_JABBER_AUTOPSY.png 
 
 #armors, inventory screens
+  - type: sectoidInventoryImage
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Aliens/Sectoids/inventory_SECTOID.png
+  - type: SECTOID_COMMANDER.PCK
+    width: 320
+    height: 1080
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/Aliens/Sectoids/SECTOID_COMMANDER.png
+  - type: sectoidCommanderInventoryImage
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Aliens/Sectoids/inventory_SECTOID_COMMANDER.png
   - type: XCOM_EX_COMMANDER.PCK
     width: 512
     height: 720

@@ -31,7 +31,7 @@ craftWeapons:
     reloadCautious: 64
     reloadStandard: 54 #48
     reloadAggressive: 44 #32
-    ammoMax: 4 #6
+    ammoMax: 6
     launcher: STR_STINGRAY_LAUNCHER
     clip: STR_STINGRAY_MISSILES
     projectileType: 0

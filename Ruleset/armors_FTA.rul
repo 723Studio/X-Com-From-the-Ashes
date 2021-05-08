@@ -3,6 +3,79 @@ armors:
   # - delete: STR_PERSONAL_ARMOR_UC
   # - delete: STR_POWER_SUIT_UC
   # - delete: STR_FLYING_SUIT_UC
+
+#aliens
+  - &STR_SECTOID_STANDARD_ARMOR
+    type: STR_SECTOID_STANDARD_ARMOR
+    spriteSheet: SECTOID.PCK
+    spriteInv: sectoidInventoryImage
+    corpseBattle:
+      - STR_SECTOID_CORPSE
+    visibilityAtDark: 25
+    psiVision: 10
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.33
+      bravery: 0.2
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.2
+        health: -0.05
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    damageModifier: &SectoidResists
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.0 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.2 #6 - Stun
+      - 1.4 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.3 #10 - EMP
+      - 1.4 #11 - Electric
+      - 0.7 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
+    loftempsSet: [ 2 ]
+    tags:
+      ARMOR_PSI_SHIELD_TYPE: 1
+  - type: STR_SECTOID_LEADER_ARMOR
+    refNode: *STR_SECTOID_STANDARD_ARMOR
+    ufopediaType: STR_SECTOID_STANDARD_ARMOR
+    psiVision: 15
+    meleeDodge:
+      reactions: 0.12
+  - type: STR_SECTOID_COMMANDER_ARMOR
+    refNode: *STR_SECTOID_STANDARD_ARMOR
+    spriteInv: sectoidCommanderInventoryImage
+    spriteSheet: SECTOID_COMMANDER.PCK
+    ufopediaType: STR_SECTOID_STANDARD_ARMOR
+    corpseBattle:
+      - STR_SECTOID_COMMANDER_CORPSE
+    psiVision: 17
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+
 #MIB
   - type: STR_XCOM_EX_COMMANDER_ARMOR
     spriteSheet: XCOM_EX_COMMANDER.PCK
@@ -1009,7 +1082,9 @@ armors:
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
     RuleArmor:
-      #psi-shield      
+      #psi shield (mana-dependent mechanic)
+      ARMOR_PSI_SHIELD_TYPE: int #0 - default, no shield, 1 - usual psi shield
+      #energy shield (own hp pool)  
       ARMOR_ENERGY_SHIELD_CAPACITY: int
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int

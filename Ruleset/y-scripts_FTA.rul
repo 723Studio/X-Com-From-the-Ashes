@@ -45,7 +45,7 @@ extended:
       SAVIOR: int
       UTILITY_SPECIALIST: int
       STR_UNARMED_FIGHTER: int
-    RuleItem:
+    RuleItem: # Remember to add tag definitions to same file as item/armor rulesets!
       PHYSICAL_SHIELD_ARMOR: int
       ITEM_IS_MELEE: int
       ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT: int
@@ -64,8 +64,10 @@ extended:
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
-    RuleArmor:
-      #psi-shield      
+    RuleArmor: # Remember to add tag definitions to same file as item/armor rulesets!
+      #psi shield (mana-dependent mechanic)
+      ARMOR_PSI_SHIELD_TYPE: int #0 - default, no shield, 1 - usual psi shield
+      #energy shield (own hp pool)  
       ARMOR_ENERGY_SHIELD_CAPACITY: int
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int
