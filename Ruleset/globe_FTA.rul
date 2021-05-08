@@ -374,6 +374,9 @@ globe:
     - id: -6
       deployments:
         STR_SCIENTIST_REFUGE: 100
+    - id: -7
+      deployments:
+        STR_RESISTANCE_URBAN_SAFAHOUSE: 100
 #GIS  
   polygons:
     - - 1

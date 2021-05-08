@@ -1210,6 +1210,58 @@ alienDeployments:
           -
             []
 
+  - type: STR_RESISTANCE_URBAN_SAFAHOUSE
+    width: 50
+    length: 50
+    height: 7
+    genMissionLimit: 0
+    alert: STR_RESISTANCE_URBAN_SAFAHOUSE_ALERT
+    alertBackground: PLACEHOLDER_BACKGROUND.SCR
+    alertDescription: STR_RESISTANCE_URBAN_SAFAHOUSE_DESCRIPTION
+    markerName: STR_RESISTANCE_URBAN_SAFEHOUSE
+    duration: [4, 10] #TODO
+    despawnPenalty: 850 #TODO
+    extendedObjectiveType: STR_EVACUATION  #TODO
+    successEvents:
+      STR_RESCUED_SCIENTIST: 100 #TODO
+    failureEvents:
+      STR_NOT_RESCUED_SCIENTIST: 100 #TODO
+    briefing: #TODO
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_RESISTANCE_URBAN_SAFAHOUSE_BRIEFING
+    terrains:
+      - FOREST
+    customUfo: STR_SCIENTIST_REFUGE #TODO
+    script: REFUGE_ATTACKED #TODO
+    battleScript: MIB_ATTACK_SCIENTIST #TODO
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
 
 
 
