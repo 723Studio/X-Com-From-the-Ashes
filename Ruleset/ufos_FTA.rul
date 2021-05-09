@@ -448,11 +448,7 @@ ufos:
       mapDataSets:
         - BLANKS
         - URBAN_ROADS1
-        - URBITS_JUNK
-        - URBAN_LOW
-        - URBAN_LOW_OBJ
-        - URBAN_ROADS2
-        - VILFRNITURE2
+        - RESISTANCE_URBAN_HOUSE
       mapBlocks:
         - name: URBAN_SAFEHOUSE
           width: 40
