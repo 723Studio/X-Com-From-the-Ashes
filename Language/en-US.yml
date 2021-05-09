@@ -288,6 +288,9 @@ en-US:
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
   STR_SCIENTIST_REFUGE_DESCRIPTION: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
+  STR_RESISTANCE_FOREST_HOUSE: "Life Saving"
+  STR_RESISTANCE_FOREST_HOUSE_ALERT: "Resistance agent extraction"
+  STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The MIB have surrounded one of our secret points. Most of the people have managed to evacuate, but one of us is still inside. We need to help him, because he is our friend and comrade-in-arms."
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy disk upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
   STR_AGENT_EXTRACTION: "Agent Extraction"
@@ -362,6 +365,19 @@ en-US:
   STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
   STR_MIB_CHASING_SUCCESS: "'Chasing M.I.B.' Operation Results"
   STR_MIB_CHASING_SUCCESS_DESCRIPTION: #TODO
+  STR_RESCUED_AGENT: "You saved their life"
+  STR_RESCUED_AGENT_DESCRIPTION: "We have managed to rescue our agents, it was difficult but we did it. After these events, their confidence in themselves and in the resistance in general increased significantly and they promised to avenge the innocent deaths of our brothers.{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_2_DESCRIPTION: "We have managed to rescue our agents, we will remember this day. The mission seemed very difficult. As a result, it was even more difficult. Competent coordination of forces prevailed and we seized the victory. Great!{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_3_DESCRIPTION: "We have managed to rescue our agents, what luck. History is written by the winners, and today we are writing it. Every day we live only adds to the confidence that we are doing the right thing.{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_4_DESCRIPTION: "We have managed to rescue our agents, this will help our resistance. FIB will soon receive news of what happened here. They won't be happy with the report. It's time to revel in the victory and prepare for the next flight.{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_5_DESCRIPTION: "We have managed to rescue our agents, great job. It feels like we were stronger. Stop. So it was! So let's become even stronger and unite for the sake of a single goal. Only together we are strong.{NEWLINE}Resistance reputation score> +80"
+  STR_NOT_RESCUED_AGENT: "You didn't save their life"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_2_DESCRIPTION: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_3_DESCRIPTION: "We couldn't save our agents from such a difficult situation. We fought with dignity... and we lost. The entire resistance will mourn those lost in this battle.{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_4_DESCRIPTION: "We couldn't save our agents from such a difficult situation. Every bullet used to good effect was poisoned not only by the will of the resistance, but also by his endless zeal for victory.{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_5_DESCRIPTION: "We couldn't save our agents from such a difficult situation. Have we lost our men at this point? Oh, no. Our network has shrunk, but they're only making it worse for themselves by cornering us.{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_6_DESCRIPTION: "We couldn't save our agents from such a difficult situation. As soon as the general staff learns about what happened, the smiles will fall from the faces of our sisters and brothers for a long time. We need revenge.{NEWLINE}Resistance reputation score> -110" #TODO - add event to extra description!
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: #TODO
 #enemies

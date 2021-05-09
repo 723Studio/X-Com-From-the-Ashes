@@ -521,3 +521,49 @@ ufos:
         - name: EVACZONE_N
           width: 10
           length: 10
+  - type: STR_RESISTANCE_FOREST_HOUSE
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_RESISTANCE_FOREST_HOUSE
+      mapDataSets:
+        - BLANKS
+        - FORESTSWAMP
+        - RESISTANCE_FOREST_HOUSE_01
+      mapBlocks:
+        - name: RESISTANCE_FOREST_HOUSE_01
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [5, 5, 0]
+              - [10, 3, 0]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+          randomizedItems:
+              - position: [8, 6, 0]
+                amount: 2
+                mixed: true
+                itemList: &suppliesResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
+        - name: RESISTANCE_FOREST_HOUSE_02
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [5, 5, 0]
+              - [8, 3, 0]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+          randomizedItems:
+              - position: [7, 5, 0]
+                amount: 2
+                mixed: true
+                itemList: &suppliesResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]

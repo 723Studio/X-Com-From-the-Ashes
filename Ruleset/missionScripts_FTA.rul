@@ -94,9 +94,6 @@ missionScripts:
     regionWeights:
       0:
         RESISTANCE_SCIENTIST: 100
-    raceWeights:
-      0:
-        STR_MIB: 100
     researchTriggers:
       STR_RESISTANCE_SCIENTIST: false
     useTable: false
@@ -104,3 +101,24 @@ missionScripts:
     randomSpawnGap: 20
     startDelay: 14400
     randomDelay: 5760
+#forest_house
+  - type: heavenForestHouse
+    firstMonth: 0
+    executionOdds: 100
+    allowedProcessor: 1
+    missionWeights:
+      0:
+        STR_RESISTANCE_FOREST_HOUSE: 100
+    regionWeights:
+      0:
+        RESISTANCE_FOREST_HOUSE_START_ZONE: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    researchTriggers:
+      STR_RESISTANCE_FIRST_HELP: false
+    useTable: false
+    spawnGap: 60
+    randomSpawnGap: 20
+    startDelay: 6000
+    randomDelay: 3000
