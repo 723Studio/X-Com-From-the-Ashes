@@ -218,3 +218,23 @@ interfaces:
         color: 246   # purple
       - id: button
         color: 218   # blue
+  - type: hacking
+    palette: PAL_BATTLESCAPE
+    elements:
+      - id: textConsole
+        color: 64
+      - id: textTUs
+        color: 48
+      - id: numTUs
+        color: 144
+      - id: barTUs
+        color: 64
+      - id: textHP
+        color: 48
+      - id: numHP
+        color: 144
+      - id: barHP
+        color: 32
+      - id: buttonExit
+        pos: [255, 157]
+        size: [20, 20]

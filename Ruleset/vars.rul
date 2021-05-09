@@ -80,6 +80,9 @@ turnAIUseBlaster: 2
 surrenderMode: 0 #TODO Consider
 closeQuartersSneakUpGlobal: 40
 
+hackingBaseTuCost: 20
+hackingFirewallBaseTuCost: 30
+hackingFirewallBaseHpCost: 10
 
 ai:
   extendedFireModeChoice: true
