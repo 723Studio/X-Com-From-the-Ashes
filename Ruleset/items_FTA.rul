@@ -1653,9 +1653,9 @@ items:
     invWidth: 2
     invHeight: 3
     accuracyCloseQuarters: 35
-    accuracyAimed: 90
-    tuAimed: 40
-    tuLoad: 25
+    accuracyAimed: 75
+    tuAimed: 70
+    tuLoad: 45
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 65
@@ -3383,79 +3383,53 @@ items:
 
 #unit-related
 #aliens
-  - type: STR_SECTOID_SOLDIER
+  - &STR_SECTOID
+    type: STR_SECTOID_SOLDIER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
     recover: true
     liveAlien: true
     costDispose: -5000
-    #costSell: 80000
+    costSell: -5000 #80000
     listOrder: 119960
   - type: STR_SECTOID_NAVIGATOR
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 120000
+    refNode: *STR_SECTOID
     listOrder: 119990
   - type: STR_SECTOID_MEDIC
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 120000
+    refNode: *STR_SECTOID
     listOrder: 119980
   - type: STR_SECTOID_ENGINEER
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 120000
+    refNode: *STR_SECTOID
     listOrder: 119970
   - type: STR_SECTOID_LEADER
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 200000
+    refNode: *STR_SECTOID
     listOrder: 120000
   - type: STR_SECTOID_COMMANDER
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 300000
+    refNode: *STR_SECTOID
     listOrder: 120010
   - type: STR_SECTOID_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
     costDispose: -4000
-    #costSell: 40000
+    costSell: -4000 #40000
     weight: 17
     bigSprite: 46
     floorSprite: 42
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    recoveryPoints: 20
     battleType: 11
     armor: 26
     listOrder: 63000
   - type: STR_SECTOID_COMMANDER_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
-    costDispose: -4000
-    #costSell: 20000
     weight: 17
     bigSprite: 121
     floorSprite: 42
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    recoveryPoints: 25
     battleType: 11
     armor: 26
 #MIBs

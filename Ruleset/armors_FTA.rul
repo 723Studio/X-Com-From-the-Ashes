@@ -70,6 +70,7 @@ armors:
     ufopediaType: STR_SECTOID_STANDARD_ARMOR
     corpseBattle:
       - STR_SECTOID_COMMANDER_CORPSE
+    corpseGeo: STR_SECTOID_CORPSE
     psiVision: 17
     frontArmor: 6
     sideArmor: 6
