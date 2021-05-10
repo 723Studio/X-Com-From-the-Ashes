@@ -432,7 +432,7 @@ ufos:
           width: 10
           length: 10
 
-  - type: STR_RESISTANCE_URBAN_SAFEHOUSE
+  - type: STR_URBAN_HAZARD
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
     damageMax: 500
@@ -444,12 +444,13 @@ ufos:
     reload: 32
     breakOffTime: 500
     battlescapeTerrainData:
-      name: URBAN_SAFEHOUSE
+      name: URBAN_HAZARD
       mapDataSets:
         - BLANKS
-        - URBAN_ROADS1
-        - RESISTANCE_URBAN_HOUSE
+        - URBAN_LOW_FRN
+        - URBITS_JUNK
+        - URBAN_DAWN
       mapBlocks:
-        - name: URBAN_SAFEHOUSE
-          width: 40
-          length: 40
+        - name: URBAN_HAZARD
+          width: 10
+          length: 10

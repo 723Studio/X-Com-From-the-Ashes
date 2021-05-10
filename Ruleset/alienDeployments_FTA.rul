@@ -1210,15 +1210,15 @@ alienDeployments:
           -
             []
 
-  - type: STR_RESISTANCE_URBAN_SAFEHOUSE
-    width: 70
-    length: 70
-    height: 8
+  - type: STR_URBAN_HAZARD
+    width: 40
+    length: 40
+    height: 6
     genMissionLimit: 0
-    alert: STR_RESISTANCE_URBAN_SAFAHOUSE_ALERT
+    alert: STR_URBAN_HAZARD_ALERT
     alertBackground: PLACEHOLDER_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_URBAN_SAFAHOUSE_DESCRIPTION
-    markerName: STR_RESISTANCE_URBAN_SAFEHOUSE
+    alertDescription: STR_URBAN_HAZARD_DESCRIPTION
+    markerName: STR_URBAN_HAZARD
     duration: [4, 10] #TODO
     despawnPenalty: 850
     extendedObjectiveType: STR_EVACUATION  #TODO
@@ -1230,10 +1230,10 @@ alienDeployments:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
-      desc: STR_RESISTANCE_URBAN_SAFAHOUSE_BRIEFING
+      desc: STR_URBAN_HAZARD_BRIEFING
     terrains:
       - FOREST
-    customUfo: STR_RESISTANCE_URBAN_SAFEHOUSE
+    customUfo: STR_URBAN_HAZARD
     script: REFUGE_ATTACKED
     battleScript: MIB_ATTACK
     data:
