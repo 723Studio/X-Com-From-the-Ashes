@@ -976,6 +976,7 @@ items:
     fireSound: 64 #mb 4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
+      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 55
@@ -1030,6 +1031,8 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 21300
+    tags:
+      FTAG_EXPANDING: 1
   - type: STR_PRECISION_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
@@ -1046,6 +1049,7 @@ items:
     fireSound: 64 #4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
+      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 35
@@ -1110,6 +1114,8 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 21310
+    tags:
+      FTAG_EXPANDING: 1
   - type: STR_RIFLE_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     size: 0.02
@@ -3705,7 +3711,6 @@ items:
     armor: 20
     listOrder: 62300
 #Resistance units
-
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
     spawnUnitFaction: 0
@@ -3963,3 +3968,4 @@ extended:
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
+      FTAG_EXPANDING: int

@@ -64,6 +64,7 @@ extended:
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
+      FTAG_EXPANDING: int
     RuleArmor: # Remember to add tag definitions to same file as item/armor rulesets!
       #psi shield (mana-dependent mechanic)
       ARMOR_PSI_SHIELD_TYPE: int #0 - default, no shield, 1 - usual psi shield
@@ -592,6 +593,20 @@ extended:
                 debug_log "RAPID_TARGETING_STATE activated, new stat: " bonus;
               end;
             end;
+          end;
+
+          return bonus;
+
+      - offset: 30    # Handle expanding ammo accuracy additional logic
+        code: |
+          var int weaponState;
+          var int clipState;
+
+          weapon.getTag weaponState Tag.FTAG_EXPANDING;
+          ammo.getTag clipState Tag.FTAG_EXPANDING;
+
+          if lt weaponState clipState;
+            sub bonus 10; #our weapon cant handle expanding clips!
           end;
 
           return bonus;
