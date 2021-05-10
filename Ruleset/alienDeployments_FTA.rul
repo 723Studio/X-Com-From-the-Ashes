@@ -1210,7 +1210,7 @@ alienDeployments:
           -
             []
 
-  - type: STR_RESISTANCE_URBAN_SAFAHOUSE
+  - type: STR_RESISTANCE_URBAN_SAFEHOUSE
     width: 70
     length: 70
     height: 8
@@ -1233,9 +1233,9 @@ alienDeployments:
       desc: STR_RESISTANCE_URBAN_SAFAHOUSE_BRIEFING
     terrains:
       - FOREST
-    customUfo: STR_RESISTANCE_URBAN_SAFAHOUSE
-    script: REFUGE_ATTACKED #TODO
-    battleScript: MIB_ATTACK_SCIENTIST #TODO
+    customUfo: STR_RESISTANCE_URBAN_SAFEHOUSE
+    script: REFUGE_ATTACKED
+    battleScript: MIB_ATTACK
     data:
       - alienRank: 6
         lowQty: 1
