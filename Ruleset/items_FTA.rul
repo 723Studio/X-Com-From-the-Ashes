@@ -3810,8 +3810,8 @@ items:
     armor: 30
     recover: false
     listOrder: 67800
-  - type: STR_SPAWN_RESISTANCE_RADIO
-    spawnUnit: STR_RESISTANCE_RADIO
+  - type: STR_SPAWN_RESISTANCE_COMPUTER
+    spawnUnit: STR_RESISTANCE_COMPUTER
     spawnUnitFaction: -1
     bigSprite: 0
     battleType: 4

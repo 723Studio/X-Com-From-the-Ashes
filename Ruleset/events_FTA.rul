@@ -136,8 +136,6 @@ events:
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: 80
-
-
   - name: STR_NOT_RESCUED_RESISTANCE_1
     description: STR_NOT_RESCUED_AGENT_DESCRIPTION_1
     researchList: [STR_RESISTANCE_FIRST_HELP]
@@ -169,28 +167,26 @@ events:
     reputationScore:
       STR_RESISTANCE: -110
 
-
-
   - name: STR_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
     researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: 130
-
   - name: STR_NOT_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
     researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: -200
-  - name: STR_RESCUED_AGENT
-    description: STR_RESCUED_AGENT_DESCRIPTION
+  - name: STR_RESCUED_SCIENTISTS_TELESCOPE
+    description: STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
+    researchList: [STR_DESERT_TELESCOPE]
     reputationScore:
-      STR_RESISTANCE: 80
-  - name: STR_NOT_RESCUED_AGENT
-    description: STR_NOT_RESCUED_AGENT_DESCRIPTION
+      STR_RESISTANCE: 180
+  - name: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE
+    description: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
+    researchList: [STR_DESERT_TELESCOPE]
     reputationScore:
-      STR_RESISTANCE: -110
-
+      STR_RESISTANCE: -300
 
 #xcom
   - name: STR_SPORTS_BOW_TINKERING

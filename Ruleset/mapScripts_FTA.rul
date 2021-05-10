@@ -407,12 +407,12 @@ mapScripts:
     - type: fillArea
       blocks: 6
 
-  - type: REFUGE_ATTACKED
+  - type: SCIENTIST_REFUGE_ATTACKED
     commands:
-    - type: addCraft
+    - type: addUFO
       rects: 
        - [2, 2, 5, 5]
-    - type: addUFO
+    - type: addCraft
       rects: 
        - [2, 2, 5, 5]
     - type: addBlock

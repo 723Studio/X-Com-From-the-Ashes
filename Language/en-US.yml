@@ -284,7 +284,7 @@ en-US:
   STR_RESISTANCE_HEAVEN_ALERT: "Resistance Heaven Attacked!"
   STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION: "We are receiving an encrypted distress signal from the Resistance haven. It seems they are in desperate situation and need urgent evacuation. We should dispatch an assault squad, and we need to leave enough free spots in our craft for the Resistance agents to be rescued."
   STR_RESISTANCE_HEAVEN_MARKER: "Resistance Heaven"
-  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We received a distress transmission from one of the Resistance shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We managed to catch a glimpse of monotonously moving figures, they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We received a distress transmission from one of the Resistance shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures, they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FOREST_HOUSE: "Resistance Heaven - Forest House"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The M.I.B. have surrounded one of Resistance secret hideouts. Attempting to destroy important clues that could lead the Men in Black agents to other Resistance havens, they were surrounded and forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
@@ -293,6 +293,12 @@ en-US:
   STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander. The scientist's salvation could be of great value to us, and we must get him to the vessel in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy drive upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
+  STR_DESERT_TELESCOPE: "Desert Telescope"
+  STR_DESERT_TELESCOPE_ALERT: "Resistance agent extraction"
+  STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: #TODO
+  STR_DESERT_TELESCOPE_BRIEFING: #TODO
+
+
   STR_AGENT_EXTRACTION: "Agent Extraction" #TODO - reuse for xcom agents
   
   STR_LOCALS_TRAP: #TODO
@@ -301,7 +307,7 @@ en-US:
   STR_MIB_CHASING_BRIEFING: #TODO
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
-  STR_CHASING_MIB_DESCRIPTION: #TODO
+  STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals, attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
   STR_REGIONAL_HQ_AREA_SURVEY: #TODO
   STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION: #TODO
   STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION: #TODO
@@ -347,13 +353,18 @@ en-US:
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
   STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
-  STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION: #TODO
   STR_RESCUED_RESISTANCE: "Resistance rescue: success"
   STR_RESCUED_SCIENTIST: "Scientist slip: success"
   STR_NOT_RESCUED_RESISTANCE: "Resistance rescue: failure"
   STR_NOT_RESCUED_SCIENTIST: "Scientist slip: failure"
   STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuees their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> +100"
   STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> +130"
+
+  STR_RESCUED_SCIENTISTS_TELESCOPE: #TODO
+  STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: #TODO
+  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: #TODO
+  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: #TODO
+
   STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> -150"
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> -200"
   STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"

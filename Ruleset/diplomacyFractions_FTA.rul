@@ -23,6 +23,7 @@ diplomacyFactions:
       - heavenZombieFarm
       - heavenForestHouse
       - resistanceScientist
+      - desertTelescope
     genEventFreq: 100
     # helpTreatyEventScripts:
     #    - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT

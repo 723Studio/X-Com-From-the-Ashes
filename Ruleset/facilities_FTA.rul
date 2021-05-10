@@ -36,7 +36,7 @@ facilities:
     manaRecoveryPerDay: 1
     rightClickActionType: 3
     radarRange: 10800
-    radarChance: 100 #2
+    radarChance: 2
     mapName: XBASF_01
     listOrder: 6830
   - type: STR_BIOLAB
