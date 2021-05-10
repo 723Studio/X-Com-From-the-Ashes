@@ -34,7 +34,8 @@ I would like to give special thanks to the contributors to my project (in order 
 * **DaManWithGun** - lore articles, stylistic and grammar changes in English localization;
 * **pedroterzero** - help with cone lightning engine feature development;
 * **Buscher** - great help with testing, fixing bugs in the engine code and rulesets;
-* **Xom126** - unit spritesheet, corpse sprites.
+* **Xom126** - unit spritesheets, corpse sprites.
+* **ahegao** - mission design, deployment rules, mission-specific maps, item rulesets and balance.
 
 ## Support
 
