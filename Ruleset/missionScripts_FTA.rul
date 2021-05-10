@@ -44,9 +44,9 @@ missionScripts:
 
 
 #resistance
-  - type: heavenDefenceFirstTime
+  - type: heavenZombieFarm
     firstMonth: 0
-    executionOdds: 50
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
@@ -57,54 +57,14 @@ missionScripts:
     raceWeights:
       0:
         STR_ZOMBIES: 100
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: false
-    useTable: false
-    spawnGap: 21
-    randomSpawnGap: 5
-    startDelay: 5760
-    randomDelay: 2880
-  - type: heavenDefenceContinues
-    firstMonth: 0
-    executionOdds: 10
-    allowedProcessor: 1
-    missionWeights:
-      0:
-        STR_RESISTANCE_HEAVEN_DEFENCE: 100
-    regionWeights:
-      0:
-        RESISTANCE_START_ZONE: 100
-    raceWeights:
-      0:
-        STR_ZOMBIES: 100
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: true
     useTable: false
     spawnGap: 60
     randomSpawnGap: 15
     startDelay: 1200
     randomDelay: 43500
-  - type: resistanceScientist
-    firstMonth: 0
-    executionOdds: 15
-    allowedProcessor: 1
-    missionWeights:
-      0:
-        STR_RESISTANCE_SCIENTIST: 100
-    regionWeights:
-      0:
-        RESISTANCE_SCIENTIST: 100
-    researchTriggers:
-      STR_RESISTANCE_SCIENTIST: false
-    useTable: false
-    spawnGap: 80
-    randomSpawnGap: 20
-    startDelay: 14400
-    randomDelay: 5760
-#forest_house
   - type: heavenForestHouse
     firstMonth: 0
-    executionOdds: 100
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
@@ -115,10 +75,29 @@ missionScripts:
     raceWeights:
       0:
         STR_MIB: 100
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: false
     useTable: false
     spawnGap: 60
     randomSpawnGap: 20
     startDelay: 6000
     randomDelay: 3000
+  - type: resistanceScientist
+    firstMonth: 0
+    executionOdds: 15
+    allowedProcessor: 1
+    missionWeights:
+      0:
+        STR_RESISTANCE_SCIENTIST: 100
+    regionWeights:
+      0:
+        RESISTANCE_SCIENTIST: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    researchTriggers:
+      STR_RESISTANCE_SCIENTIST: false
+    useTable: false
+    spawnGap: 80
+    randomSpawnGap: 20
+    startDelay: 14400
+    randomDelay: 5760
+

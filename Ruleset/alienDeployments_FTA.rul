@@ -447,14 +447,24 @@ alienDeployments:
     width: 80
     length: 80
     height: 8
-    alert: STR_RESISTANCE_HEAVEN_ATTACKED
-    alertBackground: BACK03.SCR
-    alertDescription: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION
-    markerName: STR_RESISTANCE_HEAVEN
+    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alertBackground: STR_RESISTANCE_BACKGROUND.SCR
+    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HEAVEN_MARKER
     successEvents:
-      STR_RESCUED_RESISTANCE: 100
+      STR_RESCUED_RESISTANCE_1: 50
+      STR_RESCUED_RESISTANCE_2: 50
+      STR_RESCUED_RESISTANCE_3: 50
+      STR_RESCUED_RESISTANCE_4: 50
+      STR_RESCUED_RESISTANCE_5: 50
+      STR_RESCUED_RESISTANCE_6: 50
     failureEvents:
-      STR_NOT_RESCUED_RESISTANCE: 100
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
     duration: [4, 10]
     despawnPenalty: 700
     extendedObjectiveType: STR_EVACUATION 
@@ -495,75 +505,31 @@ alienDeployments:
           -
             []
 
-  - type: STR_SCIENTIST_REFUGE
-    width: 80
-    length: 80
-    height: 8
-    genMissionLimit: 0
-    alert: STR_SCIENTIST_REFUGE_ALERT
-    alertBackground: PLACEHOLDER_BACKGROUND.SCR
-    alertDescription: STR_SCIENTIST_REFUGE_DESCRIPTION
-    markerName: STR_AGENT_EXTRACTION
-    duration: [4, 10]
-    despawnPenalty: 850
-    extendedObjectiveType: STR_EVACUATION 
-    successEvents:
-      STR_RESCUED_SCIENTIST: 100
-    failureEvents:
-      STR_NOT_RESCUED_SCIENTIST: 100
-    briefing:
-      textOffset: -16
-      background: STR_RESISTANCE_BACKGROUND.SCR
-      showTarget: false
-      desc: STR_SCIENTIST_REFUGE_BRIEFING
-    terrains:
-      - FOREST
-    customUfo: STR_SCIENTIST_REFUGE
-    script: REFUGE_ATTACKED
-    battleScript: MIB_ATTACK_SCIENTIST
-    data:
-      - alienRank: 6
-        lowQty: 1
-        highQty: 1
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-
   - type: STR_RESISTANCE_FOREST_HOUSE
     width: 50
     length: 50
     height: 6
-    genMissionLimit: 0
-    alert: STR_RESISTANCE_FOREST_HOUSE_ALERT
+    alert: STR_RESISTANCE_HEAVEN_ATTACKED
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION
+    alertDescription: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION
     markerName: STR_AGENT_EXTRACTION
-    duration: [4, 8]
-    despawnPenalty: 600
+    duration: [4, 10]
+    despawnPenalty: 700
     extendedObjectiveType: STR_EVACUATION 
     successEvents:
-      STR_RESCUED_AGENT: 100
+      STR_RESCUED_RESISTANCE_1: 50
+      STR_RESCUED_RESISTANCE_2: 50
+      STR_RESCUED_RESISTANCE_3: 50
+      STR_RESCUED_RESISTANCE_4: 50
+      STR_RESCUED_RESISTANCE_5: 50
+      STR_RESCUED_RESISTANCE_6: 50
     failureEvents:
-      STR_NOT_RESCUED_AGENT: 100
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
@@ -681,6 +647,60 @@ alienDeployments:
             - STR_SHOTGUN
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_AP  
+
+
+  - type: STR_SCIENTIST_REFUGE
+    width: 80
+    length: 80
+    height: 8
+    genMissionLimit: 0
+    alert: STR_SCIENTIST_REFUGE_ALERT
+    alertBackground: STR_RESISTANCE_BACKGROUND.SCR
+    alertDescription: STR_SCIENTIST_REFUGE_ALERT_DESCRIPTION
+    markerName: STR_AGENT_EXTRACTION
+    duration: [4, 10]
+    despawnPenalty: 850
+    extendedObjectiveType: STR_EVACUATION 
+    successEvents:
+      STR_RESCUED_SCIENTIST: 100
+    failureEvents:
+      STR_NOT_RESCUED_SCIENTIST: 100
+    briefing:
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_SCIENTIST_REFUGE_BRIEFING
+    terrains:
+      - FOREST
+    customUfo: STR_SCIENTIST_REFUGE
+    script: REFUGE_ATTACKED
+    battleScript: MIB_ATTACK_SCIENTIST
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
 
   - type: STR_JABBER_HUNT
     race: STR_JABBER

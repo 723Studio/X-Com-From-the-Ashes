@@ -105,21 +105,78 @@ events:
   - name: STR_RESISTANCE_DISCOVER
     description: STR_RESISTANCE_DISCOVER_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
-  - name: STR_RESCUED_RESISTANCE
-    description: STR_RESCUED_RESISTANCE_DESCRIPTION
+
+  - name: STR_RESCUED_RESISTANCE_1
+    description: STR_RESCUED_AGENT_DESCRIPTION_1
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
-      STR_RESISTANCE: 100
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_2
+    description: STR_RESCUED_AGENT_DESCRIPTION_2
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_3
+    description: STR_RESCUED_AGENT_DESCRIPTION_3
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_4
+    description: STR_RESCUED_AGENT_DESCRIPTION_4
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_5
+    description: STR_RESCUED_AGENT_DESCRIPTION_5
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_6
+    description: STR_RESCUED_AGENT_DESCRIPTION_6
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+
+
+  - name: STR_NOT_RESCUED_RESISTANCE_1
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_1
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_2
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_2
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_3
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_3
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_4
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_4
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_5
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_5
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_6
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_6
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+
+
+
   - name: STR_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
     researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: 130
-  - name: STR_NOT_RESCUED_RESISTANCE
-    description: STR_RESCUED_RESISTANCE_DESCRIPTION
-    researchList: [STR_RESISTANCE_FIRST_HELP]
-    reputationScore:
-      STR_RESISTANCE: -150
+
   - name: STR_NOT_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
     researchList: [STR_RESISTANCE_SCIENTIST]

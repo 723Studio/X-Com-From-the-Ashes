@@ -280,21 +280,22 @@ en-US:
   STR_ALERT_MIB_REGIONAL_HQ: STR_ALERT_MIB_REGIONAL_HQ #TODO
   STR_MIB_REGIONAL_HQ_DESCRIPTION: STR_MIB_REGIONAL_HQ_DESCRIPTION #TODO
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
-  STR_RESISTANCE_FARM: "Resistance Heaven"
-  STR_RESISTANCE_HEAVEN: "Resistance Heaven"
-  STR_RESISTANCE_HEAVEN_ATTACKED: "Resistance Heaven Attacked"
-  STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION #TODO
-  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: STR_RESISTANCE_ZOMBIE_FARM_BRIEFING #TODO
+  STR_RESISTANCE_FARM_ZOMBIE: "Resistance Heaven - Zombie Farm"
+  STR_RESISTANCE_HEAVEN_ALERT: "Resistance Heaven Attacked!"
+  STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION: "We are receiving an encrypted distress signal from the Resistance haven. It seems they are in desperate situation and need urgent evacuation. We should dispatch an assault squad, and we need to leave enough free spots in our craft for the Resistance agents to be rescued."
+  STR_RESISTANCE_HEAVEN_MARKER: "Resistance Heaven"
+  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We received a distress transmission from one of the Resistance shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We managed to catch a glimpse of monotonously moving figures, they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_FOREST_HOUSE: "Resistance Heaven Attacked"
+  STR_RESISTANCE_FOREST_HOUSE_ALERT: "Resistance agent extraction"
+  STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The M.I.B. have surrounded one of Resistance secret hideouts. Attempting to destroy important clues that could lead the Men in Black agents to other Resistance havens, they were surrounded and forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
-  STR_SCIENTIST_REFUGE_DESCRIPTION: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
-  STR_RESISTANCE_FOREST_HOUSE: "Life Saving"
-  STR_RESISTANCE_FOREST_HOUSE_ALERT: "Resistance agent extraction"
-  STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The MIB have surrounded one of our secret points. Most of the people have managed to evacuate, but one of us is still inside. We need to help him, because he is our friend and comrade-in-arms."
+  STR_SCIENTIST_REFUGE_ALERT_DESCRIPTION: We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible.
+  STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander. The scientist's salvation could be of great value to us, and we must get him to the vessel in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
-  STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy disk upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
-  STR_AGENT_EXTRACTION: "Agent Extraction"
-  STR_SCIENTIST_REFUGE_BRIEFING: STR_SCIENTIST_REFUGE_BRIEFING #TODO
+  STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy drive upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
+  STR_AGENT_EXTRACTION: "Agent Extraction" #TODO - reuse for xcom agents
+  
   STR_LOCALS_TRAP: #TODO
   STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
   STR_MIB_CHASING: "Chasing M.I.B."
@@ -365,19 +366,30 @@ en-US:
   STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
   STR_MIB_CHASING_SUCCESS: "'Chasing M.I.B.' Operation Results"
   STR_MIB_CHASING_SUCCESS_DESCRIPTION: #TODO
-  STR_RESCUED_AGENT: "You saved their life"
-  STR_RESCUED_AGENT_DESCRIPTION: "We have managed to rescue our agents, it was difficult but we did it. After these events, their confidence in themselves and in the resistance in general increased significantly and they promised to avenge the innocent deaths of our brothers.{NEWLINE}Resistance reputation score> +80"
-  STR_RESCUED_AGENT_2_DESCRIPTION: "We have managed to rescue our agents, we will remember this day. The mission seemed very difficult. As a result, it was even more difficult. Competent coordination of forces prevailed and we seized the victory. Great!{NEWLINE}Resistance reputation score> +80"
-  STR_RESCUED_AGENT_3_DESCRIPTION: "We have managed to rescue our agents, what luck. History is written by the winners, and today we are writing it. Every day we live only adds to the confidence that we are doing the right thing.{NEWLINE}Resistance reputation score> +80"
-  STR_RESCUED_AGENT_4_DESCRIPTION: "We have managed to rescue our agents, this will help our resistance. FIB will soon receive news of what happened here. They won't be happy with the report. It's time to revel in the victory and prepare for the next flight.{NEWLINE}Resistance reputation score> +80"
-  STR_RESCUED_AGENT_5_DESCRIPTION: "We have managed to rescue our agents, great job. It feels like we were stronger. Stop. So it was! So let's become even stronger and unite for the sake of a single goal. Only together we are strong.{NEWLINE}Resistance reputation score> +80"
-  STR_NOT_RESCUED_AGENT: "You didn't save their life"
-  STR_NOT_RESCUED_AGENT_DESCRIPTION: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}Resistance reputation score> -110"
-  STR_NOT_RESCUED_AGENT_2_DESCRIPTION: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}Resistance reputation score> -110"
-  STR_NOT_RESCUED_AGENT_3_DESCRIPTION: "We couldn't save our agents from such a difficult situation. We fought with dignity... and we lost. The entire resistance will mourn those lost in this battle.{NEWLINE}Resistance reputation score> -110"
-  STR_NOT_RESCUED_AGENT_4_DESCRIPTION: "We couldn't save our agents from such a difficult situation. Every bullet used to good effect was poisoned not only by the will of the resistance, but also by his endless zeal for victory.{NEWLINE}Resistance reputation score> -110"
-  STR_NOT_RESCUED_AGENT_5_DESCRIPTION: "We couldn't save our agents from such a difficult situation. Have we lost our men at this point? Oh, no. Our network has shrunk, but they're only making it worse for themselves by cornering us.{NEWLINE}Resistance reputation score> -110"
-  STR_NOT_RESCUED_AGENT_6_DESCRIPTION: "We couldn't save our agents from such a difficult situation. As soon as the general staff learns about what happened, the smiles will fall from the faces of our sisters and brothers for a long time. We need revenge.{NEWLINE}Resistance reputation score> -110" #TODO - add event to extra description!
+  STR_RESCUED_RESISTANCE_1: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_2: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_3: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_4: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_5: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_6: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_AGENT_DESCRIPTION_1: "We have managed to rescue our agents, it was difficult but we did it. After these events, their confidence in themselves and in the resistance in general increased significantly and they promised to avenge the innocent deaths of our brothers.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_2: "We have managed to rescue our agents, we will remember this day. The mission seemed very difficult. As a result, it was even more difficult. Competent coordination of forces prevailed and we seized the victory. Great!{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_3: "We have managed to rescue our agents, what luck. History is written by the winners, and today we are writing it. Every day we live only adds to the confidence that we are doing the right thing.{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_4: "We have managed to rescue our agents, this will help our resistance. FIB will soon receive news of what happened here. They won't be happy with the report. It's time to revel in the victory and prepare for the next flight.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_5: "We have managed to rescue our agents, great job! It feels like we were stronger. Stop. So it was! So let's become even stronger and unite for the sake of a single goal. Only together we are strong.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_6: "We are so grateful for the rescue of our fellow operatives! It was inadmissible that they should have been caught by our adversary. Obviously, only by uniting our efforts will we ever prosper.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_NOT_RESCUED_RESISTANCE_1: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_2: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_3: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_4: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_5: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_6: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_1: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_2: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_3: "We couldn't save our agents from such a difficult situation. We fought with dignity... and we lost. The entire resistance will mourn those lost in this battle.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_4: "We couldn't save our agents from such a difficult situation. Every bullet used to good effect was poisoned not only by the will of the resistance, but also by his endless zeal for victory.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_5: "We couldn't save our agents from such a difficult situation. Have we lost our men at this point? Oh, no. Our network has shrunk, but they're only making it worse for themselves by cornering us.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_6: "We couldn't save our agents from such a difficult situation. As soon as the general staff learns about what happened, the smiles will fall from the faces of our sisters and brothers for a long time. We need revenge.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: #TODO
 #enemies
