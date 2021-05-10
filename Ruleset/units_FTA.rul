@@ -1,4 +1,233 @@
 units:
+#aliens
+  - type: STR_SECTOID_SOLDIER
+    race: STR_SECTOID
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 60
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 63
+      firing: 54
+      throwing: 58
+      strength: 20
+      melee: 12
+      psiStrength: 60
+      psiSkill: 20
+      mana: 130
+    statsRandom:
+      tu: 10
+      stamina: 10
+      health: 4
+      bravery: 10
+      reactions: 7
+      firing: 6
+      throwing: 10
+      strength: 2
+      melee: 3
+      psiStrength: 10
+      psiSkill: 5
+      mana: 15
+    armor: STR_SECTOID_STANDARD_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 15
+    deathSound: 10
+    intelligence: 4
+    aggression: 3
+    sniper: 50
+    spotter: 1
+  - type: STR_SECTOID_NAVIGATOR
+    race: STR_SECTOID
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 58
+      firing: 50
+      throwing: 45
+      strength: 20
+      psiStrength: 65
+      psiSkill: 25
+      melee: 12
+      mana: 135
+    statsRandom:
+      tu: 4
+      stamina: 15
+      health: 4
+      bravery: 10
+      reactions: 4
+      firing: 6
+      throwing: 10
+      strength: 2
+      melee: 3
+      psiStrength: 10
+      psiSkill: 5
+      mana: 15
+    armor: STR_SECTOID_STANDARD_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 17
+    deathSound: 10
+    intelligence: 4
+    aggression: 2
+    sniper: 50
+    spotter: 1
+  - type: STR_SECTOID_ENGINEER
+    race: STR_SECTOID
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 54
+      stamina: 90
+      health: 38
+      bravery: 80
+      reactions: 58
+      firing: 50
+      throwing: 45
+      strength: 20
+      psiStrength: 60
+      psiSkill: 20
+      mana: 150
+    statsRandom:
+      tu: 4
+      stamina: 15
+      health: 4
+      bravery: 10
+      reactions: 4
+      firing: 6
+      throwing: 10
+      strength: 2
+      melee: 3
+      psiStrength: 10
+      psiSkill: 5
+      mana: 15
+    armor: STR_SECTOID_STANDARD_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 23
+    deathSound: 10
+    intelligence: 6
+    aggression: 2
+    sniper: 50
+    spotter: 1
+  - type: STR_SECTOID_MEDIC
+    race: STR_SECTOID
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 58
+      firing: 50
+      throwing: 45
+      strength: 20
+      psiStrength: 65
+      psiSkill: 25
+      melee: 50
+      mana: 100
+    statsRandom:
+      tu: 4
+      stamina: 15
+      health: 4
+      bravery: 10
+      reactions: 4
+      firing: 6
+      throwing: 10
+      strength: 2
+      melee: 10
+      psiStrength: 10
+      psiSkill: 5
+      mana: 15
+    armor: STR_SECTOID_STANDARD_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 27
+    deathSound: 10
+    intelligence: 5
+    aggression: 1
+    sniper: 50
+    spotter: 1
+  - type: STR_SECTOID_LEADER
+    race: STR_SECTOID
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 60
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 69
+      firing: 60
+      throwing: 58
+      strength: 20
+      melee: 25
+      psiStrength: 70
+      psiSkill: 35
+      mana: 170
+    statsRandom:
+      tu: 10
+      stamina: 10
+      health: 4
+      bravery: 10
+      reactions: 7
+      firing: 6
+      throwing: 10
+      strength: 2
+      melee: 3
+      psiStrength: 3
+      psiSkill: 5
+      mana: 15
+    armor: STR_SECTOID_LEADER_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 40
+    deathSound: 10
+    intelligence: 7
+    aggression: 1
+    sniper: 50
+    spotter: 2
+  - type: STR_SECTOID_COMMANDER
+    race: STR_SECTOID
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 76
+      firing: 52
+      throwing: 58
+      strength: 20
+      psiStrength: 72
+      psiSkill: 40
+      melee: 32
+      mana: 220
+    statsRandom:
+      tu: 10
+      stamina: 10
+      health: 4
+      bravery: 10
+      reactions: 7
+      firing: 6
+      throwing: 10
+      strength: 2
+      melee: 3
+      psiStrength: 3
+      psiSkill: 5
+      mana: 15
+    armor: STR_SECTOID_COMMANDER_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    value: 80
+    deathSound: 10
+    intelligence: 8
+    aggression: 0
+    sniper: 50
+    spotter: 2
+
 #MIB
   - type: STR_XCOM_EX_COMMANDER
     race: STR_INITIAL_BASE_DEFENSE_RACE
@@ -94,7 +323,6 @@ units:
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
-        - STR_GRENADE
       - - STR_ASSAULT_RIFLE
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
@@ -116,7 +344,6 @@ units:
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
-        - STR_FLASHBANG_GRENADE
   - &STR_MIB_ARMORED_AGENT
     type: STR_MIB_ARMORED_AGENT 
     race: STR_MIB
@@ -202,16 +429,14 @@ units:
     altRecoveredUnit: STR_MIB_SPECOPS
     value: 5
     builtInWeaponSets:
-      - - STR_PDW
-        - STR_PDW_CLIP
-        - STR_PDW_CLIP
-        - STR_PDW_CLIP
-        - STR_GRENADE
+      - - STR_LMG
+        - STR_LMG_CLIP
+        - STR_LMG_CLIP
       - - STR_SMG
         - STR_SMG_CLIP
         - STR_SMG_CLIP
         - STR_SMG_CLIP
-        - STR_FLASHBANG_GRENADE
+        - STR_GRENADE
       - - STR_RIFLE
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
@@ -220,7 +445,6 @@ units:
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
-        - STR_GRENADE
       - - STR_ASSAULT_RIFLE
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
@@ -229,7 +453,6 @@ units:
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
-        - STR_GRENADE
       - - STR_SNIPER_RIFLE
         - STR_SNIPER_RIFLE_CLIP
         - STR_SNIPER_RIFLE_CLIP
@@ -238,11 +461,10 @@ units:
         - STR_SHOTGUN_SHELLS_BS
         - STR_SHOTGUN_SHELLS_BS
         - STR_SHOTGUN_SHELLS_BS
-      - - STR_ASSAULT_RIFLE
+      - - STR_PRECISION_RIFLE
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
         - STR_RIFLE_CLIP
-        - STR_FLASHBANG_GRENADE
       - - STR_LIGHT_CANNON
         - STR_LC_HE_AMMO
         - STR_LC_I_AMMO
@@ -1091,7 +1313,8 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_FIRST_AID 
-  - type: STR_RESISTANCE_RADIO
+  - &RESISTANCE_EVIDENCE_DEVICE
+    type: STR_RESISTANCE_RADIO
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
@@ -1118,238 +1341,9 @@ units:
     berserkChance: 0
     showFullNameInAlienInventory: 1
     value: 400
-
-#aliens
-  - type: STR_SECTOID_SOLDIER
-    race: STR_SECTOID
-    rank: STR_LIVE_SOLDIER
-    stats:
-      tu: 60
-      stamina: 90
-      health: 30
-      bravery: 80
-      reactions: 63
-      firing: 54
-      throwing: 58
-      strength: 20
-      melee: 12
-      psiStrength: 60
-      psiSkill: 20
-      mana: 130
-    statsRandom:
-      tu: 10
-      stamina: 10
-      health: 4
-      bravery: 10
-      reactions: 7
-      firing: 6
-      throwing: 10
-      strength: 2
-      melee: 3
-      psiStrength: 10
-      psiSkill: 5
-      mana: 15
-    armor: STR_SECTOID_STANDARD_ARMOR
-    standHeight: 16
-    kneelHeight: 12
-    value: 15
-    deathSound: 10
-    intelligence: 4
-    aggression: 3
-    sniper: 50
-    spotter: 1
-  - type: STR_SECTOID_NAVIGATOR
-    race: STR_SECTOID
-    rank: STR_LIVE_NAVIGATOR
-    stats:
-      tu: 54
-      stamina: 90
-      health: 30
-      bravery: 80
-      reactions: 58
-      firing: 50
-      throwing: 45
-      strength: 20
-      psiStrength: 65
-      psiSkill: 25
-      melee: 12
-      mana: 135
-    statsRandom:
-      tu: 4
-      stamina: 15
-      health: 4
-      bravery: 10
-      reactions: 4
-      firing: 6
-      throwing: 10
-      strength: 2
-      melee: 3
-      psiStrength: 10
-      psiSkill: 5
-      mana: 15
-    armor: STR_SECTOID_STANDARD_ARMOR
-    standHeight: 16
-    kneelHeight: 12
-    value: 17
-    deathSound: 10
-    intelligence: 4
-    aggression: 2
-    sniper: 50
-    spotter: 1
-  - type: STR_SECTOID_ENGINEER
-    race: STR_SECTOID
-    rank: STR_LIVE_ENGINEER
-    stats:
-      tu: 54
-      stamina: 90
-      health: 38
-      bravery: 80
-      reactions: 58
-      firing: 50
-      throwing: 45
-      strength: 20
-      psiStrength: 60
-      psiSkill: 20
-      mana: 150
-    statsRandom:
-      tu: 4
-      stamina: 15
-      health: 4
-      bravery: 10
-      reactions: 4
-      firing: 6
-      throwing: 10
-      strength: 2
-      melee: 3
-      psiStrength: 10
-      psiSkill: 5
-      mana: 15
-    armor: STR_SECTOID_STANDARD_ARMOR
-    standHeight: 16
-    kneelHeight: 12
-    value: 23
-    deathSound: 10
-    intelligence: 6
-    aggression: 2
-    sniper: 50
-    spotter: 1
-  - type: STR_SECTOID_MEDIC
-    race: STR_SECTOID
-    rank: STR_LIVE_MEDIC
-    stats:
-      tu: 54
-      stamina: 90
-      health: 30
-      bravery: 80
-      reactions: 58
-      firing: 50
-      throwing: 45
-      strength: 20
-      psiStrength: 65
-      psiSkill: 25
-      melee: 50
-      mana: 100
-    statsRandom:
-      tu: 4
-      stamina: 15
-      health: 4
-      bravery: 10
-      reactions: 4
-      firing: 6
-      throwing: 10
-      strength: 2
-      melee: 10
-      psiStrength: 10
-      psiSkill: 5
-      mana: 15
-    armor: STR_SECTOID_STANDARD_ARMOR
-    standHeight: 16
-    kneelHeight: 12
-    value: 27
-    deathSound: 10
-    intelligence: 5
-    aggression: 1
-    sniper: 50
-    spotter: 1
-  - type: STR_SECTOID_LEADER
-    race: STR_SECTOID
-    rank: STR_LIVE_LEADER
-    stats:
-      tu: 60
-      stamina: 90
-      health: 30
-      bravery: 80
-      reactions: 69
-      firing: 60
-      throwing: 58
-      strength: 20
-      melee: 25
-      psiStrength: 70
-      psiSkill: 35
-      mana: 170
-    statsRandom:
-      tu: 10
-      stamina: 10
-      health: 4
-      bravery: 10
-      reactions: 7
-      firing: 6
-      throwing: 10
-      strength: 2
-      melee: 3
-      psiStrength: 3
-      psiSkill: 5
-      mana: 15
-    armor: STR_SECTOID_LEADER_ARMOR
-    standHeight: 16
-    kneelHeight: 12
-    value: 40
-    deathSound: 10
-    intelligence: 7
-    aggression: 1
-    sniper: 50
-    spotter: 2
-  - type: STR_SECTOID_COMMANDER
-    race: STR_SECTOID
-    rank: STR_LIVE_COMMANDER
-    stats:
-      tu: 54
-      stamina: 90
-      health: 30
-      bravery: 80
-      reactions: 76
-      firing: 52
-      throwing: 58
-      strength: 20
-      psiStrength: 72
-      psiSkill: 40
-      melee: 32
-      mana: 220
-    statsRandom:
-      tu: 10
-      stamina: 10
-      health: 4
-      bravery: 10
-      reactions: 7
-      firing: 6
-      throwing: 10
-      strength: 2
-      melee: 3
-      psiStrength: 3
-      psiSkill: 5
-      mana: 15
-    armor: STR_SECTOID_COMMANDER_ARMOR
-    standHeight: 16
-    kneelHeight: 12
-    value: 80
-    deathSound: 10
-    intelligence: 8
-    aggression: 0
-    sniper: 50
-    spotter: 2
-
-
-
+  - type: STR_RESISTANCE_COMPUTER
+    refNode: *RESISTANCE_EVIDENCE_DEVICE
+    value: 500
 
   - type: STR_FREE_SPOT #placeholder unit to make alien race more clear to read
     refNode: *STR_MIB_AGENT    

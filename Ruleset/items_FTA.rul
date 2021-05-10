@@ -3810,6 +3810,25 @@ items:
     armor: 30
     recover: false
     listOrder: 67800
+  - type: STR_SPAWN_RESISTANCE_RADIO
+    spawnUnit: STR_RESISTANCE_RADIO
+    spawnUnitFaction: -1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_RESISTANCE_COMPUTER_REMAINS
+    categories: [STR_WRECKS]
+    name: STR_CORPSE
+    size: 0.4
+    costDispose: -1000
+    weight: 40
+    floorSprite: 121
+    battleType: 11
+    armor: 30
+    recover: false
+    listOrder: 67800    
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]

@@ -777,7 +777,8 @@ armors:
     damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
-  - type: STR_RESISTANCE_RADIO_ARMOR
+  - &RESISTANCE_EVIDENCE_DEVICE
+    type: STR_RESISTANCE_RADIO_ARMOR
     spriteSheet: RESISTANCE_RADIO.PCK
     allowInv: false
     corpseBattle:
@@ -815,6 +816,12 @@ armors:
       - 0.0 #14 - Pressure
       - 0.0 #15 - Bio
     loftempsSet: [ 3 ]
+  - type: STR_RESISTANCE_COMPUTER_ARMOR
+    refNode: *RESISTANCE_EVIDENCE_DEVICE
+    spriteSheet: RESISTANCE_COMPUTER.PCK
+    corpseBattle:
+      - STR_RESISTANCE_COMPUTER_REMAINS
+
 
 #XCOM
   - type: STR_JUMPSUIT_UC

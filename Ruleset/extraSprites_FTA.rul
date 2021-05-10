@@ -314,6 +314,7 @@ extraSprites:
       118: Resources/Armors/Civilians/Animals/floorob_DOGE_CORPSE.png
       119: Resources/Armors/Xcom/CoatArmor/floorob_COAT_CORPSE.png
       120: Resources/Armors/Enemies/MiB/floorob_MIB_BUTCHER.png
+      121: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_COMPUTER.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
       303: Resources/Weapons/Earthbound/Xcom/floorob_LightCannon.png
@@ -900,6 +901,13 @@ extraSprites:
     height: 160
     files:
       0: Resources/Armors/Civilians/Resistance/RESISTANCE_RADIO.png
+  - type: RESISTANCE_COMPUTER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 160
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_COMPUTER.png
 
   - type: FARMER.PCK
     width: 512

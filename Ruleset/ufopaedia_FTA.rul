@@ -98,7 +98,7 @@ ufopaedia:
     requires:
       - STR_LOG1
     text: STR_LOG1_UFOPEDIA
-    listOrder: 5
+    listOrder: 10
   - id: STR_RND_STATUS_REPORT
     type_id: 7
     image_id: RND_CHIEF_CPAL.SPK
@@ -107,7 +107,7 @@ ufopaedia:
     requires:
       - STR_RND_STATUS_REPORT
     text: STR_RND_STATUS_REPORT_UFOPEDIA
-    listOrder: 100
+    #listOrder: 100
   - id: STR_INTEL_STATUS_REPORT
     type_id: 7
     image_id: INTEL_CHIEF_CPAL.SPK

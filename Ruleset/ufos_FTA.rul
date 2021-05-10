@@ -544,15 +544,23 @@ ufos:
           length: 20
           items:
             STR_SPAWN_RESISTANCE_AGENT_VIP:
-              - [5, 5, 0]
+              - [5, 3, 0]
               - [10, 3, 0]
+              - [7, 8, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [4, 5, 0]
           fuseTimers:
             STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
           randomizedItems:
               - position: [8, 6, 0]
-                amount: 2
+                amount: 6
                 mixed: true
-                itemList: &suppliesResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
+                itemList: *generalResistanceStash
+              - position: [7, 2, 0]
+                amount: 5
+                mixed: true
+                itemList: *suppliesResistanceStash
         - name: RESISTANCE_FOREST_HOUSE_02
           width: 20
           length: 20
@@ -560,10 +568,18 @@ ufos:
             STR_SPAWN_RESISTANCE_AGENT_VIP:
               - [5, 5, 0]
               - [8, 3, 0]
+              - [7, 8, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [4, 5, 0]
           fuseTimers:
             STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
           randomizedItems:
               - position: [7, 5, 0]
-                amount: 2
+                amount: 8
                 mixed: true
-                itemList: &suppliesResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
+                itemList: *suppliesResistanceStash
+              - position: [7, 2, 0]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
