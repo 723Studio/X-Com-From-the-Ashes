@@ -65,6 +65,7 @@ extended:
       FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
       FTAG_EXPANDING: int
+      FTAG_SAWED_OFF: int
     RuleArmor: # Remember to add tag definitions to same file as item/armor rulesets!
       #psi shield (mana-dependent mechanic)
       ARMOR_PSI_SHIELD_TYPE: int #0 - default, no shield, 1 - usual psi shield
@@ -685,7 +686,7 @@ extended:
           var int addPower;
           var int psiStrength;
 
-          damaging_item.getRuleItem itemRuleset; #get stats from item
+          weapon_item.getRuleItem itemRuleset; #get stats from item
           itemRuleset.getTag addPower Tag.FTAG_TOPSIKER_ADD_POWER;
 
           if neq addPower 0;
@@ -694,6 +695,24 @@ extended:
             
             div addPower 100;
             add power addPower;
+          end;
+
+          return power part side;
+
+      - offset: 10    # Sawed-off power nerf
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int coeff;
+
+          weapon_item.getRuleItem itemRuleset; #get stats from item
+          itemRuleset.getTag coeff Tag.FTAG_SAWED_OFF;
+          debug_log "coeff: " coeff;
+          debug_log "weapon_item: " weapon_item;
+
+          if neq coeff 0;
+            debug_log "Ops, its Sawed-Off, power drop from: " power;
+            muldiv power coeff 100;
+            debug_log "New power value: " power;
           end;
 
           return power part side;
@@ -1158,8 +1177,6 @@ extended:
           if eq shieldType 0;
             return power part side;
           end;
-
-          debug_log "We hit psionic shield!";
 
           unit.getMana mana;
 
