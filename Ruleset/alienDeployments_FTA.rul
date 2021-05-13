@@ -1219,14 +1219,14 @@ alienDeployments:
     alertBackground: PLACEHOLDER_BACKGROUND.SCR
     alertDescription: STR_URBAN_HAZARD_DESCRIPTION
     markerName: STR_URBAN_HAZARD
-    duration: [4, 10] #TODO
-    despawnPenalty: 850
-    extendedObjectiveType: STR_EVACUATION  #TODO
+    duration: [4, 10]
+    despawnPenalty: 500
+    extendedObjectiveType: STR_EVACUATION
     successEvents:
-      STR_RESCUED_SCIENTIST: 100 #TODO
+      STR_RESCUED_SCIENTIST: 100
     failureEvents:
-      STR_NOT_RESCUED_SCIENTIST: 100 #TODO
-    briefing: #TODO
+      STR_NOT_RESCUED_SCIENTIST: 100
+    briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
