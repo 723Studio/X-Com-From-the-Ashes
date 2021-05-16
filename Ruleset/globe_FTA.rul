@@ -371,10 +371,19 @@ globe:
     - id: -4
       deployments:
         STR_RESISTANCE_FARM_ZOMBIE: 100
+    - id: -5
+      deployments:
+        STR_RESISTANCE_FOREST_HOUSE: 100
     - id: -6
       deployments:
         STR_SCIENTIST_REFUGE: 100
+    - id: -7
+      deployments:
+        STR_RESISTANCE_URBAN_SAFAHOUSE: 100
     - id: -8
+      deployments:
+        STR_DESERT_TELESCOPE: 100
+    - id: -9
       deployments:
         STR_URBAN_HAZARD: 100
 #GIS  

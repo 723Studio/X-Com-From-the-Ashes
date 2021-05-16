@@ -280,18 +280,27 @@ en-US:
   STR_ALERT_MIB_REGIONAL_HQ: STR_ALERT_MIB_REGIONAL_HQ #TODO
   STR_MIB_REGIONAL_HQ_DESCRIPTION: STR_MIB_REGIONAL_HQ_DESCRIPTION #TODO
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
-  STR_RESISTANCE_FARM: "Resistance Heaven"
-  STR_RESISTANCE_HEAVEN: "Resistance Heaven"
-  STR_RESISTANCE_HEAVEN_ATTACKED: "Resistance Heaven Attacked"
-  STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION: STR_RESISTANCE_HEAVEN_ATTACKED_DESCRIPTION #TODO
-  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: STR_RESISTANCE_ZOMBIE_FARM_BRIEFING #TODO
+  STR_RESISTANCE_FARM_ZOMBIE: "Resistance Heaven - Zombie Farm"
+  STR_RESISTANCE_HEAVEN_ALERT: "Resistance Heaven Attacked!"
+  STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION: "We are receiving an encrypted distress signal from the Resistance haven. It seems they are in desperate situation and need urgent evacuation. We should dispatch an assault squad, and we need to leave enough free spots in our craft for the Resistance agents to be rescued."
+  STR_RESISTANCE_HEAVEN_MARKER: "Resistance Heaven"
+  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We received a distress transmission from one of the Resistance shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures, they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_FOREST_HOUSE: "Resistance Heaven - Forest House"
+  STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The M.I.B. have surrounded one of Resistance secret hideouts. Attempting to destroy important clues that could lead the Men in Black agents to other Resistance havens, they were surrounded and forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
-  STR_SCIENTIST_REFUGE_DESCRIPTION: STR_SCIENTIST_REFUGE_DESCRIPTION #TODO
+  STR_SCIENTIST_REFUGE_ALERT_DESCRIPTION: We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible.
+  STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander. The scientist's salvation could be of great value to us, and we must get him to the vessel in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
-  STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy disk upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
-  STR_AGENT_EXTRACTION: "Agent Extraction"
-  STR_SCIENTIST_REFUGE_BRIEFING: STR_SCIENTIST_REFUGE_BRIEFING #TODO
+  STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy drive upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
+  STR_DESERT_TELESCOPE: "Desert Telescope"
+  STR_DESERT_TELESCOPE_ALERT: "Resistance agent extraction"
+  STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: #TODO
+  STR_DESERT_TELESCOPE_BRIEFING: #TODO
+
+
+  STR_AGENT_EXTRACTION: "Agent Extraction" #TODO - reuse for xcom agents
+  
   STR_LOCALS_TRAP: #TODO
   STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
   STR_MIB_CHASING: "Chasing M.I.B."
@@ -300,9 +309,13 @@ en-US:
   STR_URBAN_HAZARD_ALERT: "Urban Hazard - Alert" #TODO
   STR_URBAN_HAZARD_DESCRIPTION: "Urban Hazard - Desc" #TODO
   STR_URBAN_HAZARD_BRIEFING: "Urban Hazard - Briefing" #TODO
+  STR_RESISTANCE_URBAN_SAFEHOUSE: "Surrounded but not Broken"
+  STR_RESISTANCE_URBAN_SAFEHOUSE_ALERT: "Surrounded but not Broken - Alert" #TODO
+  STR_RESISTANCE_URBAN_SAFEHOUSE_DESCRIPTION: "Surrounded but not Broken - Desc" #TODO
+  STR_RESISTANCE_URBAN_SAFAHOUSE_BRIEFING: "Surrounded but not Broken - Briefing" #TODO
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
-  STR_CHASING_MIB_DESCRIPTION: #TODO
+  STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals, attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
   STR_REGIONAL_HQ_AREA_SURVEY: #TODO
   STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION: #TODO
   STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION: #TODO
@@ -348,13 +361,18 @@ en-US:
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
   STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
-  STR_RESISTANCE_HEAVEN_SAVED_EVENT_DESCRIPTION: #TODO
   STR_RESCUED_RESISTANCE: "Resistance rescue: success"
   STR_RESCUED_SCIENTIST: "Scientist slip: success"
   STR_NOT_RESCUED_RESISTANCE: "Resistance rescue: failure"
   STR_NOT_RESCUED_SCIENTIST: "Scientist slip: failure"
   STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuees their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> +100"
   STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> +130"
+
+  STR_RESCUED_SCIENTISTS_TELESCOPE: #TODO
+  STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: #TODO
+  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: #TODO
+  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: #TODO
+
   STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> -150"
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> -200"
   STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"
@@ -366,6 +384,30 @@ en-US:
   STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
   STR_MIB_CHASING_SUCCESS: "'Chasing M.I.B.' Operation Results"
   STR_MIB_CHASING_SUCCESS_DESCRIPTION: #TODO
+  STR_RESCUED_RESISTANCE_1: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_2: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_3: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_4: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_5: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_RESISTANCE_6: "Successful evacuation of Resistance operatives"
+  STR_RESCUED_AGENT_DESCRIPTION_1: "We have managed to rescue our agents, it was difficult but we did it. After these events, their confidence in themselves and in the resistance in general increased significantly and they promised to avenge the innocent deaths of our brothers.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_2: "We have managed to rescue our agents, we will remember this day. The mission seemed very difficult. As a result, it was even more difficult. Competent coordination of forces prevailed and we seized the victory. Great!{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_3: "We have managed to rescue our agents, what luck. History is written by the winners, and today we are writing it. Every day we live only adds to the confidence that we are doing the right thing.{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_4: "We have managed to rescue our agents, this will help our resistance. FIB will soon receive news of what happened here. They won't be happy with the report. It's time to revel in the victory and prepare for the next flight.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_5: "We have managed to rescue our agents, great job! It feels like we were stronger. Stop. So it was! So let's become even stronger and unite for the sake of a single goal. Only together we are strong.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_RESCUED_AGENT_DESCRIPTION_6: "We are so grateful for the rescue of our fellow operatives! It was inadmissible that they should have been caught by our adversary. Obviously, only by uniting our efforts will we ever prosper.{NEWLINE}{NEWLINE}Resistance reputation score> +80"
+  STR_NOT_RESCUED_RESISTANCE_1: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_2: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_3: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_4: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_5: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_RESISTANCE_6: "Evacuation of Resistance operatives failed"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_1: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_2: "We couldn't save our agents from such a difficult situation. We did what we could. This must not happen again.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_3: "We couldn't save our agents from such a difficult situation. We fought with dignity... and we lost. The entire resistance will mourn those lost in this battle.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_4: "We couldn't save our agents from such a difficult situation. Every bullet used to good effect was poisoned not only by the will of the resistance, but also by his endless zeal for victory.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_5: "We couldn't save our agents from such a difficult situation. Have we lost our men at this point? Oh, no. Our network has shrunk, but they're only making it worse for themselves by cornering us.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
+  STR_NOT_RESCUED_AGENT_DESCRIPTION_6: "We couldn't save our agents from such a difficult situation. As soon as the general staff learns about what happened, the smiles will fall from the faces of our sisters and brothers for a long time. We need revenge.{NEWLINE}{NEWLINE}Resistance reputation score> -110"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: #TODO
 #enemies
@@ -537,22 +579,22 @@ en-US:
   STR_RIOT_RIFLE_CLIP: "Riot Rifle Clip"
   STR_ASSAULT_RIFLE: "Assault Rifle"
   STR_ASSAULT_RIFLE_UFOPEDIA: "This rifle is designed for aggressive short- and medium-distance combat, with improved fire rate and accuracy in Auto and Snap shooting. The drawback is decreased effectiveness at longer distances, even with Aimed, careful shots."
-  STR_RIFLE: "Automatic Carbine"
+  STR_RIFLE: "Battle Rifle"
   STR_RIFLE_UFOPEDIA: "Rugged, well balanced firearm made to be effective in most situations at the cost of hardly excelling at any given range over specialized approaches, apart from a better adaptation for firing expanding rounds."
-  STR_PRECISION_RIFLE: "Marksman Rifle"
-  STR_PRECISION_RIFLE_UFOPEDIA: "An accurized rifle designed for long-range engagements while also offering acceptable mobility and rapid fire for close quarters emergencies."
+  STR_PRECISION_RIFLE: "Precision Rifle"
+  STR_PRECISION_RIFLE_UFOPEDIA: "An accurized rifle designed for long-range engagements while also offering acceptable mobility and rapid fire for middle range encounters."
   STR_RIFLE_CLIP: "Rifle Clip"
   STR_RIFLE_EXP_CLIP: "Rifle Exp. Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_HUNTING_RIFLE: "Hunting Rifle"
-  STR_HUNTING_RIFLE_UFOPEDIA: "A light five-shot rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapon is very easy and pleasant for both four- and two-legged animals."
+  STR_HUNTING_RIFLE_UFOPEDIA: "A light bolt action rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapon is very easy and pleasant for both four- and two-legged animals."
   STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip" 
   STR_SNIPER_RIFLE: "Sniper Rifle"
   STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy at long distances. The enlarged projectiles have high initial velocity and can penetrate medium armor easily. However it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
   STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
   STR_SNIPER_RIFLE_AA_CLIP: "Sniper Rifle AA Clip"
   STR_SAWED_OFF: "Sawed-Off"
-  STR_SAWED_OFF_UFOPEDIA: "The younger brother of the double-barreled shotgun, without a stock and with a shortened barrel. It's just as deadly as big one, but less accurate. Due to its size, it can be hidden both under outerwear and in the most unexpected places. For example, in a box with flowers.{NEWLINE}>Concealable"
+  STR_SAWED_OFF_UFOPEDIA: "The younger brother of the double-barreled shotgun. Due to the shortened barrel, not all the powder in the cartridges has time to burn out, which leads to a reduction in the power of the shot by about 15%. Of course, accuracy also suffers. But due to its size, it can be hidden both under outerwear and in the most unexpected places. For example, in a box with flowers.{NEWLINE}>Concealable"
   STR_DOUBLE_BARRELED: "Double-Barreled Shotgun"
   STR_DOUBLE_BARRELED_UFOPEDIA: "An ordinary double-barreled shotgun charged with buckshot ammo. A point-blank shot is guaranteed to turn the unprotected flesh into a bloody mess. A doubled gun doubles the fun, isn't it?"
   STR_DOUBLE_BARRELED_BUCKSHOT: "D-B Shotgun BS Ammo"

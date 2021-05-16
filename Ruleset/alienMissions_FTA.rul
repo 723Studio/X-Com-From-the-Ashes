@@ -10,12 +10,16 @@ alienMissions:
   # - delete: STR_ALIEN_SUPPLY
 #early-game scripts
   - type: STR_EARLY_GAME_TROLLING
-    points: 20
+    points: 40
     waves:
-      - ufo: STR_ABDUCTOR #TODO buff aliens!
+      - ufo: STR_SMALL_SCOUT
+        count: 2
+        trajectory: F1
+        timer: 9000
+      - ufo: STR_ABDUCTOR
         count: 1
-        trajectory: P0
-        timer: 1200
+        trajectory: F0 #TODO, change to landing
+        timer: 7800
 
 #resistance scripts
   - type: STR_RESISTANCE_HEAVEN_DEFENCE
@@ -39,6 +43,36 @@ alienMissions:
         timer: 4000
         objective: true
   - type: STR_URBAN_HAZARD
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 4000
+        objective: true
+  - type: STR_RESISTANCE_URBAN_SAFEHOUSE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 4000
+        objective: true
+  - type: STR_DESERT_TELESCOPE_MISSION
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 4000
+        objective: true
+  - type: STR_RESISTANCE_FOREST_HOUSE
     despawnEvenIfTargeted: true
     objective: 3
     spawnZone: 0
