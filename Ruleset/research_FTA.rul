@@ -63,6 +63,8 @@ research:
     hidden: true
   - name: STR_RESISTANCE_SCIENTIST
     hidden: true
+  - name: STR_DESERT_TELESCOPE
+    hidden: true
   - name: STR_MONSTER_HUNT_START_PREREQ
     hidden: true
   - name: STR_MONSTER_HUNT_RUMORS_PREREQ

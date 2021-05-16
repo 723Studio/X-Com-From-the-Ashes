@@ -976,6 +976,7 @@ items:
     fireSound: 64 #mb 4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
+      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 55
@@ -1030,6 +1031,8 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 21300
+    tags:
+      FTAG_EXPANDING: 1
   - type: STR_PRECISION_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
@@ -1046,6 +1049,7 @@ items:
     fireSound: 64 #4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
+      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 35
@@ -1110,6 +1114,8 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 21310
+    tags:
+      FTAG_EXPANDING: 1
   - type: STR_RIFLE_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     size: 0.02
@@ -1298,12 +1304,14 @@ items:
     autoShots: 2
     battleType: 1
     shotgunChoke: 100
-    kneelBonus: 110
+    kneelBonus: 100
     invWidth: 1
     invHeight: 2
     armor: 40
     attraction: 7
     listOrder: 22459
+    tags:
+      FTAG_SAWED_OFF: 85
   - type: STR_DOUBLE_BARRELED
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     landOnly: true
@@ -1653,9 +1661,9 @@ items:
     invWidth: 2
     invHeight: 3
     accuracyCloseQuarters: 35
-    accuracyAimed: 90
-    tuAimed: 40
-    tuLoad: 25
+    accuracyAimed: 75
+    tuAimed: 70
+    tuLoad: 45
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 65
@@ -3382,6 +3390,56 @@ items:
 
 
 #unit-related
+#aliens
+  - &STR_SECTOID
+    type: STR_SECTOID_SOLDIER
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costDispose: -5000
+    costSell: -5000 #80000
+    listOrder: 119960
+  - type: STR_SECTOID_NAVIGATOR
+    refNode: *STR_SECTOID
+    listOrder: 119990
+  - type: STR_SECTOID_MEDIC
+    refNode: *STR_SECTOID
+    listOrder: 119980
+  - type: STR_SECTOID_ENGINEER
+    refNode: *STR_SECTOID
+    listOrder: 119970
+  - type: STR_SECTOID_LEADER
+    refNode: *STR_SECTOID
+    listOrder: 120000
+  - type: STR_SECTOID_COMMANDER
+    refNode: *STR_SECTOID
+    listOrder: 120010
+  - type: STR_SECTOID_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costDispose: -4000
+    costSell: -4000 #40000
+    weight: 17
+    bigSprite: 46
+    floorSprite: 42
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 26
+    listOrder: 63000
+  - type: STR_SECTOID_COMMANDER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 17
+    bigSprite: 121
+    floorSprite: 42
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 25
+    battleType: 11
+    armor: 26
 #MIBs
   - type: STR_XCOM_EX_COMMANDER_CORPSE
     categories: [STR_CORPSES]
@@ -3655,7 +3713,6 @@ items:
     armor: 20
     listOrder: 62300
 #Resistance units
-
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
     spawnUnitFaction: 0
@@ -3760,6 +3817,25 @@ items:
     armor: 30
     recover: false
     listOrder: 67800
+  - type: STR_SPAWN_RESISTANCE_COMPUTER
+    spawnUnit: STR_RESISTANCE_COMPUTER
+    spawnUnitFaction: -1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_RESISTANCE_COMPUTER_REMAINS
+    categories: [STR_WRECKS]
+    name: STR_CORPSE
+    size: 0.4
+    costDispose: -1000
+    weight: 40
+    floorSprite: 121
+    battleType: 11
+    armor: 30
+    recover: false
+    listOrder: 67800    
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
@@ -3880,7 +3956,7 @@ extended:
       ITEM_IS_MELEE: int
       ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT: int
       ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT: int
-      #psi-shield
+      #energy shield
       ITEM_ENERGY_SHIELD_NEEDS_PRIMING: int
       ITEM_ENERGY_SHIELD_CAPACITY: int
       ITEM_ENERGY_SHIELD_PER_TURN: int
@@ -3894,3 +3970,5 @@ extended:
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
+      FTAG_EXPANDING: int
+      FTAG_SAWED_OFF: int # % of resulting power (85 means only 85% power would be provided)

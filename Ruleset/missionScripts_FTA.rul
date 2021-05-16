@@ -38,15 +38,15 @@ missionScripts:
     raceWeights:
       0:
         STR_SECTOID: 100
-    startDelay: 20
+    startDelay: 2880
     useTable: false
-    randomDelay: 43500
+    randomDelay: 7200
 
 
 #resistance
-  - type: heavenDefenceFirstTime
+  - type: heavenZombieFarm
     firstMonth: 0
-    executionOdds: 100
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
@@ -57,33 +57,29 @@ missionScripts:
     raceWeights:
       0:
         STR_ZOMBIES: 100
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: false
-    useTable: false
-    spawnGap: 21
-    randomSpawnGap: 5
-    startDelay: 6000
-    randomDelay: 3000
-  - type: heavenDefenceContinues
-    firstMonth: 0
-    executionOdds: 10
-    allowedProcessor: 1
-    missionWeights:
-      0:
-        STR_RESISTANCE_HEAVEN_DEFENCE: 100
-    regionWeights:
-      0:
-        RESISTANCE_START_ZONE: 100
-    raceWeights:
-      0:
-        STR_ZOMBIES: 100
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: true
     useTable: false
     spawnGap: 60
     randomSpawnGap: 15
     startDelay: 1200
     randomDelay: 43500
+  - type: heavenForestHouse
+    firstMonth: 0
+    executionOdds: 20
+    allowedProcessor: 1
+    missionWeights:
+      0:
+        STR_RESISTANCE_FOREST_HOUSE: 100
+    regionWeights:
+      0:
+        RESISTANCE_FOREST_HOUSE_START_ZONE: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    useTable: false
+    spawnGap: 60
+    randomSpawnGap: 20
+    startDelay: 6000
+    randomDelay: 3000
   - type: resistanceScientist
     firstMonth: 0
     executionOdds: 15
@@ -122,3 +118,27 @@ missionScripts:
     randomSpawnGap: 10
     startDelay: 6000
     randomDelay: 3000
+    spawnGap: 50
+    randomSpawnGap: 15
+    startDelay: 14400
+    randomDelay: 5760
+  - type: desertTelescope
+    firstMonth: 0 #2
+    executionOdds: 100 #10
+    allowedProcessor: 1
+    missionWeights:
+      0:
+        STR_DESERT_TELESCOPE_MISSION: 100
+    regionWeights:
+      0:
+        DESERT_TELESCOPE: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    researchTriggers:
+      STR_DESERT_TELESCOPE: false
+    useTable: false
+    spawnGap: 80
+    randomSpawnGap: 20
+    startDelay: 14400
+    randomDelay: 5760

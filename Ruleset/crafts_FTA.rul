@@ -5,12 +5,10 @@ crafts:
   - delete: STR_FIRESTORM
   - delete: STR_AVENGER
 #starting crafts
-  - type: STR_DRAGONFLY #TODO
-    # requires:
-    #   - STR_DRAGONFLY
+  - type: STR_DRAGONFLY
     sprite: 800
     damageMax: 50
-    speedMax: 560
+    speedMax: 380
     accel: 1
     soldiers: 8
     vehicles: 1
@@ -20,8 +18,8 @@ crafts:
     costRent: 32000
     costSell: 200000
     repairRate: 4
-    refuelRate: 50
-    fuelMax: 490
+    refuelRate: 46
+    fuelMax: 500
     transferTime: 72
     score: 100
     battlescapeTerrainData:
@@ -40,17 +38,17 @@ crafts:
     costRent: 40000 #TODO
     costSell: 260000 #TODO
     weaponTypes:
-      - 0
-      - 2
-    weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
+      - [0, 2]
+      - [0, 2]
+    #weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
     soldiers: 1
     vehicles: 0
     pilots: 1
-    maxItems: 999
-
+    maxItems: 15
     fuelMax: 440
-    damageMax: 27
-    speedMax: 1700
+    damageMax: 45
+    avoidBonus: 10
+    speedMax: 1800
     accel: 3
     weapons: 2
     refuelRate: 40

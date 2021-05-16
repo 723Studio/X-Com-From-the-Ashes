@@ -1,6 +1,96 @@
 ufos:
 #real ufos
-
+  - delete: STR_SMALL_SCOUT
+  - delete: STR_ABDUCTOR
+  - type: STR_SMALL_SCOUT
+    size: STR_VERY_SMALL
+    sprite: 0
+    damageMax: 50
+    avoidBonus: 20
+    shieldCapacity: 20
+    shieldRecharge: 45 #35 % to get 1 SP per sec
+    shieldRechargeInGeoscape: 200
+    shieldBleedThrough: 100
+    speedMax: 2140
+    accel: 12
+    power: 10
+    range: 30
+    score: 50
+    reload: 50
+    #hitBonus: 5
+    breakOffTime: 1200
+    unmanned: true #fight to death
+    battlescapeTerrainData:
+      name: UFO1A
+      mapDataSets:
+        - BLANKS
+        - UFO1
+      mapBlocks:
+        - name: UFO1A
+          width: 10
+          length: 10
+        - name: UFO1B
+          width: 10
+          length: 10
+        - name: UFO1C
+          width: 10
+          length: 10
+  - type: STR_ABDUCTOR
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    shieldCapacity: 200
+    shieldRecharge: 115 #1*100% + 15 % to get 1 SP per sec
+    shieldRechargeInGeoscape: 200
+    shieldBleedThrough: 100
+    speedMax: 3940
+    accel: 8
+    power: 50
+    range: 40
+    reload: 70
+    breakOffTime: 3000
+    score: 800
+    missionScore: 3
+    battlescapeTerrainData:
+      name: UFO_ABDUCTOR
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_OPER2
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: ABDUCT00
+          width: 20
+          length: 20
+        - name: ABDUCT01
+          width: 20
+          length: 20
+        - name: ABDUCT02
+          width: 20
+          length: 20
+        - name: ABDUCT03
+          width: 20
+          length: 20
+        - name: ABDUCT04
+          width: 20
+          length: 20
+        - name: ABDUCT05
+          width: 20
+          length: 20
+        - name: ABDUCT06
+          width: 20
+          length: 20
+        - name: ABDUCT07
+          width: 20
+          length: 20
+        - name: ABDUCT08
+          width: 20
+          length: 20
+        - name: ABDUCT09
+          width: 20
+          length: 20
 #points of interest
   - type: STR_RESISTANCE_SHELTER_FARM
     size: STR_MEDIUM_UC
@@ -361,6 +451,97 @@ ufos:
                 itemList: *generalResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_RADIO: [0, 0]
+  - type: STR_RESISTANCE_FOREST_HOUSE
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_RESISTANCE_FOREST_HOUSE
+      mapDataSets:
+        - BLANKS
+        - FORESTSWAMP
+        - RESISTANCE_FOREST_HOUSE_01
+      mapBlocks:
+        - name: RESISTANCE_FOREST_HOUSE_01
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [5, 3, 0]
+              - [10, 3, 0]
+              - [7, 8, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [4, 5, 0]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
+          randomizedItems:
+              - position: [8, 6, 0]
+                amount: 6
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [7, 2, 0]
+                amount: 5
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: RESISTANCE_FOREST_HOUSE_02
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [5, 5, 0]
+              - [8, 3, 0]
+              - [7, 8, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [4, 5, 0]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
+          randomizedItems:
+              - position: [7, 5, 0]
+                amount: 8
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [7, 2, 0]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+
+  - type: DESERT_TELESCOPE_HOUSE
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: TELESCOPE_HOUSE
+      mapDataSets:
+        - BLANKS
+        - DESERT_TELESCOPE
+      mapBlocks:
+        - name: TELESCOPE_HOUSE
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_SCIENTIST_VIP:
+              - [6, 13, 0]
+              - [3, 14, 0]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_SCIENTIST_VIP: [0, 0]
+
+
   - type: STR_SCIENTIST_REFUGE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -431,7 +612,6 @@ ufos:
         - name: EVACZONE_N
           width: 10
           length: 10
-
   - type: STR_RESISTANCE_URBAN_SAFEHOUSE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed

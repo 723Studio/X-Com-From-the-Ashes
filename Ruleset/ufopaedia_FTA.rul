@@ -107,7 +107,7 @@ ufopaedia:
     requires:
       - STR_RND_STATUS_REPORT
     text: STR_RND_STATUS_REPORT_UFOPEDIA
-    listOrder: 100
+    #listOrder: 100
   - id: STR_INTEL_STATUS_REPORT
     type_id: 7
     image_id: INTEL_CHIEF_CPAL.SPK
@@ -293,7 +293,6 @@ ufopaedia:
     listOrder: 2520
 
 #STR_TECHNOLOGY 7000
-
 #STR_XCOM_CRAFT_ARMAMENT 9000
   - id: STR_DRAGONFLY #TODO
     type_id: 1
@@ -450,7 +449,6 @@ ufopaedia:
     text: STR_UNDERWATER_BASES_UFOPEDIA
 
 #STR_ARMORS 12-14k
-
 #STR_WEAPONS_AND_EQUIPMENT 15-29:
 #melee
   - id: STR_POLICE_BATON
@@ -473,14 +471,14 @@ ufopaedia:
     text: STR_MACHETE_UFOPEDIA
     requires:
       - STR_MACHETE
-    listOrder: 20330    
+    listOrder: 20330
   - id: STR_SWORD
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SWORD_UFOPEDIA
     requires:
       - STR_SWORD
-    listOrder: 20330  
+    listOrder: 20330
 #throwing
   - id: STR_THROWING_KNIFE
     type_id: 4
@@ -488,14 +486,14 @@ ufopaedia:
     text: STR_THROWING_KNIFE_UFOPEDIA
     requires:
       - STR_THROWING_KNIFE
-    listOrder: 20330 
+    listOrder: 20330
   - id: STR_SPORTS_BOW
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SPORTS_BOW_UFOPEDIA
     requires:
-      - STR_SPORTS_BOW     
-    listOrder: 20330 
+      - STR_SPORTS_BOW
+    listOrder: 20330
   - id: STR_BOW_ARROW
     type_id: 4
     section: STR_NOT_AVAILABLE
@@ -735,7 +733,7 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_PUMP_ACTION_SHOTGUN 
+      - STR_PUMP_ACTION_SHOTGUN
   - id: STR_SEMI_AUTO_SHOTGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1086,10 +1084,7 @@ ufopaedia:
     text: STR_FIRE_EXTINGUISHER_UFOPEDIA
     listOrder: 21300
 
-
-
 #STR_ALIEN_ARTIFACTS 30-44
-
 #STR_ALIEN_LIFE_FORMS 45-160
 #enemies - humanoids
   - id: STR_XCOM_EX_COMMANDER_EXAMINATION
@@ -1128,7 +1123,6 @@ ufopaedia:
     requires:
       - STR_MIB_BUTCHER
     listOrder: 146000
-
 
   - id: STR_SEEKER_DRONE_TERRORIST
     type_id: 7
@@ -1504,14 +1498,13 @@ ufopaedia:
     requires:
       - STR_CHUPACABRA_ARMOR
     listOrder: 20300
-
 #list orders
-  # STR_XCOM_REPORTS_UC 0-6999
-  # STR_TECHNOLOGY 7000
-  # STR_XCOM_CRAFT_ARMAMENT 9000
-  # STR_BASE_FACILITIES 10000
-  # STR_ARMORS 12-14k
-  # STR_WEAPONS_AND_EQUIPMENT 15-29:
+    # STR_XCOM_REPORTS_UC 0-6999
+    # STR_TECHNOLOGY 7000
+    # STR_XCOM_CRAFT_ARMAMENT 9000
+    # STR_BASE_FACILITIES 10000
+    # STR_ARMORS 12-14k
+    # STR_WEAPONS_AND_EQUIPMENT 15-29:
     ##  melee     15000
     ##  pistols   16000
     ##  SMG       17000
@@ -1523,7 +1516,7 @@ ufopaedia:
     ##  grenades  23000
     ##  equipment 24000
     ##  misc      25000
-  # STR_ALIEN_ARTIFACTS 30-44
+    # STR_ALIEN_ARTIFACTS 30-44
     ##  melee     30000
     ##  pistols   31000
     ##  SMG       32000
@@ -1535,7 +1528,7 @@ ufopaedia:
     ##  grenades  38000
     ##  equipment 39000
     ##  misc      40000
-  #STR_ALIEN_LIFE_FORMS 45-160
+    #STR_ALIEN_LIFE_FORMS 45-160
     ##  MIB       45000
     ##  SPIRAL    48000
     ##  ADVENT    51000
@@ -1547,8 +1540,8 @@ ufopaedia:
     ##  SECRET1   72000
     ##  SECRET2   75000
     ##  ALIENS    100-150k
-  # STR_ALIEN_RESEARCH_UC 160-249k
-  # STR_TACTICAL_ANALYSIS 250-1999k
+    # STR_ALIEN_RESEARCH_UC 160-249k
+    # STR_TACTICAL_ANALYSIS 250-1999k
     ##  MIB       250
     ##  SPIRAL    280
     ##  ADVENT    310

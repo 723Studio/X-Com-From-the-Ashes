@@ -407,12 +407,12 @@ mapScripts:
     - type: fillArea
       blocks: 6
 
-  - type: REFUGE_ATTACKED
+  - type: SCIENTIST_REFUGE_ATTACKED
     commands:
-    - type: addCraft
+    - type: addUFO
       rects: 
        - [2, 2, 5, 5]
-    - type: addUFO
+    - type: addCraft
       rects: 
        - [2, 2, 5, 5]
     - type: addBlock
@@ -422,6 +422,23 @@ mapScripts:
       size: 2
       executions: 3
       executionChances: 65
+    - type: fillArea
+
+  - type: RESISTANCE_FOREST_HOUSE
+    commands:
+    - type: addCraft
+      rects: 
+       - [1, 1, 4, 4]
+    - type: addUFO
+      rects: 
+       - [1, 1, 4, 4]
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: addBlock
+      size: 2
+      executions: 2
+      executionChances: 60
     - type: fillArea
 
   - type: STR_LOCALS_TRAP_SCRIPT
