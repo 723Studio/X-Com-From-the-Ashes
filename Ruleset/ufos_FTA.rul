@@ -612,3 +612,24 @@ ufos:
         - name: EVACZONE_N
           width: 10
           length: 10
+  - type: STR_RESISTANCE_URBAN_SAFEHOUSE
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: URBAN_SAFEHOUSE
+      mapDataSets:
+        - BLANKS
+        - URBAN_ROADS1
+        - RESISTANCE_URBAN_HOUSE
+      mapBlocks:
+        - name: URBAN_SAFEHOUSE
+          width: 40
+          length: 40
