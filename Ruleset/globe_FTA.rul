@@ -383,6 +383,9 @@ globe:
     - id: -8
       deployments:
         STR_DESERT_TELESCOPE: 100
+    - id: -9
+      deployments:
+        STR_URBAN_HAZARD: 100
 #GIS  
   polygons:
     - - 1
