@@ -512,7 +512,7 @@ alienDeployments:
     alert: STR_RESISTANCE_HEAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
-    markerName: STR_AGENT_EXTRACTION
+    markerName: STR_RESISTANCE_HEAVEN_MARKER
     duration: [4, 10]
     despawnPenalty: 700
     extendedObjectiveType: STR_EVACUATION 
@@ -545,7 +545,7 @@ alienDeployments:
         lowQty: 4
         highQty: 8
         dQty: 2
-        percentageOutsideUfo: 0
+        percentageOutsideUfo: 50
         itemSets:
           -
             - STR_PISTOL
@@ -646,6 +646,150 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_AP  
 
+  - type: STR_RESISTANCE_URBAN_HIDEOUT
+    width: 60
+    length: 60
+    height: 6
+    genMissionLimit: 0
+    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alertBackground: STR_RESISTANCE_BACKGROUND.SCR
+    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HEAVEN_MARKER
+    duration: [8, 12]
+    despawnPenalty: 500
+    extendedObjectiveType: STR_EVACUATION
+    successEvents:
+      STR_RESCUED_RESISTANCE_1: 50
+      STR_RESCUED_RESISTANCE_2: 50
+      STR_RESCUED_RESISTANCE_3: 50
+      STR_RESCUED_RESISTANCE_4: 50
+      STR_RESCUED_RESISTANCE_5: 50
+      STR_RESCUED_RESISTANCE_6: 50
+    failureEvents:
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
+    briefing:
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING
+    terrains:
+      - URBAN_LOW
+    customUfo: STR_URBAN_HAZARD
+    script: RESISTANCE_URBAN_HIDEOUT
+    battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
+    data:
+      - alienRank: 4 #STR_MIB_ARMORED_AGENT
+        lowQty: 3
+        highQty: 5
+        dQty: 2
+        extraQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_SEMI_AUTO_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BATON
+            - STR_SHOTGUN_SHELLS_BATON
+            - STR_SHOTGUN_SHELLS_BATON
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BATON
+            - STR_SHOTGUN_SHELLS_BATON 
+            - STR_SHOTGUN_SHELLS_BATON
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP  
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE 
+      - alienRank: 9 #STR_MIB_SPECOPS
+        lowQty: 6
+        highQty: 10
+        dQty: 2
+        extraQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_SEMI_AUTO_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_LMG
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_AP_AMMO
+            - STR_LC_I_AMMO
+          -
+            - STR_SNIPER_RIFLE
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_SNIPER_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS 
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
 
   - type: STR_SCIENTIST_REFUGE
     width: 80
@@ -1493,111 +1637,7 @@ alienDeployments:
           -
             []
 
-  - type: STR_URBAN_HAZARD
-    width: 40
-    length: 40
-    height: 6
-    genMissionLimit: 0
-    alert: STR_URBAN_HAZARD_ALERT
-    alertBackground: PLACEHOLDER_BACKGROUND.SCR
-    alertDescription: STR_URBAN_HAZARD_DESCRIPTION
-    markerName: STR_URBAN_HAZARD
-    duration: [4, 10]
-    despawnPenalty: 500
-    extendedObjectiveType: STR_EVACUATION
-    successEvents:
-      STR_RESCUED_SCIENTIST: 100
-    failureEvents:
-      STR_NOT_RESCUED_SCIENTIST: 100
-    briefing:
-      textOffset: -16
-      background: STR_RESISTANCE_BACKGROUND.SCR
-      showTarget: false
-      desc: STR_URBAN_HAZARD_BRIEFING
-    terrains:
-      - FOREST
-    customUfo: STR_URBAN_HAZARD
-    script: REFUGE_ATTACKED
-    battleScript: MIB_ATTACK
-    data:
-      - alienRank: 6
-        lowQty: 1
-        highQty: 1
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-  - type: STR_RESISTANCE_URBAN_SAFEHOUSE
-    width: 70
-    length: 70
-    height: 8
-    genMissionLimit: 0
-    alert: STR_RESISTANCE_URBAN_SAFAHOUSE_ALERT
-    alertBackground: PLACEHOLDER_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_URBAN_SAFAHOUSE_DESCRIPTION
-    markerName: STR_RESISTANCE_URBAN_SAFEHOUSE
-    duration: [4, 10] #TODO
-    despawnPenalty: 850
-    extendedObjectiveType: STR_EVACUATION  #TODO
-    successEvents:
-      STR_RESCUED_SCIENTIST: 100 #TODO
-    failureEvents:
-      STR_NOT_RESCUED_SCIENTIST: 100 #TODO
-    briefing: #TODO
-      textOffset: -16
-      background: STR_RESISTANCE_BACKGROUND.SCR
-      showTarget: false
-      desc: STR_RESISTANCE_URBAN_SAFAHOUSE_BRIEFING
-    terrains:
-      - FOREST
-    customUfo: STR_RESISTANCE_URBAN_SAFEHOUSE
 
-    script: REFUGE_ATTACKED
-    battleScript: MIB_ATTACK
-    data:
-      - alienRank: 6
-        lowQty: 1
-        highQty: 1
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
 
 
 

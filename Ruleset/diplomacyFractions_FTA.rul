@@ -22,6 +22,7 @@ diplomacyFactions:
     helpTreatyMissions:
       - heavenZombieFarm
       - heavenForestHouse
+      - heavenUrbanHideout
       - resistanceScientist
       - desertTelescope
     genEventFreq: 100

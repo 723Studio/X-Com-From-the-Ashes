@@ -416,12 +416,6 @@ ufopaedia:
     text: STR_GYM_UFOPEDIA
     requires:
       - STR_FACILITIES_BLUEPRINTS
-  - id: STR_SICK_BAY
-    type_id: 6
-    section: STR_BASE_FACILITIES
-    text: STR_SICK_BAY
-    requires:
-      - STR_FACILITIES_BLUEPRINTS
   - id: STR_SMALL_RADAR_SYSTEM
     type_id: 6
     section: STR_BASE_FACILITIES

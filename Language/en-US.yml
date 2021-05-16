@@ -260,8 +260,6 @@ en-US:
   STR_INTRO2_SLIDE5_CAPTION: "There are still people loyal to our cause of driving the invaders back!{NEWLINE}To arms!"
   STR_MIB_CHASING_SLIDE1_CAPTION: "Some fancy text here..." #TODO
   STR_MIB_CHASING_SLIDE2_CAPTION: "Some fancy text here too!" #TODO
-  STR_MIB_CAUGHT_FAILED1: "We caught one of them. It's been a long time since this happened, so we can celebrate. However, our prisoner vomited for a long time, as far as we know - these are signs of detoxification of the body. The stuff they're drugged with takes away not only their brains, but their memories as well. The agent could not answer the question " Where have you been recently?". We had to use a couple of effective methods, but it did not give the desired result. To the question " Where are your main forces?" our hero replied that he does not even understand what forces we are talking about. Our operatives can make him talk, but it doesn't look like a simulation here, and he really doesn't remember anything. Complete amnesia."
-  STR_MIB_CAUGHT_FAILED2: "After the capture of one of the MIB, we hoped to extract as much information as possible, but the hard withdrawal on unknown drugs did not let him go, and only strong painkillers allowed us to hear not only screams from his side. He's already starting to remember, but it takes time. The last thing I remember clearly is the farm and the crop circles. "What kind of farm?" "I don't remember, but what else does he remember?" Oh, yes, a flash of light. Apparently this is the last thing that ordinary people see before they go to the dark side. Do they do evil against their own will? How awful. Strong physical form began to rapidly decline at the same time as detoxification, perhaps we should also think about such chemistry? I'm kidding."
 #facilities
   STR_HQ: "Headquarters"
   STR_HQ_UFOPEDIA: "STR_HQ_UFOPEDIA" #TODO
@@ -289,6 +287,8 @@ en-US:
   STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We received a distress transmission from one of the Resistance shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures, they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FOREST_HOUSE: "Resistance Heaven - Forest House"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The M.I.B. have surrounded one of Resistance secret hideouts. Attempting to destroy important clues that could lead the Men in Black agents to other Resistance havens, they were surrounded and forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_URBAN_HIDEOUT: "Surrounded but not Broken"
+  STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: #TODO
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
   STR_SCIENTIST_REFUGE_ALERT_DESCRIPTION: We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible.
@@ -307,14 +307,7 @@ en-US:
   STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_BRIEFING: #TODO
-  STR_URBAN_HAZARD: "Urban Hazard"
-  STR_URBAN_HAZARD_ALERT: "Urban Hazard - Alert" #TODO
-  STR_URBAN_HAZARD_DESCRIPTION: "Urban Hazard - Desc" #TODO
-  STR_URBAN_HAZARD_BRIEFING: "Urban Hazard - Briefing" #TODO
-  STR_RESISTANCE_URBAN_SAFEHOUSE: "Surrounded but not Broken"
-  STR_RESISTANCE_URBAN_SAFEHOUSE_ALERT: "Surrounded but not Broken - Alert" #TODO
-  STR_RESISTANCE_URBAN_SAFEHOUSE_DESCRIPTION: "Surrounded but not Broken - Desc" #TODO
-  STR_RESISTANCE_URBAN_SAFAHOUSE_BRIEFING: "Surrounded but not Broken - Briefing" #TODO
+
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
   STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals, attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
@@ -764,10 +757,10 @@ en-US:
   STR_XCOM_FILES_2_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_3: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_3_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
-  STR_EMPTY_MIB_EARLY_LORE1: "Some MiB lore article" #TODO
-  STR_EMPTY_MIB_EARLY_LORE1_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE2: "Some MiB lore article" #TODO
-  STR_EMPTY_MIB_EARLY_LORE2_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE1: "M.I.B. agent interrogation report #14571"
+  STR_EMPTY_MIB_EARLY_LORE1_UFOPEDIA: "We caught one of them. It's been a long time since this happened, so we can celebrate. However, our prisoner vomited for a long time, as far as we know - these are signs of detoxification of the body. The stuff they're drugged with takes away not only their brains, but their memories as well. The agent could not answer the question 'Where have you been recently?'. We had to use a couple of effective methods, but it did not give the desired result. To the question 'Where are your main forces?' our hero replied that he does not even understand what forces we are talking about. Our operatives can make him talk, but it does not look like a simulation here, and he really does not remember anything. Complete amnesia."
+  STR_EMPTY_MIB_EARLY_LORE2: "M.I.B. agent interrogation report #18732"
+  STR_EMPTY_MIB_EARLY_LORE2_UFOPEDIA: "After the capture of one of the MIB, we hoped to extract as much information as possible, but the hard withdrawal on unknown drugs did not let him go, and only strong painkillers allowed us to hear not only screams from his side. He's already starting to remember, but it takes time. The last thing I remember clearly is the farm and the crop circles. 'What kind of farm?' 'I don't remember, but what else does he remember?' Oh, yes, a flash of light. Apparently this is the last thing that ordinary people see before they go to the dark side. Do they do evil against their own will? How awful. Strong physical form began to rapidly decline at the same time as detoxification, perhaps we should also think about such chemistry? I'm kidding."
   STR_EMPTY_MIB_EARLY_LORE3: "Some MiB lore article" #TODO
   STR_EMPTY_MIB_EARLY_LORE3_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_EMPTY_MIB_EARLY_LORE4: "Some MiB lore article" #TODO

@@ -143,84 +143,49 @@ battleScripts:
       minDifficulty: 4
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
-
-  - type: MIB_ATTACK_SCIENTIST
+  - type: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     commands:
-    - type: spawnUnit #for low diff start
-      executionChances: 85
+    - type: spawnUnit #for low diff
+      executionChances: 100
+      label: 1
+      maxDifficulty: 3
+      startTurn: 8
+      endTurn: 9
       packSize: 4
-      randomPackSize: true
-      executions: 2
-      endTurn: 2
+      randomPackSize: false
       unitSide: 1
-      maxDifficulty: 2
-      groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
-    - type: spawnUnit #for low diff continue
-      executionChances: 40
-      startTurn: 3
-      packSize: 4
-      randomPackSize: true
-      unitSide: 1
-      maxDifficulty: 2
-      groups: [0, 2, 3, 4]
-      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
-    - type: spawnUnit #random additional
+      unitSet: [STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #random additional continues
       executionChances: 30
-      packSize: 3
-      randomPackSize: false
-      unitSide: 1
-      groups: [0, 2, 3, 4]
-      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
-    - type: spawnUnit #for high diff start
-      executionChances: 85
-      packSize: 5
-      randomPackSize: true
-      endTurn: 2
-      unitSide: 1
-      minDifficulty: 3
-      groups: [0, 2, 3, 4]
-      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
-    - type: spawnUnit #for high diff cont
-      executionChances: 40
-      startTurn: 3
-      packSize: 6
+      conditionals: 1
+      packSize: 4
       randomPackSize: true
       unitSide: 1
-      minDifficulty: 3
-      groups: [0, 2, 3, 4]
+      startTurn: 2
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
-    - type: spawnUnit #extra SH gift
-      executionChances: 20
-      packSize: 3
+      unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #high diff
+      executionChances: 100
+      label: 1
+      maxDifficulty: 3
+      startTurn: 7
+      endTurn: 8
+      packSize: 7
       randomPackSize: false
       unitSide: 1
-      minDifficulty: 4
-      groups: [0, 2, 3, 4]
+      minDifficulty: 3
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+      unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #extra SH gift
       executionChances: 10
+      startTurn: 7
       packSize: 8
       randomPackSize: false
       unitSide: 1
       minDifficulty: 4
-      groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
-    - type: showMessage
-      maxRuns: 1
-      variable: showMessage
-      endTurn: 1
-      messages:
-        0:
-          title: STR_RECOVER_RESEARCH_LOGS_TITLE
-          content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
 
   - type: MIB_ATTACK_SCIENTIST
     commands:

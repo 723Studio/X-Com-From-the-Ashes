@@ -3378,9 +3378,6 @@ items:
   - type: STR_RADAR_SYSTEM #TODO
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
-  - type: STR_LABORATORY_EQUIPMENT #TODO
-    categories: [STR_HUMANS, STR_COMPONENTS]
-    listOrder: 146030
   - type: STR_TRADIUM #TODO
     costBuy: 1000000
     costSell: 500000

@@ -441,6 +441,38 @@ mapScripts:
       executionChances: 60
     - type: fillArea
 
+  - type: RESISTANCE_URBAN_HIDEOUT
+    commands:
+    - type: addCraft
+      rects: 
+       - [1, 1, 4, 4]
+    - type: addUFO
+      rects: 
+       - [1, 1, 4, 4]
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 33
+      terrain: URBAN_ROADS
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      terrain: URBAN_ROADS
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      terrain: URBAN_ROADS
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: addBlock
+      size: 2
+      executions: 2
+      executionChances: 60
+    - type: fillArea
+
   - type: STR_LOCALS_TRAP_SCRIPT
     commands:
     - type: addLine
