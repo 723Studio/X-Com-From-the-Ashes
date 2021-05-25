@@ -344,14 +344,14 @@ en-US:
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to the 1st Hangar."
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies running low!"
-  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our forces alive."
+  STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our forces alive.{NEWLINE}Loyalty score> -100"
   STR_NO_SUPPLY_SECOND_WARNING_EVENT: "We are running out supplies!"
   STR_NO_SUPPLY_SECOND_WARNING_DESCRIPTION: #TODO
   STR_NO_SUPPLY_THIRD_WARNING_EVENT: "Starvation!"
   STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: #TODO
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: #TODO
-  STR_STRANGE_CREATURE_AUTOPSY: "Live creature study" #TODO
+  STR_STRANGE_CREATURE_AUTOPSY: "Strange creature study" #TODO
   STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION: #TODO
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
