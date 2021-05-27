@@ -147,11 +147,11 @@ en-US:
   STR_WE_DISCOVERED_FACTION: "We established contact with a new faction - "
   STR_THEIR_ATTITUDE_TO_US: "Their attitude towards us is "
   STR_ATTITUDE_BECOME: "'s attitude to us has become "
-  STR_STUFF_NO_MONEY1: STR_STUFF_NO_MONEY1 #TODO
-  STR_STUFF_NO_MONEY2: STR_STUFF_NO_MONEY2 #TODO
-  STR_STUFF_NO_MONEY5: STR_STUFF_NO_MONEY5 #TODO
-  STR_STUFF_NO_MONEY10: STR_STUFF_NO_MONEY10 #TODO
-  STR_STUFF_NO_MONEY20: STR_STUFF_NO_MONEY20 #TODO
+  STR_STUFF_NO_MONEY1: "Financial statements speak of losses. We still have enough funds to ensure the viability of our fighters and buy fuel for our transport, but if this trend continues, we will all collapse soon."
+  STR_STUFF_NO_MONEY2: "Financial statements speak of losses. It looks like things are going badly. It may be worth giving up expensive equipment and delicious food in the dining room. The downtrend of our money does not please the management and they are already thinking about tightening our belts for all of us."
+  STR_STUFF_NO_MONEY5: "Financial statements speak of losses. Perhaps we should completely change the approach to training and suspend the study of new individuals in our laboratories. It costs money, and we can hardly afford what costs money."
+  STR_STUFF_NO_MONEY10: "Financial statements speak of losses. The base is falling apart, and the soldiers have already given up morally. Nothing knocks you off your feet like not being able to live the way it used to be. The management is preparing documents stating that now part of the personal funds of network workers will be taken at the expense of the organization. This is an extreme measure and it will anger the majority, a lot of people will leave us, but there is nothing we can do about it."
+  STR_STUFF_NO_MONEY20: "Financial statements speak of losses. The base has turned into ruins, no one is fighting for its existence. The soldiers don't even have money to eat. Their relatives write us angry letters, the management ignores them, but they understand that it was the sequence of wrong actions that led to this result. It seems time to collect the remaining fragments of unknown machines and organisms in order to try to sell them on the black market."
   STR_FTA_ALPHA_END: "Thank you for completing X-Com: From the Ashes Alpha 1!"
   STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-Com: From the Ashes. Thank you for your participation! It's very important for me to know your opinion about the game! Feedback, suggestions, bug reports are very welcome. Stay tuned for ongoing development of the game on my Discord server, Twitch, YouTube and VK public!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}*https://www.youtube.com/channel/UCt5SsOdMgRJuFK65Z1xdkhw?{NEWLINE}*https://vk.com/x_com_fta{NEWLINE}You can also find my development blog on Patreon (EN) or Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   STR_TRAINING: "Combat training"
@@ -243,8 +243,8 @@ en-US:
   STR_ALIEN_RESEARCH_UC: "ALIEN BIOLOGY AND LORE"
   STR_XCOM_PROJECT_MONTHLY_REPORT: "Monthly Report"
   STR_COUNCIL_REDUCE_DEBTS: "We are lacking funds necessary to sustain our operations - we need to maintain our account at above (x)$ or face an insurmountable shortage of supplies." #TODO - add fluff here! Original here - "The funding council is not happy with your financial position. You must reduce your debts below $1 million or the project will be terminated."
-  STR_YOU_HAVE_NOT_SUCCEEDED: "You have not succeeded in dealing with the alien invasion and the council of funding nations has regrettably decided to terminate the project. Each nation shall deal with the problem as they see fit. We can only hope that we can come to some accommodation with these apparently hostile forces, and that the general population will come to terms with the alien visitors." #TODO - redo council to your stuff does not treat you as leader and scatter
-  STR_COUNCIL_IS_DISSATISFIED: "The council of funding nations is dissatisfied with your performance. You must improve your effectiveness in dealing with the alien menace or risk termination of the project." #TODO - redo in FtA fashion
+  STR_YOU_HAVE_NOT_SUCCEEDED: "Council to your stuff does not treat you as leader and scatter. It looks like the main mission has failed, and the MIB staff are already covertly entrenched in our ranks, so any attempt to create resistance will be cleverly prevented. Even having come up with a recovery plan, most likely there will not be enough funds for it. The way they were thoughtlessly spent has long been noticed by the relatives of our hungry fighters. The remaining people with an unclouded consciousness are still trying to fight back, they are fighting alone, so they just gain time, but they understand that something terrible and pleasant is waiting for them ahead of them. Just like our base now. Complete collapse." #TODO - redo council to your stuff does not treat you as leader and scatter
+  STR_COUNCIL_IS_DISSATISFIED: "Council to your stuff does not treat you as leader and scatter. You are by a hair's breadth from total destruction. Our ranks are shrinking every day, and for various reasons - someone is kidnapped, someone simply dies at the post or on the way home. We do not have the means and resources to find out the reason for these things and it seems that nothing will save us all from the bad fate. Perhaps it is worth selling everything that only we have and making a decisive landing in the hope of saving at least a few people, because the account is already going to a few. The base is already beginning to overgrow with mold and weeds. As soon as the service personnel ceased to exist, some parts of this base also ceased to function. Only luck can help in this situation." #TODO - redo in FtA fashion
   STR_SNIPER_TRAINING: "Sniper Specialization"
   STR_HEAVY_TRAINING: "Heavy Specialization"
   STR_ASSAULT_TRAINING: "Assault Specialization"
@@ -258,22 +258,22 @@ en-US:
   STR_INTRO2_SLIDE3_CAPTION: "All of his colleagues noticed some peculiar changes in his behavior - communication became more drastic and formal and there was a steep decrease of empathy. We have already documented such personality changes in some of our field agents, and we assume that this indicates some form of external mind control. You know the Commander well, he would never so easily destroy what we have been working so hard all these years!"
   STR_INTRO2_SLIDE4_CAPTION: "Dr. Meyer, chief of the research department, tried to prevent the loss of research data. Unfortunately, espionage was not his main field and he was caught trying to back up the Ufopedia.{NEWLINE}An M.I.B. agent shot him on sight, and the Commander didn't even blink!"
   STR_INTRO2_SLIDE5_CAPTION: "There are still people loyal to our cause of driving the invaders back!{NEWLINE}To arms!"
-  STR_MIB_CHASING_SLIDE1_CAPTION: "Some fancy text here..." #TODO
-  STR_MIB_CHASING_SLIDE2_CAPTION: "Some fancy text here too!" #TODO
+  STR_MIB_CHASING_SLIDE1_CAPTION: "What is it? We seem to be on the trail of the men in black. Yes, that's for sure they are.{NEWLINE}We drive along the highway and continue our investigation. It feels like we are on the right track." #TODO
+  STR_MIB_CHASING_SLIDE2_CAPTION: "We have been driving for a long time and each of us is tired, but the fact that some black car really sits on our tail is confirmed by everyone. If these are not glitches and someone is really following us, then who is this and why is he doing this?{NEWLINE}...{NEWLINE}Ahead, a black minibus blocked our way. It looks like this is an ambush, we need to fight." #TODO
 #facilities
   STR_HQ: "Headquarters"
-  STR_HQ_UFOPEDIA: "STR_HQ_UFOPEDIA" #TODO
+  STR_HQ_UFOPEDIA: "Provides space for 7 scientists. Technically, this is a radar that collects data on the type of tweets, physical activity, lists of purchased goods, makes psychological portraits of people, and all this is collected from all over the world, however, due to its widest coverage, the chance of seeing something in a particular square is extremely small. This thing looks from afar. This place serves as a second home for all it's workers."
   STR_PRISON_CELLS: "Prison Cells"
-  STR_PRISON_CELLS_UFOPEDIA: "STR_PRISON_CELLS_UFOPEDIA"
+  STR_PRISON_CELLS_UFOPEDIA: "A prison is necessary in order to place dangerous criminals and people who are already difficult to fix. After a while, either a respectable comrade may come out of it, who will join our ranks, or a person will not take a lesson for the time spent in these walls and will soon be here in the next, last for him, time. Cells allow you to hold up to 10 people at a time."
   STR_GYM: "Training Center"
-  STR_GYM_UFOPEDIA: "STR_GYM_UFOPEDIA" #TODO
+  STR_GYM_UFOPEDIA: "Up to 10 fighters can be trained at the same time. Each fighter has his own limit of endurance and training, and this gym will help to reach this limit. Through training, he strengthens his skills and improves for future battles." #TODO
   STR_SICK_BAY: "Sick Bay"
-  STR_SICK_BAY_UFOPEDIA: #TODO
+  STR_SICK_BAY_UFOPEDIA: "This Sick Bay will serve to ensure that every wounded or sick soldier can receive the necessary medical attention as soon as possible. Thanks to this, the recovery of everyone at the base will be faster and better. Such attention to the health of their subordinates will definitely not go unnoticed."
   STR_CLOSED_LAB: "Closed Laboratory"
   STR_BIOLAB: "Bio-laboratory"
-  STR_BIOLAB_UFOPEDIA: #TODO
+  STR_BIOLAB_UFOPEDIA: "Provides space for 5 scientists. In this building, it will be possible to conduct autopsies and biological experiments on captured creatures. Doctors in this place are serious about their work, so from each specimen that will come here it will be possible to get the maximum information."
   STR_CREATURES_CONTAINMENT: "Dangerous Creatures Containment"
-  STR_CREATURES_CONTAINMENT_UFOPEDIA: #TODO
+  STR_CREATURES_CONTAINMENT_UFOPEDIA: "It is possible to place up to 10 creatures. An eerie place. There will be still living creatures that we managed to catch. Some of them will be waiting for their turn for autopsy, and some will be tested in a hostile, but lively environment for them. The results of the experiments are very important and will be of great benefit in the future of humanity, which will know what to expect from these creatures."
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "M.I.B. Regional HQ"
@@ -288,7 +288,7 @@ en-US:
   STR_RESISTANCE_FOREST_HOUSE: "Resistance Heaven - Forest House"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The M.I.B. have surrounded one of Resistance secret hideouts. Attempting to destroy important clues that could lead the Men in Black agents to other Resistance havens, they were surrounded and forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. To evacuate X-Com operatives and our allies, load them into a vehicle and and click on the 'Abort Mission' icon."
   STR_RESISTANCE_URBAN_HIDEOUT: "Surrounded but not Broken"
-  STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: #TODO
+  STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "It seems one of our points has been revealed. People work there are experienced and know how to hide signals and transmit information so that the MIB does not know about it, perhaps they were revealed by accident. In any case, we need to be there and save them, because they are very valuable. The computer where they collected all the data and in which there are keys to our channels is better to take with you too. Who knows what our beloved ones will be able to pull out from there."
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
   STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
   STR_SCIENTIST_REFUGE_ALERT_DESCRIPTION: We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible.
@@ -297,39 +297,39 @@ en-US:
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy drive upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
   STR_DESERT_TELESCOPE: "Desert Telescope"
   STR_DESERT_TELESCOPE_ALERT: "Resistance agent extraction"
-  STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: #TODO
-  STR_DESERT_TELESCOPE_BRIEFING: #TODO
+  STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: "We need to save our people. They are in great danger."
+  STR_DESERT_TELESCOPE_BRIEFING: "It seems our guys were uncovered. Their sandy shelter was difficult to see even if you stood nearby, because it can go almost 100% underground in critical situations so as not to give itself out. If you do this now, then they will simply suffocate, while the MIB staff will wait in the wings. We need to help our guys and help them get out of there."
 
 
   STR_AGENT_EXTRACTION: "Agent Extraction" #TODO - reuse for xcom agents
   
   STR_LOCALS_TRAP: #TODO
-  STR_LOCALS_TRAP_BRIEFING: STR_LOCALS_TRAP_BRIEFING  #TODO
+  STR_LOCALS_TRAP_BRIEFING: "We were declassified. The documents were made to the highest standard, but the person who suspected us did not want to believe his eyes. His perseverance led to the fact that they were able to make sure of who we really are. If there is no way back, all that remains is to move forward, sweeping away everything in its path. This is what we need to do now."
   STR_MIB_CHASING: "Chasing M.I.B."
-  STR_MIB_CHASING_BRIEFING: #TODO
+  STR_MIB_CHASING_BRIEFING: "We continued our investigation when suddenly a car started chasing us and drove us into a trap. There are no options to sit in the car or surrender, so we will have to fight, because not only our lives are at stake, but also the lives of those people we must take care of."
 
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
   STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals, attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
   STR_REGIONAL_HQ_AREA_SURVEY: #TODO
-  STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION: #TODO
-  STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION: #TODO
-  STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION: "We are on the trail of the men in black. After this incident, there is absolute confidence on the road, they do not like what we are doing, they are trying to interfere with us, and this can only mean one thing - we are moving in the right direction. We received a little more information and already know exactly which city we have to go to. This urban area has long been teeming with interference and unknown signals, now it becomes clear why. Most likely, this is where their base is located. Now we need to investigate further."
+  STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION: "We managed to find out the exact location of the base of the Men in Black. The successful completion of the investigation delighted all of its participants, and now we are preparing to strike a strong blow on the ranks of the rival. Thanks to the fact that we have all the data that can be, our task will be easier and there will be no unexpected surprises, I hope."
+  STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION: "We were unable to find out the exact location of the base of the Men in Black. However, the data that we now have in our hands is enough for us. Of course, due to the fact that we do not have all the information, our mission may be delayed and more difficult, but it is not our destiny to retreat before difficulties."
   STR_REGIONAL_HQ_AREA_SURVEY_LONG: #Same as STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
   STR_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_REGIONAL_HQ_DESCRIPTION: #TODO
 
   STR_MONSTER_HUNT_INVESTIGATION: "Monster Activity Investigation"
-  STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: #TODO
+  STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: "There is information that unknown monsters are attacking people. We need to investigate these mysterious cases as soon as possible. The number of victims is increasing, and we can only be surprised at the disappearance of another good person. But while these terrible things are happening, each of us rejoices that he is alive when he wakes up. It's time to put an end to this, everyone should feel safe not only within the walls of the base, but also outside it."
   STR_MONSTER_HUNT_INVESTIGATION_CONT: #TODO
   STR_MONSTER_HUNT_INVESTIGATION_CONT_DESCRIPTION: #TODO
 
   STR_LAB_EQUIPMENT_ACQUISITION: "Lab Equipment Acquisition"
-  STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION: #TODO
+  STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "A biolaboratory requires a large amount of high-quality equipment and investments in itself. But management is confident that it will pay off with interest in the future. It will not work just like that to buy a couple of installations, so you need to act secretly and get in touch with serious people."
   STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
   STR_LAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
   STR_BIOLAB_EQUIPMENT_ACQUISITION: "Biology Science Equipment Acquisition"
-  STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: #TODO
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "It's time to purchase specialized equipment for our laboratory. Biology science equipment will be even more difficult to obtain than general equipment, but without this it will not start its work. At one cost or another, we need to get this equipment."
   STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
   STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
 #events
