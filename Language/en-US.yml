@@ -346,15 +346,15 @@ en-US:
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies running low!"
   STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another source of the resources to keep the base operational and our forces alive.{NEWLINE}Loyalty score> -100"
   STR_NO_SUPPLY_SECOND_WARNING_EVENT: "We are running out supplies!"
-  STR_NO_SUPPLY_SECOND_WARNING_DESCRIPTION: #TODO
+  STR_NO_SUPPLY_SECOND_WARNING_DESCRIPTION: "Sources of resources are depleted, and the base requires more and more every day. People are starting to starve and there is no longer enough money to provide good salaries for our forces.{NEWLINE}Loyalty score> -500"
   STR_NO_SUPPLY_THIRD_WARNING_EVENT: "Starvation!"
-  STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: #TODO
+  STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: "Sources of resources are depleted, sponsors are disappointed, and forces refuse to risk their lives, famine has come. It's time to take control, because this is the last warning.{NEWLINE}Loyalty score> -900"
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: #TODO
   STR_STRANGE_CREATURE_AUTOPSY: "Strange creature study" #TODO
   STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION: #TODO
   STR_RESISTANCE_DISCOVER: "Resistance"
-  STR_RESISTANCE_DISCOVER_DESCRIPTION: #TODO
+  STR_RESISTANCE_DISCOVER_DESCRIPTION: "Roger. Roger. It looks like we have established an encrypted message with you. I speak on behalf of the resistance, I repeat, on behalf of the resistance. We are sending you our permanent representative, so we will have the opportunity to conduct full-fledged diplomacy with you. You can communicate with us through it, as well as buy and sell resources. We are proud of where we all go together and strive to create balanced proposals. I hope that from today, thanks to great diplomacy, our common affairs will go uphill. To victory!{NEWLINE}New Diplomacy Relationship> Resistance"
   STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
   STR_RESCUED_RESISTANCE: "Resistance rescue: success"
   STR_RESCUED_SCIENTIST: "Scientist slip: success"
@@ -363,22 +363,22 @@ en-US:
   STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuees their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> +100"
   STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> +130"
 
-  STR_RESCUED_SCIENTISTS_TELESCOPE: #TODO
-  STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: #TODO
-  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: #TODO
-  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: #TODO
+  STR_RESCUED_SCIENTISTS_TELESCOPE: "Desert Telescope - Success"
+  STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: "You managed to save our scientists, they have important information, in addition to this, they are extremely valuable to us, as I said. These people made several breakthroughs in world science, the fact that we managed to save them is a big deal, a matter of the scale of the entire planet. Operations in hot climates are more difficult than usual, everyone knows that. In addition to the people in black who want to kill you, the sun is blinding you and the sand is burning. Thanks again anyway. They will continue to work thanks to you."
+  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: "Desert Telescope - Failure"
+  STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: "You failed to save our scientists, they had important information, besides that, they were valuable to us, as I said. These people made several breakthroughs in world science, the fact that we failed to preserve them is very bad and our research will obviously proceed more slowly. Operations in hot climates are more difficult than usual, everyone knows that. In addition to the people in black who want to kill you, the sun is blinding you and the sand is burning. In any case, we did our best. We will try to find a replacement for them among the new nuggets."
 
   STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> -150"
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> -200"
   STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"
-  STR_SPORTS_BOW_TINKERING_DESCRIPTION: #TODO
+  STR_SPORTS_BOW_TINKERING_DESCRIPTION: "We received a letter from one of our scientists:{NEWLINE}“Good afternoon, I hasten to inform you that lately I have been fond of studying sports bow, how I managed to find out, I understand how in theory it is possible to create and produce unique, advanced arrows. I need time to study and your consent to this. It will also be necessary to allocate several engineers to start a full-fledged production. I hope for your favor and look forward to your response."
 
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
-  STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: #TODO
+  STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: "Captain, the base needs a biolaboratory. And a good one, full of quality and innovative machines. Scientists are ready to get started. To build it, we need specific equipment, in addition to the usual. All this is not possible to buy in the market or with the help of our good friends in the resistance, so we need to get in touch with a certain circle of people who can provide us with what we need. In the near future, the necessary information will arrive and we will need to pick it up at the appointed place."
   STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"
   STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: #TODO
   STR_MIB_CHASING_SUCCESS: "'Chasing M.I.B.' Operation Results"
-  STR_MIB_CHASING_SUCCESS_DESCRIPTION: #TODO
+  STR_MIB_CHASING_SUCCESS_DESCRIPTION: "Our agents managed to save the results of an investigation called of an urban area, where we need to look for a base of people in black. Now it remains for us to prepare ourselves and prepare the right people, because this is a very important operation, which cannot be sent to newcomers. The incident on the road left a mark on our souls and the level of tension, which is growing every day due to new attacks from the enemy, only grows."
   STR_RESCUED_RESISTANCE_1: "Successful evacuation of Resistance operatives"
   STR_RESCUED_RESISTANCE_2: "Successful evacuation of Resistance operatives"
   STR_RESCUED_RESISTANCE_3: "Successful evacuation of Resistance operatives"
@@ -426,13 +426,13 @@ en-US:
   STR_MIB_SPECOPS_ARMOR_UFOPEDIA: STR_MIB_SPECOPS_ARMOR_UFOPEDIA #TODO
   STR_MIB_BUTCHER: "M.I.B. Butcher"
   STR_MIB_BUTCHER_CORPSE: "M.I.B. Butcher Corpse"
-  STR_MIB_BUTCHER_UFOPEDIA: #TODO
+  STR_MIB_BUTCHER_UFOPEDIA: "A clumsy operative, I'm sure he was taken into the ranks solely because of his frantic amount of health. He doesn't pose much of a threat at the moment, but from a distance he can be a serious contender."
   STR_MIB_BUTCHER_ARMOR: "M.I.B. Butcher Combat Analysis"
   STR_MIB_BUTCHER_ARMOR_UFOPEDIA: #TODO
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
   STR_SEEKER_DRONE_CORPSE: "Seeker Drone Corpse"
-  STR_SEEKER_DRONE_UFOPEDIA: STR_SEEKER_DRONE_UFOPEDIA #TODO
-  STR_SEEKER_DRONE_CORPSE_UFOPEDIA: STR_SEEKER_DRONE_CORPSE_UFOPEDIA #TODO
+  STR_SEEKER_DRONE_UFOPEDIA: "A miracle of engineering and biological thought. Previously, this individual had an energy weapon in its beak, but it was destroyed by the explosion. In general, everything here has almost turned into dust. The electronics that are used here are so amazing that it is not yet fully understood how it works."
+  STR_SEEKER_DRONE_CORPSE_UFOPEDIA: "A unique specimen, it has been preserved in almost perfect condition. This animal has a cannon in its beak. The electronics that are used here are so amazing that it is not yet fully understood how it works. The drone has great speed and perfectly sees and recognizes the enemy. Energy weapons are definitely of great interest for further study."
   STR_SEEKER_DRONE_ARMOR: "Seeker Drone Combat Analysis"
   STR_SEEKER_DRONE_ARMOR_UFOPEDIA: "To be done" #TODO
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
@@ -441,10 +441,10 @@ en-US:
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"
-  STR_FACEHUGGER_UFOPEDIA: "STR_FACEHUGGER_UFOPEDIA" #TODO
+  STR_FACEHUGGER_UFOPEDIA: "This rubbish jumps at a person, with the help of a sting injects a parasite with a neuroparalytic poison into him, which makes the body die, but the brain remains under the control of the facehugger. Then it is he who controls the body by sending electrical impulses and forcing a person to move, or, more correctly, a piece of meat. A terrible sight."
   STR_FACEHUGGER_CORPSE: "Facehugger corpse"
   STR_FACEHUGGER_AUTOPSY: "Facehugger Autopsy"
-  STR_FACEHUGGER_AUTOPSY_UFOPEDIA: "STR_FACEHUGGER_AUTOPSY_UFOPEDIA" #TODO
+  STR_FACEHUGGER_AUTOPSY_UFOPEDIA: "Opened copy of a facehugger. This thing controls the brain." #TODO
   STR_FACEHUGGER_ARMOR: "Facehugger Combat Analysis"
   STR_FACEHUGGER_ARMOR_UFOPEDIA: "STR_FACEHUGGER_ARMOR_UFOPEDIA" #TODO
   STR_ZOMBIE_STERILE_TERRORIST: "Zombie"
