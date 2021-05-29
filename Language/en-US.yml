@@ -448,17 +448,17 @@ en-US:
   STR_FACEHUGGER_ARMOR: "Facehugger Combat Analysis"
   STR_FACEHUGGER_ARMOR_UFOPEDIA: "STR_FACEHUGGER_ARMOR_UFOPEDIA" #TODO
   STR_ZOMBIE_STERILE_TERRORIST: "Zombie"
-  STR_ZOMBIE_STERILE_UFOPEDIA: STR_ZOMBIE_STERILE_UFOPEDIA #TODO
+  STR_ZOMBIE_STERILE_UFOPEDIA: "Once in the past it was a man, but now it is extremely difficult to call him a man. It is striking that this creature gives out almost everything - a terrible smell from the rotting of a dead body, incoherent sounds and clumsy movements. A parasite sits inside the body, which has disabled all orgasnim systems and controls movement. If you destroy the parasite, the body will be just a piece of meat. It decomposes quickly, because the blood has long been oxidized and the organs do not keep the body in proper condition. Motility and immunity are absent."
   STR_ZOMBIE_STERILE_CORPSE: "Zombie corpse"
   STR_ZOMBIE_STERILE_AUTOPSY: "Zombie Autopsy"
-  STR_ZOMBIE_STERILE_AUTOPSY_UFOPEDIA: STR_ZOMBIE_STERILE_AUTOPSY_UFOPEDIA #TODO
+  STR_ZOMBIE_STERILE_AUTOPSY_UFOPEDIA: "The parasite was extracted from the zombie. It is clear that the body is dead and decomposes quickly, a large number of microorganisms were found inside that feed on dead flesh. Due to the lack of motility and immunity, some organs and systems of the body have stumbled so much that they very remotely resemble their original."
   STR_ZOMBIE_STERILE_ARMOR: "Zombie Combat Analysis"
   STR_ZOMBIE_STERILE_ARMOR_UFOPEDIA: STR_ZOMBIE_STERILE_ARMOR_UFOPEDIA #TODO
   STR_ZOMBIE_GRUBAS_TERRORIST: "Fat Zombie"
-  STR_ZOMBIE_GRUBAS_UFOPEDIA: STR_ZOMBIE_GRUBAS_UFOPEDIA #TODO
+  STR_ZOMBIE_GRUBAS_UFOPEDIA: "The reaction of the body to the poison that was injected by the parasite caused a strong transformation of the body. As a result, the whole body was swollen and overgrown with fat. The muscles were also covered with fat, which now created a monster with great physical strength. Due to the abundance of flesh and fat, this specimen can take many shots. It is recommended to use a large caliber when seeing this organism in battle."
   STR_ZOMBIE_GRUBAS_CORPSE: "Fat Zombie corpse"
   STR_ZOMBIE_GRUBAS_AUTOPSY: "Fat Zombie Autopsy"
-  STR_ZOMBIE_GRUBAS_AUTOPSY_UFOPEDIA: STR_ZOMBIE_GRUBAS_AUTOPSY_UFOPEDIA #TODO
+  STR_ZOMBIE_GRUBAS_AUTOPSY_UFOPEDIA: "The autopsy of this zombie was carried out by a large number of doctors and took a very long time. Unfortunately, the gas masks in which our scientists were working at that moment were damaged after opening so much that they can no longer be reworked. The body is full of fat inside and out. Organs are 2 times larger than usual. Total decomposition. Due to the great physical strength and the enormous size of the body, it needs more food to support life, if it can be called vital activity. The parasite was recovered and removed successfully. This autopsy will move our science forward."
   STR_ZOMBIE_GRUBAS_ARMOR: "Fat Zombie Combat Analysis"
   STR_ZOMBIE_GRUBAS_ARMOR_UFOPEDIA: STR_ZOMBIE_GRUBAS_ARMOR_UFOPEDIA #TODO 
   STR_JABBER: "Jabber"
@@ -468,9 +468,9 @@ en-US:
   STR_JABBER_ARMOR: "Jabber Combat Analysis"
   STR_JABBER_ARMOR_UFOPEDIA: STR_JABBER_ARMOR_UFOPEDIA #TODO
   STR_CHUPACABRA: "Jabber"
-  STR_CHUPACABRA_UFOPEDIA: STR_JABBER_UFOPEDIA #TODO
+  STR_CHUPACABRA_UFOPEDIA: "And Tsar Lyakon invited Zeus, the supreme god of Olympus, to taste a dish of human flesh, without saying a word about the origin of the meat. But Zeus was a god for that, that he did not need words - he instantly revealed the deception and turned the king into a wolf. This legend is more than 500 years old, and in front of you, perhaps, a descendant of the king. This animal belongs to the canine family. On the head there are characteristic growths in the form of thorns. The coat is short, thin. What surprised me the most was the color of the blood. The blood is green. The teeth are very sharp, it is not even clear how they remain so sharp throughout the life of this animal."
   STR_CHUPACABRA_AUTOPSY: "Jabber Autopsy"
-  STR_CHUPACABRA_AUTOPSY_UFOPEDIA: "STR_JABBER_AUTOPSY_UFOPEDIA" #TODO
+  STR_CHUPACABRA_AUTOPSY_UFOPEDIA: "The creature has not too thick, but dense skin, so much that it was difficult to cut. The green blood that surprised the fighters the most was due to chemistry. This happens extremely rarely in nature, especially in this kind of creatures. However, when there is an excess of sulfur compounds in the blood, sulfur easily binds to hemoglobin. The resulting compound sulfohemoglobin gives the blood a dark green color, like an avocado peel. These owners of green blood are definitely not worried about it."
   STR_CHUPACABRA_ARMOR: "Jabber Combat Analysis"
   STR_CHUPACABRA_ARMOR_UFOPEDIA: STR_JABBER_ARMOR_UFOPEDIA #TODO
 #other units
@@ -697,7 +697,7 @@ en-US:
   STR_RAZOR: "RAZOR"
   STR_RAZOR_UFOPEDIA: "A small historical reference. During the first test of the aircraft, the pilot accidentally cut off the branches of high-growing trees with his wing during a low-level flight, and someone who watched the tests exclaimed 'Wow, cutted with a razor!'. Since then, the plane has been called the Razor. This jet fighter has excellent flight characteristics and is able to compete on equal terms in air combat with any aircraft. At least with the aircraft we know of..."
   STR_HELICOPTER: "HELICOPTER"
-  STR_HELICOPTER_UFOPEDIA: #TODO
+  STR_HELICOPTER_UFOPEDIA: "The helicopter is a very convenient thing compared to its counterparts, but it has a number of disadvantages. Firstly, this transport can transport a small detachment over a fairly short distance. Secondly, it has a low speed. Thirdly, due to its weight and structure, the helicopter cannot carry thick armor, as a result of which it has little protection. On the other hand, it is very convenient to use in everyday life - it does not take up much space and does not require a runway for takeoff. Of course, this is not the best option for the operation, because most likely you will be knocked down on the approach to the point, or those for whom you are flying will simply run away, and you will not be able to overtake them, but in general, this is a good thing."
 #ufopedia
   STR_TACTICAL_ANALYSIS: "TACTICAL ANALYSIS"
   STR_LOG1: "Commander log #001"
@@ -761,14 +761,14 @@ en-US:
   STR_EMPTY_MIB_EARLY_LORE1_UFOPEDIA: "We caught one of them. It's been a long time since this happened, so we can celebrate. However, our prisoner vomited for a long time, as far as we know - these are signs of detoxification of the body. The stuff they're drugged with takes away not only their brains, but their memories as well. The agent could not answer the question 'Where have you been recently?'. We had to use a couple of effective methods, but it did not give the desired result. To the question 'Where are your main forces?' our hero replied that he does not even understand what forces we are talking about. Our operatives can make him talk, but it does not look like a simulation here, and he really does not remember anything. Complete amnesia."
   STR_EMPTY_MIB_EARLY_LORE2: "M.I.B. agent interrogation report #18732"
   STR_EMPTY_MIB_EARLY_LORE2_UFOPEDIA: "After the capture of one of the MIB, we hoped to extract as much information as possible, but the hard withdrawal on unknown drugs did not let him go, and only strong painkillers allowed us to hear not only screams from his side. He's already starting to remember, but it takes time. The last thing I remember clearly is the farm and the crop circles. 'What kind of farm?' 'I don't remember, but what else does he remember?' Oh, yes, a flash of light. Apparently this is the last thing that ordinary people see before they go to the dark side. Do they do evil against their own will? How awful. Strong physical form began to rapidly decline at the same time as detoxification, perhaps we should also think about such chemistry? I'm kidding."
-  STR_EMPTY_MIB_EARLY_LORE3: "Some MiB lore article" #TODO
-  STR_EMPTY_MIB_EARLY_LORE3_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE4: "Some MiB lore article" #TODO
-  STR_EMPTY_MIB_EARLY_LORE4_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE5: "Some MiB lore article" #TODO
-  STR_EMPTY_MIB_EARLY_LORE5_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE6: "Some MiB lore article" #TODO
-  STR_EMPTY_MIB_EARLY_LORE6_UFOPEDIA: "Some general MiB lore here" #TODO
+  STR_EMPTY_MIB_EARLY_LORE3: "M.I.B. agent interrogation report #8239"
+  STR_EMPTY_MIB_EARLY_LORE3_UFOPEDIA: "We caught a Men in Black agent. This person does not want to give out information or simply cannot do it. He says that he does not remember anything and does not understand where he got such muscles. Very soon we will change our methods and move on to a tougher interrogation, but the guys who work with him claim that this will not give results. We will use the most brutal methods in the hope that he will still give out information. It is not he who is important to us, but the data that is in his head. It may be immoral, but in war all is fair."
+  STR_EMPTY_MIB_EARLY_LORE4: "M.I.B. agent interrogation report #11378"
+  STR_EMPTY_MIB_EARLY_LORE4_UFOPEDIA: "With great difficulty, we still managed to get a living agent of the Men in Black. We managed to get him to the place where he will be interrogated. So far, he claims that there is a flash of light and that he never lies. Oh well. His vows by anything in words will not be enough for the command and will certainly have to work with him for quite a long time. The process complicates the process of detoxification of the body, which forces doctors to be nearby. While they are nearby, the impression is created that this is not an interrogation, but simply questions that you can not answer and nothing will happen. Having removed the doctors, he may become worse, we are trapped in the situation."
+  STR_EMPTY_MIB_EARLY_LORE5: "M.I.B. agent interrogation report #15537"
+  STR_EMPTY_MIB_EARLY_LORE5_UFOPEDIA: "The Men in Black agent is in our hands. Allegations of outbreaks and amnesia are already tired of us. When will they come up with something new? People who work with him are already beginning to believe in this nonsense and will soon refuse to conduct interrogations, because it is pointless. We have not received any information from a person who fought on the side of the enemy for a long time and may have been present at the bases, saw what and how is happening inside, perhaps knows the location of important objects. He doesn't say anything. We continue to work."
+  STR_EMPTY_MIB_EARLY_LORE6: "M.I.B. agent interrogation report #16249"
+  STR_EMPTY_MIB_EARLY_LORE6_UFOPEDIA: "We have an agent of the Men in Black in captivity. This person claims the outbreak is the last event he remembers. Strong detoxification of the body is not the best sight. He is clearly feeling bad, but our questions make it even worse. Maybe it's time to stop? He's telling the truth, he really doesn't know about any men in black or any bases. He earned muscle while serving in the army, which is confirmed by old archives. No, it doesn't say that he has muscles, there are photographs. It is a pity that we were not able to obtain useful information, perhaps this person will continue to serve with us if he undergoes an adaptation course."
   STR_EMPTY_MIB_EARLY_LORE7: "Some MiB lore article" #TODO
   STR_EMPTY_MIB_EARLY_LORE7_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_EMPTY_MIB_EARLY_LORE8: "Some MiB lore article" #TODO
