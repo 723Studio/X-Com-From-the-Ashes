@@ -1241,7 +1241,8 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_BS  
 
-  - type: STR_MIB_EARLY_TRAP_ESCAPE
+  - &STR_MIB_EARLY_TRAP_ESCAPE
+    type: STR_MIB_EARLY_TRAP_ESCAPE
     race: STR_MIB
     width: 30
     length: 80
@@ -1360,6 +1361,14 @@ alienDeployments:
             - STR_SNIPER_RIFLE_CLIP
             - STR_SNIPER_RIFLE_CLIP
             - STR_SNIPER_RIFLE_CLIP 
+
+
+  - type: STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL
+    refNode: *STR_MIB_EARLY_TRAP_ESCAPE
+    successEvents: 
+      STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
+    failureEvents:
+      STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
 
   - type: STR_LOCALS_TRAP
     race: STR_MILITIA
