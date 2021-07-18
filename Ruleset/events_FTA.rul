@@ -180,11 +180,13 @@ events:
   - name: STR_RESCUED_SCIENTISTS_TELESCOPE
     description: STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
     researchList: [STR_DESERT_TELESCOPE]
+    loyalty: 150
     reputationScore:
       STR_RESISTANCE: 180
   - name: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE
     description: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
     researchList: [STR_DESERT_TELESCOPE]
+    loyalty: -200
     reputationScore:
       STR_RESISTANCE: -300
 
