@@ -30,7 +30,7 @@ covertOperations:
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
     trapChance: 70
     instantTrapDeployment: 
-      STR_MIB_EARLY_TRAP_ESCAPE: 100
+      STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -47,10 +47,10 @@ covertOperations:
     danger: 9
     costs: 216
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
-    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
     trapChance: 85
     instantTrapDeployment: 
-      STR_MIB_EARLY_TRAP_ESCAPE: 100
+      STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
