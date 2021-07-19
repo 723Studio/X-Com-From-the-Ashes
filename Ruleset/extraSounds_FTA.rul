@@ -63,5 +63,7 @@ extraSounds:
       114: Resources/Weapons/Sounds/FlameThrower.wav
       115: Resources/Weapons/Sounds/Ex_Fire.wav
       116: Resources/Weapons/Sounds/breaking-bottle.ogg
-
+      117: Resources/Weapons/Sounds/ArrowDraw.ogg
+      118: Resources/Weapons/Sounds/ArrowHit2.ogg
+      119: Resources/Weapons/Sounds/ArrowHitTazer.ogg
       

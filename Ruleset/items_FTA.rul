@@ -239,6 +239,7 @@ items:
     handSprite: 576
     bulletSprite: 23
     fireSound: 110
+    reloadSound: 117
     compatibleAmmo:
       - STR_BOW_ARROW
       - STR_BOW_ARROW_HE
@@ -279,7 +280,7 @@ items:
     bigSprite: 372
     floorSprite: 372
     handSprite: 584
-    hitSound: 109
+    hitSound: 118 #109
     hitAnimation: 26
     power: 25
     damageType: 7
@@ -331,7 +332,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 375
-    hitSound: 109
+    hitSound: 118
     hitAnimation: 26
     damageAlter:
       RandomType: 2
@@ -344,23 +345,23 @@ items:
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 377
-    hitSound: 54
+    hitSound: 119
     hitAnimation: 56
-    blastRadius: 0
     power: 25
-    damageType: 11
+    damageType: 1
     damageAlter:
+      ResistType: 11 #pretends to be electric damage
       ToHealth: 0.1
       ToStun: 1.0
       ToArmor: 0.0
+      ToArmorPre: 0.5
       ToWound: 0.0
       RandomStun: false
       IgnorePainImmunity: true
       IgnoreSelfDestruct: true
       RandomType: 2
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.1
-      ToTile: 0.0
+      IgnoreDirection: true
+      ToTile: 0.1
     listOrder: 17630
 
 #pistols

@@ -305,10 +305,13 @@ en-US:
 
   STR_AGENT_EXTRACTION: "Agent Extraction" #TODO - reuse for xcom agents
   
-  STR_LOCALS_TRAP: "Cover blown"
-  STR_LOCALS_TRAP_BRIEFING: "The cover for our agents is compromised, and the locals are livid. We need to evacuate our people immediately before the locals and police get to them. Get to the car parked at the roadside, it is the only chance of survival. To complete the mission place the soldiers on the green tiles and click on the 'Abort Mission' icon."
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_BRIEFING: "A black van, standing across the road, blocks the way forward, and a black sedan has stopped behind our agents' car, completely blocking them. Several men in black blazers get out of the cars, and they are armed. It seems that the only way out of this situation is to take the fight."
+  STR_MIB_EARLY_TRAP_ESCAPE: "Escape M.I.B. Trap"
+  STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: "Escape M.I.B. Trap"
+  STR_MIB_EARLY_TRAP_ESCAPE_BRIEFING: "Our investigation has led X-COM agents into an ambush set up by the Men in Black. We must immediately evacuate all personnel involved in the covert operation to the safe zone at the north corner of the battlefield. Time is running out, we must act quickly and get there before M.I.B. reinforcements arrive.{NEWLINE}To evacuate X-COM operatives, move them to the escape zone marked with green tiles and click on the 'Abort Mission' icon."
+  STR_LOCALS_TRAP: "Cover blown"
+  STR_LOCALS_TRAP_BRIEFING: "The cover for our agents is compromised, and the locals are livid. We need to evacuate our people immediately before the locals and police get to them. Get to the car parked at the roadside, it is the only chance of survival. To complete the mission place the soldiers on the green tiles and click on the 'Abort Mission' icon."
 
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
@@ -504,6 +507,7 @@ en-US:
   STR_EXPLOSIVES: "Explosives"
   STR_EXPLOSIVE_CHARGES: "Explosive Charges"
   STR_INCENDIARIES: "Incendiaries"
+  STR_ELECTRIC: "Electric Weapons"
   STR_INCAPACITATE: "Stun Weapons"
   STR_SMOKE: "Smoke"
   STR_CLIPS: "Ammo"

@@ -89,7 +89,7 @@ ai:
   fireChoiceAggroCoeff: 3 # Aggression doesn't matter as much (default 5)
 
 constants:
-  extendedItemReloadCost: true
+  extendedItemReloadCost: false #to consider, but with true bow is unplayable
   extendedRunningCost: true
   damageRange: 80 #for good or bad
   extendedTerrainMelee: 4
