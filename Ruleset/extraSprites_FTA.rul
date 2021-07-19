@@ -509,12 +509,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Ufopedia/Dragonfly_ufopedia_CPAL.png
-  - type: STR_RAZOR_CPAL.SPK
+  - type: STR_STALKER_CPAL.SPK
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Crafts/Ufopedia/Razor_ufopedia_CPAL.png
+      0: Resources/Crafts/Ufopedia/Stalker_ufopedia_CPAL.png
   - type: STR_HELICOPTER_CPAL.SPK
     singleImage: true
     width: 320
@@ -657,7 +657,7 @@ extraSprites:
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/WIP_UFOPEDIA.png #TODO - Insert art here!
+      0: Resources/UfopediaPics/ufopedia_MIB_BUTCHER_CPAL.png
 
   - type: UFOPEDIA_SEEKER_DRONE_CPAL
     singleImage: true
@@ -665,6 +665,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_SeekerDrone_CPAL.png 
+  - type: UFOPEDIA_SEEKER_DRONE_CORPSE_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_SeekerDrone_autopsy_CPAL.png 
 
   - type: UFOPEDIA_IMG_FACEHUGGER
     singleImage: true

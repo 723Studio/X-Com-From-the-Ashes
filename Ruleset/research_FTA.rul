@@ -209,6 +209,16 @@ research:
     points: 40
     dependencies:
       - STR_DAMAGE_11
+    unlocks:
+      - STR_TASER_CANNON_CLIP
+    listOrder: 7410
+  - name: STR_TASER_CANNON_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TASER_CANNON
+    listOrder: 7410
+
 
   - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - add ways to unlock it
     hidden: true
@@ -786,6 +796,26 @@ research:
     points: 0
     dependencies:
       - STR_BOW_ARROW
+  - name: STR_BOW_ARROW_HE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
+  - name: STR_BOW_ARROW_IN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
+  - name: STR_BOW_ARROW_STUN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
+  - name: STR_BOW_ARROW_ELECTRIC
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
   - name: STR_SNUBNOSE_PISTOL
     cost: 8
     points: 1

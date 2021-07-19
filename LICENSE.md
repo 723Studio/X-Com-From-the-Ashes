@@ -16,8 +16,10 @@ Here is a list of that assets:
 * intro2_4.png
 * intro2_5.png
 * ufopedia_SeekerDrone_CPAL.png
-* ufopedia_MIB_AGENT_CPAL.png
 * ufopedia_SeekerDrone_autopsy_CPAL.png
+* ufopedia_MIB_AGENT_CPAL.png
+* ufopedia_MIB_BUTCHER_CPAL.png
+* ufopedia_MIB_SPECOPS_CPAL.png
 * bigob_ChupacabraWeapon.png
 * CHUPACABRA.png
 * floorob_CHUPACABRA_CORPSE.png

@@ -32,7 +32,7 @@ crafts:
           width: 10
           length: 20
     listOrder: 7380
-  - type: STR_RAZOR
+  - type: STR_STALKER
     sprite: 801
     costBuy: 0 #TODO
     costRent: 40000 #TODO

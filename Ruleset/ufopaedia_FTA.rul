@@ -339,10 +339,10 @@ ufopaedia:
     requires:
       - STR_HELICOPTER
     listOrder: 7000
-  - id: STR_RAZOR #TODO
+  - id: STR_STALKER
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: WIP_UFOPEDIA.SPK # STR_RAZOR_CPAL.SPK
+    image_id: STR_STALKER_CPAL.SPK
     rect_stats:
       x: 200
       y: 10
@@ -350,10 +350,10 @@ ufopaedia:
       height: 80
     rect_text:
       x: 5
-      y: 40
-      width: 120
+      y: 150
+      width: 320
       height: 160
-    text: STR_RAZOR_UFOPEDIA
+    text: STR_STALKER_UFOPEDIA
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 7010
@@ -1157,14 +1157,14 @@ ufopaedia:
     section: STR_ALIEN_LIFE_FORMS
     image_id: UFOPEDIA_SEEKER_DRONE_CPAL
     text: STR_SEEKER_DRONE_UFOPEDIA
-    text_width: 140
+    text_width: 130
     requires:
       - STR_SEEKER_DRONE_TERRORIST
     listOrder: 146000
   - id: STR_SEEKER_DRONE_CORPSE
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
-    image_id: UFOPEDIA_SEEKER_DRONE_CPAL
+    image_id: UFOPEDIA_SEEKER_DRONE_CORPSE_CPAL
     text: STR_SEEKER_DRONE_CORPSE_UFOPEDIA
     text_width: 140
     requires:
