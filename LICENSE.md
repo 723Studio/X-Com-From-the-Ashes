@@ -6,13 +6,15 @@ Here is a list of those music tracks:
 
 I am also ordered some art assets from professional pixel-artists in order to provide the best experience to my players I can offer. Those orders are partially funded by Patreon support and donations, and mostly from my personal budget, so I have personal rights to use it. I maid a decision to distribute those (and only those) assets under **All Rights Reserved license.** 
 Here is a list of that assets:
-* Engineer_Chief.png
+* Commando_CPAL.png
+* Engineer_Chief_CPAL.png
 * Intel_lady_CPAL.png
-* Intel_lady.png
+* Store_Chief_CPAL.png
 * RnD_Chief_CPAL.png
-* RnD_Chief.png
 * intro2_2.png
 * intro2_3.png
+* intro2_4.png
+* intro2_5.png
 * ufopedia_SeekerDrone_CPAL.png
 * ufopedia_MIB_AGENT_CPAL.png
 * ufopedia_SeekerDrone_autopsy_CPAL.png
@@ -22,6 +24,7 @@ Here is a list of that assets:
 * inventory_CHUPACABRA.png
 * ufopedia_CHUPACABRA_AUTOPSY_CPAL.png
 * ufopedia_CHUPACABRA_CPAL.png
+* Extracted_MIB_Chip_CPAL.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0**
 

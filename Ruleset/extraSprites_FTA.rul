@@ -533,30 +533,30 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/RnD_Chief_CPAL.png
-  - type: INTEL_CHIEF.SPK
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/UfopediaPics/Intel_lady.png
   - type: INTEL_CHIEF_CPAL.SPK
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UfopediaPics/Intel_lady_CPAL.png
-  - type: ENGINEER_CHIEF.SPK
+  - type: ENGINEER_CHIEF_CPAL.SPK
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/Engineer_Chief.png
+      0: Resources/UfopediaPics/Engineer_Chief_CPAL.png
   - type: COMMANDO_CPAL.SPK
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UfopediaPics/Commando_CPAL.png
+  - type: STORE_CHIEF_CPAL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Store_Chief_CPAL.png
   - type: FACILITY_DECRYPTION.SPK
     singleImage: true
     width: 320

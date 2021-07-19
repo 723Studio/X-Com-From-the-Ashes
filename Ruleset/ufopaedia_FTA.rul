@@ -119,13 +119,22 @@ ufopaedia:
     listOrder: 110
   - id: STR_ENGINEER_STATUS_REPORT
     type_id: 7
-    image_id: ENGINEER_CHIEF.SPK
-    text_width: 158
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    text_width: 170
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_ENGINEER_STATUS_REPORT
     text: STR_ENGINEER_STATUS_REPORT_UFOPEDIA
     listOrder: 120
+  - id: STR_QUARTERMASTER_STATUS_REPORT
+    type_id: 7
+    image_id: STORE_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_QUARTERMASTER_STATUS_REPORT
+    text: STR_QUARTERMASTER_STATUS_REPORT_UFOPEDIA
+    listOrder: 125
   - id: STR_MILITARY_STATUS_REPORT
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
@@ -134,10 +143,10 @@ ufopaedia:
     requires:
       - STR_MILITARY_STATUS_REPORT
     text: STR_MILITARY_STATUS_REPORT_UFOPEDIA
-    listOrder: 110
+    listOrder: 127
   - id: STR_VEHICLES_STATUS_REPORT
     type_id: 7
-    image_id: ENGINEER_CHIEF.SPK
+    image_id: STORE_CHIEF_CPAL.SPK
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -493,6 +502,26 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_BOW_ARROW
+  - id: STR_BOW_ARROW_HE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_BOW_ARROW_HE
+  - id: STR_BOW_ARROW_IN
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_BOW_ARROW_IN
+  - id: STR_BOW_ARROW_STUN
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_BOW_ARROW_STUN
+  - id: STR_BOW_ARROW_ELECTRIC
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_BOW_ARROW_ELECTRIC
 #pistols
   - id: STR_TASER
     type_id: 4
@@ -780,6 +809,11 @@ ufopaedia:
       - STR_TASER_CANNON
     text: STR_TASER_CANNON_UFOPEDIA
     listOrder: 21300
+  - id: STR_TASER_CANNON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_TASER_CANNON_CLIP
   - id: STR_LMG
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

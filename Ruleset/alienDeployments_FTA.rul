@@ -974,56 +974,6 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_AP  
 
 
-
-  - type: STR_JABBER_HUNT
-    race: STR_JABBER
-    # civiliansByType:
-    #   STR_MALE_CIVILIAN_FARMER: 2
-    #   STR_FEMALE_CIVILIAN_FARMER: 1
-    width: 50
-    length: 50
-    height: 8
-    alert: STR_MONSTER_HUNT_ALERT
-    alertBackground: BACK03.SCR #TODO?
-    alertDescription: STR_JABBER_HUNT_ALERT_DESCRIPTION
-    markerName: STR_MONSTER_HUNT
-    duration: [10, 10]
-    despawnPenalty: 300
-    briefing:
-      textOffset: -16
-      background: PLACEHOLDER_BACKGROUND.SCR
-      showTarget: false
-      desc: STR_MONSTER_HUNT_BRIEFING
-    terrains:
-      - CULTA
-      - FOREST
-      - DESERT
-    data:
-      - alienRank: 5
-        lowQty: 2
-        highQty: 4
-        dQty: 5
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
   - type: STR_CHUPACABRA_HUNT
     race: STR_CHUPACABRA
     # civiliansByType:
@@ -1241,8 +1191,7 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_BS  
 
-  - &STR_MIB_EARLY_TRAP_ESCAPE
-    type: STR_MIB_EARLY_TRAP_ESCAPE
+  - type: STR_MIB_EARLY_TRAP_ESCAPE
     race: STR_MIB
     width: 30
     length: 80
@@ -1364,11 +1313,133 @@ alienDeployments:
 
 
   - type: STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL
-    refNode: *STR_MIB_EARLY_TRAP_ESCAPE
     successEvents: 
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
     failureEvents:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
+    #further code should inherit things from STR_MIB_EARLY_TRAP_ESCAPE, tho not working
+    race: STR_MIB
+    width: 30
+    length: 80
+    height: 6
+    isHidden: true
+    briefing:
+      textOffset: -16
+      background: MIB_TRAP.SCR
+      showTarget: false
+      desc: STR_MIB_EARLY_TRAP_ESCAPE_BRIEFING
+    terrains:
+      - URBAN_LOW
+    shade: 9
+    script: URBAN_LOW_TRAP_ESCAPE
+    battleScript: MIB_TRAP_ESCAPE_EARLY
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 4
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP 
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_GRENADE
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP 
+          -
+            - STR_SNIPER_RIFLE
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_SNIPER_RIFLE_CLIP 
+
+
+
+
 
   - type: STR_LOCALS_TRAP
     race: STR_MILITIA
@@ -1443,54 +1514,6 @@ alienDeployments:
         lowQty: 2
         highQty: 8
         dQty: 2
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-
-  - type: STR_JABBER_HUNT_TRAP
-    race: STR_JABBER
-    # civiliansByType:
-    #   STR_MALE_CIVILIAN_FARMER: 2
-    #   STR_FEMALE_CIVILIAN_FARMER: 1
-    width: 50
-    length: 50
-    height: 8
-    isHidden: true
-    markerName: STR_MONSTER_HUNT
-    duration: [10, 10]
-    despawnPenalty: 300
-    briefing:
-      textOffset: -16
-      background: PLACEHOLDER_BACKGROUND.SCR
-      showTarget: false
-      desc: STR_MONSTER_HUNT_TRAP_BRIEFING
-    terrains:
-      - CULTA
-      - FOREST
-      - DESERT
-    data:
-      - alienRank: 6
-        lowQty: 12
-        highQty: 20
-        dQty: 5
         itemSets:
           -
             []
@@ -1645,11 +1668,6 @@ alienDeployments:
             []
           -
             []
-
-
-
-
-
 
 
   # - type: STR_MIB_CHASING_INTRO

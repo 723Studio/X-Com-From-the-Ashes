@@ -42,6 +42,8 @@ research:
     hidden: true
   - name: STR_ENGINEER_STATUS_REPORT
     hidden: true
+  - name: STR_QUARTERMASTER_STATUS_REPORT
+    hidden: true
   - name: STR_VEHICLES_STATUS_REPORT
     hidden: true
   - name: STR_REGIONAL_HQ_FOUND
@@ -139,7 +141,7 @@ research:
     cost: 200
     points: 120
     dependencies:
-      - STR_ENGINEER_STATUS_REPORT
+      - STR_QUARTERMASTER_STATUS_REPORT
     getOneFree:
       - STR_LOYALTY
     listOrder: 7460

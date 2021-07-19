@@ -15,9 +15,14 @@ events:
     timer: 210
     timerRandom: 60
     researchList: [STR_ENGINEER_STATUS_REPORT]
+  - name: STR_QUARTERMASTER_STATUS_REPORT_EVENT
+    description: STR_QUARTERMASTER_STATUS_REPORT_EVENT_DESCRIPTION
+    timer: 400
+    timerRandom: 60
+    researchList: [STR_QUARTERMASTER_STATUS_REPORT]
   - name: STR_MILITARY_STATUS_REPORT_EVENT
     description: STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION
-    timer: 400
+    timer: 600
     timerRandom: 90
     researchList: [STR_MILITARY_STATUS_REPORT]
   - name: STR_VEHICLES_STATUS_REPORT_EVENT
