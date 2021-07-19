@@ -1252,7 +1252,7 @@ alienDeployments:
       textOffset: -16
       background: MIB_TRAP.SCR
       showTarget: false
-      desc: STR_MIB_CHASING_BRIEFING
+      desc: STR_MIB_EARLY_TRAP_ESCAPE_BRIEFING
     terrains:
       - URBAN_LOW
     shade: 9
