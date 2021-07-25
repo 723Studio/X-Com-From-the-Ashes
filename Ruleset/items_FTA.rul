@@ -2866,9 +2866,9 @@ items:
     medikitType: 2
     medikitTargetSelf: true
     isConsumable: true
-    stunRecovery: 6
+    stunRecovery: 7
     energyRecovery: 30
-    tuUse: 15
+    tuUse: 22
     invWidth: 1
     invHeight: 1
     listOrder: 48000
@@ -2894,8 +2894,9 @@ items:
     healthRecovery: 3
     stunRecovery: 5
     energyRecovery: 25
+    isConsumable: false
     costUse:
-      time: 20
+      time: 22
       morale: -5
     flatRate: false
     attraction: 5
@@ -2919,9 +2920,9 @@ items:
     medikitType: 2
     medikitTargetSelf: true
     isConsumable: true
-    stunRecovery: 13
+    stunRecovery: 15
     energyRecovery: 55
-    tuUse: 19
+    tuUse: 14
     invWidth: 1
     invHeight: 2
     listOrder: 48160
@@ -2944,12 +2945,12 @@ items:
     heal: 2
     woundRecovery: 1
     healthRecovery: 4
+    stunRecovery: 3
     medikitTargetSelf: true
-    isConsumable: true
+    isConsumable: false
     costUse:
-      time: 18
+      time: 19
       morale: -5
-      stun: -3
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
@@ -2976,8 +2977,9 @@ items:
     healthRecovery: 4
     stunRecovery: 10
     energyRecovery: 35
+    isConsumable: false
     costUse:
-      time: 18
+      time: 20
       morale: -5
     flatRate: false
     attraction: 5
