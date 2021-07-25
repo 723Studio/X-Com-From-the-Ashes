@@ -2925,7 +2925,7 @@ items:
     invWidth: 1
     invHeight: 2
     listOrder: 48160
-  - type: STR_IFAK
+  - type: STR_PERSONAL_AID_KIT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
@@ -2942,7 +2942,7 @@ items:
     battleType: 6
     medikitType: 1
     heal: 2
-    woundRecovery: 2
+    woundRecovery: 1
     healthRecovery: 4
     medikitTargetSelf: true
     isConsumable: true
@@ -2972,7 +2972,7 @@ items:
     painKiller: 5
     heal: 5
     stimulant: 5
-    woundRecovery: 2
+    woundRecovery: 1
     healthRecovery: 4
     stunRecovery: 10
     energyRecovery: 35
@@ -3363,9 +3363,6 @@ items:
     transferTime: 48
     clipSize: 1
     listOrder: 7760
-  - type: STR_MIB_HEAD_CHIP
-    categories: [STR_EVIDENCE]
-    listOrder: 146030
   - type: STR_LABORATORY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     costBuy: 200000

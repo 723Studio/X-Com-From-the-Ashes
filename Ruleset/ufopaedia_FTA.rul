@@ -1069,12 +1069,12 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_STIMS_INJECTOR_UFOPEDIA
     listOrder: 21300
-  - id: STR_IFAK
+  - id: STR_PERSONAL_AID_KIT
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
-    text: STR_IFAK_UFOPEDIA
+    text: STR_PERSONAL_AID_KIT_UFOPEDIA
     listOrder: 21300
   - id: STR_TRAUMA_PACK
     type_id: 4
@@ -1226,24 +1226,6 @@ ufopaedia:
     text: STR_ZOMBIE_GRUBAS_AUTOPSY_UFOPEDIA
     text_width: 153
     listOrder: 164120
-  - id: STR_JABBER
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    requires:
-      - STR_JABBER
-    image_id: UFOPEDIA_IMG_JABBER
-    text: STR_JABBER_UFOPEDIA
-    text_width: 158
-    listOrder: 164090
-  - id: STR_JABBER_AUTOPSY
-    type_id: 7
-    section: STR_ALIEN_LIFE_FORMS
-    requires:
-      - STR_JABBER_CORPSE
-    image_id: UFOPEDIA_IMG_JABBER_AUTOPSY
-    text: STR_JABBER_AUTOPSY_UFOPEDIA
-    text_width: 149
-    listOrder: 164100
   - id: STR_CHUPACABRA
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -1264,6 +1246,13 @@ ufopaedia:
     listOrder: 164100
 
 #STR_ALIEN_RESEARCH_UC 160-249k
+  - id: STR_EMPTY_MIB_EARLY_LORE_STAGE
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_EMPTY_MIB_EARLY_LORE_STAGE
+    text: STR_EMPTY_MIB_EARLY_LORE_STAGE_UFOPEDIA
+    listOrder: 160008
   - id: STR_EMPTY_MIB_EARLY_LORE1
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC

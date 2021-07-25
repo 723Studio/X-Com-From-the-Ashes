@@ -803,7 +803,7 @@ extraSprites:
   - type: inventory_MIB_BUTCHER
     singleImage: true
     files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png #TODO - insert art here!
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_BUTCHER.png
   - type: SEEKER_DRONE.PCK
     subX: 32
     subY: 40
