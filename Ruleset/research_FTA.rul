@@ -989,6 +989,9 @@ research:
   - name: STR_HELICOPTER
     hidden: true
     listOrder: 7460
+  - name: STR_OSPREY
+    hidden: true
+    listOrder: 7460
   - name: STR_INTERCEPTOR
     #requiresBaseFunc: [STDLAB]
     cost: 500

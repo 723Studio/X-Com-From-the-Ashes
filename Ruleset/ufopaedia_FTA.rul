@@ -321,28 +321,46 @@ ufopaedia:
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 7000
-  - id: STR_HELICOPTER #TODO
+  - id: STR_HELICOPTER
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: STR_HELICOPTER_CPAL.SPK
+    image_id: HELICOPTER_CPAL.SPK
     rect_stats:
       x: 200
-      y: 10
+      y: 130
       width: 160
       height: 80
     rect_text:
       x: 5
       y: 40
-      width: 120
+      width: 100
       height: 160
     text: STR_HELICOPTER_UFOPEDIA
     requires:
       - STR_HELICOPTER
     listOrder: 7000
+  - id: STR_OSPREY
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: OSPREY.SPK
+    rect_stats:
+      x: 208
+      y: 135
+      width: 160
+      height: 65
+    rect_text:
+      x: 5
+      y: 140
+      width: 140
+      height: 160
+    text: STR_OSPREY_UFOPEDIA
+    requires:
+      - STR_OSPREY
+    listOrder: 7390
   - id: STR_STALKER
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
-    image_id: STR_STALKER_CPAL.SPK
+    image_id: STALKER_CPAL.SPK
     rect_stats:
       x: 200
       y: 10
@@ -1157,7 +1175,7 @@ ufopaedia:
     section: STR_ALIEN_LIFE_FORMS
     image_id: UFOPEDIA_SEEKER_DRONE_CPAL
     text: STR_SEEKER_DRONE_UFOPEDIA
-    text_width: 130
+    text_width: 129
     requires:
       - STR_SEEKER_DRONE_TERRORIST
     listOrder: 146000
