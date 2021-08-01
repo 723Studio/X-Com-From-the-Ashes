@@ -1,4 +1,5 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
+ironManEnabled: true # for alpha 2
 
 #Campaign
 startingTime:
