@@ -32,8 +32,20 @@ events:
     researchList: [STR_VEHICLES_STATUS_REPORT]
   - name: STR_MONSTER_HUNT_START_EVENT
     description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
-    timer: 12960 # 9 days
+    timer: 15840 # 11 days
     timerRandom: 2880 # 2 days
+    customAnswers:
+      0:
+        title: STR_WE_DONT_NEED_THAT
+        #spawnEvent: [STR_ANSWER1_EVENT]
+      1:
+        title: STR_CONTINUE_INVESTIGATION
+        spawnEvent: [STR_MONSTER_HUNT_START_EVENT_YES]
+        #description: "STR_SOME_WISE_WORDS"
+  - name: STR_MONSTER_HUNT_START_EVENT_YES
+    description: STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION
+    timer: 0
+    timerRandom: 0
     researchList: [STR_MONSTER_HUNT_START_PREREQ]
   - name: STR_NO_SUPPLY_WARNING_EVENT
     description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION

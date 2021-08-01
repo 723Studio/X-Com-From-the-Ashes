@@ -67,10 +67,6 @@ research:
     hidden: true
   - name: STR_DESERT_TELESCOPE
     hidden: true
-  - name: STR_MONSTER_HUNT_START_PREREQ
-    hidden: true
-  - name: STR_MONSTER_HUNT_RUMORS_PREREQ
-    hidden: true
 
 
 #game start
@@ -107,14 +103,6 @@ research:
     dependencies:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
-      - STR_COVERT_OPERATIONS
-    listOrder: 7460
-  - name: STR_MONSTER_HUNT_START
-    requiresBaseFunc: [HQ]
-    cost: 90
-    points: 3
-    dependencies:
-      - STR_MONSTER_HUNT_START_PREREQ
       - STR_COVERT_OPERATIONS
     listOrder: 7460
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
@@ -425,30 +413,43 @@ research:
     hidden: true
 
 #shared creatures arc
+  - name: STR_MONSTER_HUNT_START_PREREQ
+    hidden: true
+  - name: STR_MONSTER_HUNT_RUMORS_PREREQ
+    hidden: true
+  - name: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
+    hidden: true  
+  - name: STR_MONSTER_HUNT_RUMORS_CHUPA
+    hidden: true   
+  - name: STR_MONSTER_HUNT_START
+    requiresBaseFunc: [HQ]
+    cost: 90
+    points: 3
+    dependencies:
+      - STR_MONSTER_HUNT_START_PREREQ
+      - STR_COVERT_OPERATIONS
+    listOrder: 7460
   - name: STR_MONSTER_HUNT_RUMORS
     requiresBaseFunc: [HQ]
-    cost: 70
-    points: 10
+    cost: 130
+    points: 15
     spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ
-      - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
   - name: STR_MONSTER_HUNT_RUMORS_ANALYSIS
     requiresBaseFunc: [HQ]
     unlocks: [STR_MONSTER_HUNT_RUMORS_PREREQ]
     cost: 504
-    points: 15 
+    points: 10 
     spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
-  - name: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
-    hidden: true  
-  - name: STR_MONSTER_HUNT_RUMORS_CHUPA
-    hidden: true   
 
-  - name: STR_STRANGE_CREATURE_AUTOPSY
+
+  - name: STR_STRANGE_CREATURE_AUTOPSY #TODO FIX
     cost: 0
     points: 0
     spawnedEvent: STR_STRANGE_CREATURE_AUTOPSY

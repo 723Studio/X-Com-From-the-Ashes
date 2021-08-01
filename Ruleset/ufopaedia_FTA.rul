@@ -277,6 +277,13 @@ ufopaedia:
       - STR_MONSTER_HUNT_RUMORS
     text: STR_MONSTER_HUNT_RUMORS_UFOPEDIA
     listOrder: 2010
+  - id: STR_MONSTER_HUNT_RUMORS_ANALYSIS
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_MONSTER_HUNT_RUMORS_ANALYSIS
+    text: STR_MONSTER_HUNT_RUMORS_ANALYSIS_UFOPEDIA
+    listOrder: 2010
   - id: STR_RESISTANCE_CONTACT
     type_id: 8 #TODO converting to 7
     section: STR_XCOM_REPORTS_UC

@@ -514,6 +514,89 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
 
+  - type: STR_RESISTANCE_FOREST_HOUSE_TRAP
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_RESISTANCE_FOREST_HOUSE
+      mapDataSets:
+        - BLANKS
+        - FORESTSWAMP
+        - RESISTANCE_FOREST_HOUSE_01
+      mapBlocks:
+        - name: RESISTANCE_FOREST_HOUSE_01
+          width: 20
+          length: 20
+          items:
+            STR_RESISTANCE_SOLDIER_CORPSE:
+              - [5, 3, 0]
+              - [10, 3, 0]
+              - [7, 8, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [4, 5, 0]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
+          randomizedItems:
+              - position: [8, 6, 0]
+                amount: 6
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [7, 2, 0]
+                amount: 5
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: RESISTANCE_FOREST_HOUSE_02
+          width: 20
+          length: 20
+          items:
+            STR_RESISTANCE_SOLDIER_CORPSE:
+              - [5, 5, 0]
+              - [8, 3, 0]
+              - [7, 8, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [4, 5, 0]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
+          randomizedItems:
+              - position: [7, 5, 0]
+                amount: 8
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [7, 2, 0]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+
+  - type: STR_MIB_FOREST_BEACON
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_MIB_FOREST_BEACON
+      mapDataSets:
+        - BLANKS
+        - FOREST
+        - RADIO_BEACON
+      mapBlocks:
+        - name: FOREST_BEACON00
+          width: 10
+          length: 10
+
   - type: DESERT_TELESCOPE_HOUSE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed

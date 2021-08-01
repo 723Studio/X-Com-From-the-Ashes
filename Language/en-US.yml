@@ -290,6 +290,10 @@ en-US:
   STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We are receiving a distress transmission from one of the Resistance shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures, they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FOREST_HOUSE: "Resistance Heaven Attacked"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The M.I.B. have surrounded one of Resistance secret hideouts. Attempting to destroy important clues that could lead the Men in Black agents to other Resistance havens, they were forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. Additionally, it is better to recover all possible clues about Resistance activity.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_FOREST_HOUSE_AMBUSH: "Resistance Heaven Attacked"
+  STR_RESISTANCE_FOREST_HOUSE_AMBUSH_DESCRIPTION: #TODO
+  STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: "Resistance Heaven Attacked"
+  STR_RESISTANCE_FARM_ZOMBIE_AMBUSH_BRIEFING: #TODO
   STR_RESISTANCE_URBAN_HIDEOUT: "Resistance Heaven Attacked"
   STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "We are receiving a distress signal the Resistance cell, located in urban area. The local TV channels broadcast reports that government forces have located an international terrorists and that police units, supported by special forces, are about to storm the area. There is no doubt that the M.I.B. involved. This cell was used for covert communications with X-COM, so cryptographic data stored on HD drive must be secured. We also should not harm the local police officers, as they are only pawns in the game.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
@@ -324,7 +328,8 @@ en-US:
   STR_REGIONAL_HQ_DESCRIPTION: #TODO
 
   STR_MONSTER_HUNT_INVESTIGATION: "Monster Activity Investigation"
-  STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: "We are collecting reports of mysterious monsters attacking people in the suburbs and villages. These cases must be investigated as soon as possible because the number of victims grows constantly. But our agents must act with extreme caution and not draw unnecessary attention. It seems that the surest tactic would be to pretend to be government agents investigating. We should develop a good disguise and manufacture fake IDs."
+  STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: "On this operation, our soldiers will work under the guise of federal agents investigating attacks by mysterious monsters. That way we can gain the confidence of the locals and the police if we arrange a good disguise. Our engineers are capable of creating fake special agent IDs for our soldiers that are almost indistinguishable from the real ones."
+  STR_MONSTER_HUNT_INVESTIGATION_SUCCESS_DESCRIPTION: "We were able to collect testimonies of witnesses and evidence indicating the activity of unidentified predators that terrify the locals. We have to analyze the data collected and develop a plan for further actions.{NEWLINE}{NEWLINE}{ALT}New research project available."
   STR_MONSTER_HUNT_INVESTIGATION_CONT: #TODO
   STR_MONSTER_HUNT_INVESTIGATION_CONT_DESCRIPTION: #TODO
 
@@ -356,7 +361,11 @@ en-US:
   STR_NO_SUPPLY_THIRD_WARNING_EVENT: "Starvation!"
   STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: "Sources of resources are depleted, people starving, and forces refuse to risk their lives, famine has come. It's time to take control, because this is the last warning.{NEWLINE}Loyalty score> {ALT}-900"
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
-  STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: #TODO
+  STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: "We constantly receive information about encounters with strange creatures. X-COM has previously investigated such cases, but we have been unable to achieve meaningful results. It is likely that if we continue our research, we will be able to draw a more holistic picture of what is happening with these mysterious monsters. However, given our current state of affairs, perhaps it makes sense to focus on the survival of the project instead of wasting energy on unconfirmed rumors. This is up for you to decide."
+  STR_CONTINUE_INVESTIGATION: "Continue investigation"
+  STR_WE_DONT_NEED_THAT: "We don't need that"
+  STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION: "We analyze press and tabloid articles, local police reports, and even classified material from the special departments of several countries, to which we have been able to maintain access through our network of informants. Agents have already been sent on missions to investigate the most reliable information twice. Alas, both times the units went missing. That's hardly a coincidence. We should analyze the wealth of information we have and maybe we'll get some solid leads."
+  STR_MONSTER_HUNT_START_EVENT_YES: "Strange creatures"
   STR_STRANGE_CREATURE_AUTOPSY: "Strange creature study"
   STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION: #TODO
   STR_RESISTANCE_DISCOVER: "Resistance"
@@ -735,7 +744,8 @@ en-US:
   STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "Tactical analysis of the recent assault on our base has exposed several significant security vulnerabilities. Although most of the complex is underground, some of its modules have a direct connection to the surface. The obvious point of enemy penetration into the base is the entry lift. In addition, our aircraft perform vertical take-off from the hangars. Despite our attempts to disguise the closing casements of our hangars they can still be easily detected from the ground. Enemies blasted a few holes in the casements and went down on ropes inside. There is a good chance that our enemies will use the hangars to break into the base in the future as well. Unfortunately, these circumstances were not taken into account in the initial base design, and now we need to think about how to improve the defense systems, and also to pay more attention to the base layout."
   STR_COVERT_OPERATIONS_UFOPEDIA: "Due to the clear dominance of our enemy, the preferred strategy will be keeping a low profile when dealing with important strategic tasks. We can send our agents to covert operations for more subtle methods of solving a problem than an open attack. The secure channels we've developed allow us to coordinate agents remotely, and for some operations, it is also important to involve scientists for analytical work and engineers to design the special gear. A covert operation is always a risk, and in order to increase your success odds you should be careful when choosing your team and equipment. Any little thing, in the end, can play a key role." 
   STR_MONSTER_HUNT_START: "Strange creatures"
-  STR_MONSTER_HUNT_START_UFOPEDIA: "STR_MONSTER_HUNT_START_UFOPEDIA" #TODO
+  STR_MONSTER_HUNT_START_UFOPEDIA: "We have collected cross-referenced data pointing to paranormal phenomena localized in the forests of northern Illinois, USA. Cases of mysterious disappearances of people and domestic animals have been reported in this region. Local authorities have investigated cases and even involved the FBI, but as far as we know, these actions have not yielded significant results. Our agents can pretend to be federal agents conducting another investigation to avoid attracting attention."
+  STR_MONSTER_HUNT_RUMORS_ANALYSIS: "Monsters Activity Analysis"
   STR_MONSTER_HUNT_RUMORS: "STR_MONSTER_HUNT_RUMORS" #TODO
   STR_MONSTER_HUNT_RUMORS_DESCRIPTION: #TODO
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: STR_MONSTER_HUNT_RUMORS_UFOPEDIA #TODO

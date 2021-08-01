@@ -3163,3 +3163,35 @@ terrains:
         - name: RESISTANCE_FOREST_HOUSE_02
           width: 20
           length: 20
+
+  - name: DESERT_MILITARY
+    mapDataSets:
+      - BLANKS
+      - DESERT
+      - ROADS
+      - ARMY_TRUCK
+    mapBlocks:
+      - name: DESERT_ROAD00
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD01
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD02
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD03
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD04
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD_TRUCK
+        width: 10
+        length: 10
+        groups: [2, 3]
