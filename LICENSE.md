@@ -1,6 +1,6 @@
 # LICENSING
 
-The most content of From the Ashes megamod - artwork, sounds and other assets, rulesets and configs (with some exceptions exceptions, listed below) distributed under a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License** [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt the materials only for non-commercial purposes and when providing [appropriate attribution](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart). **Any** derivatives must be distributed **under the same license!**
+The most content of From the Ashes megamod - artwork, sounds and other assets, rulesets and configs (with some exceptions exceptions, listed below) distributed under a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License** [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt the materials only for non-commercial purposes and when providing [appropriate attribution](https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart). **Any** derivatives must be distributed **under the same license!** This means that you cannot use (copy, adapt, etc.) the materials presented in this project in your project, if it is not distributed under the CC BY-NC-SA 4.0 license.
 Some music assets were bought by me and I have personal right to use it in my project - X-COM: From the Ashes, they are distributed under **All Rights Reserved license**. You **can not** redistribute or adapt it anyhow without my personal agree. Sorry, it is not my personal greed, but part of agreement with its author. To streamers and letsplayers - this music is safe for you, it is not listed in any contentID systems.
 Here is a list of those music tracks:
 
@@ -31,6 +31,7 @@ Here is a list of that assets:
 * ufopedia_CHUPACABRA_AUTOPSY_CPAL.png
 * ufopedia_CHUPACABRA_CPAL.png
 * Extracted_MIB_Chip_CPAL.png
+* ARMY_TRUCK.pck
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

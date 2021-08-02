@@ -3194,4 +3194,4 @@ terrains:
       - name: DESERT_ROAD_TRUCK
         width: 10
         length: 10
-        groups: [2, 3]
+        groups: [2, 3, 5]
