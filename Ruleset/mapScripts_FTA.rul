@@ -707,9 +707,32 @@ mapScripts:
 
   - type: MIB_SEWERS
     commands:
-    - type: addBlock
+    - type: addBlock #xcom deployment
       rects:
-          - [0, 0, 6, 7]
+          - [6, 0, 1, 7]
+      verticalLevels:
+      - type: ground
+        terrain: STR_MIB_REGIONAL_HQ_DEPLOYMENT
+        groups: 7 #without Resistance
+        size: [1, 1, 5]
+      - type: middle
+        terrain: STR_MIB_REGIONAL_HQ_DEPLOYMENT
+        groups: 5 #without Resistance
+        size: [1, 1, 5]
+    - type: fillArea #building part
+      rects:
+          - [6, 0, 1, 7]
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        blocks: [1]
+        size: [1, 1, 5]
+      - type: middle
+        terrain: URBAN_LOW
+        size: [1, 1, 5]
+    - type: addBlock #main block
+      rects:
+          - [1, 0, 6, 7]
       verticalLevels:
       - type: ground
         terrain: MIB_SEWERS
@@ -721,6 +744,8 @@ mapScripts:
         blocks: 0
         size: [5, 7, 5]
     - type: fillArea
+      # rects: 
+      #   - [0, 0, 1, 7]
       verticalLevels:
       - type: ground
         terrain: MIB_SEWERS
@@ -728,7 +753,8 @@ mapScripts:
         size: [1, 1, 5]
       - type: middle
         terrain: FOREST
-        size: [1, 1, 4]
+        size: [1, 1, 5]
+
 
   - type: MIB_CHASING
     commands:
@@ -740,6 +766,8 @@ mapScripts:
       #   - [1, 0, 4, 4]
     # - type: addCraft
     - type: fillArea
+
+
 
   - type: STR_MIB_CHASING_INTRO
     commands:

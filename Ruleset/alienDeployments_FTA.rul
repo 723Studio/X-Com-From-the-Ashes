@@ -272,9 +272,9 @@ alienDeployments:
             - STR_PDW_CLIP     
   - type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
     race: STR_MIB_REGIONAL_HQ
-    width: 80
+    width: 70
     length: 70
-    height: 12
+    height: 11
     terrains:
       - MIB_SEWERS
     script: MIB_SEWERS

@@ -3127,6 +3127,29 @@ terrains:
           width: 50
           length: 70
           groups: 1
+  - name: STR_MIB_REGIONAL_HQ_DEPLOYMENT
+    mapDataSets:
+      - BLANKS
+      - URBAN_LOW_OBJ
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: MIB_REGHQ_DEPL0 #without Resistance
+        width: 10
+        length: 10
+        groups: 5
+      - name: MIB_REGHQ_DEPL1 #with Resistance
+        width: 10
+        length: 10
+        groups: 6
+      - name: MIB_REGHQ_DEPL_VAULT0 #without Resistance
+        width: 10
+        length: 10
+        groups: 7
+      - name: MIB_REGHQ_DEPL_VAULT1 #with Resistance
+        width: 10
+        length: 10
+        groups: 8
 
   - name: MIB_CHASING
     mapDataSets:
