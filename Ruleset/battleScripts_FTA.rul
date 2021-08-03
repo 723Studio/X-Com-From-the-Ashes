@@ -143,14 +143,15 @@ battleScripts:
       minDifficulty: 4
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+
   - type: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     commands:
     - type: spawnUnit #for low diff
       executionChances: 100
-      label: 1
+      #label: 1
       maxDifficulty: 3
-      startTurn: 8
-      endTurn: 9
+      startTurn: 5
+      #endTurn: 9
       packSize: 4
       randomPackSize: false
       unitSide: 1
@@ -158,28 +159,28 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #random additional continues
       executionChances: 30
-      conditionals: 1
+      #conditionals: 1
       packSize: 4
       randomPackSize: true
       unitSide: 1
-      startTurn: 2
+      startTurn: 6
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #high diff
       executionChances: 100
-      label: 1
+      #label: 1
       maxDifficulty: 3
-      startTurn: 7
-      endTurn: 8
-      packSize: 7
+      startTurn: 4
+      #endTurn: 8
+      packSize: 6
       randomPackSize: false
       unitSide: 1
       minDifficulty: 3
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #extra SH gift
-      executionChances: 10
-      startTurn: 7
+      executionChances: 15
+      startTurn: 4
       packSize: 8
       randomPackSize: false
       unitSide: 1
@@ -261,6 +262,14 @@ battleScripts:
       groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
+    - type: showMessage
+      executions: 1
+      endTurn: 1
+      messages:
+        0:
+          title: STR_RECOVER_RESEARCH_LOGS_TITLE
+          content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+
 
   - type: MIB_TRAP_ESCAPE_EARLY
     commands:
@@ -299,13 +308,7 @@ battleScripts:
       spawnBlocks: ["N", W, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
 
-    # - type: showMessage #TODO uncomment
-    #   executions: 1 #not working yet :]
-    #   endTurn: 1
-    #   messages:
-    #     0:
-    #       title: STR_RECOVER_RESEARCH_LOGS_TITLE
-    #       content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+
 
   - type: STR_LOCALS_TRAP_BAT_SCRIPT
     commands:

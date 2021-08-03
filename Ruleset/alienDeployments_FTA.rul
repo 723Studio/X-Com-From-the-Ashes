@@ -647,6 +647,7 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_AP  
 
   - type: STR_RESISTANCE_URBAN_HIDEOUT
+    race: STR_MIB
     width: 60
     length: 60
     height: 6
@@ -684,10 +685,9 @@ alienDeployments:
     battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     data:
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
-        lowQty: 3
-        highQty: 5
+        lowQty: 2
+        highQty: 4
         dQty: 2
-        extraQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -740,10 +740,9 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE 
       - alienRank: 9 #STR_MIB_SPECOPS
-        lowQty: 6
-        highQty: 10
+        lowQty: 4
+        highQty: 7
         dQty: 2
-        extraQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -1108,7 +1107,7 @@ alienDeployments:
     terrains:
       - FOREST
     customUfo: STR_SCIENTIST_REFUGE
-    script: SCIENTIST_REFUGE_ATTACKED
+    script: CRAFT_UFO_SCRIPT
     battleScript: MIB_ATTACK_SCIENTIST
     data:
       - alienRank: 6
@@ -1159,14 +1158,14 @@ alienDeployments:
     terrains:
       - DESERT
     customUfo: DESERT_TELESCOPE_HOUSE
-    script: SCIENTIST_REFUGE_ATTACKED
-    battleScript: MIB_ATTACK_SCIENTIST
+    script: CRAFT_UFO_SCRIPT
+    battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     data:
       - alienRank: 5 #STR_MIB_AGENT
-        lowQty: 3
-        highQty: 4
-        dQty: 1
-        percentageOutsideUfo: 40
+        lowQty: 2
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 100
         itemSets:
           -
             - STR_PISTOL
@@ -1216,9 +1215,9 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE 
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
-        lowQty: 1
-        highQty: 4
-        dQty: 1
+        lowQty: 3
+        highQty: 5
+        dQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -

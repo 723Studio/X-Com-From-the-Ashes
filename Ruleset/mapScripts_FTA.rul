@@ -767,19 +767,6 @@ mapScripts:
     # - type: addCraft
     - type: fillArea
 
-
-
-  - type: STR_MIB_CHASING_INTRO
-    commands:
-    - type: addBlock
-      terrain: MIB_CHASING_intro
-      blocks: [0]
-      size: [2, 6, 4]
-      # rects:
-      #   - [1, 0, 4, 4]
-    - type: addCraft
-    - type: fillArea
-
   # - type: TEST_SCRIPT
   #   commands:
   #   - type: addCraft
