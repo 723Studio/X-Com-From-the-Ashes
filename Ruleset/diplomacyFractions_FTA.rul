@@ -25,6 +25,7 @@ diplomacyFactions:
       - heavenUrbanHideout
       - resistanceScientist
       - desertTelescope
+    helpTreatyGap: 5
     genEventFreq: 100
     # helpTreatyEventScripts:
     #    - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT

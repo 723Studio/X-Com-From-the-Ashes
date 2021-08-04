@@ -208,13 +208,13 @@ extraSprites:
       318: Resources/Weapons/Earthbound/General/bigob_PoliceBaton.png
       319: Resources/Weapons/Earthbound/General/bigob_PumpActionShotgun.png
       320: Resources/Weapons/Earthbound/General/bigob_PumpActionShotgunShells.png
-      321: Resources/Weapons/Earthbound/General/bigob_SemiAuto_Shotgun.png
+      321: Resources/Weapons/Earthbound/General/bigob_Shotgun.png
       322: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_AP.png
       323: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_BS.png
       324: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_Baton.png
       325: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_AP_AA.png
       326: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_BS_AA.png
-      327: Resources/Weapons/Earthbound/Xcom/bigob_Shotgun.png
+      327: Resources/Weapons/Earthbound/Xcom/bigob_SEShotgun.png #CAN BE REUSED
       328: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifle.png
       329: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifleClip.png
       330: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifleClipAA.png
@@ -288,6 +288,8 @@ extraSprites:
       398: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannon.png
       399: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannonClip.png
       400: Resources/Weapons/Earthbound/Utilities/handob_TraumaPack.png #temp
+      401: Resources/Weapons/Earthbound/Xcom/bigob_SEShotgun.png
+      402: Resources/Weapons/Earthbound/Xcom/bigob_BattleRifleGrenade.png
       
       
   - type: FLOOROB.PCK
@@ -329,7 +331,7 @@ extraSprites:
       321: Resources/Weapons/Earthbound/General/floorob_Shotgun.png
       322: Resources/Weapons/Earthbound/General/floorob_ShotgunShells.png
       325: Resources/Weapons/Earthbound/General/floorob_ShotgunShellsAA.png
-      327: Resources/Weapons/Earthbound/Xcom/floorob_Shotgun.png
+      327: Resources/Weapons/Earthbound/Xcom/floorob_SEShotgun.png #CAN BE REUSED
       328: Resources/Weapons/Earthbound/Xcom/floorob_SniperRifle.png
       329: Resources/Weapons/Earthbound/Xcom/floorob_SniperRifleClip.png
       330: Resources/Weapons/Earthbound/Xcom/floorob_SniperRifleClipAA.png
@@ -386,6 +388,7 @@ extraSprites:
       398: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannon.png
       399: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png
       400: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png #temp for hacking
+      401: Resources/Weapons/Earthbound/Xcom/floorob_SEShotgun.png
 
 
   - type: HANDOB.PCK #Index step 8
@@ -467,12 +470,13 @@ extraSprites:
       688: Resources/Weapons/Earthbound/Xcom/handob_TaserCannon.png
       696: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png
       704: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png #temp for hacking
+      712: Resources/Weapons/Earthbound/Xcom/handob_SEShotgun.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
       800: Resources/Crafts/Inticon/Dragonfly_minimized.png
-      801: Resources/Crafts/Inticon/Razor_minimized.png
+      801: Resources/Crafts/Inticon/Stalker_minimized.png
       802: Resources/Crafts/Inticon/Copter_minimized.png
       803: Resources/Crafts/Inticon/Osprey_minimized.png
       811: Resources/Crafts/Inticon/Dragonfly_dogfight.png

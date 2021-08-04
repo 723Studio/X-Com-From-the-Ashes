@@ -201,7 +201,7 @@ en-US:
   STR_DAMAGE_PLASMA_BEAM_TOPIC: "Plasma Beam Damage"
   STR_DAMAGE_PLASMA_BEAM_UFOPEDIA: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA #TODO
   STR_DAMAGE_STUN_TOPIC: "Stun Damage"
-  STR_DAMAGE_STUN_UFOPEDIA: "Sometimes killing an opponent can be unpreferable as they might hold important data to be extracted or ransomed away if absolutely necessary. That's where less-lethal tools come into play - batons, rubber rounds or even hand-to-hand combat with sufficient skill and training are the readily available means of pacifying a target, and they are by no means the only ones. However, as the name implies, these weapons are not entirely harmless - most of them also cause normal wounds, limiting their repeatability on a single target. They can also cause shock, resulting in a slow but constant loss of vital signs, until expiration.{NEWLINE}The Aliens also seem to have a ranged version of less-lethal weapons, of an area-of-effect type to boot."
+  STR_DAMAGE_STUN_UFOPEDIA: "Although killing an enemy is usually the easiest way to win in terms of tactics, sometimes capturing the enemy alive is worth the extra effort. Some enemies may have critical information for us, and we need to interrogate them to move forward in unraveling the aliens' plans. Stunning an enemy will incapacitate them for several turns. If we manage to incapacitate all other enemies or get stunned unit to the craft and leave the battlefield before it wakes up, it will be taken to the base and placed to the containment facility."
   STR_DAMAGE_MELEE_TOPIC: "Cutting Damage"
   STR_DAMAGE_MELEE_UFOPEDIA: "Melee weapons are among the simplest yet still effective types of weapons, bar armored opponents. At close range it might be preferable to dispatch an enemy using by the means of a combat knife or a similar implement given how quick they are to use, especially if the hostiles are the ones approaching. However, using it in other circumstances is inadvisable - risking overextension for an attack that might end up failing is always a bad decision but wanting to engage in melee combat can result in the worst cases of it should there be any complications. It's also relatively easy to be protected from cutting weapons; that goes either way."
   STR_DAMAGE_ACID_TOPIC: "Acid Damage"
@@ -221,6 +221,14 @@ en-US:
   STR_DAMAGE_BIO_TOPIC: "Bio-damage"
   STR_DAMAGE_BIO_UFOPEDIA: STR_DAMAGE_PRESSURE_UFOPEDIA #TODO
 #mod UI
+  STR_L_RATING_AMAZING: #TODO
+  STR_L_RATING_PERFECT: "You are a great leader, our people are very inspired by the recent successes in the fight against aliens, they have complete confidence in you."
+  STR_L_RATING_VERY_GOOD: #TODO
+  STR_L_RATING_GOOD: "Yay" #TODO
+  STR_L_RATING_OK: "All in all, we are doing fine. Of course, things could be better, but so far our people have no reason to panic."
+  STR_L_RATING_MEH: "Our results leave a lot to be desired, people are beginning to doubt your leadership."
+  STR_L_RATING_BAD: "Boooo" #TODO
+  STR_L_RATING_TERRIBLE: "Boooo" #TODO
   STR_QD_SLOT: "QD"
   STR_USE_FLASHBANG: "Use Flashbang"
   STR_TARGET_IS_DAZED: "The Target Is Dazed"
@@ -608,12 +616,14 @@ en-US:
   STR_PUMP_ACTION_SHOTGUN: "Pump Action Shotgun"
   STR_PUMP_ACTION_SHOTGUN_UFOPEDIA: "A classic shotgun, used by police forces as well as civilians in some countries for self-defense."
   STR_PUMP_ACTION_SHELLS: "Pump Action BS Ammo"
-  STR_SEMI_AUTO_SHOTGUN: "Semi-auto Shotgun"
-  STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "This shotgun is able to fire a shell after every trigger pull, without needing to manually chamber the next round. Thus, the rate of fire increases significantly but accuracy decreases slightly due to the high recoil in comparison to the pump-action shotgun."
   STR_SHOTGUN: "Shotgun"
-  STR_SHOTGUN_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
+  STR_SHOTGUN_UFOPEDIA: "This weapon is used widely by police and other law enforcers. Due to the variety of ammunition it has a wide range of tactical applications, from crowd control to fighting well-prepared criminals."
   STR_SHOTGUN_CONT: "Shotgun (continued)"
-  STR_SHOTGUN_CONT_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
+  STR_SHOTGUN_CONT_UFOPEDIA: "This weapon is used widely by police and other law enforcers. Due to the variety of ammunition it has a wide range of tactical applications, from crowd control to fighting well-prepared criminals."
+  STR_SEMI_AUTO_SHOTGUN: "Semi-auto Shotgun"
+  STR_SEMI_AUTO_SHOTGUN_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
+  STR_SEMI_AUTO_SHOTGUN_CONT_UFOPEDIA: "This shotgun was designed specifically for elite special forces units as a breaching weapon. It has a unique mechanism for loading cartridges and switching fire modes which allows the use of various special ammunition."
+  STR_SEMI_AUTO_SHOTGUN_CONT: "Semi-auto Shotgun (continued)"
   STR_SHOTGUN_SHELLS_BS: "Shotgun BS Ammo"
   STR_SHOTGUN_SHELLS_AP: "Shotgun AP Shells"
   STR_SHOTGUN_SHELLS_BATON: "Shotgun Baton Shells"
@@ -686,12 +696,12 @@ en-US:
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries, it contains 3 bandage packs, 3 stimulants, and 3 painkillers. The bandage heals one wound and restores 3 Health points, the stimulant restores 25 Energy points and removes 5 Stun points. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}>Concealable"
   STR_STIMS_INJECTOR: "Stims Injector"
   STR_STIMS_INJECTOR_UFOPEDIA: "This single-use injector is designed for infusing a powerful dose of a complex mixture of hormones and bioactive compounds into the bloodstream during combat. A single injection can revive a unconscious fighter, temporarily relieve the effects of concussion, and restore energy. The injector allows the procedure to be carried out very quickly, one injection restores 55 Energy points and removes 15 Stun points.{NEWLINE}>Concealable"
-  STR_PERSONAL_AID_KIT: "Personal Aid Kit."
+  STR_PERSONAL_AID_KIT: "Personal Aid Kit"
   STR_PERSONAL_AID_KIT_UFOPEDIA: "This kit contains medicines and bandages, as well as small surgical tools. The entire kit is designed to help the soldier provide emergency medical treatment right on the battlefield, including himself. The kit is capable of being used twice, each use will heal one wound and restore 4 Health points.{NEWLINE}>Concealable"
   STR_TRAUMA_PACK: "Trauma Pack"
   STR_TRAUMA_PACK_UFOPEDIA: "This EMT kit is used by elite Special Forces units and contains everything needed to treat a combatant right on the battlefield. The kit contains 5 bandage packs, 5 stimulants, and 5 painkillers. The bandage heals one wound and restores 4 Health points, the stimulant restores 35 Energy points and removes 10 Stun points. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored."
   STR_COMBAT_SHIELD: "Combat Shield"
-  STR_COMBAT_SHIELD_UFOPEDIA: "A heavy tactical shield, which grants to its bearer good front protection against any conventional damage. It could be used as stun weapon in a strong trained hand."
+  STR_COMBAT_SHIELD_UFOPEDIA: "A heavy tactical shield, which grants to its bearer good front protection against any conventional damage.{NEWLINE}The shield blocks the damage the soldier receives from the front, gradually losing integrity. It has 100 HP, which has its own resistance to explosion and cutting damage, but vulnerability to acid. The less HP the shield has, the greater the chance that it will not block damage."
   STR_FLASHLIGHT: "Flashlight"
   STR_FLASHLIGHT_UFOPEDIA: "An ordinary flashlight powered by reusable batteries. It shines brightly, but the sparks from the opponent's eyes will shine even brighter if you hit him on the forehead with this heavy tool."
   STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
@@ -711,6 +721,10 @@ en-US:
   STR_HELICOPTER_UFOPEDIA: "The helicopter is a very convenient thing compared to its counterparts, but it has a number of disadvantages. Firstly, this transport can transport a small detachment over a fairly short distance. Secondly, it has a low speed. Of course, this is not the best option for our operations, but it is a relatively cheap and easily accessible vehicle."
   STR_OSPREY: "OSPREY"
   STR_OSPREY_UFOPEDIA: "{NEWLINE}Multi-mission, tiltrotor military aircraft with both vertical takeoff and landing (VTOL) capabilities. It is designed to combine the functionality of a conventional helicopter with the long-range, high-speed cruise performance of a turboprop aircraft. A quite substantial cargo compartment makes it an effective vehicle for deploying a large squad at medium distance from our base."
+
+#manufacture
+  STR_FAKE_AGENT_ID: "Special Agent Fake IDs"
+
 #ufopedia
   STR_TACTICAL_ANALYSIS: "TACTICAL ANALYSIS"
   STR_LOG1: "Commander log #001"

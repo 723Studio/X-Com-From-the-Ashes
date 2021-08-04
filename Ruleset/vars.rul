@@ -127,7 +127,8 @@ loyaltyRatings:
    250: STR_L_RATING_OK
    0: STR_L_RATING_MEH
    -350: STR_L_RATING_BAD
-   -99999: STR_L_RATING_TERRIBLE
+   -800: STR_L_RATING_BAD
+   -1500: STR_L_RATING_TERRIBLE
 
 reputationLevels:
    2000: STR_ALLY
@@ -158,6 +159,7 @@ fixedUserOptions:
   weaponSelfDestruction: false
   oxceLinks: true
   oxceUpdateCheck: false
+  noAlienPanicMessagesL: true
 
 recommendedUserOptions:
   playIntro: true

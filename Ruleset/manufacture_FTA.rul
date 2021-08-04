@@ -1,5 +1,5 @@
 manufacture:
-  - name: STR_FAKE_AGENT_IDS
+  - name: STR_FAKE_AGENT_ID
     category: STR_COVERT_TOOLS
     requires:
       - STR_MONSTER_HUNT_START

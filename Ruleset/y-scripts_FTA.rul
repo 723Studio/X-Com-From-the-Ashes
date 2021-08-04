@@ -1313,7 +1313,7 @@ extended:
 
           # Check which damage type and set shield's 'resistance'
           #Skip shield code for special, choke (smoke), EMP, Electric, Psi, Warp, 
-          if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
+          if or eq damaging_type 0 eq damaging_type 6 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
             if or eq damaging_type 12 eq damaging_type 13 eq damaging_type 14 eq damaging_type 15;
               return power part side;
             end;
@@ -1331,12 +1331,10 @@ extended:
           # Default resistances for all physical shields
           if eq damaging_type 3; # Explosive
             set shieldResistCoeff 90;
-          else eq damaging_type 6; # Daze
-            set shieldResistCoeff 80;
           else eq damaging_type 7; # Cutting
-            set shieldResistCoeff 90;
+            set shieldResistCoeff 85;
           else eq damaging_type 8; # Acid
-            set shieldResistCoeff 90;
+            set shieldResistCoeff 120;
           else; # All other damage types
             set shieldResistCoeff 100;
           end;
