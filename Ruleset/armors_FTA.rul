@@ -22,7 +22,7 @@ armors:
       psiSkill: 0.2
       moraleCurrent: 0.33
       bravery: 0.2
-    hackingDefense: 0
+    hackingDefense: 1
     recovery:
       mana:
         flatHundred: 0.1
