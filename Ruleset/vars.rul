@@ -139,6 +139,8 @@ reputationLevels:
    -750: STR_HOSTILE
    -1500: STR_HATED
 
+reputationBreakthroughValue: 500 #actually, it's default value, might be changed later
+
 fixedUserOptions:
   customInitialBase: false
   storageLimitsEnforced: false
