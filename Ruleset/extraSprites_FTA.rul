@@ -670,7 +670,7 @@ extraSprites:
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/ufopedia_MIB_BUTCHER_CPAL.png
+      0: Resources/UfopediaPics/Enemies/ufopedia_MIB_BUTCHER_CPAL.png
 
   - type: UFOPEDIA_SEEKER_DRONE_CPAL
     singleImage: true
@@ -846,6 +846,10 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Enemies/Zombies/FACEHUGGER.png
+  - type: inventory_FACEHUGGER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Zombies/inventory_FACEHUGGER.png
   - type: ZOMBIE_STERILE.PCK
     subX: 32
     subY: 40

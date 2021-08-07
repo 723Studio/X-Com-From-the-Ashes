@@ -66,6 +66,7 @@ extended:
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
       FTAG_EXPANDING: int
       FTAG_SAWED_OFF: int
+      BPL_AIMED_1_5X_POWER: int
     RuleArmor: # Remember to add tag definitions to same file as item/armor rulesets!
       #psi shield (mana-dependent mechanic)
       ARMOR_PSI_SHIELD_TYPE: int #0 - default, no shield, 1 - usual psi shield
@@ -680,6 +681,17 @@ extended:
           return bonus;
 
     hitUnit:
+      - offset: 5
+        code: |
+          var int temp;
+          if eq battle_action battle_action_aimshoot;
+            weapon_item.getTag temp Tag.BPL_AIMED_1_5X_POWER;
+            if neq temp 0;
+              mul power 1.5;
+            end;
+          end;
+          return power part side;
+
       - offset: 10    # Anti-psiker weapon
         code: |
           var ptr RuleItem itemRuleset;

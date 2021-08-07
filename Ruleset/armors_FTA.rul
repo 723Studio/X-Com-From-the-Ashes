@@ -363,9 +363,9 @@ armors:
 #Zombies
   - type: STR_FACEHUGGER_ARMOR
     spriteSheet: FACEHUGGER.PCK
-    spriteInv: inventory_ZOMBIE # TODO # replace dummy
+    spriteInv: inventory_FACEHUGGER
     corpseBattle:
-      - STR_FACEHUGGER_CORPSE #TODO
+      - STR_FACEHUGGER_CORPSE
     visibilityAtDark: 16
     heatVision: 30
     psiDefence: *StandardDynamicPsiDefence
