@@ -15,9 +15,14 @@ events:
     timer: 210
     timerRandom: 60
     researchList: [STR_ENGINEER_STATUS_REPORT]
+  - name: STR_QUARTERMASTER_STATUS_REPORT_EVENT
+    description: STR_QUARTERMASTER_STATUS_REPORT_EVENT_DESCRIPTION
+    timer: 400
+    timerRandom: 60
+    researchList: [STR_QUARTERMASTER_STATUS_REPORT]
   - name: STR_MILITARY_STATUS_REPORT_EVENT
     description: STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION
-    timer: 400
+    timer: 600
     timerRandom: 90
     researchList: [STR_MILITARY_STATUS_REPORT]
   - name: STR_VEHICLES_STATUS_REPORT_EVENT
@@ -27,8 +32,20 @@ events:
     researchList: [STR_VEHICLES_STATUS_REPORT]
   - name: STR_MONSTER_HUNT_START_EVENT
     description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
-    timer: 12960 # 9 days
+    timer: 15840 # 11 days
     timerRandom: 2880 # 2 days
+    customAnswers:
+      0:
+        title: STR_WE_DONT_NEED_THAT
+        #spawnEvent: [STR_ANSWER1_EVENT]
+      1:
+        title: STR_CONTINUE_INVESTIGATION
+        spawnEvent: [STR_MONSTER_HUNT_START_EVENT_YES]
+        #description: "STR_SOME_WISE_WORDS"
+  - name: STR_MONSTER_HUNT_START_EVENT_YES
+    description: STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION
+    timer: 0
+    timerRandom: 0
     researchList: [STR_MONSTER_HUNT_START_PREREQ]
   - name: STR_NO_SUPPLY_WARNING_EVENT
     description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION
@@ -105,27 +122,90 @@ events:
   - name: STR_RESISTANCE_DISCOVER
     description: STR_RESISTANCE_DISCOVER_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
-  - name: STR_RESCUED_RESISTANCE
-    description: STR_RESCUED_RESISTANCE_DESCRIPTION
+
+  - name: STR_RESCUED_RESISTANCE_1
+    description: STR_RESCUED_AGENT_DESCRIPTION_1
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
-      STR_RESISTANCE: 100
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_2
+    description: STR_RESCUED_AGENT_DESCRIPTION_2
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_3
+    description: STR_RESCUED_AGENT_DESCRIPTION_3
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_4
+    description: STR_RESCUED_AGENT_DESCRIPTION_4
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_5
+    description: STR_RESCUED_AGENT_DESCRIPTION_5
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_RESCUED_RESISTANCE_6
+    description: STR_RESCUED_AGENT_DESCRIPTION_6
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: 80
+  - name: STR_NOT_RESCUED_RESISTANCE_1
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_1
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_2
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_2
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_3
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_3
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_4
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_4
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_5
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_5
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+  - name: STR_NOT_RESCUED_RESISTANCE_6
+    description: STR_NOT_RESCUED_AGENT_DESCRIPTION_6
+    researchList: [STR_RESISTANCE_FIRST_HELP]
+    reputationScore:
+      STR_RESISTANCE: -110
+
   - name: STR_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
     researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: 130
-  - name: STR_NOT_RESCUED_RESISTANCE
-    description: STR_RESCUED_RESISTANCE_DESCRIPTION
-    researchList: [STR_RESISTANCE_FIRST_HELP]
-    reputationScore:
-      STR_RESISTANCE: -150
   - name: STR_NOT_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
     researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: -200
-
+  - name: STR_RESCUED_SCIENTISTS_TELESCOPE
+    description: STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
+    researchList: [STR_DESERT_TELESCOPE]
+    loyalty: 150
+    reputationScore:
+      STR_RESISTANCE: 180
+  - name: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE
+    description: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
+    researchList: [STR_DESERT_TELESCOPE]
+    loyalty: -200
+    reputationScore:
+      STR_RESISTANCE: -300
 
 #xcom
   - name: STR_SPORTS_BOW_TINKERING

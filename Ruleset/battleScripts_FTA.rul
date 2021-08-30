@@ -1,5 +1,5 @@
 battleScripts:
-  - type: ZOMBIE_ATTACK
+  - type: ZOMBIE_ATTACK_RESISTANCE_FARM
     commands:
     - type: spawnUnit #for low diff
       packSize: 4
@@ -101,6 +101,93 @@ battleScripts:
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
 
+  - type: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
+    commands:
+    - type: spawnUnit #for low diff
+      executionChances: 80
+      label: 1
+      maxDifficulty: 3
+      startTurn: 3
+      endTurn: 6
+      packSize: 4
+      randomPackSize: false
+      unitSide: 1
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #random additional continues
+      executionChances: 30
+      conditionals: 1
+      packSize: 4
+      randomPackSize: true
+      unitSide: 1
+      startTurn: 2
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #high diff
+      executionChances: 95
+      label: 1
+      maxDifficulty: 3
+      startTurn: 3
+      endTurn: 6
+      packSize: 6
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 3
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #extra SH gift
+      executionChances: 10
+      packSize: 6
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 4
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+
+  - type: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
+    commands:
+    - type: spawnUnit #for low diff
+      executionChances: 100
+      #label: 1
+      maxDifficulty: 3
+      startTurn: 5
+      #endTurn: 9
+      packSize: 4
+      randomPackSize: false
+      unitSide: 1
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #random additional continues
+      executionChances: 30
+      #conditionals: 1
+      packSize: 4
+      randomPackSize: true
+      unitSide: 1
+      startTurn: 6
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #high diff
+      executionChances: 100
+      #label: 1
+      maxDifficulty: 3
+      startTurn: 4
+      #endTurn: 8
+      packSize: 6
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 3
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #extra SH gift
+      executionChances: 15
+      startTurn: 4
+      packSize: 8
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 4
+      spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+
   - type: MIB_ATTACK_SCIENTIST
     commands:
     - type: spawnUnit #for low diff start
@@ -108,7 +195,8 @@ battleScripts:
       packSize: 4
       randomPackSize: true
       executions: 2
-      endTurn: 2
+      startTurn: 3
+      endTurn: 5
       unitSide: 1
       maxDifficulty: 2
       groups: [0, 2, 3, 4]
@@ -116,7 +204,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #for low diff continue
       executionChances: 40
-      startTurn: 3
+      startTurn: 5
       packSize: 4
       randomPackSize: true
       unitSide: 1
@@ -126,6 +214,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #random additional
       executionChances: 30
+      startTurn: 4
       packSize: 3
       randomPackSize: false
       unitSide: 1
@@ -136,7 +225,8 @@ battleScripts:
       executionChances: 85
       packSize: 5
       randomPackSize: true
-      endTurn: 2
+      startTurn: 3
+      endTurn: 5
       unitSide: 1
       minDifficulty: 3
       groups: [0, 2, 3, 4]
@@ -144,7 +234,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #for high diff cont
       executionChances: 40
-      startTurn: 3
+      startTurn: 5
       packSize: 6
       randomPackSize: true
       unitSide: 1
@@ -154,30 +244,33 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #extra SH gift
       executionChances: 20
-      packSize: 3
+      startTurn: 3
+      packSize: 4
       randomPackSize: false
       unitSide: 1
       minDifficulty: 4
       groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #extra SH gift
       executionChances: 10
+      startTurn: 3
       packSize: 8
       randomPackSize: false
       unitSide: 1
       minDifficulty: 4
       groups: [0, 2, 3, 4]
       spawnBlocks: ["N", W, S, E, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: showMessage
-      maxRuns: 1
-      variable: showMessage
+      executions: 1
       endTurn: 1
       messages:
         0:
           title: STR_RECOVER_RESEARCH_LOGS_TITLE
           content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+
+
   - type: MIB_TRAP_ESCAPE_EARLY
     commands:
     - type: spawnUnit #easy
@@ -215,13 +308,7 @@ battleScripts:
       spawnBlocks: ["N", W, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
 
-    # - type: showMessage #TODO uncomment
-    #   executions: 1 #not working yet :]
-    #   endTurn: 1
-    #   messages:
-    #     0:
-    #       title: STR_RECOVER_RESEARCH_LOGS_TITLE
-    #       content: STR_RECOVER_RESEARCH_LOGS_CONTENT
+
 
   - type: STR_LOCALS_TRAP_BAT_SCRIPT
     commands:
@@ -284,3 +371,4 @@ battleScripts:
       randomPackSize: true
       unitSide: 1
       unitSet: [STR_XCOM_EX_COMMANDER]
+

@@ -18,11 +18,14 @@ diplomacyFactions:
       #STR_SOLDIER: 10
       #STR_SCIENTIST: 12
       #STR_SKYRANGER: 1
-    genMissionFreq: 80 #80% chance to run the script
+    genMissionFreq: 60 #60% chance to run the script
     helpTreatyMissions:
-      - heavenDefenceFirstTime
-      - heavenDefenceContinues
+      - heavenZombieFarm
+      - heavenForestHouse
+      - heavenUrbanHideout
       - resistanceScientist
+      - desertTelescope
+    helpTreatyGap: 5
     genEventFreq: 100
     # helpTreatyEventScripts:
     #    - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT

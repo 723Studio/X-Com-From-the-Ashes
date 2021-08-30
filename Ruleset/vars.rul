@@ -1,5 +1,5 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
-
+ironManEnabled: false
 #Campaign
 startingTime:
   second: 34
@@ -92,7 +92,7 @@ ai:
   fireChoiceAggroCoeff: 3 # Aggression doesn't matter as much (default 5)
 
 constants:
-  extendedItemReloadCost: true
+  extendedItemReloadCost: false #to consider, but with true bow is unplayable
   extendedRunningCost: true
   damageRange: 80 #for good or bad
   extendedTerrainMelee: 4
@@ -130,7 +130,8 @@ loyaltyRatings:
    250: STR_L_RATING_OK
    0: STR_L_RATING_MEH
    -350: STR_L_RATING_BAD
-   -99999: STR_L_RATING_TERRIBLE
+   -800: STR_L_RATING_BAD
+   -1500: STR_L_RATING_TERRIBLE
 
 reputationLevels:
    2000: STR_ALLY
@@ -140,6 +141,8 @@ reputationLevels:
    -350: STR_UNFRIENDLY
    -750: STR_HOSTILE
    -1500: STR_HATED
+
+reputationBreakthroughValue: 500 #actually, it's default value, might be changed later
 
 fixedUserOptions:
   customInitialBase: false
@@ -161,6 +164,7 @@ fixedUserOptions:
   weaponSelfDestruction: false
   oxceLinks: true
   oxceUpdateCheck: false
+  noAlienPanicMessagesL: true
 
 recommendedUserOptions:
   playIntro: true

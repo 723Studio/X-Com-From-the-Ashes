@@ -38,7 +38,7 @@ startingBase:
     STR_POLICE_BATON: 3
     STR_COMBAT_KNIFE: 2
     STR_TASER: 2
-    STR_TASER_CLIP: 6
+    STR_TASER_CLIP: 16
     STR_PISTOL: 4
     STR_PISTOL_CLIP: 13
     STR_PDW: 2
@@ -71,7 +71,7 @@ startingBase:
     STR_SMOKE_GRENADE: 5
     STR_FLASHBANG_GRENADE: 6
     STR_TRAUMA_PACK: 2
-    STR_IFAK: 8
+    STR_PERSONAL_AID_KIT: 8
     STR_STIMS_INJECTOR: 6
     STR_COMBAT_SHIELD: 2
     STR_STINGRAY_LAUNCHER: 1
@@ -84,7 +84,7 @@ startingBase:
       fuel: 0
       damage: 10
       status: STR_REPAIRS
-    - type: STR_RAZOR
+    - type: STR_STALKER
       id: 1
       fuel: 0
       damage: 8

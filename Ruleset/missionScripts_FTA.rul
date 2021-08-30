@@ -44,9 +44,9 @@ missionScripts:
 
 
 #resistance
-  - type: heavenDefenceFirstTime
+  - type: heavenZombieFarm
     firstMonth: 0
-    executionOdds: 50
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
@@ -57,36 +57,56 @@ missionScripts:
     raceWeights:
       0:
         STR_ZOMBIES: 100
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: false
     useTable: false
-    spawnGap: 21
-    randomSpawnGap: 5
-    startDelay: 5760
-    randomDelay: 2880
-  - type: heavenDefenceContinues
-    firstMonth: 0
-    executionOdds: 10
-    allowedProcessor: 1
-    missionWeights:
-      0:
-        STR_RESISTANCE_HEAVEN_DEFENCE: 100
-    regionWeights:
-      0:
-        RESISTANCE_START_ZONE: 100
-    raceWeights:
-      0:
-        STR_ZOMBIES: 100
-    researchTriggers:
-      STR_RESISTANCE_FIRST_HELP: true
-    useTable: false
-    spawnGap: 60
+    spawnGap: 70
     randomSpawnGap: 15
-    startDelay: 1200
+    startDelay: 4320
     randomDelay: 43500
+    avoidRepeats: 1
+    varName: heavenDefence
+  - type: heavenForestHouse
+    firstMonth: 0
+    executionOdds: 20
+    allowedProcessor: 1
+    missionWeights:
+      0:
+        STR_RESISTANCE_FOREST_HOUSE: 100
+    regionWeights:
+      0:
+        RESISTANCE_FOREST_HOUSE_START_ZONE: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    useTable: false
+    spawnGap: 70
+    randomSpawnGap: 15
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: heavenDefence
+  - type: heavenUrbanHideout
+    firstMonth: 0
+    executionOdds: 20
+    allowedProcessor: 1
+    missionWeights:
+      0:
+        STR_RESISTANCE_URBAN_HIDEOUT: 100
+    regionWeights:
+      0:
+        STR_RESISTANCE_URBAN_HIDEOUT: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    useTable: false
+    spawnGap: 70
+    randomSpawnGap: 15
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: heavenDefence
   - type: resistanceScientist
     firstMonth: 0
-    executionOdds: 15
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
@@ -100,7 +120,31 @@ missionScripts:
     researchTriggers:
       STR_RESISTANCE_SCIENTIST: false
     useTable: false
-    spawnGap: 80
-    randomSpawnGap: 20
-    startDelay: 14400
-    randomDelay: 5760
+    spawnGap: 70
+    randomSpawnGap: 15
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: heavenDefence
+  - type: desertTelescope
+    firstMonth: 2
+    executionOdds: 20
+    allowedProcessor: 1
+    missionWeights:
+      0:
+        STR_DESERT_TELESCOPE_MISSION: 100
+    regionWeights:
+      0:
+        DESERT_TELESCOPE: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    researchTriggers:
+      STR_DESERT_TELESCOPE: false
+    useTable: false
+    spawnGap: 85
+    randomSpawnGap: 15
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: heavenDefence

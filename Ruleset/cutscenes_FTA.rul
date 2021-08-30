@@ -48,7 +48,7 @@ cutscenes:
         - imagePath: Resources/Slides/MiB_Chasing/mib_chasing1_CPAL.png
           caption: STR_MIB_CHASING_SLIDE1_CAPTION
           captionSize: [314, 192]
-          captionPos: [3, 65]
+          captionPos: [5, 5]
           captionColor: 244
         - imagePath: Resources/Slides/MiB_Chasing/mib_chasing2_CPAL.png
           caption: STR_MIB_CHASING_SLIDE2_CAPTION

@@ -30,30 +30,29 @@ facilities:
     monthlyCost: 5000 #20000
     canBeBuiltOver: true
     storage: 10
-    storageTiles: 
-     - [8, 8, 0]
+    storageTiles: [[-1, -1, -1]]
     labs: 7
     manaRecoveryPerDay: 1
     rightClickActionType: 3
     radarRange: 10800
-    radarChance: 100 #2
+    radarChance: 2
     mapName: XBASF_01
     listOrder: 6830
   - type: STR_BIOLAB
     spriteShape: 1
     spriteFacility: 305
     provideBaseFunc: [BIOLAB, SURGERY]
-    maxAllowedPerBase: 1
+    #maxAllowedPerBase: 1
     requires:
       - STR_BIOLAB
     buildCostItems:
      STR_LABORATORY_EQUIPMENT:
        build: 2
-       refund: 1
+       refund: 2
      STR_BIOLOGY_EQUIPMENT:
        build: 1
        refund: 1         
-    buildCost: 620000
+    buildCost: 740000
     buildTime: 20
     monthlyCost: 25000
     labs: 5
@@ -70,6 +69,7 @@ facilities:
     monthlyCost: 8000
     aliens: 10
     prisonType: 1
+    labs: 1
     storage: 3
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
@@ -80,7 +80,7 @@ facilities:
     spriteFacility: 306
     requires:
       - STR_CREATURES_CONTAINMENT
-    buildCost: 230000
+    buildCost: 450000
     buildTime: 20
     monthlyCost: 10000
     aliens: 10
@@ -152,7 +152,7 @@ facilities:
     buildTime: 16
     monthlyCost: 10000
     personnel: 50
-    manaRecoveryPerDay: 5
+    #manaRecoveryPerDay: 5
     storage: 10
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 6
@@ -198,11 +198,11 @@ facilities:
     buildCostItems:
      STR_LABORATORY_EQUIPMENT:
        build: 5
-       refund: 4
+       refund: 5
     buildCost: 750000
     buildTime: 26
     monthlyCost: 30000
-    labs: 50
+    labs: 20
     mapName: XBASE_02
   - type: STR_WORKSHOP
     spriteShape: 1

@@ -64,6 +64,9 @@ extended:
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
+      FTAG_EXPANDING: int
+      FTAG_SAWED_OFF: int
+      BPL_AIMED_1_5X_POWER: int
     RuleArmor: # Remember to add tag definitions to same file as item/armor rulesets!
       #psi shield (mana-dependent mechanic)
       ARMOR_PSI_SHIELD_TYPE: int #0 - default, no shield, 1 - usual psi shield
@@ -77,6 +80,8 @@ extended:
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
     BattleUnit:
       #psi-shield
+      UNIT_PSI_SHIELD_TYPE: int
+      #energy shield
       UNIT_ENERGY_SHIELD_HP: int
       UNIT_RECOLOR_DESYNC: int
       UNIT_RECOLOR_COLOR: int
@@ -146,6 +151,36 @@ extended:
           end;
 
           unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldCapacity;
+
+          return;
+      
+      - offset: 2.1   # Set psi shields as battle unit tag at beginning of the battle
+        code: |
+          var ptr RuleArmor armorRuleset;
+          var int shieldType;
+          var int color;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag shieldType Tag.ARMOR_PSI_SHIELD_TYPE;
+
+          if eq shieldType 0;
+            return;
+          end;
+
+          unit.setTag Tag.UNIT_PSI_SHIELD_TYPE shieldType;
+
+          if eq shieldType 1;
+            set color COLOR_X1_PURPLE1; #value 12
+          else eq shieldType 2;
+            set color COLOR_X1_PURPLE0; #value 11
+          end;
+
+          if eq color 0;
+            set color COLOR_X1_BLUE1; # Default color is bright blue
+          end;
+          unit.setTag Tag.UNIT_RECOLOR_COLOR color;
+
+          debug_log "Psionic shield is activated for unit, with type: " unit shieldType;
 
           return;
 
@@ -235,6 +270,7 @@ extended:
           unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldHp;
 
           return;
+          # psi shields regeneration handled with mana engine code =)
 
       - offset: 4     # Handle flashbang ongoing check script
         code: |
@@ -563,6 +599,20 @@ extended:
 
           return bonus;
 
+      - offset: 30    # Handle expanding ammo accuracy additional logic
+        code: |
+          var int weaponState;
+          var int clipState;
+
+          weapon.getTag weaponState Tag.FTAG_EXPANDING;
+          ammo.getTag clipState Tag.FTAG_EXPANDING;
+
+          if lt weaponState clipState;
+            sub bonus 10; #our weapon cant handle expanding clips!
+          end;
+
+          return bonus;
+
     throwMultiplierBonusStats:
       - offset: 10    # Handle utility specialist throwing effect
         code: |
@@ -631,13 +681,24 @@ extended:
           return bonus;
 
     hitUnit:
+      - offset: 5
+        code: |
+          var int temp;
+          if eq battle_action battle_action_aimshoot;
+            weapon_item.getTag temp Tag.BPL_AIMED_1_5X_POWER;
+            if neq temp 0;
+              mul power 1.5;
+            end;
+          end;
+          return power part side;
+
       - offset: 10    # Anti-psiker weapon
         code: |
           var ptr RuleItem itemRuleset;
           var int addPower;
           var int psiStrength;
 
-          damaging_item.getRuleItem itemRuleset; #get stats from item
+          weapon_item.getRuleItem itemRuleset; #get stats from item
           itemRuleset.getTag addPower Tag.FTAG_TOPSIKER_ADD_POWER;
 
           if neq addPower 0;
@@ -646,6 +707,24 @@ extended:
             
             div addPower 100;
             add power addPower;
+          end;
+
+          return power part side;
+
+      - offset: 10    # Sawed-off power nerf
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int coeff;
+
+          weapon_item.getRuleItem itemRuleset; #get stats from item
+          itemRuleset.getTag coeff Tag.FTAG_SAWED_OFF;
+          debug_log "coeff: " coeff;
+          debug_log "weapon_item: " weapon_item;
+
+          if neq coeff 0;
+            debug_log "Ops, its Sawed-Off, power drop from: " power;
+            muldiv power coeff 100;
+            debug_log "New power value: " power;
           end;
 
           return power part side;
@@ -1096,7 +1175,126 @@ extended:
 
           return power part side;
 
-      - offset: 23    # Arm shield thing
+      - offset: 22    # Handle psi shields hit event
+        code: |
+          var ptr RuleArmor armorRuleset;
+          var int mana;
+          var int shieldType;
+          var int shieldResistCoeff;
+          var int color;
+          var int temp;
+
+          unit.getTag shieldType Tag.UNIT_PSI_SHIELD_TYPE;
+
+          if eq shieldType 0;
+            return power part side;
+          end;
+
+          unit.getMana mana;
+
+          if eq mana 0;
+            return power part side;
+          end;
+
+          debug_log "We hit psionic shield with type, unit's mana, original power: " shieldType mana power;
+
+          unit.getRuleArmor armorRuleset;
+
+          if or eq shieldType 1; # Default psionic type, purple
+            # Check which damage type and set shield's 'resistance'
+            # If it's special, choking, warp, pressure or bio just skip the rest
+            if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 13 eq damaging_type 14 eq damaging_type 15;
+              return power part side;
+
+            # resistances
+            else eq damaging_type 1; # AP
+              set shieldResistCoeff 50;
+            else eq damaging_type 2; # Incendiary
+              set shieldResistCoeff 50;
+            else eq damaging_type 3; # Hi-Ex
+              set shieldResistCoeff 60;
+            else eq damaging_type 5; # Laser
+              set shieldResistCoeff 125;
+            else eq damaging_type 5; # Plasma
+              set shieldResistCoeff 150;
+            else eq damaging_type 6; # Stun
+              set shieldResistCoeff 50;
+            else eq damaging_type 7; # Melee
+              set shieldResistCoeff 85;
+            else eq damaging_type 8; # Acid
+              set shieldResistCoeff 175;
+            else eq damaging_type 11; # Electric
+              set shieldResistCoeff 100;
+            else eq damaging_type 12; # Psi
+              set shieldResistCoeff 300;
+            else; # All other damage types
+              set shieldResistCoeff 100;
+            end;
+
+          else eq shieldType 2; # Extra shield type, for future use
+            if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 14;
+              return power part side;
+
+            # resistances
+            else eq damaging_type 1; # AP
+              set shieldResistCoeff 175;
+            else eq damaging_type 2; # Incendiary
+              set shieldResistCoeff 175;
+            else eq damaging_type 3; # Hi-Ex
+              set shieldResistCoeff 175;
+            else eq damaging_type 4; # Laser
+              set shieldResistCoeff 33;
+            else eq damaging_type 5; # Plasma
+              set shieldResistCoeff 125;
+            else eq damaging_type 6; # Stun
+              set shieldResistCoeff 50;
+            else eq damaging_type 7; # Melee
+              set shieldResistCoeff 125;
+            else eq damaging_type 8; # Acid
+              set shieldResistCoeff 50;
+            else eq damaging_type 10; # EMP
+              set shieldResistCoeff 66;
+            else eq damaging_type 11; # Electric
+              set shieldResistCoeff 66;
+            else; # All other damage types
+              set shieldResistCoeff 100;
+            end;
+
+          end;
+
+          # Get the item's HP value and reduce damage by it
+          # Modify shield hp value by resistance to get effective HP
+          debug_log "shieldResistCoeff: " shieldResistCoeff;
+          muldiv mana 100 shieldResistCoeff;
+          set temp mana;
+
+          debug_log "Effective mana: " temp;
+
+          sub temp power; # get shield value leftover after hit
+          sub power mana; # reduce hit by hp
+
+          # Return shield to pre-resistance units
+          muldiv temp shieldResistCoeff 100;
+
+          # Apply limits to make sure no negative power/HP
+          limit_lower power 0;
+          limit_lower temp 0;
+
+          unit.setMana temp;
+
+          debug_log "Power reduced to: " power;
+          debug_log "Unit's mana now: " temp;
+
+          # Make the unit flash a color to denote shield was hit
+          if and gt temp 0 eq power 0; # But only if shield is left over
+            battle_game.getAnimFrame temp;
+            unit.setTag Tag.UNIT_RECOLOR_START_FRAME temp;
+            unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 3;
+          end;
+
+          return power part side;
+
+      - offset: 23    # Physical arm shield thing
         code: |
           var ptre BattleItem shieldItem;
           var ptr RuleItem damagingRuleset;
@@ -1126,8 +1324,9 @@ extended:
           end;
 
           # Check which damage type and set shield's 'resistance'
-          if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
-            if or eq damaging_type 12 eq damaging_type 14 eq damaging_type 15;
+          #Skip shield code for special, choke (smoke), EMP, Electric, Psi, Warp, 
+          if or eq damaging_type 0 eq damaging_type 6 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
+            if or eq damaging_type 12 eq damaging_type 13 eq damaging_type 14 eq damaging_type 15;
               return power part side;
             end;
           end;
@@ -1144,12 +1343,10 @@ extended:
           # Default resistances for all physical shields
           if eq damaging_type 3; # Explosive
             set shieldResistCoeff 90;
-          else eq damaging_type 6; # Daze
-            set shieldResistCoeff 80;
           else eq damaging_type 7; # Cutting
-            set shieldResistCoeff 90;
-          else eq damaging_type 7; # Chem
-            set shieldResistCoeff 90;
+            set shieldResistCoeff 85;
+          else eq damaging_type 8; # Acid
+            set shieldResistCoeff 120;
           else; # All other damage types
             set shieldResistCoeff 100;
           end;
@@ -1187,6 +1384,7 @@ extended:
           shieldItem.setAmmoQuantity hp;
           # Don't forget to add ToArmorPre in the end!
           add power toArmorPre;
+
           return power part side;
 
       - offset: 38    # Handle aim reset
@@ -1641,7 +1839,7 @@ extended:
 
           return new_pixel;
 
-      #*** Handles periodic recolors due to energy shields on units ***
+      #*** Handles periodic recolors due to energy or psi shields on units ***
       - offset: 1
         code: |
           var int frame;
@@ -1651,6 +1849,8 @@ extended:
           var int color;
           var int newShade;
           var int temp;
+          var int psiShield;
+          var int mana;
           var ptr RuleArmor armorRuleset;
 
           # Check to make sure this unit isn't set to be recolored by a hit first
@@ -1681,10 +1881,22 @@ extended:
           # First, a blue flash if the unit has an energy shield
           unit.getTag temp Tag.UNIT_ENERGY_SHIELD_HP;
 
+          if eq temp 0;
+            unit.getTag psiShield Tag.UNIT_PSI_SHIELD_TYPE;
+            if gt psiShield 0;
+              unit.getMana mana;
+              set temp mana;
+            end;
+          end;
+
           if and neq temp 0 lt frame frameLength;
 
             unit.getRuleArmor armorRuleset;
             armorRuleset.getTag color Tag.ARMOR_ENERGY_SHIELD_FLASH_COLOR;
+
+            if and eq color 0 gt psiShield 0;
+              unit.getTag color Tag.UNIT_RECOLOR_COLOR;
+            end;
 
             if eq color 0;
 

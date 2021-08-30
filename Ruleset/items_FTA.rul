@@ -239,6 +239,7 @@ items:
     handSprite: 576
     bulletSprite: 23
     fireSound: 110
+    reloadSound: 117
     compatibleAmmo:
       - STR_BOW_ARROW
       - STR_BOW_ARROW_HE
@@ -279,7 +280,7 @@ items:
     bigSprite: 372
     floorSprite: 372
     handSprite: 584
-    hitSound: 109
+    hitSound: 118 #109
     hitAnimation: 26
     power: 25
     damageType: 7
@@ -331,7 +332,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 375
-    hitSound: 109
+    hitSound: 118
     hitAnimation: 26
     damageAlter:
       RandomType: 2
@@ -344,23 +345,23 @@ items:
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 377
-    hitSound: 54
+    hitSound: 119
     hitAnimation: 56
-    blastRadius: 0
     power: 25
-    damageType: 11
+    damageType: 1
     damageAlter:
+      ResistType: 11 #pretends to be electric damage
       ToHealth: 0.1
       ToStun: 1.0
       ToArmor: 0.0
+      ToArmorPre: 0.5
       ToWound: 0.0
       RandomStun: false
       IgnorePainImmunity: true
       IgnoreSelfDestruct: true
       RandomType: 2
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.1
-      ToTile: 0.0
+      IgnoreDirection: true
+      ToTile: 0.1
     listOrder: 17630
 
 #pistols
@@ -382,14 +383,17 @@ items:
       - STR_TASER_CLIP
     accuracyCloseQuarters: 133
     accuracyAimed: 75
-    tuAimed: 27
+    tuAimed: 35
     battleType: 1
     twoHanded: false
     invWidth: 1
     invHeight: 2
     armor: 20
-    maxRange: 5
+    kneelBonus: 100 #no kneel bonus
+    maxRange: 10
+    aimRange: 5
     powerRangeReduction: 999
+    powerRangeThreshold: 9
     experienceTrainingMode: 4
     attraction: 15
     listOrder: 18900
@@ -422,7 +426,7 @@ items:
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
       ToTile: 0.0
-    clipSize: 2
+    clipSize: 1
     battleType: 2
     armor: 20
     attraction: 15
@@ -851,7 +855,7 @@ items:
     accuracySnap: 70
     accuracyAimed: 90
     tuAuto: 32
-    tuSnap: 24
+    tuSnap: 22
     tuAimed: 45
     costThrow:
       energy: 12
@@ -976,6 +980,7 @@ items:
     fireSound: 64 #mb 4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
+      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 55
@@ -1030,6 +1035,8 @@ items:
     autoRange: 11
     attraction: 8
     listOrder: 21300
+    tags:
+      FTAG_EXPANDING: 1
   - type: STR_PRECISION_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
@@ -1046,6 +1053,7 @@ items:
     fireSound: 64 #4?
     compatibleAmmo:
       - STR_RIFLE_CLIP
+      - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 35
@@ -1110,6 +1118,8 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 21310
+    tags:
+      FTAG_EXPANDING: 1
   - type: STR_RIFLE_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     size: 0.02
@@ -1127,6 +1137,8 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 21320
+
+
 #sniper rifles
   - type: STR_HUNTING_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
@@ -1298,12 +1310,14 @@ items:
     autoShots: 2
     battleType: 1
     shotgunChoke: 100
-    kneelBonus: 110
+    kneelBonus: 100
     invWidth: 1
     invHeight: 2
     armor: 40
     attraction: 7
     listOrder: 22459
+    tags:
+      FTAG_SAWED_OFF: 85
   - type: STR_DOUBLE_BARRELED
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     landOnly: true
@@ -1449,44 +1463,6 @@ items:
     bulletSpeed: 2
     attraction: 7
     listOrder: 22450
-  - type: STR_SEMI_AUTO_SHOTGUN
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
-    requiresBuy:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
-    size: 0.2
-    costBuy: 9800
-    costSell: 1800
-    weight: 13
-    landOnly: true
-    bigSprite: 321
-    floorSprite: 321
-    handSprite: 296
-    bulletSprite: 3
-    fireSound: 66 #63 - xcf
-    compatibleAmmo:
-      - STR_SHOTGUN_SHELLS_BS
-      - STR_SHOTGUN_SHELLS_AP
-      - STR_SHOTGUN_SHELLS_BATON
-      - STR_SHOTGUN_SHELLS_BS_AA
-      - STR_SHOTGUN_SHELLS_AP_AA
-    accuracyCloseQuarters: 100
-    accuracySnap: 135
-    accuracyAimed: 155
-    tuSnap: 36
-    tuAimed: 68
-    aimRange: 14
-    snapRange: 8
-    dropoff: 6
-    tuLoad: 35
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    shotgunChoke: 100
-    invWidth: 1
-    invHeight: 3
-    armor: 40
-    attraction: 8
-    listOrder: 22520
   - type: STR_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
@@ -1496,8 +1472,8 @@ items:
     costSell: 7300
     weight: 12
     landOnly: true
-    bigSprite: 327
-    floorSprite: 327
+    bigSprite: 321
+    floorSprite: 321
     handSprite: 296
     bulletSprite: 3
     fireSound: 66
@@ -1525,6 +1501,45 @@ items:
     armor: 40
     attraction: 8
     listOrder: 22530
+  - type: STR_SEMI_AUTO_SHOTGUN
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.2
+    costBuy: 9800
+    costSell: 1800
+    weight: 13
+    landOnly: true
+    bigSprite: 401
+    floorSprite: 401
+    handSprite: 712
+    bulletSprite: 3
+    fireSound: 66 #63 - xcf
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS_BS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_BATON
+      - STR_SHOTGUN_SHELLS_BS_AA
+      - STR_SHOTGUN_SHELLS_AP_AA
+    accuracyCloseQuarters: 100
+    accuracySnap: 135
+    accuracyAimed: 155
+    tuSnap: 36
+    tuAimed: 68
+    aimRange: 14
+    snapRange: 8
+    dropoff: 6
+    tuLoad: 35
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 8
+    listOrder: 22520
+
   - type: STR_SHOTGUN_SHELLS_BS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
@@ -1653,18 +1668,26 @@ items:
     invWidth: 2
     invHeight: 3
     accuracyCloseQuarters: 35
-    accuracyAimed: 90
-    tuAimed: 40
-    tuLoad: 25
+    accuracyAimed: 85
+    accuracySnap: 80
+    tuAimed: 70
+    tuSnap: 62
+    tuLoad: 45
+    confAimed:
+      spendPerShot: 2        # 2x battery consumption for 1.5x power
+      name: STR_OVERCHARGED_SHOT
+    confSnap:
+      name: STR_AIMED_SHOT    
     battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 65
+    blockBothHands: true
     armor: 18
-    maxRange: 10
+    maxRange: 15
     powerRangeReduction: 30
     experienceTrainingMode: 4
     attraction: 24
     listOrder: 18916
+    tags:
+      BPL_AIMED_1_5X_POWER: 1
   - type: STR_TASER_CANNON_CLIP
     categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     landOnly: true
@@ -1675,14 +1698,14 @@ items:
     floorSprite: 399
     handSprite: 696
     hitSound: 54 #
-    hitAnimation: 56 #
+    hitAnimation: 56
     invWidth: 2
     invHeight: 2
     blastRadius: 0
     power: 65
     damageType: 11
     damageAlter:
-      ToHealth: 0.05
+      ToHealth: 0.1
       ToStun: 1.12
       ToArmor: 0.0
       ToWound: 0.0
@@ -1693,8 +1716,8 @@ items:
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 0.7
-      ToTile: 0.0
-    clipSize: 2
+      ToTile: 0.1
+    clipSize: 3
     battleType: 2
     armor: 16
     attraction: 15
@@ -2382,7 +2405,6 @@ items:
     autoRange: 20
     autoShots: 16
     sprayWaypoints: 2
-    bulletSpeed: -30
     kneelBonus: 200
     attraction: 26
     listOrder: 30780
@@ -2409,7 +2431,7 @@ items:
     armor: 30
     invWidth: 2
     invHeight: 3
-    bulletSpeed: 50
+    bulletSpeed: 30
     explosionSpeed: 5
     attraction: 15
     listOrder: 30790
@@ -2433,7 +2455,7 @@ items:
     armor: 30
     invWidth: 2
     invHeight: 3
-    bulletSpeed: 50
+    bulletSpeed: 30
     explosionSpeed: 5
     attraction: 15
     listOrder: 30800
@@ -2706,6 +2728,7 @@ items:
     armor: 30
     attraction: 6
     listOrder: 38950
+
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     requiresBuy:
@@ -2718,8 +2741,6 @@ items:
     bigSprite: 300
     floorSprite: 300
     handSprite: 128
-    bulletSprite: 18
-    fireSound: 39
     hitAnimation: 88
     explosionHitSound: 70 #0 or 284 xcf
     power: 50
@@ -2738,32 +2759,26 @@ items:
       ToItem: 0
       ToWound: 0
       FixRadius: 6
-    accuracyAimed: 100
-    accuracyCloseQuarters: 100
-    accuracyMultiplier:
-      firing: 0.0
-      throwing: 1.0
-    costAimed:
-      time: 30
-      energy: 6
-    confAimed:
-      name: STR_USE_FLASHBANG
     costThrow:
       energy: 6
-      time: 30
-    flatThrow:
-      time: true
-    clipSize: 1
-    battleType: 1
-    arcingShot: true
-    maxRange: 20
+    costPrime:
+      time: 32
+    costUnprime:
+      time: 25
+    battleType: 4
+    fuseType: -2
     recoveryPoints: 2
-    kneelBonus: 100
-    experienceTrainingMode: 7
+    #experienceTrainingMode: 7
     listOrder: 38600
     tags:
       FTAG_DAZE_VALUE: 100
       FTAG_DAZE_TIME: 1
+
+
+
+  #   tags:
+  #     FTAG_DAZE_VALUE: 100
+  #     FTAG_DAZE_TIME: 1
   - type: STR_EXPLOSIVE_CHARGE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EXPLOSIVE_CHARGES]
     requiresBuy:
@@ -2857,9 +2872,9 @@ items:
     medikitType: 2
     medikitTargetSelf: true
     isConsumable: true
-    stunRecovery: 6
+    stunRecovery: 7
     energyRecovery: 30
-    tuUse: 15
+    tuUse: 22
     invWidth: 1
     invHeight: 1
     listOrder: 48000
@@ -2885,8 +2900,9 @@ items:
     healthRecovery: 3
     stunRecovery: 5
     energyRecovery: 25
+    isConsumable: false
     costUse:
-      time: 20
+      time: 22
       morale: -5
     flatRate: false
     attraction: 5
@@ -2910,13 +2926,13 @@ items:
     medikitType: 2
     medikitTargetSelf: true
     isConsumable: true
-    stunRecovery: 13
+    stunRecovery: 15
     energyRecovery: 55
-    tuUse: 19
+    tuUse: 14
     invWidth: 1
     invHeight: 2
     listOrder: 48160
-  - type: STR_IFAK
+  - type: STR_PERSONAL_AID_KIT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
@@ -2933,14 +2949,14 @@ items:
     battleType: 6
     medikitType: 1
     heal: 2
-    woundRecovery: 2
+    woundRecovery: 1
     healthRecovery: 4
+    stunRecovery: 3
     medikitTargetSelf: true
-    isConsumable: true
+    isConsumable: false
     costUse:
-      time: 18
+      time: 19
       morale: -5
-      stun: -3
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
@@ -2963,12 +2979,13 @@ items:
     painKiller: 5
     heal: 5
     stimulant: 5
-    woundRecovery: 2
+    woundRecovery: 1
     healthRecovery: 4
     stunRecovery: 10
     energyRecovery: 35
+    isConsumable: false
     costUse:
-      time: 18
+      time: 20
       morale: -5
     flatRate: false
     attraction: 5
@@ -3022,23 +3039,25 @@ items:
     power: 0
     damageType: 6
     damageBonus:
-      strength: 0.6
+      strength: 0.4
     damageAlter:
       RandomType: 2
       FixRadius: 0
       IgnoreDirection: false
-      ArmorEffectiveness: 0.8
+      ArmorEffectiveness: 1.5
       ToStun: 0.25
+      ToHealth: 0.15
+      ToTime: 0.6
       ToTile: 0.0
-    accuracyMelee: 70
+    accuracyMelee: 60
     costMelee:
-      time: 14
-      energy: 12
+      time: 24
+      energy: 17
     hidePower: true
     invWidth: 2
     invHeight: 3
     supportedInventorySections: [STR_LEFT_HAND]
-    clipSize: 80
+    clipSize: 100
     armor: 40
     listOrder: 48160
   - type: STR_FIRE_EXTINGUISHER
@@ -3058,13 +3077,13 @@ items:
     hidePower: true
     accuracyAimed: 100
     accuracyCloseQuarters: 115
-    tuAimed: 64
+    tuAimed: 48
     damageType: 9
     damageAlter:
       RandomType: 4
       FixRadius: 1
-      ToStun: 0.2
-      ToTime: 0.05
+      ToStun: 0.8
+      ToTime: 1
     battleType: 1
     costThrow:
       energy: 18
@@ -3354,9 +3373,6 @@ items:
     transferTime: 48
     clipSize: 1
     listOrder: 7760
-  - type: STR_MIB_HEAD_CHIP
-    categories: [STR_EVIDENCE]
-    listOrder: 146030
   - type: STR_LABORATORY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     costBuy: 200000
@@ -3370,9 +3386,6 @@ items:
   - type: STR_RADAR_SYSTEM #TODO
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
-  - type: STR_LABORATORY_EQUIPMENT #TODO
-    categories: [STR_HUMANS, STR_COMPONENTS]
-    listOrder: 146030
   - type: STR_TRADIUM #TODO
     costBuy: 1000000
     costSell: 500000
@@ -3383,79 +3396,53 @@ items:
 
 #unit-related
 #aliens
-  - type: STR_SECTOID_SOLDIER
+  - &STR_SECTOID
+    type: STR_SECTOID_SOLDIER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
     recover: true
     liveAlien: true
     costDispose: -5000
-    #costSell: 80000
+    costSell: -5000 #80000
     listOrder: 119960
   - type: STR_SECTOID_NAVIGATOR
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 120000
+    refNode: *STR_SECTOID
     listOrder: 119990
   - type: STR_SECTOID_MEDIC
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 120000
+    refNode: *STR_SECTOID
     listOrder: 119980
   - type: STR_SECTOID_ENGINEER
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 120000
+    refNode: *STR_SECTOID
     listOrder: 119970
   - type: STR_SECTOID_LEADER
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 200000
+    refNode: *STR_SECTOID
     listOrder: 120000
   - type: STR_SECTOID_COMMANDER
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costDispose: -5000
-    #costSell: 300000
+    refNode: *STR_SECTOID
     listOrder: 120010
   - type: STR_SECTOID_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
     costDispose: -4000
-    #costSell: 40000
+    costSell: -4000 #40000
     weight: 17
     bigSprite: 46
     floorSprite: 42
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    recoveryPoints: 20
     battleType: 11
     armor: 26
     listOrder: 63000
   - type: STR_SECTOID_COMMANDER_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
-    costDispose: -4000
-    #costSell: 20000
     weight: 17
     bigSprite: 121
     floorSprite: 42
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    recoveryPoints: 25
     battleType: 11
     armor: 26
 #MIBs
@@ -3731,7 +3718,6 @@ items:
     armor: 20
     listOrder: 62300
 #Resistance units
-
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
     spawnUnitFaction: 0
@@ -3836,6 +3822,25 @@ items:
     armor: 30
     recover: false
     listOrder: 67800
+  - type: STR_SPAWN_RESISTANCE_COMPUTER
+    spawnUnit: STR_RESISTANCE_COMPUTER
+    spawnUnitFaction: -1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_RESISTANCE_COMPUTER_REMAINS
+    categories: [STR_WRECKS]
+    name: STR_CORPSE
+    size: 0.4
+    costDispose: -1000
+    weight: 40
+    floorSprite: 121
+    battleType: 11
+    armor: 30
+    recover: false
+    listOrder: 67800    
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
@@ -3968,8 +3973,93 @@ extended:
       ITEM_ENERGY_SHIELD_INDICATOR_COLOR: int # Color group for item's indicator
       ITEM_ENERGY_SHIELD_COLOR_REPLACED_BY_INDICATOR: int # Color group that is replaced by indicator
       ITEM_ENERGY_SHIELD_DOWN_COLOR: int # Indicator switches to this color group when down
-      #flashbang
+
       FTAG_DAZE_VALUE: int
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
       FTAG_SELFKILL_WEAPON: int #facehugger weapon
+      FTAG_EXPANDING: int
+      FTAG_SAWED_OFF: int # % of resulting power (85 means only 85% power would be provided)
+      BPL_AIMED_1_5X_POWER: int
+
+
+  # - type: STR_RIFLE #battle rifle
+  #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
+  #   requiresBuy:
+  #     - STR_XCOM_EQUIPMENT_ACQUISITION
+  #   size: 0.2
+  #   costBuy: 9400
+  #   costSell: 8000
+  #   weight: 9
+  #   landOnly: true
+  #   bigSprite: 1
+  #   floorSprite: 1
+  #   handSprite: 0
+  #   bulletSprite: 2
+  #   fireSound: 64 #4?
+  #   ammo:
+  #     0:
+  #       compatibleAmmo: [STR_RIFLE_CLIP, STR_RIFLE_EXP_CLIP, STR_RIFLE_AA_CLIP]
+  #     1:
+  #       compatibleAmmo: [STR_BATTLE_RIFLE_GRENADE]
+  #       tuLoad: 28
+  #       tuUnload: 8
+  #   confSnap:
+  #     shots: 1
+  #     name: STR_SNAP_SHOT
+  #     ammoSlot: 0
+  #   confAuto:
+  #     shots: 3
+  #     name: STR_AUTO_SHOT
+  #     ammoSlot: 0
+  #   # confAimed:
+  #   #   shots: 1
+  #   #   name: STR_AIMED_SHOT
+  #   #   ammoSlot: 0
+  #   confAimed:
+  #     shots: 1
+  #     name: STR_LAUNCH_GRENADE
+  #     ammoSlot: 1
+  #   compatibleAmmo:
+  #     - STR_RIFLE_CLIP
+  #     - STR_RIFLE_EXP_CLIP
+  #     - STR_RIFLE_AA_CLIP
+  #   accuracyCloseQuarters: 100
+  #   accuracyAuto: 40
+  #   accuracySnap: 60
+  #   accuracyAimed: 110
+  #   tuAuto: 36
+  #   tuSnap: 25
+  #   tuAimed: 60
+  #   battleType: 1
+  #   twoHanded: true
+  #   invWidth: 1
+  #   invHeight: 3
+  #   aimRange: 25
+  #   snapRange: 20
+  #   autoRange: 11
+  #   attraction: 8
+  #   listOrder: 21300
+  #   tags:
+  #     FTAG_EXPANDING: 1
+  # - type: STR_BATTLE_RIFLE_GRENADE
+  #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_EXPLOSIVES]
+  #   requiresBuy:
+  #     - STR_XCOM_EQUIPMENT_ACQUISITION
+  #   size: 0.02
+  #   costBuy: 750
+  #   costSell: 520
+  #   weight: 3
+  #   landOnly: true
+  #   bigSprite: 402
+  #   hitSound: 0
+  #   hitAnimation: 0
+  #   power: 28
+  #   damageType: 3
+  #   arcingShot: true
+  #   maxRange: 12
+  #   minRange: 3
+  #   clipSize: 1
+  #   battleType: 2
+  #   attraction: 8
+  #   listOrder: 21310

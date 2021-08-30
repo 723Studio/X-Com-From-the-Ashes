@@ -5,12 +5,10 @@ crafts:
   - delete: STR_FIRESTORM
   - delete: STR_AVENGER
 #starting crafts
-  - type: STR_DRAGONFLY #TODO
-    # requires:
-    #   - STR_DRAGONFLY
+  - type: STR_DRAGONFLY
     sprite: 800
     damageMax: 50
-    speedMax: 560
+    speedMax: 380
     accel: 1
     soldiers: 8
     vehicles: 1
@@ -20,8 +18,8 @@ crafts:
     costRent: 32000
     costSell: 200000
     repairRate: 4
-    refuelRate: 50
-    fuelMax: 490
+    refuelRate: 46
+    fuelMax: 500
     transferTime: 72
     score: 100
     battlescapeTerrainData:
@@ -34,7 +32,7 @@ crafts:
           width: 10
           length: 20
     listOrder: 7380
-  - type: STR_RAZOR
+  - type: STR_STALKER
     sprite: 801
     costBuy: 0 #TODO
     costRent: 40000 #TODO
@@ -58,7 +56,10 @@ crafts:
     score: 100
     allowLanding: false
     listOrder: 7400
+
   - type: STR_HELICOPTER
+    requires:
+      - STR_HELICOPTER
     sprite: 802
     fuelMax: 560
     damageMax: 20
@@ -67,10 +68,6 @@ crafts:
     soldiers: 6
     vehicles: 0
     pilots: 1
-    weapons: 1
-    weaponTypes:
-      - 0
-    weaponStrings: [STR_CANNON]
     maxItems: 999
     costBuy: 100000
     costRent: 6000
@@ -79,23 +76,52 @@ crafts:
     transferTime: 72
     score: 40
     battlescapeTerrainData:
-      name: LITTLE_BIRD
+      name: COPTER
       mapDataSets:
         - BLANKS
-        - LITTLE_BIRD
+        - COPTER
       mapBlocks:
-        - name: LITTLE_BIRD
+        - name: COPTER
           width: 10
-          length: 10
-    craftInventoryTile: [7, 8, 0]
+          length: 20
     deployment:
-      - [7, 8, 0, 3]
-      - [2, 8, 0, 5]
-      - [7, 7, 0, 2]
-      - [2, 7, 0, 6]
-      - [7, 6, 0, 1]
-      - [2, 6, 0, 7]
+      - [3, 10, 0, 7]
+      - [6, 10, 0, 1]
+      - [3, 11, 0, 6]
+      - [6, 11, 0, 2]
+      - [3, 12, 0, 5]
+      - [6, 12, 0, 3]
+    listOrder: 7370
+  - type: STR_OSPREY
+    requires:
+      - STR_OSPREY
+    sprite: 803
+    fuelMax: 400
+    damageMax: 80
+    speedMax: 375
+    accel: 1
+    weapons: 0
+    soldiers: 16
+    vehicles: 3
+    pilots: 1
+    maxItems: 999
+    costBuy: 250000
+    costRent: 15000
+    costSell: 150000
+    refuelRate: 30
+    transferTime: 72
+    score: 75
+    battlescapeTerrainData:
+      name: OSPREY
+      mapDataSets:
+        - BLANKS
+        - OSPREY
+      mapBlocks:
+        - name: OSPREY
+          width: 20
+          length: 20
     listOrder: 7390
+
 
 #vanilla crafts
   - type: STR_SKYRANGER
@@ -293,3 +319,4 @@ crafts:
       - [6, 13, 1, 0]
       - [6, 14, 1, 0]
     listOrder: 7700
+

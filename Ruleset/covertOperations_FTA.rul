@@ -30,7 +30,7 @@ covertOperations:
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
     trapChance: 70
     instantTrapDeployment: 
-      STR_MIB_EARLY_TRAP_ESCAPE: 100
+      STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -47,10 +47,10 @@ covertOperations:
     danger: 9
     costs: 216
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
-    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
     trapChance: 85
     instantTrapDeployment: 
-      STR_MIB_EARLY_TRAP_ESCAPE: 100
+      STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -83,7 +83,7 @@ covertOperations:
     baseChances: 75
     costs: 5
     soldierSlots: 2
-    optionalSoldierSlots: 2
+    #optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
     danger: 2
     requiredItems:
@@ -107,7 +107,7 @@ covertOperations:
     baseChances: 75
     costs: 5
     soldierSlots: 2
-    optionalSoldierSlots: 2
+    #optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
     danger: 2
     requiredItems:
@@ -119,8 +119,8 @@ covertOperations:
     #successEvent: #TODO - continue the arc?
     #failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     instantTrapDeployment: 
-      STR_LOCALS_TRAP: 50
-      STR_CHUPACABRA_HUNT_TRAP: 50
+      STR_LOCALS_TRAP: 30
+      STR_CHUPACABRA_HUNT_TRAP: 70
     trapChance: 100
     instantSuccessDeployment:
       STR_CHUPACABRA_HUNT: 100

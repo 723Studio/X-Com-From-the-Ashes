@@ -23,6 +23,10 @@ config:
   ignoreTypes:
   - battleScripts.commands[].variable
   - manufacture.category
+  - events.customAnswers.0.title
+  - events.customAnswers.1.title
+  - events.customAnswers.2.title
+  - events.customAnswers.3.title
   stringTypes:
   - alienDeployments.missionCompleteText
   - alienDeployments.missionFailedText

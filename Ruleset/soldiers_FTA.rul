@@ -65,9 +65,9 @@ soldiers:
     standHeight: 22
     kneelHeight: 14
     femaleFrequency: 25
-    # soldierNames:
-    #   - delete
-    #   - AgentName/
+    soldierNames:
+      - delete
+      - SoldierNames/
     deathMale: &MaleDeathSounds [41, 42, 43] #, 135, 136, 137, 138, 139, 140, 141]
     deathFemale: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163]
     # panicMale: [701, 702, 703, 704, 705, 706, 707, 708, 709]
@@ -108,3 +108,6 @@ soldiers:
       bravery: 10
       reactions: 20
       firing: 15
+    soldierNames:
+      - delete
+      - SoldierNames/

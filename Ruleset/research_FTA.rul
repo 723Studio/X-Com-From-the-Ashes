@@ -42,6 +42,8 @@ research:
     hidden: true
   - name: STR_ENGINEER_STATUS_REPORT
     hidden: true
+  - name: STR_QUARTERMASTER_STATUS_REPORT
+    hidden: true
   - name: STR_VEHICLES_STATUS_REPORT
     hidden: true
   - name: STR_REGIONAL_HQ_FOUND
@@ -63,9 +65,7 @@ research:
     hidden: true
   - name: STR_RESISTANCE_SCIENTIST
     hidden: true
-  - name: STR_MONSTER_HUNT_START_PREREQ
-    hidden: true
-  - name: STR_MONSTER_HUNT_RUMORS_PREREQ
+  - name: STR_DESERT_TELESCOPE
     hidden: true
 
 
@@ -105,14 +105,6 @@ research:
     getOneFree:
       - STR_COVERT_OPERATIONS
     listOrder: 7460
-  - name: STR_MONSTER_HUNT_START
-    requiresBaseFunc: [HQ]
-    cost: 90
-    points: 3
-    dependencies:
-      - STR_MONSTER_HUNT_START_PREREQ
-      - STR_COVERT_OPERATIONS
-    listOrder: 7460
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     requiresBaseFunc: [HQ]
     cost: 100
@@ -137,7 +129,7 @@ research:
     cost: 200
     points: 120
     dependencies:
-      - STR_ENGINEER_STATUS_REPORT
+      - STR_QUARTERMASTER_STATUS_REPORT
     getOneFree:
       - STR_LOYALTY
     listOrder: 7460
@@ -205,6 +197,16 @@ research:
     points: 40
     dependencies:
       - STR_DAMAGE_11
+    unlocks:
+      - STR_TASER_CANNON_CLIP
+    listOrder: 7410
+  - name: STR_TASER_CANNON_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TASER_CANNON
+    listOrder: 7410
+
 
   - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - add ways to unlock it
     hidden: true
@@ -365,21 +367,17 @@ research:
   #key lore
   - name: STR_FRESH_MIB_AGENT
     hidden: true
-  - name: STR_MIB_HEAD_CHIP_PREREQ
-    hidden: true
   - name: STR_MIB_AGENT_LOBOTOMY
     requiresBaseFunc: [SURGERY]
     cost: 216
     points: 50
-    spawnedItem: STR_MIB_HEAD_CHIP
     dependencies:
-      - STR_MIB_HEAD_CHIP_PREREQ
+      - STR_FRESH_MIB_AGENT
     listOrder: 146000   
   - name: STR_MIB_HEAD_CHIP
     requiresBaseFunc: [INTLAB]
     cost: 600
     points: 150
-    needItem: true
     dependencies:
       - STR_MIB_AGENT_LOBOTOMY
     listOrder: 146000
@@ -391,6 +389,8 @@ research:
       - STR_MIB_HEAD_CHIP
     listOrder: 146000
   #empty lore
+  - name: STR_EMPTY_MIB_EARLY_LORE_STAGE
+    hidden: true
   - name: STR_EMPTY_MIB_EARLY_LORE1
     hidden: true
   - name: STR_EMPTY_MIB_EARLY_LORE2
@@ -413,30 +413,43 @@ research:
     hidden: true
 
 #shared creatures arc
+  - name: STR_MONSTER_HUNT_START_PREREQ
+    hidden: true
+  - name: STR_MONSTER_HUNT_RUMORS_PREREQ
+    hidden: true
+  - name: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
+    hidden: true  
+  - name: STR_MONSTER_HUNT_RUMORS_CHUPA
+    hidden: true   
+  - name: STR_MONSTER_HUNT_START
+    requiresBaseFunc: [HQ]
+    cost: 90
+    points: 3
+    dependencies:
+      - STR_MONSTER_HUNT_START_PREREQ
+      - STR_COVERT_OPERATIONS
+    listOrder: 7460
   - name: STR_MONSTER_HUNT_RUMORS
     requiresBaseFunc: [HQ]
-    cost: 70
-    points: 10
+    cost: 130
+    points: 15
     spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ
-      - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
   - name: STR_MONSTER_HUNT_RUMORS_ANALYSIS
     requiresBaseFunc: [HQ]
     unlocks: [STR_MONSTER_HUNT_RUMORS_PREREQ]
     cost: 504
-    points: 15 
+    points: 10 
     spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 7460
-  - name: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
-    hidden: true  
-  - name: STR_MONSTER_HUNT_RUMORS_CHUPA
-    hidden: true   
 
-  - name: STR_STRANGE_CREATURE_AUTOPSY
+
+  - name: STR_STRANGE_CREATURE_AUTOPSY #TODO FIX
     cost: 0
     points: 0
     spawnedEvent: STR_STRANGE_CREATURE_AUTOPSY
@@ -512,14 +525,17 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected: 
-      STR_PRISONER_INTERROGATIONS:
+      STR_MIB_AGENT:
+        - STR_EMPTY_MIB_EARLY_LORE_STAGE
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+      STR_EMPTY_MIB_EARLY_LORE_STAGE:
         - STR_FRESH_MIB_AGENT
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
         - STR_EMPTY_MIB_EARLY_LORE4
-      STR_FRESH_MIB_AGENT:
-        - STR_MIB_HEAD_CHIP_PREREQ
         - STR_EMPTY_MIB_EARLY_LORE5
         - STR_EMPTY_MIB_EARLY_LORE6
         - STR_EMPTY_MIB_EARLY_LORE7
@@ -538,16 +554,19 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected: 
-      STR_PRISONER_INTERROGATIONS:
+      STR_MIB_SPECOPS:
+        - STR_EMPTY_MIB_EARLY_LORE_STAGE
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+      STR_EMPTY_MIB_EARLY_LORE_STAGE:
         - STR_FRESH_MIB_AGENT
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
         - STR_EMPTY_MIB_EARLY_LORE4
-      STR_FRESH_MIB_AGENT:
-        - STR_MIB_HEAD_CHIP_PREREQ
-        # - STR_EMPTY_MIB_EARLY_LORE5
-        # - STR_EMPTY_MIB_EARLY_LORE6
+        - STR_EMPTY_MIB_EARLY_LORE5
+        - STR_EMPTY_MIB_EARLY_LORE6
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
@@ -565,15 +584,18 @@ research:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected: 
       STR_PRISONER_INTERROGATIONS:
+        - STR_EMPTY_MIB_EARLY_LORE_STAGE
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+      STR_EMPTY_MIB_EARLY_LORE_STAGE:
         - STR_FRESH_MIB_AGENT
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
         - STR_EMPTY_MIB_EARLY_LORE4
-      STR_FRESH_MIB_AGENT:
-        - STR_MIB_HEAD_CHIP_PREREQ
-        # - STR_EMPTY_MIB_EARLY_LORE5
-        # - STR_EMPTY_MIB_EARLY_LORE6
+        - STR_EMPTY_MIB_EARLY_LORE5
+        - STR_EMPTY_MIB_EARLY_LORE6
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
@@ -782,6 +804,26 @@ research:
     points: 0
     dependencies:
       - STR_BOW_ARROW
+  - name: STR_BOW_ARROW_HE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
+  - name: STR_BOW_ARROW_IN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
+  - name: STR_BOW_ARROW_STUN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
+  - name: STR_BOW_ARROW_ELECTRIC
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SPORTS_BOW_TINKERING
   - name: STR_SNUBNOSE_PISTOL
     cost: 8
     points: 1
@@ -946,6 +988,9 @@ research:
 
 #crafts
   - name: STR_HELICOPTER
+    hidden: true
+    listOrder: 7460
+  - name: STR_OSPREY
     hidden: true
     listOrder: 7460
   - name: STR_INTERCEPTOR

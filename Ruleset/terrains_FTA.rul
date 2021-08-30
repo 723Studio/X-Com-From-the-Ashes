@@ -3127,6 +3127,29 @@ terrains:
           width: 50
           length: 70
           groups: 1
+  - name: STR_MIB_REGIONAL_HQ_DEPLOYMENT
+    mapDataSets:
+      - BLANKS
+      - URBAN_LOW_OBJ
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: MIB_REGHQ_DEPL0 #without Resistance
+        width: 10
+        length: 10
+        groups: 5
+      - name: MIB_REGHQ_DEPL1 #with Resistance
+        width: 10
+        length: 10
+        groups: 6
+      - name: MIB_REGHQ_DEPL_VAULT0 #without Resistance
+        width: 10
+        length: 10
+        groups: 7
+      - name: MIB_REGHQ_DEPL_VAULT1 #with Resistance
+        width: 10
+        length: 10
+        groups: 8
 
   - name: MIB_CHASING
     mapDataSets:
@@ -3151,5 +3174,47 @@ terrains:
           length: 60
           groups: 5
 
+  - name: RESISTANCE_FOREST_HOUSE
+    mapDataSets:
+      - BLANKS
+      - FORESTSWAMP
+      - RESISTANCE_FOREST_HOUSE_01
+    mapBlocks:
+        - name: RESISTANCE_FOREST_HOUSE_01
+          width: 20
+          length: 20
+        - name: RESISTANCE_FOREST_HOUSE_02
+          width: 20
+          length: 20
 
-
+  - name: DESERT_MILITARY
+    mapDataSets:
+      - BLANKS
+      - DESERT
+      - ROADS
+      - ARMY_TRUCK
+    mapBlocks:
+      - name: DESERT_ROAD00
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD01
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD02
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD03
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD04
+        width: 10
+        length: 10
+        groups: [2, 3]
+      - name: DESERT_ROAD_TRUCK
+        width: 10
+        length: 10
+        groups: [2, 3, 5]

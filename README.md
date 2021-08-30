@@ -22,7 +22,7 @@ I widely use various assets, created by OpenXcom modding community. Credits to l
 I would like to give special thanks to the contributors to my project (in order of appearance):
 
 * **X-Man** - EN strings contribution;
-* **Drosan** - engine development, bugfixes;
+* **Drosan** - engine development, engine bugfixes;
 * **wolwerin** - weapon image assets;
 * **efrenespartano** - full weapon image assets, inspiration, info support;
 * **Brain_322** - full unit and weapon, terrain image assets, general help with image art;
@@ -34,7 +34,9 @@ I would like to give special thanks to the contributors to my project (in order 
 * **DaManWithGun** - lore articles, stylistic and grammar changes in English localization;
 * **pedroterzero** - help with cone lightning engine feature development;
 * **Buscher** - great help with testing, fixing bugs in the engine code and rulesets;
-* **Xom126** - unit spritesheet, corpse sprites.
+* **Xom126** - unit spritesheets, corpse sprites.
+* **Is0top** - engine development, engine bugfixes;
+* **ahegao aka Julian901** - mission design, deployment rules, mission-specific maps, item rulesets, balance and lore articles.
 
 ## Support
 
