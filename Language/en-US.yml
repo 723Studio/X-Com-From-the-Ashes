@@ -350,7 +350,7 @@ en-US:
   STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
   STR_LAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
   STR_BIOLAB_EQUIPMENT_ACQUISITION: "Biology Science Equipment Acquisition"
-  STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "We have a good chance to acquire  specialized equipment for our biolaboratory. Biology science equipment will be even more difficult to obtain than general equipment, but at one cost or another, we need to get this equipment in order to move further in our research."
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "We have a good chance to acquire  specialized equipment for our bio laboratory. Biology science equipment will be even more difficult to obtain than general equipment, but at one cost or another, we need to get this equipment in order to move further in our research."
   STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
   STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
 #events
@@ -387,7 +387,7 @@ en-US:
   STR_RESCUED_SCIENTIST: "Scientist slip: success"
   STR_NOT_RESCUED_RESISTANCE: "Resistance rescue: failure"
   STR_NOT_RESCUED_SCIENTIST: "Scientist slip: failure"
-  STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuees their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> {ALT}+100"
+  STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuers their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> {ALT}+100"
   STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> {ALT}+130"
 
   STR_RESCUED_SCIENTISTS_TELESCOPE: "Desert Telescope - Success"
@@ -434,6 +434,8 @@ en-US:
   STR_NOT_RESCUED_AGENT_DESCRIPTION_6: "We couldn't save our agents from such a difficult situation. As soon as the general staff learns about what happened, the smiles will fall from the faces of our sisters and brothers for a long time. We need revenge.{NEWLINE}{NEWLINE}Resistance reputation score> {ALT}-110"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: "Before our people were attacked by M.I.B. agents, they managed to transmit a report on the main results of the operation. The report shows that they were able to confirm the information that the regional headquarters of the Men in Black is located somewhere in the city being investigated. Unfortunately, we are unable to locate the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have been unable to decipher it or locate the signal source."
+  STR_MIB_BANKER_ACCOUNTS: "M.I.B. Secret Bank Accounts"
+  STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: #TODO
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "M.I.B. Agent"
@@ -465,24 +467,43 @@ en-US:
   STR_SEEKER_DRONE_ARMOR: "Seeker Drone Combat Analysis"
   STR_SEEKER_DRONE_ARMOR_UFOPEDIA: "To be done" #TODO
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
+  STR_XCOM_EX_COMMANDER_CORPSE: "Former X-COM Commander Corpse"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He refuses to communicate and shows aggression at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to maintain control is still unclear to us. During the physical examination there were no signs of any surgical intervention, with all medical tests within the normal range (except for adrenaline). Safekeeping can be problematic as, for example, he had a chance to bite off a finger of a former colleague which he took, successfully."
+  STR_MIB_OFFICE_ENGINEER: #TODO
+  STR_MIB_OFFICE_ENGINEER_CORPSE:
+  STR_MIB_OFFICE_ENGINEER_UFOPEDIA:
+  STR_MIB_OFFICE_WORKER:
+  STR_MIB_OFFICE_WORKER_CORPSE:
+  STR_MIB_OFFICE_WORKER_UFOPEDIA:
+  STR_MIB_OFFICE_MANAGER:
+  STR_MIB_OFFICE_MANAGER_CORPSE:
+  STR_MIB_OFFICE_MANAGER_UFOPEDIA:
+  STR_MIB_OFFICE_SECURITY:
+  STR_MIB_OFFICE_SECURITY_CORPSE:
+  STR_MIB_OFFICE_SECURITY_UFOPEDIA:
+  STR_MIB_VIP_BODYGUARD:
+  STR_MIB_VIP_BODYGUARD_CORPSE:
+  STR_MIB_VIP_BODYGUARD_UFOPEDIA:
+  MIB_BANKER:
+  STR_MIB_VIP_CORPSE:
+  MIB_BANKER_UFOPEDIA:
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"
-  STR_FACEHUGGER_UFOPEDIA: "This rubbish jumps on a victim, using its stinger to inject the parasite with a neuroparalytic poison. The parasite quickly makes its way through the body and attaches itself to the brain of the host with its flagella. The parasite completely controls the signals sent to the spinal cord, artificially keeping the person alive. At the moment of application of the parasite, it is still connected for some time with the facehagger, but before the latter breaks apart it is restrained by cramps, and because of the physical strain it has a ruptured heart and dies, letting the victim go. The details of this terrible process are still not clear to us."
+  STR_FACEHUGGER_UFOPEDIA: "This rubbish jumps on a victim, using its stinger to inject the parasite with a neuroparalytic poison. The parasite quickly makes its way through the body and attaches itself to the brain of the host with its flagella. The parasite completely controls the signals sent to the spinal cord, artificially keeping the person alive. At the moment of application of the parasite, it is still connected for some time with the facehugger, but before the latter breaks apart it is restrained by cramps, and because of the physical strain it has a ruptured heart and dies, letting the victim go. The details of this terrible process are still not clear to us."
   STR_FACEHUGGER_CORPSE: "Facehugger corpse"
   STR_FACEHUGGER_AUTOPSY: "Facehugger Autopsy"
   STR_FACEHUGGER_AUTOPSY_UFOPEDIA: "This creature's circulation is closed, and it breathes through the contraction of a single lung.  It is completely incomprehensible how it feeds and reproduces its own kind. Its tail has a terrifying sting, joined to a system of intricate glands. The contents of the sac is a separate organism, connected to its host by a network of thick nerve tubes. Unfortunately, the contents of the sac have been damaged and almost nothing is left of the parasite, as it decomposes extremely quickly in the air environment."
   STR_FACEHUGGER_ARMOR: "Facehugger Combat Analysis"
   STR_FACEHUGGER_ARMOR_UFOPEDIA: "The only defense of this creature is its agility and size, and the main task is to get close to the victim and make a jump. The creature grasps the victim's head and pokes its stinger into his chest, zombifying the person. Once zombification complete, the facehugger dies."
   STR_ZOMBIE_STERILE_TERRORIST: "Zombie"
-  STR_ZOMBIE_STERILE_UFOPEDIA: "Once in the past it was a man, but now it is extremely difficult to call him a human. It is striking that this creature gives out almost everything - a terrible smell from the rotting of a dead body, incoherent sounds and clumsy movements. A parasite sits inside the body, which has disabled all orgasnim systems and controls movement. If you destroy the parasite, the body will be just a piece of meat. It decomposes quickly, because the blood has long been oxidized and the organs do not keep the body in proper condition. Motility and immunity are absent."
+  STR_ZOMBIE_STERILE_UFOPEDIA: "Once in the past it was a man, but now it is extremely difficult to call him a human. It is striking that this creature gives out almost everything - a terrible smell from the rotting of a dead body, incoherent sounds and clumsy movements. A parasite sits inside the body, which has disabled all organism systems and controls movement. If you destroy the parasite, the body will be just a piece of meat. It decomposes quickly, because the blood has long been oxidized and the organs do not keep the body in proper condition. Motility and immunity are absent."
   STR_ZOMBIE_STERILE_CORPSE: "Zombie corpse"
   STR_ZOMBIE_STERILE_AUTOPSY: "Zombie Autopsy"
   STR_ZOMBIE_STERILE_AUTOPSY_UFOPEDIA: "The parasite was extracted from the zombie. It is clear that the body is dead and decomposes quickly, a large number of microorganisms were found inside that feed on dead flesh. Due to the lack of motility and immunity, some organs and systems of the body have stumbled so much that they very remotely resemble their original."
   STR_ZOMBIE_STERILE_ARMOR: "Zombie Combat Analysis"
-  STR_ZOMBIE_STERILE_ARMOR_UFOPEDIA: Zobmies are dangerous only at close range. They have no tactics, are slow, disorganized, and usually pile up in droves. Zomby are completely immune to pain, and their bodies are controlled not by their brains, but by a parasite entrenched in their chests. The lack of armor makes slashing weapons and buckshot especially effective.
+  STR_ZOMBIE_STERILE_ARMOR_UFOPEDIA: Zombies are dangerous only at close range. They have no tactics, are slow, disorganized, and usually pile up in droves. Zombie are completely immune to pain, and their bodies are controlled not by their brains, but by a parasite entrenched in their chests. The lack of armor makes slashing weapons and buckshot especially effective.
   STR_ZOMBIE_GRUBAS_TERRORIST: "Fat Zombie"
   STR_ZOMBIE_GRUBAS_UFOPEDIA: "The reaction of the body to the poison that was injected by the parasite caused a strong transformation of the body. As a result, the whole body was swollen and overgrown with fat. The muscles were also covered with fat, which now created a monster with great physical strength. Due to the abundance of flesh and fat, this specimen can take many shots. It is recommended to use a large caliber when seeing this organism in battle."
   STR_ZOMBIE_GRUBAS_CORPSE: "Fat Zombie corpse"
@@ -548,6 +569,8 @@ en-US:
   STR_WEAPONS: "Weapons"
   STR_COVERT_TOOLS: "Covert Tools"
 #items - weapons and equipment
+  STR_CROWBAR: "Crowbar"
+  STR_CROWBAR_UFOPEDIA: "The crowbar is not a weapon in its primary function, but it can be very useful in an extreme situation. Easy to handle, rather heavy, it can be just as useful for opening locked doors or breaking down thin walls.{NEWLINE}>Concealable"
   STR_POLICE_BATON: "Police Baton"
   STR_POLICE_BATON_UFOPEDIA: "A blunt melee weapon used by law-enforcement officers, security guards, and military personnel around the whole world. Good enough to knock out unarmored enemies.{NEWLINE}>Concealable" 
   STR_COMBAT_KNIFE: "Combat Knife"
@@ -582,6 +605,9 @@ en-US:
   STR_HEAVY_PISTOL: "Heavy Pistol"
   STR_HEAVY_PISTOL_UFOPEDIA: "A convenient and accurate pistol with a frame reinforced for a high caliber ammo. Each of the nine bullets contained in the clip is ready to tear the flesh of any enemy, if he did not take care of his armor.{NEWLINE}>Concealable"
   STR_HEAVY_PISTOL_CLIP: "Heavy Pistol Clip"
+  STR_CHEMPISTOL: "Chempistol"
+  STR_CHEMPISTOL_UFOPEDIA: "This weapon shoots jets of pressurized, highly active chemicals. It is absolutely deadly to living targets and unprotected machinery. The chemical mixture can be produced from common ingredients, but is highly unusual and likely made with extraterrestrial guidance." #TODO
+  STR_CHEMPISTOL_CLIP: "Chempistol Tank"
   STR_MACHINE_PISTOL: "Machine Pistol"
   STR_MACHINE_PISTOL_UFOPEDIA: "An automatic pistol with increased clip capacity. Low accuracy makes it ineffective for use at long and medium range, but due to its rate of fire the owner of this handgun is able to tip the scales in his favor in any firefight at close range.{NEWLINE}>Concealable"
   STR_MACHINE_PISTOL_CLIP: "Machine Pistol"
@@ -605,6 +631,9 @@ en-US:
   STR_RIFLE_CLIP: "Rifle Clip"
   STR_RIFLE_EXP_CLIP: "Rifle Exp. Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
+  STR_CHEMOGUN: "Chemogun"
+  STR_CHEMOGUN_UFOPEDIA: "This weapon shoots jets of pressurized, highly active chemicals. It is absolutely deadly to living targets and unprotected machinery. The chemical mixture can be produced from common ingredients, but is highly unusual and likely made with extraterrestrial guidance." #TODO
+  STR_CHEMOGUN_CLIP: "Chemogun Tank"
   STR_HUNTING_RIFLE: "Hunting Rifle"
   STR_HUNTING_RIFLE_UFOPEDIA: "A light bolt action rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapon is very easy and pleasant for both four- and two-legged animals."
   STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip" 
@@ -712,6 +741,7 @@ en-US:
   STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
   STR_FIRE_EXTINGUISHER_UFOPEDIA: "A Fire Extinguisher can be a useful field tool for our agents, potentially saving both human life and property. Due to its weight and hardness, it can also be used to subdue any uncooperative individuals."
   STR_PUNCH: "Punch"
+  STR_UNARMED_TRAINED: "Unarmed"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
 #armors
@@ -770,6 +800,7 @@ en-US:
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: STR_MONSTER_HUNT_RUMORS_UFOPEDIA #TODO
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
+  STR_VOID_CORP_UFOPEDIA: #TODO
   STR_STARTING_EQUIPMENT: "Common Equipment"
   STR_STARTING_EQUIPMENT_UFOPEDIA: "Since the X-COM project was discontinued, we have lost our regular armament and gear suppliers. But we continue to fight, and we vitally need new sources of weaponry and ammunition. Maybe our new friends can help out with that? Regrettably, lacking established illegal arms channels, they can only offer us weapons that are available for purchase by civilians. Our contact in the Resistance transferred the tactical specifications of the items we can buy from them, all information analyzed and uploaded to Ufopedia."
   STR_RESISTANCE_STARTING_EQUIPMENT: "Resistance Equipment"

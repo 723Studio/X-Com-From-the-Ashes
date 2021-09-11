@@ -308,6 +308,16 @@ ufopaedia:
     text: STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA
     listOrder: 2520
 
+  - id: STR_VOID_CORP
+    type_id: 7
+    image_id: VOID_LOGO_CPAL.SPK
+    text_width: 315
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_TODOIUM
+    text: STR_VOID_CORP_UFOPEDIA
+    listOrder: 2520
+
 #STR_TECHNOLOGY 7000
 #STR_XCOM_CRAFT_ARMAMENT 9000
   - id: STR_DRAGONFLY #TODO
@@ -479,6 +489,13 @@ ufopaedia:
 #STR_ARMORS 12-14k
 #STR_WEAPONS_AND_EQUIPMENT 15-29:
 #melee
+  - id: STR_CROWBAR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_CROWBAR_UFOPEDIA
+    requires:
+      - STR_CROWBAR
+    listOrder: 20330
   - id: STR_POLICE_BATON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -618,6 +635,18 @@ ufopaedia:
     requires:
       - STR_PISTOL_AA_CLIP
     section: STR_NOT_AVAILABLE
+  - id: STR_CHEMPISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_CHEMPISTOL_UFOPEDIA
+    requires:
+      - STR_CHEMPISTOL
+    listOrder: 20330
+  - id: STR_CHEMPISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CHEMPISTOL
 #SMG
   - id: STR_MACHINE_PISTOL
     type_id: 4
@@ -715,6 +744,18 @@ ufopaedia:
     requires:
       - STR_RIFLE_AA_CLIP
     section: STR_NOT_AVAILABLE
+  - id: STR_CHEMOGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_CHEMOGUN_UFOPEDIA
+    requires:
+      - STR_CHEMOGUN
+    listOrder: 20330
+  - id: STR_CHEMOGUN_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CHEMOGUN
 #sniper rifles
   - id: STR_HUNTING_RIFLE
     type_id: 4
@@ -1180,7 +1221,6 @@ ufopaedia:
     requires:
       - STR_MIB_BUTCHER
     listOrder: 146000
-
   - id: STR_SEEKER_DRONE_TERRORIST
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -1358,6 +1398,52 @@ ufopaedia:
     requires:
       - STR_FRESH_MIB_AGENT
     text: STR_FRESH_MIB_AGENT_UFOPEDIA
+    listOrder: 160028
+
+
+  - id: STR_MIB_OFFICE_ENGINEER
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_OFFICE_ENGINEER
+    text: STR_MIB_OFFICE_ENGINEER_UFOPEDIA
+    listOrder: 160028
+  - id: STR_MIB_OFFICE_WORKER
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_OFFICE_WORKER
+    text: STR_MIB_OFFICE_WORKER_UFOPEDIA
+    listOrder: 160028
+
+  - id: STR_MIB_OFFICE_MANAGER
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_OFFICE_MANAGER
+    text: STR_MIB_OFFICE_MANAGER_UFOPEDIA
+    listOrder: 160028
+  - id: STR_MIB_OFFICE_SECURITY
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_OFFICE_SECURITY
+    text: STR_MIB_OFFICE_SECURITY_UFOPEDIA
+    listOrder: 160028
+
+  - id: STR_MIB_VIP_BODYGUARD
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_VIP_BODYGUARD
+    text: STR_MIB_VIP_BODYGUARD_UFOPEDIA
+    listOrder: 160028
+  - id: MIB_BANKER
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - MIB_BANKER
+    text: MIB_BANKER_UFOPEDIA
     listOrder: 160028
 
 #STR_TACTICAL_ANALYSIS 250-1999k

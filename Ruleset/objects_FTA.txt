@@ -1,0 +1,5 @@
+objects:
+  - type: STR_TERMINAL
+    hackingDefence: 0
+  - type: STR_ADVANCED_TERMINAL
+    hackingDefence: 500

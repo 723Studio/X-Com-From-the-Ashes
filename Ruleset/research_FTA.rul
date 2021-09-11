@@ -152,6 +152,7 @@ research:
       - STR_STARTING_EQUIPMENT_PREREQ
       - STR_UFOPEDIA_DECRYPTION
     unlocks:
+      - STR_CROWBAR
       - STR_MACHETE
       - STR_THROWING_KNIFE
       - STR_SPORTS_BOW
@@ -574,7 +575,7 @@ research:
     listOrder: 146000
   - name: STR_MIB_BUTCHER
     requiresBaseFunc: [INTLAB]
-    cost: 270
+    cost: 360
     points: 40
     needItem: true
     destroyItem: true
@@ -614,8 +615,71 @@ research:
     points: 40
     needItem: true
     destroyItem: true
+#MiB\Procured
+  - name: STR_MIB_OFFICE_ENGINEER
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 3
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
+  - name: STR_MIB_OFFICE_WORKER
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 3
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
+  - name: STR_MIB_OFFICE_MANAGER
+    requiresBaseFunc: [INTLAB]
+    cost: 40
+    points: 5
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
+  - name: STR_MIB_OFFICE_SECURITY
+    requiresBaseFunc: [INTLAB]
+    cost: 60
+    points: 5
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
+  - name: STR_MIB_VIP_BODYGUARD
+    requiresBaseFunc: [INTLAB]
+    cost: 80
+    points: 5
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
+  - name: MIB_BANKER #TODO -extra reward
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 10
+    needItem: true
+    spawnedEvent: STR_MIB_BANKER_ACCOUNTS
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 146000
 
-#enemies - creatures
+
+#enemies - zombies 
   - name: STR_FACEHUGGER_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 600
@@ -676,24 +740,7 @@ research:
       - STR_STRANGE_CREATURE
       - STR_LIVE_ZOMBIE
     listOrder: 115410
-  - name: STR_JABBER_CORPSE
-    requiresBaseFunc: [BIOLAB]
-    cost: 600
-    points: 60
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_STRANGE_CREATURE_AUTOPSY
-    listOrder: 62310
-  - name: STR_JABBER
-    requiresBaseFunc: [BIOLAB]
-    cost: 650
-    points: 65
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_STRANGE_CREATURE
-    listOrder: 115410
+#enemies - creatures
   - name: STR_CHUPACABRA_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 750
@@ -751,7 +798,6 @@ research:
   - name: STR_FACEHUGGER_ARMOR
     cost: 150
     points: 25
-
     dependencies:
       - STR_FACEHUGGER
       - STR_FACEHUGGER_CORPSE
@@ -765,20 +811,19 @@ research:
     points: 23
     dependencies:
       - STR_ZOMBIE_BIOLOGY
-  - name: STR_JABBER_ARMOR
-    cost: 150
-    points: 20
-    dependencies:
-      - STR_JABBER
-      - STR_JABBER_CORPSE
   - name: STR_CHUPACABRA_ARMOR
     cost: 180
     points: 25
     dependencies:
-      - STR_JABBER
+      - STR_CHUPACABRA
       - STR_CHUPACABRA_CORPSE
 
 #weapons and equipment
+  - name: STR_CROWBAR
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 7410
   - name: STR_MACHETE
     cost: 6
     points: 1
@@ -848,6 +893,22 @@ research:
     points: 0
     dependencies:
       - STR_RIOT_PISTOL
+  - name: STR_CHEMPISTOL #TODO - balance
+    cost: 1000
+    points: 60
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_DAMAGE_ACID
+    listOrder: 20530
+  - name: STR_CHEMOGUN #TODO - balance
+    cost: 1500
+    points: 80
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_DAMAGE_ACID
+    listOrder: 20530
   - name: STR_MACHINE_PISTOL
     cost: 10
     points: 2
@@ -963,9 +1024,6 @@ research:
     points: 10
     needItem: true
     listOrder: 7410
-
-
-
 
   - name: STR_MEDI_KIT
     cost: 2100

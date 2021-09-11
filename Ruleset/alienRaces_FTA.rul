@@ -12,25 +12,41 @@ alienRaces:
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_FREE_SPOT # 13 - Non-Combatant 2
-      - STR_FREE_SPOT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_FREE_SPOT # 13 - Special Guest 3
+
   - id: STR_MIB_REGIONAL_HQ
     members:
-      - STR_MIB_AGENT # 0 - Commander
-      - STR_MIB_AGENT # 1 - Leader
-      - STR_MIB_AGENT # 2 - Engineer
-      - STR_MIB_AGENT # 3 - Medic
-      - STR_MIB_AGENT # 4 - Navigator
-      - STR_MIB_AGENT # 5 - Soldier
-      - STR_MIB_AGENT # 6 - Terrorist 1
-      - STR_MIB_AGENT # 7 - Terrorist 2
-      - STR_MIB_AGENT # 8 - Special Guest 1
-      - STR_MIB_AGENT # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_MIB_AGENT # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_MIB_AGENT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_MIB_AGENT # 13 - Non-Combatant 2
-      - STR_MIB_AGENT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 0 - Commander
+      - STR_MIB_ARMORED_AGENT # 1 - Leader
+      - MIB_OFFICE_ENGINEER # 2 - Engineer
+      - STR_FREE_SPOT # 3 - Medic - scientist!
+      - MIB_OFFICE_SECURITY # 4 - Navigator
+      - MIB_OFFICE_WORKER # 5 - Soldier
+      - MIB_VIP_BODYGUARD # 6 - Terrorist 1
+      - MIB_BANKER # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_FREE_SPOT # 13 - Special Guest 3
+    membersRandom:
+      - [STR_FREE_SPOT] # 0 - Commander
+      - [STR_MIB_ARMORED_AGENT, STR_MIB_ARMORED_AGENT, STR_MIB_AGENT] # 1 - Leader
+      - [MIB_OFFICE_ENGINEER] # 2 - Engineer
+      - [STR_FREE_SPOT] # 3 - Medic - scientist!
+      - [MIB_OFFICE_SECURITY] # 4 - Navigator
+      - [MIB_OFFICE_WORKER, MIB_OFFICE_WORKER, MIB_OFFICE_MANAGER] # 5 - Soldier
+      - [MIB_VIP_BODYGUARD] # 6 - Terrorist 1
+      - [MIB_BANKER] # 7 - Terrorist 2
+      - [STR_FREE_SPOT] # 8 - Special Guest 1
+      - [STR_FREE_SPOT] # 9 - Heavy Trooper / Underwater Terrorist 1
+      - [STR_FREE_SPOT] # 10 - Assault Trooper / Underwater Terrorist 2
+      - [STR_FREE_SPOT] # 11 - Special Guest 2 / Non-Combatant 1
+      - [STR_FREE_SPOT] # 12 - Non-Combatant 2
+      - [STR_FREE_SPOT] # 13 - Special Guest 3
 
   - id: STR_MIB
     members:
@@ -58,23 +74,6 @@ alienRaces:
       - STR_ZOMBIE_GRUBAS_TERRORIST # 4 - Navigator
       - STR_ZOMBIE_STERILE_TERRORIST # 5 - Soldier
       - STR_FACEHUGGER # 6 - Terrorist 1
-      - STR_FREE_SPOT # 7 - Terrorist 2
-      - STR_FREE_SPOT # 8 - Special Guest 1
-      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
-      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_FREE_SPOT # 13 - Non-Combatant 2
-      - STR_FREE_SPOT # 14 - Special Guest 3
-
-  - id: STR_JABBER
-    members:
-      - STR_FREE_SPOT # 0 - Commander
-      - STR_FREE_SPOT # 1 - Leader
-      - STR_FREE_SPOT # 2 - Engineer
-      - STR_FREE_SPOT # 3 - Medic
-      - STR_FREE_SPOT # 4 - Navigator
-      - STR_JABBER # 5 - Soldier
-      - STR_FREE_SPOT # 6 - Terrorist 1
       - STR_FREE_SPOT # 7 - Terrorist 2
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
