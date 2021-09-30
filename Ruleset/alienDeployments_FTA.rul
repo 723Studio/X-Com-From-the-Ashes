@@ -272,6 +272,7 @@ alienDeployments:
             - STR_PDW_CLIP     
   - type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
     race: STR_MIB_REGIONAL_HQ
+    nextStage: STR_MIB_REGIONAL_HQ_UNDERGROUND
     width: 70
     length: 70
     height: 11
@@ -318,6 +319,40 @@ alienDeployments:
             []
           -
             []
+
+  - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
+    width: 50
+    length: 50
+    height: 2
+    terrains:
+      - UBASE #TODO
+    shade: 15
+    script: ALIENBASE #TODO
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      desc: STR_MIB_REGIONAL_HQ_UNDERGROUND_DESC #TODO
+      showTarget: false
+    objectiveType: 3
+    alienBase: true
+    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500] #TODO
+    objectivePopup: STR_CONTROL_CENTER_DESTROYED #TODO
+    unlockedResearch: STR_MIB_HQ_DESTROYED #would be hardcoded, do not rename!!
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+
+
   - type: STR_MIB_CHASING
     race: STR_MIB
     width: 60

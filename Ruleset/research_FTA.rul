@@ -67,7 +67,8 @@ research:
     hidden: true
   - name: STR_DESERT_TELESCOPE
     hidden: true
-
+  - name: STR_MIB_HQ_DESTROYED
+    hidden: true
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
