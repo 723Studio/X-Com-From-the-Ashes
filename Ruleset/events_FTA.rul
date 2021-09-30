@@ -41,7 +41,7 @@ events:
       1:
         title: STR_CONTINUE_INVESTIGATION
         spawnEvent: [STR_MONSTER_HUNT_START_EVENT_YES]
-        #description: "STR_SOME_WISE_WORDS"
+        description: STR_CONTINUE_INVESTIGATION_DESCRIPTION
   - name: STR_MONSTER_HUNT_START_EVENT_YES
     description: STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION
     timer: 0

@@ -114,6 +114,18 @@ en-US:
   STR_REPUTATION_CHANGE: "REPUTATION CHANGE"
   STR_SOLDIERS_STATUS: "X-COM AGENT STATUS"
   STR_XCOM_OPERATIVES_WOUNDED: "X-COM OPERATIVES WOUNDED"
+  STR_USE_HACKING_TOOL: "Use Hacking Tool"
+  STR_NOT_HACKING_TARGET: "This target can not be hacked!"
+  STR_HACKING_LOGIN: "Logging in..."
+  STR_HACKING_LOGIN_SUCCESS: "Success!"
+  STR_HACKING_PROCEED: "Proceeding"
+  STR_HACKING_NODE_IMPENETRABLE: "Node is impassable"
+  STR_HACKING_FIREWALL_DETECTED: "Firewall detected"
+  STR_HACKING_FIREWALL_BREACH_DETECTED: "Firewall weakness detected"
+  STR_HACKING_FIREWALL_BREACHED: "Firewall breached"
+  STR_HACKING_VIRUS_TERMINATED: "Virus is terminated!"
+  STR_HACKING_NOT_ENOUGH_TU: "Not enough time units"
+  STR_HACKING_OBJECTIVE_DETECTED: "Objective detected"
   STR_MIA: "M.I.A"
   STR_NEW_DATA_ACQUIRED: "New data acquired."
   STR_REGIONAL_HQ_FOUND: "We discovered the M.I.B. regional headquarters!"
@@ -574,7 +586,7 @@ en-US:
   STR_MACHETE: "Machete"  
   STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone.{NEWLINE}>Concealable"
   STR_SWORD: "Sword"
-  STR_SWORD_UFOPEDIA: "Good old sword, light and sharp. Great for both melee combat and, after some incrustation with jewelry, knight initiation. If we ever establish an Order of X-COM Knights, of course..." #TODO - refactor
+  STR_SWORD_UFOPEDIA: "A well-made sword crafted from hard stainless steel. Sharpened on one side of the blade, handy handle and excellent balance allows to make strong sweeping blows."
   STR_THROWING_KNIFE: "Throwing Knife"
   STR_THROWING_KNIFE_UFOPEDIA: "This traditional throwing weapon is not very useful in the hands of beginners and ineffective against armored opponents. However, its lightness and conceivability can be very useful where the work should be done without any fuss.{NEWLINE}>Concealable"
   STR_SPORTS_BOW: "Compound Bow"
@@ -814,8 +826,8 @@ en-US:
   STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #TODO
   STR_UNDERWATER_BASES: "Underwater Bases"
   STR_UNDERWATER_BASES_UFOPEDIA: "STR_UNDERWATER_BASES_UFOPEDIA" #TODO
-  STR_XCOM_FILES_1: "STR_XCOM_FILES_1" #TODO
-  STR_XCOM_FILES_1_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
+  STR_XCOM_FILES_1: "X-COM FILES #094597"
+  STR_XCOM_FILES_1_UFOPEDIA: "UFOs have been the subject of governmental attention since the late 1940s. Until then, such incidents were not investigated because of the war, and before that the military did not have a sufficiently reliable way of detecting flying objects. The conditions of the Cold War, namely the active scanning of NATO and Soviet airspace, the development of detection technology and mutual mistrust actively contributed to the investigation of UFO activity in different countries.{NEWLINE}In 1984, an unsuccessful endeavor was made to create a secret intergovernmental committee at the UN, designed to unite the efforts of different countries. In 1996 a second attempt was made to create a supranational secret organization dedicated to investigating alien activity on Earth, called X-COM. Funding was supposed to come from a covert group of influential politicians and military officers from various countries named The Council.{NEWLINE}*** New entry ***{NEWLINE}On March 5, 1999, X-COM was disbanded.{NEWLINE}*** Confirm saving a new entry? (Y/N)"
   STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO
   STR_XCOM_FILES_2_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_XCOM_FILES_3: "STR_XCOM_FILES_1" #TODO
@@ -831,7 +843,7 @@ en-US:
   STR_EMPTY_MIB_EARLY_LORE4: "M.I.B. agent interrogation report #15537"
   STR_EMPTY_MIB_EARLY_LORE4_UFOPEDIA: "We successfully detoxified the subject's organism during the first 24 hours of detention and more or less stabilized his mental state. However, standard interrogation methods yielded no valuable information; the subject remembers absolutely nothing about what happened to him over the past 5 years. It was decided to try hypnosis as a last resort and to our surprise it went quite well and the subject even remembered some interesting details:{NEWLINE}'It's night, I'm standing in a forest glade, holding a man I don't know by his expensive tie, with a gun pointed to the back of his head. Next to me stands my partner, dressed in a black, austere suit, his sleeves stained with blood. We're waiting for someone to come, and then a light becomes apparent among the trees. It's the one we've been waiting for.'{NEWLINE}At that moment, however, the subject clutched his head, screamed something incoherent, and convulsed.  A minute later he died as a result of a massive stroke. The recording of his screams was submitted for linguistic expertise." 
   STR_EMPTY_MIB_EARLY_LORE5: "M.I.B. agent interrogation report #17685"
-  STR_EMPTY_MIB_EARLY_LORE5_UFOPEDIA: "After the subject's physical condition was stabilized, many interrogation techniques were performed on him. Alas, this did not yield the desired result - as with other M.I.B. agents, the subject remembered nothing about this mysterious organization. We decided to take a risk and inject him with 'truth serum' - a strong psychotropic substance used in interrogations. It was a big risk, considering what crazy cocktail was in his blood just recently. Even so, the subject responded well to the injection, and even remembered a few things:{NEWLINE}'I'm driving a black minivan, pulling into the grounds of a big office complex. I pass the parking area and drive around the main building. On the opposite side there is a gate... and ... Aaaaahhhhhhhhhh'.{NEWLINE}The subject clutched his head, started screaming and wriggling, foam coming out of his mouth. A minute later he lost consciousness, and by the time we got him to the medical center he had already fallen into a coma. He died shortly thereafter due to a massive brain hemorrhage." #TODO
+  STR_EMPTY_MIB_EARLY_LORE5_UFOPEDIA: "After the subject's physical condition was stabilized, many interrogation techniques were performed on him. Alas, this did not yield the desired result - as with other M.I.B. agents, the subject remembered nothing about this mysterious organization. We decided to take a risk and inject him with 'truth serum' - a strong psychotropic substance used in interrogations. It was a big risk, considering what crazy cocktail was in his blood just recently. Even so, the subject responded well to the injection, and even remembered a few things:{NEWLINE}'I'm driving a black minivan, pulling into the grounds of a big office complex. I pass the parking area and drive around the main building. On the opposite side there is a gate... and ... Aaaaahhhhhhhhhh'.{NEWLINE}The subject clutched his head, started screaming and wriggling, foam coming out of his mouth. A minute later he lost consciousness, and by the time we got him to the medical center he had already fallen into a coma. He died shortly thereafter due to a massive brain hemorrhage."
   STR_EMPTY_MIB_EARLY_LORE6: "M.I.B. agent interrogation report #16249"
   STR_EMPTY_MIB_EARLY_LORE6_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_EMPTY_MIB_EARLY_LORE7: "Some MiB lore article" #TODO
@@ -844,8 +856,8 @@ en-US:
   STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_FRESH_MIB_AGENT: "M.I.B. agent interrogation report #19723"
   STR_FRESH_MIB_AGENT_UFOPEDIA: "Surprisingly, the subject endured the detox relatively easily, and our therapy was very effective. Soon he was ready for interrogation. Sadly, the drugs they give him suppress his memory very well, so he remembered nothing at all. According to the police reports, he had been kidnapped only a few months before. During the interrogation, physical force was used, the chief of Intelligence punched him in the back of the head with a blunt object. His reaction was extremely strange - he convulsed and mumbled something in a language we didn't know. Ten minutes later, it stopped, and the object remembered nothing of what had happened. The results of this 'experiment' were well reproducible. We got a theory that we were thus hitting some device in his brain, which was confirmed after detailed analysis of radiography. Deep in the brain tissue, we noticed tiny artificial object that we had missed in previous studies. We should probably remove this implant and examine it in detail."
-  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: #TODO
-  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: #TODO
+  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: "Creature Containment"
+  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: "Chief! The staggering results of that monster autopsy have raised a lot more new questions than answers to old ones. It would be great to research this thing alive, but it is impossoble without a special facility at our base. Perhaps by analyzing the Ufopaedia files, we can design a new compartment in which such creatures can be kept safely and completely isolated, while still maintaining access to them for study"
 #other
   MAP_URBAN: "Urban"
   MAP_URBAN_LOW: "Urban Low"

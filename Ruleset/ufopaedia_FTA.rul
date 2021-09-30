@@ -217,8 +217,7 @@ ufopaedia:
   #     - STR_XCOM_LORE
   #   text: STR_XCOM_LORE_UFOPEDIA
   - id: STR_XCOM_FILES_1
-    type_id: 7
-    image_id: WIP_UFOPEDIA.SPK
+    type_id: 8
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
