@@ -59,7 +59,7 @@ ufos:
           length: 10
           objects:
             STR_TERMINAL:
-              - [3, 3, 0]
+              - [4, 4, 0]
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4

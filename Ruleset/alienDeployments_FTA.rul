@@ -1,6 +1,5 @@
 alienDeployments:
   - delete: STR_BASE_DEFENSE
-  - delete: STR_MEDIUM_SCOUT
   - type: STR_BASE_DEFENSE
     width: 60
     length: 60

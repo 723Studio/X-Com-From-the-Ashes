@@ -1,5 +1,5 @@
 objects:
   - type: STR_TERMINAL
     hackingDefence: 1
-    alterationMCDNumber: 2
-    alterationMCDRadius: 3
+    alterationMCDNumber: 16
+    alterationMCDRadius: 5
