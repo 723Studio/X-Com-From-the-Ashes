@@ -27,6 +27,10 @@ config:
   - events.customAnswers.1.title
   - events.customAnswers.2.title
   - events.customAnswers.3.title
+  - events.customAnswers.0.description
+  - events.customAnswers.1.description
+  - events.customAnswers.2.description
+  - events.customAnswers.3.description
   stringTypes:
   - alienDeployments.missionCompleteText
   - alienDeployments.missionFailedText

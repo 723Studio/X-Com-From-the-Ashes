@@ -687,7 +687,9 @@ extended:
           if eq battle_action battle_action_aimshoot;
             weapon_item.getTag temp Tag.BPL_AIMED_1_5X_POWER;
             if neq temp 0;
-              mul power 1.5;
+              set temp power;
+              div temp 2;
+              add power temp;
             end;
           end;
           return power part side;
@@ -1029,7 +1031,7 @@ extended:
 
           armorRuleset.getTag shieldType Tag.ARMOR_ENERGY_SHIELD_TYPE;
 
-          if or eq shieldType 0; # Default; Tzeentch
+          if or eq shieldType 0; # Default;
             # Check which damage type and set shield's 'resistance'
             # If it's special, choking, heat, or cold, just skip the rest
             if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 14;
@@ -1037,11 +1039,11 @@ extended:
 
             # resistances
             else eq damaging_type 1; # AP
-              set shieldResistCoeff 50;
+              set shieldResistCoeff 150; #was 50
             else eq damaging_type 2; # Incendiary
-              set shieldResistCoeff 50;
+              set shieldResistCoeff 120; #was 50
             else eq damaging_type 3; # Hi-Ex
-              set shieldResistCoeff 50;
+              set shieldResistCoeff 130; #was 50
             else eq damaging_type 5; # Plasma
               set shieldResistCoeff 125;
             else eq damaging_type 6; # Stun
@@ -1051,7 +1053,7 @@ extended:
             else eq damaging_type 8; # Acid
               set shieldResistCoeff 175;
             else eq damaging_type 11; # Electric
-              set shieldResistCoeff 66;
+              set shieldResistCoeff 75; #was 66
             else eq damaging_type 12; # Psi
               set shieldResistCoeff 33;
             else eq damaging_type 13; # Warp
