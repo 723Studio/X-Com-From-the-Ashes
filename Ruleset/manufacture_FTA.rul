@@ -9,28 +9,55 @@ manufacture:
     producedItems:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
+
+
+  - name: STR_COMBAT_SHIELD
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    space: 4
+    time: 620
+    cost: 8700
+    producedItems:
+      STR_COMBAT_SHIELD: 1
+    listOrder: 220030
+  - name: STR_ELECTRIC_STICK
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_ELECTRIC_STICK
+    space: 3
+    time: 620
+    cost: 15600
+    producedItems:
+      STR_ELECTRIC_STICK: 1
+    listOrder: 220030
   - name: STR_TASER_CANNON
     category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
     requires:
       - STR_TASER_CANNON
-    space: 4
-    time: 450
+    space: 5
+    time: 810
     cost: 43000
     producedItems:
       STR_TASER_CANNON: 1
     listOrder: 220030
   - name: STR_TASER_CANNON_CLIP
     category: STR_CLIPS
+    requiresBaseFunc: [WORK]
     requires:
       - STR_TASER_CANNON
     space: 2
-    time: 120
+    time: 140
     cost: 15000
     producedItems:
       STR_TASER_CANNON_CLIP: 1
     listOrder: 220030
   - name: STR_BOW_ARROW_HE
     category: STR_CLIPS
+    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
     space: 2
@@ -41,6 +68,7 @@ manufacture:
     listOrder: 220030
   - name: STR_BOW_ARROW_IN
     category: STR_CLIPS
+    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
     space: 2
@@ -51,6 +79,7 @@ manufacture:
     listOrder: 220030
   - name: STR_BOW_ARROW_STUN
     category: STR_CLIPS
+    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
     space: 3
@@ -61,6 +90,7 @@ manufacture:
     listOrder: 220030
   - name: STR_BOW_ARROW_ELECTRIC
     category: STR_CLIPS
+    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
       - STR_DAMAGE_11

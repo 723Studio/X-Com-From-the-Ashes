@@ -206,9 +206,21 @@ facilities:
     mapName: XBASE_02
   - type: STR_WORKSHOP
     spriteShape: 1
-    spriteFacility: 20
+    spriteFacility: 20 #TODO - change img
+    provideBaseFunc: [WORK]
     requires:
       - STR_FACILITIES_BLUEPRINTS
+      - STR_WORKSHOP
+    buildCost: 400000
+    buildTime: 15
+    monthlyCost: 5000
+    workshops: 12
+    mapName: XBASE_03 #TODO - make map!
+  - type: STR_ADVANCED_WORKSHOP
+    spriteShape: 1
+    spriteFacility: 20
+    requires:
+      - STR_TODOIUM
     buildCost: 800000
     buildTime: 32
     monthlyCost: 35000

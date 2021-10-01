@@ -839,7 +839,7 @@ alienDeployments:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
-      desc: STR_RESISTANCE_FOREST_HOUSE_AMBUSH_DESCRIPTION
+      desc: STR_RESISTANCE_HEAVEN_AMBUSH_DESCRIPTION
     terrains:
       - FORESTSWAMP
     customUfo: STR_RESISTANCE_FOREST_HOUSE_TRAP
@@ -847,7 +847,7 @@ alienDeployments:
     #battleScript: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     data:
       - alienRank: 9 #STR_MIB_SPECOPS
-        lowQty: 8
+        lowQty: 9
         highQty: 16
         dQty: 4
         percentageOutsideUfo: 50
@@ -923,7 +923,7 @@ alienDeployments:
         lowQty: 7
         highQty: 15
         dQty: 3
-        percentageOutsideUfo: 50
+        percentageOutsideUfo: 10
         itemSets:
           -
             - STR_SNIPER_RIFLE 
@@ -971,10 +971,10 @@ alienDeployments:
             - STR_RIFLE_CLIP 
 
       - alienRank: 9 #STR_MIB_SPECOPS heavy duty
-        lowQty: 1
-        highQty: 3
+        lowQty: 2
+        highQty: 4
         dQty: 1
-        percentageOutsideUfo: 50
+        percentageOutsideUfo: 30
         itemSets:
           -
             - STR_LMG
@@ -1034,7 +1034,7 @@ alienDeployments:
       textOffset: -16
       background: ZOMBIE_FARM.SCR
       showTarget: false
-      desc: STR_RESISTANCE_FARM_ZOMBIE_AMBUSH_BRIEFING
+      desc: STR_RESISTANCE_HEAVEN_AMBUSH_DESCRIPTION
     terrains:
       - CULTA
     script: RESISTANCE_FARM_AMBUSH

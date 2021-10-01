@@ -214,30 +214,45 @@ events:
       STR_RESISTANCE: -300
 
 #xcom
+  - name: STR_WORKSHOP_EVENT
+    description: STR_WORKSHOP_EVENT_DESCRIPTION
+    background: BACK17.SCR
+    researchList: [STR_WORKSHOP]
+    timer: 750
+    timerRandom: 650
+    interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_SPORTS_BOW_TINKERING
     description: STR_SPORTS_BOW_TINKERING_DESCRIPTION
-    background: PLACEHOLDER_BACKGROUND.SCR
+    background: BACK17.SCR
     researchList: [STR_SPORTS_BOW_TINKERING]
-    timer: 640
-    timerRandom: 300
+    timer: 750
+    timerRandom: 650
     interruptResearch: STR_BIOLAB_PREREQ
+  - name: STR_ELECTRIC_WEAPONS_PREREQ_EVENT
+    description: STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION
+    background: BACK05.SCR
+    researchList: [STR_ELECTRIC_WEAPONS_PREREQ]
+    timer: 750
+    timerRandom: 650
+    interruptResearch: STR_ELECTRIC_WEAPONS_PREREQ
+    
   - name: STR_BIOLAB_PREREQ_EVENT
     description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION
-    #background: STR_RESISTANCE_BACKGROUND.SCR
+    background: BACK05.SCR
     researchList: [STR_BIOLAB_PREREQ]
     timer: 120
     timerRandom: 60
     interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_BIOLAB_STUFF
     description: STR_BIOLAB_STUFF_DESCRIPTION
-    #background: STR_RESISTANCE_BACKGROUND.SCR
+    background: BACK05.SCR
     researchList: [STR_BIOLAB_STUFF]
     timer: 30
     timerRandom: 0
     interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_STRANGE_CREATURE_AUTOPSY
     description: STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION
-    #background: STR_RESISTANCE_BACKGROUND.SCR
+    background: BACK05.SCR
     researchList: [STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT]
     timer: 1440
     timerRandom: 2880

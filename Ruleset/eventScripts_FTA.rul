@@ -76,12 +76,27 @@ eventScripts:
     maxDifficulty: 4
 
 #xcom
+  - &STR_WORKSHOP_SCRIPT
+    type: STR_WORKSHOP_SCRIPT
+    oneTimeSequentialEvents: [STR_WORKSHOP_EVENT]
+    researchTriggers:
+      STR_SUPPLIES: true
+      STR_WORKSHOP: false
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 30
+    minDifficulty: 0
+    maxDifficulty: 3
+  - type: STR_WORKSHOP_SCRIPT_SH #extra SH copy
+    refNode: *STR_WORKSHOP_SCRIPT
+    executionOdds: 10
+    minDifficulty: 4
+    maxDifficulty: 4
   - &STR_SPORTS_BOW_TINKERING_SCRIPT
     type: STR_SPORTS_BOW_TINKERING_SCRIPT
     oneTimeSequentialEvents: [STR_SPORTS_BOW_TINKERING]
-    # researchTriggers:
-    #   STR_BIOLAB_PREREQ: false
-    #   STR_BIOLAB: false
+    researchTriggers:
+      STR_SPORTS_BOW_TINKERING: false
     itemTriggers:
       STR_SPORTS_BOW: true
       STR_BOW_ARROW: true
@@ -93,6 +108,23 @@ eventScripts:
   - type: STR_SPORTS_BOW_TINKERING_SCRIPT_SH #extra SH copy
     refNode: *STR_SPORTS_BOW_TINKERING_SCRIPT
     executionOdds: 30
+    minDifficulty: 4
+    maxDifficulty: 4
+
+  - &STR_ELECTRIC_WEAPONS_SCRIPT
+    type: STR_ELECTRIC_WEAPONS_SCRIPT
+    oneTimeSequentialEvents: [STR_ELECTRIC_WEAPONS_PREREQ_EVENT]
+    researchTriggers:
+      STR_PRISONER_INTERROGATIONS: true
+      STR_ELECTRIC_WEAPONS_PREREQ: false
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 20
+    minDifficulty: 0
+    maxDifficulty: 3
+  - type: STR_ELECTRIC_WEAPONS_SCRIPT_SH #extra SH copy
+    refNode: *STR_ELECTRIC_WEAPONS_SCRIPT
+    executionOdds: 3
     minDifficulty: 4
     maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER

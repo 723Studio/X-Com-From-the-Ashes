@@ -226,6 +226,51 @@ items:
     experienceTrainingMode: 13
     attraction: 9
     listOrder: 18520
+  - type: STR_ELECTRIC_STICK
+    categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_INCAPACITATE, STR_MELEE]
+    landOnly: true
+    size: 0.1
+    costSell: 1450
+    weight: 3
+    bigSprite: 408
+    floorSprite: 408
+    handSprite: 744
+    meleeHitSound: 122
+    meleeAnimation: 0
+    power: 35
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ArmorEffectiveness: 0.75
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ToTile: 0.0
+    accuracyMelee: 65
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 12
+      energy: 5
+    costThrow:
+      energy: 8
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 35
+    experienceTrainingMode: 13
+    attraction: 12
+    listOrder: 18790
+
 
 #throwing
   - type: STR_THROWING_KNIFE
@@ -3184,8 +3229,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     landOnly: true
-    costBuy: 6000
-    costSell: 4100
+    costBuy: 9200
+    costSell: 6000
     size: 0.4
     weight: 22
     bigSprite: 389
@@ -3197,7 +3242,7 @@ items:
     power: 0
     damageType: 6
     damageBonus:
-      strength: 0.4
+      strength: 0.3
     damageAlter:
       RandomType: 2
       FixRadius: 0
@@ -3207,9 +3252,9 @@ items:
       ToHealth: 0.15
       ToTime: 0.6
       ToTile: 0.0
-    accuracyMelee: 60
+    accuracyMelee: 50
     costMelee:
-      time: 24
+      time: 26
       energy: 17
     hidePower: true
     invWidth: 2

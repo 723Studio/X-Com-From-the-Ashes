@@ -452,7 +452,7 @@ ufopaedia:
     section: STR_BASE_FACILITIES
     text: STR_WORKSHOP_UFOPEDIA
     requires:
-      - STR_FACILITIES_BLUEPRINTS
+      - STR_WORKSHOP
   - id: STR_GYM
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -522,6 +522,13 @@ ufopaedia:
     text: STR_SWORD_UFOPEDIA
     requires:
       - STR_SWORD
+    listOrder: 20330
+  - id: STR_ELECTRIC_STICK
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ELECTRIC_STICK_UFOPEDIA
+    requires:
+      - STR_ELECTRIC_STICK
     listOrder: 20330
 #throwing
   - id: STR_THROWING_KNIFE

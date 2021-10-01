@@ -299,8 +299,9 @@ en-US:
   STR_CREATURES_CONTAINMENT: "Dangerous Creatures Containment"
   STR_CREATURES_CONTAINMENT_UFOPEDIA: "This structure contains 10 isolated cells for holding dangerous animals and other creatures. The conditions are similar to those on Earth in terms of temperature, atmospheric pressure and air composition.{NEWLINE}Ventilation and sewerage of the cells is carried out in a fully closed cycle, so the risk of contamination by unknown pathogens to the base personnel is reduced to zero. Each cell is equipped with heavy-duty glass walls that make it possible to study the creature in complete safety."
   STR_HANGAR_UFOPEDIA: "Each hangar can accommodate one craft and 25 storage units. There are facilities for maintenance, refueling and repair of X-COM craft (5 workspaces). Each craft stationed at a base must have a free hangar assigned to it which cannot be used by other craft, even if the assigned craft is out on a mission."
-  STR_LABORATORY_UFOPEDIA: "Up to 20 scientists can work in a laboratory facility. Science laboratories are equipped with the latest technology for research into materials, physics and cosmology (but not biology nor intelligence). There is privileged access to the best research labs throughout the world, including military establishments.{NEWLINE}This facility requires 5 units of laboratory equipment in order to function.{NEWLINE}Throwing more scientists at a problem becomes pointless after a certain point, so it is senseless to build more than a single facility of this type per base."
+  STR_LABORATORY_UFOPEDIA: "Up to 20 scientists can work in a laboratory facility. Science laboratories are equipped with the latest technology for research into materials, physics and cosmology (but not biology nor intelligence). There is privileged access to the best research labs throughout the world, including military establishments.{NEWLINE}This facility requires 5 units of laboratory equipment in order to function."
   STR_GENERAL_STORES_UFOPEDIA: "This facility is designed to effectively store a wide variety of supplies, weapons and ammunition, and in special containers we can safely store alien artifacts in perfect isolation."
+  STR_WORKSHOP_UFOPEDIA: "In this facility, our engineers can mount common household machines - a milling machine, a lathe, a sawing machine. A small molding press, furnace, anvil, and large, comfortable workbenches and racks all allow our engineers to work on at least simple projects."
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "M.I.B. Regional HQ"
@@ -315,9 +316,9 @@ en-US:
   STR_RESISTANCE_FOREST_HOUSE: "Resistance Heaven Attacked"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The M.I.B. have surrounded one of Resistance secret hideouts. Attempting to destroy important clues that could lead the Men in Black agents to other Resistance havens, they were forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. Additionally, it is better to recover all possible clues about Resistance activity.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FOREST_HOUSE_AMBUSH: "Resistance Heaven Attacked"
-  STR_RESISTANCE_FOREST_HOUSE_AMBUSH_DESCRIPTION: #TODO
   STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: "Resistance Heaven Attacked"
-  STR_RESISTANCE_FARM_ZOMBIE_AMBUSH_BRIEFING: #TODO
+  STR_RESISTANCE_HEAVEN_AMBUSH_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We receive a signal from their radio beacon transmitting an encrypted distress signal, but there is no communication with the refuge itself - no one is answering our requests. It is necessary to understand the situation and, if necessary, to eliminate all existing threats.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
+  STR_MIB_FOREST_BEACON_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We receive a signal from their radio beacon transmitting an encrypted distress signal, but there is no communication with the refuge itself - no one is answering our requests. Obviously, the Resistance shelters must be in a secluded place, but what a backwoods! It is necessary to understand the situation and, if necessary, to eliminate all existing threats.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
   STR_RESISTANCE_URBAN_HIDEOUT: "Resistance Heaven Attacked"
   STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "We are receiving a distress signal the Resistance cell, located in urban area. The local TV channels broadcast reports that government forces have located an international terrorists and that police units, supported by special forces, are about to storm the area. There is no doubt that the M.I.B. involved. This cell was used for covert communications with X-COM, so cryptographic data stored on HD drive must be secured. We also should not harm the local police officers, as they are only pawns in the game.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
   STR_SCIENTIST_REFUGE: "Scientist Refuge"
@@ -402,17 +403,18 @@ en-US:
   STR_NOT_RESCUED_SCIENTIST: "Scientist slip: failure"
   STR_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives caught in the open has been successful, and they have decided to join our ranks. In addition, the movement's leadership has heard of this and despite the change of allegiances of the rescuers their opinion of us has improved further as 'they are still fighting for the cause, no matter the uniform.{NEWLINE}Resistance reputation score> {ALT}+100"
   STR_RESCUED_SCIENTIST_DESCRIPTION: "We have managed to rescue the scientist whose cover was blown from what seemed like certain death. Already accustomed to our base's relative safety and comfort as opposed to the conditions of their hideout, he has decided to stay here and help us where he feels the best - in the lab.{NEWLINE}Resistance reputation score> {ALT}+130"
-
   STR_RESCUED_SCIENTISTS_TELESCOPE: "Desert Telescope - Success"
   STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: "Our people are very encouraged by the successful results of the recent rescue operation. We have very few talented scientists left, and the reinforcements are very welcome.{NEWLINE}Resistance reputation score> {ALT}+180{ALT}{NEWLINE}Loyalty> {ALT}+150"
   STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: "Desert Telescope - Failure"
   STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: "Our people are very disappointed in the failure of the recent rescue operation. We have very few talented scientists left, and reinforcements now could be very welcome. .{NEWLINE}Resistance reputation score> {ALT}-300{ALT}{NEWLINE}Loyalty> {ALT}-200"
-
   STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> {ALT}-150"
-  STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> {ALT}-200"
+  STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> {ALT}-200"  
+  STR_WORKSHOP_EVENT: "Basic Workshop"
+  STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
   STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"
   STR_SPORTS_BOW_TINKERING_DESCRIPTION: "After some thought and a little experimentation, our engineers came up with an interesting design of advanced arrows for the sport bow, equipped with various special charges or tips. This will greatly expand the tactical capabilities of the conventional bow. If you like, we can begin production immediately.{NEWLINE}New technology> {ALT}Advanced bow arrows."
-
+  STR_ELECTRIC_WEAPONS_PREREQ_EVENT: #TODO
+  STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION: #TODO
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
   STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: "Commander, we need a biolab to continue our research. And a good one, full of quality and innovative equipment. Our scientists have made a list of everything we need, and after a little modification to the blueprints of the usual lab, we're ready to get to work. In order to build it, in addition to significant material costs, we need a lot of specific equipment that cannot be bought on the open market. So we need to get in touch with a certain circle of people who are able to provide us with everything we need. It is necessary to send our people on a covert operation to carry out negotiations.{NEWLINE}{ALT}New covert operation available."
   STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"
@@ -575,6 +577,7 @@ en-US:
   STR_XCOM_TECH: "All X-COM Tech"
   #manufacturing
   STR_WEAPONS: "Weapons"
+  STR_EQUIPMENT: "Equipment"
   STR_COVERT_TOOLS: "Covert Tools"
 #items - weapons and equipment
   STR_CROWBAR: "Crowbar"
@@ -587,6 +590,8 @@ en-US:
   STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone.{NEWLINE}>Concealable"
   STR_SWORD: "Sword"
   STR_SWORD_UFOPEDIA: "A well-made sword crafted from hard stainless steel. Sharpened on one side of the blade, handy handle and excellent balance allows to make strong sweeping blows."
+  STR_ELECTRIC_STICK: "Electric Stick"
+  STR_ELECTRIC_STICK_UFOPEDIA: "This device is designed to disable enemies on the battlefield by means of a strong electric discharge, which will be transmitted to the victim when struck. Not the most convenient to handle, but nevertheless quite a powerful weapon. Its impulse is enough to bring down even a horse."
   STR_THROWING_KNIFE: "Throwing Knife"
   STR_THROWING_KNIFE_UFOPEDIA: "This traditional throwing weapon is not very useful in the hands of beginners and ineffective against armored opponents. However, its lightness and conceivability can be very useful where the work should be done without any fuss.{NEWLINE}>Concealable"
   STR_SPORTS_BOW: "Compound Bow"

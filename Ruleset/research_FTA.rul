@@ -194,8 +194,14 @@ research:
       - STR_SINGLE_ROCKET_LAUNCHER
       - STR_MEDI_PACK
       - STR_HELICOPTER
+  - name: STR_ELECTRIC_STICK
+    cost: 360
+    points: 20
+    dependencies:
+      - STR_DAMAGE_11
+    listOrder: 7410
   - name: STR_TASER_CANNON
-    cost: 70
+    cost: 1600
     points: 40
     dependencies:
       - STR_DAMAGE_11
@@ -213,7 +219,7 @@ research:
   - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - add ways to unlock it
     hidden: true
   - name: STR_ELECTRIC_WEAPONS #TODO Articles
-    cost: 192
+    cost: 768
     points: 12
     unlocks:
       - STR_DAMAGE_11 # "ELECTRIC" damage
@@ -1070,6 +1076,8 @@ research:
 #craft items
 
 #facilities
+  - name: STR_WORKSHOP
+    hidden: true
   - name: STR_BIOLAB_PREREQ
     hidden: true
   - name: STR_BIOLAB

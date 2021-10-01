@@ -302,6 +302,7 @@ extraSprites:
       405: Resources/Weapons/MIB/bigob_ChemogunClip.png
       406: Resources/Weapons/MIB/bigob_Chempistol.png
       407: Resources/Weapons/MIB/bigob_ChempistolClip.png
+      408: Resources/Weapons/Earthbound/Xcom/bigob_ElectricStick.png
       
       
   - type: FLOOROB.PCK
@@ -414,6 +415,7 @@ extraSprites:
       405: Resources/Weapons/MIB/floorob_ChemogunClip.png
       406: Resources/Weapons/MIB/floorob_Chempistol.png
       407: Resources/Weapons/MIB/floorob_ChempistolClip.png
+      408: Resources/Weapons/Earthbound/Xcom/floorob_ElectricStick.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -498,6 +500,8 @@ extraSprites:
       720: Resources/Weapons/Earthbound/Special/handob_Crowbar.png
       728: Resources/Weapons/MIB/handob_Chemogun.png
       736: Resources/Weapons/MIB/handob_Chempistol.png
+      744: Resources/Weapons/Earthbound/Xcom/handob_ElectricStick.png
+
 
 
 #baseScape
