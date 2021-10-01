@@ -93,10 +93,34 @@ manufacture:
     requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
-      - STR_DAMAGE_11
+      - STR_ELECTRIC_WEAPONS
     space: 4
     time: 70
     cost: 4000
     producedItems:
       STR_BOW_ARROW_ELECTRIC: 1
     listOrder: 220030
+  - name: STR_CHEMPISTOL
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_CHEMPISTOL_MANUFACTURING
+    space: 4
+    time: 940
+    cost: 51000
+    producedItems:
+      STR_CHEMPISTOL: 1
+    listOrder: 220030
+  - name: STR_CHEMPISTOL_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_CHEMPISTOL_CLIP_MANUFACTURING
+    space: 2
+    time: 260
+    cost: 16000
+    producedItems:
+      STR_CHEMPISTOL_CLIP: 1
+    listOrder: 220030
+
+

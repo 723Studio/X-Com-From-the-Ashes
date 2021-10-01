@@ -194,17 +194,26 @@ research:
       - STR_SINGLE_ROCKET_LAUNCHER
       - STR_MEDI_PACK
       - STR_HELICOPTER
+
+  - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - add ways to unlock it
+    hidden: true
+  - name: STR_ELECTRIC_WEAPONS
+    cost: 768
+    points: 12
+    dependencies:
+      - STR_ELECTRIC_WEAPONS_PREREQ
+      - STR_PRODUCTION
   - name: STR_ELECTRIC_STICK
     cost: 360
     points: 20
     dependencies:
-      - STR_DAMAGE_11
+      - STR_ELECTRIC_WEAPONS
     listOrder: 7410
   - name: STR_TASER_CANNON
     cost: 1600
     points: 40
     dependencies:
-      - STR_DAMAGE_11
+      - STR_ELECTRIC_WEAPONS
     unlocks:
       - STR_TASER_CANNON_CLIP
     listOrder: 7410
@@ -215,21 +224,43 @@ research:
       - STR_TASER_CANNON
     listOrder: 7410
 
-
-  - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - add ways to unlock it
+  - name: STR_CHEMICAL_WEAPONRY_PREREQ
     hidden: true
-  - name: STR_ELECTRIC_WEAPONS #TODO Articles
-    cost: 768
-    points: 12
-    unlocks:
-      - STR_DAMAGE_11 # "ELECTRIC" damage
+  - name: STR_CHEMICAL_WEAPONRY
+    cost: 720
+    points: 30
     dependencies:
-      - STR_ELECTRIC_WEAPONS_PREREQ
+      - STR_CHEMICAL_WEAPONRY_PREREQ
+      - STR_PRODUCTION
+    listOrder: 7410
+  - name: STR_ACID_SYNTHESIS
+    cost: 2200
+    points: 30
+    dependencies:
+      - STR_CHEMICAL_WEAPONRY
+    listOrder: 7410
+
+  - name: STR_CHEMPISTOL_MANUFACTURING
+    cost: 4200
+    points: 60
+    dependencies:
+      - STR_CHEMICAL_WEAPONRY
+      - STR_CHEMPISTOL
+    listOrder: 7410
+  - name: STR_CHEMPISTOL_CLIP_MANUFACTURING
+    cost: 600
+    points: 5
+    dependencies:
+      - STR_CHEMPISTOL
+      - STR_ACID_SYNTHESIS
+    listOrder: 7410 
+
   - name: STR_LASER_WEAPONS #TODO
     cost: 12000
     points: 100
     dependencies:
       - STR_TODOIUM
+    listOrder: 7410
   - name: STR_EXPANDABLE_AMMO_PREREQ #TODO
     hidden: true
   - name: STR_EXPANDABLE_AMMO
@@ -241,24 +272,28 @@ research:
     dependencies:
       - STR_EXPANDABLE_AMMO_PREREQ
       - STR_XCOM_EQUIPMENT
+    listOrder: 7410
   - name: STR_PISTOL_EXP_CLIP
     dependencies:
       - STR_EXPANDABLE_AMMO
+    listOrder: 7410
   - name: STR_RIFLE_EXP_CLIP
     dependencies:
       - STR_EXPANDABLE_AMMO
-
+    listOrder: 7410
   - name: STR_ALLOY_AMMO
     cost: 7000
     points: 100
     dependencies:
       - STR_TODOIUM
       - STR_XCOM_EQUIPMENT
+    listOrder: 7410
   - name: STR_PISTOL_AA_CLIP
     cost: 800
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
+    listOrder: 7410
   - name: STR_PDW_AA_CLIP
     cost: 850
     points: 5
@@ -342,8 +377,6 @@ research:
     dependencies:
       - STR_TODOIUM  
   - name: STR_DAMAGE_11 # "ELECTRIC"
-    dependencies:
-      - STR_ELECTRIC_WEAPONS  
   - name: STR_DAMAGE_12 # "PSI"
     dependencies:
       - STR_TODOIUM  
@@ -791,7 +824,7 @@ research:
     points: 11
     dependencies:
       - STR_MIB_BUTCHER
-      - STR_TODOIUM #something about MIB body enchantment here pls
+      - STR_TODOIUM #TODO - something about MIB body enchantment here pls
     listOrder: 146000
   - name: STR_SEEKER_DRONE_ARMOR
     cost: 130
@@ -900,21 +933,23 @@ research:
     points: 0
     dependencies:
       - STR_RIOT_PISTOL
-  - name: STR_CHEMPISTOL #TODO - balance
-    cost: 1000
-    points: 60
+  - name: STR_CHEMPISTOL
+    cost: 1200
+    points: 40
     needItem: true
     destroyItem: true
     unlocks:
       - STR_DAMAGE_ACID
+      - STR_CHEMICAL_WEAPONRY_PREREQ
     listOrder: 20530
   - name: STR_CHEMOGUN #TODO - balance
-    cost: 1500
+    cost: 2500
     points: 80
     needItem: true
     destroyItem: true
     unlocks:
       - STR_DAMAGE_ACID
+      - STR_CHEMICAL_WEAPONRY_PREREQ
     listOrder: 20530
   - name: STR_MACHINE_PISTOL
     cost: 10
@@ -1077,6 +1112,10 @@ research:
 
 #facilities
   - name: STR_WORKSHOP
+    hidden: true
+    unlocks:
+      - STR_PRODUCTION
+  - name: STR_PRODUCTION
     hidden: true
   - name: STR_BIOLAB_PREREQ
     hidden: true
