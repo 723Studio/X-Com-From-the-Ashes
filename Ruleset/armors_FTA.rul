@@ -132,7 +132,7 @@ armors:
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
-        flatHundred: 0.1
+        flatHundred: 0.14
         healthCurrent: 0.25
       stun:
         healthCurrent: 0.1
@@ -140,11 +140,11 @@ armors:
       health:
         stunNormalized: -0.1
     meleeDodge:
-      reactions: 0.5
+      reactions: 0.7
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
     damageModifier: *ClothSuiteResist
-    specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
   - type: STR_MIB_AGENT_VEST_ARMOR
     spriteSheet: MIB_ARMORED_AGENT.PCK
@@ -187,7 +187,7 @@ armors:
       - 1.0 #13 - Warp
       - 0.0 #14 - Pressure
       - 1.0 #15 - Bio
-    specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
   - type: STR_MIB_SPECOPS_ARMOR
     spriteSheet: MIB_SPECOPS.PCK
@@ -230,7 +230,7 @@ armors:
       - 1.0 #13 - Warp
       - 1.0 #14 - Pressure
       - 1.0 #15 - Bio
-    specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
   - type: STR_MIB_BUTCHER_ARMOR
     spriteSheet: MIB_BUTCHER.PCK
@@ -245,26 +245,26 @@ armors:
     rearArmor: 6
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
-    # recovery:
-    #   energy:
-    #     flatHundred: 0.06
-    #     healthCurrent: 0.25
-    #   stun:
-    #     healthCurrent: 0.1
-    #     health: -0.05
-    #   health:
-    #     stunNormalized: -0.1
+    recovery:
+      energy:
+        flatHundred: 0.06
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
     overKill: 1.5
     damageModifier:
       - 1.0 #0 - None - special
       - 1.0 #1 - AP - kinetic
-      - 1.2 #2 - Incendiary
+      - 0.9 #2 - Incendiary
       - 1.0 #3 - High Explosive - Explosive
       - 1.0 #4 - Laser
       - 1.0 #5 - Plasma
       - 0.9 #6 - Stun
-      - 1.15 #7 - Melee - Cutting
-      - 1.15 #8 - Acid
+      - 0.9 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
       - 4.0 #9 - Smoke - Choke
       - 0.0 #10 - EMP
       - 1.0 #11 - Electric
@@ -272,7 +272,7 @@ armors:
       - 1.0 #13 - Warp
       - 1.0 #14 - Pressure
       - 1.0 #15 - Bio
-    specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
   - type: STR_SEEKER_DRONE_ARMOR
     spriteSheet: SEEKER_DRONE.PCK
@@ -316,6 +316,50 @@ armors:
       - 0.8 #14 - Pressure
       - 0.0 #15 - Bio
     loftempsSet: [ 2 ]
+  - type: STR_MIB_SCIENTIST_ARMOR
+    spriteSheet: MIB_SCIENTIST.PCK
+    spriteInv: inventory_MIB_SCIENTIST
+    corpseBattle:
+      - STR_MIB_SCIENTIST_CORPSE
+    visibilityAtDark: 13
+    weight: 3
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 0.9 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 0.9 #6 - Stun
+      - 0.9 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
   - type: STR_MIB_ENFORCER_ARMOR
     spriteSheet: MIB_ENFORCER.PCK
     spriteInv: inventory_MIB_ENFORCER
@@ -357,8 +401,69 @@ armors:
       - 1.0 #13 - Warp
       - 1.0 #14 - Pressure
       - 1.0 #15 - Bio
+    specialWeapon: STR_UNARMED_TRAINED
+    loftempsSet: [ 3 ]
+
+#MiB\Procured
+  - &MIB_PROCURED_CIVILIAN
+    type: STR_MIB_OFFICE_ENGINEER_ARMOR
+    spriteSheet: MIB_OFFICE_ENGINEER.PCK
+    spriteInv: inventory_MIB_OFFICE_ENGINEER
+    corpseBattle:
+      - STR_MIB_OFFICE_ENGINEER_CORPSE
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.1
+    overKill: 1.5
+    damageModifier: *ClothSuiteResist
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
+  - type: STR_MIB_OFFICE_MANAGER_ARMOR
+    refNode: *MIB_PROCURED_CIVILIAN
+    spriteSheet: MIB_OFFICE_MANAGER.PCK
+    spriteInv: inventory_MIB_OFFICE_MANAGER
+    corpseBattle:
+      - STR_MIB_OFFICE_MANAGER_CORPSE
+  - type: STR_MIB_OFFICE_SECURITY_ARMOR
+    refNode: *MIB_PROCURED_CIVILIAN
+    spriteSheet: MIB_OFFICE_SECURITY.PCK
+    spriteInv: inventory_MIB_OFFICE_SECURITY
+    corpseBattle:
+      - STR_MIB_OFFICE_SECURITY_CORPSE
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.4
+  - type: STR_MIB_OFFICE_WORKER_ARMOR
+    refNode: *MIB_PROCURED_CIVILIAN
+    spriteSheet: MIB_OFFICE_WORKER.PCK
+    spriteInv: inventory_MIB_OFFICE_WORKER
+    corpseBattle:
+      - STR_MIB_OFFICE_WORKER_CORPSE
+  - type: STR_MIB_VIP_ARMOR
+    refNode: *MIB_PROCURED_CIVILIAN
+    spriteSheet: MIB_VIP.PCK
+    spriteInv: inventory_MIB_VIP
+    corpseBattle:
+      - STR_MIB_VIP_CORPSE
+  - type: STR_MIB_VIP_BODYGUARD_ARMOR
+    refNode: *MIB_PROCURED_CIVILIAN
+    spriteSheet: MIB_VIP_BODYGUARD.PCK
+    spriteInv: inventory_MIB_VIP_BODYGUARD
+    corpseBattle:
+      - STR_MIB_VIP_BODYGUARD_CORPSE
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.4
 
 
 #Zombies
@@ -620,7 +725,7 @@ armors:
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
-    meleeDodgeBackPenalty: 0.5
+    meleeDodgeBackPenalty: 0.1
     recovery:
       energy:
         flatHundred: 0.1
@@ -655,7 +760,7 @@ armors:
         stunNormalized: -0.1
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
-    #specialWeapon: STR_UNARMED_THUG
+    specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
 
   - type: STR_DOGE_ARMOR
@@ -734,7 +839,7 @@ armors:
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
 
-  - type: STR_RESISTANCE_AGENT_ARMOR #TODO!
+  - type: STR_RESISTANCE_AGENT_ARMOR
     spriteSheet: RESISTANCE_SOLDIER.PCK 
     spriteInv: inventory_RESISTANCE_SOLDIER
     corpseBattle:
@@ -954,7 +1059,7 @@ armors:
         stunNormalized: -0.1
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
-    specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED_TRAINED
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
@@ -1086,7 +1191,7 @@ armors:
         stunNormalized: -0.1
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
-    specialWeapon: STR_UNARMED
+    specialWeapon: STR_UNARMED_TRAINED
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]

@@ -94,9 +94,9 @@ ai:
 constants:
   extendedItemReloadCost: false #to consider, but with true bow is unplayable
   extendedRunningCost: true
-  damageRange: 80 #for good or bad
+  damageRange: 75 #for good or bad
   extendedTerrainMelee: 4
-  extendedUnderwaterThrowFactor: 60
+  extendedUnderwaterThrowFactor: 50
   extendedMeleeReactions: 2
 
 

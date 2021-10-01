@@ -32,6 +32,7 @@ Here is a list of that assets:
 * ufopedia_CHUPACABRA_CPAL.png
 * Extracted_MIB_Chip_CPAL.png
 * ARMY_TRUCK.pck
+* Hacking_UI.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

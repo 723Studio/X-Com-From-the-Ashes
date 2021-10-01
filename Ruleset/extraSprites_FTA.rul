@@ -185,6 +185,13 @@ extraSprites:
       119: Resources/Armors/Xcom/CoatArmor/bigob_COAT_CORPSE.png
       120: Resources/Armors/Enemies/MiB/bigob_MIB_BUTCHER.png
       121: Resources/Armors/Enemies/Aliens/Sectoids/bigob_SECTOID_COMMANDER.png
+      122: Resources/Armors/Enemies/MiB/Procured/bigob_MIB_OFFICE_ENGINEER.png
+      123: Resources/Armors/Enemies/MiB/Procured/bigob_MIB_OFFICE_MANAGER.png
+      124: Resources/Armors/Enemies/MiB/Procured/bigob_MIB_OFFICE_SECURITY.png
+      125: Resources/Armors/Enemies/MiB/Procured/bigob_MIB_OFFICE_WORKER.png
+      126: Resources/Armors/Enemies/MiB/Procured/bigob_MIB_VIP.png
+      127: Resources/Armors/Enemies/MiB/Procured/bigob_MIB_VIP_BODYGUARD.png
+      128: Resources/Armors/Enemies/MiB/bigob_MIB_SCIENTIST.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -289,7 +296,12 @@ extraSprites:
       399: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannonClip.png
       400: Resources/Weapons/Earthbound/Utilities/handob_TraumaPack.png #temp
       401: Resources/Weapons/Earthbound/Xcom/bigob_SEShotgun.png
-      402: Resources/Weapons/Earthbound/Xcom/bigob_BattleRifleGrenade.png
+      #402: Resources/Weapons/Earthbound/Xcom/bigob_BattleRifleGrenade.png
+      403: Resources/Weapons/Earthbound/Special/bigob_Crowbar.png
+      404: Resources/Weapons/MIB/bigob_Chemogun.png
+      405: Resources/Weapons/MIB/bigob_ChemogunClip.png
+      406: Resources/Weapons/MIB/bigob_Chempistol.png
+      407: Resources/Weapons/MIB/bigob_ChempistolClip.png
       
       
   - type: FLOOROB.PCK
@@ -317,6 +329,13 @@ extraSprites:
       119: Resources/Armors/Xcom/CoatArmor/floorob_COAT_CORPSE.png
       120: Resources/Armors/Enemies/MiB/floorob_MIB_BUTCHER.png
       121: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_COMPUTER.png
+      122: Resources/Armors/Enemies/MiB/Procured/floorob_MIB_OFFICE_ENGINEER.png
+      123: Resources/Armors/Enemies/MiB/Procured/floorob_MIB_OFFICE_MANAGER.png
+      124: Resources/Armors/Enemies/MiB/Procured/floorob_MIB_OFFICE_SECURITY.png
+      125: Resources/Armors/Enemies/MiB/Procured/floorob_MIB_OFFICE_WORKER.png
+      126: Resources/Armors/Enemies/MiB/Procured/floorob_MIB_VIP.png
+      127: Resources/Armors/Enemies/MiB/Procured/floorob_MIB_VIP_BODYGUARD.png
+      128: Resources/Armors/Enemies/MiB/floorob_MIB_SCIENTIST.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
       303: Resources/Weapons/Earthbound/Xcom/floorob_LightCannon.png
@@ -389,7 +408,12 @@ extraSprites:
       399: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png
       400: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png #temp for hacking
       401: Resources/Weapons/Earthbound/Xcom/floorob_SEShotgun.png
-
+      #402
+      403: Resources/Weapons/Earthbound/Special/floorob_Crowbar.png
+      404: Resources/Weapons/MIB/floorob_Chemogun.png
+      405: Resources/Weapons/MIB/floorob_ChemogunClip.png
+      406: Resources/Weapons/MIB/floorob_Chempistol.png
+      407: Resources/Weapons/MIB/floorob_ChempistolClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -471,6 +495,10 @@ extraSprites:
       696: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png
       704: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png #temp for hacking
       712: Resources/Weapons/Earthbound/Xcom/handob_SEShotgun.png
+      720: Resources/Weapons/Earthbound/Special/handob_Crowbar.png
+      728: Resources/Weapons/MIB/handob_Chemogun.png
+      736: Resources/Weapons/MIB/handob_Chempistol.png
+
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
@@ -534,12 +562,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Crafts/Ufopedia/Osprey_ufopedia.png
-  - type: RND_CHIEF.SPK
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/UfopediaPics/RnD_CHIEF.png
   - type: RND_CHIEF_CPAL.SPK
     singleImage: true
     width: 320
@@ -576,6 +598,14 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Facility_decryption.png
+  - type: VOID_LOGO_CPAL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/VOID_logo_CPAL.png
+
+
 #backgrounds
   - type: STORES_STATE.SCR
     singleImage: true
@@ -828,6 +858,18 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_SeekerDrone.png
+  - type: MIB_SCIENTIST.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/MIB_SCIENTIST.png
+  - type: inventory_MIB_SCIENTIST
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/inventory_MIB_SCIENTIST.png
+
   - type: MIB_ENFORCER.PCK
     width: 512
     height: 720
@@ -839,6 +881,75 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_ENFORCER.png
+
+  - type: MIB_OFFICE_ENGINEER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_ENGINEER.png
+  - type: inventory_MIB_OFFICE_ENGINEER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_ENGINEER.png
+  - type: MIB_OFFICE_MANAGER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_MANAGER.png
+  - type: inventory_MIB_OFFICE_MANAGER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_MANAGER.png
+  - type: MIB_OFFICE_SECURITY.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_SECURITY.png
+  - type: inventory_MIB_OFFICE_SECURITY
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_SECURITY.png
+  - type: MIB_OFFICE_WORKER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_WORKER.png
+  - type: inventory_MIB_OFFICE_WORKER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_WORKER.png
+  - type: MIB_VIP.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/MIB_VIP.png
+  - type: inventory_MIB_VIP
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_VIP.png
+  - type: MIB_VIP_BODYGUARD.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/MIB_VIP_BODYGUARD.png
+  - type: inventory_MIB_VIP_BODYGUARD
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_VIP_BODYGUARD.png
+
+
   - type: FACEHUGGER.PCK
     subX: 32
     subY: 40

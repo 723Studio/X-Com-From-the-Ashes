@@ -262,7 +262,7 @@ units:
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 56
+      tu: 58
       stamina: 90
       health: 35
       bravery: 90
@@ -270,7 +270,7 @@ units:
       firing: 55
       throwing: 60
       strength: 45
-      melee: 40
+      melee: 43
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -293,7 +293,7 @@ units:
     aggression: 1
     sniper: 75
     spotter: 2
-    canSurrender: true
+    canSurrender: true #todo - false
   - type: STR_MIB_AGENT_SPAWN
     refNode: *STR_MIB_AGENT
     value: 1
@@ -540,6 +540,39 @@ units:
     spotter: 1
     builtInWeaponSets:
       - - STR_SEEKER_DRONE_WEAPON
+  - type: STR_MIB_SCIENTIST
+    race: STR_MIB
+    stats:
+      tu: 62
+      stamina: 80
+      health: 26
+      bravery: 70
+      reactions: 45
+      firing: 50
+      throwing: 40
+      strength: 30
+      melee: 26
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 10
+      reactions: 3
+      firing: 3
+      throwing: 5
+      strength: 8
+      melee: 10
+      psiStrength: 15
+    armor: STR_MIB_SCIENTIST_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 50
+    deathSound: *MaleDeathSounds
+    intelligence: 5
+    aggression: 1
+    energyRecovery: 25
   - type: STR_MIB_ENFORCER
     race: STR_MIB
     rank: STR_LIVE_NAVIGATOR
@@ -578,6 +611,118 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
+
+#MiB\Procured
+  - &MIB_PROCURED_CIVILIAN
+    type: MIB_OFFICE_ENGINEER
+    race: STR_MIB
+    stats:
+      tu: 46
+      stamina: 40
+      health: 35
+      bravery: 60
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 30
+      melee: 30
+      psiStrength: 35
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
+    armor: STR_MIB_OFFICE_ENGINEER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -20
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 20
+    intelligence: 1
+    aggression: 1
+    canSurrender: true
+  - type: MIB_OFFICE_MANAGER
+    refNode: *MIB_PROCURED_CIVILIAN
+    armor: STR_MIB_OFFICE_MANAGER_ARMOR
+    value: -15
+    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
+    # panicSound: *FemalePanicSounds
+    # berserkSound: *FemaleBerserkSounds
+    aggression: 2
+  - type: MIB_OFFICE_SECURITY
+    refNode: *MIB_PROCURED_CIVILIAN
+    armor: STR_MIB_OFFICE_SECURITY_ARMOR
+    stats:
+      tu: 54
+      stamina: 80
+      health: 35
+      bravery: 90
+      reactions: 45
+      firing: 50
+      throwing: 60
+      strength: 45
+      melee: 38
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
+    value: -10
+    aggression: 6
+  - type: MIB_OFFICE_WORKER
+    refNode: *MIB_PROCURED_CIVILIAN
+    armor: STR_MIB_OFFICE_WORKER_ARMOR
+  - type: MIB_VIP
+    refNode: *MIB_PROCURED_CIVILIAN
+    armor: STR_MIB_VIP_ARMOR
+  - type: MIB_BANKER
+    refNode: *MIB_PROCURED_CIVILIAN
+    armor: STR_MIB_VIP_ARMOR
+  - type: MIB_VIP_BODYGUARD
+    refNode: *MIB_PROCURED_CIVILIAN
+    armor: STR_MIB_VIP_BODYGUARD_ARMOR
+    stats:
+      tu: 60
+      stamina: 80
+      health: 35
+      bravery: 90
+      reactions: 60
+      firing: 65
+      throwing: 60
+      strength: 50
+      melee: 52
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
+
+
 
 #Zombies
   - type: STR_FACEHUGGER
@@ -1043,7 +1188,7 @@ units:
     standHeight: 22
     kneelHeight: 14
     value: 30
-    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
+    deathSound: *FemaleDeathSounds
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
     energyRecovery: 25

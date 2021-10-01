@@ -41,7 +41,7 @@ events:
       1:
         title: STR_CONTINUE_INVESTIGATION
         spawnEvent: [STR_MONSTER_HUNT_START_EVENT_YES]
-        #description: "STR_SOME_WISE_WORDS"
+        description: STR_CONTINUE_INVESTIGATION_DESCRIPTION
   - name: STR_MONSTER_HUNT_START_EVENT_YES
     description: STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION
     timer: 0
@@ -89,13 +89,19 @@ events:
     timerRandom: 0
     researchList: [STR_MIB_CHASING_FAIL]
 
-
-    
   - name: STR_REGIONAL_HQ_FOUND_EVENT
     description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
     timer: 180
     timerRandom: 90
     researchList: [STR_REGIONAL_HQ_FOUND]
+
+  - name: STR_MIB_BANKER_ACCOUNTS
+    description: STR_MIB_BANKER_ACCOUNTS_DESCRIPTION
+    timer: 30
+    timerRandom: 0
+    loyalty: 200
+    funds: 832540
+
 
   - name: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     description: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION

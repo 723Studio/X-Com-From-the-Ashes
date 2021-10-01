@@ -66,4 +66,6 @@ extraSounds:
       117: Resources/Weapons/Sounds/ArrowDraw.ogg
       118: Resources/Weapons/Sounds/ArrowHit2.ogg
       119: Resources/Weapons/Sounds/ArrowHitTazer.ogg
+      120: Resources/Weapons/Sounds/Heavy_hit.wav
+      121: Resources/Weapons/Sounds/AlienAcid.wav
       

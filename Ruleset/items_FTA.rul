@@ -25,6 +25,48 @@ items:
   - delete: STR_ELECTRO_FLARE #
 
 #melee
+  - type: STR_CROWBAR
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_SPACE]
+    size: 0.15
+    costBuy: 115
+    costSell: 75
+    weight: 11
+    bigSprite: 403
+    floorSprite: 403
+    handSprite: 720
+    meleeHitSound: 120
+    meleeAnimation: 0
+    power: 20
+    damageType: 6
+    damageBonus:
+      strength: 0.4
+    damageAlter:
+      RandomType: 2
+      ResistType: 3
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.3
+      ToHealth: 1.0
+      ToTile: 1.1
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.65
+      melee: 0.33
+    costMelee:
+      time: 14
+      energy: 7
+    costThrow:
+      energy: 20
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    #twoHanded: true
+    #oneHandedPenalty: 67
+    invWidth: 2
+    invHeight: 3
+    armor: 75
+    attraction: 15
+    listOrder: 17707
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
     size: 0.1
@@ -698,6 +740,64 @@ items:
     armor: 30
     attraction: 15
     listOrder: 20190
+  - type: STR_CHEMPISTOL
+    categories: [STR_CHEMICALS, STR_PISTOLS, STR_ALIEN_TECH]
+    requires:
+      - STR_CHEMPISTOL
+    size: 0.1
+    landOnly: true
+    costSell: 4500
+    weight: 5
+    bigSprite: 406
+    floorSprite: 406
+    handSprite: 736
+    bulletSprite: 15
+    fireSound: 121
+    compatibleAmmo:
+      - STR_CHEMPISTOL_CLIP
+    accuracyCloseQuarters: 133
+    accuracySnap: 44
+    tuSnap: 28
+    tuLoad: 20
+    costThrow:
+      energy: 10
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    dropoff: 3
+    armor: 25
+    arcingShot: true
+    attraction: 15
+    listOrder: 20530
+  - type: STR_CHEMPISTOL_CLIP
+    categories: [STR_CHEMICALS, STR_SMOKE, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE]
+    requires:
+      - STR_CHEMPISTOL
+    size: 0.1
+    landOnly: true
+    costSell: 2900
+    weight: 3
+    bigSprite: 407
+    floorSprite: 407
+    hitSound: 19
+    hitAnimation: -1
+    power: 35
+    damageType: 8
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+      SmokeThreshold: 1
+    clipSize: 8
+    costThrow:
+      energy: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 25
+    attraction: 15
+    listOrder: 20540
 #SMG
   - type: STR_MACHINE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
@@ -1137,7 +1237,65 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 21320
-
+  - type: STR_CHEMOGUN
+    categories: [STR_CHEMICALS, STR_SMOKE, STR_SHOTGUNS, STR_ALIEN_TECH]
+    requires:
+      - STR_CHEMOGUN
+    size: 0.2
+    costSell: 5300
+    weight: 9
+    bigSprite: 404
+    floorSprite: 404
+    handSprite: 728
+    bulletSprite: 15
+    fireSound: 71
+    compatibleAmmo:
+      - STR_CHEMOGUN_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 40
+    tuAuto: 65
+    tuLoad: 20
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 25
+    arcingShot: true
+    autoRange: 11
+    autoShots: 8
+    sprayWaypoints: 2
+    attraction: 20
+    listOrder: 22980
+  - type: STR_CHEMOGUN_CLIP
+    categories: [STR_CHEMICALS, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS]
+    requires:
+      - STR_CHEMOGUN
+    size: 0.1
+    costSell: 3300
+    weight: 5
+    bigSprite: 405
+    floorSprite: 405
+    hitSound: 19
+    hitAnimation: -1
+    power: 35
+    damageType: 8
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+      SmokeThreshold: 1
+    clipSize: 24
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 25
+    attraction: 15
+    listOrder: 22990
 
 #sniper rifles
   - type: STR_HUNTING_RIFLE
@@ -3142,6 +3300,7 @@ items:
       IgnoreDirection: false
       ArmorEffectiveness: 1.5
       ToHealth: 0.15
+      ToTile: 0.05
     accuracyMelee: 100
     meleeMultiplier:
       melee: 0.5
@@ -3151,6 +3310,43 @@ items:
     costMelee:
       time: 9
       energy: 3
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
+  - type: STR_UNARMED_TRAINED
+    categories: [STR_BUILT_INS, STR_MELEE, STR_UNARMED]
+    weight: 0
+    bigSprite: 340
+    meleeHitSound: 55
+    meleeAnimation: 0
+    power: 0
+    damageType: 6
+    damageBonus:
+      strength: 0.25
+      melee: 0.25
+      reactions: 0.15
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.5
+      ToHealth: 0.2
+      ToTile: 0.1
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.5
+      reactions: 0.5
+    confMelee:
+      name: STR_PUNCH
+    costMelee:
+      time: 8
+      energy: 2
     flatRate: true
     battleType: 3
     clipSize: -1
@@ -3457,7 +3653,7 @@ items:
     invHeight: 3
     battleType: 11
     armor: 30
-    recoveryPoints: 1
+    recoveryPoints: 2
     recover: true
     recoverCorpse: false
     listOrder: 67800
@@ -3519,7 +3715,6 @@ items:
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    costSell: 500
     weight: 32
     bigSprite: 111
     floorSprite: 111
@@ -3564,7 +3759,6 @@ items:
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    costSell: 1000
     weight: 37
     bigSprite: 102
     floorSprite: 102
@@ -3582,13 +3776,11 @@ items:
     recover: true
     liveAlien: true
     prisonType: 1
-    costSell: 2000
     listOrder: 146030
   - type: STR_MIB_BUTCHER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    costSell: 1000
     weight: 48
     bigSprite: 120
     floorSprite: 120
@@ -3606,9 +3798,169 @@ items:
     recover: true
     liveAlien: true
     prisonType: 1
-    costSell: 2000
     listOrder: 146030
-
+  - type: STR_MIB_SCIENTIST_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 26
+    bigSprite: 128
+    floorSprite: 128
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: 3
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_SCIENTIST
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146000
+  #MiB\Procured
+  - type: STR_MIB_OFFICE_ENGINEER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 32
+    bigSprite: 122
+    floorSprite: 122
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: -25
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_OFFICE_ENGINEER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146030
+  - type: STR_MIB_OFFICE_WORKER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 32
+    bigSprite: 125
+    floorSprite: 125
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: -25
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_OFFICE_WORKER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146030
+  - type: STR_MIB_OFFICE_MANAGER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 32
+    bigSprite: 123
+    floorSprite: 123
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: -5
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_OFFICE_MANAGER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146030
+  - type: STR_MIB_OFFICE_SECURITY_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 32
+    bigSprite: 124
+    floorSprite: 124
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: -5
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_OFFICE_SECURITY
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146030
+  - type: STR_MIB_VIP_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 32
+    bigSprite: 126
+    floorSprite: 126
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: -45
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: MIB_BANKER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146030
+  - type: STR_MIB_VIP #extra VIP for future use
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146030
+  - type: STR_MIB_VIP_BODYGUARD_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 32
+    bigSprite: 120
+    floorSprite: 120
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: -5
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    listOrder: 67800
+  - type: STR_MIB_VIP_BODYGUARD
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 146030
 
 #Zombies
   - type: STR_FACEHUGGER
