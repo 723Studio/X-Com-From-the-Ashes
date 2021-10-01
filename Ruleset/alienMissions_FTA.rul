@@ -41,3 +41,5 @@ alienMissions:
     refNode: *TerrorLike
   - type: STR_RESISTANCE_FOREST_HOUSE
     refNode: *TerrorLike
+  - type: STR_CHUPA_TERROR_MISSION
+    refNode: *TerrorLike

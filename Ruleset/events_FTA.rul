@@ -74,6 +74,7 @@ events:
     timerRandom: 0
     points: -200
     researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ_HARD]
+
   - name: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT
     description: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION
     timer: 0

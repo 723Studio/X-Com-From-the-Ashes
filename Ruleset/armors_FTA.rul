@@ -717,6 +717,29 @@ armors:
     damageModifier: *NoArmorHumanResistance
     #specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
+  - type: STR_CIVILIAN_HUNTER_ARMOR
+    spriteSheet: CIVILIAN_HUNTER.PCK
+    spriteInv: inventory_CIVILIAN_HUNTER
+    corpseBattle:
+      - STR_CIVILIAN_HUNTER_CORPSE 
+    visibilityAtDark: 6
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.13
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    #specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
 
   - type: STR_MALE_CITIZEN_ARMOR
     spriteSheet: MALE_CITIZEN.PCK

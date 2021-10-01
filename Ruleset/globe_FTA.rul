@@ -383,6 +383,10 @@ globe:
     - id: -8
       deployments:
         STR_DESERT_TELESCOPE: 100
+    - id: -9
+      deployments:
+        STR_CHUPA_TERROR_EASY: 80
+        STR_CHUPA_TERROR_HARD: 20
 #GIS  
   polygons:
     - - 1

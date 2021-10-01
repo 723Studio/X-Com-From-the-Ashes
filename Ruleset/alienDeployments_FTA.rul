@@ -1347,6 +1347,100 @@ alienDeployments:
           -
             []
 
+
+  - type: STR_CHUPA_TERROR_EASY
+    race: STR_CHUPACABRA
+
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_MONSTER_TERROR_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
+    markerName: STR_MONSTER_TERROR
+    duration: [20, 36]
+    despawnPenalty: 800
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_TERROR_BRIEFING
+    terrains:
+      - FOREST
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 5
+        dQty: 2
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+  - type: STR_CHUPA_TERROR_HARD
+    race: STR_CHUPACABRA
+    civiliansByType:
+      STR_CIVILIAN_HUNTER: 2
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_MONSTER_TERROR_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
+    markerName: STR_MONSTER_TERROR
+    duration: [20, 36]
+    despawnPenalty: 800
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_TERROR_BRIEFING
+    terrains:
+      - FOREST
+    data:
+      - alienRank: 6
+        lowQty: 5
+        highQty: 13
+        dQty: 6
+        extraQty: 2
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+
 #traps
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB

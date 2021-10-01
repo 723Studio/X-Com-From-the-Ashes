@@ -355,9 +355,9 @@ en-US:
   STR_MONSTER_HUNT_INVESTIGATION: "Monster Activity Investigation"
   STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: "On this operation, our soldiers will work under the guise of federal agents investigating attacks by mysterious monsters. That way we can gain the confidence of the locals and the police if we arrange a good disguise. Our engineers are capable of creating fake special agent IDs for our soldiers that are almost indistinguishable from the real ones."
   STR_MONSTER_HUNT_INVESTIGATION_SUCCESS_DESCRIPTION: "We were able to collect testimonies of witnesses and evidence indicating the activity of unidentified predators that terrify the locals. We have to analyze the data collected and develop a plan for further actions.{NEWLINE}{NEWLINE}{ALT}New research project available."
-  STR_MONSTER_HUNT_INVESTIGATION_CONT: #TODO
-  STR_MONSTER_HUNT_INVESTIGATION_CONT_DESCRIPTION: #TODO
-
+  STR_MONSTER_HUNT_RUMORS_CHUPA: "Monster Hunt"
+  STR_MONSTER_HUNT_RUMORS_CHUPA_DESCRIPTION: "We must continue the covert investigation of the monster activity. Our soldiers will go on an operation under the cover of government special agents. We need to gather information about this creature, track it down and neutralize the threat."
+  STR_MONSTER_HUNT_RUMORS_CHUPA_FAILURE_DESCRIPTION: "Our operatives failed in their mission; they could not find any sign of the mysterious monster terrorizing locals. Alas, we can only wait for the next report of paranormal activity, here we have done all we can."
   STR_LAB_EQUIPMENT_ACQUISITION: "Lab Equipment Acquisition"
   STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "Any new laboratory that we want to build requires a large amount of high-quality equipment, powerful computers and fine instruments. It will not work just like that to buy a couple of installations, so you need to act secretly and get in touch with serious people."
   STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
@@ -543,6 +543,8 @@ en-US:
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
   STR_FEMALE_CIVILIAN_FARMER: "Farmer"
   STR_FEMALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
+  STR_CIVILIAN_HUNTER: "Civilian Hunter"
+  STR_CIVILIAN_HUNTER_CORPSE: "Hunter Corpse"
 #categories
   STR_CRAFT_SYSTEMS: "Craft Systems"
   STR_UNARMED: "Unarmed"

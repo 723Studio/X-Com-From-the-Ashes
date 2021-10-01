@@ -67,6 +67,8 @@ research:
     hidden: true
   - name: STR_DESERT_TELESCOPE
     hidden: true
+  - name: STR_UNLEASH_CHUPAS_TRIGGER
+    hidden: true
   - name: STR_MIB_HQ_DESTROYED
     hidden: true
 

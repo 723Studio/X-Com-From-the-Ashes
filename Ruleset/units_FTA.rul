@@ -1142,6 +1142,9 @@ units:
       - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
       - - STR_SAWED_OFF #- STR_PITCHFORK
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1158,9 +1161,14 @@ units:
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
       - []
-      - - STR_HUNTING_RIFLE
+      - - STR_HUNTING_RIFLE #- []
         - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP #- []
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP 
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1178,7 +1186,7 @@ units:
       health: 38
       bravery: 60
       reactions: 30
-      firing: 40
+      firing: 35
       throwing: 30
       strength: 25
       psiStrength: 35
@@ -1216,7 +1224,99 @@ units:
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
-
+  - type: STR_CIVILIAN_HUNTER
+    race: STR_HUMAN
+    stats:
+      tu: 52
+      stamina: 45
+      health: 35
+      bravery: 60
+      reactions: 30
+      firing: 70
+      throwing: 30
+      strength: 30
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+    armor: STR_CIVILIAN_HUNTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
 
 #Resistance
   - &STR_RESISTANCE_SCIENTIST

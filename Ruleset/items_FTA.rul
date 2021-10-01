@@ -4280,6 +4280,22 @@ items:
     recover: true
     recoverCorpse: false
     listOrder: 72101
+  - type: STR_CIVILIAN_HUNTER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 30
+    bigSprite: 129
+    floorSprite: 129
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: -20
+    recover: true
+    recoverCorpse: false
+    listOrder: 72101
   - type: STR_MALE_CITIZEN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
