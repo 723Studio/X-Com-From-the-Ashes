@@ -1,6 +1,7 @@
 ufos:
 #real ufos
   - delete: STR_SMALL_SCOUT
+  - delete: STR_MEDIUM_SCOUT
   - delete: STR_ABDUCTOR
   - type: STR_SMALL_SCOUT
     size: STR_VERY_SMALL
@@ -17,7 +18,7 @@ ufos:
     range: 30
     score: 50
     reload: 50
-    #hitBonus: 5
+    hitBonus: 5
     breakOffTime: 1200
     unmanned: true #fight to death
     battlescapeTerrainData:
@@ -35,6 +36,30 @@ ufos:
         - name: UFO1C
           width: 10
           length: 10
+  - type: STR_MEDIUM_SCOUT
+    size: STR_SMALL
+    sprite: 1
+    damageMax: 200
+    speedMax: 2400
+    power: 20
+    range: 15
+    score: 75
+    reload: 56
+    breakOffTime: 250
+    battlescapeTerrainData:
+      name: UFO_110
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+      mapBlocks:
+        - name: UFO_110
+          width: 10
+          length: 10
+          objects:
+            STR_TERMINAL:
+              - [3, 3, 0]
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4
