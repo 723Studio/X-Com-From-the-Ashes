@@ -80,6 +80,27 @@ diplomacyFactionEvents:
     firstMonth: 1
     staffToAdd: 
       STR_ENGINEER: 1
+  - type: STR_MILITARY_WEAPONRY_ACQUISITION
+    executionOdds: 100
+    playerResearchTriggers:
+      STR_RESISTANCE_BASIC_EQUIPMENT: true
+    discoveredResearches: [STR_RESISTANCE_BASIC_EQUIPMENT]
+    powerChange: 100
+    fundsChange: 120000
+    itemsToAdd:
+      STR_RIOT_PISTOL: 12
+      STR_RIOT_PISTOL_CLIP: 32
+      STR_MACHINE_PISTOL: 5
+      STR_MACHINE_PISTOL_CLIP: 22
+      STR_RIOT_RIFLE: 8
+      STR_RIOT_RIFLE_CLIP: 25
+      STR_PUMP_ACTION_SHOTGUN: 4
+      STR_PUMP_ACTION_SHELLS: 30
+      STR_SINGLE_ROCKET_LAUNCHER: 5
+      STR_MEDI_PACK: 3
+
+
+
 
   # - type: STR_SNIPPET
   #   executionOdds: 5

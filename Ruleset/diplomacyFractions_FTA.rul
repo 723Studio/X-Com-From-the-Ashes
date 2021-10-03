@@ -6,7 +6,7 @@ diplomacyFactions:
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
     startingReputation: 270
-    startingFunds: 50000000 #TODO!
+    startingFunds: 935000
     startingPower: 350
     stockMod: 100
     startingResearches:

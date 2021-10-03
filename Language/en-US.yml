@@ -321,18 +321,27 @@ en-US:
   STR_MIB_FOREST_BEACON_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We receive a signal from their radio beacon transmitting an encrypted distress signal, but there is no communication with the refuge itself - no one is answering our requests. Obviously, the Resistance shelters must be in a secluded place, but what a backwoods! It is necessary to understand the situation and, if necessary, to eliminate all existing threats.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
   STR_RESISTANCE_URBAN_HIDEOUT: "Resistance Heaven Attacked"
   STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "We are receiving a distress signal the Resistance cell, located in urban area. The local TV channels broadcast reports that government forces have located an international terrorists and that police units, supported by special forces, are about to storm the area. There is no doubt that the M.I.B. involved. This cell was used for covert communications with X-COM, so cryptographic data stored on HD drive must be secured. We also should not harm the local police officers, as they are only pawns in the game.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
-  STR_SCIENTIST_REFUGE: "Scientist Refuge"
-  STR_SCIENTIST_REFUGE_ALERT: "Resistance agent extraction"
-  STR_SCIENTIST_REFUGE_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible."
+  STR_SCIENTIST_REFUGE: "Resistance agent extraction"
+  STR_RESISTANCE_AGENT_EXTRACTION_ALERT: "RESISTANCE AGENT EXTRACTION"
+  STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible."
   STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander. The scientist's salvation could be of great value to us, and we must get him to the vessel in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy drive upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
   STR_DESERT_TELESCOPE: "Desert Telescope"
-  STR_DESERT_TELESCOPE_ALERT: "Resistance agent extraction"
+  STR_DESERT_TELESCOPE_ALERT: "RESISTANCE AGENT EXTRACTION"
   STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible."
   STR_DESERT_TELESCOPE_BRIEFING: "A group of radiastronomists recently discovered traces of alien signals reflecting in our planet's mesosphere and the signals in response coming from a point in high orbit. They reported their discovery to NASA, but they hastily hushed up the incident. However, members of the local Resistance cell managed to contact the scientists. They are in great danger, most likely agents of the Men in Black will try to eliminate the witnesses as soon as possible. We must take decisive action, save the scientists before the main M.I.B. force arrives.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
+  STR_RESCUE_RESISTANCE_MEMBER_MARKER: "Rescue of a Resistance member"
+  STR_MONSTER_HUNT_MARKER: "Monster Hunt"
+  STR_MONSTER_HUNT_BRIEFING: "We have succeeded in tracking this mysterious monster to its den. The agents are trudging through the dense forest, listening intently to every rustle. Our goal is to neutralize the monster and bring it back to the base for study. Keep in mind, if something doesn't go according to plan, there's no retreat option at this point!"
+  STR_CHUPACABRA_HUNT: "Monster Hunt"
+  STR_CHUPA_TERROR_EASY: "Monster Terror"
+  STR_MONSTER_TERROR: "Monster Terror"
+  STR_MONSTER_TERROR_ALERT: "MONSTERS TERRORIZE LOCALS"
+  STR_MONSTER_TERROR_ALERT_DESCRIPTION: "We managed to localize a hotspot of alien monsters activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the woods. We should deploy squad there and purge it, with collecting samples for scientific study, if possible."
+  STR_MONSTER_TERROR_BRIEFING: "We managed to localize a hotspot of alien monsters activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the woods. We should deploy squad there and purge it, with collecting samples for scientific study, if possible.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
 
-  STR_AGENT_EXTRACTION: "Agent Extraction" #TODO - reuse for xcom agents
+  STR_AGENT_EXTRACTION_MARKER: "Agent Extraction"
   
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_BRIEFING: "A black van, standing across the road, blocks the way forward, and a black sedan has stopped behind our agents' car, completely blocking them. Several men in black blazers get out of the cars, and they are armed. It seems that the only way out of this situation is to take the fight."
@@ -366,6 +375,8 @@ en-US:
   STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "We have a good chance to acquire  specialized equipment for our bio laboratory. Biology science equipment will be even more difficult to obtain than general equipment, but at one cost or another, we need to get this equipment in order to move further in our research."
   STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
   STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
+  STR_MILITARY_WEAPONRY_ACQUISITION:
+  STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION:
 #events
   STR_RND_STATUS_REPORT_EVENT: "R&D status report is ready!"
   STR_RND_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the R&D center."
@@ -409,12 +420,22 @@ en-US:
   STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION: "Our people are very disappointed in the failure of the recent rescue operation. We have very few talented scientists left, and reinforcements now could be very welcome. .{NEWLINE}Resistance reputation score> {ALT}-300{ALT}{NEWLINE}Loyalty> {ALT}-200"
   STR_NOT_RESCUED_RESISTANCE_DESCRIPTION: "Our rescue of the Resistance operatives was a failure, the assailants claimed their lives before we could escort them to safety. The movement's leaders have heard of it and are very displeased with our capacity to deal with operations like these, becoming more wary of us.{NEWLINE}Resistance reputation score> {ALT}-150"
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> {ALT}-200"  
+  STR_RESISTANCE_WEAPONRY_EVENT: "Military Weaponry"
+  STR_RESISTANCE_WEAPONRY_EVENT_DESCRIPTION: "Good day, Commander! It appears that we have an excellent chance to obtain a steady source of various weapons and equipment of a military nature. It cannot be overstated how important this is for the advancement of our struggle. Of course, we'll be able to share it with you as well. I think it will come in handy when you start to run out of ammo for your fancy guns. So, are you with us?"
+  STR_YES: "Yes"
+  STR_NO: "No"
+  STR_RESISTANCE_WEAPONRY_EVENT_YES: "Military Weaponry"
+  STR_RESISTANCE_WEAPONRY_EVENT_YES_DESCRIPTION: "Great! We plan to bribe one corrupt general who is already working with various arms dealers. After the collapse of the Soviet Union, this is not so rare. And we'll need your help. We don't have an expert in such deals, the stakes are very high. Maybe you can send some of your guys undercover to meet with the general.{NEWLINE}I'll forward all the details."
+  STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS: "Military Weaponry Acquisition"
+  STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS_DESCRIPTION: "Excellent! Now we have the opportunity to purchase small quantities of military weapons. This will greatly help us in our defense against the ubiquitous M.I.B. agents, perhaps we can finally fight back. Certainly, we are ready to share it with you."
+  STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION: "Another Chance for Military Weaponry Acquisition"
+  STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "It seems that we have found a great opportunity to try again to establish a channel of covert supply of military weapons and equipment. Once again we will need your help, it is necessary to send your undercover agents to the operation to negotiate the shipments."
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
   STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"
   STR_SPORTS_BOW_TINKERING_DESCRIPTION: "After some thought and a little experimentation, our engineers came up with an interesting design of advanced arrows for the sport bow, equipped with various special charges or tips. This will greatly expand the tactical capabilities of the conventional bow. If you like, we can begin production immediately.{NEWLINE}New technology> {ALT}Advanced bow arrows."
-  STR_ELECTRIC_WEAPONS_PREREQ_EVENT: #TODO
-  STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION: #TODO
+  STR_ELECTRIC_WEAPONS_PREREQ_EVENT: "Electric Weapons"
+  STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION: "Given our serious lack of data on the adversary, it makes sense for us to try to capture enemy units alive if possible. It is likely that by interrogating our enemies we will be able to learn the most valuable strategic information. One of the most effective ways to render a living creature unconscious is to shock it with a strong electric shock. Perhaps we might try to develop our own electric weapons, which would be quite effective on battlescape."
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
   STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: "Commander, we need a biolab to continue our research. And a good one, full of quality and innovative equipment. Our scientists have made a list of everything we need, and after a little modification to the blueprints of the usual lab, we're ready to get to work. In order to build it, in addition to significant material costs, we need a lot of specific equipment that cannot be bought on the open market. So we need to get in touch with a certain circle of people who are able to provide us with everything we need. It is necessary to send our people on a covert operation to carry out negotiations.{NEWLINE}{ALT}New covert operation available."
   STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"
@@ -447,10 +468,15 @@ en-US:
   STR_NOT_RESCUED_AGENT_DESCRIPTION_4: "We couldn't save our agents from such a difficult situation. Every bullet used to good effect was poisoned not only by the will of the resistance, but also by his endless zeal for victory.{NEWLINE}{NEWLINE}Resistance reputation score> {ALT}-110"
   STR_NOT_RESCUED_AGENT_DESCRIPTION_5: "We couldn't save our agents from such a difficult situation. Have we lost our men at this point? Oh, no. Our network has shrunk, but they're only making it worse for themselves by cornering us.{NEWLINE}{NEWLINE}Resistance reputation score> {ALT}-110"
   STR_NOT_RESCUED_AGENT_DESCRIPTION_6: "We couldn't save our agents from such a difficult situation. As soon as the general staff learns about what happened, the smiles will fall from the faces of our sisters and brothers for a long time. We need revenge.{NEWLINE}{NEWLINE}Resistance reputation score> {ALT}-110"
+  STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION: "Acquisition of lab equipment"
+  STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "We have an exciting new opportunity to acquire new laboratory equipment discreetly. We need to send our undercover agents to make the deal."
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION: "Acquisition of biolab equipment"
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "An opportunity to acquire rare laboratory equipment designed for sophisticated biological experiments and research has arisen. It might be worth sending our agents to make the deal."
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: "Before our people were attacked by M.I.B. agents, they managed to transmit a report on the main results of the operation. The report shows that they were able to confirm the information that the regional headquarters of the Men in Black is located somewhere in the city being investigated. Unfortunately, we are unable to locate the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have been unable to decipher it or locate the signal source."
   STR_MIB_BANKER_ACCOUNTS: "M.I.B. Secret Bank Accounts"
-  STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: #TODO
+  STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. With his help we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}2832548"
+
 #enemies
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "M.I.B. Agent"

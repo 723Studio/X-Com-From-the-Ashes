@@ -145,7 +145,6 @@ covertOperations:
     baseChances: 60
     danger: 0
     costs: 120
-    #itemSpaceLimit: 10
     successDescription: STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_LAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
     successFunds: -420000
@@ -169,7 +168,6 @@ covertOperations:
     baseChances: 60
     danger: 0
     costs: 120
-    #itemSpaceLimit: 10
     successDescription: STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
     successFunds: -370000
@@ -182,6 +180,30 @@ covertOperations:
       STR_BIOLOGY_EQUIPMENT: 1
     successEvent: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     failureEvent: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
+
+#resistance
+  - name: STR_MILITARY_WEAPONRY_ACQUISITION
+    description: STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION
+    requires:
+      - STR_COVERT_OPERATIONS
+      - STR_RESISTANCE_WEAPONRY_PREREQ
+    soldierSlots: 2
+    baseChances: 70
+    danger: 0
+    costs: 220
+    successDescription: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS_DESCRIPTION
+    failureDescription: STR_MILITARY_WEAPONRY_ACQUISITION_FAIL_DESCRIPTION
+    successFunds: -500000
+    successScore: 350
+    failureScore: -150
+    successEveryItemList:
+      STR_BIOLOGY_EQUIPMENT: 1
+    failureEveryItemList:
+      STR_BIOLOGY_EQUIPMENT: 1
+    successEvent: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS
+    failureEvent: STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION
+
+
 
   # - name: STR_TEST_OPERATION
   #   description: STR_TEST_OPERATION_DESCRIPTION

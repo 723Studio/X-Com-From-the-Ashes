@@ -1123,10 +1123,10 @@ alienDeployments:
     width: 80
     length: 80
     height: 8
-    alert: STR_SCIENTIST_REFUGE_ALERT
+    alert: STR_RESISTANCE_AGENT_EXTRACTION_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_SCIENTIST_REFUGE_ALERT_DESCRIPTION
-    markerName: STR_AGENT_EXTRACTION
+    alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_RESISTANCE_MEMBER
     duration: [14, 18]
     despawnPenalty: 850
     extendedObjectiveType: STR_EVACUATION 
@@ -1174,10 +1174,10 @@ alienDeployments:
     width: 80
     length: 80
     height: 8
-    alert: STR_DESERT_TELESCOPE_ALERT
+    alert: STR_RESISTANCE_AGENT_EXTRACTION_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_DESERT_TELESCOPE_ALERT_DESCRIPTION
-    markerName: STR_AGENT_EXTRACTION
+    alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
+    markerName: STR_RESCUE_RESISTANCE_MEMBER
     duration: [16, 20]
     despawnPenalty: 950
     extendedObjectiveType: STR_EVACUATION 
@@ -1304,13 +1304,11 @@ alienDeployments:
 
   - type: STR_CHUPACABRA_HUNT
     race: STR_CHUPACABRA
-    # civiliansByType:
-    #   STR_MALE_CIVILIAN_FARMER: 2
-    #   STR_FEMALE_CIVILIAN_FARMER: 1
     width: 50
     length: 50
     height: 8
-    markerName: STR_MONSTER_HUNT
+    shade: 15
+    markerName: STR_MONSTER_HUNT_MARKER
     duration: [10, 10]
     despawnPenalty: 300
     briefing:
@@ -1350,7 +1348,6 @@ alienDeployments:
 
   - type: STR_CHUPA_TERROR_EASY
     race: STR_CHUPACABRA
-
     width: 50
     length: 50
     height: 8
@@ -1843,6 +1840,7 @@ alienDeployments:
 
   - type: STR_CHUPACABRA_HUNT_TRAP
     race: STR_CHUPACABRA
+    shade: 15
     width: 50
     length: 50
     height: 8

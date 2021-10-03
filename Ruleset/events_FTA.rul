@@ -74,7 +74,6 @@ events:
     timerRandom: 0
     points: -200
     researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ_HARD]
-
   - name: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT
     description: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION
     timer: 0
@@ -101,18 +100,18 @@ events:
     timer: 30
     timerRandom: 0
     loyalty: 200
-    funds: 832540
+    funds: 2832548
 
 
   - name: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     description: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
-    timer: 109500
+    timer: 136800
     timerRandom: 20160
     removedCovertOperationsList:
       - STR_LAB_EQUIPMENT_ACQUISITION
   - name: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
-    description: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
-    timer: 153300
+    description: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
+    timer: 175680
     timerRandom: 30240
     removedCovertOperationsList:
       - STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
@@ -213,6 +212,36 @@ events:
     loyalty: -200
     reputationScore:
       STR_RESISTANCE: -300
+  - name: STR_RESISTANCE_WEAPONRY_EVENT
+    description: STR_RESISTANCE_WEAPONRY_EVENT_DESCRIPTION
+    timer: 4320 # 3 days
+    timerRandom: 28800 # 20 days
+    reputationScore:
+      STR_RESISTANCE: -50 #would be compensated on STR_YES answer
+    customAnswers:
+      0:
+        title: STR_YES
+        spawnEvent: [STR_RESISTANCE_WEAPONRY_EVENT_YES]
+      1:
+        title: STR_NO
+  - name: STR_RESISTANCE_WEAPONRY_EVENT_YES
+    description: STR_RESISTANCE_WEAPONRY_EVENT_YES_DESCRIPTION
+    researchList: [STR_RESISTANCE_WEAPONRY_PREREQ]
+    loyalty: 5
+    reputationScore:
+      STR_RESISTANCE: 60
+  - name: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS
+    description: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS_DESCRIPTION
+    researchList: [STR_RESISTANCE_BASIC_EQUIPMENT]
+    loyalty: 250
+    reputationScore:
+      STR_RESISTANCE: 300
+  - name: STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION
+    description: STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
+    timer: 175200
+    timerRandom: 43800
+    removedCovertOperationsList:
+      - STR_MILITARY_WEAPONRY_ACQUISITION
 
 #xcom
   - name: STR_WORKSHOP_EVENT

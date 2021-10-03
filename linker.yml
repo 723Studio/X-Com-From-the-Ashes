@@ -71,9 +71,9 @@ config:
     - alienDeployments
     covertOperations.instantSuccessDeployment:
     - alienDeployments
-    covertOperations.successReputationScore:
+    covertOperations.successReputationScore.key:
     - diplomacyFactions
-    covertOperations.failureReputationScore:
+    covertOperations.failureReputationScore.key:
     - diplomacyFactions
     covertOperations.requires:
     - research
