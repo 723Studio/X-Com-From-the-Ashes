@@ -356,10 +356,16 @@ en-US:
   STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals, attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
   STR_REGIONAL_HQ_AREA_SURVEY: "M.I.B. Area Survey"
   STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION: "We are on the trail of the Men in Black. After that incident on the road, there is absolute confidence that we are moving in the right direction. We received a little more information and already know exactly which city we have to go to. This urban area has long been teeming with interference and unknown signals. Most likely, this is where M.I.B. secret base is located. We need investigate further."
-  STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION: "Our agents were able to confirm information that the regional headquarters of the Men in Black is somewhere in the city under investigation. Unfortunately, we are unable to locate the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have been unable to decipher it or locate the source of the signal."
+  STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION: "Our agents were able to confirm information that the regional headquarters of the Men in Black is somewhere in the city under investigation. Unfortunately, we are unable to locate the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have been unable to decipher it or locate the source of the signal."
   STR_REGIONAL_HQ_AREA_SURVEY_LONG: "M.I.B. Area Survey"
   STR_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_REGIONAL_HQ_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_SUCCESS_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_FAILURE_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_SURVEY: "M.I.B. HQ Location Investigation"
+  STR_REGIONAL_HQ_SURVEY_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_SURVEY_RESULT_DESCRIPTION: #TODO
+
 
   STR_MONSTER_HUNT_INVESTIGATION: "Monster Activity Investigation"
   STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: "On this operation, our soldiers will work under the guise of federal agents investigating attacks by mysterious monsters. That way we can gain the confidence of the locals and the police if we arrange a good disguise. Our engineers are capable of creating fake special agent IDs for our soldiers that are almost indistinguishable from the real ones."
@@ -375,8 +381,8 @@ en-US:
   STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "We have a good chance to acquire  specialized equipment for our bio laboratory. Biology science equipment will be even more difficult to obtain than general equipment, but at one cost or another, we need to get this equipment in order to move further in our research."
   STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
   STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
-  STR_MILITARY_WEAPONRY_ACQUISITION:
-  STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION:
+  STR_MILITARY_WEAPONRY_ACQUISITION: #TODO
+  STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION: #TODO
 #events
   STR_RND_STATUS_REPORT_EVENT: "R&D status report is ready!"
   STR_RND_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the R&D center."
@@ -513,14 +519,19 @@ en-US:
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He refuses to communicate and shows aggression at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to maintain control is still unclear to us. During the physical examination there were no signs of any surgical intervention, with all medical tests within the normal range (except for adrenaline). Safekeeping can be problematic as, for example, he had a chance to bite off a finger of a former colleague which he took, successfully."
   STR_MIB_OFFICE_ENGINEER: "Office Engineer"
   STR_MIB_OFFICE_ENGINEER_CORPSE: "Office Engineer corpse"
+  STR_MIB_OFFICE_ENGINEER_UFOPEDIA: #TODO 
   STR_MIB_OFFICE_WORKER: "Office Worker"
   STR_MIB_OFFICE_WORKER_CORPSE: "Office Worker corpse"
+  STR_MIB_OFFICE_WORKER_UFOPEDIA: #TODO 
   STR_MIB_OFFICE_MANAGER: "Office manager"
   STR_MIB_OFFICE_MANAGER_CORPSE: "Office manager corpse"
+  STR_MIB_OFFICE_MANAGER_UFOPEDIA: #TODO 
   STR_MIB_OFFICE_SECURITY: "Office security"
   STR_MIB_OFFICE_SECURITY_CORPSE: "Office security corpse"
+  STR_MIB_OFFICE_SECURITY_UFOPEDIA: #TODO 
   STR_MIB_VIP_BODYGUARD: "Bodyguard"
   STR_MIB_VIP_BODYGUARD_CORPSE: "Bodyguard corpse"
+  STR_MIB_VIP_BODYGUARD_UFOPEDIA:  #TODO
   MIB_BANKER: "Banker"
   STR_MIB_VIP_CORPSE: "V.I.P. corpse"
   MIB_BANKER_UFOPEDIA: #TODO
@@ -895,6 +906,14 @@ en-US:
   STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_FRESH_MIB_AGENT: "M.I.B. agent interrogation report #19723"
   STR_FRESH_MIB_AGENT_UFOPEDIA: "Surprisingly, the subject endured the detox relatively easily, and our therapy was very effective. Soon he was ready for interrogation. Sadly, the drugs they give him suppress his memory very well, so he remembered nothing at all. According to the police reports, he had been kidnapped only a few months before. During the interrogation, physical force was used, the chief of Intelligence punched him in the back of the head with a blunt object. His reaction was extremely strange - he convulsed and mumbled something in a language we didn't know. Ten minutes later, it stopped, and the object remembered nothing of what had happened. The results of this 'experiment' were well reproducible. We got a theory that we were thus hitting some device in his brain, which was confirmed after detailed analysis of radiography. Deep in the brain tissue, we noticed tiny artificial object that we had missed in previous studies. We should probably remove this implant and examine it in detail."
+  STR_MIB_AGENT_LOBOTOMY: "M.I.B. Agent Lobotomy"
+  STR_MIB_AGENT_LOBOTOMY_UFOPEDIA: "By dissecting the M.I.B. agent's cranium, we were able to remove a strange implant integrated into the frontal and temporal lobes of the cerebral cortex. The device consists of a miniature power supply, a memory unit, a processor, and a complex receiving antenna. We also found that the centers responsible for long-term memory were practically burned out, probably by a strong electrical impulse."
+  STR_MIB_HEAD_CHIP: "M.I.B. Head Implant"
+  STR_MIB_HEAD_CHIP_UFOPEDIA: "We figured out the power system of the chip, so we can keep it running. Apparently, previously it was recharged from two sources - directly from the electromagnetic activity of the brain, as well as wirelessly from an external device. It was possible to connect to the microcomputer of the implant, but we are not able to overcome the protection of its firmware and view the embedded programs." #TODO - redo lore, i dislike it
+  STR_MIB_DATA_TRANSFER_DECRYPTION: "M.I.B. Signal Decryption"
+  STR_MIB_SIGNAL: "M.I.B. Signal"
+  STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA: "The signal that the M.I.B. head chip was tuned to receive was partially decoded. It is a very weak, and the phased array on the surface of the chip is constantly calibrated, adjusting to the direction of the source, in order to enhance the reception.It appears to be less than 1,000 kilometers to the east.  We will be able to localize the source more precisely if we get close to it."
+
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: "Creature Containment"
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: "Chief! The staggering results of that monster autopsy have raised a lot more new questions than answers to old ones. It would be great to research this thing alive, but it is impossoble without a special facility at our base. Perhaps by analyzing the Ufopaedia files, we can design a new compartment in which such creatures can be kept safely and completely isolated, while still maintaining access to them for study"
 #other

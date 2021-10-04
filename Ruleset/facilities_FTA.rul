@@ -206,7 +206,7 @@ facilities:
     mapName: XBASE_02
   - type: STR_WORKSHOP
     spriteShape: 1
-    spriteFacility: 20 #TODO - change img
+    spriteFacility: 307
     provideBaseFunc: [WORK]
     requires:
       - STR_FACILITIES_BLUEPRINTS

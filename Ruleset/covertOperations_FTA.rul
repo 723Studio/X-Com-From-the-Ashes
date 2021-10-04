@@ -26,9 +26,9 @@ covertOperations:
     baseChances: 70
     danger: 8
     costs: 120
-    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
-    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
-    trapChance: 70
+    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
+    trapChance: 65
     instantTrapDeployment: 
       STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
@@ -43,11 +43,11 @@ covertOperations:
       - STR_MIB_CHASING_FAIL
     soldierSlots: 3
     optionalSoldierSlots: 2
-    baseChances: 65
-    danger: 9
-    costs: 216
-    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
-    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
+    baseChances: 55
+    danger: 10
+    costs: 300
+    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     trapChance: 85
     instantTrapDeployment: 
       STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
@@ -55,24 +55,50 @@ covertOperations:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
-    successScore: 150
-    failureScore: -120
+    successScore: 110
+    failureScore: -150
 
 
-  - name: STR_REGIONAL_HQ #TODO
+  - name: STR_REGIONAL_HQ
     description: STR_REGIONAL_HQ_DESCRIPTION
-    successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
     requires:
-      - STR_TODOIUM
-      - STR_COVERT_OPERATIONS
-    soldierSlots: 2
+      - STR_MIB_DATA_TRANSFER_DECRYPTION
+    soldierSlots: 3
     scientistSlots: 1
-    baseChances: 70
-    requiredItems: #TODO
-      STR_POLICE_BATON: 2
-    danger: 3
-    costs: 120
+    baseChances: 50
+    danger: 13
+    costs: 220
     specialRule: STR_REGIONAL_HQ_DISCOVERY
+    successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
+    successScore: 130
+    successResearchList:
+      - STR_REGIONAL_HQ_LOCATED
+    failureDescription: STR_REGIONAL_HQ_FAILURE_DESCRIPTION
+    failureScore: -160
+    failureResearchList:
+      - STR_REGIONAL_HQ_LOCATED
+      - STR_REQ_HQ_LOCATION_FAILED
+   
+
+  - name: STR_REGIONAL_HQ_SURVEY #TODO - add version for failed locating
+    description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
+    requires: #probably, needs more...
+      - STR_REGIONAL_HQ_LOCATED
+    soldierSlots: 4
+    scientistSlots: 1
+    baseChances: 75
+    danger: 11
+    costs: 390
+    successDescription: STR_REGIONAL_HQ_SURVEY_RESULT_DESCRIPTION
+    successScore: 50
+    successResearchList:
+      - STR_REGIONAL_HQ_SURVEY_DONE
+    failureDescription: STR_REGIONAL_HQ_SURVEY_RESULT_DESCRIPTION
+    failureScore: -80
+    failureResearchList:
+      - STR_REGIONAL_HQ_SURVEY_DONE
+
+
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION

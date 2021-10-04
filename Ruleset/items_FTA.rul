@@ -188,8 +188,6 @@ items:
     listOrder: 18000    
   - type: STR_SWORD
     categories: [STR_HUMAN_TECH, STR_MELEE]
-    requiresBuy:
-      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     landOnly: true
     costBuy: 2100
@@ -2824,8 +2822,6 @@ items:
   - type: STR_LIQUID_FLAME
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
     landOnly: true
-    requiresBuy:
-      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 220
     costSell: 170

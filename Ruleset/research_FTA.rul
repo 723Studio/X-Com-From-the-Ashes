@@ -414,14 +414,14 @@ research:
     hidden: true
   - name: STR_MIB_AGENT_LOBOTOMY
     requiresBaseFunc: [SURGERY]
-    cost: 216
+    cost: 415
     points: 50
     dependencies:
       - STR_FRESH_MIB_AGENT
     listOrder: 146000   
   - name: STR_MIB_HEAD_CHIP
     requiresBaseFunc: [INTLAB]
-    cost: 600
+    cost: 950
     points: 150
     dependencies:
       - STR_MIB_AGENT_LOBOTOMY
@@ -430,9 +430,15 @@ research:
     requiresBaseFunc: [INTLAB]
     cost: 700
     points: 180
-    dependencies:
+    dependencies: #TODO - more stuff, hacking info?
       - STR_MIB_HEAD_CHIP
     listOrder: 146000
+  - name: STR_REGIONAL_HQ_LOCATED
+    hidden: true
+  - name: STR_REQ_HQ_LOCATION_FAILED #also tells us that we failed STR_REGIONAL_HQ
+    hidden: true
+  - name: STR_REGIONAL_HQ_SURVEY_DONE
+    hidden: true
   #empty lore
   - name: STR_EMPTY_MIB_EARLY_LORE_STAGE
     hidden: true

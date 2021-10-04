@@ -30,7 +30,7 @@ Here is a list of that assets:
 * inventory_CHUPACABRA.png
 * ufopedia_CHUPACABRA_AUTOPSY_CPAL.png
 * ufopedia_CHUPACABRA_CPAL.png
-* Extracted_MIB_Chip_CPAL.png
+* MIB_Chip_CPAL.png.png
 * ARMY_TRUCK.pck
 * Hacking_UI.png
 

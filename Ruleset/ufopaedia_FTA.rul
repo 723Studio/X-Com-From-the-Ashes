@@ -1427,7 +1427,28 @@ ufopaedia:
       - STR_FRESH_MIB_AGENT
     text: STR_FRESH_MIB_AGENT_UFOPEDIA
     listOrder: 160028
-
+  - id: STR_MIB_AGENT_LOBOTOMY
+    type_id: 7
+    image_id: MIB_CHIP_CPAL.SPK
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_AGENT_LOBOTOMY
+    text: STR_MIB_AGENT_LOBOTOMY_UFOPEDIA
+    listOrder: 160028
+  - id: STR_MIB_HEAD_CHIP
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_HEAD_CHIP
+    text: STR_MIB_HEAD_CHIP_UFOPEDIA
+    listOrder: 160028
+  - id: STR_MIB_SIGNAL
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_MIB_DATA_TRANSFER_DECRYPTION
+    text: STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA
+    listOrder: 160028
 
   - id: STR_MIB_OFFICE_ENGINEER
     type_id: 8
@@ -1443,7 +1464,6 @@ ufopaedia:
       - STR_MIB_OFFICE_WORKER
     text: STR_MIB_OFFICE_WORKER_UFOPEDIA
     listOrder: 160028
-
   - id: STR_MIB_OFFICE_MANAGER
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
