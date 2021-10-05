@@ -136,7 +136,7 @@ eventScripts:
       STR_FACEHUGGER_CORPSE: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 100
+    executionOdds: 70
     minDifficulty: 0
     maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE
@@ -148,7 +148,7 @@ eventScripts:
       STR_ZOMBIE_STERILE_CORPSE: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 100
+    executionOdds: 70
     minDifficulty: 0
     maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_STERILE
@@ -160,7 +160,7 @@ eventScripts:
       STR_ZOMBIE_STERILE_CORPSE: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 100
+    executionOdds: 70
     minDifficulty: 0
     maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_GRUBAS
@@ -172,19 +172,7 @@ eventScripts:
       STR_ZOMBIE_GRUBAS_CORPSE: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 100
-    minDifficulty: 0
-    maxDifficulty: 4
-  - type: STR_BIOLAB_PREREQ_SCRIPT_JABBER
-    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
-    researchTriggers:
-      STR_BIOLAB_PREREQ: false
-      STR_BIOLAB: false
-    itemTriggers:
-      STR_JABBER_CORPSE: true
-    firstMonth: 0
-    allowedProcessor: 2 #xcom
-    executionOdds: 100
+    executionOdds: 70
     minDifficulty: 0
     maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_CHUPACABRA
@@ -196,9 +184,22 @@ eventScripts:
       STR_CHUPACABRA_CORPSE: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 100
+    executionOdds: 70
     minDifficulty: 0
     maxDifficulty: 4
+  - type: STR_TELL_RESISTANCE_ABOUT_MIB_HQ
+    oneTimeSequentialEvents: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_EVENT]
+    researchTriggers:
+      STR_RESISTANCE_CONTACT: true
+      STR_REQ_HQ_LOCATION_DONE: true
+      STR_TELL_RESISTANCE_ABOUT_MIB_HQ_SPAWNED: false
+    firstMonth: 0
+    lastMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 40
+    minDifficulty: 0
+    maxDifficulty: 4
+
 
 #resistance
   - type: STR_RESISTANCE_WEAPONRY_SCRIPT
@@ -206,6 +207,7 @@ eventScripts:
     researchTriggers:
       STR_RESISTANCE_CONTACT: true
       STR_COVERT_OPERATIONS: true
+      STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED: false
     requiredReputation:
       STR_RESISTANCE: 5 #STR_HONORED
     firstMonth: 0
@@ -214,4 +216,18 @@ eventScripts:
     executionOdds: 85
     minDifficulty: 0
     maxDifficulty: 4
-   
+  - type: STR_RESISTANCE_CELL_NEAR_MIB_HQ
+    oneTimeSequentialEvents: [STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT]
+    researchTriggers:
+      STR_RESISTANCE_CONTACT: true
+      STR_REQ_HQ_LOCATION_DONE: true
+      STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES: true
+      STR_RESISTANCE_CELL_CREATION_PREREQ: false
+    requiredReputation:
+      STR_RESISTANCE: 5 #STR_HONORED
+    firstMonth: 0
+    lastMonth: 0
+    allowedProcessor: 1 #faction
+    executionOdds: 70
+    minDifficulty: 0
+    maxDifficulty: 4

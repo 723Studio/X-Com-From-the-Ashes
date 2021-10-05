@@ -214,6 +214,7 @@ events:
       STR_RESISTANCE: -300
   - name: STR_RESISTANCE_WEAPONRY_EVENT
     description: STR_RESISTANCE_WEAPONRY_EVENT_DESCRIPTION
+    researchList: [STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED]
     timer: 4320 # 3 days
     timerRandom: 28800 # 20 days
     reputationScore:
@@ -242,6 +243,11 @@ events:
     timerRandom: 43800
     removedCovertOperationsList:
       - STR_MILITARY_WEAPONRY_ACQUISITION
+  - name: STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT
+    description: STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT_DESCRIPTION
+    researchList: [STR_RESISTANCE_CELL_CREATION_PREREQ]
+
+
 
 #xcom
   - name: STR_WORKSHOP_EVENT
@@ -270,8 +276,8 @@ events:
     description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION
     background: BACK05.SCR
     researchList: [STR_BIOLAB_PREREQ]
-    timer: 120
-    timerRandom: 60
+    timer: 30
+    timerRandom: 0
     interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_BIOLAB_STUFF
     description: STR_BIOLAB_STUFF_DESCRIPTION
@@ -287,6 +293,25 @@ events:
     timer: 1440
     timerRandom: 2880
     interruptResearch: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
+  - name: STR_TELL_RESISTANCE_ABOUT_MIB_HQ_EVENT
+    description: STR_TELL_RESISTANCE_ABOUT_MIB_HQ_EVENT_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    researchList: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_SPAWNED]
+    timer: 30
+    timerRandom: 0
+    customAnswers:
+      0:
+        title: STR_YES
+        spawnEvent: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES]
+      1:
+        title: STR_NO
+  - name: STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES
+    description: STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    researchList: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES]
+    timer: 30
+    timerRandom: 0
+
 
 
   # - name: STR_SNIPPET

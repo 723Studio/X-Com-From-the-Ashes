@@ -225,8 +225,7 @@ ufopaedia:
     text: STR_XCOM_FILES_1_UFOPEDIA
     listOrder: 500
   - id: STR_XCOM_FILES_2
-    type_id: 7
-    image_id: WIP_UFOPEDIA.SPK
+    type_id: 8
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:
@@ -234,8 +233,7 @@ ufopaedia:
     text: STR_XCOM_FILES_2_UFOPEDIA
     listOrder: 510
   - id: STR_XCOM_FILES_3
-    type_id: 7
-    image_id: WIP_UFOPEDIA.SPK
+    type_id: 8
     text_width: 158
     section: STR_XCOM_REPORTS_UC
     requires:

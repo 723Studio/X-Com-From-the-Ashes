@@ -154,8 +154,8 @@ en-US:
   STR_INCOMING_ALLY_REINFORCEMENTS: "Our reinforcements arrived!"
   STR_ITEMS_RECOVERED: "ITEMS RECOVERED"
   STR_OBJECTIVE_SECURED: "OBJECTIVE SECURED"
-  STR_ALIENS_KILLED: "ENEMIES KILLED" #TODO change after code fixed !
-  STR_LIVE_ALIENS_SURRENDERED: "LIVE ENEMIES SURRENDERED" #TODO change after code fixed !
+  STR_ALIENS_KILLED: "ENEMIES KILLED" #FIXME change after code fixed !
+  STR_LIVE_ALIENS_SURRENDERED: "LIVE ENEMIES SURRENDERED" #FIXME change after code fixed !
   STR_LIVE_ALIENS_RECOVERED: "LIVE ENEMIES RECOVERED"
   STR_ALIEN_CORPSES_RECOVERED: "ENEMY CORPSES RECOVERED"
   STR_PLACEHOLDER_COUNTRY: " "
@@ -198,6 +198,7 @@ en-US:
   STR_DAMAGE_ARMOR_PIERCING: "KINETIC"
   STR_DAMAGE_MELEE: "CUTTING"
   STR_DAMAGE_NONE: "SPECIAL"
+  STR_DAMAGE_ACID: "CHEMICAL"
   STR_DAMAGE_SMOKE: "CHOKE"
   STR_DAMAGE_10: "EMP"
   STR_DAMAGE_11: "ELECTRIC"
@@ -212,29 +213,29 @@ en-US:
   STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC: "High Explosive Damage"
   STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA: Explosives are a tried and proven way of dislocating obstacles for accessing new routes and hostiles should there be too many of them to take out one by one or when there isn't a good opportunity to target them otherwise in the first place. Explosives, especially the ones specifically designed for that purpose, can also prove invaluable when dealing with highly armored opponents and vehicles. Care and restraint should be taken when using explosives, as a misplaced explosive can prove more detrimental to the user(s) than the designated target."
   STR_DAMAGE_LASER_BEAM_TOPIC: "Laser Beam Damage"
-  STR_DAMAGE_LASER_BEAM_UFOPEDIA: STR_DAMAGE_LASER_BEAM_UFOPEDIA #TODO
+  STR_DAMAGE_LASER_BEAM_UFOPEDIA: STR_DAMAGE_LASER_BEAM_UFOPEDIA #FIXME
   STR_DAMAGE_PLASMA_BEAM_TOPIC: "Plasma Beam Damage"
-  STR_DAMAGE_PLASMA_BEAM_UFOPEDIA: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA #TODO
+  STR_DAMAGE_PLASMA_BEAM_UFOPEDIA: STR_DAMAGE_PLASMA_BEAM_UFOPEDIA #FIXME
   STR_DAMAGE_STUN_TOPIC: "Stun Damage"
   STR_DAMAGE_STUN_UFOPEDIA: "Although killing an enemy is usually the easiest way to win in terms of tactics, sometimes capturing the enemy alive is worth the extra effort. Some enemies may have critical information for us, and we need to interrogate them to move forward in unraveling the aliens' plans. Stunning an enemy will incapacitate them for several turns. If we manage to incapacitate all other enemies or get stunned unit to the craft and leave the battlefield before it wakes up, it will be taken to the base and placed to the containment facility."
   STR_DAMAGE_MELEE_TOPIC: "Cutting Damage"
   STR_DAMAGE_MELEE_UFOPEDIA: "Melee weapons are among the simplest yet still effective types of weapons, bar armored opponents. At close range it might be preferable to dispatch an enemy using by the means of a combat knife or a similar implement given how quick they are to use, especially if the hostiles are the ones approaching. However, using it in other circumstances is inadvisable - risking overextension for an attack that might end up failing is always a bad decision but wanting to engage in melee combat can result in the worst cases of it should there be any complications. It's also relatively easy to be protected from cutting weapons; that goes either way."
-  STR_DAMAGE_ACID_TOPIC: "Acid Damage"
-  STR_DAMAGE_ACID_UFOPEDIA: STR_DAMAGE_ACID_UFOPEDIA #TODO
+  STR_DAMAGE_ACID_TOPIC: "Chemical Damage"
+  STR_DAMAGE_ACID_UFOPEDIA: "Most of the damage chemical weapons inflict is due to aggressive substances - acids or bases applied to the enemy's body. Chemicals can have a pronounced corrosive effect on enemy armor, as well as cause severe chemical burns to the skin, sometimes incompatible with life. The fumes produced by the reaction can be toxic and damage the respiratory tract if inhaled. The enemies may spend part of their turn trying to shake off the compound."
   STR_DAMAGE_SMOKE_TOPIC: "Choke Damage"
   STR_DAMAGE_SMOKE_UFOPEDIA: "Smoke can provide a helpful, if intangible, cover from enemy fire. It can also become a hazard - inhaling smoke from any source will eventually result in loss of consciousness from decreased access to oxygen. It can be used to facilitate captures but overstaying in smoke could end up in a shock not unlike the one caused by abuse of stun weaponry. Thus it's ill-advised for wounded troops to stay long, or in worst cases at all, in smokescreens, grenade-made or otherwise."
   STR_DAMAGE_EMP_TOPIC: "EMP Damage"
-  STR_DAMAGE_EMP_UFOPEDIA: STR_DAMAGE_EMP_UFOPEDIA #TODO
+  STR_DAMAGE_EMP_UFOPEDIA: STR_DAMAGE_EMP_UFOPEDIA #FIXME
   STR_DAMAGE_ELECTRIC_TOPIC: "Electric Damage"
   STR_DAMAGE_ELECTRIC_UFOPEDIA: "Electrical shock results from contact with an electrical circuit in which there are voltage sources and/or current sources that can cause current to flow through the energized body part. It is common for a person to be susceptible to the passage of a current greater than 1 mA. In addition, at high-voltage installations, an electric shock without touching live parts is possible, as a result of an air breakdown with the formation of an electric arc. As a result of an electric shock, the target will experience convulsions, loss of consciousness, and a high-power shock can result in death."
   STR_DAMAGE_PSI_TOPIC: "Psionic Damage"
-  STR_DAMAGE_PSI_UFOPEDIA: STR_DAMAGE_PSI_UFOPEDIA #TODO
+  STR_DAMAGE_PSI_UFOPEDIA: STR_DAMAGE_PSI_UFOPEDIA #FIXME
   STR_DAMAGE_WARP_TOPIC: "Warp Damage"
-  STR_DAMAGE_WARP_UFOPEDIA: STR_DAMAGE_WARP_UFOPEDIA #TODO
+  STR_DAMAGE_WARP_UFOPEDIA: STR_DAMAGE_WARP_UFOPEDIA #FIXME
   STR_DAMAGE_PRESSURE_TOPIC: "High Pressure Damage"
-  STR_DAMAGE_PRESSURE_UFOPEDIA: STR_DAMAGE_PRESSURE_UFOPEDIA #TODO
+  STR_DAMAGE_PRESSURE_UFOPEDIA: STR_DAMAGE_PRESSURE_UFOPEDIA #FIXME
   STR_DAMAGE_BIO_TOPIC: "Bio-damage"
-  STR_DAMAGE_BIO_UFOPEDIA: STR_DAMAGE_PRESSURE_UFOPEDIA #TODO
+  STR_DAMAGE_BIO_UFOPEDIA: STR_DAMAGE_BIO_UFOPEDIA #FIXME
 #mod UI
   STR_L_RATING_AMAZING: "Yay" #TODO
   STR_L_RATING_PERFECT: "You are a great leader, our people are very inspired by the recent successes in the fight against aliens, they have complete confidence in you."
@@ -305,8 +306,12 @@ en-US:
 #missions
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
   STR_INITIAL_REGIONAL_HQ: "M.I.B. Regional HQ"
-  STR_ALERT_MIB_REGIONAL_HQ: STR_ALERT_MIB_REGIONAL_HQ #TODO
-  STR_MIB_REGIONAL_HQ_DESCRIPTION: STR_MIB_REGIONAL_HQ_DESCRIPTION #TODO
+  STR_ALERT_MIB_REGIONAL_HQ: #TODO
+  STR_MIB_REGIONAL_HQ_DESCRIPTION: #TODO
+  STR_INITIAL_REGIONAL_HQ_DESC: #TODO
+  STR_MIB_REGIONAL_HQ_UNDERGROUND: #TODO
+  STR_MIB_REGIONAL_HQ_UNDERGROUND_DESC: #TODO
+
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_RESISTANCE_FARM_ZOMBIE: "Resistance Heaven Attacked"
   STR_RESISTANCE_HEAVEN_ALERT: "Resistance Heaven Attacked!"
@@ -359,12 +364,18 @@ en-US:
   STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION: "Our agents were able to confirm information that the regional headquarters of the Men in Black is somewhere in the city under investigation. Unfortunately, we are unable to locate the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have been unable to decipher it or locate the source of the signal."
   STR_REGIONAL_HQ_AREA_SURVEY_LONG: "M.I.B. Area Survey"
   STR_REGIONAL_HQ: "M.I.B. Regional HQ"
-  STR_REGIONAL_HQ_DESCRIPTION: #TODO
-  STR_REGIONAL_HQ_SUCCESS_DESCRIPTION: #TODO
-  STR_REGIONAL_HQ_FAILURE_DESCRIPTION: #TODO
-  STR_REGIONAL_HQ_SURVEY: "M.I.B. HQ Location Investigation"
-  STR_REGIONAL_HQ_SURVEY_DESCRIPTION: #TODO
-  STR_REGIONAL_HQ_SURVEY_RESULT_DESCRIPTION: #TODO
+  STR_REGIONAL_HQ_DESCRIPTION: "Undoubtedly, the activity of M.I.B. agents emanates from some center where their operations are planned, organized, and logistically supplied. It is necessary to investigate and locate this place. Perhaps by destroying it, we can seriously disrupt their plans, and if we are lucky, we can wipe out the data about our base location to prevent further invasions."
+  STR_REGIONAL_HQ_SUCCESS_DESCRIPTION: "Our agents were able to locate what we believe may be the center of all M.I.B. operations in the region. While remaining undetected, they established external surveillance of the facility using recruited locals. The center is disguised as a financial organization, perhaps the M.I.B. base is located directly under the building. They're clearly up to something - we're seeing M.I.B. forces converging on the facility. We have two options: launch an assault on the site or wait and survey the location. Maybe we can find something that will help us storm the compound."
+  STR_REGIONAL_HQ_FAILURE_DESCRIPTION: "Our agents were able to locate what we believe may be the center of all M.I.B. operations in the region. Not everything went perfectly well, but we set up outside surveillance of the facility, recruiting some local residents. The center is disguised as a financial organization, perhaps the M.I.B. base is located directly under the building. They're clearly up to something - we're seeing M.I.B. forces converging on the facility. We have two options: launch an assault on the site or wait and survey the location. Maybe we can find something that will help us storm the compound."
+  STR_REGIONAL_HQ_SURVEY: "M.I.B. HQ Location Survey"
+  STR_REGIONAL_HQ_SURVEY_HARD: "M.I.B. HQ Location Survey"
+  STR_REGIONAL_HQ_SURVEY_DESCRIPTION: "It could be worth taking the time to examine the engineering plans and communications leading up to the M.I.B. headquarters to analyze vulnerabilities in the defense.  This will help us prepare an effective plan of assault."
+  STR_REGIONAL_HQ_SURVEY_SUCCESS_DESCRIPTION: "We were able to locate a sewage canal which runs directly under the structure in which we believe the M.I.B. headquarters is located. Information about it has been carefully concealed; it is not on any of the current plans. However, we managed to find a retired engineer who showed us the entrance to the underground communications suite and provided approximate plans. This will allow us to approach the complex undetected."
+  STR_REGIONAL_HQ_SURVEY_FAILURE_DESCRIPTION: "We investigated the area where the M.I.B. headquarters is located as exhaustively as we could. Alas, this structure is quite well-protected, with its own communications system, with no access from the outside. The only assault option left is to gather a squad stealthily in the house from which we monitor the building. When we are ready, we strike directly, breaking into the office as burglars and breaking into the M.I.B.'s headquarters."
+  STR_RESISTANCE_CELL_CREATION: #TODO
+  STR_RESISTANCE_CELL_CREATION_DESCRIPTION: 
+  STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION: 
+  STR_RESISTANCE_CELL_CREATION_FAILURE_DESCRIPTION: 
 
 
   STR_MONSTER_HUNT_INVESTIGATION: "Monster Activity Investigation"
@@ -375,14 +386,15 @@ en-US:
   STR_MONSTER_HUNT_RUMORS_CHUPA_FAILURE_DESCRIPTION: "Our operatives failed in their mission; they could not find any sign of the mysterious monster terrorizing locals. Alas, we can only wait for the next report of paranormal activity, here we have done all we can."
   STR_LAB_EQUIPMENT_ACQUISITION: "Lab Equipment Acquisition"
   STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "Any new laboratory that we want to build requires a large amount of high-quality equipment, powerful computers and fine instruments. It will not work just like that to buy a couple of installations, so you need to act secretly and get in touch with serious people."
-  STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
-  STR_LAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
+  STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: "We managed to successfully accomplish the bargain, and the equipment was smuggled to our base."
+  STR_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: "We were able to accomplish the deal successfully, and the equipment was smuggled to our base. Unfortunately, the seller suspected something and demanded an inflated price for the confidentiality of the bargain."
   STR_BIOLAB_EQUIPMENT_ACQUISITION: "Biology Science Equipment Acquisition"
   STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "We have a good chance to acquire  specialized equipment for our bio laboratory. Biology science equipment will be even more difficult to obtain than general equipment, but at one cost or another, we need to get this equipment in order to move further in our research."
-  STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION: #TODO
-  STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION: #TODO
-  STR_MILITARY_WEAPONRY_ACQUISITION: #TODO
-  STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION: #TODO
+  STR_MILITARY_WEAPONRY_ACQUISITION: "Military Weaponry Acquisition"
+  STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION: "We are requested to send our operatives to negotiate with a corrupt general for the supply of military arms and equipment to our friends in the Resistance. The operation is very delicate, we must remain incognito. A cover of independent arms dealers has been prepared for the agents."
+  STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_SUCCESS: "We were able to negotiate with the general, and the first consignments of weapons have already been sent to the coordinates given to us by the men from the Resistance."
+  STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_FAIL: "  Unfortunately, we were unable to negotiate with the general - he suspected and our agents' cover was blown. A fight ensued and our operatives were forced to flee."
+
 #events
   STR_RND_STATUS_REPORT_EVENT: "R&D status report is ready!"
   STR_RND_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the R&D center."
@@ -411,6 +423,10 @@ en-US:
   STR_MONSTER_HUNT_START_EVENT_YES: "Strange creatures"
   STR_STRANGE_CREATURE_AUTOPSY: "Strange creature study"
   STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION: "The recent dissection of this dreadful monster has shown how little we know about the biology of some creatures that inhabit our planet. What is the nature of their origin, numbers, diversity and regions of habitation - these are questions we have yet to answer. For now, the only thing that is clear is that we need to continue to study these beings. We should capture and examine the living specimen carefully, and a new base unit should be developed to keep the monsters safely at the base."
+  STR_TELL_RESISTANCE_ABOUT_MIB_HQ_EVENT: "M.I.B. HQ Location"
+  STR_TELL_RESISTANCE_ABOUT_MIB_HQ_EVENT_DESCRIPTION: ""
+  STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES:  "M.I.B. HQ Location"
+  STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES_DESCRIPTION: "I will immediately relay to them all the information we have."
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: "'Roger. Roger. Looks like we've established an encrypted link to the remaining X-COM forces! My name is Vlad, and I speak on behalf of the Resistance, I repeat, on behalf of the Resistance. With this channel we will be able to covertly exchange intelligence and build friendly relations. We would appreciate any help from you, and we welcome the opportunity to trade resources. I hope that from today, through great diplomacy, our combined endeavors will go forward. To victory!'{NEWLINE}New Diplomacy Relationship> {ALT}Resistance"
   STR_RESISTANCE_HEAVEN_SAVED_EVENT: "Resistance heaven defense"
@@ -428,14 +444,13 @@ en-US:
   STR_NOT_RESCUED_SCIENTIST_DESCRIPTION: "We have failed to rescue the stranded scientist. The invaders' forces were far too numerous for us to handle. One thing is certain, however - the overreaction to the researcher's detection shows how much they can fear someone helping to uncover their true agenda, even if it is just one person.{NEWLINE}Resistance reputation score> {ALT}-200"  
   STR_RESISTANCE_WEAPONRY_EVENT: "Military Weaponry"
   STR_RESISTANCE_WEAPONRY_EVENT_DESCRIPTION: "Good day, Commander! It appears that we have an excellent chance to obtain a steady source of various weapons and equipment of a military nature. It cannot be overstated how important this is for the advancement of our struggle. Of course, we'll be able to share it with you as well. I think it will come in handy when you start to run out of ammo for your fancy guns. So, are you with us?"
-  STR_YES: "Yes"
-  STR_NO: "No"
   STR_RESISTANCE_WEAPONRY_EVENT_YES: "Military Weaponry"
-  STR_RESISTANCE_WEAPONRY_EVENT_YES_DESCRIPTION: "Great! We plan to bribe one corrupt general who is already working with various arms dealers. After the collapse of the Soviet Union, this is not so rare. And we'll need your help. We don't have an expert in such deals, the stakes are very high. Maybe you can send some of your guys undercover to meet with the general.{NEWLINE}I'll forward all the details."
+  STR_RESISTANCE_WEAPONRY_EVENT_YES_DESCRIPTION: "Great! We plan to bribe one corrupt general who is already working with various arms dealers. After the collapse of the Soviet Union, this is not so rare. And we'll need your help. We don't have an expert in such deals, the stakes are very high. Maybe you can send some of your guys undercover to meet with the general. I'll forward all the details.{NEWLINE}{ALT}New covert operation available."
   STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS: "Military Weaponry Acquisition"
   STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS_DESCRIPTION: "Excellent! Now we have the opportunity to purchase small quantities of military weapons. This will greatly help us in our defense against the ubiquitous M.I.B. agents, perhaps we can finally fight back. Certainly, we are ready to share it with you."
   STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION: "Another Chance for Military Weaponry Acquisition"
-  STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "It seems that we have found a great opportunity to try again to establish a channel of covert supply of military weapons and equipment. Once again we will need your help, it is necessary to send your undercover agents to the operation to negotiate the shipments."
+  STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "It seems that we have found a great opportunity to try again to establish a channel of covert supply of military weapons and equipment. Once again we will need your help, it is necessary to send your undercover agents to the operation to negotiate the shipments.{NEWLINE}{ALT}New covert operation available."
+  STR_RESISTANCE_CELL_NEAR_MIB_HQ: 
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
   STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"
@@ -475,11 +490,13 @@ en-US:
   STR_NOT_RESCUED_AGENT_DESCRIPTION_5: "We couldn't save our agents from such a difficult situation. Have we lost our men at this point? Oh, no. Our network has shrunk, but they're only making it worse for themselves by cornering us.{NEWLINE}{NEWLINE}Resistance reputation score> {ALT}-110"
   STR_NOT_RESCUED_AGENT_DESCRIPTION_6: "We couldn't save our agents from such a difficult situation. As soon as the general staff learns about what happened, the smiles will fall from the faces of our sisters and brothers for a long time. We need revenge.{NEWLINE}{NEWLINE}Resistance reputation score> {ALT}-110"
   STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION: "Acquisition of lab equipment"
-  STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "We have an exciting new opportunity to acquire new laboratory equipment discreetly. We need to send our undercover agents to make the deal."
+  STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "We have an exciting new opportunity to acquire new laboratory equipment discreetly. We need to send our undercover agents to make the deal.{NEWLINE}{ALT}New covert operation available."
   STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION: "Acquisition of biolab equipment"
-  STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "An opportunity to acquire rare laboratory equipment designed for sophisticated biological experiments and research has arisen. It might be worth sending our agents to make the deal."
+  STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "An opportunity to acquire rare laboratory equipment designed for sophisticated biological experiments and research has arisen. It might be worth sending our agents to make the deal.{NEWLINE}{ALT}New covert operation available."
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: "Before our people were attacked by M.I.B. agents, they managed to transmit a report on the main results of the operation. The report shows that they were able to confirm the information that the regional headquarters of the Men in Black is located somewhere in the city being investigated. Unfortunately, we are unable to locate the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have been unable to decipher it or locate the signal source."
+  STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT: "Creating a new Resistance Cell"
+  STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT_DESCRIPTION: "Commander, I think we can help each other. We want to establish a new Resistance cell in the city where you believe the M.I.B. is headquartered. We have no reason not to trust you and a great desire to take revenge on these scumbags! Since you have already explored the site, we could really use your help. Perhaps you could send a couple of your specialists in covert operations to help us set up a new cell?{NEWLINE}{ALT}New covert operation available."
   STR_MIB_BANKER_ACCOUNTS: "M.I.B. Secret Bank Accounts"
   STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. With his help we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}2832548"
 
@@ -519,22 +536,22 @@ en-US:
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He refuses to communicate and shows aggression at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to maintain control is still unclear to us. During the physical examination there were no signs of any surgical intervention, with all medical tests within the normal range (except for adrenaline). Safekeeping can be problematic as, for example, he had a chance to bite off a finger of a former colleague which he took, successfully."
   STR_MIB_OFFICE_ENGINEER: "Office Engineer"
   STR_MIB_OFFICE_ENGINEER_CORPSE: "Office Engineer corpse"
-  STR_MIB_OFFICE_ENGINEER_UFOPEDIA: #TODO 
+  STR_MIB_OFFICE_ENGINEER_UFOPEDIA: "The engineer who maintains the building of the financial organization covering the M.I.B. headquarters did not tell us anything particularly important, except for one curious fact - there were unusually powerful directional transmitters on the roof of the building for an unknown purpose."
   STR_MIB_OFFICE_WORKER: "Office Worker"
   STR_MIB_OFFICE_WORKER_CORPSE: "Office Worker corpse"
-  STR_MIB_OFFICE_WORKER_UFOPEDIA: #TODO 
+  STR_MIB_OFFICE_WORKER_UFOPEDIA: "The subject did not possess any important strategic information; he was handling transactional matters and filling out client contracts." 
   STR_MIB_OFFICE_MANAGER: "Office manager"
   STR_MIB_OFFICE_MANAGER_CORPSE: "Office manager corpse"
-  STR_MIB_OFFICE_MANAGER_UFOPEDIA: #TODO 
+  STR_MIB_OFFICE_MANAGER_UFOPEDIA: "The department manager in the office, which was a front for the M.I.B. headquarters, had no important strategic information-she performed financial analysis and handed out fairly trivial tasks to her subordinates."
   STR_MIB_OFFICE_SECURITY: "Office security"
   STR_MIB_OFFICE_SECURITY_CORPSE: "Office security corpse"
-  STR_MIB_OFFICE_SECURITY_UFOPEDIA: #TODO 
+  STR_MIB_OFFICE_SECURITY_UFOPEDIA: "Hired through a private security organization, this security officer does not have any valuable information. He did not have access to many areas of the office (apparently, all the ones used by M.I.B.). He once saw a black truck pull into the garage and thought he saw someone inside calling for help. Internal security officers (obviously M.I.B. agents) convinced him that he was mistaken."
   STR_MIB_VIP_BODYGUARD: "Bodyguard"
   STR_MIB_VIP_BODYGUARD_CORPSE: "Bodyguard corpse"
-  STR_MIB_VIP_BODYGUARD_UFOPEDIA:  #TODO
+  STR_MIB_VIP_BODYGUARD_UFOPEDIA: "This tough guy had spent the last two years as personal security guard and driver for the director of the office that served as a front for M.I.B. headquarters. He always wondered why his boss was so afraid and avoided internal security agents. These guys are weird in general - always silent, wearing the same black suits and always wearing sunglasses."
   MIB_BANKER: "Banker"
   STR_MIB_VIP_CORPSE: "V.I.P. corpse"
-  MIB_BANKER_UFOPEDIA: #TODO
+  MIB_BANKER_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts."
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"
@@ -658,7 +675,7 @@ en-US:
   STR_HEAVY_PISTOL_UFOPEDIA: "A convenient and accurate pistol with a frame reinforced for a high caliber ammo. Each of the nine bullets contained in the clip is ready to tear the flesh of any enemy, if he did not take care of his armor.{NEWLINE}>Concealable"
   STR_HEAVY_PISTOL_CLIP: "Heavy Pistol Clip"
   STR_CHEMPISTOL: "Chempistol"
-  STR_CHEMPISTOL_UFOPEDIA: "This weapon shoots jets of pressurized, highly active chemicals. It is absolutely deadly to living targets and unprotected machinery. The chemical mixture can be produced from common ingredients, but is highly unusual and likely made with extraterrestrial guidance." #TODO
+  STR_CHEMPISTOL_UFOPEDIA: "This weapon shoots jets of pressurized, highly active chemicals. It is absolutely deadly to living targets and unprotected machinery. The chemical mixture can be extremely corrosive to armor and deals additional damage over time."
   STR_CHEMPISTOL_CLIP: "Chempistol Tank"
   STR_MACHINE_PISTOL: "Machine Pistol"
   STR_MACHINE_PISTOL_UFOPEDIA: "An automatic pistol with increased clip capacity. Low accuracy makes it ineffective for use at long and medium range, but due to its rate of fire the owner of this handgun is able to tip the scales in his favor in any firefight at close range.{NEWLINE}>Concealable"
@@ -684,7 +701,7 @@ en-US:
   STR_RIFLE_EXP_CLIP: "Rifle Exp. Clip"
   STR_RIFLE_AA_CLIP: "RIfle AA Clip"
   STR_CHEMOGUN: "Chemogun"
-  STR_CHEMOGUN_UFOPEDIA: "This weapon shoots jets of pressurized, highly active chemicals. It is absolutely deadly to living targets and unprotected machinery. The chemical mixture can be produced from common ingredients, but is highly unusual and likely made with extraterrestrial guidance." #TODO
+  STR_CHEMOGUN_UFOPEDIA: "This weapon shoots jets of pressurized, highly active chemicals. It is absolutely deadly to living targets and unprotected machinery. The chemical mixture can be produced from common ingredients, but is highly unusual and likely made with extraterrestrial guidance." #FIXME
   STR_CHEMOGUN_CLIP: "Chemogun Tank"
   STR_HUNTING_RIFLE: "Hunting Rifle"
   STR_HUNTING_RIFLE_UFOPEDIA: "A light bolt action rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapon is very easy and pleasant for both four- and two-legged animals."
@@ -849,11 +866,11 @@ en-US:
   STR_MONSTER_HUNT_RUMORS_ANALYSIS: "Monsters Activity Analysis"
   STR_MONSTER_HUNT_RUMORS_ANALYSIS_UFOPEDIA: "The fragmentary data collected by our field agents after careful analysis and comparison with Ufopaedia archival files has finally allowed us to make progress in our investigation. We are constantly one step behind, some practical actions need to be taken to detect the activity of the mysterious monsters in a timely manner. Then we could send our people on a hunt for one of these creatures."
   STR_MONSTER_HUNT_RUMORS: "Monster Rumors"
-  STR_MONSTER_HUNT_RUMORS_DESCRIPTION: "Commander! We have just acquired a report from our alert system about an incident with mysterious monsters! We should send our agents to investigate it as quickly as possible, with a new covert operation planned."
+  STR_MONSTER_HUNT_RUMORS_DESCRIPTION: "Commander! We have just acquired a report from our alert system about an incident with mysterious monsters! We should send our agents to investigate it as quickly as possible, with a new covert operation planned.{NEWLINE}{ALT}New covert operation available."
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: "We managed to expand the number of information channels through which we receive information concerning the activity of unknown monsters that are contacting civilians. Based on machine learning algorithms, a huge amount of various information is analyzed, and we are able to get timely information about the location of a new incident. Thus, we will be able to send a squad of our agents there and conduct a 'hot pursuit' investigation, and ideally - try to capture one of those creatures for further study. The first reports will be available shortly."
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
-  STR_VOID_CORP_UFOPEDIA: #TODO
+  STR_VOID_CORP_UFOPEDIA: #FIXME
   STR_STARTING_EQUIPMENT: "Common Equipment"
   STR_STARTING_EQUIPMENT_UFOPEDIA: "Since the X-COM project was discontinued, we have lost our regular armament and gear suppliers. But we continue to fight, and we vitally need new sources of weaponry and ammunition. Maybe our new friends can help out with that? Regrettably, lacking established illegal arms channels, they can only offer us weapons that are available for purchase by civilians. Our contact in the Resistance transferred the tactical specifications of the items we can buy from them, all information analyzed and uploaded to Ufopedia."
   STR_SUPPLIES: "Supplies"
@@ -873,14 +890,14 @@ en-US:
   STR_FACILITIES_BLUEPRINTS: "Facility Blueprints"
   STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segments containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to get it."
   STR_BASE_CONSTRUCTION: "New Base Construction"
-  STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #TODO
+  STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #FIXME
   STR_UNDERWATER_BASES: "Underwater Bases"
-  STR_UNDERWATER_BASES_UFOPEDIA: "STR_UNDERWATER_BASES_UFOPEDIA" #TODO
+  STR_UNDERWATER_BASES_UFOPEDIA: "STR_UNDERWATER_BASES_UFOPEDIA" #FIXME
   STR_XCOM_FILES_1: "X-COM FILES #094597"
   STR_XCOM_FILES_1_UFOPEDIA: "UFOs have been the subject of governmental attention since the late 1940s. Until then, such incidents were not investigated because of the war, and before that the military did not have a sufficiently reliable way of detecting flying objects. The conditions of the Cold War, namely the active scanning of NATO and Soviet airspace, the development of detection technology and mutual mistrust actively contributed to the investigation of UFO activity in different countries.{NEWLINE}In 1984, an unsuccessful endeavor was made to create a secret intergovernmental committee at the UN, designed to unite the efforts of different countries. In 1996 a second attempt was made to create a supranational secret organization dedicated to investigating alien activity on Earth, called X-COM. Funding was supposed to come from a covert group of influential politicians and military officers from various countries named The Council.{NEWLINE}*** New entry ***{NEWLINE}On March 5, 1999, X-COM was disbanded.{NEWLINE}*** Confirm saving a new entry? (Y/N)"
-  STR_XCOM_FILES_2: "STR_XCOM_FILES_1" #TODO
-  STR_XCOM_FILES_2_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
-  STR_XCOM_FILES_3: "STR_XCOM_FILES_1" #TODO
+  STR_XCOM_FILES_2: "X-COM FILES #096231"
+  STR_XCOM_FILES_2_UFOPEDIA: "Disagreements within the Council regarding X-COM began about a year ago. Many were dissatisfied with the lack of practical results. For 4 years X-COM did not come close to understanding the objectives and motivations of the aliens, the peculiarities of their biology and technologies. In all that time, not once did it manage to shoot down an alien vehicle. Twice a group of soldiers was dispatched to a UFO landing site, but both times contact with the squad broke off a few minutes after disembarkation. The soldiers relayed that they had made contact with the enemy, suffering casualties from some sort of energy weapon. The alien armor and some sort of force shields proved extremely effective against standard weapons. Because of the former commander's poor performance and controversial decisions, several members resigned from the council. Four more were forced to leave because they were hiding from the criminal prosecution conducted by Interpol."
+  STR_XCOM_FILES_3: "X-COM FILES #097164"
   STR_XCOM_FILES_3_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #TODO
   STR_EMPTY_MIB_EARLY_LORE1: "M.I.B. agent interrogation report #14571"
   STR_EMPTY_MIB_EARLY_LORE1_UFOPEDIA: "During the first 36 hours of confinement, the subject began to show acute symptoms of body detoxification and acute withdrawal syndrome kicked in. The subject was administered an IV to counteract body dehydration. Once stabilized, the subject turned out to have almost complete amnesia and remembers absolutely nothing about his MIB service. Apparently, he was abducted from his farm in Nebraska, USA.{NEWLINE}He only remembers that he went to check on some strange noises coming from the his yard of his house, and then a flash of bright light."
@@ -896,20 +913,20 @@ en-US:
   STR_EMPTY_MIB_EARLY_LORE5_UFOPEDIA: "After the subject's physical condition was stabilized, many interrogation techniques were performed on him. Alas, this did not yield the desired result - as with other M.I.B. agents, the subject remembered nothing about this mysterious organization. We decided to take a risk and inject him with 'truth serum' - a strong psychotropic substance used in interrogations. It was a big risk, considering what crazy cocktail was in his blood just recently. Even so, the subject responded well to the injection, and even remembered a few things:{NEWLINE}'I'm driving a black minivan, pulling into the grounds of a big office complex. I pass the parking area and drive around the main building. On the opposite side there is a gate... and ... Aaaaahhhhhhhhhh'.{NEWLINE}The subject clutched his head, started screaming and wriggling, foam coming out of his mouth. A minute later he lost consciousness, and by the time we got him to the medical center he had already fallen into a coma. He died shortly thereafter due to a massive brain hemorrhage."
   STR_EMPTY_MIB_EARLY_LORE6: "M.I.B. agent interrogation report #16249"
   STR_EMPTY_MIB_EARLY_LORE6_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE7: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE7: "M.I.B. agent interrogation report #058434"
   STR_EMPTY_MIB_EARLY_LORE7_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE8: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE8: "M.I.B. agent interrogation report #223478"
   STR_EMPTY_MIB_EARLY_LORE8_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE9: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE9: "M.I.B. agent interrogation report #264568"
   STR_EMPTY_MIB_EARLY_LORE9_UFOPEDIA: "Some general MiB lore here" #TODO
-  STR_EMPTY_MIB_EARLY_LORE10: "Some MiB lore article" #TODO
+  STR_EMPTY_MIB_EARLY_LORE10: "M.I.B. agent interrogation report #285496"
   STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA: "Some general MiB lore here" #TODO
   STR_FRESH_MIB_AGENT: "M.I.B. agent interrogation report #19723"
   STR_FRESH_MIB_AGENT_UFOPEDIA: "Surprisingly, the subject endured the detox relatively easily, and our therapy was very effective. Soon he was ready for interrogation. Sadly, the drugs they give him suppress his memory very well, so he remembered nothing at all. According to the police reports, he had been kidnapped only a few months before. During the interrogation, physical force was used, the chief of Intelligence punched him in the back of the head with a blunt object. His reaction was extremely strange - he convulsed and mumbled something in a language we didn't know. Ten minutes later, it stopped, and the object remembered nothing of what had happened. The results of this 'experiment' were well reproducible. We got a theory that we were thus hitting some device in his brain, which was confirmed after detailed analysis of radiography. Deep in the brain tissue, we noticed tiny artificial object that we had missed in previous studies. We should probably remove this implant and examine it in detail."
   STR_MIB_AGENT_LOBOTOMY: "M.I.B. Agent Lobotomy"
   STR_MIB_AGENT_LOBOTOMY_UFOPEDIA: "By dissecting the M.I.B. agent's cranium, we were able to remove a strange implant integrated into the frontal and temporal lobes of the cerebral cortex. The device consists of a miniature power supply, a memory unit, a processor, and a complex receiving antenna. We also found that the centers responsible for long-term memory were practically burned out, probably by a strong electrical impulse."
   STR_MIB_HEAD_CHIP: "M.I.B. Head Implant"
-  STR_MIB_HEAD_CHIP_UFOPEDIA: "We figured out the power system of the chip, so we can keep it running. Apparently, previously it was recharged from two sources - directly from the electromagnetic activity of the brain, as well as wirelessly from an external device. It was possible to connect to the microcomputer of the implant, but we are not able to overcome the protection of its firmware and view the embedded programs." #TODO - redo lore, i dislike it
+  STR_MIB_HEAD_CHIP_UFOPEDIA: "We figured out the power system of the chip, so we can keep it running. Apparently, previously it was recharged from two sources - directly from the electromagnetic activity of the brain, as well as wirelessly from an external device. It was possible to connect to the microcomputer of the implant, but we are not able to overcome the protection of its firmware and view the embedded programs." #FIXME - redo lore, i dislike it
   STR_MIB_DATA_TRANSFER_DECRYPTION: "M.I.B. Signal Decryption"
   STR_MIB_SIGNAL: "M.I.B. Signal"
   STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA: "The signal that the M.I.B. head chip was tuned to receive was partially decoded. It is a very weak, and the phased array on the surface of the chip is constantly calibrated, adjusting to the direction of the source, in order to enhance the reception.It appears to be less than 1,000 kilometers to the east.  We will be able to localize the source more precisely if we get close to it."

@@ -283,11 +283,12 @@ alienDeployments:
       textOffset: -16
       background: BACK01.SCR #TODO
       showTarget: false
+      desc: STR_INITIAL_REGIONAL_HQ_DESC
     objectiveType: 3
     markerName: STR_MIB_REGIONAL_HQ
     markerIcon: 7 #TODO
     alert: STR_ALERT_MIB_REGIONAL_HQ
-    alertBackground: PLACEHOLDER_BACKGROUND.SCR
+    alertBackground: PLACEHOLDER_BACKGROUND.SCR #TODO
     alertDescription: STR_MIB_REGIONAL_HQ_DESCRIPTION
     alienBase: true
     isHidden: true
