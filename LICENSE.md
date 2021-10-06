@@ -24,6 +24,7 @@ Here is a list of that assets:
 * ufopedia_MIB_BUTCHER_CPAL.png
 * inventory_MIB_BUTCHER.png
 * ufopedia_MIB_SPECOPS_CPAL.png
+* ufopedia_MIB_ENFORCER_CPAL.png
 * bigob_ChupacabraWeapon.png
 * CHUPACABRA.png
 * floorob_CHUPACABRA_CORPSE.png

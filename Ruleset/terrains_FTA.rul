@@ -3151,6 +3151,31 @@ terrains:
         length: 10
         groups: 8
 
+  - name: MIB_BASE
+    mapDataSets:
+      - BLANKS
+      - MIB_BASE_DECOR
+      - MIB_BASE
+    mapBlocks:
+    #1 - lift
+    #2 - coridor
+    #3 - HQ
+    #4 - prison
+    #5 - living space
+    #6 - comm relay
+    #7 - storage
+    #8 - border
+    #9 - small filler
+    #10 - filler
+      - name: MIB_B_LIFT
+        width: 20
+        length: 20
+        groups: 1 
+      - name: MIB_B_CORIDOR00
+        width: 20
+        length: 30
+        groups: 2
+
   - name: MIB_CHASING
     mapDataSets:
       - BLANKS
