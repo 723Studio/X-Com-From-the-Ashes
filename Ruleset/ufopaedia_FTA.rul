@@ -249,6 +249,14 @@ ufopaedia:
       - STR_PRISONER_INTERROGATIONS
     text: STR_PRISONER_INTERROGATIONS_UFOPEDIA
     listOrder: 700
+  - id: STR_MIB_DATA_CONTAINER
+    type_id: 8
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_MIB_DATA_CONTAINER
+    text: STR_MIB_DATA_CONTAINER_UFOPEDIA
+    listOrder: 520
   - id: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
     type_id: 7
     image_id: RND_CHIEF_CPAL.SPK
@@ -661,6 +669,18 @@ ufopaedia:
     requires:
       - STR_PISTOL_AA_CLIP
     section: STR_NOT_AVAILABLE
+  - id: STR_WOUNDGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_WOUNDGUN_UFOPEDIA
+    requires:
+      - STR_WOUNDGUN
+    listOrder: 20330
+  - id: STR_WOUNDGUN_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_WOUNDGUN
   - id: STR_CHEMPISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

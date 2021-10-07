@@ -283,6 +283,7 @@ alienDeployments:
       textOffset: -16
       background: BACK01.SCR #TODO
       showTarget: false
+      showCraft: false
       desc: STR_INITIAL_REGIONAL_HQ_DESC
     objectiveType: 3
     markerName: STR_MIB_REGIONAL_HQ
@@ -292,9 +293,11 @@ alienDeployments:
     alertDescription: STR_MIB_REGIONAL_HQ_DESCRIPTION
     alienBase: true
     isHidden: true
+    keepCraftAfterFailedMission: true
+    escapeType: 1
     points: 5
-    data: #TODO
-      - alienRank: 6
+    data:
+      - alienRank: 0 #STR_MIB_ARMORED_AGENT
         lowQty: 5
         highQty: 10
         dQty: 3
@@ -322,6 +325,7 @@ alienDeployments:
             []
 
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
+    race: STR_MIB_BASE_EARLY
     width: 70
     length: 70
     height: 2
@@ -332,18 +336,24 @@ alienDeployments:
     briefing:
       textOffset: -16
       background: BACK01.SCR
-      desc: STR_MIB_REGIONAL_HQ_UNDERGROUND_DESC #TODO
+      desc: STR_MIB_REGIONAL_HQ_UNDERGROUND_DESC
       showTarget: false
-    objectiveType: 3
+      showCraft: false
     alienBase: true
-    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500] #TODO
-    objectivePopup: STR_CONTROL_CENTER_DESTROYED #TODO
+    objectiveType: 3
+    #objectivesRequired: 3
+    battleScript: STR_ENDLESS_WAR_SCRIPT
+    missionCompleteText: STR_MIB_BASE_DESTROYED
+    missionFailedText: STR_MIB_BASE_NOT_DESTROYED
+    objectiveComplete: [STR_MIB_CONTROL_CENTER_DESTROYED, 500]
+    objectivePopup: STR_CONTROL_CENTER_DESTROYED #string from vanilla
     unlockedResearch: STR_MIB_HQ_DESTROYED #would be hardcoded, do not rename!!
+    keepCraftAfterFailedMission: true
     data:
       - alienRank: 6
         lowQty: 1
-        highQty: 3
-        dQty: 1
+        highQty: 1
+        dQty: 0
         percentageOutsideUfo: 0
         itemSets:
           -

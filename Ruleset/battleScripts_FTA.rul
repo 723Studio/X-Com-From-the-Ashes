@@ -372,3 +372,12 @@ battleScripts:
       unitSide: 1
       unitSet: [STR_XCOM_EX_COMMANDER]
 
+  - type: STR_ENDLESS_WAR_SCRIPT
+    commands:
+    - type: showMessage #for low diff
+      startTurn: 500
+      executionChances: 1
+      messages:
+        0:
+          title: STR_ENDLESS_WAR_SCRIPT
+          content: "What a long play!"

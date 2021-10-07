@@ -1416,7 +1416,7 @@ units:
     kneelHeight: 14 
     civilianRecoveryType: STR_RESISTANCE_AGENT
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 30 #90
+    value: 30
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1471,9 +1471,24 @@ units:
         - STR_FIRST_AID 
   - type: STR_RESISTANCE_AGENT_VIP
     refNode: *STR_RESISTANCE_AGENT
+    value: 90
+  - type: STR_RESISTANCE_AGENT_PRISONER
+    refNode: *STR_RESISTANCE_AGENT
     specialObjectiveType: STR_FRIENDLY_VIP
     civilianRecoveryType: STR_RESISTANCE_AGENT
+    #prisoner: true
     value: 90
+    builtInWeaponSets:
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
   - type: STR_RESISTANCE_SOLDIER
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR

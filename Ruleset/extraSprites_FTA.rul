@@ -304,7 +304,9 @@ extraSprites:
       406: Resources/Weapons/MIB/bigob_Chempistol.png
       407: Resources/Weapons/MIB/bigob_ChempistolClip.png
       408: Resources/Weapons/Earthbound/Xcom/bigob_ElectricStick.png
-      
+      409: Resources/MiscItems/bigob_MibDataContainer.png
+      410: Resources/Weapons/MIB/bigob_Woundgun.png
+      411: Resources/Weapons/MIB/bigob_WoundgunClip.png      
       
   - type: FLOOROB.PCK
     files:
@@ -418,6 +420,9 @@ extraSprites:
       406: Resources/Weapons/MIB/floorob_Chempistol.png
       407: Resources/Weapons/MIB/floorob_ChempistolClip.png
       408: Resources/Weapons/Earthbound/Xcom/floorob_ElectricStick.png
+      409: Resources/MiscItems/floorob_MibDataContainer.png
+      410: Resources/Weapons/MIB/floorob_Woundgun.png
+      411: Resources/Weapons/MIB/floorob_WoundgunClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -503,6 +508,7 @@ extraSprites:
       728: Resources/Weapons/MIB/handob_Chemogun.png
       736: Resources/Weapons/MIB/handob_Chempistol.png
       744: Resources/Weapons/Earthbound/Xcom/handob_ElectricStick.png
+      752: Resources/Weapons/MIB/handob_Woundgun.png
 
 
 

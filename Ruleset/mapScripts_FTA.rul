@@ -798,7 +798,8 @@ mapScripts:
       rects:
         - [1, 2, 1, 3]
         - [4, 2, 1, 3]
-    - type: fillArea #filling spots we left with coridors
+    - type: addBlock #filling spots we left with coridors
+      executions: 2
       groups: [10]
       rects:
         - [1, 2, 1, 3]

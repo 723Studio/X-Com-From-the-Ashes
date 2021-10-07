@@ -991,6 +991,18 @@ research:
     points: 0
     dependencies:
       - STR_RIOT_PISTOL
+  - name: STR_WOUNDGUN
+    cost: 12
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WOUNDGUN_CLIP
+    listOrder: 7410
+  - name: STR_WOUNDGUN_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WOUNDGUN
   - name: STR_CHEMPISTOL
     cost: 1200
     points: 40
@@ -1138,11 +1150,19 @@ research:
     cost: 8
     points: 60
     needItem: true
+    destroyItem: true
     dependencies: #TODO remove
       - STR_TODOIUM
     # getOneFree: #TODO add
     #   - ""
     listOrder: 7410
+  - name: STR_MIB_DATA_CONTAINER
+    cost: 30
+    points: 100
+    needItem: true
+    destroyItem: true
+    listOrder: 7410
+
 
 #crafts
   - name: STR_HELICOPTER

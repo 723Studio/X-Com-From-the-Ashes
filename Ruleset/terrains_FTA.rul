@@ -3166,22 +3166,51 @@ terrains:
     #7 - storage
     #8 - small filler
     #9 - large filler
+    #10 - crossing coridor 
       - name: MIB_B_LIFT
         width: 20
         length: 20
-        groups: 1 
+        groups: 1
+        randomizedItems:
+        - position: [9, 16, 1]
+          amount: 3
+          mixed: false
+          itemList: &mediumMIBStash [STR_ASSAULT_RIFLE, STR_RIFLE, STR_RIFLE_CLIP, STR_PRECISION_RIFLE, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_RIFLE_EXP_CLIP, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SEMI_AUTO_SHOTGUN, STR_SEMI_AUTO_SHOTGUN, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_BATON, STR_LMG, STR_LMG, STR_LMG_CLIP, STR_LMG_CLIP, STR_LMG_CLIP, STR_LIGHT_CANNON, STR_LIGHT_CANNON, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_LC_I_AMMO, STR_HEAVY_CANNON, STR_HC_AP_AMMO, STR_HC_HE_AMMO, STR_HC_I_AMMO, STR_HC_BS_AMMO, STR_AUTO_CANNON, STR_AC_AP_AMMO, STR_AC_HE_AMMO, STR_AC_I_AMMO, STR_AC_BS_AMMO, STR_MINIGUN, STR_MINIGUN_CLIP, STR_ROCKET_LAUNCHER, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_STIMS_INJECTOR, STR_STIMS_INJECTOR, STR_STIMS_INJECTOR, STR_PERSONAL_AID_KIT, STR_PERSONAL_AID_KIT, STR_ELECTRO_FLARE]
+        - position: [9, 16, 1]
+          amount: 3
+          mixed: false
+          itemList: *mediumMIBStash
+        - position: [9, 16, 1]
+          amount: 2
+          mixed: false
+          itemList: &richMIBStash [STR_SNIPER_RIFLE, STR_SNIPER_RIFLE_CLIP, STR_LMG, STR_LMG_CLIP, STR_LIGHT_CANNON, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_LC_I_AMMO, STR_HEAVY_CANNON, STR_HEAVY_CANNON, STR_HC_AP_AMMO, STR_HC_AP_AMMO, STR_HC_HE_AMMO, STR_HC_HE_AMMO, STR_HC_I_AMMO, STR_HC_BS_AMMO, STR_HC_BS_AMMO, STR_AUTO_CANNON, STR_AUTO_CANNON,  STR_AC_AP_AMMO, STR_AC_AP_AMMO, STR_AC_HE_AMMO, STR_AC_HE_AMMO, STR_AC_I_AMMO, STR_AC_I_AMMO, STR_AC_BS_AMMO, STR_AC_BS_AMMO, STR_MINIGUN, STR_MINIGUN, STR_MINIGUN, STR_MINIGUN_CLIP, STR_MINIGUN_CLIP, STR_ROCKET_LAUNCHER, STR_ROCKET_LAUNCHER, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_LARGE_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET]
       - name: MIB_B_CORIDOR00
         width: 20
         length: 30
         groups: 2
+        randomizedItems:
+        - position: [11, 18, 0]
+          amount: 2
+          mixed: false
+          itemList: &poorMIBStash [STR_ASSAULT_RIFLE, STR_RIFLE, STR_RIFLE_CLIP, STR_PRECISION_RIFLE, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_RIFLE_EXP_CLIP, STR_RIFLE_EXP_CLIP, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SEMI_AUTO_SHOTGUN, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_BATON, STR_LMG, STR_LMG_CLIP, STR_LMG_CLIP, STR_LMG_CLIP, STR_LIGHT_CANNON, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_LC_I_AMMO,  STR_AC_AP_AMMO, STR_AC_HE_AMMO, STR_AC_I_AMMO, STR_AC_BS_AMMO, STR_SMALL_ROCKET, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_STIMS_INJECTOR, STR_STIMS_INJECTOR, STR_STIMS_INJECTOR, STR_PERSONAL_AID_KIT, STR_PERSONAL_AID_KIT, STR_ELECTRO_FLARE]
       - name: MIB_B_HQ
         width: 60
         length: 20
         groups: 3
+        items:
+          STR_MIB_DATA_CONTAINER:
+            - [27, 11, 0]
       - name: MIB_B_PRISON00
         width: 10
         length: 10
-        groups: 4 
+        groups: 4
+        # items:
+        #   STR_SPAWN_RESISTANCE_AGENT_PRISONER:
+        #     - [2, 2, 0]
+        #     - [6, 2, 0]
+        #     - [3, 4, 0]
+        # fuseTimers:
+        #   STR_SPAWN_RESISTANCE_AGENT_PRISONER: [0, 0]
       - name: MIB_B_LIV00
         width: 10
         length: 10
@@ -3193,7 +3222,52 @@ terrains:
       - name: MIB_B_STORE00
         width: 10
         length: 10
-        groups: 7 
+        groups: 7
+        randomizedItems:
+        - position: [5, 7, 0]
+          amount: 3
+          mixed: false
+          itemList: *poorMIBStash
+        - position: [7, 1, 1]
+          amount: 3
+          mixed: false
+          itemList: *richMIBStash
+        - position: [7, 1, 1]
+          amount: 2
+          mixed: false
+          itemList: *richMIBStash
+        - position: [7, 1, 1]
+          amount: 4
+          mixed: false
+          itemList: *richMIBStash
+        - position: [7, 1, 1]
+          amount: 3
+          mixed: false
+          itemList: *mediumMIBStash
+        - position: [4, 7, 1]
+          amount: 3
+          mixed: false
+          itemList: *richMIBStash
+        - position: [4, 7, 1]
+          amount: 2
+          mixed: false
+          itemList: *richMIBStash
+        - position: [4, 7, 1]
+          amount: 3
+          mixed: false
+          itemList: *mediumMIBStash
+        - position: [6, 7, 1]
+          amount: 5
+          mixed: true
+          itemList: *richMIBStash
+        - position: [6, 7, 1]
+          amount: 3
+          mixed: false
+          itemList: *richMIBStash
+        - position: [6, 7, 1]
+          amount: 2
+          mixed: false
+          itemList: *mediumMIBStash    
       - name: MIB_B_FIL_S00
         width: 10
         length: 10
@@ -3206,8 +3280,10 @@ terrains:
         width: 10
         length: 10
         groups: 8 
-
-
+      - name: MIB_B_SMALL_CORIDOR00
+        width: 10
+        length: 10
+        groups: 10 
       - name: MIB_B_FIL_B00
         width: 20
         length: 20

@@ -311,6 +311,9 @@ en-US:
   STR_INITIAL_REGIONAL_HQ_DESC: #TODO
   STR_MIB_REGIONAL_HQ_UNDERGROUND: #TODO
   STR_MIB_REGIONAL_HQ_UNDERGROUND_DESC: #TODO
+  STR_MIB_BASE_DESTROYED: "M.I.B Base Destroyed"
+  STR_MIB_BASE_NOT_DESTROYED: "M.I.B Base Stood"
+  STR_MIB_CONTROL_CENTER_DESTROYED: "M.I.B CONTROL CENTER DESTROYED"
 
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_RESISTANCE_FARM_ZOMBIE: "Resistance Heaven Attacked"
@@ -526,7 +529,7 @@ en-US:
   STR_MIB_BUTCHER_ARMOR_UFOPEDIA: "Despite their brutal strength and advanced melee skills, Butchers are usually poor marksmen and almost never wear heavy armor. Small-caliber weapons can't do them much damage, but a shotgun blast at close range can be very effective."
   STR_MIB_ENFORCER: "M.I.B. Enforcer"
   STR_MIB_ENFORCER_CORPSE: "M.I.B. Enforcer Corpse"
-  STR_MIB_ENFORCER_UFOPEDIA: "Enforcers serve as heavyduty units and usually guard the most important M.I.B. installations. Their primary mission is to destroy anyone who gains unauthorized access to the facility. Rarely they are used in punitive operations where high firepower is required. The subject has undergone a massive psychological conditioning - his personality is almost completely erased, leaving only weapon skills, polished to an instinctive level, as well as absolute loyalty to his masters. An example of human transformation into a perfect war machine."
+  STR_MIB_ENFORCER_UFOPEDIA: "Enforcers serve as heavy duty units and usually guard the most important M.I.B. installations. Their primary mission is to destroy anyone who gains unauthorized access to the facility. Rarely they are used in punitive operations where high firepower is required. The subject has undergone a massive psychological conditioning - his personality is almost completely erased, leaving only weapon skills, polished to an instinctive level, as well as absolute loyalty to his masters. An example of human transformation into a perfect war machine."
   STR_MIB_ENFORCER_ARMOR: "M.I.B. Enforcer Combat Analysis"
   STR_MIB_ENFORCER_ARMOR_UFOPEDIA: "Heavily armored, usually armed with high-caliber weapons, these units pose a significant threat on the battlescape."
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
@@ -589,6 +592,7 @@ en-US:
 #other units
   STR_RESISTANCE_AGENT: "Resistance Agent"
   STR_RESISTANCE_AGENT_VIP: "Resistance Agent"
+  STR_RESISTANCE_AGENT_PRISONER: "Resistance Agent"
   STR_RESISTANCE_AGENT_CORPSE: "Resistance Agent Corpse"
   STR_RESISTANCE_SOLDIER: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_CORPSE: "Resistance Soldier Corpse"
@@ -679,6 +683,9 @@ en-US:
   STR_HEAVY_PISTOL: "Heavy Pistol"
   STR_HEAVY_PISTOL_UFOPEDIA: "A convenient and accurate pistol with a frame reinforced for a high caliber ammo. Each of the nine bullets contained in the clip is ready to tear the flesh of any enemy, if he did not take care of his armor.{NEWLINE}>Concealable"
   STR_HEAVY_PISTOL_CLIP: "Heavy Pistol Clip"
+  STR_WOUNDGUN: "Woundgun"
+  STR_WOUNDGUN_UFOPEDIA: "An insidious weapon that uses a tightly packed briquette of thin needles instead of a bullet. On contact with a hard surface the needles spread in a bunch. Upon reaching the soft tissues of the victim, the needles receive a transverse spinning impulse, shattering and tearing everything in their path. This causes the victim unimaginable suffering and very serious injury. Because of its cruelty, this technology is banned by the UN convention."
+  STR_WOUNDGUN_CLIP: "Woundgun Clip"
   STR_CHEMPISTOL: "Chempistol"
   STR_CHEMPISTOL_UFOPEDIA: "This weapon shoots jets of pressurized, highly active chemicals. It is absolutely deadly to living targets and unprotected machinery. The chemical mixture can be extremely corrosive to armor and deals additional damage over time."
   STR_CHEMPISTOL_CLIP: "Chempistol Tank"
@@ -818,6 +825,9 @@ en-US:
   STR_UNARMED_TRAINED: "Unarmed"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
+  STR_FLOPPY_SCIENTISTS_LOG: "Scientist's Floppy Drive"
+  STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
+  STR_MIB_DATA_CONTAINER_UFOPEDIA: #TODO
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
   STR_LEATHER_COAT_UC: "LEATHER COAT"

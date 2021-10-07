@@ -787,6 +787,74 @@ items:
     armor: 30
     attraction: 15
     listOrder: 20190
+  - type: STR_WOUNDGUN
+    categories:
+      [
+        STR_HUMAN_TECH,
+        STR_FIREARMS,
+        STR_PISTOLS,
+        STR_CONCEALABLE
+      ]
+    size: 0.1
+    landOnly: true
+    requiresBuy:
+      - STR_TODOIUM
+    costBuy: 1600
+    costSell: 1200
+    weight: 5
+    bigSprite: 410
+    floorSprite: 410
+    handSprite: 752
+    bulletSprite: 1
+    fireSound: 4
+    compatibleAmmo:
+      - STR_WOUNDGUN
+    accuracyCloseQuarters: 133
+    accuracySnap: 65
+    accuracyAimed: 70
+    tuSnap: 17
+    tuAimed: 26
+    tuLoad: 16
+    aimRange: 15
+    dropoff: 3
+    kneelBonus: 105
+    costThrow:
+      energy: 10
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 35
+    attraction: 15
+    listOrder: 20000
+  - type: STR_WOUNDGUN_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    size: 0.025
+    landOnly: true
+    requiresBuy:
+      - STR_TODOIUM
+    costBuy: 155
+    costSell: 125
+    weight: 2
+    bigSprite: 411
+    floorSprite: 411
+    hitSound: 22
+    hitAnimation: 26
+    power: 22
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.3
+      ToHealth: 1.4
+      ToTime: 0.1
+      ToMorale: 0.2
+      ToWound: 3.0
+      ToTile: 0.05
+    clipSize: 8
+    costThrow:
+      energy: 4
+    battleType: 2
+    armor: 35
+    attraction: 15
+    listOrder: 20010
   - type: STR_CHEMPISTOL
     categories: [STR_CHEMICALS, STR_PISTOLS, STR_ALIEN_TECH]
     requires:
@@ -3587,6 +3655,19 @@ items:
     invHeight: 1
     recoveryPoints: 150
     listOrder: 58860
+  - type: STR_MIB_DATA_CONTAINER
+    categories: [STR_EVIDENCE]
+    landOnly: true
+    size: 0.05
+    missionObjective: true #for marker
+    weight: 2
+    bigSprite: 409
+    floorSprite: 409
+    battleType: 2 #11
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 200
+    listOrder: 58860
 
 #geoscape-only
   - type: STR_CANNON
@@ -4153,6 +4234,14 @@ items:
     listOrder: 67800
   - type: STR_SPAWN_RESISTANCE_AGENT_VIP
     spawnUnit: STR_RESISTANCE_AGENT_VIP
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_RESISTANCE_AGENT_PRISONER
+    spawnUnit: STR_RESISTANCE_AGENT_PRISONER
     spawnUnitFaction: 0
     bigSprite: 0
     battleType: 4
