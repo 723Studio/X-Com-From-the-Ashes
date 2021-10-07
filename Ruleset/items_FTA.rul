@@ -4011,6 +4011,14 @@ items:
     liveAlien: true
     prisonType: 1
     listOrder: 146030
+  - type: STR_SPAWN_MIB_AGENT
+    spawnUnit: STR_MIB_AGENT_SPAWN
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
 
 #Zombies
   - type: STR_FACEHUGGER

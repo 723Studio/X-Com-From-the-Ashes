@@ -322,13 +322,13 @@ alienDeployments:
             []
 
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
-    width: 50
-    length: 50
+    width: 70
+    length: 70
     height: 2
     terrains:
-      - UBASE #TODO
-    shade: 15
-    script: ALIENBASE #TODO
+      - MIB_BASE
+    shade: 9
+    script: MIB_BASE_EARLY
     briefing:
       textOffset: -16
       background: BACK01.SCR
