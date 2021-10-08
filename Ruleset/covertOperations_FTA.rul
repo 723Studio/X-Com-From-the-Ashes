@@ -95,7 +95,6 @@ covertOperations:
     failureDescription: STR_REGIONAL_HQ_SURVEY_FAILURE_DESCRIPTION
     failureScore: -80
     failureResearchList:
-      - STR_REGIONAL_HQ_SURVEY_DONE
       - STR_REGIONAL_HQ_SURVEY_FAILED
   - name: STR_REGIONAL_HQ_SURVEY_HARD
     description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
@@ -113,7 +112,6 @@ covertOperations:
     failureDescription: STR_REGIONAL_HQ_SURVEY_FAILURE_DESCRIPTION
     failureScore: -90
     failureResearchList:
-      - STR_REGIONAL_HQ_SURVEY_DONE
       - STR_REGIONAL_HQ_SURVEY_FAILED
   - name: STR_RESISTANCE_CELL_CREATION
     description: STR_RESISTANCE_CELL_CREATION_DESCRIPTION

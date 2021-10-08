@@ -270,9 +270,13 @@ alienDeployments:
             - STR_PDW
             - STR_PDW_CLIP
             - STR_PDW_CLIP     
-  - type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
+
+  - &STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
+    type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
     race: STR_MIB_REGIONAL_HQ
     nextStage: STR_MIB_REGIONAL_HQ_UNDERGROUND
+    alternativeDeploymentResearch: STR_REGIONAL_HQ_SURVEY_DONE
+    alternativeDeployment: STR_INITIAL_REGIONAL_HQ_EASY
     width: 70
     length: 70
     height: 11
@@ -281,18 +285,17 @@ alienDeployments:
     script: MIB_SEWERS
     briefing:
       textOffset: -16
-      background: BACK01.SCR #TODO
+      background: MIB_BACKGROUND.SCR
       showTarget: false
       showCraft: false
       desc: STR_INITIAL_REGIONAL_HQ_DESC
-    objectiveType: 3
     markerName: STR_MIB_REGIONAL_HQ
-    markerIcon: 7 #TODO
+    markerIcon: 10
     alert: STR_ALERT_MIB_REGIONAL_HQ
-    alertBackground: PLACEHOLDER_BACKGROUND.SCR #TODO
-    alertDescription: STR_MIB_REGIONAL_HQ_DESCRIPTION
+    alertBackground: MIB_BACKGROUND.SCR
+    alertDescription: STR_ALERT_MIB_REGIONAL_HQ_DESCRIPTION
+    battleScript: STR_ENDLESS_WAR_SCRIPT
     alienBase: true
-    isHidden: true
     keepCraftAfterFailedMission: true
     escapeType: 1
     points: 5
@@ -636,26 +639,56 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
           -
-            []
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
 
+  - type: STR_INITIAL_REGIONAL_HQ_EASY
+    refNode: *STR_INITIAL_REGIONAL_HQ
+    script: MIB_SEWERS_EASY
+    alternativeDeploymentResearch: STR_RESISTANCE_CELL_CREATED
+    alternativeDeployment: STR_INITIAL_REGIONAL_HQ_EASY_RESISTANCE
+    briefing:
+      textOffset: -16
+      background: SEWERS_BACKGROUND.SCR
+      showTarget: false
+      showCraft: false
+      desc: STR_INITIAL_REGIONAL_HQ_EASY_DESC
+  - type: STR_INITIAL_REGIONAL_HQ_EASY_RESISTANCE
+    refNode: *STR_INITIAL_REGIONAL_HQ
+    script: MIB_SEWERS_EASY_RESISTANCE
+    briefing:
+      textOffset: -16
+      background: SEWERS_BACKGROUND.SCR
+      showTarget: false
+      showCraft: false
+      desc: STR_INITIAL_REGIONAL_HQ_EASY_DESC
 
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
     race: STR_MIB_BASE_EARLY
@@ -675,14 +708,16 @@ alienDeployments:
     alienBase: true
     objectiveType: 3
     #objectivesRequired: 3
-    battleScript: STR_ENDLESS_WAR_SCRIPT
+    battleScript: STR_MIB_REGIONAL_HQ_UNDERGROUND
     missionCompleteText: STR_MIB_BASE_DESTROYED
     missionFailedText: STR_MIB_BASE_NOT_DESTROYED
     objectiveComplete: [STR_MIB_CONTROL_CENTER_DESTROYED, 500]
+    objectiveFailed: [STR_MIB_CONTROL_CENTER_NOT_DESTROYED, -750]
     objectivePopup: STR_CONTROL_CENTER_DESTROYED #string from vanilla
     unlockedResearch: STR_MIB_HQ_DESTROYED #would be hardcoded, do not rename!!
     keepCraftAfterFailedMission: true
-    chronoTrigger: 18
+    turnLimit: 18
+    chronoTrigger: 1
     data:
       - alienRank: 1 #STR_MIB_SCIENTIST, FIXME - replace with MIB Leader
         lowQty: 1
@@ -945,28 +980,25 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_STUN_ROD
+            - STR_STUN_ROD_2
           -
-            - STR_STUN_ROD
-          -
-            - STR_MACHETE
+            - STR_STUN_ROD_2
           -
             - STR_MACHETE
           -
-            - STR_STUN_ROD
+            - STR_MACHETE
           -
-            - STR_STUN_ROD
+            - STR_STUN_ROD_2
           -
-            - STR_STUN_ROD
+            - STR_STUN_ROD_2
           -
-            - STR_STUN_ROD
+            - STR_STUN_ROD_2
           -
-            - STR_STUN_ROD
+            - STR_STUN_ROD_2
           -
-            - STR_STUN_ROD
-
-
-
+            - STR_STUN_ROD_2
+          -
+            - STR_STUN_ROD_2
 
   - type: STR_MIB_CHASING
     race: STR_MIB
@@ -1459,7 +1491,6 @@ alienDeployments:
       - FORESTSWAMP
     customUfo: STR_RESISTANCE_FOREST_HOUSE_TRAP
     script: CRAFT_UFO_SCRIPT
-    #battleScript: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     data:
       - alienRank: 9 #STR_MIB_SPECOPS
         lowQty: 9
@@ -1532,7 +1563,6 @@ alienDeployments:
       - FORESTSWAMP
     customUfo: STR_MIB_FOREST_BEACON
     script: CRAFT_UFO_SCRIPT
-    #battleScript: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     data:
       - alienRank: 9 #STR_MIB_SPECOPS
         lowQty: 7
@@ -1785,6 +1815,7 @@ alienDeployments:
             []
           -
             []
+
   - type: STR_DESERT_TELESCOPE
     width: 80
     length: 80
@@ -1928,7 +1959,7 @@ alienDeployments:
     despawnPenalty: 300
     briefing:
       textOffset: -16
-      background: PLACEHOLDER_BACKGROUND.SCR
+      background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_HUNT_BRIEFING
     terrains:
@@ -2236,7 +2267,7 @@ alienDeployments:
     extendedObjectiveType: STR_EVACUATION 
     briefing:
       textOffset: -16
-      background: MIB_TRAP.SCR
+      background: MIB_BACKGROUND.SCR
       showTarget: false
       desc: STR_MIB_EARLY_TRAP_ESCAPE_BRIEFING
     terrains:
@@ -2348,15 +2379,12 @@ alienDeployments:
             - STR_SNIPER_RIFLE_CLIP
             - STR_SNIPER_RIFLE_CLIP 
 
-
   - type: STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL
     refNode: *STR_MIB_EARLY_TRAP_ESCAPE
     successEvents: 
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
     failureEvents:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
-
-
 
   - type: STR_LOCALS_TRAP
     race: STR_MILITIA
@@ -2367,13 +2395,13 @@ alienDeployments:
     escapeType: 1
     briefing:
       textOffset: -16
-      background: PLACEHOLDER_BACKGROUND.SCR
+      background: SECRET_AGENT.SCR
       showTarget: false
       desc: STR_LOCALS_TRAP_BRIEFING  
     terrains:
       - FOREST
-    missionCompleteText: STR_LOCALS_TRAP_COMPLETE_TEXT
-    missionFailedText: STR_LOCALS_TRAP_COMPLETE_TEXT
+    # missionCompleteText: STR_LOCALS_TRAP_COMPLETE_TEXT
+    # missionFailedText: STR_LOCALS_TRAP_COMPLETE_TEXT
     script: STR_LOCALS_TRAP_SCRIPT
     battleScript: STR_LOCALS_TRAP_BAT_SCRIPT
     data:
@@ -2465,8 +2493,9 @@ alienDeployments:
     isHidden: true
     briefing:
       textOffset: -16
-      background: PLACEHOLDER_BACKGROUND.SCR
+      background: FOREST_MONSTER.SCR
       showTarget: false
+      showCraft: false
       desc: STR_MONSTER_HUNT_TRAP_BRIEFING
     terrains:
       - CULTA
@@ -2498,95 +2527,6 @@ alienDeployments:
             []
           -
             []
-
-  - type: STR_GENERAL_TRAP
-    race: STR_MIB
-    #alternativeDeployment: STR_GENERAL_TRAP_ALT
-    #alternativeDeploymentResearch: STR_NONE
-    width: 50
-    length: 50
-    height: 6
-    isHidden: true
-    terrains:
-      - URBAN
-    shade: 0
-    briefing:
-      textOffset: -16
-      background: BACK01.SCR
-      showTarget: false
-      desc: STR_GENERAL_TRAP_BRIEFING
-    data:
-      - alienRank: 6
-        lowQty: 1
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-
-  - type: STR_GENERAL_TRAP_ALT
-    race: STR_MIB
-    #alternativeDeployment: STR_GENERAL_TRAP_ALT
-    #alternativeDeploymentResearch: STR_NONE
-    width: 50
-    length: 50
-    height: 6
-    isHidden: true
-    terrains:
-      - URBAN
-    shade: 0
-    briefing:
-      textOffset: -16
-      background: BACK01.SCR
-      showTarget: false
-      desc: STR_GENERAL_TRAP_BRIEFING
-    data:
-      - alienRank: 6
-        lowQty: 1
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-
 
   # - type: STR_MIB_CHASING_INTRO
   #   race: STR_MIB

@@ -711,13 +711,13 @@ mapScripts:
       rects:
           - [6, 0, 1, 7]
       verticalLevels:
-      - type: ground
+      - type: ground #FIXME: until alpha 2 i will give resistance dudes in all cases
         terrain: STR_MIB_REGIONAL_HQ_DEPLOYMENT
-        groups: 7 #without Resistance
+        groups: 8 #with Resistance 
         size: [1, 1, 5]
       - type: middle
         terrain: STR_MIB_REGIONAL_HQ_DEPLOYMENT
-        groups: 5 #without Resistance
+        groups: 6 #with Resistance
         size: [1, 1, 5]
     - type: fillArea #building part
       rects:
@@ -725,7 +725,7 @@ mapScripts:
       verticalLevels:
       - type: ground
         terrain: MIB_SEWERS
-        blocks: [1]
+        groups: 6
         size: [1, 1, 5]
       - type: middle
         terrain: URBAN_LOW
@@ -736,24 +736,95 @@ mapScripts:
       verticalLevels:
       - type: ground
         terrain: MIB_SEWERS
-        # groups: 1
-        blocks: 0
+        #groups: 7 - groups do not work for some reason
+        blocks: [1] #no enter
         size: [5, 7, 5]
       - type: middle
         terrain: MIB_CORP_SURFACE
         blocks: 0
         size: [5, 7, 5]
     - type: fillArea
-      # rects: 
-      #   - [0, 0, 1, 7]
       verticalLevels:
       - type: ground
         terrain: MIB_SEWERS
-        blocks: [1]
+        groups: [6]
         size: [1, 1, 5]
       - type: middle
         terrain: FOREST
         size: [1, 1, 5]
+
+  - type: MIB_SEWERS_EASY
+    commands:
+    - type: fillArea #building part
+      rects:
+          - [6, 0, 1, 7]
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        groups: 6
+        size: [1, 1, 5]
+      - type: middle
+        terrain: URBAN_LOW
+        size: [1, 1, 5]
+    - type: addBlock #main block
+      rects:
+          - [1, 0, 6, 7]
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        #groups: 7
+        blocks: [0] #underground enter
+        size: [5, 7, 5]
+      - type: middle
+        terrain: MIB_CORP_SURFACE
+        blocks: 0
+        size: [5, 7, 5]
+    - type: fillArea
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        groups: [6]
+        size: [1, 1, 5]
+      - type: middle
+        terrain: FOREST
+        size: [1, 1, 5]
+
+  - type: MIB_SEWERS_EASY_RESISTANCE
+    commands:
+    - type: fillArea #building part
+      rects:
+          - [6, 0, 1, 7]
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        groups: 6
+        size: [1, 1, 5]
+      - type: middle
+        terrain: URBAN_LOW
+        size: [1, 1, 5]
+    - type: addBlock #main block
+      rects:
+          - [1, 0, 6, 7]
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        #groups: 7
+        blocks: [2] #underground enter with Resistance
+        size: [5, 7, 5]
+      - type: middle
+        terrain: MIB_CORP_SURFACE
+        blocks: 0
+        size: [5, 7, 5]
+    - type: fillArea
+      verticalLevels:
+      - type: ground
+        terrain: MIB_SEWERS
+        groups: [6]
+        size: [1, 1, 5]
+      - type: middle
+        terrain: FOREST
+        size: [1, 1, 5]
+
 
   - type: MIB_BASE_EARLY
     commands:

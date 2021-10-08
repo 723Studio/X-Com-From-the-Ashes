@@ -17,7 +17,7 @@ research:
 #   - delete: STR_REAPER
 #   - delete: STR_REAPER_TERRORIST
 #   - delete: STR_HYPER_WAVE_DECODER
-#   - delete: STR_STUN_ROD
+#   - delete: STR_STUN_ROD_2
 #   - delete: STR_COMMANDER_PLUS
 #technical part
   - name: STR_LOG1 #hardcoded, do not rename! used to start the game property
@@ -932,7 +932,7 @@ research:
     points: 1
     needItem: true
     listOrder: 7410
-  - name: STR_STUN_ROD
+  - name: STR_STUN_ROD_2
     cost: 16
     points: 4
     needItem: true

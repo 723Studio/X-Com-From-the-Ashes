@@ -47,7 +47,7 @@ ufopaedia:
   - delete: STR_MOTION_SCANNER
   - delete: STR_MEDI_KIT
   - delete: STR_PSI_AMP
-  - delete: STR_STUN_ROD
+  - delete: STR_STUN_ROD_2
   - delete: STR_ELECTRO_FLARE
   - delete: STR_HEAVY_PLASMA
   - delete: STR_HEAVY_PLASMA_CLIP
@@ -558,12 +558,12 @@ ufopaedia:
     requires:
       - STR_ELECTRIC_STICK
     listOrder: 20330
-  - id: STR_STUN_ROD
+  - id: STR_STUN_ROD_2
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_STUN_ROD_UFOPEDIA
+    text: STR_STUN_ROD_2_UFOPEDIA
     requires:
-      - STR_STUN_ROD
+      - STR_STUN_ROD_2
     listOrder: 20330
 #throwing
   - id: STR_THROWING_KNIFE

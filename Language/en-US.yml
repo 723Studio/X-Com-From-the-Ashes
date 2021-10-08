@@ -304,16 +304,24 @@ en-US:
   STR_GENERAL_STORES_UFOPEDIA: "This facility is designed to effectively store a wide variety of supplies, weapons and ammunition, and in special containers we can safely store alien artifacts in perfect isolation."
   STR_WORKSHOP_UFOPEDIA: "In this facility, our engineers can mount common household machines - a milling machine, a lathe, a sawing machine. A small molding press, furnace, anvil, and large, comfortable workbenches and racks all allow our engineers to work on at least simple projects."
 #missions
+  STR_INITIAL_BASE_DEFENSE: "BASE DEFENSE"
   STR_INITIAL_BASE_DEFENSE_BRIEFING: "Alien agents have invaded our base! The former X-COM Commander with them; he is most likely under mind control. We must stop the intruders at all costs, retreating now will put an end to any attempt at stopping the Alien agenda."
-  STR_INITIAL_REGIONAL_HQ: "M.I.B. Regional HQ"
-  STR_ALERT_MIB_REGIONAL_HQ: #TODO
-  STR_MIB_REGIONAL_HQ_DESCRIPTION: #TODO
-  STR_INITIAL_REGIONAL_HQ_DESC: #TODO
-  STR_MIB_REGIONAL_HQ_UNDERGROUND: #TODO
-  STR_MIB_REGIONAL_HQ_UNDERGROUND_DESC: #TODO
-  STR_MIB_BASE_DESTROYED: "M.I.B Base Destroyed"
-  STR_MIB_BASE_NOT_DESTROYED: "M.I.B Base Stood"
-  STR_MIB_CONTROL_CENTER_DESTROYED: "M.I.B CONTROL CENTER DESTROYED"
+  STR_INITIAL_REGIONAL_HQ: "M.I.B. Headquarters"
+  STR_INITIAL_REGIONAL_HQ_: "M.I.B. Headquarters"
+  STR_INITIAL_REGIONAL_HQ_EASY: "M.I.B. HQ - Sneak Attack"
+  STR_INITIAL_REGIONAL_HQ_EASY_RESISTANCE: "M.I.B. HQ - Sneak Attack"
+  STR_ALERT_MIB_REGIONAL_HQ: "M.I.B. HEADQUARTERS"
+  STR_ALERT_MIB_REGIONAL_HQ_DESCRIPTION: "We managed to localize the center of M.I.B. activity. This is probably where most of the operations in the region are coordinated. Most likely, this is where the attack on our base was originated. The object is concealed under the guise of an office building, perhaps the M.I.B. headquarters itself is hidden somewhere underground. It is necessary to infiltrate the site and destroy all X-COM information we can find. Civilian casualties should be avoided if possible."
+  STR_INITIAL_REGIONAL_HQ_DESC: "We managed to localize the center of M.I.B. activity. This is probably where most of the operations in the region are coordinated. Most likely, this is where the attack on our base was originated. The object is concealed under the guise of an office building, perhaps the M.I.B. headquarters itself is hidden somewhere underground. It is necessary to infiltrate the site and destroy all X-COM information we can find. Civilian casualties should be avoided if possible."
+  STR_INITIAL_REGIONAL_HQ_EASY_DESC: "We managed to localize the center of M.I.B. activity. This is probably where most of the operations in the region are coordinated. Most likely, this is where the attack on our base was originated. The object is concealed under the guise of an office building, perhaps the M.I.B. headquarters itself is hidden somewhere underground. It is necessary to infiltrate the site and destroy all X-COM information we can find. The assault will be carried out through a network of underground communications, which should make it much easier for us to penetrate the facility."
+  STR_MIB_REGIONAL_HQ_UNDERGROUND: "M.I.B. Base"
+  STR_MIB_REGIONAL_HQ_UNDERGROUND_DESC: "Our soldiers managed to infiltrate a secret M.I.B. facility. Apparently, the defense mechanisms of the base were triggered, we have to be ready for any surprises. Most likely, somewhere on the base there is a communications hub and a command center. We need to destroy it, and with it all the strategic data on M.I.B. operations conducted in the region."
+  STR_MIB_BASE_DESTROYED: "M.I.B. Base Destroyed"
+  STR_MIB_BASE_NOT_DESTROYED: "M.I.B. Base Stood"
+  STR_MIB_CONTROL_CENTER_DESTROYED: "M.I.B. CONTROL CENTER DESTROYED"
+  STR_MIB_CONTROL_CENTER_NOT_DESTROYED: "M.I.B. CONTROL CENTER NOT DESTROYED"
+  STR_MIB_BASE_ALARM: "M.I.B. Defence System"
+  STR_MIB_BASE_ALARM_DESCRIPTION: "Commander! Our sensors have detected a spike in radiation levels! There's a neutron radiation source on the base, gradually increasing in power. According to our calculations, by the 18th turn, the exposure level of our soldiers will be incompatible with life. We must destroy the servers in the command center as quickly as possible and get out of here!" 
 
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_RESISTANCE_FARM_ZOMBIE: "Resistance Heaven Attacked"
@@ -328,7 +336,7 @@ en-US:
   STR_RESISTANCE_HEAVEN_AMBUSH_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We receive a signal from their radio beacon transmitting an encrypted distress signal, but there is no communication with the refuge itself - no one is answering our requests. It is necessary to understand the situation and, if necessary, to eliminate all existing threats.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
   STR_MIB_FOREST_BEACON_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We receive a signal from their radio beacon transmitting an encrypted distress signal, but there is no communication with the refuge itself - no one is answering our requests. Obviously, the Resistance shelters must be in a secluded place, but what a backwoods! It is necessary to understand the situation and, if necessary, to eliminate all existing threats.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
   STR_RESISTANCE_URBAN_HIDEOUT: "Resistance Heaven Attacked"
-  STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "We are receiving a distress signal the Resistance cell, located in urban area. The local TV channels broadcast reports that government forces have located an international terrorists and that police units, supported by special forces, are about to storm the area. There is no doubt that the M.I.B. involved. This cell was used for covert communications with X-COM, so cryptographic data stored on HD drive must be secured. We also should not harm the local police officers, as they are only pawns in the game.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "We are receiving a distress signal the Resistance cell, located in urban area. The local TV channels broadcast reports that government forces have located an international terrorists and that police units, supported by special forces, are about to storm the area. There is no doubt that the M.I.B. involved. This cell was used for covert communications with X-COM, so cryptographic data stored on floppy drive must be secured. We also should not harm the local police officers, as they are only pawns in the game.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
   STR_SCIENTIST_REFUGE: "Resistance agent extraction"
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT: "RESISTANCE AGENT EXTRACTION"
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible."
@@ -348,6 +356,8 @@ en-US:
   STR_MONSTER_TERROR_ALERT: "MONSTERS TERRORIZE LOCALS"
   STR_MONSTER_TERROR_ALERT_DESCRIPTION: "We managed to localize a hotspot of alien monsters activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the woods. We should deploy squad there and purge it, with collecting samples for scientific study, if possible."
   STR_MONSTER_TERROR_BRIEFING: "We managed to localize a hotspot of alien monsters activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the woods. We should deploy squad there and purge it, with collecting samples for scientific study, if possible.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
+  STR_CHUPACABRA_HUNT_TRAP: "Monster Hunt - Trap"
+  STR_MONSTER_HUNT_TRAP_BRIEFING: "Chasing a mystery monster has led our agents into the middle of nowhere. The trail is suddenly lost, and the agents look around, surrounded by pitch-black darkness. A rustling sound comes from the bushes around them, and glimpses of red eyes between the leaves. It looks like the hunter has become the hunted."
 
   STR_AGENT_EXTRACTION_MARKER: "Agent Extraction"
   
@@ -460,8 +470,8 @@ en-US:
   STR_SPORTS_BOW_TINKERING_DESCRIPTION: "After some thought and a little experimentation, our engineers came up with an interesting design of advanced arrows for the sport bow, equipped with various special charges or tips. This will greatly expand the tactical capabilities of the conventional bow. If you like, we can begin production immediately.{NEWLINE}New technology> {ALT}Advanced bow arrows."
   STR_ELECTRIC_WEAPONS_PREREQ_EVENT: "Electric Weapons"
   STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION: "Given our serious lack of data on the adversary, it makes sense for us to try to capture enemy units alive if possible. It is likely that by interrogating our enemies we will be able to learn the most valuable strategic information. One of the most effective ways to render a living creature unconscious is to shock it with a strong electric shock. Perhaps we might try to develop our own electric weapons, which would be quite effective on battlescape."
-  STR_STUN_ROD: "Stun Rod"
-  STR_STUN_ROD_UFOPEDIA: "An elegant and effective weapon that strikes the target with a strong electrical pulse. High-tech capacitors can be charged to incredible power. A handy grip with a release trigger makes it an ideal one-handed melee weapon."
+  STR_STUN_ROD_2: "Stun Rod"
+  STR_STUN_ROD_2_UFOPEDIA: "An elegant and effective weapon that strikes the target with a strong electrical pulse. High-tech capacitors can be charged to incredible power. A handy grip with a release trigger makes it an ideal one-handed melee weapon."
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
   STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: "Commander, we need a biolab to continue our research. And a good one, full of quality and innovative equipment. Our scientists have made a list of everything we need, and after a little modification to the blueprints of the usual lab, we're ready to get to work. In order to build it, in addition to significant material costs, we need a lot of specific equipment that cannot be bought on the open market. So we need to get in touch with a certain circle of people who are able to provide us with everything we need. It is necessary to send our people on a covert operation to carry out negotiations.{NEWLINE}{ALT}New covert operation available."
   STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"

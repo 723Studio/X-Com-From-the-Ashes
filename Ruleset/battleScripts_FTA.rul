@@ -270,7 +270,6 @@ battleScripts:
           title: STR_RECOVER_RESEARCH_LOGS_TITLE
           content: STR_RECOVER_RESEARCH_LOGS_CONTENT
 
-
   - type: MIB_TRAP_ESCAPE_EARLY
     commands:
     - type: spawnUnit #easy
@@ -301,14 +300,12 @@ battleScripts:
       minDifficulty: 4
       packSize: 4
       randomPackSize: true
-      #startTurn: 2
+      startTurn: 2
       unitSide: 1
       minAlarmLevel: 1
       groups: [1, 2, 3, 4]
       spawnBlocks: ["N", W, E, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
-
-
 
   - type: STR_LOCALS_TRAP_BAT_SCRIPT
     commands:
@@ -350,6 +347,25 @@ battleScripts:
       spawnBlocks: ["N", S]
       unitSet: [STR_MALE_POLICE] #TODO - add soldiers here
 
+  - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
+    commands:
+    - type: showMessage
+      startTurn: 2
+      executionChances: 100
+      executions: 1
+      messages:
+        0:
+          title: STR_MIB_BASE_ALARM
+          content: STR_MIB_BASE_ALARM_DESCRIPTION
+    - type: showMessage
+      startTurn: 500
+      executionChances: 1
+      messages:
+        0:
+          title: "You are pretty patient"
+          content: "What a long play!"
+
+
   - type: TEST_SCRIPT
     commands:
     - type: showMessage
@@ -374,10 +390,10 @@ battleScripts:
 
   - type: STR_ENDLESS_WAR_SCRIPT
     commands:
-    - type: showMessage #for low diff
+    - type: showMessage
       startTurn: 500
       executionChances: 1
       messages:
         0:
-          title: STR_ENDLESS_WAR_SCRIPT
+          title: "You are pretty patient"
           content: "What a long play!"

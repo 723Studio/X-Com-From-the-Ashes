@@ -698,12 +698,30 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/MIB_CHASE_BACKGROUND2.png
-  - type: MIB_TRAP.SCR
+  - type: MIB_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/PLACEHOLDER_BACKGROUND.png #TODO
+      0: Resources/Backgrounds/MIB_BACKGROUND.png
+  - type: SEWERS_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SEWERS4.png
+  - type: FOREST_MONSTER.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/FOREST_MONSTER.png
+  - type: SECRET_AGENT.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SECRET_AGENT.png
 
 
 #enemies

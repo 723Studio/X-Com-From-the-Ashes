@@ -21,8 +21,8 @@ items:
   - delete: STR_PROXIMITY_GRENADE
   # - delete: STR_MOTION_SCANNER #
   # - delete: STR_MEDI_KIT #
-  - delete: STR_STUN_ROD #
-  - delete: STR_ELECTRO_FLARE #
+  - delete: STR_STUN_ROD
+  - delete: STR_ELECTRO_FLARE
 
 #melee
   - type: STR_CROWBAR
@@ -270,7 +270,7 @@ items:
     experienceTrainingMode: 13
     attraction: 12
     listOrder: 18790
-  - type: STR_STUN_ROD
+  - type: STR_STUN_ROD_2
     categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_MELEE, STR_INCAPACITATE]
     landOnly: true
     size: 0.1
@@ -3101,7 +3101,7 @@ items:
   - type: STR_EXPLOSIVE_CHARGE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EXPLOSIVE_CHARGES]
     requiresBuy:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     landOnly: true
     costBuy: 780
