@@ -1471,6 +1471,33 @@ alienDeployments:
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
+      - alienRank: 5
+        customUnitType: STR_MALE_POLICE
+        lowQty: 4
+        highQty: 8
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
 
   - type: STR_RESISTANCE_FOREST_HOUSE_AMBUSH
     width: 50

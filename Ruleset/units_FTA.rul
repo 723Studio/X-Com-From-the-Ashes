@@ -722,8 +722,6 @@ units:
       melee: 10
       psiStrength: 15
 
-
-
 #Zombies
   - type: STR_FACEHUGGER
     race: STR_ZOMBIE
@@ -1076,29 +1074,30 @@ units:
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_POLICE_BATON
+      - - STR_TASER
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_POLICE_BATON
+      - - STR_TASER
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_POLICE_BATON
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
+      - - STR_TASER
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_POLICE_BATON
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - - STR_PUMP_ACTION_SHOTGUN
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-      - - STR_SEMI_AUTO_SHOTGUN
-        - STR_SHOTGUN_SHELLS_BS
-        - STR_SHOTGUN_SHELLS_BS
-        - STR_SHOTGUN_SHELLS_BS
-        - STR_SHOTGUN_SHELLS_BS
-      - - STR_SEMI_AUTO_SHOTGUN
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-      - - STR_SEMI_AUTO_SHOTGUN
+      - - STR_SHOTGUN
         - STR_SHOTGUN_SHELLS_AP
         - STR_SHOTGUN_SHELLS_AP
         - STR_SHOTGUN_SHELLS_AP

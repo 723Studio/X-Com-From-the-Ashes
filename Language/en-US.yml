@@ -1,7 +1,6 @@
 en-US:
-  STR_OPENXCOM: "From the Ashes v. 0.0.3"
+  STR_OPENXCOM: "From the Ashes v. 0.0.4"
   STR_XCOM: "X-COM"
-  STR_ADVENT: "ADVENT"
   STR_LAST_STAND: "Last Stand"
 #diplomacy
   STR_DIPLOMACY: "Diplomacy"
@@ -334,16 +333,17 @@ en-US:
   STR_RESISTANCE_FOREST_HOUSE_AMBUSH: "Resistance Heaven Attacked"
   STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: "Resistance Heaven Attacked"
   STR_RESISTANCE_HEAVEN_AMBUSH_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We receive a signal from their radio beacon transmitting an encrypted distress signal, but there is no communication with the refuge itself - no one is answering our requests. It is necessary to understand the situation and, if necessary, to eliminate all existing threats.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
+  STR_MIB_FOREST_BEACON: "Resistance Heaven Attacked"
   STR_MIB_FOREST_BEACON_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We receive a signal from their radio beacon transmitting an encrypted distress signal, but there is no communication with the refuge itself - no one is answering our requests. Obviously, the Resistance shelters must be in a secluded place, but what a backwoods! It is necessary to understand the situation and, if necessary, to eliminate all existing threats.{NEWLINE}To abort the mission return X-Com operatives to the transport vehicle and click on the 'Abort Mission' icon."
   STR_RESISTANCE_URBAN_HIDEOUT: "Resistance Heaven Attacked"
   STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "We are receiving a distress signal the Resistance cell, located in urban area. The local TV channels broadcast reports that government forces have located an international terrorists and that police units, supported by special forces, are about to storm the area. There is no doubt that the M.I.B. involved. This cell was used for covert communications with X-COM, so cryptographic data stored on floppy drive must be secured. We also should not harm the local police officers, as they are only pawns in the game.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
-  STR_SCIENTIST_REFUGE: "Resistance agent extraction"
+  STR_SCIENTIST_REFUGE: "Resistance Agent Extraction"
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT: "RESISTANCE AGENT EXTRACTION"
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible."
   STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander. The scientist's salvation could be of great value to us, and we must get him to the vessel in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy drive upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
-  STR_DESERT_TELESCOPE: "Desert Telescope"
+  STR_DESERT_TELESCOPE: "Resistance Agent Extraction"
   STR_DESERT_TELESCOPE_ALERT: "RESISTANCE AGENT EXTRACTION"
   STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible."
   STR_DESERT_TELESCOPE_BRIEFING: "A group of radiastronomists recently discovered traces of alien signals reflecting in our planet's mesosphere and the signals in response coming from a point in high orbit. They reported their discovery to NASA, but they hastily hushed up the incident. However, members of the local Resistance cell managed to contact the scientists. They are in great danger, most likely agents of the Men in Black will try to eliminate the witnesses as soon as possible. We must take decisive action, save the scientists before the main M.I.B. force arrives.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
@@ -352,6 +352,7 @@ en-US:
   STR_MONSTER_HUNT_BRIEFING: "We have succeeded in tracking this mysterious monster to its den. The agents are trudging through the dense forest, listening intently to every rustle. Our goal is to neutralize the monster and bring it back to the base for study. Keep in mind, if something doesn't go according to plan, there's no retreat option at this point!"
   STR_CHUPACABRA_HUNT: "Monster Hunt"
   STR_CHUPA_TERROR_EASY: "Monster Terror"
+  STR_CHUPA_TERROR_HARD: "Monster Terror"
   STR_MONSTER_TERROR: "Monster Terror"
   STR_MONSTER_TERROR_ALERT: "MONSTERS TERRORIZE LOCALS"
   STR_MONSTER_TERROR_ALERT_DESCRIPTION: "We managed to localize a hotspot of alien monsters activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the woods. We should deploy squad there and purge it, with collecting samples for scientific study, if possible."
@@ -362,6 +363,7 @@ en-US:
   STR_AGENT_EXTRACTION_MARKER: "Agent Extraction"
   
   STR_MIB_CHASING: "Chasing M.I.B."
+  STR_MIB_CHASING_TRAP: "Chasing M.I.B."
   STR_MIB_CHASING_BRIEFING: "A black van, standing across the road, blocks the way forward, and a black sedan has stopped behind our agents' car, completely blocking them. Several men in black blazers get out of the cars, and they are armed. It seems that the only way out of this situation is to take the fight."
   STR_MIB_EARLY_TRAP_ESCAPE: "Escape M.I.B. Trap"
   STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: "Escape M.I.B. Trap"
@@ -838,6 +840,7 @@ en-US:
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
   STR_FLOPPY_SCIENTISTS_LOG: "Scientist's Floppy Drive"
+  STR_FLOPPY_RESISTANCE: "Resistance Floppy Drive"
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: #TODO
 #armors

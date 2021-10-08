@@ -3679,7 +3679,7 @@ items:
     weight: 1
     bigSprite: 365
     floorSprite: 365
-    battleType: 11
+    battleType: 2
     invWidth: 1
     invHeight: 1
     listOrder: 58860
@@ -3693,7 +3693,22 @@ items:
     bigSprite: 370
     floorSprite: 370
     handSprite: 568
-    battleType: 11
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 150
+    listOrder: 58860
+  - type: STR_FLOPPY_RESISTANCE
+    categories: [STR_EVIDENCE]
+    landOnly: true
+    size: 0.01
+    costSell: 55000 #Should be only sellable to Resistance
+    missionObjective: true #just for marker
+    weight: 1
+    bigSprite: 370
+    floorSprite: 370
+    handSprite: 568
+    battleType: 2
     invWidth: 1
     invHeight: 1
     recoveryPoints: 150
@@ -3706,7 +3721,7 @@ items:
     weight: 2
     bigSprite: 409
     floorSprite: 409
-    battleType: 2 #11
+    battleType: 2
     invWidth: 1
     invHeight: 2
     recoveryPoints: 200
