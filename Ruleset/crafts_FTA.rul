@@ -51,9 +51,9 @@ crafts:
     listOrder: 7380
   - type: STR_STALKER
     sprite: 801
-    costBuy: 350000 #TODO
-    costRent: 40000 #TODO
-    costSell: 260000 #TODO
+    costBuy: 350000
+    costRent: 40000
+    costSell: 260000
     requires:
       - STR_TODOIUM
     weaponTypes:

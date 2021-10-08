@@ -1,5 +1,5 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
-ftaGameLength: 3 #TODO uncomment on next release
+ftaGameLength: 3
 ironManEnabled: false
 #Campaign
 startingTime:
@@ -19,7 +19,7 @@ allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70
 lessAliensDuringBaseDefense: true
 defeatFunds: -300 #much lower vanilla because loose logic is different
-gameOver: #TODO
+gameOver:
   loseMoney: loseGame       # cutscene ID that should be played when the player loses due to poor economy management
   loseRating: loseGame      # cutscene ID that should be played when the player loses due to poor rating
   loseDefeat: loseGame      # cutscene ID that should be played when the player loses the last base
@@ -76,9 +76,9 @@ statisticalBulletConservation: true
 stunningImprovesMorale: true
 tuRecoveryWakeUpNewTurn: 50
 minReactionAccuracy: 30
-turnAIUseGrenade: 2 #TODO Consider if changing back to 1
+turnAIUseGrenade: 2 #Consider if changing back to 1
 turnAIUseBlaster: 2 
-surrenderMode: 0 #TODO Consider
+surrenderMode: 0 #FIXME Consider
 closeQuartersSneakUpGlobal: 40
 
 
@@ -99,8 +99,8 @@ constants:
 
 
 mana:
-  enabled: false #true #TODO
-  battleUI: false #true #TODO
+  enabled: false #true #FIXME
+  battleUI: false #true #FIXME
   unlockResearch: STR_PSIONIC
   trainingPrimary: false
   trainingSecondary: false
@@ -150,12 +150,12 @@ fixedUserOptions:
   alienBleeding: true
   globeSeasons: true
   allowPsiStrengthImprovement: false
-  allowPsionicCapture: false #TODO consider
+  allowPsionicCapture: false #Consider
   anytimePsiTraining: true
-  canSellLiveAliens: false #TODO consider
+  canSellLiveAliens: false #Consider
   psiStrengthEval: false
-  retainCorpses: true #TODO consider
-  sneakyAI: true #TODO consider
+  retainCorpses: true #Consider
+  sneakyAI: true
   battleUFOExtenderAccuracy: true
   includePrimeStateInSavedLayout: false
   battleExplosionHeight: 3

@@ -653,7 +653,7 @@ ufos:
               - [7, 4, 0]
             STR_FLOPPY_SCIENTISTS_LOG:
               - [1, 1, 1]
-          # randomizedItems: #TODO
+          # randomizedItems: #FIXME
           #     - position: [9, 10, 0]
           #       amount: 1
           #       mixed: true
@@ -668,7 +668,7 @@ ufos:
               - [7, 1, 0]
             STR_FLOPPY_SCIENTISTS_LOG:
               - [1, 1, 1]
-          # randomizedItems: #TODO
+          # randomizedItems: #FIXME
           #     - position: [9, 10, 0]
           #       amount: 1
           #       mixed: true

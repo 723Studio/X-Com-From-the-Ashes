@@ -10,7 +10,7 @@ covertOperations:
     baseChances: 70
     danger: 5
     costs: 60
-    #itemSpaceLimit: 10 #TODO - uncomment after bug fixed
+    #itemSpaceLimit: 10 #FIXME - uncomment after bug fixed
     instantSuccessDeployment: 
       STR_MIB_CHASING: 100
     instantTrapDeployment: 

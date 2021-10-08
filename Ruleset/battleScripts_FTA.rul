@@ -345,7 +345,7 @@ battleScripts:
       minDifficulty: 4
       groups: [1, 2, 3, 4]
       spawnBlocks: ["N", S]
-      unitSet: [STR_MALE_POLICE] #TODO - add soldiers here
+      unitSet: [STR_MALE_POLICE] #FIXME - add soldiers here
 
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
     commands:

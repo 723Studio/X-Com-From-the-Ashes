@@ -68,7 +68,7 @@ alienRaces:
   - id: STR_MIB_BASE_EARLY
     members:
       - STR_MIB_SCIENTIST # 0 - Commander
-      - STR_MIB_SCIENTIST # 1 - Leader - TODO: leader unit here pls
+      - STR_MIB_SCIENTIST # 1 - Leader - FIXME: leader unit here pls
       - STR_MIB_ENFORCER # 2 - Engineer
       - STR_MIB_SCIENTIST # 3 - Medic
       - STR_MIB_SPECOPS # 4 - Navigator

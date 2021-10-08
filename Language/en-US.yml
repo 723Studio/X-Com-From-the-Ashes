@@ -839,10 +839,14 @@ en-US:
   STR_UNARMED_TRAINED: "Unarmed"
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
+  STR_SEEKER_DRONE_WEAPON: "Seeker Drone Weapon"
+  STR_JABBER_WEAPON: "Jabber attack"
+  STR_CHUPACABRA_WEAPON: "Chupacabra attack"
   STR_FLOPPY_SCIENTISTS_LOG: "Scientist's Floppy Drive"
   STR_FLOPPY_RESISTANCE: "Resistance Floppy Drive"
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: #TODO
+
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
   STR_LEATHER_COAT_UC: "LEATHER COAT"

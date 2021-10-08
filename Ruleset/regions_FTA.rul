@@ -670,7 +670,7 @@ regions:
       - [55, 105, 10, 60]
 
 #mission regions
-  - type: RESISTANCE_START_ZONE #TODO add more nodes
+  - type: RESISTANCE_START_ZONE #FIXME add more nodes
     missionZones:
       -
         - [355.3, 355.3, -41.05, -41.05, -4]
@@ -695,7 +695,7 @@ regions:
         - [38.9, 54.3, 63.3, -59.8, -5]
         - [89.2, 109, -67.8, -59.2, -5]
         - [44.2, 58.4, -63.9, -57.3, -5]
-  - type: RESISTANCE_SCIENTIST #TODO add more nodes
+  - type: RESISTANCE_SCIENTIST #FIXME add more nodes
     missionZones:
       -
         - [12.36, 16.56, -62.81, -61.09, -6]

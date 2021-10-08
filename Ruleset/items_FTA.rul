@@ -106,7 +106,7 @@ items:
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 17850
-  - type: STR_COMBAT_KNIFE #TODO balance
+  - type: STR_COMBAT_KNIFE
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
     requiresBuy:
         - STR_XCOM_EQUIPMENT_ACQUISITION
@@ -121,22 +121,22 @@ items:
     meleeSound: 56
     meleeHitSound: 57
     meleeAnimation: 8
-    power: 20
+    power: 24
     damageType: 7
     damageBonus:
       strength: 0.2
-      melee: 0.2
+      melee: 0.25
     damageAlter:
-      RandomType: 2
-      ArmorEffectiveness: 1.5
+      RandomType: 7
+      ArmorEffectiveness: 1.4
       ToTile: 0.2
-    accuracyMelee: 85
+    accuracyMelee: 87
     flatRate: true
     meleeMultiplier:
       melee: 1.2
     costMelee:
-      time: 7
-      energy: 2
+      time: 9
+      energy: 3
     costThrow:
       energy: 8
     battleType: 3
@@ -160,22 +160,22 @@ items:
     meleeSound: 56
     meleeHitSound: 57
     meleeAnimation: 8
-    power: 23
+    power: 25
     damageType: 7
     damageBonus:
-      strength: 0.3
-      melee: 0.1
+      strength: 0.35
+      melee: 0.15
     damageAlter:
-      RandomType: 2
-      ArmorEffectiveness: 1.5
+      RandomType: 7
+      ArmorEffectiveness: 1.4
       ToTile: 0.2
     accuracyMelee: 75
     flatRate: true
     meleeMultiplier:
       melee: 1.0
     costMelee:
-      time: 10
-      energy: 2
+      time: 12
+      energy: 3
     costThrow:
       energy: 8
     battleType: 3
@@ -201,18 +201,18 @@ items:
     power: 30
     damageType: 7
     damageBonus:
-      strength: 0.45
-      melee: 0.4
+      strength: 0.55
+      melee: 0.45
     damageAlter:
-      RandomType: 2
+      RandomType: 7
       ArmorEffectiveness: 1.2
       ToTile: 0.2
     accuracyMelee: 70
     meleeMultiplier:
-      melee: 1.0
+      melee: 1.1
     costMelee:
-      time: 10
-      energy: 6
+      time: 20
+      energy: 8
     costThrow:
       energy: 14
     flatRate: true
@@ -349,7 +349,7 @@ items:
       energy: 8
     flatRate: true
     clipSize: 1
-    stackSize: 5 #TODO
+    stackSize: 5
     battleType: 1
     invWidth: 1
     invHeight: 2
@@ -1507,8 +1507,7 @@ items:
     damageType: 1
     damageBonus:
       firing: 0.15
-    clipSize: 5 #TODO bolt-action
-    stackSize: 5 #TODO
+    stackSize: 5
     battleType: 2
     armor: 30
     attraction: 7
@@ -2781,7 +2780,7 @@ items:
     attraction: 15
     listOrder: 30800
 #launchers
-  - type: STR_SINGLE_ROCKET_LAUNCHER #TODO balance here
+  - type: STR_SINGLE_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
@@ -2800,7 +2799,7 @@ items:
     fireSound: 69
     accuracyAuto: 0
     accuracySnap: 0
-    accuracyAimed: 75
+    accuracyAimed: 60
     tuAuto: 0
     tuSnap: 0
     tuAimed: 60
@@ -2812,7 +2811,7 @@ items:
     battleType: 1
     twoHanded: true
     blockBothHands: true
-    kneelBonus: 140
+    kneelBonus: 160
     invWidth: 1
     invHeight: 3
     armor: 16
@@ -2847,7 +2846,7 @@ items:
     battleType: 1
     twoHanded: true
     blockBothHands: true
-    kneelBonus: 150
+    kneelBonus: 160
     invWidth: 2
     invHeight: 3
     armor: 32
@@ -3605,6 +3604,29 @@ items:
     invHeight: 3
     recover: false
     flatRate: true
+  - type: STR_CHUPACABRA_WEAPON
+    categories: [STR_BUILT_INS, STR_MELEE]
+    weight: 0
+    bigSprite: 412
+    floorSprite: 31
+    handSprite: 104 
+    meleeSound: 48
+    meleeHitSound: 81
+    clipSize: -1
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 1.25
+      ToTile: 0.33
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 8
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
@@ -3768,10 +3790,10 @@ items:
     costBuy: 350000
     costSell: 300000
     listOrder: 146030
-  - type: STR_RADAR_SYSTEM #TODO
+  - type: STR_RADAR_SYSTEM #FIXME - some content here pls)
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
-  - type: STR_TRADIUM #TODO
+  - type: STR_TRADIUM #FIXME - some content here pls)
     costBuy: 1000000
     costSell: 500000
     categories: [STR_HUMANS, STR_COMPONENTS]
@@ -4165,7 +4187,7 @@ items:
     size: 0.0
     recover: true
     liveAlien: true
-    prisonType: 0 #TODO
+    prisonType: 2
     costSell: 20000
     listOrder: 115400
   - type: STR_FACEHUGGER_CORPSE
@@ -4229,7 +4251,7 @@ items:
     size: 0.0
     recover: true
     liveAlien: true
-    prisonType: 0 #TODO
+    prisonType: 2
     costSell: 20000
     listOrder: 115400
   - type: STR_JABBER_CORPSE
@@ -4250,7 +4272,7 @@ items:
     size: 0.0
     recover: true
     liveAlien: true
-    prisonType: 0 #TODO
+    prisonType: 2
     costSell: 20000
     listOrder: 115400
   - type: STR_CHUPACABRA_CORPSE

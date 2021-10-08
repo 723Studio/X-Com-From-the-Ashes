@@ -744,7 +744,7 @@ extended:
 
           attacker.getTag centerMass Tag.CENTER_MASS_STATE;
 
-          set critChance centerMass; #TODO for now, we have only one crit chance source.
+          set critChance centerMass; #FIXME for now, we have only one crit chance source.
           set critSource 1; 
 
           if gt critChance 0;

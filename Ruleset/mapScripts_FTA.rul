@@ -539,20 +539,20 @@ mapScripts:
     commands:
     - type: addLine
       direction: vertical
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       rects:
         - [2, 2, 1, 1]
     - type: addBlock
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       size: 2
       executionChances: 70
     - type: addBlock
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       size: 2
       executions: 2
       executionChances: 10
     - type: addBlock
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       size: 2
       executions: 2
       executionChances: 30
@@ -560,11 +560,11 @@ mapScripts:
         - [0, 0, 1, 4]
         - [4, 0, 1, 4]
     - type: fillArea
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       rects:
         - [1, 0, 1, 4]
     - type: fillArea
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       rects:
         - [3, 0, 1, 4]
     - type: removeBlock
@@ -589,13 +589,13 @@ mapScripts:
         - [2, 4, 1, 1]
     - type: addBlock
       groups: 3
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       conditionals: 2
       rects:
         - [2, 0, 1, 1]
     - type: addBlock
       groups: 3
-      terrain: URBAN #TODO
+      terrain: URBAN_LOW
       conditionals: 1
       rects:
         - [2, 4, 1, 1]

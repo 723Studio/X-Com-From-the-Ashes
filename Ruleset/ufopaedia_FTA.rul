@@ -290,7 +290,7 @@ ufopaedia:
     text: STR_MONSTER_HUNT_RUMORS_ANALYSIS_UFOPEDIA
     listOrder: 2010
   - id: STR_RESISTANCE_CONTACT
-    type_id: 8 #TODO converting to 7
+    type_id: 8 #FIXME converting to 7
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_RESISTANCE_CONTACT
@@ -306,7 +306,7 @@ ufopaedia:
     text: STR_STARTING_EQUIPMENT_UFOPEDIA
     listOrder: 2510
   - id: STR_RESISTANCE_BASIC_EQUIPMENT
-    type_id: 8 #TODO converting to 7
+    type_id: 8 #FIXME converting to 7
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_RESISTANCE_BASIC_EQUIPMENT
@@ -347,7 +347,7 @@ ufopaedia:
 
 #STR_TECHNOLOGY 7000
 #STR_XCOM_CRAFT_ARMAMENT 9000
-  - id: STR_DRAGONFLY #TODO
+  - id: STR_DRAGONFLY #FIXME
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: DRAGONFLY_CPAL.SPK
@@ -501,13 +501,13 @@ ufopaedia:
       - STR_FACILITIES_BLUEPRINTS
 
   - id: STR_BASE_CONSTRUCTION
-    type_id: 8 #TODO image here, so 7
+    type_id: 8 #FIXME image here, so 7
     section: STR_BASE_FACILITIES
     requires:
       - STR_BASE_CONSTRUCTION
     text: STR_BASE_CONSTRUCTION_UFOPEDIA
   - id: STR_UNDERWATER_BASES
-    type_id: 8 #TODO image here, so 7
+    type_id: 8 #FIXME image here, so 7
     section: STR_BASE_FACILITIES
     requires:
       - STR_UNDERWATER_BASES

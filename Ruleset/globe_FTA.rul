@@ -362,7 +362,7 @@ globe:
     - id: 14 # water
       fakeUnderwater: true #wooo
       terrain:
-        - name: POLAR #TODO
+        - name: POLAR #FIXME
           weight: 15   
 #mission textures
     - id: -1

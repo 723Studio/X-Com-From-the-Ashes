@@ -18,7 +18,7 @@ alienMissions:
         timer: 9000
       - ufo: STR_ABDUCTOR
         count: 1
-        trajectory: F0 #TODO, change to landing
+        trajectory: F0 #FIXME, change to landing
         timer: 7800
 
 #resistance scripts

@@ -215,7 +215,7 @@ facilities:
     buildTime: 15
     monthlyCost: 5000
     workshops: 12
-    mapName: XBASE_03 #TODO - make map!
+    mapName: XBASE_03 #FIXME - make map!
   - type: STR_ADVANCED_WORKSHOP
     spriteShape: 1
     spriteFacility: 20
@@ -241,7 +241,7 @@ facilities:
     radarRange: 1695
     radarChance: 10
     mapName: XBASE_04
-  - type: STR_LARGE_RADAR_SYSTEM #TODO 
+  - type: STR_LARGE_RADAR_SYSTEM
     spriteShape: 1
     spriteFacility: 22
     requires:

@@ -611,7 +611,7 @@ armors:
     loftempsSet: [ 2 ]
   - type: STR_CHUPACABRA_ARMOR
     spriteSheet: CHUPACABRA.PCK
-    spriteInv: inventory_JABBER #TODO
+    spriteInv: inventory_CHUPACABRA
     allowInv: false
     corpseBattle:
       - STR_CHUPACABRA_CORPSE
@@ -637,17 +637,17 @@ armors:
       reactions: 0.7
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
-    damageModifier: #TODO
+    damageModifier:
       - 1.0 #0 - None - special
       - 0.9 #1 - AP - kinetic
-      - 1.0 #2 - Incendiary
+      - 1.2 #2 - Incendiary
       - 0.9 #3 - High Explosive - Explosive
       - 1.0 #4 - Laser
       - 1.0 #5 - Plasma
       - 1.0 #6 - Stun
       - 0.8 #7 - Melee - Cutting
       - 1.0 #8 - Acid
-      - 3.0 #9 - Smoke - Choke
+      - 2.5 #9 - Smoke - Choke
       - 0.0 #10 - EMP
       - 1.0 #11 - Electric
       - 1.0 #12 - Psi

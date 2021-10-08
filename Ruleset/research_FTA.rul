@@ -28,9 +28,9 @@ research:
     hidden: true
   - name: STR_TODOIUM #research, that indicate missing parts or research tree, that needs to be developed
     hidden: true
-  - name: STR_VOID_CONTACT #TODO scheduled to alpha 2
+  - name: STR_VOID_CONTACT #FIXME scheduled to alpha 2
     hidden: true    
-  - name: STR_ENIGMA_CONTACT #TODO scheduled to alpha 3
+  - name: STR_ENIGMA_CONTACT #FIXME scheduled to alpha 3
     hidden: true 
   - name: STR_NONE
 #story 
@@ -293,13 +293,13 @@ research:
       - STR_ACID_SYNTHESIS
     listOrder: 7410 
 
-  - name: STR_LASER_WEAPONS #TODO
+  - name: STR_LASER_WEAPONS
     cost: 12000
     points: 100
     dependencies:
       - STR_TODOIUM
     listOrder: 7410
-  - name: STR_EXPANDABLE_AMMO_PREREQ #TODO
+  - name: STR_EXPANDABLE_AMMO_PREREQ #FIXME - do i really need it?
     hidden: true
   - name: STR_EXPANDABLE_AMMO
     cost: 170
@@ -308,7 +308,7 @@ research:
       - STR_PISTOL_EXP_CLIP
       - STR_RIFLE_EXP_CLIP
     dependencies:
-      - STR_EXPANDABLE_AMMO_PREREQ
+      #- STR_EXPANDABLE_AMMO_PREREQ
       - STR_XCOM_EQUIPMENT
     listOrder: 7410
   - name: STR_PISTOL_EXP_CLIP
@@ -431,7 +431,7 @@ research:
     requiresBaseFunc: [INTLAB]
     cost: 700
     points: 180
-    dependencies: #TODO - more stuff, hacking info?
+    dependencies: #FIXME - more stuff, hacking info?
       - STR_MIB_HEAD_CHIP
     listOrder: 146000
   - name: STR_REQ_HQ_LOCATION_DONE
@@ -513,7 +513,7 @@ research:
     listOrder: 7460
 
 
-  - name: STR_STRANGE_CREATURE_AUTOPSY #TODO FIX
+  - name: STR_STRANGE_CREATURE_AUTOPSY
     cost: 0
     points: 0
     spawnedEvent: STR_STRANGE_CREATURE_AUTOPSY
@@ -694,19 +694,23 @@ research:
     #     - STR_EMPTY_MIB_EARLY_LORE9
     #     - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 146000
-  - name: STR_SEEKER_DRONE_TERRORIST #TODO
+  - name: STR_SEEKER_DRONE_TERRORIST
     requiresBaseFunc: [HQ]
     cost: 1200
     points: 150
     needItem: true
     destroyItem: true
     spawnedItem: STR_SEEKER_DRONE_CORPSE
-  - name: STR_SEEKER_DRONE_CORPSE #TODO
+    dependencies:
+      - STR_TODOIUM
+  - name: STR_SEEKER_DRONE_CORPSE
     requiresBaseFunc: [HQ]
     cost: 1000
     points: 40
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_TODOIUM
 #MiB\Procured
   - name: STR_MIB_OFFICE_ENGINEER
     requiresBaseFunc: [INTLAB]
@@ -758,7 +762,7 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     listOrder: 146000
-  - name: MIB_BANKER #TODO -extra reward
+  - name: MIB_BANKER
     requiresBaseFunc: [INTLAB]
     cost: 30
     points: 10
@@ -876,7 +880,7 @@ research:
     points: 11
     dependencies:
       - STR_MIB_BUTCHER
-      - STR_TODOIUM #TODO - something about MIB body enchantment here pls
+      - STR_TODOIUM #FIXME - something about MIB body enchantment here pls
     listOrder: 146000
   - name: STR_MIB_ENFORCER_ARMOR
     cost: 90
@@ -890,7 +894,7 @@ research:
     dependencies:
       - STR_SEEKER_DRONE_CORPSE
       - STR_SEEKER_DRONE_TERRORIST
-      - STR_TODOIUM #TODO
+      - STR_TODOIUM
     listOrder: 146000
     
   - name: STR_FACEHUGGER_ARMOR
@@ -1017,7 +1021,7 @@ research:
       - STR_DAMAGE_ACID
       - STR_CHEMICAL_WEAPONRY_PREREQ
     listOrder: 20530
-  - name: STR_CHEMOGUN #TODO - balance
+  - name: STR_CHEMOGUN
     cost: 2500
     points: 80
     needItem: true
@@ -1156,9 +1160,9 @@ research:
     points: 60
     needItem: true
     destroyItem: true
-    dependencies: #TODO remove
+    dependencies: #FIXME!! remove
       - STR_TODOIUM
-    # getOneFree: #TODO add
+    # getOneFree: #FIXME!! add
     #   - ""
     listOrder: 7410
   - name: STR_MIB_DATA_CONTAINER
@@ -1246,14 +1250,14 @@ research:
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_TODOIUM
-  - name: STR_BASE_CONSTRUCTION #TODO
+  - name: STR_BASE_CONSTRUCTION
     cost: 60
     points: 15
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_TODOIUM 
     listOrder: 7460
-  - name: STR_UNDERWATER_BASES #TODO
+  - name: STR_UNDERWATER_BASES
     cost: 60
     points: 15
     dependencies:
@@ -1272,8 +1276,8 @@ research:
     dependencies:
       - STR_RESISTANCE_TECH_TREE_START
 
-  - name: STR_XCOM_EQUIPMENT_ACQUISITION #TODO - add ways to unlock it
+  - name: STR_XCOM_EQUIPMENT_ACQUISITION #FIXME - add ways to unlock it
     cost: 50
     points: 800
     dependencies:
-     - STR_TROLLIUM
+     - STR_TODOIUM

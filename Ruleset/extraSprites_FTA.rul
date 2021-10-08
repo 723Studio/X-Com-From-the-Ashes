@@ -171,15 +171,15 @@ extraSprites:
       105: Resources/Armors/Enemies/Zombies/bigob_ZOMBIE_STERILE_CORPSE.png
       106: Resources/Armors/Enemies/Zombies/bigob_GRUBAS_CORPSE.png
       107: Resources/Armors/Enemies/Zombies/bigobs_FACEHUGGER_CORPSE.png
-      108: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCIENTIST.png #TODO duplicating! replace with infector!
+      108: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCIENTIST.png #FIXME duplicating! replace with infector!
       109: Resources/Armors/Civilians/Citizens/bigob_FARMER_CORPSE.png
       110: Resources/Armors/Civilians/Citizens/bigob_FEMALE_FARMER_CORPSE.png
       111: Resources/Armors/Enemies/MiB/bigob_MIB_SPECOPS.png
       112: Resources/Armors/Enemies/MiB/bigob_SEEKER_DRONE.png
       113: Resources/Armors/Enemies/MiB/bigob_MIB_ARMORED_AGENT.png
       114: Resources/Armors/Enemies/Monsters/bigob_JABBER_CORPSE.png
-      115: Resources/MiscItems/bigob_FakeID.png #TODO 115 index used, replace with something without floor obj
-      116: Resources/Armors/Enemies/Monsters/bigob_JABBER_CORPSE.png #TODO
+      115: Resources/MiscItems/bigob_FakeID.png #FIXME 115 index used, replace with something without floor obj
+      116: Resources/Armors/Enemies/Monsters/bigob_JABBER_CORPSE.png
       117: Resources/Armors/Civilians/Police/bigob_POLICEMAN.png
       118: Resources/Armors/Civilians/Animals/bigob_DOGE_CORPSE.png
       119: Resources/Armors/Xcom/CoatArmor/bigob_COAT_CORPSE.png
@@ -306,7 +306,9 @@ extraSprites:
       408: Resources/Weapons/Earthbound/Xcom/bigob_ElectricStick.png
       409: Resources/MiscItems/bigob_MibDataContainer.png
       410: Resources/Weapons/MIB/bigob_Woundgun.png
-      411: Resources/Weapons/MIB/bigob_WoundgunClip.png      
+      411: Resources/Weapons/MIB/bigob_WoundgunClip.png 
+      412: Resources/Armors/Enemies/Monsters/bigob_ChupacabraWeapon.png
+
       
   - type: FLOOROB.PCK
     files:
@@ -656,13 +658,13 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/RESISTANCE_DIPLOMACY_CARD.png
-  - type: CHURCH_OF_DAGON_BACKGROUND.SCR #TODO
+  - type: CHURCH_OF_DAGON_BACKGROUND.SCR #FIXME - remove
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/CHURCH_OF_DAGON_BACKGROUND.png
-  - type: OFFICE_LADY_BACKGROUND.SCR #TODO
+  - type: OFFICE_LADY_BACKGROUND.SCR #FIXME - remove
     singleImage: true
     width: 320
     height: 200
