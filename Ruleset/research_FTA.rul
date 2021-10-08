@@ -475,6 +475,8 @@ research:
     hidden: true
   - name: STR_EMPTY_MIB_EARLY_LORE10
     hidden: true
+  - name: STR_STEAL_OSPREY_PREREQ
+    hidden: true
 
 #shared creatures arc
   - name: STR_MONSTER_HUNT_START_PREREQ
@@ -1175,7 +1177,7 @@ research:
 
 #crafts
   - name: STR_HELICOPTER
-    hidden: true
+    #hidden: true
     listOrder: 7460
   - name: STR_OSPREY
     hidden: true

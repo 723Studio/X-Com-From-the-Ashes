@@ -66,6 +66,25 @@ events:
     timerRandom: 10080 # 7 days
     interruptResearch: STR_SUPPLIES
     loyalty: -900
+  - name: STR_STEAL_OSPREY_EVENT
+    description: STR_STR_STEAL_OSPREY_EVENT_DESCRIPTION
+    timer: 15840 # 11 days
+    timerRandom: 2880 # 2 days
+    researchList:
+      - STR_OSPREY
+    customAnswers:
+      0:
+        title: STR_WE_ARE_NOT_CRIMINALS
+      1:
+        title: STR_GREAT_PLAN
+        spawnEvent: [STR_STEAL_OSPREY_EVENT_YES]
+  - name: STR_STEAL_OSPREY_EVENT_YES
+    description: STR_STEAL_OSPREY_EVENT_YES_DESCRIPTION
+    timer: 0
+    timerRandom: 0
+    researchList: [STR_STEAL_OSPREY_PREREQ]
+
+
 
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED

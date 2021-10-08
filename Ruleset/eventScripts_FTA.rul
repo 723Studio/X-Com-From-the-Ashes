@@ -74,6 +74,20 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
+  - type: STR_STEAL_OSPREY #Start of monster hunt arc
+    oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
+    firstMonth: 1
+    lastMonth: 7
+    executionOdds: 35
+    minDifficulty: 0
+    maxDifficulty: 3
+  - type: STR_STEAL_OSPREY_SH #Start of monster hunt arc
+    oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
+    firstMonth: 1
+    lastMonth: 6
+    executionOdds: 20
+    minDifficulty: 4
+    maxDifficulty: 4
 
 #xcom
   - &STR_WORKSHOP_SCRIPT

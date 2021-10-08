@@ -3759,13 +3759,27 @@ items:
     listOrder: 30030
 
 #geoscape-only
+  - type: STR_CRATED_HELICOPTER
+    categories: [STR_HUMAN_TECH, STR_CRAFT]
+    size: 30
+    costBuy: 130000
+    costSell: 100000
+    transferTime: 96
+    listOrder: 1 # =)
+  - type: STR_CRATED_OSPREY
+    categories: [STR_HUMAN_TECH, STR_CRAFT]
+    size: 50
+    costBuy: 250000
+    costSell: 150000
+    transferTime: 120
+    listOrder: 5
   - type: STR_CANNON
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
     size: 1.5
     costBuy: 30000
     costSell: 22500
     transferTime: 48
-    listOrder: 50000
+    listOrder: 550
   - type: STR_CANNON_ROUNDS_X50
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
     size: 0.1
@@ -3773,14 +3787,14 @@ items:
     costSell: 1012
     transferTime: 48
     clipSize: 50
-    listOrder: 50010
+    listOrder: 551
   - type: STR_STINGRAY_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
     size: 0.6
     costBuy: 32000
     costSell: 24000
     transferTime: 48
-    listOrder: 50020
+    listOrder: 650
   - type: STR_STINGRAY_MISSILES
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
     size: 0.4
@@ -3788,14 +3802,8 @@ items:
     costSell: 4800
     transferTime: 48
     clipSize: 1
-    listOrder: 50030
-  - type: STR_CRATED_HELICOPTER
-    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
-    size: 30
-    costBuy: 130000
-    costSell: 100000
-    transferTime: 96
-    listOrder: 60000
+    listOrder: 651
+
   - type: STR_LABORATORY_EQUIPMENT
     categories: [ STR_HUMANS, STR_COMPONENTS ]
     costBuy: 200000

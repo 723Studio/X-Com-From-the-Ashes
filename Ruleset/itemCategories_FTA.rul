@@ -1,4 +1,6 @@
 ﻿itemCategories:
+  - type: STR_CRAFT
+    listOrder: 1
   - type: STR_CRAFT_SYSTEMS
     listOrder: 2
   - type: STR_AUXILIARY

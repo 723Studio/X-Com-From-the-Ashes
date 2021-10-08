@@ -1,4 +1,20 @@
 manufacture:
+  - name: STR_HELICOPTER
+    category: STR_CRAFT
+    space: 5
+    time: 450
+    cost: 2000
+    requiredItems:
+      STR_CRATED_HELICOPTER: 1
+    listOrder: 220030
+  - name: STR_OSPREY
+    category: STR_CRAFT
+    space: 10
+    time: 1300
+    cost: 10000
+    requiredItems:
+      STR_CRATED_OSPREY: 1
+    listOrder: 220030
   - name: STR_FAKE_AGENT_ID
     category: STR_COVERT_TOOLS
     requires:
@@ -9,16 +25,6 @@ manufacture:
     producedItems:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
-
-  - name: STR_HELICOPTER
-    category: STR_CRAFT
-    space: 5
-    time: 450
-    cost: 2000
-    requiredItems:
-      STR_CRATED_HELICOPTER: 1
-    listOrder: 220030
-
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]

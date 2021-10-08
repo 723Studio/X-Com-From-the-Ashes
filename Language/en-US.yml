@@ -388,11 +388,13 @@ en-US:
   STR_REGIONAL_HQ_SURVEY_SUCCESS_DESCRIPTION: "We were able to locate a sewage canal which runs directly under the structure in which we believe the M.I.B. headquarters is located. Information about it has been carefully concealed; it is not on any of the current plans. However, we managed to find a retired engineer who showed us the entrance to the underground communications suite and provided approximate plans. This will allow us to approach the complex undetected."
   STR_REGIONAL_HQ_SURVEY_FAILURE_DESCRIPTION: "We investigated the area where the M.I.B. headquarters is located as exhaustively as we could. Alas, this structure is quite well-protected, with its own communications system, with no access from the outside. The only assault option left is to gather a squad stealthily in the house from which we monitor the building. When we are ready, we strike directly, breaking into the office as burglars and breaking into the M.I.B.'s headquarters."
   STR_RESISTANCE_CELL_CREATION: #TODO
-  STR_RESISTANCE_CELL_CREATION_DESCRIPTION: 
-  STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION: 
-  STR_RESISTANCE_CELL_CREATION_FAILURE_DESCRIPTION: 
-
-
+  STR_RESISTANCE_CELL_CREATION_DESCRIPTION: #TODO
+  STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION: #TODO
+  STR_RESISTANCE_CELL_CREATION_FAILURE_DESCRIPTION: #TODO
+  STR_STEAL_OSPREY_OPERATION: "Steal Osprey"
+  STR_STEAL_OSPREY_OPERATION_DESCRIPTION: "Our agents will disguise themselves as personnel servicing decommissioned equipment. They will fake an operation to preserve the vessel, take it to a prearranged site. There they can disassemble the ship into parts under the guise of repair, and then rapidly and discreetly transport it to our base."
+  STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION: "The plan succeeded, the parts of the Osprey craft arrive at our base intact one by one. We had to bribe a few officials, but it was worth it! {NEWLINE}Funds change>{ALT} -82000"
+  STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION: "Our plan failed! The warehouse workers turned out to be completely incorruptible, and we had to save our agents from persecution by the authorities. {NEWLINE}Funds change>{ALT} -105000"
   STR_MONSTER_HUNT_INVESTIGATION: "Monster Activity Investigation"
   STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: "On this operation, our soldiers will work under the guise of federal agents investigating attacks by mysterious monsters. That way we can gain the confidence of the locals and the police if we arrange a good disguise. Our engineers are capable of creating fake special agent IDs for our soldiers that are almost indistinguishable from the real ones."
   STR_MONSTER_HUNT_INVESTIGATION_SUCCESS_DESCRIPTION: "We were able to collect testimonies of witnesses and evidence indicating the activity of unidentified predators that terrify the locals. We have to analyze the data collected and develop a plan for further actions.{NEWLINE}{NEWLINE}{ALT}New research project available."
@@ -465,7 +467,12 @@ en-US:
   STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS_DESCRIPTION: "Excellent! Now we have the opportunity to purchase small quantities of military weapons. This will greatly help us in our defense against the ubiquitous M.I.B. agents, perhaps we can finally fight back. Certainly, we are ready to share it with you."
   STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION: "Another Chance for Military Weaponry Acquisition"
   STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "It seems that we have found a great opportunity to try again to establish a channel of covert supply of military weapons and equipment. Once again we will need your help, it is necessary to send your undercover agents to the operation to negotiate the shipments.{NEWLINE}{ALT}New covert operation available."
-  STR_RESISTANCE_CELL_NEAR_MIB_HQ: 
+  STR_STR_STEAL_OSPREY_EVENT: "Steal the Osprey"
+  STR_STR_STEAL_OSPREY_EVENT_DESCRIPTION: "Commander, we have a unique opportunity to significantly improve our combat capabilities! We have recently learned that the military has moved a decommissioned troop carrier craft to a poorly guarded warehouse not too far from our base. I think our soldiers will have no trouble sneaking into the facility and stealing it."
+  STR_WE_ARE_NOT_CRIMINALS: "We are not criminals"
+  STR_GREAT_PLAN: "Great plan!"
+  STR_STEAL_OSPREY_EVENT_YES: "Steal the Osprey"
+  STR_STEAL_OSPREY_EVENT_YES_DESCRIPTION: "Okay, we need to carefully plan the operation. Most importantly, we have to do everything completely undetected and in no way reveal the location of our base in the action. Not such an easy task given the size of the craft.{NEWLINE}{ALT}New covert operation available."
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
   STR_SPORTS_BOW_TINKERING: "Sport Bow Advanced Arrows"
@@ -624,6 +631,7 @@ en-US:
   STR_CIVILIAN_HUNTER_CORPSE: "Hunter Corpse"
 #categories
   STR_CRAFT_SYSTEMS: "Craft Systems"
+  STR_CRAFT: "Craft"
   STR_UNARMED: "Unarmed"
   STR_MELEE: "Melee Weapons"
   STR_PISTOLS: "Pistols"
@@ -847,6 +855,7 @@ en-US:
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: #TODO
   STR_CRATED_HELICOPTER: "Crated Helicopter"
+  STR_CRATED_OSPREY: "Crated Osprey"
   STR_LABORATORY_EQUIPMENT: "Lab Equipment"
   STR_BIOLOGY_EQUIPMENT: "Biolab Equipment"
   STR_RADAR_SYSTEM: "Radar Systems"
