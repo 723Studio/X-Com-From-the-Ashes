@@ -109,7 +109,6 @@ items:
   - type: STR_COMBAT_KNIFE
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
     requiresBuy:
-        - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     landOnly: false
     costBuy: 260
@@ -146,8 +145,8 @@ items:
     armor: 60
     experienceTrainingMode: 13
     attraction: 6
-    listOrder: 18000
-  - type: STR_MACHETE 
+    listOrder: 1020
+  - type: STR_MACHETE
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
     size: 0.1
     landOnly: false
@@ -185,11 +184,11 @@ items:
     armor: 60
     experienceTrainingMode: 13
     attraction: 6
-    listOrder: 18000    
+    listOrder: 1030
   - type: STR_SWORD
     categories: [STR_HUMAN_TECH, STR_MELEE]
     size: 0.2
-    landOnly: true
+    landOnly: false
     costBuy: 2100
     costSell: 1500
     weight: 8
@@ -223,7 +222,7 @@ items:
     armor: 55
     experienceTrainingMode: 13
     attraction: 9
-    listOrder: 18520
+    listOrder: 1040
   - type: STR_ELECTRIC_STICK
     categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_INCAPACITATE, STR_MELEE]
     landOnly: true
@@ -269,7 +268,7 @@ items:
     armor: 35
     experienceTrainingMode: 13
     attraction: 12
-    listOrder: 18790
+    listOrder: 1050
   - type: STR_STUN_ROD_2
     categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_MELEE, STR_INCAPACITATE]
     landOnly: true
@@ -313,7 +312,7 @@ items:
     armor: 35
     experienceTrainingMode: 2
     attraction: 20
-    listOrder: 18800
+    listOrder: 1060
 
 #throwing
   - type: STR_THROWING_KNIFE
@@ -357,10 +356,11 @@ items:
     bulletSpeed: -2
     experienceTrainingMode: 11
     attraction: 6
-    listOrder: 17600
+    listOrder: 3000
   - type: STR_SPORTS_BOW
     categories: [STR_HUMAN_TECH,  STR_THROWING, STR_BOWS, STR_CONCEALABLE]
     size: 0.2
+    landOnly: true
     costBuy: 800
     costSell: 500
     weight: 4
@@ -400,10 +400,11 @@ items:
     kneelBonus: 100
     experienceTrainingMode: 11
     attraction: 20
-    listOrder: 17620
+    listOrder: 3010
   - type: STR_BOW_ARROW
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
     size: 0.08
+    landOnly: true
     costBuy: 35
     costSell: 25
     weight: 1
@@ -419,7 +420,7 @@ items:
       ArmorEffectiveness: 1.45
       ToTile: 0.2
     damageBonus:
-     firing: 0.1
+      firing: 0.1
     clipSize: 1
     stackSize: 10
     costThrow:
@@ -428,7 +429,7 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 15
-    listOrder: 17630
+    listOrder: 3020
   - &STR_BOW_ARROW_SPECIAL
     type: STR_BOW_ARROW_HE
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_EXPLOSIVES, STR_CONCEALABLE, STR_CLIPS]
@@ -448,7 +449,8 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 15
-    listOrder: 17630
+    listOrder: 3030
+    landOnly: true
   - type: STR_BOW_ARROW_IN
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_INCENDIARIES, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
@@ -457,7 +459,7 @@ items:
     # hitAnimation: 26
     power: 27
     damageType: 2
-    listOrder: 17630
+    listOrder: 3040
   - type: STR_BOW_ARROW_STUN
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
@@ -470,7 +472,7 @@ items:
       ToTile: 0.1
     power: 27
     damageType: 6
-    listOrder: 17630
+    listOrder: 3050
   - type: STR_BOW_ARROW_ELECTRIC
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
@@ -493,8 +495,7 @@ items:
       RandomType: 2
       IgnoreDirection: true
       ToTile: 0.1
-    listOrder: 17630
-
+    listOrder: 3060
 #pistols
   - type: STR_TASER
     categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE]
@@ -527,7 +528,7 @@ items:
     powerRangeThreshold: 9
     experienceTrainingMode: 4
     attraction: 15
-    listOrder: 18900
+    listOrder: 5000
   - type: STR_TASER_CLIP
     categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE]
     landOnly: true
@@ -562,7 +563,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 15
-    listOrder: 18910
+    listOrder: 5010
   - type: STR_SNUBNOSE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     landOnly: true
@@ -592,7 +593,7 @@ items:
     invWidth: 1
     invHeight: 1
     attraction: 8
-    listOrder: 19980
+    listOrder: 5020
   - type: STR_SNUBNOSE_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
@@ -613,7 +614,7 @@ items:
     battleType: 2
     armor: 30
     attraction: 8
-    listOrder: 19990
+    listOrder: 5030
   - type: STR_RIOT_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
@@ -647,7 +648,7 @@ items:
     invHeight: 2
     armor: 30
     attraction: 10
-    listOrder: 20040
+    listOrder: 5040
   - type: STR_RIOT_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
@@ -671,7 +672,7 @@ items:
       energy: 4
     battleType: 2
     armor: 30
-    listOrder: 20050
+    listOrder: 5050
   - type: STR_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
@@ -703,7 +704,7 @@ items:
     invWidth: 1
     invHeight: 2
     attraction: 8
-    listOrder: 20330
+    listOrder: 5060
   - type: STR_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
@@ -726,7 +727,7 @@ items:
     battleType: 2
     armor: 12
     attraction: 8
-    listOrder: 20340
+    listOrder: 5070
   - type: STR_PISTOL_EXP_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
@@ -755,7 +756,7 @@ items:
     battleType: 2
     armor: 12
     attraction: 8
-    listOrder: 20340
+    listOrder: 5080
   - type: STR_PISTOL_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     size: 0.02
@@ -773,9 +774,9 @@ items:
     battleType: 2
     armor: 12
     attraction: 8
-    listOrder: 20350
+    listOrder: 5090
   - type: STR_HEAVY_PISTOL
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS]
+    categories: [ STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS ]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
@@ -806,7 +807,7 @@ items:
     invHeight: 2
     armor: 30
     attraction: 15
-    listOrder: 20350
+    listOrder: 5100
   - type: STR_HEAVY_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS]
     requiresBuy:
@@ -829,15 +830,9 @@ items:
     battleType: 2
     armor: 30
     attraction: 15
-    listOrder: 20190
+    listOrder: 5110
   - type: STR_WOUNDGUN
-    categories:
-      [
-        STR_HUMAN_TECH,
-        STR_FIREARMS,
-        STR_PISTOLS,
-        STR_CONCEALABLE
-      ]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     size: 0.1
     landOnly: true
     requiresBuy:
@@ -868,7 +863,7 @@ items:
     invHeight: 2
     armor: 35
     attraction: 15
-    listOrder: 20000
+    listOrder: 5120
   - type: STR_WOUNDGUN_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     size: 0.025
@@ -897,7 +892,7 @@ items:
     battleType: 2
     armor: 35
     attraction: 15
-    listOrder: 20010
+    listOrder: 5130
   - type: STR_CHEMPISTOL
     categories: [STR_CHEMICALS, STR_PISTOLS, STR_ALIEN_TECH]
     requires:
@@ -926,7 +921,7 @@ items:
     armor: 25
     arcingShot: true
     attraction: 15
-    listOrder: 20530
+    listOrder: 5140
   - type: STR_CHEMPISTOL_CLIP
     categories: [STR_CHEMICALS, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
     requires:
@@ -957,13 +952,13 @@ items:
     invHeight: 1
     armor: 25
     attraction: 15
-    listOrder: 20540
+    listOrder: 5150
 #SMG
   - type: STR_MACHINE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.15
     costBuy: 2600
     costSell: 1800
@@ -995,12 +990,12 @@ items:
     autoShots: 5
     sprayWaypoints: 2
     attraction: 7
-    listOrder: 20600
+    listOrder: 7000
   - type: STR_MACHINE_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.02
     costBuy: 140
     costSell: 80
@@ -1016,9 +1011,15 @@ items:
     battleType: 2
     armor: 30
     attraction: 7
-    listOrder: 20610
+    listOrder: 7010
   - type: STR_PDW
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
+    categories:
+      [
+        STR_HUMAN_TECH,
+        STR_FIREARMS,
+        STR_SMGS,
+        STR_CONCEALABLE
+      ]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.16
@@ -1051,7 +1052,7 @@ items:
     autoShots: 4
     sprayWaypoints: 2
     attraction: 7
-    listOrder: 20700
+    listOrder: 7020
   - type: STR_PDW_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
@@ -1074,7 +1075,7 @@ items:
     oneHandedPenalty: 15
     armor: 30
     attraction: 7
-    listOrder: 20710
+    listOrder: 7030
   - type: STR_PDW_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     size: 0.03
@@ -1092,7 +1093,7 @@ items:
     battleType: 2
     armor: 30
     attraction: 7
-    listOrder: 20720
+    listOrder: 7040
   - type: STR_SMG
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS]
     requiresBuy:
@@ -1129,7 +1130,7 @@ items:
     snapRange: 18
     aimRange: 25
     attraction: 12
-    listOrder: 20740
+    listOrder: 7050
   - type: STR_SMG_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
     requiresBuy:
@@ -1151,7 +1152,7 @@ items:
       energy: 6
     battleType: 2
     armor: 30
-    listOrder: 20750
+    listOrder: 7060
   - type: STR_SMG_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
     size: 0.05
@@ -1170,12 +1171,12 @@ items:
       energy: 6
     battleType: 2
     armor: 30
-    listOrder: 20756
+    listOrder: 7070
 #rifles
   - type: STR_RIOT_RIFLE
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
     costBuy: 2500
     costSell: 1550
@@ -1203,11 +1204,11 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 8
-    listOrder: 21125
+    listOrder: 7080
   - type: STR_RIOT_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
     costBuy: 220
     costSell: 150
@@ -1223,7 +1224,7 @@ items:
     clipSize: 30
     battleType: 2
     attraction: 8
-    listOrder: 21129
+    listOrder: 7090
   - type: STR_ASSAULT_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
@@ -1260,7 +1261,7 @@ items:
     snapRange: 16
     autoRange: 15
     attraction: 8
-    listOrder: 21305
+    listOrder: 7100
   - type: STR_RIFLE #battle rifle
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
@@ -1294,7 +1295,7 @@ items:
     snapRange: 20
     autoRange: 11
     attraction: 8
-    listOrder: 21300
+    listOrder: 7110
     tags:
       FTAG_EXPANDING: 1
   - type: STR_PRECISION_RIFLE
@@ -1329,7 +1330,7 @@ items:
     snapRange: 20
     autoRange: 11
     attraction: 8
-    listOrder: 21300
+    listOrder: 7120
   - type: STR_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
@@ -1349,9 +1350,9 @@ items:
     clipSize: 20
     battleType: 2
     attraction: 8
-    listOrder: 21310
+    listOrder: 7130
   - type: STR_RIFLE_EXP_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
+    categories: [ STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS ]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
@@ -1377,7 +1378,7 @@ items:
     clipSize: 20
     battleType: 2
     attraction: 8
-    listOrder: 21310
+    listOrder: 7140
     tags:
       FTAG_EXPANDING: 1
   - type: STR_RIFLE_AA_CLIP
@@ -1396,7 +1397,7 @@ items:
     clipSize: 20
     battleType: 2
     attraction: 8
-    listOrder: 21320
+    listOrder: 7150
   - type: STR_CHEMOGUN
     categories: [STR_CHEMICALS, STR_SMOKE, STR_RIFLES]
     requires:
@@ -1427,7 +1428,8 @@ items:
     autoShots: 8
     sprayWaypoints: 2
     attraction: 20
-    listOrder: 22980
+    listOrder: 7160
+    landOnly: true
   - type: STR_CHEMOGUN_CLIP
     categories: [STR_CHEMICALS, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS]
     requires:
@@ -1457,7 +1459,8 @@ items:
     invHeight: 1
     armor: 25
     attraction: 15
-    listOrder: 22990
+    listOrder: 7170
+    landOnly: true
 
 #sniper rifles
   - type: STR_HUNTING_RIFLE
@@ -1488,7 +1491,7 @@ items:
     invHeight: 3
     armor: 30
     attraction: 7
-    listOrder: 21035
+    listOrder: 10000
   - type: STR_HUNTING_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     size: 0.04
@@ -1511,7 +1514,7 @@ items:
     battleType: 2
     armor: 30
     attraction: 7
-    listOrder: 21036
+    listOrder: 10010
   - type: STR_SNIPER_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     requiresBuy:
@@ -1547,7 +1550,7 @@ items:
     minRange: 15
     dropoff: 3
     attraction: 9
-    listOrder: 22140
+    listOrder: 10020
   - type: STR_SNIPER_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
     requiresBuy:
@@ -1574,7 +1577,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 9
-    listOrder: 22150
+    listOrder: 10030
   - type: STR_SNIPER_RIFLE_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
     size: 0.02
@@ -1598,7 +1601,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 9
-    listOrder: 22160
+    listOrder: 10040
 #shotguns
   - type: STR_SAWED_OFF
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CONCEALABLE]
@@ -1634,7 +1637,7 @@ items:
     invHeight: 2
     armor: 40
     attraction: 7
-    listOrder: 22459
+    listOrder: 12000
     tags:
       FTAG_SAWED_OFF: 85
   - type: STR_DOUBLE_BARRELED
@@ -1672,7 +1675,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 7
-    listOrder: 22460
+    listOrder: 12010
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
@@ -1697,7 +1700,7 @@ items:
     shotgunPellets: 7
     bulletSpeed: 2
     attraction: 7
-    listOrder: 22461
+    listOrder: 12020
   - type: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     landOnly: true
@@ -1719,7 +1722,7 @@ items:
     shotgunPellets: 7
     bulletSpeed: 2
     attraction: 7
-    listOrder: 22465
+    listOrder: 12030
   - type: STR_PUMP_ACTION_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
@@ -1753,7 +1756,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 7
-    listOrder: 22440
+    listOrder: 12040
   - type: STR_PUMP_ACTION_SHELLS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
@@ -1781,7 +1784,7 @@ items:
     shotgunPellets: 5
     bulletSpeed: 2
     attraction: 7
-    listOrder: 22450
+    listOrder: 12050
   - type: STR_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
@@ -1819,7 +1822,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 8
-    listOrder: 22530
+    listOrder: 12060
   - type: STR_SEMI_AUTO_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
     requiresBuy:
@@ -1857,13 +1860,13 @@ items:
     invHeight: 3
     armor: 40
     attraction: 8
-    listOrder: 22520
-
+    listOrder: 12070
   - type: STR_SHOTGUN_SHELLS_BS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.01
+    landOnly: true
     costBuy: 50
     costSell: 40
     weight: 3
@@ -1884,7 +1887,7 @@ items:
     shotgunPellets: 7
     bulletSpeed: 2
     attraction: 8
-    listOrder: 22540
+    listOrder: 12080
   - type: STR_SHOTGUN_SHELLS_AP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
@@ -1904,7 +1907,8 @@ items:
     battleType: 2
     armor: 20
     attraction: 8
-    listOrder: 22550
+    listOrder: 12090
+    landOnly: true
   - type: STR_SHOTGUN_SHELLS_BATON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS]
     requiresBuy:
@@ -1931,10 +1935,12 @@ items:
     battleType: 2
     armor: 20
     attraction: 8
-    listOrder: 22555
+    listOrder: 12100
+    landOnly: true
   - type: STR_SHOTGUN_SHELLS_BS_AA
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     size: 0.01
+    landOnly: true
     costSell: 800
     weight: 3
     bigSprite: 326
@@ -1952,7 +1958,7 @@ items:
     shotgunPellets: 7
     bulletSpeed: 2
     attraction: 8
-    listOrder: 22560
+    listOrder: 12110
   - type: STR_SHOTGUN_SHELLS_AP_AA
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     size: 0.01
@@ -1969,7 +1975,8 @@ items:
     battleType: 2
     armor: 20
     attraction: 8
-    listOrder: 22570
+    listOrder: 12120
+    landOnly: true
 #cannons
   - type: STR_TASER_CANNON
     categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS]
@@ -1979,10 +1986,10 @@ items:
     size: 0.3
     costSell: 18000
     weight: 14
-    bigSprite: 398 
-    floorSprite: 398 
-    handSprite: 688 
-    bulletSprite: 13 
+    bigSprite: 398
+    floorSprite: 398
+    handSprite: 688
+    bulletSprite: 13
     fireSound: 107
     invWidth: 2
     invHeight: 3
@@ -1993,10 +2000,10 @@ items:
     tuSnap: 62
     tuLoad: 45
     confAimed:
-      spendPerShot: 2        # 2x battery consumption for 1.5x power
+      spendPerShot: 2 # 2x battery consumption for 1.5x power
       name: STR_OVERCHARGED_SHOT
     confSnap:
-      name: STR_AIMED_SHOT    
+      name: STR_AIMED_SHOT
     battleType: 1
     blockBothHands: true
     armor: 18
@@ -2004,7 +2011,7 @@ items:
     powerRangeReduction: 30
     experienceTrainingMode: 4
     attraction: 24
-    listOrder: 18916
+    listOrder: 15000
     tags:
       BPL_AIMED_1_5X_POWER: 1
   - type: STR_TASER_CANNON_CLIP
@@ -2016,7 +2023,7 @@ items:
     bigSprite: 399
     floorSprite: 399
     handSprite: 696
-    hitSound: 54 #
+    hitSound: 54
     hitAnimation: 56
     invWidth: 2
     invHeight: 2
@@ -2041,7 +2048,7 @@ items:
     battleType: 2
     armor: 16
     attraction: 15
-    listOrder: 18917
+    listOrder: 15010
   - type: STR_LMG
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
     requiresBuy:
@@ -2077,7 +2084,7 @@ items:
     autoShots: 5
     sprayWaypoints: 2
     attraction: 22
-    listOrder: 23120
+    listOrder: 15020
   - type: STR_LMG_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     requiresBuy:
@@ -2102,7 +2109,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 15
-    listOrder: 31010
+    listOrder: 15030
   - type: STR_LMG_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     size: 0.1
@@ -2124,7 +2131,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 15
-    listOrder: 31010
+    listOrder: 15040
   - type: STR_LIGHT_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -2160,7 +2167,7 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 9
-    listOrder: 23120
+    listOrder: 15050
   - type: STR_LC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2187,7 +2194,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23130
+    listOrder: 15060
   - type: STR_LC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2214,7 +2221,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23140
+    listOrder: 15070
   - type: STR_LC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2239,7 +2246,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23150
+    listOrder: 15080
   - type: STR_LC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2264,7 +2271,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23160
+    listOrder: 15090
   - type: STR_LC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.08
@@ -2288,7 +2295,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23170
+    listOrder: 15100
   - type: STR_LC_BS_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.08
@@ -2312,7 +2319,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23180
+    listOrder: 15110
   - type: STR_HEAVY_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -2350,7 +2357,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 9
-    listOrder: 23200
+    listOrder: 15120
   - type: STR_HC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2377,7 +2384,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23210
+    listOrder: 15130
   - type: STR_HC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2405,7 +2412,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23240
+    listOrder: 15140
   - type: STR_HC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2430,7 +2437,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23220
+    listOrder: 15150
   - type: STR_HC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2455,7 +2462,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23230
+    listOrder: 15160
   - type: STR_HC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.1
@@ -2479,7 +2486,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23250
+    listOrder: 15170
   - type: STR_HC_AA_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.1
@@ -2504,7 +2511,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23260
+    listOrder: 15180
   - type: STR_AUTO_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -2543,7 +2550,7 @@ items:
     invWidth: 2
     invHeight: 3
     attraction: 8
-    listOrder: 23300
+    listOrder: 15190
   - type: STR_AC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2570,7 +2577,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 8
-    listOrder: 23310
+    listOrder: 15200
   - type: STR_AC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2596,7 +2603,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23340
+    listOrder: 15210
   - type: STR_AC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2621,7 +2628,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 8
-    listOrder: 23320
+    listOrder: 15220
   - type: STR_AC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -2646,7 +2653,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 8
-    listOrder: 23330
+    listOrder: 15230
   - type: STR_AC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.1
@@ -2670,7 +2677,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 8
-    listOrder: 23350
+    listOrder: 15240
   - type: STR_AC_AA_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
     size: 0.1
@@ -2694,7 +2701,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
-    listOrder: 23360
+    listOrder: 15250
   - type: STR_MINIGUN
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
     requiresBuy:
@@ -2727,7 +2734,8 @@ items:
     sprayWaypoints: 2
     kneelBonus: 200
     attraction: 26
-    listOrder: 30780
+    listOrder: 15260
+    landOnly: true
   - type: STR_MINIGUN_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     requiresBuy:
@@ -2754,7 +2762,8 @@ items:
     bulletSpeed: 30
     explosionSpeed: 5
     attraction: 15
-    listOrder: 30790
+    listOrder: 15270
+    landOnly: true
   - type: STR_MINIGUN_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     size: 0.3
@@ -2778,7 +2787,8 @@ items:
     bulletSpeed: 30
     explosionSpeed: 5
     attraction: 15
-    listOrder: 30800
+    listOrder: 15280
+    landOnly: true
 #launchers
   - type: STR_SINGLE_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]
@@ -2816,7 +2826,7 @@ items:
     invHeight: 3
     armor: 16
     attraction: 12
-    listOrder: 33840
+    listOrder: 19000
   - type: STR_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE]
     requiresBuy:
@@ -2851,7 +2861,7 @@ items:
     invHeight: 3
     armor: 32
     attraction: 12
-    listOrder: 33970
+    listOrder: 19010
   - type: STR_SMALL_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
     requiresBuy:
@@ -2876,7 +2886,7 @@ items:
     invHeight: 3
     armor: 28
     attraction: 8
-    listOrder: 33980
+    listOrder: 19020
   - type: STR_LARGE_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
     requiresBuy:
@@ -2902,7 +2912,7 @@ items:
     invHeight: 3
     armor: 28
     attraction: 8
-    listOrder: 33990
+    listOrder: 19030
   - type: STR_INCENDIARY_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE]
     requiresBuy:
@@ -2927,7 +2937,8 @@ items:
     invHeight: 3
     armor: 28
     attraction: 8
-    listOrder: 34000
+    listOrder: 19040
+    landOnly: true
 #grenades and chargers
   - type: STR_LIQUID_FLAME
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
@@ -2964,7 +2975,7 @@ items:
     experienceTrainingMode: 8
     armor: 20
     attraction: 6
-    listOrder: 38400
+    listOrder: 21000
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
@@ -2990,7 +3001,7 @@ items:
     isExplodingInHands: true
     battleType: 4
     blastRadius: 5
-    listOrder: 38000
+    listOrder: 21010
   - type: STR_SMOKE_GRENADE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
     requiresBuy:
@@ -3016,7 +3027,7 @@ items:
     isExplodingInHands: true
     battleType: 4
     blastRadius: 5
-    listOrder: 38700
+    listOrder: 21020
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
@@ -3045,7 +3056,7 @@ items:
     blastRadius: 5
     armor: 30
     attraction: 6
-    listOrder: 38950
+    listOrder: 21030
 
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
@@ -3087,16 +3098,10 @@ items:
     fuseType: -2
     recoveryPoints: 2
     #experienceTrainingMode: 7
-    listOrder: 38600
+    listOrder: 21040
     tags:
       FTAG_DAZE_VALUE: 100
       FTAG_DAZE_TIME: 1
-
-
-
-  #   tags:
-  #     FTAG_DAZE_VALUE: 100
-  #     FTAG_DAZE_TIME: 1
   - type: STR_EXPLOSIVE_CHARGE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EXPLOSIVE_CHARGES]
     requiresBuy:
@@ -3127,7 +3132,7 @@ items:
     invWidth: 1
     invHeight: 1
     attraction: 6
-    listOrder: 38900
+    listOrder: 21050
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -3151,7 +3156,7 @@ items:
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
-    listOrder: 48125
+    listOrder: 23000
   - type: STR_PAINKILLER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     landOnly: true
@@ -3173,7 +3178,7 @@ items:
       morale: -5
     invWidth: 1
     invHeight: 1
-    listOrder: 48050
+    listOrder: 23010
   - type: STR_STIMS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     landOnly: true
@@ -3195,11 +3200,11 @@ items:
     tuUse: 22
     invWidth: 1
     invHeight: 1
-    listOrder: 48000
+    listOrder: 23020
   - type: STR_MEDI_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     requiresBuy:
-        - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.4
     costBuy: 5000
     costSell: 4100
@@ -3225,11 +3230,11 @@ items:
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
-    listOrder: 48150
+    listOrder: 23030
   - type: STR_STIMS_INJECTOR
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
-        - STR_XCOM_EQUIPMENT_ACQUISITION
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     landOnly: true
     size: 0.1
     costBuy: 1600
@@ -3249,7 +3254,7 @@ items:
     tuUse: 14
     invWidth: 1
     invHeight: 2
-    listOrder: 48160
+    listOrder: 23040
   - type: STR_PERSONAL_AID_KIT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     requiresBuy:
@@ -3278,7 +3283,7 @@ items:
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
-    listOrder: 48160
+    listOrder: 23050
   - type: STR_TRAUMA_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     requiresBuy:
@@ -3308,7 +3313,7 @@ items:
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
-    listOrder: 48160
+    listOrder: 23060
 #utilities
   - type: STR_FLASHLIGHT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
@@ -3325,7 +3330,8 @@ items:
     invHeight: 2
     armor: 8
     coneSize: 1
-    listOrder: 48160
+    listOrder: 25000
+    landOnly: true
   - type: STR_ELECTRO_FLARE
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
@@ -3338,7 +3344,8 @@ items:
     battleType: 10
     armor: 8
     # coneSize: 5
-    listOrder: 48160
+    listOrder: 25010
+    landOnly: true
   - type: STR_COMBAT_SHIELD
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_SHIELDS]
     requiresBuy:
@@ -3374,10 +3381,10 @@ items:
     hidePower: true
     invWidth: 2
     invHeight: 3
-    supportedInventorySections: [STR_LEFT_HAND]
+    supportedInventorySections: [ STR_LEFT_HAND ]
     clipSize: 100
     armor: 40
-    listOrder: 48160
+    listOrder: 25020
   - type: STR_FIRE_EXTINGUISHER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.2
@@ -3439,7 +3446,8 @@ items:
     experienceTrainingMode: 21
     #Gun Butt segment end
     attraction: 15
-    listOrder: 140950
+    listOrder: 25030
+    landOnly: true
 
 #built-in weapons
   - type: STR_UNARMED
@@ -3556,7 +3564,7 @@ items:
     zombieUnit: STR_ZOMBIE_STERILE_TERRORIST
     flatRate: true
     tags:
-        FTAG_SELFKILL_WEAPON: 1
+      FTAG_SELFKILL_WEAPON: 1
   - type: STR_SEEKER_DRONE_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
@@ -3586,7 +3594,7 @@ items:
     weight: 0
     bigSprite: 364
     floorSprite: 31
-    handSprite: 104 
+    handSprite: 104
     meleeSound: 48
     meleeHitSound: 81
     clipSize: -1
@@ -3609,7 +3617,7 @@ items:
     weight: 0
     bigSprite: 412
     floorSprite: 31
-    handSprite: 104 
+    handSprite: 104
     meleeSound: 48
     meleeHitSound: 81
     clipSize: -1
@@ -3640,7 +3648,7 @@ items:
     damageType: 7
     damageAlter:
       ToTile: 0.2
-    meleeSound: [98, 99, 100]
+    meleeSound: [ 98, 99, 100 ]
     meleeHitSound: 81
     accuracyMelee: 100
     battleType: 3
@@ -3704,7 +3712,7 @@ items:
     battleType: 2
     invWidth: 1
     invHeight: 1
-    listOrder: 58860
+    listOrder: 30000
   - type: STR_FLOPPY_SCIENTISTS_LOG
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -3719,7 +3727,7 @@ items:
     invWidth: 1
     invHeight: 1
     recoveryPoints: 150
-    listOrder: 58860
+    listOrder: 30010
   - type: STR_FLOPPY_RESISTANCE
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -3734,7 +3742,7 @@ items:
     invWidth: 1
     invHeight: 1
     recoveryPoints: 150
-    listOrder: 58860
+    listOrder: 30020
   - type: STR_MIB_DATA_CONTAINER
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -3747,7 +3755,7 @@ items:
     invWidth: 1
     invHeight: 2
     recoveryPoints: 200
-    listOrder: 58860
+    listOrder: 30030
 
 #geoscape-only
   - type: STR_CANNON
@@ -3756,7 +3764,7 @@ items:
     costBuy: 30000
     costSell: 22500
     transferTime: 48
-    listOrder: 8900
+    listOrder: 50000
   - type: STR_CANNON_ROUNDS_X50
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
     size: 0.1
@@ -3764,14 +3772,14 @@ items:
     costSell: 1012
     transferTime: 48
     clipSize: 50
-    listOrder: 8910
+    listOrder: 50010
   - type: STR_STINGRAY_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
     size: 0.6
     costBuy: 32000
     costSell: 24000
     transferTime: 48
-    listOrder: 7750
+    listOrder: 50020
   - type: STR_STINGRAY_MISSILES
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
     size: 0.4
@@ -3779,17 +3787,17 @@ items:
     costSell: 4800
     transferTime: 48
     clipSize: 1
-    listOrder: 7760
+    listOrder: 50030
   - type: STR_LABORATORY_EQUIPMENT
-    categories: [STR_HUMANS, STR_COMPONENTS]
+    categories: [ STR_HUMANS, STR_COMPONENTS ]
     costBuy: 200000
     costSell: 180000
-    listOrder: 146030
+    listOrder: 70000
   - type: STR_BIOLOGY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     costBuy: 350000
     costSell: 300000
-    listOrder: 146030
+    listOrder: 70010
   - type: STR_RADAR_SYSTEM #FIXME - some content here pls)
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
@@ -3811,22 +3819,22 @@ items:
     liveAlien: true
     costDispose: -5000
     costSell: -5000 #80000
-    listOrder: 119960
+    listOrder: 100000
   - type: STR_SECTOID_NAVIGATOR
     refNode: *STR_SECTOID
-    listOrder: 119990
+    listOrder: 100010
   - type: STR_SECTOID_MEDIC
     refNode: *STR_SECTOID
-    listOrder: 119980
+    listOrder: 100020
   - type: STR_SECTOID_ENGINEER
     refNode: *STR_SECTOID
-    listOrder: 119970
+    listOrder: 100030
   - type: STR_SECTOID_LEADER
     refNode: *STR_SECTOID
-    listOrder: 120000
+    listOrder: 100040
   - type: STR_SECTOID_COMMANDER
     refNode: *STR_SECTOID
-    listOrder: 120010
+    listOrder: 100050
   - type: STR_SECTOID_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -3840,7 +3848,7 @@ items:
     recoveryPoints: 20
     battleType: 11
     armor: 26
-    listOrder: 63000
+    listOrder: 100060
   - type: STR_SECTOID_COMMANDER_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -3852,6 +3860,7 @@ items:
     recoveryPoints: 25
     battleType: 11
     armor: 26
+    listOrder: 100070
 #MIBs
   - type: STR_XCOM_EX_COMMANDER_CORPSE
     categories: [STR_CORPSES]
@@ -3867,7 +3876,7 @@ items:
     recoveryPoints: 2
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100080
   - type: STR_XCOM_EX_COMMANDER
     categories: [STR_HUMANS]
     size: 0.0
@@ -3875,7 +3884,7 @@ items:
     liveAlien: true
     prisonType: 1
     costSell: 0
-    listOrder: 146000
+    listOrder: 100090
   - type: STR_MIB_AGENT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -3890,7 +3899,7 @@ items:
     recoveryPoints: 2
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100100
   - type: STR_MIB_AGENT
     categories: [STR_HUMANS]
     size: 0.0
@@ -3898,7 +3907,7 @@ items:
     liveAlien: true
     prisonType: 1
     costSell: 0
-    listOrder: 146000
+    listOrder: 100110
   - type: STR_MIB_ARMORED_AGENT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -3913,7 +3922,7 @@ items:
     recoveryPoints: 2
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100120
   - type: STR_MIB_ARMORED_AGENT
     categories: [STR_HUMANS]
     size: 0.0
@@ -3921,7 +3930,7 @@ items:
     liveAlien: true
     prisonType: 1
     costSell: 0
-    listOrder: 146000
+    listOrder: 100130
   - type: STR_MIB_SPECOPS_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -3936,7 +3945,7 @@ items:
     recoveryPoints: 3
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100140
   - type: STR_MIB_SPECOPS
     categories: [STR_HUMANS]
     size: 0.0
@@ -3944,13 +3953,13 @@ items:
     liveAlien: true
     prisonType: 1
     costSell: 0
-    listOrder: 146000
+    listOrder: 100150
   - type: STR_SEEKER_DRONE_TERRORIST
     categories: [STR_ALIEN_TECH, STR_ROBOTS]
     size: 0.0
     costSell: 75000
     recover: true
-    listOrder: 145800
+    listOrder: 100160
   - type: STR_SEEKER_DRONE_CORPSE
     categories: [STR_ALIEN_TECH, STR_WRECKS]
     size: 0.2
@@ -3965,7 +3974,7 @@ items:
     recover: true
     power: 30
     armor: 12
-    listOrder: 84500
+    listOrder: 100170
   - type: STR_MIB_ENFORCER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -3980,14 +3989,14 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100180
   - type: STR_MIB_ENFORCER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100190
   - type: STR_MIB_BUTCHER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4002,14 +4011,14 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100200
   - type: STR_MIB_BUTCHER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100210
   - type: STR_MIB_SCIENTIST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4024,14 +4033,14 @@ items:
     recoveryPoints: 3
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100220
   - type: STR_MIB_SCIENTIST
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146000
+    listOrder: 100230
   #MiB\Procured
   - type: STR_MIB_OFFICE_ENGINEER_CORPSE
     categories: [STR_CORPSES]
@@ -4047,14 +4056,14 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100240
   - type: STR_MIB_OFFICE_ENGINEER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100250
   - type: STR_MIB_OFFICE_WORKER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4069,14 +4078,14 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100260
   - type: STR_MIB_OFFICE_WORKER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100270
   - type: STR_MIB_OFFICE_MANAGER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4091,14 +4100,14 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100280
   - type: STR_MIB_OFFICE_MANAGER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100290
   - type: STR_MIB_OFFICE_SECURITY_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4113,14 +4122,14 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100300
   - type: STR_MIB_OFFICE_SECURITY
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100310
   - type: STR_MIB_VIP_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4135,21 +4144,21 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100320
   - type: MIB_BANKER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100330
   - type: STR_MIB_VIP #extra VIP for future use
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100340
   - type: STR_MIB_VIP_BODYGUARD_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4164,14 +4173,14 @@ items:
     armor: 30
     recover: true
     recoverCorpse: false
-    listOrder: 67800
+    listOrder: 100350
   - type: STR_MIB_VIP_BODYGUARD
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
-    listOrder: 146030
+    listOrder: 100360
   - type: STR_SPAWN_MIB_AGENT
     spawnUnit: STR_MIB_AGENT_SPAWN
     spawnUnitFaction: 1
@@ -4180,6 +4189,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100370
 
 #Zombies
   - type: STR_FACEHUGGER
@@ -4189,7 +4199,7 @@ items:
     liveAlien: true
     prisonType: 2
     costSell: 20000
-    listOrder: 115400
+    listOrder: 100380
   - type: STR_FACEHUGGER_CORPSE
     categories: [STR_CORPSES]
     size: 0.1
@@ -4202,7 +4212,7 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 20
-    listOrder: 62300
+    listOrder: 100390
   - type: STR_ZOMBIE_STERILE_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -4210,7 +4220,7 @@ items:
     liveAlien: true
     prisonType: 1
     costSell: 20000
-    listOrder: 115400
+    listOrder: 100400
   - type: STR_ZOMBIE_STERILE_CORPSE
     categories: [STR_CORPSES]
     size: 0.2
@@ -4223,7 +4233,7 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 20
-    listOrder: 62300
+    listOrder: 100410
   - type: STR_ZOMBIE_GRUBAS_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -4231,7 +4241,7 @@ items:
     liveAlien: true
     prisonType: 1
     costSell: 30000
-    listOrder: 115410
+    listOrder: 100420
   - type: STR_ZOMBIE_GRUBAS_CORPSE
     categories: [STR_CORPSES]
     size: 0.2
@@ -4244,7 +4254,7 @@ items:
     recoveryPoints: 10
     battleType: 11
     armor: 20
-    listOrder: 62310
+    listOrder: 100430
 #Monsters
   - type: STR_JABBER
     categories: [STR_BEASTS]
@@ -4253,7 +4263,7 @@ items:
     liveAlien: true
     prisonType: 2
     costSell: 20000
-    listOrder: 115400
+    listOrder: 100440
   - type: STR_JABBER_CORPSE
     categories: [STR_CORPSES]
     size: 0.1
@@ -4266,7 +4276,7 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 20
-    listOrder: 62300
+    listOrder: 100450
   - type: STR_CHUPACABRA
     categories: [STR_BEASTS]
     size: 0.0
@@ -4274,7 +4284,7 @@ items:
     liveAlien: true
     prisonType: 2
     costSell: 20000
-    listOrder: 115400
+    listOrder: 100460
   - type: STR_CHUPACABRA_CORPSE
     categories: [STR_CORPSES]
     size: 0.1
@@ -4287,7 +4297,7 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 20
-    listOrder: 62300
+    listOrder: 100470
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
@@ -4297,6 +4307,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100480
   - type: STR_RESISTANCE_AGENT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4311,7 +4322,7 @@ items:
     armor: 30
     recoveryPoints: -200
     recover: true
-    listOrder: 67800
+    listOrder: 100490
   - type: STR_SPAWN_RESISTANCE_AGENT_VIP
     spawnUnit: STR_RESISTANCE_AGENT_VIP
     spawnUnitFaction: 0
@@ -4320,6 +4331,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100500
   - type: STR_SPAWN_RESISTANCE_AGENT_PRISONER
     spawnUnit: STR_RESISTANCE_AGENT_PRISONER
     spawnUnitFaction: 0
@@ -4328,6 +4340,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100510
   - type: STR_SPAWN_RESISTANCE_SOLDIER
     spawnUnit: STR_RESISTANCE_SOLDIER
     spawnUnitFaction: 0
@@ -4336,6 +4349,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100520
   - type: STR_RESISTANCE_SOLDIER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4350,7 +4364,7 @@ items:
     armor: 30
     recoveryPoints: -200
     recover: true
-    listOrder: 67800
+    listOrder: 100530
   - type: STR_SPAWN_RESISTANCE_SCIENTIST
     spawnUnit: STR_RESISTANCE_SCIENTIST
     spawnUnitFaction: 0
@@ -4359,6 +4373,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100540
   - type: STR_SPAWN_RESISTANCE_SCIENTIST_VIP
     spawnUnit: STR_RESISTANCE_SCIENTIST_VIP
     spawnUnitFaction: 0
@@ -4367,6 +4382,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100550
   - type: STR_RESISTANCE_SCIENTIST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4381,7 +4397,7 @@ items:
     armor: 30
     recoveryPoints: -200
     recover: true
-    listOrder: 67800
+    listOrder: 100560
   - type: STR_SPAWN_RESISTANCE_RADIO
     spawnUnit: STR_RESISTANCE_RADIO
     spawnUnitFaction: -1
@@ -4390,6 +4406,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100570
   - type: STR_RESISTANCE_RADIO_REMAINS
     categories: [STR_WRECKS]
     name: STR_CORPSE
@@ -4400,7 +4417,7 @@ items:
     battleType: 11
     armor: 30
     recover: false
-    listOrder: 67800
+    listOrder: 100580
   - type: STR_SPAWN_RESISTANCE_COMPUTER
     spawnUnit: STR_RESISTANCE_COMPUTER
     spawnUnitFaction: -1
@@ -4409,6 +4426,7 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100590
   - type: STR_RESISTANCE_COMPUTER_REMAINS
     categories: [STR_WRECKS]
     name: STR_CORPSE
@@ -4419,7 +4437,7 @@ items:
     battleType: 11
     armor: 30
     recover: false
-    listOrder: 67800    
+    listOrder: 100600
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
@@ -4437,6 +4455,7 @@ items:
     recoveryPoints: -20
     recover: true
     recoverCorpse: false
+    listOrder: 100610
   - type: STR_FEMALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -4452,7 +4471,7 @@ items:
     recoveryPoints: -20
     recover: true
     recoverCorpse: false
-    listOrder: 72101
+    listOrder: 100620
   - type: STR_CIVILIAN_HUNTER_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -4468,7 +4487,7 @@ items:
     recoveryPoints: -20
     recover: true
     recoverCorpse: false
-    listOrder: 72101
+    listOrder: 100630
   - type: STR_MALE_CITIZEN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -4485,6 +4504,7 @@ items:
     recoveryPoints: -20
     recover: true
     recoverCorpse: false
+    listOrder: 100640
   - type: STR_MALE_POLICE_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -4500,6 +4520,7 @@ items:
     recoveryPoints: -25
     recover: true
     recoverCorpse: false
+    listOrder: 100650
   - type: STR_DOGE_CORPSE
     weight: 25
     bigSprite: 118
@@ -4510,6 +4531,7 @@ items:
     recover: false
     recoveryPoints: -5
     armor: 35
+    listOrder: 100660
 #xcom
   - type: STR_CORPSE_LEATHER_COAT
     categories: [STR_CORPSES]
@@ -4523,16 +4545,15 @@ items:
     battleType: 11
     armor: 30
     recover: false
+    listOrder: 100670
   - type: STR_LEATHER_COAT
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     size: 0.9
 
-
-
   - type: STR_HACKING_TOOL
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     requiresBuy:
-        - STR_TODOIUM
+      - STR_TODOIUM
     size: 0.4
     weight: 1
     landOnly: true
@@ -4573,8 +4594,6 @@ extended:
       FTAG_EXPANDING: int
       FTAG_SAWED_OFF: int # % of resulting power (85 means only 85% power would be provided)
       BPL_AIMED_1_5X_POWER: int
-
-
   # - type: STR_RIFLE #battle rifle
   #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
   #   requiresBuy:
