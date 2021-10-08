@@ -66,14 +66,14 @@ items:
     invHeight: 3
     armor: 75
     attraction: 15
-    listOrder: 17707
+    listOrder: 1000
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
     size: 0.1
     costBuy: 300
     costSell: 240
     weight: 4
-    landOnly: true
+    landOnly: false
     bigSprite: 318
     floorSprite: 318
     handSprite: 280
@@ -105,10 +105,11 @@ items:
     armor: 60
     experienceTrainingMode: 13
     attraction: 7
-    listOrder: 17850
+    listOrder: 1010
   - type: STR_COMBAT_KNIFE
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE]
     requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     landOnly: false
     costBuy: 260
