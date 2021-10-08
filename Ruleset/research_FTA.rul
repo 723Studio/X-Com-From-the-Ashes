@@ -932,6 +932,11 @@ research:
     points: 1
     needItem: true
     listOrder: 7410
+  - name: STR_STUN_ROD
+    cost: 16
+    points: 4
+    needItem: true
+    listOrder: 7410
   - name: STR_THROWING_KNIFE
     cost: 6
     points: 1

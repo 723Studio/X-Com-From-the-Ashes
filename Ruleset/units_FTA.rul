@@ -471,7 +471,7 @@ units:
   - type: STR_MIB_BUTCHER
     race: STR_MIB
     stats:
-      tu: 58
+      tu: 60
       stamina: 110
       health: 85
       bravery: 120
@@ -479,7 +479,7 @@ units:
       firing: 40
       throwing: 55
       strength: 70
-      melee: 80
+      melee: 85
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -575,16 +575,16 @@ units:
     energyRecovery: 25
   - type: STR_MIB_ENFORCER
     race: STR_MIB
-    rank: STR_LIVE_NAVIGATOR
+    rank: STR_LIVE_ENGINEER
     stats:
-      tu: 60
+      tu: 65
       stamina: 90
-      health: 45
+      health: 49
       bravery: 90
-      reactions: 49
-      firing: 58
+      reactions: 53
+      firing: 62
       throwing: 64
-      strength: 45
+      strength: 55
       melee: 35
       psiStrength: 45
       psiSkill: 0

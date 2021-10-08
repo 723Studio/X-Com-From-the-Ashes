@@ -362,16 +362,18 @@ armors:
       - 1.0 #13 - Warp
       - 1.0 #14 - Pressure
       - 1.0 #15 - Bio
+    specialWeapon: STR_UNARMED_TRAINED
+    loftempsSet: [ 3 ]
   - type: STR_MIB_ENFORCER_ARMOR
     spriteSheet: MIB_ENFORCER.PCK
     spriteInv: inventory_MIB_ENFORCER
     corpseBattle:
       - STR_MIB_ENFORCER_CORPSE
     visibilityAtDark: 10
-    frontArmor: 35
-    sideArmor: 25
-    rearArmor: 20
-    underArmor: 10
+    frontArmor: 45
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 25
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
