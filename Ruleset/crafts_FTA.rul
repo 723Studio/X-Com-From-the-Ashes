@@ -88,8 +88,9 @@ crafts:
     vehicles: 0
     pilots: 1
     maxItems: 999
-    costBuy: 100000
+    costBuy: 130000
     costRent: 6000
+    costSell: 100000
     refuelRate: 50
     repairRate: 4
     transferTime: 72

@@ -430,7 +430,7 @@ en-US:
   STR_NO_SUPPLY_THIRD_WARNING_EVENT: "Starvation!"
   STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: "Sources of resources are depleted, people starving, and forces refuse to risk their lives, famine has come. It's time to take control, because this is the last warning.{NEWLINE}Loyalty score> {ALT}-900"
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
-  STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: "We constantly receive information about encounters with strange creatures. X-COM has previously investigated such cases, but we have been unable to achieve meaningful results. It is likely that if we continue our research, we will be able to draw a more holistic picture of what is happening with these mysterious monsters. However, given our current state of affairs, perhaps it makes sense to focus on the survival of the project instead of wasting energy on unconfirmed rumors. This is up for you to decide."
+  STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: "We constantly receive information about encounters with strange creatures. X-COM has previously investigated such cases, but we have been unable to achieve meaningful results. It is likely that if we continue our research, we will be able to draw a more holistic picture of what is happening with these mysterious monsters. However, given our current state of affairs, perhaps it makes sense to focus on the survival of the project instead of wasting energy on unconfirmed rumors."
   STR_CONTINUE_INVESTIGATION: "Continue investigation *"
   STR_CONTINUE_INVESTIGATION_DESCRIPTION: "With this choice, X-COM will continue to explore the activity of mysterious monsters."
   STR_WE_DONT_NEED_THAT: "We don't need that"
@@ -846,6 +846,10 @@ en-US:
   STR_FLOPPY_RESISTANCE: "Resistance Floppy Drive"
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: #TODO
+  STR_CRATED_HELICOPTER: "Crated Helicopter"
+  STR_LABORATORY_EQUIPMENT: "Lab Equipment"
+  STR_BIOLOGY_EQUIPMENT: "Biolab Equipment"
+  STR_RADAR_SYSTEM: "Radar Systems"
 
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
@@ -862,6 +866,7 @@ en-US:
 
 #manufacture
   STR_FAKE_AGENT_ID: "Special Agent Fake IDs"
+  STR_UNCRATE_HELICOPTER: "Unpack Helicopter"
 
 #ufopedia
   STR_TACTICAL_ANALYSIS: "TACTICAL ANALYSIS"

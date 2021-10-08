@@ -10,6 +10,14 @@ manufacture:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
 
+  - name: STR_HELICOPTER
+    category: STR_CRAFT
+    space: 5
+    time: 450
+    cost: 2000
+    requiredItems:
+      STR_CRATED_HELICOPTER: 1
+    listOrder: 220030
 
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT

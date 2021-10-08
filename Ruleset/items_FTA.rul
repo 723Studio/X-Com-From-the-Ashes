@@ -3789,6 +3789,13 @@ items:
     transferTime: 48
     clipSize: 1
     listOrder: 50030
+  - type: STR_CRATED_HELICOPTER
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
+    size: 30
+    costBuy: 130000
+    costSell: 100000
+    transferTime: 96
+    listOrder: 60000
   - type: STR_LABORATORY_EQUIPMENT
     categories: [ STR_HUMANS, STR_COMPONENTS ]
     costBuy: 200000

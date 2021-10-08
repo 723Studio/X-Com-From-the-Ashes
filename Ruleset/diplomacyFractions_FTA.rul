@@ -17,7 +17,6 @@ diplomacyFactions:
       STR_RESISTANCE_AGENT: 12
       #STR_SOLDIER: 10
       #STR_SCIENTIST: 12
-      #STR_SKYRANGER: 1
     genMissionFreq: 60 #60% chance to run the script
     helpTreatyMissions:
       - heavenZombieFarm
@@ -174,9 +173,9 @@ diplomacyFactions:
       STR_ELECTRO_FLARE: 35
       STR_COMBAT_SHIELD: 430
       STR_FIRE_EXTINGUISHER: 9
-    # staffWeights: - not used since 0.2.2
-    #   STR_SCIENTIST: 50
-    #   STR_RESISTANCE_AGENT: 4000  
+      #other 
+      STR_CRATED_HELICOPTER: 3720
+
 
 
 
