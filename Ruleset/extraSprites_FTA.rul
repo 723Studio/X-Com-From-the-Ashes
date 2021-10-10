@@ -626,6 +626,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/MIB_Chip_CPAL.png
+  - type: WOW_SIGNAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/WowSignal.png
 
 #backgrounds
   - type: STORES_STATE.SCR

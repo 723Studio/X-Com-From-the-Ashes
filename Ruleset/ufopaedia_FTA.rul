@@ -144,6 +144,13 @@ ufopaedia:
       - STR_MILITARY_STATUS_REPORT
     text: STR_MILITARY_STATUS_REPORT_UFOPEDIA
     listOrder: 60
+  - id: STR_SOLDIER_SPECS
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_SOLDIER_SPECS
+    text: STR_SOLDIER_SPECS_UFOPEDIA
+    listOrder: 60
   - id: STR_VEHICLES_STATUS_REPORT
     type_id: 7
     image_id: STORE_CHIEF_CPAL.SPK
@@ -231,7 +238,7 @@ ufopaedia:
     requires:
       - STR_XCOM_FILES_2
     text: STR_XCOM_FILES_2_UFOPEDIA
-    listOrder: 160
+    listOrder: 151
   - id: STR_XCOM_FILES_3
     type_id: 8
     text_width: 158
@@ -239,6 +246,15 @@ ufopaedia:
     requires:
       - STR_XCOM_FILES_3
     text: STR_XCOM_FILES_3_UFOPEDIA
+    listOrder: 152
+  - id: STR_RECORD_WOW_SIGNAL
+    type_id: 7
+    image_id: WOW_SIGNAL
+    text_width: 175
+    section: STR_XCOM_REPORTS_UC
+    text: STR_RECORD_WOW_SIGNAL_UFOPEDIA
+    requires:
+      - STR_RECORD_WOW_SIGNAL
     listOrder: 170
   - id: STR_PRISONER_INTERROGATIONS
     type_id: 7
@@ -1530,13 +1546,13 @@ ufopaedia:
       - STR_EMPTY_MIB_EARLY_LORE9
     text: STR_EMPTY_MIB_EARLY_LORE9_UFOPEDIA
     listOrder: 45240
-  - id: STR_EMPTY_MIB_EARLY_LORE10
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_EMPTY_MIB_EARLY_LORE10
-    text: STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA
-    listOrder: 45250
+  # - id: STR_EMPTY_MIB_EARLY_LORE10
+  #   type_id: 8
+  #   section: STR_ALIEN_RESEARCH_UC
+  #   requires:
+  #     - STR_EMPTY_MIB_EARLY_LORE10
+  #   text: STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA
+  #   listOrder: 45250
   - id: STR_FRESH_MIB_AGENT
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC

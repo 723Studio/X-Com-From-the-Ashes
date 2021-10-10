@@ -40,6 +40,11 @@ research:
     hidden: true
   - name: STR_MILITARY_STATUS_REPORT
     hidden: true
+    unlocks:
+      - STR_SOLDIER_SPECS
+  - name: STR_SOLDIER_SPECS
+    dependencies:
+      - STR_MILITARY_STATUS_REPORT
   - name: STR_ENGINEER_STATUS_REPORT
     hidden: true
   - name: STR_QUARTERMASTER_STATUS_REPORT
@@ -60,6 +65,8 @@ research:
   - name: STR_XCOM_FILES_2
     hidden: true
   - name: STR_XCOM_FILES_3
+    hidden: true
+  - name: STR_RECORD_WOW_SIGNAL
     hidden: true
   - name: STR_RESISTANCE_FIRST_HELP
     hidden: true
@@ -101,7 +108,8 @@ research:
     getOneFree:
       - STR_XCOM_FILES_1
       - STR_XCOM_FILES_2
-      - STR_XCOM_FILES_3
+      #- STR_XCOM_FILES_3 #TODO
+      - STR_RECORD_WOW_SIGNAL
     listOrder: 30
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
@@ -482,8 +490,8 @@ research:
     hidden: true
   - name: STR_EMPTY_MIB_EARLY_LORE9
     hidden: true
-  - name: STR_EMPTY_MIB_EARLY_LORE10
-    hidden: true
+  # - name: STR_EMPTY_MIB_EARLY_LORE10
+  #   hidden: true
   - name: STR_STEAL_OSPREY_PREREQ
     hidden: true
 
@@ -615,7 +623,6 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
-        - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 6010
   - name: STR_MIB_SPECOPS
     requiresBaseFunc: [ INTLAB ]
@@ -644,7 +651,6 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
-        - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 6020
   - name: STR_MIB_BUTCHER
     requiresBaseFunc: [ INTLAB ]
@@ -673,7 +679,6 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
-        - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 6030
   - name: STR_MIB_ENFORCER
     requiresBaseFunc: [ INTLAB ]
@@ -702,7 +707,6 @@ research:
     #     - STR_EMPTY_MIB_EARLY_LORE7
     #     - STR_EMPTY_MIB_EARLY_LORE8
     #     - STR_EMPTY_MIB_EARLY_LORE9
-    #     - STR_EMPTY_MIB_EARLY_LORE10
     listOrder: 6040
   - name: STR_SEEKER_DRONE_TERRORIST
     requiresBaseFunc: [ HQ ]
