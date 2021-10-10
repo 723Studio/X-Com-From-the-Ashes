@@ -28,15 +28,15 @@ gameOver:
 timePersonnel: 96
 costEngineer: 5000
 costHireEngineer: 70000
-costScientist: 8000
+costScientist: 7000
 costHireScientist: 100000
 displayCustomCategories: 1
 
 #Interception
 drawEnemyRadarCircles: 0
 showDogfightDistanceInKm: true
-crewEmergencyEvacuationSurvivalChance: 90
-pilotsEmergencyEvacuationSurvivalChance: 95
+crewEmergencyEvacuationSurvivalChance: 70
+pilotsEmergencyEvacuationSurvivalChance: 65
 
 #pedia
 pediaReplaceCraftFuelWithRangeType: 2
@@ -74,7 +74,7 @@ tooMuchSmokeThreshold: 13
 giveScoreAlsoForResearchedArtifacts: true
 statisticalBulletConservation: true
 stunningImprovesMorale: true
-tuRecoveryWakeUpNewTurn: 50
+tuRecoveryWakeUpNewTurn: 70
 minReactionAccuracy: 30
 turnAIUseGrenade: 2 #Consider if changing back to 1
 turnAIUseBlaster: 2 

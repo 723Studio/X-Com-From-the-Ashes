@@ -79,6 +79,8 @@ startingBase:
     STR_CANNON: 1
     STR_CANNON_ROUNDS_X50: 12
     STR_BOW_ARROW_STUN: 15
+    STR_ELECTRO_FLARE: 10
+    STR_FLASHLIGHT: 5
   crafts:
     - type: STR_DRAGONFLY
       id: 1

@@ -1566,13 +1566,13 @@ items:
     handSprite: 328
     hitSound: 62
     hitAnimation: 26
-    power: 30
+    power: 45
     damageBonus:
       firing: 0.25
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 0.8
-      ToArmorPre: 0.01
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.05
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -1595,7 +1595,7 @@ items:
       firing: 0.25
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 0.75
+      ArmorEffectiveness: 0.65
       ToArmorPre: 0.01
     damageType: 1
     clipSize: 10
@@ -1625,8 +1625,8 @@ items:
       flatHundred: 0.5
     accuracySnap: 130
     accuracyAuto: 105
-    tuSnap: 21
-    tuAuto: 23
+    tuSnap: 27
+    tuAuto: 35
     snapRange: 6
     autoRange: 5
     dropoff: 11

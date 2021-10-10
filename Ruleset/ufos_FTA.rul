@@ -6,10 +6,10 @@ ufos:
     size: STR_VERY_SMALL
     sprite: 0
     damageMax: 50
-    avoidBonus: 20
-    shieldCapacity: 20
+    avoidBonus: 25
+    shieldCapacity: 40
     shieldRecharge: 45 #35 % to get 1 SP per sec
-    shieldRechargeInGeoscape: 200
+    shieldRechargeInGeoscape: 5
     shieldBleedThrough: 100
     speedMax: 2140
     accel: 12
@@ -18,7 +18,7 @@ ufos:
     score: 50
     reload: 50
     #hitBonus: 5
-    breakOffTime: 1200
+    breakOffTime: 1400
     unmanned: true #fight to death
     battlescapeTerrainData:
       name: UFO1A

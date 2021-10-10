@@ -69,23 +69,23 @@ eventScripts:
       STR_SUPPLIES: false
   - type: STR_MONSTER_HUNT_START #Start of monster hunt arc
     oneTimeSequentialEvents: [STR_MONSTER_HUNT_START_EVENT]
-    firstMonth: 0
+    firstMonth: 1
     lastMonth: 0
-    executionOdds: 100
+    executionOdds: 70
     minDifficulty: 0
     maxDifficulty: 4
-  - type: STR_STEAL_OSPREY #Start of monster hunt arc
+  - &STR_STEAL_OSPREY
+    type: STR_STEAL_OSPREY
     oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
     firstMonth: 1
     lastMonth: 7
-    executionOdds: 35
+    executionOdds: 40
     minDifficulty: 0
     maxDifficulty: 3
-  - type: STR_STEAL_OSPREY_SH #Start of monster hunt arc
-    oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
-    firstMonth: 1
+  - type: STR_STEAL_OSPREY_SH #extra SH copy
+    refNode: *STR_STEAL_OSPREY
     lastMonth: 6
-    executionOdds: 20
+    executionOdds: 25
     minDifficulty: 4
     maxDifficulty: 4
 
@@ -117,12 +117,12 @@ eventScripts:
       STR_BOW_ARROW: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 85
+    executionOdds: 20
     minDifficulty: 0
     maxDifficulty: 3
   - type: STR_SPORTS_BOW_TINKERING_SCRIPT_SH #extra SH copy
     refNode: *STR_SPORTS_BOW_TINKERING_SCRIPT
-    executionOdds: 30
+    executionOdds: 5
     minDifficulty: 4
     maxDifficulty: 4
 
@@ -134,12 +134,12 @@ eventScripts:
       STR_ELECTRIC_WEAPONS_PREREQ: false
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 20
+    executionOdds: 10
     minDifficulty: 0
     maxDifficulty: 3
   - type: STR_ELECTRIC_WEAPONS_SCRIPT_SH #extra SH copy
     refNode: *STR_ELECTRIC_WEAPONS_SCRIPT
-    executionOdds: 3
+    executionOdds: 2
     minDifficulty: 4
     maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER

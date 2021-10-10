@@ -86,7 +86,7 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
-    cost: 1200
+    cost: 1000
     points: 80
     dependencies:
       - STR_RND_STATUS_REPORT
@@ -100,7 +100,7 @@ research:
     listOrder: 20
   - name: STR_XCOM_LORE
     requiresBaseFunc: [ HQ ]
-    cost: 1800
+    cost: 1600
     points: 130
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
@@ -113,7 +113,7 @@ research:
     listOrder: 30
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
-    cost: 720
+    cost: 550
     points: 50
     dependencies:
       - STR_INTEL_STATUS_REPORT
@@ -134,14 +134,14 @@ research:
     listOrder: 60
   - name: STR_RESISTANCE_CONTACT
     requiresBaseFunc: [ HQ ]
-    cost: 680
+    cost: 300
     points: 40
     dependencies:
       - STR_COMMUNICATION
     listOrder: 70
   - name: STR_SUPPLIES
     requiresBaseFunc: [ HQ ]
-    cost: 800
+    cost: 450
     points: 120
     dependencies:
       - STR_QUARTERMASTER_STATUS_REPORT
@@ -150,7 +150,7 @@ research:
     listOrder: 80
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [ HQ ]
-    cost: 1120
+    cost: 700
     points: 65
     dependencies:
       - STR_SUPPLIES
@@ -193,7 +193,7 @@ research:
   - name: STR_STARTING_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_STARTING_EQUIPMENT
-    cost: 480
+    cost: 300
     points: 25
     dependencies:
       - STR_STARTING_EQUIPMENT_PREREQ
@@ -221,7 +221,7 @@ research:
   - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT
-    cost: 600
+    cost: 400
     points: 35
     dependencies:
       - STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ

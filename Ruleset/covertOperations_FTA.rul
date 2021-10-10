@@ -23,7 +23,7 @@ covertOperations:
       - STR_MIB_CHASING_SUCCESS
     soldierSlots: 3
     optionalSoldierSlots: 2
-    baseChances: 70
+    baseChances: 60
     danger: 8
     costs: 120
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
@@ -43,7 +43,7 @@ covertOperations:
       - STR_MIB_CHASING_FAIL
     soldierSlots: 3
     optionalSoldierSlots: 2
-    baseChances: 55
+    baseChances: 45
     danger: 10
     costs: 300
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
@@ -120,7 +120,7 @@ covertOperations:
     soldierSlots: 2
     optionalSoldierSlots: 2
     optionalSoldierEffect: 5
-    baseChances: 65
+    baseChances: 60
     danger: 5
     costs: 180
     successDescription: STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION
@@ -133,7 +133,7 @@ covertOperations:
     failureScore: -150
     failureReputationScore:
       STR_RESISTANCE: -100
-    trapChance: 100
+    trapChance: 70
     instantTrapDeployment:
       STR_MIB_EARLY_TRAP_ESCAPE: 100
 
@@ -159,8 +159,8 @@ covertOperations:
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_START
-    baseChances: 75
-    costs: 5
+    baseChances: 60
+    costs: 130
     soldierSlots: 2
     optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]

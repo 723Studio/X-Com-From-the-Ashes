@@ -116,7 +116,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #random additional continues
       executionChances: 30
-      conditionals: 1
+      #conditionals: 1
       packSize: 4
       randomPackSize: true
       unitSide: 1
