@@ -111,7 +111,7 @@ loyaltySettings:
   coefBattlescape: 99
   coefGeoscape: 98
   coefDogfight: 87
-  coefResearch: 50
+  coefResearch: 40
   coefAlienMission: 110
   coefUfo: 70
   coefAlienBase: 65
