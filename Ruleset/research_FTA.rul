@@ -299,8 +299,7 @@ research:
     dependencies:
       - STR_TODOIUM
     listOrder: 7410
-  - name: STR_EXPANDABLE_AMMO_PREREQ #FIXME - do i really need it?
-    hidden: true
+    
   - name: STR_EXPANDABLE_AMMO
     cost: 170
     points: 20
@@ -308,7 +307,6 @@ research:
       - STR_PISTOL_EXP_CLIP
       - STR_RIFLE_EXP_CLIP
     dependencies:
-      #- STR_EXPANDABLE_AMMO_PREREQ
       - STR_XCOM_EQUIPMENT
     listOrder: 7410
   - name: STR_PISTOL_EXP_CLIP
@@ -1177,7 +1175,7 @@ research:
 
 #crafts
   - name: STR_HELICOPTER
-    #hidden: true
+    hidden: true
     listOrder: 7460
   - name: STR_OSPREY
     hidden: true

@@ -95,6 +95,7 @@ eventScripts:
     oneTimeSequentialEvents: [STR_WORKSHOP_EVENT]
     researchTriggers:
       STR_SUPPLIES: true
+      STR_FACILITIES_BLUEPRINTS: true
       STR_WORKSHOP: false
     firstMonth: 0
     allowedProcessor: 2 #xcom
@@ -212,6 +213,25 @@ eventScripts:
     allowedProcessor: 2 #xcom
     executionOdds: 40
     minDifficulty: 0
+    maxDifficulty: 4
+  - &STR_EXPANDABLE_AMMO_SCRIPT
+    type: STR_EXPANDABLE_AMMO_SCRIPT
+    oneTimeSequentialEvents: [STR_EXPANDABLE_AMMO_EVENT]
+    researchTriggers:
+      STR_XCOM_EQUIPMENT: true
+      STR_EXPANDABLE_AMMO: false
+    itemTriggers:
+      STR_PISTOL_EXP_CLIP: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_EXPANDABLE_AMMO_SCRIPT_RIFLE #extra SH copy
+    refNode: *STR_EXPANDABLE_AMMO_SCRIPT
+    itemTriggers:
+      STR_RIFLE_EXP_CLIP: true
+    minDifficulty: 4
     maxDifficulty: 4
 
 

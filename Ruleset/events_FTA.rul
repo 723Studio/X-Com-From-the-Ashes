@@ -330,7 +330,13 @@ events:
     researchList: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES]
     timer: 30
     timerRandom: 0
-
+  - name: STR_EXPANDABLE_AMMO_EVENT
+    description: STR_EXPANDABLE_AMMO_EVENT_DESCRIPTION
+    background: BACK05.SCR
+    researchList: [STR_EXPANDABLE_AMMO]
+    timer: 30
+    timerRandom: 1440
+    interruptResearch: STR_EXPANDABLE_AMMO
 
 
   # - name: STR_SNIPPET

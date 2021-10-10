@@ -47,7 +47,7 @@ ufopaedia:
   - delete: STR_MOTION_SCANNER
   - delete: STR_MEDI_KIT
   - delete: STR_PSI_AMP
-  - delete: STR_STUN_ROD_2
+  - delete: STR_STUN_ROD
   - delete: STR_ELECTRO_FLARE
   - delete: STR_HEAVY_PLASMA
   - delete: STR_HEAVY_PLASMA_CLIP
@@ -313,6 +313,14 @@ ufopaedia:
     text: STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA
     listOrder: 260
 
+
+  - id: STR_EXPANDABLE_AMMO
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_EXPANDABLE_AMMO
+    text: STR_EXPANDABLE_AMMO_UFOPEDIA
+    listOrder: 270
   - id: STR_ELECTRIC_WEAPONS
     type_id: 8
     section: STR_XCOM_REPORTS_UC
@@ -1616,21 +1624,21 @@ ufopaedia:
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_ARMOR_PIERCING_UFOPEDIA
     requires:
-      - STR_DAMAGE_ARMOR_PIERCING
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 160010
   - id: STR_DAMAGE_INCENDIARY_TOPIC
     type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_INCENDIARY_UFOPEDIA
     requires:
-      - STR_DAMAGE_INCENDIARY
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 160020
   - id: STR_DAMAGE_HIGH_EXPLOSIVE_TOPIC
     type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_HIGH_EXPLOSIVE_UFOPEDIA
     requires:
-      - STR_DAMAGE_HIGH_EXPLOSIVE
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 160020
   - id: STR_DAMAGE_LASER_BEAM_TOPIC
     type_id: 8
@@ -1651,14 +1659,14 @@ ufopaedia:
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_STUN_UFOPEDIA
     requires:
-      - STR_DAMAGE_STUN
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 160020
   - id: STR_DAMAGE_MELEE_TOPIC
     type_id: 8
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_MELEE_UFOPEDIA
     requires:
-      - STR_DAMAGE_MELEE
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 160020
   - id: STR_DAMAGE_ACID_TOPIC
     type_id: 8
@@ -1672,7 +1680,7 @@ ufopaedia:
     section: STR_TACTICAL_ANALYSIS
     text: STR_DAMAGE_SMOKE_UFOPEDIA
     requires:
-      - STR_DAMAGE_SMOKE
+      - STR_UFOPEDIA_DECRYPTION
     listOrder: 160020
   - id: STR_DAMAGE_EMP_TOPIC
     type_id: 8

@@ -152,8 +152,7 @@ covertOperations:
     successFunds: -82000
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -300
-    failureFunds: -130000
-    
+    failureFunds: -105000 
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
