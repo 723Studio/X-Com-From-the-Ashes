@@ -1227,13 +1227,20 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 23040
 #grenades
+  - id: STR_LIQUID_FLAME
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LIQUID_FLAME
+    text: STR_LIQUID_FLAME_UFOPEDIA
+    listOrder: 24000
   - id: STR_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_GRENADE_UFOPEDIA
-    listOrder: 24000
+    listOrder: 24005
   - id: STR_SMOKE_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1255,6 +1262,13 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FLASHBANG_GRENADE_UFOPEDIA
     listOrder: 24030
+  - id: STR_EXPLOSIVE_CHARGE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_EXPLOSIVE_CHARGE
+    text: STR_EXPLOSIVE_CHARGE_UFOPEDIA
+    listOrder: 24040
 #equipment
   - id: STR_FIRST_AID
     type_id: 4

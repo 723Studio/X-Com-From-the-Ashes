@@ -201,7 +201,7 @@ armors:
     heatVision: 100
     weight: 6
     frontArmor: 25
-    sideArmor: 20
+    sideArmor: 15
     rearArmor: 20
     underArmor: 10
     psiDefence: *StandardDynamicPsiDefence
@@ -217,7 +217,7 @@ armors:
     overKill: 1.5
     damageModifier: &MilitaryArmor
       - 1.0 #0 - None - special
-      - 0.8 #1 - AP - kinetic
+      - 1.0 #1 - AP - kinetic
       - 1.1 #2 - Incendiary
       - 1.0 #3 - High Explosive - Explosive
       - 1.0 #4 - Laser

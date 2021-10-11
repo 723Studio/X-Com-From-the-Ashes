@@ -1573,7 +1573,7 @@ alienDeployments:
 
   - type: STR_MIB_FOREST_BEACON
     width: 60
-    length: 5600
+    length: 60
     height: 6
     alert: STR_RESISTANCE_HEAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR

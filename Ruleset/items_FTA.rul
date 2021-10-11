@@ -40,12 +40,13 @@ items:
     damageType: 6
     damageBonus:
       strength: 0.4
+      melee: 0.1
     damageAlter:
       RandomType: 2
       ResistType: 3
       FixRadius: 0
       IgnoreDirection: false
-      ArmorEffectiveness: 1.3
+      ArmorEffectiveness: 1.6
       ToHealth: 1.0
       ToTile: 1.1
     accuracyMelee: 80
@@ -82,12 +83,13 @@ items:
     power: 7
     damageType: 6
     damageBonus:
-      strength: 0.1
+      strength: 0.2
       melee: 0.3
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.45
+      ArmorEffectiveness: 1.6
       ToHealth: 0.3
+      ToStun: 1.1
       ToTile: 0.2
     accuracyMelee: 100
     meleeMultiplier:
@@ -238,20 +240,18 @@ items:
     power: 35
     damageType: 11
     damageAlter:
+      ResistType: 11 #pretends to be electric damage
       ToHealth: 0.1
       ToStun: 1.0
-      ToArmor: 0.0
-      ToWound: 0.0
-      ToTime: 0.1
-      ToArmorPre: 0.5
-      ArmorEffectiveness: 0.75
-      RandomWound: false
       RandomStun: false
-      IgnorePainImmunity: true
-      IgnoreSelfDestruct: true
-      RandomType: 2
-      IgnoreDirection: false
-      ToTile: 0.0
+      ToArmor: 0.01
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToWound: 0.0
+      ToTime: 0.4
+      RandomType: 6
+      IgnoreDirection: true
+      ToTile: 0.05
     accuracyMelee: 65
     meleeMultiplier:
       flatHundred: 0.5
@@ -284,18 +284,18 @@ items:
     meleeAnimation: 4
     damageType: 11
     damageAlter:
-      ToHealth: 0.05
+      ResistType: 11 #pretends to be electric damage
+      ToHealth: 0.1
       ToStun: 1.0
-      ToArmor: 0.0
-      ToWound: 0.0
-      RandomWound: false
       RandomStun: false
-      IgnorePainImmunity: true
-      IgnoreSelfDestruct: true
-      RandomType: 7
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.0
-      ToTile: 0.0
+      ToArmor: 0.01
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToWound: 0.0
+      ToTime: 0.4
+      RandomType: 6
+      IgnoreDirection: true
+      ToTile: 0.05
     accuracyMelee: 100
     meleeMultiplier:
       melee: 1.0
@@ -336,15 +336,15 @@ items:
       throwing: [0.0, 0.01]
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.5
+      ArmorEffectiveness: 1.2
       ToTile: 0.2
     accuracySnap: 75
     accuracyMultiplier:
       firing: 0.1
       throwing: 0.93
     costSnap:
-      time: 20
-      energy: 10
+      time: 15
+      energy: 5
     costThrow:
       energy: 8
     flatRate: true
@@ -377,14 +377,14 @@ items:
       - STR_BOW_ARROW_IN
       - STR_BOW_ARROW_STUN
       - STR_BOW_ARROW_ELECTRIC
-    accuracyAimed: 115
-    accuracyCloseQuarters: 95
+    accuracyAimed: 110
+    accuracyCloseQuarters: 85
     accuracyMultiplier:
       firing: 0.7
-      throwing: 0.3
+      throwing: 0.5
     costAimed:
-      time: 27
-      energy: 5
+      time: 25
+      energy: 6
     costThrow:
       energy: 8
     tuLoad: 5
@@ -417,8 +417,8 @@ items:
     power: 25
     damageType: 7
     damageAlter:
-      RandomType: 2
-      ArmorEffectiveness: 1.45
+      RandomType: 7
+      ArmorEffectiveness: 1.3
       ToTile: 0.2
     damageBonus:
       firing: 0.1
@@ -440,7 +440,7 @@ items:
     bigSprite: 373
     floorSprite: 372
     handSprite: 584
-    power: 30
+    power: 32
     damageType: 3
     clipSize: 1
     stackSize: 10
@@ -466,16 +466,18 @@ items:
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 375
     hitSound: 118
-    power: 26
+    hitAnimation: 26
+    power: 30
     damageType: 1
     damageAlter:
       ResistType: 6 #pretends to be stun damage
-      ToHealth: 0.05
+      ToHealth: 0.2
       ToStun: 1.3
+      RandomStun: false
       ToArmor: 0.01
       ToWound: 0.0
-      ToTime: 0.1
-      RandomStun: false
+      ToTime: 0.3
+      ToEnergy: 0.5
       IgnorePainImmunity: true
       IgnoreSelfDestruct: true
       RandomType: 2
@@ -492,18 +494,17 @@ items:
     damageType: 1
     damageAlter:
       ResistType: 11 #pretends to be electric damage
-      ToHealth: 0.5
+      ToHealth: 0.1
       ToStun: 1.0
-      ToArmor: 0.01
-      ToArmorPre: 0.4
-      ToWound: 0.0
-      ToTime: 0.5
       RandomStun: false
-      IgnorePainImmunity: true
-      IgnoreSelfDestruct: true
-      RandomType: 2
+      ToArmor: 0.01
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToWound: 0.0
+      ToTime: 0.4
+      RandomType: 6
       IgnoreDirection: true
-      ToTile: 0.1
+      ToTile: 0.05
     listOrder: 3060
 #pistols
   - type: STR_TASER
@@ -555,19 +556,18 @@ items:
     power: 44
     damageType: 11
     damageAlter:
+      ResistType: 11 #pretends to be electric damage
       ToHealth: 0.1
       ToStun: 1.0
-      ToArmor: 0.0
-      ToWound: 0.0
-      ToTime: 0.1
-      RandomWound: false
       RandomStun: false
-      IgnorePainImmunity: true
-      IgnoreSelfDestruct: true
-      RandomType: 2
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.0
-      ToTile: 0.0
+      ToArmor: 0.01
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToWound: 0.0
+      ToTime: 0.4
+      RandomType: 6
+      IgnoreDirection: true
+      ToTile: 0.05
     clipSize: 1
     battleType: 2
     armor: 20
@@ -698,6 +698,7 @@ items:
     fireSound: 4 #75 xcf
     compatibleAmmo:
       - STR_PISTOL_CLIP
+      - STR_PISTOL_EXP_CLIP
       - STR_PISTOL_AA_CLIP
     accuracyCloseQuarters: 133
     accuracySnap: 69
@@ -1326,18 +1327,18 @@ items:
       - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
-    accuracyAuto: 35
-    accuracySnap: 70
-    accuracyAimed: 125
-    tuAuto: 38
-    tuSnap: 30
+    #accuracyAuto: 35
+    accuracySnap: 75
+    accuracyAimed: 130
+    #tuAuto: 38
+    tuSnap: 28
     tuAimed: 75
     battleType: 1
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    snapRange: 20
-    autoRange: 11
+    snapRange: 25
+    #autoRange: 11
     attraction: 8
     listOrder: 7120
   - type: STR_RIFLE_CLIP
@@ -1931,13 +1932,13 @@ items:
     handSprite: 304
     hitSound: 13
     hitAnimation: 26
-    power: 34
+    power: 30
     damageAlter:
       ToHealth: 0.30
-      ToStun: 0.3
       ToWound: 0
       ToTile: 0.02
-      ArmorEffectiveness: 1.2
+      ArmorEffectiveness: 1.6
+      RandomType: 2
     damageType: 6
     blastRadius: 0
     clipSize: 6
@@ -3009,7 +3010,6 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     isExplodingInHands: true
     battleType: 4
-    blastRadius: 5
     listOrder: 21010
   - type: STR_SMOKE_GRENADE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
@@ -3019,12 +3019,12 @@ items:
     landOnly: true
     costBuy: 480
     costSell: 350
-    weight: 3
+    weight: 4
     bigSprite: 20
     floorSprite: 20
     handSprite: 248
     hitAnimation: 88
-    power: 40 #60
+    power: 60
     damageType: 9
     costThrow:
       energy: 6
@@ -3035,7 +3035,6 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     isExplodingInHands: true
     battleType: 4
-    blastRadius: 5
     listOrder: 21020
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
@@ -3062,7 +3061,6 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     isExplodingInHands: true
     battleType: 5
-    blastRadius: 5
     armor: 30
     attraction: 6
     listOrder: 21030
@@ -3127,6 +3125,7 @@ items:
     damageAlter:
       IgnoreOverKill: false
       ToTile: 1.0
+      FixRadius: 1
     costThrow:
       energy: 35
       time: 40
@@ -3135,9 +3134,8 @@ items:
     costUnprime:
       time: 70
     damageType: 3
-    battleType: 5
+    battleType: 4
     armor: 40
-    blastRadius: 1
     invWidth: 1
     invHeight: 1
     attraction: 6
@@ -3373,19 +3371,22 @@ items:
     power: 0
     damageType: 6
     damageBonus:
-      strength: 0.3
+      strength: 0.8
     damageAlter:
       RandomType: 2
       FixRadius: 0
       IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToStun: 0.25
+      ArmorEffectiveness: 1.6
       ToHealth: 0.15
       ToTime: 0.6
       ToTile: 0.0
-    accuracyMelee: 50
+    accuracyMelee: 70
+    meleeMultiplier:
+      flatHundred: 0.65
+      strength: 0.8
+      melee: 0.2
     costMelee:
-      time: 26
+      time: 20
       energy: 17
     hidePower: true
     invWidth: 2
@@ -3729,10 +3730,10 @@ items:
     costSell: 450000 #Should be only sellable to VOID
     missionObjective: true #just for marker
     weight: 1
+    battleType: 0
     bigSprite: 370
     floorSprite: 370
     handSprite: 568
-    battleType: 2
     invWidth: 1
     invHeight: 1
     recoveryPoints: 150
@@ -3741,13 +3742,13 @@ items:
     categories: [STR_EVIDENCE]
     landOnly: true
     size: 0.01
-    costSell: 55000 #Should be only sellable to Resistance
+    costSell: 55000
     missionObjective: true #just for marker
     weight: 1
+    battleType: 0
     bigSprite: 370
     floorSprite: 370
     handSprite: 568
-    battleType: 2
     invWidth: 1
     invHeight: 1
     recoveryPoints: 150
@@ -3757,10 +3758,10 @@ items:
     landOnly: true
     size: 0.05
     missionObjective: true #for marker
+    battleType: 0
     weight: 2
     bigSprite: 409
     floorSprite: 409
-    battleType: 2
     invWidth: 1
     invHeight: 2
     recoveryPoints: 200
@@ -4344,7 +4345,22 @@ items:
     invHeight: 3
     battleType: 11
     armor: 30
-    recoveryPoints: -200
+    recoveryPoints: -100
+    recover: true
+    listOrder: 100490
+  - type: STR_RESISTANCE_AGENT_CORPSE_DECORATION
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    costSell: -2000
+    weight: 32
+    bigSprite: 103
+    floorSprite: 103
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: -50
     recover: true
     listOrder: 100490
   - type: STR_SPAWN_RESISTANCE_AGENT_VIP

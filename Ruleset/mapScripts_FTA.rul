@@ -489,18 +489,18 @@ mapScripts:
   - type: CRAFT_UFO_SCRIPT
     commands:
     - type: addUFO
-      rects: 
-       - [2, 2, 5, 5]
+      # rects: 
+      #  - [2, 2, 5, 5]
     - type: addCraft
-      rects: 
-       - [2, 2, 5, 5]
-    - type: addBlock
-      size: 2
-      executions: 1
-    - type: addBlock
-      size: 2
-      executions: 3
-      executionChances: 65
+      # rects: 
+      #  - [2, 2, 5, 5]
+    # - type: addBlock
+    #   size: 2
+    #   executions: 1
+    # - type: addBlock
+    #   size: 2
+    #   executions: 3
+    #   executionChances: 65
     - type: fillArea
 
   - type: RESISTANCE_URBAN_HIDEOUT
