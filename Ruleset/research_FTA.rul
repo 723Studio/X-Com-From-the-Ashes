@@ -86,21 +86,21 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
-    cost: 1000
+    cost: 1100
     points: 80
     dependencies:
       - STR_RND_STATUS_REPORT
     listOrder: 10
   - name: STR_XCOM_EQUIPMENT
     requiresBaseFunc: [ HQ ]
-    cost: 600
+    cost: 700
     points: 50
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 20
   - name: STR_XCOM_LORE
     requiresBaseFunc: [ HQ ]
-    cost: 1600
+    cost: 1700
     points: 130
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
@@ -113,7 +113,7 @@ research:
     listOrder: 30
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
-    cost: 550
+    cost: 650
     points: 50
     dependencies:
       - STR_INTEL_STATUS_REPORT
@@ -134,7 +134,7 @@ research:
     listOrder: 60
   - name: STR_RESISTANCE_CONTACT
     requiresBaseFunc: [ HQ ]
-    cost: 300
+    cost: 350
     points: 40
     dependencies:
       - STR_COMMUNICATION
@@ -309,21 +309,27 @@ research:
     listOrder: 25070
 
   - name: STR_EXPANDABLE_AMMO
-    cost: 680
-    points: 20
-    unlocks:
+    cost: 100
+    points: 5
+    dependencies:
       - STR_PISTOL_EXP_CLIP
       - STR_RIFLE_EXP_CLIP
-    dependencies:
-      - STR_XCOM_EQUIPMENT
     listOrder: 25080
   - name: STR_PISTOL_EXP_CLIP
-    dependencies:
+    cost: 60
+    points: 5
+    needItem: true
+    unlocks:
       - STR_EXPANDABLE_AMMO
+    dependencies:
+      - STR_XCOM_EQUIPMENT
     listOrder: 25090
   - name: STR_RIFLE_EXP_CLIP
+    cost: 65
+    points: 6
+    needItem: true
     dependencies:
-      - STR_EXPANDABLE_AMMO
+      - STR_XCOM_EQUIPMENT
     listOrder: 25100
   - name: STR_ALLOY_AMMO
     cost: 20000

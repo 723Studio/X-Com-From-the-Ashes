@@ -5,6 +5,7 @@ Some music assets were bought by me and I have personal right to use it in my pr
 Here is a list of those music tracks:
 
 * ENEMY_TERRITORY.ogg;
+* BOSS_BATTLE.ogg
 
 I am also ordered some art assets from professional pixel-artists in order to provide the best experience to my players I can offer. Those orders are partially funded by Patreon support and donations, and mostly from my personal budget, so I have personal rights to use it. I maid a decision to distribute those (and only those) assets under **All Rights Reserved license.** You **can not** redistribute or adapt it anyhow without my personal agree.
 Here is a list of that assets:

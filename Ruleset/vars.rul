@@ -1,5 +1,5 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
-ftaGameLength: 3
+ftaGameLength: 4
 ironManEnabled: false
 #Campaign
 startingTime:
@@ -92,10 +92,10 @@ ai:
 constants:
   extendedItemReloadCost: false #to consider, but with true bow is unplayable
   extendedRunningCost: true
-  damageRange: 75 #for good or bad
+  damageRange: 70 #for good or bad
   extendedTerrainMelee: 4
   extendedUnderwaterThrowFactor: 50
-  extendedMeleeReactions: 2
+  extendedMeleeReactions: 1
 
 
 mana:
@@ -108,16 +108,16 @@ mana:
   replenishAfterMission: true
 
 loyaltySettings:
-  coefBattlescape: 99
+  coefBattlescape: 60
   coefGeoscape: 98
   coefDogfight: 87
   coefResearch: 40
   coefAlienMission: 110
-  coefUfo: 70
-  coefAlienBase: 65
-  noFundsPenalty: 300
+  coefUfo: 100
+  coefAlienBase: 100
+  noFundsPenalty: 400
   noFundsValue: -50000
-  performanceCap: 300
+  performanceCap: 5000
   performanceFactor: 10
 
 loyaltyRatings:
@@ -128,7 +128,7 @@ loyaltyRatings:
    250: STR_L_RATING_OK
    0: STR_L_RATING_MEH
    -350: STR_L_RATING_BAD
-   -800: STR_L_RATING_BAD
+   -800: STR_L_RATING_VERY_BAD
    -1500: STR_L_RATING_TERRIBLE
 
 reputationLevels:

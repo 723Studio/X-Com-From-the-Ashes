@@ -243,6 +243,7 @@ en-US:
   STR_L_RATING_OK: "All in all, we are doing fine. Of course, things could be better, but so far our people have no reason to panic."
   STR_L_RATING_MEH: "Our results leave a lot to be desired, people are beginning to doubt your leadership."
   STR_L_RATING_BAD: "Recent failures have taken their toll on the morale of our people. They are depressed and beginning to despair of the talents of the X-COM leadership."
+  STR_L_RATING_VERY_BAD: "Recent failures have taken their toll on the morale of our people. They are depressed and beginning to despair of the talents of the X-COM leadership." #FIXME
   STR_L_RATING_TERRIBLE: "Things are worse than ever, our people are desperate. It is absolutely unclear how we will get out of this crisis."
   STR_QD_SLOT: "QD"
   STR_USE_FLASHBANG: "Use Flashbang"

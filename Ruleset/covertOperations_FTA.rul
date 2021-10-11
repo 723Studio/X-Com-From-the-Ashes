@@ -25,7 +25,7 @@ covertOperations:
     optionalSoldierSlots: 2
     baseChances: 60
     danger: 8
-    costs: 120
+    costs: 432
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     trapChance: 65
@@ -45,7 +45,7 @@ covertOperations:
     optionalSoldierSlots: 2
     baseChances: 45
     danger: 10
-    costs: 300
+    costs: 600
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     trapChance: 85
@@ -142,17 +142,18 @@ covertOperations:
     requires:
       - STR_STEAL_OSPREY_PREREQ
     soldierSlots: 6
-    baseChances: 65
+    baseChances: 60
     danger: 8
-    costs: 60
+    costs: 400
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 150
     successWeightedItemList:
       STR_CRATED_OSPREY: 100
-    successFunds: -82000
+    #successFunds: -82000
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -300
-    failureFunds: -105000 
+    #failureFunds: -105000 
+    failureFunds: -42000
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
@@ -183,11 +184,11 @@ covertOperations:
     requires:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
     baseChances: 60
-    costs: 5
+    costs: 370
     soldierSlots: 2
     optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
-    danger: 2
+    #danger: 2
     requiredItems:
       STR_FAKE_AGENT_ID: 2
     scientistSlots: 1

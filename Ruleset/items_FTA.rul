@@ -322,7 +322,7 @@ items:
     landOnly: true
     costBuy: 100
     costSell: 60
-    weight: 4
+    weight: 1
     bigSprite: 362
     floorSprite: 362
     handSprite: 544
@@ -362,7 +362,7 @@ items:
     categories: [STR_HUMAN_TECH,  STR_THROWING, STR_BOWS, STR_CONCEALABLE]
     size: 0.2
     landOnly: true
-    costBuy: 800
+    costBuy: 850
     costSell: 500
     weight: 4
     bigSprite: 371
@@ -377,13 +377,13 @@ items:
       - STR_BOW_ARROW_IN
       - STR_BOW_ARROW_STUN
       - STR_BOW_ARROW_ELECTRIC
-    accuracyAimed: 110
+    accuracyAimed: 115
     accuracyCloseQuarters: 95
     accuracyMultiplier:
       firing: 0.7
       throwing: 0.3
     costAimed:
-      time: 30
+      time: 27
       energy: 5
     costThrow:
       energy: 8
@@ -397,7 +397,7 @@ items:
     aimRange: 20
     dropoff: 4
     maxRange: 52
-    bulletSpeed: -3
+    bulletSpeed: -2
     kneelBonus: 100
     experienceTrainingMode: 11
     attraction: 20
@@ -466,13 +466,21 @@ items:
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 375
     hitSound: 118
-    hitAnimation: 26
+    power: 26
+    damageType: 1
     damageAlter:
+      ResistType: 6 #pretends to be stun damage
+      ToHealth: 0.05
+      ToStun: 1.3
+      ToArmor: 0.01
+      ToWound: 0.0
+      ToTime: 0.1
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
       RandomType: 2
-      ArmorEffectiveness: 1.3
+      IgnoreDirection: true
       ToTile: 0.1
-    power: 27
-    damageType: 6
     listOrder: 3050
   - type: STR_BOW_ARROW_ELECTRIC
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
@@ -480,16 +488,16 @@ items:
     bigSprite: 377
     hitSound: 119
     hitAnimation: 56
-    power: 25
+    power: 26
     damageType: 1
     damageAlter:
       ResistType: 11 #pretends to be electric damage
-      ToHealth: 0.1
+      ToHealth: 0.5
       ToStun: 1.0
-      ToArmor: 0.0
+      ToArmor: 0.01
       ToArmorPre: 0.4
       ToWound: 0.0
-      ToTime: 0.1
+      ToTime: 0.5
       RandomStun: false
       IgnorePainImmunity: true
       IgnoreSelfDestruct: true
@@ -3718,7 +3726,7 @@ items:
     categories: [STR_EVIDENCE]
     landOnly: true
     size: 0.01
-    costSell: 950000 #Should be only sellable to VOID
+    costSell: 450000 #Should be only sellable to VOID
     missionObjective: true #just for marker
     weight: 1
     bigSprite: 370
