@@ -369,6 +369,8 @@ en-US:
   STR_MIB_EARLY_TRAP_ESCAPE: "Escape M.I.B. Trap"
   STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: "Escape M.I.B. Trap"
   STR_MIB_EARLY_TRAP_ESCAPE_BRIEFING: "Our investigation has led X-COM agents into an ambush set up by the Men in Black. We must immediately evacuate all personnel involved in the covert operation to the safe zone at the north corner of the battlefield. Time is running out, we must act quickly and get there before M.I.B. reinforcements arrive.{NEWLINE}To evacuate X-COM operatives, move them to the escape zone marked with green tiles and click on the 'Abort Mission' icon."
+  MIB_TRAP_ESCAPE_MAP_ALARM_TITLE: "Alarm raised"
+  MIB_TRAP_ESCAPE_MAP_ALARM_CONTENT: "Local police frequencies broadcast a report of dangerous criminals fleeing from pursuit. The supposed search location corresponds to our current location. We need to get out of here as soon as possible!"
   STR_LOCALS_TRAP: "Cover blown"
   STR_LOCALS_TRAP_BRIEFING: "The cover for our agents is compromised, and the locals are livid. We need to evacuate our people immediately before the locals and police get to them. Get to the car parked at the roadside, it is the only chance of survival. To complete the mission place the soldiers on the green tiles and click on the 'Abort Mission' icon."
 
