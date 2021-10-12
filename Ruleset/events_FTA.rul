@@ -67,7 +67,7 @@ events:
     interruptResearch: STR_SUPPLIES
     loyalty: -900
   - name: STR_STEAL_OSPREY_EVENT
-    description: STR_STR_STEAL_OSPREY_EVENT_DESCRIPTION
+    description: STR_STEAL_OSPREY_EVENT_DESCRIPTION
     timer: 15840 # 11 days
     timerRandom: 2880 # 2 days
     researchList:

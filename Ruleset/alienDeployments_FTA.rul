@@ -2598,3 +2598,46 @@ alienDeployments:
   #           []
   #         -
   #           []
+  # - type: STR_DRAGONFLY_PHOTO_BOOTH
+  #   race: STR_MIB
+  #   width: 60
+  #   length: 60
+  #   height: 6
+  #   shade: 5
+  #   markerName: STR_MIB_CHASING
+  #   duration: [10, 10]
+  #   despawnPenalty: 300
+  #   briefing:
+  #     textOffset: -16
+  #     background: PLACEHOLDER_BACKGROUND.SCR
+  #     showTarget: false
+  #     desc: STR_MIB_CHASING_BRIEFING
+  #   terrains:
+  #     - FOREST
+  #   script: STR_DRAGONFLY_PHOTO_BOOTH
+  #   data:
+  #     - alienRank: 5
+  #       lowQty: 1
+  #       highQty: 1
+  #       percentageOutsideUfo: 100
+  #       itemSets:
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []
+  #         -
+  #           []

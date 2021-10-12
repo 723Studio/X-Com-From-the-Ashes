@@ -757,9 +757,9 @@ units:
     moveSound: 80
     intelligence: 4
     aggression: 8
+    isLeeroyJenkins: true
     energyRecovery: 50
     livingWeapon: true
-    isLeeroyJenkins: true
     builtInWeaponSets:
       - - STR_FACEHUGGER_WEAPON
   - type: STR_ZOMBIE_STERILE_TERRORIST
@@ -873,27 +873,27 @@ units:
     race: STR_CHUPACABRA
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 110
+      tu: 115
       stamina: 140
-      health: 45
+      health: 50
       bravery: 100
-      reactions: 75
+      reactions: 65
       firing: 0
       throwing: 0
-      strength: 48
-      melee: 80
+      strength: 75
+      melee: 85
       psiStrength: 60
       psiSkill: 0
     statsRandom:
-      tu: 5
+      tu: 15
       stamina: 15
-      health: 2
+      health: 10
       bravery: 20
       reactions: 5
       firing: 0
       throwing: 0
       strength: 1
-      melee: 10
+      melee: 15
       psiStrength: 4
     armor: STR_CHUPACABRA_ARMOR
     standHeight: 18
@@ -904,7 +904,8 @@ units:
     # panicSound: 265
     # berserkSound: 266
     intelligence: 3
-    aggression: 4
+    aggression: 8
+    isLeeroyJenkins: true
     energyRecovery: 35
     livingWeapon: true
     builtInWeaponSets:
@@ -1579,7 +1580,7 @@ units:
     stats:
       tu: 0
       stamina: 0
-      health: 80
+      health: 50
       bravery: 100
       reactions: 1
       firing: 0
@@ -1602,7 +1603,7 @@ units:
     value: 400
   - type: STR_RESISTANCE_COMPUTER
     refNode: *RESISTANCE_EVIDENCE_DEVICE
-    value: 500
+    value: 450
 
   - type: STR_FREE_SPOT #placeholder unit to make alien race more clear to read
     refNode: *STR_MIB_AGENT    

@@ -1,5 +1,5 @@
 en-US:
-  STR_OPENXCOM: "From the Ashes v. 0.0.4"
+  STR_OPENXCOM: "From the Ashes v. 0.0.5"
   STR_XCOM: "X-COM"
   STR_LAST_STAND: "Last Stand"
 #diplomacy
@@ -342,6 +342,7 @@ en-US:
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT: "RESISTANCE AGENT EXTRACTION"
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of the important Resistance member. Apparently, M.I.B. agents managed to locate it and the Resistance asked us to launch a rescue operation as soon as possible."
   STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander. The scientist's salvation could be of great value to us, and we must get him to the vessel in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
+  STR_RESCUE_RESISTANCE_MEMBER: "Rescue Resistance Member"
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy drive upstairs and are invaluable. Please, we have to get it, in my research I've come a long way in exploring these horrible aliens from deep space."
   STR_DESERT_TELESCOPE: "Resistance Agent Extraction"
@@ -472,8 +473,8 @@ en-US:
   STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS_DESCRIPTION: "Excellent! Now we have the opportunity to purchase small quantities of military weapons. This will greatly help us in our defense against the ubiquitous M.I.B. agents, perhaps we can finally fight back. Certainly, we are ready to share it with you."
   STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION: "Another Chance for Military Weaponry Acquisition"
   STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION_DESCRIPTION: "It seems that we have found a great opportunity to try again to establish a channel of covert supply of military weapons and equipment. Once again we will need your help, it is necessary to send your undercover agents to the operation to negotiate the shipments.{NEWLINE}{ALT}New covert operation available."
-  STR_STR_STEAL_OSPREY_EVENT: "Steal the Osprey"
-  STR_STR_STEAL_OSPREY_EVENT_DESCRIPTION: "Commander, we have a unique opportunity to significantly improve our combat capabilities! We have recently learned that the military has moved a decommissioned troop carrier craft to a poorly guarded warehouse not too far from our base. I think our soldiers will have no trouble sneaking into the facility and stealing it."
+  STR_STEAL_OSPREY_EVENT: "Steal the Osprey"
+  STR_STEAL_OSPREY_EVENT_DESCRIPTION: "Commander, we have a unique opportunity to significantly improve our combat capabilities! We have recently learned that the military has moved a decommissioned troop carrier craft to a poorly guarded warehouse not too far from our base. I think our soldiers will have no trouble sneaking into the facility and stealing it."
   STR_WE_ARE_NOT_CRIMINALS: "We are not criminals"
   STR_GREAT_PLAN: "Great plan!"
   STR_STEAL_OSPREY_EVENT_YES: "Steal the Osprey"
@@ -628,6 +629,8 @@ en-US:
   STR_RESISTANCE_SCIENTIST_CORPSE: "Scientists Corpse"
   STR_RESISTANCE_RADIO: "Resistance Radio"
   STR_RESISTANCE_RADIO_REMAINS: "Resistance Radio Remains"
+  STR_RESISTANCE_COMPUTER: "Resistance Computer"
+  
   STR_HUMAN: "Human"
   STR_MALE_CIVILIAN_FARMER: "Farmer"
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
@@ -668,10 +671,20 @@ en-US:
   STR_CONCEALABLE: "All Concealable"
   STR_HUMAN_TECH: "All Human Tech"
   STR_XCOM_TECH: "All X-COM Tech"
-  #manufacturing
+  STR_ALIEN_TECH: "All Alien Tech"
+  STR_EVIDENCE: "Evidence"
+  STR_DISGUISE: "Disguise"
+#manufacturing
   STR_WEAPONS: "Weapons"
   STR_EQUIPMENT: "Equipment"
   STR_COVERT_TOOLS: "Covert Tools"
+#bonuses
+  STR_SNIPER: "Sniper"
+  STR_HEAVY: "Heavy"
+  STR_ASSAULT: "Assault"
+  STR_RANGER: "Ranger"
+  STR_SPECIALIST: "Specialist"
+  STR_UNARMED_FIGHTER: "Unarmed Fighter"
 #items - weapons and equipment
   STR_CROWBAR: "Crowbar"
   STR_CROWBAR_UFOPEDIA: "The crowbar is not a weapon in its primary function, but it can be very useful in an extreme situation. Easy to handle, rather heavy, it can be just as useful for opening locked doors or breaking down thin walls.{NEWLINE}>Concealable"

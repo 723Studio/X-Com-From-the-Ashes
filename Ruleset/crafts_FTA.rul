@@ -23,14 +23,14 @@ crafts:
     refuelRate: 46
     fuelMax: 500
     transferTime: 72
-    score: 100
+    score: 200
     battlescapeTerrainData:
       name: DRAGONFLY
       mapDataSets:
         - BLANKS
-        - DRAGONFLY
+        - DRAGONFLY_2
       mapBlocks:
-        - name: DRAGONFLY
+        - name: DRAGONFLY_2
           width: 10
           length: 20
     # deployment:

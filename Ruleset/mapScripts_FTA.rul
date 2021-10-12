@@ -905,3 +905,11 @@ mapScripts:
   #       groups:
   #           - 0
   #       size: [1, 1, 4]
+
+  # - type: STR_DRAGONFLY_PHOTO_BOOTH
+  #   commands:
+  #   - type: addBlock
+  #     terrain: XBASE_PHOTO
+  #     blocks: [0]
+  #     size: [6, 6, 4]
+  #   - type: fillArea

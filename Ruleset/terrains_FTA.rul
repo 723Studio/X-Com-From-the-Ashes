@@ -3456,3 +3456,18 @@ terrains:
         width: 10
         length: 10
         groups: [2, 3, 5]
+
+
+
+  - name: XBASE_PHOTO
+    mapDataSets:
+      - BLANKS
+      - XBASE1
+      - XBASE2
+      - XBASEF1-1
+      - XBASEF2-1
+    script: XBASE
+    mapBlocks:
+      - name: PHOTO_DRAGONFLY
+        width: 60
+        length: 60       
