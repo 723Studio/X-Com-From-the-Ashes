@@ -195,8 +195,8 @@ research:
   - name: STR_STARTING_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_STARTING_EQUIPMENT
-    cost: 300
-    points: 25
+    cost: 50
+    points: 15
     dependencies:
       - STR_STARTING_EQUIPMENT_PREREQ
       - STR_UFOPEDIA_DECRYPTION
@@ -223,7 +223,7 @@ research:
   - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT
-    cost: 400
+    cost: 60
     points: 35
     dependencies:
       - STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ

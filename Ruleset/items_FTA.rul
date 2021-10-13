@@ -320,7 +320,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     size: 0.06
     landOnly: true
-    costBuy: 100
+    costBuy: 80
     costSell: 60
     weight: 1
     bigSprite: 362
@@ -333,7 +333,7 @@ items:
     power: 8
     damageType: 7
     damageBonus:
-      throwing: [0.0, 0.01]
+      throwing: [0, 0.01]
     damageAlter:
       RandomType: 2
       ArmorEffectiveness: 1.2
@@ -359,7 +359,7 @@ items:
     attraction: 6
     listOrder: 3000
   - type: STR_SPORTS_BOW
-    categories: [STR_HUMAN_TECH,  STR_THROWING, STR_BOWS, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE]
     size: 0.2
     landOnly: true
     costBuy: 850
@@ -786,7 +786,7 @@ items:
     attraction: 8
     listOrder: 5090
   - type: STR_HEAVY_PISTOL
-    categories: [ STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS ]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
@@ -1023,13 +1023,7 @@ items:
     attraction: 7
     listOrder: 7010
   - type: STR_PDW
-    categories:
-      [
-        STR_HUMAN_TECH,
-        STR_FIREARMS,
-        STR_SMGS,
-        STR_CONCEALABLE
-      ]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.16
@@ -1362,7 +1356,7 @@ items:
     attraction: 8
     listOrder: 7130
   - type: STR_RIFLE_EXP_CLIP
-    categories: [ STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS ]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
@@ -1545,7 +1539,7 @@ items:
     accuracyCloseQuarters: 30
     accuracyAimed: 150
     accuracyMultiplier:
-      firing: [0.0, 0.01]
+      firing: [0, 0.01]
     tuAimed: 75
     costThrow:
       energy: 20
@@ -2016,7 +2010,7 @@ items:
 #cannons
   - type: STR_TASER_CANNON
     categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS]
-    compatibleAmmo: 
+    compatibleAmmo:
       - STR_TASER_CANNON_CLIP
     landOnly: true
     size: 0.3
@@ -3420,7 +3414,7 @@ items:
     hidePower: true
     invWidth: 2
     invHeight: 3
-    supportedInventorySections: [ STR_LEFT_HAND ]
+    supportedInventorySections: [STR_LEFT_HAND]
     clipSize: 100
     armor: 40
     listOrder: 25020
@@ -3687,7 +3681,7 @@ items:
     damageType: 7
     damageAlter:
       ToTile: 0.2
-    meleeSound: [ 98, 99, 100 ]
+    meleeSound: [98, 99, 100]
     meleeHitSound: 81
     accuracyMelee: 100
     battleType: 3
@@ -3843,7 +3837,7 @@ items:
     listOrder: 651
 
   - type: STR_LABORATORY_EQUIPMENT
-    categories: [ STR_HUMANS, STR_COMPONENTS ]
+    categories: [STR_HUMANS, STR_COMPONENTS]
     costBuy: 200000
     costSell: 180000
     listOrder: 70000
@@ -3860,8 +3854,6 @@ items:
     costSell: 500000
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
-
-
 
 #unit-related
 #aliens

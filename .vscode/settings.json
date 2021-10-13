@@ -1,3 +1,4 @@
 {
-    "csv-edit.readOption_hasHeader": "true"
+    "csv-edit.readOption_hasHeader": "true",
+    "yaml.format.printWidth": 140
 }
