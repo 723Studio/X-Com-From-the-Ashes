@@ -222,7 +222,7 @@ extraSprites:
       324: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_Baton.png
       325: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_AP_AA.png
       326: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_BS_AA.png
-      327: Resources/Weapons/Earthbound/Xcom/bigob_SEShotgun.png #CAN BE REUSED
+      327: Resources/Weapons/Earthbound/General/bigob_ShotgunShells_Dragon.png
       328: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifle.png
       329: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifleClip.png
       330: Resources/Weapons/Earthbound/Xcom/bigob_SniperRifleClipAA.png
@@ -297,7 +297,7 @@ extraSprites:
       399: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannonClip.png
       400: Resources/Weapons/Earthbound/Utilities/handob_TraumaPack.png #temp
       401: Resources/Weapons/Earthbound/Xcom/bigob_SEShotgun.png
-      #402: Resources/Weapons/Earthbound/Xcom/bigob_BattleRifleGrenade.png
+      402: Resources/Weapons/Earthbound/Xcom/bigob_BattleRifleGrenade.png
       403: Resources/Weapons/Earthbound/Special/bigob_Crowbar.png
       404: Resources/Weapons/MIB/bigob_Chemogun.png
       405: Resources/Weapons/MIB/bigob_ChemogunClip.png
@@ -513,8 +513,6 @@ extraSprites:
       752: Resources/Weapons/MIB/handob_Woundgun.png
       760: Resources/Weapons/MIB/handob_StunRod.png
 
-
-
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:
@@ -682,6 +680,18 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/COVEROPSHQ_BACKGROUND.png
+  - type: CASH_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CASH_BACKGROUND.png
+  - type: ALERT_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/ALERT_BACKGROUND.png
   - type: ZOMBIE_FARM.SCR
     singleImage: true
     width: 320

@@ -1352,7 +1352,7 @@ units:
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SCIENTIST
-    value: 150
+    value: 80
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1364,7 +1364,7 @@ units:
   - type: STR_RESISTANCE_SCIENTIST_VIP
     refNode: *STR_RESISTANCE_SCIENTIST
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 200
+    value: 100
     builtInWeaponSets:
       - []
       - []
@@ -1471,13 +1471,13 @@ units:
         - STR_FIRST_AID 
   - type: STR_RESISTANCE_AGENT_VIP
     refNode: *STR_RESISTANCE_AGENT
-    value: 90
+    value: 50
   - type: STR_RESISTANCE_AGENT_PRISONER
     refNode: *STR_RESISTANCE_AGENT
     specialObjectiveType: STR_FRIENDLY_VIP
     civilianRecoveryType: STR_RESISTANCE_AGENT
     #prisoner: true
-    value: 90
+    value: 50
     builtInWeaponSets:
       - []
       - []
@@ -1520,7 +1520,7 @@ units:
     kneelHeight: 14 
     civilianRecoveryType: STR_SOLDIER #FIXME
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 90
+    value: 35
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1600,10 +1600,10 @@ units:
     canBeMindControlled: false
     berserkChance: 0
     showFullNameInAlienInventory: 1
-    value: 400
+    value: 200
   - type: STR_RESISTANCE_COMPUTER
     refNode: *RESISTANCE_EVIDENCE_DEVICE
-    value: 450
+    value: 250
 
   - type: STR_FREE_SPOT #placeholder unit to make alien race more clear to read
     refNode: *STR_MIB_AGENT    

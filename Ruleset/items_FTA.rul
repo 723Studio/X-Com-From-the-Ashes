@@ -1409,7 +1409,7 @@ items:
     attraction: 8
     listOrder: 7150
   - type: STR_CHEMOGUN
-    categories: [STR_CHEMICALS, STR_SMOKE, STR_RIFLES]
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_SMOKE, STR_RIFLES]
     requires:
       - STR_CHEMOGUN
     size: 0.2
@@ -1441,7 +1441,7 @@ items:
     listOrder: 7160
     landOnly: true
   - type: STR_CHEMOGUN_CLIP
-    categories: [STR_CHEMICALS, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_RIFLES, STR_CLIPS]
     requires:
       - STR_CHEMOGUN
     size: 0.1
@@ -1701,7 +1701,7 @@ items:
     power: 16
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.1
+      ArmorEffectiveness: 1.15
     clipSize: 2
     battleType: 2
     armor: 20
@@ -1785,7 +1785,7 @@ items:
     power: 15
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.05
+      ArmorEffectiveness: 1.1
     clipSize: 8
     battleType: 2
     armor: 20
@@ -1813,6 +1813,7 @@ items:
       - STR_SHOTGUN_SHELLS_BS
       - STR_SHOTGUN_SHELLS_AP
       - STR_SHOTGUN_SHELLS_BATON
+      - STR_SHOTGUN_SHELLS_DRAGON
       - STR_SHOTGUN_SHELLS_BS_AA
       - STR_SHOTGUN_SHELLS_AP_AA
     accuracyCloseQuarters: 100
@@ -1851,6 +1852,7 @@ items:
       - STR_SHOTGUN_SHELLS_BS
       - STR_SHOTGUN_SHELLS_AP
       - STR_SHOTGUN_SHELLS_BATON
+      - STR_SHOTGUN_SHELLS_DRAGON
       - STR_SHOTGUN_SHELLS_BS_AA
       - STR_SHOTGUN_SHELLS_AP_AA
     accuracyCloseQuarters: 100
@@ -1888,7 +1890,7 @@ items:
     power: 15
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.05
+      ArmorEffectiveness: 1.1
     clipSize: 6
     battleType: 2
     armor: 20
@@ -1947,6 +1949,30 @@ items:
     attraction: 8
     listOrder: 12100
     landOnly: true
+  - type: STR_SHOTGUN_SHELLS_DRAGON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.01
+    landOnly: true
+    costBuy: 150
+    costSell: 110
+    weight: 3
+    bigSprite: 327
+    floorSprite: 322
+    handSprite: 304
+    hitSound: 67 #13?
+    hitAnimation: 26
+    power: 22
+    damageType: 2
+    damageAlter:
+      ToHealth: 1.5
+      ToMorale: 5.0
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    attraction: 8
+    listOrder: 12105
   - type: STR_SHOTGUN_SHELLS_BS_AA
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     size: 0.01
@@ -3374,7 +3400,7 @@ items:
     power: 0
     damageType: 6
     damageBonus:
-      strength: 0.8
+      strength: 0.7
     damageAlter:
       RandomType: 2
       FixRadius: 0
@@ -3383,7 +3409,7 @@ items:
       ToHealth: 0.15
       ToTime: 0.6
       ToTile: 0.0
-    accuracyMelee: 70
+    accuracyMelee: 65
     meleeMultiplier:
       flatHundred: 0.65
       strength: 0.8

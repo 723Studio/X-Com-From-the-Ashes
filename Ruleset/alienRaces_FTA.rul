@@ -61,9 +61,9 @@ alienRaces:
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_MIB_SPECOPS # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_MIB_ENFORCER # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_FREE_SPOT # 13 - Non-Combatant 2
-      - STR_FREE_SPOT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_MALE_POLICE # 13 - Special Guest 3
 
   - id: STR_MIB_BASE_EARLY
     members:
@@ -78,9 +78,9 @@ alienRaces:
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_MIB_SPECOPS # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_MIB_ENFORCER # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_FREE_SPOT # 13 - Non-Combatant 2
-      - STR_FREE_SPOT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_FREE_SPOT # 13 - Special Guest 3
 
   - id: STR_ZOMBIES
     members:
@@ -95,9 +95,9 @@ alienRaces:
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_FREE_SPOT # 13 - Non-Combatant 2
-      - STR_FREE_SPOT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_FREE_SPOT # 13 - Special Guest 3
 
   - id: STR_CHUPACABRA
     members:
@@ -112,9 +112,9 @@ alienRaces:
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_FREE_SPOT # 13 - Non-Combatant 2
-      - STR_FREE_SPOT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_FREE_SPOT # 13 - Special Guest 3
 
   - id: STR_MILITIA
     members:
@@ -129,9 +129,9 @@ alienRaces:
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
-      - STR_FREE_SPOT # 12 - Special Guest 2 / Non-Combatant 1
-      - STR_FREE_SPOT # 13 - Non-Combatant 2
-      - STR_FREE_SPOT # 14 - Special Guest 3
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_FREE_SPOT # 13 - Special Guest 3
 
   # - id: STR_SPAWNS
   #   members:

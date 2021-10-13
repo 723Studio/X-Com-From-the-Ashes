@@ -311,28 +311,13 @@ research:
     listOrder: 25070
 
   - name: STR_EXPANDABLE_AMMO
-    cost: 100
-    points: 5
-    dependencies:
-      - STR_PISTOL_EXP_CLIP
-      - STR_RIFLE_EXP_CLIP
-    listOrder: 25080
+    hidden: true
   - name: STR_PISTOL_EXP_CLIP
-    cost: 60
-    points: 5
-    needItem: true
-    unlocks:
+    dependencies:
       - STR_EXPANDABLE_AMMO
-    dependencies:
-      - STR_XCOM_EQUIPMENT
-    listOrder: 25090
   - name: STR_RIFLE_EXP_CLIP
-    cost: 65
-    points: 6
-    needItem: true
     dependencies:
-      - STR_XCOM_EQUIPMENT
-    listOrder: 25100
+      - STR_EXPANDABLE_AMMO
   - name: STR_ALLOY_AMMO
     cost: 20000
     points: 100

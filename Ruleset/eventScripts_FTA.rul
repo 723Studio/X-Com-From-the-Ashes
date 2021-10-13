@@ -112,6 +112,7 @@ eventScripts:
     oneTimeSequentialEvents: [STR_SPORTS_BOW_TINKERING]
     researchTriggers:
       STR_SPORTS_BOW_TINKERING: false
+      STR_SPORTS_BOW: true
     itemTriggers:
       STR_SPORTS_BOW: true
       STR_BOW_ARROW: true

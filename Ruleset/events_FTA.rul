@@ -87,33 +87,39 @@ events:
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     description: STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
     timer: 0
     timerRandom: 0
     points: -200
     researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ_HARD]
   - name: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT
     description: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
     timer: 0
     timerRandom: 0
   - name: STR_MIB_CHASING_SUCCESS
     description: STR_MIB_CHASING_SUCCESS_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
     timer: 30
     timerRandom: 0
     researchList: [STR_MIB_CHASING_SUCCESS]
   - name: STR_MIB_CHASING_FAIL
     description: STR_MIB_CHASING_FAIL_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
     timer: 30
     timerRandom: 0
     researchList: [STR_MIB_CHASING_FAIL]
 
   - name: STR_REGIONAL_HQ_FOUND_EVENT
     description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
     timer: 180
     timerRandom: 90
     researchList: [STR_REGIONAL_HQ_FOUND]
 
   - name: STR_MIB_BANKER_ACCOUNTS
     description: STR_MIB_BANKER_ACCOUNTS_DESCRIPTION
+    background: CASH_BACKGROUND.SCR
     timer: 30
     timerRandom: 0
     loyalty: 200
@@ -122,12 +128,14 @@ events:
 
   - name: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     description: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
+    background: BACK05.SCR
     timer: 136800
     timerRandom: 20160
     removedCovertOperationsList:
       - STR_LAB_EQUIPMENT_ACQUISITION
   - name: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     description: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
+    background: BACK05.SCR
     timer: 175680
     timerRandom: 30240
     removedCovertOperationsList:
@@ -148,89 +156,106 @@ events:
 
   - name: STR_RESCUED_RESISTANCE_1
     description: STR_RESCUED_AGENT_DESCRIPTION_1
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: 80
   - name: STR_RESCUED_RESISTANCE_2
     description: STR_RESCUED_AGENT_DESCRIPTION_2
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: 80
   - name: STR_RESCUED_RESISTANCE_3
     description: STR_RESCUED_AGENT_DESCRIPTION_3
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: 80
   - name: STR_RESCUED_RESISTANCE_4
     description: STR_RESCUED_AGENT_DESCRIPTION_4
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: 80
   - name: STR_RESCUED_RESISTANCE_5
     description: STR_RESCUED_AGENT_DESCRIPTION_5
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: 80
   - name: STR_RESCUED_RESISTANCE_6
     description: STR_RESCUED_AGENT_DESCRIPTION_6
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: 80
   - name: STR_NOT_RESCUED_RESISTANCE_1
     description: STR_NOT_RESCUED_AGENT_DESCRIPTION_1
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: -110
   - name: STR_NOT_RESCUED_RESISTANCE_2
     description: STR_NOT_RESCUED_AGENT_DESCRIPTION_2
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: -110
   - name: STR_NOT_RESCUED_RESISTANCE_3
     description: STR_NOT_RESCUED_AGENT_DESCRIPTION_3
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: -110
   - name: STR_NOT_RESCUED_RESISTANCE_4
     description: STR_NOT_RESCUED_AGENT_DESCRIPTION_4
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: -110
   - name: STR_NOT_RESCUED_RESISTANCE_5
     description: STR_NOT_RESCUED_AGENT_DESCRIPTION_5
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: -110
   - name: STR_NOT_RESCUED_RESISTANCE_6
     description: STR_NOT_RESCUED_AGENT_DESCRIPTION_6
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_FIRST_HELP]
     reputationScore:
       STR_RESISTANCE: -110
 
   - name: STR_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: 130
   - name: STR_NOT_RESCUED_SCIENTIST
     description: STR_RESCUED_SCIENTIST_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_SCIENTIST]
     reputationScore:
       STR_RESISTANCE: -200
   - name: STR_RESCUED_SCIENTISTS_TELESCOPE
     description: STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_DESERT_TELESCOPE]
     loyalty: 150
     reputationScore:
       STR_RESISTANCE: 180
   - name: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE
     description: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_DESERT_TELESCOPE]
     loyalty: -200
     reputationScore:
       STR_RESISTANCE: -300
   - name: STR_RESISTANCE_WEAPONRY_EVENT
     description: STR_RESISTANCE_WEAPONRY_EVENT_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED]
     timer: 4320 # 3 days
     timerRandom: 28800 # 20 days
@@ -244,24 +269,28 @@ events:
         title: STR_NO
   - name: STR_RESISTANCE_WEAPONRY_EVENT_YES
     description: STR_RESISTANCE_WEAPONRY_EVENT_YES_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_WEAPONRY_PREREQ]
     loyalty: 5
     reputationScore:
       STR_RESISTANCE: 60
   - name: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS
     description: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_BASIC_EQUIPMENT]
     loyalty: 250
     reputationScore:
       STR_RESISTANCE: 300
   - name: STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION
     description: STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     timer: 175200
     timerRandom: 43800
     removedCovertOperationsList:
       - STR_MILITARY_WEAPONRY_ACQUISITION
   - name: STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT
     description: STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT_DESCRIPTION
+    background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_CELL_CREATION_PREREQ]
 
 
@@ -340,49 +369,49 @@ events:
   # Mysterious Sponsor
   - name: STR_MYSTERIOUS_SPONSOR_50000
     description: STR_MYSTERIOUS_SPONSOR_50000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 50000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_75000
     description: STR_MYSTERIOUS_SPONSOR_75000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 75000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_100000
     description: STR_MYSTERIOUS_SPONSOR_100000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 100000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_150000
     description: STR_MYSTERIOUS_SPONSOR_150000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 150000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_200000
     description: STR_MYSTERIOUS_SPONSOR_200000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 200000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_250000
     description: STR_MYSTERIOUS_SPONSOR_250000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 250000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_500000
     description: STR_MYSTERIOUS_SPONSOR_500000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 500000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_1000000
     description: STR_MYSTERIOUS_SPONSOR_1000000_DESCRIPTION
-    background: BACK13.SCR
+    background: CASH_BACKGROUND.SCR
     funds: 1000000
     timer: 1200
     timerRandom: 43500

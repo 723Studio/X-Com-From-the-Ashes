@@ -1333,12 +1333,12 @@ alienDeployments:
     width: 60
     length: 60
     height: 6
-    genMissionLimit: 0
+    isHidden: true
     alert: STR_RESISTANCE_HEAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HEAVEN_MARKER
-    duration: [10, 14]
+    duration: [12, 16]
     despawnPenalty: 500
     extendedObjectiveType: STR_EVACUATION
     successEvents:
@@ -1471,12 +1471,11 @@ alienDeployments:
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
-      - alienRank: 5
-        customUnitType: STR_MALE_POLICE
+      - alienRank: 13 #STR_MALE_POLICE
         lowQty: 4
         highQty: 8
         dQty: 2
-        percentageOutsideUfo: 0
+        percentageOutsideUfo: 100
         itemSets:
           -
             []
