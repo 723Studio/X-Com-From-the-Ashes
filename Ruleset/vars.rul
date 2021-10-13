@@ -115,7 +115,7 @@ loyaltySettings:
   coefAlienMission: 110
   coefUfo: 100
   coefAlienBase: 100
-  noFundsPenalty: 400
+  noFundsPenalty: 200
   noFundsValue: -50000
   performanceCap: 5000
   performanceFactor: 10

@@ -3024,12 +3024,15 @@ items:
     floorSprite: 20
     handSprite: 248
     hitAnimation: 88
-    power: 60
+    power: 70
     damageType: 9
+    damageAlter:
+      RadiusEffectiveness: 1.1
     costThrow:
-      energy: 6
+      energy: 7
+      time: 30
     costPrime:
-      time: 35
+      time: 45
     costUnprime:
       time: 25
     unprimeActionName: STR_UNPRIME_GRENADE

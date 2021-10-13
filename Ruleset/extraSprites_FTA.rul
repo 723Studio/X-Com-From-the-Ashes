@@ -730,7 +730,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/SECRET_AGENT.png
-
+  - type: CROPCIRCLES_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CROPCIRCLES_BACKGROUND.png
 
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT_CPAL

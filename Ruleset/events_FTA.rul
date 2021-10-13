@@ -84,8 +84,6 @@ events:
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
 
-
-
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     description: STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION
@@ -330,6 +328,12 @@ events:
     researchList: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES]
     timer: 30
     timerRandom: 0
+  - name: STR_REGIONAL_HQ_LOCATION
+    description: STR_REGIONAL_HQ_LOCATION_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    researchList: [STR_REGIONAL_HQ_LOCATION]
+    timer: 30
+    timerRandom: 0
   - name: STR_EXPANDABLE_AMMO_EVENT
     description: STR_EXPANDABLE_AMMO_EVENT_DESCRIPTION
     background: BACK05.SCR
@@ -337,6 +341,64 @@ events:
     timer: 30
     timerRandom: 1440
     interruptResearch: STR_EXPANDABLE_AMMO
+
+
+#random fun events
+  # Mysterious Sponsor
+  - name: STR_MYSTERIOUS_SPONSOR_50000
+    description: STR_MYSTERIOUS_SPONSOR_50000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 50000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_MYSTERIOUS_SPONSOR_75000
+    description: STR_MYSTERIOUS_SPONSOR_75000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 75000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_MYSTERIOUS_SPONSOR_100000
+    description: STR_MYSTERIOUS_SPONSOR_100000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 100000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_MYSTERIOUS_SPONSOR_150000
+    description: STR_MYSTERIOUS_SPONSOR_150000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 150000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_MYSTERIOUS_SPONSOR_200000
+    description: STR_MYSTERIOUS_SPONSOR_200000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 200000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_MYSTERIOUS_SPONSOR_250000
+    description: STR_MYSTERIOUS_SPONSOR_250000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 250000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_MYSTERIOUS_SPONSOR_500000
+    description: STR_MYSTERIOUS_SPONSOR_500000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 500000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_MYSTERIOUS_SPONSOR_1000000
+    description: STR_MYSTERIOUS_SPONSOR_1000000_DESCRIPTION
+    background: BACK13.SCR
+    funds: 1000000
+    timer: 1200
+    timerRandom: 43500
+  - name: STR_OLD_CROP_CIRCLES
+    description: STR_OLD_CROP_CIRCLES_DESCRIPTION
+    background: CROPCIRCLES_BACKGROUND.SCR
+    loyalty: -40
+    timer: 1200
+    timerRandom: 43500
 
 
   # - name: STR_SNIPPET

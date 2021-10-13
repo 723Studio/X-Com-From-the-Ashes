@@ -132,6 +132,7 @@ eventScripts:
     researchTriggers:
       STR_PRISONER_INTERROGATIONS: true
       STR_ELECTRIC_WEAPONS_PREREQ: false
+      STR_PRODUCTION: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
     executionOdds: 10
@@ -142,7 +143,8 @@ eventScripts:
     executionOdds: 2
     minDifficulty: 4
     maxDifficulty: 4
-  - type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER
+  - &BIOLAB_PREREQ_SCRIPT
+    type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER
     oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
     researchTriggers:
       STR_BIOLAB_PREREQ: false
@@ -155,51 +157,32 @@ eventScripts:
     minDifficulty: 0
     maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE
-    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
-    researchTriggers:
-      STR_BIOLAB_PREREQ: false
-      STR_BIOLAB: false
+    refNode: *BIOLAB_PREREQ_SCRIPT
     itemTriggers:
       STR_ZOMBIE_STERILE_CORPSE: true
-    firstMonth: 0
-    allowedProcessor: 2 #xcom
-    executionOdds: 70
-    minDifficulty: 0
-    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_STERILE
-    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
-    researchTriggers:
-      STR_BIOLAB_PREREQ: false
-      STR_BIOLAB: false
+    refNode: *BIOLAB_PREREQ_SCRIPT
     itemTriggers:
       STR_ZOMBIE_STERILE_CORPSE: true
-    firstMonth: 0
-    allowedProcessor: 2 #xcom
-    executionOdds: 70
-    minDifficulty: 0
-    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_GRUBAS
-    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
-    researchTriggers:
-      STR_BIOLAB_PREREQ: false
-      STR_BIOLAB: false
+    refNode: *BIOLAB_PREREQ_SCRIPT
     itemTriggers:
       STR_ZOMBIE_GRUBAS_CORPSE: true
-    firstMonth: 0
-    allowedProcessor: 2 #xcom
-    executionOdds: 70
-    minDifficulty: 0
-    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_CHUPACABRA
-    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
-    researchTriggers:
-      STR_BIOLAB_PREREQ: false
-      STR_BIOLAB: false
+    refNode: *BIOLAB_PREREQ_SCRIPT
     itemTriggers:
       STR_CHUPACABRA_CORPSE: true
+  - type: STR_REGIONAL_HQ_LOCATION_SCRIPT
+    oneTimeSequentialEvents: [STR_REGIONAL_HQ_LOCATION]
+    researchTriggers:
+      STR_MIB_DATA_TRANSFER_DECRYPTION: true
+      STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED: true
+      STR_REQ_HQ_LOCATION_SUCCESS: false
+      STR_REQ_HQ_LOCATION_FAILED: false
     firstMonth: 0
+    lastMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 70
+    executionOdds: 40
     minDifficulty: 0
     maxDifficulty: 4
   - type: STR_TELL_RESISTANCE_ABOUT_MIB_HQ
@@ -234,7 +217,6 @@ eventScripts:
     minDifficulty: 4
     maxDifficulty: 4
 
-
 #resistance
   - type: STR_RESISTANCE_WEAPONRY_SCRIPT
     oneTimeSequentialEvents: [STR_RESISTANCE_WEAPONRY_EVENT]
@@ -265,3 +247,48 @@ eventScripts:
     executionOdds: 70
     minDifficulty: 0
     maxDifficulty: 4
+
+#random fun
+  - type: STR_MYSTERIOUS_SPONSOR
+    eventWeights:
+      0:
+        STR_MYSTERIOUS_SPONSOR_50000: 70
+        STR_MYSTERIOUS_SPONSOR_75000: 60
+        STR_MYSTERIOUS_SPONSOR_100000: 50
+        STR_MYSTERIOUS_SPONSOR_150000: 40
+        STR_MYSTERIOUS_SPONSOR_200000: 30
+        STR_MYSTERIOUS_SPONSOR_250000: 20
+        STR_MYSTERIOUS_SPONSOR_500000: 10
+        STR_MYSTERIOUS_SPONSOR_1000000: 5
+      7:
+        STR_MYSTERIOUS_SPONSOR_50000: 40
+        STR_MYSTERIOUS_SPONSOR_75000: 50
+        STR_MYSTERIOUS_SPONSOR_100000: 60
+        STR_MYSTERIOUS_SPONSOR_150000: 70
+        STR_MYSTERIOUS_SPONSOR_200000: 60
+        STR_MYSTERIOUS_SPONSOR_250000: 50
+        STR_MYSTERIOUS_SPONSOR_500000: 40
+        STR_MYSTERIOUS_SPONSOR_1000000: 30
+      16:
+        STR_MYSTERIOUS_SPONSOR_50000: 20
+        STR_MYSTERIOUS_SPONSOR_75000: 30
+        STR_MYSTERIOUS_SPONSOR_100000: 40
+        STR_MYSTERIOUS_SPONSOR_150000: 50
+        STR_MYSTERIOUS_SPONSOR_200000: 60
+        STR_MYSTERIOUS_SPONSOR_250000: 70
+        STR_MYSTERIOUS_SPONSOR_500000: 50
+        STR_MYSTERIOUS_SPONSOR_1000000: 30
+    firstMonth: 0
+    lastMonth: 24
+    executionOdds: 10
+    spawnGap: 120
+    allowedProcessor: 30
+  - type: STR_OLD_CROP_CIRCLES
+    eventWeights:
+      0:
+        STR_OLD_CROP_CIRCLES: 100
+    researchTriggers:
+      STR_CROP_CIRCLES_PREREQ: true
+    firstMonth: 1
+    executionOdds: 3
+    allowedProcessor: 0

@@ -7,14 +7,14 @@ ufos:
     sprite: 0
     damageMax: 50
     avoidBonus: 25
-    shieldCapacity: 40
-    shieldRecharge: 45 #35 % to get 1 SP per sec
-    shieldRechargeInGeoscape: 5
+    shieldCapacity: 55
+    shieldRecharge: 22 #20 % to get 1 SP per sec
+    shieldRechargeInGeoscape: 1
     shieldBleedThrough: 100
     speedMax: 2140
     accel: 12
     power: 10
-    range: 30
+    range: 32
     score: 50
     reload: 50
     #hitBonus: 5

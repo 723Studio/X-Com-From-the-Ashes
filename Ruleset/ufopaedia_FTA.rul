@@ -1576,6 +1576,7 @@ ufopaedia:
     listOrder: 45260
   - id: STR_MIB_AGENT_LOBOTOMY
     type_id: 7
+    text_width: 135
     image_id: MIB_CHIP_CPAL.SPK
     section: STR_ALIEN_RESEARCH_UC
     requires:

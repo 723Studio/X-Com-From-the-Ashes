@@ -1572,6 +1572,7 @@ alienDeployments:
             - STR_LC_HE_AMMO  
 
   - type: STR_MIB_FOREST_BEACON
+    race: STR_MIB
     width: 60
     length: 60
     height: 6

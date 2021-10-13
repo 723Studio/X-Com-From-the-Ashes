@@ -9,9 +9,9 @@ craftWeapons:
     weaponType: 0
     sprite: 2
     sound: 4
-    damage: 10
-    range: 10
-    accuracy: 25
+    damage: 13
+    range: 12 #10
+    accuracy: 40 #25
     reloadCautious: 4
     reloadStandard: 4
     reloadAggressive: 4
@@ -25,12 +25,12 @@ craftWeapons:
     weaponType: 2
     sprite: 0
     sound: 5
-    damage: 75 #70
-    range: 45 #30
+    damage: 70
+    range: 42 #30
     accuracy: 70
     reloadCautious: 64
-    reloadStandard: 54 #48
-    reloadAggressive: 44 #32
+    reloadStandard: 58 #48
+    reloadAggressive: 50 #32
     ammoMax: 6
     launcher: STR_STINGRAY_LAUNCHER
     clip: STR_STINGRAY_MISSILES

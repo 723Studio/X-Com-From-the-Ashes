@@ -82,6 +82,8 @@ research:
     hidden: true
   - name: STR_MIB_HQ_DESTROYED
     hidden: true
+  - name: STR_CROP_CIRCLES_PREREQ
+    hidden: true
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
@@ -113,7 +115,7 @@ research:
     listOrder: 30
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
-    cost: 650
+    cost: 550
     points: 50
     dependencies:
       - STR_INTEL_STATUS_REPORT
@@ -141,7 +143,7 @@ research:
     listOrder: 70
   - name: STR_SUPPLIES
     requiresBaseFunc: [ HQ ]
-    cost: 450
+    cost: 350
     points: 120
     dependencies:
       - STR_QUARTERMASTER_STATUS_REPORT
@@ -427,12 +429,11 @@ research:
   - name: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     hidden: true
   - name: STR_REGIONAL_HQ_LOCATION
-    cost: 1360
-    points: 100
-    dependencies:
-      - STR_MIB_DATA_TRANSFER_DECRYPTION
-      - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
-    listOrder: 1000
+    hidden: true
+    # dependencies:
+    #   - STR_MIB_DATA_TRANSFER_DECRYPTION
+    #   - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+    #listOrder: 1000
   #key lore
   - name: STR_FRESH_MIB_AGENT
     hidden: true
@@ -616,19 +617,19 @@ research:
       STR_MIB_AGENT:
         - STR_EMPTY_MIB_EARLY_LORE_STAGE
         - STR_EMPTY_MIB_EARLY_LORE1
-        - STR_EMPTY_MIB_EARLY_LORE2
-        - STR_EMPTY_MIB_EARLY_LORE3
+        # - STR_EMPTY_MIB_EARLY_LORE2
+        # - STR_EMPTY_MIB_EARLY_LORE3
       STR_EMPTY_MIB_EARLY_LORE_STAGE:
         - STR_FRESH_MIB_AGENT
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
-        - STR_EMPTY_MIB_EARLY_LORE3
-        - STR_EMPTY_MIB_EARLY_LORE4
-        - STR_EMPTY_MIB_EARLY_LORE5
-        - STR_EMPTY_MIB_EARLY_LORE6
-        - STR_EMPTY_MIB_EARLY_LORE7
-        - STR_EMPTY_MIB_EARLY_LORE8
-        - STR_EMPTY_MIB_EARLY_LORE9
+        # - STR_EMPTY_MIB_EARLY_LORE3
+        # - STR_EMPTY_MIB_EARLY_LORE4
+        # - STR_EMPTY_MIB_EARLY_LORE5
+        # - STR_EMPTY_MIB_EARLY_LORE6
+        # - STR_EMPTY_MIB_EARLY_LORE7
+        # - STR_EMPTY_MIB_EARLY_LORE8
+        # - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6010
   - name: STR_MIB_SPECOPS
     requiresBaseFunc: [ INTLAB ]

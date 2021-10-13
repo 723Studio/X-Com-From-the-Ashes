@@ -58,11 +58,10 @@ covertOperations:
     successScore: 110
     failureScore: -150
 
-
   - name: STR_REGIONAL_HQ
     description: STR_REGIONAL_HQ_DESCRIPTION
     requires:
-      - STR_MIB_DATA_TRANSFER_DECRYPTION
+      - STR_REGIONAL_HQ_LOCATION
     soldierSlots: 3
     scientistSlots: 1
     baseChances: 50
