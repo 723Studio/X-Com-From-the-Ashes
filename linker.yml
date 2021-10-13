@@ -12,10 +12,10 @@ config:
     - spawnUnit
     - showMessage
     battleScripts.commands[].spawnBlocks:
-    - "N"
-    - W
-    - E
-    - S
+    - NORTH
+    - WEST
+    - EAST
+    - SOUTH
     - NW
     - NE
     - SW

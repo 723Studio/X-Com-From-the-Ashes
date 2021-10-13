@@ -265,6 +265,15 @@ ufopaedia:
       - STR_PRISONER_INTERROGATIONS
     text: STR_PRISONER_INTERROGATIONS_UFOPEDIA
     listOrder: 180
+  - id: STR_REGIONAL_HQ_LOCATION
+    type_id: 7
+    image_id: INTEL_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_REGIONAL_HQ_LOCATION
+    text: STR_REGIONAL_HQ_LOCATION_UFOPEDIA
+    listOrder: 185
   - id: STR_MIB_DATA_CONTAINER
     type_id: 8
     text_width: 158
@@ -1597,7 +1606,6 @@ ufopaedia:
       - STR_MIB_DATA_TRANSFER_DECRYPTION
     text: STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA
     listOrder: 45290
-
   - id: STR_MIB_OFFICE_ENGINEER
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC

@@ -172,19 +172,6 @@ eventScripts:
     refNode: *BIOLAB_PREREQ_SCRIPT
     itemTriggers:
       STR_CHUPACABRA_CORPSE: true
-  - type: STR_REGIONAL_HQ_LOCATION_SCRIPT
-    oneTimeSequentialEvents: [STR_REGIONAL_HQ_LOCATION]
-    researchTriggers:
-      STR_MIB_DATA_TRANSFER_DECRYPTION: true
-      STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED: true
-      STR_REQ_HQ_LOCATION_SUCCESS: false
-      STR_REQ_HQ_LOCATION_FAILED: false
-    firstMonth: 0
-    lastMonth: 0
-    allowedProcessor: 2 #xcom
-    executionOdds: 40
-    minDifficulty: 0
-    maxDifficulty: 4
   - type: STR_TELL_RESISTANCE_ABOUT_MIB_HQ
     oneTimeSequentialEvents: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_EVENT]
     researchTriggers:

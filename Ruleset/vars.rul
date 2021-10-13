@@ -117,8 +117,8 @@ loyaltySettings:
   coefAlienBase: 100
   noFundsPenalty: 50
   noFundsValue: -50000
-  performanceCap: 5000 #would be deleted in further releases, no practical effect now
-  performanceFactor: 10 #would be deleted in further releases, no practical effect now
+  performanceCap: 250 #would be deleted in further releases, no practical effect now
+  performanceFactor: 2 #would be deleted in further releases, no practical effect now
 
 loyaltyRatings:
    5000: STR_L_RATING_AMAZING

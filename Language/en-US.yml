@@ -26,6 +26,7 @@ en-US:
   STR_IRONMAN_ALPHA_DESC: "Ironman mode disabled for alpha"
   STR_EXTENDED_UC: "OVERVIEW"
   STR_EXTENDED_LINKS: "Global Overview"
+  STR_LOYALTY_RATING: "Loyalty> {ALT}{0}"
   STR_DIPLOMACY_UC: "DIPLOMACY"
   STR_SELL_SACK_UC: "DIPLOMACY"
   STR_PURCHASE_RECRUIT: "COVERT OPERATIONS"
@@ -50,6 +51,7 @@ en-US:
   STR_NOT_ENOUGH: "THIS FACTION DOES NOT HAVE ENOUGH ITEMS IN STOCK!"
   STR_SELL: "Sell"
   STR_FACTION_FUNDS: "FACTION FUNDS> {ALT}{0}"
+  STR_NOT_ENOUGH_STOCK: "NOT ENOUGH STOCK!"
   STR_COVERT_OPERATIONS: "Covert Operations"
   STR_SOLDIERS_AVAILABLE: "Unassigned soldiers>{ALT}{0}"
   STR_OPERATION_NAME: "Operation"
@@ -1023,7 +1025,8 @@ en-US:
   STR_MIB_DATA_TRANSFER_DECRYPTION: "M.I.B. Signal Decryption"
   STR_MIB_SIGNAL: "M.I.B. Signal"
   STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA: "The signal that the M.I.B. head chip was tuned to receive was partially decoded. It is a very weak, and the phased array on the surface of the chip is constantly calibrated, adjusting to the direction of the source, in order to enhance the reception.It appears to be less than 1,000 kilometers to the east.  We will be able to localize the source more precisely if we get close to it."
-  
+  STR_REGIONAL_HQ_LOCATION: "Regional M.I.B. HQ"
+  STR_REGIONAL_HQ_LOCATION_UFOPEDIA: "Now we can be sure that the Men in Black have some sort of headquarters. It's probably where their operations in the region are planned and prepared, their logistics, and possibly the recruitment of new agents. Most likely, it's a rather large structure, hidden under the guise of a civilian facility. We have only a rough idea of the location of this site, but now we have the capability to pick up traces of signals sent out by the M.I.B. We need to plan a covert operation to scout the area of the alleged headquarters."
 
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: "Creature Containment"
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: "Chief! The staggering results of that monster autopsy have raised a lot more new questions than answers to old ones. It would be great to research this thing alive, but it is impossoble without a special facility at our base. Perhaps by analyzing the Ufopaedia files, we can design a new compartment in which such creatures can be kept safely and completely isolated, while still maintaining access to them for study"

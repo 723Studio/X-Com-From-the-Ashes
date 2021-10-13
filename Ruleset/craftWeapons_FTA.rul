@@ -25,7 +25,7 @@ craftWeapons:
     weaponType: 2
     sprite: 0
     sound: 5
-    damage: 70
+    damage: 60
     range: 42 #30
     accuracy: 70
     reloadCautious: 64

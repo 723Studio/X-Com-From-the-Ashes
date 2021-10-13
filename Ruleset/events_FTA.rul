@@ -288,7 +288,6 @@ events:
     timer: 750
     timerRandom: 650
     interruptResearch: STR_ELECTRIC_WEAPONS_PREREQ
-    
   - name: STR_BIOLAB_PREREQ_EVENT
     description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION
     background: BACK05.SCR
@@ -326,12 +325,6 @@ events:
     description: STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES_DESCRIPTION
     background: COVEROPSHQ_BACKGROUND.SCR
     researchList: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES]
-    timer: 30
-    timerRandom: 0
-  - name: STR_REGIONAL_HQ_LOCATION
-    description: STR_REGIONAL_HQ_LOCATION_DESCRIPTION
-    background: COVEROPSHQ_BACKGROUND.SCR
-    researchList: [STR_REGIONAL_HQ_LOCATION]
     timer: 30
     timerRandom: 0
   - name: STR_EXPANDABLE_AMMO_EVENT

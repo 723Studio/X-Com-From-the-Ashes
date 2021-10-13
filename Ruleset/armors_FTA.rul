@@ -848,6 +848,7 @@ armors:
     corpseBattle:
       - STR_RESISTANCE_SCIENTIST_CORPSE
     visibilityAtDark: 10
+    personalLight: 2
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -895,6 +896,7 @@ armors:
     corpseBattle:
       - STR_RESISTANCE_SOLDIER_CORPSE
     visibilityAtDark: 10
+    personalLight: 2
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -1070,7 +1072,7 @@ armors:
     camouflageAtDay: 30
     camouflageAtDark: -2
     visibilityAtDark: 9
-    personalLight: 5
+    personalLight: 2
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
