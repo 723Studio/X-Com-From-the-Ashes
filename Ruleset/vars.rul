@@ -18,7 +18,7 @@ psiUnlockResearch: STR_PSIONIC
 allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70
 lessAliensDuringBaseDefense: true
-defeatFunds: -300 #much lower vanilla because loose logic is different
+defeatFunds: -1000000
 gameOver:
   loseMoney: loseGame       # cutscene ID that should be played when the player loses due to poor economy management
   loseRating: loseGame      # cutscene ID that should be played when the player loses due to poor rating
@@ -115,10 +115,10 @@ loyaltySettings:
   coefAlienMission: 110
   coefUfo: 100
   coefAlienBase: 100
-  noFundsPenalty: 200
+  noFundsPenalty: 50
   noFundsValue: -50000
-  performanceCap: 5000
-  performanceFactor: 10
+  performanceCap: 5000 #would be deleted in further releases, no practical effect now
+  performanceFactor: 10 #would be deleted in further releases, no practical effect now
 
 loyaltyRatings:
    5000: STR_L_RATING_AMAZING
