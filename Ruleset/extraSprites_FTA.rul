@@ -308,6 +308,7 @@ extraSprites:
       410: Resources/Weapons/MIB/bigob_Woundgun.png
       411: Resources/Weapons/MIB/bigob_WoundgunClip.png 
       412: Resources/Armors/Enemies/Monsters/bigob_ChupacabraWeapon.png
+      413: Resources/MiscItems/bigob_Crate.png
 
       
   - type: FLOOROB.PCK
@@ -425,6 +426,7 @@ extraSprites:
       409: Resources/MiscItems/floorob_MibDataContainer.png
       410: Resources/Weapons/MIB/floorob_Woundgun.png
       411: Resources/Weapons/MIB/floorob_WoundgunClip.png
+      413: Resources/MiscItems/floorob_Crate.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40

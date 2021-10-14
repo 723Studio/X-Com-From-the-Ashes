@@ -1,5 +1,5 @@
 en-US:
-  STR_OPENXCOM: "From the Ashes v. 0.0.6"
+  STR_OPENXCOM: "From the Ashes v. 0.0.7"
   STR_XCOM: "X-COM"
   STR_LAST_STAND: "Last Stand"
 #diplomacy
@@ -139,7 +139,7 @@ en-US:
   STR_EXTRACTION_SUCCESSFUL: "Soldiers' rescue successful"
   STR_EVACUATION_FAILED: "Evacuation failed"
   STR_VIP_SAVED: "V.I.P. SAVED"
-  STR_VIP_KILLED_BY_ALIENS: "V.I.P. KILLED BY ALIENS"
+  STR_VIP_KILLED_BY_ALIENS: "V.I.P. KILLED BY ENEMIES"
   STR_VIP_KILLED_BY_XCOM_OPERATIVES: "V.I.P. KILLED BY X-COM OPERATIVES"
   STR_VIP_LOST: "V.I.P. LOST"
   STR_SCIENTIST_JOINED_XCOM: "SCIENTIST JOINED X-COM"
@@ -900,6 +900,8 @@ en-US:
   STR_FLOPPY_RESISTANCE: "Resistance Floppy Drive"
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: "The device was a kind of escape pod into which data from the M.I.B. command center servers was pumped. Apparently, the servers were on an isolated network and this was an attempt to save information during our assault. The data in it is encrypted and we are not yet able to crack it."
+  STR_SUPPLIES_1: "Supplies pack"
+  STR_SUPPLIES_2: "Supplies pack"
   STR_CRATED_HELICOPTER: "Crated Helicopter"
   STR_CRATED_OSPREY: "Crated Osprey"
   STR_LABORATORY_EQUIPMENT: "Lab Equipment"

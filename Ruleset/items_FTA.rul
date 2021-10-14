@@ -3789,6 +3789,34 @@ items:
     invHeight: 2
     recoveryPoints: 200
     listOrder: 30030
+  - type: STR_SUPPLIES_1
+    categories: [STR_OTHER]
+    size: 2
+    weight: 50
+    bigSprite: 413
+    floorSprite: 413
+    costSell: 4000
+    costThrow:
+      time: 70
+      energy: 40
+    battleType: 0
+    armor: 10
+    invWidth: 2
+    invHeight: 3
+  - type: STR_SUPPLIES_2
+    categories: [STR_OTHER]
+    size: 2
+    weight: 50
+    bigSprite: 413
+    floorSprite: 413
+    costSell: 6000
+    costThrow:
+      time: 70
+      energy: 40
+    battleType: 0
+    armor: 10
+    invWidth: 2
+    invHeight: 3
 
 #geoscape-only
   - type: STR_CRATED_HELICOPTER
