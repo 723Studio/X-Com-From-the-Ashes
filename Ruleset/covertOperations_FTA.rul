@@ -64,7 +64,7 @@ covertOperations:
       - STR_REGIONAL_HQ_LOCATION
     soldierSlots: 3
     scientistSlots: 1
-    baseChances: 50
+    baseChances: 45
     danger: 13
     costs: 220
     specialRule: STR_REGIONAL_HQ_DISCOVERY
@@ -218,42 +218,42 @@ covertOperations:
     description: STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION
     requires:
       - STR_COVERT_OPERATIONS
-      - STR_BIOLAB
+      - STR_BIOLAB_PREREQ
     soldierSlots: 2
     optionalSoldierSlots: 1
     scientistSlots: 1
     baseChances: 60
     danger: 0
-    costs: 120
+    costs: 220
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
-    successFunds: -420000
-    failureFunds: -650000
-    successScore: 300
-    failureScore: -250
+    successFunds: -220000
+    failureFunds: -310000
+    successScore: 100
+    failureScore: -80
     successEveryItemList:
-      STR_LABORATORY_EQUIPMENT: 2
+      STR_LABORATORY_EQUIPMENT: 1
     failureEveryItemList:
-      STR_LABORATORY_EQUIPMENT: 2
+      STR_LABORATORY_EQUIPMENT: 1
     successEvent: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     failureEvent: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
   - name: STR_BIOLAB_EQUIPMENT_ACQUISITION
     description: STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION
     requires:
       - STR_COVERT_OPERATIONS
-      - STR_BIOLAB
+      - STR_BIOLAB_PREREQ
     soldierSlots: 2
     optionalSoldierSlots: 1
     scientistSlots: 1
     baseChances: 60
     danger: 0
-    costs: 120
+    costs: 340
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
     successFunds: -370000
     failureFunds: -480000
-    successScore: 270
-    failureScore: -230
+    successScore: 120
+    failureScore: -140
     successEveryItemList:
       STR_BIOLOGY_EQUIPMENT: 1
     failureEveryItemList:

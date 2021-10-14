@@ -3750,7 +3750,7 @@ items:
     categories: [STR_EVIDENCE]
     landOnly: true
     size: 0.01
-    costSell: 450000 #Should be only sellable to VOID
+    costSell: 150000 #Should be only sellable to VOID
     missionObjective: true #just for marker
     weight: 1
     battleType: 0
@@ -3838,11 +3838,13 @@ items:
 
   - type: STR_LABORATORY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
+    size: 25
     costBuy: 200000
     costSell: 180000
     listOrder: 70000
   - type: STR_BIOLOGY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
+    size: 35
     costBuy: 350000
     costSell: 300000
     listOrder: 70010

@@ -127,6 +127,18 @@ eventScripts:
     minDifficulty: 4
     maxDifficulty: 4
 
+  - type: STR_HELICOPTER_SCRIPT
+    oneTimeSequentialEvents: [STR_HELICOPTER]
+    researchTriggers:
+      STR_HELICOPTER: false
+    itemTriggers:
+      STR_CRATED_HELICOPTER: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+
   - &STR_ELECTRIC_WEAPONS_SCRIPT
     type: STR_ELECTRIC_WEAPONS_SCRIPT
     oneTimeSequentialEvents: [STR_ELECTRIC_WEAPONS_PREREQ_EVENT]
@@ -150,6 +162,8 @@ eventScripts:
     researchTriggers:
       STR_BIOLAB_PREREQ: false
       STR_BIOLAB: false
+      STR_FACILITIES_BLUEPRINTS: true
+      STR_COVERT_OPERATIONS: true
     itemTriggers:
       STR_FACEHUGGER_CORPSE: true
     firstMonth: 0

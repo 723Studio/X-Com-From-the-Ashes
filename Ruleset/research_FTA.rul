@@ -931,7 +931,7 @@ research:
       - STR_CHUPACABRA_CORPSE
     listOrder: 6300
 
-  #weapons and equipment
+#weapons and equipment
   - name: STR_CROWBAR
     cost: 5
     points: 1
@@ -1215,8 +1215,8 @@ research:
       - STR_TODOIUM
     listOrder: 7460
 
-  #craft items
-  #facilities
+#craft items
+#facilities
   - name: STR_WORKSHOP
     hidden: true
     unlocks:
@@ -1284,7 +1284,7 @@ research:
       - STR_TODOIUM
     listOrder: 7460
 
-  #Resistance tech tree
+#Resistance tech tree
   - name: STR_RESISTANCE_TECH_TREE_START
     dependencies:
       - STR_TROLLIUM

@@ -116,7 +116,7 @@ loyaltySettings:
   coefUfo: 100
   coefAlienBase: 100
   noFundsPenalty: 50
-  noFundsValue: -50000
+  noFundsValue: -100000
   performanceCap: 250 #would be deleted in further releases, no practical effect now
   performanceFactor: 2 #would be deleted in further releases, no practical effect now
 
@@ -132,13 +132,13 @@ loyaltyRatings:
    -1500: STR_L_RATING_TERRIBLE
 
 reputationLevels:
-   8000: STR_ALLY
-   1000: STR_HONORED
+   3500: STR_ALLY
+   800: STR_HONORED
    250: STR_FRIENDLY
    0: STR_NEUTRAL
    -350: STR_UNFRIENDLY
-   -1500: STR_HOSTILE
-   -9000: STR_HATED
+   -1000: STR_HOSTILE
+   -3000: STR_HATED
 
 reputationBreakthroughValue: 500 #actually, it's default value, might be changed later
 

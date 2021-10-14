@@ -593,7 +593,7 @@ ufos:
         - FOREST
         - RADIO_BEACON
       mapBlocks:
-        - name: FOREST_BEACON00
+        - name: FOREST_BEACON00 #FIXME - add MIB beacon item to recovery
           width: 10
           length: 10
 

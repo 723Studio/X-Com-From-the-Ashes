@@ -76,7 +76,7 @@ missionScripts:
         STR_RESISTANCE_HEAVEN_DEFENCE: 100
     regionWeights:
       0:
-        RESISTANCE_START_ZONE: 100
+        RESISTANCE_FARM_START_ZONE: 100
     raceWeights:
       0:
         STR_ZOMBIES: 100
@@ -89,7 +89,7 @@ missionScripts:
     varName: heavenDefence
   - type: heavenForestHouse
     firstMonth: 0
-    executionOdds: 20
+    executionOdds: 100 #20 #TODO!!!
     allowedProcessor: 1
     missionWeights:
       0:
@@ -129,7 +129,7 @@ missionScripts:
     varName: heavenDefence
   - type: resistanceScientist
     firstMonth: 0
-    executionOdds: 20
+    executionOdds: 10
     allowedProcessor: 1
     missionWeights:
       0:
@@ -143,15 +143,15 @@ missionScripts:
     researchTriggers:
       STR_RESISTANCE_SCIENTIST: false
     useTable: false
-    spawnGap: 70
+    spawnGap: 90
     randomSpawnGap: 15
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: heavenDefence
+    varName: resistanceSpecial
   - type: desertTelescope
     firstMonth: 2
-    executionOdds: 20
+    executionOdds: 10
     allowedProcessor: 1
     missionWeights:
       0:
@@ -165,7 +165,7 @@ missionScripts:
     researchTriggers:
       STR_DESERT_TELESCOPE: false
     useTable: false
-    spawnGap: 85
+    spawnGap: 90
     randomSpawnGap: 15
     startDelay: 4320
     randomDelay: 43500

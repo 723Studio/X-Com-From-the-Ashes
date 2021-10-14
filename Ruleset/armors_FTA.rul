@@ -796,7 +796,7 @@ armors:
     corpseBattle:
       - STR_DOGE_CORPSE
     visibilityAtDark: 15
-    personalLight: 5
+    personalLight: 1
     heatVision: 20
     psiDefence: *StandardDynamicPsiDefence
     recovery:
@@ -848,7 +848,7 @@ armors:
     corpseBattle:
       - STR_RESISTANCE_SCIENTIST_CORPSE
     visibilityAtDark: 10
-    personalLight: 2
+    personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -873,7 +873,7 @@ armors:
     corpseBattle:
       - STR_RESISTANCE_SOLDIER_CORPSE
     visibilityAtDark: 10
-    personalLight: 2
+    personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -897,7 +897,7 @@ armors:
     corpseBattle:
       - STR_RESISTANCE_SOLDIER_CORPSE
     visibilityAtDark: 10
-    personalLight: 2
+    personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -1073,7 +1073,7 @@ armors:
     camouflageAtDay: 30
     camouflageAtDark: -2
     visibilityAtDark: 9
-    personalLight: 2
+    personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
@@ -1205,7 +1205,7 @@ armors:
     corpseBattle:
       - STR_CORPSE_LEATHER_COAT
     visibilityAtDark: 9
-    personalLight: 5
+    personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4

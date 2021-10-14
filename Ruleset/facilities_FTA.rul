@@ -25,11 +25,11 @@ facilities:
     maxAllowedPerBase: 1
     requires:
       - STR_FACILITIES_BLUEPRINTS
-    buildCost: 2500000
+    buildCost: 2000000
     buildTime: 40
-    monthlyCost: 5000 #20000
+    monthlyCost: 6000
     canBeBuiltOver: true
-    storage: 10
+    storage: 5
     storageTiles: [[-1, -1, -1]]
     labs: 7
     manaRecoveryPerDay: 1
@@ -47,30 +47,28 @@ facilities:
       - STR_BIOLAB
     buildCostItems:
      STR_LABORATORY_EQUIPMENT:
-       build: 2
-       refund: 2
+       build: 1
+       refund: 1
      STR_BIOLOGY_EQUIPMENT:
        build: 1
        refund: 1         
     buildCost: 740000
     buildTime: 20
-    monthlyCost: 25000
+    monthlyCost: 15000
     labs: 5
-    storage: 3
-    storageTiles: [[-1, -1, -1]]
     mapName: XBASF_07
   - type: STR_PRISON_CELLS
     spriteShape: 1
     spriteFacility: 301
     requires:
       - STR_FACILITIES_BLUEPRINTS
-    buildCost: 160000
+    buildCost: 260000
     buildTime: 16
-    monthlyCost: 8000
+    monthlyCost: 3000
     aliens: 10
     prisonType: 1
     labs: 1
-    storage: 3
+    storage: 2
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
     mapName: XBASF_03
@@ -80,7 +78,7 @@ facilities:
     spriteFacility: 306
     requires:
       - STR_CREATURES_CONTAINMENT
-    buildCost: 450000
+    buildCost: 470000
     buildTime: 20
     monthlyCost: 10000
     aliens: 10
@@ -93,11 +91,11 @@ facilities:
     spriteFacility: 302
     requires:
       - STR_FACILITIES_BLUEPRINTS
-    buildCost: 140000
+    buildCost: 240000
     buildTime: 20
-    monthlyCost: 5000
+    monthlyCost: 2000
     trainingRooms: 10
-    storage: 4
+    storage: 2
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 4
     mapName: XBASF_04
@@ -110,7 +108,7 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 450000
     buildTime: 22
-    monthlyCost: 30000
+    monthlyCost: 5000
     rightClickActionType: 6
     sickBayAbsoluteBonus: 0.25
     sickBayRelativeBonus: 1.0
@@ -127,9 +125,9 @@ facilities:
     buildCost: 80000 #just to reduce build over cost
     buildTime: 6
     rightClickActionType: 3
-    storage: 30
+    storage: 20
     storageTiles: [[-1, -1, -1]]
-    monthlyCost: 500
+    monthlyCost: 10
     mapName: XBASF_06
     listOrder: 6810
 #vanilla
@@ -139,7 +137,7 @@ facilities:
     requires:
       - STR_FACILITIES_BLUEPRINTS
     lift: true
-    buildCost: 300000
+    buildCost: 400000
     buildTime: 1
     monthlyCost: 2000 #4000
     mapName: XBASE_00
@@ -148,10 +146,10 @@ facilities:
     spriteFacility: 18
     requires:
       - STR_FACILITIES_BLUEPRINTS
-    buildCost: 400000
+    buildCost: 450000
     buildTime: 16
-    monthlyCost: 10000
-    personnel: 50
+    monthlyCost: 4000
+    personnel: 60
     #manaRecoveryPerDay: 5
     storage: 10
     storageTiles: [[-1, -1, -1]]
@@ -162,10 +160,10 @@ facilities:
     spriteFacility: 24
     requires:
       - STR_FACILITIES_BLUEPRINTS
-    buildCost: 150000
+    buildCost: 250000
     buildTime: 10
-    monthlyCost: 5000
-    storage: 80
+    monthlyCost: 3000
+    storage: 70
     storageTiles:
         - [6, 3, 1]
         - [5, 4, 1]
@@ -182,12 +180,12 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     canBeBuiltOver: true
     size: 2
-    buildCost: 200000
-    buildTime: 25
-    monthlyCost: 25000
+    buildCost: 600000
+    buildTime: 30
+    monthlyCost: 10000
     crafts: 1
     workshops: 5
-    storage: 25
+    storage: 20
     storageTiles: [[-1, -1, -1]]
     mapName: XBASE_16
   - type: STR_LABORATORY
@@ -197,12 +195,12 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCostItems:
      STR_LABORATORY_EQUIPMENT:
-       build: 5
-       refund: 5
+       build: 3
+       refund: 3
     buildCost: 750000
     buildTime: 26
     monthlyCost: 30000
-    labs: 20
+    labs: 15
     mapName: XBASE_02
   - type: STR_WORKSHOP
     spriteShape: 1
@@ -211,7 +209,7 @@ facilities:
     requires:
       - STR_FACILITIES_BLUEPRINTS
       - STR_WORKSHOP
-    buildCost: 400000
+    buildCost: 220000
     buildTime: 15
     monthlyCost: 5000
     workshops: 12

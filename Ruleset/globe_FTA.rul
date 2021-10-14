@@ -371,9 +371,12 @@ globe:
     - id: -4
       deployments:
         STR_RESISTANCE_FARM_ZOMBIE: 100
+        STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: 40
     - id: -5
       deployments:
         STR_RESISTANCE_FOREST_HOUSE: 100
+        STR_RESISTANCE_FOREST_HOUSE_AMBUSH: 40
+        STR_MIB_FOREST_BEACON: 30
     - id: -6
       deployments:
         STR_SCIENTIST_REFUGE: 100

@@ -1389,7 +1389,7 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 45
+      tu: 50
       stamina: 50
       health: 27
       bravery: 35
@@ -1493,7 +1493,7 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 55
+      tu: 65
       stamina: 55
       health: 32
       bravery: 35

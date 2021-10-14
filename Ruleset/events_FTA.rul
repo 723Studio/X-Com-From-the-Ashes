@@ -243,14 +243,12 @@ events:
     description: STR_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_DESERT_TELESCOPE]
-    loyalty: 150
     reputationScore:
       STR_RESISTANCE: 180
   - name: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE
     description: STR_NOT_RESCUED_SCIENTISTS_TELESCOPE_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_DESERT_TELESCOPE]
-    loyalty: -200
     reputationScore:
       STR_RESISTANCE: -300
   - name: STR_RESISTANCE_WEAPONRY_EVENT
@@ -310,6 +308,13 @@ events:
     timer: 750
     timerRandom: 650
     interruptResearch: STR_BIOLAB_PREREQ
+  - name: STR_HELICOPTER
+    description: STR_HELICOPTER_DESCRIPTION
+    background: BACK17.SCR
+    researchList: [STR_HELICOPTER]
+    timer: 30
+    timerRandom: 0
+    interruptResearch: STR_HELICOPTER
   - name: STR_ELECTRIC_WEAPONS_PREREQ_EVENT
     description: STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION
     background: BACK05.SCR

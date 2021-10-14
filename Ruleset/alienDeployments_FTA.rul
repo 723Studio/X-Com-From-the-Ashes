@@ -1588,6 +1588,7 @@ alienDeployments:
       desc: STR_MIB_FOREST_BEACON_DESCRIPTION
     terrains:
       - FORESTSWAMP
+      - FOREST
     customUfo: STR_MIB_FOREST_BEACON
     script: CRAFT_UFO_SCRIPT
     data:
@@ -1710,7 +1711,6 @@ alienDeployments:
     terrains:
       - CULTA
     script: RESISTANCE_FARM_AMBUSH
-    battleScript: ZOMBIE_ATTACK_RESISTANCE_FARM
     data:
       - alienRank: 5 #STR_ZOMBIE_STERILE_TERRORIST
         lowQty: 10
@@ -1740,8 +1740,8 @@ alienDeployments:
             []
       - alienRank: 6 #STR_FACEHUGGER
         lowQty: 3
-        highQty: 6
-        dQty: 1
+        highQty: 7
+        dQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -1765,8 +1765,8 @@ alienDeployments:
           -
             []
       - alienRank: 4 #STR_ZOMBIE_GRUBAS_TERRORIST
-        lowQty: 1
-        highQty: 3
+        lowQty: 2
+        highQty: 5
         dQty: 2
         percentageOutsideUfo: 100
         itemSets:
