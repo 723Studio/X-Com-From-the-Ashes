@@ -120,8 +120,8 @@ covertOperations:
     optionalSoldierSlots: 2
     optionalSoldierEffect: 5
     baseChances: 60
-    danger: 5
-    costs: 180
+    danger: 14
+    costs: 220
     successDescription: STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION
     successScore: 200
     successResearchList:
@@ -141,17 +141,15 @@ covertOperations:
     requires:
       - STR_STEAL_OSPREY_PREREQ
     soldierSlots: 6
-    baseChances: 60
-    danger: 8
-    costs: 400
+    baseChances: 45
+    danger: 9
+    costs: 160
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 150
     successWeightedItemList:
       STR_CRATED_OSPREY: 100
-    successFunds: -15000
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -300
-    #failureFunds: -105000 
     failureFunds: -42000
 
 #monster hunt
