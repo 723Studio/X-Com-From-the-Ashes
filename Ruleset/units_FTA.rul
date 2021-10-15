@@ -751,7 +751,7 @@ units:
       psiStrength: 4
     armor: STR_FACEHUGGER_ARMOR
     standHeight: 6
-    value: 12
+    value: 20
     aggroSound: 77
     deathSound: 78
     moveSound: 80
@@ -791,7 +791,7 @@ units:
     armor: STR_ZOMBIE_STERILE_ARMOR
     standHeight: 22
     kneelHeight: 22
-    value: 4
+    value: 5
     intelligence: 3
     aggression: 8
     isLeeroyJenkins: true
@@ -829,7 +829,7 @@ units:
     armor: STR_ZOMBIE_GRUBAS_ARMOR
     standHeight: 22
     kneelHeight: 22
-    value: 6
+    value: 8
     intelligence: 3
     aggression: 8
     isLeeroyJenkins: true
@@ -898,7 +898,7 @@ units:
     armor: STR_CHUPACABRA_ARMOR
     standHeight: 18
     kneelHeight: 12
-    value: 10
+    value: 15
     aggroSound: 123
     deathSound: 124
     # panicSound: 265
@@ -940,7 +940,7 @@ units:
     armor: STR_MALE_CITIZEN_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -80
+    value: -25
     deathSound: *MaleDeathSounds
     # panicSound: *MalePanicSounds
     # berserkSound: *MaleBerserkSounds
@@ -1005,7 +1005,7 @@ units:
     armor: STR_DOGE_ARMOR
     standHeight: 12
     kneelHeight: 12
-    value: 2
+    value: -2
     deathSound: [101, 102, 103]
     aggroSound: 104
     energyRecovery: 30
@@ -1027,7 +1027,6 @@ units:
       melee: 30
       psiStrength: 45
       psiSkill: 0
-      
     statsRandom:
       tu: 5
       stamina: 5
@@ -1042,7 +1041,7 @@ units:
     armor: STR_MALE_POLICE_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -100
+    value: -20
     deathSound: *MaleDeathSounds
     # panicSound: *MalePanicSounds
     # berserkSound: *MaleBerserkSounds
@@ -1489,7 +1488,7 @@ units:
       - []
       - []
       - []
-  - type: STR_RESISTANCE_SOLDIER
+  - type: STR_RESISTANCE_SOLDIER #TODO
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:

@@ -494,13 +494,34 @@ mapScripts:
     - type: addCraft
       # rects: 
       #  - [2, 2, 5, 5]
-    # - type: addBlock
-    #   size: 2
-    #   executions: 1
-    # - type: addBlock
-    #   size: 2
-    #   executions: 3
-    #   executionChances: 65
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: addBlock
+      size: 2
+      executions: 3
+      executionChances: 65
+    - type: fillArea
+
+  - type: CRAFT_UFO_SCRIPT_BIG_MAP
+    commands:
+    - type: addCraft
+      rects: 
+       - [2, 2, 4, 4]
+    - type: addUFO
+      rects: 
+       - [2, 2, 4, 4]
+    - type: fillArea
+      rects: 
+       - [2, 2, 4, 4]
+      terrain: FOREST_SNOW
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: addBlock
+      size: 2
+      executions: 3
+      executionChances: 65
     - type: fillArea
 
   - type: RESISTANCE_URBAN_HIDEOUT

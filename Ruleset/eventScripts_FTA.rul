@@ -284,7 +284,7 @@ eventScripts:
     lastMonth: 24
     executionOdds: 10
     spawnGap: 120
-    allowedProcessor: 30
+    allowedProcessor: 0
   - type: STR_OLD_CROP_CIRCLES
     eventWeights:
       0:

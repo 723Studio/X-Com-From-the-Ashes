@@ -39,7 +39,7 @@ ufos:
     size: STR_MEDIUM_UC
     sprite: 4
     damageMax: 500
-    shieldCapacity: 200
+    shieldCapacity: 600
     shieldRecharge: 115 #1*100% + 15 % to get 1 SP per sec
     shieldRechargeInGeoscape: 200
     shieldBleedThrough: 100
@@ -129,9 +129,9 @@ ufos:
                 mixed: true
                 itemList: &explosiveResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
               - position: [3, 0, 0]
-                amount: 2
+                amount: 6
                 mixed: true
-                itemList: &suppliesResistanceStash [STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME,  STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT,  STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_PAINKILLER, STR_PAINKILLER, STR_STIMS, STR_STIMS, STR_MEDI_PACK]
+                itemList: &suppliesResistanceStash [STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME,  STR_DOUBLE_BARRELED_BUCKSHOT,   STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_PAINKILLER, STR_PAINKILLER, STR_STIMS, STR_STIMS, STR_MEDI_PACK, STR_SUPPLIES_1, STR_SUPPLIES_1, STR_SUPPLIES_1, STR_SUPPLIES_1]
           fuseTimers:
             STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
         - name: CULTA18
@@ -263,9 +263,6 @@ ufos:
                 amount: 7
                 mixed: true
                 itemList: *generalResistanceStash
-              - position: [0, 5, 0]
-                amount: 1
-                itemList: [STR_SUPPLIES_1, STR_SUPPLIES_2]
           fuseTimers:
             STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
         - name: CULTACIV01
@@ -473,9 +470,9 @@ ufos:
       mapDataSets:
         - BLANKS
         - FORESTSWAMP
-        - RESISTANCE_FOREST_HOUSE_01
+        - RESISTANCE_FOREST_HOUSE
       mapBlocks:
-        - name: RESISTANCE_FOREST_HOUSE_01
+        - name: RESISTANCE_FOREST_HOUSE
           width: 20
           length: 20
           items:
@@ -497,9 +494,6 @@ ufos:
                 amount: 5
                 mixed: true
                 itemList: *suppliesResistanceStash
-              - position: [4, 9, 0]
-                amount: 1
-                itemList: [STR_SUPPLIES_1, STR_SUPPLIES_2]
         - name: RESISTANCE_FOREST_HOUSE_02
           width: 20
           length: 20
@@ -542,9 +536,9 @@ ufos:
       mapDataSets:
         - BLANKS
         - FORESTSWAMP
-        - RESISTANCE_FOREST_HOUSE_01
+        - RESISTANCE_FOREST_HOUSE
       mapBlocks:
-        - name: RESISTANCE_FOREST_HOUSE_01
+        - name: RESISTANCE_FOREST_HOUSE
           width: 20
           length: 20
           items:
@@ -565,9 +559,6 @@ ufos:
                 amount: 5
                 mixed: true
                 itemList: *suppliesResistanceStash
-              - position: [4, 9, 0]
-                amount: 1
-                itemList: [STR_SUPPLIES_1, STR_SUPPLIES_2]
         - name: RESISTANCE_FOREST_HOUSE_02
           width: 20
           length: 20
@@ -765,9 +756,7 @@ ufos:
                 amount: 6
                 mixed: true
                 itemList: *suppliesResistanceStash
-              - position: [1, 8, 0]
-                amount: 1
-                itemList: [STR_SUPPLIES_1, STR_SUPPLIES_2]
+
               - position: [3, 5, 0]
                 amount: 1
                 mixed: false

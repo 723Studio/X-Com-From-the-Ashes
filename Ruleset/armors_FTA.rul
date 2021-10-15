@@ -196,13 +196,13 @@ armors:
     spriteInv: inventory_MIB_SPECOPS
     corpseBattle:
       - STR_MIB_SPECOPS_CORPSE
-    visibilityAtDark: 13
+    visibilityAtDark: 15
     camouflageAtDark: -3
-    heatVision: 100
+    heatVision: 15
     weight: 6
     frontArmor: 25
     sideArmor: 15
-    rearArmor: 20
+    rearArmor: 17
     underArmor: 10
     psiDefence: *StandardDynamicPsiDefence
     recovery:

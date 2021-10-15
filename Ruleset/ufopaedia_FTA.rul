@@ -497,12 +497,16 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: UP006.SPK
     text: STR_STINGRAY_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 9500
   - id: STR_CANNON_UC
     type_id: 2
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: UP008.SPK
     text: STR_CANNON_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 9510
 
 #STR_BASE_FACILITIES 10000

@@ -2,6 +2,8 @@ battleScripts:
   - type: ZOMBIE_ATTACK_RESISTANCE_FARM
     commands:
     - type: spawnUnit #for low diff
+      startTurn: 5
+      executionChances: 50
       packSize: 4
       randomPackSize: true
       unitSide: 1
@@ -9,13 +11,16 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
     - type: spawnUnit #random additional
-      executionChances: 40
+      startTurn: 5
+      executionChances: 20
       packSize: 4
       randomPackSize: true
       unitSide: 1
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST,STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #high diff
+      startTurn: 4
+      executionChances: 60
       packSize: 6
       randomPackSize: true
       unitSide: 1
@@ -23,37 +28,37 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #extra SH gift
+      startTurn: 5
       executionChances: 10
       packSize: 6
       randomPackSize: false
       unitSide: 1
       minDifficulty: 4
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
+      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER,STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
 
   - type: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     commands:
-    - type: spawnUnit #start
-      executionChances: 80
-      #label: 1
-      startTurn: 3
-      endTurn: 5
+    - type: spawnUnit #firstWave
+      executionChances: 70
+      startTurn: 8
+      maxRuns: 1
+      variable: firstWave
       packSize: 4
       randomPackSize: false
       unitSide: 1
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #continues
-      executionChances: 30
-      #conditionals: 1
-      packSize: 4
+      executionChances: 20
+      startTurn: 10
+      packSize: 3
       randomPackSize: true
       unitSide: 1
-      startTurn: 5
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #secondWave
-      executionChances: 60
+      executionChances: 50
       startTurn: 13
       packSize: 6
       randomPackSize: false
@@ -65,7 +70,7 @@ battleScripts:
     - type: spawnUnit #extra SH gift
       executionChances: 10
       packSize: 6
-      startTurn: 3
+      startTurn: 7
       randomPackSize: false
       unitSide: 1
       minDifficulty: 4
@@ -74,26 +79,26 @@ battleScripts:
 
   - type: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     commands:
-    - type: spawnUnit #for low diff
-      executionChances: 80
-      startTurn: 5
-      endTurn: 9
+    - type: spawnUnit #firstWave
+      executionChances: 70
+      startTurn: 8
+      maxRuns: 1
+      variable: firstWave
       packSize: 4
       randomPackSize: false
       unitSide: 1
-      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
-      unitSet: [STR_MIB_SPECOPS_SPAWN]
+      spawnBlocks: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #random additional
-      executionChances: 30
-      packSize: 4
+      executionChances: 20
+      packSize: 3
       randomPackSize: true
       unitSide: 1
-      startTurn: 6
+      startTurn: 10
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #secondWave
       executionChances: 60
-      startTurn: 13
+      startTurn: 15
       packSize: 6
       randomPackSize: false
       unitSide: 1
@@ -103,7 +108,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #extra SH gift
       executionChances: 10
-      startTurn: 4
+      startTurn: 9
       packSize: 8
       randomPackSize: false
       unitSide: 1
@@ -114,28 +119,26 @@ battleScripts:
   - type: MIB_ATTACK_SCIENTIST
     commands:
     - type: spawnUnit #start
-      executionChances: 85
+      executionChances: 60
       packSize: 4
       randomPackSize: true
       executions: 2
-      startTurn: 3
-      endTurn: 5
+      startTurn: 5
+      maxRuns: 2
       unitSide: 1
-      groups: [0, 2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #continue
       executionChances: 40
-      startTurn: 5
+      startTurn: 7
       packSize: 4
       randomPackSize: true
       unitSide: 1
-      groups: [0, 2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #random additional
-      executionChances: 30
-      startTurn: 4
+      executionChances: 20
+      startTurn: 6
       packSize: 3
       randomPackSize: false
       unitSide: 1
@@ -144,7 +147,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #extra SH gift
       executionChances: 10
-      startTurn: 2
+      startTurn: 4
       packSize: 8
       randomPackSize: false
       unitSide: 1
@@ -206,14 +209,14 @@ battleScripts:
       executionChances: 50
       packSize: 4
       unitSide: 1
-      startTurn: 5
+      startTurn: 6
       groups: [1, 4]
       spawnBlocks: [NORTH, SOUTH]
       unitSet: [STR_MALE_POLICE]
     - type: spawnUnit #random additional
       executions: 1
       executionChances: 10
-      startTurn: 7
+      startTurn: 8
       packSize: 2
       unitSide: 1
       groups: [1, 2, 3, 4]

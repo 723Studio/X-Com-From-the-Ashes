@@ -298,7 +298,7 @@ en-US:
   STR_GYM_UFOPEDIA: "This facility is a training room for X-COM soldiers. When assigned to training, soldier has a daily chance to raise his or her physical stat. Only up to 10 soldiers can be assigned to one GYM facility at a time. It also used to conduct special training courses and has briefing room for tactical trainings."
   STR_SICK_BAY: "Sick Bay"
   STR_SICK_BAY_UFOPEDIA: "This Sick Bay will serve to ensure that every wounded or sick soldier can receive the necessary medical attention as soon as possible. Thanks to this, the recovery of everyone at the base will be faster and better. Such attention to the health of their subordinates will definitely not go unnoticed."
-  STR_CLOSED_LAB: "Closed Laboratory"
+  STR_CLOSED_LAB: "Abandoned Laboratory"
   STR_BIOLAB: "Bio-laboratory"
   STR_BIOLAB_UFOPEDIA: "This research facility is necessary for study of living life forms, such as autopsies and biological experiments on captured creatures. It can accommodate up to 5 scientists. The lab space it provides can be used to research other projects, but you won't be able to research biology projects without this lab present.{NEWLINE}This facility requires 2 units of laboratory equipment and 1 unit of special biological equipment to function normally."
   STR_CREATURES_CONTAINMENT: "Dangerous Creatures Containment"
@@ -697,6 +697,7 @@ en-US:
   STR_ALIEN_TECH: "All Alien Tech"
   STR_EVIDENCE: "Evidence"
   STR_DISGUISE: "Disguise"
+  STR_MONSTERS: "Monsters"
 #manufacturing
   STR_WEAPONS: "Weapons"
   STR_EQUIPMENT: "Equipment"
@@ -901,7 +902,6 @@ en-US:
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: "The device was a kind of escape pod into which data from the M.I.B. command center servers was pumped. Apparently, the servers were on an isolated network and this was an attempt to save information during our assault. The data in it is encrypted and we are not yet able to crack it."
   STR_SUPPLIES_1: "Supplies pack"
-  STR_SUPPLIES_2: "Supplies pack"
   STR_CRATED_HELICOPTER: "Crated Helicopter"
   STR_CRATED_OSPREY: "Crated Osprey"
   STR_LABORATORY_EQUIPMENT: "Lab Equipment"
@@ -1029,7 +1029,7 @@ en-US:
   STR_MIB_AGENT_LOBOTOMY: "M.I.B. Agent Lobotomy"
   STR_MIB_AGENT_LOBOTOMY_UFOPEDIA: "By dissecting the M.I.B. agent's cranium, we were able to remove a strange implant integrated into the frontal and temporal lobes of the cerebral cortex. The device consists of a miniature power supply, a memory unit, a processor, and a complex receiving antenna. We also found that the centers responsible for long-term memory were practically burned out, probably by a strong electrical impulse."
   STR_MIB_HEAD_CHIP: "M.I.B. Head Implant"
-  STR_MIB_HEAD_CHIP_UFOPEDIA: "We figured out the power system of the chip, so we can keep it running. Apparently, previously it was recharged from two sources - directly from the electromagnetic activity of the brain, as well as wirelessly from an external device. It was possible to connect to the microcomputer of the implant, but we are not able to overcome the protection of its firmware and view the embedded programs." #FIXME - redo lore, i dislike it
+  STR_MIB_HEAD_CHIP_UFOPEDIA: "We figured out the power system of the chip, so we can keep it running. Apparently, previously it was recharged from two sources - directly from the electromagnetic activity of the brain, as well as wireless from an external device. It was possible to connect to the microcomputer of the implant, but we are not able to overcome the protection of its firmware and view the embedded programs." #FIXME - redo lore, i dislike it
   STR_MIB_DATA_TRANSFER_DECRYPTION: "M.I.B. Signal Decryption"
   STR_MIB_SIGNAL: "M.I.B. Signal"
   STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA: "The signal that the M.I.B. head chip was tuned to receive was partially decoded. It is a very weak, and the phased array on the surface of the chip is constantly calibrated, adjusting to the direction of the source, in order to enhance the reception.It appears to be less than 1,000 kilometers to the east.  We will be able to localize the source more precisely if we get close to it."
@@ -1037,7 +1037,7 @@ en-US:
   STR_REGIONAL_HQ_LOCATION_UFOPEDIA: "Now we can be sure that the Men in Black have some sort of headquarters. It's probably where their operations in the region are planned and prepared, their logistics, and possibly the recruitment of new agents. Most likely, it's a rather large structure, hidden under the guise of a civilian facility. We have only a rough idea of the location of this site, but now we have the capability to pick up traces of signals sent out by the M.I.B. We need to plan a covert operation to scout the area of the alleged headquarters."
 
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: "Creature Containment"
-  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: "Chief! The staggering results of that monster autopsy have raised a lot more new questions than answers to old ones. It would be great to research this thing alive, but it is impossoble without a special facility at our base. Perhaps by analyzing the Ufopaedia files, we can design a new compartment in which such creatures can be kept safely and completely isolated, while still maintaining access to them for study"
+  STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: "Chief! The staggering results of that monster autopsy have raised a lot more new questions than answers to old ones. It would be great to research this thing alive, but it is impossible without a special facility at our base. Perhaps by analyzing the Ufopaedia files, we can design a new compartment in which such creatures can be kept safely and completely isolated, while still maintaining access to them for study"
 #cities
 # ARCTIC CITIES
   STR_INUVIK: "Inuvik"

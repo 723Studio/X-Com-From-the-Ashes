@@ -107,7 +107,7 @@
     listOrder: 900
   - type: STR_HUMANS
     listOrder: 910
-  - type: STR_BEASTS
+  - type: STR_MONSTERS
     listOrder: 920
   - type: STR_GHOSTS
     listOrder: 920

@@ -4,7 +4,7 @@ soldiers:
     costBuy: 50000
     costSalary: 2000
     minStats:
-      tu: 50
+      tu: 60
       stamina: 40
       health: 25
       bravery: 10
@@ -17,7 +17,7 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 65
+      tu: 70
       stamina: 70
       health: 40
       bravery: 60
@@ -30,7 +30,7 @@ soldiers:
       psiSkill: 0
       mana: 0
     statCaps:
-      tu: 90
+      tu: 100
       stamina: 110
       health: 70
       bravery: 100
@@ -79,8 +79,8 @@ soldiers:
     costBuy: 15000
     costSalary: 2000
     minStats:
-      tu: 45
-      stamina: 40
+      tu: 50
+      stamina: 60
       health: 25
       bravery: 10
       reactions: 30
@@ -92,8 +92,8 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 55
-      stamina: 60
+      tu: 60
+      stamina: 70
       health: 30
       bravery: 60
       reactions: 40

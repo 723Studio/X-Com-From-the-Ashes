@@ -1188,8 +1188,8 @@ alienDeployments:
             []
 
   - type: STR_RESISTANCE_FOREST_HOUSE
-    width: 50
-    length: 50
+    width: 80
+    length: 80
     height: 6
     alert: STR_RESISTANCE_HEAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
@@ -1224,10 +1224,10 @@ alienDeployments:
     battleScript: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     data:
       - alienRank: 5 #STR_MIB_AGENT
-        lowQty: 4
-        highQty: 8
+        lowQty: 2
+        highQty: 6
         dQty: 2
-        percentageOutsideUfo: 50
+        percentageOutsideUfo: 90
         itemSets:
           -
             - STR_PISTOL
@@ -1277,9 +1277,9 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE 
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
-        lowQty: 3
+        lowQty: 2
         highQty: 5
-        dQty: 2
+        dQty: 1
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -1572,8 +1572,8 @@ alienDeployments:
 
   - type: STR_MIB_FOREST_BEACON
     race: STR_MIB
-    width: 60
-    length: 60
+    width: 70
+    length: 70
     height: 6
     alert: STR_RESISTANCE_HEAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
@@ -1590,13 +1590,13 @@ alienDeployments:
       - FORESTSWAMP
       - FOREST
     customUfo: STR_MIB_FOREST_BEACON
-    script: CRAFT_UFO_SCRIPT
+    script: CRAFT_UFO_SCRIPT_BIG_MAP #for a bit surrender landing
     data:
       - alienRank: 9 #STR_MIB_SPECOPS
-        lowQty: 7
-        highQty: 15
+        lowQty: 5
+        highQty: 10
         dQty: 3
-        percentageOutsideUfo: 10
+        percentageOutsideUfo: 90
         itemSets:
           -
             - STR_SNIPER_RIFLE 
@@ -1642,12 +1642,11 @@ alienDeployments:
             - STR_RIFLE
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP 
-
       - alienRank: 9 #STR_MIB_SPECOPS heavy duty
-        lowQty: 2
-        highQty: 4
-        dQty: 1
-        percentageOutsideUfo: 30
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
         itemSets:
           -
             - STR_LMG
@@ -1739,9 +1738,9 @@ alienDeployments:
           -
             []
       - alienRank: 6 #STR_FACEHUGGER
-        lowQty: 3
-        highQty: 7
-        dQty: 2
+        lowQty: 5
+        highQty: 10
+        dQty: 3
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -1765,8 +1764,8 @@ alienDeployments:
           -
             []
       - alienRank: 4 #STR_ZOMBIE_GRUBAS_TERRORIST
-        lowQty: 2
-        highQty: 5
+        lowQty: 4
+        highQty: 6
         dQty: 2
         percentageOutsideUfo: 100
         itemSets:
@@ -1814,7 +1813,7 @@ alienDeployments:
     terrains:
       - FOREST
     customUfo: STR_SCIENTIST_REFUGE
-    script: CRAFT_UFO_SCRIPT
+    script: CRAFT_UFO_SCRIPT_BIG_MAP
     battleScript: MIB_ATTACK_SCIENTIST
     data:
       - alienRank: 6
@@ -1866,7 +1865,7 @@ alienDeployments:
     terrains:
       - DESERT
     customUfo: DESERT_TELESCOPE_HOUSE
-    script: CRAFT_UFO_SCRIPT
+    script: CRAFT_UFO_SCRIPT_BIG_MAP
     battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     data:
       - alienRank: 5 #STR_MIB_AGENT
@@ -2137,7 +2136,7 @@ alienDeployments:
       - alienRank: 5
         lowQty: 2
         highQty: 4
-        dQty: 1
+        dQty: 0
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -2187,7 +2186,7 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP  
       - alienRank: 5
-        lowQty: 2
+        lowQty: 1
         highQty: 4
         dQty: 1
         percentageOutsideUfo: 100
@@ -2235,7 +2234,7 @@ alienDeployments:
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP 
       - alienRank: 4
-        lowQty: 2
+        lowQty: 1
         highQty: 4
         dQty: 1
         percentageOutsideUfo: 100
@@ -2304,8 +2303,8 @@ alienDeployments:
     battleScript: MIB_TRAP_ESCAPE_EARLY
     data:
       - alienRank: 5 #STR_MIB_AGENT
-        lowQty: 4
-        highQty: 5
+        lowQty: 3
+        highQty: 4
         dQty: 1
         percentageOutsideUfo: 100
         itemSets:
@@ -2460,7 +2459,7 @@ alienDeployments:
       - alienRank: 5
         lowQty: 2
         highQty: 6
-        dQty: 3
+        dQty: 2
         itemSets:
           -
             []
@@ -2484,7 +2483,7 @@ alienDeployments:
             []
       - alienRank: 2
         lowQty: 2
-        highQty: 8
+        highQty: 6
         dQty: 2
         itemSets:
           -
@@ -2530,8 +2529,8 @@ alienDeployments:
       - DESERT
     data:
       - alienRank: 6
-        lowQty: 12
-        highQty: 20
+        lowQty: 6
+        highQty: 12
         dQty: 5
         itemSets:
           -

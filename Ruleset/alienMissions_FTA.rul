@@ -10,15 +10,15 @@ alienMissions:
   # - delete: STR_ALIEN_SUPPLY
 #early-game scripts
   - type: STR_EARLY_GAME_TROLLING
-    points: 40
+    points: 10
     waves:
       - ufo: STR_SMALL_SCOUT
-        count: 2
+        count: 1
         trajectory: F1
         timer: 9000
       - ufo: STR_ABDUCTOR
         count: 1
-        trajectory: F0 #FIXME, change to landing
+        trajectory: F1 #FIXME, change to landing
         timer: 7800
 
 #resistance scripts

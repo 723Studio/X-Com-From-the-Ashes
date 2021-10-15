@@ -364,7 +364,7 @@ items:
     landOnly: true
     costBuy: 850
     costSell: 500
-    weight: 4
+    weight: 5
     bigSprite: 371
     floorSprite: 371
     handSprite: 576
@@ -1468,7 +1468,7 @@ items:
 
 #sniper rifles
   - type: STR_HUNTING_RIFLE
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     size: 0.2
     landOnly: true
     costBuy: 3500
@@ -1482,15 +1482,14 @@ items:
     compatibleAmmo:
       - STR_HUNTING_RIFLE_CLIP
     accuracyCloseQuarters: 66
-    accuracyAimed: 125
-    tuAimed: 70
+    accuracyAimed: 135
+    tuAimed: 50
     tuLoad: 20
-    snapRange: 25
     costThrow:
       energy: 16
     battleType: 1
     twoHanded: true
-    oneHandedPenalty: 30
+    blockBothHands: true
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -1502,7 +1501,7 @@ items:
     landOnly: true
     costBuy: 100
     costSell: 70
-    weight: 2
+    weight: 1
     bigSprite: 342
     floorSprite: 342
     handSprite: 408
@@ -1515,6 +1514,7 @@ items:
     damageBonus:
       firing: 0.15
     stackSize: 5
+    clipSize: 1
     battleType: 2
     armor: 30
     attraction: 7
@@ -1626,10 +1626,10 @@ items:
     accuracyMultiplier:
       firing: 0.5
       flatHundred: 0.5
-    accuracySnap: 130
-    accuracyAuto: 105
-    tuSnap: 27
-    tuAuto: 35
+    accuracySnap: 135
+    accuracyAuto: 120
+    tuSnap: 23
+    tuAuto: 26
     snapRange: 6
     autoRange: 5
     dropoff: 11
@@ -1661,15 +1661,15 @@ items:
       - STR_DOUBLE_BARRELED_BUCKSHOT_AA
     accuracyCloseQuarters: 100
     accuracySnap: 130
-    accuracyAimed: 200
+    accuracyAimed: 180
     accuracyAuto: 110
     tuSnap: 26
-    tuAimed: 55
+    tuAimed: 45
     tuAuto: 28
-    snapRange: 10
-    aimRange: 15
-    autoRange: 7
-    dropoff: 4
+    snapRange: 6
+    aimRange: 6
+    autoRange: 6
+    dropoff: 7
     autoShots: 2
     tuLoad: 10
     battleType: 1
@@ -1686,13 +1686,13 @@ items:
     size: 0.01
     costBuy: 40
     costSell: 30
-    weight: 2
+    weight: 1
     bigSprite: 349
     floorSprite: 349
     handSprite: 464
     hitSound: 13
     hitAnimation: 26
-    power: 16
+    power: 18
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 1.15
@@ -2988,7 +2988,7 @@ items:
     power: 25
     damageAlter:
       ToMorale: 15.0
-    clipSize: -1
+    clipSize: 1
     accuracyAimed: 100
     accuracyCloseQuarters: 100
     accuracyMultiplier:
@@ -3795,7 +3795,7 @@ items:
     weight: 50
     bigSprite: 413
     floorSprite: 413
-    costSell: 4000
+    costSell: 7000
     costThrow:
       time: 70
       energy: 40
@@ -3803,20 +3803,7 @@ items:
     armor: 10
     invWidth: 2
     invHeight: 3
-  - type: STR_SUPPLIES_2
-    categories: [STR_OTHER]
-    size: 2
-    weight: 50
-    bigSprite: 413
-    floorSprite: 413
-    costSell: 6000
-    costThrow:
-      time: 70
-      energy: 40
-    battleType: 0
-    armor: 10
-    invWidth: 2
-    invHeight: 3
+
 
 #geoscape-only
   - type: STR_CRATED_HELICOPTER
@@ -3829,8 +3816,10 @@ items:
   - type: STR_CRATED_OSPREY
     categories: [STR_HUMAN_TECH, STR_CRAFT]
     size: 50
+    requiresBuy:
+      - STR_TODOIUM
     costBuy: 250000
-    costSell: 150000
+    costSell: 200000
     transferTime: 120
     listOrder: 5
   - type: STR_CANNON
@@ -4268,112 +4257,65 @@ items:
     listOrder: 100370
 
 #Zombies
-  - type: STR_FACEHUGGER
-    categories: [STR_BEASTS]
+  - &liveMonster
+    type: STR_FACEHUGGER
+    categories: [STR_MONSTERS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 2
-    costSell: 20000
+    costSell: 0
     listOrder: 100380
-  - type: STR_FACEHUGGER_CORPSE
+  - &monsterCorpse
+    type: STR_FACEHUGGER_CORPSE
     categories: [STR_CORPSES]
     size: 0.1
-    costSell: 6000
+    costSell: 0
     weight: 30
     bigSprite: 107
     floorSprite: 107
     invWidth: 2
     invHeight: 3
-    recoveryPoints: 5
+    recoveryPoints: 10
     battleType: 11
     armor: 20
     listOrder: 100390
   - type: STR_ZOMBIE_STERILE_TERRORIST
-    categories: [STR_BEASTS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 20000
+    refNode: *liveMonster
     listOrder: 100400
   - type: STR_ZOMBIE_STERILE_CORPSE
-    categories: [STR_CORPSES]
-    size: 0.2
-    costSell: 6000
-    weight: 30
+    refNode: *monsterCorpse
     bigSprite: 105
     floorSprite: 105
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 5
-    battleType: 11
-    armor: 20
     listOrder: 100410
   - type: STR_ZOMBIE_GRUBAS_TERRORIST
-    categories: [STR_BEASTS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 30000
+    categories: [STR_MONSTERS]
+    refNode: *liveMonster
     listOrder: 100420
   - type: STR_ZOMBIE_GRUBAS_CORPSE
-    categories: [STR_CORPSES]
-    size: 0.2
-    costSell: 10000
+    refNode: *monsterCorpse
     weight: 45
     bigSprite: 106
     floorSprite: 106
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 10
-    battleType: 11
-    armor: 20
     listOrder: 100430
 #Monsters
   - type: STR_JABBER
-    categories: [STR_BEASTS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 2
-    costSell: 20000
+    refNode: *liveMonster
     listOrder: 100440
   - type: STR_JABBER_CORPSE
-    categories: [STR_CORPSES]
-    size: 0.1
-    costSell: 1500
-    weight: 30
+    refNode: *monsterCorpse
     bigSprite: 114
     floorSprite: 114
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 5
-    battleType: 11
-    armor: 20
     listOrder: 100450
   - type: STR_CHUPACABRA
-    categories: [STR_BEASTS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 2
-    costSell: 20000
+    refNode: *liveMonster
     listOrder: 100460
   - type: STR_CHUPACABRA_CORPSE
-    categories: [STR_CORPSES]
-    size: 0.1
-    costSell: 2000
-    weight: 30
+    refNode: *monsterCorpse
     bigSprite: 116
     floorSprite: 116
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 5
-    battleType: 11
-    armor: 20
     listOrder: 100470
+
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
@@ -4387,8 +4329,6 @@ items:
   - type: STR_RESISTANCE_AGENT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
-    size: 0.4
-    costSell: -2000
     weight: 32
     bigSprite: 103
     floorSprite: 103
@@ -4396,23 +4336,22 @@ items:
     invHeight: 3
     battleType: 11
     armor: 30
-    recoveryPoints: -100
+    recoveryPoints: -20
     recover: true
+    recoverCorpse: false
     listOrder: 100490
   - type: STR_RESISTANCE_AGENT_CORPSE_DECORATION
     categories: [STR_CORPSES]
     name: STR_CORPSE
-    size: 0.4
-    costSell: -2000
     weight: 32
     bigSprite: 103
     floorSprite: 103
     invWidth: 2
     invHeight: 3
-    battleType: 11
+    battleType: 0
     armor: 30
-    recoveryPoints: -50
     recover: true
+    recoverCorpse: false
     listOrder: 100490
   - type: STR_SPAWN_RESISTANCE_AGENT_VIP
     spawnUnit: STR_RESISTANCE_AGENT_VIP
@@ -4444,8 +4383,6 @@ items:
   - type: STR_RESISTANCE_SOLDIER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
-    size: 0.4
-    costSell: -2000
     weight: 32
     bigSprite: 103
     floorSprite: 103
@@ -4453,8 +4390,9 @@ items:
     invHeight: 3
     battleType: 11
     armor: 30
-    recoveryPoints: -200
+    recoveryPoints: -20
     recover: true
+    recoverCorpse: false
     listOrder: 100530
   - type: STR_SPAWN_RESISTANCE_SCIENTIST
     spawnUnit: STR_RESISTANCE_SCIENTIST
@@ -4478,7 +4416,6 @@ items:
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    costSell: -1000
     weight: 30
     bigSprite: 104
     floorSprite: 104
@@ -4486,8 +4423,9 @@ items:
     invHeight: 3
     battleType: 11
     armor: 30
-    recoveryPoints: -200
+    recoveryPoints: -40
     recover: true
+    recoverCorpse: false
     listOrder: 100560
   - type: STR_SPAWN_RESISTANCE_RADIO
     spawnUnit: STR_RESISTANCE_RADIO
@@ -4502,7 +4440,6 @@ items:
     categories: [STR_WRECKS]
     name: STR_CORPSE
     size: 0.4
-    costDispose: -1000
     weight: 40
     floorSprite: 115
     battleType: 11
@@ -4522,7 +4459,6 @@ items:
     categories: [STR_WRECKS]
     name: STR_CORPSE
     size: 0.4
-    costDispose: -1000
     weight: 40
     floorSprite: 121
     battleType: 11
@@ -4543,7 +4479,7 @@ items:
       energy: 20
     battleType: 11
     armor: 30
-    recoveryPoints: -20
+    recoveryPoints: -10
     recover: true
     recoverCorpse: false
     listOrder: 100610
@@ -4559,7 +4495,7 @@ items:
       energy: 20
     battleType: 11
     armor: 30
-    recoveryPoints: -20
+    recoveryPoints: -10
     recover: true
     recoverCorpse: false
     listOrder: 100620
@@ -4575,7 +4511,7 @@ items:
       energy: 20
     battleType: 11
     armor: 30
-    recoveryPoints: -20
+    recoveryPoints: -10
     recover: true
     recoverCorpse: false
     listOrder: 100630
@@ -4592,7 +4528,7 @@ items:
       energy: 20
     battleType: 11
     armor: 30
-    recoveryPoints: -20
+    recoveryPoints: -10
     recover: true
     recoverCorpse: false
     listOrder: 100640
@@ -4608,7 +4544,7 @@ items:
       energy: 20
     battleType: 11
     armor: 30
-    recoveryPoints: -25
+    recoveryPoints: -15
     recover: true
     recoverCorpse: false
     listOrder: 100650
@@ -4620,7 +4556,7 @@ items:
     invHeight: 3
     battleType: 11
     recover: false
-    recoveryPoints: -5
+    recoveryPoints: -2
     armor: 35
     listOrder: 100660
 #xcom

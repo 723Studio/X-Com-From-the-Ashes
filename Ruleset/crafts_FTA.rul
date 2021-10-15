@@ -15,7 +15,7 @@ crafts:
     damageMax: 50
     speedMax: 380
     accel: 1
-    soldiers: 9
+    soldiers: 8
     vehicles: 1
     pilots: 1
     maxItems: 999

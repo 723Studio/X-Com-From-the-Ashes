@@ -2,8 +2,10 @@ soldierTransformation:
   - name: STR_SNIPER_TRAINING
     minRank: 1
     transformationTime: 300
+    requires:
+      - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       firing: 65 
+       firing: 70 
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false
@@ -17,10 +19,10 @@ soldierTransformation:
     # transferTime: 72
     flatMin:
       tu: -2
-      firing: 7
+      firing: 5
     flatMax:
       tu: 2
-      firing: 16
+      firing: 10
     soldierBonusType: STR_SNIPER
     forbiddenPreviousTransformations:
       - STR_SNIPER_TRAINING
@@ -31,6 +33,8 @@ soldierTransformation:
   - name: STR_HEAVY_TRAINING
     minRank: 1
     transformationTime: 300
+    requires:
+      - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
        stamina: 60
        strength: 35
@@ -65,6 +69,8 @@ soldierTransformation:
   - name: STR_ASSAULT_TRAINING
     minRank: 1
     transformationTime: 300
+    requires:
+      - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
        reactions: 57
        firing: 55
@@ -97,6 +103,8 @@ soldierTransformation:
   - name: STR_RANGER_TRAINING
     minRank: 1
     transformationTime: 300
+    requires:
+      - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
        stamina: 60
        reactions: 52
@@ -130,6 +138,8 @@ soldierTransformation:
   - name: STR_SPECIALIST_TRAINING
     minRank: 1
     transformationTime: 300
+    requires:
+      - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
        bravery: 50
     showMinMax: true
@@ -161,11 +171,13 @@ soldierTransformation:
   - name: STR_UNARMED_COMBAT_TRAINING
     minRank: 1
     transformationTime: 250
-    # requiredMinStats:
-    #   stamina: 55
-    #   reactions: 40
-    #   strength: 52
-    #   melee: 50
+    requires:
+      - STR_MILITARY_STATUS_REPORT
+    requiredMinStats:
+      stamina: 55
+      reactions: 40
+      strength: 52
+      melee: 50
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false

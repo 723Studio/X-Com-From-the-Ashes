@@ -30,9 +30,9 @@ manufacture:
     requiresBaseFunc: [WORK]
     requires:
       - STR_XCOM_EQUIPMENT_ACQUISITION
-    space: 4
-    time: 620
-    cost: 8700
+    space: 1
+    time: 40
+    cost: 2700
     producedItems:
       STR_COMBAT_SHIELD: 1
     listOrder: 220030
