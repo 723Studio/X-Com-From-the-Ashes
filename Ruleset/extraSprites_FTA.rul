@@ -166,7 +166,7 @@ extraSprites:
       100: Resources/Armors/Enemies/Special/bigob_XCOM_EX_COMMANDER.png
       101: Resources/Armors/Enemies/MiB/bigob_MIB_AGENT.png
       102: Resources/Armors/Enemies/MiB/bigob_MIB_ENFORCER.png
-      103: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SOLDIER.png
+      103: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_AGENT.png
       104: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCIENTIST.png
       105: Resources/Armors/Enemies/Zombies/bigob_ZOMBIE_STERILE_CORPSE.png
       106: Resources/Armors/Enemies/Zombies/bigob_GRUBAS_CORPSE.png
@@ -318,7 +318,7 @@ extraSprites:
       100: Resources/Armors/Enemies/Special/floorob_XCOM_EX_COMMANDER.png
       101: Resources/Armors/Enemies/MiB/floorob_MIB_AGENT.png
       102: Resources/Armors/Enemies/MiB/floorob_MIB_ENFORCER.png
-      103: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SOLDIER.png
+      103: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_AGENT.png
       104: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SCIENTIST.png
       105: Resources/Armors/Enemies/Zombies/floorob_ZOMBIE_STERILE_CORPSE.png
       106: Resources/Armors/Enemies/Zombies/floorob_GRUBAS_CORPSE.png
@@ -1081,17 +1081,28 @@ extraSprites:
     files:
       0: Resources/Armors/Enemies/Monsters/inventory_CHUPACABRA.png
 
-  - type: RESISTANCE_SOLDIER.PCK
+  - type: RESISTANCE_AGENT.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SOLDIER.png
-  - type: inventory_RESISTANCE_SOLDIER
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_AGENT.png
+  - type: inventory_RESISTANCE_AGENT
     singleImage: true
     files:
-      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SOLDIER.png
+      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_AGENT.png
+  - type: RESISTANCE_AGENT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_AGENT.png
+  - type: inventory_RESISTANCE_AGENT
+    singleImage: true
+    files:
+      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_AGENT.png
   - type: RESISTANCE_SCIENTIST.PCK
     width: 512
     height: 720

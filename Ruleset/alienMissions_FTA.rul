@@ -23,7 +23,7 @@ alienMissions:
 
 #resistance scripts
   - &TerrorLike
-    type: STR_RESISTANCE_HEAVEN_DEFENCE
+    type: STR_RESISTANCE_HAVEN_DEFENCE
     despawnEvenIfTargeted: true
     objective: 3
     spawnZone: 0

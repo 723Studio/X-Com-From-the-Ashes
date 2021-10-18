@@ -1129,10 +1129,10 @@ alienDeployments:
     width: 80
     length: 80
     height: 8
-    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
-    markerName: STR_RESISTANCE_HEAVEN_MARKER
+    alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HAVEN_MARKER
     successEvents:
       STR_RESCUED_RESISTANCE_1: 50
       STR_RESCUED_RESISTANCE_2: 50
@@ -1147,8 +1147,8 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_4: 50
       STR_NOT_RESCUED_RESISTANCE_5: 50
       STR_NOT_RESCUED_RESISTANCE_6: 50
-    duration: [10, 14]
-    despawnPenalty: 700
+    duration: [16, 18]
+    despawnPenalty: 500
     extendedObjectiveType: STR_EVACUATION 
     briefing:
       textOffset: -16
@@ -1191,12 +1191,12 @@ alienDeployments:
     width: 80
     length: 80
     height: 6
-    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
-    markerName: STR_RESISTANCE_HEAVEN_MARKER
-    duration: [10, 14]
-    despawnPenalty: 700
+    alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HAVEN_MARKER
+    duration: [16, 18]
+    despawnPenalty: 500
     extendedObjectiveType: STR_EVACUATION 
     successEvents:
       STR_RESCUED_RESISTANCE_1: 50
@@ -1334,11 +1334,11 @@ alienDeployments:
     length: 60
     height: 6
     isHidden: true
-    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
-    markerName: STR_RESISTANCE_HEAVEN_MARKER
-    duration: [12, 16]
+    alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HAVEN_MARKER
+    duration: [16, 18]
     despawnPenalty: 500
     extendedObjectiveType: STR_EVACUATION
     successEvents:
@@ -1502,17 +1502,17 @@ alienDeployments:
     width: 50
     length: 50
     height: 6
-    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
-    markerName: STR_RESISTANCE_HEAVEN_MARKER
+    alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
     despawnPenalty: 700
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
-      desc: STR_RESISTANCE_HEAVEN_AMBUSH_DESCRIPTION
+      desc: STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION
     terrains:
       - FORESTSWAMP
     customUfo: STR_RESISTANCE_FOREST_HOUSE_TRAP
@@ -1575,12 +1575,12 @@ alienDeployments:
     width: 70
     length: 70
     height: 6
-    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
-    markerName: STR_RESISTANCE_HEAVEN_MARKER
+    alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
-    despawnPenalty: 700
+    despawnPenalty: 500
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
@@ -1696,17 +1696,17 @@ alienDeployments:
     width: 80
     length: 80
     height: 8
-    alert: STR_RESISTANCE_HEAVEN_ALERT
+    alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
-    alertDescription: STR_RESISTANCE_HEAVEN_ALERT_DESCRIPTION
-    markerName: STR_RESISTANCE_HEAVEN_MARKER
+    alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
-    despawnPenalty: 700
+    despawnPenalty: 500
     briefing:
       textOffset: -16
       background: ZOMBIE_FARM.SCR
       showTarget: false
-      desc: STR_RESISTANCE_HEAVEN_AMBUSH_DESCRIPTION
+      desc: STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION
     terrains:
       - CULTA
     script: RESISTANCE_FARM_AMBUSH
@@ -1973,7 +1973,6 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_AP  
 
-
   - type: STR_CHUPACABRA_HUNT
     race: STR_CHUPACABRA
     width: 50
@@ -2017,7 +2016,6 @@ alienDeployments:
           -
             []
 
-
   - type: STR_CHUPA_TERROR_EASY
     race: STR_CHUPACABRA
     width: 50
@@ -2027,8 +2025,8 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [20, 36]
-    despawnPenalty: 800
+    duration: [16, 18]
+    despawnPenalty: 200
     briefing:
       textOffset: -16
       background: FOREST_MONSTER_BACKGROUND.SCR
@@ -2073,8 +2071,8 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [20, 36]
-    despawnPenalty: 800
+    duration: [16, 18]
+    despawnPenalty: 200
     briefing:
       textOffset: -16
       background: FOREST_MONSTER_BACKGROUND.SCR
@@ -2513,9 +2511,6 @@ alienDeployments:
     width: 50
     length: 50
     height: 8
-    markerName: STR_MONSTER_HUNT
-    duration: [10, 10]
-    despawnPenalty: 300
     isHidden: true
     briefing:
       textOffset: -16

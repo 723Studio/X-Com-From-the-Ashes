@@ -67,13 +67,13 @@ missionScripts:
     varName: monsterTerror
 
 #resistance
-  - type: heavenZombieFarm
+  - type: havenZombieFarm
     firstMonth: 0
     executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
-        STR_RESISTANCE_HEAVEN_DEFENCE: 100
+        STR_RESISTANCE_HAVEN_DEFENCE: 100
     regionWeights:
       0:
         RESISTANCE_FARM_START_ZONE: 100
@@ -86,8 +86,8 @@ missionScripts:
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: heavenDefence
-  - type: heavenForestHouse
+    varName: havenDefence
+  - type: havenForestHouse
     firstMonth: 0
     executionOdds: 100 #20 #TODO!!!
     allowedProcessor: 1
@@ -106,8 +106,8 @@ missionScripts:
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: heavenDefence
-  - type: heavenUrbanHideout
+    varName: havenDefence
+  - type: havenUrbanHideout
     firstMonth: 0
     executionOdds: 20
     allowedProcessor: 1
@@ -126,7 +126,7 @@ missionScripts:
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: heavenDefence
+    varName: havenDefence
   - type: resistanceScientist
     firstMonth: 0
     executionOdds: 10

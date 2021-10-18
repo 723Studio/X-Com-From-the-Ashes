@@ -3856,14 +3856,14 @@ items:
   - type: STR_LABORATORY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     size: 25
-    costBuy: 200000
-    costSell: 180000
+    costBuy: 120000
+    costSell: 90000
     listOrder: 70000
   - type: STR_BIOLOGY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     size: 35
-    costBuy: 350000
-    costSell: 300000
+    costBuy: 160000
+    costSell: 120000
     listOrder: 70010
   - type: STR_RADAR_SYSTEM #FIXME - some content here pls)
     categories: [STR_HUMANS, STR_COMPONENTS]

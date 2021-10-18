@@ -99,7 +99,7 @@ constants:
 
 
 mana:
-  enabled: false #true #FIXME
+  enabled: true
   battleUI: false #true #FIXME
   unlockResearch: STR_PSIONIC
   trainingPrimary: false
@@ -108,9 +108,9 @@ mana:
   replenishAfterMission: true
 
 loyaltySettings:
-  coefBattlescape: 60
-  coefGeoscape: 98
-  coefDogfight: 87
+  coefBattlescape: 40
+  coefGeoscape: 100
+  coefDogfight: 100
   coefResearch: 40
   coefAlienMission: 110
   coefUfo: 100

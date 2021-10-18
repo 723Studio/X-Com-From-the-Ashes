@@ -23,14 +23,14 @@ covertOperations:
       - STR_MIB_CHASING_SUCCESS
     soldierSlots: 3
     optionalSoldierSlots: 2
-    baseChances: 60
-    danger: 8
+    baseChances: 0
+    danger: 800
     costs: 432
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
-    trapChance: 65
-    instantTrapDeployment: 
-      STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
+    # trapChance: 65
+    # instantTrapDeployment: 
+    #   STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -162,10 +162,11 @@ covertOperations:
     soldierSlots: 2
     optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
-    danger: 2
+    danger: 0
     requiredItems:
       STR_FAKE_AGENT_ID: 2
     scientistSlots: 1
+    scientistEffect: 40
     allowedArmor:
       - STR_JUMPSUIT_UC
     successScore: 100
@@ -209,8 +210,6 @@ covertOperations:
     failureResearchList:
       - STR_UNLEASH_CHUPAS_TRIGGER
 
-
-
 #supplies gathering
   - name: STR_LAB_EQUIPMENT_ACQUISITION
     description: STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION
@@ -225,8 +224,8 @@ covertOperations:
     costs: 220
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
-    successFunds: -220000
-    failureFunds: -310000
+    successFunds: -110000
+    failureFunds: -170000
     successScore: 100
     failureScore: -80
     successEveryItemList:
@@ -248,8 +247,8 @@ covertOperations:
     costs: 340
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
     failureDescription: STR_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
-    successFunds: -370000
-    failureFunds: -480000
+    successFunds: -150000
+    failureFunds: -180000
     successScore: 120
     failureScore: -140
     successEveryItemList:

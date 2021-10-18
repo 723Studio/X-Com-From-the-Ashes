@@ -1,7 +1,8 @@
 soldierTransformation:
   - name: STR_SNIPER_TRAINING
     minRank: 1
-    transformationTime: 300
+    transformationTime: 408
+    #description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
@@ -16,7 +17,6 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SOLDIER
       - STR_RESISTANCE_AGENT
-    # transferTime: 72
     flatMin:
       tu: -2
       firing: 5

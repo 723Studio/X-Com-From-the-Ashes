@@ -19,15 +19,15 @@ diplomacyFactions:
       #STR_SCIENTIST: 12
     genMissionFreq: 60 #60% chance to run the script
     helpTreatyMissions:
-      - heavenZombieFarm
-      - heavenForestHouse
-      - heavenUrbanHideout
+      - havenZombieFarm
+      - havenForestHouse
+      - havenUrbanHideout
       - resistanceScientist
       - desertTelescope
     helpTreatyGap: 5
     genEventFreq: 100
     # helpTreatyEventScripts:
-    #    - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
+    #    - STR_RESISTANCE_HAVEN_SAVED_SCRIPT
     factionalEvents:
        - STR_POWER_DROP_LOW
        - STR_POWER_DROP_MED

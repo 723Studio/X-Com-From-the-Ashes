@@ -69,15 +69,15 @@ eventScripts:
       STR_SUPPLIES: false
   - type: STR_MONSTER_HUNT_START #Start of monster hunt arc
     oneTimeSequentialEvents: [STR_MONSTER_HUNT_START_EVENT]
-    firstMonth: 1
-    lastMonth: 0
-    executionOdds: 70
+    firstMonth: 0
+    lastMonth: -1
+    executionOdds: 75
     minDifficulty: 0
     maxDifficulty: 4
   - &STR_STEAL_OSPREY
     type: STR_STEAL_OSPREY
     oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
-    firstMonth: 1
+    firstMonth: 2
     lastMonth: 7
     executionOdds: 40
     minDifficulty: 0
