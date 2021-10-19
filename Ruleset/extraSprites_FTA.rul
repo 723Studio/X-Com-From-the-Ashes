@@ -295,7 +295,7 @@ extraSprites:
       397: Resources/Weapons/Earthbound/Xcom/bigob_Taser_Clip.png
       398: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannon.png
       399: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannonClip.png
-      400: Resources/Weapons/Earthbound/Utilities/handob_TraumaPack.png #temp
+      400: Resources/Weapons/Earthbound/Xcom/bigob_HeavyPistolExpClip.png
       401: Resources/Weapons/Earthbound/Xcom/bigob_SEShotgun.png
       402: Resources/Weapons/Earthbound/Xcom/bigob_BattleRifleGrenade.png
       403: Resources/Weapons/Earthbound/Special/bigob_Crowbar.png
@@ -309,6 +309,8 @@ extraSprites:
       411: Resources/Weapons/MIB/bigob_WoundgunClip.png 
       412: Resources/Armors/Enemies/Monsters/bigob_ChupacabraWeapon.png
       413: Resources/MiscItems/bigob_Crate.png
+      414: Resources/Weapons/Earthbound/General/bigob_HeavyRevolver.png
+      415: Resources/Weapons/Earthbound/General/bigob_HeavyRevolver_Clip.png
 
       
   - type: FLOOROB.PCK
@@ -427,6 +429,8 @@ extraSprites:
       410: Resources/Weapons/MIB/floorob_Woundgun.png
       411: Resources/Weapons/MIB/floorob_WoundgunClip.png
       413: Resources/MiscItems/floorob_Crate.png
+      414: Resources/Weapons/Earthbound/General/floorob_HeavyRevolver.png
+      415: Resources/Weapons/Earthbound/General/floorob_HeavyRevolver_Clip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -514,6 +518,7 @@ extraSprites:
       744: Resources/Weapons/Earthbound/Xcom/handob_ElectricStick.png
       752: Resources/Weapons/MIB/handob_Woundgun.png
       760: Resources/Weapons/MIB/handob_StunRod.png
+      768: Resources/Weapons/Earthbound/General/handob_HeavyRevolver.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

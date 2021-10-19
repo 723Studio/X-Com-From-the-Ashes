@@ -758,7 +758,22 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_RIOT_PISTOL_CLIP
+    listOrder: 17045
+
+  - id: STR_HEAVY_REVOLVER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HEAVY_REVOLVER_UFOPEDIA
+    requires:
+      - STR_HEAVY_REVOLVER
     listOrder: 17050
+  - id: STR_HEAVY_REVOLVER_DRUM
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HEAVY_REVOLVER_DRUM
+    listOrder: 17055
+
   - id: STR_PISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -778,6 +793,12 @@ ufopaedia:
     requires:
       - STR_EXPANDABLE_AMMO
     listOrder: 17080
+  - id: STR_PISTOL_AA_CLIP
+    type_id: 4
+    requires:
+      - STR_PISTOL_AA_CLIP
+    section: STR_NOT_AVAILABLE
+    listOrder: 17185
   - id: STR_HEAVY_PISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -790,13 +811,13 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
-    listOrder: 17100
-  - id: STR_PISTOL_AA_CLIP
+    listOrder: 17095
+  - id: STR_HEAVY_PISTOL_EXP_CLIP
     type_id: 4
-    requires:
-      - STR_PISTOL_AA_CLIP
     section: STR_NOT_AVAILABLE
-    listOrder: 17110
+    requires:
+      - STR_EXPANDABLE_AMMO
+    listOrder: 17095
   - id: STR_WOUNDGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

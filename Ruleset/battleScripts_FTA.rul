@@ -119,7 +119,7 @@ battleScripts:
   - type: MIB_ATTACK_SCIENTIST
     commands:
     - type: spawnUnit #start
-      executionChances: 60
+      executionChances: 75
       packSize: 4
       randomPackSize: true
       executions: 2
@@ -130,7 +130,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #continue
       executionChances: 40
-      startTurn: 7
+      startTurn: 6
       packSize: 4
       randomPackSize: true
       unitSide: 1

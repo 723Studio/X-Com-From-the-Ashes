@@ -2,12 +2,16 @@ soldierTransformation:
   - name: STR_SNIPER_TRAINING
     minRank: 1
     transformationTime: 408
-    #description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+    # recoveryTime: 50
+    # cost: 5000000
+    # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
        firing: 70 
     showMinMax: true
+    # requiredItems:
+    #   STR_SNIPER_RIFLE: 1
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -32,7 +36,7 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_HEAVY_TRAINING
     minRank: 1
-    transformationTime: 300
+    transformationTime: 408
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
@@ -68,7 +72,7 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_ASSAULT_TRAINING
     minRank: 1
-    transformationTime: 300
+    transformationTime: 408
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
@@ -102,7 +106,7 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_RANGER_TRAINING
     minRank: 1
-    transformationTime: 300
+    transformationTime: 408
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
@@ -137,7 +141,7 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_SPECIALIST_TRAINING
     minRank: 1
-    transformationTime: 300
+    transformationTime: 408
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:

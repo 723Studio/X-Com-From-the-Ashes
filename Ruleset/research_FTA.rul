@@ -207,6 +207,8 @@ research:
       - STR_SPORTS_BOW
       - STR_SNUBNOSE_PISTOL
       - STR_SNUBNOSE_PISTOL_CLIP
+      - STR_RIOT_PISTOL
+      - STR_RIOT_PISTOL_CLIP
       - STR_HUNTING_RIFLE
       - STR_HUNTING_RIFLE_CLIP
       - STR_SAWED_OFF
@@ -230,8 +232,8 @@ research:
       - STR_UFOPEDIA_DECRYPTION
     unlocks:
       - STR_SWORD
-      - STR_RIOT_PISTOL
-      - STR_RIOT_PISTOL_CLIP
+      - STR_HEAVY_REVOLVER
+      - STR_HEAVY_REVOLVER_DRUM
       - STR_MACHINE_PISTOL
       - STR_MACHINE_PISTOL_CLIP
       - STR_RIOT_RIFLE
@@ -313,6 +315,9 @@ research:
   - name: STR_EXPANDABLE_AMMO
     hidden: true
   - name: STR_PISTOL_EXP_CLIP
+    dependencies:
+      - STR_EXPANDABLE_AMMO
+  - name: STR_HEAVY_PISTOL_EXP_CLIP
     dependencies:
       - STR_EXPANDABLE_AMMO
   - name: STR_RIFLE_EXP_CLIP
@@ -1017,7 +1022,20 @@ research:
     points: 0
     dependencies:
       - STR_RIOT_PISTOL
+    listOrder: 30135
+  - name: STR_HEAVY_REVOLVER
+    cost: 10
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_HEAVY_REVOLVER_DRUM
     listOrder: 30140
+  - name: STR_HEAVY_REVOLVER_DRUM
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HEAVY_REVOLVER
+    listOrder: 30145
   - name: STR_WOUNDGUN
     cost: 12
     points: 2

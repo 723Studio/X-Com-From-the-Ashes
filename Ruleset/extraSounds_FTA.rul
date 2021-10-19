@@ -71,4 +71,10 @@ extraSounds:
       122: Resources/Weapons/Sounds/ElectroHit.wav
       123: Resources/Armors/Enemies/Monsters/chupa-death.ogg
       124: Resources/Armors/Enemies/Monsters/chupa-roar.ogg
-      
+      125: Resources/Weapons/Sounds/shotgun-light.wav
+      126: Resources/Weapons/Sounds/shotgun-light_reload.wav
+      127: Resources/Weapons/Sounds/rocket.wav
+      128: Resources/Weapons/Sounds/rocketr.ogg #TODO add to rocket glove
+      129: Resources/Weapons/Sounds/heavy_pistol.wav
+      130: Resources/Weapons/Sounds/flamer.wav #TODO add to flamer
+      131: Resources/Weapons/Sounds/flamerr.wav

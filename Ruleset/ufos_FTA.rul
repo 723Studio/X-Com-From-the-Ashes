@@ -513,9 +513,9 @@ ufos:
                 amount: 3
                 mixed: true
                 itemList: *generalResistanceStash
-        # - name: RESIST_FOREST_03
-        #   width: 20
-        #   length: 20
+        - name: RESIST_FOREST_03
+          width: 20
+          length: 20
         - name: RESIST_FOREST_04
           width: 20
           length: 20
@@ -537,7 +537,7 @@ ufos:
         - FORESTSWAMP
         - RESISTANCE_FOREST_HOUSE
       mapBlocks:
-        - name: RESISTANCE_FOREST_01
+        - name: RESIST_FOREST_01
           width: 20
           length: 20
           items:
@@ -558,7 +558,7 @@ ufos:
                 amount: 5
                 mixed: true
                 itemList: *suppliesResistanceStash
-        - name: RESISTANCE_FOREST_02
+        - name: RESIST_FOREST_02
           width: 20
           length: 20
           items:

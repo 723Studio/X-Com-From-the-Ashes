@@ -80,6 +80,7 @@ turnAIUseGrenade: 2 #Consider if changing back to 1
 turnAIUseBlaster: 2 
 surrenderMode: 0 #FIXME Consider
 closeQuartersSneakUpGlobal: 40
+kneelBonusGlobal: 120 #default 115
 
 
 ai:

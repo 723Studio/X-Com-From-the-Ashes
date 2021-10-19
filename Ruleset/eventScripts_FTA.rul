@@ -212,11 +212,17 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
-  - type: STR_EXPANDABLE_AMMO_SCRIPT_RIFLE #extra SH copy
+  - type: STR_EXPANDABLE_AMMO_SCRIPT_HEAVY_PISTOL
+    refNode: *STR_EXPANDABLE_AMMO_SCRIPT
+    itemTriggers:
+      STR_HEAVY_PISTOL_EXP_CLIP: true
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_EXPANDABLE_AMMO_SCRIPT_RIFLE
     refNode: *STR_EXPANDABLE_AMMO_SCRIPT
     itemTriggers:
       STR_RIFLE_EXP_CLIP: true
-    minDifficulty: 4
+    minDifficulty: 0
     maxDifficulty: 4
 
 #resistance

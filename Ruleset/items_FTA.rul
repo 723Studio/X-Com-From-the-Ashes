@@ -627,7 +627,7 @@ items:
   - type: STR_RIOT_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
-      - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_STARTING_EQUIPMENT
     size: 0.1
     costBuy: 1100
     costSell: 800
@@ -661,7 +661,7 @@ items:
   - type: STR_RIOT_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
-      - STR_RESISTANCE_BASIC_EQUIPMENT
+      - STR_STARTING_EQUIPMENT
     size: 0.025
     costBuy: 160
     costSell: 70
@@ -682,6 +682,61 @@ items:
     battleType: 2
     armor: 30
     listOrder: 5050
+  - type: STR_HEAVY_REVOLVER
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.2
+    landOnly: true
+    costBuy: 1450
+    costSell: 900
+    weight: 7
+    bigSprite: 414
+    floorSprite: 414
+    handSprite: 768
+    bulletSprite: 12
+    fireSound: 111
+    compatibleAmmo:
+      - STR_HEAVY_REVOLVER_DRUM
+    accuracyCloseQuarters: 133
+    accuracySnap: 70
+    accuracyAimed: 90
+    tuSnap: 28
+    tuAimed: 34
+    tuLoad: 22
+    aimRange: 17
+    snapRange: 14
+    dropoff: 3
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    attraction: 15
+    listOrder: 5052
+  - type: STR_HEAVY_REVOLVER_DRUM
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.1
+    landOnly: true
+    costBuy: 240
+    costSell: 170
+    weight: 1
+    bigSprite: 415
+    floorSprite: 415
+    hitSound: 13
+    hitAnimation: 26
+    power: 34
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.20
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 5054
   - type: STR_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
@@ -729,7 +784,7 @@ items:
     handSprite: 136
     hitSound: 58
     hitAnimation: 26
-    power: 27 #30 xcf
+    power: 28 #30 xcf
     damageAlter:
       ArmorEffectiveness: 1.1
     damageType: 1
@@ -743,8 +798,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.02
-    costBuy: 200
-    costSell: 150
+    costBuy: 220
+    costSell: 160
     weight: 2
     landOnly: true
     bigSprite: 384
@@ -752,7 +807,7 @@ items:
     handSprite: 136
     hitSound: 58
     hitAnimation: 26
-    power: 25
+    power: 24
     damageType: 1
     damageAlter:
       RandomType: 2
@@ -792,23 +847,24 @@ items:
     size: 0.2
     costBuy: 2500
     costSell: 2000
-    weight: 8
+    weight: 9
     landOnly: true
     bigSprite: 382
     floorSprite: 382
     handSprite: 600
     bulletSprite: 12
-    fireSound: 111
+    fireSound: 129
     compatibleAmmo:
       - STR_HEAVY_PISTOL_CLIP
-    accuracyCloseQuarters: 133
-    accuracySnap: 67
+      - STR_HEAVY_PISTOL_EXP_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 65
     accuracyAimed: 75
     tuSnap: 22
-    tuAimed: 35
-    tuLoad: 18
+    tuAimed: 38
+    tuLoad: 16
     aimRange: 18
-    snapRange: 14
+    snapRange: 16
     dropoff: 3
     kneelBonus: 105
     battleType: 1
@@ -832,15 +888,44 @@ items:
     handSprite: 608
     hitSound: 13
     hitAnimation: 26
-    power: 35
+    power: 38
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 1.1
-    clipSize: 9
+    clipSize: 8
     battleType: 2
     armor: 30
     attraction: 15
     listOrder: 5110
+  - type: STR_HEAVY_PISTOL_EXP_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.1
+    landOnly: true
+    costBuy: 340
+    costSell: 170
+    weight: 2
+    bigSprite: 400
+    floorSprite: 383
+    handSprite: 608
+    hitSound: 13
+    hitAnimation: 26
+    power: 32
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1.4
+      ToHealth: 1.4
+      ToWound: 2
+      ToTime: 0.2
+      ToStun: 0.2
+      ToTile: 0.2
+    clipSize: 8
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 5112
   - type: STR_WOUNDGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     size: 0.1
@@ -1740,7 +1825,8 @@ items:
     floorSprite: 319
     handSprite: 288
     bulletSprite: 3
-    fireSound: 65
+    fireSound: 125
+    reloadSound: 126
     compatibleAmmo:
       - STR_PUMP_ACTION_SHELLS
     accuracyCloseQuarters: 100
