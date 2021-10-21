@@ -44,10 +44,10 @@ extraNerdyPediaInfo: true
 researchTreeDisabled: true
 
 #difficulty
-startingDifficulty: 2
+startingDifficulty: 1
 difficultyCoefficient: [0, 1, 2, 3, 4]
-aimAndArmorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.1]
-sellPriceCoefficient: [110, 105, 100, 90, 75]
+aimAndArmorMultipliers: [0.8, 1.0, 1.0, 1.05, 1.1]
+sellPriceCoefficient: [105, 100, 90, 85, 75]
 statGrowthMultipliers:
   tu: 5
   stamina: 4

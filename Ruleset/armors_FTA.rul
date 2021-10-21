@@ -284,8 +284,8 @@ armors:
     allowInv: false
     visibilityAtDark: 20
     heatVision: 100
-    camouflageAtDay: 30
-    camouflageAtDark: 0
+    camouflageAtDay: -10
+    camouflageAtDark: -10
     frontArmor: 25
     sideArmor: 25
     rearArmor: 25
@@ -302,7 +302,7 @@ armors:
       flatHundred: 10.0
     damageModifier:
       - 1.0 #0 - None - special
-      - 0.8 #1 - AP - kinetic
+      - 0.9 #1 - AP - kinetic
       - 0.6 #2 - Incendiary
       - 1.0 #3 - High Explosive - Explosive
       - 1.1 #4 - Laser
@@ -325,10 +325,10 @@ armors:
       - STR_MIB_SCIENTIST_CORPSE
     visibilityAtDark: 13
     weight: 3
-    frontArmor: 6
-    sideArmor: 6
-    rearArmor: 6
-    underArmor: 5
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
@@ -390,7 +390,7 @@ armors:
     overKill: 1.5
     damageModifier:
       - 1.0 #0 - None - special
-      - 0.75 #1 - AP - kinetic
+      - 0.9 #1 - AP - kinetic
       - 0.8 #2 - Incendiary
       - 0.85 #3 - High Explosive - Explosive
       - 0.8 #4 - Laser

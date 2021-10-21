@@ -69,7 +69,7 @@ missionScripts:
 #resistance
   - type: havenZombieFarm
     firstMonth: 0
-    executionOdds: 20
+    executionOdds: 15
     allowedProcessor: 1
     missionWeights:
       0:
@@ -89,7 +89,7 @@ missionScripts:
     varName: havenDefence
   - type: havenForestHouse
     firstMonth: 0
-    executionOdds: 100 #20 #TODO!!!
+    executionOdds: 15
     allowedProcessor: 1
     missionWeights:
       0:
@@ -109,7 +109,7 @@ missionScripts:
     varName: havenDefence
   - type: havenUrbanHideout
     firstMonth: 0
-    executionOdds: 20
+    executionOdds: 15
     allowedProcessor: 1
     missionWeights:
       0:
@@ -129,7 +129,7 @@ missionScripts:
     varName: havenDefence
   - type: resistanceScientist
     firstMonth: 0
-    executionOdds: 10
+    executionOdds: 5
     allowedProcessor: 1
     missionWeights:
       0:
@@ -151,7 +151,7 @@ missionScripts:
     varName: resistanceSpecial
   - type: desertTelescope
     firstMonth: 2
-    executionOdds: 10
+    executionOdds: 5
     allowedProcessor: 1
     missionWeights:
       0:

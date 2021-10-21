@@ -79,6 +79,8 @@
     listOrder: 254
   - type: STR_ACCESSORIES
     listOrder: 257
+  - type: STR_LOOT
+    listOrder: 260
   - type: STR_JUNK
     listOrder: 265
   - type: STR_SHIELDS

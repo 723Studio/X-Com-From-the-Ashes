@@ -304,11 +304,13 @@ units:
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_PDW
         - STR_PDW_CLIP
         - STR_PDW_CLIP
         - STR_PDW_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_SMG
         - STR_SMG_CLIP
         - STR_SMG_CLIP
@@ -658,6 +660,23 @@ units:
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
     aggression: 2
+    builtInWeaponSets: &MIBAgentLoadout
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CREDIT_CARD
+      - - STR_CREDIT_CARD
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CASH_PACK
+      - - STR_CREDIT_CARD_SILVER
+        - STR_CASH_PACK
+        - STR_SHOTGUN_SHELLS_BS
+      - - STR_CREDIT_CARD_GOLD
   - type: MIB_OFFICE_SECURITY
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_SECURITY_ARMOR
@@ -953,11 +972,13 @@ units:
       - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
       - - STR_SAWED_OFF #- STR_PITCHFORK
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
+        - STR_CASH_PACK
+      - - STR_CREDIT_CARD
       - - STR_DOUBLE_BARRELED #- STR_AXE
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -965,18 +986,21 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
-      - []
-      - []
+      - - STR_CASH_PACK
+      - - STR_CASH_PACK
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CREDIT_CARD
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
   - type: STR_DOGE
     race: STR_DOGE
     stats:
@@ -1056,43 +1080,53 @@ units:
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_POLICE_BATON
+        - STR_CREDIT_CARD
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
       - - STR_PISTOL
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
       - - STR_PISTOL
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
       - - STR_TASER
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
       - - STR_TASER
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_TASER
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
@@ -1144,10 +1178,12 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
       - - STR_SAWED_OFF #- STR_PITCHFORK
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
       - []
       - - STR_DOUBLE_BARRELED #- STR_AXE
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1159,7 +1195,7 @@ units:
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - []
+      - - STR_CASH_PACK
       - - STR_HUNTING_RIFLE #- []
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1168,6 +1204,7 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP 
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1176,6 +1213,7 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
   - type: STR_FEMALE_CIVILIAN_FARMER
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
@@ -1205,8 +1243,8 @@ units:
     builtInWeaponSets:
       - []
       - []
-      - []
-      - []
+      - - STR_CASH_PACK
+      - - STR_CASH_PACK
       - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1256,6 +1294,7 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1263,10 +1302,12 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
-      - - STR_SAWED_OFF
+        - STR_CASH_PACK
+      - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1295,6 +1336,7 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1316,6 +1358,7 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
 
 #Resistance
   - &STR_RESISTANCE_SCIENTIST
@@ -1368,21 +1411,38 @@ units:
       - []
       - []
       - []
-      - []
-      - []
-      - []
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+        - STR_CASH_PACK
   - &STR_RESISTANCE_AGENT
     type: STR_RESISTANCE_AGENT
     race: STR_RESISTANCE
@@ -1429,10 +1489,12 @@ units:
         - STR_MACHINE_PISTOL_CLIP
         - STR_MACHINE_PISTOL_CLIP
         - STR_MACHINE_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
@@ -1445,7 +1507,11 @@ units:
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_LIQUID_FLAME
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
+        - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1458,10 +1524,13 @@ units:
       - - STR_RIOT_RIFLE
         - STR_RIOT_RIFLE_CLIP
         - STR_RIOT_RIFLE_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT

@@ -1022,7 +1022,20 @@ research:
     points: 0
     dependencies:
       - STR_RIOT_PISTOL
-    listOrder: 30135
+    listOrder: 30132
+  - name: STR_POLICE_PISTOL
+    cost: 10
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_POLICE_PISTOL_CLIP
+    listOrder: 30134
+  - name: STR_POLICE_PISTOL_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_POLICE_PISTOL
+    listOrder: 30136
   - name: STR_HEAVY_REVOLVER
     cost: 10
     points: 1
@@ -1210,6 +1223,38 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 5010
+  - name: STR_CREDIT_CARD_BREACHING_PREREQ
+  - name: STR_CREDIT_CARD_BREACHING
+    hidden: true
+    disables:
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+  - name: STR_CREDIT_CARD
+    lookup: STR_CREDIT_CARD_BREACHING
+    dependencies:
+      - STR_SUPPLIES
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+    cost: 100
+    points: 20
+    needItem: true
+    listOrder: 5020
+  - name: STR_CREDIT_CARD_SILVER
+    lookup: STR_CREDIT_CARD_BREACHING
+    dependencies:
+      - STR_SUPPLIES
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+    cost: 150
+    points: 20
+    needItem: true
+    listOrder: 5030
+  - name: STR_CREDIT_CARD_GOLD
+    lookup: STR_CREDIT_CARD_BREACHING
+    dependencies:
+      - STR_SUPPLIES
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+    cost: 300
+    points: 20
+    needItem: true
+    listOrder: 5040
 
   #crafts
   - name: STR_HELICOPTER

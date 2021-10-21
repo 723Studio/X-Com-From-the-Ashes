@@ -7,7 +7,7 @@ soldierBonuses:
   - name: STR_HEAVY
     tags:
       SHREDDER: 10              # bonus % of resulting damage adds as to_armor damage if using heavy weapons
-      STEADY_GRIP: 10           # bonus to accuracy with heavy weapons
+      STEADY_GRIP: 15           # bonus to accuracy with heavy weapons
       BULKY: 5                  # bonus % of reducing incoming stun damage
   - name: STR_ASSAULT
     tags:

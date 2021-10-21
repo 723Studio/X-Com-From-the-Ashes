@@ -20,11 +20,47 @@ manufacture:
     requires:
       - STR_MONSTER_HUNT_START
     space: 1
-    time: 3
+    time: 25
     cost: 22000
     producedItems:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
+  - name: STR_CREDIT_CARD_BREACHING
+    category: STR_LOOT
+    requires:
+      - STR_CREDIT_CARD_BREACHING
+    requiredItems:
+      STR_CREDIT_CARD: 1
+    space: 1
+    time: 450
+    cost: -22000
+    producedItems:
+      STR_PLASTIC_CARD: 1
+    listOrder: 220040
+  - name: STR_SILVER_CREDIT_CARD_BREACHING
+    category: STR_LOOT
+    requires:
+      - STR_CREDIT_CARD_BREACHING
+    requiredItems:
+      STR_CREDIT_CARD_SILVER: 1
+    space: 1
+    time: 700
+    cost: -47000
+    producedItems:
+      STR_PLASTIC_CARD: 1
+    listOrder: 220040
+  - name: STR_GOLD_CREDIT_CARD_BREACHING
+    category: STR_LOOT
+    requires:
+      - STR_CREDIT_CARD_BREACHING
+    requiredItems:
+      STR_CREDIT_CARD_GOLD: 1
+    space: 1
+    time: 850
+    cost: -110000
+    producedItems:
+      STR_PLASTIC_CARD: 1
+    listOrder: 220040
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
