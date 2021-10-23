@@ -334,8 +334,8 @@ extraSprites:
       436: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove.png
       437: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove_Clip.png
       438: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannon.png
-      439: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip3.png
-      440: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip2.png
+      439: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AP.png
+      440: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AA.png
 
       
   - type: FLOOROB.PCK

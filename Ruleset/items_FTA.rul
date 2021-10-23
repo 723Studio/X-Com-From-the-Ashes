@@ -2476,14 +2476,13 @@ items:
     listOrder: 15040
   - type: STR_ASSAULT_CANNON
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS]
-    requiresBuy:
-      - STR_ASSAULT_CANNON_BUY
     size: 0.5
+    landOnly: true
     costBuy: 52000
     costSell: 37000
     weight: 20
-    bigSprite: 431
-    floorSprite:  430
+    bigSprite: 438
+    floorSprite:  438
     handSprite: 858
     bulletSprite: 3
     fireSound: 134
@@ -2513,14 +2512,13 @@ items:
     listOrder: 15310
   - type: STR_ASSAULT_CANNON_CLIP_AP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
-    requiresBuy:
-      - STR_ASSAULT_CANNON_BUY
     size: 0.05
+    landOnly: true
     costBuy: 2800
     costSell: 2000
     weight: 10
-    bigSprite: 432
-    floorSprite: 431
+    bigSprite: 439
+    floorSprite: 439
     hitSound: 13
     hitAnimation: 26
     power: 45
@@ -2538,10 +2536,11 @@ items:
   - type: STR_ASSAULT_CANNON_CLIP_AA
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
     size: 0.05
+    landOnly: true
     costSell: 18000
     weight: 10
-    bigSprite: 433
-    floorSprite: 431
+    bigSprite: 440
+    floorSprite: 439
     hitSound: 13
     hitAnimation: 26
     power: 58

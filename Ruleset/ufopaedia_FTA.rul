@@ -1179,11 +1179,13 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_ASSAULT_CANNON_UFOPEDIA
     requires:
-    - STR_ASSAULT_CANNON
+      - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 22045
   - id: STR_ASSAULT_CANNON_CLIP_AP
     type_id: 4
     section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
   - id: STR_ASSAULT_CANNON_CLIP_AA
     type_id: 4
     section: STR_NOT_AVAILABLE

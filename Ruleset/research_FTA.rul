@@ -398,6 +398,12 @@ research:
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25190
+  - name: STR_ASSAULT_CANNON_CLIP_AA
+    cost: 3680
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+    listOrder: 25190
   - name: STR_LC_AA_AMMO
     cost: 3800
     points: 5
@@ -1400,11 +1406,5 @@ research:
   - name: STR_XCOM_EQUIPMENT_ACQUISITION #FIXME - add ways to unlock it
     cost: 500
     points: 800
-    dependencies:
-      - STR_TODOIUM
-
-  - name: STR_ASSAULT_CANNON_BUY #FIXME - add ways to unlock it
-    cost: 1
-    points: 1
     dependencies:
       - STR_TODOIUM
