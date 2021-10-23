@@ -1146,6 +1146,21 @@ ufopaedia:
       - STR_LMG_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 22040
+  - id: STR_ASSAULT_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ASSAULT_CANNON_UFOPEDIA
+    requires:
+    - STR_ASSAULT_CANNON
+    listOrder: 22045
+  - id: STR_ASSAULT_CANNON_CLIP_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ASSAULT_CANNON_CLIP_AA
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ASSAULT_CANNON_CLIP_AA
   - id: STR_LIGHT_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

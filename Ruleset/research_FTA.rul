@@ -1362,3 +1362,9 @@ research:
     points: 800
     dependencies:
       - STR_TODOIUM
+
+  - name: STR_ASSAULT_CANNON_BUY #FIXME - add ways to unlock it
+    cost: 1
+    points: 1
+    dependencies:
+      - STR_TODOIUM

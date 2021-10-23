@@ -2307,6 +2307,88 @@ items:
     invHeight: 1
     attraction: 15
     listOrder: 15040
+  - type: STR_ASSAULT_CANNON
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS]
+    requiresBuy:
+      - STR_ASSAULT_CANNON_BUY
+    size: 0.5
+    costBuy: 52000
+    costSell: 37000
+    weight: 20
+    bigSprite: 431
+    floorSprite:  430
+    handSprite: 858
+    bulletSprite: 3
+    fireSound: 134
+    compatibleAmmo:
+      - STR_ASSAULT_CANNON_CLIP_AP
+      - STR_ASSAULT_CANNON_CLIP_AA
+    accuracyCloseQuarters: 66
+    accuracySnap: 60
+    accuracyAuto: 40
+    tuSnap: 40
+    tuAuto: 45
+    tuLoad: 20
+    costThrow:
+      energy: 40
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 35
+    autoShots: 4
+    confSnap:
+      shots: 2
+    sprayWaypoints: 2
+    aimRange: 30
+    attraction: 13
+    listOrder: 15310
+  - type: STR_ASSAULT_CANNON_CLIP_AP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
+    requiresBuy:
+      - STR_ASSAULT_CANNON_BUY
+    size: 0.05
+    costBuy: 2800
+    costSell: 2000
+    weight: 10
+    bigSprite: 432
+    floorSprite: 431
+    hitSound: 13
+    hitAnimation: 26
+    power: 45
+    damageAlter:
+      ArmorEffectiveness: 0.75
+    damageType: 1
+    clipSize: 20
+    costThrow:
+      energy: 12
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 40
+    listOrder: 15320
+  - type: STR_ASSAULT_CANNON_CLIP_AA
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
+    size: 0.05
+    costSell: 18000
+    weight: 10
+    bigSprite: 433
+    floorSprite: 431
+    hitSound: 13
+    hitAnimation: 26
+    power: 58
+    damageAlter:
+      ArmorEffectiveness: 0.75
+    damageType: 1
+    clipSize: 20
+    costThrow:
+      energy: 12
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 40
+    listOrder: 15330
   - type: STR_LIGHT_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
