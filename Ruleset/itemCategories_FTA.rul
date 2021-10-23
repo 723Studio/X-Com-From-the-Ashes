@@ -53,7 +53,7 @@
     listOrder: 185
   - type: STR_EMP
     listOrder: 188
-  - type: STR_CHEMICALS
+  - type: STR_CHEMICAL_WEAPONS
     listOrder: 190
   - type: STR_WARP
     listOrder: 193

@@ -116,8 +116,6 @@ eventScripts:
     itemTriggers:
       STR_SPORTS_BOW: true
       STR_BOW_ARROW: true
-    facilityTriggers:
-      STR_WORKSHOP: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
     executionOdds: 20
@@ -149,6 +147,25 @@ eventScripts:
     executionOdds: 3
     minDifficulty: 4
     maxDifficulty: 4
+
+  - &STR_ROCKET_GLOVE_TINKERING_SCRIPT
+    type: STR_ROCKET_GLOVE_TINKERING_SCRIPT
+    oneTimeSequentialEvents: [STR_ROCKET_GLOVE_TINKERING]
+    researchTriggers:
+      STR_ROCKET_GLOVE: false
+    facilityTriggers:
+      STR_WORKSHOP: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 10
+    minDifficulty: 0
+    maxDifficulty: 3
+  - type: STR_ROCKET_GLOVE_TINKERING_SCRIPT_SH #extra SH copy
+    refNode: *STR_ROCKET_GLOVE_TINKERING_SCRIPT
+    executionOdds: 4
+    minDifficulty: 4
+    maxDifficulty: 4
+
   - type: STR_HELICOPTER_SCRIPT
     oneTimeSequentialEvents: [STR_HELICOPTER]
     researchTriggers:

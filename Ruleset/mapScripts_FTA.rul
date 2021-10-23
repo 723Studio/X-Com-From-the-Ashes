@@ -511,10 +511,6 @@ mapScripts:
     - type: addUFO
       rects: 
        - [2, 2, 4, 4]
-    - type: fillArea
-      rects: 
-       - [2, 2, 4, 4]
-      terrain: FOREST_SNOW
     - type: addBlock
       size: 2
       executions: 1

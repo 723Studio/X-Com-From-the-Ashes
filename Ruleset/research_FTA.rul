@@ -192,6 +192,15 @@ research:
       - STR_TODOIUM
 
 #technology
+  - name: STR_HIGH_TECH_PARTS
+    cost: 100
+    points: 50
+    dependencies:
+      - STR_TODOIUM #TODO
+    listOrder: 25002
+  - name: STR_ROCKET_GLOVE
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_STARTING_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_STARTING_EQUIPMENT
@@ -258,7 +267,7 @@ research:
     points: 20
     dependencies:
       - STR_ELECTRIC_WEAPONS
-    listOrder: 25000
+    listOrder: 25002
   - name: STR_TASER_CANNON
     cost: 6400
     points: 40

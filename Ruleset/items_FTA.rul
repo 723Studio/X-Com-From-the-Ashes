@@ -604,6 +604,8 @@ items:
     handSprite: 584
     power: 32
     damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
     clipSize: 1
     stackSize: 10
     costThrow:
@@ -621,6 +623,8 @@ items:
     # hitSound: 109
     # hitAnimation: 26
     power: 27
+    damageAlter:
+      ToMorale: 15
     damageType: 2
     listOrder: 3040
   - type: STR_BOW_ARROW_STUN
@@ -1205,7 +1209,7 @@ items:
     attraction: 15
     listOrder: 5130
   - type: STR_CHEMPISTOL
-    categories: [STR_CHEMICALS, STR_PISTOLS, STR_ALIEN_TECH]
+    categories: [STR_CHEMICAL_WEAPONS, STR_PISTOLS, STR_ALIEN_TECH]
     requires:
       - STR_CHEMPISTOL
     size: 0.1
@@ -1234,7 +1238,7 @@ items:
     attraction: 15
     listOrder: 5140
   - type: STR_CHEMPISTOL_CLIP
-    categories: [STR_CHEMICALS, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
+    categories: [STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
     requires:
       - STR_CHEMPISTOL
     size: 0.1
@@ -1704,7 +1708,7 @@ items:
     attraction: 8
     listOrder: 7150
   - type: STR_CHEMOGUN
-    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_SMOKE, STR_RIFLES]
+    categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_RIFLES]
     requires:
       - STR_CHEMOGUN
     size: 0.2
@@ -1736,7 +1740,7 @@ items:
     listOrder: 7160
     landOnly: true
   - type: STR_CHEMOGUN_CLIP
-    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_RIFLES, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_RIFLES, STR_CLIPS]
     requires:
       - STR_CHEMOGUN
     size: 0.1
@@ -3178,6 +3182,55 @@ items:
     armor: 30
     listOrder: 15300
 #launchers
+  - type: STR_ROCKET_GLOVE
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES]
+    size: 0.2
+    #landOnly: true
+    costSell: 4200
+    weight: 5
+    bigSprite: 436
+    floorSprite: 436
+    handSprite: 898
+    bulletSprite: 0
+    fireSound: 127
+    reloadSound: 128
+    compatibleAmmo:
+      - STR_ROCKET_GLOVE_CLIP
+    accuracyAimed: 80
+    accuracyCloseQuarters: 80
+    tuAimed: 35
+    costThrow:
+      energy: 20
+    tuLoad: 20
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    aimRange: 14
+    dropoff: 4
+    maxRange: 52
+    experienceTrainingMode: 5
+    attraction: 20
+    listOrder: 19000
+  - type: STR_ROCKET_GLOVE_CLIP
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS]
+    size: 0.1
+    landOnly: true
+    costSell: 1100
+    weight: 2
+    bigSprite: 437
+    floorSprite: 437
+    power: 58
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 1
+    costThrow:
+      energy: 8
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 19001
   - type: STR_SINGLE_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]
     requiresBuy:
@@ -3210,7 +3263,7 @@ items:
     invHeight: 3
     armor: 16
     attraction: 12
-    listOrder: 19000
+    listOrder: 19004
   - type: STR_MGL
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -3245,7 +3298,7 @@ items:
     kneelBonus: 125
     experienceTrainingMode: 11
     attraction: 20
-    listOrder: 19001
+    listOrder: 19005
   - type: STR_MGL_CLIP
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS]
     requiresBuy:
@@ -3270,7 +3323,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
-    listOrder: 19002
+    listOrder: 19006
   - type: STR_MGL_CLIP_SMOKE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
     requiresBuy:
@@ -3295,7 +3348,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
-    listOrder: 19003
+    listOrder: 19007
   - type: STR_MGL_CLIP_INC
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
     requiresBuy:
@@ -3323,7 +3376,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
-    listOrder: 19004
+    listOrder: 19008
   - type: STR_MGL_CLIP_FLASHBANG
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
     requiresBuy:
@@ -3358,7 +3411,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
-    listOrder: 19005
+    listOrder: 19009
     tags:
       FTAG_DAZE_VALUE: 100
       FTAG_DAZE_TIME: 1
@@ -3851,8 +3904,8 @@ items:
   - type: STR_FLASHLIGHT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
-    costBuy: 85
-    costSell: 50
+    costBuy: 140
+    costSell: 75
     weight: 3
     bigSprite: 388
     floorSprite: 388
@@ -3868,8 +3921,8 @@ items:
   - type: STR_ELECTRO_FLARE
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
-    costBuy: 60
-    costSell: 40
+    costBuy: 85
+    costSell: 60
     weight: 3
     bigSprite: 55
     floorSprite: 72
@@ -4379,8 +4432,6 @@ items:
     listOrder: 30060
   - type: STR_BRIEFCASE_CASH
     categories: [STR_LOOT]
-    requires:
-      - STR_TROLLIUM
     size: 0.1
     landOnly: true
     costBuy: 101000
@@ -4394,6 +4445,52 @@ items:
     invHeight: 2
     recoveryPoints: 40
     listOrder: 30060
+
+  - type: STR_SPARE_PARTS
+    categories: [STR_COMPONENTS]
+    landOnly: true
+    size: 0.01
+    costBuy: 700
+    costSell: 400
+    weight: 1
+    battleType: 0
+    bigSprite: 428 #TODO
+    floorSprite: 428 #TODO
+    invWidth: 1
+    invHeight: 1
+    stackSize: 5
+    recoveryPoints: 1
+    listOrder: 60000
+  - type: STR_CHEMICALS
+    categories: [STR_COMPONENTS]
+    landOnly: true
+    size: 0.01
+    costBuy: 900
+    costSell: 550
+    weight: 1
+    battleType: 0
+    bigSprite: 428 #TODO
+    floorSprite: 428 #TODO
+    invWidth: 1
+    invHeight: 1
+    stackSize: 5
+    recoveryPoints: 1
+    listOrder: 60000
+  - type: STR_HIGH_TECH_PARTS
+    categories: [STR_COMPONENTS]
+    landOnly: true
+    size: 0.02
+    costBuy: 1300
+    costSell: 900
+    weight: 1
+    battleType: 0
+    bigSprite: 428 #TODO
+    floorSprite: 428 #TODO
+    invWidth: 1
+    invHeight: 1
+    stackSize: 15
+    recoveryPoints: 10
+    listOrder: 60020
 
 #geoscape-only
   - type: STR_CRATED_HELICOPTER
@@ -4458,7 +4555,7 @@ items:
   - type: STR_RADAR_SYSTEM #FIXME - some content here pls)
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
-  - type: STR_TRADIUM #FIXME - some content here pls)
+  - type: STR_TRADIUM #for testing
     costBuy: 1000000
     costSell: 500000
     categories: [STR_HUMANS, STR_COMPONENTS]

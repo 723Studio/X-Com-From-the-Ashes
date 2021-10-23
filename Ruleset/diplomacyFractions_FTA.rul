@@ -175,7 +175,8 @@ diplomacyFactions:
       STR_FIRE_EXTINGUISHER: 9
       #other 
       STR_CRATED_HELICOPTER: 3720
-      STR_BRIEFCASE_CASH: 3300
+      STR_BRIEFCASE_CASH: 2700
+      STR_SPARE_PARTS: 60
 
 
 

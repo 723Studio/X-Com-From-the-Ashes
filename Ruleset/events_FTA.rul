@@ -308,6 +308,16 @@ events:
     timer: 750
     timerRandom: 20160 #2 weeks
     interruptResearch: STR_SPORTS_BOW_TINKERING
+  - name: STR_ROCKET_GLOVE_TINKERING
+    description: STR_ROCKET_GLOVE_TINKERING_DESCRIPTION
+    background: BACK17.SCR
+    researchList: [STR_ROCKET_GLOVE]
+    everyMultiItemList:
+      STR_ROCKET_GLOVE: 1
+      STR_ROCKET_GLOVE_CLIP: 2
+    timer: 750
+    timerRandom: 20160 #2 weeks
+    interruptResearch: STR_ROCKET_GLOVE
   - name: STR_KATANA_TINKERING
     description: STR_KATANA_TINKERING_DESCRIPTION
     background: BACK17.SCR

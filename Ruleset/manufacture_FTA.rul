@@ -1,20 +1,277 @@
 manufacture:
+#crafts
   - name: STR_HELICOPTER
     category: STR_CRAFT
+    requires:
+      - STR_HELICOPTER
     space: 5
     time: 450
     cost: 2000
     requiredItems:
       STR_CRATED_HELICOPTER: 1
+      STR_SPARE_PARTS: 20
     listOrder: 220030
   - name: STR_OSPREY
     category: STR_CRAFT
+    requires:
+      - STR_OSPREY
     space: 10
     time: 1300
     cost: 10000
     requiredItems:
       STR_CRATED_OSPREY: 1
+      STR_SPARE_PARTS: 35
     listOrder: 220030
+  - name: STR_DRAGONFLY
+    category: STR_CRAFT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    space: 16
+    time: 5100
+    cost: 240000
+    requiredItems:
+      STR_SPARE_PARTS: 115
+      STR_HIGH_TECH_PARTS: 45
+    listOrder: 220030
+
+#weapons
+  - name: STR_KATANA
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_KATANA
+    space: 1
+    time: 860
+    cost: 2700
+    producedItems:
+      STR_KATANA: 1
+    listOrder: 220030
+  - name: STR_ELECTRIC_STICK
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_ELECTRIC_STICK
+    requiredItems:
+      STR_SPARE_PARTS: 6
+      STR_HIGH_TECH_PARTS: 2
+    space: 3
+    time: 620
+    cost: 15600
+    producedItems:
+      STR_ELECTRIC_STICK: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_HE
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+    requiredItems:
+      STR_CHEMICALS: 1
+    space: 2
+    time: 15
+    cost: 800
+    producedItems:
+      STR_BOW_ARROW_HE: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_IN
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+    requiredItems:
+      STR_CHEMICALS: 1
+    space: 2
+    time: 22
+    cost: 950
+    producedItems:
+      STR_BOW_ARROW_IN: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_STUN
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+    requiredItems:
+      STR_CHEMICALS: 1
+    space: 3
+    time: 36
+    cost: 1300
+    producedItems:
+      STR_BOW_ARROW_STUN: 1
+    listOrder: 220030
+  - name: STR_BOW_ARROW_ELECTRIC
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SPORTS_BOW_TINKERING
+      - STR_ELECTRIC_WEAPONS
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 1
+    space: 4
+    time: 70
+    cost: 4000
+    producedItems:
+      STR_BOW_ARROW_ELECTRIC: 1
+    listOrder: 220030
+  - name: STR_CHEMPISTOL
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_CHEMPISTOL_MANUFACTURING
+    requiredItems:
+      STR_SPARE_PARTS: 8
+      STR_HIGH_TECH_PARTS: 3
+    space: 4
+    time: 940
+    cost: 6800
+    producedItems:
+      STR_CHEMPISTOL: 1
+    listOrder: 220030
+  - name: STR_CHEMPISTOL_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_CHEMPISTOL_CLIP_MANUFACTURING
+    requiredItems:
+      STR_CHEMICALS: 4
+    space: 2
+    time: 260
+    cost: 2000
+    producedItems:
+      STR_CHEMPISTOL_CLIP: 1
+    listOrder: 220030
+  - name: STR_ROCKET_GLOVE
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_ROCKET_GLOVE
+    requiredItems:
+      STR_SPARE_PARTS: 4
+      STR_HIGH_TECH_PARTS: 1
+    space: 4
+    time: 760
+    cost: 3500
+    producedItems:
+      STR_ROCKET_GLOVE: 1
+    listOrder: 220030
+  - name: STR_ROCKET_GLOVE_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_CHEMPISTOL_CLIP_MANUFACTURING
+    requiredItems:
+      STR_SPARE_PARTS: 1
+      STR_CHEMICALS: 2
+    space: 2
+    time: 150
+    cost: 800
+    producedItems:
+      STR_ROCKET_GLOVE_CLIP: 1
+    listOrder: 220030
+  - name: STR_TASER_CANNON
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_TASER_CANNON
+    requiredItems:
+      STR_SPARE_PARTS: 18
+      STR_HIGH_TECH_PARTS: 10
+    space: 5
+    time: 810
+    cost: 43000
+    producedItems:
+      STR_TASER_CANNON: 1
+    listOrder: 220030
+  - name: STR_TASER_CANNON_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_TASER_CANNON
+    requiredItems:
+      STR_SPARE_PARTS: 6
+      STR_HIGH_TECH_PARTS: 4
+    space: 2
+    time: 140
+    cost: 15000
+    producedItems:
+      STR_TASER_CANNON_CLIP: 1
+    listOrder: 220030
+  - name: STR_RAILGUN #TODO balance
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_RAILGUN
+    requiredItems:
+      STR_SPARE_PARTS: 40
+      STR_HIGH_TECH_PARTS: 12
+    space: 1
+    time: 860
+    cost: 2700
+    producedItems:
+      STR_RAILGUN: 1
+    listOrder: 220030
+  - name: STR_RAILGUN_SLUG #TODO balance
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_RAILGUN
+    requiredItems:
+      STR_SPARE_PARTS: 8
+      STR_HIGH_TECH_PARTS: 2
+    space: 1
+    time: 860
+    cost: 2700
+    producedItems:
+      STR_RAILGUN_SLUG: 1
+    listOrder: 220030
+#equipment
+  - name: STR_COMBAT_SHIELD
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    requiredItems:
+      STR_SPARE_PARTS: 2
+    space: 1
+    time: 60
+    cost: 2700
+    producedItems:
+      STR_COMBAT_SHIELD: 1
+    listOrder: 220030
+#components
+  - name: STR_SPARE_PARTS
+    category: STR_COMPONENTS
+    #requiresBaseFunc: [WORK]
+    space: 1
+    time: 5
+    cost: 330
+    producedItems:
+      STR_SPARE_PARTS: 1
+    listOrder: 220030
+  - name: STR_CHEMICALS
+    category: STR_COMPONENTS
+    #requiresBaseFunc: [WORK]
+    space: 1
+    time: 8
+    cost: 330
+    producedItems:
+      STR_CHEMICALS: 1
+    listOrder: 220030
+  - name: STR_HIGH_TECH_PARTS
+    category: STR_COMPONENTS
+    requiresBaseFunc: [WORK]
+    # requires:
+    #   - STR_HIGH_TECH_PARTS
+    requiredItems:
+      STR_SPARE_PARTS: 2
+    space: 1
+    time: 12
+    cost: 850
+    producedItems:
+      STR_HIGH_TECH_PARTS: 1
+    listOrder: 220030
+#special
   - name: STR_FAKE_AGENT_ID
     category: STR_COVERT_TOOLS
     requires:
@@ -25,6 +282,7 @@ manufacture:
     producedItems:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
+#refining
   - name: STR_CREDIT_CARD_BREACHING
     category: STR_LOOT
     requires:
@@ -61,149 +319,5 @@ manufacture:
     producedItems:
       STR_PLASTIC_CARD: 1
     listOrder: 220040
-  - name: STR_KATANA
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_KATANA
-    space: 1
-    time: 860
-    cost: 2700
-    producedItems:
-      STR_KATANA: 1
-    listOrder: 220030
-  - name: STR_RAILGUN #TODO balance and required items
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_RAILGUN
-    space: 1
-    time: 860
-    cost: 2700
-    producedItems:
-      STR_RAILGUN: 1
-    listOrder: 220030
-  - name: STR_RAILGUN_SLUG #TODO balance and required items
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_RAILGUN
-    space: 1
-    time: 860
-    cost: 2700
-    producedItems:
-      STR_RAILGUN_SLUG: 1
-    listOrder: 220030
-  - name: STR_COMBAT_SHIELD
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
-    space: 1
-    time: 50
-    cost: 2700
-    producedItems:
-      STR_COMBAT_SHIELD: 1
-    listOrder: 220030
-  - name: STR_ELECTRIC_STICK
-    category: STR_WEAPONS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_ELECTRIC_STICK
-    space: 3
-    time: 620
-    cost: 15600
-    producedItems:
-      STR_ELECTRIC_STICK: 1
-    listOrder: 220030
-  - name: STR_TASER_CANNON
-    category: STR_WEAPONS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_TASER_CANNON
-    space: 5
-    time: 810
-    cost: 43000
-    producedItems:
-      STR_TASER_CANNON: 1
-    listOrder: 220030
-  - name: STR_TASER_CANNON_CLIP
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_TASER_CANNON
-    space: 2
-    time: 140
-    cost: 15000
-    producedItems:
-      STR_TASER_CANNON_CLIP: 1
-    listOrder: 220030
-  - name: STR_BOW_ARROW_HE
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_SPORTS_BOW_TINKERING
-    space: 2
-    time: 15
-    cost: 800
-    producedItems:
-      STR_BOW_ARROW_HE: 1
-    listOrder: 220030
-  - name: STR_BOW_ARROW_IN
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_SPORTS_BOW_TINKERING
-    space: 2
-    time: 22
-    cost: 950
-    producedItems:
-      STR_BOW_ARROW_IN: 1
-    listOrder: 220030
-  - name: STR_BOW_ARROW_STUN
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_SPORTS_BOW_TINKERING
-    space: 3
-    time: 36
-    cost: 1300
-    producedItems:
-      STR_BOW_ARROW_STUN: 1
-    listOrder: 220030
-  - name: STR_BOW_ARROW_ELECTRIC
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_SPORTS_BOW_TINKERING
-      - STR_ELECTRIC_WEAPONS
-    space: 4
-    time: 70
-    cost: 4000
-    producedItems:
-      STR_BOW_ARROW_ELECTRIC: 1
-    listOrder: 220030
-  - name: STR_CHEMPISTOL
-    category: STR_WEAPONS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_CHEMPISTOL_MANUFACTURING
-    space: 4
-    time: 940
-    cost: 51000
-    producedItems:
-      STR_CHEMPISTOL: 1
-    listOrder: 220030
-  - name: STR_CHEMPISTOL_CLIP
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_CHEMPISTOL_CLIP_MANUFACTURING
-    space: 2
-    time: 260
-    cost: 16000
-    producedItems:
-      STR_CHEMPISTOL_CLIP: 1
-    listOrder: 220030
 
-
+#misc

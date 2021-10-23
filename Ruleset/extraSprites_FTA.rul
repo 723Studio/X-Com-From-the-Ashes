@@ -331,6 +331,8 @@ extraSprites:
       433: Resources/Weapons/Earthbound/Special/bigob_Baseball_Bat.png
       434: Resources/Weapons/Earthbound/Xcom/bigob_Railgun.png
       435: Resources/Weapons/Earthbound/Xcom/bigob_Railgun_Slug.png
+      436: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove.png
+      437: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove_Clip.png
 
       
   - type: FLOOROB.PCK
@@ -468,6 +470,9 @@ extraSprites:
       433: Resources/Weapons/Earthbound/Special/floorob_Baseball_Bat.png
       434: Resources/Weapons/Earthbound/Xcom/floorob_Railgun.png
       435: Resources/Weapons/Earthbound/Xcom/floorob_Railgun_Slug.png
+      436: Resources/Weapons/Earthbound/Xcom/floorob_Rocket_Glove.png
+      437: Resources/Weapons/Earthbound/Xcom/floorob_Rocket_Glove_Clip.png
+
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -571,6 +576,7 @@ extraSprites:
       874: Resources/Weapons/Earthbound/Special/handob_Baseball_Bat.png
       882: Resources/Weapons/Earthbound/Xcom/handob_Railgun.png
       890: Resources/Weapons/Earthbound/Xcom/handob_Railgun_Slug.png
+      898: Resources/Weapons/Earthbound/Xcom/handob_Rocket_Glove.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
