@@ -333,6 +333,9 @@ extraSprites:
       435: Resources/Weapons/Earthbound/Xcom/bigob_Railgun_Slug.png
       436: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove.png
       437: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove_Clip.png
+      438: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannon.png
+      439: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip3.png
+      440: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip2.png
 
       
   - type: FLOOROB.PCK
@@ -463,7 +466,7 @@ extraSprites:
       426: Resources/MiscItems/floorob_card_silver.png
       427: Resources/MiscItems/floorob_card_gold.png
       428: Resources/MiscItems/floorob_cash_pack.png
-      429: Resources/MiscItems/floorob_Briefcase_Black.png
+      429: Resources/MiscItems/floorob_Briefcase_Black.png  
       #430
       431: Resources/Weapons/Earthbound/Special/floorob_Wrench.png
       432: Resources/Weapons/Earthbound/Special/floorob_Hatchet.png
@@ -472,6 +475,8 @@ extraSprites:
       435: Resources/Weapons/Earthbound/Xcom/floorob_Railgun_Slug.png
       436: Resources/Weapons/Earthbound/Xcom/floorob_Rocket_Glove.png
       437: Resources/Weapons/Earthbound/Xcom/floorob_Rocket_Glove_Clip.png
+      438: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannon.png
+      439: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannonClip.png
 
 
   - type: HANDOB.PCK #Index step 8
@@ -577,6 +582,7 @@ extraSprites:
       882: Resources/Weapons/Earthbound/Xcom/handob_Railgun.png
       890: Resources/Weapons/Earthbound/Xcom/handob_Railgun_Slug.png
       898: Resources/Weapons/Earthbound/Xcom/handob_Rocket_Glove.png
+      906: Resources/Weapons/Earthbound/Xcom/handob_AssaultCannon.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
