@@ -939,7 +939,11 @@ en-US:
   STR_LABORATORY_EQUIPMENT: "Lab Equipment"
   STR_BIOLOGY_EQUIPMENT: "Biolab Equipment"
   STR_RADAR_SYSTEM: "Radar Systems"
-
+  STR_ASSAULT_CANNON: "Assault Cannon"
+  STR_ASSAULT_CANNON_CLIP_AP: "Assault Cannon AP Clip"
+  STR_ASSAULT_CANNON_CLIP_AA: "Assault Cannon AA Clip"
+  STR_ASSAULT_CANNON_UFOPEDIA: "This heavy weapon fires heavy bullets in rapid single shots or 4-burst autofire. It is best used at medium ranges." #X-com files copypaste
+  STR_ASSAULT_CANNON_BUY: "Assault Cannon Acquisition"
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
   STR_LEATHER_COAT_UC: "LEATHER COAT"

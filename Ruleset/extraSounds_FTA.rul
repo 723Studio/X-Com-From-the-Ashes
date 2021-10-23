@@ -80,3 +80,4 @@ extraSounds:
       131: Resources/Weapons/Sounds/flamerr.wav
       132: Resources/Weapons/Sounds/rail cannon.wav #TODO add to rail gun
       133: Resources/Weapons/Sounds/rail cannon reload.wav
+      134: Resources/Weapons/Sounds/AssaultCannon_fire.wav
