@@ -61,13 +61,46 @@ manufacture:
     producedItems:
       STR_PLASTIC_CARD: 1
     listOrder: 220040
+  - name: STR_KATANA
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_KATANA
+    space: 1
+    time: 860
+    cost: 2700
+    producedItems:
+      STR_KATANA: 1
+    listOrder: 220030
+  - name: STR_RAILGUN #TODO balance and required items
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_RAILGUN
+    space: 1
+    time: 860
+    cost: 2700
+    producedItems:
+      STR_RAILGUN: 1
+    listOrder: 220030
+  - name: STR_RAILGUN_SLUG #TODO balance and required items
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_RAILGUN
+    space: 1
+    time: 860
+    cost: 2700
+    producedItems:
+      STR_RAILGUN_SLUG: 1
+    listOrder: 220030
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
     requires:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     space: 1
-    time: 40
+    time: 50
     cost: 2700
     producedItems:
       STR_COMBAT_SHIELD: 1

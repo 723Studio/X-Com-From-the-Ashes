@@ -88,7 +88,7 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
-    cost: 1100
+    cost: 1000
     points: 80
     dependencies:
       - STR_RND_STATUS_REPORT
@@ -115,8 +115,8 @@ research:
     listOrder: 30
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
-    cost: 550
-    points: 50
+    cost: 450
+    points: 40
     dependencies:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
@@ -136,14 +136,14 @@ research:
     listOrder: 60
   - name: STR_RESISTANCE_CONTACT
     requiresBaseFunc: [ HQ ]
-    cost: 350
+    cost: 300
     points: 40
     dependencies:
       - STR_COMMUNICATION
     listOrder: 70
   - name: STR_SUPPLIES
     requiresBaseFunc: [ HQ ]
-    cost: 350
+    cost: 300
     points: 120
     dependencies:
       - STR_QUARTERMASTER_STATUS_REPORT
@@ -273,7 +273,6 @@ research:
     dependencies:
       - STR_TASER_CANNON
     listOrder: 25020
-
   - name: STR_CHEMICAL_WEAPONRY_PREREQ
     hidden: true
   - name: STR_CHEMICAL_WEAPONRY
@@ -289,7 +288,6 @@ research:
     dependencies:
       - STR_CHEMICAL_WEAPONRY
     listOrder: 25040
-
   - name: STR_CHEMPISTOL_MANUFACTURING
     cost: 16800
     points: 60
@@ -304,6 +302,19 @@ research:
       - STR_CHEMPISTOL
       - STR_ACID_SYNTHESIS
     listOrder: 25060
+
+  - name: STR_MAGNET_WEAPONS
+    cost: 48000
+    points: 100
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 25070
+  - name: STR_RAILGUN #FIXME
+    cost: 48000
+    points: 100
+    dependencies:
+      - STR_MAGNET_WEAPONS
+    listOrder: 25070
 
   - name: STR_LASER_WEAPONS
     cost: 48000
@@ -937,11 +948,26 @@ research:
     listOrder: 6300
 
 #weapons and equipment
-  - name: STR_CROWBAR
+  - name: STR_WRENCH
     cost: 5
     points: 1
     needItem: true
     listOrder: 30000
+  - name: STR_CROWBAR
+    cost: 4
+    points: 1
+    needItem: true
+    listOrder: 30005
+  - name: STR_HATCHET
+    cost: 6
+    points: 1
+    needItem: true
+    listOrder: 30008
+  - name: STR_BASEBALL_BAT
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 30009
   - name: STR_MACHETE
     cost: 6
     points: 1
@@ -952,6 +978,11 @@ research:
     points: 1
     needItem: true
     listOrder: 30020
+  - name: STR_KATANA
+    cost: 10
+    points: 1
+    needItem: true
+    listOrder: 30025
   - name: STR_STUN_ROD_2
     cost: 16
     points: 2

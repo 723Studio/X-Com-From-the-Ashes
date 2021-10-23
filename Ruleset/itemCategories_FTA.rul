@@ -15,8 +15,6 @@
     listOrder: 30
   - type: STR_THROWING
     listOrder: 35
-  - type: STR_BOWS
-    listOrder: 38
   - type: STR_SMGS
     listOrder: 40
   - type: STR_RIFLES

@@ -326,6 +326,11 @@ extraSprites:
       428: Resources/MiscItems/bigob_cash_pack.png
       429: Resources/MiscItems/bigob_Briefcase_Black.png
       430: Resources/Weapons/Earthbound/Xcom/bigob_LMGAAClip.png
+      431: Resources/Weapons/Earthbound/Special/bigob_Wrench.png
+      432: Resources/Weapons/Earthbound/Special/bigob_Hatchet.png
+      433: Resources/Weapons/Earthbound/Special/bigob_Baseball_Bat.png
+      434: Resources/Weapons/Earthbound/Xcom/bigob_Railgun.png
+      435: Resources/Weapons/Earthbound/Xcom/bigob_Railgun_Slug.png
 
       
   - type: FLOOROB.PCK
@@ -457,6 +462,12 @@ extraSprites:
       427: Resources/MiscItems/floorob_card_gold.png
       428: Resources/MiscItems/floorob_cash_pack.png
       429: Resources/MiscItems/floorob_Briefcase_Black.png
+      #430
+      431: Resources/Weapons/Earthbound/Special/floorob_Wrench.png
+      432: Resources/Weapons/Earthbound/Special/floorob_Hatchet.png
+      433: Resources/Weapons/Earthbound/Special/floorob_Baseball_Bat.png
+      434: Resources/Weapons/Earthbound/Xcom/floorob_Railgun.png
+      435: Resources/Weapons/Earthbound/Xcom/floorob_Railgun_Slug.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -555,6 +566,11 @@ extraSprites:
       836: Resources/MiscItems/handob_card_gold.png
       842: Resources/MiscItems/handob_cash_pack.png
       850: Resources/MiscItems/handob_Briefcase_Black.png
+      858: Resources/Weapons/Earthbound/Special/handob_Wrench.png
+      866: Resources/Weapons/Earthbound/Special/handob_Hatchet.png
+      874: Resources/Weapons/Earthbound/Special/handob_Baseball_Bat.png
+      882: Resources/Weapons/Earthbound/Xcom/handob_Railgun.png
+      890: Resources/Weapons/Earthbound/Xcom/handob_Railgun_Slug.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

@@ -116,6 +116,8 @@ eventScripts:
     itemTriggers:
       STR_SPORTS_BOW: true
       STR_BOW_ARROW: true
+    facilityTriggers:
+      STR_WORKSHOP: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
     executionOdds: 20
@@ -127,6 +129,26 @@ eventScripts:
     minDifficulty: 4
     maxDifficulty: 4
 
+  - &STR_KATANA_TINKERING_SCRIPT
+    type: STR_KATANA_TINKERING_SCRIPT
+    oneTimeSequentialEvents: [STR_KATANA_TINKERING]
+    researchTriggers:
+      STR_KATANA: false
+      STR_SWORD: true
+    itemTriggers:
+      STR_SWORD: true
+    facilityTriggers:
+      STR_WORKSHOP: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 8
+    minDifficulty: 0
+    maxDifficulty: 3
+  - type: STR_KATANA_TINKERING_SCRIPT_SH #extra SH copy
+    refNode: *STR_KATANA_TINKERING_SCRIPT
+    executionOdds: 3
+    minDifficulty: 4
+    maxDifficulty: 4
   - type: STR_HELICOPTER_SCRIPT
     oneTimeSequentialEvents: [STR_HELICOPTER]
     researchTriggers:
@@ -138,7 +160,6 @@ eventScripts:
     executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
-
   - &STR_ELECTRIC_WEAPONS_SCRIPT
     type: STR_ELECTRIC_WEAPONS_SCRIPT
     oneTimeSequentialEvents: [STR_ELECTRIC_WEAPONS_PREREQ_EVENT]
@@ -146,6 +167,8 @@ eventScripts:
       STR_PRISONER_INTERROGATIONS: true
       STR_ELECTRIC_WEAPONS_PREREQ: false
       STR_PRODUCTION: true
+    facilityTriggers:
+      STR_WORKSHOP: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
     executionOdds: 10

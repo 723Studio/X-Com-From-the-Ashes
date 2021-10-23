@@ -25,8 +25,52 @@ items:
   - delete: STR_ELECTRO_FLARE
 
 #melee
+  - type: STR_WRENCH
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_CONCEALABLE]
+    landOnly: false
+    size: 0.1
+    costBuy: 250
+    costSell: 130
+    weight: 8
+    bigSprite: 431
+    floorSprite: 431
+    handSprite: 858
+    meleeHitSound: 120
+    meleeAnimation: 0
+    power: 25
+    damageType: 6
+    damageBonus:
+      strength: 0.6
+    damageAlter:
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.6
+      ToHealth: 1.0
+      ToTile: 1.1
+    accuracyMelee: 75
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.33
+    costMelee:
+      time: 17
+      energy: 10
+    costThrow:
+      energy: 10
+      time: 30
+    flatThrow:
+      time: true
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 50
+    experienceTrainingMode: 3
+    recoveryPoints: 5
+    attraction: 15
+    listOrder: 1000
   - type: STR_CROWBAR
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_SPACE]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.15
     costBuy: 115
     costSell: 75
@@ -42,13 +86,11 @@ items:
       strength: 0.4
       melee: 0.1
     damageAlter:
-      RandomType: 2
-      ResistType: 3
       FixRadius: 0
       IgnoreDirection: false
       ArmorEffectiveness: 1.6
       ToHealth: 1.0
-      ToTile: 1.1
+      ToTile: 1.3
     accuracyMelee: 80
     meleeMultiplier:
       flatHundred: 0.65
@@ -63,11 +105,92 @@ items:
     clipSize: -1
     #twoHanded: true
     #oneHandedPenalty: 67
-    invWidth: 2
+    invWidth: 1
     invHeight: 3
     armor: 75
+    experienceTrainingMode: 3
     attraction: 15
-    listOrder: 1000
+    listOrder: 1005
+  - type: STR_HATCHET
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_MELEE]
+    size: 0.2
+    landOnly: false
+    costBuy: 380
+    costSell: 220
+    weight: 7
+    bigSprite: 432
+    floorSprite: 432
+    handSprite: 866
+    meleeHitSound: 81
+    meleeAnimation: 8
+    power: 27
+    damageType: 7
+    damageBonus:
+      strength: 0.5
+      melee: 0.1
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 1.2
+      ToTile: 0.65
+    accuracyMelee: 80
+    meleeMultiplier:
+      strength: 0.2
+      melee: 0.8
+    costMelee:
+      time: 14
+      energy: 5
+    costThrow:
+      energy: 14
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 55
+    experienceTrainingMode: 2
+    attraction: 20
+    listOrder: 1007
+  - type: STR_BASEBALL_BAT
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_INCAPACITATE]
+    landOnly: true
+    size: 0.2
+    costBuy: 120
+    costSell: 40
+    weight: 7
+    bigSprite: 433
+    floorSprite: 433
+    handSprite: 768
+    meleeHitSound: 109
+    meleeAnimation: 0
+    power: 25
+    damageType: 6
+    damageBonus:
+      strength: 0.3
+    damageAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.6
+      ToHealth: 0.6
+      ToTile: 0.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.68
+      melee: 0.30
+    costMelee:
+      time: 13
+      energy: 4
+    costThrow:
+      energy: 12
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 60
+    experienceTrainingMode: 2
+    attraction: 20
+    listOrder: 17910
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
     size: 0.1
@@ -84,10 +207,12 @@ items:
     damageType: 6
     damageBonus:
       strength: 0.2
-      melee: 0.3
+      melee: 0.4
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.6
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.4
       ToHealth: 0.3
       ToStun: 1.1
       ToTile: 0.2
@@ -99,7 +224,7 @@ items:
       energy: 3
     costThrow:
       energy: 8
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     invWidth: 1
@@ -133,7 +258,7 @@ items:
       ArmorEffectiveness: 1.4
       ToTile: 0.2
     accuracyMelee: 87
-    flatRate: true
+    #flatRate: true
     meleeMultiplier:
       melee: 1.2
     costMelee:
@@ -172,7 +297,7 @@ items:
       ArmorEffectiveness: 1.4
       ToTile: 0.2
     accuracyMelee: 75
-    flatRate: true
+    #flatRate: true
     meleeMultiplier:
       melee: 1.0
     costMelee:
@@ -194,30 +319,30 @@ items:
     landOnly: false
     costBuy: 2100
     costSell: 1500
-    weight: 8
+    weight: 10
     bigSprite: 366
     floorSprite: 366
     handSprite: 560
     meleeHitSound: 81
-    meleeAnimation: 4
-    power: 30
+    meleeAnimation: 8
+    power: 35
     damageType: 7
     damageBonus:
-      strength: 0.55
-      melee: 0.45
+      strength: 0.6
+      melee: 0.40
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 1.2
       ToTile: 0.2
-    accuracyMelee: 70
+    accuracyMelee: 100
     meleeMultiplier:
-      melee: 1.1
+      melee: 1.0
     costMelee:
       time: 20
       energy: 8
     costThrow:
       energy: 14
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     invWidth: 1
@@ -226,6 +351,43 @@ items:
     experienceTrainingMode: 13
     attraction: 9
     listOrder: 1040
+  - type: STR_KATANA
+    categories: [STR_HUMAN_TECH, STR_MELEE]
+    size: 0.3
+    landOnly: false
+    costSell: 9000
+    weight: 9
+    bigSprite: 424
+    floorSprite: 424
+    handSprite: 808
+    meleeHitSound: 81
+    meleeAnimation: 8
+    power: 38
+    damageType: 7
+    damageBonus:
+      strength: 0.2
+      melee: 0.7
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 1.05
+      ToTile: 0.1
+    accuracyMelee: 110
+    meleeMultiplier:
+      melee: 1.2
+    costMelee:
+      time: 16
+      energy: 6
+    costThrow:
+      energy: 20
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 50
+    experienceTrainingMode: 13
+    attraction: 20
+    listOrder: 1045
   - type: STR_ELECTRIC_STICK
     categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_INCAPACITATE, STR_MELEE]
     landOnly: true
@@ -261,7 +423,7 @@ items:
       energy: 5
     costThrow:
       energy: 8
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     invWidth: 1
@@ -304,7 +466,7 @@ items:
       energy: 6
     costThrow:
       energy: 12
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     twoHanded: false
@@ -359,7 +521,7 @@ items:
     attraction: 6
     listOrder: 3000
   - type: STR_SPORTS_BOW
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     size: 0.2
     landOnly: true
     costBuy: 850
@@ -403,7 +565,7 @@ items:
     attraction: 20
     listOrder: 3010
   - type: STR_BOW_ARROW
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_CLIPS]
     size: 0.08
     landOnly: true
     costBuy: 35
@@ -433,7 +595,7 @@ items:
     listOrder: 3020
   - &STR_BOW_ARROW_SPECIAL
     type: STR_BOW_ARROW_HE
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_EXPLOSIVES, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_EXPLOSIVES, STR_CONCEALABLE, STR_CLIPS]
     size: 0.09
     costSell: 150
     weight: 1
@@ -453,7 +615,7 @@ items:
     listOrder: 3030
     landOnly: true
   - type: STR_BOW_ARROW_IN
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_INCENDIARIES, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_INCENDIARIES, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 374
     # hitSound: 109
@@ -462,7 +624,7 @@ items:
     damageType: 2
     listOrder: 3040
   - type: STR_BOW_ARROW_STUN
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 375
     hitSound: 118
@@ -485,7 +647,7 @@ items:
       ToTile: 0.1
     listOrder: 3050
   - type: STR_BOW_ARROW_ELECTRIC
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 377
     hitSound: 119
@@ -683,8 +845,9 @@ items:
     armor: 30
     listOrder: 5050
   - type: STR_POLICE_PISTOL
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     size: 0.1
+    landOnly: false
     costBuy: 700
     costSell: 500
     weight: 4
@@ -713,8 +876,9 @@ items:
     attraction: 15
     listOrder: 5052
   - type: STR_POLICE_PISTOL_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     size: 0.025
+    landOnly: true
     costBuy: 90
     costSell: 80
     weight: 2
@@ -2247,7 +2411,6 @@ items:
     snapRange: 25
     confSnap:
       shots: 3
-      name: "STR_SNAP_X3"
     autoShots: 5
     battleType: 1
     twoHanded: true
@@ -2972,17 +3135,18 @@ items:
     landOnly: true
 
   - type: STR_RAILGUN #TODO balance
+    categories: [STR_HUMAN_TECH, STR_MASS_DRIVER, STR_CANNONS, STR_HEAVY_WEAPONS]
     size: 0.35
     costSell: 130000
     weight: 42
-    # bigSprite: 180
-    # floorSprite: 180
-    # handSprite: 872
-    # bulletSprite: 12
+    bigSprite: 434
+    floorSprite: 434
+    handSprite: 882
+    bulletSprite: 4
     fireSound: 132
     reloadSound: 133
     compatibleAmmo:
-      - STR_RAILGUN_SLUGS
+      - STR_RAILGUN_SLUG
     accuracyAimed: 75
     tuAimed: 75
     battleType: 1
@@ -2997,17 +3161,17 @@ items:
     minRange: 30
     dropoff: 4
     listOrder: 15290
-  - type: STR_RAILGUN_SLUGS
+  - type: STR_RAILGUN_SLUG
     size: 0.1
     costSell: 2300
     weight: 4
-    # bigSprite: 181
-    # floorSprite: 181
-    # handSprite: 880
+    bigSprite: 435
+    floorSprite: 435
+    handSprite: 890
     # bulletSpeed: 8
-    # hitSound: 118
-    # hitAnimation: 86
-    power: 120
+    hitSound: 13
+    hitAnimation: 26
+    power: 120 #TODO balance
     damageType: 1
     clipSize: 1
     battleType: 2
