@@ -429,7 +429,7 @@ alienDeployments:
             - STR_CROWBAR
             - STR_CASH_PACK
           -
-            - STR_CROWBAR
+            - STR_WRENCH
             - STR_CREDIT_CARD
           -
             - STR_MACHETE
@@ -445,17 +445,18 @@ alienDeployments:
             - STR_SNUBNOSE_PISTOL_CLIP
             - STR_CREDIT_CARD
           -
+            - STR_WRENCH
             - STR_CASH_PACK
           -
             - STR_CROWBAR
             - STR_CASH_PACK
             - STR_CASH_PACK
           -
-            - STR_CROWBAR
+            - STR_WRENCH
           -
             - STR_CREDIT_CARD
           -
-            []
+            - STR_HATCHET
       - alienRank: 3 #STR_MIB_SCIENTIST
         lowQty: 4
         highQty: 7
@@ -517,57 +518,57 @@ alienDeployments:
           -
             - STR_TASER
             - STR_TASER_CLIP
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_CASH_PACK
           -
             - STR_TASER
             - STR_TASER_CLIP
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_CREDIT_CARD
           -
             - STR_TASER
             - STR_TASER_CLIP
             - STR_POLICE_BATON
-            - STR_CASH_PACK
           -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_POLICE_BATON
             - STR_CASH_PACK
           -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_POLICE_BATON
             - STR_CREDIT_CARD
           -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
             - STR_POLICE_BATON
             - STR_CREDIT_CARD
           -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
             - STR_POLICE_BATON
             - STR_CASH_PACK
           -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_POLICE_BATON
             - STR_CREDIT_CARD
           -
-            - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_CREDIT_CARD
           -
             - STR_SHOTGUN
@@ -1793,7 +1794,6 @@ alienDeployments:
             - STR_LMG_CLIP
             - STR_LMG_CLIP
 
-
   - type: STR_MIB_FOREST_BEACON
     race: STR_MIB
     width: 60
@@ -2340,7 +2340,7 @@ alienDeployments:
           -
             []
 
-#traps
+#traps 
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB
     width: 60

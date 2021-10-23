@@ -629,13 +629,34 @@ ufopaedia:
 
 #STR_WEAPONS_AND_EQUIPMENT 15-29:
 #melee
+  - id: STR_WRENCH
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_WRENCH_UFOPEDIA
+    requires:
+      - STR_WRENCH
+    listOrder: 15000
   - id: STR_CROWBAR
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_CROWBAR_UFOPEDIA
     requires:
       - STR_CROWBAR
-    listOrder: 15000
+    listOrder: 15005
+  - id: STR_HATCHET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HATCHET_UFOPEDIA
+    requires:
+      - STR_HATCHET
+    listOrder: 15007
+  - id: STR_BASEBALL_BAT
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_BASEBALL_BAT_UFOPEDIA
+    requires:
+      - STR_BASEBALL_BAT
+    listOrder: 15007
   - id: STR_POLICE_BATON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -664,6 +685,13 @@ ufopaedia:
     requires:
       - STR_SWORD
     listOrder: 15040
+  - id: STR_KATANA
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_KATANA_UFOPEDIA
+    requires:
+      - STR_KATANA
+    listOrder: 15045
   - id: STR_ELECTRIC_STICK
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1324,15 +1352,40 @@ ufopaedia:
       - STR_MINIGUN_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 22280
+  - id: STR_RAILGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_RAILGUN
+    text: STR_RAILGUN_UFOPEDIA
+    listOrder: 22290
+  - id: STR_RAILGUN_SLUG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_RAILGUN
+    listOrder: 22300
 #launchers
+  - id: STR_ROCKET_GLOVE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ROCKET_GLOVE
+    text: STR_ROCKET_GLOVE_UFOPEDIA
+    listOrder: 23000
+  - id: STR_ROCKET_GLOVE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ROCKET_GLOVE
+    listOrder: 2302
   - id: STR_SINGLE_ROCKET_LAUNCHER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_SINGLE_ROCKET_LAUNCHER
     text: STR_SINGLE_ROCKET_UFOPEDIA
-    listOrder: 23000
-
+    listOrder: 23005
   - id: STR_MGL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
