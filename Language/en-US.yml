@@ -516,6 +516,8 @@ en-US:
   STR_STEAL_OSPREY_EVENT_YES_DESCRIPTION: "Okay, we need to carefully plan the operation. Most importantly, we have to do everything completely undetected and in no way reveal the location of our base in the action. Not such an easy task given the size of the craft.{NEWLINE}{ALT}New covert operation available."
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
+  STR_IMPROVISED_GRENADE_TINKERING: "Improvised Grenade"
+  STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION: #TODO
   STR_SPORTS_BOW_TINKERING: "Sports Bow Advanced Arrows"
   STR_SPORTS_BOW_TINKERING_DESCRIPTION: "After some thought and a little experimentation, our engineers came up with an interesting design of advanced arrows for the sport bow, equipped with various special charges or tips. This will greatly expand the tactical capabilities of the conventional bow. If you like, we can begin production immediately.{NEWLINE}New technology> {ALT}Advanced bow arrows"
   STR_ROCKET_GLOVE_TINKERING: "Rocket Glove"
@@ -666,11 +668,21 @@ en-US:
   STR_ZOMBIE_GRUBAS_ARMOR: "Fat Zombie Combat Analysis"
   STR_ZOMBIE_GRUBAS_ARMOR_UFOPEDIA: "Fat zombies are clumsy, but very strong and survivable foes. They don't have any armor, but single small-caliber bullets can simply get stuck in thick layers of fat without causing significant damage to bones or internal organs. Only massive burst damage can bring down such a monster."
   STR_CHUPACABRA: "Chupacabra"
+  STR_CHUPACABRA_CORPSE: "Chupacabra Corpse"
   STR_CHUPACABRA_UFOPEDIA: "An incredibly efficient predator, perfectly adapted to hunting in the woods and hilly prairies. Its powerful hind paws allow it to achieve tremendous speed in its spurt, and its front paws with razor-sharp claws leave its victim not the slightest chance. Moreover, its great reflexes and chitinous body spikes provide a good defense in a fight with almost any terrestrial animal."
   STR_CHUPACABRA_AUTOPSY: "Chupacabra Autopsy"
   STR_CHUPACABRA_AUTOPSY_UFOPEDIA: "In the structure of the skull and some skeletal features, this creature is similar to the canine group of animals. However, the unfolded pelvis, long hind limbs and the development of forelegs indicate adaptation to straight walking. This is a non-mammalian species, which reproduces by laying eggs. Surprisingly, it has green blood, which for terrestrial animals is very rare and not found in warm-blooded animals."
   STR_CHUPACABRA_ARMOR: "Chupacabra Combat Analysis"
   STR_CHUPACABRA_ARMOR_UFOPEDIA: "A ferocious and swift predator that uses both teeth and claws as well as chitinous spines in combat. It has an excellent sensitivity and orientates itself well in the dark. Its skin does not offer any special protective qualities."
+  STR_ARMADILLO: "Armadillo"
+  STR_ARMADILLO_CORPSE: "Armadillo Corpse"
+  STR_ARMADILLO_UFOPEDIA: #TODO
+  STR_ARMADILLO_AUTOPSY: "Armadillo Autopsy"
+  STR_ARMADILLO_AUTOPSY_UFOPEDIA: #TODO
+  STR_ARMADILLO_ARMOR: "Armadillo Combat Analysis"
+  STR_ARMADILLO_ARMOR_UFOPEDIA: #TODO
+
+
 #other units
   STR_RESISTANCE_AGENT: "Resistance Agent"
   STR_RESISTANCE_AGENT_VIP: "Resistance Agent"
@@ -928,6 +940,10 @@ en-US:
   STR_INCENDIARY_ROCKET: "Incendiary Rocket"
   STR_LIQUID_FLAME: "Liquid Flame"
   STR_LIQUID_FLAME_UFOPEDIA: "A breakable glass bottle containing a flammable substance like gasoline, with a source of ignition such as a burning cloth wick. When the bottle smashes on impact it causes an immediate fireball followed by spreading flames. Be sure, this simple incendiary weapon will cause a havoc among the enemy’s lines."
+  STR_INCENDIARY_GRENADE: "Incendiary Grenade"
+  STR_INCENDIARY_GRENADE_UFOPEDIA: "This grenade has a durable shell containing a flammable compound and a detonator capsule in the center. When the detonator is triggered, an explosion occurs, destroying the outer casing of the grenade. The blast ignites and scatters the compound, which then rapidly thickens on contact with oxygen and adheres to all surfaces.{NEWLINE}>Concealable"
+  STR_IMPROVISED_GRENADE: "Improvised Grenade"
+  STR_IMPROVISED_GRENADE_UFOPEDIA: #TODO
   STR_GRENADE: "Grenade"
   STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precise control.{NEWLINE}>Concealable"
   STR_SMOKE_GRENADE: "Smoke Grenade"
@@ -963,7 +979,6 @@ en-US:
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
   STR_SEEKER_DRONE_WEAPON: "Seeker Drone Weapon"
-  STR_JABBER_WEAPON: "Jabber attack"
   STR_CHUPACABRA_WEAPON: "Chupacabra attack"
   STR_FLOPPY_SCIENTISTS_LOG: "Scientist's Floppy Drive"
   STR_FLOPPY_RESISTANCE: "Resistance Floppy Drive"
@@ -981,8 +996,11 @@ en-US:
   STR_PLASTIC_CARD: "Plastic Card"
   STR_BRIEFCASE_CASH: "Briefcase with Cash ($100000)"
   STR_SPARE_PARTS: "Spare Parts"
+  STR_SPARE_PARTS_UFOPEDIA: #TODO
   STR_CHEMICALS: "Chemicals"
+  STR_CHEMICALS_UFOPEDIA: #TODO
   STR_HIGH_TECH_PARTS: "High-tech Parts"
+  STR_HIGH_TECH_PARTS_UFOPEDIA: #TODO
   STR_CRATED_HELICOPTER: "Crated Helicopter"
   STR_CRATED_OSPREY: "Crated Osprey"
   STR_LABORATORY_EQUIPMENT: "Lab Equipment"

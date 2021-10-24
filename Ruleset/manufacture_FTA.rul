@@ -27,7 +27,7 @@ manufacture:
     requiresBaseFunc: [WORK]
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
-    space: 16
+    space: 25
     time: 5100
     cost: 240000
     requiredItems:
@@ -226,6 +226,19 @@ manufacture:
       STR_RAILGUN_SLUG: 1
     listOrder: 220030
 #equipment
+  - name: STR_IMPROVISED_GRENADE
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_IMPROVISED_GRENADE
+    requiredItems:
+      STR_CHEMICALS: 1
+    space: 1
+    time: 8
+    cost: 30
+    producedItems:
+      STR_IMPROVISED_GRENADE: 1
+    listOrder: 220030
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
@@ -242,19 +255,21 @@ manufacture:
 #components
   - name: STR_SPARE_PARTS
     category: STR_COMPONENTS
-    #requiresBaseFunc: [WORK]
+    requires:
+      - STR_ENGINEER_STATUS_REPORT
     space: 1
     time: 5
-    cost: 330
+    cost: 240
     producedItems:
       STR_SPARE_PARTS: 1
     listOrder: 220030
   - name: STR_CHEMICALS
     category: STR_COMPONENTS
-    #requiresBaseFunc: [WORK]
+    requires:
+      - STR_ENGINEER_STATUS_REPORT
     space: 1
     time: 8
-    cost: 330
+    cost: 280
     producedItems:
       STR_CHEMICALS: 1
     listOrder: 220030

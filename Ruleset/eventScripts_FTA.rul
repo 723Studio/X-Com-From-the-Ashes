@@ -96,6 +96,7 @@ eventScripts:
     researchTriggers:
       STR_SUPPLIES: true
       STR_FACILITIES_BLUEPRINTS: true
+      STR_ENGINEER_STATUS_REPORT: true
       STR_WORKSHOP: false
     firstMonth: 0
     allowedProcessor: 2 #xcom
@@ -113,6 +114,7 @@ eventScripts:
     researchTriggers:
       STR_SPORTS_BOW_TINKERING: false
       STR_SPORTS_BOW: true
+      STR_ENGINEER_STATUS_REPORT: true
     itemTriggers:
       STR_SPORTS_BOW: true
       STR_BOW_ARROW: true
@@ -124,6 +126,25 @@ eventScripts:
   - type: STR_SPORTS_BOW_TINKERING_SCRIPT_SH #extra SH copy
     refNode: *STR_SPORTS_BOW_TINKERING_SCRIPT
     executionOdds: 5
+    minDifficulty: 4
+    maxDifficulty: 4
+  - &STR_IMPROVISED_GRENADE_TINKERING_SCRIPT
+    type: STR_IMPROVISED_GRENADE_SCRIPT
+    oneTimeSequentialEvents: [STR_IMPROVISED_GRENADE_TINKERING]
+    researchTriggers:
+      IMPROVISED_GRENADE: false
+      STR_ENGINEER_STATUS_REPORT: true
+    itemTriggers:
+      STR_SPORTS_BOW: true
+      STR_BOW_ARROW: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 80
+    minDifficulty: 0
+    maxDifficulty: 3
+  - type: STR_IMPROVISED_GRENADE_SCRIPT_SH #extra SH copy
+    refNode: *STR_IMPROVISED_GRENADE_TINKERING_SCRIPT
+    executionOdds: 20
     minDifficulty: 4
     maxDifficulty: 4
 

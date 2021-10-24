@@ -493,7 +493,7 @@ armors:
         healthCurrent: 0.1
         health: -0.05
     meleeDodge:
-      reactions: 0.7
+      reactions: 0.6
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
     damageModifier:
@@ -527,7 +527,18 @@ armors:
     bleedImmune: true
     zombiImmune: true
     createsMeleeThreat: false
-    overKill: 1.5
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.4
     damageModifier: &ZombieResist
       - 1.0 #0 - None - special
       - 1.1 #1 - AP - kinetic
@@ -558,26 +569,6 @@ armors:
     bleedImmune: true
     zombiImmune: true
     createsMeleeThreat: false
-    overKill: 1.5
-    damageModifier: *ZombieResist
-    loftempsSet: [ 4 ]
-
-#Monsters
-  - type: STR_JABBER_ARMOR
-    spriteSheet: JABBER.PCK
-    spriteInv: inventory_JABBER
-    allowInv: false
-    corpseBattle:
-      - STR_JABBER_CORPSE
-    visibilityAtDark: 20
-    heatVision: 40
-    frontArmor: 9
-    sideArmor: 9
-    rearArmor: 9
-    underArmor: 6
-    psiDefence: *StandardDynamicPsiDefence
-    movementType: 0
-    drawingRoutine: 4
     recovery:
       health:
         stunNormalized: -0.1
@@ -588,35 +579,21 @@ armors:
         healthCurrent: 0.1
         health: -0.05
     meleeDodge:
-      reactions: 0.7
+      reactions: 0.4
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
-    damageModifier:
-      - 1.0 #0 - None - special
-      - 0.9 #1 - AP - kinetic
-      - 1.0 #2 - Incendiary
-      - 0.9 #3 - High Explosive - Explosive
-      - 1.0 #4 - Laser
-      - 1.0 #5 - Plasma
-      - 1.0 #6 - Stun
-      - 0.8 #7 - Melee - Cutting
-      - 1.0 #8 - Acid
-      - 3.0 #9 - Smoke - Choke
-      - 0.0 #10 - EMP
-      - 1.0 #11 - Electric
-      - 1.0 #12 - Psi
-      - 1.0 #13 - Warp
-      - 1.0 #14 - Pressure
-      - 0.7 #15 - Bio
-    loftempsSet: [ 2 ]
+    damageModifier: *ZombieResist
+    loftempsSet: [ 4 ]
+
+#Monsters
   - type: STR_CHUPACABRA_ARMOR
     spriteSheet: CHUPACABRA.PCK
     spriteInv: inventory_CHUPACABRA
     allowInv: false
     corpseBattle:
       - STR_CHUPACABRA_CORPSE
-    visibilityAtDark: 20
-    heatVision: 95
+    visibilityAtDark: 40
+    heatVision: 35
     frontArmor: 4
     sideArmor: 4
     rearArmor: 4
@@ -639,22 +616,70 @@ armors:
     overKill: 1.5
     damageModifier:
       - 1.0 #0 - None - special
-      - 0.9 #1 - AP - kinetic
-      - 1.2 #2 - Incendiary
-      - 0.9 #3 - High Explosive - Explosive
+      - 1.0 #1 - AP - kinetic
+      - 1.4 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
       - 1.0 #4 - Laser
       - 1.0 #5 - Plasma
       - 1.0 #6 - Stun
-      - 0.8 #7 - Melee - Cutting
+      - 1.0 #7 - Melee - Cutting
       - 1.0 #8 - Acid
-      - 2.5 #9 - Smoke - Choke
+      - 3.5 #9 - Smoke - Choke
       - 0.0 #10 - EMP
       - 1.0 #11 - Electric
       - 1.0 #12 - Psi
       - 1.0 #13 - Warp
       - 1.0 #14 - Pressure
-      - 0.7 #15 - Bio
+      - 1.0 #15 - Bio
     loftempsSet: [ 2 ]
+
+  - type: STR_ARMADILLO_ARMOR
+    spriteSheet: ARMADILLO.PCK
+    spriteInv: inventory_ARMADILLO
+    allowInv: false
+    corpseBattle:
+      - STR_ARMADILLO_CORPSE
+    visibilityAtDark: 15
+    heatVision: 10
+    frontArmor: 12
+    sideArmor: 15
+    rearArmor: 30
+    underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 0
+    drawingRoutine: 4
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.6
+    meleeDodgeBackPenalty: 0.4
+    overKill: 1.5
+    damageModifier:
+      - 1.0 #0 - None - special
+      - 0.7 #1 - AP - kinetic
+      - 0.7 #2 - Incendiary
+      - 0.8 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 0.65 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 3.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
+    loftempsSet: [ 2 ]
+
 
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_ARMOR

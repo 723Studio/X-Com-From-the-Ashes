@@ -2476,6 +2476,8 @@ items:
     listOrder: 15040
   - type: STR_ASSAULT_CANNON
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.5
     landOnly: true
     costBuy: 52000
@@ -2512,6 +2514,8 @@ items:
     listOrder: 15310
   - type: STR_ASSAULT_CANNON_CLIP_AP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
     costBuy: 2800
@@ -3607,49 +3611,37 @@ items:
     attraction: 8
     listOrder: 19040
 #grenades and chargers
-  - type: STR_LIQUID_FLAME
-    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
+  - type: STR_IMPROVISED_GRENADE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE]
+    size: 0.05
+    costBuy: 500
+    costSell: 420
+    weight: 3
     landOnly: true
-    size: 0.1
-    costBuy: 220
-    costSell: 170
-    weight: 4
-    battleType: 1
-    bigSprite: 353
-    floorSprite: 353
-    handSprite: 496
-    bulletSprite: 18
-    fireSound: 39
-    hitSound: 116
-    damageType: 2
+    bigSprite: 441
+    floorSprite: 441
+    handSprite: 922
     power: 30
     damageAlter:
-      ToMorale: 15.0
-    clipSize: 1
-    accuracyAimed: 100
-    accuracyCloseQuarters: 100
-    accuracyMultiplier:
-      firing: 0.0
-      throwing: 1.0
-    costAimed:
-      time: 45
+      IgnoreOverKill: false
+    damageType: 3
+    costThrow:
       energy: 6
-    confAimed:
-      name: "STR_FIRE_AND_THROW"
-    arcingShot: true
-    maxRange: 20
-    kneelBonus: 100
-    experienceTrainingMode: 8
-    armor: 20
-    attraction: 6
-    listOrder: 21000
+    costPrime:
+      time: 25
+    costUnprime:
+      time: 45
+    unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
+    battleType: 4
+    listOrder: 21010
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
-    costBuy: 600
-    costSell: 500
+    costBuy: 860
+    costSell: 650
     weight: 3
     landOnly: true
     bigSprite: 19
@@ -3674,8 +3666,8 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
-    costBuy: 480
-    costSell: 350
+    costBuy: 920
+    costSell: 450
     weight: 4
     bigSprite: 20
     floorSprite: 20
@@ -3724,7 +3716,69 @@ items:
     armor: 30
     attraction: 6
     listOrder: 21030
-
+  - type: STR_LIQUID_FLAME
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 350
+    costSell: 240
+    weight: 4
+    battleType: 1
+    bigSprite: 353
+    floorSprite: 353
+    handSprite: 496
+    bulletSprite: 18
+    fireSound: 39
+    hitSound: 116
+    damageType: 2
+    power: 30
+    damageAlter:
+      ToMorale: 15.0
+    clipSize: 1
+    accuracyAimed: 100
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    costAimed:
+      time: 45
+      energy: 6
+    confAimed:
+      name: "STR_FIRE_AND_THROW"
+    arcingShot: true
+    maxRange: 20
+    kneelBonus: 100
+    experienceTrainingMode: 8
+    armor: 20
+    attraction: 6
+    listOrder: 21030
+  - type: STR_INCENDIARY_GRENADE
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.1
+    costBuy: 950
+    costSell: 720
+    weight: 3
+    bigSprite: 27
+    floorSprite: 27
+    handSprite: 914
+    power: 55
+    damageAlter:
+      ToMorale: 15.0
+      ToTime: 0.6
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    damageType: 2
+    battleType: 4
+    armor: 20
+    attraction: 15
+    listOrder: 21030
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     requiresBuy:
@@ -4200,12 +4254,21 @@ items:
     bigSprite: 357
     meleeSound: 48
     meleeHitSound: 55
-    strengthApplied: true
+    #strengthApplied: true
+    #power: 20
     damageType: 7
     damageAlter:
-      ArmorEffectiveness: 1.35
-    accuracyMelee: 100
-    tuMelee: 15
+      RandomType: 7
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.3
+      ToWound: 2
+    accuracyMelee: 90
+    meleeMultiplier:
+      flatHundred: 0.7
+      melee: 0.60
+    damageBonus:
+      strength: 0.4
+    tuMelee: 20
     battleType: 3
     fixedWeapon: true
     invWidth: 2
@@ -4222,9 +4285,16 @@ items:
     meleeSound: 49
     meleeHitSound: 81
     clipSize: -1
-    strengthApplied: true
+    #strengthApplied: true
+    power: 35
     damageType: 7
-    accuracyMelee: 80
+    damageBonus:
+      strength: 0.5
+      melee: 0.2
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.7
+      melee: 0.60
     tuMelee: 25
     battleType: 3
     fixedWeapon: true
@@ -4259,29 +4329,6 @@ items:
     clipSize: -1
     autoShots: 6
     recover: false
-  - type: STR_JABBER_WEAPON
-    categories: [STR_BUILT_INS, STR_MELEE]
-    weight: 0
-    bigSprite: 364
-    floorSprite: 31
-    handSprite: 104
-    meleeSound: 48
-    meleeHitSound: 81
-    clipSize: -1
-    power: 30
-    damageAlter:
-      ArmorEffectiveness: 1.25
-      ToTile: 0.33
-    strengthApplied: true
-    damageType: 7
-    accuracyMelee: 100
-    tuMelee: 8
-    battleType: 3
-    fixedWeapon: true
-    invWidth: 2
-    invHeight: 3
-    recover: false
-    flatRate: true
   - type: STR_CHUPACABRA_WEAPON
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
@@ -4291,14 +4338,22 @@ items:
     meleeSound: 48
     meleeHitSound: 81
     clipSize: -1
-    power: 30
+    #power: 30
     damageAlter:
-      ArmorEffectiveness: 1.25
-      ToTile: 0.33
+      RandomType: 7
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.3
+      ToWound: 2
+    accuracyMelee: 100
+    meleeMultiplier:
+      flatHundred: 0.7
+      melee: 0.60
+    damageBonus:
+      strength: 0.3
+      melee: 0.2
+    tuMelee: 10
     strengthApplied: true
     damageType: 7
-    accuracyMelee: 100
-    tuMelee: 8
     battleType: 3
     fixedWeapon: true
     invWidth: 2
@@ -4526,17 +4581,16 @@ items:
     invHeight: 2
     recoveryPoints: 40
     listOrder: 30060
-
   - type: STR_SPARE_PARTS
     categories: [STR_COMPONENTS]
     landOnly: true
     size: 0.01
-    costBuy: 700
-    costSell: 400
+    costBuy: 450
+    costSell: 320
     weight: 1
     battleType: 0
-    bigSprite: 428 #TODO
-    floorSprite: 428 #TODO
+    bigSprite: 99 #TODO
+    floorSprite: 99 #TODO
     invWidth: 1
     invHeight: 1
     stackSize: 5
@@ -4546,12 +4600,12 @@ items:
     categories: [STR_COMPONENTS]
     landOnly: true
     size: 0.01
-    costBuy: 900
-    costSell: 550
+    costBuy: 500
+    costSell: 360
     weight: 1
     battleType: 0
-    bigSprite: 428 #TODO
-    floorSprite: 428 #TODO
+    bigSprite: 99 #TODO
+    floorSprite: 99 #TODO
     invWidth: 1
     invHeight: 1
     stackSize: 5
@@ -4565,8 +4619,8 @@ items:
     costSell: 900
     weight: 1
     battleType: 0
-    bigSprite: 428 #TODO
-    floorSprite: 428 #TODO
+    bigSprite: 99 #TODO
+    floorSprite: 99 #TODO
     invWidth: 1
     invHeight: 1
     stackSize: 15
@@ -5067,14 +5121,6 @@ items:
     floorSprite: 106
     listOrder: 100430
 #Monsters
-  - type: STR_JABBER
-    refNode: *liveMonster
-    listOrder: 100440
-  - type: STR_JABBER_CORPSE
-    refNode: *monsterCorpse
-    bigSprite: 114
-    floorSprite: 114
-    listOrder: 100450
   - type: STR_CHUPACABRA
     refNode: *liveMonster
     listOrder: 100460
@@ -5083,12 +5129,22 @@ items:
     bigSprite: 116
     floorSprite: 116
     listOrder: 100470
+  - type: STR_ARMADILLO
+    refNode: *liveMonster
+    listOrder: 100480
+  - type: STR_ARMADILLO_CORPSE
+    refNode: *monsterCorpse
+    bigSprite: 130
+    floorSprite: 130
+    listOrder: 100490
+
 
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
-    spawnUnitFaction: 0
+    spawnUnitFaction: 0 #Player faction
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -5143,6 +5199,7 @@ items:
     spawnUnit: STR_RESISTANCE_SOLDIER
     spawnUnitFaction: 0
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -5166,6 +5223,7 @@ items:
     spawnUnit: STR_RESISTANCE_SCIENTIST
     spawnUnitFaction: 0
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -5175,6 +5233,7 @@ items:
     spawnUnit: STR_RESISTANCE_SCIENTIST_VIP
     spawnUnitFaction: 0
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -5199,6 +5258,7 @@ items:
     spawnUnit: STR_RESISTANCE_RADIO
     spawnUnitFaction: -1
     bigSprite: 0
+    floorSprite: 301 #red
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -5218,6 +5278,7 @@ items:
     spawnUnit: STR_RESISTANCE_COMPUTER
     spawnUnitFaction: -1
     bigSprite: 0
+    floorSprite: 301 #red
     battleType: 4
     invWidth: 0
     invHeight: 0

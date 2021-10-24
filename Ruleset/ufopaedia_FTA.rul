@@ -1450,12 +1450,12 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     listOrder: 23090
 #grenades
-  - id: STR_LIQUID_FLAME
+  - id: STR_IMPROVISED_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_LIQUID_FLAME
-    text: STR_LIQUID_FLAME_UFOPEDIA
+      - STR_IMPROVISED_GRENADE
+    text: STR_IMPROVISED_GRENADE_UFOPEDIA
     listOrder: 24000
   - id: STR_GRENADE
     type_id: 4
@@ -1463,35 +1463,49 @@ ufopaedia:
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_GRENADE_UFOPEDIA
-    listOrder: 24005
+    listOrder: 24010
   - id: STR_SMOKE_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_SMOKE_GRENADE_UFOPEDIA
-    listOrder: 24010
+    listOrder: 24020
   - id: STR_PROXIMITY_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_PROXIMITY_GRENADE_UFOPEDIA
-    listOrder: 24020
+    listOrder: 24030
+  - id: STR_LIQUID_FLAME
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LIQUID_FLAME
+    text: STR_LIQUID_FLAME_UFOPEDIA
+    listOrder: 24040
+  - id: STR_INCENDIARY_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_INCENDIARY_GRENADE_UFOPEDIA
+    listOrder: 24050
   - id: STR_FLASHBANG_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FLASHBANG_GRENADE_UFOPEDIA
-    listOrder: 24030
+    listOrder: 24060
   - id: STR_EXPLOSIVE_CHARGE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_EXPLOSIVE_CHARGE
     text: STR_EXPLOSIVE_CHARGE_UFOPEDIA
-    listOrder: 24040
+    listOrder: 24070
 #equipment
   - id: STR_FIRST_AID
     type_id: 4
@@ -1570,7 +1584,28 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FIRE_EXTINGUISHER_UFOPEDIA
     listOrder: 24140
-    
+  - id: STR_SPARE_PARTS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT #TODO Consider
+    # requires:
+    #   - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_SPARE_PARTS_UFOPEDIA
+    listOrder: 24140
+  - id: STR_CHEMICALS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT #TODO Consider
+    # requires:
+    #   - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_CHEMICALS_UFOPEDIA
+    listOrder: 24140
+  - id: STR_HIGH_TECH_PARTS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT #TODO Consider
+    # requires:
+    #   - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_HIGH_TECH_PARTS_UFOPEDIA
+    listOrder: 24140
+
 #STR_ALIEN_ARTIFACTS 30-45
   - id: STR_HEAVY_PLASMA
     type_id: 4
@@ -1871,6 +1906,26 @@ ufopaedia:
     text_width: 149
     listOrder: 95070
 
+  - id: STR_ARMADILLO
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMADILLO
+    image_id: UFOPEDIA_IMG_ARMADILLO_CPAL
+    text: STR_ARMADILLO_UFOPEDIA
+    text_width: 158
+    listOrder: 95080
+  - id: STR_ARMADILLO_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMADILLO_CORPSE
+    image_id: UFOPEDIA_IMG_ARMADILLO_AUTOPSY_CPAL
+    text: STR_ARMADILLO_AUTOPSY_UFOPEDIA
+    text_width: 149
+    listOrder: 95090
+
+
 ## STR_ALIEN_RESEARCH_UC 160-230k
   - id: STR_ALIEN_ORIGINS
     type_id: 8
@@ -2070,6 +2125,13 @@ ufopaedia:
     text: STR_CHUPACABRA_ARMOR_UFOPEDIA
     requires:
       - STR_CHUPACABRA_ARMOR
+    listOrder: 250250
+  - id: STR_ARMADILLO_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_ARMADILLO_ARMOR_UFOPEDIA
+    requires:
+      - STR_ARMADILLO_ARMOR
     listOrder: 250250
 #list orders
     # STR_XCOM_REPORTS_UC 0-6999

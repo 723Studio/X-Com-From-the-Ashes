@@ -785,15 +785,15 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 55
-      stamina: 120
-      health: 124
+      tu: 65
+      stamina: 140
+      health: 144
       bravery: 110
-      reactions: 40
+      reactions: 35
       firing: 0
       throwing: 0
       strength: 84
-      melee: 80
+      melee: 25
       psiStrength: 30
       psiSkill: 0
     statsRandom:
@@ -805,7 +805,7 @@ units:
       firing: 0
       throwing: 0
       strength: 10
-      melee: 15
+      melee: 3
       psiStrength: 4
     armor: STR_ZOMBIE_STERILE_ARMOR
     standHeight: 22
@@ -823,15 +823,15 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 48
+      tu: 70
       stamina: 150
       health: 184
       bravery: 110
-      reactions: 44
+      reactions: 30
       firing: 0
       throwing: 0
       strength: 104
-      melee: 90
+      melee: 30
       psiStrength: 30
       psiSkill: 0
     statsRandom:
@@ -843,7 +843,7 @@ units:
       firing: 0
       throwing: 0
       strength: 20
-      melee: 10
+      melee: 5
       psiStrength: 4
     armor: STR_ZOMBIE_GRUBAS_ARMOR
     standHeight: 22
@@ -859,35 +859,6 @@ units:
       - - STR_ZOMBIE_WEAPON
 
 #Monsters
-  # - type: STR_JABBER
-  #   race: STR_JABBER
-  #   rank: STR_LIVE_TERRORIST
-  #   stats:
-  #     tu: 90
-  #     stamina: 110
-  #     health: 30
-  #     bravery: 100
-  #     reactions: 75
-  #     firing: 0
-  #     throwing: 0
-  #     strength: 28
-  #     melee: 80
-  #     psiStrength: 50
-  #     psiSkill: 0
-  #   armor: STR_JABBER_ARMOR
-  #   standHeight: 18
-  #   kneelHeight: 12
-  #   value: 10
-  #   # aggroSound: 123
-  #   deathSound: 7
-  #   # panicSound: 265
-  #   # berserkSound: 266
-  #   intelligence: 3
-  #   aggression: 4
-  #   energyRecovery: 35
-  #   livingWeapon: true
-  #   builtInWeaponSets:
-  #     - - STR_JABBER_WEAPON
   - type: STR_CHUPACABRA
     race: STR_CHUPACABRA
     rank: STR_LIVE_TERRORIST
@@ -899,8 +870,8 @@ units:
       reactions: 65
       firing: 0
       throwing: 0
-      strength: 75
-      melee: 85
+      strength: 70
+      melee: 80
       psiStrength: 60
       psiSkill: 0
     statsRandom:
@@ -911,7 +882,7 @@ units:
       reactions: 5
       firing: 0
       throwing: 0
-      strength: 1
+      strength: 10
       melee: 15
       psiStrength: 4
     armor: STR_CHUPACABRA_ARMOR
@@ -929,6 +900,47 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_CHUPACABRA_WEAPON
+  - type: STR_ARMADILLO
+    race: STR_ARMADILLO
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 70
+      stamina: 150
+      health: 80
+      bravery: 100
+      reactions: 45
+      firing: 0
+      throwing: 0
+      strength: 75
+      melee: 65
+      psiStrength: 60
+      psiSkill: 0
+    statsRandom:
+      tu: 10
+      stamina: 15
+      health: 10
+      bravery: 20
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 10
+      melee: 10
+      psiStrength: 4
+    armor: STR_ARMADILLO_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 15
+    aggroSound: 123 #TODO
+    deathSound: 124 #TODO
+    # panicSound: 265
+    # berserkSound: 266
+    intelligence: 3
+    aggression: 8
+    isLeeroyJenkins: true
+    energyRecovery: 45
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CHUPACABRA_WEAPON #TODO
 
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN

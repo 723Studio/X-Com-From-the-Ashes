@@ -564,6 +564,7 @@ research:
       - STR_ZOMBIE_STERILE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_CHUPACABRA_CORPSE
+      - STR_ARMADILLO_CORPSE
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 288
     points: 17
@@ -895,6 +896,25 @@ research:
       - STR_STRANGE_CREATURE
     listOrder: 6200
 
+  - name: STR_ARMADILLO_CORPSE
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 750
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 6210
+  - name: STR_ARMADILLO
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 820
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    listOrder: 6220
+
   #enemies - aliens
   #combat analysis 
   - name: STR_MIB_AGENT_ARMOR
@@ -961,6 +981,13 @@ research:
       - STR_CHUPACABRA
       - STR_CHUPACABRA_CORPSE
     listOrder: 6300
+  - name: STR_ARMADILLO_ARMOR
+    cost: 180
+    points: 5
+    dependencies:
+      - STR_ARMADILLO
+      - STR_ARMADILLO_CORPSE
+    listOrder: 6310
 
 #weapons and equipment
   - name: STR_WRENCH
@@ -1199,11 +1226,16 @@ research:
     dependencies:
       - STR_PUMP_ACTION_SHOTGUN
     listOrder: 30290
+  - name: STR_IMPROVISED_GRENADE
+    cost: 20
+    points: 1
+    needItem: true
+    listOrder: 30300
   - name: STR_LIQUID_FLAME
     cost: 10
     points: 1
     needItem: true
-    listOrder: 30300
+    listOrder: 30305
   - name: STR_EXPLOSIVE_CHARGE
     cost: 18
     points: 4

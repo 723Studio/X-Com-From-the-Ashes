@@ -857,9 +857,10 @@ alienDeployments:
             - STR_HC_BS_AMMO
             - STR_HC_BS_AMMO
           -
-            - STR_HEAVY_CANNON
-            - STR_HC_BS_AMMO
-            - STR_HC_BS_AMMO
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
           -
             - STR_HEAVY_CANNON
             - STR_HC_HE_AMMO
@@ -1789,10 +1790,9 @@ alienDeployments:
             - STR_SMALL_ROCKET
             - STR_SMALL_ROCKET  
           -
-            - STR_LMG
-            - STR_LMG_CLIP
-            - STR_LMG_CLIP
-            - STR_LMG_CLIP
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
 
   - type: STR_MIB_FOREST_BEACON
     race: STR_MIB

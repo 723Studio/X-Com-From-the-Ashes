@@ -162,6 +162,7 @@ extraSprites:
   - type: BIGOBS.PCK
     files:
       #44: Resources/Armors/Xcom/PowerSuit/bigob_POWER_SUIT.png
+      99: Resources/MiscItems/bigob_NoNe.png
     #100&200 - corpses
       100: Resources/Armors/Enemies/Special/bigob_XCOM_EX_COMMANDER.png
       101: Resources/Armors/Enemies/MiB/bigob_MIB_AGENT.png
@@ -177,9 +178,9 @@ extraSprites:
       111: Resources/Armors/Enemies/MiB/bigob_MIB_SPECOPS.png
       112: Resources/Armors/Enemies/MiB/bigob_SEEKER_DRONE.png
       113: Resources/Armors/Enemies/MiB/bigob_MIB_ARMORED_AGENT.png
-      114: Resources/Armors/Enemies/Monsters/bigob_JABBER_CORPSE.png
+      114: Resources/Armors/Enemies/Monsters/legacy/bigob_JABBER_CORPSE.png
       115: Resources/MiscItems/bigob_FakeID.png #FIXME 115 index used, replace with something without floor obj
-      116: Resources/Armors/Enemies/Monsters/bigob_JABBER_CORPSE.png
+      116: Resources/Armors/Enemies/Monsters/bigob_CHUPACABRA_CORPSE.png
       117: Resources/Armors/Civilians/Police/bigob_POLICEMAN.png
       118: Resources/Armors/Civilians/Animals/bigob_DOGE_CORPSE.png
       119: Resources/Armors/Xcom/CoatArmor/bigob_COAT_CORPSE.png
@@ -193,7 +194,7 @@ extraSprites:
       127: Resources/Armors/Enemies/MiB/Procured/bigob_MIB_VIP_BODYGUARD.png
       128: Resources/Armors/Enemies/MiB/bigob_MIB_SCIENTIST.png
       129: Resources/Armors/Civilians/Citizens/bigob_HUNTER.png
-
+      130: Resources/Armors/Enemies/Monsters/bigob_ARMADILLO_CORPSE.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -259,7 +260,7 @@ extraSprites:
       361: Resources/Weapons/Alien/Laser/bigob_DroneWeapon.png
       362: Resources/Weapons/Earthbound/General/bigob_ThrowingKnife.png
       363: Resources/Weapons/Earthbound/Faction/bigob_ExplosiveCharge.png
-      364: Resources/Armors/Enemies/Monsters/bigob_JabberWeapon.png
+      364: Resources/Armors/Enemies/Monsters/legacy/bigob_JabberWeapon.png
       365: Resources/MiscItems/bigob_FakeID.png
       366: Resources/Weapons/Earthbound/Faction/bigob_Sword.png
       367: Resources/Weapons/Earthbound/Xcom/bigob_Pistol.png
@@ -293,8 +294,8 @@ extraSprites:
       395: Resources/Weapons/Earthbound/Xcom/bigob_MinigunBeltAA.png
       396: Resources/Weapons/Earthbound/Xcom/bigob_Taser.png
       397: Resources/Weapons/Earthbound/Xcom/bigob_Taser_Clip.png
-      398: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannon.png
-      399: Resources/Weapons/Earthbound/Xcom/bigob_TaserCannonClip.png
+      398: Resources/Weapons/Earthbound/Tinkering/bigob_TaserCannon.png
+      399: Resources/Weapons/Earthbound/Tinkering/bigob_TaserCannonClip.png
       400: Resources/Weapons/Earthbound/Xcom/bigob_HeavyPistolExpClip.png
       401: Resources/Weapons/Earthbound/Xcom/bigob_SEShotgun.png
       402: Resources/Weapons/Earthbound/Xcom/bigob_BattleRifleGrenade.png
@@ -303,7 +304,7 @@ extraSprites:
       405: Resources/Weapons/MIB/bigob_ChemogunClip.png
       406: Resources/Weapons/MIB/bigob_Chempistol.png
       407: Resources/Weapons/MIB/bigob_ChempistolClip.png
-      408: Resources/Weapons/Earthbound/Xcom/bigob_ElectricStick.png
+      408: Resources/Weapons/Earthbound/Tinkering/bigob_ElectricStick.png
       409: Resources/MiscItems/bigob_MibDataContainer.png
       410: Resources/Weapons/MIB/bigob_Woundgun.png
       411: Resources/Weapons/MIB/bigob_WoundgunClip.png 
@@ -329,18 +330,19 @@ extraSprites:
       431: Resources/Weapons/Earthbound/Special/bigob_Wrench.png
       432: Resources/Weapons/Earthbound/Special/bigob_Hatchet.png
       433: Resources/Weapons/Earthbound/Special/bigob_Baseball_Bat.png
-      434: Resources/Weapons/Earthbound/Xcom/bigob_Railgun.png
-      435: Resources/Weapons/Earthbound/Xcom/bigob_Railgun_Slug.png
-      436: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove.png
-      437: Resources/Weapons/Earthbound/Xcom/bigob_Rocket_Glove_Clip.png
+      434: Resources/Weapons/Earthbound/Tinkering/bigob_Railgun.png
+      435: Resources/Weapons/Earthbound/Tinkering/bigob_Railgun_Slug.png
+      436: Resources/Weapons/Earthbound/Tinkering/bigob_Rocket_Glove.png
+      437: Resources/Weapons/Earthbound/Tinkering/bigob_Rocket_Glove_Clip.png
       438: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannon.png
       439: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AP.png
       440: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AA.png
-
-      
+      441: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedGrenade.png
+     
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
+      99: Resources/MiscItems/floorob_NoNe.png
     #100&200 - corpses
       100: Resources/Armors/Enemies/Special/floorob_XCOM_EX_COMMANDER.png
       101: Resources/Armors/Enemies/MiB/floorob_MIB_AGENT.png
@@ -355,7 +357,7 @@ extraSprites:
       111: Resources/Armors/Enemies/MiB/floorob_MIB_SPECOPS.png
       112: Resources/Armors/Enemies/MiB/floorob_SEEKER_DRONE.png
       113: Resources/Armors/Enemies/MiB/floorob_MIB_ARMORED_AGENT.png
-      114: Resources/Armors/Enemies/Monsters/floorob_JABBER_CORPSE.png
+      114: Resources/Armors/Enemies/Monsters/legacy/floorob_JABBER_CORPSE.png
       115: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_RADIO.png
       116: Resources/Armors/Enemies/Monsters/floorob_CHUPACABRA_CORPSE.png
       117: Resources/Armors/Civilians/Police/floorob_POLICEMAN.png
@@ -371,17 +373,22 @@ extraSprites:
       127: Resources/Armors/Enemies/MiB/Procured/floorob_MIB_VIP_BODYGUARD.png
       128: Resources/Armors/Enemies/MiB/floorob_MIB_SCIENTIST.png
       129: Resources/Armors/Civilians/Citizens/floorob_HUNTER.png
+      130: Resources/Armors/Enemies/Monsters/floorob_ARMADILLO_CORPSE.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
+      301: Resources/MiscItems/floorob_spawn_red.png
+      302: Resources/MiscItems/floorob_spawn_green.png
       303: Resources/Weapons/Earthbound/Xcom/floorob_LightCannon.png
       304: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipAP.png
       305: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipBS.png
       306: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipHE.png
       309: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipIN.png
+      #310-315
       316: Resources/Weapons/Earthbound/General/floorob_CombatKnife.png
       317: Resources/Weapons/Earthbound/General/floorob_SingleRocket.png
       318: Resources/Weapons/Earthbound/General/floorob_PoliceBaton.png
       319: Resources/Weapons/Earthbound/General/floorob_PumpActionShotgun.png
+      #320
       321: Resources/Weapons/Earthbound/General/floorob_Shotgun.png
       322: Resources/Weapons/Earthbound/General/floorob_ShotgunShells.png
       325: Resources/Weapons/Earthbound/General/floorob_ShotgunShellsAA.png
@@ -439,9 +446,9 @@ extraSprites:
       395: Resources/Weapons/Earthbound/Xcom/floorob_MinigunBeltAA.png
       396: Resources/Weapons/Earthbound/Xcom/floorob_Taser.png
       397: Resources/Weapons/Earthbound/Xcom/floorob_Taser_Clip.png
-      398: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannon.png
-      399: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png
-      400: Resources/Weapons/Earthbound/Xcom/floorob_TaserCannonClip.png #temp for hacking
+      398: Resources/Weapons/Earthbound/Tinkering/floorob_TaserCannon.png
+      399: Resources/Weapons/Earthbound/Tinkering/floorob_TaserCannonClip.png
+      400: Resources/Weapons/Earthbound/Tinkering/floorob_TaserCannonClip.png #temp for hacking
       401: Resources/Weapons/Earthbound/Xcom/floorob_SEShotgun.png
       #402
       403: Resources/Weapons/Earthbound/Special/floorob_Crowbar.png
@@ -449,7 +456,7 @@ extraSprites:
       405: Resources/Weapons/MIB/floorob_ChemogunClip.png
       406: Resources/Weapons/MIB/floorob_Chempistol.png
       407: Resources/Weapons/MIB/floorob_ChempistolClip.png
-      408: Resources/Weapons/Earthbound/Xcom/floorob_ElectricStick.png
+      408: Resources/Weapons/Earthbound/Tinkering/floorob_ElectricStick.png
       409: Resources/MiscItems/floorob_MibDataContainer.png
       410: Resources/Weapons/MIB/floorob_Woundgun.png
       411: Resources/Weapons/MIB/floorob_WoundgunClip.png
@@ -471,13 +478,13 @@ extraSprites:
       431: Resources/Weapons/Earthbound/Special/floorob_Wrench.png
       432: Resources/Weapons/Earthbound/Special/floorob_Hatchet.png
       433: Resources/Weapons/Earthbound/Special/floorob_Baseball_Bat.png
-      434: Resources/Weapons/Earthbound/Xcom/floorob_Railgun.png
-      435: Resources/Weapons/Earthbound/Xcom/floorob_Railgun_Slug.png
-      436: Resources/Weapons/Earthbound/Xcom/floorob_Rocket_Glove.png
-      437: Resources/Weapons/Earthbound/Xcom/floorob_Rocket_Glove_Clip.png
+      434: Resources/Weapons/Earthbound/Tinkering/floorob_Railgun.png
+      435: Resources/Weapons/Earthbound/Tinkering/floorob_Railgun_Slug.png
+      436: Resources/Weapons/Earthbound/Tinkering/floorob_Rocket_Glove.png
+      437: Resources/Weapons/Earthbound/Tinkering/floorob_Rocket_Glove_Clip.png
       438: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannon.png
       439: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannonClip.png
-
+      441: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedGrenade.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -485,6 +492,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+      120: Resources/MiscItems/handob_NoNe.png
       128: Resources/Weapons/Earthbound/Grenades/handob_FlashbangGrenade.png
       136: Resources/Weapons/Earthbound/Xcom/handob_PistolClip.png
       144: Resources/Weapons/Earthbound/Xcom/handob_RifleClip.png
@@ -555,14 +563,14 @@ extraSprites:
       664: Resources/Weapons/Earthbound/Utilities/handob_FireExtinguisher.png
       672: Resources/Weapons/Earthbound/Xcom/handob_Minigun.png
       680: Resources/Weapons/Earthbound/Xcom/HandOb_Taser.png
-      688: Resources/Weapons/Earthbound/Xcom/handob_TaserCannon.png
-      696: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png
-      704: Resources/Weapons/Earthbound/Xcom/handob_TaserCannonClip.png #temp for hacking
+      688: Resources/Weapons/Earthbound/Tinkering/handob_TaserCannon.png
+      696: Resources/Weapons/Earthbound/Tinkering/handob_TaserCannonClip.png
+      704: Resources/Weapons/Earthbound/Tinkering/handob_TaserCannonClip.png #temp for hacking
       712: Resources/Weapons/Earthbound/Xcom/handob_SEShotgun.png
       720: Resources/Weapons/Earthbound/Special/handob_Crowbar.png
       728: Resources/Weapons/MIB/handob_Chemogun.png
       736: Resources/Weapons/MIB/handob_Chempistol.png
-      744: Resources/Weapons/Earthbound/Xcom/handob_ElectricStick.png
+      744: Resources/Weapons/Earthbound/Tinkering/handob_ElectricStick.png
       752: Resources/Weapons/MIB/handob_Woundgun.png
       760: Resources/Weapons/MIB/handob_StunRod.png
       768: Resources/Weapons/Earthbound/General/handob_HeavyRevolver.png
@@ -579,10 +587,12 @@ extraSprites:
       858: Resources/Weapons/Earthbound/Special/handob_Wrench.png
       866: Resources/Weapons/Earthbound/Special/handob_Hatchet.png
       874: Resources/Weapons/Earthbound/Special/handob_Baseball_Bat.png
-      882: Resources/Weapons/Earthbound/Xcom/handob_Railgun.png
-      890: Resources/Weapons/Earthbound/Xcom/handob_Railgun_Slug.png
-      898: Resources/Weapons/Earthbound/Xcom/handob_Rocket_Glove.png
+      882: Resources/Weapons/Earthbound/Tinkering/handob_Railgun.png
+      890: Resources/Weapons/Earthbound/Tinkering/handob_Railgun_Slug.png
+      898: Resources/Weapons/Earthbound/Tinkering/handob_Rocket_Glove.png
       906: Resources/Weapons/Earthbound/Xcom/handob_AssaultCannon.png
+      914: Resources/Weapons/Earthbound/Grenades/handob_NapalmGrenade.png
+      922: Resources/Weapons/Earthbound/Grenades/handob_ImprovisedGrenade.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
@@ -912,13 +922,27 @@ extraSprites:
     width: 320
     height: 200
     files:
-       0: Resources/UfopediaPics/Enemies/ufopedia_JABBER.png
+       0: Resources/UfopediaPics/Enemies/legacy/ufopedia_JABBER.png
   - type: UFOPEDIA_IMG_JABBER_AUTOPSY
     singleImage: true
     width: 320
     height: 200
     files:
-       0: Resources/UfopediaPics/Enemies/ufopedia_JABBER_AUTOPSY.png 
+       0: Resources/UfopediaPics/Enemies/legacy/ufopedia_JABBER_AUTOPSY.png 
+
+  - type: UFOPEDIA_IMG_ARMADILLO_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_ARMADILLO_CPAL.png
+  - type: UFOPEDIA_IMG_ARMADILLO_AUTOPSY_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+       0: Resources/UfopediaPics/Enemies/ufopedia_ARMADILLO_AUTOPSY_CPAL.png 
+
 
 #armors, inventory screens
   - type: sectoidInventoryImage
@@ -1013,7 +1037,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_SCIENTIST.png
-
   - type: MIB_ENFORCER.PCK
     width: 512
     height: 720
@@ -1025,7 +1048,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/MiB/inventory_MIB_ENFORCER.png
-
   - type: MIB_OFFICE_ENGINEER.PCK
     width: 512
     height: 720
@@ -1093,7 +1115,6 @@ extraSprites:
     files:
       0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_VIP_BODYGUARD.png
 
-
   - type: FACEHUGGER.PCK
     subX: 32
     subY: 40
@@ -1133,11 +1154,11 @@ extraSprites:
     width: 512
     height: 200
     files:
-      0: Resources/Armors/Enemies/Monsters/JABBER.png
+      0: Resources/Armors/Enemies/Monsters/legacy/JABBER.png
   - type: inventory_JABBER
     singleImage: true
     files:
-      0: Resources/Armors/Enemies/Monsters/inventory_JABBER.png
+      0: Resources/Armors/Enemies/Monsters/legacy/inventory_JABBER.png
   - type: CHUPACABRA.PCK
     subX: 32
     subY: 40
@@ -1149,6 +1170,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Monsters/inventory_CHUPACABRA.png
+  - type: ARMADILLO.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Armors/Enemies/Monsters/ARMADILLO.png
+  - type: inventory_ARMADILLO
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Monsters/inventory_ARMADILLO.png
 
   - type: RESISTANCE_AGENT.PCK
     width: 512
