@@ -4329,7 +4329,8 @@ items:
     clipSize: -1
     autoShots: 6
     recover: false
-  - type: STR_CHUPACABRA_WEAPON
+  - &MonsterWeapon
+    type: STR_CHUPACABRA_WEAPON
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
     bigSprite: 412
@@ -4360,6 +4361,10 @@ items:
     invHeight: 3
     recover: false
     flatRate: true
+  - type: STR_ARMADILLO_WEAPON
+    refNode: *MonsterWeapon
+    bigSprite: 442
+
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
@@ -4584,16 +4589,15 @@ items:
   - type: STR_SPARE_PARTS
     categories: [STR_COMPONENTS]
     landOnly: true
-    size: 0.01
+    size: 0.1
     costBuy: 450
     costSell: 320
-    weight: 1
+    weight: 3
     battleType: 0
-    bigSprite: 99 #TODO
-    floorSprite: 99 #TODO
-    invWidth: 1
-    invHeight: 1
-    stackSize: 5
+    bigSprite: 443
+    floorSprite: 443
+    invWidth: 2
+    invHeight: 2
     recoveryPoints: 1
     listOrder: 60000
   - type: STR_CHEMICALS
@@ -4604,8 +4608,8 @@ items:
     costSell: 360
     weight: 1
     battleType: 0
-    bigSprite: 99 #TODO
-    floorSprite: 99 #TODO
+    bigSprite: 444
+    floorSprite: 444
     invWidth: 1
     invHeight: 1
     stackSize: 5
@@ -4619,8 +4623,8 @@ items:
     costSell: 900
     weight: 1
     battleType: 0
-    bigSprite: 99 #TODO
-    floorSprite: 99 #TODO
+    bigSprite: 445
+    floorSprite: 445
     invWidth: 1
     invHeight: 1
     stackSize: 15
@@ -5077,7 +5081,6 @@ items:
     invHeight: 0
     recover: false
     listOrder: 100370
-
 #Zombies
   - &liveMonster
     type: STR_FACEHUGGER
@@ -5137,8 +5140,6 @@ items:
     bigSprite: 130
     floorSprite: 130
     listOrder: 100490
-
-
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT

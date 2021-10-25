@@ -1584,27 +1584,6 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FIRE_EXTINGUISHER_UFOPEDIA
     listOrder: 24140
-  - id: STR_SPARE_PARTS
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT #TODO Consider
-    # requires:
-    #   - STR_XCOM_EQUIPMENT_UNLOCKED
-    text: STR_SPARE_PARTS_UFOPEDIA
-    listOrder: 24140
-  - id: STR_CHEMICALS
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT #TODO Consider
-    # requires:
-    #   - STR_XCOM_EQUIPMENT_UNLOCKED
-    text: STR_CHEMICALS_UFOPEDIA
-    listOrder: 24140
-  - id: STR_HIGH_TECH_PARTS
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT #TODO Consider
-    # requires:
-    #   - STR_XCOM_EQUIPMENT_UNLOCKED
-    text: STR_HIGH_TECH_PARTS_UFOPEDIA
-    listOrder: 24140
 
 #STR_ALIEN_ARTIFACTS 30-45
   - id: STR_HEAVY_PLASMA

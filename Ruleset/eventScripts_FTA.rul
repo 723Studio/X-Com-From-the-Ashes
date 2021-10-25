@@ -132,7 +132,7 @@ eventScripts:
     type: STR_IMPROVISED_GRENADE_SCRIPT
     oneTimeSequentialEvents: [STR_IMPROVISED_GRENADE_TINKERING]
     researchTriggers:
-      IMPROVISED_GRENADE: false
+      STR_IMPROVISED_GRENADE: false
       STR_ENGINEER_STATUS_REPORT: true
     itemTriggers:
       STR_SPORTS_BOW: true
@@ -283,6 +283,18 @@ eventScripts:
     refNode: *STR_EXPANDABLE_AMMO_SCRIPT
     itemTriggers:
       STR_RIFLE_EXP_CLIP: true
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_MONSTER_HUNT_SCRIPT
+    oneTimeRandomEvents:
+      STR_MONSTER_HUNT_RUMORS_CHUPA: 100
+    researchTriggers:
+      STR_MONSTER_HUNT_RUMORS: true
+    firstMonth: 0
+    spawnGap: 20
+    randomSpawnGap: 50
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
     minDifficulty: 0
     maxDifficulty: 4
 

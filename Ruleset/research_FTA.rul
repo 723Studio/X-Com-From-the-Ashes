@@ -540,7 +540,7 @@ research:
     requiresBaseFunc: [ HQ ]
     cost: 520
     points: 15
-    spawnedEvent: STR_MONSTER_HUNT_RUMORS
+    #spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ
     listOrder: 3010
@@ -549,7 +549,6 @@ research:
     unlocks: [ STR_MONSTER_HUNT_RUMORS_PREREQ ]
     cost: 2016
     points: 10
-    spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
       - STR_UFOPEDIA_DECRYPTION

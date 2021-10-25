@@ -183,32 +183,28 @@ covertOperations:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
     baseChances: 60
     costs: 370
-    soldierSlots: 2
+    soldierSlots: 3
     optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
     #danger: 2
-    requiredItems:
-      STR_FAKE_AGENT_ID: 2
     scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
+    allowAllEquipment: true
     successScore: 150
     instantSuccessDeployment:
       STR_CHUPACABRA_HUNT: 100
-    successReputationScore:
-      STR_RESISTANCE: 20
     successResearchList:
       - STR_UNLEASH_CHUPAS_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_CHUPA
     failureDescription: STR_MONSTER_HUNT_RUMORS_CHUPA_FAILURE_DESCRIPTION
-    failureScore: -400
+    failureScore: -300
     trapChance: 60
     instantTrapDeployment: 
-      STR_LOCALS_TRAP: 30
-      STR_CHUPACABRA_HUNT_TRAP: 70
-    failureReputationScore:
-      STR_RESISTANCE: -40
+      STR_CHUPACABRA_HUNT_TRAP: 100
     failureResearchList:
       - STR_UNLEASH_CHUPAS_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_CHUPA
 
 #supplies gathering
   - name: STR_LAB_EQUIPMENT_ACQUISITION

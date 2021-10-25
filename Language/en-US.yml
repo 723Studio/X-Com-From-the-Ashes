@@ -437,7 +437,7 @@ en-US:
   STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION: "On this operation, our soldiers will work under the guise of federal agents investigating attacks by mysterious monsters. That way we can gain the confidence of the locals and the police if we arrange a good disguise. Our engineers are capable of creating fake special agent IDs for our soldiers that are almost indistinguishable from the real ones.{NEWLINE}Required Items:{NEWLINE}Special Agent Fake IDs>{ALT}2"
   STR_MONSTER_HUNT_INVESTIGATION_SUCCESS_DESCRIPTION: "We were able to collect testimonies of witnesses and evidence indicating the activity of unidentified predators that terrify the locals. We have to analyze the data collected and develop a plan for further actions.{NEWLINE}{NEWLINE}{ALT}New research project available."
   STR_MONSTER_HUNT_RUMORS_CHUPA: "Monster Hunt"
-  STR_MONSTER_HUNT_RUMORS_CHUPA_DESCRIPTION: "We must continue the covert investigation of the monster activity. Our soldiers will go on an operation under the cover of government special agents. We need to gather information about this creature, track it down and neutralize the threat.{NEWLINE}Required Items:{NEWLINE}Special Agent Fake IDs>{ALT}2"
+  STR_MONSTER_HUNT_RUMORS_CHUPA_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the middle ecological zone. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
   STR_MONSTER_HUNT_RUMORS_CHUPA_FAILURE_DESCRIPTION: "Our operatives failed in their mission; they could not find any sign of the mysterious monster terrorizing locals. Alas, we can only wait for the next report of paranormal activity, here we have done all we can."
   STR_LAB_EQUIPMENT_ACQUISITION: "Lab Equipment Acquisition"
   STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "Any new laboratory that we want to build requires a large amount of high-quality equipment, powerful computers and fine instruments. It will not work just like that to buy a couple of installations, so you need to act secretly and get in touch with serious people.{NEWLINE}Required Items:{NEWLINE}Briefcase with Cash ($100000)>{ALT}1"
@@ -517,7 +517,7 @@ en-US:
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
   STR_IMPROVISED_GRENADE_TINKERING: "Improvised Grenade"
-  STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION: #TODO
+  STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION: "While we can't make sophisticated weapons, but something simple like explosives - that's an easy thing to do! Let me know if you need spare grenades."
   STR_SPORTS_BOW_TINKERING: "Sports Bow Advanced Arrows"
   STR_SPORTS_BOW_TINKERING_DESCRIPTION: "After some thought and a little experimentation, our engineers came up with an interesting design of advanced arrows for the sport bow, equipped with various special charges or tips. This will greatly expand the tactical capabilities of the conventional bow. If you like, we can begin production immediately.{NEWLINE}New technology> {ALT}Advanced bow arrows"
   STR_ROCKET_GLOVE_TINKERING: "Rocket Glove"
@@ -943,7 +943,7 @@ en-US:
   STR_INCENDIARY_GRENADE: "Incendiary Grenade"
   STR_INCENDIARY_GRENADE_UFOPEDIA: "This grenade has a durable shell containing a flammable compound and a detonator capsule in the center. When the detonator is triggered, an explosion occurs, destroying the outer casing of the grenade. The blast ignites and scatters the compound, which then rapidly thickens on contact with oxygen and adheres to all surfaces.{NEWLINE}>Concealable"
   STR_IMPROVISED_GRENADE: "Improvised Grenade"
-  STR_IMPROVISED_GRENADE_UFOPEDIA: #TODO
+  STR_IMPROVISED_GRENADE_UFOPEDIA: "A plain tube sealed on both sides and filled with an explosive substance and fragments. Activated by igniting the fuse. Simple yet effective.{NEWLINE}>Concealable"
   STR_GRENADE: "Grenade"
   STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precise control.{NEWLINE}>Concealable"
   STR_SMOKE_GRENADE: "Smoke Grenade"
@@ -980,6 +980,7 @@ en-US:
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
   STR_SEEKER_DRONE_WEAPON: "Seeker Drone Weapon"
   STR_CHUPACABRA_WEAPON: "Chupacabra attack"
+  STR_ARMADILLO_WEAPON: "Armadillo attack"
   STR_FLOPPY_SCIENTISTS_LOG: "Scientist's Floppy Drive"
   STR_FLOPPY_RESISTANCE: "Resistance Floppy Drive"
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
@@ -996,11 +997,8 @@ en-US:
   STR_PLASTIC_CARD: "Plastic Card"
   STR_BRIEFCASE_CASH: "Briefcase with Cash ($100000)"
   STR_SPARE_PARTS: "Spare Parts"
-  STR_SPARE_PARTS_UFOPEDIA: #TODO
   STR_CHEMICALS: "Chemicals"
-  STR_CHEMICALS_UFOPEDIA: #TODO
   STR_HIGH_TECH_PARTS: "High-tech Parts"
-  STR_HIGH_TECH_PARTS_UFOPEDIA: #TODO
   STR_CRATED_HELICOPTER: "Crated Helicopter"
   STR_CRATED_OSPREY: "Crated Osprey"
   STR_LABORATORY_EQUIPMENT: "Lab Equipment"

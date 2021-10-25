@@ -940,7 +940,7 @@ units:
     energyRecovery: 45
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_CHUPACABRA_WEAPON #TODO
+      - - STR_ARMADILLO_WEAPON
 
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN

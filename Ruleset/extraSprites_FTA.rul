@@ -338,6 +338,10 @@ extraSprites:
       439: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AP.png
       440: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AA.png
       441: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedGrenade.png
+      442: Resources/Armors/Enemies/Monsters/bigob_ArmadilloWeapon.png
+      443: Resources/MiscItems/bigob_SpareParts.png
+      444: Resources/MiscItems/bigob_Chemicals.png
+      445: Resources/MiscItems/bigob_HighTechParts.png
      
   - type: FLOOROB.PCK
     files:
@@ -485,6 +489,10 @@ extraSprites:
       438: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannon.png
       439: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannonClip.png
       441: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedGrenade.png
+      443: Resources/MiscItems/floorob_SpareParts.png
+      444: Resources/MiscItems/floorob_Chemicals.png
+      445: Resources/MiscItems/floorob_HighTechParts.png
+
 
   - type: HANDOB.PCK #Index step 8
     height: 40
