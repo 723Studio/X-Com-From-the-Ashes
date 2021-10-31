@@ -316,6 +316,7 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_BS
+            - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
@@ -325,6 +326,7 @@ alienDeployments:
             - STR_LIGHT_CANNON
             - STR_LC_BS_AMMO
             - STR_LC_BS_AMMO
+            - STR_CASH_PACK
           -
             - STR_ASSAULT_RIFLE
             - STR_RIFLE_CLIP
@@ -335,6 +337,7 @@ alienDeployments:
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
+            - STR_CASH_PACK
           -
             - STR_RIFLE
             - STR_RIFLE_CLIP
@@ -345,6 +348,7 @@ alienDeployments:
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
+            - STR_CASH_PACK
           -
             - STR_PRECISION_RIFLE
             - STR_RIFLE_CLIP
@@ -366,6 +370,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_GRENADE
+            - STR_CASH_PACK
           -
             - STR_SEMI_AUTO_SHOTGUN
             - STR_SHOTGUN_SHELLS_BS
@@ -376,6 +381,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE
+            - STR_CASH_PACK
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
@@ -391,6 +397,7 @@ alienDeployments:
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
+            - STR_CASH_PACK
           -
             - STR_RIFLE
             - STR_RIFLE_CLIP
@@ -406,6 +413,7 @@ alienDeployments:
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
+            - STR_CASH_PACK
           -
             - STR_SMG
             - STR_SMG_CLIP
@@ -419,28 +427,36 @@ alienDeployments:
         itemSets:
           -
             - STR_CROWBAR
+            - STR_CASH_PACK
           -
-            - STR_CROWBAR
+            - STR_WRENCH
+            - STR_CREDIT_CARD
           -
             - STR_MACHETE
+            - STR_CREDIT_CARD
           -
             - STR_SNUBNOSE_PISTOL
             - STR_SNUBNOSE_PISTOL_CLIP
             - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_CREDIT_CARD_SILVER
           -
             - STR_SNUBNOSE_PISTOL
             - STR_SNUBNOSE_PISTOL_CLIP
             - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_CREDIT_CARD
           -
-            []
+            - STR_WRENCH
+            - STR_CASH_PACK
           -
-            []
+            - STR_CROWBAR
+            - STR_CASH_PACK
+            - STR_CASH_PACK
           -
-            []
+            - STR_WRENCH
           -
-            []
+            - STR_CREDIT_CARD
           -
-            []
+            - STR_HATCHET
       - alienRank: 3 #STR_MIB_SCIENTIST
         lowQty: 4
         highQty: 7
@@ -451,14 +467,17 @@ alienDeployments:
             - STR_WOUNDGUN
             - STR_WOUNDGUN_CLIP
             - STR_WOUNDGUN_CLIP
+            - STR_CASH_PACK
           -
             - STR_WOUNDGUN
             - STR_WOUNDGUN_CLIP
             - STR_WOUNDGUN_CLIP
+            - STR_CASH_PACK
           -
             - STR_WOUNDGUN
             - STR_WOUNDGUN_CLIP
             - STR_WOUNDGUN_CLIP
+            - STR_CASH_PACK
           -
             - STR_WOUNDGUN
             - STR_WOUNDGUN_CLIP
@@ -479,6 +498,7 @@ alienDeployments:
             - STR_CHEMPISTOL
             - STR_CHEMPISTOL_CLIP
             - STR_CHEMPISTOL_CLIP
+            - STR_CASH_PACK
           -
             - STR_CHEMPISTOL
             - STR_CHEMPISTOL_CLIP
@@ -498,54 +518,64 @@ alienDeployments:
           -
             - STR_TASER
             - STR_TASER_CLIP
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_CASH_PACK
           -
             - STR_TASER
             - STR_TASER_CLIP
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_CREDIT_CARD
           -
             - STR_TASER
             - STR_TASER_CLIP
             - STR_POLICE_BATON
           -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_POLICE_BATON
+            - STR_CASH_PACK
           -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_POLICE_BATON
+            - STR_CREDIT_CARD
           -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
             - STR_POLICE_BATON
+            - STR_CREDIT_CARD
           -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
             - STR_POLICE_BATON
+            - STR_CASH_PACK
           -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
             - STR_POLICE_BATON
+            - STR_CREDIT_CARD
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_CREDIT_CARD
           -
             - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-          -
-            - STR_SHOTGUN
             - STR_SHOTGUN_SHELLS_AP
             - STR_SHOTGUN_SHELLS_AP
             - STR_SHOTGUN_SHELLS_AP
+            - STR_CASH_PACK
       - alienRank: 5 #MIB_OFFICE_WORKER
         lowQty: 10
         highQty: 20
@@ -555,23 +585,22 @@ alienDeployments:
           -
             []
           -
-            []
+            - STR_CASH_PACK
           -
-            []
-          -
-            - STR_SNUBNOSE_PISTOL
-            - STR_SNUBNOSE_PISTOL_CLIP
-            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_CASH_PACK
           -
             - STR_SNUBNOSE_PISTOL
             - STR_SNUBNOSE_PISTOL_CLIP
             - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_CASH_PACK
           -
-            []
+            - STR_CREDIT_CARD
           -
-            []
+            - STR_CREDIT_CARD
           -
-            []
+            - STR_CREDIT_CARD_SILVER
+          -
+            - STR_CASH_PACK
           -
             []
           -
@@ -587,46 +616,59 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CASH_PACK
+            - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CASH_PACK
+            - STR_CREDIT_CARD
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CREDIT_CARD
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CREDIT_CARD
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CREDIT_CARD_SILVER
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CREDIT_CARD_SILVER
+            - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CASH_PACK
+            - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
@@ -641,33 +683,53 @@ alienDeployments:
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
 
   - type: STR_INITIAL_REGIONAL_HQ_EASY
     refNode: *STR_INITIAL_REGIONAL_HQ
@@ -795,9 +857,10 @@ alienDeployments:
             - STR_HC_BS_AMMO
             - STR_HC_BS_AMMO
           -
-            - STR_HEAVY_CANNON
-            - STR_HC_BS_AMMO
-            - STR_HC_BS_AMMO
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
           -
             - STR_HEAVY_CANNON
             - STR_HC_HE_AMMO
@@ -1148,7 +1211,8 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_5: 50
       STR_NOT_RESCUED_RESISTANCE_6: 50
     duration: [16, 18]
-    despawnPenalty: 500
+    despawnPenalty: 200
+    #abortPenalty: 200
     extendedObjectiveType: STR_EVACUATION 
     briefing:
       textOffset: -16
@@ -1196,7 +1260,8 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
-    despawnPenalty: 500
+    despawnPenalty: 200
+    #abortPenalty: 220
     extendedObjectiveType: STR_EVACUATION 
     successEvents:
       STR_RESCUED_RESISTANCE_1: 50
@@ -1339,7 +1404,8 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
-    despawnPenalty: 500
+    despawnPenalty: 200
+    #abortPenalty: 220
     extendedObjectiveType: STR_EVACUATION
     successEvents:
       STR_RESCUED_RESISTANCE_1: 50
@@ -1499,15 +1565,16 @@ alienDeployments:
             []
 
   - type: STR_RESISTANCE_FOREST_HOUSE_AMBUSH
-    width: 50
-    length: 50
+    width: 60
+    length: 60
     height: 6
     alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
-    despawnPenalty: 700
+    despawnPenalty: 200
+    abortPenalty: 40
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
@@ -1518,10 +1585,114 @@ alienDeployments:
     customUfo: STR_RESISTANCE_FOREST_HOUSE_TRAP
     script: CRAFT_UFO_SCRIPT
     data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 90
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP 
+            - STR_FLASHBANG_GRENADE 
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP  
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE 
+      - alienRank: 4 #STR_MIB_ARMORED_AGENT
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL 
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_SEMI_AUTO_SHOTGUN
+            - STR_SHOTGUN_SHELLS_AP
+            - STR_SHOTGUN_SHELLS_AP
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP  
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP  
       - alienRank: 9 #STR_MIB_SPECOPS
-        lowQty: 9
-        highQty: 16
-        dQty: 4
+        lowQty: 1
+        highQty: 4
+        dQty: 2
         percentageOutsideUfo: 50
         itemSets:
           -
@@ -1540,10 +1711,12 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_AP
             - STR_SHOTGUN_SHELLS_BS
           -
-            - STR_LMG
-            - STR_LMG_CLIP
-            - STR_LMG_CLIP
-            - STR_LMG_CLIP
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_GRENADE
+            - STR_FLASHBANG_GRENADE
           -
             - STR_PRECISION_RIFLE
             - STR_RIFLE_CLIP
@@ -1569,18 +1742,70 @@ alienDeployments:
             - STR_LIGHT_CANNON
             - STR_LC_AP_AMMO
             - STR_LC_HE_AMMO  
+      - alienRank: 9 #STR_MIB_SPECOPS heavy duty
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_LMG
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_HE_AMMO
+            - STR_LC_HE_AMMO
+            - STR_LC_I_AMMO
+          -
+            - STR_LMG
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
+          -
+            - STR_AUTO_CANNON
+            - STR_AC_AP_AMMO
+            - STR_AC_AP_AMMO
+            - STR_AC_AP_AMMO
+          -
+            - STR_AUTO_CANNON
+            - STR_AC_HE_AMMO
+            - STR_AC_HE_AMMO
+            - STR_AC_I_AMMO
+          -
+            - STR_MINIGUN
+            - STR_MINIGUN_CLIP
+          -
+            - STR_MGL
+            - STR_MGL_CLIP
+            - STR_MGL_CLIP_INC
+          -
+            - STR_ROCKET_LAUNCHER
+            - STR_SMALL_ROCKET
+            - STR_SMALL_ROCKET  
+          -
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
 
   - type: STR_MIB_FOREST_BEACON
     race: STR_MIB
-    width: 70
-    length: 70
+    width: 60
+    length: 60
     height: 6
     alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
-    despawnPenalty: 500
+    despawnPenalty: 200
+    abortPenalty: 40
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
@@ -1590,11 +1815,11 @@ alienDeployments:
       - FORESTSWAMP
       - FOREST
     customUfo: STR_MIB_FOREST_BEACON
-    script: CRAFT_UFO_SCRIPT_BIG_MAP #for a bit surrender landing
+    script: CRAFT_UFO_SCRIPT
     data:
       - alienRank: 9 #STR_MIB_SPECOPS
-        lowQty: 5
-        highQty: 10
+        lowQty: 4
+        highQty: 9
         dQty: 3
         percentageOutsideUfo: 90
         itemSets:
@@ -1681,10 +1906,11 @@ alienDeployments:
           -
             - STR_MINIGUN
             - STR_MINIGUN_CLIP
+            - STR_MINIGUN_CLIP
           -
-            - STR_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
+            - STR_MGL
+            - STR_MGL_CLIP
+            - STR_MGL_CLIP
           -
             - STR_ROCKET_LAUNCHER
             - STR_LARGE_ROCKET
@@ -1701,7 +1927,8 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 18]
-    despawnPenalty: 500
+    despawnPenalty: 200
+    abortPenalty: 250
     briefing:
       textOffset: -16
       background: ZOMBIE_FARM.SCR
@@ -1799,7 +2026,8 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RESISTANCE_MEMBER
     duration: [14, 18]
-    despawnPenalty: 850
+    despawnPenalty: 200
+    #abortPenalty: 300
     extendedObjectiveType: STR_EVACUATION 
     successEvents:
       STR_RESCUED_SCIENTIST: 100
@@ -1851,7 +2079,8 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RESISTANCE_MEMBER
     duration: [16, 20]
-    despawnPenalty: 950
+    despawnPenalty: 200
+    #abortPenalty: 300
     extendedObjectiveType: STR_EVACUATION 
     successEvents:
       STR_RESCUED_SCIENTISTS_TELESCOPE: 100
@@ -1922,9 +2151,9 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE 
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
-        lowQty: 3
-        highQty: 5
-        dQty: 2
+        lowQty: 1
+        highQty: 4
+        dQty: 1
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -1981,7 +2210,8 @@ alienDeployments:
     shade: 15
     markerName: STR_MONSTER_HUNT_MARKER
     duration: [10, 10]
-    despawnPenalty: 300
+    despawnPenalty: 200
+    abortPenalty: 200
     briefing:
       textOffset: -16
       background: FOREST_MONSTER_BACKGROUND.SCR
@@ -1991,8 +2221,8 @@ alienDeployments:
       - FOREST
     data:
       - alienRank: 5
-        lowQty: 2
-        highQty: 4
+        lowQty: 1
+        highQty: 3
         dQty: 5
         itemSets:
           -
@@ -2027,6 +2257,7 @@ alienDeployments:
     markerName: STR_MONSTER_TERROR
     duration: [16, 18]
     despawnPenalty: 200
+    abortPenalty: 200
     briefing:
       textOffset: -16
       background: FOREST_MONSTER_BACKGROUND.SCR
@@ -2037,8 +2268,8 @@ alienDeployments:
     data:
       - alienRank: 6
         lowQty: 1
-        highQty: 5
-        dQty: 2
+        highQty: 4
+        dQty: 4
         itemSets:
           -
             []
@@ -2073,6 +2304,7 @@ alienDeployments:
     markerName: STR_MONSTER_TERROR
     duration: [16, 18]
     despawnPenalty: 200
+    abortPenalty: 300
     briefing:
       textOffset: -16
       background: FOREST_MONSTER_BACKGROUND.SCR
@@ -2082,8 +2314,8 @@ alienDeployments:
       - FOREST
     data:
       - alienRank: 6
-        lowQty: 5
-        highQty: 13
+        lowQty: 4
+        highQty: 10
         dQty: 6
         extraQty: 2
         itemSets:
@@ -2108,7 +2340,7 @@ alienDeployments:
           -
             []
 
-#traps
+#traps 
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB
     width: 60
@@ -2429,7 +2661,7 @@ alienDeployments:
     script: STR_LOCALS_TRAP_SCRIPT
     battleScript: STR_LOCALS_TRAP_BAT_SCRIPT
     data:
-      - alienRank: 6
+      - alienRank: 6 #STR_DOGE
         lowQty: 1
         highQty: 3
         dQty: 1
@@ -2454,7 +2686,7 @@ alienDeployments:
             []
           -
             []
-      - alienRank: 5
+      - alienRank: 5 #STR_MALE_MILITIA_CITIZEN
         lowQty: 2
         highQty: 6
         dQty: 2
@@ -2479,7 +2711,7 @@ alienDeployments:
             []
           -
             []
-      - alienRank: 2
+      - alienRank: 2 #STR_MALE_POLICE
         lowQty: 2
         highQty: 6
         dQty: 2

@@ -109,14 +109,12 @@ events:
     timer: 30
     timerRandom: 0
     researchList: [STR_MIB_CHASING_FAIL]
-
   - name: STR_REGIONAL_HQ_FOUND_EVENT
     description: STR_REGIONAL_HQ_FOUND_EVENT_DESCRIPTION
     background: COVEROPSHQ_BACKGROUND.SCR
     timer: 180
     timerRandom: 90
     researchList: [STR_REGIONAL_HQ_FOUND]
-
   - name: STR_MIB_BANKER_ACCOUNTS
     description: STR_MIB_BANKER_ACCOUNTS_DESCRIPTION
     background: CASH_BACKGROUND.SCR
@@ -124,8 +122,6 @@ events:
     timerRandom: 0
     loyalty: 200
     funds: 2832548
-
-
   - name: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     description: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION_DESCRIPTION
     background: BACK05.SCR
@@ -140,13 +136,19 @@ events:
     timerRandom: 30240
     removedCovertOperationsList:
       - STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
+
 #Monsters
-  - name: STR_MONSTER_HUNT_RUMORS
+  - name: STR_MONSTER_HUNT_RUMORS_CHUPA
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
     researchList:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
     timer: 0
     timerRandom: 0
+  - name: STR_MONSTER_RE_HUNT_CHUPA
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_CHUPA]
+    timer: 43800 #1 month
+    timerRandom: 43800 #another 1 month
 
 
 #Resistance
@@ -300,14 +302,38 @@ events:
     researchList: [STR_WORKSHOP]
     timer: 750
     timerRandom: 650
-    interruptResearch: STR_BIOLAB_PREREQ
+    interruptResearch: STR_WORKSHOP
   - name: STR_SPORTS_BOW_TINKERING
     description: STR_SPORTS_BOW_TINKERING_DESCRIPTION
     background: BACK17.SCR
     researchList: [STR_SPORTS_BOW_TINKERING]
     timer: 750
-    timerRandom: 650
-    interruptResearch: STR_BIOLAB_PREREQ
+    timerRandom: 20160 #2 weeks
+    interruptResearch: STR_SPORTS_BOW_TINKERING
+  - name: STR_IMPROVISED_GRENADE_TINKERING
+    description: STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION
+    background: BACK17.SCR
+    researchList: [STR_IMPROVISED_GRENADE]
+    timer: 750
+    timerRandom: 2880 #2 days
+    interruptResearch: STR_IMPROVISED_GRENADE
+  - name: STR_ROCKET_GLOVE_TINKERING
+    description: STR_ROCKET_GLOVE_TINKERING_DESCRIPTION
+    background: BACK17.SCR
+    researchList: [STR_ROCKET_GLOVE]
+    everyMultiItemList:
+      STR_ROCKET_GLOVE: 1
+      STR_ROCKET_GLOVE_CLIP: 2
+    timer: 750
+    timerRandom: 20160 #2 weeks
+    interruptResearch: STR_ROCKET_GLOVE
+  - name: STR_KATANA_TINKERING
+    description: STR_KATANA_TINKERING_DESCRIPTION
+    background: BACK17.SCR
+    researchList: [STR_KATANA]
+    timer: 750
+    timerRandom: 20160 #2 weeks
+    interruptResearch: STR_KATANA
   - name: STR_HELICOPTER
     description: STR_HELICOPTER_DESCRIPTION
     background: BACK17.SCR

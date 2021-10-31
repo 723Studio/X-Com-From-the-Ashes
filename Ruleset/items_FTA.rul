@@ -25,8 +25,52 @@ items:
   - delete: STR_ELECTRO_FLARE
 
 #melee
+  - type: STR_WRENCH
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_CONCEALABLE]
+    landOnly: false
+    size: 0.1
+    costBuy: 250
+    costSell: 130
+    weight: 8
+    bigSprite: 431
+    floorSprite: 431
+    handSprite: 858
+    meleeHitSound: 120
+    meleeAnimation: 0
+    power: 25
+    damageType: 6
+    damageBonus:
+      strength: 0.6
+    damageAlter:
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.6
+      ToHealth: 1.0
+      ToTile: 1.1
+    accuracyMelee: 75
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.33
+    costMelee:
+      time: 17
+      energy: 10
+    costThrow:
+      energy: 10
+      time: 30
+    flatThrow:
+      time: true
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 50
+    experienceTrainingMode: 3
+    recoveryPoints: 5
+    attraction: 15
+    listOrder: 1000
   - type: STR_CROWBAR
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_SPACE]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.15
     costBuy: 115
     costSell: 75
@@ -42,13 +86,11 @@ items:
       strength: 0.4
       melee: 0.1
     damageAlter:
-      RandomType: 2
-      ResistType: 3
       FixRadius: 0
       IgnoreDirection: false
       ArmorEffectiveness: 1.6
       ToHealth: 1.0
-      ToTile: 1.1
+      ToTile: 1.3
     accuracyMelee: 80
     meleeMultiplier:
       flatHundred: 0.65
@@ -63,11 +105,92 @@ items:
     clipSize: -1
     #twoHanded: true
     #oneHandedPenalty: 67
-    invWidth: 2
+    invWidth: 1
     invHeight: 3
     armor: 75
+    experienceTrainingMode: 3
     attraction: 15
-    listOrder: 1000
+    listOrder: 1005
+  - type: STR_HATCHET
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_MELEE]
+    size: 0.2
+    landOnly: false
+    costBuy: 380
+    costSell: 220
+    weight: 7
+    bigSprite: 432
+    floorSprite: 432
+    handSprite: 866
+    meleeHitSound: 81
+    meleeAnimation: 8
+    power: 27
+    damageType: 7
+    damageBonus:
+      strength: 0.5
+      melee: 0.1
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 1.2
+      ToTile: 0.65
+    accuracyMelee: 80
+    meleeMultiplier:
+      strength: 0.2
+      melee: 0.8
+    costMelee:
+      time: 14
+      energy: 5
+    costThrow:
+      energy: 14
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 55
+    experienceTrainingMode: 2
+    attraction: 20
+    listOrder: 1007
+  - type: STR_BASEBALL_BAT
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_INCAPACITATE]
+    landOnly: true
+    size: 0.2
+    costBuy: 120
+    costSell: 40
+    weight: 7
+    bigSprite: 433
+    floorSprite: 433
+    handSprite: 768
+    meleeHitSound: 109
+    meleeAnimation: 0
+    power: 25
+    damageType: 6
+    damageBonus:
+      strength: 0.3
+    damageAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.6
+      ToHealth: 0.6
+      ToTile: 0.2
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.68
+      melee: 0.30
+    costMelee:
+      time: 13
+      energy: 4
+    costThrow:
+      energy: 12
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 60
+    experienceTrainingMode: 2
+    attraction: 20
+    listOrder: 17910
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
     size: 0.1
@@ -84,10 +207,12 @@ items:
     damageType: 6
     damageBonus:
       strength: 0.2
-      melee: 0.3
+      melee: 0.4
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.6
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.4
       ToHealth: 0.3
       ToStun: 1.1
       ToTile: 0.2
@@ -99,7 +224,7 @@ items:
       energy: 3
     costThrow:
       energy: 8
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     invWidth: 1
@@ -133,7 +258,7 @@ items:
       ArmorEffectiveness: 1.4
       ToTile: 0.2
     accuracyMelee: 87
-    flatRate: true
+    #flatRate: true
     meleeMultiplier:
       melee: 1.2
     costMelee:
@@ -172,7 +297,7 @@ items:
       ArmorEffectiveness: 1.4
       ToTile: 0.2
     accuracyMelee: 75
-    flatRate: true
+    #flatRate: true
     meleeMultiplier:
       melee: 1.0
     costMelee:
@@ -194,30 +319,30 @@ items:
     landOnly: false
     costBuy: 2100
     costSell: 1500
-    weight: 8
+    weight: 10
     bigSprite: 366
     floorSprite: 366
     handSprite: 560
     meleeHitSound: 81
-    meleeAnimation: 4
-    power: 30
+    meleeAnimation: 8
+    power: 35
     damageType: 7
     damageBonus:
-      strength: 0.55
-      melee: 0.45
+      strength: 0.6
+      melee: 0.40
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 1.2
       ToTile: 0.2
-    accuracyMelee: 70
+    accuracyMelee: 100
     meleeMultiplier:
-      melee: 1.1
+      melee: 1.0
     costMelee:
       time: 20
       energy: 8
     costThrow:
       energy: 14
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     invWidth: 1
@@ -226,6 +351,43 @@ items:
     experienceTrainingMode: 13
     attraction: 9
     listOrder: 1040
+  - type: STR_KATANA
+    categories: [STR_HUMAN_TECH, STR_MELEE]
+    size: 0.3
+    landOnly: false
+    costSell: 9000
+    weight: 9
+    bigSprite: 424
+    floorSprite: 424
+    handSprite: 808
+    meleeHitSound: 81
+    meleeAnimation: 8
+    power: 38
+    damageType: 7
+    damageBonus:
+      strength: 0.2
+      melee: 0.7
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 1.05
+      ToTile: 0.1
+    accuracyMelee: 110
+    meleeMultiplier:
+      melee: 1.2
+    costMelee:
+      time: 16
+      energy: 6
+    costThrow:
+      energy: 20
+    #flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 3
+    armor: 50
+    experienceTrainingMode: 13
+    attraction: 20
+    listOrder: 1045
   - type: STR_ELECTRIC_STICK
     categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_INCAPACITATE, STR_MELEE]
     landOnly: true
@@ -261,7 +423,7 @@ items:
       energy: 5
     costThrow:
       energy: 8
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     invWidth: 1
@@ -304,7 +466,7 @@ items:
       energy: 6
     costThrow:
       energy: 12
-    flatRate: true
+    #flatRate: true
     battleType: 3
     clipSize: -1
     twoHanded: false
@@ -359,7 +521,7 @@ items:
     attraction: 6
     listOrder: 3000
   - type: STR_SPORTS_BOW
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     size: 0.2
     landOnly: true
     costBuy: 850
@@ -403,7 +565,7 @@ items:
     attraction: 20
     listOrder: 3010
   - type: STR_BOW_ARROW
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_CLIPS]
     size: 0.08
     landOnly: true
     costBuy: 35
@@ -433,7 +595,7 @@ items:
     listOrder: 3020
   - &STR_BOW_ARROW_SPECIAL
     type: STR_BOW_ARROW_HE
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_EXPLOSIVES, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_EXPLOSIVES, STR_CONCEALABLE, STR_CLIPS]
     size: 0.09
     costSell: 150
     weight: 1
@@ -442,6 +604,8 @@ items:
     handSprite: 584
     power: 32
     damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
     clipSize: 1
     stackSize: 10
     costThrow:
@@ -453,16 +617,18 @@ items:
     listOrder: 3030
     landOnly: true
   - type: STR_BOW_ARROW_IN
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_INCENDIARIES, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_INCENDIARIES, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 374
     # hitSound: 109
     # hitAnimation: 26
     power: 27
+    damageAlter:
+      ToMorale: 15
     damageType: 2
     listOrder: 3040
   - type: STR_BOW_ARROW_STUN
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 375
     hitSound: 118
@@ -485,7 +651,7 @@ items:
       ToTile: 0.1
     listOrder: 3050
   - type: STR_BOW_ARROW_ELECTRIC
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_BOWS, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_ELECTRIC, STR_CONCEALABLE, STR_CLIPS]
     refNode: *STR_BOW_ARROW_SPECIAL
     bigSprite: 377
     hitSound: 119
@@ -644,7 +810,7 @@ items:
     accuracySnap: 62
     accuracyAimed: 74
     tuSnap: 16
-    tuAimed: 30
+    tuAimed: 27
     tuLoad: 15
     costThrow:
       energy: 8
@@ -672,7 +838,7 @@ items:
     handSprite: 440
     hitSound: 22
     hitAnimation: 26
-    power: 24
+    power: 26
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 1.1
@@ -682,6 +848,60 @@ items:
     battleType: 2
     armor: 30
     listOrder: 5050
+  - type: STR_POLICE_PISTOL
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
+    size: 0.1
+    landOnly: false
+    costBuy: 700
+    costSell: 500
+    weight: 4
+    bigSprite: 422
+    floorSprite: 422
+    handSprite: 792
+    bulletSprite: 1
+    fireSound: 111
+    compatibleAmmo:
+      - STR_POLICE_PISTOL_CLIP
+    accuracyCloseQuarters: 133
+    accuracySnap: 65
+    accuracyAimed: 82
+    tuSnap: 18
+    tuAimed: 30
+    tuLoad: 15
+    aimRange: 22
+    dropoff: 3
+    kneelBonus: 105
+    costThrow:
+      energy: 8
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 35
+    attraction: 15
+    listOrder: 5052
+  - type: STR_POLICE_PISTOL_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    size: 0.025
+    landOnly: true
+    costBuy: 90
+    costSell: 80
+    weight: 2
+    bigSprite: 423
+    floorSprite: 423
+    handSprite: 800
+    hitSound: 22
+    hitAnimation: 26
+    power: 24
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 1.15
+    clipSize: 15
+    costThrow:
+      energy: 4
+    battleType: 2
+    armor: 35
+    attraction: 15
+    listOrder: 5054
   - type: STR_HEAVY_REVOLVER
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
@@ -714,7 +934,7 @@ items:
     invHeight: 2
     armor: 30
     attraction: 15
-    listOrder: 5052
+    listOrder: 5056
   - type: STR_HEAVY_REVOLVER_DRUM
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
@@ -728,15 +948,15 @@ items:
     floorSprite: 415
     hitSound: 13
     hitAnimation: 26
-    power: 34
+    power: 31
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.20
-    clipSize: 6
+      ArmorEffectiveness: 1.15
+    clipSize: 5
     battleType: 2
     armor: 30
     attraction: 15
-    listOrder: 5054
+    listOrder: 5058
   - type: STR_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     requiresBuy:
@@ -786,7 +1006,7 @@ items:
     hitAnimation: 26
     power: 28 #30 xcf
     damageAlter:
-      ArmorEffectiveness: 1.1
+      ArmorEffectiveness: 1.05
     damageType: 1
     clipSize: 12
     battleType: 2
@@ -807,7 +1027,7 @@ items:
     handSprite: 136
     hitSound: 58
     hitAnimation: 26
-    power: 24
+    power: 25
     damageType: 1
     damageAlter:
       RandomType: 2
@@ -891,7 +1111,7 @@ items:
     power: 38
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.1
+      ArmorEffectiveness: 1.05
     clipSize: 8
     battleType: 2
     armor: 30
@@ -972,10 +1192,10 @@ items:
     floorSprite: 411
     hitSound: 22
     hitAnimation: 26
-    power: 22
+    power: 23
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.3
+      ArmorEffectiveness: 1.2
       ToHealth: 1.4
       ToTime: 0.1
       ToMorale: 0.2
@@ -989,7 +1209,7 @@ items:
     attraction: 15
     listOrder: 5130
   - type: STR_CHEMPISTOL
-    categories: [STR_CHEMICALS, STR_PISTOLS, STR_ALIEN_TECH]
+    categories: [STR_CHEMICAL_WEAPONS, STR_PISTOLS, STR_ALIEN_TECH]
     requires:
       - STR_CHEMPISTOL
     size: 0.1
@@ -1018,7 +1238,7 @@ items:
     attraction: 15
     listOrder: 5140
   - type: STR_CHEMPISTOL_CLIP
-    categories: [STR_CHEMICALS, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
+    categories: [STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
     requires:
       - STR_CHEMPISTOL
     size: 0.1
@@ -1284,7 +1504,7 @@ items:
     accuracyAimed: 100
     tuAuto: 35
     tuSnap: 25
-    tuAimed: 70
+    tuAimed: 65
     snapRange: 16
     costThrow:
       energy: 16
@@ -1308,7 +1528,7 @@ items:
     handSprite: 424
     hitSound: 58
     hitAnimation: 26
-    power: 30
+    power: 37
     damageType: 1
     clipSize: 30
     battleType: 2
@@ -1488,7 +1708,7 @@ items:
     attraction: 8
     listOrder: 7150
   - type: STR_CHEMOGUN
-    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_SMOKE, STR_RIFLES]
+    categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_RIFLES]
     requires:
       - STR_CHEMOGUN
     size: 0.2
@@ -1520,7 +1740,7 @@ items:
     listOrder: 7160
     landOnly: true
   - type: STR_CHEMOGUN_CLIP
-    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_RIFLES, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_RIFLES, STR_CLIPS]
     requires:
       - STR_CHEMOGUN
     size: 0.1
@@ -1575,6 +1795,7 @@ items:
     battleType: 1
     twoHanded: true
     blockBothHands: true
+    kneelBonus: 170
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -1625,17 +1846,16 @@ items:
     accuracyAimed: 150
     accuracyMultiplier:
       firing: [0, 0.01]
-    tuAimed: 75
+    tuAimed: 70
     costThrow:
       energy: 20
     battleType: 1
     twoHanded: true
     blockBothHands: true
-    kneelBonus: 160
+    kneelBonus: 200
     invWidth: 1
     invHeight: 3
     armor: 20
-    snapRange: 30
     minRange: 15
     dropoff: 3
     attraction: 9
@@ -1654,15 +1874,15 @@ items:
     handSprite: 328
     hitSound: 62
     hitAnimation: 26
-    power: 45
+    power: 48
     damageBonus:
-      firing: 0.25
+      firing: 0.28
     damageAlter:
-      RandomType: 7
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.05
+      RandomType: 2
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.1
     damageType: 1
-    clipSize: 10
+    clipSize: 5
     battleType: 2
     armor: 20
     attraction: 9
@@ -2181,23 +2401,27 @@ items:
     fireSound: 113
     compatibleAmmo:
       - STR_LMG_CLIP
-    accuracyCloseQuarters: 75
-    accuracySnap: 40
-    accuracyAuto: 40
-    tuSnap: 42
-    tuAuto: 42
-    tuLoad: 20
-    snapRange: 25
+      - STR_LMG_AA_CLIP
+    accuracyCloseQuarters: 65
+    accuracyAuto: 47
+    accuracySnap: 47
+    accuracyAimed: 65
+    kneelBonus: 140
+    tuAuto: 38
+    tuSnap: 33
+    tuAimed: 55
+    tuLoad: 23
     autoRange: 25
+    snapRange: 25
     confSnap:
       shots: 3
+    autoShots: 5
     battleType: 1
     twoHanded: true
-    oneHandedPenalty: 40
-    invWidth: 1
+    blockBothHands: true
+    invWidth: 2
     invHeight: 3
     armor: 30
-    autoShots: 5
     sprayWaypoints: 2
     attraction: 22
     listOrder: 15020
@@ -2214,12 +2438,13 @@ items:
     floorSprite: 386
     hitSound: 22
     hitAnimation: 26
-    power: 40
+    power: 42
     damageAlter:
       ArmorEffectiveness: 0.85
       ToTime: 0.1
+      ToTile: 0.7
     damageType: 1
-    clipSize: 40
+    clipSize: 50
     battleType: 2
     armor: 30
     invWidth: 2
@@ -2232,22 +2457,108 @@ items:
     costSell: 3700
     weight: 6
     landOnly: true
-    bigSprite: 386
+    bigSprite: 430
     floorSprite: 386
     hitSound: 22
     hitAnimation: 26
-    power: 48
+    power: 50
     damageAlter:
       ArmorEffectiveness: 0.85
       ToTime: 0.1
+      ToTile: 0.7
     damageType: 1
-    clipSize: 40
+    clipSize: 50
     battleType: 2
     armor: 30
     invWidth: 2
     invHeight: 1
     attraction: 15
     listOrder: 15040
+  - type: STR_ASSAULT_CANNON
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.5
+    landOnly: true
+    costBuy: 52000
+    costSell: 37000
+    weight: 20
+    bigSprite: 438
+    floorSprite:  438
+    handSprite: 858
+    bulletSprite: 3
+    fireSound: 134
+    compatibleAmmo:
+      - STR_ASSAULT_CANNON_CLIP_AP
+      - STR_ASSAULT_CANNON_CLIP_AA
+    accuracyCloseQuarters: 66
+    accuracySnap: 60
+    accuracyAuto: 40
+    tuSnap: 40
+    tuAuto: 45
+    tuLoad: 20
+    costThrow:
+      energy: 40
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 2
+    invHeight: 3
+    armor: 35
+    autoShots: 4
+    confSnap:
+      shots: 2
+    sprayWaypoints: 2
+    aimRange: 30
+    attraction: 13
+    listOrder: 15310
+  - type: STR_ASSAULT_CANNON_CLIP_AP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.05
+    landOnly: true
+    costBuy: 2800
+    costSell: 2000
+    weight: 10
+    bigSprite: 439
+    floorSprite: 439
+    hitSound: 13
+    hitAnimation: 26
+    power: 45
+    damageAlter:
+      ArmorEffectiveness: 0.75
+    damageType: 1
+    clipSize: 20
+    costThrow:
+      energy: 12
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 40
+    listOrder: 15320
+  - type: STR_ASSAULT_CANNON_CLIP_AA
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
+    size: 0.05
+    landOnly: true
+    costSell: 18000
+    weight: 10
+    bigSprite: 440
+    floorSprite: 439
+    hitSound: 13
+    hitAnimation: 26
+    power: 58
+    damageAlter:
+      ArmorEffectiveness: 0.75
+    damageType: 1
+    clipSize: 20
+    costThrow:
+      energy: 12
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 40
+    listOrder: 15330
   - type: STR_LIGHT_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -2272,6 +2583,7 @@ items:
     accuracyCloseQuarters: 50
     accuracySnap: 50
     accuracyAimed: 75
+    kneelBonus: 140
     tuSnap: 30
     tuAimed: 70
     battleType: 1
@@ -2304,6 +2616,7 @@ items:
       ToTime: 0.15
       ToStun: 0.05
       ToArmorPre: 0.03
+      ToTile: 0.7
     damageType: 1
     clipSize: 4
     battleType: 2
@@ -2355,7 +2668,7 @@ items:
     power: 44
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0.66
+      ToTile: 0.8
     damageType: 3
     clipSize: 4
     battleType: 2
@@ -2405,6 +2718,7 @@ items:
       ToTime: 0.15
       ToStun: 0.05
       ToArmorPre: 0.03
+      ToTile: 0.7
     damageType: 1
     clipSize: 4
     battleType: 2
@@ -2441,12 +2755,12 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
-    costBuy: 32000
-    costSell: 24800
+    costBuy: 34000
+    costSell: 27000
     weight: 36
     alienArtifact: true
     landOnly: true
-    bigSprite: 11
+    bigSprite: 416
     floorSprite: 11
     handSprite: 24
     bulletSprite: 4
@@ -2495,6 +2809,7 @@ items:
       ToTime: 0.2
       ToStun: 0.2
       ToArmorPre: 0.05
+      ToTile: 0.7
     clipSize: 6
     battleType: 2
     invWidth: 2
@@ -2547,7 +2862,7 @@ items:
     damageType: 3
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0.66
+      ToTile: 0.8
     clipSize: 6
     battleType: 2
     invWidth: 2
@@ -2596,6 +2911,7 @@ items:
       ToTime: 0.2
       ToStun: 0.2
       ToArmorPre: 0.05
+      ToTile: 0.7
     damageType: 1
     clipSize: 6
     battleType: 2
@@ -2652,10 +2968,10 @@ items:
     accuracyCloseQuarters: 55
     accuracyAuto: 40
     accuracySnap: 56
-    accuracyAimed: 82
+    #accuracyAimed: 82
     tuAuto: 40
     tuSnap: 33
-    tuAimed: 80
+    #tuAimed: 80
     autoShots: 7
     sprayWaypoints: 2
     battleType: 1
@@ -2688,6 +3004,7 @@ items:
       ToTime: 0.1
       ToStun: 0.05
       ToArmorPre: 0.02
+      ToTile: 0.7
     clipSize: 14
     battleType: 2
     invWidth: 2
@@ -2738,7 +3055,7 @@ items:
     damageType: 3
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0.66
+      ToTile: 0.75
     clipSize: 14
     battleType: 2
     invWidth: 2
@@ -2787,6 +3104,7 @@ items:
       ToTime: 0.1
       ToStun: 0.05
       ToArmorPre: 0.02
+      ToTile: 0.7
     damageType: 1
     clipSize: 14
     battleType: 2
@@ -2807,7 +3125,7 @@ items:
     hitAnimation: 26
     power: 37
     damageAlter:
-      ToTime: 0.05
+      ToTime: 0.1
     shotgunBehavior: 1
     shotgunSpread: 50
     shotgunPellets: 6
@@ -2825,7 +3143,7 @@ items:
     size: 0.6
     costBuy: 33000
     costSell: 10000
-    weight: 29
+    weight: 34
     bigSprite: 393
     floorSprite: 393
     handSprite: 672
@@ -2835,9 +3153,11 @@ items:
       - STR_MINIGUN_CLIP
       - STR_MINIGUN_AA_CLIP
     accuracyCloseQuarters: 33
-    accuracyAuto: 25
-    tuAuto: 45
-    tuLoad: 30
+    accuracyAuto: 42
+    tuAuto: 58
+    tuLoad: 50
+    autoRange: 25
+    autoShots: 20
     dropoff: 2
     battleType: 1
     twoHanded: true
@@ -2845,10 +3165,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 30
-    autoRange: 20
-    autoShots: 16
     sprayWaypoints: 2
-    kneelBonus: 200
     attraction: 26
     listOrder: 15260
     landOnly: true
@@ -2859,24 +3176,24 @@ items:
     size: 0.3
     costBuy: 3000
     costSell: 2400
-    weight: 14
+    weight: 16
     bigSprite: 394
     floorSprite: 394
     hitSound: 22
     hitAnimation: -1
-    power: 42
+    power: 50
     damageAlter:
-      ArmorEffectiveness: 0.85
+      ArmorEffectiveness: 0.75
       ToTime: 0.15
-      ToArmorPre: 0.01
+      ToArmorPre: 0.05
+      ToTile: 0.7
     damageType: 1
     clipSize: 120
     battleType: 2
     armor: 30
     invWidth: 2
     invHeight: 3
-    bulletSpeed: 30
-    explosionSpeed: 5
+    bulletSpeed: 15
     attraction: 15
     listOrder: 15270
     landOnly: true
@@ -2889,23 +3206,116 @@ items:
     floorSprite: 395
     hitSound: 22
     hitAnimation: -1
-    power: 55
+    power: 60
     damageAlter:
-      ArmorEffectiveness: 0.85
+      ArmorEffectiveness: 0.75
       ToTime: 0.15
-      ToArmorPre: 0.01
+      ToArmorPre: 0.05
+      ToTile: 0.7
     damageType: 1
     clipSize: 120
     battleType: 2
     armor: 30
     invWidth: 2
     invHeight: 3
-    bulletSpeed: 30
-    explosionSpeed: 5
+    bulletSpeed: 15
     attraction: 15
     listOrder: 15280
     landOnly: true
+
+  - type: STR_RAILGUN #TODO balance
+    categories: [STR_HUMAN_TECH, STR_MASS_DRIVER, STR_CANNONS, STR_HEAVY_WEAPONS]
+    size: 0.35
+    costSell: 130000
+    weight: 42
+    bigSprite: 434
+    floorSprite: 434
+    handSprite: 882
+    bulletSprite: 4
+    fireSound: 132
+    reloadSound: 133
+    compatibleAmmo:
+      - STR_RAILGUN_SLUG
+    accuracyAimed: 75
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    maxRange: 68
+    aimRange: 55
+    snapRange: 0
+    autoRange: 0
+    minRange: 30
+    dropoff: 4
+    listOrder: 15290
+  - type: STR_RAILGUN_SLUG
+    size: 0.1
+    costSell: 2300
+    weight: 4
+    bigSprite: 435
+    floorSprite: 435
+    handSprite: 890
+    # bulletSpeed: 8
+    hitSound: 13
+    hitAnimation: 26
+    power: 120 #TODO balance
+    damageType: 1
+    clipSize: 1
+    battleType: 2
+    armor: 30
+    listOrder: 15300
 #launchers
+  - type: STR_ROCKET_GLOVE
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES]
+    size: 0.2
+    #landOnly: true
+    costSell: 4200
+    weight: 5
+    bigSprite: 436
+    floorSprite: 436
+    handSprite: 898
+    bulletSprite: 0
+    fireSound: 127
+    reloadSound: 128
+    compatibleAmmo:
+      - STR_ROCKET_GLOVE_CLIP
+    accuracyAimed: 80
+    accuracyCloseQuarters: 80
+    tuAimed: 35
+    costThrow:
+      energy: 20
+    tuLoad: 20
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    aimRange: 14
+    dropoff: 4
+    maxRange: 52
+    experienceTrainingMode: 5
+    attraction: 20
+    listOrder: 19000
+  - type: STR_ROCKET_GLOVE_CLIP
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS]
+    size: 0.1
+    landOnly: true
+    costSell: 1100
+    weight: 2
+    bigSprite: 437
+    floorSprite: 437
+    power: 58
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 1
+    costThrow:
+      energy: 8
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 19001
   - type: STR_SINGLE_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]
     requiresBuy:
@@ -2913,7 +3323,7 @@ items:
     size: 0.2
     costBuy: 5100
     costSell: 3200
-    weight: 9
+    weight: 10
     landOnly: true
     bigSprite: 317
     floorSprite: 317
@@ -2923,11 +3333,7 @@ items:
     hitSound: 0 #138 awg
     hitAnimation: 0
     fireSound: 69
-    accuracyAuto: 0
-    accuracySnap: 0
-    accuracyAimed: 60
-    tuAuto: 0
-    tuSnap: 0
+    accuracyAimed: 70
     tuAimed: 60
     power: 80
     damageAlter:
@@ -2937,21 +3343,172 @@ items:
     battleType: 1
     twoHanded: true
     blockBothHands: true
-    kneelBonus: 160
+    kneelBonus: 165
     invWidth: 1
     invHeight: 3
     armor: 16
     attraction: 12
-    listOrder: 19000
+    listOrder: 19004
+  - type: STR_MGL
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.2
+    landOnly: true
+    costBuy: 21000
+    costSell: 19000
+    weight: 12
+    bigSprite: 417
+    floorSprite: 417
+    handSprite: 776
+    bulletSprite: 3
+    fireSound: 4
+    compatibleAmmo:
+      - STR_MGL_CLIP
+      - STR_MGL_CLIP_SMOKE
+      - STR_MGL_CLIP_INC
+      - STR_MGL_CLIP_FLASHBANG
+    accuracyCloseQuarters: 45
+    accuracyAimed: 95
+    tuAimed: 42
+    tuLoad: 45
+    aimRange: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    arcingShot: true
+    kneelBonus: 125
+    experienceTrainingMode: 11
+    attraction: 20
+    listOrder: 19005
+  - type: STR_MGL_CLIP
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.1
+    landOnly: true
+    costBuy: 2800
+    costSell: 2400
+    weight: 9
+    bigSprite: 418
+    floorSprite: 418
+    handSprite: 784
+    hitSound: 0
+    hitAnimation: 0
+    power: 47
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 5
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    attraction: 16
+    listOrder: 19006
+  - type: STR_MGL_CLIP_SMOKE
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.1
+    landOnly: true
+    costBuy: 2100
+    costSell: 1700
+    weight: 9
+    bigSprite: 420
+    floorSprite: 418
+    handSprite: 784
+    hitSound: 0
+    hitAnimation: 88
+    power: 55
+    damageType: 9
+    damageAlter:
+      RadiusEffectiveness: 1.1
+    clipSize: 5
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    attraction: 16
+    listOrder: 19007
+  - type: STR_MGL_CLIP_INC
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.1
+    landOnly: true
+    costBuy: 3600
+    costSell: 2400
+    weight: 9
+    bigSprite: 421
+    floorSprite: 418
+    handSprite: 784
+    hitSound: 0
+    hitAnimation: 0
+    power: 55
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      ToTime: 0.3
+      IgnoreOverKill: false
+    damageType: 2
+    clipSize: 5
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    attraction: 16
+    listOrder: 19008
+  - type: STR_MGL_CLIP_FLASHBANG
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.1
+    landOnly: true
+    costBuy: 1900
+    costSell: 1400
+    weight: 9
+    bigSprite: 419
+    floorSprite: 418
+    handSprite: 784
+    hitSound: 54
+    hitAnimation: 88
+    power: 35
+    hidePower: true
+    damageType: 6
+    damageAlter:
+      RandomType: 2
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToStun: 0.1
+      ToMorale: 0.1
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 5
+    clipSize: 5
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    attraction: 16
+    listOrder: 19009
+    tags:
+      FTAG_DAZE_VALUE: 100
+      FTAG_DAZE_TIME: 1
   - type: STR_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
+    landOnly: true
     costBuy: 38000
     costSell: 27000
     weight: 19
-    landOnly: true
     bigSprite: 15
     floorSprite: 15
     handSprite: 72
@@ -2964,15 +3521,13 @@ items:
       # - STR_SHRAPNEL_ROCKET
       # - STR_TRITANIUM_SHRAPNEL_ROCKET
     accuracyCloseQuarters: 33
-    #accuracySnap: 55
-    accuracyAimed: 95
-    #tuSnap: 45
+    accuracyAimed: 110
     tuAimed: 75
-    tuLoad: 20
+    tuLoad: 35
     battleType: 1
     twoHanded: true
     blockBothHands: true
-    kneelBonus: 160
+    kneelBonus: 200
     invWidth: 2
     invHeight: 3
     armor: 32
@@ -2983,10 +3538,10 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
+    landOnly: true
     costBuy: 2000
     costSell: 1800
     weight: 6
-    landOnly: true
     bigSprite: 16
     floorSprite: 16
     handSprite: 224
@@ -3008,10 +3563,10 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
+    landOnly: true
     costBuy: 5000
     costSell: 3750
     weight: 8
-    landOnly: true
     bigSprite: 17
     floorSprite: 17
     handSprite: 232
@@ -3034,6 +3589,7 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
+    landOnly: true
     costBuy: 2800
     costSell: 2300
     weight: 8
@@ -3054,51 +3610,38 @@ items:
     armor: 28
     attraction: 8
     listOrder: 19040
-    landOnly: true
 #grenades and chargers
-  - type: STR_LIQUID_FLAME
-    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
+  - type: STR_IMPROVISED_GRENADE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE]
+    size: 0.05
+    costBuy: 500
+    costSell: 420
+    weight: 3
     landOnly: true
-    size: 0.1
-    costBuy: 220
-    costSell: 170
-    weight: 4
-    battleType: 1
-    bigSprite: 353
-    floorSprite: 353
-    handSprite: 496
-    bulletSprite: 18
-    fireSound: 39
-    hitSound: 116
-    damageType: 2
-    power: 25
+    bigSprite: 441
+    floorSprite: 441
+    handSprite: 922
+    power: 30
     damageAlter:
-      ToMorale: 15.0
-    clipSize: 1
-    accuracyAimed: 100
-    accuracyCloseQuarters: 100
-    accuracyMultiplier:
-      firing: 0.0
-      throwing: 1.0
-    costAimed:
-      time: 45
+      IgnoreOverKill: false
+    damageType: 3
+    costThrow:
       energy: 6
-    confAimed:
-      name: "STR_FIRE_AND_THROW"
-    arcingShot: true
-    maxRange: 20
-    kneelBonus: 100
-    experienceTrainingMode: 8
-    armor: 20
-    attraction: 6
-    listOrder: 21000
+    costPrime:
+      time: 25
+    costUnprime:
+      time: 45
+    unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
+    battleType: 4
+    listOrder: 21010
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
-    costBuy: 600
-    costSell: 500
+    costBuy: 860
+    costSell: 650
     weight: 3
     landOnly: true
     bigSprite: 19
@@ -3123,8 +3666,8 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05
     landOnly: true
-    costBuy: 480
-    costSell: 350
+    costBuy: 920
+    costSell: 450
     weight: 4
     bigSprite: 20
     floorSprite: 20
@@ -3173,7 +3716,69 @@ items:
     armor: 30
     attraction: 6
     listOrder: 21030
-
+  - type: STR_LIQUID_FLAME
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 350
+    costSell: 240
+    weight: 4
+    battleType: 1
+    bigSprite: 353
+    floorSprite: 353
+    handSprite: 496
+    bulletSprite: 18
+    fireSound: 39
+    hitSound: 116
+    damageType: 2
+    power: 30
+    damageAlter:
+      ToMorale: 15.0
+    clipSize: 1
+    accuracyAimed: 100
+    accuracyCloseQuarters: 100
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    costAimed:
+      time: 45
+      energy: 6
+    confAimed:
+      name: "STR_FIRE_AND_THROW"
+    arcingShot: true
+    maxRange: 20
+    kneelBonus: 100
+    experienceTrainingMode: 8
+    armor: 20
+    attraction: 6
+    listOrder: 21030
+  - type: STR_INCENDIARY_GRENADE
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.1
+    costBuy: 950
+    costSell: 720
+    weight: 3
+    bigSprite: 27
+    floorSprite: 27
+    handSprite: 914
+    power: 55
+    damageAlter:
+      ToMorale: 15.0
+      ToTime: 0.6
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    damageType: 2
+    battleType: 4
+    armor: 20
+    attraction: 15
+    listOrder: 21030
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     requiresBuy:
@@ -3434,8 +4039,8 @@ items:
   - type: STR_FLASHLIGHT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
-    costBuy: 85
-    costSell: 50
+    costBuy: 140
+    costSell: 75
     weight: 3
     bigSprite: 388
     floorSprite: 388
@@ -3451,8 +4056,8 @@ items:
   - type: STR_ELECTRO_FLARE
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.1
-    costBuy: 60
-    costSell: 40
+    costBuy: 85
+    costSell: 60
     weight: 3
     bigSprite: 55
     floorSprite: 72
@@ -3649,12 +4254,21 @@ items:
     bigSprite: 357
     meleeSound: 48
     meleeHitSound: 55
-    strengthApplied: true
+    #strengthApplied: true
+    #power: 20
     damageType: 7
     damageAlter:
-      ArmorEffectiveness: 1.35
-    accuracyMelee: 100
-    tuMelee: 15
+      RandomType: 7
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.3
+      ToWound: 2
+    accuracyMelee: 90
+    meleeMultiplier:
+      flatHundred: 0.7
+      melee: 0.60
+    damageBonus:
+      strength: 0.4
+    tuMelee: 20
     battleType: 3
     fixedWeapon: true
     invWidth: 2
@@ -3671,9 +4285,16 @@ items:
     meleeSound: 49
     meleeHitSound: 81
     clipSize: -1
-    strengthApplied: true
+    #strengthApplied: true
+    power: 35
     damageType: 7
-    accuracyMelee: 80
+    damageBonus:
+      strength: 0.5
+      melee: 0.2
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.7
+      melee: 0.60
     tuMelee: 25
     battleType: 3
     fixedWeapon: true
@@ -3708,30 +4329,8 @@ items:
     clipSize: -1
     autoShots: 6
     recover: false
-  - type: STR_JABBER_WEAPON
-    categories: [STR_BUILT_INS, STR_MELEE]
-    weight: 0
-    bigSprite: 364
-    floorSprite: 31
-    handSprite: 104
-    meleeSound: 48
-    meleeHitSound: 81
-    clipSize: -1
-    power: 30
-    damageAlter:
-      ArmorEffectiveness: 1.25
-      ToTile: 0.33
-    strengthApplied: true
-    damageType: 7
-    accuracyMelee: 100
-    tuMelee: 8
-    battleType: 3
-    fixedWeapon: true
-    invWidth: 2
-    invHeight: 3
-    recover: false
-    flatRate: true
-  - type: STR_CHUPACABRA_WEAPON
+  - &MonsterWeapon
+    type: STR_CHUPACABRA_WEAPON
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
     bigSprite: 412
@@ -3740,20 +4339,32 @@ items:
     meleeSound: 48
     meleeHitSound: 81
     clipSize: -1
-    power: 30
+    #power: 30
     damageAlter:
-      ArmorEffectiveness: 1.25
-      ToTile: 0.33
+      RandomType: 7
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.3
+      ToWound: 2
+    accuracyMelee: 100
+    meleeMultiplier:
+      flatHundred: 0.7
+      melee: 0.60
+    damageBonus:
+      strength: 0.3
+      melee: 0.2
+    tuMelee: 10
     strengthApplied: true
     damageType: 7
-    accuracyMelee: 100
-    tuMelee: 8
     battleType: 3
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
     recover: false
     flatRate: true
+  - type: STR_ARMADILLO_WEAPON
+    refNode: *MonsterWeapon
+    bigSprite: 442
+
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
@@ -3848,7 +4459,7 @@ items:
     recoveryPoints: 150
     listOrder: 30010
   - type: STR_FLOPPY_RESISTANCE
-    categories: [STR_EVIDENCE]
+    categories: [STR_LOOT]
     landOnly: true
     size: 0.01
     costSell: 55000
@@ -3876,12 +4487,12 @@ items:
     recoveryPoints: 200
     listOrder: 30030
   - type: STR_SUPPLIES_1
-    categories: [STR_OTHER]
-    size: 2
-    weight: 50
+    categories: [STR_LOOT]
+    size: 3
+    weight: 45
     bigSprite: 413
     floorSprite: 413
-    costSell: 7000
+    costSell: 6000
     costThrow:
       time: 70
       energy: 40
@@ -3889,7 +4500,136 @@ items:
     armor: 10
     invWidth: 2
     invHeight: 3
-
+  - type: STR_CREDIT_CARD
+    categories: [STR_LOOT]
+    landOnly: true
+    size: 0.01
+    costSell: 12000
+    weight: 0
+    battleType: 0
+    bigSprite: 425
+    floorSprite: 425
+    handSprite: 816
+    invWidth: 1
+    invHeight: 1
+    stackSize: 5
+    recoveryPoints: 10
+    listOrder: 30040
+  - type: STR_CREDIT_CARD_SILVER
+    categories: [STR_LOOT]
+    landOnly: true
+    size: 0.01
+    costSell: 25000
+    weight: 0
+    battleType: 0
+    bigSprite: 426
+    floorSprite: 426
+    handSprite: 824
+    invWidth: 1
+    invHeight: 1
+    stackSize: 5
+    recoveryPoints: 20
+    listOrder: 30050
+  - type: STR_CREDIT_CARD_GOLD
+    categories: [STR_LOOT]
+    landOnly: true
+    size: 0.01
+    costSell: 80000
+    weight: 0
+    battleType: 0
+    bigSprite: 427
+    floorSprite: 427
+    handSprite: 836
+    invWidth: 1
+    invHeight: 1
+    stackSize: 5
+    recoveryPoints: 50
+    listOrder: 30050
+  - type: STR_CASH_PACK
+    categories: [STR_LOOT]
+    landOnly: true
+    size: 0.01
+    costSell: 1000
+    weight: 0
+    battleType: 0
+    bigSprite: 428
+    floorSprite: 428
+    handSprite: 842
+    invWidth: 1
+    invHeight: 1
+    stackSize: 20
+    recoveryPoints: 8
+    listOrder: 30050
+  - type: STR_PLASTIC_CARD
+    categories: [STR_LOOT]
+    landOnly: true
+    size: 0.01
+    costSell: 10
+    weight: 0
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    recover: false
+    listOrder: 30060
+  - type: STR_BRIEFCASE_CASH
+    categories: [STR_LOOT]
+    size: 0.1
+    landOnly: true
+    costBuy: 101000
+    costSell: 100000
+    bigSprite: 429
+    floorSprite: 429
+    handSprite: 850
+    weight: 5
+    battleType: 0
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 40
+    listOrder: 30060
+  - type: STR_SPARE_PARTS
+    categories: [STR_COMPONENTS]
+    landOnly: true
+    size: 0.1
+    costBuy: 450
+    costSell: 320
+    weight: 3
+    battleType: 0
+    bigSprite: 443
+    floorSprite: 443
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 1
+    listOrder: 60000
+  - type: STR_CHEMICALS
+    categories: [STR_COMPONENTS]
+    landOnly: true
+    size: 0.01
+    costBuy: 500
+    costSell: 360
+    weight: 1
+    battleType: 0
+    bigSprite: 444
+    floorSprite: 444
+    invWidth: 1
+    invHeight: 1
+    stackSize: 5
+    recoveryPoints: 1
+    listOrder: 60000
+  - type: STR_HIGH_TECH_PARTS
+    categories: [STR_COMPONENTS]
+    landOnly: true
+    size: 0.02
+    costBuy: 1300
+    costSell: 900
+    weight: 1
+    battleType: 0
+    bigSprite: 445
+    floorSprite: 445
+    invWidth: 1
+    invHeight: 1
+    stackSize: 15
+    recoveryPoints: 10
+    listOrder: 60020
 
 #geoscape-only
   - type: STR_CRATED_HELICOPTER
@@ -3942,19 +4682,19 @@ items:
   - type: STR_LABORATORY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     size: 25
-    costBuy: 120000
-    costSell: 90000
+    costBuy: 110000
+    costSell: 80000
     listOrder: 70000
   - type: STR_BIOLOGY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
     size: 35
-    costBuy: 160000
-    costSell: 120000
+    costBuy: 140000
+    costSell: 90000
     listOrder: 70010
   - type: STR_RADAR_SYSTEM #FIXME - some content here pls)
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
-  - type: STR_TRADIUM #FIXME - some content here pls)
+  - type: STR_TRADIUM #for testing
     costBuy: 1000000
     costSell: 500000
     categories: [STR_HUMANS, STR_COMPONENTS]
@@ -4341,7 +5081,6 @@ items:
     invHeight: 0
     recover: false
     listOrder: 100370
-
 #Zombies
   - &liveMonster
     type: STR_FACEHUGGER
@@ -4385,14 +5124,6 @@ items:
     floorSprite: 106
     listOrder: 100430
 #Monsters
-  - type: STR_JABBER
-    refNode: *liveMonster
-    listOrder: 100440
-  - type: STR_JABBER_CORPSE
-    refNode: *monsterCorpse
-    bigSprite: 114
-    floorSprite: 114
-    listOrder: 100450
   - type: STR_CHUPACABRA
     refNode: *liveMonster
     listOrder: 100460
@@ -4401,12 +5132,20 @@ items:
     bigSprite: 116
     floorSprite: 116
     listOrder: 100470
-
+  - type: STR_ARMADILLO
+    refNode: *liveMonster
+    listOrder: 100480
+  - type: STR_ARMADILLO_CORPSE
+    refNode: *monsterCorpse
+    bigSprite: 130
+    floorSprite: 130
+    listOrder: 100490
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
-    spawnUnitFaction: 0
+    spawnUnitFaction: 0 #Player faction
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -4461,6 +5200,7 @@ items:
     spawnUnit: STR_RESISTANCE_SOLDIER
     spawnUnitFaction: 0
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -4484,6 +5224,7 @@ items:
     spawnUnit: STR_RESISTANCE_SCIENTIST
     spawnUnitFaction: 0
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -4493,6 +5234,7 @@ items:
     spawnUnit: STR_RESISTANCE_SCIENTIST_VIP
     spawnUnitFaction: 0
     bigSprite: 0
+    floorSprite: 302 #green
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -4517,6 +5259,7 @@ items:
     spawnUnit: STR_RESISTANCE_RADIO
     spawnUnitFaction: -1
     bigSprite: 0
+    floorSprite: 301 #red
     battleType: 4
     invWidth: 0
     invHeight: 0
@@ -4536,6 +5279,7 @@ items:
     spawnUnit: STR_RESISTANCE_COMPUTER
     spawnUnitFaction: -1
     bigSprite: 0
+    floorSprite: 301 #red
     battleType: 4
     invWidth: 0
     invHeight: 0

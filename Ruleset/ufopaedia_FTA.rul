@@ -405,6 +405,14 @@ ufopaedia:
       - STR_ELECTRIC_WEAPONS
     text: STR_ELECTRIC_WEAPONS_UFOPEDIA
     listOrder: 7010
+  - id: STR_CREDIT_CARD_BREACHING
+    type_id: 8
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_CREDIT_CARD_BREACHING
+    text: STR_CREDIT_CARD_BREACHING_UFOPEDIA
+    listOrder: 7019
   - id: STR_CHEMICAL_WEAPONRY
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -621,13 +629,34 @@ ufopaedia:
 
 #STR_WEAPONS_AND_EQUIPMENT 15-29:
 #melee
+  - id: STR_WRENCH
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_WRENCH_UFOPEDIA
+    requires:
+      - STR_WRENCH
+    listOrder: 15000
   - id: STR_CROWBAR
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_CROWBAR_UFOPEDIA
     requires:
       - STR_CROWBAR
-    listOrder: 15000
+    listOrder: 15005
+  - id: STR_HATCHET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HATCHET_UFOPEDIA
+    requires:
+      - STR_HATCHET
+    listOrder: 15007
+  - id: STR_BASEBALL_BAT
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_BASEBALL_BAT_UFOPEDIA
+    requires:
+      - STR_BASEBALL_BAT
+    listOrder: 15007
   - id: STR_POLICE_BATON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -656,6 +685,13 @@ ufopaedia:
     requires:
       - STR_SWORD
     listOrder: 15040
+  - id: STR_KATANA
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_KATANA_UFOPEDIA
+    requires:
+      - STR_KATANA
+    listOrder: 15045
   - id: STR_ELECTRIC_STICK
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -758,8 +794,20 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_RIOT_PISTOL_CLIP
-    listOrder: 17045
-
+    listOrder: 17042
+  - id: STR_POLICE_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_POLICE_PISTOL_UFOPEDIA
+    requires:
+      - STR_POLICE_PISTOL
+    listOrder: 17044
+  - id: STR_POLICE_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_POLICE_PISTOL_CLIP
+    listOrder: 17046
   - id: STR_HEAVY_REVOLVER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -773,7 +821,6 @@ ufopaedia:
     requires:
       - STR_HEAVY_REVOLVER_DRUM
     listOrder: 17055
-
   - id: STR_PISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1127,6 +1174,23 @@ ufopaedia:
       - STR_LMG_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 22040
+  - id: STR_ASSAULT_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ASSAULT_CANNON_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 22045
+  - id: STR_ASSAULT_CANNON_CLIP_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+  - id: STR_ASSAULT_CANNON_CLIP_AA
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ASSAULT_CANNON_CLIP_AA
   - id: STR_LIGHT_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1290,46 +1354,108 @@ ufopaedia:
       - STR_MINIGUN_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 22280
+  - id: STR_RAILGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_RAILGUN
+    text: STR_RAILGUN_UFOPEDIA
+    listOrder: 22290
+  - id: STR_RAILGUN_SLUG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_RAILGUN
+    listOrder: 22300
 #launchers
+  - id: STR_ROCKET_GLOVE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ROCKET_GLOVE
+    text: STR_ROCKET_GLOVE_UFOPEDIA
+    listOrder: 23000
+  - id: STR_ROCKET_GLOVE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ROCKET_GLOVE
+    listOrder: 2302
   - id: STR_SINGLE_ROCKET_LAUNCHER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_SINGLE_ROCKET_LAUNCHER
     text: STR_SINGLE_ROCKET_UFOPEDIA
-    listOrder: 23000
+    listOrder: 23005
+  - id: STR_MGL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_MGL_UFOPEDIA
+    pages:
+      - title: STR_MGL
+        text: STR_MGL_UFOPEDIA
+      - title: STR_MGL_CONT
+        text: STR_MGL_UFOPEDIA
+    listOrder: 23010
+  - id: STR_MGL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 23020
+  - id: STR_MGL_CLIP_SMOKE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 23030
+  - id: STR_MGL_CLIP_INC
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 23040
+  - id: STR_MGL_CLIP_FLASHBANG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 23050
   - id: STR_ROCKET_LAUNCHER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_ROCKET_LAUNCHER_UFOPEDIA
-    listOrder: 23010
+    listOrder: 23060
   - id: STR_SMALL_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
-    listOrder: 23020
+    listOrder: 23070
   - id: STR_LARGE_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
-    listOrder: 23030
+    listOrder: 23080
   - id: STR_INCENDIARY_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
-    listOrder: 23040
+    listOrder: 23090
 #grenades
-  - id: STR_LIQUID_FLAME
+  - id: STR_IMPROVISED_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_LIQUID_FLAME
-    text: STR_LIQUID_FLAME_UFOPEDIA
+      - STR_IMPROVISED_GRENADE
+    text: STR_IMPROVISED_GRENADE_UFOPEDIA
     listOrder: 24000
   - id: STR_GRENADE
     type_id: 4
@@ -1337,35 +1463,49 @@ ufopaedia:
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_GRENADE_UFOPEDIA
-    listOrder: 24005
+    listOrder: 24010
   - id: STR_SMOKE_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_SMOKE_GRENADE_UFOPEDIA
-    listOrder: 24010
+    listOrder: 24020
   - id: STR_PROXIMITY_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_PROXIMITY_GRENADE_UFOPEDIA
-    listOrder: 24020
+    listOrder: 24030
+  - id: STR_LIQUID_FLAME
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LIQUID_FLAME
+    text: STR_LIQUID_FLAME_UFOPEDIA
+    listOrder: 24040
+  - id: STR_INCENDIARY_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_INCENDIARY_GRENADE_UFOPEDIA
+    listOrder: 24050
   - id: STR_FLASHBANG_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FLASHBANG_GRENADE_UFOPEDIA
-    listOrder: 24030
+    listOrder: 24060
   - id: STR_EXPLOSIVE_CHARGE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_EXPLOSIVE_CHARGE
     text: STR_EXPLOSIVE_CHARGE_UFOPEDIA
-    listOrder: 24040
+    listOrder: 24070
 #equipment
   - id: STR_FIRST_AID
     type_id: 4
@@ -1444,7 +1584,7 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FIRE_EXTINGUISHER_UFOPEDIA
     listOrder: 24140
-    
+
 #STR_ALIEN_ARTIFACTS 30-45
   - id: STR_HEAVY_PLASMA
     type_id: 4
@@ -1745,6 +1885,26 @@ ufopaedia:
     text_width: 149
     listOrder: 95070
 
+  - id: STR_ARMADILLO
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMADILLO
+    image_id: UFOPEDIA_IMG_ARMADILLO_CPAL
+    text: STR_ARMADILLO_UFOPEDIA
+    text_width: 158
+    listOrder: 95080
+  - id: STR_ARMADILLO_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ARMADILLO_CORPSE
+    image_id: UFOPEDIA_IMG_ARMADILLO_AUTOPSY_CPAL
+    text: STR_ARMADILLO_AUTOPSY_UFOPEDIA
+    text_width: 149
+    listOrder: 95090
+
+
 ## STR_ALIEN_RESEARCH_UC 160-230k
   - id: STR_ALIEN_ORIGINS
     type_id: 8
@@ -1944,6 +2104,13 @@ ufopaedia:
     text: STR_CHUPACABRA_ARMOR_UFOPEDIA
     requires:
       - STR_CHUPACABRA_ARMOR
+    listOrder: 250250
+  - id: STR_ARMADILLO_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_ARMADILLO_ARMOR_UFOPEDIA
+    requires:
+      - STR_ARMADILLO_ARMOR
     listOrder: 250250
 #list orders
     # STR_XCOM_REPORTS_UC 0-6999

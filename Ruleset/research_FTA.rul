@@ -88,7 +88,7 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
-    cost: 1100
+    cost: 1000
     points: 80
     dependencies:
       - STR_RND_STATUS_REPORT
@@ -115,8 +115,8 @@ research:
     listOrder: 30
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
-    cost: 550
-    points: 50
+    cost: 450
+    points: 40
     dependencies:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
@@ -136,14 +136,14 @@ research:
     listOrder: 60
   - name: STR_RESISTANCE_CONTACT
     requiresBaseFunc: [ HQ ]
-    cost: 350
+    cost: 300
     points: 40
     dependencies:
       - STR_COMMUNICATION
     listOrder: 70
   - name: STR_SUPPLIES
     requiresBaseFunc: [ HQ ]
-    cost: 350
+    cost: 300
     points: 120
     dependencies:
       - STR_QUARTERMASTER_STATUS_REPORT
@@ -192,6 +192,15 @@ research:
       - STR_TODOIUM
 
 #technology
+  - name: STR_HIGH_TECH_PARTS
+    cost: 100
+    points: 50
+    dependencies:
+      - STR_TODOIUM #TODO
+    listOrder: 25002
+  - name: STR_ROCKET_GLOVE
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_STARTING_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_STARTING_EQUIPMENT
@@ -258,7 +267,7 @@ research:
     points: 20
     dependencies:
       - STR_ELECTRIC_WEAPONS
-    listOrder: 25000
+    listOrder: 25002
   - name: STR_TASER_CANNON
     cost: 6400
     points: 40
@@ -273,7 +282,6 @@ research:
     dependencies:
       - STR_TASER_CANNON
     listOrder: 25020
-
   - name: STR_CHEMICAL_WEAPONRY_PREREQ
     hidden: true
   - name: STR_CHEMICAL_WEAPONRY
@@ -289,7 +297,6 @@ research:
     dependencies:
       - STR_CHEMICAL_WEAPONRY
     listOrder: 25040
-
   - name: STR_CHEMPISTOL_MANUFACTURING
     cost: 16800
     points: 60
@@ -304,6 +311,19 @@ research:
       - STR_CHEMPISTOL
       - STR_ACID_SYNTHESIS
     listOrder: 25060
+
+  - name: STR_MAGNET_WEAPONS
+    cost: 48000
+    points: 100
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 25070
+  - name: STR_RAILGUN #FIXME
+    cost: 48000
+    points: 100
+    dependencies:
+      - STR_MAGNET_WEAPONS
+    listOrder: 25070
 
   - name: STR_LASER_WEAPONS
     cost: 48000
@@ -373,6 +393,12 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25180
   - name: STR_LMG_AA_CLIP
+    cost: 3680
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+    listOrder: 25190
+  - name: STR_ASSAULT_CANNON_CLIP_AA
     cost: 3680
     points: 5
     dependencies:
@@ -514,7 +540,7 @@ research:
     requiresBaseFunc: [ HQ ]
     cost: 520
     points: 15
-    spawnedEvent: STR_MONSTER_HUNT_RUMORS
+    #spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ
     listOrder: 3010
@@ -523,7 +549,6 @@ research:
     unlocks: [ STR_MONSTER_HUNT_RUMORS_PREREQ ]
     cost: 2016
     points: 10
-    spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
       - STR_UFOPEDIA_DECRYPTION
@@ -538,6 +563,7 @@ research:
       - STR_ZOMBIE_STERILE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_CHUPACABRA_CORPSE
+      - STR_ARMADILLO_CORPSE
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 288
     points: 17
@@ -869,6 +895,25 @@ research:
       - STR_STRANGE_CREATURE
     listOrder: 6200
 
+  - name: STR_ARMADILLO_CORPSE
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 750
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 6210
+  - name: STR_ARMADILLO
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 820
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    listOrder: 6220
+
   #enemies - aliens
   #combat analysis 
   - name: STR_MIB_AGENT_ARMOR
@@ -935,13 +980,35 @@ research:
       - STR_CHUPACABRA
       - STR_CHUPACABRA_CORPSE
     listOrder: 6300
+  - name: STR_ARMADILLO_ARMOR
+    cost: 180
+    points: 5
+    dependencies:
+      - STR_ARMADILLO
+      - STR_ARMADILLO_CORPSE
+    listOrder: 6310
 
 #weapons and equipment
-  - name: STR_CROWBAR
+  - name: STR_WRENCH
     cost: 5
     points: 1
     needItem: true
     listOrder: 30000
+  - name: STR_CROWBAR
+    cost: 4
+    points: 1
+    needItem: true
+    listOrder: 30005
+  - name: STR_HATCHET
+    cost: 6
+    points: 1
+    needItem: true
+    listOrder: 30008
+  - name: STR_BASEBALL_BAT
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 30009
   - name: STR_MACHETE
     cost: 6
     points: 1
@@ -952,6 +1019,11 @@ research:
     points: 1
     needItem: true
     listOrder: 30020
+  - name: STR_KATANA
+    cost: 10
+    points: 1
+    needItem: true
+    listOrder: 30025
   - name: STR_STUN_ROD_2
     cost: 16
     points: 2
@@ -1022,7 +1094,20 @@ research:
     points: 0
     dependencies:
       - STR_RIOT_PISTOL
-    listOrder: 30135
+    listOrder: 30132
+  - name: STR_POLICE_PISTOL
+    cost: 10
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_POLICE_PISTOL_CLIP
+    listOrder: 30134
+  - name: STR_POLICE_PISTOL_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_POLICE_PISTOL
+    listOrder: 30136
   - name: STR_HEAVY_REVOLVER
     cost: 10
     points: 1
@@ -1140,11 +1225,16 @@ research:
     dependencies:
       - STR_PUMP_ACTION_SHOTGUN
     listOrder: 30290
+  - name: STR_IMPROVISED_GRENADE
+    cost: 20
+    points: 1
+    needItem: true
+    listOrder: 30300
   - name: STR_LIQUID_FLAME
     cost: 10
     points: 1
     needItem: true
-    listOrder: 30300
+    listOrder: 30305
   - name: STR_EXPLOSIVE_CHARGE
     cost: 18
     points: 4
@@ -1210,6 +1300,38 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 5010
+  - name: STR_CREDIT_CARD_BREACHING_PREREQ
+  - name: STR_CREDIT_CARD_BREACHING
+    hidden: true
+    disables:
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+  - name: STR_CREDIT_CARD
+    lookup: STR_CREDIT_CARD_BREACHING
+    dependencies:
+      - STR_SUPPLIES
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+    cost: 100
+    points: 20
+    needItem: true
+    listOrder: 5020
+  - name: STR_CREDIT_CARD_SILVER
+    lookup: STR_CREDIT_CARD_BREACHING
+    dependencies:
+      - STR_SUPPLIES
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+    cost: 150
+    points: 20
+    needItem: true
+    listOrder: 5030
+  - name: STR_CREDIT_CARD_GOLD
+    lookup: STR_CREDIT_CARD_BREACHING
+    dependencies:
+      - STR_SUPPLIES
+      - STR_CREDIT_CARD_BREACHING_PREREQ
+    cost: 300
+    points: 20
+    needItem: true
+    listOrder: 5040
 
   #crafts
   - name: STR_HELICOPTER

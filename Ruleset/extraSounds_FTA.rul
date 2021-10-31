@@ -78,3 +78,6 @@ extraSounds:
       129: Resources/Weapons/Sounds/heavy_pistol.wav
       130: Resources/Weapons/Sounds/flamer.wav #TODO add to flamer
       131: Resources/Weapons/Sounds/flamerr.wav
+      132: Resources/Weapons/Sounds/rail cannon.wav
+      133: Resources/Weapons/Sounds/rail cannon reload.wav
+      134: Resources/Weapons/Sounds/AssaultCannon_fire.wav

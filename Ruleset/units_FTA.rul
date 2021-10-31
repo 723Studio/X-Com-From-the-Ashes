@@ -304,11 +304,13 @@ units:
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_PDW
         - STR_PDW_CLIP
         - STR_PDW_CLIP
         - STR_PDW_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_SMG
         - STR_SMG_CLIP
         - STR_SMG_CLIP
@@ -658,6 +660,23 @@ units:
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
     aggression: 2
+    builtInWeaponSets: &MIBAgentLoadout
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CREDIT_CARD
+      - - STR_CREDIT_CARD
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CASH_PACK
+      - - STR_CREDIT_CARD_SILVER
+        - STR_CASH_PACK
+        - STR_SHOTGUN_SHELLS_BS
+      - - STR_CREDIT_CARD_GOLD
   - type: MIB_OFFICE_SECURITY
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_SECURITY_ARMOR
@@ -766,15 +785,15 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 55
-      stamina: 120
-      health: 124
+      tu: 65
+      stamina: 140
+      health: 144
       bravery: 110
-      reactions: 40
+      reactions: 35
       firing: 0
       throwing: 0
       strength: 84
-      melee: 80
+      melee: 25
       psiStrength: 30
       psiSkill: 0
     statsRandom:
@@ -786,7 +805,7 @@ units:
       firing: 0
       throwing: 0
       strength: 10
-      melee: 15
+      melee: 3
       psiStrength: 4
     armor: STR_ZOMBIE_STERILE_ARMOR
     standHeight: 22
@@ -804,15 +823,15 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 48
+      tu: 70
       stamina: 150
       health: 184
       bravery: 110
-      reactions: 44
+      reactions: 30
       firing: 0
       throwing: 0
       strength: 104
-      melee: 90
+      melee: 30
       psiStrength: 30
       psiSkill: 0
     statsRandom:
@@ -824,7 +843,7 @@ units:
       firing: 0
       throwing: 0
       strength: 20
-      melee: 10
+      melee: 5
       psiStrength: 4
     armor: STR_ZOMBIE_GRUBAS_ARMOR
     standHeight: 22
@@ -840,35 +859,6 @@ units:
       - - STR_ZOMBIE_WEAPON
 
 #Monsters
-  # - type: STR_JABBER
-  #   race: STR_JABBER
-  #   rank: STR_LIVE_TERRORIST
-  #   stats:
-  #     tu: 90
-  #     stamina: 110
-  #     health: 30
-  #     bravery: 100
-  #     reactions: 75
-  #     firing: 0
-  #     throwing: 0
-  #     strength: 28
-  #     melee: 80
-  #     psiStrength: 50
-  #     psiSkill: 0
-  #   armor: STR_JABBER_ARMOR
-  #   standHeight: 18
-  #   kneelHeight: 12
-  #   value: 10
-  #   # aggroSound: 123
-  #   deathSound: 7
-  #   # panicSound: 265
-  #   # berserkSound: 266
-  #   intelligence: 3
-  #   aggression: 4
-  #   energyRecovery: 35
-  #   livingWeapon: true
-  #   builtInWeaponSets:
-  #     - - STR_JABBER_WEAPON
   - type: STR_CHUPACABRA
     race: STR_CHUPACABRA
     rank: STR_LIVE_TERRORIST
@@ -880,8 +870,8 @@ units:
       reactions: 65
       firing: 0
       throwing: 0
-      strength: 75
-      melee: 85
+      strength: 70
+      melee: 80
       psiStrength: 60
       psiSkill: 0
     statsRandom:
@@ -892,7 +882,7 @@ units:
       reactions: 5
       firing: 0
       throwing: 0
-      strength: 1
+      strength: 10
       melee: 15
       psiStrength: 4
     armor: STR_CHUPACABRA_ARMOR
@@ -910,6 +900,47 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_CHUPACABRA_WEAPON
+  - type: STR_ARMADILLO
+    race: STR_ARMADILLO
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 70
+      stamina: 150
+      health: 80
+      bravery: 100
+      reactions: 45
+      firing: 0
+      throwing: 0
+      strength: 75
+      melee: 65
+      psiStrength: 60
+      psiSkill: 0
+    statsRandom:
+      tu: 10
+      stamina: 15
+      health: 10
+      bravery: 20
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 10
+      melee: 10
+      psiStrength: 4
+    armor: STR_ARMADILLO_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 15
+    aggroSound: 123 #TODO
+    deathSound: 124 #TODO
+    # panicSound: 265
+    # berserkSound: 266
+    intelligence: 3
+    aggression: 8
+    isLeeroyJenkins: true
+    energyRecovery: 45
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ARMADILLO_WEAPON
 
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
@@ -950,33 +981,33 @@ units:
     canSurrender: true
     builtInWeaponSets:
       - []
-      - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
+      - - STR_BASEBALL_BAT
+        - STR_CASH_PACK
       - - STR_SAWED_OFF #- STR_PITCHFORK
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
+        - STR_CASH_PACK
+      - - STR_HATCHET
+        - STR_CREDIT_CARD
       - - STR_DOUBLE_BARRELED #- STR_AXE
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
-      - []
-      - []
+      - - STR_CASH_PACK
+        - STR_HATCHET
+      - - STR_CASH_PACK
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CREDIT_CARD
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-      - - STR_SNUBNOSE_PISTOL
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
   - type: STR_DOGE
     race: STR_DOGE
     stats:
@@ -1056,53 +1087,61 @@ units:
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_POLICE_BATON
-      - - STR_SNUBNOSE_PISTOL
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CREDIT_CARD
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
         - STR_POLICE_BATON
-      - - STR_PISTOL
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
         - STR_POLICE_BATON
-      - - STR_PISTOL
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
       - - STR_TASER
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_POLICE_BATON
+        - STR_CASH_PACK
       - - STR_TASER
         - STR_TASER_CLIP
         - STR_TASER_CLIP
         - STR_TASER_CLIP
+        - STR_POLICE_BATON
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_TASER
+        - STR_TASER_CLIP
+        - STR_CASH_PACK
+      - - STR_TASER
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
         - STR_POLICE_BATON
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - - STR_TASER
-        - STR_TASER_CLIP
-        - STR_TASER_CLIP
-        - STR_TASER_CLIP
-        - STR_POLICE_BATON
-      - - STR_PUMP_ACTION_SHOTGUN
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-      - - STR_SHOTGUN
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_FLASHBANG_GRENADE
 
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER
@@ -1144,11 +1183,14 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
       - - STR_SAWED_OFF #- STR_PITCHFORK
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
+        - STR_HATCHET
+        - STR_CASH_PACK
+      - - STR_HATCHET
       - - STR_DOUBLE_BARRELED #- STR_AXE
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1159,7 +1201,8 @@ units:
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - []
+      - - STR_HATCHET
+        - STR_CASH_PACK
       - - STR_HUNTING_RIFLE #- []
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1168,14 +1211,17 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP 
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT #- STR_AXE
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_HATCHET
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
   - type: STR_FEMALE_CIVILIAN_FARMER
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
@@ -1205,15 +1251,15 @@ units:
     builtInWeaponSets:
       - []
       - []
-      - []
-      - []
+      - - STR_CASH_PACK
+      - - STR_CASH_PACK
       - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
       - []
-      - []
-      - - STR_DOUBLE_BARRELED #- STR_WOODEN_CLUB
+      - - STR_HATCHET
+      - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1256,6 +1302,7 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1263,10 +1310,9 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
-      - - STR_SAWED_OFF
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
+      - - STR_HATCHET
+        - STR_CASH_PACK
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1288,6 +1334,14 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
@@ -1309,13 +1363,7 @@ units:
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
-      - - STR_HUNTING_RIFLE
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
 
 #Resistance
   - &STR_RESISTANCE_SCIENTIST
@@ -1365,24 +1413,46 @@ units:
     specialObjectiveType: STR_FRIENDLY_VIP
     value: 100
     builtInWeaponSets:
-      - []
-      - []
-      - []
-      - []
-      - []
-      - []
-      - - STR_SNUBNOSE_PISTOL
-        - STR_SNUBNOSE_PISTOL_CLIP
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+        - STR_CASH_PACK
   - &STR_RESISTANCE_AGENT
     type: STR_RESISTANCE_AGENT
     race: STR_RESISTANCE
@@ -1429,10 +1499,16 @@ units:
         - STR_MACHINE_PISTOL_CLIP
         - STR_MACHINE_PISTOL_CLIP
         - STR_MACHINE_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
@@ -1445,7 +1521,11 @@ units:
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_LIQUID_FLAME
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
+        - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1455,13 +1535,18 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
       - - STR_RIOT_RIFLE
         - STR_RIOT_RIFLE_CLIP
         - STR_RIOT_RIFLE_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
+        - STR_HATCHET
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
