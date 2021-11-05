@@ -57,9 +57,9 @@ crafts:
     requires:
       - STR_TODOIUM
     weaponTypes:
-      - [0, 2]
-      - [0, 2]
-    #weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
+      - [0]
+      - [2]
+    weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
     soldiers: 1
     vehicles: 0
     pilots: 1

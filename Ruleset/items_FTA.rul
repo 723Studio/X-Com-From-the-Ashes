@@ -521,7 +521,7 @@ items:
     attraction: 6
     listOrder: 3000
   - type: STR_SPORTS_BOW
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_THROWING]
     size: 0.2
     landOnly: true
     costBuy: 850

@@ -294,7 +294,7 @@ alienDeployments:
     alert: STR_ALERT_MIB_REGIONAL_HQ
     alertBackground: MIB_BACKGROUND.SCR
     alertDescription: STR_ALERT_MIB_REGIONAL_HQ_DESCRIPTION
-    battleScript: STR_ENDLESS_WAR_SCRIPT
+    battleScript: MIB_TRAP_ESCAPE_EARLY
     alienBase: true
     keepCraftAfterFailedMission: true
     escapeType: 1
