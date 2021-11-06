@@ -5,4 +5,4 @@ description: "From the ashes of XCOM will rise the Phoenix, the defender of the 
 id: From the Ashes
 isMaster: true
 master: xcom1
-reservedSpace: 3
+reservedSpace: 12

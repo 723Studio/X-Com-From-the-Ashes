@@ -35,6 +35,17 @@ Here is a list of that assets:
 * MIB_Chip_CPAL.png.png
 * ARMY_TRUCK.pck
 * Hacking_UI.png
+* bigob_HighTechParts.png
+* bigob_Chemicals.png
+* bigob_SpareParts.png
+* ARMADILLO.png
+* bigob_ARMADILLO_CORPSE.png
+* bigob_ArmadilloWeapon.png
+* floorob_ARMADILLO_CORPSE.png
+* inventory_ARMADILLO.png
+* ufopedia_ARMADILLO_AUTOPSY_CPAL.png
+* ufopedia_ARMADILLO_CPAL.png
+
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

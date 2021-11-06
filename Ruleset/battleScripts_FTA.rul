@@ -225,30 +225,26 @@ battleScripts:
 
   - type: STR_MIB_REGIONAL_HQ
     commands:
-    - type: spawnUnit #med
+    - type: spawnUnit
       executionChances: 40
-      #maxDifficulty: 3
       packSize: 3
       randomPackSize: true
-      startTurn: 5
+      #startTurn: 5
       unitSide: 1
-      minAlarmLevel: 1
-      #groups: [1, 2, 3, 4]
-      spawnBlocks: [WEST, SOUTH, EAST, NW, NE, SW, SE]
+      minAlarmLevel: 3
+      spawnBlocks: [WEST]
+      minLevel: 5
+      maxLevel: 5
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: showMessage
       maxRuns: 1
       variable: alarm
-      minAlarmLevel: 1
-      startTurn: 1
+      minAlarmLevel: 3
+      #startTurn: 1
       messages:
         0:
           title: STR_MIB_REGIONAL_HQ_ALARM_TITLE
           content: STR_MIB_REGIONAL_HQ_ALARM_CONTENT
-          #answer: STR_SOME_TEXT
-          #background: SOME_EXTRA_SPRITE.PCK
-        # 1:
-        #   content: content2
 
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
     commands:

@@ -61,6 +61,7 @@ items:
       time: true
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 3
@@ -102,6 +103,7 @@ items:
       energy: 20
     flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     #twoHanded: true
     #oneHandedPenalty: 67
@@ -143,6 +145,7 @@ items:
       energy: 14
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 2
@@ -151,7 +154,7 @@ items:
     attraction: 20
     listOrder: 1007
   - type: STR_BASEBALL_BAT
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_INCAPACITATE]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE]
     landOnly: true
     size: 0.2
     costBuy: 120
@@ -184,6 +187,7 @@ items:
       energy: 12
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 3
@@ -226,6 +230,7 @@ items:
       energy: 8
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 2
@@ -268,6 +273,7 @@ items:
       energy: 8
     battleType: 3
     clipSize: -1
+    noiseValue: 0
     invWidth: 1
     invHeight: 2
     armor: 60
@@ -306,6 +312,7 @@ items:
     costThrow:
       energy: 8
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 2
@@ -344,6 +351,7 @@ items:
       energy: 14
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 3
@@ -381,6 +389,7 @@ items:
       energy: 20
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 3
@@ -425,6 +434,7 @@ items:
       energy: 8
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     invWidth: 1
     invHeight: 3
@@ -468,6 +478,7 @@ items:
       energy: 12
     #flatRate: true
     battleType: 3
+    noiseValue: 0
     clipSize: -1
     twoHanded: false
     invWidth: 1
@@ -513,6 +524,7 @@ items:
     clipSize: 1
     stackSize: 5
     battleType: 1
+    noiseValue: 0
     invWidth: 1
     invHeight: 2
     maxRange: 8
@@ -552,6 +564,7 @@ items:
     tuLoad: 5
     flatRate: true
     battleType: 1
+    noiseValue: 0
     twoHanded: true
     blockBothHands: true
     invWidth: 2
