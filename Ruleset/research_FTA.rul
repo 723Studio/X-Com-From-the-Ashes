@@ -253,6 +253,8 @@ research:
       - STR_SINGLE_ROCKET_LAUNCHER
       - STR_MEDI_PACK
       - STR_HELICOPTER
+      - STR_LEVER_ACTION_CARBINE
+      - STR_LEVER_ACTION_CARBINE_CLIP
 
   - name: STR_ELECTRIC_WEAPONS_PREREQ
     hidden: true
@@ -1178,6 +1180,20 @@ research:
     dependencies:
       - STR_RIOT_RIFLE
     listOrder: 30220
+  - name: STR_LEVER_ACTION_CARBINE
+    cost: 16
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_LEVER_ACTION_CARBINE_CLIP
+    listOrder: 30210
+  - name: STR_LEVER_ACTION_CARBINE_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_LEVER_ACTION_CARBINE
+    listOrder: 30220
+
   - name: STR_HUNTING_RIFLE
     cost: 15
     points: 2

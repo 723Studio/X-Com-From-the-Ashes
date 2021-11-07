@@ -957,6 +957,19 @@ ufopaedia:
     requires:
       - STR_RIOT_RIFLE_CLIP
     listOrder: 19010
+  - id: STR_LEVER_ACTION_CARBINE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_LEVER_ACTION_CARBINE_UFOPEDIA
+    requires:
+      - STR_LEVER_ACTION_CARBINE
+    listOrder: 19015
+  - id: STR_LEVER_ACTION_CARBINE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_LEVER_ACTION_CARBINE_CLIP
+    listOrder: 19016
   - id: STR_ASSAULT_RIFLE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

@@ -342,6 +342,8 @@ extraSprites:
       443: Resources/MiscItems/bigob_SpareParts.png
       444: Resources/MiscItems/bigob_Chemicals.png
       445: Resources/MiscItems/bigob_HighTechParts.png
+      446: Resources/MiscItems/bigob_HighTechParts.png
+      447: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_Carbine.png
      
   - type: FLOOROB.PCK
     files:
@@ -492,6 +494,7 @@ extraSprites:
       443: Resources/MiscItems/floorob_SpareParts.png
       444: Resources/MiscItems/floorob_Chemicals.png
       445: Resources/MiscItems/floorob_HighTechParts.png
+      446: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_Carbine.png
 
 
   - type: HANDOB.PCK #Index step 8
@@ -601,6 +604,7 @@ extraSprites:
       914: Resources/Weapons/Earthbound/Grenades/handob_NapalmGrenade.png
       922: Resources/Weapons/Earthbound/Grenades/handob_ImprovisedGrenade.png
       930: Resources/MiscItems/handob_NoNe.png
+      938: Resources/Weapons/Earthbound/Faction/handob_Lever_action_Carbine.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
