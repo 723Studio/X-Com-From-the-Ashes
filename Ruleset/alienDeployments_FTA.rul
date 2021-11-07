@@ -1210,7 +1210,7 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_4: 50
       STR_NOT_RESCUED_RESISTANCE_5: 50
       STR_NOT_RESCUED_RESISTANCE_6: 50
-    duration: [16, 18]
+    duration: [4, 6]
     despawnPenalty: 200
     #abortPenalty: 200
     extendedObjectiveType: STR_EVACUATION 
@@ -1251,6 +1251,176 @@ alienDeployments:
           -
             []
 
+  - type: STR_RESISTANCE_FARM_CULTISTS
+    race: STR_CULTISTS
+    civiliansByType:
+      STR_MALE_CIVILIAN_FARMER: 4
+      STR_FEMALE_CIVILIAN_FARMER: 2
+    width: 80
+    length: 80
+    height: 8
+    alert: STR_RESISTANCE_HAVEN_ALERT
+    alertBackground: STR_RESISTANCE_BACKGROUND.SCR
+    alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
+    markerName: STR_RESISTANCE_HAVEN_MARKER
+    successEvents:
+      STR_RESCUED_RESISTANCE_1: 50
+      STR_RESCUED_RESISTANCE_2: 50
+      STR_RESCUED_RESISTANCE_3: 50
+      STR_RESCUED_RESISTANCE_4: 50
+      STR_RESCUED_RESISTANCE_5: 50
+      STR_RESCUED_RESISTANCE_6: 50
+    failureEvents:
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
+    duration: [16, 18]
+    despawnPenalty: 200
+    #abortPenalty: 200
+    briefing:
+      textOffset: -16
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_RESISTANCE_FARM_CULTISTS_BRIEFING
+    terrains:
+      - CULTA
+    script: RESISTANCE_FARM_NO_RADIO
+    data:
+      - alienRank: 5 #STR_CULT_GANGER
+        lowQty: 4
+        highQty: 11
+        dQty: 3
+        extraQty: 3
+        percentageOutsideUfo: 85
+        itemSets: #TODO
+          -
+            - STR_COMBAT_KNIFE
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_MACHETE
+            - STR_THROWING_KNIFE
+            - STR_THROWING_KNIFE
+            - STR_THROWING_KNIFE
+            - STR_THROWING_KNIFE
+            - STR_GRENADE
+          -
+            - STR_SWORD
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_MACHETE
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_GRENADE
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_GRENADE
+            - STR_COMBAT_KNIFE
+          -
+            - STR_MACHETE
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+      - alienRank: 4 #STR_CULT_GANGER
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: #TODO
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_SWORD
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_MACHETE
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_GRENADE
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_GRENADE
+            - STR_COMBAT_KNIFE
+          -
+            - STR_MACHETE
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP 
+
   - type: STR_RESISTANCE_FOREST_HOUSE
     width: 80
     length: 80
@@ -1259,7 +1429,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
-    duration: [16, 18]
+    duration: [4, 6]
     despawnPenalty: 200
     #abortPenalty: 220
     extendedObjectiveType: STR_EVACUATION 
@@ -1403,7 +1573,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
-    duration: [16, 18]
+    duration: [4, 6]
     despawnPenalty: 200
     #abortPenalty: 220
     extendedObjectiveType: STR_EVACUATION
@@ -1572,7 +1742,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
-    duration: [16, 18]
+    duration: [4, 6]
     despawnPenalty: 200
     abortPenalty: 40
     briefing:
@@ -1803,7 +1973,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
-    duration: [16, 18]
+    duration: [10, 14]
     despawnPenalty: 200
     abortPenalty: 40
     briefing:
@@ -1926,7 +2096,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
-    duration: [16, 18]
+    duration: [8, 10]
     despawnPenalty: 200
     abortPenalty: 250
     briefing:
@@ -1939,10 +2109,11 @@ alienDeployments:
     script: RESISTANCE_FARM_AMBUSH
     data:
       - alienRank: 5 #STR_ZOMBIE_STERILE_TERRORIST
-        lowQty: 10
+        lowQty: 8
         highQty: 17
         dQty: 4
-        percentageOutsideUfo: 80
+        extraQty: 3
+        percentageOutsideUfo: 65
         itemSets:
           -
             []
@@ -1965,9 +2136,10 @@ alienDeployments:
           -
             []
       - alienRank: 6 #STR_FACEHUGGER
-        lowQty: 5
+        lowQty: 3
         highQty: 10
         dQty: 3
+        extraQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -1994,6 +2166,7 @@ alienDeployments:
         lowQty: 4
         highQty: 6
         dQty: 2
+        extraQty: 1
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -2025,7 +2198,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RESISTANCE_MEMBER
-    duration: [14, 18]
+    duration: [4, 6]
     despawnPenalty: 200
     #abortPenalty: 300
     extendedObjectiveType: STR_EVACUATION 
@@ -2078,7 +2251,7 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RESISTANCE_MEMBER
-    duration: [16, 20]
+    duration: [4, 6]
     despawnPenalty: 200
     #abortPenalty: 300
     extendedObjectiveType: STR_EVACUATION 
@@ -2209,7 +2382,7 @@ alienDeployments:
     height: 8
     shade: 15
     markerName: STR_MONSTER_HUNT_MARKER
-    duration: [10, 10]
+    duration: [3, 5]
     despawnPenalty: 200
     abortPenalty: 200
     briefing:
@@ -2255,7 +2428,7 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [16, 18]
+    duration: [3, 5]
     despawnPenalty: 200
     abortPenalty: 200
     briefing:
@@ -2302,7 +2475,7 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [16, 18]
+    duration: [3, 5]
     despawnPenalty: 200
     abortPenalty: 300
     briefing:

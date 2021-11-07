@@ -24,7 +24,7 @@ alienMissions:
 #resistance scripts
   - &TerrorLike
     type: STR_RESISTANCE_HAVEN_DEFENCE
-    despawnEvenIfTargeted: true
+    despawnEvenIfTargeted: false
     objective: 3
     spawnZone: 0
     waves:

@@ -287,6 +287,150 @@ ufos:
                 itemList: *suppliesResistanceStash
           fuseTimers:
             STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+  - type: STR_RESISTANCE_SHELTER_FARM_DESTROYED
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: RESISTANCE_SHELTER_FARM
+      mapDataSets:
+        - BLANKS
+        - CULTIVAT
+        - BARN
+        - ROADS
+        - CULTMACHINES
+      mapBlocks:
+        - name: CULTA16
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [1, 5, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [4, 5, 1]
+                amount: 3
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [3, 0, 0]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULTA18
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [0, 6, 0]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [0, 6, 0]
+                amount: 2
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULTAFARM01
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [6, 1, 2]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 6, 2]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [1, 2, 2]
+                amount: 1
+                mixed: true
+                itemList: *explosiveResistanceStash
+        - name: CULTAFARM20
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [5, 6, 2]
+                amount: 6
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [5, 6, 2]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [5, 6, 2]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+        - name: CULTAFARM21
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [3, 6, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [6, 0, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [6, 0, 1]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+        - name: CULT_NEW16
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [1, 5, 1]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 5, 1]
+                amount: 8
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULT_NEW18
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [0, 0, 1]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 0, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULT_FINNIK00
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [4, 0, 0]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [4, 0, 0]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULTACIV01
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [6, 7, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [6, 7, 1]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
   - type: STR_RESISTANCE_SHELTER_FARM_RADIO
     size: STR_MEDIUM_UC
     modSprite: interception_jammed

@@ -364,6 +364,8 @@ en-US:
   STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION: "We are receiving an encrypted distress signal from the Resistance haven. It seems they're in desperate situation and need urgent evacuation. We should dispatch an assault squad, and we would probably need enough free spots in our craft for the Resistance agents to be rescued if needed."
   STR_RESISTANCE_HAVEN_MARKER: "Resistance Haven"
   STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We are receiving a distress transmission from one of the Resistance's shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures; they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_FARM_CULTISTS: "Resistance Haven Attacked"
+  STR_RESISTANCE_FARM_CULTISTS_BRIEFING: #TODO
   STR_RESISTANCE_FOREST_HOUSE: "Resistance Haven Attacked"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The Men in Black have surrounded one of Resistance's secret hideouts. While trying to destroy important clues that could lead the M.I.B. agents to other Resistance havens, these people were forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. Additionally, it is best to recover all possible clues about Resistance activity.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a vehicle and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FOREST_HOUSE_AMBUSH: "Resistance Haven Attacked"
