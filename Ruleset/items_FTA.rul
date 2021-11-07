@@ -1541,27 +1541,28 @@ items:
     handSprite: 424
     hitSound: 58
     hitAnimation: 26
-    power: 37
+    power: 36
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 30
     battleType: 2
     attraction: 8
     listOrder: 7090
-
   - type: STR_LEVER_ACTION_CARBINE
-    categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES,STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CONCEALABLE]
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.2
-    costBuy: 2500 # to be adjusted
-    costSell: 1550 # to be adjusted
-    weight: 8
+    costBuy: 2300
+    costSell: 1400
+    weight: 7
     landOnly: true
-    bigSprite: 447
+    bigSprite: 446
     floorSprite: 446
     handSprite: 938
     bulletSprite: 2
-    fireSound: 71
+    fireSound: 136
     compatibleAmmo:
       - STR_LEVER_ACTION_CARBINE_CLIP
     accuracyCloseQuarters: 125
@@ -1574,8 +1575,9 @@ items:
       energy: 10
     battleType: 1
     twoHanded: true
+    oneHandedPenalty: 80
     invWidth: 1
-    invHeight: 2
+    invHeight: 3
     attraction: 8
     listOrder: 7095
   - type: STR_LEVER_ACTION_CARBINE_CLIP
@@ -1583,22 +1585,22 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
-    costBuy: 220  # to be adjusted
-    costSell: 150 # to be adjusted
-    weight: 3
+    costBuy: 140
+    costSell: 80
+    weight: 2
     landOnly: true
-    bigSprite: 344
-    floorSprite: 344
-    handSprite: 424
+    bigSprite: 447
+    floorSprite: 447
+    handSprite: 946
     hitSound: 58
     hitAnimation: 26
-    power: 42
+    reloadSound: 137
+    power: 28
     damageType: 1
-    clipSize: 30
+    clipSize: 8
     battleType: 2
     attraction: 8
     listOrder: 7096
-
   - type: STR_ASSAULT_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
@@ -1719,7 +1721,7 @@ items:
     handSprite: 144
     hitAnimation: 26
     hitSound: 22
-    power: 32
+    power: 34
     damageType: 1
     clipSize: 20
     battleType: 2
@@ -1878,6 +1880,7 @@ items:
     handSprite: 408
     hitSound: 58
     hitAnimation: 26
+    reloadSound: 135
     power: 33
     damageAlter:
       RandomType: 7
