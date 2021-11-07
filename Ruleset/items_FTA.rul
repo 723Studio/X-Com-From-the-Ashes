@@ -1547,6 +1547,58 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 7090
+
+  - type: STR_LEVER_ACTION_CARBINE
+    categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES,STR_CONCEALABLE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.2
+    costBuy: 2500 # to be adjusted
+    costSell: 1550 # to be adjusted
+    weight: 8
+    landOnly: true
+    bigSprite: 447
+    floorSprite: 446
+    handSprite: 938
+    bulletSprite: 2
+    fireSound: 71
+    compatibleAmmo:
+      - STR_LEVER_ACTION_CARBINE_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 60
+    accuracyAimed: 100
+    tuSnap: 34
+    tuAimed: 75
+    snapRange: 16
+    costThrow:
+      energy: 10
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 2
+    attraction: 8
+    listOrder: 7095
+  - type: STR_LEVER_ACTION_CARBINE_CLIP
+    categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_CONCEALABLE]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.1
+    costBuy: 220  # to be adjusted
+    costSell: 150 # to be adjusted
+    weight: 3
+    landOnly: true
+    bigSprite: 344
+    floorSprite: 344
+    handSprite: 424
+    hitSound: 58
+    hitAnimation: 26
+    power: 42
+    damageType: 1
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+    listOrder: 7096
+
   - type: STR_ASSAULT_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
