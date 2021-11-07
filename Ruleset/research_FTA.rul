@@ -85,6 +85,9 @@ research:
   - name: STR_CROP_CIRCLES_PREREQ
     hidden: true
 
+  - name: STR_CULT_GANG_DEN #TODO
+    hidden: true
+
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
@@ -804,7 +807,7 @@ research:
     listOrder: 6110
   - name: MIB_BANKER
     requiresBaseFunc: [ INTLAB ]
-    cost: 120
+    cost: 360
     points: 10
     needItem: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
@@ -813,6 +816,29 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     listOrder: 6120
+
+  #enemies - cultists
+  - name: STR_CULT_GANGER
+    requiresBaseFunc: [ INTLAB ]
+    cost: 160
+    points: 5
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 6121
+  - name: STR_CULT_COORDINATOR
+    requiresBaseFunc: [ INTLAB ]
+    cost: 160
+    points: 5
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+      - STR_CULT_GANG_DEN
+    listOrder: 6121
 
   #enemies - zombies 
   - name: STR_FACEHUGGER_CORPSE
@@ -953,6 +979,19 @@ research:
       - STR_SEEKER_DRONE_TERRORIST
       - STR_TODOIUM
     listOrder: 6260
+
+  - name: STR_CULT_GANGER_ARMOR
+    cost: 40
+    points: 5
+    dependencies:
+      - STR_CULT_GANGER
+    listOrder: 6261
+  - name: STR_CULT_COORDINATOR_ARMOR
+    cost: 45
+    points: 6
+    dependencies:
+      - STR_CULT_COORDINATOR
+    listOrder: 6262
 
   - name: STR_FACEHUGGER_ARMOR
     cost: 150

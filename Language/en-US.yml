@@ -645,6 +645,16 @@ en-US:
   MIB_BANKER: "Banker"
   STR_MIB_VIP_CORPSE: "V.I.P. corpse"
   MIB_BANKER_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts."
+  STR_CULTISTS: "Cultists"
+  STR_CULT_GANGER: "Cult Ganger"
+  STR_CULT_GANGER_UFOPEDIA: #TODO
+  STR_CULT_GANGER_ARMOR: "Cult Ganger Combat Analysis"
+  STR_CULT_GANGER_ARMOR_UFOPEDIA: "" #TODO
+  STR_CULT_COORDINATOR: "Cult Coordinator"
+  STR_CULT_COORDINATOR_UFOPEDIA: #TODO
+  STR_CULT_COORDINATOR_ARMOR: "Cult Coordinator Combat Analysis"
+  STR_CULT_COORDINATOR_ARMOR_UFOPEDIA: "" #TODO
+  
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"

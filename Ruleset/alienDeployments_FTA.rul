@@ -1395,9 +1395,9 @@ alienDeployments:
 
   - type: STR_RESISTANCE_URBAN_HIDEOUT
     race: STR_MIB
-    width: 60
-    length: 60
-    height: 6
+    width: 80
+    length: 80
+    height: 8
     isHidden: true
     alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
@@ -1429,7 +1429,7 @@ alienDeployments:
     terrains:
       - URBAN_LOW
     customUfo: STR_URBAN_HAZARD
-    script: RESISTANCE_URBAN_HIDEOUT
+    script: CRAFT_UFO_STREETS_SCRIPT_BIG_MAP
     battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     data:
       - alienRank: 4 #STR_MIB_ARMORED_AGENT

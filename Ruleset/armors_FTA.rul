@@ -143,7 +143,7 @@ armors:
         stunNormalized: -0.1
     meleeDodge:
       reactions: 0.7
-    meleeDodgeBackPenalty: 0.5
+    meleeDodgeBackPenalty: 0.4
     overKill: 1.5
     damageModifier: *ClothSuiteResist
     specialWeapon: STR_UNARMED_TRAINED
@@ -161,7 +161,7 @@ armors:
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
-    meleeDodgeBackPenalty: 0.5
+    meleeDodgeBackPenalty: 0.4
     recovery:
       health:
         stunNormalized: -0.1
@@ -214,6 +214,9 @@ armors:
         health: -0.05
       health:
         stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.15
+    meleeDodgeBackPenalty: 0.45
     overKill: 1.5
     damageModifier: &MilitaryArmor
       - 1.0 #0 - None - special
@@ -256,6 +259,7 @@ armors:
         health: -0.05
       health:
         stunNormalized: -0.1
+    meleeDodgeBackPenalty: 0.5
     overKill: 1.5
     damageModifier:
       - 1.0 #0 - None - special
@@ -330,9 +334,7 @@ armors:
     rearArmor: 0
     underArmor: 0
     psiDefence: *StandardDynamicPsiDefence
-    meleeDodge:
-      reactions: 0.1
-    meleeDodgeBackPenalty: 0.5
+    meleeDodgeBackPenalty: 0.7
     recovery:
       mana:
         flatHundred: 0.1
@@ -426,8 +428,8 @@ armors:
       health:
         stunNormalized: -0.1
     meleeDodge:
-      reactions: 0.1
-    meleeDodgeBackPenalty: 0.1
+      reactions: 0.02
+    meleeDodgeBackPenalty: 0.7
     overKill: 1.5
     damageModifier: *ClothSuiteResist
     specialWeapon: STR_UNARMED
@@ -445,8 +447,8 @@ armors:
     corpseBattle:
       - STR_MIB_OFFICE_SECURITY_CORPSE
     meleeDodge:
-      reactions: 0.5
-    meleeDodgeBackPenalty: 0.4
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
   - type: STR_MIB_OFFICE_WORKER_ARMOR
     refNode: *MIB_PROCURED_CIVILIAN
     spriteSheet: MIB_OFFICE_WORKER.PCK
@@ -466,9 +468,42 @@ armors:
     corpseBattle:
       - STR_MIB_VIP_BODYGUARD_CORPSE
     meleeDodge:
-      reactions: 0.5
+      reactions: 0.6
     meleeDodgeBackPenalty: 0.4
 
+#Cultists
+  - &CULT_BANDIT
+    type: STR_CULT_GANGER_ARMOR
+    spriteSheet: CULT_GANGER.PCK
+    spriteInv: inventory_CULT_GANGER
+    corpseBattle:
+      - STR_CULT_GANGER_CORPSE
+    #visibilityAtDark: 8
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      energy:
+        flatHundred: 0.12
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.45
+    meleeDodgeBackPenalty: 0.45
+    overKill: 1.5
+    damageModifier: *ClothSuiteResist
+    specialWeapon: STR_UNARMED_TRAINED
+    loftempsSet: [ 3 ]
+  - type: STR_CULT_COORDINATOR_ARMOR
+    refNode: *MIB_PROCURED_CIVILIAN
+    spriteSheet: CULT_COORDINATOR.PCK
+    spriteInv: inventory_CULT_COORDINATOR
+    corpseBattle:
+      - STR_CULT_COORDINATOR_CORPSE
+    meleeDodge:
+      reactions: 0.5
 
 #Zombies
   - type: STR_FACEHUGGER_ARMOR

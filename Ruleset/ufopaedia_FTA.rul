@@ -1729,7 +1729,6 @@ ufopaedia:
       - STR_MIB_OFFICE_SECURITY
     text: STR_MIB_OFFICE_SECURITY_UFOPEDIA
     listOrder: 45170
-
   - id: STR_MIB_VIP_BODYGUARD
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC
@@ -1744,6 +1743,20 @@ ufopaedia:
       - MIB_BANKER
     text: MIB_BANKER_UFOPEDIA
     listOrder: 45190
+  - id: STR_CULT_GANGER
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_CULT_GANGER
+    text: STR_CULT_GANGER_UFOPEDIA
+    listOrder: 45200
+  - id: STR_CULT_COORDINATOR
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_CULT_COORDINATOR
+    text: STR_CULT_COORDINATOR_UFOPEDIA
+    listOrder: 45210
 
 #STR_ALIEN_LIFE_FORMS 65-160
 #enemies - humanoids
@@ -2077,6 +2090,20 @@ ufopaedia:
     requires:
       - STR_SEEKER_DRONE_ARMOR
     listOrder: 250210
+  - id: STR_CULT_GANGER_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_CULT_GANGER_ARMOR_UFOPEDIA
+    requires:
+      - STR_CULT_GANGER_ARMOR
+    listOrder: 250211
+  - id: STR_CULT_COORDINATOR_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_CULT_COORDINATOR_ARMOR_UFOPEDIA
+    requires:
+      - STR_CULT_COORDINATOR_ARMOR
+    listOrder: 250212
   - id: STR_FACEHUGGER_ARMOR
     type_id: 5
     section: STR_TACTICAL_ANALYSIS

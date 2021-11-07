@@ -236,13 +236,13 @@ units:
     stats:
       tu: 50
       stamina: 65
-      health: 25
+      health: 35
       bravery: 90
       reactions: 35
       firing: 48
       throwing: 36
       strength: 26
-      melee: 25
+      melee: 30
       psiStrength: 45
       psiSkill: 0
     armor: STR_XCOM_EX_COMMANDER_ARMOR
@@ -270,7 +270,7 @@ units:
       firing: 55
       throwing: 60
       strength: 45
-      melee: 43
+      melee: 50
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -360,7 +360,7 @@ units:
       firing: 55
       throwing: 60
       strength: 45
-      melee: 40
+      melee: 48
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -401,7 +401,7 @@ units:
       firing: 68
       throwing: 64
       strength: 44
-      melee: 50
+      melee: 53
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -741,6 +741,80 @@ units:
       melee: 10
       psiStrength: 15
 
+#Cultists
+  - type: STR_CULT_GANGER
+    race: STR_CULTISTS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 52
+      stamina: 60
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 50
+      throwing: 45
+      strength: 40
+      melee: 51
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 5
+      psiStrength: 15
+    armor: STR_CULT_GANGER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 8
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+  - type: STR_CULT_COORDINATOR
+    race: STR_CULTISTS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 56
+      health: 38
+      bravery: 90
+      reactions: 45
+      firing: 50
+      throwing: 45
+      strength: 40
+      melee: 56
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
+    armor: STR_CULT_COORDINATOR_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 7
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+
 #Zombies
   - type: STR_FACEHUGGER
     race: STR_ZOMBIE
@@ -948,7 +1022,7 @@ units:
     stats:
       tu: 46
       stamina: 40
-      health: 35
+      health: 30
       bravery: 60
       reactions: 30
       firing: 40

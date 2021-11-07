@@ -520,35 +520,41 @@ mapScripts:
       executionChances: 65
     - type: fillArea
 
-  - type: RESISTANCE_URBAN_HIDEOUT
+  - type: CRAFT_UFO_STREETS_SCRIPT_BIG_MAP
     commands:
     - type: addCraft
       rects: 
-       - [1, 1, 4, 4]
+       - [2, 2, 4, 4]
     - type: addUFO
       rects: 
-       - [1, 1, 4, 4]
+       - [2, 2, 4, 4]
     - type: addLine
       label: 1
       direction: vertical
       executionChances: 33
+      rects: 
+       - [1, 1, 5, 5]
       terrain: URBAN_ROADS
     - type: addLine
       label: 2
       conditionals: -1
       executionChances: 50
       direction: horizontal
+      rects: 
+       - [1, 1, 5, 5]
       terrain: URBAN_ROADS
     - type: addLine
       conditionals: [-1, -2]
       direction: both
+      rects: 
+       - [1, 1, 5, 5]
       terrain: URBAN_ROADS
     - type: addBlock
       size: 2
-      executions: 1
+      executions: 2
     - type: addBlock
       size: 2
-      executions: 2
+      executions: 3
       executionChances: 60
     - type: fillArea
 
