@@ -82,7 +82,7 @@ alienRaces:
       - STR_FREE_SPOT # 12 - Non-Combatant 2
       - STR_FREE_SPOT # 13 - Special Guest 3
 
-  - id: STR_CULTISTS
+  - id: STR_CULT_BANDITS
     members:
       - STR_FREE_SPOT # 0 - Commander
       - STR_FREE_SPOT # 1 - Leader

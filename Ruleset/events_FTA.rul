@@ -293,8 +293,6 @@ events:
     background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_CELL_CREATION_PREREQ]
 
-
-
 #xcom
   - name: STR_WORKSHOP_EVENT
     description: STR_WORKSHOP_EVENT_DESCRIPTION
@@ -315,8 +313,15 @@ events:
     background: BACK17.SCR
     researchList: [STR_IMPROVISED_GRENADE]
     timer: 750
-    timerRandom: 2880 #2 days
+    timerRandom: 20160 #2 weeks
     interruptResearch: STR_IMPROVISED_GRENADE
+  - name: STR_IMPROVISED_SMOKE_GRENADE_TINKERING
+    description: STR_IMPROVISED_SMOKE_GRENADE_TINKERING_DESCRIPTION
+    background: BACK17.SCR
+    researchList: [STR_IMPROVISED_SMOKE_GRENADE]
+    timer: 750
+    timerRandom: 20160 #2 weeks
+    interruptResearch: STR_IMPROVISED_SMOKE_GRENADE
   - name: STR_ROCKET_GLOVE_TINKERING
     description: STR_ROCKET_GLOVE_TINKERING_DESCRIPTION
     background: BACK17.SCR

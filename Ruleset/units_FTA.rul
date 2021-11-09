@@ -743,7 +743,7 @@ units:
 
 #Cultists
   - type: STR_CULT_GANGER
-    race: STR_CULTISTS
+    race: STR_CULT_BANDITS
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 52
@@ -779,7 +779,7 @@ units:
     spotter: 2
     canSurrender: true
   - type: STR_CULT_COORDINATOR
-    race: STR_CULTISTS
+    race: STR_CULT_BANDITS
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 56

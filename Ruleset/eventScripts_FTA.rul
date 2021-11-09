@@ -134,12 +134,9 @@ eventScripts:
     researchTriggers:
       STR_IMPROVISED_GRENADE: false
       STR_ENGINEER_STATUS_REPORT: true
-    itemTriggers:
-      STR_SPORTS_BOW: true
-      STR_BOW_ARROW: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 80
+    executionOdds: 60
     minDifficulty: 0
     maxDifficulty: 3
   - type: STR_IMPROVISED_GRENADE_SCRIPT_SH #extra SH copy
@@ -147,7 +144,17 @@ eventScripts:
     executionOdds: 20
     minDifficulty: 4
     maxDifficulty: 4
-
+  - type: STR_IMPROVISED_SMOKE_GRENADE_SCRIPT
+    oneTimeSequentialEvents: [STR_IMPROVISED_SMOKE_GRENADE_TINKERING]
+    researchTriggers:
+      STR_IMPROVISED_GRENADE: true
+      STR_IMPROVISED_SMOKE_GRENADE: false
+      STR_ENGINEER_STATUS_REPORT: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 60
+    minDifficulty: 0
+    maxDifficulty: 4
   - &STR_KATANA_TINKERING_SCRIPT
     type: STR_KATANA_TINKERING_SCRIPT
     oneTimeSequentialEvents: [STR_KATANA_TINKERING]
@@ -168,7 +175,6 @@ eventScripts:
     executionOdds: 3
     minDifficulty: 4
     maxDifficulty: 4
-
   - &STR_ROCKET_GLOVE_TINKERING_SCRIPT
     type: STR_ROCKET_GLOVE_TINKERING_SCRIPT
     oneTimeSequentialEvents: [STR_ROCKET_GLOVE_TINKERING]
@@ -186,7 +192,6 @@ eventScripts:
     executionOdds: 4
     minDifficulty: 4
     maxDifficulty: 4
-
   - type: STR_HELICOPTER_SCRIPT
     oneTimeSequentialEvents: [STR_HELICOPTER]
     researchTriggers:

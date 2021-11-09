@@ -346,7 +346,8 @@ extraSprites:
       445: Resources/MiscItems/bigob_HighTechParts.png
       446: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_CarbineAmmo.png
-     
+      448: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedSmokeGrenade.png
+
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -500,7 +501,7 @@ extraSprites:
       445: Resources/MiscItems/floorob_HighTechParts.png
       446: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_CarbineAmmo.png
-
+      448: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedSmokeGrenade.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -611,6 +612,7 @@ extraSprites:
       930: Resources/MiscItems/handob_NoNe.png
       938: Resources/Weapons/Earthbound/Faction/handob_Lever_action_Carbine.png
       946: Resources/Weapons/Earthbound/Faction/handob_Lever_action_CarbineAmmo.png
+      954: Resources/Weapons/Earthbound/Grenades/handob_ImprovisedSmokeGrenade.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

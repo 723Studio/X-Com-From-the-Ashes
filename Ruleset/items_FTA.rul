@@ -1974,7 +1974,7 @@ items:
       ArmorEffectiveness: 0.65
       ToArmorPre: 0.01
     damageType: 1
-    clipSize: 10
+    clipSize: 5
     battleType: 2
     armor: 20
     attraction: 9
@@ -3703,6 +3703,47 @@ items:
     isExplodingInHands: true
     battleType: 4
     listOrder: 21010
+  - type: STR_IMPROVISED_SMOKE_GRENADE
+    categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
+    size: 0.05
+    landOnly: true
+    costBuy: 320
+    costSell: 200
+    weight: 3
+    bigSprite: 448
+    floorSprite: 448
+    handSprite: 954
+    hitAnimation: 88
+    explosionHitSound: 70 #0 or 284 xcf
+    power: 40
+    damageType: 9
+    damageAlter:
+      ResistType: 6
+      RandomType: 3
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToStun: 0.1
+      ToMorale: 0.05
+      ToHealth: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: -1
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 32
+    costUnprime:
+      time: 25
+    battleType: 4
+    fuseType: -2
+    recoveryPoints: 2
+    experienceTrainingMode: 7
+    listOrder: 21040
+    tags:
+      FTAG_DAZE_VALUE: 30
+      FTAG_DAZE_TIME: 1
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
@@ -3866,7 +3907,7 @@ items:
     damageType: 1
     damageAlter:
       ResistType: 6
-      RandomType: 2
+      RandomType: 3
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
       ToStun: 0.1
@@ -3886,7 +3927,7 @@ items:
     battleType: 4
     fuseType: -2
     recoveryPoints: 2
-    #experienceTrainingMode: 7
+    experienceTrainingMode: 7
     listOrder: 21040
     tags:
       FTAG_DAZE_VALUE: 100

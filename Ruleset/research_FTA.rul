@@ -1281,10 +1281,15 @@ research:
       - STR_PUMP_ACTION_SHOTGUN
     listOrder: 30290
   - name: STR_IMPROVISED_GRENADE
-    cost: 20
+    cost: 15
     points: 1
     needItem: true
     listOrder: 30300
+  - name: STR_IMPROVISED_SMOKE_GRENADE
+    cost: 22
+    points: 2
+    needItem: true
+    listOrder: 30302
   - name: STR_LIQUID_FLAME
     cost: 10
     points: 1

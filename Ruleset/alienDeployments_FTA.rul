@@ -1252,7 +1252,7 @@ alienDeployments:
             []
 
   - type: STR_RESISTANCE_FARM_CULTISTS
-    race: STR_CULTISTS
+    race: STR_CULT_BANDITS
     civiliansByType:
       STR_MALE_CIVILIAN_FARMER: 4
       STR_FEMALE_CIVILIAN_FARMER: 2

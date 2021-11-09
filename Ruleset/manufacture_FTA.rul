@@ -239,6 +239,19 @@ manufacture:
     producedItems:
       STR_IMPROVISED_GRENADE: 1
     listOrder: 220030
+  - name: STR_IMPROVISED_SMOKE_GRENADE
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_IMPROVISED_SMOKE_GRENADE
+    requiredItems:
+      STR_CHEMICALS: 1
+    space: 1
+    time: 14
+    cost: 25
+    producedItems:
+      STR_IMPROVISED_SMOKE_GRENADE: 1
+    listOrder: 220030
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
