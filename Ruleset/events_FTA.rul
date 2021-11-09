@@ -400,7 +400,6 @@ events:
     timerRandom: 1440
     interruptResearch: STR_EXPANDABLE_AMMO
 
-
 #random fun events
   # Mysterious Sponsor
   - name: STR_MYSTERIOUS_SPONSOR_50000
