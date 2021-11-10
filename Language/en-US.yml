@@ -698,6 +698,13 @@ en-US:
   STR_ARMADILLO_AUTOPSY_UFOPEDIA: #TODO
   STR_ARMADILLO_ARMOR: "Armadillo Combat Analysis"
   STR_ARMADILLO_ARMOR_UFOPEDIA: #TODO
+  STR_AM: "Amphibian"
+  STR_AM_CORPSE: "Amphibian Corpse"
+  STR_AM_UFOPEDIA: "" #TODO
+  STR_AM_AUTOPSY: "Amphibian Autopsy"
+  STR_AM_AUTOPSY_UFOPEDIA: "" #TODO
+  STR_AM_ARMOR: "Amphibian Combat Analysis"
+  STR_AM_ARMOR_UFOPEDIA: "placeholder" #TODO
 
 
 #other units

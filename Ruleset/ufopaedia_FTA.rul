@@ -1937,6 +1937,24 @@ ufopaedia:
     text_width: 149
     listOrder: 95090
 
+  - id: STR_AM
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_AM
+    image_id: UFOPEDIA_IMG_AM_CPAL
+    text: STR_AM_UFOPEDIA
+    text_width: 158
+    listOrder: 95091
+  - id: STR_AM_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_AM_CORPSE
+    image_id: UFOPEDIA_IMG_AM_AUTOPSY_CPAL
+    text: STR_AM_AUTOPSY_UFOPEDIA
+    text_width: 149
+    listOrder: 95092
 
 ## STR_ALIEN_RESEARCH_UC 160-230k
   - id: STR_ALIEN_ORIGINS
@@ -2158,7 +2176,14 @@ ufopaedia:
     text: STR_ARMADILLO_ARMOR_UFOPEDIA
     requires:
       - STR_ARMADILLO_ARMOR
-    listOrder: 250250
+    listOrder: 250251
+  - id: STR_AM_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_AM_ARMOR_UFOPEDIA
+    requires:
+      - STR_AM_ARMOR
+    listOrder: 250252
 #list orders
     # STR_XCOM_REPORTS_UC 0-6999
     # STR_TECHNOLOGY 7000

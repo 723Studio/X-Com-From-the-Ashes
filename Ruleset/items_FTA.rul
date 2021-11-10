@@ -4475,7 +4475,37 @@ items:
   - type: STR_ARMADILLO_WEAPON
     refNode: *MonsterWeapon
     bigSprite: 442
-
+  - type: STR_AM_WEAPON #renamed copypaste
+    categories: [STR_BUILT_INS, STR_MELEE]
+    weight: 0
+    bigSprite: 412 
+    floorSprite: 31
+    handSprite: 104 # placeholder!
+    meleeSound: 48
+    meleeHitSound: 81
+    clipSize: -1
+    #power: 30
+    damageAlter:
+      RandomType: 7
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.3
+      ToWound: 2
+    accuracyMelee: 100
+    meleeMultiplier:
+      flatHundred: 0.7
+      melee: 0.60
+    damageBonus:
+      strength: 0.3
+      melee: 0.2
+    tuMelee: 10
+    strengthApplied: true
+    damageType: 7
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
@@ -5296,6 +5326,14 @@ items:
     bigSprite: 130
     floorSprite: 130
     listOrder: 100490
+  - type: STR_AM
+    refNode: *liveMonster
+    listOrder: 100491
+  - type: STR_AM_CORPSE
+    refNode: *monsterCorpse
+    bigSprite: 133
+    floorSprite: 133
+    listOrder: 100492
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT

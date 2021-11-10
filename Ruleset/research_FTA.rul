@@ -569,6 +569,7 @@ research:
       - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_CHUPACABRA_CORPSE
       - STR_ARMADILLO_CORPSE
+      - STR_AM_CORPSE
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 288
     points: 17
@@ -941,6 +942,24 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
     listOrder: 6220
+  - name: STR_AM_CORPSE
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 750
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 6221
+  - name: STR_AM
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 820
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    listOrder: 6222
 
   #enemies - aliens
   #combat analysis 
@@ -1028,7 +1047,13 @@ research:
       - STR_ARMADILLO
       - STR_ARMADILLO_CORPSE
     listOrder: 6310
-
+  - name: STR_AM_ARMOR
+    cost: 180
+    points: 5
+    dependencies:
+      - STR_AM
+      - STR_AM_CORPSE
+    listOrder: 6300
 #weapons and equipment
   - name: STR_WRENCH
     cost: 5
