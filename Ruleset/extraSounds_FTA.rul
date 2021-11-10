@@ -84,4 +84,6 @@ extraSounds:
       135: Resources/Weapons/Sounds/boltar.wav
       136: Resources/Weapons/Sounds/lever-action-fire.ogg
       137: Resources/Weapons/Sounds/der.ogg
+      138: Resources/Armors/Enemies/Monsters/AM_Death.ogg
+      139: Resources/Armors/Enemies/Monsters/AM_agro.ogg
 

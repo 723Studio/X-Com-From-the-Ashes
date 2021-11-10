@@ -197,6 +197,7 @@ extraSprites:
       130: Resources/Armors/Enemies/Monsters/bigob_ARMADILLO_CORPSE.png
       131: Resources/Armors/Enemies/Cultists/bigob_CULT_GANGER.png
       132: Resources/Armors/Enemies/Cultists/bigob_CULT_COORDINATOR.png
+      133: Resources/Armors/Enemies/Monsters/bigob_AM_CORPSE.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -385,6 +386,7 @@ extraSprites:
       130: Resources/Armors/Enemies/Monsters/floorob_ARMADILLO_CORPSE.png
       131: Resources/Armors/Enemies/Cultists/floorob_CULT_GANGER.png
       132: Resources/Armors/Enemies/Cultists/floorob_CULT_COORDINATOR.png
+      133: Resources/Armors/Enemies/Monsters/floorob_AM_CORPSE.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
       301: Resources/MiscItems/floorob_spawn_red.png
@@ -913,6 +915,18 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_CHUPACABRA_AUTOPSY_CPAL.png 
+  - type: UFOPEDIA_IMG_AM_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_AM_CPAL.png
+  - type: UFOPEDIA_IMG_AM_AUTOPSY_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_AM_AUTOPSY_CPAL.png 
   - type: UFOPEDIA_IMG_ZOMBIE_STERILE
     singleImage: true
     width: 320
@@ -1225,6 +1239,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Monsters/inventory_ARMADILLO.png
+  - type: AM.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Armors/Enemies/Monsters/AM.png
+  - type: inventory_AM
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Monsters/inventory_AM.png
 #resistance
   - type: RESISTANCE_AGENT.PCK
     width: 512

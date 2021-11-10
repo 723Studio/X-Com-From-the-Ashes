@@ -1015,6 +1015,47 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ARMADILLO_WEAPON
+  - type: STR_AM
+    race: STR_AM
+    rank: STR_LIVE_TERRORIST
+    stats: # to be edited
+      tu: 115
+      stamina: 140
+      health: 50
+      bravery: 100
+      reactions: 65
+      firing: 0
+      throwing: 0
+      strength: 70
+      melee: 80
+      psiStrength: 60
+      psiSkill: 0
+    statsRandom: # to be edited
+      tu: 15
+      stamina: 15
+      health: 10
+      bravery: 20
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 10
+      melee: 15
+      psiStrength: 4
+    armor: STR_AM_ARMOR
+    standHeight: 18 # to be edited
+    kneelHeight: 12 # to be edited
+    value: 15 # to be edited
+    aggroSound: 139 #?
+    deathSound: 138 
+    # panicSound: 265
+    # berserkSound: 266
+    intelligence: 3 # to be edited
+    aggression: 8 # to be edited
+    isLeeroyJenkins: true
+    energyRecovery: 35
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_AM_WEAPON
 
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
