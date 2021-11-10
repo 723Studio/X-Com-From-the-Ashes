@@ -228,7 +228,6 @@ manufacture:
 #equipment
   - name: STR_IMPROVISED_GRENADE
     category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
     requires:
       - STR_IMPROVISED_GRENADE
     requiredItems:
@@ -241,7 +240,6 @@ manufacture:
     listOrder: 220030
   - name: STR_IMPROVISED_SMOKE_GRENADE
     category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
     requires:
       - STR_IMPROVISED_SMOKE_GRENADE
     requiredItems:

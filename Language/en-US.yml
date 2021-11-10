@@ -652,7 +652,7 @@ en-US:
   MIB_BANKER_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts."
   STR_CULT_BANDITS: "Bandits"
   STR_CULT_GANGER: "Cult Ganger"
-  STR_CULT_GANGER_UFOPEDIA: #TODO
+  STR_CULT_GANGER_UFOPEDIA: "This man grew up 'on the street,' and from a young age he was involved in crime - petty theft, drug dealing, hooliganism. Growing up, he joined a gang, was involved in robbery, extortion, and did various errands for his bosses. Lately, he's been getting jobs involving contract murders and kidnappings more often. However, he is barely paid for this orders, and he is afraid to argue with the gang bosses or leave."
   STR_CULT_GANGER_ARMOR: "Cult Ganger Combat Analysis"
   STR_CULT_GANGER_ARMOR_UFOPEDIA: "" #TODO
   STR_CULT_COORDINATOR: "Cult Coordinator"

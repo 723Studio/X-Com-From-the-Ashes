@@ -3701,6 +3701,8 @@ items:
       time: 45
     unprimeActionName: STR_UNPRIME_GRENADE
     isExplodingInHands: true
+    invWidth: 1
+    invHeight: 2
     battleType: 4
     listOrder: 21010
   - type: STR_IMPROVISED_SMOKE_GRENADE
