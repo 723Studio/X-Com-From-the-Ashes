@@ -549,16 +549,16 @@ armors:
       - 1.0 #14 - Pressure
       - 0.9 #15 - Bio
     loftempsSet: [ 1 ]
-  - type: STR_ZOMBIE_STERILE_ARMOR
-    spriteSheet: ZOMBIE_STERILE.PCK
+  - type: STR_FRESH_ZOMBIE_ARMOR
+    spriteSheet: FRESH_ZOMBIE.PCK
     spriteInv: inventory_ZOMBIE
     allowInv: false
     corpseBattle:
-      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_FRESH_ZOMBIE_CORPSE
     visibilityAtDark: 12
     heatVision: 20
     psiDefence: *StandardDynamicPsiDefence
-    drawingRoutine: 4
+    #drawingRoutine: 4
     bleedImmune: true
     zombiImmune: true
     createsMeleeThreat: false
@@ -715,12 +715,12 @@ armors:
       - 1.0 #15 - Bio
     loftempsSet: [ 2 ]
 
-  - type: STR_AM_ARMOR
+  - type: STR_AMPHIBIAN_ARMOR
     spriteSheet: AM.PCK
     spriteInv: inventory_AM
     allowInv: false
     corpseBattle:
-      - STR_AM_CORPSE
+      - STR_AMPHIBIAN_CORPSE
     visibilityAtDark: 40 # to be edited
     heatVision: 35 # to be edited
     frontArmor: 4 # to be edited

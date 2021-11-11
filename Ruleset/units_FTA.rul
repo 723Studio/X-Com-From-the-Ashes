@@ -855,7 +855,7 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_FACEHUGGER_WEAPON
-  - type: STR_ZOMBIE_STERILE_TERRORIST
+  - type: STR_FRESH_ZOMBIE
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
@@ -881,7 +881,7 @@ units:
       strength: 10
       melee: 3
       psiStrength: 4
-    armor: STR_ZOMBIE_STERILE_ARMOR
+    armor: STR_FRESH_ZOMBIE_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 5
@@ -889,8 +889,8 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: 75
-    deathSound: 76
+    aggroSound: 154 # [150, 151, 152, 153, 154]
+    deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
   - type: STR_ZOMBIE_GRUBAS_TERRORIST
@@ -927,8 +927,8 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: 75
-    deathSound: 76
+    aggroSound: 141 #[141, 142]
+    deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 
@@ -973,13 +973,14 @@ units:
     energyRecovery: 35
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_CHUPACABRA_WEAPON
+      - - STR_CLAWS_WEAPON
+        - STR_FANGS_WEAPON
   - type: STR_ARMADILLO
     race: STR_ARMADILLO
     rank: STR_LIVE_TERRORIST
     stats:
       tu: 70
-      stamina: 150
+      stamina: 160
       health: 80
       bravery: 100
       reactions: 45
@@ -987,7 +988,7 @@ units:
       throwing: 0
       strength: 75
       melee: 65
-      psiStrength: 60
+      psiStrength: 40
       psiSkill: 0
     statsRandom:
       tu: 10
@@ -1003,7 +1004,7 @@ units:
     armor: STR_ARMADILLO_ARMOR
     standHeight: 18
     kneelHeight: 12
-    value: 15
+    value: 10
     aggroSound: 123 #TODO
     deathSound: 124 #TODO
     # panicSound: 265
@@ -1014,48 +1015,48 @@ units:
     energyRecovery: 45
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_ARMADILLO_WEAPON
-  - type: STR_AM
-    race: STR_AM
+      - - STR_FANGS_WEAPON
+  - type: STR_AMPHIBIAN
+    race: STR_AMPHIBIAN
     rank: STR_LIVE_TERRORIST
-    stats: # to be edited
-      tu: 115
+    stats:
+      tu: 80
       stamina: 140
-      health: 50
+      health: 110
       bravery: 100
-      reactions: 65
+      reactions: 40
       firing: 0
       throwing: 0
-      strength: 70
-      melee: 80
-      psiStrength: 60
+      strength: 90
+      melee: 70
+      psiStrength: 45
       psiSkill: 0
-    statsRandom: # to be edited
-      tu: 15
+    statsRandom:
+      tu: 10
       stamina: 15
       health: 10
       bravery: 20
-      reactions: 5
+      reactions: 3
       firing: 0
       throwing: 0
       strength: 10
       melee: 15
       psiStrength: 4
-    armor: STR_AM_ARMOR
-    standHeight: 18 # to be edited
-    kneelHeight: 12 # to be edited
-    value: 15 # to be edited
+    armor: STR_AMPHIBIAN_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 12
     aggroSound: 139 #?
     deathSound: 138 
     # panicSound: 265
     # berserkSound: 266
-    intelligence: 3 # to be edited
-    aggression: 8 # to be edited
+    intelligence: 3
+    aggression: 8
     isLeeroyJenkins: true
     energyRecovery: 35
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_AM_WEAPON
+       - - STR_CLAWS_WEAPON
   - type: STR_SWARMIDS_LARGE
     race: STR_SWARMIDS
     rank: STR_LIVE_TERRORIST
@@ -1112,6 +1113,7 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_SWARMIDS_SMALL_WEAPON
+
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
     race: STR_HUMAN

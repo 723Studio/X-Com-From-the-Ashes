@@ -9,7 +9,7 @@ battleScripts:
       unitSide: 1
       maxDifficulty: 3
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST]
+      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_FRESH_ZOMBIE]
     - type: spawnUnit #random additional
       startTurn: 5
       executionChances: 20
@@ -17,7 +17,7 @@ battleScripts:
       randomPackSize: true
       unitSide: 1
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST,STR_ZOMBIE_GRUBAS_TERRORIST]
+      unitSet: [STR_FACEHUGGER, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE,STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #high diff
       startTurn: 4
       executionChances: 60
@@ -26,7 +26,7 @@ battleScripts:
       unitSide: 1
       minDifficulty: 3
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
+      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE, STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #extra SH gift
       startTurn: 5
       executionChances: 10
@@ -35,7 +35,7 @@ battleScripts:
       unitSide: 1
       minDifficulty: 4
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
-      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER,STR_ZOMBIE_STERILE_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST]
+      unitSet: [STR_FACEHUGGER, STR_FACEHUGGER,STR_FRESH_ZOMBIE, STR_ZOMBIE_GRUBAS_TERRORIST]
 
   - type: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     commands:

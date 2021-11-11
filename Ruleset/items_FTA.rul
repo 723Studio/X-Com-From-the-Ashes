@@ -4363,9 +4363,8 @@ items:
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 3
     bigSprite: 357
-    meleeSound: 48
-    meleeHitSound: 55
-    #strengthApplied: true
+    meleeSound: 140
+    meleeHitSound: 81
     #power: 20
     damageType: 7
     damageAlter:
@@ -4396,7 +4395,6 @@ items:
     meleeSound: 49
     meleeHitSound: 81
     clipSize: -1
-    #strengthApplied: true
     power: 35
     damageType: 7
     damageBonus:
@@ -4412,7 +4410,7 @@ items:
     invWidth: 2
     invHeight: 3
     recover: false
-    zombieUnit: STR_ZOMBIE_STERILE_TERRORIST
+    zombieUnit: STR_FRESH_ZOMBIE
     flatRate: true
     tags:
       FTAG_SELFKILL_WEAPON: 1
@@ -4440,15 +4438,16 @@ items:
     clipSize: -1
     autoShots: 6
     recover: false
-  - &MonsterWeapon
-    type: STR_CHUPACABRA_WEAPON
+  - &ClawsWeapon
+    type: STR_CLAWS_WEAPON
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
-    bigSprite: 412
+    bigSprite: 442
     floorSprite: 31
     handSprite: 104
     meleeSound: 48
     meleeHitSound: 81
+    meleeAnimation: 12
     clipSize: -1
     #power: 30
     damageAlter:
@@ -4472,17 +4471,16 @@ items:
     invHeight: 3
     recover: false
     flatRate: true
-  - type: STR_ARMADILLO_WEAPON
-    refNode: *MonsterWeapon
-    bigSprite: 442
-  - type: STR_AM_WEAPON #renamed copypaste
+  - &FangsWeapon
+    type: STR_FANGS_WEAPON #make it different
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
-    bigSprite: 412 
+    bigSprite: 412
     floorSprite: 31
-    handSprite: 104 # placeholder!
+    handSprite: 104
     meleeSound: 48
     meleeHitSound: 81
+    meleeAnimation: 16
     clipSize: -1
     #power: 30
     damageAlter:
@@ -5333,10 +5331,10 @@ items:
     battleType: 11
     armor: 20
     listOrder: 100390
-  - type: STR_ZOMBIE_STERILE_TERRORIST
+  - type: STR_FRESH_ZOMBIE
     refNode: *liveMonster
     listOrder: 100400
-  - type: STR_ZOMBIE_STERILE_CORPSE
+  - type: STR_FRESH_ZOMBIE_CORPSE
     refNode: *monsterCorpse
     bigSprite: 105
     floorSprite: 105
@@ -5371,7 +5369,7 @@ items:
   - type: STR_AM
     refNode: *liveMonster
     listOrder: 100491
-  - type: STR_AM_CORPSE
+  - type: STR_AMPHIBIAN_CORPSE
     refNode: *monsterCorpse
     bigSprite: 133
     floorSprite: 133
