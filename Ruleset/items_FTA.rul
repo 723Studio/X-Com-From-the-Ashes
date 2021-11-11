@@ -4504,12 +4504,13 @@ items:
     invHeight: 3
     recover: false
     flatRate: true
-  - type: STR_SWARMIDS_LARGE_WEAPON
+
+  - &SwarmidsWeapon
+    type: STR_SWARMIDS_LARGE_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
     bigSprite: 449
-    #handSprite: 104
-    meleeSound: 141
+    meleeSound: 158
     clipSize: -1
     power: 20
     strengthApplied: false
@@ -4518,34 +4519,17 @@ items:
       IgnoreDirection: true
       ArmorEffectiveness: 0.3
       ToTile: 0.0
-    accuracyMelee: 100
-    tuMelee: 7
-    battleType: 3
-    fixedWeapon: true
-    invWidth: 2
-    invHeight: 2
-    recover: false
-  - type: STR_SWARMIDS_SMALL_WEAPON
-    categories: [STR_BUILT_INS]
-    weight: 3
-    bigSprite: 449
-    #handSprite: 104
-    meleeSound: 141
-    clipSize: -1
-    power: 20
-    strengthApplied: false
-    damageType: 7
-    damageAlter:
-      IgnoreDirection: true
-      ArmorEffectiveness: 0.5
-      ToTile: 0.0
-    accuracyMelee: 100
+    accuracyMelee: 120
     tuMelee: 15
     battleType: 3
     fixedWeapon: true
     invWidth: 2
     invHeight: 2
     recover: false
+  - type: STR_SWARMIDS_SMALL_WEAPON
+    refNode: *SwarmidsWeapon
+    accuracyMelee: 100
+    tuMelee: 25
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0

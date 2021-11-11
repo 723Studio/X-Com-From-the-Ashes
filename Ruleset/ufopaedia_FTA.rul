@@ -2215,20 +2215,6 @@ ufopaedia:
     requires:
       - STR_SWARMIDS_LARGE_ARMOR
     listOrder: 250254 
-  - id: STR_SWARMIDS_SMALL_WEAPON
-    type_id: 4
-    section: STR_TACTICAL_ANALYSIS
-#    text: STR_SWARMIDS_SMALL_WEAPON_UFOPEDIA
-    requires:
-      - STR_SWARMIDS
-    listOrder: 250255
-  - id: STR_SWARMIDS_LARGE_WEAPON
-    type_id: 4
-    section: STR_TACTICAL_ANALYSIS
-#    text: STR_SWARMIDS_LARGE_WEAPON_UFOPEDIA
-    requires:
-      - STR_SWARMIDS
-    listOrder: 250256
 
 #list orders
     # STR_XCOM_REPORTS_UC 0-6999
