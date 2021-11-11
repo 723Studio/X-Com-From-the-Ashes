@@ -570,6 +570,7 @@ research:
       - STR_CHUPACABRA_CORPSE
       - STR_ARMADILLO_CORPSE
       - STR_AM_CORPSE
+      - STR_SWARMIDS_CORPSE
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 288
     points: 17
@@ -960,6 +961,44 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
     listOrder: 6222
+  - name: STR_SWARMIDS
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    dependencies:
+      - STR_SWARMIDS_SMALL
+      - STR_SWARMIDS_LARGE
+  - name: STR_SWARMIDS_CORPSE
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_SWARMIDS_LARGE
+    requiresBaseFunc: [BIOLAB]
+    cost: 90
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SWARMIDS
+    #getOneFree:
+    #  - STR_SWARMIDS_SMALL
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 115700
+  - name: STR_SWARMIDS_SMALL
+    requiresBaseFunc: [BIOLAB]
+    cost: 90
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SWARMIDS
+    #getOneFree:
+    #  - STR_SWARMIDS_LARGE
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 115690
 
   #enemies - aliens
   #combat analysis 
@@ -1054,6 +1093,16 @@ research:
       - STR_AM
       - STR_AM_CORPSE
     listOrder: 6300
+  - name: STR_SWARMIDS_SMALL_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SWARMIDS
+  - name: STR_SWARMIDS_LARGE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SWARMIDS
 #weapons and equipment
   - name: STR_WRENCH
     cost: 5

@@ -86,4 +86,7 @@ extraSounds:
       137: Resources/Weapons/Sounds/der.ogg
       138: Resources/Armors/Enemies/Monsters/AM_Death.ogg
       139: Resources/Armors/Enemies/Monsters/AM_agro.ogg
+      140: Resources/Armors/Enemies/Monsters/SWARMIDS_movement.wav
+      141: Resources/Armors/Enemies/Monsters/SWARMIDS_attack.wav
+      142: Resources/Armors/Enemies/Monsters/SWARMIDS_death.wav      
 
