@@ -565,11 +565,11 @@ research:
     spawnedEvent: STR_STRANGE_CREATURE_AUTOPSY
     dependencies:
       - STR_FACEHUGGER_CORPSE
-      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_FRESH_ZOMBIE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_CHUPACABRA_CORPSE
       - STR_ARMADILLO_CORPSE
-      - STR_AM_CORPSE
+      - STR_AMPHIBIAN_CORPSE
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 288
     points: 17
@@ -580,7 +580,7 @@ research:
     points: 0
     dependencies:
       - STR_FACEHUGGER
-      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_FRESH_ZOMBIE
       - STR_ZOMBIE_GRUBAS_TERRORIST
 
 #Zombie arc
@@ -598,13 +598,13 @@ research:
     cost: 0
     points: 15
     dependencies:
-      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_FRESH_ZOMBIE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
   - name: STR_LIVE_ZOMBIE
     cost: 0
     points: 15
     dependencies:
-      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_FRESH_ZOMBIE
       - STR_ZOMBIE_GRUBAS_TERRORIST
   - name: STR_ZOMBIE_BIOLOGY
     cost: 1920
@@ -864,7 +864,7 @@ research:
       - STR_STRANGE_CREATURE
       - STR_LIVE_INFECTOR
     listOrder: 6140
-  - name: STR_ZOMBIE_STERILE_CORPSE
+  - name: STR_FRESH_ZOMBIE_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
     points: 15
@@ -874,7 +874,7 @@ research:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_ZOMBIE_AUTOPSY
     listOrder: 6150
-  - name: STR_ZOMBIE_STERILE_TERRORIST
+  - name: STR_FRESH_ZOMBIE
     requiresBaseFunc: [ BIOLAB ]
     cost: 780
     points: 25
@@ -942,7 +942,7 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
     listOrder: 6220
-  - name: STR_AM_CORPSE
+  - name: STR_AMPHIBIAN_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
     points: 30
@@ -951,7 +951,7 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
     listOrder: 6221
-  - name: STR_AM
+  - name: STR_AMPHIBIAN
     requiresBaseFunc: [ BIOLAB ]
     cost: 820
     points: 40
@@ -1021,7 +1021,7 @@ research:
       - STR_FACEHUGGER
       - STR_FACEHUGGER_CORPSE
     listOrder: 6270
-  - name: STR_ZOMBIE_STERILE_ARMOR
+  - name: STR_FRESH_ZOMBIE_ARMOR
     cost: 160
     points: 5
     dependencies:
@@ -1047,12 +1047,12 @@ research:
       - STR_ARMADILLO
       - STR_ARMADILLO_CORPSE
     listOrder: 6310
-  - name: STR_AM_ARMOR
+  - name: STR_AMPHIBIAN_ARMOR
     cost: 180
     points: 5
     dependencies:
-      - STR_AM
-      - STR_AM_CORPSE
+      - STR_AMPHIBIAN
+      - STR_AMPHIBIAN_CORPSE
     listOrder: 6300
 #weapons and equipment
   - name: STR_WRENCH

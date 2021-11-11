@@ -670,13 +670,13 @@ en-US:
   STR_FACEHUGGER_AUTOPSY_UFOPEDIA: "This creature's circulation is closed, and it breathes through the contraction of a single lung.  It is completely incomprehensible how it feeds and reproduces its own kind. Its tail has a terrifying sting, joined to a system of intricate glands. The contents of the sac is a separate organism, connected to its host by a network of thick nerve tubes. Unfortunately, the contents of the sac have been damaged and almost nothing is left of the parasite, as it decomposes extremely quickly in the air environment."
   STR_FACEHUGGER_ARMOR: "Facehugger Combat Analysis"
   STR_FACEHUGGER_ARMOR_UFOPEDIA: "The only defense of this creature is its agility and size, and the main task is to get close to the victim and make a jump. The creature grasps the victim's head and pokes its stinger into his chest, zombifying the person. Once zombification complete, the facehugger dies."
-  STR_ZOMBIE_STERILE_TERRORIST: "Zombie"
+  STR_FRESH_ZOMBIE: "Zombie"
   STR_ZOMBIE_STERILE_UFOPEDIA: "Once in the past it was a man, but now it is extremely difficult to call him a human. It is striking that this creature gives out almost everything - a terrible smell from the rotting of a dead body, incoherent sounds and clumsy movements. A parasite sits inside the body, which has disabled all organism systems and controls movement. If you destroy the parasite, the body will be just a piece of meat. It decomposes quickly, because the blood has long been oxidized and the organs do not keep the body in proper condition. Motility and immunity are absent."
-  STR_ZOMBIE_STERILE_CORPSE: "Zombie corpse"
+  STR_FRESH_ZOMBIE_CORPSE: "Zombie corpse"
   STR_ZOMBIE_STERILE_AUTOPSY: "Zombie Autopsy"
   STR_ZOMBIE_STERILE_AUTOPSY_UFOPEDIA: "The parasite was extracted from the zombie. It is clear that the body is dead and decomposes quickly, a large number of microorganisms were found inside that feed on dead flesh. Due to the lack of motility and immunity, some organs and systems of the body have stumbled so much that they very remotely resemble their original."
-  STR_ZOMBIE_STERILE_ARMOR: "Zombie Combat Analysis"
-  STR_ZOMBIE_STERILE_ARMOR_UFOPEDIA: "Zombies are dangerous only at close range. They have no tactics, are slow, disorganized, and usually pile up in droves. Zombie are completely immune to pain, and their bodies are controlled not by their brains, but by a parasite entrenched in their chests. The lack of armor makes slashing weapons and buckshot especially effective."
+  STR_FRESH_ZOMBIE_ARMOR: "Zombie Combat Analysis"
+  STR_FRESH_ZOMBIE_ARMOR_UFOPEDIA: "Zombies are dangerous only at close range. They have no tactics, are slow, disorganized, and usually pile up in droves. Zombie are completely immune to pain, and their bodies are controlled not by their brains, but by a parasite entrenched in their chests. The lack of armor makes slashing weapons and buckshot especially effective."
   STR_ZOMBIE_GRUBAS_TERRORIST: "Fat Zombie"
   STR_ZOMBIE_GRUBAS_UFOPEDIA: "The reaction of the body to the poison that was injected by the parasite caused a strong transformation of the body. As a result, the whole body was swollen and overgrown with fat. The muscles were also covered with fat, which now created a monster with great physical strength. Due to the abundance of flesh and fat, this specimen can take many shots. It is recommended to use a large caliber when seeing this organism in battle."
   STR_ZOMBIE_GRUBAS_CORPSE: "Fat Zombie corpse"
@@ -698,13 +698,13 @@ en-US:
   STR_ARMADILLO_AUTOPSY_UFOPEDIA: #TODO
   STR_ARMADILLO_ARMOR: "Armadillo Combat Analysis"
   STR_ARMADILLO_ARMOR_UFOPEDIA: #TODO
-  STR_AM: "Amphibian"
-  STR_AM_CORPSE: "Amphibian Corpse"
-  STR_AM_UFOPEDIA: "" #TODO
-  STR_AM_AUTOPSY: "Amphibian Autopsy"
-  STR_AM_AUTOPSY_UFOPEDIA: "" #TODO
-  STR_AM_ARMOR: "Amphibian Combat Analysis"
-  STR_AM_ARMOR_UFOPEDIA: "placeholder" #TODO
+  STR_AMPHIBIAN: "Amphibian"
+  STR_AMPHIBIAN_CORPSE: "Amphibian Corpse"
+  STR_AMPHIBIAN_UFOPEDIA: "" #TODO
+  STR_AMPHIBIAN_AUTOPSY: "Amphibian Autopsy"
+  STR_AMPHIBIAN_AUTOPSY_UFOPEDIA: "" #TODO
+  STR_AMPHIBIAN_ARMOR: "Amphibian Combat Analysis"
+  STR_AMPHIBIAN_ARMOR_UFOPEDIA: "placeholder" #TODO
 
 
 #other units

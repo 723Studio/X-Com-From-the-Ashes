@@ -133,6 +133,8 @@ extraSprites:
     files:
       4: Resources/Weapons/MeleeAnimations/StunRod.png
       8: Resources/Weapons/MeleeAnimations/Sword.png
+      12: Resources/Weapons/MeleeAnimations/Claws.png
+      16: Resources/Weapons/MeleeAnimations/Fangs.png
   - type: X1.PCK #ExplosionAnimations, index step 8
     width: 1024
     height: 64
@@ -311,7 +313,7 @@ extraSprites:
       409: Resources/MiscItems/bigob_MibDataContainer.png
       410: Resources/Weapons/MIB/bigob_Woundgun.png
       411: Resources/Weapons/MIB/bigob_WoundgunClip.png 
-      412: Resources/Armors/Enemies/Monsters/bigob_ChupacabraWeapon.png
+      412: Resources/Armors/Enemies/Monsters/bigob_FangsWeapon.png
       413: Resources/MiscItems/bigob_Crate.png
       414: Resources/Weapons/Earthbound/General/bigob_HeavyRevolver.png
       415: Resources/Weapons/Earthbound/General/bigob_HeavyRevolver_Clip.png
@@ -341,7 +343,7 @@ extraSprites:
       439: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AP.png
       440: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AA.png
       441: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedGrenade.png
-      442: Resources/Armors/Enemies/Monsters/bigob_ArmadilloWeapon.png
+      442: Resources/Armors/Enemies/Monsters/bigob_ClawsWeapon.png
       443: Resources/MiscItems/bigob_SpareParts.png
       444: Resources/MiscItems/bigob_Chemicals.png
       445: Resources/MiscItems/bigob_HighTechParts.png
@@ -359,7 +361,7 @@ extraSprites:
       102: Resources/Armors/Enemies/MiB/floorob_MIB_ENFORCER.png
       103: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_AGENT.png
       104: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SCIENTIST.png
-      105: Resources/Armors/Enemies/Zombies/floorob_ZOMBIE_STERILE_CORPSE.png
+      105: Resources/Armors/Enemies/Zombies/floorob_FRESH_ZOMBIE_CORPSE.png
       106: Resources/Armors/Enemies/Zombies/floorob_GRUBAS_CORPSE.png
       107: Resources/Armors/Enemies/Zombies/floorob_FACEHUGGER_CORPSE.png
       109: Resources/Armors/Civilians/Citizens/floorob_FARMER_CORPSE.png
@@ -1184,13 +1186,13 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Zombies/inventory_FACEHUGGER.png
-  - type: ZOMBIE_STERILE.PCK
+  - type: FRESH_ZOMBIE.PCK
+    width: 512
+    height: 720
     subX: 32
     subY: 40
-    width: 512
-    height: 200
     files:
-      0: Resources/Armors/Enemies/Zombies/ZOMBIE_STERILE.png
+      0: Resources/Armors/Enemies/Zombies/FRESH_ZOMBIE.png
   - type: inventory_ZOMBIE
     singleImage: true
     files:

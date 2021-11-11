@@ -2108,7 +2108,7 @@ alienDeployments:
       - CULTA
     script: RESISTANCE_FARM_AMBUSH
     data:
-      - alienRank: 5 #STR_ZOMBIE_STERILE_TERRORIST
+      - alienRank: 5 #STR_FRESH_ZOMBIE
         lowQty: 8
         highQty: 17
         dQty: 4
