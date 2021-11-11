@@ -698,6 +698,21 @@ en-US:
   STR_ARMADILLO_AUTOPSY_UFOPEDIA: #TODO
   STR_ARMADILLO_ARMOR: "Armadillo Combat Analysis"
   STR_ARMADILLO_ARMOR_UFOPEDIA: #TODO
+  STR_SWARMIDS_LARGE_WEAPON: "Big Swarm Stings"
+  STR_SWARMIDS_SMALL_WEAPON: "Swarm Stings"
+  STR_SWARMIDS_LARGE_ARMOR: "Swarmids (Large) Combat Analysis"
+  STR_SWARMIDS_SMALL_ARMOR: "Swarmids (Small) Combat Analysis"
+  STR_SWARMIDS_CORPSE: "Swarmid Corpses"
+  STR_SWARMIDS_LARGE_CORPSE: "Lots of Swarmid Corpses"
+  STR_SWARMIDS_SMALL_CORPSE: "Swarmid Corpses"
+  STR_SWARMIDS: "Swarmids"
+  STR_SWARMIDS_SMALL: "Small Swarmids Swarm"
+  STR_SWARMIDS_LARGE: "Large Swarmids Swarm"
+  STR_SWARMIDS_LARGE_TERRORIST: "Swarmids Swarm"
+  STR_SWARMIDS_SMALL_TERRORIST: "Swarmids"
+  STR_SWARMIDS_AUTOPSY: "Swarmids Autopsy"
+  STR_SWARMIDS_UFOPEDIA: "Swarmids are unlike any other creature known to science. They aggressively search for prey, spotting them using their well developed multi-ocular structure. The eyes can work independently so the creature can see reasonably well unless all of them are damaged. Their stinger is very robust; it has difficulties penetrating heavy armor directly, but they instinctively seek out weak spots, leaving pheromones as a signal to the rest of the swarm. Conventional projectile-based weapons are of little use, only explosions and especially fire can damage them consistently."
+  STR_SWARMIDS_AUTOPSY_UFOPEDIA: "The body of this insectoid creature comprises a slightly armored torso and a flexible tail. The torso hosts a slot containing multiple articulated eyes and is surmounted by three pairs of wings. The tail is wholly muscle tissue, similar to the human tongue, and it ends with a fearsome stinger used for attacking prey."
   STR_AMPHIBIAN: "Amphibian"
   STR_AMPHIBIAN_CORPSE: "Amphibian Corpse"
   STR_AMPHIBIAN_UFOPEDIA: "" #TODO
@@ -705,7 +720,6 @@ en-US:
   STR_AMPHIBIAN_AUTOPSY_UFOPEDIA: "" #TODO
   STR_AMPHIBIAN_ARMOR: "Amphibian Combat Analysis"
   STR_AMPHIBIAN_ARMOR_UFOPEDIA: "placeholder" #TODO
-
 
 #other units
   STR_RESISTANCE_AGENT: "Resistance Agent"

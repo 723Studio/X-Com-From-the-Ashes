@@ -200,6 +200,7 @@ extraSprites:
       131: Resources/Armors/Enemies/Cultists/bigob_CULT_GANGER.png
       132: Resources/Armors/Enemies/Cultists/bigob_CULT_COORDINATOR.png
       133: Resources/Armors/Enemies/Monsters/bigob_AM_CORPSE.png
+      134: Resources/Armors/Enemies/Monsters/bigobs_SWARMIDS_CORPSE.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -350,7 +351,7 @@ extraSprites:
       446: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedSmokeGrenade.png
-
+      449: Resources/Armors/Enemies/Monsters/bigob_SwarmidWeapon.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -389,6 +390,8 @@ extraSprites:
       131: Resources/Armors/Enemies/Cultists/floorob_CULT_GANGER.png
       132: Resources/Armors/Enemies/Cultists/floorob_CULT_COORDINATOR.png
       133: Resources/Armors/Enemies/Monsters/floorob_AM_CORPSE.png
+      134: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_1.png
+
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
       301: Resources/MiscItems/floorob_spawn_red.png
@@ -506,6 +509,11 @@ extraSprites:
       446: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedSmokeGrenade.png
+
+      #4x4 units extra sprites
+      600: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_2.png
+      601: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_3.png
+      602: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_4.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -923,6 +931,18 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_AM_CPAL.png
+  - type: UFOPEDIA_IMG_SWARMIDS_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/UfopediaPics/Enemies/ufopedia_SWARMIDS_AUTOPSY.png
+  - type: UFOPEDIA_IMG_SWARMIDS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_SWARMIDS.png
   - type: UFOPEDIA_IMG_AM_AUTOPSY_CPAL
     singleImage: true
     width: 320
@@ -1252,6 +1272,24 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Monsters/inventory_AM.png
+  - type: SWARMIDS_SMALL.PCK
+    width: 512
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/Monsters/SWARMIDS_SMALL.png
+  - type: SWARMIDS_LARGE.PCK
+    width: 256
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/Monsters/SWARMIDS_LARGE.png
+  - type: inventory_SWARMIDS
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Monsters/inventory_SWARMIDS.png
 #resistance
   - type: RESISTANCE_AGENT.PCK
     width: 512

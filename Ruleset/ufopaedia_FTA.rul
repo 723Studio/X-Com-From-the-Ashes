@@ -1956,6 +1956,25 @@ ufopaedia:
     text_width: 149
     listOrder: 95092
 
+  - id: STR_SWARMIDS
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SWARMIDS
+    image_id: UFOPEDIA_IMG_SWARMIDS
+    text: STR_SWARMIDS_UFOPEDIA
+    text_width: 158
+    listOrder: 95093
+  - id: STR_SWARMIDS_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SWARMIDS_CORPSE
+    image_id: UFOPEDIA_IMG_SWARMIDS_AUTOPSY
+    text: STR_SWARMIDS_AUTOPSY_UFOPEDIA
+    text_width: 158
+    listOrder: 95094    
+
 ## STR_ALIEN_RESEARCH_UC 160-230k
   - id: STR_ALIEN_ORIGINS
     type_id: 8
@@ -2183,7 +2202,34 @@ ufopaedia:
     text: STR_AMPHIBIAN_ARMOR_UFOPEDIA
     requires:
       - STR_AMPHIBIAN_ARMOR
-    listOrder: 250252
+    listOrder: 250252 
+  - id: STR_SWARMIDS_SMALL_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    requires:
+      - STR_SWARMIDS_SMALL_ARMOR
+    listOrder: 250253 
+  - id: STR_SWARMIDS_LARGE_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    requires:
+      - STR_SWARMIDS_LARGE_ARMOR
+    listOrder: 250254 
+  - id: STR_SWARMIDS_SMALL_WEAPON
+    type_id: 4
+    section: STR_TACTICAL_ANALYSIS
+#    text: STR_SWARMIDS_SMALL_WEAPON_UFOPEDIA
+    requires:
+      - STR_SWARMIDS
+    listOrder: 250255
+  - id: STR_SWARMIDS_LARGE_WEAPON
+    type_id: 4
+    section: STR_TACTICAL_ANALYSIS
+#    text: STR_SWARMIDS_LARGE_WEAPON_UFOPEDIA
+    requires:
+      - STR_SWARMIDS
+    listOrder: 250256
+
 #list orders
     # STR_XCOM_REPORTS_UC 0-6999
     # STR_TECHNOLOGY 7000

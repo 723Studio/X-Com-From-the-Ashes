@@ -4504,6 +4504,48 @@ items:
     invHeight: 3
     recover: false
     flatRate: true
+  - type: STR_SWARMIDS_LARGE_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 449
+    #handSprite: 104
+    meleeSound: 141
+    clipSize: -1
+    power: 20
+    strengthApplied: false
+    damageType: 7
+    damageAlter:
+      IgnoreDirection: true
+      ArmorEffectiveness: 0.3
+      ToTile: 0.0
+    accuracyMelee: 100
+    tuMelee: 7
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+  - type: STR_SWARMIDS_SMALL_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 449
+    #handSprite: 104
+    meleeSound: 141
+    clipSize: -1
+    power: 20
+    strengthApplied: false
+    damageType: 7
+    damageAlter:
+      IgnoreDirection: true
+      ArmorEffectiveness: 0.5
+      ToTile: 0.0
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
@@ -5332,6 +5374,64 @@ items:
     bigSprite: 133
     floorSprite: 133
     listOrder: 100492
+  - type: STR_SWARMIDS_SMALL
+    refNode: *liveMonster
+    listOrder: 100493
+  - type: STR_SWARMIDS_LARGE
+    refNode: *liveMonster
+    listOrder: 100494
+  - type: STR_SWARMIDS_SMALL_CORPSE
+    refNode: *monsterCorpse
+    categories: [STR_CORPSES]
+    size: 0.4 # to be edited
+    costSell: 10000 # to be edited
+    weight: 20 # to be edited
+    bigSprite: 134  #GOOD
+    floorSprite: 134
+    invWidth: 2 
+    invHeight: 3 
+    recoveryPoints: 3 # to be edited
+    battleType: 11 # to be edited
+    armor: 26 # to be edited
+    listOrder: 100495
+  - type: STR_SWARMIDS_CORPSE
+    refNode: *monsterCorpse
+    size: 1
+    costSell: 40000 # to be edited
+    battleType: 11 
+    listOrder: 100496
+  - type: SWARMIDS_CORPSE_1
+    refNode: *monsterCorpse
+    floorSprite: 134
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 4 #to be edited
+    listOrder: 100497
+  - type: SWARMIDS_CORPSE_2
+    refNode: *monsterCorpse
+    floorSprite: 600
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+    listOrder: 100498
+  - type: SWARMIDS_CORPSE_3
+    refNode: *monsterCorpse
+    floorSprite: 601
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+    listOrder: 10049
+  - type: SWARMIDS_CORPSE_4
+    refNode: *monsterCorpse
+    floorSprite: 602
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+    listOrder: 10051
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
