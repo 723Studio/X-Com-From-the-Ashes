@@ -4148,7 +4148,7 @@ items:
     listOrder: 23060
 #utilities
   - type: STR_FLASHLIGHT
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_CONCEALABLE]
     size: 0.1
     costBuy: 140
     costSell: 75
@@ -4165,7 +4165,7 @@ items:
     listOrder: 25000
     landOnly: true
   - type: STR_ELECTRO_FLARE
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_CONCEALABLE]
     size: 0.1
     costBuy: 85
     costSell: 60
