@@ -1956,11 +1956,11 @@ ufopaedia:
     text_width: 149
     listOrder: 95092
 
-  - id: STR_SWARMIDS
+  - id: STR_SWARMIDS_SMALL
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
     requires:
-      - STR_SWARMIDS
+      - STR_SWARMIDS_SMALL
     image_id: UFOPEDIA_IMG_SWARMIDS
     text: STR_SWARMIDS_UFOPEDIA
     text_width: 158
@@ -2209,12 +2209,6 @@ ufopaedia:
     requires:
       - STR_SWARMIDS_SMALL_ARMOR
     listOrder: 250253 
-  - id: STR_SWARMIDS_LARGE_ARMOR
-    type_id: 5
-    section: STR_TACTICAL_ANALYSIS
-    requires:
-      - STR_SWARMIDS_LARGE_ARMOR
-    listOrder: 250254 
 
 #list orders
     # STR_XCOM_REPORTS_UC 0-6999

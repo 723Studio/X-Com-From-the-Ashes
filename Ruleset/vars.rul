@@ -46,20 +46,21 @@ researchTreeDisabled: true
 #difficulty
 startingDifficulty: 1
 difficultyCoefficient: [0, 1, 2, 3, 4]
-aimAndArmorMultipliers: [0.8, 1.0, 1.0, 1.05, 1.1]
-sellPriceCoefficient: [105, 100, 90, 85, 75]
+aimAndArmorMultipliers: [0.8, 1.0, 1.05, 1.1, 1.25]
+sellPriceCoefficient: [105, 100, 90, 80, 70]
 statGrowthMultipliers:
-  tu: 5
+  tu: 6
   stamina: 4
-  health: 2
+  health: 3
   bravery: 0
   reactions: 6
   firing: 6
-  throwing: 3
+  throwing: 4
   strength: 2
   psiStrength: 4
   psiSkill: 4
   melee: 5
+  mana: 5
 
 #battlescape
 maxViewDistance: 40
@@ -74,8 +75,8 @@ tooMuchSmokeThreshold: 13
 giveScoreAlsoForResearchedArtifacts: true
 statisticalBulletConservation: true
 stunningImprovesMorale: true
-tuRecoveryWakeUpNewTurn: 70
-minReactionAccuracy: 30
+tuRecoveryWakeUpNewTurn: 60
+minReactionAccuracy: 35
 turnAIUseGrenade: 2 #Consider if changing back to 1
 turnAIUseBlaster: 2 
 surrenderMode: 0 #FIXME Consider

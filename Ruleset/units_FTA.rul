@@ -889,7 +889,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: 154 # [150, 151, 152, 153, 154]
+    #aggroSound: 154 # [150, 151, 152, 153, 154]
     deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -928,7 +928,8 @@ units:
     isLeeroyJenkins: true
     livingWeapon: true
     aggroSound: 141 #[141, 142]
-    deathSound: [143, 144]
+    deathSound: [155, 156]
+    #deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 
@@ -1084,6 +1085,7 @@ units:
       melee: 10
       psiStrength: 4
     armor: STR_SWARMIDS_LARGE_ARMOR
+    altRecoveredUnit: STR_SWARMIDS_SMALL
     standHeight: 17
     floatHeight: 5
     kneelHeight: 11
