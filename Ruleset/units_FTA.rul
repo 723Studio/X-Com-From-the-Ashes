@@ -938,7 +938,7 @@ units:
     race: STR_CHUPACABRA
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 115
+      tu: 100
       stamina: 140
       health: 50
       bravery: 100

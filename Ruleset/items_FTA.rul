@@ -4462,7 +4462,7 @@ items:
     damageBonus:
       strength: 0.3
       melee: 0.2
-    tuMelee: 10
+    tuMelee: 20
     strengthApplied: true
     damageType: 7
     battleType: 3
@@ -4495,7 +4495,7 @@ items:
     damageBonus:
       strength: 0.3
       melee: 0.2
-    tuMelee: 10
+    tuMelee: 20
     strengthApplied: true
     damageType: 7
     battleType: 3
