@@ -23,7 +23,7 @@ covertOperations:
       - STR_MIB_CHASING_SUCCESS
     soldierSlots: 3
     optionalSoldierSlots: 2
-    baseChances: 0
+    baseChances: 60
     danger: 800
     costs: 432
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
