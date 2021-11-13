@@ -4737,7 +4737,7 @@ items:
     recover: false
     listOrder: 30060
   - type: STR_BRIEFCASE_CASH
-    categories: [STR_LOOT]
+    categories: [STR_LOOT, STR_CONCEALABLE]
     size: 0.1
     landOnly: true
     costBuy: 101000
