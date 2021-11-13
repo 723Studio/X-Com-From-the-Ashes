@@ -4746,7 +4746,7 @@ items:
     floorSprite: 429
     handSprite: 850
     weight: 5
-    battleType: 0
+    battleType: 2
     invWidth: 2
     invHeight: 2
     recoveryPoints: 40
