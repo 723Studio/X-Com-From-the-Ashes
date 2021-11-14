@@ -847,6 +847,47 @@ armors:
     loftempsSet: [ 4 ]
     tags:
       HANDCUFF_PROTECTION: 100
+  - type: STR_ENERGY_WISP_ARMOR #Swarmid copypaste
+    spriteSheet: ENERGY_WISP.PCK
+    spriteInv: inventory_ENERGY_WISP
+    allowInv: false
+    corpseBattle:
+      - STR_ENERGY_WISP_CORPSE
+    visibilityAtDark: 20
+    heatVision: 70
+    psiVision: 5
+    frontArmor: 1
+    sideArmor: 1
+    rearArmor: 1
+    underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 8
+    constantAnimation: true
+    bleedImmune: true
+    movementType: 1
+    createsMeleeThreat: true
+    ignoresMeleeThreat: true
+    overKill: 1.5
+    damageModifier:
+      - 0.1 #0 - None - special
+      - 0.1 #1 - AP - kinetic
+      - 4.0 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 0.15 #4 - Laser
+      - 0.3 #5 - Plasma
+      - 0.4 #6 - Stun
+      - 0.1 #7 - Melee - Cutting
+      - 0.3 #8 - Acid
+      - 2.0 #9 - Smoke - Choke
+      - 0.1 #10 - EMP
+      - 0.0 #11 - Electric
+      - 0.7 #12 - Psi
+      - 0.7 #13 - Warp
+      - 0.0 #14 - Pressure
+      - 1.0 #15 - Bio
+    loftempsSet: [ 4 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_ARMOR
     spriteSheet: FARMER.PCK

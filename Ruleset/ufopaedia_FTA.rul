@@ -1975,6 +1975,25 @@ ufopaedia:
     text_width: 158
     listOrder: 95094    
 
+  - id: STR_ENERGY_WISP
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ENERGY_WISP
+    image_id: UFOPEDIA_IMG_ENERGY_WISP_CPAL
+    text: STR_ENERGY_WISP_UFOPEDIA
+    text_width: 158
+    listOrder: 95095
+  - id: STR_ENERGY_WISP_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ENERGY_WISP_CORPSE
+    image_id: UFOPEDIA_IMG_ENERGY_WISP_AUTOPSY_CPAL
+    text: STR_ENERGY_WISP_AUTOPSY_UFOPEDIA
+    text_width: 149
+    listOrder: 95096
+
 ## STR_ALIEN_RESEARCH_UC 160-230k
   - id: STR_ALIEN_ORIGINS
     type_id: 8
@@ -2209,6 +2228,13 @@ ufopaedia:
     requires:
       - STR_SWARMIDS_SMALL_ARMOR
     listOrder: 250253 
+  - id: STR_ENERGY_WISP_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_ENERGY_WISP_ARMOR_UFOPEDIA
+    requires:
+      - STR_ENERGY_WISP_ARMOR
+    listOrder: 250250
 
 #list orders
     # STR_XCOM_REPORTS_UC 0-6999

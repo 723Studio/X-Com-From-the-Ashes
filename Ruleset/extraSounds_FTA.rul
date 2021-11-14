@@ -106,3 +106,5 @@ extraSounds:
       157: Resources/Armors/Enemies/Monsters/SWARMIDS_movement.wav
       158: Resources/Armors/Enemies/Monsters/SWARMIDS_attack.wav
       159: Resources/Armors/Enemies/Monsters/SWARMIDS_death.wav  
+      160: Resources/Armors/Enemies/Monsters/pkn_slice.wav
+      161: Resources/Armors/Enemies/Monsters/EnergyWispMove.ogg  

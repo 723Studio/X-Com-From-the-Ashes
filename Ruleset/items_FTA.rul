@@ -4595,6 +4595,26 @@ items:
     experienceTrainingMode: 23
     recover: false
     listOrder: 17513
+  - type: STR_ENERGY_WISP_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 450 # Blank placeholder
+    meleeSound: 160
+    clipSize: -1
+    power: 20
+    strengthApplied: false
+    damageType: 7
+    damageAlter:
+      IgnoreDirection: true
+      ArmorEffectiveness: 0.3
+      ToTile: 0.0
+    accuracyMelee: 120
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
 #other
   - type: STR_FAKE_AGENT_ID
     categories: [STR_CONCEALABLE, STR_DISGUISE]
@@ -5407,7 +5427,7 @@ items:
     invHeight: 0
     battleType: 11
     recover: false
-    listOrder: 10049
+    listOrder: 100499
   - type: SWARMIDS_CORPSE_4
     refNode: *monsterCorpse
     floorSprite: 602
@@ -5415,7 +5435,15 @@ items:
     invHeight: 0
     battleType: 11
     recover: false
-    listOrder: 10051
+    listOrder: 100051
+  - type: STR_ENERGY_WISP
+    refNode: *liveMonster
+    listOrder: 100052
+  - type: STR_ENERGY_WISP_CORPSE
+    refNode: *monsterCorpse
+    bigSprite: 135 #placeholder!
+    floorSprite: 135 
+    listOrder: 100053
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
     spawnUnit: STR_RESISTANCE_AGENT
