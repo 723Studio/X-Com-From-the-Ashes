@@ -1604,6 +1604,14 @@ ufopaedia:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     text: STR_FIRE_EXTINGUISHER_UFOPEDIA
     listOrder: 24140
+  - id: STR_DEPLOYABLE_SENTRY
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    text: STR_DEPLOYABLE_SENTRY
+    listOrder: 24150
+  
 
 #STR_ALIEN_ARTIFACTS 30-45
   - id: STR_HEAVY_PLASMA
@@ -1842,6 +1850,24 @@ ufopaedia:
     text_width: 140
     requires:
       - STR_SEEKER_DRONE_TERRORIST
+    listOrder: 65060
+  - id: STR_DEPLOYED_SENTRY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMST
+    image_id: WIP_UFOPEDIA.SPK #UFOPEDIA_DEPLOYED_SENTRY_CPAL
+    text: STR_DEPLOYED_SENTRY_UFOPEDIA
+    text_width: 129
+    requires:
+      - STR_DEPLOYED_SENTRY
+    listOrder: 65050
+  - id: STR_SENTRY_WRECK
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: WIP_UFOPEDIA.SPK #UFOPEDIA_SENTRY_WRECK_CPAL
+    text: STR_SENTRY_WRECK_UFOPEDIA
+    text_width: 140
+    requires:
+      - STR_DEPLOYED_SENTRY
     listOrder: 65060
 
 #enemies - creatures
@@ -2146,6 +2172,12 @@ ufopaedia:
     text: STR_SEEKER_DRONE_ARMOR_UFOPEDIA
     requires:
       - STR_SEEKER_DRONE_ARMOR
+  - id: STR_DEPLOYED_SENTRY_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_DEPLOYED_SENTRY_ARMOR_UFOPEDIA
+    requires:
+      - STR_DEPLOYED_SENTRY_ARMOR
     listOrder: 250210
   - id: STR_CULT_GANGER_ARMOR
     type_id: 5

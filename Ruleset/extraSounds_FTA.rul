@@ -106,3 +106,7 @@ extraSounds:
       157: Resources/Armors/Enemies/Monsters/SWARMIDS_movement.wav
       158: Resources/Armors/Enemies/Monsters/SWARMIDS_attack.wav
       159: Resources/Armors/Enemies/Monsters/SWARMIDS_death.wav  
+      160: Resources/Weapons/Earthbound/Special/DeploySentry.ogg
+      161: Resources/Weapons/Earthbound/Special/SentryCannonFire.ogg
+      162: Resources/Weapons/Earthbound/Special/ObjectsDetectorScan.ogg
+      163: Resources/Weapons/Earthbound/Special/SentryCannonSpin.ogg

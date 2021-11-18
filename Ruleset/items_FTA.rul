@@ -2453,7 +2453,8 @@ items:
     armor: 16
     attraction: 15
     listOrder: 15010
-  - type: STR_LMG
+  - &LMGWeapon
+    type: STR_LMG
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
@@ -4595,6 +4596,14 @@ items:
     experienceTrainingMode: 23
     recover: false
     listOrder: 17513
+  - type: STR_Sentry_Weapon
+    refNode: *LMGWeapon
+    categories: [STR_BUILT_INS,STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
+    bigSprite: 451
+    fireSound: 161
+    bulletSpeed: 999
+    recover: false
+    fixedWeapon: true
 #other
   - type: STR_FAKE_AGENT_ID
     categories: [STR_CONCEALABLE, STR_DISGUISE]
@@ -5665,6 +5674,45 @@ items:
     recoveryPoints: -2
     armor: 35
     listOrder: 100660
+#netral AI
+  - type: STR_DEPLOYABLE_SENTRY
+    weight: 40
+    bigSprite: 450
+    handSprite: 962
+    floorSprite: 450
+    bulletSprite: 9
+    bulletSpeed: 999
+    hitAnimation: 999
+    fireSound: 160
+    accuracyAimed: 100
+    costAimed:
+      time: 90
+    confAimed:
+      name: STR_DEPLOY_TURRET
+    power: 0
+    damageType: 0
+    spawnUnit: STR_DEPLOYED_SENTRY
+    spawnUnitFaction: -1
+    clipSize: 1
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    blockBothHands: true
+    maxRange: 1
+    arcingShot: true
+  - type: STR_SENTRY_WRECK
+    refNode: *monsterCorpse #to be edited
+    categories: [STR_WRECKS]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 30
+    battleType: 11
+    armor: 30
+    #recover: false
+    bigSprite: 135
+    floorSprite: 135
+    listOrder: 3070
 #xcom
   - type: STR_CORPSE_LEATHER_COAT
     categories: [STR_CORPSES]

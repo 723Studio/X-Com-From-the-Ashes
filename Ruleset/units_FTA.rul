@@ -1887,3 +1887,34 @@ units:
 
   - type: STR_FREE_SPOT #placeholder unit to make alien race more clear to read
     refNode: *STR_MIB_AGENT    
+#Neutral AI
+  - type: STR_DEPLOYED_SENTRY
+    race: STR_NEUTRAL_AI
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 50
+      stamina: 1
+      health: 30
+      bravery: 110
+      reactions: 50
+      firing: 60
+      throwing: 0
+      strength: 40
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 0
+    armor: STR_DEPLOYED_SENTRY_ARMOR
+    standHeight: 12
+    kneelHeight: 12 
+    civilianRecoveryType: STR_SCIENTIST
+    value: 80
+    deathSound: 23
+    #panicSound: 
+    #berserkSound: 
+    intelligence: 4
+    aggression: 1
+    aggroSound: 162 # [162,163]
+    #sniper: 75 
+    #spotter: 2 
+    canSurrender: False

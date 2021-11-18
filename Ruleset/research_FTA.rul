@@ -758,6 +758,32 @@ research:
     dependencies:
       - STR_TODOIUM
     listOrder: 6060
+  - name: STR_DEPLOYED_SENTRY
+    requiresBaseFunc: [ HQ ]
+    cost: 4800 #to be balanced 
+    points: 150 #to be balanced 
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 30400
+  - name: STR_SENTRY_WRECK
+    requiresBaseFunc: [ HQ ]
+    cost: 4000 #to be balanced
+    points: 40 #to be balanced
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 30410
+  - name: STR_DEPLOYED_SENTRY_ARMOR
+    cost: 130
+    points: 15
+    dependencies:
+      - STR_SENTRY_WRECK
+      - STR_DEPLOYABLE_SENTRY
+      - STR_TODOIUM
+    listOrder: 30420
   #MiB\Procured
   - name: STR_MIB_OFFICE_ENGINEER
     requiresBaseFunc: [ INTLAB ]
@@ -1388,6 +1414,14 @@ research:
     dependencies:
       - STR_TODOIUM
     listOrder: 30390
+  - name: STR_DEPLOYABLE_SENTRY
+    cost: 2100
+    points: 200
+    dependencies:
+      - STR_SENTRY_WRECK
+      - STR_DEPLOYABLE_SENTRY
+      - STR_TODOIUM
+    listOrder: 30400
 
   #evidence
   - name: STR_FLOPPY_SCIENTISTS_LOG

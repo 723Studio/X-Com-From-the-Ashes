@@ -201,6 +201,23 @@ alienRaces:
       - STR_FREE_SPOT # 12 - Non-Combatant 2
       - STR_FREE_SPOT # 13 - Special Guest 3
 
+  - id: STR_NEUTRAL_AI
+    members:
+      - STR_FREE_SPOT # 0 - Commander
+      - STR_FREE_SPOT # 1 - Leader
+      - STR_FREE_SPOT # 2 - Engineer
+      - STR_FREE_SPOT # 3 - Medic
+      - STR_FREE_SPOT # 4 - Navigator
+      - STR_DEPLOYED_SENTRY # 5 - Soldier
+      - STR_FREE_SPOT # 6 - Terrorist 1
+      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_FREE_SPOT # 8 - Special Guest 1
+      - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_FREE_SPOT # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_FREE_SPOT # 12 - Non-Combatant 2
+      - STR_FREE_SPOT # 13 - Special Guest 3
+
   # - id: STR_SPAWNS
   #   members:
   #     - STR_XCOM_EX_COMMANDER # 0 - Commander

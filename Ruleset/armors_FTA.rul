@@ -1031,6 +1031,49 @@ armors:
       # - STR_DOGE_BARK
       - STR_DOGE_BITE
     loftempsSet: [ 2 ]
+#Netral AI
+  - type: STR_DEPLOYED_SENTRY_ARMOR
+    spriteInv: inventory_SENTRY
+    spriteSheet: DEPLOYED_SENTRY.png
+    corpseBattle:
+      - STR_SENTRY_WRECK
+    #corpseGeo: STR_SCRAP_METAL
+    visibilityAtDark: 16
+    visibilityAtDay: 30
+    heatVision: 40
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 25
+    drawingRoutine: 19
+    allowInv: true
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    overKill: 3.0
+    psiDefence: *StandardDynamicPsiDefence # to be edited
+    damageModifier: # to be edited
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.4 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.0 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 3.5 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
+    builtInWeapons:
+      - STR_Sentry_Weapon
+      - STR_LMG_CLIP
+    loftempsSet: [4]
 
 #Resistance
   - type: STR_RESISTANCE_SCIENTIST_ARMOR

@@ -631,6 +631,15 @@ en-US:
   STR_SEEKER_DRONE_CORPSE_UFOPEDIA: "It is difficult to identify the manufacturer of this drone from the remaining wreckage. Apparently, it was equipped with some sort of self-destruct device. All the electronics were almost completely scorched out, with only ash left of the central computing units. Only the wiring and weapons control system were partially intact. The weapon itself is some kind of powerful energy emitter. Alas, the high degree of damage prevents any hope of reverse engineering."
   STR_SEEKER_DRONE_ARMOR: "Seeker Drone Combat Analysis"
   STR_SEEKER_DRONE_ARMOR_UFOPEDIA: "Swift and agile, this combat drone is unpredictable due to its AI chip. Armed with a powerful energy weapon, it is perfectly capable of performing reconnaissance and interdiction tasks."
+  STR_NEUTRAL_AI: "AI Unit"
+  STR_DEPLOYABLE_SENTRY: "Deployable Sentry"
+  STR_DEPLOYABLE_SENTRY_UFOPEDIA: "Placeholder" #fix me
+  STR_DEPLOY_TURRET: "Deploy Turret"
+  STR_DEPLOYED_SENTRY: "Deployed Sentry"
+  STR_SENTRY_WRECK: "Sentry Wreck"
+  STR_DEPLOYED_SENTRY_UFOPEDIA: "Placeholder" #fix me
+  STR_DEPLOYED_SENTRY_ARMOR: "Deployed Sentry Combat Analysis"
+  STR_DEPLOYED_SENTRY_ARMOR_UFOPEDIA: "placeholder" #fix me
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_CORPSE: "Former X-COM Commander Corpse"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
@@ -1025,6 +1034,7 @@ en-US:
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
   STR_SEEKER_DRONE_WEAPON: "Seeker Drone Weapon"
+  STR_Sentry_Weapon: Sentry_Weapon
   STR_CHUPACABRA_WEAPON: "Chupacabra attack"
   STR_ARMADILLO_WEAPON: "Armadillo attack"
   STR_FLOPPY_SCIENTISTS_LOG: "Scientist's Floppy Disk"

@@ -201,6 +201,7 @@ extraSprites:
       132: Resources/Armors/Enemies/Cultists/bigob_CULT_COORDINATOR.png
       133: Resources/Armors/Enemies/Monsters/bigob_AM_CORPSE.png
       134: Resources/Armors/Enemies/Monsters/bigobs_SWARMIDS_CORPSE.png
+      135: Resources/Weapons/Earthbound/Special/bigob_SentryWreck.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -352,6 +353,8 @@ extraSprites:
       447: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedSmokeGrenade.png
       449: Resources/Armors/Enemies/Monsters/bigob_SwarmidWeapon.png
+      450: Resources/Weapons/Earthbound/Special/bigob_PackedSentry.png
+      451: Resources/Weapons/Earthbound/Special/bigob_SentryWeapon.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -391,6 +394,7 @@ extraSprites:
       132: Resources/Armors/Enemies/Cultists/floorob_CULT_COORDINATOR.png
       133: Resources/Armors/Enemies/Monsters/floorob_AM_CORPSE.png
       134: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_1.png
+      135: Resources/Weapons/Earthbound/Special/floorob_SentryWreck.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -509,7 +513,8 @@ extraSprites:
       446: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedSmokeGrenade.png
-
+      #449 swarmid weapon
+      450: Resources/Weapons/Earthbound/Special/floorob_PackedSentry.png
       #4x4 units extra sprites
       600: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_2.png
       601: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_3.png
@@ -625,6 +630,7 @@ extraSprites:
       938: Resources/Weapons/Earthbound/Faction/handob_Lever_action_Carbine.png
       946: Resources/Weapons/Earthbound/Faction/handob_Lever_action_CarbineAmmo.png
       954: Resources/Weapons/Earthbound/Grenades/handob_ImprovisedSmokeGrenade.png
+      962: Resources/Weapons/Earthbound/Special/handob_PackedSentry.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
@@ -1405,6 +1411,18 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Civilians/Animals/inventory_DOGE.png
+#AI units
+  - type: DEPLOYED_SENTRY.png
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Weapons/Earthbound/Special/Sentry.png
+  - type: inventory_SENTRY
+    singleImage: true
+    files:
+      0: Resources/Weapons/Earthbound/Special/inventory_Sentry.png
 
 
 #xcom armors
