@@ -141,9 +141,10 @@ covertOperations:
     requires:
       - STR_STEAL_OSPREY_PREREQ
     soldierSlots: 6
-    baseChances: 45
-    danger: 9
-    costs: 160
+    baseChances: 40
+    danger: 0
+    costs: 300
+    engineerSlots: 2
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 150
     successWeightedItemList:

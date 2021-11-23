@@ -105,7 +105,7 @@ armors:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier: &ClothSuiteResist
+    damageModifier: &NoArmorHumanResistance
       - 1.0 #0 - None - special
       - 1.0 #1 - AP - kinetic
       - 1.5 #2 - Incendiary
@@ -113,7 +113,7 @@ armors:
       - 1.0 #4 - Laser
       - 1.0 #5 - Plasma
       - 1.0 #6 - Stun
-      - 1.2 #7 - Melee - Cutting
+      - 1.0 #7 - Melee - Cutting
       - 1.0 #8 - Acid
       - 4.0 #9 - Smoke - Choke
       - 0.0 #10 - EMP
@@ -145,7 +145,7 @@ armors:
       reactions: 0.7
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
-    damageModifier: *ClothSuiteResist
+    damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
   - type: STR_MIB_AGENT_VEST_ARMOR
@@ -431,7 +431,7 @@ armors:
       reactions: 0.02
     meleeDodgeBackPenalty: 0.7
     overKill: 1.5
-    damageModifier: *ClothSuiteResist
+    damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_MIB_OFFICE_MANAGER_ARMOR
@@ -493,7 +493,7 @@ armors:
       reactions: 0.45
     meleeDodgeBackPenalty: 0.45
     overKill: 1.5
-    damageModifier: *ClothSuiteResist
+    damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
   - type: STR_CULT_COORDINATOR_ARMOR
@@ -868,23 +868,7 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &NoArmorHumanResistance
-      - 1.0 #0 - None - special
-      - 1.0 #1 - AP - kinetic
-      - 1.5 #2 - Incendiary
-      - 1.0 #3 - High Explosive - Explosive
-      - 1.0 #4 - Laser
-      - 1.0 #5 - Plasma
-      - 1.0 #6 - Stun
-      - 1.0 #7 - Melee - Cutting
-      - 1.0 #8 - Acid
-      - 4.0 #9 - Smoke - Choke
-      - 0.0 #10 - EMP
-      - 1.0 #11 - Electric
-      - 1.0 #12 - Psi
-      - 1.0 #13 - Warp
-      - 1.0 #14 - Pressure
-      - 1.0 #15 - Bio
+    damageModifier: *NoArmorHumanResistance
     #specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_FARMER_ARMOR
@@ -1079,7 +1063,23 @@ armors:
       reactions: 0.6
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier: *NoArmorHumanResistance
+    damageModifier: #NoArmorHumanResistance, but with smoke resist
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.5 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.0 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 3.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
   - type: STR_RESISTANCE_SOLDIER_ARMOR #TODO

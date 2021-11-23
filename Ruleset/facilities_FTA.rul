@@ -52,8 +52,8 @@ facilities:
      STR_BIOLOGY_EQUIPMENT:
        build: 1
        refund: 1         
-    buildCost: 740000
-    buildTime: 20
+    buildCost: 340000
+    buildTime: 32
     monthlyCost: 15000
     labs: 5
     mapName: XBASF_07

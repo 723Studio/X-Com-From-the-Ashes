@@ -938,7 +938,7 @@ units:
     race: STR_CHUPACABRA
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 100
+      tu: 105
       stamina: 140
       health: 50
       bravery: 100
@@ -950,7 +950,7 @@ units:
       psiStrength: 60
       psiSkill: 0
     statsRandom:
-      tu: 15
+      tu: 10
       stamina: 15
       health: 10
       bravery: 20
@@ -1567,21 +1567,21 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 48
-      stamina: 50
-      health: 34
+      tu: 50
+      stamina: 55
+      health: 22
       bravery: 20
       reactions: 20
-      firing: 20
-      throwing: 15
+      firing: 25
+      throwing: 20
       strength: 20
       psiStrength: 51
       psiSkill: 0
       melee: 20
       mana: 0
     statsRandom:
-      tu: 2
-      stamina: 3
+      tu: 4
+      stamina: 5
       health: 3
       bravery: 10
       reactions: 5
@@ -1595,7 +1595,7 @@ units:
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SCIENTIST
-    value: 80
+    value: 60
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1607,7 +1607,7 @@ units:
   - type: STR_RESISTANCE_SCIENTIST_VIP
     refNode: *STR_RESISTANCE_SCIENTIST
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 100
+    value: 60
     builtInWeaponSets:
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
@@ -1654,34 +1654,34 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 50
+      tu: 60
       stamina: 50
-      health: 27
-      bravery: 35
+      health: 30
+      bravery: 30
       reactions: 35
-      firing: 37
-      throwing: 30
+      firing: 45
+      throwing: 40
       strength: 30
-      melee: 28
+      melee: 30
       psiStrength: 45
       psiSkill: 0
     statsRandom:
-      tu: 3
+      tu: 10
       stamina: 10
-      health: 2
-      bravery: 25
-      reactions: 3
-      firing: 4
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
       throwing: 5
-      strength: 7
-      melee: 8
+      strength: 10
+      melee: 10
       psiStrength: 15
     armor: STR_RESISTANCE_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_RESISTANCE_AGENT
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 30
+    value: 20
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1757,7 +1757,7 @@ units:
     specialObjectiveType: STR_FRIENDLY_VIP
     civilianRecoveryType: STR_RESISTANCE_AGENT
     #prisoner: true
-    value: 50
+    value: 30
     builtInWeaponSets:
       - []
       - []
@@ -1880,10 +1880,10 @@ units:
     canBeMindControlled: false
     berserkChance: 0
     showFullNameInAlienInventory: 1
-    value: 200
+    value: 150
   - type: STR_RESISTANCE_COMPUTER
     refNode: *RESISTANCE_EVIDENCE_DEVICE
-    value: 250
+    value: 180
 
   - type: STR_FREE_SPOT #placeholder unit to make alien race more clear to read
     refNode: *STR_MIB_AGENT    

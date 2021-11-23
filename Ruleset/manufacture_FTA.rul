@@ -151,7 +151,7 @@ manufacture:
       STR_HIGH_TECH_PARTS: 1
     space: 4
     time: 760
-    cost: 3500
+    cost: 8600
     producedItems:
       STR_ROCKET_GLOVE: 1
     listOrder: 220030
@@ -165,7 +165,7 @@ manufacture:
       STR_CHEMICALS: 2
     space: 2
     time: 150
-    cost: 800
+    cost: 1400
     producedItems:
       STR_ROCKET_GLOVE_CLIP: 1
     listOrder: 220030

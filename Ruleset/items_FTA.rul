@@ -224,10 +224,10 @@ items:
     meleeMultiplier:
       melee: 1.1
     costMelee:
-      time: 8
-      energy: 3
+      time: 15
+      energy: 6
     costThrow:
-      energy: 8
+      energy: 12
     #flatRate: true
     battleType: 3
     noiseValue: 0
@@ -578,7 +578,7 @@ items:
     attraction: 20
     listOrder: 3010
   - type: STR_BOW_ARROW
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CLIPS]
     size: 0.08
     landOnly: true
     costBuy: 35
@@ -1900,7 +1900,7 @@ items:
     size: 0.25
     costBuy: 28000
     costSell: 22500
-    weight: 12
+    weight: 15
     landOnly: true
     bigSprite: 328
     floorSprite: 328
@@ -3339,7 +3339,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES]
     size: 0.2
     #landOnly: true
-    costSell: 4200
+    costSell: 12000
     weight: 5
     bigSprite: 436
     floorSprite: 436
@@ -3360,15 +3360,16 @@ items:
     invHeight: 2
     aimRange: 14
     dropoff: 4
-    maxRange: 52
+    maxRange: 30
     experienceTrainingMode: 5
+    supportedInventorySections: [STR_LEFT_HAND, STR_RIGHT_HAND]
     attraction: 20
     listOrder: 19000
   - type: STR_ROCKET_GLOVE_CLIP
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS]
     size: 0.1
     landOnly: true
-    costSell: 1100
+    costSell: 1700
     weight: 2
     bigSprite: 437
     floorSprite: 437
@@ -3689,7 +3690,7 @@ items:
     bigSprite: 441
     floorSprite: 441
     handSprite: 922
-    power: 30
+    power: 35
     damageAlter:
       IgnoreOverKill: false
     damageType: 3
@@ -3717,7 +3718,7 @@ items:
     handSprite: 954
     hitAnimation: 88
     explosionHitSound: 70 #0 or 284 xcf
-    power: 40
+    power: 50
     damageType: 9
     damageAlter:
       ResistType: 6
@@ -4657,7 +4658,7 @@ items:
     weight: 45
     bigSprite: 413
     floorSprite: 413
-    costSell: 6000
+    costSell: 14000
     costThrow:
       time: 70
       energy: 40
@@ -4746,7 +4747,7 @@ items:
     floorSprite: 429
     handSprite: 850
     weight: 5
-    battleType: 2
+    battleType: 10
     invWidth: 2
     invHeight: 2
     recoveryPoints: 40

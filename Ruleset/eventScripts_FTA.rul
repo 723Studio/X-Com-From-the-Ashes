@@ -79,13 +79,13 @@ eventScripts:
     oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
     firstMonth: 2
     lastMonth: 7
-    executionOdds: 40
+    executionOdds: 30
     minDifficulty: 0
     maxDifficulty: 3
   - type: STR_STEAL_OSPREY_SH #extra SH copy
     refNode: *STR_STEAL_OSPREY
     lastMonth: 6
-    executionOdds: 25
+    executionOdds: 20
     minDifficulty: 4
     maxDifficulty: 4
 
@@ -100,7 +100,7 @@ eventScripts:
       STR_WORKSHOP: false
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 30
+    executionOdds: 15
     minDifficulty: 0
     maxDifficulty: 3
   - type: STR_WORKSHOP_SCRIPT_SH #extra SH copy
@@ -118,6 +118,8 @@ eventScripts:
     itemTriggers:
       STR_SPORTS_BOW: true
       STR_BOW_ARROW: true
+    facilityTriggers:
+      STR_WORKSHOP: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
     executionOdds: 20
@@ -136,12 +138,12 @@ eventScripts:
       STR_ENGINEER_STATUS_REPORT: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 60
+    executionOdds: 20
     minDifficulty: 0
     maxDifficulty: 3
   - type: STR_IMPROVISED_GRENADE_SCRIPT_SH #extra SH copy
     refNode: *STR_IMPROVISED_GRENADE_TINKERING_SCRIPT
-    executionOdds: 20
+    executionOdds: 5
     minDifficulty: 4
     maxDifficulty: 4
   - type: STR_IMPROVISED_SMOKE_GRENADE_SCRIPT
@@ -152,7 +154,7 @@ eventScripts:
       STR_ENGINEER_STATUS_REPORT: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 60
+    executionOdds: 15
     minDifficulty: 0
     maxDifficulty: 4
   - &STR_KATANA_TINKERING_SCRIPT
@@ -275,7 +277,7 @@ eventScripts:
       STR_PISTOL_EXP_CLIP: true
     firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 100
+    executionOdds: 90
     minDifficulty: 0
     maxDifficulty: 4
   - type: STR_EXPANDABLE_AMMO_SCRIPT_HEAVY_PISTOL
@@ -290,7 +292,7 @@ eventScripts:
       STR_RIFLE_EXP_CLIP: true
     minDifficulty: 0
     maxDifficulty: 4
-  - type: STR_MONSTER_HUNT_SCRIPT
+  - type: STR_MONSTER_HUNT_SCRIPT #TODO check and debug
     oneTimeRandomEvents:
       STR_MONSTER_HUNT_RUMORS_CHUPA: 100
     researchTriggers:

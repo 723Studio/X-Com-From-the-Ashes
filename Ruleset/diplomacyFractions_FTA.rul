@@ -17,14 +17,14 @@ diplomacyFactions:
       STR_RESISTANCE_AGENT: 12
       #STR_SOLDIER: 10
       #STR_SCIENTIST: 12
-    genMissionFreq: 50 #50% chance to run the script
+    genMissionFreq: 100 #60% chance to run the script
     helpTreatyMissions:
       - havenZombieFarm
       - havenForestHouse
       - havenUrbanHideout
       - resistanceScientist
       - desertTelescope
-    helpTreatyGap: 7
+    helpTreatyGap: 12
     genEventFreq: 100
     # helpTreatyEventScripts:
     #    - STR_RESISTANCE_HAVEN_SAVED_SCRIPT

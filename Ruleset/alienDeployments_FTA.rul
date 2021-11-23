@@ -1216,7 +1216,7 @@ alienDeployments:
     extendedObjectiveType: STR_EVACUATION 
     briefing:
       textOffset: -16
-      background: ZOMBIE_FARM.SCR
+      background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_ZOMBIE_FARM_BRIEFING
     terrains:
@@ -1455,7 +1455,7 @@ alienDeployments:
     terrains:
       - FORESTSWAMP
     customUfo: STR_RESISTANCE_FOREST_HOUSE
-    script: CRAFT_UFO_SCRIPT
+    script: CRAFT_UFO_SCRIPT_BIG_MAP
     battleScript: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     data:
       - alienRank: 5 #STR_MIB_AGENT
@@ -1735,8 +1735,8 @@ alienDeployments:
             []
 
   - type: STR_RESISTANCE_FOREST_HOUSE_AMBUSH
-    width: 60
-    length: 60
+    width: 80
+    length: 80
     height: 6
     alert: STR_RESISTANCE_HAVEN_ALERT
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
@@ -1753,7 +1753,7 @@ alienDeployments:
     terrains:
       - FORESTSWAMP
     customUfo: STR_RESISTANCE_FOREST_HOUSE_TRAP
-    script: CRAFT_UFO_SCRIPT
+    script: CRAFT_UFO_SCRIPT_BIG_MAP
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 2

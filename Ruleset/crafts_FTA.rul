@@ -126,8 +126,8 @@ crafts:
     maxItems: 999
     costBuy: 250000
     costRent: 15000
-    costSell: 150000
-    refuelRate: 30
+    costSell: 160000
+    refuelRate: 25
     transferTime: 72
     score: 75
     battlescapeTerrainData:
