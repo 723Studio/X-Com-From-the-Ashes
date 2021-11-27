@@ -45,7 +45,9 @@ Here is a list of that assets:
 * inventory_ARMADILLO.png
 * ufopedia_ARMADILLO_AUTOPSY_CPAL.png
 * ufopedia_ARMADILLO_CPAL.png
-
+* Spokesman_Chief_CPAL.png
+* ufopedia_AM_CPAL.png
+* ufopedia_AM_AUTOPSY_CPAL.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

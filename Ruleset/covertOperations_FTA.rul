@@ -28,9 +28,9 @@ covertOperations:
     costs: 432
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
-    # trapChance: 65
-    # instantTrapDeployment: 
-    #   STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
+    trapChance: 65
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
@@ -147,6 +147,7 @@ covertOperations:
     engineerSlots: 2
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 150
+    #removeRequiredItemsOnFailure: true
     successWeightedItemList:
       STR_CRATED_OSPREY: 100
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
@@ -166,6 +167,8 @@ covertOperations:
     danger: 0
     requiredItems:
       STR_FAKE_AGENT_ID: 2
+    removeRequiredItemsOnSuccess: false
+    removeRequiredItemsOnFailure: false
     scientistSlots: 1
     scientistEffect: 40
     allowedArmor:
@@ -219,6 +222,8 @@ covertOperations:
     baseChances: 70
     requiredItems:
       STR_BRIEFCASE_CASH: 1
+    removeRequiredItemsOnSuccess: false
+    removeRequiredItemsOnFailure: false
     danger: 0
     costs: 220
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
@@ -243,6 +248,8 @@ covertOperations:
     baseChances: 70
     requiredItems:
       STR_BRIEFCASE_CASH: 1
+    removeRequiredItemsOnSuccess: false
+    removeRequiredItemsOnFailure: false
     danger: 0
     costs: 350
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION

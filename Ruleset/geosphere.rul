@@ -716,7 +716,7 @@ regions:
   - type: STR_RESISTANCE_URBAN_HIDEOUT
     missionZones:
       -
-#NORTH AMERICA
+      #NORTH AMERICA
         - [286.125, 286.125, -40.75, -40.75, -7, STR_NEW_YORK]
         - [282.875, 282.875, -38.75, -38.75, -7, STR_WASHINGTON]
         - [241.75, 241.75, -34.125, -34.125, -7, STR_LOS_ANGELES]
@@ -765,7 +765,7 @@ regions:
         - [248.93, 248.93, -33.27, -33.27, -7, STR_PHOENIX]
         - [242.83, 242.83, -32.74, -32.74, -7, STR_SANDIEGO]
         - [243.038, 243.038, -32.31, -32.31, -7, STR_TIJUANA]
-#EUROPE
+      #EUROPE
         - [-4.43, -4.43, -36.72, -36.72, -7, STR_MALAGA]
         - [36.25, 36.25, -50, -50, -7, STR_KHARKIV]
         - [-1.55, -1.55, -47.2, -47.2, -7, STR_NANTES]
@@ -811,7 +811,7 @@ regions:
         - [11.414, 11.414, -48.661, -48.661, -7, STR_MUNICH]
         - [23.58, 23.58, -38.09, -38.09, -7, STR_ATHENS]
         - [19.125, 19.125, -47.5, -47.5, -7, STR_BUDAPEST]
-#NORTH AFRICA
+      #NORTH AFRICA
         - [3.10, 3.10, -6.36, -6.36, -7, STR_LAGOS]
         - [31.25, 31.25, -30, -30, -7, STR_CAIRO]
         - [352.375, 352.375, -33.5, -33.5, -7, STR_CASABLANCA]
@@ -822,7 +822,7 @@ regions:
         - [32.5, 32.5, -15.625, -15.625, -7, STR_KHARTOUM]
         - [344.41, 344.41, -17.69, -17.69, -7, STR_NOUAKCHOTT]
         - [10.21, 10.21, -36.65, -36.65, -7, STR_TUNIS]
-#CENTRAL ASIA
+      #CENTRAL ASIA
         - [35.5, 35.5, -33.9, -33.9, -7, STR_BEIRUT]
         - [39.72, 39.72, -43.6, -43.6, -7, STR_SOCHI]
         - [36.29, 36.29, -33.5, -33.5, -7, STR_DAMASCUS]
@@ -852,11 +852,11 @@ regions:
         - [47.58, 47.58, -29.22, -29.22, -7, STR_KUWAITCITY]
         - [39.91, 39.91, -20.73, -20.73, -7, STR_MECCA]
         - [44.14, 44.14, -15, -15, -7, STR_SANAA]
-#SOUTH EAST ASIA
+      #SOUTH EAST ASIA
         - [134.59, 134.59, -48.28, -48.28, -7, STR_KHABAROVSK]
         - [105.81, 105.81, -47, -47, -7, STR_ULANBATOR]
         - [133.01, 133.01, -42.86, -42.86, -7, STR_VLADIVOSTOK]
-#SIBERIA
+      #SIBERIA
         - [82.75, 82.75, -55, -55, -7, STR_NOVOSIBIRSK]
         - [61.84, 61.84, -57.48, -57.48, -7, STR_CHEYLABINSK]
         - [63.653, 63.653, -60.54, -60.54, -7, STR_YEKATERINBURG]
@@ -12175,3 +12175,28 @@ globe:
       - -37.69
       - 128.4
       - -38.65
+
+countries: #boo, no countries in FtA except Imaginaria
+  - delete: STR_USA
+  - delete: STR_RUSSIA
+  - delete: STR_UK
+  - delete: STR_FRANCE
+  - delete: STR_GERMANY
+  - delete: STR_ITALY
+  - delete: STR_SPAIN
+  - delete: STR_CHINA
+  - delete: STR_JAPAN
+  - delete: STR_INDIA
+  - delete: STR_BRAZIL
+  - delete: STR_AUSTRALIA
+  - delete: STR_NIGERIA
+  - delete: STR_SOUTH_AFRICA
+  - delete: STR_EGYPT
+  - delete: STR_CANADA
+  - type: STR_PLACEHOLDER_COUNTRY #Imaginaria =)
+    fundingBase: 0
+    fundingCap: 0
+    labelLon: 227
+    labelLat: 17
+    areas:
+      - [227, 227, 17, 17]
