@@ -815,6 +815,44 @@ units:
     spotter: 2
     canSurrender: true
 
+#Bandits
+  - type: STR_BANDIT
+    race: STR_BANDITS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 54
+      stamina: 60
+      health: 38
+      bravery: 80
+      reactions: 48
+      firing: 54
+      throwing: 45
+      strength: 42
+      melee: 54
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 10
+      stamina: 12
+      health: 7
+      bravery: 20
+      reactions: 8
+      firing: 7
+      throwing: 8
+      strength: 8
+      melee: 12
+      psiStrength: 15
+    armor: STR_BANDIT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 8
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 8
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+
 #Zombies
   - type: STR_FACEHUGGER
     race: STR_ZOMBIE

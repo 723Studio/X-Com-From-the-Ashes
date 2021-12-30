@@ -84,7 +84,10 @@ research:
     hidden: true
   - name: STR_CROP_CIRCLES_PREREQ
     hidden: true
-
+  - name: STR_EX_COUNCIL_DATA_VAULT_FAIL
+    hidden: true
+  - name: STR_EX_COUNCIL_DATA_VAULT_SUCCESS
+    hidden: true
   - name: STR_CULT_GANG_DEN #TODO
     hidden: true
 

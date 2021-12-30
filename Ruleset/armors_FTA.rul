@@ -497,13 +497,23 @@ armors:
     specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
   - type: STR_CULT_COORDINATOR_ARMOR
-    refNode: *MIB_PROCURED_CIVILIAN
+    refNode: *CULT_BANDIT
     spriteSheet: CULT_COORDINATOR.PCK
     spriteInv: inventory_CULT_COORDINATOR
     corpseBattle:
       - STR_CULT_COORDINATOR_CORPSE
     meleeDodge:
       reactions: 0.5
+
+#Bandits
+  - type: STR_BANDIT_ARMOR
+    refNode: *CULT_BANDIT
+    spriteSheet: BANDIT.PCK
+    spriteInv: inventory_BANDIT
+    corpseBattle:
+      - STR_BANDIT_CORPSE
+    meleeDodge:
+      reactions: 0.4
 
 #Zombies
   - type: STR_FACEHUGGER_ARMOR

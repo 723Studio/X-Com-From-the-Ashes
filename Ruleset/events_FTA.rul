@@ -30,6 +30,7 @@ events:
     timer: 840
     timerRandom: 0
     researchList: [STR_VEHICLES_STATUS_REPORT]
+#Story
   - name: STR_MONSTER_HUNT_START_EVENT
     description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
     timer: 15840 # 11 days
@@ -83,6 +84,21 @@ events:
     timer: 0
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
+
+  - name: STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT
+    description: STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT_DESCRIPTION
+    background: BACK01.SCR
+    timer: 300
+    timerRandom: 120
+    loyalty: -300
+    researchList: [STR_EX_COUNCIL_DATA_VAULT_SUCCESS]
+  - name: STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT
+    description: STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT_DESCRIPTION
+    background: BACK01.SCR
+    timer: 300
+    timerRandom: 120
+    loyalty: -300
+    researchList: [STR_EX_COUNCIL_DATA_VAULT_FAIL]
 
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
@@ -143,7 +159,6 @@ events:
     removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_CHUPA]
     timer: 43800 #1 month
     timerRandom: 43800 #another 1 month
-
 
 #Resistance
   - name: STR_RESISTANCE_DISCOVER

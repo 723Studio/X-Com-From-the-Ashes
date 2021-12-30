@@ -2,7 +2,8 @@ config:
   builtinTypes:
     alienDeployments.extendedObjectiveType:
     - STR_EVACUATION
-    - STR_FRIENDLY_VIP
+    - STR_EXTRACTION 
+    #- STR_FRIENDLY_VIP
     - STR_ITEM_EXTRACTION
     units.specialObjectiveType:
     - STR_FRIENDLY_VIP

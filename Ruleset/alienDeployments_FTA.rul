@@ -2513,6 +2513,290 @@ alienDeployments:
           -
             []
 
+  - type: STR_EX_COUNCIL_DATA_VAULT
+    race: STR_BANDITS
+    width: 50
+    length: 50
+    height: 8
+    #isHidden: true
+    alert: STR_EX_COUNCIL_DATA_VAULT_ALERT
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION
+    markerName: STR_EX_COUNCIL_DATA_VAULT_ALERT_MARKER
+    duration: [168, 336]
+    despawnPenalty: 200
+    #abortPenalty: 220
+    extendedObjectiveType: STR_ITEM_EXTRACTION 
+    successEvents:
+      STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT: 100
+    failureEvents:
+      STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT: 100
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_EX_COUNCIL_DATA_VAULT_BRIEFING
+    terrains:
+      - URBAN_LOW
+    script: LAND_CRAFT_URBAN_LOW_SMALL_MAP
+    data:
+      - alienRank: 5 #STR_BANDIT
+        lowQty: 2
+        highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_CROWBAR
+          -
+            - STR_BASEBALL_BAT
+          -
+            - STR_COMBAT_KNIFE
+          -
+            - STR_MACHETE
+            - STR_THROWING_KNIFE
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP 
+            - STR_RIOT_PISTOL_CLIP
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+          -
+            - STR_PUMP_ACTION_SHOTGUN
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS  
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP 
+      - alienRank: 5 #STR_BANDIT with loot
+        lowQty: 1
+        highQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_COMBAT_KNIFE
+            - STR_DATA_VAULT
+          -
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP 
+            - STR_DATA_VAULT
+          -
+            - STR_MACHETE
+            - STR_DATA_VAULT
+          -
+            - STR_MACHETE
+            - STR_DATA_VAULT
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP 
+            - STR_RIOT_PISTOL_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_DATA_VAULT
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_DATA_VAULT
+
+  - type: STR_EX_COUNCIL_DATA_VAULT_HARD
+    race: STR_BANDITS
+    width: 60
+    length: 60
+    height: 8
+    #isHidden: true
+    alert: STR_EX_COUNCIL_DATA_VAULT_ALERT
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION
+    markerName: STR_EX_COUNCIL_DATA_VAULT_ALERT_MARKER
+    duration: [168, 336]
+    despawnPenalty: 200
+    #abortPenalty: 220
+    extendedObjectiveType: STR_ITEM_EXTRACTION 
+    successEvents:
+      STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT: 100
+    failureEvents:
+      STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT: 100
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_EX_COUNCIL_DATA_VAULT_HARD_BRIEFING
+    terrains:
+      - URBAN_LOW
+    data:
+      - alienRank: 5 #STR_BANDIT
+        lowQty: 4
+        highQty: 8
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_GRENADE
+          -
+            - STR_PUMP_ACTION_SHOTGUN
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS  
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP 
+            - STR_RIOT_PISTOL_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_MACHETE
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+          -
+            - STR_PUMP_ACTION_SHOTGUN
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS  
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP 
+      - alienRank: 5 #STR_BANDIT with loot
+        lowQty: 1
+        highQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP 
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_DATA_VAULT
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_DATA_VAULT
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_DATA_VAULT
+            
 #traps 
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB

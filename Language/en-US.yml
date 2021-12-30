@@ -411,6 +411,14 @@ en-US:
   STR_MONSTER_HUNT_TRAP_BRIEFING: "Chasing a mystery monster has led our agents into the middle of nowhere. The trail is suddenly lost, and the agents look around, surrounded by pitch-black darkness. A rustling sound comes from the neighboring bushes, and glimpses of red eyes flicker between the leaves. It looks like the hunter has become the hunted..."
 
   STR_AGENT_EXTRACTION_MARKER: "Agent Extraction"
+
+  STR_EX_COUNCIL_DATA_VAULT: "Data Vault Extraction"
+  STR_EX_COUNCIL_DATA_VAULT_ALERT: "Data Vault Extraction"
+  STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION: "An ex-member of the Council of Funding Nations asked us to retrieve a container with some highly sensitive data. He did not specify the contents of the container. We were able to investigate the theft of the container and trace its location. Most likely, the current owners will not want to give it to us, so we will have to use force. "
+  STR_EX_COUNCIL_DATA_VAULT_ALERT_MARKER: "Data Vault Extraction"
+  STR_EX_COUNCIL_DATA_VAULT_BRIEFING: "An ex-member of the Council of Funding Nations asked us to retrieve a container with some highly sensitive data. He did not specify the contents of the container. We were able to investigate the theft of the container and trace its location. Most likely, the current owners will not want to give it to us, so we will have to use force.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
+  STR_EX_COUNCIL_DATA_VAULT_HARD: "Data Vault Extraction"
+  STR_EX_COUNCIL_DATA_VAULT_HARD_BRIEFING: "An ex-member of the Council of Funding Nations asked us to retrieve a container with some highly sensitive data. He did not specify the contents of the container. We were able to investigate the theft of the container and trace its location. Unfortunately, our actions have not gone unnoticed and we will not be able to surprise our foes.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_TRAP: "Chasing M.I.B."
@@ -529,6 +537,10 @@ en-US:
   STR_GREAT_PLAN: "Great plan!"
   STR_STEAL_OSPREY_EVENT_YES: "Steal the Osprey"
   STR_STEAL_OSPREY_EVENT_YES_DESCRIPTION: "Okay, we need to carefully plan the operation. Most importantly, we have to do everything completely undetected and in no way reveal the location of our base in the action. Not such an easy task given the size of the craft.{NEWLINE}{ALT}New covert operation available."
+  STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT: "Data Vault recovery failed"
+  STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT_DESCRIPTION: "It is with bitterness that we have to inform a former member of the Council of the failure of his task.{NEWLINE}Loyalty score>{ALT} -300"
+  STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT: "Data Vault recovered!"
+  STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT_DESCRIPTION: "We managed to obtain the Data Vault. It is a sealed titanium container with a sophisticated security system. The next step is to organize an operation to hand over the mission objective at the specified location. We need to be aware of the possibility that M.I.B. agents may be watching us.{NEWLINE}{ALT}New covert operation available."
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
   STR_IMPROVISED_GRENADE_TINKERING: "Improvised Grenade"
@@ -661,16 +673,23 @@ en-US:
   MIB_BANKER: "Banker"
   STR_MIB_VIP_CORPSE: "V.I.P. corpse"
   MIB_BANKER_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts."
-  STR_CULT_BANDITS: "Bandits"
+  STR_CULT_BANDITS: "Cult Bandits"
   STR_CULT_GANGER: "Cult Ganger"
+  STR_CULT_GANGER_CORPSE: "Cult Ganger Corpse"
   STR_CULT_GANGER_UFOPEDIA: "This man grew up 'on the street,' and from a young age he was involved in crime - petty theft, drug dealing, hooliganism. Growing up, he joined a gang, was involved in robbery, extortion, and did various errands for his bosses. Lately, he's been getting jobs involving contract murders and kidnappings more often. However, he is barely paid for this orders, and he is afraid to argue with the gang bosses or leave."
   STR_CULT_GANGER_ARMOR: "Cult Ganger Combat Analysis"
   STR_CULT_GANGER_ARMOR_UFOPEDIA: "" #TODO
   STR_CULT_COORDINATOR: "Cult Coordinator"
+  STR_CULT_COORDINATOR_CORPSE: "Cult Coordinator Corpse"
   STR_CULT_COORDINATOR_UFOPEDIA: #TODO
   STR_CULT_COORDINATOR_ARMOR: "Cult Coordinator Combat Analysis"
   STR_CULT_COORDINATOR_ARMOR_UFOPEDIA: "" #TODO
   STR_CULTISTS: "Cultists"
+
+  STR_BANDIT: "Bandit"
+  STR_BANDIT_CORPSE: "Bandit Corpse"
+  STR_BANDITS: "Bandits"
+
   
   STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
@@ -1077,6 +1096,7 @@ en-US:
   STR_HELICOPTER_DESCRIPTION: "Obviously, it is not a engineering marvel, but this helicopter is still able to deliver a squad of our fighters to the mission area, and that is the most important thing. We have analyzed the characteristics of this model."
   STR_OSPREY: "OSPREY"
   STR_OSPREY_UFOPEDIA: "{NEWLINE}Multi-mission, tiltrotor military aircraft with both vertical takeoff and landing (VTOL) capabilities. It is designed to combine the functionality of a conventional helicopter with the long-range, high-speed cruise performance of a turboprop aircraft. A quite substantial cargo compartment makes it an effective air for deploying a large squad at medium distance from our base."
+  STR_OPSCAR: "Land Rover"
 
 #manufacture
   STR_FAKE_AGENT_ID: "Special Agent Fake IDs"

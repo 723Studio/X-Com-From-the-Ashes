@@ -339,3 +339,27 @@ crafts:
       - [6, 14, 1, 0]
     listOrder: 7700
 
+#deployment crafts
+  - type: STR_OPSCAR
+    requires:
+      - STR_TROLLIUM
+    sprite: 0
+    fuelMax: 1500
+    damageMax: 150
+    speedMax: 760
+    accel: 2
+    soldiers: 5
+    maxItems: 999
+    costBuy: 0
+    transferTime: 72
+    score: 200
+    battlescapeTerrainData:
+      name: OPSCAR
+      mapDataSets:
+        - BLANKS
+        - XCARS
+      mapBlocks:
+        - name: OPSCAR
+          width: 10
+          length: 10
+    listOrder: 7300

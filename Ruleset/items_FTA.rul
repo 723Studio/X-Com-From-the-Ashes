@@ -4609,6 +4609,19 @@ items:
     invWidth: 1
     invHeight: 1
     listOrder: 30000
+  - type: STR_DATA_VAULT
+    categories: [STR_EVIDENCE]
+    landOnly: true
+    size: 0.05
+    missionObjective: true #for marker
+    battleType: 0
+    weight: 5
+    bigSprite: 99 #TODO - replace placeholder
+    floorSprite: 99 #TODO - replace placeholder
+    invWidth: 2
+    invHeight: 1
+    recoveryPoints: 100
+    listOrder: 30030
   - type: STR_FLOPPY_SCIENTISTS_LOG
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -4919,7 +4932,8 @@ items:
     armor: 26
     listOrder: 100070
 #MIBs
-  - type: STR_XCOM_EX_COMMANDER_CORPSE
+  - &HUMAN_CORPSE
+    type: STR_XCOM_EX_COMMANDER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
@@ -4943,19 +4957,9 @@ items:
     costSell: 0
     listOrder: 100090
   - type: STR_MIB_AGENT_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 101
     floorSprite: 101
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
-    recoveryPoints: 2
-    recover: true
-    recoverCorpse: false
     listOrder: 100100
   - type: STR_MIB_AGENT
     categories: [STR_HUMANS]
@@ -4966,19 +4970,9 @@ items:
     costSell: 0
     listOrder: 100110
   - type: STR_MIB_ARMORED_AGENT_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 113
     floorSprite: 113
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
-    recoveryPoints: 2
-    recover: true
-    recoverCorpse: false
     listOrder: 100120
   - type: STR_MIB_ARMORED_AGENT
     categories: [STR_HUMANS]
@@ -4989,19 +4983,9 @@ items:
     costSell: 0
     listOrder: 100130
   - type: STR_MIB_SPECOPS_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 111
     floorSprite: 111
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
-    recoveryPoints: 3
-    recover: true
-    recoverCorpse: false
     listOrder: 100140
   - type: STR_MIB_SPECOPS
     categories: [STR_HUMANS]
@@ -5033,19 +5017,12 @@ items:
     armor: 12
     listOrder: 100170
   - type: STR_MIB_ENFORCER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 37
+    refNode: *HUMAN_CORPSE
+    weight: 44
     bigSprite: 102
     floorSprite: 102
-    invWidth: 2
-    invHeight: 3
     recoveryPoints: 10
-    battleType: 11
     armor: 30
-    recover: true
-    recoverCorpse: false
     listOrder: 100180
   - type: STR_MIB_ENFORCER
     categories: [STR_HUMANS]
@@ -5055,19 +5032,11 @@ items:
     prisonType: 1
     listOrder: 100190
   - type: STR_MIB_BUTCHER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
+    refNode: *HUMAN_CORPSE
     weight: 48
     bigSprite: 120
     floorSprite: 120
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 10
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
+    recoveryPoints: 8
     listOrder: 100200
   - type: STR_MIB_BUTCHER
     categories: [STR_HUMANS]
@@ -5077,19 +5046,11 @@ items:
     prisonType: 1
     listOrder: 100210
   - type: STR_MIB_SCIENTIST_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
+    refNode: *HUMAN_CORPSE
     weight: 26
     bigSprite: 128
     floorSprite: 128
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 30
     recoveryPoints: 10
-    recover: true
-    recoverCorpse: false
     listOrder: 100220
   - type: STR_MIB_SCIENTIST
     categories: [STR_HUMANS]
@@ -5100,19 +5061,10 @@ items:
     listOrder: 100230
   #MiB\Procured
   - type: STR_MIB_OFFICE_ENGINEER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 122
     floorSprite: 122
-    invWidth: 2
-    invHeight: 3
     recoveryPoints: -25
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
     listOrder: 100240
   - type: STR_MIB_OFFICE_ENGINEER
     categories: [STR_HUMANS]
@@ -5122,19 +5074,10 @@ items:
     prisonType: 1
     listOrder: 100250
   - type: STR_MIB_OFFICE_WORKER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 125
     floorSprite: 125
-    invWidth: 2
-    invHeight: 3
     recoveryPoints: -25
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
     listOrder: 100260
   - type: STR_MIB_OFFICE_WORKER
     categories: [STR_HUMANS]
@@ -5144,19 +5087,12 @@ items:
     prisonType: 1
     listOrder: 100270
   - type: STR_MIB_OFFICE_MANAGER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 123
     floorSprite: 123
     invWidth: 2
     invHeight: 3
     recoveryPoints: -5
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
     listOrder: 100280
   - type: STR_MIB_OFFICE_MANAGER
     categories: [STR_HUMANS]
@@ -5166,19 +5102,10 @@ items:
     prisonType: 1
     listOrder: 100290
   - type: STR_MIB_OFFICE_SECURITY_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 124
     floorSprite: 124
-    invWidth: 2
-    invHeight: 3
     recoveryPoints: -5
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
     listOrder: 100300
   - type: STR_MIB_OFFICE_SECURITY
     categories: [STR_HUMANS]
@@ -5188,19 +5115,10 @@ items:
     prisonType: 1
     listOrder: 100310
   - type: STR_MIB_VIP_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 126
     floorSprite: 126
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: -45
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
+    recoveryPoints: 45
     listOrder: 100320
   - type: MIB_BANKER
     categories: [STR_HUMANS]
@@ -5217,19 +5135,10 @@ items:
     prisonType: 1
     listOrder: 100340
   - type: STR_MIB_VIP_BODYGUARD_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 120
     floorSprite: 120
-    invWidth: 2
-    invHeight: 3
     recoveryPoints: -5
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
     listOrder: 100350
   - type: STR_MIB_VIP_BODYGUARD
     categories: [STR_HUMANS]
@@ -5249,19 +5158,9 @@ items:
     listOrder: 100370
 #Cultists
   - type: STR_CULT_GANGER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 131
     floorSprite: 131
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 1
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
     listOrder: 100371
   - type: STR_CULT_GANGER
     categories: [STR_HUMANS]
@@ -5271,19 +5170,10 @@ items:
     prisonType: 1
     listOrder: 100372
   - type: STR_CULT_COORDINATOR_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 32
+    refNode: *HUMAN_CORPSE
     bigSprite: 132
     floorSprite: 132
-    invWidth: 2
-    invHeight: 3
-    recoveryPoints: 2
-    battleType: 11
-    armor: 30
-    recover: true
-    recoverCorpse: false
+    recoveryPoints: 5
     listOrder: 100373
   - type: STR_CULT_COORDINATOR
     categories: [STR_HUMANS]
@@ -5292,6 +5182,20 @@ items:
     liveAlien: true
     prisonType: 1
     listOrder: 100374
+#Bandits
+  - type: STR_BANDIT_CORPSE
+    refNode: *HUMAN_CORPSE
+    bigSprite: 135
+    floorSprite: 135
+    listOrder: 100375
+  - type: STR_BANDIT
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: false #TODO Consider
+    liveAlien: false
+    #prisonType: 1
+    listOrder: 100374
+
 #Zombies
   - &liveMonster
     type: STR_FACEHUGGER
