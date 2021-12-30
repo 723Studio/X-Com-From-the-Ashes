@@ -85,6 +85,25 @@ events:
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
 
+  - name: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT
+    description: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT_DESCRIPTION
+    background: BACK01.SCR
+    timer: 10080
+    timerRandom: 10080
+    researchList: [STR_EX_COUNCIL_MEMBER_INITIAL]
+  - name: STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT
+    description: STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT_DESCRIPTION
+    background: BACK01.SCR
+    timer: 600
+    timerRandom: 2400
+    researchList: [STR_EX_COUNCIL_MEMBER_INITIAL_MISSION]
+  - name: STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_EVENT
+    description: STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_EVENT_DESCRIPTION
+    background: BACK01.SCR
+    timer: 1000
+    timerRandom: 10080
+    removedCovertOperationsList: [STR_EX_COUNCIL_DATA_VAULT_CONVEY]
+    interruptResearch: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
   - name: STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT
     description: STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT_DESCRIPTION
     background: BACK01.SCR
@@ -462,7 +481,7 @@ events:
   - name: STR_OLD_CROP_CIRCLES
     description: STR_OLD_CROP_CIRCLES_DESCRIPTION
     background: CROPCIRCLES_BACKGROUND.SCR
-    loyalty: -40
+    loyalty: -60
     timer: 1200
     timerRandom: 43500
 

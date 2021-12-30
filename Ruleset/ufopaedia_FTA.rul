@@ -239,6 +239,15 @@ ufopaedia:
       - STR_LOYALTY
     text: STR_LOYALTY_UFOPEDIA
     listOrder: 120
+  - id: STR_EX_COUNCIL_MEMBER_INITIAL
+    type_id: 7
+    image_id: EX_COUNCILMAN_CPAL
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_EX_COUNCIL_MEMBER_INITIAL
+    text: STR_EX_COUNCIL_MEMBER_INITIAL_UFOPEDIA
+    listOrder: 122
   - id: STR_XCOM_EQUIPMENT_ARTICLE_HEADER
     type_id: 7
     image_id: RND_CHIEF_CPAL.SPK

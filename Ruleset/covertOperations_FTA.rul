@@ -136,6 +136,42 @@ covertOperations:
     instantTrapDeployment:
       STR_MIB_EARLY_TRAP_ESCAPE: 100
 
+  - name: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION
+    description: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION
+    requires:
+      - STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
+    soldierSlots: 2
+    optionalSoldierSlots: 2
+    optionalSoldierEffect: 1
+    baseChances: 40
+    danger: 0
+    costs: 60
+    requiredItems:
+      STR_DATA_VAULT: 1
+    instantSuccessDeployment: 
+      STR_EX_COUNCIL_DATA_VAULT: 100
+    instantTrapDeployment: 
+      STR_EX_COUNCIL_DATA_VAULT_HARD: 100
+    trapChance: 100
+  - name: STR_EX_COUNCIL_DATA_VAULT_CONVEY
+    description: STR_EX_COUNCIL_DATA_VAULT_CONVEY_DESCRIPTION
+    requires:
+      - STR_EX_COUNCIL_DATA_VAULT_SUCCESS
+    soldierSlots: 2
+    optionalSoldierSlots: 2
+    optionalSoldierEffect: 1
+    baseChances: 60
+    danger: 0
+    costs: 60
+    successDescription: STR_EX_COUNCIL_DATA_VAULT_CONVEY_DESCRIPTION_SUCCESS
+    successFunds: 2000000
+    successLoyalty: 350
+    successResearchList:
+      - STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
+    instantTrapDeployment: 
+      STR_MIB_TRAP_DATA_VAULT: 100
+    trapChance: 100
+
   - name: STR_STEAL_OSPREY_OPERATION
     description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
     requires:

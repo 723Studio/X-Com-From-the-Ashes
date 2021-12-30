@@ -745,6 +745,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/WowSignal.png
+  - type: EX_COUNCILMAN_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/EX_COUNCILMAN_CPAL.png
 
 #backgrounds
   - type: STORES_STATE.SCR

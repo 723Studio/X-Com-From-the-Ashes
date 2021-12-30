@@ -650,12 +650,19 @@ mapScripts:
 
   - type: LAND_CRAFT_URBAN_LOW_SMALL_MAP #TODO add urban low child terrains cast
     commands:
+    - type: addCraft
+      craftName: STR_OPSCAR
+      rects:
+        - [0, 0, 1, 4]
+        - [0, 0, 4, 1]
+        - [3, 0, 1, 4]
+        - [0, 3, 4, 1]
     - type: addLine
       label: 1
       direction: vertical
       executionChances: 33
       rects: 
-       - [1, 1, 5, 5]
+       - [1, 1, 3, 3]
       terrain: URBAN_ROADS
     - type: addLine
       label: 2
@@ -663,21 +670,14 @@ mapScripts:
       executionChances: 50
       direction: horizontal
       rects: 
-       - [1, 1, 5, 5]
+       - [1, 1, 3, 3]
       terrain: URBAN_ROADS
     - type: addLine
       conditionals: [-1, -2]
       direction: both
       rects: 
-       - [1, 1, 5, 5]
+       - [1, 1, 3, 3]
       terrain: URBAN_ROADS
-    - type: addCraft
-      craftName: STR_OPSCAR
-      rects:
-        - [0, 0, 1, 5]
-        - [0, 0, 5, 1]
-        - [4, 0, 1, 5]
-        - [0, 4, 5, 1]
     - type: addBlock
       size: 2
       executions: 2

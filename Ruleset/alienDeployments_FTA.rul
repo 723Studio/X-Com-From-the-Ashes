@@ -2515,8 +2515,8 @@ alienDeployments:
 
   - type: STR_EX_COUNCIL_DATA_VAULT
     race: STR_BANDITS
-    width: 50
-    length: 50
+    width: 40
+    length: 40
     height: 8
     #isHidden: true
     alert: STR_EX_COUNCIL_DATA_VAULT_ALERT
@@ -2526,7 +2526,8 @@ alienDeployments:
     duration: [168, 336]
     despawnPenalty: 200
     #abortPenalty: 220
-    extendedObjectiveType: STR_ITEM_EXTRACTION 
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    startingCondition: STR_COVERT_AGENT_GEAR
     successEvents:
       STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT: 100
     failureEvents:
@@ -2535,6 +2536,7 @@ alienDeployments:
       textOffset: -16
       background: BACK01.SCR
       showTarget: false
+      showCraft: false
       desc: STR_EX_COUNCIL_DATA_VAULT_BRIEFING
     terrains:
       - URBAN_LOW
@@ -2645,8 +2647,8 @@ alienDeployments:
 
   - type: STR_EX_COUNCIL_DATA_VAULT_HARD
     race: STR_BANDITS
-    width: 60
-    length: 60
+    width: 40
+    length: 40
     height: 8
     #isHidden: true
     alert: STR_EX_COUNCIL_DATA_VAULT_ALERT
@@ -2656,7 +2658,8 @@ alienDeployments:
     duration: [168, 336]
     despawnPenalty: 200
     #abortPenalty: 220
-    extendedObjectiveType: STR_ITEM_EXTRACTION 
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    startingCondition: STR_COVERT_AGENT_GEAR
     successEvents:
       STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT: 100
     failureEvents:
@@ -2665,7 +2668,9 @@ alienDeployments:
       textOffset: -16
       background: BACK01.SCR
       showTarget: false
+      showCraft: false
       desc: STR_EX_COUNCIL_DATA_VAULT_HARD_BRIEFING
+    script: LAND_CRAFT_URBAN_LOW_SMALL_MAP
     terrains:
       - URBAN_LOW
     data:
@@ -3098,6 +3103,11 @@ alienDeployments:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
     failureEvents:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
+  - type: STR_MIB_TRAP_DATA_VAULT
+    refNode: *STR_MIB_EARLY_TRAP_ESCAPE
+    unlockedResearch: STR_MIB_TRAP_DATA_VAULT_SUCCESS
+    failureEvents:
+      STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT: 100 #TODO temporal, should lead to failed trap research trigger - STR_MIB_TRAP_DATA_VAULT_FAIL
 
   - type: STR_LOCALS_TRAP
     race: STR_MILITIA

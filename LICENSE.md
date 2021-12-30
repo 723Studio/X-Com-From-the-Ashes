@@ -45,7 +45,7 @@ Here is a list of that assets:
 * inventory_ARMADILLO.png
 * ufopedia_ARMADILLO_AUTOPSY_CPAL.png
 * ufopedia_ARMADILLO_CPAL.png
-* Spokesman_Chief_CPAL.png
+* EX_COUNCILMAN_CPAL.png
 * ufopedia_AM_CPAL.png
 * ufopedia_AM_AUTOPSY_CPAL.png
 
@@ -53,11 +53,11 @@ Any other content, created by me, contributed for free by the community members,
 
 OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom Extended](https://openxcom.mod.io/openxcom-extended) (by Meridian and Yankes) and distributed under GNU General Public License v3.0. Source code can be found [here](https://github.com/Finnik723/OpenXcom_FTA).
 
-# CREDITS
+## CREDITS
 
 * **SupSuper**, **Warboy**, **Daiky** and [other developers](https://www.ufopaedia.org/index.php/Credits_(OpenXcom)) of [OpenXcom](https://openxcom.org/), distributed under GNU General Public License v3.0 - game engine, old brother of OpenXcom. Big thanks for code guidance.
 
-* **Meridian** and **Yankes** and other developers of [OpenXcom Extended](https://openxcom.mod.io/openxcom-extended), distributed under GNU General Public License v3.0 - game engine, based on OpenXcom engine. All differences listed here: (https://github.com/723Studio/OpenXcom_FTA/wiki). Also big thanks for guidance trough coding.
+* **Meridian** and **Yankes** and other developers of [OpenXcom Extended](https://openxcom.mod.io/openxcom-extended), distributed under GNU General Public License v3.0 - game engine, based on OpenXcom engine. All differences presented with [wiki](https://github.com/723Studio/OpenXcom_FTA/wiki). Also big thanks for guidance trough coding.
 
 * **Solarius Scorch**, author of [Final Mod Pack](https://openxcom.mod.io/final-mod-pack) and [The X-Com files](https://openxcom.mod.io/the-x-com-files), distributed under CC BY-NC 4.0 - graphic and sound assets, config data, terrains, mapblocks; general guidance, inspiration, teacher, sensei and senpai.
 
