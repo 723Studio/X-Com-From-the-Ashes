@@ -1174,3 +1174,74 @@ ufos:
         - name: URBAN_SAFEHOUSE
           width: 40
           length: 40
+          
+  - type: STR_CROP_CIRCLE_NO_LOOT
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCIRCLE00
+          width: 20
+          length: 20
+        - name: CROPCIRCLE01
+          width: 20
+          length: 20
+        - name: CROPCIRCLE02
+          width: 20
+          length: 20
+        - name: CROPCIRCLE03
+          width: 20
+          length: 20
+  - type: STR_CROP_CIRCLE_POOR_LOOT
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCIRCLE00
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_COMMON_DEVICE:
+              - [9, 9, 0]
+        - name: CROPCIRCLE01
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_COMMON_DEVICE:
+              - [4, 6, 0]
+        - name: CROPCIRCLE02
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_COMMON_DEVICE:
+              - [4, 6, 0]
+        - name: CROPCIRCLE03
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_COMMON_DEVICE:
+              - [11, 8, 0]

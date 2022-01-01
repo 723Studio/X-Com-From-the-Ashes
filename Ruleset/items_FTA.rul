@@ -4289,7 +4289,7 @@ items:
   - type: STR_UNARMED
     categories: [STR_BUILT_INS, STR_MELEE, STR_UNARMED]
     weight: 0
-    bigSprite: 340
+    #bigSprite: 340
     meleeHitSound: 55
     meleeAnimation: 0
     power: 0
@@ -4326,7 +4326,7 @@ items:
   - type: STR_UNARMED_TRAINED
     categories: [STR_BUILT_INS, STR_MELEE, STR_UNARMED]
     weight: 0
-    bigSprite: 340
+    #bigSprite: 340
     meleeHitSound: 55
     meleeAnimation: 0
     power: 0
@@ -4613,11 +4613,11 @@ items:
     categories: [STR_EVIDENCE]
     landOnly: true
     size: 0.05
-    missionObjective: true #for marker
+    missionObjective: true
     battleType: 0
     weight: 5
-    bigSprite: 99 #TODO - replace placeholder
-    floorSprite: 99 #TODO - replace placeholder
+    bigSprite: 451
+    floorSprite: 451
     invWidth: 2
     invHeight: 1
     recoveryPoints: 100
@@ -4878,6 +4878,24 @@ items:
     costSell: 500000
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
+
+#alient
+  - type: STR_ALIEN_COMMON_DEVICE
+    categories: [STR_ALIEN_TECH]
+    landOnly: true
+    size: 0.01
+    #costSell: 150000 #Should be only sellable to VOID
+    missionObjective: true
+    alienArtifact: true
+    weight: 5
+    battleType: 10
+    power: 5
+    bigSprite: 450
+    floorSprite: 450
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 180
+    listOrder: 80000
 
 #unit-related
 #aliens
@@ -5299,7 +5317,7 @@ items:
     listOrder: 100497
   - type: SWARMIDS_CORPSE_2
     refNode: *monsterCorpse
-    floorSprite: 600
+    floorSprite: 419
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -5307,7 +5325,7 @@ items:
     listOrder: 100498
   - type: SWARMIDS_CORPSE_3
     refNode: *monsterCorpse
-    floorSprite: 601
+    floorSprite: 420
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -5315,7 +5333,7 @@ items:
     listOrder: 10049
   - type: SWARMIDS_CORPSE_4
     refNode: *monsterCorpse
-    floorSprite: 602
+    floorSprite: 421
     invWidth: 0
     invHeight: 0
     battleType: 11

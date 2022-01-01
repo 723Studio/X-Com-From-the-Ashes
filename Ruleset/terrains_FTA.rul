@@ -3457,7 +3457,23 @@ terrains:
         length: 10
         groups: [2, 3, 5]
 
-
+  - name: MIB_CARS
+    mapDataSets:
+      - BLANKS
+      - MIB_CARS
+    mapBlocks:
+      - name: MIB_VAN00
+        width: 10
+        length: 10
+        randomizedItems:
+        - position: [2, 5, 0]
+          amount: 6
+          mixed: true
+          itemList: *poorMIBStash
+        - position: [2, 4, 0]
+          amount: 3
+          mixed: true
+          itemList: *richMIBStash
 
   - name: XBASE_PHOTO
     mapDataSets:

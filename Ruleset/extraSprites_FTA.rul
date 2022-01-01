@@ -353,6 +353,9 @@ extraSprites:
       447: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedSmokeGrenade.png
       449: Resources/Armors/Enemies/Monsters/bigob_SwarmidWeapon.png
+      450: Resources/Weapons/Alien/Utilities/bigob_AlienCommDevice.png
+      451: Resources/MiscItems/bigob_Data_Vault.png
+
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -447,6 +450,7 @@ extraSprites:
       363: Resources/Weapons/Earthbound/Faction/floorob_ExplosiveCharge.png
       365: Resources/MiscItems/floorob_FakeID.png
       366: Resources/Weapons/Earthbound/Faction/floorob_Sword.png
+      #
       370: Resources/MiscItems/floorob_FloppyBlue.png
       371: Resources/Weapons/Earthbound/Special/floorob_SportsBow.png
       372: Resources/Weapons/Earthbound/Special/floorob_SportsBow_Arrow.png
@@ -485,7 +489,9 @@ extraSprites:
       415: Resources/Weapons/Earthbound/General/floorob_HeavyRevolver_Clip.png
       417: Resources/Weapons/Earthbound/Xcom/floorob_MGL.png
       418: Resources/Weapons/Earthbound/Xcom/floorob_MGL_drum.png
-      #419-421
+      419: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_2.png
+      420: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_3.png
+      421: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_4.png
       422: Resources/Weapons/Earthbound/General/floorob_PolicePistol.png
       423: Resources/Weapons/Earthbound/General/floorob_PolicePistol_Clip.png
       424: Resources/Weapons/Earthbound/Special/floorob_Katana.png
@@ -504,18 +510,18 @@ extraSprites:
       437: Resources/Weapons/Earthbound/Tinkering/floorob_Rocket_Glove_Clip.png
       438: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannon.png
       439: Resources/Weapons/Earthbound/Xcom/floorob_AssaultCannonClip.png
+      #440
       441: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedGrenade.png
+      #442
       443: Resources/MiscItems/floorob_SpareParts.png
       444: Resources/MiscItems/floorob_Chemicals.png
       445: Resources/MiscItems/floorob_HighTechParts.png
       446: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedSmokeGrenade.png
-
-      #4x4 units extra sprites
-      600: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_2.png
-      601: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_3.png
-      602: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_4.png
+      #449
+      450: Resources/Weapons/Alien/Utilities/floorob_AlienCommDevice.png
+      451: Resources/MiscItems/floorob_Data_Vault.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -751,6 +757,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/EX_COUNCILMAN_CPAL.png
+  - type: CROP_CIRCLES_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/CROP_CIRCLES_CPAL.png
 
 #backgrounds
   - type: STORES_STATE.SCR

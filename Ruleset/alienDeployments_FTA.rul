@@ -1229,7 +1229,7 @@ alienDeployments:
         highQty: 10
         dQty: 3
         percentageOutsideUfo: 80
-        itemSets:
+        itemSets: &AnchorEmptyInventory
           -
             []
           -
@@ -2114,81 +2114,21 @@ alienDeployments:
         dQty: 4
         extraQty: 3
         percentageOutsideUfo: 65
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
       - alienRank: 6 #STR_FACEHUGGER
         lowQty: 3
         highQty: 10
         dQty: 3
         extraQty: 2
         percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
       - alienRank: 4 #STR_ZOMBIE_GRUBAS_TERRORIST
         lowQty: 4
         highQty: 6
         dQty: 2
         extraQty: 1
         percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_SCIENTIST_REFUGE
     width: 80
@@ -2397,27 +2337,7 @@ alienDeployments:
         lowQty: 1
         highQty: 3
         dQty: 5
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_CHUPA_TERROR_EASY
     race: STR_CHUPACABRA
@@ -2443,27 +2363,7 @@ alienDeployments:
         lowQty: 1
         highQty: 4
         dQty: 4
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
   - type: STR_CHUPA_TERROR_HARD
     race: STR_CHUPACABRA
     civiliansByType:
@@ -2491,27 +2391,7 @@ alienDeployments:
         highQty: 10
         dQty: 6
         extraQty: 2
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_EX_COUNCIL_DATA_VAULT
     race: STR_BANDITS
@@ -2801,7 +2681,102 @@ alienDeployments:
             - STR_HEAVY_REVOLVER_DRUM
             - STR_HEAVY_REVOLVER_DRUM
             - STR_DATA_VAULT
-            
+
+  - type: STR_CROP_CIRCLES_INITIAL
+    race: STR_MIB
+    width: 60
+    length: 60
+    height: 6
+    alert: STR_CROP_CIRCLES_ALERT
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
+    markerName: STR_CROP_CIRCLES_MARKER
+    duration: [12, 18]
+    despawnPenalty: 200
+    #abortPenalty: 220
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    briefing:
+      textOffset: -16
+      background: CROPCIRCLES_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CROP_CIRCLES_BRIEFING
+    terrains:
+      - CULTA
+    script: STR_CROP_CIRCLES
+    battleScript: MIB_ATTACK_CROP_CIRCLES
+    customUfo: STR_CROP_CIRCLE_POOR_LOOT
+    unlockedResearch: STR_CROP_CIRCLES_PREREQ
+    unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
+    data:
+      - alienRank: 5
+        lowQty: 2
+        medQty: 4
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+
 #traps 
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB
@@ -3132,77 +3107,17 @@ alienDeployments:
         lowQty: 1
         highQty: 3
         dQty: 1
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
       - alienRank: 5 #STR_MALE_MILITIA_CITIZEN
         lowQty: 2
         highQty: 6
         dQty: 2
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
       - alienRank: 2 #STR_MALE_POLICE
         lowQty: 2
         highQty: 6
         dQty: 2
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory #comes from unit
 
   - type: STR_CHUPACABRA_HUNT_TRAP
     race: STR_CHUPACABRA
@@ -3226,27 +3141,7 @@ alienDeployments:
         lowQty: 6
         highQty: 12
         dQty: 5
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: *AnchorEmptyInventory
 
   # - type: STR_MIB_CHASING_INTRO
   #   race: STR_MIB

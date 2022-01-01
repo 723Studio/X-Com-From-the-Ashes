@@ -305,6 +305,16 @@ ufopaedia:
     requires:
       - STR_RECORD_WOW_SIGNAL
     listOrder: 170
+  - id: STR_CROP_CIRCLES
+    type_id: 7
+    image_id: CROP_CIRCLES_CPAL
+    text_width: 315
+    align_bottom: true
+    section: STR_XCOM_REPORTS_UC
+    text: STR_CROP_CIRCLES_UFOPEDIA
+    requires:
+      - STR_CROP_CIRCLES
+    listOrder: 175
   - id: STR_PRISONER_INTERROGATIONS
     type_id: 7
     image_id: INTEL_CHIEF_CPAL.SPK
@@ -1621,6 +1631,20 @@ ufopaedia:
     requires:
       - STR_HEAVY_PLASMA
     text: STR_HEAVY_PLASMA_UFOPEDIA
+    listOrder: 30000
+  - id: STR_HEAVY_PLASMA_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HEAVY_PLASMA
+    text: STR_HEAVY_PLASMA_UFOPEDIA
+    listOrder: 30000
+  - id: STR_ALIEN_COMMON_DEVICE
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_ALIEN_COMMON_DEVICE
+    text: STR_ALIEN_DEVIC_UFOPEDIA
     listOrder: 30000
 ## STR_ADVERSARY_KNOWLEDGE_UC 45-65
   - id: STR_EMPTY_MIB_EARLY_LORE_STAGE
