@@ -105,7 +105,7 @@ alienRaces:
       - STR_FREE_SPOT # 1 - Leader
       - STR_FREE_SPOT # 2 - Engineer
       - STR_FREE_SPOT # 3 - Medic
-      - STR_FREE_SPOT # 4 - Navigator
+      - STR_BANDIT # 4 - Navigator
       - STR_BANDIT # 5 - Soldier
       - STR_FREE_SPOT # 6 - Terrorist 1
       - STR_FREE_SPOT # 7 - Terrorist 2

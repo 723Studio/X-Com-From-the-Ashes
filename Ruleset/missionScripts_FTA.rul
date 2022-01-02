@@ -45,10 +45,11 @@ missionScripts:
     missionWeights:
       0:
         STR_CROP_CIRCLES_INITIAL: 100
-    lastMonth: 0
     raceWeights:
       0:
         STR_MIB: 100
+    researchTriggers:
+      STR_CROP_CIRCLES_PREREQ: false
     startDelay: 4000
     useTable: false
     randomDelay: 6000
@@ -78,7 +79,7 @@ missionScripts:
     varName: monsterTerror
 
 #resistance
-  - type: havenZombieFarm
+  - type: havenFarm
     firstMonth: 0
     executionOdds: 15
     allowedProcessor: 1

@@ -1257,7 +1257,8 @@ globe:
       deployments:
         STR_RESISTANCE_FARM_ZOMBIE: 60
         STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: 30
-        STR_RESISTANCE_FARM_CULTISTS: 15
+        STR_RESISTANCE_FARM_CULTISTS: 5
+        STR_RESISTANCE_FARM_BANDITS: 10
 
     - id: -5
       deployments:

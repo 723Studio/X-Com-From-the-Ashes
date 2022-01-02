@@ -271,7 +271,7 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP     
 
-  - &STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
+  - &MIBRegionalHQ #hardcoded, do not rename!
     type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
     race: STR_MIB_REGIONAL_HQ
     nextStage: STR_MIB_REGIONAL_HQ_UNDERGROUND
@@ -732,7 +732,7 @@ alienDeployments:
             - STR_BRIEFCASE_CASH
 
   - type: STR_INITIAL_REGIONAL_HQ_EASY
-    refNode: *STR_INITIAL_REGIONAL_HQ
+    refNode: *MIBRegionalHQ
     script: MIB_SEWERS_EASY
     alternativeDeploymentResearch: STR_RESISTANCE_CELL_CREATED
     alternativeDeployment: STR_INITIAL_REGIONAL_HQ_EASY_RESISTANCE
@@ -743,7 +743,7 @@ alienDeployments:
       showCraft: false
       desc: STR_INITIAL_REGIONAL_HQ_EASY_DESC
   - type: STR_INITIAL_REGIONAL_HQ_EASY_RESISTANCE
-    refNode: *STR_INITIAL_REGIONAL_HQ
+    refNode: *MIBRegionalHQ
     script: MIB_SEWERS_EASY_RESISTANCE
     briefing:
       textOffset: -16
@@ -1210,6 +1210,13 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_4: 50
       STR_NOT_RESCUED_RESISTANCE_5: 50
       STR_NOT_RESCUED_RESISTANCE_6: 50
+    despawnEvents:
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
     duration: [4, 6]
     despawnPenalty: 200
     #abortPenalty: 200
@@ -1251,7 +1258,8 @@ alienDeployments:
           -
             []
 
-  - type: STR_RESISTANCE_FARM_CULTISTS
+  - &ResistanceFarmBandits
+    type: STR_RESISTANCE_FARM_CULTISTS
     race: STR_CULT_BANDITS
     civiliansByType:
       STR_MALE_CIVILIAN_FARMER: 4
@@ -1277,9 +1285,16 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_4: 50
       STR_NOT_RESCUED_RESISTANCE_5: 50
       STR_NOT_RESCUED_RESISTANCE_6: 50
+    despawnEvents:
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
     duration: [16, 18]
     despawnPenalty: 200
-    #abortPenalty: 200
+    abortPenalty: 240
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
@@ -1291,6 +1306,7 @@ alienDeployments:
     data:
       - alienRank: 5 #STR_CULT_GANGER
         lowQty: 4
+        medQty: 6
         highQty: 11
         dQty: 3
         extraQty: 3
@@ -1311,7 +1327,6 @@ alienDeployments:
             - STR_THROWING_KNIFE
             - STR_GRENADE
           -
-            - STR_SWORD
             - STR_RIOT_PISTOL
             - STR_RIOT_PISTOL_CLIP
             - STR_RIOT_PISTOL_CLIP
@@ -1338,10 +1353,10 @@ alienDeployments:
             - STR_HEAVY_REVOLVER_DRUM
             - STR_HEAVY_REVOLVER_DRUM
           -
-            - STR_RIOT_RIFLE
-            - STR_RIOT_RIFLE_CLIP
-            - STR_RIOT_RIFLE_CLIP
-            - STR_RIOT_RIFLE_CLIP
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
           -
             - STR_RIOT_RIFLE
             - STR_RIOT_RIFLE_CLIP
@@ -1357,12 +1372,12 @@ alienDeployments:
             - STR_RIOT_RIFLE_CLIP
             - STR_RIOT_RIFLE_CLIP
             - STR_RIOT_RIFLE_CLIP
-      - alienRank: 4 #STR_CULT_GANGER
-        lowQty: 2
-        highQty: 2
+      - alienRank: 4 #STR_CULT_COORDINATOR
+        lowQty: 1
+        highQty: 1
         dQty: 0
-        percentageOutsideUfo: 100
-        itemSets: #TODO
+        percentageOutsideUfo: 0
+        itemSets:
           -
             - STR_RIOT_RIFLE
             - STR_RIOT_RIFLE_CLIP
@@ -1374,12 +1389,12 @@ alienDeployments:
             - STR_RIOT_RIFLE_CLIP
             - STR_RIOT_RIFLE_CLIP
           -
-            - STR_SWORD
-            - STR_RIOT_PISTOL
-            - STR_RIOT_PISTOL_CLIP
-            - STR_RIOT_PISTOL_CLIP
-            - STR_RIOT_PISTOL_CLIP
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
             - STR_GRENADE
+            - STR_COMBAT_KNIFE
           -
             - STR_MACHETE
             - STR_HEAVY_REVOLVER
@@ -1421,6 +1436,13 @@ alienDeployments:
             - STR_RIOT_RIFLE_CLIP
             - STR_RIOT_RIFLE_CLIP 
 
+  - type: STR_RESISTANCE_FARM_BANDITS
+    refNode: *ResistanceFarmBandits
+    race: STR_BANDITS
+    abortPenalty: 150
+    script: RESISTANCE_FARM_NO_RADIO
+    
+
   - type: STR_RESISTANCE_FOREST_HOUSE
     width: 80
     length: 80
@@ -1441,6 +1463,13 @@ alienDeployments:
       STR_RESCUED_RESISTANCE_5: 50
       STR_RESCUED_RESISTANCE_6: 50
     failureEvents:
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
+    despawnEvents:
       STR_NOT_RESCUED_RESISTANCE_1: 50
       STR_NOT_RESCUED_RESISTANCE_2: 50
       STR_NOT_RESCUED_RESISTANCE_3: 50
@@ -1585,6 +1614,13 @@ alienDeployments:
       STR_RESCUED_RESISTANCE_5: 50
       STR_RESCUED_RESISTANCE_6: 50
     failureEvents:
+      STR_NOT_RESCUED_RESISTANCE_1: 50
+      STR_NOT_RESCUED_RESISTANCE_2: 50
+      STR_NOT_RESCUED_RESISTANCE_3: 50
+      STR_NOT_RESCUED_RESISTANCE_4: 50
+      STR_NOT_RESCUED_RESISTANCE_5: 50
+      STR_NOT_RESCUED_RESISTANCE_6: 50
+    despawnEvents:
       STR_NOT_RESCUED_RESISTANCE_1: 50
       STR_NOT_RESCUED_RESISTANCE_2: 50
       STR_NOT_RESCUED_RESISTANCE_3: 50
@@ -2146,6 +2182,8 @@ alienDeployments:
       STR_RESCUED_SCIENTIST: 100
     failureEvents:
       STR_NOT_RESCUED_SCIENTIST: 100
+    despawnEvents:
+      STR_NOT_RESCUED_SCIENTIST: 100
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
@@ -2198,6 +2236,8 @@ alienDeployments:
     successEvents:
       STR_RESCUED_SCIENTISTS_TELESCOPE: 100
     failureEvents:
+      STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: 100
+    despawnEvents:
       STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: 100
     briefing:
       textOffset: -16
@@ -2398,7 +2438,7 @@ alienDeployments:
     width: 40
     length: 40
     height: 8
-    #isHidden: true
+    isHidden: true
     alert: STR_EX_COUNCIL_DATA_VAULT_ALERT
     alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
     alertDescription: STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION
@@ -2530,7 +2570,7 @@ alienDeployments:
     width: 40
     length: 40
     height: 8
-    #isHidden: true
+    isHidden: true
     alert: STR_EX_COUNCIL_DATA_VAULT_ALERT
     alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
     alertDescription: STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION
@@ -2949,7 +2989,7 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_BS  
 
-  - &STR_MIB_EARLY_TRAP_ESCAPE
+  - &MIBEarlyTrap
     type: STR_MIB_EARLY_TRAP_ESCAPE
     race: STR_MIB
     width: 30
@@ -3073,14 +3113,16 @@ alienDeployments:
             - STR_SNIPER_RIFLE_CLIP 
 
   - type: STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL
-    refNode: *STR_MIB_EARLY_TRAP_ESCAPE
+    refNode: *MIBEarlyTrap
     successEvents: 
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
     failureEvents:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
   - type: STR_MIB_TRAP_DATA_VAULT
-    refNode: *STR_MIB_EARLY_TRAP_ESCAPE
+    refNode: *MIBEarlyTrap
     unlockedResearch: STR_MIB_TRAP_DATA_VAULT_SUCCESS
+    unlockedResearchOnFailure: STR_MIB_TRAP_DATA_VAULT_FAIL
+    unlockedResearchOnDespawn: STR_MIB_TRAP_DATA_VAULT_FAIL
     failureEvents:
       STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT: 100 #TODO temporal, should lead to failed trap research trigger - STR_MIB_TRAP_DATA_VAULT_FAIL
 
