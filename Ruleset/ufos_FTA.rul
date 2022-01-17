@@ -123,11 +123,11 @@ ufos:
               - position: [1, 5, 0]
                 amount: 5
                 mixed: true
-                itemList: &generalResistanceStash [STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL_CLIP, STR_RIOT_PISTOL, STR_RIOT_PISTOL, STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SAWED_OFF, STR_SAWED_OFF, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_STIMS, STR_PAINKILLER]
+                itemList: &generalResistanceStash [STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL_CLIP, STR_RIOT_PISTOL, STR_RIOT_PISTOL, STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SAWED_OFF, STR_SAWED_OFF, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_GUN, STR_RIOT_GUN_CLIP, STR_RIOT_GUN_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_STIMS, STR_PAINKILLER]
               - position: [4, 5, 1]
-                amount: 3
+                amount: 4
                 mixed: true
-                itemList: &explosiveResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
+                itemList: &explosiveResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER, STR_SINGLE_ROCKET_LAUNCHER, STR_GRENADE_LAUNCHER, STR_GRENADE_LAUNCHER_FRAG, STR_GRENADE_LAUNCHER_FRAG, STR_GRENADE_LAUNCHER_SMOKE, STR_GRENADE_LAUNCHER_SMOKE, STR_GRENADE_LAUNCHER_INC, STR_GRENADE_LAUNCHER_INC]
               - position: [3, 0, 0]
                 amount: 7
                 mixed: true
@@ -168,7 +168,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [1, 2, 2]
-                amount: 1
+                amount: 2
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -190,7 +190,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [5, 6, 2]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -211,7 +211,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [6, 0, 1]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -316,7 +316,7 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [4, 5, 1]
-                amount: 3
+                amount: 4
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [3, 0, 0]
@@ -348,7 +348,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [1, 2, 2]
-                amount: 1
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
         - name: CULTAFARM20
@@ -364,7 +364,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [5, 6, 2]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
         - name: CULTAFARM21
@@ -380,7 +380,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [6, 0, 1]
-                amount: 2
+                amount: 4
                 mixed: true
                 itemList: *explosiveResistanceStash
         - name: CULT_NEW16
@@ -463,7 +463,7 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [4, 5, 1]
-                amount: 3
+                amount: 4
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [3, 0, 0]
@@ -505,7 +505,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [1, 2, 2]
-                amount: 1
+                amount: 2
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -526,7 +526,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [5, 6, 2]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -547,7 +547,7 @@ ufos:
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [6, 0, 1]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -866,7 +866,7 @@ ufos:
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [5, 3, 1]
-                amount: 8
+                amount: 9
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [1, 3, 1]
@@ -905,7 +905,7 @@ ufos:
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [11, 1, 1]
-                amount: 8
+                amount: 9
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [3, 4, 1]
@@ -944,7 +944,7 @@ ufos:
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [7, 5, 1]
-                amount: 8
+                amount: 9
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [5, 7, 1]
@@ -983,7 +983,7 @@ ufos:
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [7, 3, 1]
-                amount: 8
+                amount: 9
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [7, 3, 1]
@@ -1022,7 +1022,7 @@ ufos:
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [7, 5, 1]
-                amount: 8
+                amount: 9
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [5, 7, 1]

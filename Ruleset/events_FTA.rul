@@ -119,6 +119,23 @@ events:
     loyalty: -300
     researchList: [STR_EX_COUNCIL_DATA_VAULT_FAIL]
 
+  - name: STR_MISTERY_CULT_EVENT
+    description: STR_MISTERY_CULT_EVENT_DESCRIPTION
+    timer: 7200 # 5 days
+    timerRandom: 2880 # 2 days
+    background: CULT_BACKGROUND.SCR
+    customAnswers:
+      0:
+        title: STR_WE_HAVE_MORE_IMPORTANT_THINGS
+      1:
+        title: STR_PROCEED_INVESTIGATION
+        spawnEvent: [STR_MISTERY_CULT_EVENT_YES]
+  - name: STR_MISTERY_CULT_EVENT_YES
+    description: STR_MISTERY_CULT_EVENT_YES_DESCRIPTION
+    timer: 0
+    timerRandom: 0
+    researchList: [STR_CULT_INVESTIGATION]
+
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     description: STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION
@@ -164,7 +181,16 @@ events:
     timer: 175680
     timerRandom: 30240
     removedCovertOperationsList:
-      - STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
+      - STR_LAB_EQUIPMENT_ACQUISITION
+  - name: STR_CULT_INVESTIGATION_REPEAT_OPERATION
+    description: STR_CULT_INVESTIGATION_REPEAT_OPERATION_DESCRIPTION
+    background: CULT_BACKGROUND.SCR
+    timer: 175680
+    timerRandom: 30240
+    interruptResearch: STR_CULT_GANG_DEN
+    removedCovertOperationsList:
+      - STR_CULT_INVESTIGATION
+
 
 #Monsters
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA

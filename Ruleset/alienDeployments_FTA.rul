@@ -1311,7 +1311,7 @@ alienDeployments:
         dQty: 3
         extraQty: 3
         percentageOutsideUfo: 85
-        itemSets: #TODO
+        itemSets: &gangerLightLoadout
           -
             - STR_COMBAT_KNIFE
             - STR_RIOT_PISTOL
@@ -1377,17 +1377,19 @@ alienDeployments:
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
-        itemSets:
+        itemSets: &gangerMediumLoadout
           -
-            - STR_RIOT_RIFLE
-            - STR_RIOT_RIFLE_CLIP
-            - STR_RIOT_RIFLE_CLIP
-            - STR_RIOT_RIFLE_CLIP
+            - STR_PUMP_ACTION_SHOTGUN
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
           -
-            - STR_RIOT_RIFLE
-            - STR_RIOT_RIFLE_CLIP
-            - STR_RIOT_RIFLE_CLIP
-            - STR_RIOT_RIFLE_CLIP
+            - STR_PUMP_ACTION_SHOTGUN
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
           -
             - STR_MACHINE_PISTOL
             - STR_MACHINE_PISTOL_CLIP
@@ -1436,13 +1438,13 @@ alienDeployments:
             - STR_RIOT_RIFLE_CLIP
             - STR_RIOT_RIFLE_CLIP 
 
+
   - type: STR_RESISTANCE_FARM_BANDITS
     refNode: *ResistanceFarmBandits
     race: STR_BANDITS
     abortPenalty: 150
     script: RESISTANCE_FARM_NO_RADIO
     
-
   - type: STR_RESISTANCE_FOREST_HOUSE
     width: 80
     length: 80
@@ -2817,6 +2819,38 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP
 
+  - type: STR_CULTISTS_DETENTION
+    race: STR_CULT_BANDITS
+    width: 50
+    length: 50
+    height: 8
+    abortPenalty: 35
+    briefing:
+      textOffset: -16
+      background: CULT_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CULTISTS_DETENTION_BRIEFING
+    terrains:
+      - URBAN_LOW
+    startingCondition: STR_COVERT_AGENT_GEAR
+    data:
+      - alienRank: 5 #STR_CULT_GANGER
+        lowQty: 2
+        medQty: 4
+        highQty: 6
+        dQty: 1
+        extraQty: 1
+        percentageOutsideUfo: 85
+        itemSets: *gangerLightLoadout
+      - alienRank: 4 #STR_CULT_COORDINATOR
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *gangerMediumLoadout
+
+
+
 #traps 
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB
@@ -3184,6 +3218,36 @@ alienDeployments:
         highQty: 12
         dQty: 5
         itemSets: *AnchorEmptyInventory
+
+  - type: STR_CULTISTS_DETENTION_TRAP
+    race: STR_CULT_BANDITS
+    width: 50
+    length: 50
+    height: 8
+    abortPenalty: 35
+    briefing:
+      textOffset: -16
+      background: CULT_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CULTISTS_DETENTION_BRIEFING
+    terrains:
+      - URBAN_LOW
+    startingCondition: STR_COVERT_AGENT_GEAR
+    data:
+      - alienRank: 5 #STR_CULT_GANGER
+        lowQty: 4
+        medQty: 6
+        highQty: 9
+        dQty: 3
+        extraQty: 3
+        percentageOutsideUfo: 85
+        itemSets: *gangerLightLoadout
+      - alienRank: 4 #STR_CULT_COORDINATOR
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *gangerMediumLoadout
 
   # - type: STR_MIB_CHASING_INTRO
   #   race: STR_MIB

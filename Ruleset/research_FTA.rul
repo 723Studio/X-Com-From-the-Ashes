@@ -98,7 +98,9 @@ research:
     hidden: true
   - name: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
     hidden: true
-  - name: STR_CULT_GANG_DEN #TODO
+  - name: STR_CULT_INVESTIGATION
+    hidden: true
+  - name: STR_CULT_GANG_DEN
     hidden: true
 
 #game start
@@ -278,6 +280,12 @@ research:
       - STR_HELICOPTER
       - STR_LEVER_ACTION_CARBINE
       - STR_LEVER_ACTION_CARBINE_CLIP
+      - STR_RIOT_GUN
+      - STR_RIOT_GUN_CLIP
+      - STR_GRENADE_LAUNCHER
+      - STR_GRENADE_LAUNCHER_FRAG
+      - STR_GRENADE_LAUNCHER_INC
+      - STR_GRENADE_LAUNCHER_SMOKE
 
   - name: STR_ELECTRIC_WEAPONS_PREREQ
     hidden: true
@@ -709,8 +717,6 @@ research:
     points: 40
     needItem: true
     destroyItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected: #FIXME - more specific lore, not agent
@@ -835,10 +841,8 @@ research:
     points: 10
     needItem: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
     getOneFree:
-      - STR_PRISONER_INTERROGATIONS
+      - STR_PRISONER_INTERROGATIONS #TODO - add more lore
     listOrder: 6120
 
   #enemies - cultists
@@ -854,15 +858,17 @@ research:
     listOrder: 6121
   - name: STR_CULT_COORDINATOR
     requiresBaseFunc: [ INTLAB ]
-    cost: 160
-    points: 5
+    cost: 320
+    points: 10
     needItem: true
     dependencies:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_CULT_GANG_DEN
-    listOrder: 6121
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_CULT_GANG_DEN
+    listOrder: 6122
 
   #enemies - zombies 
   - name: STR_FACEHUGGER_CORPSE
@@ -1346,6 +1352,19 @@ research:
     dependencies:
       - STR_PUMP_ACTION_SHOTGUN
     listOrder: 30290
+  - name: STR_RIOT_GUN
+    cost: 25
+    points: 4
+    needItem: true
+    unlocks:
+      - STR_RIOT_GUN_CLIP
+    listOrder: 30292
+  - name: STR_RIOT_GUN_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RIOT_GUN
+    listOrder: 30292
   - name: STR_IMPROVISED_GRENADE
     cost: 15
     points: 1
@@ -1371,6 +1390,29 @@ research:
     points: 5
     needItem: true
     listOrder: 30320
+  - name: STR_GRENADE_LAUNCHER
+    cost: 40
+    points: 5
+    needItem: true
+    listOrder: 30322
+  - name: STR_GRENADE_LAUNCHER_FRAG
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GRENADE_LAUNCHER
+    listOrder: 30322
+  - name: STR_GRENADE_LAUNCHER_INC
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GRENADE_LAUNCHER
+    listOrder: 30322
+  - name: STR_GRENADE_LAUNCHER_SMOKE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GRENADE_LAUNCHER
+    listOrder: 30322
   - name: STR_MOTION_SCANNER
     cost: 360
     points: 30

@@ -48,6 +48,13 @@ Here is a list of that assets:
 * EX_COUNCILMAN_CPAL.png
 * ufopedia_AM_CPAL.png
 * ufopedia_AM_AUTOPSY_CPAL.png
+* bigob_AM_CORPSE.png
+* inventory_AM.png
+* floorob_AM_CORPSE.png
+* AM.png
+* ufopedia_FACEHUGGER_AUTOPSY_CPAL.png
+* ufopedia_FACEHUGGER_CPAL.png
+* inventory_FACEHUGGER.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

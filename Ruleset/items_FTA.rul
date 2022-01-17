@@ -2382,6 +2382,69 @@ items:
     listOrder: 12120
     landOnly: true
 #cannons
+  - type: STR_RIOT_GUN
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.4
+    costBuy: 12500
+    costSell: 10000
+    landOnly: true
+    weight: 20
+    bigSprite: 456
+    floorSprite: 456
+    handSprite: 994
+    bulletSprite: 11
+    bulletSpeed: 32
+    fireSound: 2
+    compatibleAmmo:
+      - STR_RIOT_GUN_CLIP
+    accuracyCloseQuarters: 42
+    accuracySnap: 36
+    accuracyAuto: 36
+    tuSnap: 38
+    tuAuto: 52
+    tuLoad: 34
+    snapRange: 34
+    autoRange: 32
+    confSnap:
+      shots: 3
+    confAuto:
+      shots: 6
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 150
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    sprayWaypoints: 2
+    attraction: 24
+    listOrder: 15004
+  - type: STR_RIOT_GUN_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.1
+    costBuy: 1500
+    costSell: 1250
+    landOnly: true
+    weight: 12
+    bigSprite: 457
+    floorSprite: 457
+    hitSound: 22
+    hitAnimation: 26
+    power: 36
+    damageAlter:
+      ArmorEffectiveness: 0.85
+    damageType: 1
+    clipSize: 125
+    battleType: 2
+    armor: 34
+    invWidth: 2
+    invHeight: 1
+    attraction: 16
+    listOrder: 15006
   - type: STR_TASER_CANNON
     categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS]
     compatibleAmmo:
@@ -2415,7 +2478,7 @@ items:
     powerRangeReduction: 30
     experienceTrainingMode: 4
     attraction: 24
-    listOrder: 15000
+    listOrder: 15008
     tags:
       BPL_AIMED_1_5X_POWER: 1
   - type: STR_TASER_CANNON_CLIP
@@ -3417,7 +3480,111 @@ items:
     invHeight: 3
     armor: 16
     attraction: 12
+    listOrder: 19002
+  - type: STR_GRENADE_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.2
+    costBuy: 5000
+    costSell: 2250
+    landOnly: true
+    weight: 8
+    bigSprite: 452
+    floorSprite: 452
+    handSprite: 962
+    bulletSprite: 3
+    fireSound: 160
+    compatibleAmmo:
+      - STR_GRENADE_LAUNCHER_FRAG
+      - STR_GRENADE_LAUNCHER_INC
+      - STR_GRENADE_LAUNCHER_SMOKE
+    accuracyCloseQuarters: 80
+    accuracySnap: 50
+    accuracyAimed: 85
+    tuSnap: 33
+    tuAimed: 50
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    arcingShot: true
+    experienceTrainingMode: 4
+    attraction: 20
+    listOrder: 19003
+  - type: STR_GRENADE_LAUNCHER_FRAG
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    landOnly: true
+    weight: 3
+    bigSprite: 453
+    floorSprite: 453
+    handSprite: 970
+    hitSound: 0
+    hitAnimation: 0
+    power: 48
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    attraction: 15
     listOrder: 19004
+  - type: STR_GRENADE_LAUNCHER_SMOKE
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.1
+    costBuy: 300
+    costSell: 200
+    landOnly: true
+    weight: 3
+    bigSprite: 455
+    floorSprite: 455
+    handSprite: 986
+    hitSound: 0
+    hitAnimation: 88
+    power: 60
+    damageType: 9
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 19004
+  - type: STR_GRENADE_LAUNCHER_INC
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
+    requiresBuy:
+      - STR_RESISTANCE_BASIC_EQUIPMENT
+    size: 0.1
+    costBuy: 600
+    costSell: 400
+    landOnly: true
+    weight: 3
+    bigSprite: 454
+    floorSprite: 454
+    handSprite: 978
+    hitSound: 0
+    hitAnimation: 0
+    power: 60
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      ToTime: 0.3
+      IgnoreOverKill: false
+    damageType: 2
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    blastRadius: 4
+    attraction: 15
+    listOrder: 19004
+
   - type: STR_MGL
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS]
     requiresBuy:

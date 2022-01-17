@@ -7,9 +7,12 @@ covertOperations:
     soldierSlots: 2
     optionalSoldierSlots: 2
     optionalSoldierEffect: 1
+    requiresBaseFunc: [HQ]
     baseChances: 70
     danger: 5
     costs: 60
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     #itemSpaceLimit: 10 #FIXME - uncomment after bug fixed
     instantSuccessDeployment: 
       STR_MIB_CHASING: 100
@@ -23,9 +26,12 @@ covertOperations:
       - STR_MIB_CHASING_SUCCESS
     soldierSlots: 3
     optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
     baseChances: 60
     danger: 800
     costs: 432
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     trapChance: 65
@@ -43,9 +49,12 @@ covertOperations:
       - STR_MIB_CHASING_FAIL
     soldierSlots: 3
     optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
     baseChances: 45
     danger: 10
     costs: 600
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     trapChance: 85
@@ -65,8 +74,11 @@ covertOperations:
     soldierSlots: 3
     scientistSlots: 1
     baseChances: 45
+    requiresBaseFunc: [HQ]
     danger: 13
     costs: 220
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     specialRule: STR_REGIONAL_HQ_DISCOVERY
     successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
     successScore: 130
@@ -77,7 +89,6 @@ covertOperations:
     failureResearchList:
       - STR_REQ_HQ_LOCATION_FAILED
    
-
   - name: STR_REGIONAL_HQ_SURVEY
     description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
     requires:
@@ -85,8 +96,11 @@ covertOperations:
     soldierSlots: 3
     scientistSlots: 1
     baseChances: 70
+    requiresBaseFunc: [HQ]
     danger: 11
     costs: 320
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     successDescription: STR_REGIONAL_HQ_SURVEY_SUCCESS_DESCRIPTION
     successScore: 50
     successResearchList:
@@ -102,8 +116,11 @@ covertOperations:
     soldierSlots: 4
     scientistSlots: 1
     baseChances: 60
+    requiresBaseFunc: [HQ]
     danger: 14
     costs: 390
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     successDescription: STR_REGIONAL_HQ_SURVEY_SUCCESS_DESCRIPTION
     successScore: 40
     successResearchList:
@@ -119,9 +136,12 @@ covertOperations:
     soldierSlots: 2
     optionalSoldierSlots: 2
     optionalSoldierEffect: 5
+    requiresBaseFunc: [HQ]
     baseChances: 60
     danger: 14
     costs: 220
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     successDescription: STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION
     successScore: 200
     successResearchList:
@@ -143,9 +163,12 @@ covertOperations:
     soldierSlots: 2
     optionalSoldierSlots: 2
     optionalSoldierEffect: 1
+    requiresBaseFunc: [HQ]
     baseChances: 40
     danger: 0
     costs: 60
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     requiredItems:
       STR_DATA_VAULT: 1
     instantSuccessDeployment: 
@@ -160,9 +183,12 @@ covertOperations:
     soldierSlots: 2
     optionalSoldierSlots: 2
     optionalSoldierEffect: 1
+    requiresBaseFunc: [HQ]
     baseChances: 60
     danger: 0
     costs: 60
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     successDescription: STR_EX_COUNCIL_DATA_VAULT_CONVEY_DESCRIPTION_SUCCESS
     successFunds: 2000000
     successLoyalty: 350
@@ -172,14 +198,41 @@ covertOperations:
       STR_MIB_TRAP_DATA_VAULT: 100
     trapChance: 100
 
+  - name: STR_CULT_INVESTIGATION
+    description: STR_CULT_INVESTIGATION_DESCRIPTION
+    requires:
+      - STR_CULT_INVESTIGATION
+    soldierSlots: 2
+    optionalSoldierSlots: 2
+    optionalSoldierEffect: 1
+    scientistSlots: 1
+    requiresBaseFunc: [HQ]
+    requiredItems:
+      STR_FAKE_AGENT_ID: 2
+    removeRequiredItemsOnSuccess: false
+    removeRequiredItemsOnFailure: false
+    baseChances: 50
+    danger: 0
+    costs: 160
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    instantSuccessDeployment: 
+      STR_CULTISTS_DETENTION: 100
+    instantTrapDeployment: 
+      STR_CULTISTS_DETENTION_TRAP: 100
+    trapChance: 100
+
   - name: STR_STEAL_OSPREY_OPERATION
     description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
     requires:
       - STR_STEAL_OSPREY_PREREQ
     soldierSlots: 6
+    requiresBaseFunc: [HQ]
     baseChances: 40
     danger: 0
     costs: 300
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     engineerSlots: 2
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 150

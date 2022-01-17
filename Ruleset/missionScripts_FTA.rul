@@ -41,18 +41,37 @@ missionScripts:
     startDelay: 2880
     useTable: false
     randomDelay: 7200
+
+#alien-related
   - type: cropCirclesInitial
     missionWeights:
       0:
         STR_CROP_CIRCLES_INITIAL: 100
+    regionWeights:
+      0:
+        STR_CROP_CORCLES_INITIAL: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    lastMonth: 0
+    startDelay: 4000
+    useTable: false
+    randomDelay: 5000
+  - type: cropCirclesInitialSecondary
+    missionWeights:
+      0:
+        STR_CROP_CIRCLES_INITIAL: 100
+    regionWeights:
+      0:
+        STR_CROP_CORCLES_INITIAL: 100
     raceWeights:
       0:
         STR_MIB: 100
     researchTriggers:
       STR_CROP_CIRCLES_PREREQ: false
-    startDelay: 4000
+    startDelay: 4320
+    randomDelay: 43500
     useTable: false
-    randomDelay: 6000
 
 #monsters
   - type: chupaTerror
@@ -95,8 +114,8 @@ missionScripts:
     useTable: false
     spawnGap: 70
     randomSpawnGap: 15
-    #startDelay: 4320
-    #randomDelay: 43500
+    startDelay: 4320
+    randomDelay: 43500
     avoidRepeats: 1
     varName: havenDefence
   - type: havenForestHouse
@@ -115,8 +134,8 @@ missionScripts:
     useTable: false
     spawnGap: 70
     randomSpawnGap: 15
-    #startDelay: 4320
-    #randomDelay: 43500
+    startDelay: 4320
+    randomDelay: 43500
     avoidRepeats: 1
     varName: havenDefence
   - type: havenUrbanHideout
@@ -135,8 +154,8 @@ missionScripts:
     useTable: false
     spawnGap: 70
     randomSpawnGap: 15
-    #startDelay: 4320
-    #randomDelay: 43500
+    startDelay: 4320
+    randomDelay: 43500
     avoidRepeats: 1
     varName: havenDefence
   - type: resistanceScientist
@@ -157,8 +176,8 @@ missionScripts:
     useTable: false
     spawnGap: 120
     randomSpawnGap: 15
-    #startDelay: 4320
-    #randomDelay: 43500
+    startDelay: 4320
+    randomDelay: 43500
     avoidRepeats: 1
     varName: resistanceSpecial
   - type: desertTelescope
@@ -179,8 +198,8 @@ missionScripts:
     useTable: false
     spawnGap: 120
     randomSpawnGap: 15
-    #startDelay: 4320
-    #randomDelay: 43500
+    startDelay: 4320
+    randomDelay: 43500
     avoidRepeats: 1
     varName: resistanceSpecial
 

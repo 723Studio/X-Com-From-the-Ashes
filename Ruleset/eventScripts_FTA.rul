@@ -249,6 +249,14 @@ eventScripts:
       STR_EX_COUNCIL_MEMBER_INITIAL: true
       STR_COVERT_OPERATIONS: true
     allowedProcessor: 2 #xcom
+  - type: STR_MISTERY_CULT_EVENT_INITIAL_SCRIPT
+    oneTimeRandomEvents:
+      STR_MISTERY_CULT_EVENT: 100
+    researchTriggers:
+      STR_COVERT_OPERATIONS: true
+      STR_UFOPEDIA_DECRYPTION: true
+    allowedProcessor: 2 #xcom
+    executionOdds: 70
 
 #resistance
   - type: STR_RESISTANCE_WEAPONRY_SCRIPT
@@ -306,7 +314,7 @@ eventScripts:
         STR_MYSTERIOUS_SPONSOR_500000: 50
         STR_MYSTERIOUS_SPONSOR_1000000: 30
     lastMonth: 24
-    executionOdds: 8
+    executionOdds: 6
     spawnGap: 160
     allowedProcessor: 0
   - type: STR_OLD_CROP_CIRCLES

@@ -355,6 +355,12 @@ extraSprites:
       449: Resources/Armors/Enemies/Monsters/bigob_SwarmidWeapon.png
       450: Resources/Weapons/Alien/Utilities/bigob_AlienCommDevice.png
       451: Resources/MiscItems/bigob_Data_Vault.png
+      452: Resources/Weapons/Earthbound/General/bigob_GrenadeLauncher.png
+      453: Resources/Weapons/Earthbound/General/bigob_GrenadeLauncher_HE_Clip.png
+      454: Resources/Weapons/Earthbound/General/bigob_GrenadeLauncher_I_Clip.png
+      455: Resources/Weapons/Earthbound/General/bigob_GrenadeLauncher_Smoke_Clip.png
+      456: Resources/Weapons/Earthbound/Faction/bigob_RiotGun.png
+      457: Resources/Weapons/Earthbound/Faction/bigob_RiotGun_Clip.png
 
   - type: FLOOROB.PCK
     files:
@@ -522,6 +528,12 @@ extraSprites:
       #449
       450: Resources/Weapons/Alien/Utilities/floorob_AlienCommDevice.png
       451: Resources/MiscItems/floorob_Data_Vault.png
+      452: Resources/Weapons/Earthbound/General/floorob_GrenadeLauncher.png
+      453: Resources/Weapons/Earthbound/General/floorob_GrenadeLauncher_HE_Clip.png
+      454: Resources/Weapons/Earthbound/General/floorob_GrenadeLauncher_I_Clip.png
+      455: Resources/Weapons/Earthbound/General/floorob_GrenadeLauncher_Smoke_Clip.png
+      456: Resources/Weapons/Earthbound/Faction/floorob_RiotGun.png
+      457: Resources/Weapons/Earthbound/Faction/floorob_RiotGun_Clip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -633,6 +645,11 @@ extraSprites:
       938: Resources/Weapons/Earthbound/Faction/handob_Lever_action_Carbine.png
       946: Resources/Weapons/Earthbound/Faction/handob_Lever_action_CarbineAmmo.png
       954: Resources/Weapons/Earthbound/Grenades/handob_ImprovisedSmokeGrenade.png
+      962: Resources/Weapons/Earthbound/General/handob_GrenadeLauncher.png
+      970: Resources/Weapons/Earthbound/General/handob_GrenadeLauncher_HE_Clip.png
+      978: Resources/Weapons/Earthbound/General/handob_GrenadeLauncher_I_Clip.png
+      986: Resources/Weapons/Earthbound/General/handob_GrenadeLauncher_Smoke_Clip.png
+      994: Resources/Weapons/Earthbound/Faction/handob_RiotGun.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
@@ -763,6 +780,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/CROP_CIRCLES_CPAL.png
+  - type: CULT_ACTIVITY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/CULT_ACTIVITY.png
 
 #backgrounds
   - type: STORES_STATE.SCR
@@ -885,6 +908,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/XCOM_UFO_DEFENSE_BACKGROUND.png
+  - type: CULT_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CULT_BACKGROUND.png
 
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT_CPAL
@@ -927,18 +956,18 @@ extraSprites:
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_SeekerDrone_autopsy_CPAL.png 
 
-  - type: UFOPEDIA_IMG_FACEHUGGER
+  - type: ufopedia_FACEHUGGER_CPAL
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/Enemies/ufopedia_FACEHUGGER.png
-  - type: UFOPEDIA_IMG_FACEHUGGER_AUTOPSY
+      0: Resources/UfopediaPics/Enemies/ufopedia_FACEHUGGER_CPAL.png
+  - type: ufopedia_FACEHUGGER_AUTOPSY_CPAL
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/UfopediaPics/Enemies/ufopedia_FACEHUGGER_AUTOPSY.png 
+      0: Resources/UfopediaPics/Enemies/ufopedia_FACEHUGGER_AUTOPSY_CPAL.png 
   - type: UFOPEDIA_IMG_CHUPACABRA_CPAL
     singleImage: true
     width: 320

@@ -305,6 +305,15 @@ ufopaedia:
     requires:
       - STR_RECORD_WOW_SIGNAL
     listOrder: 170
+  - id: STR_CULT_ACTIVITY
+    type_id: 7
+    image_id: CULT_ACTIVITY
+    text_width: 163
+    section: STR_XCOM_REPORTS_UC
+    text: STR_CULT_INVESTIGATION_UFOPEDIA
+    requires:
+      - STR_CULT_INVESTIGATION
+    listOrder: 172
   - id: STR_CROP_CIRCLES
     type_id: 7
     image_id: CROP_CIRCLES_CPAL
@@ -1174,13 +1183,26 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     listOrder: 21120
 #cannons
+  - id: STR_RIOT_GUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_RIOT_GUN
+    text: STR_RIOT_GUN_UFOPEDIA
+    listOrder: 22002
+  - id: STR_RIOT_GUN_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_RIOT_GUN
+    listOrder: 22003
   - id: STR_TASER_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_TASER_CANNON
     text: STR_TASER_CANNON_UFOPEDIA
-    listOrder: 22000
+    listOrder: 22008
   - id: STR_TASER_CANNON_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
@@ -1420,6 +1442,31 @@ ufopaedia:
       - STR_SINGLE_ROCKET_LAUNCHER
     text: STR_SINGLE_ROCKET_UFOPEDIA
     listOrder: 23005
+  - id: STR_GRENADE_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_GRENADE_LAUNCHER
+    text: STR_GRENADE_LAUNCHER_UFOPEDIA
+    listOrder: 23006
+  - id: STR_GRENADE_LAUNCHER_FRAG
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_GRENADE_LAUNCHER
+    listOrder: 2302
+  - id: STR_GRENADE_LAUNCHER_INC
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_GRENADE_LAUNCHER
+    listOrder: 2302
+  - id: STR_GRENADE_LAUNCHER_SMOKE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_GRENADE_LAUNCHER
+    listOrder: 2302
   - id: STR_MGL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1883,7 +1930,7 @@ ufopaedia:
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_FACEHUGGER
-    image_id: UFOPEDIA_IMG_FACEHUGGER
+    image_id: ufopedia_FACEHUGGER_CPAL
     text: STR_FACEHUGGER_UFOPEDIA
     text_width: 158
     listOrder: 95000
@@ -1892,7 +1939,7 @@ ufopaedia:
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_FACEHUGGER_CORPSE
-    image_id: UFOPEDIA_IMG_FACEHUGGER_AUTOPSY
+    image_id: ufopedia_FACEHUGGER_AUTOPSY_CPAL
     text: STR_FACEHUGGER_AUTOPSY_UFOPEDIA
     text_width: 149
     listOrder: 95010
