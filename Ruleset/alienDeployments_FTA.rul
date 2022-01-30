@@ -2872,7 +2872,7 @@ alienDeployments:
         lowQty: 4
         medQty: 5
         highQty: 7
-        dQty: 2
+        dQty: 1
         percentageOutsideUfo: 100
         itemSets:
           -

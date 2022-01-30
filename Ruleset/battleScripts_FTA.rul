@@ -251,7 +251,8 @@ battleScripts:
       randomPackSize: true
       startTurn: 5
       unitSide: 1
-      minAlarmLevel: 1
+      minAlarmLevel: 2
+      spawnNodeRanks: [8]
       #groups: [1, 2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [ARMY_FIELD_OFFICER_SPAWN]
@@ -262,7 +263,8 @@ battleScripts:
       randomPackSize: true
       startTurn: 2
       unitSide: 1
-      minAlarmLevel: 1
+      minAlarmLevel: 2
+      spawnNodeRanks: [8]
       groups: [2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [ARMY_FIELD_OFFICER_SPAWN]
