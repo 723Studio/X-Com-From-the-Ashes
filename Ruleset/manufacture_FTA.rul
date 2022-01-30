@@ -263,6 +263,15 @@ manufacture:
     producedItems:
       STR_COMBAT_SHIELD: 1
     listOrder: 220030
+  - name: STR_MOTION_SCANNER
+    category: STR_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER_PROTOTYPE
+    space: 3
+    time: 630
+    cost: 38000
+    requiresBaseFunc: [WORK]
+    listOrder: 220040
 #components
   - name: STR_SPARE_PARTS
     category: STR_COMPONENTS

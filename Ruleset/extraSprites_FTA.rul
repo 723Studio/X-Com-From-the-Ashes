@@ -202,6 +202,9 @@ extraSprites:
       133: Resources/Armors/Enemies/Monsters/bigob_AM_CORPSE.png
       134: Resources/Armors/Enemies/Monsters/bigobs_SWARMIDS_CORPSE.png
       135: Resources/Armors/Enemies/Bandits/bigob_BANDIT.png
+      136: Resources/Armors/Enemies/Army/bigob_ARMY_FILED_SOLDIER.png
+      137: Resources/Armors/Enemies/Army/bigob_ARMY_FILED_OFFICER.png
+
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -361,6 +364,8 @@ extraSprites:
       455: Resources/Weapons/Earthbound/General/bigob_GrenadeLauncher_Smoke_Clip.png
       456: Resources/Weapons/Earthbound/Faction/bigob_RiotGun.png
       457: Resources/Weapons/Earthbound/Faction/bigob_RiotGun_Clip.png
+      458: Resources/Weapons/Earthbound/Faction/bigob_MilitaryRifle.png
+      459: Resources/Weapons/Earthbound/Faction/bigob_MilitaryRifleClip.png
 
   - type: FLOOROB.PCK
     files:
@@ -402,6 +407,8 @@ extraSprites:
       133: Resources/Armors/Enemies/Monsters/floorob_AM_CORPSE.png
       134: Resources/Armors/Enemies/Monsters/floorob_SWARMIDS_CORPSE_1.png
       135: Resources/Armors/Enemies/Bandits/floorob_BANDIT.png
+      136: Resources/Armors/Enemies/Army/floorob_ARMY_FILED_SOLDIER.png
+      137: Resources/Armors/Enemies/Army/floorob_ARMY_FILED_OFFICER.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -534,6 +541,8 @@ extraSprites:
       455: Resources/Weapons/Earthbound/General/floorob_GrenadeLauncher_Smoke_Clip.png
       456: Resources/Weapons/Earthbound/Faction/floorob_RiotGun.png
       457: Resources/Weapons/Earthbound/Faction/floorob_RiotGun_Clip.png
+      458: Resources/Weapons/Earthbound/Faction/floorob_MilitaryRifle.png
+      459: Resources/Weapons/Earthbound/Faction/floorob_MilitaryRifleClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -650,6 +659,9 @@ extraSprites:
       978: Resources/Weapons/Earthbound/General/handob_GrenadeLauncher_I_Clip.png
       986: Resources/Weapons/Earthbound/General/handob_GrenadeLauncher_Smoke_Clip.png
       994: Resources/Weapons/Earthbound/Faction/handob_RiotGun.png
+      1002: Resources/Weapons/Earthbound/Faction/handob_MilitaryRifle.png
+      1010: Resources/Weapons/Earthbound/Faction/handob_MilitaryRifleClip.png
+      1018: Resources/Weapons/Earthbound/Utilities/handob_Scanner.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
@@ -1071,6 +1083,7 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Aliens/Sectoids/inventory_SECTOID_COMMANDER.png
+#MIB
   - type: XCOM_EX_COMMANDER.PCK
     width: 512
     height: 720
@@ -1260,7 +1273,29 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Bandits/inventory_BANDIT.png
-
+#army
+  - type: ARMY_FIELD_SOLDIER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1480
+    files:
+      0: Resources/Armors/Enemies/Army/ARMY_FIELD_SOLDIER.png
+  - type: inventory_ARMY_FIELD_SOLDIER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Army/inventory_ARMY_FIELD_SOLDIER.png
+  - type: ARMY_FIELD_OFFICER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1480
+    files:
+      0: Resources/Armors/Enemies/Army/ARMY_FIELD_OFFICER.png
+  - type: inventory_ARMY_FIELD_OFFICER
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Army/inventory_ARMY_FIELD_OFFICER.png
 #monsters
   - type: FACEHUGGER.PCK
     subX: 32

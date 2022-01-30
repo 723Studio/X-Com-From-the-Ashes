@@ -256,13 +256,13 @@ units:
     aggression: 1
     sniper: 75
     spotter: 2
-    canSurrender: true
+    canSurrender: false
   - &STR_MIB_AGENT
     type: STR_MIB_AGENT
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 58
+      tu: 60
       stamina: 90
       health: 35
       bravery: 90
@@ -290,9 +290,8 @@ units:
     value: 20
     deathSound: *MaleDeathSounds
     intelligence: 4
-    aggression: 1
-    sniper: 75
-    spotter: 2
+    aggression: 3
+    spotter: 1
     canSurrender: false
   - type: STR_MIB_AGENT_SPAWN
     refNode: *STR_MIB_AGENT
@@ -380,10 +379,9 @@ units:
     value: 25
     deathSound: *MaleDeathSounds
     intelligence: 4
-    aggression: 2
-    sniper: 25
+    aggression: 3
     spotter: 1
-    canSurrender: true
+    canSurrender: false
   - type: STR_MIB_ARMORED_AGENT_SPAWN
     refNode: *STR_MIB_ARMORED_AGENT
     value: 2
@@ -420,11 +418,11 @@ units:
     kneelHeight: 14
     value: 27
     deathSound: *MaleDeathSounds
-    intelligence: 3
-    aggression: 3
+    intelligence: 5
+    aggression: 4
     sniper: 50
-    spotter: 1
-    canSurrender: true
+    spotter: 2
+    canSurrender: false
     energyRecovery: 25
   - type: STR_MIB_SPECOPS_SPAWN
     refNode: *STR_MIB_SPECOPS
@@ -473,7 +471,7 @@ units:
   - type: STR_MIB_BUTCHER
     race: STR_MIB
     stats:
-      tu: 60
+      tu: 75
       stamina: 110
       health: 85
       bravery: 120
@@ -502,7 +500,8 @@ units:
     deathSound: *MaleDeathSounds
     intelligence: 2
     aggression: 8
-    energyRecovery: 25
+    energyRecovery: 40
+    canSurrender: false
   - type: STR_SEEKER_DRONE_TERRORIST
     race: STR_MIB
     rank: STR_LIVE_TERRORIST
@@ -540,6 +539,7 @@ units:
     intelligence: 3
     aggression: 0
     spotter: 1
+    canSurrender: false
     builtInWeaponSets:
       - - STR_SEEKER_DRONE_WEAPON
   - type: STR_MIB_SCIENTIST
@@ -575,6 +575,7 @@ units:
     intelligence: 5
     aggression: 1
     energyRecovery: 25
+    canSurrender: false
   - type: STR_MIB_ENFORCER
     race: STR_MIB
     rank: STR_LIVE_ENGINEER
@@ -609,10 +610,10 @@ units:
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
     intelligence: 4
-    aggression: 1
+    aggression: 6
     sniper: 75
     spotter: 2
-    canSurrender: true
+    canSurrender: false
 
 #MiB\Procured
   - &MIB_PROCURED_CIVILIAN
@@ -650,7 +651,7 @@ units:
     # berserkSound: *MaleBerserkSounds
     energyRecovery: 20
     intelligence: 1
-    aggression: 1
+    aggression: 0
     canSurrender: true
   - type: MIB_OFFICE_MANAGER
     refNode: *MIB_PROCURED_CIVILIAN
@@ -659,7 +660,7 @@ units:
     deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
-    aggression: 2
+    aggression: 0
     builtInWeaponSets: &MIBAgentLoadout
       - - STR_CREDIT_CARD_SILVER
       - - STR_CREDIT_CARD_SILVER
@@ -704,7 +705,7 @@ units:
       melee: 10
       psiStrength: 15
     value: -10
-    aggression: 6
+    aggression: 3
   - type: MIB_OFFICE_WORKER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_WORKER_ARMOR
@@ -740,6 +741,8 @@ units:
       strength: 5
       melee: 10
       psiStrength: 15
+    value: -10
+    aggression: 4
 
 #Cultists
   - type: STR_CULT_GANGER
@@ -852,6 +855,176 @@ units:
     sniper: 75
     spotter: 2
     canSurrender: true
+
+#Army
+  - &STR_ARMY_FIELD_SOLDIER
+    type: STR_ARMY_FIELD_SOLDIER
+    race: STR_ARMY
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 100
+      health: 38
+      bravery: 70
+      reactions: 40
+      firing: 50
+      throwing: 50
+      strength: 48
+      melee: 35
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 3
+      stamina: 8
+      health: 6
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 5
+      psiStrength: 15
+    armor: STR_ARMY_FIELD_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -15
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 1
+    canSurrender: false
+  - type: STR_ARMY_FIELD_SOLDIER_SPAWN
+    refNode: *STR_ARMY_FIELD_SOLDIER
+    altRecoveredUnit: STR_ARMY_FIELD_SOLDIER
+    builtInWeaponSets:
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_SINGLE_ROCKET_LAUNCHER
+        - STR_GRENADE
+        - STR_GRENADE
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_SINGLE_ROCKET_LAUNCHER
+        - STR_GRENADE
+        - STR_FLASHBANG_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_RIOT_GUN
+        - STR_RIOT_GUN_CLIP
+        - STR_RIOT_GUN_CLIP
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+  - &ARMY_FIELD_OFFICER
+    type: STR_ARMY_FIELD_OFFICER
+    race: STR_ARMY
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 62
+      stamina: 100
+      health: 40
+      bravery: 100
+      reactions: 45
+      firing: 60
+      throwing: 60
+      strength: 45
+      melee: 40
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 10
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 5
+      psiStrength: 15
+    armor: STR_ARMY_FIELD_OFFICER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -15
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 2
+    sniper: 15
+    spotter: 1
+    canSurrender: true
+  - type: ARMY_FIELD_OFFICER_SPAWN
+    refNode: *ARMY_FIELD_OFFICER
+    altRecoveredUnit: STR_ARMY_FIELD_OFFICER
+    builtInWeaponSets:
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_FLASHBANG_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
 
 #Zombies
   - type: STR_FACEHUGGER

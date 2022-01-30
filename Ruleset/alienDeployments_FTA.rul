@@ -274,6 +274,7 @@ alienDeployments:
   - &MIBRegionalHQ #hardcoded, do not rename!
     type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
     race: STR_MIB_REGIONAL_HQ
+    isHiddenAlienBase: true
     nextStage: STR_MIB_REGIONAL_HQ_UNDERGROUND
     alternativeDeploymentResearch: STR_REGIONAL_HQ_SURVEY_DONE
     alternativeDeployment: STR_INITIAL_REGIONAL_HQ_EASY
@@ -2849,7 +2850,84 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets: *gangerMediumLoadout
 
-
+  - type: STR_INFILTRATING_MILITARY_RND
+    race: STR_ARMY
+    width: 30
+    length: 60
+    height: 2
+    shade: 0
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR #TODO
+      showTarget: false
+      showCraft: false
+      desc: STR_INFILTRATING_MILITARY_RND_BRIEFING
+    terrains:
+      - OFFICE
+    script: MULITARY_UNDERGROUND_RND
+    battleScript: MULITARY_UNDERGROUND_RND
+    data:
+      - alienRank: 4 #STR_ARMY_FIELD_OFFICER
+        lowQty: 4
+        medQty: 5
+        highQty: 7
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
 
 #traps 
   - type: STR_MIB_CHASING_TRAP

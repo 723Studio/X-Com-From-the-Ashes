@@ -242,6 +242,43 @@ battleScripts:
           #background: SOME_EXTRA_SPRITE.PCK
         # 1:
         #   content: content2
+  - type: MULITARY_UNDERGROUND_RND
+    commands:
+    - type: spawnUnit #med
+      executionChances: 80
+      maxDifficulty: 3
+      packSize: 2
+      randomPackSize: true
+      startTurn: 5
+      unitSide: 1
+      minAlarmLevel: 1
+      #groups: [1, 2, 3, 4]
+      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
+      unitSet: [ARMY_FIELD_OFFICER_SPAWN]
+    - type: spawnUnit #sh
+      executionChances: 100
+      minDifficulty: 4
+      packSize: 4
+      randomPackSize: true
+      startTurn: 2
+      unitSide: 1
+      minAlarmLevel: 1
+      groups: [2, 3, 4]
+      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
+      unitSet: [ARMY_FIELD_OFFICER_SPAWN]
+    - type: showMessage
+      maxRuns: 1
+      variable: alarm
+      minAlarmLevel: 2
+      startTurn: 0
+      messages:
+        0:
+          title: MILITARY_RND_ALARM_TITLE
+          content: MILITARY_RND_ALARM_CONTENT
+          #answer: STR_SOME_TEXT
+          #background: SOME_EXTRA_SPRITE.PCK
+        # 1:
+        #   content: content2
 
   - type: STR_LOCALS_TRAP_BAT_SCRIPT
     commands:

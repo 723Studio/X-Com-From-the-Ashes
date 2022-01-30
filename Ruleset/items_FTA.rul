@@ -506,15 +506,16 @@ items:
     power: 8
     damageType: 7
     damageBonus:
-      throwing: [0, 0.01]
+      throwing: [0, 0.015]
+      strength: 0.1
     damageAlter:
       RandomType: 2
-      ArmorEffectiveness: 1.2
+      ArmorEffectiveness: 1.4
       ToTile: 0.2
-    accuracySnap: 75
+    accuracySnap: 70
     accuracyMultiplier:
-      firing: 0.1
-      throwing: 0.93
+      firing: 0.9
+      throwing: 1.1
     costSnap:
       time: 15
       energy: 5
@@ -527,13 +528,13 @@ items:
     noiseValue: 0
     invWidth: 1
     invHeight: 2
-    maxRange: 8
+    maxRange: 10
     bulletSpeed: -2
-    experienceTrainingMode: 11
+    experienceTrainingMode: 10
     attraction: 6
     listOrder: 3000
   - type: STR_SPORTS_BOW
-    categories: [STR_HUMAN_TECH, STR_THROWING]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
     size: 0.2
     landOnly: true
     costBuy: 850
@@ -578,7 +579,7 @@ items:
     attraction: 20
     listOrder: 3010
   - type: STR_BOW_ARROW
-    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_CLIPS]
     size: 0.08
     landOnly: true
     costBuy: 35
@@ -1512,7 +1513,7 @@ items:
     compatibleAmmo:
       - STR_RIOT_RIFLE_CLIP
     accuracyCloseQuarters: 100
-    accuracyAuto: 30
+    accuracyAuto: 45
     accuracySnap: 60
     accuracyAimed: 100
     tuAuto: 35
@@ -1541,9 +1542,9 @@ items:
     handSprite: 424
     hitSound: 58
     hitAnimation: 26
-    power: 36
+    power: 35
     damageAlter:
-      ArmorEffectiveness: 0.9
+      ArmorEffectiveness: 0.95
     damageType: 1
     clipSize: 30
     battleType: 2
@@ -1601,6 +1602,66 @@ items:
     battleType: 2
     attraction: 8
     listOrder: 7096
+  - type: STR_MILITARY_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
+    requiresBuy:
+      - STR_MILITARY_RIFLE
+      - STR_MILITARY_EQUIPMENT_ACQUISITION
+    size: 0.2
+    costBuy: 3300
+    costSell: 2250
+    weight: 12
+    bigSprite: 458
+    floorSprite: 458
+    handSprite: 1002
+    bulletSprite: 2
+    fireSound: 71
+    compatibleAmmo:
+      - STR_MILITARY_RIFLE_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 45
+    accuracySnap: 75
+    accuracyAimed: 115
+    tuAuto: 35
+    tuSnap: 25
+    tuAimed: 60
+    costThrow:
+      energy: 12
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 60
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    snapRange: 20
+    autoRange: 11
+    listOrder: 21193
+    attraction: 20
+  - type: STR_MILITARY_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
+    requiresBuy:
+      - STR_MILITARY_RIFLE_CLIP
+      - STR_MILITARY_EQUIPMENT_ACQUISITION
+    size: 0.05
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 459
+    floorSprite: 459
+    handSprite: 1010
+    hitSound: 58
+    hitAnimation: 26
+    power: 26
+    damageAlter:
+      ArmorEffectiveness: 0.9
+    damageType: 1
+    clipSize: 30
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 21210
   - type: STR_ASSAULT_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:
@@ -1721,8 +1782,10 @@ items:
     handSprite: 144
     hitAnimation: 26
     hitSound: 22
-    power: 34
+    power: 32
     damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 0.9
     clipSize: 20
     battleType: 2
     attraction: 8
@@ -1741,7 +1804,7 @@ items:
     handSprite: 144
     hitAnimation: 26
     hitSound: 22
-    power: 27
+    power: 25
     damageType: 1
     damageAlter:
       RandomType: 2
@@ -2387,34 +2450,34 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.4
-    costBuy: 12500
-    costSell: 10000
+    costBuy: 16000
+    costSell: 12000
     landOnly: true
-    weight: 20
+    weight: 23
     bigSprite: 456
     floorSprite: 456
     handSprite: 994
     bulletSprite: 11
     bulletSpeed: 32
-    fireSound: 2
+    fireSound: 113
     compatibleAmmo:
       - STR_RIOT_GUN_CLIP
     accuracyCloseQuarters: 42
-    accuracySnap: 36
-    accuracyAuto: 36
+    accuracySnap: 48
+    accuracyAuto: 45
     tuSnap: 38
-    tuAuto: 52
-    tuLoad: 34
+    tuAuto: 42
+    tuLoad: 50
     snapRange: 34
-    autoRange: 32
+    autoRange: 34
     confSnap:
       shots: 3
     confAuto:
-      shots: 6
+      shots: 7
     battleType: 1
     twoHanded: true
     blockBothHands: true
-    kneelBonus: 150
+    kneelBonus: 170
     invWidth: 2
     invHeight: 3
     armor: 40
@@ -2426,19 +2489,20 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.1
-    costBuy: 1500
+    costBuy: 1600
     costSell: 1250
     landOnly: true
-    weight: 12
+    weight: 13
     bigSprite: 457
     floorSprite: 457
     hitSound: 22
     hitAnimation: 26
-    power: 36
+    power: 40
     damageAlter:
       ArmorEffectiveness: 0.85
+      ToArmorPre: 0.01
     damageType: 1
-    clipSize: 125
+    clipSize: 90
     battleType: 2
     armor: 34
     invWidth: 2
@@ -2452,7 +2516,7 @@ items:
     landOnly: true
     size: 0.3
     costSell: 18000
-    weight: 14
+    weight: 15
     bigSprite: 398
     floorSprite: 398
     handSprite: 688
@@ -2495,14 +2559,14 @@ items:
     invWidth: 2
     invHeight: 2
     blastRadius: 0
-    power: 65
+    power: 70
     damageType: 11
     damageAlter:
       ToHealth: 0.1
       ToStun: 1.0
       ToArmor: 0.0
       ToWound: 0.0
-      ToTime: 0.1
+      ToTime: 1.2
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
@@ -2523,7 +2587,7 @@ items:
     size: 0.3
     costBuy: 34000
     costSell: 25000
-    weight: 18
+    weight: 20
     landOnly: true
     bigSprite: 385
     floorSprite: 385
@@ -2533,23 +2597,23 @@ items:
     compatibleAmmo:
       - STR_LMG_CLIP
       - STR_LMG_AA_CLIP
-    accuracyCloseQuarters: 65
-    accuracyAuto: 47
-    accuracySnap: 47
+    accuracyCloseQuarters: 60
+    accuracyAuto: 52
+    accuracySnap: 52
     accuracyAimed: 65
-    kneelBonus: 140
-    tuAuto: 38
     tuSnap: 33
+    tuAuto: 40
     tuAimed: 55
-    tuLoad: 23
-    autoRange: 25
-    snapRange: 25
+    tuLoad: 30
+    autoRange: 30
+    snapRange: 30
     confSnap:
       shots: 3
-    autoShots: 5
+    autoShots: 6
     battleType: 1
     twoHanded: true
     blockBothHands: true
+    kneelBonus: 160
     invWidth: 2
     invHeight: 3
     armor: 30
@@ -2569,9 +2633,10 @@ items:
     floorSprite: 386
     hitSound: 22
     hitAnimation: 26
-    power: 42
+    power: 45
     damageAlter:
       ArmorEffectiveness: 0.85
+      ToArmorPre: 0.01
       ToTime: 0.1
       ToTile: 0.7
     damageType: 1
@@ -2595,6 +2660,7 @@ items:
     power: 50
     damageAlter:
       ArmorEffectiveness: 0.85
+      ToArmorPre: 0.01
       ToTime: 0.1
       ToTile: 0.7
     damageType: 1
@@ -2613,7 +2679,7 @@ items:
     landOnly: true
     costBuy: 52000
     costSell: 37000
-    weight: 20
+    weight: 24
     bigSprite: 438
     floorSprite:  438
     handSprite: 858
@@ -2651,14 +2717,15 @@ items:
     landOnly: true
     costBuy: 2800
     costSell: 2000
-    weight: 10
+    weight: 12
     bigSprite: 439
     floorSprite: 439
     hitSound: 13
     hitAnimation: 26
-    power: 45
+    power: 56
     damageAlter:
       ArmorEffectiveness: 0.75
+      ToArmorPre: 0.02
     damageType: 1
     clipSize: 20
     costThrow:
@@ -2673,7 +2740,7 @@ items:
     size: 0.05
     landOnly: true
     costSell: 18000
-    weight: 10
+    weight: 11
     bigSprite: 440
     floorSprite: 439
     hitSound: 13
@@ -2681,6 +2748,7 @@ items:
     power: 58
     damageAlter:
       ArmorEffectiveness: 0.75
+      ToArmorPre: 0.02
     damageType: 1
     clipSize: 20
     costThrow:
@@ -2697,7 +2765,7 @@ items:
     size: 0.25
     costBuy: 24000
     costSell: 20000
-    weight: 16
+    weight: 19
     landOnly: true
     bigSprite: 303
     floorSprite: 303
@@ -2712,16 +2780,16 @@ items:
       - STR_LC_BS_AA_AMMO
       - STR_LC_I_AMMO
     accuracyCloseQuarters: 50
-    accuracySnap: 50
-    accuracyAimed: 75
-    kneelBonus: 140
+    accuracySnap: 55
+    accuracyAimed: 80
+    kneelBonus: 145
     tuSnap: 30
-    tuAimed: 70
+    tuAimed: 65
     battleType: 1
     twoHanded: true
     blockBothHands: true
     shotgunChoke: 100
-    aimRange: 20
+    aimRange: 25
     armor: 35
     invWidth: 1
     invHeight: 3
@@ -2734,7 +2802,7 @@ items:
     size: 0.08
     costBuy: 350
     costSell: 300
-    weight: 4
+    weight: 5
     landOnly: true
     bigSprite: 304
     floorSprite: 304
@@ -2762,14 +2830,14 @@ items:
     size: 0.08
     costBuy: 300
     costSell: 260
-    weight: 4
+    weight: 5
     landOnly: true
     bigSprite: 305
     floorSprite: 305
     handSprite: 160
     hitSound: 13 #81 xcf
     hitAnimation: 26
-    power: 25
+    power: 26
     damageAlter:
       ToTime: 0.05
     shotgunBehavior: 1
@@ -2789,14 +2857,14 @@ items:
     size: 0.08
     costBuy: 850
     costSell: 700
-    weight: 4
+    weight: 5
     landOnly: true
     bigSprite: 306
     floorSprite: 306
     handSprite: 160
     hitSound: 0
     hitAnimation: 0
-    power: 44
+    power: 45
     damageAlter:
       IgnoreOverKill: false
       ToTile: 0.8
@@ -2814,7 +2882,7 @@ items:
     size: 0.08
     costBuy: 700
     costSell: 550
-    weight: 4
+    weight: 5
     landOnly: true
     bigSprite: 309
     floorSprite: 309
@@ -2843,7 +2911,7 @@ items:
     handSprite: 160
     hitSound: 13 #81 xcf
     hitAnimation: 26
-    power: 62
+    power: 65
     damageAlter:
       ArmorEffectiveness: 0.7
       ToTime: 0.15
@@ -2868,7 +2936,7 @@ items:
     handSprite: 160
     hitSound: 13 #81 xcf
     hitAnimation: 26
-    power: 33
+    power: 34
     damageAlter:
       ToTime: 0.05
     shotgunBehavior: 1
@@ -2888,7 +2956,7 @@ items:
     size: 0.3
     costBuy: 34000
     costSell: 27000
-    weight: 36
+    weight: 38
     alienArtifact: true
     landOnly: true
     bigSprite: 416
@@ -2903,17 +2971,17 @@ items:
       - STR_HC_BS_AMMO
       - STR_HC_AA_BS_AMMO
       - STR_HC_AA_AMMO
-    accuracyCloseQuarters: 45
+    accuracyCloseQuarters: 40
     accuracySnap: 60
     accuracyAimed: 90
     tuSnap: 33
-    tuAimed: 80
+    tuAimed: 85
     tuLoad: 20
     battleType: 1
     twoHanded: true
     blockBothHands: true
     shotgunChoke: 100
-    aimRange: 25
+    aimRange: 30
     invWidth: 2
     invHeight: 3
     armor: 40
@@ -2926,14 +2994,14 @@ items:
     size: 0.1
     costBuy: 600
     costSell: 425
-    weight: 6
+    weight: 7
     landOnly: true
     bigSprite: 12
     floorSprite: 12
     handSprite: 168
     hitSound: 13 #81 xcf
     hitAnimation: 26
-    power: 70
+    power: 72
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 0.65
@@ -2954,14 +3022,14 @@ items:
     size: 0.1
     costBuy: 450
     costSell: 325
-    weight: 6
+    weight: 7
     landOnly: true
     bigSprite: 312
     floorSprite: 12
     handSprite: 176
     hitSound: 13 #81 xcf
     hitAnimation: 26
-    power: 33
+    power: 34
     damageAlter:
       ToTime: 0.1
       ToStun: 0.03
@@ -2982,7 +3050,7 @@ items:
     size: 0.1
     costBuy: 1000
     costSell: 750
-    weight: 6
+    weight: 7
     landOnly: true
     bigSprite: 13
     floorSprite: 13
@@ -3007,7 +3075,7 @@ items:
     size: 0.1
     costBuy: 800
     costSell: 625
-    weight: 6
+    weight: 7
     landOnly: true
     bigSprite: 14
     floorSprite: 14
@@ -3036,7 +3104,7 @@ items:
     handSprite: 168
     hitSound: 13
     hitAnimation: 26
-    power: 88
+    power: 90
     damageAlter:
       ArmorEffectiveness: 0.65
       ToTime: 0.2
@@ -3061,7 +3129,7 @@ items:
     handSprite: 176
     hitSound: 13 #81 xcf
     hitAnimation: 26
-    power: 42
+    power: 43
     damageAlter:
       ToTime: 0.1
       ToStun: 0.03
@@ -3082,7 +3150,7 @@ items:
     size: 0.3
     costBuy: 37000
     costSell: 32000
-    weight: 29
+    weight: 30
     landOnly: true
     bigSprite: 7
     floorSprite: 7
@@ -3097,8 +3165,8 @@ items:
       - STR_AC_AA_BS_AMMO
       - STR_AC_AA_AMMO
     accuracyCloseQuarters: 55
-    accuracyAuto: 40
-    accuracySnap: 56
+    accuracyAuto: 42
+    accuracySnap: 58
     #accuracyAimed: 82
     tuAuto: 40
     tuSnap: 33
@@ -3109,7 +3177,7 @@ items:
     twoHanded: true
     blockBothHands: true
     shotgunChoke: 80
-    aimRange: 22
+    aimRange: 25
     invWidth: 2
     invHeight: 3
     attraction: 8
@@ -3121,14 +3189,14 @@ items:
     size: 0.1
     costBuy: 800
     costSell: 600
-    weight: 5
+    weight: 6
     landOnly: true
     bigSprite: 8
     floorSprite: 8
     handSprite: 200
     hitSound: 13 #79 xcf
     hitAnimation: 26
-    power: 52
+    power: 54
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 0.75
@@ -3148,7 +3216,7 @@ items:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costSell: 525
-    weight: 5
+    weight: 6
     landOnly: true
     bigSprite: 315
     floorSprite: 10
@@ -3175,7 +3243,7 @@ items:
     size: 0.1
     costBuy: 1100
     costSell: 900
-    weight: 5
+    weight: 6
     landOnly: true
     bigSprite: 9
     floorSprite: 9
@@ -3200,14 +3268,14 @@ items:
     size: 0.1
     costBuy: 1000
     costSell: 750
-    weight: 5
+    weight: 6
     landOnly: true
     bigSprite: 10
     floorSprite: 10
     handSprite: 216
     hitSound: 0
     hitAnimation: 0
-    power: 52
+    power: 53
     damageAlter:
       ToHealth: 1.5
       ToMorale: 15.0
@@ -3229,7 +3297,7 @@ items:
     handSprite: 200
     hitSound: 13
     hitAnimation: 26
-    power: 70
+    power: 72
     damageAlter:
       ArmorEffectiveness: 0.75
       ToTime: 0.1
@@ -3254,7 +3322,7 @@ items:
     handSprite: 208
     hitSound: 13 #81 xcf
     hitAnimation: 26
-    power: 37
+    power: 38
     damageAlter:
       ToTime: 0.1
     shotgunBehavior: 1
@@ -3274,7 +3342,7 @@ items:
     size: 0.6
     costBuy: 33000
     costSell: 10000
-    weight: 34
+    weight: 38
     bigSprite: 393
     floorSprite: 393
     handSprite: 672
@@ -3284,10 +3352,10 @@ items:
       - STR_MINIGUN_CLIP
       - STR_MINIGUN_AA_CLIP
     accuracyCloseQuarters: 33
-    accuracyAuto: 42
-    tuAuto: 58
+    accuracyAuto: 45
+    tuAuto: 48
     tuLoad: 50
-    autoRange: 25
+    autoRange: 27
     autoShots: 20
     dropoff: 2
     battleType: 1
@@ -3307,12 +3375,12 @@ items:
     size: 0.3
     costBuy: 3000
     costSell: 2400
-    weight: 16
+    weight: 20
     bigSprite: 394
     floorSprite: 394
     hitSound: 22
     hitAnimation: -1
-    power: 50
+    power: 53
     damageAlter:
       ArmorEffectiveness: 0.75
       ToTime: 0.15
@@ -3332,7 +3400,7 @@ items:
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     size: 0.3
     costSell: 80000
-    weight: 15
+    weight: 16
     bigSprite: 395
     floorSprite: 395
     hitSound: 22
@@ -3584,7 +3652,6 @@ items:
     blastRadius: 4
     attraction: 15
     listOrder: 19004
-
   - type: STR_MGL
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS]
     requiresBuy:
@@ -4133,6 +4200,19 @@ items:
     invHeight: 1
     attraction: 6
     listOrder: 21050
+#tools
+  - type: STR_MOTION_SCANNER
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
+    size: 0.1
+    costSell: 47200
+    weight: 4
+    bigSprite: 23
+    floorSprite: 23
+    handSprite: 1018
+    battleType: 7
+    tuUse: 15
+    flatRate: true
+    listOrder: 22000
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -4788,7 +4868,20 @@ items:
     invWidth: 2
     invHeight: 1
     recoveryPoints: 100
-    listOrder: 30030
+    listOrder: 30005
+  - type: STR_MOTION_SCANNER_PROTOTYPE
+    categories: [STR_EVIDENCE]
+    landOnly: true
+    size: 0.1
+    missionObjective: true
+    battleType: 0
+    weight: 4
+    bigSprite: 23
+    floorSprite: 23
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 100
+    listOrder: 30006
   - type: STR_FLOPPY_SCIENTISTS_LOG
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -5046,7 +5139,7 @@ items:
     categories: [STR_HUMANS, STR_COMPONENTS]
     listOrder: 146030
 
-#alient
+#alien
   - type: STR_ALIEN_COMMON_DEVICE
     categories: [STR_ALIEN_TECH]
     landOnly: true
@@ -5379,7 +5472,32 @@ items:
     recover: false #TODO Consider
     liveAlien: false
     #prisonType: 1
-    listOrder: 100374
+    listOrder: 100376
+#Army
+  - type: STR_ARMY_FIELD_SOLDIER_CORPSE
+    refNode: *HUMAN_CORPSE
+    bigSprite: 136
+    floorSprite: 136
+    listOrder: 100375
+  - type: STR_ARMY_FIELD_SOLDIER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: false #TODO Consider
+    liveAlien: false
+    #prisonType: 1
+    listOrder: 100376
+  - type: STR_ARMY_FIELD_OFFICER_CORPSE
+    refNode: *HUMAN_CORPSE
+    bigSprite: 137
+    floorSprite: 137
+    listOrder: 100377
+  - type: STR_ARMY_FIELD_OFFICER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: false #TODO Consider
+    liveAlien: false
+    #prisonType: 1
+    listOrder: 100378
 
 #Zombies
   - &liveMonster

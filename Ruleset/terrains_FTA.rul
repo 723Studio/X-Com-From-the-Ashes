@@ -3096,6 +3096,40 @@ terrains:
         width: 10
         length: 10
         groups: 7
+
+  - name: OFFICE
+    mapDataSets:
+      - BLANKS
+      - OFFICE_EXTRA
+      - OFFICE
+    mapBlocks:
+      - name: MIL_OFFICE_ENT00
+        width: 30
+        length: 20
+        groups: 5 #enter
+      - name: MIL_OFFICE_MID00
+        width: 30
+        length: 20
+        groups: 6 #middle
+      - name: MIL_OFFICE_END00
+        width: 30
+        length: 20
+        groups: 7 #end
+        randomizedItems:
+        - position: [5, 9, 0]
+          amount: 1
+          mixed: true
+          itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+      - name: MIL_OFFICE_END01
+        width: 30
+        length: 20
+        groups: 7 #end
+        randomizedItems:
+        - position: [24, 16, 0]
+          amount: 1
+          mixed: true
+          itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+
   - name: MIB_SEWERS
     mapDataSets:
       - BLANKS

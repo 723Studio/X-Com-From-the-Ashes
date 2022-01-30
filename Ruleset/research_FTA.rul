@@ -102,6 +102,8 @@ research:
     hidden: true
   - name: STR_CULT_GANG_DEN
     hidden: true
+  - name: STR_MILITARY_EQUIPMENT_ACQUISITION #TODO add way to unlock this
+    hidden: true
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
@@ -287,6 +289,12 @@ research:
       - STR_GRENADE_LAUNCHER_INC
       - STR_GRENADE_LAUNCHER_SMOKE
 
+  - name: STR_MILITARY_TECH #TODO add way to unlock
+    hidden: true
+    getOneFree:
+      - STR_MILITARY_RIFLE
+      - STR_MILITARY_RIFLE_CLIP
+
   - name: STR_ELECTRIC_WEAPONS_PREREQ
     hidden: true
   - name: STR_ELECTRIC_WEAPONS
@@ -315,6 +323,14 @@ research:
     dependencies:
       - STR_TASER_CANNON
     listOrder: 25020
+
+  - name: STR_MOTION_SCANNER_PROTOTYPE
+    cost: 100
+    points: 50
+    needItem: true
+    listOrder: 25025
+
+
   - name: STR_CHEMICAL_WEAPONRY_PREREQ
     hidden: true
   - name: STR_CHEMICAL_WEAPONRY
@@ -1304,7 +1320,16 @@ research:
     dependencies:
       - STR_LEVER_ACTION_CARBINE
     listOrder: 30220
-
+  - name: STR_MILITARY_RIFLE
+    cost: 35
+    points: 10
+    needItem: true
+    listOrder: 30224
+  - name: STR_MILITARY_RIFLE_CLIP
+    cost: 20
+    points: 5
+    needItem: true
+    listOrder: 30225
   - name: STR_HUNTING_RIFLE
     cost: 15
     points: 2
