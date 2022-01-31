@@ -19,7 +19,7 @@ diplomacyFactions:
       #STR_SCIENTIST: 12
     genMissionFreq: 100 #60% chance to run the script
     helpTreatyMissions:
-      - havenZombieFarm
+      - havenFarm
       - havenForestHouse
       - havenUrbanHideout
       - resistanceScientist
