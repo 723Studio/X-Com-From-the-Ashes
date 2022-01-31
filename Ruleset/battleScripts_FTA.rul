@@ -245,7 +245,7 @@ battleScripts:
   - type: MULITARY_UNDERGROUND_RND
     commands:
     - type: spawnUnit #med
-      executionChances: 80
+      executionChances: 70
       maxDifficulty: 3
       packSize: 2
       randomPackSize: true

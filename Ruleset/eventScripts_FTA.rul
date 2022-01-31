@@ -28,13 +28,13 @@ eventScripts:
     researchTriggers:
       STR_SUPPLIES: false
   - type: STR_NO_SUPPLY_THIRD_WARNING_SCRIPT
-    oneTimeSequentialEvents: [ STR_NO_SUPPLY_THIRD_WARNING_EVENT]
+    oneTimeSequentialEvents: [STR_NO_SUPPLY_THIRD_WARNING_EVENT]
     firstMonth: 2
     researchTriggers:
       STR_SUPPLIES: false
   - type: STR_MONSTER_HUNT_START #Start of monster hunt arc
     oneTimeSequentialEvents: [STR_MONSTER_HUNT_START_EVENT]
-    executionOdds: 75
+    executionOdds: 60
   - &STR_STEAL_OSPREY
     type: STR_STEAL_OSPREY
     oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
