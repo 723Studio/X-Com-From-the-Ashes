@@ -3,7 +3,7 @@ battleScripts:
     commands:
     - type: spawnUnit #for low diff
       startTurn: 5
-      executionChances: 50
+      executionChances: 70
       packSize: 4
       randomPackSize: true
       unitSide: 1
