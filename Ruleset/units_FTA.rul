@@ -971,7 +971,7 @@ units:
     armor: STR_ARMY_FIELD_OFFICER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -15
+    value: -5
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 2

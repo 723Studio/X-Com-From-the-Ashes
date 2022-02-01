@@ -245,21 +245,21 @@ battleScripts:
   - type: MULITARY_UNDERGROUND_RND
     commands:
     - type: spawnUnit #med
-      executionChances: 70
+      executionChances: 50
       maxDifficulty: 3
-      packSize: 2
+      packSize: 1
       randomPackSize: true
       startTurn: 5
       unitSide: 1
-      minAlarmLevel: 2
+      minAlarmLevel: 3
       spawnNodeRanks: [8]
       #groups: [1, 2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [ARMY_FIELD_OFFICER_SPAWN]
     - type: spawnUnit #sh
-      executionChances: 100
+      executionChances: 80
       minDifficulty: 4
-      packSize: 4
+      packSize: 2
       randomPackSize: true
       startTurn: 2
       unitSide: 1
@@ -271,7 +271,7 @@ battleScripts:
     - type: showMessage
       maxRuns: 1
       variable: alarm
-      minAlarmLevel: 2
+      minAlarmLevel: 3
       startTurn: 0
       messages:
         0:
