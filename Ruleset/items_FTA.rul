@@ -4861,6 +4861,7 @@ items:
     landOnly: true
     size: 0.05
     missionObjective: true
+    tuThrow: 0
     battleType: 0
     weight: 5
     bigSprite: 451
@@ -4874,6 +4875,7 @@ items:
     landOnly: true
     size: 0.1
     missionObjective: true
+    tuThrow: 0
     battleType: 0
     weight: 4
     bigSprite: 23
@@ -4886,8 +4888,9 @@ items:
     categories: [STR_EVIDENCE]
     landOnly: true
     size: 0.01
-    costSell: 150000 #Should be only sellable to VOID
+    costSell: 150000 #Should be only sellable to VOID only or add research
     missionObjective: true #just for marker
+    tuThrow: 0
     weight: 1
     battleType: 0
     bigSprite: 370
@@ -4903,6 +4906,7 @@ items:
     size: 0.01
     costSell: 55000
     missionObjective: true #just for marker
+    tuThrow: 0
     weight: 1
     battleType: 0
     bigSprite: 370
@@ -4917,6 +4921,7 @@ items:
     landOnly: true
     size: 0.05
     missionObjective: true #for marker
+    tuThrow: 0
     battleType: 0
     weight: 2
     bigSprite: 409

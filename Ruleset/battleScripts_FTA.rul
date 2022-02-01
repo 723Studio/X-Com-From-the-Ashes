@@ -3,7 +3,7 @@ battleScripts:
     commands:
     - type: spawnUnit #for low diff
       startTurn: 5
-      executionChances: 70
+      executionChances: 80
       packSize: 4
       randomPackSize: true
       unitSide: 1
@@ -11,7 +11,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_FRESH_ZOMBIE]
     - type: spawnUnit #random additional
-      startTurn: 5
+      startTurn: 7
       executionChances: 20
       packSize: 4
       randomPackSize: true
@@ -20,7 +20,7 @@ battleScripts:
       unitSet: [STR_FACEHUGGER, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE,STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #high diff
       startTurn: 4
-      executionChances: 60
+      executionChances: 70
       packSize: 6
       randomPackSize: true
       unitSide: 1
@@ -81,7 +81,7 @@ battleScripts:
     commands:
     - type: spawnUnit #firstWave
       executionChances: 95
-      startTurn: 10
+      startTurn: 9
       maxRuns: 1
       variable: firstWave
       packSize: 4
@@ -91,7 +91,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #continues
       executionChances: 20
-      startTurn: 12
+      startTurn: 11
       packSize: 3
       randomPackSize: true
       unitSide: 1
@@ -128,18 +128,19 @@ battleScripts:
       packSize: 4
       randomPackSize: false
       unitSide: 1
-      spawnBlocks: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
+      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
+      unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #random additional
       executionChances: 25
       packSize: 3
       randomPackSize: true
       unitSide: 1
-      startTurn: 10
+      startTurn: 8
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #secondWave
       executionChances: 70
-      startTurn: 12
+      startTurn: 11
       packSize: 6
       randomPackSize: false
       unitSide: 1
@@ -149,7 +150,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #extra SH gift
       executionChances: 10
-      startTurn: 9
+      startTurn: 8
       packSize: 8
       randomPackSize: false
       unitSide: 1
