@@ -4863,12 +4863,13 @@ items:
     size: 0.05
     missionObjective: true
     tuThrow: 0
-    battleType: 0
+    battleType: 2
     weight: 5
     bigSprite: 451
     floorSprite: 451
     invWidth: 2
     invHeight: 1
+    armor: 90
     recoveryPoints: 100
     listOrder: 30005
   - type: STR_MOTION_SCANNER_PROTOTYPE

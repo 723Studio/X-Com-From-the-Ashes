@@ -2140,7 +2140,7 @@ alienDeployments:
     abortPenalty: 250
     briefing:
       textOffset: -16
-      background: ZOMBIE_FARM.SCR
+      background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION
     terrains:
