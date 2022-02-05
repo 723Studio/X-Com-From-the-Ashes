@@ -188,8 +188,14 @@ research:
 
 #damage types
   - name: STR_DAMAGE_ARMOR_PIERCING
+    dependencies:
+      - STR_UFOPEDIA_DECRYPTION
   - name: STR_DAMAGE_INCENDIARY
+    dependencies:
+      - STR_UFOPEDIA_DECRYPTION
   - name: STR_DAMAGE_HIGH_EXPLOSIVE
+    dependencies:
+      - STR_UFOPEDIA_DECRYPTION
   - name: STR_DAMAGE_LASER_BEAM
     dependencies:
       - STR_LASER_WEAPONS
@@ -197,7 +203,11 @@ research:
     dependencies:
       - STR_TODOIUM
   - name: STR_DAMAGE_STUN
+    dependencies:
+      - STR_UFOPEDIA_DECRYPTION
   - name: STR_DAMAGE_MELEE
+    dependencies:
+      - STR_UFOPEDIA_DECRYPTION
   - name: STR_DAMAGE_ACID
     hidden: true
   - name: STR_DAMAGE_SMOKE
@@ -205,6 +215,8 @@ research:
     dependencies:
       - STR_TODOIUM
   - name: STR_DAMAGE_11 # "ELECTRIC"
+    dependencies:
+      - STR_UFOPEDIA_DECRYPTION
   - name: STR_DAMAGE_12 # "PSI"
     dependencies:
       - STR_TODOIUM
