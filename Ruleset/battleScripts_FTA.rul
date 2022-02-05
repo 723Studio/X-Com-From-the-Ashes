@@ -209,22 +209,22 @@ battleScripts:
   - type: MIB_TRAP_ESCAPE_EARLY
     commands:
     - type: spawnUnit #med
-      executionChances: 100
+      executionChances: 70
       maxDifficulty: 3
-      packSize: 3
+      packSize: 2
       randomPackSize: true
-      startTurn: 1
+      startTurn: 5
       unitSide: 1
       minAlarmLevel: 1
       #groups: [1, 2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: spawnUnit #sh
-      executionChances: 100
+      executionChances: 80
       minDifficulty: 4
       packSize: 4
       randomPackSize: true
-      startTurn: 1
+      startTurn: 5
       unitSide: 1
       minAlarmLevel: 1
       groups: [2, 3, 4]
@@ -234,7 +234,7 @@ battleScripts:
       maxRuns: 1
       variable: alarm
       minAlarmLevel: 1
-      startTurn: 2
+      startTurn: 5
       messages:
         0:
           title: MIB_TRAP_ESCAPE_MAP_ALARM_TITLE

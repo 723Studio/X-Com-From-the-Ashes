@@ -4229,7 +4229,8 @@ items:
     battleType: 6
     medikitType: 1
     heal: 1
-    healthRecovery: 3
+    healthRecovery: 2
+    woundRecovery: 1
     costUse:
       time: 12
       morale: -5
@@ -5151,6 +5152,7 @@ items:
     size: 0.01
     #costSell: 150000 #Should be only sellable to VOID
     missionObjective: true
+    tuThrow: 0
     alienArtifact: true
     weight: 5
     battleType: 10
