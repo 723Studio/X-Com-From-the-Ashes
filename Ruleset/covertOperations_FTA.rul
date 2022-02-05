@@ -207,8 +207,6 @@ covertOperations:
     optionalSoldierEffect: 1
     scientistSlots: 1
     requiresBaseFunc: [HQ]
-    requiredItems:
-      STR_FAKE_AGENT_ID: 2
     removeRequiredItemsOnSuccess: false
     removeRequiredItemsOnFailure: false
     baseChances: 50

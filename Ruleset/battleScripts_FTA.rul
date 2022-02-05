@@ -224,7 +224,7 @@ battleScripts:
       minDifficulty: 4
       packSize: 4
       randomPackSize: true
-      startTurn: 5
+      startTurn: 3
       unitSide: 1
       minAlarmLevel: 1
       groups: [2, 3, 4]
@@ -234,7 +234,7 @@ battleScripts:
       maxRuns: 1
       variable: alarm
       minAlarmLevel: 1
-      startTurn: 5
+      startTurn: 1
       messages:
         0:
           title: MIB_TRAP_ESCAPE_MAP_ALARM_TITLE
