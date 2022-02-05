@@ -25,4 +25,4 @@ soldierBonuses:
       UTILITY_SPECIALIST: 1     # (1/0) enables additional accuracy of utility grenades throwing, using utilities refund 2-4% TU
   - name: STR_UNARMED_FIGHTER
     tags:
-      STR_UNARMED_FIGHTER: 15         #X (1-XXX) bonus for unarmed hit accuracy, doubles if both hands are free.
+      STR_UNARMED_FIGHTER: 15   #X (1-XXX) bonus for unarmed hit accuracy, doubles if both hands are free.
