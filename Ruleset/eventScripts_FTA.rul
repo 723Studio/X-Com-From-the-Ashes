@@ -244,7 +244,7 @@ eventScripts:
     allowedProcessor: 2 #xcom
   - type: STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
     oneTimeRandomEvents:
-      STR_EX_COUNCIL_MEMBER_INITIAL_EVENT: 100
+      STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT: 100
     researchTriggers:
       STR_EX_COUNCIL_MEMBER_INITIAL: true
       STR_COVERT_OPERATIONS: true

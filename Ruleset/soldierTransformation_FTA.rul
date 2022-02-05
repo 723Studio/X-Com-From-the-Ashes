@@ -40,8 +40,8 @@ soldierTransformation:
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       stamina: 60
-       strength: 35
+       stamina: 65
+       strength: 40
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false
@@ -110,9 +110,9 @@ soldierTransformation:
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       stamina: 60
-       reactions: 52
-       melee: 58
+       stamina: 55
+       reactions: 45
+       melee: 50
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false

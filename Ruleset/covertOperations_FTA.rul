@@ -169,8 +169,7 @@ covertOperations:
     costs: 60
     allowedArmor:
       - STR_JUMPSUIT_UC
-    requiredItems:
-      STR_DATA_VAULT: 1
+
     instantSuccessDeployment: 
       STR_EX_COUNCIL_DATA_VAULT: 100
     instantTrapDeployment: 
@@ -184,6 +183,8 @@ covertOperations:
     optionalSoldierSlots: 2
     optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
+    requiredItems:
+      STR_DATA_VAULT: 1
     baseChances: 60
     danger: 0
     costs: 60
@@ -226,7 +227,7 @@ covertOperations:
       - STR_STEAL_OSPREY_PREREQ
     soldierSlots: 6
     requiresBaseFunc: [HQ]
-    baseChances: 40
+    baseChances: 45
     danger: 0
     costs: 300
     allowedArmor:
@@ -234,7 +235,6 @@ covertOperations:
     engineerSlots: 2
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 150
-    #removeRequiredItemsOnFailure: true
     successWeightedItemList:
       STR_CRATED_OSPREY: 100
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION

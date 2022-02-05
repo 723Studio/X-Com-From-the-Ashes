@@ -127,6 +127,8 @@ en-US:
   STR_REPUTATION_CHANGE: "REPUTATION CHANGE"
   STR_SOLDIERS_STATUS: "X-COM AGENTS STATUS"
   STR_XCOM_OPERATIVES_WOUNDED: "X-COM OPERATIVES WOUNDED"
+  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY_1: "Captive is executed as there is no prison"
+  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY_2: "Creature is put down as there is no facility to hold it"
   STR_USE_HACKING_TOOL: "Use Hacking Tool"
   STR_NOT_HACKING_TARGET: "This target cannot be hacked!"
   STR_HACKING_LOGIN: "Logging in..."
@@ -819,6 +821,9 @@ en-US:
   STR_FEMALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
   STR_CIVILIAN_HUNTER: "Civilian Hunter"
   STR_CIVILIAN_HUNTER_CORPSE: "Hunter Corpse"
+  STR_MALE_POLICE: "Policeman"
+  STR_MALE_POLICE_CORPSE: "Policeman Coprse"
+
 #races
   STR_MIB_BASE_EARLY: "Men In Black (base early game)"
   STR_INITIAL_BASE_DEFENSE_RACE: "First mission race"
@@ -1198,7 +1203,7 @@ en-US:
   STR_BASE_DEFENSE_COMBAT_ANALYSIS_UFOPEDIA: "Tactical analysis of the recent assault on our base has exposed several significant security vulnerabilities. Although most of the complex is underground, some of its modules have a direct connection to the surface. The obvious point of enemy penetration into the base is the entry lift. In addition, our aircraft perform vertical take-off from the hangars. Despite our attempts to disguise the closing casements of our hangars they can still be easily detected from the ground. Enemies blasted a few holes in the casements and went down on ropes inside. There is a good chance that our enemies will use the hangars to break into the base in the future as well. Unfortunately, these circumstances were not taken into account in the initial base design, and now we need to think about how to improve the defense systems, and also to pay more attention to the base layout."
   STR_COVERT_OPERATIONS_UFOPEDIA: "Due to the clear dominance of our enemy, the preferred strategy will be keeping a low profile when dealing with important strategic tasks. We can send our agents to covert operations for more subtle methods of solving a problem than an open attack. The secure channels we've developed allow us to coordinate agents remotely, and for some operations, it is also important to involve scientists for analytical work and engineers to design the special gear. A covert operation is always a risk, and in order to increase your success odds you should be careful when choosing your team and equipment. Any little thing, in the end, can play a key role." 
   STR_MONSTER_HUNT_START: "Strange creatures"
-  STR_MONSTER_HUNT_START_UFOPEDIA: "We have collected cross-referenced data pointing to paranormal phenomena localized in the forests of northern Illinois, USA. Cases of mysterious disappearances of people and domestic animals have been reported in this region. Local authorities have investigated cases and even involved the FBI, but as far as we know, these actions have not yielded significant results. Our agents can pretend to be federal agents conducting another investigation to avoid attracting attention."
+  STR_MONSTER_HUNT_START_UFOPEDIA: "We have collected cross-referenced data pointing to paranormal phenomena localized in the forests of northern Illinois, USA. Cases of mysterious disappearances of people and domestic animals have been reported in this region. Local authorities have investigated cases and even involved the FBI, but as far as we know, these actions have not yielded significant results. Our soldiers can pretend to be federal agents conducting another investigation to avoid attracting attention."
   STR_MONSTER_HUNT_RUMORS_ANALYSIS: "Monsters Activity Analysis"
   STR_MONSTER_HUNT_RUMORS_ANALYSIS_UFOPEDIA: "The fragmentary data collected by our field agents after careful analysis and comparison with Ufopaedia archival files has finally allowed us to make progress in our investigation. We are constantly one step behind, some practical actions need to be taken to detect the activity of the mysterious monsters in a timely manner. Then we could send our people on a hunt for one of these creatures."
   STR_MONSTER_HUNT_RUMORS: "Monster Rumors"
