@@ -115,19 +115,19 @@ crafts:
     requires:
       - STR_OSPREY
     sprite: 803
-    fuelMax: 400
+    fuelMax: 320
     damageMax: 80
-    speedMax: 375
+    speedMax: 200
     accel: 1
     weapons: 0
-    soldiers: 16
-    vehicles: 3
+    soldiers: 14
+    vehicles: 1
     pilots: 1
     maxItems: 999
     costBuy: 250000
     costRent: 15000
     costSell: 160000
-    refuelRate: 25
+    refuelRate: 18
     transferTime: 72
     score: 75
     battlescapeTerrainData:

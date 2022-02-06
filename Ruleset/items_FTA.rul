@@ -67,7 +67,7 @@ items:
     invHeight: 3
     armor: 50
     experienceTrainingMode: 3
-    recoveryPoints: 5
+    recoveryPoints: 1
     attraction: 15
     listOrder: 1000
   - type: STR_CROWBAR
@@ -111,6 +111,7 @@ items:
     invHeight: 3
     armor: 75
     experienceTrainingMode: 3
+    recoveryPoints: 1
     attraction: 15
     listOrder: 1005
   - type: STR_HATCHET
@@ -151,6 +152,7 @@ items:
     invHeight: 2
     armor: 55
     experienceTrainingMode: 2
+    recoveryPoints: 1
     attraction: 20
     listOrder: 1007
   - type: STR_BASEBALL_BAT
@@ -193,6 +195,7 @@ items:
     invHeight: 3
     armor: 60
     experienceTrainingMode: 2
+    recoveryPoints: 1
     attraction: 20
     listOrder: 17910
   - type: STR_POLICE_BATON
@@ -236,6 +239,7 @@ items:
     invHeight: 2
     armor: 60
     experienceTrainingMode: 13
+    recoveryPoints: 1
     attraction: 7
     listOrder: 1010
   - type: STR_COMBAT_KNIFE
@@ -278,6 +282,7 @@ items:
     invHeight: 2
     armor: 60
     experienceTrainingMode: 13
+    recoveryPoints: 1
     attraction: 6
     listOrder: 1020
   - type: STR_MACHETE
@@ -318,6 +323,7 @@ items:
     invHeight: 2
     armor: 60
     experienceTrainingMode: 13
+    recoveryPoints: 1
     attraction: 6
     listOrder: 1030
   - type: STR_SWORD
@@ -357,6 +363,7 @@ items:
     invHeight: 3
     armor: 55
     experienceTrainingMode: 13
+    recoveryPoints: 2
     attraction: 9
     listOrder: 1040
   - type: STR_KATANA
@@ -485,6 +492,7 @@ items:
     invHeight: 3
     armor: 35
     experienceTrainingMode: 2
+    recoveryPoints: 3
     attraction: 20
     listOrder: 1060
 
@@ -531,6 +539,7 @@ items:
     maxRange: 10
     bulletSpeed: -2
     experienceTrainingMode: 10
+    recoveryPoints: 1
     attraction: 6
     listOrder: 3000
   - type: STR_SPORTS_BOW
@@ -576,6 +585,7 @@ items:
     bulletSpeed: -2
     kneelBonus: 100
     experienceTrainingMode: 11
+    recoveryPoints: 2
     attraction: 20
     listOrder: 3010
   - type: STR_BOW_ARROW
@@ -717,6 +727,7 @@ items:
     powerRangeReduction: 999
     powerRangeThreshold: 9
     experienceTrainingMode: 4
+    recoveryPoints: 2
     attraction: 15
     listOrder: 5000
   - type: STR_TASER_CLIP
@@ -752,6 +763,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 15
+    recoveryPoints: 1
     listOrder: 5010
   - type: STR_SNUBNOSE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
@@ -782,6 +794,7 @@ items:
     invWidth: 1
     invHeight: 1
     attraction: 8
+    recoveryPoints: 1
     listOrder: 5020
   - type: STR_SNUBNOSE_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
@@ -837,6 +850,7 @@ items:
     invHeight: 2
     armor: 30
     attraction: 10
+    recoveryPoints: 2
     listOrder: 5040
   - type: STR_RIOT_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
@@ -892,6 +906,7 @@ items:
     invHeight: 2
     armor: 35
     attraction: 15
+    recoveryPoints: 2
     listOrder: 5052
   - type: STR_POLICE_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
@@ -948,6 +963,7 @@ items:
     invHeight: 2
     armor: 30
     attraction: 15
+    recoveryPoints: 2
     listOrder: 5056
   - type: STR_HEAVY_REVOLVER_DRUM
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
@@ -1003,6 +1019,7 @@ items:
     invWidth: 1
     invHeight: 2
     attraction: 8
+    recoveryPoints: 2
     listOrder: 5060
   - type: STR_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
@@ -1107,6 +1124,7 @@ items:
     invHeight: 2
     armor: 30
     attraction: 15
+    recoveryPoints: 2
     listOrder: 5100
   - type: STR_HEAVY_PISTOL_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS]
@@ -1192,6 +1210,7 @@ items:
     invHeight: 2
     armor: 35
     attraction: 15
+    recoveryPoints: 3
     listOrder: 5120
   - type: STR_WOUNDGUN_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
@@ -1250,6 +1269,7 @@ items:
     armor: 25
     arcingShot: true
     attraction: 15
+    recoveryPoints: 4
     listOrder: 5140
   - type: STR_CHEMPISTOL_CLIP
     categories: [STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
@@ -1281,6 +1301,7 @@ items:
     invHeight: 1
     armor: 25
     attraction: 15
+    recoveryPoints: 1
     listOrder: 5150
 #SMG
   - type: STR_MACHINE_PISTOL
@@ -1318,6 +1339,7 @@ items:
     armor: 30
     autoShots: 5
     sprayWaypoints: 2
+    recoveryPoints: 2
     attraction: 7
     listOrder: 7000
   - type: STR_MACHINE_PISTOL_CLIP
@@ -1374,6 +1396,7 @@ items:
     armor: 30
     autoShots: 4
     sprayWaypoints: 2
+    recoveryPoints: 2
     attraction: 7
     listOrder: 7020
   - type: STR_PDW_CLIP
@@ -1453,6 +1476,7 @@ items:
     snapRange: 18
     aimRange: 25
     attraction: 12
+    recoveryPoints: 2
     listOrder: 7050
   - type: STR_SMG_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
@@ -1527,6 +1551,7 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 8
+    recoveryPoints: 4
     listOrder: 7080
   - type: STR_RIOT_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
@@ -1549,6 +1574,7 @@ items:
     clipSize: 30
     battleType: 2
     attraction: 8
+    recoveryPoints: 1
     listOrder: 7090
   - type: STR_LEVER_ACTION_CARBINE
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CONCEALABLE]
@@ -1580,6 +1606,7 @@ items:
     invWidth: 1
     invHeight: 3
     attraction: 8
+    recoveryPoints: 3
     listOrder: 7095
   - type: STR_LEVER_ACTION_CARBINE_CLIP
     categories: [STR_HUMAN_TECH, STR_RESISTANCE, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_CONCEALABLE]
@@ -1635,8 +1662,9 @@ items:
     armor: 30
     snapRange: 20
     autoRange: 11
-    listOrder: 21193
     attraction: 20
+    recoveryPoints: 4
+    listOrder: 21193
   - type: STR_MILITARY_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
@@ -1661,6 +1689,7 @@ items:
     battleType: 2
     armor: 30
     attraction: 15
+    recoveryPoints: 1
     listOrder: 21210
   - type: STR_ASSAULT_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
@@ -1698,6 +1727,7 @@ items:
     snapRange: 16
     autoRange: 15
     attraction: 8
+    recoveryPoints: 5
     listOrder: 7100
   - type: STR_RIFLE #battle rifle
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
@@ -1732,6 +1762,7 @@ items:
     snapRange: 20
     autoRange: 11
     attraction: 8
+    recoveryPoints: 5
     listOrder: 7110
     tags:
       FTAG_EXPANDING: 1
@@ -1754,10 +1785,8 @@ items:
       - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
-    #accuracyAuto: 35
     accuracySnap: 75
     accuracyAimed: 130
-    #tuAuto: 38
     tuSnap: 28
     tuAimed: 75
     battleType: 1
@@ -1765,8 +1794,8 @@ items:
     invWidth: 1
     invHeight: 3
     snapRange: 25
-    #autoRange: 11
     attraction: 8
+    recoveryPoints: 5
     listOrder: 7120
   - type: STR_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
@@ -1789,6 +1818,7 @@ items:
     clipSize: 20
     battleType: 2
     attraction: 8
+    recoveryPoints: 1
     listOrder: 7130
   - type: STR_RIFLE_EXP_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
@@ -1817,6 +1847,7 @@ items:
     clipSize: 20
     battleType: 2
     attraction: 8
+    recoveryPoints: 1
     listOrder: 7140
     tags:
       FTAG_EXPANDING: 1
@@ -1836,12 +1867,14 @@ items:
     clipSize: 20
     battleType: 2
     attraction: 8
+    recoveryPoints: 2
     listOrder: 7150
   - type: STR_CHEMOGUN
     categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_RIFLES]
     requires:
       - STR_CHEMOGUN
     size: 0.2
+    landOnly: true
     costSell: 5300
     weight: 9
     bigSprite: 404
@@ -1867,8 +1900,8 @@ items:
     autoShots: 8
     sprayWaypoints: 2
     attraction: 20
+    recoveryPoints: 6
     listOrder: 7160
-    landOnly: true
   - type: STR_CHEMOGUN_CLIP
     categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_RIFLES, STR_CLIPS]
     requires:
@@ -1898,6 +1931,7 @@ items:
     invHeight: 1
     armor: 25
     attraction: 15
+    recoveryPoints: 2
     listOrder: 7170
     landOnly: true
 
@@ -1930,6 +1964,7 @@ items:
     invHeight: 3
     armor: 30
     attraction: 7
+    recoveryPoints: 4
     listOrder: 10000
   - type: STR_HUNTING_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
@@ -1990,6 +2025,7 @@ items:
     minRange: 15
     dropoff: 3
     attraction: 9
+    recoveryPoints: 6
     listOrder: 10020
   - type: STR_SNIPER_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
@@ -2017,6 +2053,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 9
+    recoveryPoints: 1
     listOrder: 10030
   - type: STR_SNIPER_RIFLE_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
@@ -2077,6 +2114,7 @@ items:
     invHeight: 2
     armor: 40
     attraction: 7
+    recoveryPoints: 1
     listOrder: 12000
     tags:
       FTAG_SAWED_OFF: 85
@@ -2115,6 +2153,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 7
+    recoveryPoints: 1
     listOrder: 12010
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE]
@@ -2197,6 +2236,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 7
+    recoveryPoints: 2
     listOrder: 12040
   - type: STR_PUMP_ACTION_SHELLS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
@@ -2264,6 +2304,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 8
+    recoveryPoints: 5
     listOrder: 12060
   - type: STR_SEMI_AUTO_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS]
@@ -2303,6 +2344,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 8
+    recoveryPoints: 5
     listOrder: 12070
   - type: STR_SHOTGUN_SHELLS_BS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
@@ -2330,12 +2372,14 @@ items:
     shotgunPellets: 7
     bulletSpeed: 2
     attraction: 8
+    recoveryPoints: 1
     listOrder: 12080
   - type: STR_SHOTGUN_SHELLS_AP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.01
+    landOnly: true
     costBuy: 100
     costSell: 80
     weight: 3
@@ -2350,8 +2394,8 @@ items:
     battleType: 2
     armor: 20
     attraction: 8
+    recoveryPoints: 1
     listOrder: 12090
-    landOnly: true
   - type: STR_SHOTGUN_SHELLS_BATON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS]
     requiresBuy:
@@ -2378,6 +2422,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 8
+    recoveryPoints: 1
     listOrder: 12100
     landOnly: true
   - type: STR_SHOTGUN_SHELLS_DRAGON
@@ -2403,6 +2448,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 8
+    recoveryPoints: 1
     listOrder: 12105
   - type: STR_SHOTGUN_SHELLS_BS_AA
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS]
@@ -2483,6 +2529,7 @@ items:
     armor: 40
     sprayWaypoints: 2
     attraction: 24
+    recoveryPoints: 6
     listOrder: 15004
   - type: STR_RIOT_GUN_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
@@ -2508,6 +2555,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 16
+    recoveryPoints: 2
     listOrder: 15006
   - type: STR_TASER_CANNON
     categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS]
@@ -2619,6 +2667,7 @@ items:
     armor: 30
     sprayWaypoints: 2
     attraction: 22
+    recoveryPoints: 7
     listOrder: 15020
   - type: STR_LMG_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
@@ -2646,6 +2695,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 15
+    recoveryPoints: 2
     listOrder: 15030
   - type: STR_LMG_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
@@ -2708,6 +2758,7 @@ items:
     sprayWaypoints: 2
     aimRange: 30
     attraction: 13
+    recoveryPoints: 7
     listOrder: 15310
   - type: STR_ASSAULT_CANNON_CLIP_AP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
@@ -2734,6 +2785,8 @@ items:
     invWidth: 2
     invHeight: 1
     armor: 40
+    attraction: 13
+    recoveryPoints: 2
     listOrder: 15320
   - type: STR_ASSAULT_CANNON_CLIP_AA
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS]
@@ -2793,7 +2846,8 @@ items:
     armor: 35
     invWidth: 1
     invHeight: 3
-    attraction: 9
+    attraction: 16
+    recoveryPoints: 8
     listOrder: 15050
   - type: STR_LC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -2822,6 +2876,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15060
   - type: STR_LC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -2849,6 +2904,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15070
   - type: STR_LC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -2874,6 +2930,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15080
   - type: STR_LC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -2899,6 +2956,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15090
   - type: STR_LC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -2986,6 +3044,7 @@ items:
     invHeight: 3
     armor: 40
     attraction: 9
+    recoveryPoints: 10
     listOrder: 15120
   - type: STR_HC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3014,6 +3073,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15130
   - type: STR_HC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3042,6 +3102,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15140
   - type: STR_HC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3067,6 +3128,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15150
   - type: STR_HC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3092,6 +3154,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15160
   - type: STR_HC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3180,7 +3243,8 @@ items:
     aimRange: 25
     invWidth: 2
     invHeight: 3
-    attraction: 8
+    attraction: 13
+    recoveryPoints: 10
     listOrder: 15190
   - type: STR_AC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3209,6 +3273,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 8
+    recoveryPoints: 2
     listOrder: 15200
   - type: STR_AC_BS_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3235,6 +3300,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 9
+    recoveryPoints: 2
     listOrder: 15210
   - type: STR_AC_HE_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3260,6 +3326,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 8
+    recoveryPoints: 2
     listOrder: 15220
   - type: STR_AC_I_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3285,6 +3352,7 @@ items:
     invWidth: 2
     invHeight: 1
     attraction: 8
+    recoveryPoints: 2
     listOrder: 15230
   - type: STR_AC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3340,6 +3408,7 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.6
+    landOnly: true
     costBuy: 33000
     costSell: 10000
     weight: 38
@@ -3366,13 +3435,14 @@ items:
     armor: 30
     sprayWaypoints: 2
     attraction: 26
+    recoveryPoints: 10
     listOrder: 15260
-    landOnly: true
   - type: STR_MINIGUN_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.3
+    landOnly: true
     costBuy: 3000
     costSell: 2400
     weight: 20
@@ -3394,8 +3464,8 @@ items:
     invHeight: 3
     bulletSpeed: 15
     attraction: 15
+    recoveryPoints: 2
     listOrder: 15270
-    landOnly: true
   - type: STR_MINIGUN_AA_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     size: 0.3
@@ -3548,6 +3618,7 @@ items:
     invHeight: 3
     armor: 16
     attraction: 12
+    recoveryPoints: 4
     listOrder: 19002
   - type: STR_GRENADE_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS]
@@ -3580,6 +3651,7 @@ items:
     arcingShot: true
     experienceTrainingMode: 4
     attraction: 20
+    recoveryPoints: 8
     listOrder: 19003
   - type: STR_GRENADE_LAUNCHER_FRAG
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3603,6 +3675,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 15
+    recoveryPoints: 2
     listOrder: 19004
   - type: STR_GRENADE_LAUNCHER_SMOKE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
@@ -3624,6 +3697,7 @@ items:
     battleType: 2
     armor: 20
     attraction: 15
+    recoveryPoints: 2
     listOrder: 19004
   - type: STR_GRENADE_LAUNCHER_INC
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
@@ -3651,6 +3725,7 @@ items:
     armor: 20
     blastRadius: 4
     attraction: 15
+    recoveryPoints: 2
     listOrder: 19004
   - type: STR_MGL
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS]
@@ -3686,6 +3761,7 @@ items:
     kneelBonus: 125
     experienceTrainingMode: 11
     attraction: 20
+    recoveryPoints: 10
     listOrder: 19005
   - type: STR_MGL_CLIP
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS]
@@ -3711,6 +3787,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
+    recoveryPoints: 2
     listOrder: 19006
   - type: STR_MGL_CLIP_SMOKE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
@@ -3736,6 +3813,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
+    recoveryPoints: 2
     listOrder: 19007
   - type: STR_MGL_CLIP_INC
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
@@ -3764,6 +3842,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
+    recoveryPoints: 2
     listOrder: 19008
   - type: STR_MGL_CLIP_FLASHBANG
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
@@ -3799,6 +3878,7 @@ items:
     invHeight: 1
     armor: 20
     attraction: 16
+    recoveryPoints: 2
     listOrder: 19009
     tags:
       FTAG_DAZE_VALUE: 100
@@ -3835,6 +3915,7 @@ items:
     invHeight: 3
     armor: 32
     attraction: 12
+    recoveryPoints: 10
     listOrder: 19010
   - type: STR_SMALL_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
@@ -3860,6 +3941,7 @@ items:
     invHeight: 3
     armor: 28
     attraction: 8
+    recoveryPoints: 2
     listOrder: 19020
   - type: STR_LARGE_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
@@ -3886,6 +3968,7 @@ items:
     invHeight: 3
     armor: 28
     attraction: 8
+    recoveryPoints: 2
     listOrder: 19030
   - type: STR_INCENDIARY_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE]
@@ -3912,6 +3995,7 @@ items:
     invHeight: 3
     armor: 28
     attraction: 8
+    recoveryPoints: 2
     listOrder: 19040
 #grenades and chargers
   - type: STR_IMPROVISED_GRENADE
@@ -4005,6 +4089,7 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     isExplodingInHands: true
     battleType: 4
+    recoveryPoints: 1
     listOrder: 21010
   - type: STR_SMOKE_GRENADE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
@@ -4033,6 +4118,7 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     isExplodingInHands: true
     battleType: 4
+    recoveryPoints: 1
     listOrder: 21020
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
@@ -4061,6 +4147,7 @@ items:
     battleType: 5
     armor: 30
     attraction: 6
+    recoveryPoints: 2
     listOrder: 21030
   - type: STR_LIQUID_FLAME
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
@@ -4124,6 +4211,7 @@ items:
     battleType: 4
     armor: 20
     attraction: 15
+    recoveryPoints: 2
     listOrder: 21030
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
@@ -4199,11 +4287,13 @@ items:
     invWidth: 1
     invHeight: 1
     attraction: 6
+    recoveryPoints: 2
     listOrder: 21050
 #tools
   - type: STR_MOTION_SCANNER
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.1
+    landOnly: true
     costSell: 47200
     weight: 4
     bigSprite: 23
@@ -4235,8 +4325,9 @@ items:
       time: 12
       morale: -5
     flatRate: false
-    attraction: 5
     experienceTrainingMode: 19
+    attraction: 5
+    recoveryPoints: 1
     listOrder: 23000
   - type: STR_PAINKILLER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -4259,6 +4350,7 @@ items:
       morale: -5
     invWidth: 1
     invHeight: 1
+    recoveryPoints: 1
     listOrder: 23010
   - type: STR_STIMS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -4281,6 +4373,7 @@ items:
     tuUse: 22
     invWidth: 1
     invHeight: 1
+    recoveryPoints: 1
     listOrder: 23020
   - type: STR_MEDI_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
@@ -4311,6 +4404,7 @@ items:
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
+    recoveryPoints: 2
     listOrder: 23030
   - type: STR_STIMS_INJECTOR
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -4335,6 +4429,7 @@ items:
     tuUse: 14
     invWidth: 1
     invHeight: 2
+    recoveryPoints: 3
     listOrder: 23040
   - type: STR_PERSONAL_AID_KIT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -4362,8 +4457,9 @@ items:
       time: 19
       morale: -5
     flatRate: false
-    attraction: 5
     experienceTrainingMode: 19
+    attraction: 5
+    recoveryPoints: 5
     listOrder: 23050
   - type: STR_TRAUMA_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
@@ -4394,6 +4490,7 @@ items:
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
+    recoveryPoints: 8
     listOrder: 23060
 #utilities
   - type: STR_FLASHLIGHT
@@ -4424,7 +4521,6 @@ items:
     power: 15
     battleType: 10
     armor: 8
-    # coneSize: 5
     listOrder: 25010
     landOnly: true
   - type: STR_COMBAT_SHIELD
@@ -4870,7 +4966,7 @@ items:
     invWidth: 2
     invHeight: 1
     armor: 90
-    recoveryPoints: 100
+    recoveryPoints: 80
     listOrder: 30005
   - type: STR_MOTION_SCANNER_PROTOTYPE
     categories: [STR_EVIDENCE]
@@ -4900,7 +4996,7 @@ items:
     handSprite: 568
     invWidth: 1
     invHeight: 1
-    recoveryPoints: 150
+    recoveryPoints: 80
     listOrder: 30010
   - type: STR_FLOPPY_RESISTANCE
     categories: [STR_LOOT]
@@ -4916,7 +5012,7 @@ items:
     handSprite: 568
     invWidth: 1
     invHeight: 1
-    recoveryPoints: 150
+    recoveryPoints: 60
     listOrder: 30020
   - type: STR_MIB_DATA_CONTAINER
     categories: [STR_EVIDENCE]
@@ -4930,7 +5026,7 @@ items:
     floorSprite: 409
     invWidth: 1
     invHeight: 2
-    recoveryPoints: 200
+    recoveryPoints: 150
     listOrder: 30030
   - type: STR_SUPPLIES_1
     categories: [STR_LOOT]
@@ -4946,6 +5042,8 @@ items:
     armor: 10
     invWidth: 2
     invHeight: 3
+    recoveryPoints: 4
+    listOrder: 30040
   - type: STR_CREDIT_CARD
     categories: [STR_LOOT]
     landOnly: true
@@ -4974,7 +5072,7 @@ items:
     invWidth: 1
     invHeight: 1
     stackSize: 5
-    recoveryPoints: 20
+    recoveryPoints: 12
     listOrder: 30050
   - type: STR_CREDIT_CARD_GOLD
     categories: [STR_LOOT]
@@ -4989,7 +5087,7 @@ items:
     invWidth: 1
     invHeight: 1
     stackSize: 5
-    recoveryPoints: 50
+    recoveryPoints: 15
     listOrder: 30050
   - type: STR_CASH_PACK
     categories: [STR_LOOT]
@@ -5074,7 +5172,7 @@ items:
     invWidth: 1
     invHeight: 1
     stackSize: 15
-    recoveryPoints: 10
+    recoveryPoints: 5
     listOrder: 60020
 
 #geoscape-only

@@ -760,7 +760,7 @@ alienDeployments:
     height: 2
     terrains:
       - MIB_BASE
-    shade: 9
+    shade: 10
     script: MIB_BASE_EARLY
     briefing:
       textOffset: -16
@@ -779,7 +779,7 @@ alienDeployments:
     objectivePopup: STR_CONTROL_CENTER_DESTROYED #string from vanilla
     unlockedResearch: STR_MIB_HQ_DESTROYED #would be hardcoded, do not rename!!
     keepCraftAfterFailedMission: true
-    turnLimit: 18
+    turnLimit: 20
     chronoTrigger: 1
     data:
       - alienRank: 1 #STR_MIB_SCIENTIST, FIXME - replace with MIB Leader

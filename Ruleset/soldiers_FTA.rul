@@ -3,6 +3,8 @@ soldiers:
     type: STR_SOLDIER
     costBuy: 50000
     costSalary: 2000
+    moraleLossWhenKilled: 140
+    value: 50
     minStats:
       tu: 60
       stamina: 40
