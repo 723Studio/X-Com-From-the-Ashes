@@ -4858,7 +4858,7 @@ items:
     invHeight: 1
     listOrder: 30000
   - type: STR_DATA_VAULT
-    categories: [STR_EVIDENCE]
+    categories: [STR_EVIDENCE, STR_CONCEALABLE]
     landOnly: true
     size: 0.05
     missionObjective: true

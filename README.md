@@ -38,6 +38,7 @@ I would like to give special thanks to the contributors to my project (in order 
 * **Is0top** - engine development, engine bugfixes;
 * **ahegao aka Julian901** - mission design, deployment rules, mission-specific maps.
 * **Garr** - lore articles editing.
+* **misterjo** - monster rulesets
 
 ## Support
 
