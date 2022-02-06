@@ -5667,8 +5667,7 @@ items:
     invHeight: 3
     battleType: 0
     armor: 30
-    recover: true
-    recoverCorpse: false
+    recover: false
     listOrder: 100490
   - type: STR_SPAWN_RESISTANCE_AGENT_VIP
     spawnUnit: STR_RESISTANCE_AGENT_VIP

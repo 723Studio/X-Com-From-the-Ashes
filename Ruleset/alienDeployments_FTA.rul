@@ -3287,11 +3287,9 @@ alienDeployments:
       showCraft: false
       desc: STR_MONSTER_HUNT_TRAP_BRIEFING
     terrains:
-      - CULTA
       - FOREST
-      - DESERT
     data:
-      - alienRank: 6
+      - alienRank: 5
         lowQty: 6
         highQty: 12
         dQty: 5

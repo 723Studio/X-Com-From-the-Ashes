@@ -160,7 +160,7 @@ missionScripts:
     varName: havenDefence
   - type: resistanceScientist
     firstMonth: 0
-    executionOdds: 5
+    executionOdds: 10
     allowedProcessor: 1
     missionWeights:
       0:
@@ -182,7 +182,7 @@ missionScripts:
     varName: resistanceSpecial
   - type: desertTelescope
     firstMonth: 2
-    executionOdds: 2
+    executionOdds: 6
     allowedProcessor: 1
     missionWeights:
       0:
