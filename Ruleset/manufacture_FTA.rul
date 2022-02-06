@@ -159,7 +159,7 @@ manufacture:
     category: STR_CLIPS
     requiresBaseFunc: [WORK]
     requires:
-      - STR_CHEMPISTOL_CLIP_MANUFACTURING
+      - STR_ROCKET_GLOVE
     requiredItems:
       STR_SPARE_PARTS: 1
       STR_CHEMICALS: 2
