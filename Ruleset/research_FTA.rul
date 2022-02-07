@@ -1572,7 +1572,6 @@ research:
   - name: STR_BIOLAB
     cost: 1600
     points: 50
-    spawnedEvent: STR_BIOLAB_STUFF
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_BIOLAB_PREREQ
@@ -1584,8 +1583,6 @@ research:
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
-  - name: STR_BIOLAB_STUFF
-    hidden: true
   - name: STR_LARGE_RADAR_SYSTEM
     cost: 1200
     points: 10

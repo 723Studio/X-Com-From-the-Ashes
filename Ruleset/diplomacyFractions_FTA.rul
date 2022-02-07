@@ -11,7 +11,6 @@ diplomacyFactions:
     stockMod: 100
     startingResearches:
       - STR_RESISTANCE_TECH_TREE_START
-      - STR_RESISTANCE_STARTING_EQUIPMENT
     startingStaff:
       STR_ENGINEER: 2
       STR_RESISTANCE_AGENT: 12

@@ -414,13 +414,6 @@ events:
     timer: 1440 #1 day
     timerRandom: 8640 #6 days
     interruptResearch: STR_BIOLAB_PREREQ
-  - name: STR_BIOLAB_STUFF
-    description: STR_BIOLAB_STUFF_DESCRIPTION
-    background: BACK05.SCR
-    researchList: [STR_BIOLAB_STUFF]
-    timer: 30
-    timerRandom: 0
-    interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_STRANGE_CREATURE_AUTOPSY
     description: STR_STRANGE_CREATURE_AUTOPSY_DESCRIPTION
     background: BACK05.SCR
