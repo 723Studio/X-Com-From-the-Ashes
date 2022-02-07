@@ -1180,12 +1180,6 @@ research:
     points: 1
     needItem: true
     listOrder: 30050
-  - name: STR_BOW_ARROW
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_BOW_ARROW
-    listOrder: 30060
   - name: STR_BOW_ARROW_HE
     cost: 0
     points: 0

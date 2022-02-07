@@ -1,8 +1,19 @@
 config:
+  definitionNameKeys:
+    covertOperations:
+      - name
+    diplomacyFactions:
+      - name
+    events:
+      - name
+  globalVariables:
+    - loyaltyRatings
+    - loyaltySettings
+    - reputationLevels
   builtinTypes:
     alienDeployments.extendedObjectiveType:
     - STR_EVACUATION
-    - STR_EXTRACTION 
+    - STR_EXTRACTION
     #- STR_FRIENDLY_VIP
     - STR_ITEM_EXTRACTION
     units.specialObjectiveType:
@@ -21,6 +32,8 @@ config:
     - NE
     - SW
     - SE
+  vetoTypes:
+    - battleScripts.commands[]
   ignoreTypes:
   - battleScripts.commands[].variable
   - manufacture.category
@@ -103,3 +116,9 @@ config:
     - research
     units.altRecoveredUnit:
     - units
+  keyReferenceTypes:
+    - covertOperations.instantSuccessDeployment
+    - covertOperations.instantTrapDeployment
+    - covertOperations.failureReputationScore
+    - covertOperations.requiredItems
+    - covertOperations.successReputationScore

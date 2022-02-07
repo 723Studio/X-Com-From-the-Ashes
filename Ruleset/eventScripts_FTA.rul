@@ -185,7 +185,7 @@ eventScripts:
     itemTriggers:
       STR_FACEHUGGER_CORPSE: true
     allowedProcessor: 2 #xcom
-    executionOdds: 70
+    executionOdds: 60
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE
     refNode: *BIOLAB_PREREQ_SCRIPT
     itemTriggers:
@@ -314,7 +314,7 @@ eventScripts:
         STR_MYSTERIOUS_SPONSOR_500000: 50
         STR_MYSTERIOUS_SPONSOR_1000000: 30
     lastMonth: 24
-    executionOdds: 6
+    executionOdds: 5
     spawnGap: 160
     allowedProcessor: 0
   - type: STR_OLD_CROP_CIRCLES
@@ -323,6 +323,6 @@ eventScripts:
         STR_OLD_CROP_CIRCLES: 100
     researchTriggers:
       STR_CROP_CIRCLES_PREREQ: true 
-    firstMonth: 1
+    firstMonth: 2
     executionOdds: 3
     allowedProcessor: 0

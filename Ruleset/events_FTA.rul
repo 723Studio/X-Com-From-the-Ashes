@@ -352,28 +352,28 @@ events:
     description: STR_WORKSHOP_EVENT_DESCRIPTION
     background: BACK17.SCR
     researchList: [STR_WORKSHOP]
-    timer: 750
-    timerRandom: 650
+    timer: 10080
+    timerRandom: 30240 #3 weeks
     interruptResearch: STR_WORKSHOP
   - name: STR_SPORTS_BOW_TINKERING
     description: STR_SPORTS_BOW_TINKERING_DESCRIPTION
     background: BACK17.SCR
     researchList: [STR_SPORTS_BOW_TINKERING]
-    timer: 750
+    timer: 10080
     timerRandom: 30240 #3 weeks
     interruptResearch: STR_SPORTS_BOW_TINKERING
   - name: STR_IMPROVISED_GRENADE_TINKERING
     description: STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION
     background: BACK17.SCR
     researchList: [STR_IMPROVISED_GRENADE]
-    timer: 750
+    timer: 10080
     timerRandom: 30240 #3 weeks
     interruptResearch: STR_IMPROVISED_GRENADE
   - name: STR_IMPROVISED_SMOKE_GRENADE_TINKERING
     description: STR_IMPROVISED_SMOKE_GRENADE_TINKERING_DESCRIPTION
     background: BACK17.SCR
     researchList: [STR_IMPROVISED_SMOKE_GRENADE]
-    timer: 750
+    timer: 10080
     timerRandom: 30240 #3 weeks
     interruptResearch: STR_IMPROVISED_SMOKE_GRENADE
   - name: STR_ROCKET_GLOVE_TINKERING
@@ -383,14 +383,14 @@ events:
     everyMultiItemList:
       STR_ROCKET_GLOVE: 1
       STR_ROCKET_GLOVE_CLIP: 2
-    timer: 750
+    timer: 10080
     timerRandom: 30240 #3 weeks
     interruptResearch: STR_ROCKET_GLOVE
   - name: STR_KATANA_TINKERING
     description: STR_KATANA_TINKERING_DESCRIPTION
     background: BACK17.SCR
     researchList: [STR_KATANA]
-    timer: 750
+    timer: 4320
     timerRandom: 30240 #3 weeks
     interruptResearch: STR_KATANA
   - name: STR_HELICOPTER
@@ -404,15 +404,15 @@ events:
     description: STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION
     background: BACK05.SCR
     researchList: [STR_ELECTRIC_WEAPONS_PREREQ]
-    timer: 750
-    timerRandom: 650
+    timer: 4320
+    timerRandom: 30240 #3 weeks
     interruptResearch: STR_ELECTRIC_WEAPONS_PREREQ
   - name: STR_BIOLAB_PREREQ_EVENT
     description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION
     background: BACK05.SCR
     researchList: [STR_BIOLAB_PREREQ]
-    timer: 30
-    timerRandom: 0
+    timer: 1440 #1 day
+    timerRandom: 8640 #6 days
     interruptResearch: STR_BIOLAB_PREREQ
   - name: STR_BIOLAB_STUFF
     description: STR_BIOLAB_STUFF_DESCRIPTION
@@ -451,7 +451,7 @@ events:
     background: BACK05.SCR
     researchList: [STR_EXPANDABLE_AMMO]
     timer: 30
-    timerRandom: 1440
+    timerRandom: 11440
     interruptResearch: STR_EXPANDABLE_AMMO
 
 #random fun events
@@ -507,7 +507,7 @@ events:
   - name: STR_OLD_CROP_CIRCLES
     description: STR_OLD_CROP_CIRCLES_DESCRIPTION
     background: CROPCIRCLES_BACKGROUND.SCR
-    loyalty: -60
+    loyalty: -20
     timer: 1200
     timerRandom: 43500
 
