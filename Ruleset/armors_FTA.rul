@@ -375,7 +375,7 @@ armors:
     frontArmor: 45
     sideArmor: 35
     rearArmor: 35
-    underArmor: 25
+    underArmor: 35
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -392,17 +392,17 @@ armors:
     overKill: 1.5
     damageModifier:
       - 1.0 #0 - None - special
-      - 0.9 #1 - AP - kinetic
+      - 0.85 #1 - AP - kinetic
       - 0.8 #2 - Incendiary
-      - 0.85 #3 - High Explosive - Explosive
+      - 0.7 #3 - High Explosive - Explosive
       - 0.8 #4 - Laser
       - 0.9 #5 - Plasma
       - 0.65 #6 - Stun
-      - 0.7 #7 - Melee - Cutting
+      - 0.5 #7 - Melee - Cutting
       - 1.0 #8 - Acid
       - 0.0 #9 - Smoke - Choke
       - 0.0 #10 - EMP
-      - 0.9 #11 - Electric
+      - 1.2 #11 - Electric
       - 1.0 #12 - Psi
       - 1.0 #13 - Warp
       - 1.0 #14 - Pressure

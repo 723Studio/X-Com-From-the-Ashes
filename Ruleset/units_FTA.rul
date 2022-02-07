@@ -265,7 +265,7 @@ units:
       tu: 60
       stamina: 90
       health: 35
-      bravery: 90
+      bravery: 100
       reactions: 50
       firing: 55
       throwing: 60
@@ -354,7 +354,7 @@ units:
       tu: 56
       stamina: 90
       health: 35
-      bravery: 90
+      bravery: 100
       reactions: 50
       firing: 55
       throwing: 60
@@ -548,7 +548,7 @@ units:
       tu: 62
       stamina: 80
       health: 26
-      bravery: 70
+      bravery: 90
       reactions: 45
       firing: 50
       throwing: 40
@@ -571,7 +571,7 @@ units:
     standHeight: 22
     kneelHeight: 14
     value: 50
-    deathSound: *MaleDeathSounds
+    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
     intelligence: 5
     aggression: 1
     energyRecovery: 25
@@ -583,7 +583,7 @@ units:
       tu: 65
       stamina: 90
       health: 49
-      bravery: 90
+      bravery: 100
       reactions: 53
       firing: 62
       throwing: 64
@@ -657,7 +657,7 @@ units:
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_MANAGER_ARMOR
     value: -15
-    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
+    deathSound: *FemaleDeathSounds
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
     aggression: 0

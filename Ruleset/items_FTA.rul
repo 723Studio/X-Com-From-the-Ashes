@@ -2732,7 +2732,7 @@ items:
     weight: 24
     bigSprite: 438
     floorSprite:  438
-    handSprite: 858
+    handSprite: 906
     bulletSprite: 3
     fireSound: 134
     compatibleAmmo:
@@ -3452,9 +3452,9 @@ items:
     hitAnimation: -1
     power: 53
     damageAlter:
-      ArmorEffectiveness: 0.75
+      ArmorEffectiveness: 0.8
       ToTime: 0.15
-      ToArmorPre: 0.05
+      ToArmorPre: 0.02
       ToTile: 0.7
     damageType: 1
     clipSize: 120
