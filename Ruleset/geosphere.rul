@@ -1264,7 +1264,7 @@ globe:
       deployments:
         STR_RESISTANCE_FOREST_HOUSE: 60
         STR_RESISTANCE_FOREST_HOUSE_AMBUSH: 60
-        STR_MIB_FOREST_BEACON: 20
+        STR_MIB_FOREST_BEACON_ASSAULT: 30
     - id: -6
       deployments:
         STR_SCIENTIST_REFUGE: 100

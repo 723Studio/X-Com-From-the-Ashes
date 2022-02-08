@@ -926,6 +926,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/CULT_BACKGROUND.png
+  - type: STRANGE_LIGHTS_EVENT_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/STRANGE_LIGHTS_EVENT_BACKGROUND.png
 
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT_CPAL

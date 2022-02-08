@@ -374,7 +374,7 @@ en-US:
   STR_MIB_CONTROL_CENTER_DESTROYED: "M.I.B. CONTROL CENTER DESTROYED"
   STR_MIB_CONTROL_CENTER_NOT_DESTROYED: "M.I.B. CONTROL CENTER NOT DESTROYED"
   STR_MIB_BASE_ALARM: "M.I.B. Defence System"
-  STR_MIB_BASE_ALARM_DESCRIPTION: "Commander! Our sensors have detected a spike in radiation levels! There's a neutron radiation source in the base, and it's gradually increasing in power. According to our calculations, by the 20th turn our soldiers will be unable to withstand the exposure level and stay alive afterwards. We must destroy the servers in the command center as quickly as possible and get out of here!" 
+  STR_MIB_BASE_ALARM_DESCRIPTION: "Commander! Our sensors have detected a spike in radiation levels! There's a neutron radiation source in the base, and it's gradually increasing in power. According to our calculations, very soon our soldiers will be unable to withstand the exposure level and stay alive afterwards. We must destroy the servers in the command center as quickly as possible and get out of here!" 
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_MIB_REGIONAL_HQ_: "M.I.B. Regional HQ"
   STR_RESISTANCE_FARM_ZOMBIE: "Resistance Haven Attacked"
@@ -390,7 +390,7 @@ en-US:
   STR_RESISTANCE_FOREST_HOUSE_AMBUSH: "Resistance Haven Attacked"
   STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: "Resistance Haven Attacked"
   STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We're still receiving an encrypted distress signal from their radio beacon, but there is no communication with the refuge itself - no one is answering our requests. It is imperative to understand the situation and, if necessary, to eliminate all active threats.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
-  STR_MIB_FOREST_BEACON: "Resistance Haven Attacked"
+  STR_MIB_FOREST_BEACON_ASSAULT: "Resistance Haven Attacked"
   STR_MIB_FOREST_BEACON_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We're still receiving an encrypted distress signal from their radio beacon, but there is no communication with the refuge itself - no one is answering our requests. Obviously, the Resistance shelters must be in a secluded place, but not the middle of nowhere! It is imperative to understand the situation and, if necessary, to eliminate all active threats.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
   STR_RESISTANCE_URBAN_HIDEOUT: "Resistance Haven Attacked"
   STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING: "We are receiving a distress signal the Resistance cell, located in urban area. The local TV channels broadcast reports that government forces have located an international terrorist group and that the police supported by special forces are about to storm the area. There is no doubt that the M.I.B. are involved. This cell was used for covert communications with X-COM, so cryptographic data stored on a floppy disk must be secured. We also should not harm the local police officers, as they are only pawns in this game.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon."
@@ -567,8 +567,9 @@ en-US:
   STR_EX_COUNCIL_MEMBER_INITIAL_EVENT: "Incoming encrypted message!"
   STR_EX_COUNCIL_MEMBER_INITIAL_EVENT_DESCRIPTION: "Commander, we are receiving an encrypted message through one of our secure communication channels. Would you like to display it on the main screen?"
   STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT: "Transmission decoding completed!"
-  STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT_DESCRIPTION: "Your mission, if you undertake it, will be to recover a Data Vault containing crucial information. The container was stolen from our secret laboratory in a daring attack. It appears to have been carried out by non-professionals, but they were surprisingly well prepared and informed.{NEWLINE}{ALT}New covert operation available."
-  STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_EVENT: "We have a new chance to contact a ex-Council member and give him the Data Vault he asked for. We need to be very careful, because the M.I.B. will definitely try to intercept our agents.{NEWLINE}{ALT}New covert operation available."
+  STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT_DESCRIPTION: "Your mission, if you undertake it, will be to recover the Data Vault containing crucial information. The container was stolen from our secret laboratory in a daring attack. It appears to have been carried out by non-professionals, but they were surprisingly well prepared and informed.{NEWLINE}{ALT}New covert operation available."
+  STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_EVENT: "Transmission decoding completed!"
+  STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_EVENT_DESCRIPTION: "We have a new chance to contact a ex-Council member and give him the Data Vault he asked for. We need to be very careful, because the M.I.B. will definitely try to intercept our agents.{NEWLINE}{ALT}New covert operation available."
   STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT: "Data Vault recovery failed"
   STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT_DESCRIPTION: "It is with bitterness that we have to inform a former member of the Council of the failure of his task.{NEWLINE}Loyalty score>{ALT} -300"
   STR_EX_COUNCIL_DATA_VAULT_SUCCESS_EVENT: "Data Vault recovered!"
@@ -611,6 +612,8 @@ en-US:
   STR_MYSTERIOUS_SPONSOR_1000000_DESCRIPTION: "$1,000,000 was deposited into one of our clandestine accounts. It is unclear whether this is a banking error, a well-wisher who desires to remain anonymous, or an insidious attempt of the Men in Black to get to our accounts. Either way, we must remain vigilant."
   STR_OLD_CROP_CIRCLES: "Old Crop Circles"
   STR_OLD_CROP_CIRCLES_DESCRIPTION: "Some crop circles were reported, but apparently our opponents got to them before we even learned of them. Whatever had been there to uncover, it is now beyond our grasp - forever...{NEWLINE}Loyalty score>{ALT} -20"
+  STR_UFO_SIGNS: "UFO Signs"
+  STR_UFO_SIGNS_DESCRIPTION: "We get scattered information about the observation from the ground of a strange phenomenon in the upper atmosphere, published in the 'yellow press'. Apparently, this is evidence of an alien ship passing through. Unfortunately, we were not able to react to this event in time.{NEWLINE}Loyalty score>{ALT} -15"
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
   STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: "Commander, we need a biolab to continue our research. And a good one, full of quality and innovative equipment. Our scientists will make a list of equipment and modify standard lab blueprints. A lot of specific hardware is not available  open market. So we need to get in touch with a certain circle of people who are able to provide us with everything we need. It is necessary to send our people on a covert operation to carry out negotiations.{NEWLINE}{ALT}New covert operations available."
   STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"
@@ -657,6 +660,7 @@ en-US:
   STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. With his help we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+2 832 548"
 
 #enemies
+  STR_FREE_SPOT: "Free Spot Unit Placeholder"
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "M.I.B. Agent"
   STR_MIB_AGENT_SPAWN: "M.I.B. Agent"
@@ -777,6 +781,7 @@ en-US:
   STR_ARMADILLO_AUTOPSY_UFOPEDIA: #TODO
   STR_ARMADILLO_ARMOR: "Armadillo Combat Analysis"
   STR_ARMADILLO_ARMOR_UFOPEDIA: #TODO
+  STR_SWARMID: "Swarmid"
   STR_SWARMIDS_LARGE_WEAPON: "Big Swarm Stings"
   STR_SWARMIDS_SMALL_WEAPON: "Swarm Stings"
   STR_SWARMIDS_LARGE_ARMOR: "Swarmids (Large) Combat Analysis"
@@ -1646,3 +1651,11 @@ en-US:
   MAP_RURAL: "Rural"
   MAP_XOPSDESERT_NOCACTI: "African Desert"
   MAP_INDUSTRIALSLUM: "Postindustrial" 
+
+
+  STR_SUPER_FACILITY: "Super facility"
+
+  STR_TROLLIUM: STR_TROLLIUM
+  STR_TODOIUM: STR_TODOIUM
+  STR_VOID_CONTACT: STR_VOID_CONTACT
+  STR_ENIGMA_CONTACT: STR_ENIGMA_CONTACT

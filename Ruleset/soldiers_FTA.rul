@@ -6,7 +6,7 @@ soldiers:
     moraleLossWhenKilled: 150
     value: 50
     minStats:
-      tu: 60
+      tu: 55
       stamina: 40
       health: 25
       bravery: 10
@@ -19,9 +19,9 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 70
+      tu: 65
       stamina: 70
-      health: 40
+      health: 35
       bravery: 60
       reactions: 60
       firing: 70
@@ -34,8 +34,8 @@ soldiers:
     statCaps:
       tu: 100
       stamina: 110
-      health: 70
-      bravery: 100
+      health: 50
+      bravery: 90
       reactions: 100
       firing: 120
       throwing: 110
@@ -45,9 +45,9 @@ soldiers:
       psiSkill: 100
       mana: 80
     trainingStatCaps:
-      tu: 75
-      stamina: 95
-      health: 50
+      tu: 70
+      stamina: 90
+      health: 40
       bravery: 100
       reactions: 50
       firing: 85
@@ -94,7 +94,7 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 70
+      tu: 65
       stamina: 70
       health: 35
       bravery: 50

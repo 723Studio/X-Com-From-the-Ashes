@@ -27,11 +27,11 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 2000000
     buildTime: 40
-    monthlyCost: 6000
+    monthlyCost: 13000
     canBeBuiltOver: true
     storage: 5
     storageTiles: [[-1, -1, -1]]
-    labs: 7
+    labs: 8
     manaRecoveryPerDay: 1
     rightClickActionType: 3
     radarRange: 10800
@@ -52,9 +52,9 @@ facilities:
      STR_BIOLOGY_EQUIPMENT:
        build: 1
        refund: 1         
-    buildCost: 340000
+    buildCost: 430000
     buildTime: 32
-    monthlyCost: 15000
+    monthlyCost: 17000
     labs: 5
     mapName: XBASF_07
   - type: STR_PRISON_CELLS
@@ -64,7 +64,7 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 260000
     buildTime: 16
-    monthlyCost: 3000
+    monthlyCost: 5000
     aliens: 10
     prisonType: 1
     labs: 1
@@ -80,7 +80,7 @@ facilities:
       - STR_CREATURES_CONTAINMENT
     buildCost: 470000
     buildTime: 20
-    monthlyCost: 10000
+    monthlyCost: 18000
     aliens: 10
     prisonType: 2
     rightClickActionType: 1
@@ -93,7 +93,7 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 240000
     buildTime: 20
-    monthlyCost: 2000
+    monthlyCost: 6000
     trainingRooms: 10
     storage: 2
     storageTiles: [[-1, -1, -1]]
@@ -108,7 +108,7 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 450000
     buildTime: 22
-    monthlyCost: 5000
+    monthlyCost: 7000
     rightClickActionType: 6
     sickBayAbsoluteBonus: 0.25
     sickBayRelativeBonus: 1.0
@@ -127,7 +127,7 @@ facilities:
     rightClickActionType: 3
     storage: 20
     storageTiles: [[-1, -1, -1]]
-    monthlyCost: 10
+    monthlyCost: 1000
     mapName: XBASF_06
     listOrder: 6810
 #vanilla
@@ -139,7 +139,7 @@ facilities:
     lift: true
     buildCost: 400000
     buildTime: 1
-    monthlyCost: 2000 #4000
+    monthlyCost: 4000
     mapName: XBASE_00
   - type: STR_LIVING_QUARTERS
     spriteShape: 1
@@ -148,7 +148,7 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 450000
     buildTime: 16
-    monthlyCost: 4000
+    monthlyCost: 6000
     personnel: 60
     #manaRecoveryPerDay: 5
     storage: 10
@@ -162,7 +162,7 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     buildCost: 250000
     buildTime: 10
-    monthlyCost: 3000
+    monthlyCost: 4000
     storage: 70
     storageTiles:
         - [6, 3, 1]
@@ -180,11 +180,11 @@ facilities:
       - STR_FACILITIES_BLUEPRINTS
     canBeBuiltOver: true
     size: 2
-    buildCost: 600000
+    buildCost: 620000
     buildTime: 30
-    monthlyCost: 10000
+    monthlyCost: 8000
     crafts: 1
-    workshops: 5
+    workshops: 4
     storage: 20
     storageTiles: [[-1, -1, -1]]
     mapName: XBASE_16
@@ -211,7 +211,7 @@ facilities:
       - STR_WORKSHOP
     buildCost: 220000
     buildTime: 15
-    monthlyCost: 5000
+    monthlyCost: 7000
     workshops: 12
     mapName: XBASE_03 #FIXME - make map!
   - type: STR_ADVANCED_WORKSHOP

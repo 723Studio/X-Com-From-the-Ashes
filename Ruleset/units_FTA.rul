@@ -287,7 +287,7 @@ units:
     armor: STR_MIB_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 20
+    value: 10
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 3
@@ -376,7 +376,7 @@ units:
     armor: STR_MIB_AGENT_VEST_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 25
+    value: 15
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 3
@@ -416,7 +416,7 @@ units:
     armor: STR_MIB_SPECOPS_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 27
+    value: 20
     deathSound: *MaleDeathSounds
     intelligence: 5
     aggression: 4
@@ -427,7 +427,7 @@ units:
   - type: STR_MIB_SPECOPS_SPAWN
     refNode: *STR_MIB_SPECOPS
     altRecoveredUnit: STR_MIB_SPECOPS
-    value: 5
+    value: 3
     builtInWeaponSets:
       - - STR_LMG
         - STR_LMG_CLIP
@@ -471,14 +471,14 @@ units:
   - type: STR_MIB_BUTCHER
     race: STR_MIB
     stats:
-      tu: 75
-      stamina: 110
+      tu: 95
+      stamina: 140
       health: 85
       bravery: 120
-      reactions: 45
+      reactions: 50
       firing: 40
       throwing: 55
-      strength: 70
+      strength: 95
       melee: 85
       psiStrength: 45
       psiSkill: 0
@@ -496,7 +496,7 @@ units:
     armor: STR_MIB_BUTCHER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 35
+    value: 30
     deathSound: *MaleDeathSounds
     intelligence: 2
     aggression: 8
@@ -532,7 +532,7 @@ units:
     standHeight: 11
     kneelHeight: 16
     floatHeight: 12
-    value: 15
+    value: 25
     deathSound: 23
     moveSound: 40
     specab: 1
@@ -545,7 +545,7 @@ units:
   - type: STR_MIB_SCIENTIST
     race: STR_MIB
     stats:
-      tu: 62
+      tu: 70
       stamina: 80
       health: 26
       bravery: 90
@@ -570,7 +570,7 @@ units:
     armor: STR_MIB_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 50
+    value: 20
     deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
     intelligence: 5
     aggression: 1
@@ -580,15 +580,15 @@ units:
     race: STR_MIB
     rank: STR_LIVE_ENGINEER
     stats:
-      tu: 65
-      stamina: 90
+      tu: 90
+      stamina: 140
       health: 49
-      bravery: 100
-      reactions: 53
-      firing: 62
+      bravery: 120
+      reactions: 60
+      firing: 80
       throwing: 64
-      strength: 55
-      melee: 35
+      strength: 70
+      melee: 50
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -610,7 +610,7 @@ units:
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
     intelligence: 4
-    aggression: 6
+    aggression: 8
     sniper: 75
     spotter: 2
     canSurrender: false
@@ -620,15 +620,15 @@ units:
     type: MIB_OFFICE_ENGINEER
     race: STR_MIB
     stats:
-      tu: 46
+      tu: 40
       stamina: 40
-      health: 35
-      bravery: 60
-      reactions: 30
-      firing: 40
-      throwing: 30
-      strength: 30
-      melee: 30
+      health: 25
+      bravery: 40
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
       psiStrength: 35
       psiSkill: 0
     statsRandom:
@@ -645,18 +645,19 @@ units:
     armor: STR_MIB_OFFICE_ENGINEER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -20
+    value: -30
     deathSound: *MaleDeathSounds
     # panicSound: *MalePanicSounds
     # berserkSound: *MaleBerserkSounds
     energyRecovery: 20
-    intelligence: 1
+    intelligence: 0
     aggression: 0
     canSurrender: true
+    pickUpWeaponsMoreActively: 0
   - type: MIB_OFFICE_MANAGER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_MANAGER_ARMOR
-    value: -15
+    value: -25
     deathSound: *FemaleDeathSounds
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
@@ -704,7 +705,7 @@ units:
       strength: 5
       melee: 10
       psiStrength: 15
-    value: -10
+    value: -15
     aggression: 3
   - type: MIB_OFFICE_WORKER
     refNode: *MIB_PROCURED_CIVILIAN
@@ -712,9 +713,11 @@ units:
   - type: MIB_VIP
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
+    pickUpWeaponsMoreActively: 1
   - type: MIB_BANKER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
+    pickUpWeaponsMoreActively: 1
   - type: MIB_VIP_BODYGUARD
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_BODYGUARD_ARMOR
@@ -741,8 +744,9 @@ units:
       strength: 5
       melee: 10
       psiStrength: 15
-    value: -10
+    value: -15
     aggression: 4
+    pickUpWeaponsMoreActively: 1
 
 #Cultists
   - type: STR_CULT_GANGER

@@ -122,3 +122,7 @@ config:
     - covertOperations.failureReputationScore
     - covertOperations.requiredItems
     - covertOperations.successReputationScore
+  ignoreStringTypes:
+    - arcScripts.type
+    - diplomacyFactionEvents.type
+    - eventScripts.type

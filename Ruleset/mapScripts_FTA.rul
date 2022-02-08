@@ -578,10 +578,10 @@ mapScripts:
 
   - type: CRAFT_UFO_SCRIPT
     commands:
-    - type: addUFO
+    - type: addCraft
       # rects: 
       #  - [2, 2, 5, 5]
-    - type: addCraft
+    - type: addUFO
       # rects: 
       #  - [2, 2, 5, 5]
     - type: addBlock

@@ -17,6 +17,7 @@ armors:
     sideArmor: 4
     rearArmor: 4
     underArmor: 4
+    fearImmune: true
     psiDefence: &StandardDynamicPsiDefence
       psiStrength: 1.0
       psiSkill: 0.2
@@ -87,6 +88,8 @@ armors:
     corpseBattle:
       - STR_XCOM_EX_COMMANDER_CORPSE
     visibilityAtDark: 10
+    fearImmune: true
+    allowsKneeling: true
     psiDefence: &StandardDynamicPsiDefence
       psiStrength: 1.0
       psiSkill: 0.2
@@ -131,6 +134,8 @@ armors:
       - STR_MIB_AGENT_CORPSE
     visibilityAtDark: 8
     camouflageAtDark: -3
+    fearImmune: true
+    allowsKneeling: true
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -158,6 +163,8 @@ armors:
     sideArmor: 5
     rearArmor: 10
     underArmor: 2
+    fearImmune: true
+    allowsKneeling: true
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
@@ -198,12 +205,14 @@ armors:
       - STR_MIB_SPECOPS_CORPSE
     visibilityAtDark: 15
     camouflageAtDark: -3
-    heatVision: 15
+    heatVision: 10
     weight: 6
     frontArmor: 25
     sideArmor: 15
     rearArmor: 17
     underArmor: 10
+    fearImmune: true
+    allowsKneeling: true
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -249,6 +258,8 @@ armors:
     sideArmor: 6
     rearArmor: 6
     underArmor: 5
+    fearImmune: true
+    painImmune: true
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -333,6 +344,8 @@ armors:
     sideArmor: 0
     rearArmor: 0
     underArmor: 0
+    fearImmune: true
+    allowsKneeling: true
     psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.7
     recovery:
@@ -376,6 +389,8 @@ armors:
     sideArmor: 35
     rearArmor: 35
     underArmor: 35
+    fearImmune: true
+    painImmune: true
     psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
@@ -1122,9 +1137,11 @@ armors:
     spriteInv: inventory_RESISTANCE_SCIENTIST
     corpseBattle:
       - STR_RESISTANCE_SCIENTIST_CORPSE
-    visibilityAtDark: 10
+    visibilityAtDark: 12
     personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: false
+    allowsKneeling: true
     recovery:
       energy:
         flatHundred: 0.1
@@ -1135,21 +1152,25 @@ armors:
       health:
         stunNormalized: -0.1
     meleeDodge:
-      reactions: 0.5
+      reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
+    tags:
+      FTAG_STUN_TO_HP: 1
 
   - type: STR_RESISTANCE_AGENT_ARMOR
     spriteSheet: RESISTANCE_AGENT.PCK 
     spriteInv: inventory_RESISTANCE_AGENT
     corpseBattle:
       - STR_RESISTANCE_AGENT_CORPSE
-    visibilityAtDark: 10
+    visibilityAtDark: 8
     personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: false
+    allowsKneeling: true
     recovery:
       energy:
         flatHundred: 0.13
@@ -1182,6 +1203,8 @@ armors:
       - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED
     loftempsSet: [ 3 ]
+    tags:
+      FTAG_STUN_TO_HP: 1
   - type: STR_RESISTANCE_SOLDIER_ARMOR #TODO
     spriteSheet: RESISTANCE_AGENT.PCK
     spriteInv: inventory_RESISTANCE_AGENT
@@ -1190,6 +1213,7 @@ armors:
     visibilityAtDark: 10
     personalLight: 1
     psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: false
     recovery:
       energy:
         flatHundred: 0.13
@@ -1527,3 +1551,4 @@ extended:
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
+      FTAG_STUN_TO_HP: int  #converts stun to hp damage, devide stun damage to 3

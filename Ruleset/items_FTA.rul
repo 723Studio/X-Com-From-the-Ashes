@@ -5520,8 +5520,8 @@ items:
     listOrder: 100340
   - type: STR_MIB_VIP_BODYGUARD_CORPSE
     refNode: *HUMAN_CORPSE
-    bigSprite: 120
-    floorSprite: 120
+    bigSprite: 127
+    floorSprite: 127
     recoveryPoints: -5
     listOrder: 100350
   - type: STR_MIB_VIP_BODYGUARD

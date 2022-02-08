@@ -503,7 +503,12 @@ events:
     loyalty: -20
     timer: 1200
     timerRandom: 43500
-
+  - name: STR_UFO_SIGNS
+    description: STR_UFO_SIGNS_DESCRIPTION
+    background: STRANGE_LIGHTS_EVENT_BACKGROUND.SCR
+    loyalty: -15
+    timer: 21600
+    timerRandom: 17280
 
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION

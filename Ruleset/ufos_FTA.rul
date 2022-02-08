@@ -693,8 +693,8 @@ ufos:
             STR_SPAWN_RESISTANCE_COMPUTER:
               - [11, 11, 0]
           randomizedItems:
-              - position: [11, 4, 0]
-                amount: 9
+              - position: [11, 14, 0]
+                amount: 8
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [8, 14, 0]

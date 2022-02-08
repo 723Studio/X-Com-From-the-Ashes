@@ -46,6 +46,7 @@ extended:
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
+      FTAG_STUN_TO_HP: int #converts stun to hp damage, devide stun damage to 3
     BattleItem:
       ITEM_ENERGY_SHIELD_HP: int
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
@@ -1475,6 +1476,21 @@ extended:
               set to_transform 0;
             end;
           end;
+          return;
+
+      - offset: 5   # Handle extra hp damage from stun
+        code: |
+          var ptr RuleArmor armor_rule;
+          var int stunVul;
+
+          unit.getRuleArmor armor_rule;
+          armor_rule.getTag stunVul Tag.FTAG_STUN_TO_HP;
+
+          if gt stunVul 0;
+            set to_health to_stun;
+            div to_stun 3;
+          end;
+
           return;
 
       - offset: 25   # Handle death from above debuff apply

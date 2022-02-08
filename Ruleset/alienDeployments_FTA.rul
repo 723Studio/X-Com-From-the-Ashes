@@ -295,7 +295,7 @@ alienDeployments:
     alert: STR_ALERT_MIB_REGIONAL_HQ
     alertBackground: MIB_BACKGROUND.SCR
     alertDescription: STR_ALERT_MIB_REGIONAL_HQ_DESCRIPTION
-    battleScript: MIB_TRAP_ESCAPE_EARLY
+    battleScript: MIB_HQ_SURFACE
     alienBase: true
     keepCraftAfterFailedMission: true
     escapeType: 1
@@ -1089,11 +1089,13 @@ alienDeployments:
       - alienRank: 5
         lowQty: 3
         highQty: 5
-        dQty: 1
+        dQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
-            - STR_COMBAT_KNIFE
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
           -
             - STR_PISTOL
             - STR_PISTOL_EXP_CLIP
@@ -1137,6 +1139,7 @@ alienDeployments:
             - STR_PDW_CLIP  
       - alienRank: 4
         lowQty: 0
+        medQty: 0
         highQty: 1
         percentageOutsideUfo: 100
         itemSets:
@@ -1233,9 +1236,9 @@ alienDeployments:
     battleScript: ZOMBIE_ATTACK_RESISTANCE_FARM
     data:
       - alienRank: 5
-        lowQty: 5
+        lowQty: 6
         highQty: 10
-        dQty: 3
+        dQty: 4
         percentageOutsideUfo: 80
         itemSets: &AnchorEmptyInventory
           -
@@ -1375,7 +1378,8 @@ alienDeployments:
             - STR_RIOT_RIFLE_CLIP
       - alienRank: 4 #STR_CULT_COORDINATOR
         lowQty: 1
-        highQty: 1
+        medQty: 1
+        highQty: 2
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &gangerMediumLoadout
@@ -1491,7 +1495,7 @@ alienDeployments:
     battleScript: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     data:
       - alienRank: 5 #STR_MIB_AGENT
-        lowQty: 2
+        lowQty: 3
         highQty: 6
         dQty: 2
         percentageOutsideUfo: 90
@@ -1642,8 +1646,8 @@ alienDeployments:
     battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     data:
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
-        lowQty: 2
-        highQty: 4
+        lowQty: 3
+        highQty: 5
         dQty: 2
         percentageOutsideUfo: 100
         itemSets:
@@ -1697,7 +1701,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE 
       - alienRank: 9 #STR_MIB_SPECOPS
-        lowQty: 4
+        lowQty: 3
         highQty: 7
         dQty: 2
         percentageOutsideUfo: 100
@@ -1796,8 +1800,9 @@ alienDeployments:
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 2
+        medQty: 3
         highQty: 6
-        dQty: 1
+        dQty: 2
         percentageOutsideUfo: 90
         itemSets:
           -
@@ -1953,6 +1958,7 @@ alienDeployments:
             - STR_LC_HE_AMMO  
       - alienRank: 9 #STR_MIB_SPECOPS heavy duty
         lowQty: 1
+        medQty: 1
         highQty: 2
         dQty: 0
         percentageOutsideUfo: 50
@@ -2003,7 +2009,7 @@ alienDeployments:
             - STR_ASSAULT_CANNON_CLIP_AP
             - STR_ASSAULT_CANNON_CLIP_AP
 
-  - type: STR_MIB_FOREST_BEACON
+  - type: STR_MIB_FOREST_BEACON_ASSAULT
     race: STR_MIB
     width: 60
     length: 60
@@ -2012,9 +2018,9 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
-    duration: [10, 14]
+    duration: [16, 24]
     despawnPenalty: 200
-    abortPenalty: 40
+    abortPenalty: 20
     briefing:
       textOffset: -16
       background: STR_RESISTANCE_BACKGROUND.SCR
@@ -2027,9 +2033,10 @@ alienDeployments:
     script: CRAFT_UFO_SCRIPT
     data:
       - alienRank: 9 #STR_MIB_SPECOPS
-        lowQty: 4
-        highQty: 9
-        dQty: 3
+        lowQty: 3
+        medQty: 5
+        highQty: 10
+        dQty: 4
         percentageOutsideUfo: 90
         itemSets:
           -
@@ -2078,6 +2085,7 @@ alienDeployments:
             - STR_RIFLE_CLIP 
       - alienRank: 9 #STR_MIB_SPECOPS heavy duty
         lowQty: 1
+        medQty: 1
         highQty: 2
         dQty: 0
         percentageOutsideUfo: 100
@@ -2148,14 +2156,16 @@ alienDeployments:
     script: RESISTANCE_FARM_AMBUSH
     data:
       - alienRank: 5 #STR_FRESH_ZOMBIE
-        lowQty: 8
+        lowQty: 9
+        medQty: 12
         highQty: 17
         dQty: 4
         extraQty: 3
         percentageOutsideUfo: 65
         itemSets: *AnchorEmptyInventory
       - alienRank: 6 #STR_FACEHUGGER
-        lowQty: 3
+        lowQty: 4
+        medQty: 6
         highQty: 10
         dQty: 3
         extraQty: 2
@@ -2165,7 +2175,7 @@ alienDeployments:
         lowQty: 4
         highQty: 6
         dQty: 2
-        extraQty: 1
+        extraQty: 2
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
 
@@ -2254,8 +2264,8 @@ alienDeployments:
     battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     data:
       - alienRank: 5 #STR_MIB_AGENT
-        lowQty: 2
-        highQty: 3
+        lowQty: 3
+        highQty: 4
         dQty: 2
         percentageOutsideUfo: 100
         itemSets:
@@ -2377,8 +2387,8 @@ alienDeployments:
       - FOREST
     data:
       - alienRank: 5
-        lowQty: 1
-        highQty: 3
+        lowQty: 2
+        highQty: 5
         dQty: 5
         itemSets: *AnchorEmptyInventory
 
@@ -2403,9 +2413,9 @@ alienDeployments:
       - FOREST
     data:
       - alienRank: 6
-        lowQty: 1
-        highQty: 4
-        dQty: 4
+        lowQty: 2
+        highQty: 5
+        dQty: 5
         itemSets: *AnchorEmptyInventory
   - type: STR_CHUPA_TERROR_HARD
     race: STR_CHUPACABRA
@@ -2468,7 +2478,7 @@ alienDeployments:
       - alienRank: 5 #STR_BANDIT
         lowQty: 2
         highQty: 6
-        dQty: 2
+        dQty: 3
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -2600,7 +2610,7 @@ alienDeployments:
       - alienRank: 5 #STR_BANDIT
         lowQty: 4
         highQty: 8
-        dQty: 2
+        dQty: 3
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -2755,7 +2765,7 @@ alienDeployments:
         lowQty: 2
         medQty: 4
         highQty: 6
-        dQty: 1
+        dQty: 2
         percentageOutsideUfo: 50
         itemSets:
           -
@@ -2955,7 +2965,7 @@ alienDeployments:
       - alienRank: 5
         lowQty: 2
         highQty: 4
-        dQty: 0
+        dQty: 1
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -3005,9 +3015,9 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP  
       - alienRank: 5
-        lowQty: 1
+        lowQty: 2
         highQty: 4
-        dQty: 1
+        dQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -3290,7 +3300,8 @@ alienDeployments:
       - FOREST
     data:
       - alienRank: 5
-        lowQty: 6
+        lowQty: 5
+        medQty: 7
         highQty: 12
         dQty: 5
         itemSets: *AnchorEmptyInventory
@@ -3320,7 +3331,7 @@ alienDeployments:
         itemSets: *gangerLightLoadout
       - alienRank: 4 #STR_CULT_COORDINATOR
         lowQty: 1
-        highQty: 1
+        highQty: 2
         dQty: 1
         percentageOutsideUfo: 0
         itemSets: *gangerMediumLoadout

@@ -326,3 +326,11 @@ eventScripts:
     firstMonth: 2
     executionOdds: 3
     allowedProcessor: 0
+  - type: STR_UFO_SIGNS
+    eventWeights:
+      0:
+        STR_UFO_SIGNS: 100
+    firstMonth: 0
+    executionOdds: 2
+    maxScore: 300
+    allowedProcessor: 0

@@ -2,7 +2,7 @@ battleScripts:
   - type: ZOMBIE_ATTACK_RESISTANCE_FARM
     commands:
     - type: spawnUnit #for low diff
-      startTurn: 5
+      startTurn: 3
       executionChances: 80
       packSize: 4
       randomPackSize: true
@@ -11,7 +11,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_FRESH_ZOMBIE]
     - type: spawnUnit #random additional
-      startTurn: 7
+      startTurn: 5
       executionChances: 20
       packSize: 4
       randomPackSize: true
@@ -19,8 +19,8 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE,STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #high diff
-      startTurn: 4
-      executionChances: 70
+      startTurn: 2
+      executionChances: 90
       packSize: 6
       randomPackSize: true
       unitSide: 1
@@ -28,7 +28,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_FACEHUGGER, STR_FACEHUGGER, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE, STR_FRESH_ZOMBIE, STR_ZOMBIE_GRUBAS_TERRORIST]
     - type: spawnUnit #extra SH gift
-      startTurn: 5
+      startTurn: 4
       executionChances: 10
       packSize: 6
       randomPackSize: false
@@ -40,8 +40,8 @@ battleScripts:
   - type: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
     commands:
     - type: spawnUnit #firstWave
-      executionChances: 70
-      startTurn: 8
+      executionChances: 80
+      startTurn: 7
       maxRuns: 1
       variable: firstWave
       packSize: 4
@@ -50,16 +50,16 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #continues
-      executionChances: 20
-      startTurn: 10
+      executionChances: 40
+      startTurn: 9
       packSize: 3
       randomPackSize: true
       unitSide: 1
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #secondWave
-      executionChances: 50
-      startTurn: 13
+      executionChances: 70
+      startTurn: 12
       packSize: 6
       randomPackSize: false
       unitSide: 1
@@ -80,8 +80,8 @@ battleScripts:
   - type: MIB_ATTACK_CROP_CIRCLES
     commands:
     - type: spawnUnit #firstWave
-      executionChances: 95
-      startTurn: 9
+      executionChances: 80
+      startTurn: 8
       maxRuns: 1
       variable: firstWave
       packSize: 4
@@ -90,16 +90,16 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #continues
-      executionChances: 20
-      startTurn: 11
+      executionChances: 30
+      startTurn: 10
       packSize: 3
       randomPackSize: true
       unitSide: 1
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #secondWave
-      executionChances: 50
-      startTurn: 14
+      executionChances: 65
+      startTurn: 12
       packSize: 6
       randomPackSize: false
       unitSide: 1
@@ -122,7 +122,7 @@ battleScripts:
     commands:
     - type: spawnUnit #firstWave
       executionChances: 75
-      startTurn: 7
+      startTurn: 6
       maxRuns: 1
       variable: firstWave
       packSize: 4
@@ -131,7 +131,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #random additional
-      executionChances: 25
+      executionChances: 30
       packSize: 3
       randomPackSize: true
       unitSide: 1
@@ -140,7 +140,7 @@ battleScripts:
       unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #secondWave
       executionChances: 70
-      startTurn: 11
+      startTurn: 10
       packSize: 6
       randomPackSize: false
       unitSide: 1
@@ -150,7 +150,7 @@ battleScripts:
       unitSet: [STR_MIB_SPECOPS_SPAWN]
     - type: spawnUnit #extra SH gift
       executionChances: 10
-      startTurn: 8
+      startTurn: 6
       packSize: 8
       randomPackSize: false
       unitSide: 1
@@ -206,7 +206,7 @@ battleScripts:
           title: STR_RECOVER_RESEARCH_LOGS_TITLE
           content: STR_RECOVER_RESEARCH_LOGS_CONTENT
 
-  - type: MIB_TRAP_ESCAPE_EARLY
+  - type: MIB_HQ_SURFACE
     commands:
     - type: spawnUnit #med
       executionChances: 60
@@ -215,7 +215,7 @@ battleScripts:
       maxLevel: 5
       packSize: 3
       randomPackSize: true
-      startTurn: 6
+      startTurn: 5
       unitSide: 1
       minAlarmLevel: 2
       #groups: [1, 2, 3, 4]
@@ -230,9 +230,46 @@ battleScripts:
       randomPackSize: true
       startTurn: 3
       unitSide: 1
-      minAlarmLevel: 1
-      groups: [2, 3, 4]
+      minAlarmLevel: 2
       spawnBlocks: [WEST]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: showMessage
+      maxRuns: 1
+      variable: alarm
+      minAlarmLevel: 2
+      startTurn: 1
+      messages:
+        0:
+          title: MIB_TRAP_ESCAPE_MAP_ALARM_TITLE
+          content: MIB_TRAP_ESCAPE_MAP_ALARM_CONTENT
+          #answer: STR_SOME_TEXT
+          #background: SOME_EXTRA_SPRITE.PCK
+        # 1:
+        #   content: content2
+  - type: MIB_TRAP_ESCAPE_EARLY
+    commands:
+    - type: spawnUnit #med
+      executionChances: 60
+      maxDifficulty: 3
+      packSize: 3
+      randomPackSize: true
+      startTurn: 6
+      unitSide: 1
+      minAlarmLevel: 2
+      #groups: [1, 2, 3, 4]
+      spawnBlocks: [WEST, EAST]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #sh
+      executionChances: 70
+      minDifficulty: 4
+      minLevel: 5
+      maxLevel: 5
+      packSize: 4
+      randomPackSize: true
+      startTurn: 3
+      unitSide: 1
+      minAlarmLevel: 2
+      spawnBlocks: [WEST, EAST]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: showMessage
       maxRuns: 1
@@ -258,7 +295,6 @@ battleScripts:
       unitSide: 1
       minAlarmLevel: 3
       spawnNodeRanks: [8]
-      #groups: [1, 2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [ARMY_FIELD_OFFICER_SPAWN]
     - type: spawnUnit #sh
@@ -268,9 +304,8 @@ battleScripts:
       randomPackSize: true
       startTurn: 2
       unitSide: 1
-      minAlarmLevel: 2
+      minAlarmLevel: 3
       spawnNodeRanks: [8]
-      groups: [2, 3, 4]
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [ARMY_FIELD_OFFICER_SPAWN]
     - type: showMessage
@@ -351,27 +386,27 @@ battleScripts:
           content: "What a long play!"
 
 
-  - type: TEST_SCRIPT
-    commands:
-    - type: showMessage
-      executions: 1
-      minAlarmLevel: 1
-      messages:
-        0:
-          title: STR_ALARM_TEXT
-          content: STR_ALARM_TEXT
-          #answer: STR_SOME_TEXT
-          #background: SOME_EXTRA_SPRITE.PCK
-        # 1:
-        #   content: content2
-    - type: spawnUnit
-      executions: 2
-      minAlarmLevel: 1
-      executionChances: 100
-      packSize: 3
-      randomPackSize: true
-      unitSide: 1
-      unitSet: [STR_XCOM_EX_COMMANDER]
+  # - type: TEST_SCRIPT
+  #   commands:
+  #   - type: showMessage
+  #     executions: 1
+  #     minAlarmLevel: 1
+  #     messages:
+  #       0:
+  #         title: STR_ALARM_TEXT
+  #         content: STR_ALARM_TEXT
+  #         #answer: STR_SOME_TEXT
+  #         #background: SOME_EXTRA_SPRITE.PCK
+  #       # 1:
+  #       #   content: content2
+  #   - type: spawnUnit
+  #     executions: 2
+  #     minAlarmLevel: 1
+  #     executionChances: 100
+  #     packSize: 3
+  #     randomPackSize: true
+  #     unitSide: 1
+  #     unitSet: [STR_XCOM_EX_COMMANDER]
 
   - type: STR_ENDLESS_WAR_SCRIPT
     commands:
