@@ -73,7 +73,7 @@ alienMissions:
     refNode: *TerrorLike
   - type: STR_DESERT_TELESCOPE_MISSION
     refNode: *TerrorLike
-  - type: STR_RESISTANCE_FOREST_HOUSE
+  - type: STR_RESISTANCE_FOREST_HAVEN
     refNode: *TerrorLike
   - type: STR_CHUPA_TERROR_MISSION
     refNode: *TerrorLike

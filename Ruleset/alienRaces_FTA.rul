@@ -20,11 +20,11 @@ alienRaces:
     members:
       - STR_MIB_ARMORED_AGENT # 0 - Commander
       - STR_MIB_AGENT # 1 - Leader
-      - MIB_OFFICE_ENGINEER # 2 - Engineer
+      - STR_MIB_OFFICE_ENGINEER # 2 - Engineer
       - STR_MIB_SCIENTIST # 3 - Medic - scientist!
-      - MIB_OFFICE_SECURITY # 4 - Navigator
-      - MIB_OFFICE_WORKER # 5 - Soldier
-      - MIB_VIP_BODYGUARD # 6 - Terrorist 1
+      - STR_MIB_OFFICE_SECURITY # 4 - Navigator
+      - STR_MIB_OFFICE_WORKER # 5 - Soldier
+      - STR_MIB_VIP_BODYGUARD # 6 - Terrorist 1
       - MIB_BANKER # 7 - Terrorist 2
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
@@ -35,11 +35,11 @@ alienRaces:
     membersRandom:
       - [STR_MIB_ARMORED_AGENT] # 0 - Commander
       - [STR_MIB_ARMORED_AGENT, STR_MIB_ARMORED_AGENT, STR_MIB_AGENT,  STR_MIB_AGENT, STR_MIB_AGENT] # 1 - Leader
-      - [MIB_OFFICE_ENGINEER] # 2 - Engineer
+      - [STR_MIB_OFFICE_ENGINEER] # 2 - Engineer
       - [STR_MIB_SCIENTIST] # 3 - Medic - scientist!
-      - [MIB_OFFICE_SECURITY] # 4 - Navigator
-      - [MIB_OFFICE_WORKER, MIB_OFFICE_WORKER, MIB_OFFICE_WORKER, MIB_OFFICE_WORKER, MIB_OFFICE_WORKER, MIB_OFFICE_MANAGER] # 5 - Soldier
-      - [MIB_VIP_BODYGUARD] # 6 - Terrorist 1
+      - [STR_MIB_OFFICE_SECURITY] # 4 - Navigator
+      - [STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_MANAGER] # 5 - Soldier
+      - [STR_MIB_VIP_BODYGUARD] # 6 - Terrorist 1
       - [MIB_BANKER] # 7 - Terrorist 2
       - [STR_FREE_SPOT] # 8 - Special Guest 1
       - [STR_FREE_SPOT] # 9 - Heavy Trooper / Underwater Terrorist 1

@@ -617,7 +617,7 @@ units:
 
 #MiB\Procured
   - &MIB_PROCURED_CIVILIAN
-    type: MIB_OFFICE_ENGINEER
+    type: STR_MIB_OFFICE_ENGINEER
     race: STR_MIB
     stats:
       tu: 40
@@ -654,7 +654,7 @@ units:
     aggression: 0
     canSurrender: true
     pickUpWeaponsMoreActively: 0
-  - type: MIB_OFFICE_MANAGER
+  - type: STR_MIB_OFFICE_MANAGER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_MANAGER_ARMOR
     value: -25
@@ -679,7 +679,7 @@ units:
         - STR_CASH_PACK
         - STR_SHOTGUN_SHELLS_BS
       - - STR_CREDIT_CARD_GOLD
-  - type: MIB_OFFICE_SECURITY
+  - type: STR_MIB_OFFICE_SECURITY
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_SECURITY_ARMOR
     stats:
@@ -707,10 +707,10 @@ units:
       psiStrength: 15
     value: -15
     aggression: 3
-  - type: MIB_OFFICE_WORKER
+  - type: STR_MIB_OFFICE_WORKER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_WORKER_ARMOR
-  - type: MIB_VIP
+  - type: STR_MIB_VIP
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
     pickUpWeaponsMoreActively: 1
@@ -718,7 +718,7 @@ units:
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
     pickUpWeaponsMoreActively: 1
-  - type: MIB_VIP_BODYGUARD
+  - type: STR_MIB_VIP_BODYGUARD
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_BODYGUARD_ARMOR
     stats:

@@ -1598,7 +1598,7 @@ research:
     points: 10
     dependencies:
       - STR_BASE_DEFENSE_SYSTEMS
-  - name: STR_CREATURE_CONTAINMENT
+  - name: STR_CREATURES_CONTAINMENT
     cost: 600
     points: 60
     dependencies:

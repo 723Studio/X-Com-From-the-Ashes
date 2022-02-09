@@ -346,10 +346,12 @@ en-US:
   STR_SICK_BAY: "Sick Bay"
   STR_SICK_BAY_UFOPEDIA: "This Sick Bay will serve to ensure that every wounded or sick soldier can receive the necessary medical attention as soon as possible. Thanks to this, everyone at the base will be able to recover faster and better. Such attention to our subordinates's health will definitely not go unnoticed."
   STR_CLOSED_LAB: "Abandoned Laboratory"
+  STR_ADVANCED_WORKSHOP: "Advanced Workshop"
   STR_BIOLAB: "Bio-laboratory"
   STR_BIOLAB_UFOPEDIA: "This research facility is necessary for study of living life forms, such as autopsies and biological experiments on captured creatures. It can accommodate up to 5 scientists. The lab space it provides can be used to research other projects, but you won't be able to research biology projects without this lab present.{NEWLINE}This facility requires 1 unit of laboratory equipment and 1 unit of special biological equipment to function normally."
   STR_CREATURES_CONTAINMENT: "Dangerous Creatures Containment"
   STR_CREATURES_CONTAINMENT_UFOPEDIA: "This structure contains 10 isolated cells for holding dangerous animals and other creatures. The conditions are similar to those on Earth in terms of temperature, atmospheric pressure and air composition.{NEWLINE}Ventilation and sewerage of the cells is carried out in a fully closed cycle, so the risk of contamination by unknown pathogens to the base personnel is reduced to zero. Each cell is equipped with heavy-duty glass walls that make it possible to study the creature in complete safety."
+  STR_BASE_DEFENSE_SYSTEMS: "Base Defense Systems"
   STR_HANGAR_UFOPEDIA: "Each hangar can accommodate one craft and 25 storage units. There are facilities for maintenance, refueling and repair of X-COM craft (5 workspaces). Each craft stationed at a base must have a free hangar assigned to it which cannot be used by other craft, even if the assigned craft is out on a mission."
   STR_LABORATORY_UFOPEDIA: "Up to 20 scientists can work in a laboratory facility. Science laboratories are equipped with the latest technology for research into materials, physics and cosmology (but not biology or intelligence). There is privileged access to the best research labs throughout the world, including military establishments.{NEWLINE}This facility requires 5 units of laboratory equipment in order to function."
   STR_GENERAL_STORES_UFOPEDIA: "This facility is designed to efficiently store a wide variety of supplies, weapons and ammunition. It also has special containers with which we can safely store alien artifacts in perfect isolation."
@@ -385,7 +387,7 @@ en-US:
   STR_RESISTANCE_FARM_CULTISTS: "Resistance Haven Attacked"
   STR_RESISTANCE_FARM_CULTISTS_BRIEFING: #TODO
   STR_RESISTANCE_FARM_BANDITS: "Resistance Haven Attacked"
-  STR_RESISTANCE_FOREST_HOUSE: "Resistance Haven Attacked"
+  STR_RESISTANCE_FOREST_HAVEN: "Resistance Haven Attacked"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The Men in Black have surrounded one of Resistance's secret hideouts. While trying to destroy important clues that could lead the M.I.B. agents to other Resistance havens, these people were forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. Additionally, it is best to recover all possible clues about Resistance activity.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FOREST_HOUSE_AMBUSH: "Resistance Haven Attacked"
   STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: "Resistance Haven Attacked"
@@ -660,12 +662,13 @@ en-US:
   STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. With his help we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+2 832 548"
 
 #enemies
+  STR_SECTOID_COMMANDER_CORPSE: "Sectoid Commander Corpse"
   STR_FREE_SPOT: "Free Spot Unit Placeholder"
   STR_MIB: "Men In Black"
   STR_MIB_AGENT: "M.I.B. Agent"
   STR_MIB_AGENT_SPAWN: "M.I.B. Agent"
   STR_MIB_AGENT_CORPSE: "M.I.B. Agent Corpse"
-  MIB_ARMORED_AGENT_CORPSE: "M.I.B. Agent Corpse"
+  STR_MIB_ARMORED_AGENT_CORPSE: "M.I.B. Agent Corpse"
   STR_MIB_AGENT_UFOPEDIA: "After the M.I.B. agent regained consciousness he looked very disoriented, and even frightened. He couldn't tell us who he was nor how he got here. The last thing he remembers is how he left the house at night when he saw a strange glow in his cornfield. This happened in July 1996. Judging by his constitution, reaction and combat training, it's hard to believe that we're looking at a simple farmer. It'd be easier to believe he's an elite special agent but, as far as we can tell, his story seems genuine. Unfortunately, all attempts to get more information led to nothing."
   STR_MIB_AGENT_ARMOR: "M.I.B. Agent Combat Analysis"
   STR_MIB_AGENT_ARMOR_UFOPEDIA: "M.I.B. agents have good combat training and are masters of various weapons, but they are only human beings and have no significant advantage over our trained soldiers. Typically, agents do not wear body armor, which allows them to retain disguise and mobility."
@@ -689,6 +692,9 @@ en-US:
   STR_MIB_ENFORCER_UFOPEDIA: "Enforcers serve as heavy duty units and usually guard the most important M.I.B. installations. Their primary mission is to destroy anyone who gains unauthorized access to the facility. Rarely they are used in punitive operations where high firepower is required. The subject has undergone a massive psychological conditioning - his personality is almost completely erased, leaving only weapon skills, polished to an instinctive level, as well as absolute loyalty to his masters. An example of human transformation into a perfect war machine."
   STR_MIB_ENFORCER_ARMOR: "M.I.B. Enforcer Combat Analysis"
   STR_MIB_ENFORCER_ARMOR_UFOPEDIA: "Heavily armored, usually armed with high-caliber weapons, these units pose a significant threat on the battlescape."
+  STR_MIB_SCIENTIST: "M.I.B. Scientist"
+  STR_MIB_SCIENTIST_CORPSE: "M.I.B. Scientist Corpse"
+  STR_MIB_SCIENTIST_ARMOR: "M.I.B. Enforcer Combat Analysis"
   STR_SEEKER_DRONE_TERRORIST: "Seeker Drone"
   STR_SEEKER_DRONE_CORPSE: "Seeker Drone Corpse"
   STR_SEEKER_DRONE_UFOPEDIA: "A unique specimen preserved in near-perfect condition. The electronics and processing core are technologically far superior to anything we have encountered before. And the logic unit features a breakthrough implementation of biotechnology centuries ahead of Earth's technology. The drone has high speed and maneuverability, with peripheral visual and thermal sensors that allow it to easily identify the enemy. Its energy weapons are certainly of great interest for further study."
@@ -696,6 +702,7 @@ en-US:
   STR_SEEKER_DRONE_ARMOR: "Seeker Drone Combat Analysis"
   STR_SEEKER_DRONE_ARMOR_UFOPEDIA: "Swift and agile, this combat drone is unpredictable due to its AI chip. Armed with a powerful energy weapon, it is perfectly capable of performing reconnaissance and interdiction tasks."
   STR_XCOM_EX_COMMANDER: "Former X-COM Commander"
+  STR_XCOM_EX_COMMANDER_ARMOR: "Former X-COM Commander"
   STR_XCOM_EX_COMMANDER_CORPSE: "Former X-COM Commander Corpse"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He refuses to communicate and shows aggression at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to maintain control is still unclear to us. During the physical examination there were no signs of any surgical intervention, with all medical tests within the normal range (except for adrenaline). Safekeeping can be problematic as, for example, he had a chance to bite off a finger of a former colleague which he took, successfully."
@@ -715,6 +722,7 @@ en-US:
   STR_MIB_VIP_BODYGUARD_CORPSE: "Bodyguard corpse"
   STR_MIB_VIP_BODYGUARD_UFOPEDIA: "This tough guy had spent the last two years as personal security guard and driver for the director of the office that served as a front for M.I.B. headquarters. He always wondered why his boss was so afraid and avoided internal security agents. These guys are weird in general - always silent, wearing the same black suits and always wearing sunglasses."
   MIB_BANKER: "Banker"
+  STR_MIB_VIP: "V.I.P."
   STR_MIB_VIP_CORPSE: "V.I.P. corpse"
   MIB_BANKER_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts."
   STR_CULT_BANDITS: "Cult Bandits"
@@ -737,10 +745,12 @@ en-US:
   STR_ARMY: "Army"
   STR_ARMY_FIELD_SOLDIER: "Army Soldier"
   STR_ARMY_FIELD_SOLDIER_SPAWN: "Army Soldier"
+  STR_ARMY_FIELD_SOLDIER_CORPSE: "Army Soldier Corpse"
   STR_ARMY_FIELD_SOLDIER_ARMOR: "Army Soldier Combat Analysis"
   STR_ARMY_FIELD_SOLDIER_ARMOR_UFOPEDIA: "A well-trained professional soldier usually carries heavy weaponry and is equipped with an armor vest with steel or ceramic plates, providing medium-class protection."
   STR_ARMY_FIELD_OFFICER: "Army Field Officer"
   ARMY_FIELD_OFFICER_SPAWN: "Army Field Officer"
+  STR_ARMY_FIELD_OFFICER_CORPSE: "Army Field Officer Corpse"
   STR_ARMY_FIELD_OFFICER_ARMOR: "Army Field Officer Combat Analysis"
   STR_ARMY_FIELD_OFFICER_ARMOR_UFOPEDIA: "Field officers are engaged in the operational command of their units, as well as often involved in the protection of critical facilities or special operations. They usually carry the most modern weapons used in the army and medium armor"
   
@@ -809,34 +819,53 @@ en-US:
   STR_RESISTANCE_AGENT: "Resistance Agent"
   STR_RESISTANCE_AGENT_VIP: "Resistance Agent"
   STR_RESISTANCE_AGENT_PRISONER: "Resistance Agent"
+  STR_RESISTANCE_AGENT_ARMOR: "Resistance Agent"
   STR_RESISTANCE_AGENT_CORPSE: "Resistance Agent Corpse"
   STR_RESISTANCE_AGENT_CORPSE_DECORATION: "Resistance Agent Corpse"
   STR_RESISTANCE_SOLDIER: "Resistance Soldier"
+  STR_RESISTANCE_SOLDIER_ARMOR: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_CORPSE: "Resistance Soldier Corpse"
   STR_RESISTANCE_SCIENTIST: "Scientist"
   STR_RESISTANCE_SCIENTIST_VIP: "Scientist"
+  STR_RESISTANCE_SCIENTIST_ARMOR: "Scientist"
   STR_RESISTANCE_SCIENTIST_CORPSE: "Scientists Corpse"
   STR_RESISTANCE_RADIO: "Resistance Radio"
+  STR_RESISTANCE_RADIO_ARMOR: "Resistance Radio"
   STR_RESISTANCE_RADIO_REMAINS: "Resistance Radio Remains"
   STR_RESISTANCE_COMPUTER: "Resistance Computer"
+  STR_RESISTANCE_COMPUTER_ARMOR: "Resistance Computer"
+  STR_RESISTANCE_COMPUTER_REMAINS: "Resistance Computer Remains"
   
   STR_HUMAN: "Human"
   STR_MALE_CIVILIAN_FARMER: "Farmer"
+  STR_MALE_CIVILIAN_FARMER_ARMOR: "Farmer"
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
   STR_FEMALE_CIVILIAN_FARMER: "Farmer"
+  STR_FEMALE_FARMER_ARMOR: "Farmer"
   STR_FEMALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
   STR_CIVILIAN_HUNTER: "Civilian Hunter"
+  STR_CIVILIAN_HUNTER_ARMOR: "Civilian Hunter"
   STR_CIVILIAN_HUNTER_CORPSE: "Hunter Corpse"
   STR_MALE_POLICE: "Policeman"
+  STR_MALE_POLICE_ARMOR: "Policeman"
   STR_MALE_POLICE_CORPSE: "Policeman Coprse"
+  STR_MALE_MILITIA_CITIZEN: "Citizen"
+  STR_MALE_CITIZEN_ARMOR: "Citizen"
+  STR_MALE_CITIZEN_CORPSE: "Citizen Corpse"
+
+  STR_DOGE: "Dog"
+  STR_DOGE_ARMOR: "Dog"
+  STR_DOGE_CORPSE: "Dog Corpse"
 
 #races
   STR_MIB_BASE_EARLY: "Men In Black (base early game)"
   STR_INITIAL_BASE_DEFENSE_RACE: "First mission race"
   STR_MILITIA: "Militia"
 #categories
-  STR_CRAFT_SYSTEMS: "Craft Systems"
   STR_CRAFT: "Craft"
+  STR_CRAFT_SYSTEMS: "Craft Systems"
+  STR_AUXILIARY: "Auxiliary"
+  STR_OUTFITS: "Outfits"
   STR_UNARMED: "Unarmed"
   STR_MELEE: "Melee Weapons"
   STR_PISTOLS: "Pistols"
@@ -854,9 +883,15 @@ en-US:
   STR_EXPLOSIVES: "Explosives"
   STR_EXPLOSIVE_CHARGES: "Explosive Charges"
   STR_INCENDIARIES: "Incendiaries"
+  STR_LASER: "Laser Weapons"
+  STR_ION: "Ion Weapons"
+  STR_PLASMA: "Plasma Weapons"
+  STR_SONIC: "Sonic Weapons"
   STR_ELECTRIC: "Electric Weapons"
   STR_EMP: "EMP Weapons"
   STR_CHEMICAL_WEAPONS: "Chemical Weapons"
+  STR_WARP: "Warp Weapons"
+  STR_PSI: "Psi Weapons"
   STR_INCAPACITATE: "Stun Weapons"
   STR_SMOKE: "Smoke"
   STR_CLIPS: "Ammo"
@@ -870,15 +905,26 @@ en-US:
   STR_HUMAN_TECH: "All Human Tech"
   STR_XCOM_TECH: "All X-COM Tech"
   STR_ALIEN_TECH: "All Alien Tech"
+  STR_TLETH_TECH: "T'leth Tech"
+  STR_WRECKS: "Wrecks"
+  STR_CORPSES: "Corpses"
+  STR_ROBOTS: "Robots"
   STR_EVIDENCE: "Evidence"
   STR_DISGUISE: "Disguise"
   STR_COMPONENTS: "Components"
+  STR_HUMANS: "Humans"
   STR_MONSTERS: "Monsters"
+  STR_ALIEN_SPECIMENS: "Alien Specimens"
+  STR_BUILT_INS: "Built-Ins"
+  STR_BLANKS: "Blanks"
 #manufacturing
   STR_WEAPONS: "Weapons"
   STR_EQUIPMENT: "Equipment"
   STR_COVERT_TOOLS: "Covert Tools"
+  STR_ACCESSORIES: "Accessories"
   STR_LOOT: "Loot"
+  STR_JUNK: "Junk"
+  STR_OTHER: "Other"
 #bonuses
   STR_SNIPER: "Sniper"
   STR_HEAVY: "Heavy"
@@ -1021,6 +1067,10 @@ en-US:
   STR_LMG_UFOPEDIA: "This squad automatic weapon is equipped with a bipod and designed for operating by one soldier. A high rate of fire and slight armor piercing capability makes LMG an excellent infantry support weapon." 
   STR_LMG_CLIP: "LMG Ammo Belt"
   STR_LMG_AA_CLIP: "LMG AA-Ammo Belt"
+  STR_ASSAULT_CANNON: "Assault Cannon"
+  STR_ASSAULT_CANNON_CLIP_AP: "Assault Cannon AP Clip"
+  STR_ASSAULT_CANNON_CLIP_AA: "Assault Cannon AA Clip"
+  STR_ASSAULT_CANNON_UFOPEDIA: "This heavy weapon fires heavy bullets in rapid single shots or 4-burst autofire. It is best used at medium ranges." #X-com files copypaste
   STR_LIGHT_CANNON: "Light Cannon"
   STR_LIGHT_CANNON_UFOPEDIA: "This high-caliber hand weapon can use armor-piercing, buckshot, high-explosive and incendiary ammo. It has great stopping power and it's AP rounds can penetrate medium armor."
   STR_LIGHT_CANNON_CONT: "Light Cannon (Continued)"
@@ -1096,6 +1146,7 @@ en-US:
   STR_EXPLOSIVE_CHARGE: "Explosive Charge"
   STR_EXPLOSIVE_CHARGE_UFOPEDIA: "A simple plastic explosive charge with timer mechanism. Very useful for removing obstacles and destroying objects, as it creates a dense explosion that quickly loses its destructive power with distance."
   STR_MOTION_SCANNER_PROTOTYPE: "Motion Scanner Prototype"
+  STR_HACKING_COMPUTER: "Hacking Computer"
   STR_FIRST_AID: "First Aid"
   STR_FIRST_AID_UFOPEDIA: "This bag contains a minimum set of medical items that allow for temporary stopping of bleeding, treatment of the circumference of wounds and the application of primary bandage. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}{ALT}>Concealable"
   STR_PAINKILLER: "Painkillers"
@@ -1123,6 +1174,10 @@ en-US:
   STR_ZOMBIE_WEAPON: "Zombie attack"
   STR_FACEHUGGER_WEAPON: "Facehugger attack"
   STR_SEEKER_DRONE_WEAPON: "Seeker Drone Weapon"
+  STR_CLAWS_WEAPON: "Claws"
+  STR_FANGS_WEAPON: "Fangs"
+  STR_DOGE_BITE: "Dog bite"
+  STR_DOGE_BARK: "Dog bark"
   STR_CHUPACABRA_WEAPON: "Chupacabra attack"
   STR_ARMADILLO_WEAPON: "Armadillo attack"
   STR_DATA_VAULT: "Data Vault"
@@ -1149,14 +1204,13 @@ en-US:
   STR_LABORATORY_EQUIPMENT: "Lab Equipment"
   STR_BIOLOGY_EQUIPMENT: "Biolab Equipment"
   STR_RADAR_SYSTEM: "Radar Systems"
-  STR_ASSAULT_CANNON: "Assault Cannon"
-  STR_ASSAULT_CANNON_CLIP_AP: "Assault Cannon AP Clip"
-  STR_ASSAULT_CANNON_CLIP_AA: "Assault Cannon AA Clip"
-  STR_ASSAULT_CANNON_UFOPEDIA: "This heavy weapon fires heavy bullets in rapid single shots or 4-burst autofire. It is best used at medium ranges." #X-com files copypaste
-  STR_ASSAULT_CANNON_BUY: "Assault Cannon Acquisition"
+  STR_TRADIUM: "Tradium"
+
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
   STR_LEATHER_COAT_UC: "LEATHER COAT"
+  STR_LEATHER_COAT: "Leather Coat"
+  STR_CORPSE_LEATHER_COAT: "X-Com Operative Corpse"
 #crafts
   STR_LIGHT_MISSILES: "Light Missiles"
   STR_DRAGONFLY: "DRAGONFLY"
@@ -1215,6 +1269,8 @@ en-US:
   STR_MONSTER_HUNT_RUMORS: "Monster Rumors"
   STR_MONSTER_HUNT_RUMORS_DESCRIPTION: "Commander! We have just acquired a report from our alert system about an incident with mysterious monsters! We should send our agents to investigate it as quickly as possible, with a new covert operation planned.{NEWLINE}{ALT}New covert operation available."
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: "We managed to expand the number of information channels through which we receive information concerning the activity of unknown monsters that are contacting civilians. Based on machine learning algorithms, a huge amount of various information is analyzed, and we are able to get timely information about the location of a new incident. Thus, we will be able to send a squad of our agents there and conduct a 'hot pursuit' investigation, and ideally - try to capture one of those creatures for further study. The first reports will be available shortly."
+  STR_LIVE_CREATURES_RESEARCH: "Research of Live Creatures"
+  STR_ZOMBIE_BIOLOGY: "Zombie Biology"
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
   STR_VOID_CORP_UFOPEDIA: #FIXME
@@ -1652,10 +1708,61 @@ en-US:
   MAP_XOPSDESERT_NOCACTI: "African Desert"
   MAP_INDUSTRIALSLUM: "Postindustrial" 
 
-
   STR_SUPER_FACILITY: "Super facility"
 
+#junk
   STR_TROLLIUM: STR_TROLLIUM
   STR_TODOIUM: STR_TODOIUM
   STR_VOID_CONTACT: STR_VOID_CONTACT
   STR_ENIGMA_CONTACT: STR_ENIGMA_CONTACT
+  STR_MIB_OFFICE_ENGINEER_ARMOR: STR_MIB_OFFICE_ENGINEER_ARMOR
+  STR_MIB_OFFICE_MANAGER_ARMOR: STR_MIB_OFFICE_MANAGER_ARMOR
+  STR_MIB_OFFICE_SECURITY_ARMOR: STR_MIB_OFFICE_SECURITY_ARMOR
+  STR_MIB_OFFICE_WORKER_ARMOR: STR_MIB_OFFICE_WORKER_ARMOR
+  STR_BANDIT_ARMOR: STR_BANDIT_ARMOR
+  STR_MIB_VIP_ARMOR: STR_MIB_VIP_ARMOR
+  STR_MIB_VIP_BODYGUARD_ARMOR: STR_MIB_VIP_BODYGUARD_ARMOR
+  STR_SECTOID_STANDARD_ARMOR: STR_SECTOID_STANDARD_ARMOR
+  STR_SECTOID_LEADER_ARMOR: STR_SECTOID_LEADER_ARMOR
+  STR_SECTOID_COMMANDER_ARMOR: STR_SECTOID_COMMANDER_ARMOR
+  RESISTANCE_FARM_START_ZONE: RESISTANCE_FARM_START_ZONE
+  RESISTANCE_FOREST_HOUSE_START_ZONE: RESISTANCE_FOREST_HOUSE_START_ZONE
+  RESISTANCE_SCIENTIST: RESISTANCE_SCIENTIST
+  DESERT_TELESCOPE: DESERT_TELESCOPE
+  STR_CHUPA_TERROR: STR_CHUPA_TERROR
+  STR_CROP_CORCLES_INITIAL: STR_CROP_CORCLES_INITIAL
+  STR_RESISTANCE_SHELTER_FARM: STR_RESISTANCE_SHELTER_FARM
+  STR_RESISTANCE_SHELTER_FARM_DESTROYED: STR_RESISTANCE_SHELTER_FARM_DESTROYED
+  STR_RESISTANCE_SHELTER_FARM_RADIO: STR_RESISTANCE_SHELTER_FARM_RADIO
+  STR_RESISTANCE_FOREST_HOUSE: STR_RESISTANCE_FOREST_HOUSE
+  STR_RESISTANCE_FOREST_HOUSE_TRAP: STR_RESISTANCE_FOREST_HOUSE_TRAP
+  STR_URBAN_HAZARD: STR_URBAN_HAZARD
+  STR_MIB_FOREST_BEACON: STR_MIB_FOREST_BEACON
+  DESERT_TELESCOPE_HOUSE: DESERT_TELESCOPE_HOUSE
+  EVAC_ZONE_N: EVAC_ZONE_N
+  STR_RESISTANCE_URBAN_SAFEHOUSE: STR_RESISTANCE_URBAN_SAFEHOUSE
+  STR_CROP_CIRCLE_NO_LOOT: STR_CROP_CIRCLE_NO_LOOT
+  STR_CROP_CIRCLE_POOR_LOOT: STR_CROP_CIRCLE_POOR_LOOT
+  STR_STRANGE_CREATURE: STR_STRANGE_CREATURE
+  STR_INFECTOR_AUTOPSY: STR_INFECTOR_AUTOPSY
+  STR_LIVE_INFECTOR: STR_LIVE_INFECTOR
+  STR_ZOMBIE_AUTOPSY: STR_ZOMBIE_AUTOPSY
+  STR_LIVE_ZOMBIE: STR_LIVE_ZOMBIE
+  STR_CREDIT_CARD_BREACHING_PREREQ: STR_CREDIT_CARD_BREACHING_PREREQ
+  STR_RESISTANCE_TECH_TREE_START: STR_RESISTANCE_TECH_TREE_START
+  STR_RESISTANCE_DUTY: STR_RESISTANCE_DUTY
+  STR_XCOM_EQUIPMENT_ACQUISITION: STR_XCOM_EQUIPMENT_ACQUISITION
+  STR_SPAWN_MIB_AGENT: STR_SPAWN_MIB_AGENT
+  SWARMIDS_CORPSE_1: SWARMIDS_CORPSE_1
+  SWARMIDS_CORPSE_2: SWARMIDS_CORPSE_2
+  SWARMIDS_CORPSE_3: SWARMIDS_CORPSE_3
+  SWARMIDS_CORPSE_4: SWARMIDS_CORPSE_4
+  STR_SPAWN_RESISTANCE_AGENT: STR_SPAWN_RESISTANCE_AGENT
+  STR_SPAWN_RESISTANCE_AGENT_VIP: STR_SPAWN_RESISTANCE_AGENT_VIP
+  STR_SPAWN_RESISTANCE_AGENT_PRISONER: STR_SPAWN_RESISTANCE_AGENT_PRISONER
+  STR_SPAWN_RESISTANCE_SOLDIER: STR_SPAWN_RESISTANCE_SOLDIER
+  STR_SPAWN_RESISTANCE_SCIENTIST: STR_SPAWN_RESISTANCE_SCIENTIST
+  STR_SPAWN_RESISTANCE_SCIENTIST_VIP: STR_SPAWN_RESISTANCE_SCIENTIST_VIP
+  STR_SPAWN_RESISTANCE_RADIO: STR_SPAWN_RESISTANCE_RADIO
+  STR_SPAWN_RESISTANCE_COMPUTER: STR_SPAWN_RESISTANCE_COMPUTER
+  

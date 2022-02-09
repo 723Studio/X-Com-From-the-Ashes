@@ -4303,6 +4303,25 @@ items:
     tuUse: 15
     flatRate: true
     listOrder: 22000
+  - type: STR_HACKING_COMPUTER
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
+    requiresBuy:
+      - STR_TODOIUM
+    size: 0.4
+    weight: 1
+    landOnly: true
+    bigSprite: 400 #temp
+    floorSprite: 400 #temp
+    handSprite: 704 #temp
+    #battleType: 12 #new type for hacking
+    invWidth: 2
+    invHeight: 1
+    costUse:
+      time: 20
+    flatRate: false
+    attraction: 5
+    #experienceTrainingMode: 19
+    listOrder: 22010
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -4817,7 +4836,7 @@ items:
     recover: false
     flatRate: true
   - &FangsWeapon
-    type: STR_FANGS_WEAPON #make it different
+    type: STR_FANGS_WEAPON #TODO make it different
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
     bigSprite: 412
@@ -5664,7 +5683,7 @@ items:
     bigSprite: 130
     floorSprite: 130
     listOrder: 100490
-  - type: STR_AM
+  - type: STR_AMPHIBIAN
     refNode: *liveMonster
     listOrder: 100491
   - type: STR_AMPHIBIAN_CORPSE
@@ -5995,26 +6014,6 @@ items:
   - type: STR_LEATHER_COAT
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     size: 0.9
-
-  - type: STR_HACKING_TOOL
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
-    requiresBuy:
-      - STR_TODOIUM
-    size: 0.4
-    weight: 1
-    landOnly: true
-    bigSprite: 400 #temp
-    floorSprite: 400 #temp
-    handSprite: 704 #temp
-    #battleType: 12 #new type for hacking
-    invWidth: 2
-    invHeight: 1
-    costUse:
-      time: 20
-    flatRate: false
-    attraction: 5
-    #experienceTrainingMode: 19
-    listOrder: 48150
 
 extended:
   tags:

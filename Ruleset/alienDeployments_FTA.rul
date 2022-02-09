@@ -1450,7 +1450,7 @@ alienDeployments:
     abortPenalty: 150
     script: RESISTANCE_FARM_NO_RADIO
     
-  - type: STR_RESISTANCE_FOREST_HOUSE
+  - type: STR_RESISTANCE_FOREST_HAVEN
     width: 80
     length: 80
     height: 6

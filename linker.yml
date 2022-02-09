@@ -126,3 +126,9 @@ config:
     - arcScripts.type
     - diplomacyFactionEvents.type
     - eventScripts.type
+    - startingConditions.type
+    - MCDPatches.type
+    - extraSounds.type
+    - cutscenes.type
+    - battleScripts.type
+    - facilities.provideBaseFunc

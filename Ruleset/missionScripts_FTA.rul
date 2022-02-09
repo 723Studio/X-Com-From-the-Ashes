@@ -124,7 +124,7 @@ missionScripts:
     allowedProcessor: 1
     missionWeights:
       0:
-        STR_RESISTANCE_FOREST_HOUSE: 100
+        STR_RESISTANCE_FOREST_HAVEN: 100
     regionWeights:
       0:
         RESISTANCE_FOREST_HOUSE_START_ZONE: 100
