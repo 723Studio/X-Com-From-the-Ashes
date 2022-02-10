@@ -960,8 +960,6 @@ armors:
       - 0.0 #14 - Pressure
       - 1.0 #15 - Bio
     loftempsSet: [ 4 ]
-    tags:
-      HANDCUFF_PROTECTION: 100
 #Civilians
   - type: STR_MALE_CIVILIAN_FARMER_ARMOR
     spriteSheet: FARMER.PCK

@@ -197,11 +197,24 @@ events:
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
     researchList:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
-    timer: 0
-    timerRandom: 0
+    timer: 5760
+    timerRandom: 30240
   - name: STR_MONSTER_RE_HUNT_CHUPA
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
     removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_CHUPA]
+    timer: 43800 #1 month
+    timerRandom: 43800 #another 1 month
+
+    
+  - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    researchList:
+      - STR_MONSTER_HUNT_RUMORS_ARMADILLO
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_MONSTER_RE_HUNT_ARMADILLO
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_ARMADILLO]
     timer: 43800 #1 month
     timerRandom: 43800 #another 1 month
 

@@ -3446,18 +3446,18 @@ terrains:
           length: 60
           groups: 5
 
-  - name: RESISTANCE_FOREST_HOUSE
-    mapDataSets:
-      - BLANKS
-      - FORESTSWAMP
-      - RESISTANCE_FOREST_HOUSE
-    mapBlocks:
-        - name: RESISTANCE_FOREST_HOUSE
-          width: 20
-          length: 20
-        - name: RESISTANCE_FOREST_HOUSE_02
-          width: 20
-          length: 20
+  # - name: RESISTANCE_FOREST_HOUSE
+  #   mapDataSets:
+  #     - BLANKS
+  #     - FORESTSWAMP
+  #     - RESISTANCE_FOREST_HOUSE
+  #   mapBlocks:
+  #       - name: RESISTANCE_FOREST_HOUSE
+  #         width: 20
+  #         length: 20
+  #       - name: RESISTANCE_FOREST_HOUSE_02
+  #         width: 20
+  #         length: 20
 
   - name: DESERT_MILITARY
     mapDataSets:

@@ -76,8 +76,7 @@ missionScripts:
 #monsters
   - type: chupaTerror
     firstMonth: 3
-    executionOdds: 50
-    allowedProcessor: 1
+    executionOdds: 20
     missionWeights:
       0:
         STR_CHUPA_TERROR_MISSION: 100
@@ -88,14 +87,33 @@ missionScripts:
       0:
         STR_CHUPACABRA: 100
     researchTriggers:
-      STR_DESERT_TELESCOPE: false
+      STR_UNLEASH_CHUPAS_TRIGGER: false
     useTable: false
-    spawnGap: 65
-    randomSpawnGap: 20
+    spawnGap: 40
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: monsterTerror
+    varName: chupaTerror
+  - type: armodilTerror
+    firstMonth: 3
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_ARMADILLO_TERROR_MISSION: 100
+    regionWeights:
+      0:
+        STR_ARMADILLO_TERROR: 100
+    raceWeights:
+      0:
+        STR_ARMADILLO: 100
+    researchTriggers:
+      STR_UNLEASH_ARMADILLO_TRIGGER: false
+    useTable: false
+    spawnGap: 40
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: armodilTerror
 
 #resistance
   - type: havenFarm

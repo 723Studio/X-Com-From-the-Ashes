@@ -80,6 +80,8 @@ research:
     hidden: true
   - name: STR_UNLEASH_CHUPAS_TRIGGER
     hidden: true
+  - name: STR_UNLEASH_ARMADILLO_TRIGGER
+    hidden: true
   - name: STR_MIB_HQ_DESTROYED
     hidden: true
   - name: STR_CROP_CIRCLES_PREREQ
@@ -588,6 +590,8 @@ research:
   - name: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
     hidden: true
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA
+    hidden: true
+  - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
     hidden: true
   - name: STR_MONSTER_HUNT_START
     requiresBaseFunc: [ HQ ]

@@ -47,6 +47,8 @@ extended:
       ARMOR_ENERGY_SHIELD_TYPE: int
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
       FTAG_STUN_TO_HP: int #converts stun to hp damage, devide stun damage to 3
+    RuleUfo:
+      UFO_DETECTION_CHANGE: int
     BattleItem:
       ITEM_ENERGY_SHIELD_HP: int
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
@@ -2128,3 +2130,19 @@ extended:
           end;
 
           return;
+
+    detectUfoFromBase:
+      - offset: 1   # handle small ufo increased detection
+        code: |
+          var ptr RuleUfo rule;
+          var int change;
+
+          ufo.getRuleUfo rule;
+          rule.getTag change Tag.UFO_DETECTION_CHANGE ;
+          if neq change 0;
+            debug_log "UFO detecting with addtional chance: " ufo change;
+            debug_log "original detection chance: " detection_chance;
+            add detection_chance change;
+            debug_log "new detection chance: " detection_chance;
+          end;
+          return detection_type detection_chance;

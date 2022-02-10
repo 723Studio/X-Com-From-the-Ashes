@@ -882,6 +882,14 @@ regions:
     missionZones:
       -
         - [248.8, 264.37, -44.15, -34.61, -10]
+  - type: STR_ARMADILLO_TERROR
+    missionZones:
+      -
+        - [40.6, 46.8, -46, -48.8, -11]
+        - [69.5, 83.44, -43, -48.22, -11]
+        - [95.5, 105, -41, -37, -11]
+        - [247.3, 257, -34, -38, -11]
+        - [32.6, 40, -5, -10, -11]
 
 globe:
   oceanPalette: 12
@@ -1276,11 +1284,16 @@ globe:
         STR_DESERT_TELESCOPE: 100
     - id: -9
       deployments:
-        STR_CHUPA_TERROR_EASY: 80
-        STR_CHUPA_TERROR_HARD: 20
+        STR_CHUPA_TERROR_EASY: 60
+        STR_CHUPA_TERROR_HARD: 40
     - id: -10
       deployments:
         STR_CROP_CIRCLES_INITIAL: 100
+    - id: -11
+      deployments:
+        STR_ARMADILLO_TERROR_EASY: 60
+        STR_ARMADILLO_TERROR_HARD: 40
+    
 #GIS  
   polygons: 
     - [1, 349.5, -52.25, 350.5, -51.375, 353.7207, -52.2135, 350.75, -53.25]

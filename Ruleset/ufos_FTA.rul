@@ -35,6 +35,8 @@ ufos:
         - name: UFO1C
           width: 10
           length: 10
+    tags:
+      UFO_DETECTION_CHANGE: 4
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4
@@ -1240,3 +1242,8 @@ ufos:
           items:
             STR_ALIEN_COMMON_DEVICE:
               - [11, 8, 0]
+
+extended:
+  tags: # Remember to add tag definitions to same file as item/armor rulesets!
+    RuleUfo:
+      UFO_DETECTION_CHANGE: int

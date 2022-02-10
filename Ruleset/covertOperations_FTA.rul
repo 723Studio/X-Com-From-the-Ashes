@@ -268,27 +268,29 @@ covertOperations:
     instantTrapDeployment: 
       STR_LOCALS_TRAP: 100
     trapChance: 100
+
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA
-    description: STR_MONSTER_HUNT_RUMORS_CHUPA_DESCRIPTION
+    description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
     baseChances: 60
-    costs: 370
+    costs: 420
     soldierSlots: 3
     optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
-    #danger: 2
+    danger: 2
     scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
     allowAllEquipment: true
     successScore: 150
     instantSuccessDeployment:
-      STR_CHUPACABRA_HUNT: 100
+      STR_CHUPACABRA_HUNT_NIGHT: 70
+      STR_CHUPACABRA_HUNT_EVENING: 30
     successResearchList:
       - STR_UNLEASH_CHUPAS_TRIGGER
     successEvent: STR_MONSTER_RE_HUNT_CHUPA
-    failureDescription: STR_MONSTER_HUNT_RUMORS_CHUPA_FAILURE_DESCRIPTION
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
     failureScore: -300
     trapChance: 60
     instantTrapDeployment: 
@@ -296,6 +298,36 @@ covertOperations:
     failureResearchList:
       - STR_UNLEASH_CHUPAS_TRIGGER
     failureEvent: STR_MONSTER_RE_HUNT_CHUPA
+
+  - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
+    description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
+    requires:
+      - STR_MONSTER_HUNT_RUMORS_ARMADILLO
+    baseChances: 60
+    costs: 460
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
+    danger: 2
+    scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    allowAllEquipment: true
+    successScore: 150
+    instantSuccessDeployment:
+      STR_ARMADILLO_HUNT_DAY: 50
+      STR_ARMADILLO_HUNT_EVENING: 50
+    successResearchList:
+      - STR_UNLEASH_ARMADILLO_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_CHUPA
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
+    failureScore: -300
+    trapChance: 60
+    instantTrapDeployment: 
+      STR_ARMADILLO_HUNT_TRAP: 100
+    failureResearchList:
+      - STR_UNLEASH_ARMADILLO_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_ARMADILLO
 
 #supplies gathering
   - name: STR_LAB_EQUIPMENT_ACQUISITION

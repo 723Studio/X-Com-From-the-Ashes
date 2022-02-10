@@ -77,3 +77,5 @@ alienMissions:
     refNode: *TerrorLike
   - type: STR_CHUPA_TERROR_MISSION
     refNode: *TerrorLike
+  - type: STR_ARMADILLO_TERROR_MISSION
+    refNode: *TerrorLike

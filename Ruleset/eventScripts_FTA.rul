@@ -55,6 +55,15 @@ eventScripts:
       STR_MIB_TRAP_DATA_VAULT_SUCCESS: true
     itemTriggers:
       STR_DATA_VAULT: true
+  - type: STR_MONSTER_HUNT_SCRIPT
+    oneTimeRandomEvents:
+      STR_MONSTER_HUNT_RUMORS_CHUPA: 100
+      STR_MONSTER_HUNT_RUMORS_ARMADILLO: 80
+    researchTriggers:
+      STR_MONSTER_HUNT_RUMORS: true
+    spawnGap: 20
+    randomSpawnGap: 50
+    executionOdds: 30
 
 #xcom
   - &STR_WORKSHOP_SCRIPT
@@ -228,14 +237,7 @@ eventScripts:
     refNode: *STR_EXPANDABLE_AMMO_SCRIPT
     itemTriggers:
       STR_RIFLE_EXP_CLIP: true
-  - type: STR_MONSTER_HUNT_SCRIPT #TODO check and debug
-    oneTimeRandomEvents:
-      STR_MONSTER_HUNT_RUMORS_CHUPA: 100
-    researchTriggers:
-      STR_MONSTER_HUNT_RUMORS: true
-    spawnGap: 20
-    randomSpawnGap: 50
-    allowedProcessor: 2 #xcom
+
   - type: STR_EX_COUNCIL_MEMBER_INITIAL
     oneTimeRandomEvents:
       STR_EX_COUNCIL_MEMBER_INITIAL_EVENT: 100
