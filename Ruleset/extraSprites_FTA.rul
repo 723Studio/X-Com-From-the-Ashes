@@ -318,7 +318,7 @@ extraSprites:
       409: Resources/MiscItems/bigob_MibDataContainer.png
       410: Resources/Weapons/MIB/bigob_Woundgun.png
       411: Resources/Weapons/MIB/bigob_WoundgunClip.png 
-      412: Resources/Armors/Enemies/Monsters/bigob_FangsWeapon.png
+      412: Resources/Weapons/Unarmed/bigob_FangsWeapon.png
       413: Resources/MiscItems/bigob_Crate.png
       414: Resources/Weapons/Earthbound/General/bigob_HeavyRevolver.png
       415: Resources/Weapons/Earthbound/General/bigob_HeavyRevolver_Clip.png
@@ -348,14 +348,14 @@ extraSprites:
       439: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AP.png
       440: Resources/Weapons/Earthbound/Xcom/bigob_AssaultCannonClip_AA.png
       441: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedGrenade.png
-      442: Resources/Armors/Enemies/Monsters/bigob_ClawsWeapon.png
+      442: Resources/Weapons/Unarmed/bigob_ClawsWeapon.png
       443: Resources/MiscItems/bigob_SpareParts.png
       444: Resources/MiscItems/bigob_Chemicals.png
       445: Resources/MiscItems/bigob_HighTechParts.png
       446: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/bigob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/bigob_ImprovisedSmokeGrenade.png
-      449: Resources/Armors/Enemies/Monsters/bigob_SwarmidWeapon.png
+      449: Resources/Weapons/Unarmed/bigob_SwarmidWeapon.png
       450: Resources/Weapons/Alien/Utilities/bigob_AlienCommDevice.png
       451: Resources/MiscItems/bigob_Data_Vault.png
       452: Resources/Weapons/Earthbound/General/bigob_GrenadeLauncher.png

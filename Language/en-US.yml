@@ -541,6 +541,7 @@ en-US:
   STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES_DESCRIPTION: "I will immediately relay to them all the information we have."
   STR_EXPANDABLE_AMMO_EVENT: "Expansive ammunition"
   STR_EXPANDABLE_AMMO_EVENT_DESCRIPTION: "We obtained an interesting model of ammunition that is compatible with our armament. However, there is no information about it in Ufopaedia. We tested the items and prepared a summary."
+  STR_ALLOY_AMMO: "Alien Alloy Ammo"
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: "'Roger. Roger. Looks like we've established an encrypted link to the remaining X-COM forces! My name is Vlad, and I speak on behalf of the Resistance, I repeat, on behalf of the Resistance. With this channel we will be able to covertly exchange intelligence and build friendly relations. We would appreciate any help from you, and we welcome the opportunity to trade resources. I hope that from today, through great diplomacy, our combined endeavors will go forward. To victory!'{NEWLINE}New Diplomacy Relationship> {ALT}Resistance"
   STR_RESISTANCE_HAVEN_SAVED_EVENT: "Resistance haven defense"
@@ -1060,6 +1061,7 @@ en-US:
   STR_SHOTGUN_SHELLS_AP: "Shotgun AP Shells"
   STR_SHOTGUN_SHELLS_BATON: "Shotgun Baton Shells"
   STR_SHOTGUN_SHELLS_DRAGON: "Shotgun Dragon Shells"
+  STR_SHOTGUN_SHELLS_AA: "Shotgun AA Shells"
   STR_SHOTGUN_SHELLS_BS_AA: "Shotgun AA-BS Ammo"
   STR_SHOTGUN_SHELLS_AP_AA: "Shotgun AA-AP Shells"
   STR_RIOT_GUN: "Riot Gun"
@@ -1300,7 +1302,10 @@ en-US:
   STR_CHEMICAL_WEAPONRY: "Chemical Weaponry"
   STR_CHEMICAL_WEAPONRY_UFOPEDIA: "In order to create chemical weapons it is necessary to solve a number of technical problems. The first is the analysis of acid composition used in it and development of the reproduction method for this solution. The second is the technology of coating all of the weapon's internal surfaces with a highly resistant anti-corrosion agent. We are able to reverse-engineer the samples that we have received in order to develop a production blueprint."
   STR_ACID_SYNTHESIS: "Acid Synthesis"
-  STR_ACID_SYNTHESIS_UFOPEDIA: "A comprehensive analysis of the high-molecular-weight organic acid samples we received was carried out. This is an incredibly aggressive compound with high corrosive properties. In contact with oxygen, it decomposes quite quickly into very toxic components, each aggressive to various types of surfaces, to which the composition lands. This results in an extremely effective weapon with a wide range of applications. The structural properties of this acid molecule are striking in their elegance. It is not easy to synthesize it, but our scientists have managed to develop a fairly straightforward process so that production can begin. "
+  STR_ACID_SYNTHESIS_UFOPEDIA: "A comprehensive analysis of the high-molecular-weight organic acid samples we received was carried out. This is an incredibly aggressive compound with high corrosive properties. In contact with oxygen, it decomposes quite quickly into very toxic components, each aggressive to various types of surfaces, to which the composition lands. This results in an extremely effective weapon with a wide range of applications. The structural properties of this acid molecule are striking in their elegance. It is not easy to synthesize it, but our scientists have managed to develop a fairly straightforward process so that production can begin."
+  STR_CHEMPISTOL_MANUFACTURING: "Chempistol Manufacturing"
+  STR_CHEMPISTOL_CLIP_MANUFACTURING: "Chempistol Clip Manufacturing"
+  STR_PSIONIC: "Psionic"
   STR_FACILITIES_BLUEPRINTS: "Facility Blueprints"
   STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segments containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to get it."
   STR_BASE_CONSTRUCTION: "New Base Construction"
@@ -1770,4 +1775,44 @@ en-US:
   STR_SPAWN_RESISTANCE_SCIENTIST_VIP: STR_SPAWN_RESISTANCE_SCIENTIST_VIP
   STR_SPAWN_RESISTANCE_RADIO: STR_SPAWN_RESISTANCE_RADIO
   STR_SPAWN_RESISTANCE_COMPUTER: STR_SPAWN_RESISTANCE_COMPUTER
+  STR_ARMADILLO_TERROR: STR_ARMADILLO_TERROR
+
+
+
+  
+  STR_RESISTANCE_FIRST_HELP: STR_RESISTANCE_FIRST_HELP
+  STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED: STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED
+  STR_RESISTANCE_WEAPONRY_PREREQ: STR_RESISTANCE_WEAPONRY_PREREQ
+  STR_UNLEASH_CHUPAS_TRIGGER: STR_UNLEASH_CHUPAS_TRIGGER
+  STR_UNLEASH_ARMADILLO_TRIGGER: STR_UNLEASH_ARMADILLO_TRIGGER
+  STR_MIB_HQ_DESTROYED: STR_MIB_HQ_DESTROYED
+  STR_CROP_CIRCLES_PREREQ: STR_CROP_CIRCLES_PREREQ
+  STR_EX_COUNCIL_MEMBER_INITIAL_MISSION: STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
+  STR_MIB_TRAP_DATA_VAULT_SUCCESS: STR_MIB_TRAP_DATA_VAULT_SUCCESS
+  STR_MIB_TRAP_DATA_VAULT_FAIL: STR_MIB_TRAP_DATA_VAULT_FAIL
+  STR_EX_COUNCIL_DATA_VAULT_SUCCESS: STR_EX_COUNCIL_DATA_VAULT_SUCCESS
+  STR_EX_COUNCIL_DATA_VAULT_FAIL: STR_EX_COUNCIL_DATA_VAULT_FAIL
+  STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
+  STR_CULT_GANG_DEN: STR_CULT_GANG_DEN
+  STR_MILITARY_EQUIPMENT_ACQUISITION: STR_MILITARY_EQUIPMENT_ACQUISITION
+  STR_STARTING_EQUIPMENT_PREREQ: STR_STARTING_EQUIPMENT_PREREQ
+  STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
+  STR_ELECTRIC_WEAPONS_PREREQ: STR_ELECTRIC_WEAPONS_PREREQ
+  STR_CHEMICAL_WEAPONRY_PREREQ: STR_CHEMICAL_WEAPONRY_PREREQ
+  STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
+  STR_REQ_HQ_LOCATION_DONE: STR_REQ_HQ_LOCATION_DONE
+  STR_REQ_HQ_LOCATION_SUCCESS: STR_REQ_HQ_LOCATION_SUCCESS
+  STR_REQ_HQ_LOCATION_FAILED: STR_REQ_HQ_LOCATION_FAILED
+  STR_REGIONAL_HQ_SURVEY_DONE: STR_REGIONAL_HQ_SURVEY_DONE
+  STR_REGIONAL_HQ_SURVEY_FAILED: STR_REGIONAL_HQ_SURVEY_FAILED
+  STR_TELL_RESISTANCE_ABOUT_MIB_HQ_SPAWNED: STR_TELL_RESISTANCE_ABOUT_MIB_HQ_SPAWNED
+  STR_RESISTANCE_CELL_CREATION_PREREQ: STR_RESISTANCE_CELL_CREATION_PREREQ
+  STR_RESISTANCE_CELL_CREATED: STR_RESISTANCE_CELL_CREATED
+  STR_STEAL_OSPREY_PREREQ: STR_STEAL_OSPREY_PREREQ
+  STR_MONSTER_HUNT_START_PREREQ: STR_MONSTER_HUNT_START_PREREQ
+  STR_MONSTER_HUNT_RUMORS_PREREQ: STR_MONSTER_HUNT_RUMORS_PREREQ
+  STR_MONSTER_HUNT_RUMORS_PREREQ_HARD: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
+  STR_PRODUCTION: STR_PRODUCTION
+  STR_BIOLAB_PREREQ: STR_BIOLAB_PREREQ
+
   

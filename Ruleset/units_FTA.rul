@@ -287,7 +287,7 @@ units:
     armor: STR_MIB_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 10
+    value: 5
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 3
@@ -376,7 +376,7 @@ units:
     armor: STR_MIB_AGENT_VEST_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 15
+    value: 5
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 3
@@ -384,7 +384,7 @@ units:
     canSurrender: false
   - type: STR_MIB_ARMORED_AGENT_SPAWN
     refNode: *STR_MIB_ARMORED_AGENT
-    value: 2
+    value: 1
     altRecoveredUnit: STR_MIB_AGENT
     builtInWeaponSets: *MIBAgentLoadout
   - &STR_MIB_SPECOPS
@@ -416,7 +416,7 @@ units:
     armor: STR_MIB_SPECOPS_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 20
+    value: 8
     deathSound: *MaleDeathSounds
     intelligence: 5
     aggression: 4
@@ -427,7 +427,7 @@ units:
   - type: STR_MIB_SPECOPS_SPAWN
     refNode: *STR_MIB_SPECOPS
     altRecoveredUnit: STR_MIB_SPECOPS
-    value: 3
+    value: 2
     builtInWeaponSets:
       - - STR_LMG
         - STR_LMG_CLIP
@@ -496,7 +496,7 @@ units:
     armor: STR_MIB_BUTCHER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 30
+    value: 8
     deathSound: *MaleDeathSounds
     intelligence: 2
     aggression: 8
@@ -532,7 +532,7 @@ units:
     standHeight: 11
     kneelHeight: 16
     floatHeight: 12
-    value: 25
+    value: 7
     deathSound: 23
     moveSound: 40
     specab: 1
@@ -570,7 +570,7 @@ units:
     armor: STR_MIB_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 20
+    value: 10
     deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
     intelligence: 5
     aggression: 1
@@ -605,7 +605,7 @@ units:
     armor: STR_MIB_ENFORCER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 40
+    value: 12
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -778,7 +778,7 @@ units:
     armor: STR_CULT_GANGER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 10
+    value: 3
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 8
@@ -814,7 +814,7 @@ units:
     armor: STR_CULT_COORDINATOR_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 15
+    value: 6
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 7
@@ -852,7 +852,7 @@ units:
     armor: STR_BANDIT_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 8
+    value: 3
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 8
@@ -891,7 +891,7 @@ units:
     armor: STR_ARMY_FIELD_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -15
+    value: -10
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 1
@@ -975,7 +975,7 @@ units:
     armor: STR_ARMY_FIELD_OFFICER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -5
+    value: -12
     deathSound: *MaleDeathSounds
     intelligence: 4
     aggression: 2
@@ -1035,7 +1035,7 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 80
+      tu: 90
       stamina: 140
       health: 20
       bravery: 110
@@ -1059,7 +1059,7 @@ units:
       psiStrength: 4
     armor: STR_FACEHUGGER_ARMOR
     standHeight: 6
-    value: 20
+    value: 8
     aggroSound: 77
     deathSound: 78
     moveSound: 80
@@ -1074,7 +1074,7 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 65
+      tu: 80
       stamina: 140
       health: 144
       bravery: 110
@@ -1104,7 +1104,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    #aggroSound: 154 # [150, 151, 152, 153, 154]
+    aggroSound: [150, 151, 152, 153, 154]
     deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -1114,7 +1114,7 @@ units:
     stats:
       tu: 70
       stamina: 150
-      health: 184
+      health: 190
       bravery: 110
       reactions: 30
       firing: 0
@@ -1142,9 +1142,8 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: 141 #[141, 142]
-    deathSound: [155, 156]
-    #deathSound: [143, 144]
+    aggroSound: [141, 142]
+    deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 

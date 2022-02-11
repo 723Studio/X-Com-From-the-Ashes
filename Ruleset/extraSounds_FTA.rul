@@ -74,7 +74,7 @@ extraSounds:
       125: Resources/Weapons/Sounds/shotgun-light.wav
       126: Resources/Weapons/Sounds/shotgun-light_reload.wav
       127: Resources/Weapons/Sounds/rocket.wav
-      128: Resources/Weapons/Sounds/rocketr.ogg #TODO add to rocket glove
+      128: Resources/Weapons/Sounds/rocketr.ogg
       129: Resources/Weapons/Sounds/heavy_pistol.wav
       130: Resources/Weapons/Sounds/flamer.wav #TODO add to flamer
       131: Resources/Weapons/Sounds/flamerr.wav
@@ -90,17 +90,17 @@ extraSounds:
       141: Resources/Armors/Enemies/Zombies/fat_zombie_aggro.wav
       142: Resources/Armors/Enemies/Zombies/fat_zombie_aggro2.wav
       143: Resources/Armors/Enemies/Zombies/fat_zombie_death.wav
-      #144: Resources/Armors/Enemies/Zombies/fat_zombie_death2.wav
+      144: Resources/Armors/Enemies/Zombies/fat_zombie_death2.wav
       145: Resources/Armors/Enemies/Zombies/old_zombie_aggro.ogg
-      #146: Resources/Armors/Enemies/Zombies/old_zombie_aggro2.wav
-      #147: Resources/Armors/Enemies/Zombies/old_zombie_aggro3.wav
-      #148: Resources/Armors/Enemies/Zombies/old_zombie_aggro4.wav
-      # 149: Resources/Armors/Enemies/Zombies/old_zombie_death.ogg
-      # 150: Resources/Armors/Enemies/Zombies/zombie_aggro.wav
-      # 151: Resources/Armors/Enemies/Zombies/zombie_aggro2.wav
-      # 152: Resources/Armors/Enemies/Zombies/zombie_aggro3.wav
-      # 153: Resources/Armors/Enemies/Zombies/zombie_aggro4.ogg
-      # 154: Resources/Armors/Enemies/Zombies/zombie_aggro5.wav
+      146: Resources/Armors/Enemies/Zombies/old_zombie_aggro2.wav
+      147: Resources/Armors/Enemies/Zombies/old_zombie_aggro3.wav
+      148: Resources/Armors/Enemies/Zombies/old_zombie_aggro4.wav
+      149: Resources/Armors/Enemies/Zombies/old_zombie_death.ogg
+      150: Resources/Armors/Enemies/Zombies/zombie_aggro.wav
+      151: Resources/Armors/Enemies/Zombies/zombie_aggro2.wav
+      152: Resources/Armors/Enemies/Zombies/zombie_aggro3.wav
+      153: Resources/Armors/Enemies/Zombies/zombie_aggro4.ogg
+      154: Resources/Armors/Enemies/Zombies/zombie_aggro5.wav
       155: Resources/Armors/Enemies/Zombies/zombie_death.wav
       156: Resources/Armors/Enemies/Zombies/zombie_death2.wav
       157: Resources/Armors/Enemies/Monsters/SWARMIDS_movement.wav

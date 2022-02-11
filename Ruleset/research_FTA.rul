@@ -492,7 +492,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25230
 
-  - name: STR_PSIONIC
+  - name: STR_PSIONIC #FIXME add pedia and lore
     cost: 4400
     points: 100
     dependencies:
