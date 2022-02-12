@@ -1143,7 +1143,7 @@ units:
     isLeeroyJenkins: true
     livingWeapon: true
     aggroSound: [141, 142]
-    deathSound: [143, 144]
+    deathSound: 143 #[143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 

@@ -4333,6 +4333,7 @@ items:
     bigSprite: 354
     floorSprite: 354
     handSprite: 504
+    hitSound: 74
     invWidth: 2
     invHeight: 1
     battleType: 6
@@ -4462,6 +4463,7 @@ items:
     bigSprite: 390
     floorSprite: 390
     handSprite: 648
+    hitSound: 74
     invWidth: 2
     invHeight: 1
     battleType: 6
@@ -4523,6 +4525,22 @@ items:
     handSprite: 632
     power: 25
     battleType: 10
+    #Prime/Unprime segment
+    # costPrime:
+    #   time: 3
+    # costUnprime:
+    #   time: 3
+    # primeActionName: STR_TURN_ON
+    # unprimeActionName: STR_TURN_OFF
+    # primeActionMessage: STR_LIGHT_IT_UP
+    # unprimeActionMessage: STR_LIGHTS_OUT
+    # fuseType: -2
+    # fuseTriggerEvents:
+    #   defaultBehavior: true
+    #   throwTrigger: false
+    #   throwExplode: true
+    # throwMultiplier:
+    #   throwing: 0.6
     invWidth: 1
     invHeight: 2
     armor: 8
