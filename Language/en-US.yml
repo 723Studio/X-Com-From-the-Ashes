@@ -385,7 +385,7 @@ en-US:
   STR_RESISTANCE_HAVEN_MARKER: "Resistance Haven"
   STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We are receiving a distress transmission from one of the Resistance's shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures; they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FARM_CULTISTS: "Resistance Haven Attacked"
-  STR_RESISTANCE_FARM_CULTISTS_BRIEFING: #TODO
+  STR_RESISTANCE_FARM_CULTISTS_BRIEFING: "It seems that members of the Resistance have some kind of trouble with the local thugs. As a result, the farm where the Resistance secret cell is located is being raided by outnumbering and well-armed bandits. Our objective is to help the Resistance repel the attack and secure the shelter by neutralizing all hostiles.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FARM_BANDITS: "Resistance Haven Attacked"
   STR_RESISTANCE_FOREST_HAVEN: "Resistance Haven Attacked"
   STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION: "The Men in Black have surrounded one of Resistance's secret hideouts. While trying to destroy important clues that could lead the M.I.B. agents to other Resistance havens, these people were forced to hold their ground in unequal conditions. We need to save them before the main M.I.B. force arrives. Additionally, it is best to recover all possible clues about Resistance activity.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon."
@@ -452,7 +452,7 @@ en-US:
   MIB_TRAP_ESCAPE_MAP_ALARM_TITLE: "Alarm raised!"
   MIB_TRAP_ESCAPE_MAP_ALARM_CONTENT: "Local police frequencies broadcast a report of dangerous criminals fleeing from pursuit. The supposed search location corresponds to our current location. We need to get out of here as soon as possible!"
   MILITARY_RND_ALARM_TITLE: "Alarm raised!"
-  MILITARY_RND_ALARM_CONTENT: #TODO
+  MILITARY_RND_ALARM_CONTENT: "The base is on alert, and reinforcements from adjacent facilities will soon start arriving. We need to evacuate our soldiers as quickly as possible."
   STR_LOCALS_TRAP: "Cover blown"
   STR_LOCALS_TRAP_BRIEFING: "The cover for our agents is compromised, and the locals are livid. We need to evacuate our people immediately before the locals and police get to them. Get to the car parked at the roadside, it is the only chance of survival. To complete the mission place the soldiers on the green tiles and click on the 'Abort Mission' icon."
 
@@ -736,12 +736,12 @@ en-US:
   STR_CULT_GANGER_CORPSE: "Cult Ganger Corpse"
   STR_CULT_GANGER_UFOPEDIA: "This man grew up 'on the street,' and from a young age he was involved in crime - petty theft, drug dealing, hooliganism. Growing up, he joined a gang, was involved in robbery, extortion, and did various errands for his bosses. Lately, he's been getting jobs involving contract murders and kidnappings more often. However, he is barely paid for this orders, and he is afraid to argue with the gang bosses or leave."
   STR_CULT_GANGER_ARMOR: "Cult Ganger Combat Analysis"
-  STR_CULT_GANGER_ARMOR_UFOPEDIA: "" #TODO
+  STR_CULT_GANGER_ARMOR_UFOPEDIA: "An ordinary bandit, without any outstanding combat training or special equipment providing any kind of additional protection in battle."
   STR_CULT_COORDINATOR: "Cult Coordinator"
   STR_CULT_COORDINATOR_CORPSE: "Cult Coordinator Corpse"
-  STR_CULT_COORDINATOR_UFOPEDIA: #TODO
+  STR_CULT_COORDINATOR_UFOPEDIA: "Having interrogated the bandit coordinator, we learned something interesting and unusual about their gang. In the past they were mainly involved in drug trafficking and smuggling, as well as fighting over territory with neighboring gangs. However, since recently, everything has changed very drastically - all the heads of the gangs known to him gradually united and stopped feuding, the usual types of earnings have moved into the background. Now very often the rank-and-file gang members are involved in kidnapping people, as he thinks - for a ransom. At the same time, he has never heard of anyone being released. All the prisoners are taken to the gang headquarters, and from there they are taken by people he does not know."
   STR_CULT_COORDINATOR_ARMOR: "Cult Coordinator Combat Analysis"
-  STR_CULT_COORDINATOR_ARMOR_UFOPEDIA: "" #TODO
+  STR_CULT_COORDINATOR_ARMOR_UFOPEDIA: "The coordinator leads small groups, acts as a field commander in combat operations of his gang. He has good physical attributes and street fighting skills, but usually does not possess any significant equipment."
   STR_CULTISTS: "Cultists"
 
   STR_BANDIT: "Bandit"
@@ -792,11 +792,11 @@ en-US:
   STR_CHUPACABRA_ARMOR_UFOPEDIA: "A ferocious and swift predator that uses both teeth and claws as well as chitinous spines in combat. It has an excellent sensitivity and orientates itself well in the dark. Its skin does not offer any special protective qualities."
   STR_ARMADILLO: "Armadillo"
   STR_ARMADILLO_CORPSE: "Armadillo Corpse"
-  STR_ARMADILLO_UFOPEDIA: #TODO
+  STR_ARMADILLO_UFOPEDIA: "It is an extremely strong and hardy creature, with a very good protection system due to its structure. Adapting to uprightness is far from complete, it moves clumsily and hunched over, often helping itself with its arms when running. In close combat, it uses its forelegs with razor-sharp claws and a powerful jaw with massive fangs. In case of danger, it crouches on the ground and puts forward a strong carapace. It is unclear how these creatures reproduce, and the result of DNA deciphering suggests intensive artificial gene modifications being carried out on this species."
   STR_ARMADILLO_AUTOPSY: "Armadillo Autopsy"
-  STR_ARMADILLO_AUTOPSY_UFOPEDIA: #TODO
+  STR_ARMADILLO_AUTOPSY_UFOPEDIA: "An anthropomorphic creature resembling an armadillo shocked our scientists. The skeletal structure, muscular and circulatory systems are striking, although adaptation to uprightness is far from complete. The most noticeable feature is the convex, incredibly strong shell on the back, to which the spine is attached. It forms a rather large cavity, causing all the vital organs to shift further away from the ribs, and the space freed is used to form something like a fibrous subcutaneous body armor.  The creature's skin is covered with small, extremely tough, sand-colored scales.The structure of the jaw and the shape of the teeth clearly indicate the predatory nature of this beast."
   STR_ARMADILLO_ARMOR: "Armadillo Combat Analysis"
-  STR_ARMADILLO_ARMOR_UFOPEDIA: #TODO
+  STR_ARMADILLO_ARMOR_UFOPEDIA: "The armadillo has excellent natural resistance to a wide variety of kinds of damage. It is savage and dangerous in melee combat. Fortunately, it is rather bumbling when moving around."
   STR_SWARMID: "Swarmid"
   STR_SWARMIDS_LARGE_WEAPON: "Big Swarm Stings"
   STR_SWARMIDS_SMALL_WEAPON: "Swarm Stings"
@@ -1111,7 +1111,7 @@ en-US:
   STR_MINIGUN_UFOPEDIA: "Military four-barrel rotary machine gun with extremely high rate of fire. Considerable muscle power is required to carry and operate this intimidating weapon. The unique recoil compensation system and high weight make it very stable, allowing for long-time automatic fire without serious loss of accuracy."
   STR_RAILGUN: "Railgun"
   STR_RAILGUN_SLUG: "Railgun Slug"
-  STR_RAILGUN_UFOPEDIA: "To be done" #TODO after item balance
+  STR_RAILGUN_UFOPEDIA: "To be done" #Fixme after item balance
   STR_ROCKET_GLOVE: "Rocket Glove"
   STR_ROCKET_GLOVE_UFOPEDIA: "This portable device is worn on a soldier's wrist and allows firing of a specially designed projectile. The shot does not have much accuracy, which drops noticeably with distance. However, the launcher has a collapsible design and a small size, which makes it suitable for concealed carry.{NEWLINE}{ALT}>Concealable"
   STR_ROCKET_GLOVE_CLIP: "Rocket Glove Charge"
@@ -1174,8 +1174,8 @@ en-US:
   STR_FLASHLIGHT_UFOPEDIA: "An ordinary flashlight powered by reusable batteries. It shines brightly, but the sparks from the opponent's eyes will shine even brighter if you hit him on the forehead with this heavy tool."
   STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
   STR_FIRE_EXTINGUISHER_UFOPEDIA: "A Fire Extinguisher can be a useful field tool for our agents, potentially saving both human life and property. Due to its weight and hardness, it can also be used to subdue any uncooperative individuals."
-  STR_ALIEN_COMMON_DEVICE: "Alien Device" #TODO temp, before https://trello.com/c/I6AVms6b/543-reveal-true-name-of-alien-artifacts-only-after-defined-research
-  STR_ALIEN_DEVIC_UFOPEDIA: "We have comprehensively studied this puzzling device, but we could not come to an unequivocal opinion about its purpose. The density and other physical properties of the alloy of which it is composed are very heterogeneous, the most of it is very strong, much stronger than titanium. It appears that the device is hollow inside.  Device emits beta particles, and the intensity is cyclic and pulsating. Interestingly, the body alloy changes its ferromagnetic properties abruptly in opposition to the radiation. We tried to cut it open, which was extremely difficult. The inner cavity was filled with gas at very low pressure, on contact with air the gas began to rapidly decompose, which was accompanied by the formation of antimatter, which instantly annihilated. Fortunately, the amount of produced antimatter was very small, so the explosion was so powerful, no one was hurt."
+  STR_ALIEN_COMMON_DEVICE: "Alien Artifact XC-18F" #FIXME temp, before https://trello.com/c/I6AVms6b/543-reveal-true-name-of-alien-artifacts-only-after-defined-research
+  STR_ALIEN_DEVICE_UFOPEDIA: "We have comprehensively studied this puzzling device, but we could not come to an unequivocal opinion about its purpose. The density and other physical properties of the alloy of which it is composed are very heterogeneous, the most of it is very strong, much stronger than titanium. It appears that the device is hollow inside.  Device emits beta particles, and the intensity is cyclic and pulsating. Interestingly, the body alloy changes its ferromagnetic properties abruptly in opposition to the radiation. We tried to cut it open, which was extremely difficult. The inner cavity was filled with gas at very low pressure, on contact with air the gas began to rapidly decompose, which was accompanied by the formation of antimatter, which instantly annihilated. Fortunately, the amount of produced antimatter was very small, so the explosion was so powerful, no one was hurt."
   STR_PUNCH: "Punch"
   STR_UNARMED_TRAINED: "Unarmed"
   STR_ZOMBIE_WEAPON: "Zombie attack"

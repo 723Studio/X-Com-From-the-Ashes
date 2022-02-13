@@ -789,27 +789,22 @@ armors:
     allowInv: false
     corpseBattle:
       - STR_ARMADILLO_CORPSE
-    visibilityAtDark: 15
-    heatVision: 10
-    frontArmor: 12
-    sideArmor: 15
-    rearArmor: 30
-    underArmor: 15
+    visibilityAtDark: 13
+    heatVision: 8
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 45
+    underArmor: 20
     psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
-      health:
-        stunNormalized: -0.1
       energy:
         flatHundred: 0.1
         healthCurrent: 0.25
-      stun:
-        healthCurrent: 0.1
-        health: -0.05
     meleeDodge:
-      reactions: 0.6
-    meleeDodgeBackPenalty: 0.4
+      reactions: 0.7
+    meleeDodgeBackPenalty: 0.1
     overKill: 1.5
     damageModifier:
       - 1.0 #0 - None - special
@@ -818,10 +813,10 @@ armors:
       - 0.8 #3 - High Explosive - Explosive
       - 1.0 #4 - Laser
       - 1.0 #5 - Plasma
-      - 1.0 #6 - Stun
-      - 0.65 #7 - Melee - Cutting
+      - 0.9 #6 - Stun
+      - 0.6 #7 - Melee - Cutting
       - 1.0 #8 - Acid
-      - 3.0 #9 - Smoke - Choke
+      - 2.5 #9 - Smoke - Choke
       - 0.0 #10 - EMP
       - 1.0 #11 - Electric
       - 1.0 #12 - Psi

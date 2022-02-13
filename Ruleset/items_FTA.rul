@@ -197,7 +197,7 @@ items:
     experienceTrainingMode: 2
     recoveryPoints: 1
     attraction: 20
-    listOrder: 17910
+    listOrder: 1008
   - type: STR_POLICE_BATON
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
     size: 0.1
@@ -1664,7 +1664,7 @@ items:
     autoRange: 11
     attraction: 20
     recoveryPoints: 4
-    listOrder: 21193
+    listOrder: 7097
   - type: STR_MILITARY_RIFLE_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     requiresBuy:
@@ -1690,7 +1690,7 @@ items:
     armor: 30
     attraction: 15
     recoveryPoints: 1
-    listOrder: 21210
+    listOrder: 7098
   - type: STR_ASSAULT_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
     requiresBuy:

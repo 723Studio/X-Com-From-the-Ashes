@@ -1143,7 +1143,7 @@ units:
     isLeeroyJenkins: true
     livingWeapon: true
     aggroSound: [141, 142]
-    deathSound: 143 #[143, 144]
+    deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 
@@ -1155,7 +1155,7 @@ units:
       tu: 105
       stamina: 140
       health: 50
-      bravery: 100
+      bravery: 110
       reactions: 65
       firing: 0
       throwing: 0
@@ -1180,8 +1180,8 @@ units:
     value: 15
     aggroSound: 123
     deathSound: 124
-    # panicSound: 265
-    # berserkSound: 266
+    panicSound: 123
+    berserkSound: 123
     intelligence: 3
     aggression: 8
     isLeeroyJenkins: true
@@ -1194,15 +1194,15 @@ units:
     race: STR_ARMADILLO
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 70
+      tu: 65
       stamina: 160
       health: 80
-      bravery: 100
+      bravery: 110
       reactions: 45
       firing: 0
       throwing: 0
-      strength: 75
-      melee: 65
+      strength: 80
+      melee: 75
       psiStrength: 40
       psiSkill: 0
     statsRandom:
@@ -1220,10 +1220,10 @@ units:
     standHeight: 18
     kneelHeight: 12
     value: 10
-    aggroSound: 123 #TODO
-    deathSound: 124 #TODO
-    # panicSound: 265
-    # berserkSound: 266
+    aggroSound: [161, 162, 163]
+    deathSound: [164, 165]
+    panicSound: [161, 162, 163]
+    berserkSound: [161, 162, 163]
     intelligence: 3
     aggression: 8
     isLeeroyJenkins: true
