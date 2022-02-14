@@ -815,11 +815,11 @@ en-US:
   STR_SWARMIDS_AUTOPSY_UFOPEDIA: "The body of this insectoid creature comprises a slightly armored torso and a flexible tail. The torso hosts a slot containing multiple articulated eyes and is surmounted by three pairs of wings. The tail is wholly muscle tissue, similar to the human tongue, and it ends with a fearsome stinger used for attacking prey."
   STR_AMPHIBIAN: "Amphibian"
   STR_AMPHIBIAN_CORPSE: "Amphibian Corpse"
-  STR_AMPHIBIAN_UFOPEDIA: "" #TODO
+  STR_AMPHIBIAN_UFOPEDIA: "The creature is clearly amphibious, looking like a hybrid of a different species of frogs and a gorilla. It is capable of spitting venom and inherits from the gorilla its powerful body, fury, and sharp teeth.Apparently, these creatures hunt large mammals, paralyze their prey with poison, and drag it into the water, where it will suffer a painful death by drowning while its helpless body is torn apart. The creatures lay their eggs directly in the under-eaten remains of their victims, to provide their offspring with nutrition immediately after hatching."
   STR_AMPHIBIAN_AUTOPSY: "Amphibian Autopsy"
-  STR_AMPHIBIAN_AUTOPSY_UFOPEDIA: "" #TODO
+  STR_AMPHIBIAN_AUTOPSY_UFOPEDIA: "In the structure of its head and torso with its internal organs, this creature is most similar to a frog, while its forelimbs, hind limbs, and the structure of the shoulder complex rather refer to primates, such as the gorilla. An important feature is the presence of many massive glands that secrete a strong neuroparalytic toxin, and the structure of the pharynx allows this monster to spit venom over long distances. Apparently, the hybrid is capable of changing sex when necessary, which ensures the good survivability of this species."
   STR_AMPHIBIAN_ARMOR: "Amphibian Combat Analysis"
-  STR_AMPHIBIAN_ARMOR_UFOPEDIA: "placeholder" #TODO
+  STR_AMPHIBIAN_ARMOR_UFOPEDIA: "Although this creature lacks any meaningful natural defense against firearms, its ability to spit neuroparalytic venom makes it a significant threat on the battlefield. Because of its large size and impressive muscle mass, weapons with high power are recommended."
   STR_AMPHIBIAN_WEAPON: "Amphibian Spit"
 
 #other units

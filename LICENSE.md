@@ -96,3 +96,5 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom E
 * **Dr Reach**, author of original artwork for [SCP Foundation website](http://www.scp-wiki.net/reach-s-blueprint-folder), distributed under Creative Commons Attribution-ShareAlike 3.0 Unported - art that was used for facility blueprints ufopaedia article image.
 
 * **ohartenstein23**, y-script code snippets, big thanks for code guidance.
+
+Big thanks to people who contribute into early builds testing - **BratGronflo** and **misterjopper**

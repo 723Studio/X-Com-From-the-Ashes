@@ -1189,6 +1189,7 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_FANGS_WEAPON
+        - STR_CLAWS_WEAPON
   - type: STR_ARMADILLO
     race: STR_ARMADILLO
     rank: STR_LIVE_TERRORIST
@@ -1236,7 +1237,7 @@ units:
     stats:
       tu: 65
       stamina: 140
-      health: 50
+      health: 85
       bravery: 110
       reactions: 40
       firing: 50
@@ -1264,7 +1265,7 @@ units:
     deathSound: 138 
     panicSound: 139
     berserkSound: 139
-    intelligence: 3
+    intelligence: 4
     aggression: 8
     energyRecovery: 35
     livingWeapon: true

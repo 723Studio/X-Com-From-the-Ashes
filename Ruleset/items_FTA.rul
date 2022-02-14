@@ -2542,6 +2542,7 @@ items:
     weight: 8
     bigSprite: 457
     floorSprite: 457
+    handSprite: 1026
     hitSound: 22
     hitAnimation: 26
     power: 40
@@ -4841,14 +4842,14 @@ items:
       ToArmor: 0.2
       ToWound: 1.5
       ToHealth: 1.1
-    accuracyMelee: 70
+    accuracyMelee: 65
     meleeMultiplier:
       flatHundred: 0.7
-      melee: 0.60
+      melee: 0.63
     damageBonus:
       strength: 0.5
       melee: 0.1
-    tuMelee: 12
+    tuMelee: 10
     #flatRate: true
     damageType: 7
     battleType: 3
