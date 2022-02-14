@@ -2490,6 +2490,7 @@ alienDeployments:
       - FOREST
       - MOUNTBD_ARBOREAL
       - PLAINS_ARBOREAL
+    script: HUNT_50x50
     data:
       - alienRank: 6
         lowQty: 2
@@ -2519,9 +2520,11 @@ alienDeployments:
       - FOREST
       - MOUNTBD_ARBOREAL
       - PLAINS_ARBOREAL
+    script: HUNT_50x50
     data:
       - alienRank: 6
         lowQty: 4
+        medQty: 6
         highQty: 10
         dQty: 6
         extraQty: 2
@@ -2548,10 +2551,12 @@ alienDeployments:
       - MOUNTBD_MUD
       - PLAINS_ARBOREAL
       - PLAINS_MUD
+    script: HUNT_50x50
     data:
       - alienRank: 6
         lowQty: 2
-        highQty: 5
+        medQty: 4
+        highQty: 7
         dQty: 5
         itemSets: *AnchorEmptyInventory
   - type: STR_ARMADILLO_TERROR_HARD
@@ -2578,10 +2583,12 @@ alienDeployments:
       - MOUNTBD_MUD
       - PLAINS_ARBOREAL
       - PLAINS_MUD
+    script: HUNT_50x50
     data:
       - alienRank: 6
         lowQty: 4
-        highQty: 10
+        medQty: 6
+        highQty: 12
         dQty: 6
         extraQty: 2
         itemSets: *AnchorEmptyInventory

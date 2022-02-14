@@ -2146,3 +2146,48 @@ extended:
             debug_log "new detection chance: " detection_chance;
           end;
           return detection_type detection_chance;
+
+
+
+# extended:
+#   tags:
+#     RuleItem:
+#       ITEM_NV_GOGGLES: int
+#     BattleUnitVisibility:
+#       VISIBILITY_NV_GOGGLES: int
+#   scripts:
+#     visibilityUnit:
+#       - offset: 3
+#         code: |
+#           var int itemA;
+#           var int itemB;
+#           var int targetShade;
+#           var ptr BattleItem item;
+#           var ptr RuleItem type;
+          
+#           #get info about left hand item
+#           observer_unit.getLeftHandWeapon item;
+#           item.getRuleItem type;
+#           type.getTag itemA Tag.ITEM_NV_GOGGLES;
+            
+#           #get info about left hand item
+#           observer_unit.getRightHandWeapon item;
+#           item.getRuleItem type;
+#           type.getTag itemB Tag.ITEM_NV_GOGGLES;
+#           if eq visibility_mode null; #default visibility
+            
+#             #if left or rigth item have NV bonus
+#             if or eq itemA 1 eq itemB 1;
+#               target_unit.getTileShade targetShade;
+#               if gt targetShade 9;
+#                 add current_visibility 48; #16*3 = 3 tiles better visibility in dark
+#                 set visibility_mode Tag.VISIBILITY_NV_GOGGLES; #toggle to NV mode
+#               end;
+#             end;
+#           else eq visibility_mode Tag.VISIBILITY_NV_GOGGLES; #assume that other script already set "NV" mode, we only add small bonus in that case
+#             if or eq itemA 1 eq itemB 1;
+#               add current_visibility 16;
+#             end;
+#           end;
+          
+#           return current_visibility visibility_mode;

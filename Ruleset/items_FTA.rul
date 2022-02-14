@@ -2539,7 +2539,7 @@ items:
     costBuy: 1600
     costSell: 1250
     landOnly: true
-    weight: 13
+    weight: 8
     bigSprite: 457
     floorSprite: 457
     hitSound: 22
@@ -4834,23 +4834,22 @@ items:
     meleeHitSound: 81
     meleeAnimation: 12
     clipSize: -1
-    #power: 30
     damageAlter:
-      RandomType: 7
+      RandomType: 1
       IgnoreDirection: false
       ArmorEffectiveness: 1.4
       ToArmor: 0.2
-      ToWound: 2
+      ToWound: 1.5
       ToHealth: 1.1
-    accuracyMelee: 90
+    accuracyMelee: 70
     meleeMultiplier:
       flatHundred: 0.7
       melee: 0.60
     damageBonus:
-      strength: 0.4
-      melee: 0.2
-    tuMelee: 16
-    flatRate: true
+      strength: 0.5
+      melee: 0.1
+    tuMelee: 12
+    #flatRate: true
     damageType: 7
     battleType: 3
     fixedWeapon: true
@@ -4858,7 +4857,7 @@ items:
     invHeight: 3
     recover: false
   - &FangsWeapon
-    type: STR_FANGS_WEAPON #TODO make it different
+    type: STR_FANGS_WEAPON
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0
     bigSprite: 412
@@ -4868,23 +4867,22 @@ items:
     meleeHitSound: 81
     meleeAnimation: 16
     clipSize: -1
-    #power: 30
     damageAlter:
-      RandomType: 7
+      RandomType: 1
       IgnoreDirection: false
       ArmorEffectiveness: 1.3
-      ToHealth: 1.2
+      ToHealth: 1.3
       ToArmor: 0.2
       ToWound: 2
-    accuracyMelee: 100
+    accuracyMelee: 60
     meleeMultiplier:
       flatHundred: 0.7
-      melee: 0.60
+      melee: 0.70
     damageBonus:
-      strength: 0.5
-      melee: 0.2
-    tuMelee: 20
-    flatRate: true
+      strength: 0.4
+      melee: 0.3
+    tuMelee: 18
+    #flatRate: true
     damageType: 7
     battleType: 3
     fixedWeapon: true
@@ -4902,25 +4900,65 @@ items:
     power: 2
     damageType: 7
     damageAlter:
+      RandomType: 1
       IgnoreDirection: true
       ArmorEffectiveness: 0.3
       ToArmor: 0.1
       ToTile: 0.0
     damageBonus:
-      healthCurrent: 0.8
-      melee: 0.2
-    accuracyMelee: 120
+      healthCurrent: 0.6
+      melee: 0.05
+    accuracyMelee: 110
     tuMelee: 20
     flatRate: true
     battleType: 3
     fixedWeapon: true
     invWidth: 2
-    invHeight: 2
+    invHeight: 3
     recover: false
   - type: STR_SWARMIDS_SMALL_WEAPON
     refNode: *SwarmidsWeapon
-    accuracyMelee: 100
+    accuracyMelee: 90
+    damageBonus:
+      healthCurrent: 0.8
     tuMelee: 27
+  - type: STR_AMPHIBIAN_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 460
+    bulletSprite: 38
+    fireSound: 166
+    hitSound: 1
+    hitAnimation: 96
+    power: 25
+    damageType: 6
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ToHealth: 0.3
+      ToWound: 0
+      ToMorale: 1.5
+      ToEnergy: 2.0
+      ToStun: 0.6
+      ToArmorPre: 0.1
+      ToTile: 0.01
+      ArmorEffectiveness: 0.5
+    accuracySnap: 105
+    accuracyMultiplier:
+      firing: 0.5
+      throwing: 0.5
+    costSnap:
+      time: 25
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 16
+    powerRangeThreshold: 17
+    powerRangeReduction: 5
+    recover: false
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS, STR_MELEE]
     weight: 0

@@ -1,4 +1,26 @@
 alienRaces:
+  - delete: STR_SECTOID
+  - id: STR_SECTOID
+    retaliationMissionWeights:
+      0:
+        STR_EARLY_GAME_TROLLING: 0
+        STR_ALIEN_ABDUCTION: 5
+    members:
+      - STR_SECTOID_COMMANDER # 0 - Commander
+      - STR_SECTOID_LEADER # 1 - Leader
+      - STR_SECTOID_ENGINEER # 2 - Engineer
+      - STR_SECTOID_MEDIC # 3 - Medic
+      - STR_SECTOID_NAVIGATOR # 4 - Navigator
+      - STR_SECTOID_SOLDIER # 5 - Soldier
+      - STR_CYBERDISC_TERRORIST # 6 - Terrorist 1
+      - STR_CYBERDISC_TERRORIST # 7 - Terrorist 2
+      - STR_SECTOID_SOLDIER # 8 - Special Guest 1
+      - STR_SECTOID_SOLDIER # 9 - Heavy Trooper / Underwater Terrorist 1
+      - STR_SECTOID_SOLDIER # 10 - Assault Trooper / Underwater Terrorist 2
+      - STR_SECTOID_SOLDIER # 11 - Special Guest 2 / Non-Combatant 1
+      - STR_SECTOID_SOLDIER # 12 - Non-Combatant 2
+      - STR_SECTOID_SOLDIER # 13 - Special Guest 3
+
   - id: STR_INITIAL_BASE_DEFENSE_RACE #hardcoded, do not rename!
     members:
       - STR_XCOM_EX_COMMANDER # 0 - Commander
@@ -192,8 +214,8 @@ alienRaces:
       - STR_FREE_SPOT # 3 - Medic
       - STR_FREE_SPOT # 4 - Navigator
       - STR_SWARMIDS_SMALL # 5 - Soldier
-      - STR_SWARMIDS_LARGE # 6 - Terrorist 1
-      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_SWARMIDS_SMALL # 6 - Terrorist 1
+      - STR_SWARMIDS_LARGE # 7 - Terrorist 2
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
@@ -209,8 +231,8 @@ alienRaces:
       - STR_FREE_SPOT # 3 - Medic
       - STR_FREE_SPOT # 4 - Navigator
       - STR_AMPHIBIAN # 5 - Soldier
-      - STR_FREE_SPOT # 6 - Terrorist 1
-      - STR_FREE_SPOT # 7 - Terrorist 2
+      - STR_AMPHIBIAN # 6 - Terrorist 1
+      - STR_AMPHIBIAN # 7 - Terrorist 2
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2

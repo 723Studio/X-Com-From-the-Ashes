@@ -98,33 +98,34 @@ extraSprites:
     subX: 3
     subY: 3
     files:
-      385: Resources/Weapons/Projectiles/LMG_bullet.png
-      420: Resources/Weapons/Projectiles/Magnum_bullet.png
+      385: Resources/Weapons/Projectiles/LMG_bullet.png #11
+      420: Resources/Weapons/Projectiles/Magnum_bullet.png #12
       455: Resources/Weapons/Projectiles/Taser_bullet.png #13
       490: Resources/Weapons/Projectiles/Sniper_bullet.png #14
-      525: Resources/Weapons/Projectiles/Toxic_bullet.png
-      560: Resources/Weapons/Projectiles/PsiBeam_bullet.png
+      525: Resources/Weapons/Projectiles/Toxic_bullet.png #15
+      560: Resources/Weapons/Projectiles/PsiBeam_bullet.png #16
       595: Resources/Weapons/Projectiles/SMG_bullet.png #17
-      630: Resources/Weapons/Projectiles/Gauss_bullet.png
-      665: Resources/Weapons/Projectiles/MassDriver_bullet.png
-      700: Resources/Weapons/Projectiles/BlueLaser_bullet.png
-      735: Resources/Weapons/Projectiles/BlueHeavyLaser_bullet.png
-      770: Resources/Weapons/Projectiles/ThrowingKnife_bullet.png
-      805: Resources/Weapons/Projectiles/Arrow_bullet.png
-      840: Resources/Weapons/Projectiles/Fireball_bullet.png
-      875: Resources/Weapons/Projectiles/SonicPistol_bullet.png
-      910: Resources/Weapons/Projectiles/PurpleLaser_bullet.png
-      945: Resources/Weapons/Projectiles/PurpleHeavyLaser_bullet.png
-      980: Resources/Weapons/Projectiles/RedLightLaser_bullet.png
-      1015: Resources/Weapons/Projectiles/RedMediumLaser_bullet.png
-      1050: Resources/Weapons/Projectiles/RedHeavyLaser_bullet.png
-      1085: Resources/Weapons/Projectiles/Boomeroid_bullet.png
-      1120: Resources/Weapons/Projectiles/Cero_green_bullet.png
-      1155: Resources/Weapons/Projectiles/Cero_red_bullet.png
-      1190: Resources/Weapons/Projectiles/Dreamsprite_bullet.png
-      1225: Resources/Weapons/Projectiles/ElectroPlasma_bullet.png
-      1260: Resources/Weapons/Projectiles/Harpoon_bullet.png
-      1295: Resources/Weapons/Projectiles/Purple_Fireball_bullet.png
+      630: Resources/Weapons/Projectiles/Gauss_bullet.png #18
+      665: Resources/Weapons/Projectiles/MassDriver_bullet.png #19
+      700: Resources/Weapons/Projectiles/BlueLaser_bullet.png #20
+      735: Resources/Weapons/Projectiles/BlueHeavyLaser_bullet.png #21
+      770: Resources/Weapons/Projectiles/ThrowingKnife_bullet.png #22
+      805: Resources/Weapons/Projectiles/Arrow_bullet.png #23
+      840: Resources/Weapons/Projectiles/Fireball_bullet.png #24
+      875: Resources/Weapons/Projectiles/SonicPistol_bullet.png #25
+      910: Resources/Weapons/Projectiles/PurpleLaser_bullet.png #26
+      945: Resources/Weapons/Projectiles/PurpleHeavyLaser_bullet.png #27
+      980: Resources/Weapons/Projectiles/RedLightLaser_bullet.png #28
+      1015: Resources/Weapons/Projectiles/RedMediumLaser_bullet.png #29
+      1050: Resources/Weapons/Projectiles/RedHeavyLaser_bullet.png #30
+      1085: Resources/Weapons/Projectiles/Boomeroid_bullet.png #31
+      1120: Resources/Weapons/Projectiles/Cero_green_bullet.png #32
+      1155: Resources/Weapons/Projectiles/Cero_red_bullet.png #33
+      1190: Resources/Weapons/Projectiles/Dreamsprite_bullet.png #34
+      1225: Resources/Weapons/Projectiles/ElectroPlasma_bullet.png #35
+      1260: Resources/Weapons/Projectiles/Harpoon_bullet.png #36
+      1295: Resources/Weapons/Projectiles/Purple_Fireball_bullet.png #37
+      1330: Resources/Weapons/Projectiles/Puprle_spit_bullet.png #38
   - type: HIT.PCK #MeleeAnimations, index step 4
     height: 40
     width: 128
@@ -153,6 +154,7 @@ extraSprites:
       66: Resources/Weapons/HitAnimations/Toxic_hit.png
       76: Resources/Weapons/HitAnimations/Sound_hit.png
       86: Resources/Weapons/HitAnimations/MeleeShock_hit.png
+      96: Resources/Weapons/HitAnimations/Toxic_hit_purple.png
   # - type: SPICONS.DAT #special icons, index step 1
   #   width: 32
   #   height: 24  
@@ -366,6 +368,7 @@ extraSprites:
       457: Resources/Weapons/Earthbound/Faction/bigob_RiotGun_Clip.png
       458: Resources/Weapons/Earthbound/Faction/bigob_MilitaryRifle.png
       459: Resources/Weapons/Earthbound/Faction/bigob_MilitaryRifleClip.png
+      460: Resources/Weapons/Unarmed/bigob_PurpleBlob.png
 
   - type: FLOOROB.PCK
     files:

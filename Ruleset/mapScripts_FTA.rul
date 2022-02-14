@@ -320,6 +320,18 @@ mapScripts:
     - type: fillArea
 
 #mission specific scripts
+  - type: HUNT_50x50
+    commands:
+    - type: addUFO
+    - type: addCraft
+      rects:
+        - [1, 1, 3, 3]
+    - type: addBlock
+      executionChances: 70
+      size: 2
+      executions: 3
+    - type: fillArea
+
   - type: RESISTANCE_FARM
     commands:
     #roads

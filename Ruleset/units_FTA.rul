@@ -1159,7 +1159,7 @@ units:
       reactions: 65
       firing: 0
       throwing: 0
-      strength: 70
+      strength: 60
       melee: 80
       psiStrength: 60
       psiSkill: 0
@@ -1177,7 +1177,7 @@ units:
     armor: STR_CHUPACABRA_ARMOR
     standHeight: 18
     kneelHeight: 12
-    value: 15
+    value: 12
     aggroSound: 123
     deathSound: 124
     panicSound: 123
@@ -1188,8 +1188,7 @@ units:
     energyRecovery: 35
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_CLAWS_WEAPON
-        - STR_FANGS_WEAPON
+      - - STR_FANGS_WEAPON
   - type: STR_ARMADILLO
     race: STR_ARMADILLO
     rank: STR_LIVE_TERRORIST
@@ -1201,8 +1200,8 @@ units:
       reactions: 45
       firing: 0
       throwing: 0
-      strength: 80
-      melee: 75
+      strength: 65
+      melee: 50
       psiStrength: 40
       psiSkill: 0
     statsRandom:
@@ -1224,33 +1223,33 @@ units:
     deathSound: [164, 165]
     panicSound: [161, 162, 163]
     berserkSound: [161, 162, 163]
-    intelligence: 3
+    intelligence: 2
     aggression: 8
     isLeeroyJenkins: true
     energyRecovery: 45
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_FANGS_WEAPON
+      - - STR_CLAWS_WEAPON
   - type: STR_AMPHIBIAN
     race: STR_AMPHIBIAN
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 80
+      tu: 65
       stamina: 140
-      health: 110
-      bravery: 100
+      health: 50
+      bravery: 110
       reactions: 40
-      firing: 0
-      throwing: 0
-      strength: 90
-      melee: 70
-      psiStrength: 45
+      firing: 50
+      throwing: 50
+      strength: 55
+      melee: 55
+      psiStrength: 65
       psiSkill: 0
     statsRandom:
       tu: 10
       stamina: 15
       health: 10
-      bravery: 20
+      bravery: 10
       reactions: 3
       firing: 0
       throwing: 0
@@ -1260,18 +1259,18 @@ units:
     armor: STR_AMPHIBIAN_ARMOR
     standHeight: 18
     kneelHeight: 12
-    value: 12
-    aggroSound: 139 #?
+    value: 10
+    aggroSound: 139
     deathSound: 138 
-    # panicSound: 265
-    # berserkSound: 266
+    panicSound: 139
+    berserkSound: 139
     intelligence: 3
     aggression: 8
-    isLeeroyJenkins: true
     energyRecovery: 35
     livingWeapon: true
     builtInWeaponSets:
-       - - STR_CLAWS_WEAPON
+       - - STR_FANGS_WEAPON
+         - STR_AMPHIBIAN_WEAPON
   - type: STR_SWARMIDS_LARGE
     race: STR_SWARMIDS
     rank: STR_LIVE_TERRORIST

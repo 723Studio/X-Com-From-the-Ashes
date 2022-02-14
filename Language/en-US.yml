@@ -794,7 +794,7 @@ en-US:
   STR_ARMADILLO_CORPSE: "Armadillo Corpse"
   STR_ARMADILLO_UFOPEDIA: "It is an extremely strong and hardy creature, with a very good protection system due to its structure. Adapting to uprightness is far from complete, it moves clumsily and hunched over, often helping itself with its arms when running. In close combat, it uses its forelegs with razor-sharp claws and a powerful jaw with massive fangs. In case of danger, it crouches on the ground and puts forward a strong carapace. It is unclear how these creatures reproduce, and the result of DNA deciphering suggests intensive artificial gene modifications being carried out on this species."
   STR_ARMADILLO_AUTOPSY: "Armadillo Autopsy"
-  STR_ARMADILLO_AUTOPSY_UFOPEDIA: "An anthropomorphic creature resembling an armadillo shocked our scientists. The skeletal structure, muscular and circulatory systems are striking, although adaptation to uprightness is far from complete. The most noticeable feature is the convex, incredibly strong shell on the back, to which the spine is attached. It forms a rather large cavity, causing all the vital organs to shift further away from the ribs, and the space freed is used to form something like a fibrous subcutaneous body armor.  The creature's skin is covered with small, extremely tough, sand-colored scales.The structure of the jaw and the shape of the teeth clearly indicate the predatory nature of this beast."
+  STR_ARMADILLO_AUTOPSY_UFOPEDIA: "An anthropomorphic creature resembling an armadillo shocked our scientists. The skeletal structure, muscular and circulatory systems are striking, although adaptation to uprightness is far from complete. The most noticeable feature is the convex, incredibly strong shell on the back, to which the spine is attached. It forms a rather large cavity, causing all the vital organs to shift further away from the ribs, and the space freed is used to form something like a fibrous subcutaneous body armor. The creature's skin is covered with small, extremely tough, sand-colored scales."
   STR_ARMADILLO_ARMOR: "Armadillo Combat Analysis"
   STR_ARMADILLO_ARMOR_UFOPEDIA: "The armadillo has excellent natural resistance to a wide variety of kinds of damage. It is savage and dangerous in melee combat. Fortunately, it is rather bumbling when moving around."
   STR_SWARMID: "Swarmid"
@@ -820,6 +820,7 @@ en-US:
   STR_AMPHIBIAN_AUTOPSY_UFOPEDIA: "" #TODO
   STR_AMPHIBIAN_ARMOR: "Amphibian Combat Analysis"
   STR_AMPHIBIAN_ARMOR_UFOPEDIA: "placeholder" #TODO
+  STR_AMPHIBIAN_WEAPON: "Amphibian Spit"
 
 #other units
   STR_RESISTANCE_AGENT: "Resistance Agent"
