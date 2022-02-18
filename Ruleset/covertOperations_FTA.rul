@@ -292,18 +292,17 @@ covertOperations:
     successEvent: STR_MONSTER_RE_HUNT_CHUPA
     failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
     failureScore: -300
-    trapChance: 60
+    trapChance: 65
     instantTrapDeployment: 
       STR_CHUPACABRA_HUNT_TRAP: 100
     failureResearchList:
       - STR_UNLEASH_CHUPAS_TRIGGER
     failureEvent: STR_MONSTER_RE_HUNT_CHUPA
-
   - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
     description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_RUMORS_ARMADILLO
-    baseChances: 60
+    baseChances: 70
     costs: 460
     soldierSlots: 3
     optionalSoldierSlots: 2
@@ -319,7 +318,7 @@ covertOperations:
       STR_ARMADILLO_HUNT_EVENING: 50
     successResearchList:
       - STR_UNLEASH_ARMADILLO_TRIGGER
-    successEvent: STR_MONSTER_RE_HUNT_CHUPA
+    successEvent: STR_MONSTER_RE_HUNT_ARMADILLO
     failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
     failureScore: -300
     trapChance: 60
@@ -328,7 +327,65 @@ covertOperations:
     failureResearchList:
       - STR_UNLEASH_ARMADILLO_TRIGGER
     failureEvent: STR_MONSTER_RE_HUNT_ARMADILLO
+  - name: STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
+    description: STR_MONSTER_HUNT_TROPIC_ECO_DESCRIPTION
+    requires:
+      - STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
+    baseChances: 55
+    costs: 520
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
+    danger: 2
+    scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    allowAllEquipment: true
+    successScore: 150
+    instantSuccessDeployment:
+      STR_AMPHIBIAN_HUNT_DAY: 50
+      STR_AMPHIBIAN_HUNT_EVENING: 50
+    successResearchList:
+      - STR_UNLEASH_AMPHIBIAN_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_AMPHIBIAN
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
+    failureScore: -300
+    trapChance: 75
+    instantTrapDeployment: 
+      STR_AMPHIBIAN_HUNT_TRAP: 100
+    failureResearchList:
+      - STR_UNLEASH_AMPHIBIAN_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_AMPHIBIAN
 
+  - name: STR_MONSTER_HUNT_RUMORS_SWARMID
+    description: STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION
+    requires:
+      - STR_MONSTER_HUNT_RUMORS_SWARMID
+    baseChances: 65
+    costs: 420
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
+    danger: 2
+    scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    allowAllEquipment: true
+    successScore: 150
+    instantSuccessDeployment:
+      STR_SWARMID_HUNT_DAY: 50
+      STR_SWARMID_HUNT_EVENING: 50
+    successResearchList:
+      - STR_UNLEASH_SWARMID_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_SWARMID
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
+    failureScore: -300
+    trapChance: 50
+    instantTrapDeployment: 
+      STR_SWARMID_HUNT_TRAP: 100
+    failureResearchList:
+      - STR_UNLEASH_SWARMID_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_SWARMID
 #supplies gathering
   - name: STR_LAB_EQUIPMENT_ACQUISITION
     description: STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION

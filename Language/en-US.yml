@@ -416,12 +416,26 @@ en-US:
   STR_ARMADILLO_HUNT_EVENING: "Monster Hunt"
   STR_CHUPA_TERROR_EASY: "Monster Terror"
   STR_CHUPA_TERROR_HARD: "Monster Terror"
+  STR_ARMADILLO_TERROR_EASY: "Monster Terror"
+  STR_ARMADILLO_TERROR_HARD: "Monster Terror"
+  STR_AMPHIBIAN_TERROR_EASY: "Monster Terror"
+  STR_AMPHIBIAN_TERROR_HARD: "Monster Terror"
+  STR_SWARMID_JUNGLE_TERROR_EASY: "Monster Terror"
+  STR_SWARMID_JUNGLE_TERROR_HARD: "Monster Terror"
+  STR_SWARMID_DESERT_TERROR_EASY: "Monster Terror"
+  STR_SWARMID_DESERT_TERROR_HARD: "Monster Terror"
   STR_MONSTER_TERROR: "Monster Terror"
   STR_MONSTER_TERROR_ALERT: "MONSTERS TERRORIZE LOCALS"
   STR_MONSTER_TERROR_ALERT_DESCRIPTION: "We managed to localize a hotspot of alien monster activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the wilderness. We should deploy a squad there and purge it, while collecting samples for scientific study, if possible."
   STR_MONSTER_TERROR_BRIEFING: "We managed to localize a hotspot of alien monster activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the wilderness. We should deploy a squad there and purge it, while collecting samples for scientific study, if possible.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
   STR_CHUPACABRA_HUNT_TRAP: "Monster Hunt - Trap"
+  STR_ARMADILLO_HUNT_TRAP: "Monster Hunt - Trap"
+  STR_AMPHIBIAN_HUNT_TRAP: "Monster Hunt - Trap"
+  STR_SWARMID_HUNT_TRAP: "Monster Hunt - Trap"
   STR_MONSTER_HUNT_NIGHT_FOREST_TRAP_BRIEFING: "Chasing a mystery monster has led our agents into the middle of nowhere. The trail is suddenly lost, and the agents look around, surrounded by pitch-black darkness. A rustling sound comes from the neighboring bushes, and glimpses of red eyes flicker between the leaves. It looks like the hunter has become the hunted..."
+  STR_MONSTER_HUNT_NIGHT_PLAINS_TRAP_BRIEFING: "Guided by rumors of an unbelievable monster rampaging across the plains, our agents made their way deep into the wilderness until nightfall. As they prepared to spend the night, they suddenly noticed that the usual sounds of the night prairie had faded. There were suspicious rustles coming from the tall grass, some creatures approaching us from all around!"
+  STR_MONSTER_HUNT_NIGHT_JUNGLE_TRAP_BRIEFING: "A lot of people have disappeared without a trace in this jungle in the last couple of years. The natives say that, according to an ancient prophecy, the pagan frog god will be angry at humans and send his children to Earth. Obviously, this superstition has no connection with reality, in search of a rational explanation our agents went deep into the jungle..."
+  STR_MONSTER_HUNT_NIGHT_DESERT_TRAP_BRIEFING: "Residents of areas adjacent to the desert began to find fresh human and livestock skeletons in the sands. There were no teeth marks or incisions on the bones, and not a single piece of soft tissue remained on them. Our agents decided to go deeper into the desert territory and conduct reconnaissance. After a day's crossing, everyone was so exhausted that the desert seemed to be humming after the heat of the day. Gradually the sound began to change to a sharper, buzzing-like sound. Suddenly, a huge number of giant insects rose from the sand everywhere into the air and pounced on our soldiers!"
 
   STR_AGENT_EXTRACTION_MARKER: "Agent Extraction"
 
@@ -494,7 +508,13 @@ en-US:
   STR_MONSTER_RE_HUNT_CHUPA: "Monster Hunt"
   STR_MONSTER_HUNT_RUMORS_ARMADILLO: "Monster Hunt"
   STR_MONSTER_RE_HUNT_ARMADILLO: "Monster Hunt"
-  STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the middle ecological zone. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
+  STR_MONSTER_HUNT_RUMORS_AMPHIBIAN: "Monster Hunt"
+  STR_MONSTER_RE_HUNT_AMPHIBIAN: "Monster Hunt"
+  STR_MONSTER_HUNT_RUMORS_SWARMID: "Monster Hunt"
+  STR_MONSTER_RE_HUNT_SWARMID: "Monster Hunt"
+  STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the middle climat zone. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
+  STR_MONSTER_HUNT_TROPIC_ECO_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the tropics. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
+  STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the desert enviroment. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
   STR_MONSTER_HUNT_FAILURE_DESCRIPTION: "Our operatives failed in their mission; they could not find any sign of the mysterious monster terrorizing locals. Alas, we can only wait for the next report of paranormal activity, here we have done all we can."
   STR_LAB_EQUIPMENT_ACQUISITION: "Lab Equipment Acquisition"
   STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "Any new laboratory that we want to build requires a large amount of high-quality equipment, powerful computers and fine instruments. It will not work just like that to buy a couple of installations, so you need to act secretly and get in touch with serious people.{NEWLINE}Required Items:{NEWLINE}Briefcase with Cash ($100000)>{ALT}1"
@@ -800,8 +820,8 @@ en-US:
   STR_SWARMID: "Swarmid"
   STR_SWARMIDS_LARGE_WEAPON: "Big Swarm Stings"
   STR_SWARMIDS_SMALL_WEAPON: "Swarm Stings"
-  STR_SWARMIDS_LARGE_ARMOR: "Swarmids (Large) Combat Analysis"
-  STR_SWARMIDS_SMALL_ARMOR: "Swarmids (Small) Combat Analysis"
+  STR_SWARMIDS_LARGE_ARMOR: "Swarmids Combat Analysis"
+  STR_SWARMIDS_SMALL_ARMOR: "Swarmids Swarm Combat Analysis"
   STR_SWARMIDS_CORPSE: "Swarmid Corpses"
   STR_SWARMIDS_LARGE_CORPSE: "Lots of Swarmid Corpses"
   STR_SWARMIDS_SMALL_CORPSE: "Swarmid Corpses"
@@ -813,6 +833,7 @@ en-US:
   STR_SWARMIDS_AUTOPSY: "Swarmids Autopsy"
   STR_SWARMIDS_UFOPEDIA: "Swarmids are unlike any other creature known to science. They aggressively search for prey, spotting them using their well developed multi-ocular structure. The eyes can work independently so the creature can see reasonably well unless all of them are damaged. Their stinger is very robust; it has difficulties penetrating heavy armor directly, but they instinctively seek out weak spots, leaving pheromones as a signal to the rest of the swarm. Conventional projectile-based weapons are of little use, only explosions and especially fire can damage them consistently."
   STR_SWARMIDS_AUTOPSY_UFOPEDIA: "The body of this insectoid creature comprises a slightly armored torso and a flexible tail. The torso hosts a slot containing multiple articulated eyes and is surmounted by three pairs of wings. The tail is wholly muscle tissue, similar to the human tongue, and it ends with a fearsome stinger used for attacking prey."
+  STR_SWARMIDS_SMALL_ARMOR_UFOPEDIA: A swarm of aggressive insects poses a serious danger to our soldiers. The carnivorous flies penetrate into the smallest crevices of almost any armor. At the same time, the swarm itself is virtually immune to firearms and melee attacks.
   STR_AMPHIBIAN: "Amphibian"
   STR_AMPHIBIAN_CORPSE: "Amphibian Corpse"
   STR_AMPHIBIAN_UFOPEDIA: "The creature is clearly amphibious, looking like a hybrid of a different species of frogs and a gorilla. It is capable of spitting venom and inherits from the gorilla its powerful body, fury, and sharp teeth.Apparently, these creatures hunt large mammals, paralyze their prey with poison, and drag it into the water, where it will suffer a painful death by drowning while its helpless body is torn apart. The creatures lay their eggs directly in the under-eaten remains of their victims, to provide their offspring with nutrition immediately after hatching."
@@ -1777,8 +1798,9 @@ en-US:
   STR_SPAWN_RESISTANCE_RADIO: STR_SPAWN_RESISTANCE_RADIO
   STR_SPAWN_RESISTANCE_COMPUTER: STR_SPAWN_RESISTANCE_COMPUTER
   STR_ARMADILLO_TERROR: STR_ARMADILLO_TERROR
-
-
+  STR_AMPHIBIAN_TERROR: STR_AMPHIBIAN_TERROR
+  STR_SWARMID_JUNGLE_TERROR: STR_SWARMID_JUNGLE_TERROR
+  STR_SWARMID_DESERT_TERROR: STR_SWARMID_DESERT_TERROR
 
   
   STR_RESISTANCE_FIRST_HELP: STR_RESISTANCE_FIRST_HELP
@@ -1786,6 +1808,8 @@ en-US:
   STR_RESISTANCE_WEAPONRY_PREREQ: STR_RESISTANCE_WEAPONRY_PREREQ
   STR_UNLEASH_CHUPAS_TRIGGER: STR_UNLEASH_CHUPAS_TRIGGER
   STR_UNLEASH_ARMADILLO_TRIGGER: STR_UNLEASH_ARMADILLO_TRIGGER
+  STR_UNLEASH_AMPHIBIAN_TRIGGER: STR_UNLEASH_AMPHIBIAN_TRIGGER
+  STR_UNLEASH_SWARMID_TRIGGER: STR_UNLEASH_SWARMID_TRIGGER
   STR_MIB_HQ_DESTROYED: STR_MIB_HQ_DESTROYED
   STR_CROP_CIRCLES_PREREQ: STR_CROP_CIRCLES_PREREQ
   STR_EX_COUNCIL_MEMBER_INITIAL_MISSION: STR_EX_COUNCIL_MEMBER_INITIAL_MISSION

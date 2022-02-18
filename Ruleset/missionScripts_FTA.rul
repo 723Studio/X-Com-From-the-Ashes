@@ -87,7 +87,7 @@ missionScripts:
       0:
         STR_CHUPACABRA: 100
     researchTriggers:
-      STR_UNLEASH_CHUPAS_TRIGGER: false
+      STR_UNLEASH_CHUPAS_TRIGGER: true
     useTable: false
     spawnGap: 40
     startDelay: 4320
@@ -107,13 +107,54 @@ missionScripts:
       0:
         STR_ARMADILLO: 100
     researchTriggers:
-      STR_UNLEASH_ARMADILLO_TRIGGER: false
+      STR_UNLEASH_ARMADILLO_TRIGGER: true
     useTable: false
     spawnGap: 40
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
     varName: armodilTerror
+  - type: amphibianTerror
+    firstMonth: 3
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_AMPHIBIAN_TERROR_MISSION: 100
+    regionWeights:
+      0:
+        STR_AMPHIBIAN_TERROR: 100
+    raceWeights:
+      0:
+        STR_AMPHIBIAN: 100
+    researchTriggers:
+      STR_UNLEASH_AMPHIBIAN_TRIGGER: true
+    useTable: false
+    spawnGap: 40
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: amphibianTerror
+  - type: swarmidTerror
+    firstMonth: 3
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_SWARMID_TERROR_MISSION: 100
+    regionWeights:
+      0:
+        STR_SWARMID_JUNGLE_TERROR: 50
+        STR_SWARMID_DESERT_TERROR: 50
+    raceWeights:
+      0:
+        STR_SWARMID: 100
+    researchTriggers:
+      STR_UNLEASH_SWARMID_TRIGGER: true
+    useTable: false
+    spawnGap: 40
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: swarmidTerror
 
 #resistance
   - type: havenFarm

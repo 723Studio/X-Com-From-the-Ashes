@@ -59,11 +59,13 @@ eventScripts:
     oneTimeRandomEvents:
       STR_MONSTER_HUNT_RUMORS_CHUPA: 100
       STR_MONSTER_HUNT_RUMORS_ARMADILLO: 80
+      STR_MONSTER_HUNT_RUMORS_AMPHIBIAN: 80
+      STR_MONSTER_HUNT_RUMORS_SWARMID: 50
     researchTriggers:
       STR_MONSTER_HUNT_RUMORS: true
     spawnGap: 20
     randomSpawnGap: 50
-    executionOdds: 30
+    executionOdds: 40
 
 #xcom
   - &STR_WORKSHOP_SCRIPT

@@ -2299,6 +2299,7 @@ ufopaedia:
   - id: STR_SWARMIDS_SMALL_ARMOR
     type_id: 5
     section: STR_TACTICAL_ANALYSIS
+    text: STR_SWARMIDS_SMALL_ARMOR_UFOPEDIA
     requires:
       - STR_SWARMIDS_SMALL_ARMOR
     listOrder: 250253 

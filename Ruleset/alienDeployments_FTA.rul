@@ -2417,7 +2417,6 @@ alienDeployments:
         highQty: 5
         dQty: 5
         itemSets: *AnchorEmptyInventory
-
   - type: STR_ARMADILLO_HUNT_DAY
     race: STR_ARMADILLO
     width: 50
@@ -2468,6 +2467,99 @@ alienDeployments:
         highQty: 5
         dQty: 5
         itemSets: *AnchorEmptyInventory
+  - type: STR_AMPHIBIAN_HUNT_DAY
+    race: STR_AMPHIBIAN
+    width: 50
+    length: 50
+    height: 8
+    shade: 0
+    markerName: STR_MONSTER_HUNT_MARKER
+    abortPenalty: 100
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_HUNT_BRIEFING
+    terrains:
+      - JUNGLE
+      - MOUNTBD_TROPICAL
+      - PLAINS_TROPICAL
+      - PLAINS_MUD
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 5
+        dQty: 5
+        itemSets: *AnchorEmptyInventory
+  - type: STR_AMPHIBIAN_HUNT_EVENING
+    race: STR_AMPHIBIAN
+    width: 50
+    length: 50
+    height: 8
+    shade: 12
+    markerName: STR_MONSTER_HUNT_MARKER
+    abortPenalty: 100
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_HUNT_BRIEFING
+    terrains:
+      - JUNGLE
+      - MOUNTBD_TROPICAL
+      - PLAINS_TROPICAL
+      - PLAINS_MUD
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 5
+        dQty: 5
+        itemSets: *AnchorEmptyInventory
+
+  - type: STR_SWARMID_HUNT_DAY
+    race: STR_SWARMID
+    width: 50
+    length: 50
+    height: 8
+    shade: 0
+    markerName: STR_MONSTER_HUNT_MARKER
+    abortPenalty: 100
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_HUNT_BRIEFING
+    terrains:
+      - JUNGLE
+      - DESERT
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 5
+        dQty: 5
+        itemSets: *AnchorEmptyInventory
+  - type: STR_SWARMID_HUNT_EVENING
+    race: STR_SWARMID
+    width: 50
+    length: 50
+    height: 8
+    shade: 13
+    markerName: STR_MONSTER_HUNT_MARKER
+    abortPenalty: 100
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_HUNT_BRIEFING
+    terrains:
+      - JUNGLE
+      - DESERT
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 5
+        dQty: 5
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_CHUPA_TERROR_EASY
     race: STR_CHUPACABRA
@@ -2478,7 +2570,7 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [4, 6]
+    duration: [6, 8]
     despawnPenalty: 100
     abortPenalty: 200
     briefing:
@@ -2493,8 +2585,8 @@ alienDeployments:
     script: HUNT_50x50
     data:
       - alienRank: 6
-        lowQty: 2
-        highQty: 5
+        lowQty: 3
+        highQty: 7
         dQty: 5
         itemSets: *AnchorEmptyInventory
   - type: STR_CHUPA_TERROR_HARD
@@ -2508,7 +2600,7 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [3, 5]
+    duration: [6, 8]
     despawnPenalty: 100
     abortPenalty: 250
     briefing:
@@ -2523,9 +2615,9 @@ alienDeployments:
     script: HUNT_50x50
     data:
       - alienRank: 6
-        lowQty: 4
-        medQty: 6
-        highQty: 10
+        lowQty: 5
+        medQty: 7
+        highQty: 11
         dQty: 6
         extraQty: 2
         itemSets: *AnchorEmptyInventory
@@ -2538,7 +2630,7 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [4, 6]
+    duration: [6, 8]
     despawnPenalty: 100
     abortPenalty: 200
     briefing:
@@ -2554,9 +2646,9 @@ alienDeployments:
     script: HUNT_50x50
     data:
       - alienRank: 6
-        lowQty: 2
-        medQty: 4
-        highQty: 7
+        lowQty: 3
+        medQty: 5
+        highQty: 8
         dQty: 5
         itemSets: *AnchorEmptyInventory
   - type: STR_ARMADILLO_TERROR_HARD
@@ -2570,7 +2662,7 @@ alienDeployments:
     alertBackground: BACK03.SCR
     alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
     markerName: STR_MONSTER_TERROR
-    duration: [3, 5]
+    duration: [6, 8]
     despawnPenalty: 100
     abortPenalty: 250
     briefing:
@@ -2586,13 +2678,154 @@ alienDeployments:
     script: HUNT_50x50
     data:
       - alienRank: 6
-        lowQty: 4
-        medQty: 6
+        lowQty: 5
+        medQty: 7
         highQty: 12
         dQty: 6
         extraQty: 2
         itemSets: *AnchorEmptyInventory
 
+  - type: STR_AMPHIBIAN_TERROR_EASY
+    race: STR_AMPHIBIAN
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_MONSTER_TERROR_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
+    markerName: STR_MONSTER_TERROR
+    duration: [6, 8]
+    despawnPenalty: 100
+    abortPenalty: 200
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_TERROR_BRIEFING
+    terrains:
+      - JUNGLE
+      - MOUNTBD_TROPICAL
+      - PLAINS_TROPICAL
+      - PLAINS_MUD
+    script: HUNT_50x50
+    data:
+      - alienRank: 6
+        lowQty: 3
+        medQty: 5
+        highQty: 8
+        dQty: 5
+        itemSets: *AnchorEmptyInventory
+  - type: STR_AMPHIBIAN_TERROR_HARD
+    race: STR_ARMADILLO
+    civiliansByType:
+      STR_CIVILIAN_HUNTER: 1
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_MONSTER_TERROR_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
+    markerName: STR_MONSTER_TERROR
+    duration: [6, 8]
+    despawnPenalty: 100
+    abortPenalty: 250
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_TERROR_BRIEFING
+    terrains:
+      - JUNGLE
+      - MOUNTBD_TROPICAL
+      - PLAINS_TROPICAL
+      - PLAINS_MUD
+    script: HUNT_50x50
+    data:
+      - alienRank: 6
+        lowQty: 5
+        medQty: 7
+        highQty: 12
+        dQty: 6
+        extraQty: 2
+        itemSets: *AnchorEmptyInventory
+
+  - &Swarmid_terror
+    type: STR_SWARMID_JUNGLE_TERROR_EASY
+    race: STR_SWARMID
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_MONSTER_TERROR_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_MONSTER_TERROR_ALERT_DESCRIPTION
+    markerName: STR_MONSTER_TERROR
+    duration: [6, 8]
+    despawnPenalty: 100
+    abortPenalty: 200
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_MONSTER_TERROR_BRIEFING
+    terrains:
+      - JUNGLE
+      - MOUNTBD_TROPICAL
+      - PLAINS_TROPICAL
+      - PLAINS_MUD
+    script: HUNT_50x50
+    data:
+      - alienRank: 6
+        lowQty: 2
+        medQty: 4
+        highQty: 7
+        dQty: 3
+        itemSets: *AnchorEmptyInventory
+  - type: STR_SWARMID_JUNGLE_TERROR_HARD
+    refNode: *Swarmid_terror
+    data:
+      - alienRank: 6
+        lowQty: 3
+        medQty: 5
+        highQty: 9
+        dQty: 2
+        extraQty: 1
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7 #STR_SWARMIDS_LARGE
+        lowQty: 0
+        medQty: 0
+        highQty: 2
+        dQty: 1
+        itemSets: *AnchorEmptyInventory
+  - type: STR_SWARMID_DESERT_TERROR_EASY
+    refNode: *Swarmid_terror
+    terrains:
+      - DESERT
+      - MOUNTBD_SANDY
+      - MOUNTBD_SANDY_NOCACTI
+      - PLAINS_SANDY
+      - PLAINS_SANDY_NOCACTI
+  - type: STR_SWARMID_DESERT_TERROR_HARD
+    refNode: *Swarmid_terror
+    terrains:
+      - DESERT
+      - MOUNTBD_SANDY
+      - MOUNTBD_SANDY_NOCACTI
+      - PLAINS_SANDY
+      - PLAINS_SANDY_NOCACTI
+    data:
+      - alienRank: 6
+        lowQty: 3
+        medQty: 5
+        highQty: 9
+        dQty: 2
+        extraQty: 1
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7 #STR_SWARMIDS_LARGE
+        lowQty: 0
+        medQty: 0
+        highQty: 2
+        dQty: 1
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_EX_COUNCIL_DATA_VAULT
     race: STR_BANDITS
@@ -3466,9 +3699,9 @@ alienDeployments:
       background: FOREST_MONSTER.SCR
       showTarget: false
       showCraft: false
-      desc: STR_MONSTER_HUNT_NIGHT_FOREST_TRAP_BRIEFING
+      desc: STR_MONSTER_HUNT_NIGHT_PLAINS_TRAP_BRIEFING
     terrains:
-      - FOREST
+      - PLAINS_MUD
     data:
       - alienRank: 5
         lowQty: 6
@@ -3476,6 +3709,57 @@ alienDeployments:
         highQty: 14
         dQty: 5
         extraQty: 2
+        itemSets: *AnchorEmptyInventory
+  - type: STR_AMPHIBIAN_HUNT_TRAP
+    race: STR_AMPHIBIAN
+    shade: 15
+    width: 50
+    length: 50
+    height: 8
+    isHidden: true
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER.SCR
+      showTarget: false
+      showCraft: false
+      desc: STR_MONSTER_HUNT_NIGHT_JUNGLE_TRAP_BRIEFING
+    terrains:
+      - JUNGLE
+    data:
+      - alienRank: 5
+        lowQty: 6
+        medQty: 8
+        highQty: 14
+        dQty: 5
+        extraQty: 2
+        itemSets: *AnchorEmptyInventory
+  - type: STR_SWARMID_HUNT_TRAP
+    race: STR_SWARMID
+    shade: 15
+    width: 50
+    length: 50
+    height: 8
+    isHidden: true
+    briefing:
+      textOffset: -16
+      background: FOREST_MONSTER.SCR
+      showTarget: false
+      showCraft: false
+      desc: STR_MONSTER_HUNT_NIGHT_DESERT_TRAP_BRIEFING
+    terrains:
+      - DESERT
+    data:
+      - alienRank: 6
+        lowQty: 4
+        medQty: 6
+        highQty: 10
+        dQty: 4
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7 #STR_SWARMIDS_LARGE
+        lowQty: 1
+        medQty: 1
+        highQty: 2
+        dQty: 1
         itemSets: *AnchorEmptyInventory
 
   - type: STR_CULTISTS_DETENTION_TRAP

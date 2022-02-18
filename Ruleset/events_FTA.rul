@@ -205,7 +205,6 @@ events:
     timer: 43800 #1 month
     timerRandom: 43800 #another 1 month
 
-    
   - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
     researchList:
@@ -215,6 +214,30 @@ events:
   - name: STR_MONSTER_RE_HUNT_ARMADILLO
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
     removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_ARMADILLO]
+    timer: 43800 #1 month
+    timerRandom: 43800 #another 1 month
+
+  - name: STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    researchList:
+      - STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_MONSTER_RE_HUNT_AMPHIBIAN
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_AMPHIBIAN]
+    timer: 43800 #1 month
+    timerRandom: 43800 #another 1 month
+
+  - name: STR_MONSTER_HUNT_RUMORS_SWARMID
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    researchList:
+      - STR_MONSTER_HUNT_RUMORS_SWARMID
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_MONSTER_RE_HUNT_SWARMID
+    description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
+    removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_SWARMID]
     timer: 43800 #1 month
     timerRandom: 43800 #another 1 month
 
