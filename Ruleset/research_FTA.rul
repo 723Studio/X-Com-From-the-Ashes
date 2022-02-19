@@ -104,6 +104,8 @@ research:
     hidden: true
   - name: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
     hidden: true
+  - name: STR_INFILTRATING_MILITARY_RND_PREREQ #TODO - way to unlock
+    hidden: true
   - name: STR_CULT_INVESTIGATION
     hidden: true
   - name: STR_CULT_GANG_DEN

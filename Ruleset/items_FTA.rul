@@ -2438,7 +2438,7 @@ items:
     floorSprite: 322
     handSprite: 304
     hitSound: 67 #13?
-    hitAnimation: 26
+    #hitAnimation: 26
     power: 22
     damageType: 2
     damageAlter:
@@ -3919,7 +3919,7 @@ items:
     recoveryPoints: 10
     listOrder: 19010
   - type: STR_SMALL_ROCKET
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_SPACE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
@@ -3945,7 +3945,7 @@ items:
     recoveryPoints: 2
     listOrder: 19020
   - type: STR_LARGE_ROCKET
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_SPACE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
@@ -3972,7 +3972,7 @@ items:
     recoveryPoints: 2
     listOrder: 19030
   - type: STR_INCENDIARY_ROCKET
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_SPACE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
@@ -4295,7 +4295,7 @@ items:
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.1
     landOnly: true
-    costSell: 47200
+    costSell: 42200
     weight: 4
     bigSprite: 23
     floorSprite: 23

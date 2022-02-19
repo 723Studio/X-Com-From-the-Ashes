@@ -66,6 +66,15 @@ eventScripts:
     spawnGap: 20
     randomSpawnGap: 50
     executionOdds: 40
+  - type: STR_EX_COUNCIL_OFFERS
+    oneTimeRandomEvents:
+      STR_INFILTRATING_MILITARY_RND_PREREQ: 100
+      
+    researchTriggers:
+      STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ: true
+    spawnGap: 20
+    randomSpawnGap: 50
+    executionOdds: 40
 
 #xcom
   - &STR_WORKSHOP_SCRIPT
@@ -275,7 +284,7 @@ eventScripts:
     #allowedProcessor: 1 #faction
     executionOdds: 85
   - type: STR_RESISTANCE_CELL_NEAR_MIB_HQ
-    oneTimeSequentialEvents: [STR_STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT]
+    oneTimeSequentialEvents: [STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT]
     researchTriggers:
       STR_RESISTANCE_CONTACT: true
       STR_REQ_HQ_LOCATION_DONE: true

@@ -136,7 +136,7 @@ loyaltyRatings:
 reputationLevels:
    3500: STR_ALLY
    800: STR_HONORED
-   250: STR_FRIENDLY
+   350: STR_FRIENDLY
    0: STR_NEUTRAL
    -350: STR_UNFRIENDLY
    -1000: STR_HOSTILE

@@ -28,11 +28,11 @@ manufacture:
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
     space: 25
-    time: 5100
-    cost: 240000
+    time: 5300
+    cost: 260000
     requiredItems:
-      STR_SPARE_PARTS: 115
-      STR_HIGH_TECH_PARTS: 45
+      STR_SPARE_PARTS: 215
+      STR_HIGH_TECH_PARTS: 65
     listOrder: 220030
 
 #weapons
@@ -269,7 +269,11 @@ manufacture:
       - STR_MOTION_SCANNER_PROTOTYPE
     space: 3
     time: 630
-    cost: 38000
+    cost: 36000
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 2
+    producedItems:
+      STR_MOTION_SCANNER: 1
     requiresBaseFunc: [WORK]
     listOrder: 220040
 #components
@@ -302,7 +306,7 @@ manufacture:
       STR_SPARE_PARTS: 2
     space: 1
     time: 12
-    cost: 850
+    cost: 950
     producedItems:
       STR_HIGH_TECH_PARTS: 1
     listOrder: 220030

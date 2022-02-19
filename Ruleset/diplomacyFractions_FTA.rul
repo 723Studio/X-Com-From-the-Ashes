@@ -5,7 +5,7 @@ diplomacyFactions:
     cardBackground: RESISTANCE_DIPLOMACY_CARD.SCR
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
-    startingReputation: 270
+    startingReputation: 370
     startingFunds: 935000
     startingPower: 350
     stockMod: 100

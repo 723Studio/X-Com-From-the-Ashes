@@ -79,18 +79,18 @@ crafts:
     requires:
       - STR_HELICOPTER
     sprite: 802
-    fuelMax: 560
+    fuelMax: 80
     damageMax: 20
-    speedMax: 230
+    speedMax: 170
     accel: 1
     soldiers: 6
     vehicles: 0
     pilots: 1
     maxItems: 999
     costBuy: 130000
-    costRent: 6000
+    costRent: 16000
     costSell: 100000
-    refuelRate: 50
+    refuelRate: 25
     repairRate: 4
     transferTime: 72
     score: 40
@@ -115,9 +115,9 @@ crafts:
     requires:
       - STR_OSPREY
     sprite: 803
-    fuelMax: 320
+    fuelMax: 250
     damageMax: 80
-    speedMax: 200
+    speedMax: 245
     accel: 1
     weapons: 0
     soldiers: 14
@@ -125,9 +125,9 @@ crafts:
     pilots: 1
     maxItems: 999
     costBuy: 250000
-    costRent: 15000
+    costRent: 25000
     costSell: 160000
-    refuelRate: 18
+    refuelRate: 8
     transferTime: 72
     score: 75
     battlescapeTerrainData:

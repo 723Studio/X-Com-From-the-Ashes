@@ -220,7 +220,6 @@ covertOperations:
     instantTrapDeployment: 
       STR_CULTISTS_DETENTION_TRAP: 100
     trapChance: 100
-
   - name: STR_STEAL_OSPREY_OPERATION
     description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
     requires:
@@ -240,6 +239,28 @@ covertOperations:
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -300
     failureFunds: -42000
+
+  - name: STR_INFILTRATING_MILITARY_RND
+    description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
+    requires:
+      - STR_INFILTRATING_MILITARY_RND_PREREQ
+    soldierSlots: 4
+    optionalSoldierSlots: 4
+    optionalSoldierEffect: -5
+    requiresBaseFunc: [HQ]
+    baseChances: 50
+    concealedItemsBonus: 5 #default 4
+    danger: 20
+    costs: 430
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    #successDescription: STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION
+    #successScore: 200
+    instantSuccessDeployment:
+      STR_INFILTRATING_MILITARY_RND: 100
+    failureDescription: STR_INFILTRATING_MILITARY_RND_FAILURE_DESCRIPTION
+    failureScore: -180
+
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
@@ -268,7 +289,6 @@ covertOperations:
     instantTrapDeployment: 
       STR_LOCALS_TRAP: 100
     trapChance: 100
-
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA
     description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
     requires:
@@ -356,7 +376,6 @@ covertOperations:
     failureResearchList:
       - STR_UNLEASH_AMPHIBIAN_TRIGGER
     failureEvent: STR_MONSTER_RE_HUNT_AMPHIBIAN
-
   - name: STR_MONSTER_HUNT_RUMORS_SWARMID
     description: STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION
     requires:
