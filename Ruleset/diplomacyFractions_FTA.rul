@@ -16,7 +16,7 @@ diplomacyFactions:
       STR_RESISTANCE_AGENT: 12
       #STR_SOLDIER: 10
       #STR_SCIENTIST: 12
-    genMissionFreq: 100 #60% chance to run the script
+    genMissionFreq: 100 #100% chance to run the script
     helpTreatyMissions:
       - havenFarm
       - havenForestHouse
@@ -24,9 +24,12 @@ diplomacyFactions:
       - resistanceScientist
       - desertTelescope
     helpTreatyGap: 12
-    genEventFreq: 100
-    # helpTreatyEventScripts:
-    #    - STR_RESISTANCE_HAVEN_SAVED_SCRIPT
+    helpTreatyEventScripts:
+      - STR_RESISTANCE_WEAPONRY_SCRIPT
+      - STR_RESISTANCE_CELL_NEAR_MIB_HQ
+      - STR_RESISTANCE_GIFT_MIB_AGENT
+    # usualEventsScripts:
+    #   - STR_RESISTANCE_WEAPONRY_SCRIPT
     factionalEvents:
        - STR_POWER_DROP_LOW
        - STR_POWER_DROP_MED

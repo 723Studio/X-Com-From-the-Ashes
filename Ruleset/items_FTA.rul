@@ -495,7 +495,6 @@ items:
     recoveryPoints: 3
     attraction: 20
     listOrder: 1060
-
 #throwing
   - type: STR_THROWING_KNIFE
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE]
@@ -1934,7 +1933,6 @@ items:
     recoveryPoints: 2
     listOrder: 7170
     landOnly: true
-
 #sniper rifles
   - type: STR_HUNTING_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
@@ -5037,7 +5035,7 @@ items:
     battleType: 2
     invWidth: 1
     invHeight: 1
-    listOrder: 30000
+    listOrder: 31000
   - type: STR_DATA_VAULT
     categories: [STR_EVIDENCE, STR_CONCEALABLE]
     landOnly: true
@@ -5052,7 +5050,7 @@ items:
     invHeight: 1
     armor: 90
     recoveryPoints: 80
-    listOrder: 30005
+    listOrder: 31005
   - type: STR_MOTION_SCANNER_PROTOTYPE
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -5066,7 +5064,7 @@ items:
     invWidth: 1
     invHeight: 1
     recoveryPoints: 100
-    listOrder: 30006
+    listOrder: 31006
   - type: STR_FLOPPY_SCIENTISTS_LOG
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -5082,7 +5080,7 @@ items:
     invWidth: 1
     invHeight: 1
     recoveryPoints: 80
-    listOrder: 30010
+    listOrder: 31010
   - type: STR_FLOPPY_RESISTANCE
     categories: [STR_LOOT]
     landOnly: true
@@ -5098,7 +5096,7 @@ items:
     invWidth: 1
     invHeight: 1
     recoveryPoints: 60
-    listOrder: 30020
+    listOrder: 31020
   - type: STR_MIB_DATA_CONTAINER
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -5112,7 +5110,7 @@ items:
     invWidth: 1
     invHeight: 2
     recoveryPoints: 150
-    listOrder: 30030
+    listOrder: 31030
   - type: STR_SUPPLIES_1
     categories: [STR_LOOT]
     size: 3
@@ -5128,7 +5126,7 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 4
-    listOrder: 30040
+    listOrder: 31040
   - type: STR_CREDIT_CARD
     categories: [STR_LOOT]
     landOnly: true
@@ -5143,7 +5141,7 @@ items:
     invHeight: 1
     stackSize: 5
     recoveryPoints: 10
-    listOrder: 30040
+    listOrder: 31050
   - type: STR_CREDIT_CARD_SILVER
     categories: [STR_LOOT]
     landOnly: true
@@ -5158,7 +5156,7 @@ items:
     invHeight: 1
     stackSize: 5
     recoveryPoints: 12
-    listOrder: 30050
+    listOrder: 31060
   - type: STR_CREDIT_CARD_GOLD
     categories: [STR_LOOT]
     landOnly: true
@@ -5173,7 +5171,7 @@ items:
     invHeight: 1
     stackSize: 5
     recoveryPoints: 15
-    listOrder: 30050
+    listOrder: 31070
   - type: STR_CASH_PACK
     categories: [STR_LOOT]
     landOnly: true
@@ -5188,7 +5186,7 @@ items:
     invHeight: 1
     stackSize: 20
     recoveryPoints: 8
-    listOrder: 30050
+    listOrder: 31080
   - type: STR_PLASTIC_CARD
     categories: [STR_LOOT]
     landOnly: true
@@ -5199,7 +5197,7 @@ items:
     invWidth: 1
     invHeight: 1
     recover: false
-    listOrder: 30060
+    listOrder: 31090
   - type: STR_BRIEFCASE_CASH
     categories: [STR_LOOT, STR_CONCEALABLE]
     size: 0.1
@@ -5214,7 +5212,7 @@ items:
     invWidth: 2
     invHeight: 2
     recoveryPoints: 40
-    listOrder: 30060
+    listOrder: 31100
   - type: STR_SPARE_PARTS
     categories: [STR_COMPONENTS]
     landOnly: true
@@ -5689,7 +5687,6 @@ items:
     liveAlien: false
     #prisonType: 1
     listOrder: 100378
-
 #Zombies
   - &liveMonster
     type: STR_FACEHUGGER
@@ -6080,6 +6077,25 @@ items:
   - type: STR_LEATHER_COAT
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     size: 0.9
+  - type: STR_CORPSE_ARMORED_VEST
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.5
+    weight: 55
+    bigSprite: 138
+    floorSprite: 138
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recover: false
+    listOrder: 100680
+  - type: STR_ARMORED_VEST
+    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    size: 1.1
+    costBuy: 30000
+    costSell: 26000
+    listOrder: 16850
 
 extended:
   tags:

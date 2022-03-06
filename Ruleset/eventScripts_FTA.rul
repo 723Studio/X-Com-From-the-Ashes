@@ -280,9 +280,8 @@ eventScripts:
       STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED: false
     requiredReputation:
       STR_RESISTANCE: 5 #STR_HONORED
-    lastMonth: 0
-    #allowedProcessor: 1 #faction
-    executionOdds: 85
+    allowedProcessor: 1 #faction
+    executionOdds: 20
   - type: STR_RESISTANCE_CELL_NEAR_MIB_HQ
     oneTimeSequentialEvents: [STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT]
     researchTriggers:
@@ -292,9 +291,38 @@ eventScripts:
       STR_RESISTANCE_CELL_CREATION_PREREQ: false
     requiredReputation:
       STR_RESISTANCE: 5 #STR_HONORED
-    lastMonth: 0
     allowedProcessor: 1 #faction
     executionOdds: 70
+  - type: STR_RESISTANCE_GIFT_MIB_AGENT
+    oneTimeSequentialEvents: [STR_RESISTANCE_GIFT_MIB_AGENT_EVENT]
+    researchTriggers:
+      STR_RESISTANCE_CONTACT: true
+      STR_FRESH_MIB_AGENT: false
+      STR_PRISONER_INTERROGATIONS: true
+    requiredReputation:
+      STR_RESISTANCE: 5 #STR_HONORED
+    itemTriggers:
+      STR_MIB_AGENT: false
+      STR_MIB_SPECOPS: false
+    firstMonth: 4
+    allowedProcessor: 1 #faction
+    executionOdds: 10
+  - type: STR_RESISTANCE_GIFT_SOLDIERS
+    eventWeights:
+      0:
+        STR_RESISTANCE_GIFT_2_SOLDIERS: 100
+        STR_RESISTANCE_GIFT_3_SOLDIERS: 70
+        STR_RESISTANCE_GIFT_4_SOLDIERS: 50
+        STR_RESISTANCE_GIFT_5_SOLDIERS: 30
+    researchTriggers:
+      STR_RESISTANCE_CONTACT: true
+    requiredReputation:
+      STR_RESISTANCE: 5 #STR_FRIENDLY
+    minLoyalty: 400
+    maxScore: 300
+    maxFunds: 200000
+    allowedProcessor: 1 #faction
+    executionOdds: 5
 
 #random fun
   - type: STR_MYSTERIOUS_SPONSOR
@@ -326,9 +354,12 @@ eventScripts:
         STR_MYSTERIOUS_SPONSOR_250000: 70
         STR_MYSTERIOUS_SPONSOR_500000: 50
         STR_MYSTERIOUS_SPONSOR_1000000: 30
+    firstMonth: 1
     lastMonth: 24
-    executionOdds: 5
-    spawnGap: 160
+    executionOdds: 10
+    maxFunds: 100000
+    maxScore: 600
+    spawnGap: 100
     allowedProcessor: 0
   - type: STR_OLD_CROP_CIRCLES
     eventWeights:
@@ -337,13 +368,25 @@ eventScripts:
     researchTriggers:
       STR_CROP_CIRCLES_PREREQ: true 
     firstMonth: 2
-    executionOdds: 3
+    minLoyalty: 400
+    executionOdds: 5
     allowedProcessor: 0
+    spawnGap: 80
   - type: STR_UFO_SIGNS
     eventWeights:
       0:
         STR_UFO_SIGNS: 100
     firstMonth: 0
-    executionOdds: 2
-    maxScore: 300
+    executionOdds: 10
+    minLoyalty: 400
     allowedProcessor: 0
+    spawnGap: 60
+  - type: STR_LOYALTY_TO_MONEY
+    oneTimeRandomEvents:
+      STR_IMPROVE_LIVING_FACILITY: 100
+    firstMonth: 1
+    executionOdds: 50
+    maxLoyalty: 200
+    maxFunds: 200000
+    allowedProcessor: 0
+    spawnGap: 60

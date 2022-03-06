@@ -36,7 +36,7 @@ ufos:
           width: 10
           length: 10
     tags:
-      UFO_DETECTION_CHANGE: 4
+      UFO_DETECTION_CHANGE: 2
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4

@@ -1367,7 +1367,7 @@ armors:
     camouflageAtDay: 30
     camouflageAtDark: -2
     visibilityAtDark: 9
-    personalLight: 1
+    personalLight: 5
     turnBeforeFirstStep: true
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
@@ -1377,18 +1377,18 @@ armors:
       energy:
         flatHundred: 0.12
         healthCurrent: 0.25
-      stun:
+      stun: &StandardAgentStunRes
         healthCurrent: 0.1
         health: -0.05
       health:
-        stunNormalized: -0.1
+        stunNormalized: -0.08
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED_TRAINED
     units:
       - STR_SOLDIER
+      - STR_RESISTANCE_AGENT
     loftempsSet: [ 3 ]
-
   - type: STR_LEATHER_COAT_UC
     spriteSheet: XCOM_16.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -1510,9 +1510,7 @@ armors:
       energy:
         flatHundred: 0.1
         healthCurrent: 0.25
-      stun:
-        healthCurrent: 0.1
-        health: -0.05
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -1520,6 +1518,148 @@ armors:
     specialWeapon: STR_UNARMED_TRAINED
     units:
       - STR_SOLDIER
+      - STR_RESISTANCE_AGENT
+    loftempsSet: [ 3 ]
+  - type: STR_ARMORED_VEST_UC
+    spriteSheet: XCOM_ARMORED_VEST.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "ARMORED_VEST_M_BIG", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "ARMORED_VEST_M_BIG", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "ARMORED_VEST_M_BIG", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "ARMORED_VEST_M_BIG", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "ARMORED_VEST_M_BIG", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "ARMORED_VEST_M", "", "", "M47_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F0_HEAD"]
+      F1: ["", "", "F1_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F1_HEAD"]
+      F2: ["", "", "F2_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F2_HEAD"]
+      F3: ["", "", "F3_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F3_HEAD"]
+      F4: ["", "", "F4_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F4_HEAD"]
+      F5: ["", "", "F5_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F5_HEAD"]
+      F6: ["", "", "F6_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F6_HEAD"]
+      F7: ["", "", "F7_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F7_HEAD"]
+      F8: ["", "", "F8_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F8_HEAD"]
+      F9: ["", "", "F9_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F9_HEAD"]
+      F10: ["", "", "F10_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F10_HEAD"]
+      F11: ["", "", "F11_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F11_HEAD"]
+      F12: ["", "", "F12_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F12_HEAD"]
+      F13: ["", "", "F13_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F13_HEAD"]
+      F14: ["", "", "F14_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F14_HEAD"]
+      F15: ["", "", "F15_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F15_HEAD"]
+      F16: ["", "", "F16_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F16_HEAD"]
+      F17: ["", "", "F17_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F17_HEAD"]
+      F18: ["", "", "F18_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F18_HEAD"]
+      F19: ["", "", "F19_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F19_HEAD"]
+      F20: ["", "", "F20_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F20_HEAD"]
+      F21: ["", "", "F21_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F21_HEAD"]
+      F22: ["", "", "F22_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F22_HEAD"]
+      F23: ["", "", "F23_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F23_HEAD"]
+      F24: ["", "", "F24_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F24_HEAD"]
+      F25: ["", "", "F25_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F25_HEAD"]
+      F26: ["", "", "F26_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F26_HEAD"]
+      F27: ["", "", "F27_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F27_HEAD"]
+      F28: ["", "", "F28_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F28_HEAD"]
+      F29: ["", "", "F29_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F29_HEAD"]
+      F30: ["", "", "F30_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F30_HEAD"]
+      F31: ["", "", "F31_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F31_HEAD"]
+      F32: ["", "", "F32_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F32_HEAD"]
+      F33: ["", "", "F33_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F33_HEAD"]
+      F34: ["", "", "F34_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F34_HEAD"]
+      F35: ["", "", "F35_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F35_HEAD"]
+      F36: ["", "", "F38_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F36_HEAD"]
+      F37: ["", "", "F37_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F37_HEAD"]
+      F38: ["", "", "F38_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F38_HEAD"]
+      F39: ["", "", "F39_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F39_HEAD"]
+      F40: ["", "", "F40_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F40_HEAD"]
+      F41: ["", "", "F41_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F41_HEAD"]
+      F42: ["", "", "F42_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F42_HEAD"]
+      F43: ["", "", "F43_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F43_HEAD"]
+      F44: ["", "", "F44_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F44_HEAD"]
+      F45: ["", "", "F45_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F45_HEAD"]
+      F46: ["", "", "F46_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F46_HEAD"]
+      F47: ["", "", "F47_NUDE", "", "", "", "", "ARMORED_VEST_F", "", "", "F47_HEAD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_ARMORED_VEST
+    weight: 20
+    corpseBattle:
+      - STR_CORPSE_ARMORED_VEST
+    camouflageAtDay: 36
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    turnBeforeFirstStep: true
+    frontArmor: 22
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 10
+    stats:
+      tu: -5
+      stamina: -10
+      reactions: -5
+      melee: -5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.7
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      energy:
+        flatHundred: 0.10
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.08
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    specialWeapon: STR_UNARMED_TRAINED
+    units:
+      - STR_SOLDIER
+      - STR_RESISTANCE_AGENT
     loftempsSet: [ 3 ]
 
 extended:

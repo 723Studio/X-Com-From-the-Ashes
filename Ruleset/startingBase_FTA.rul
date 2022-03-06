@@ -96,12 +96,12 @@ startingBase:
     - type: STR_DRAGONFLY
       id: 1
       fuel: 0
-      damage: 10
+      damage: 5
       status: STR_REPAIRS
     - type: STR_STALKER
       id: 1
       fuel: 0
-      damage: 8
+      damage: 3
       weapons:
         - type: STR_STINGRAY
           ammo: 6

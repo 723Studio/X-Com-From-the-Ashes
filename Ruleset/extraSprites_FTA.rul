@@ -54,8 +54,8 @@ extraSprites:
     files:
       0: Resources/UI/Shock.png
   - type: CustomArmorPreviews
-    width: 744
-    height: 60
+    width: 71
+    height: 32
     subX: 12
     subY: 20
     files:
@@ -206,6 +206,7 @@ extraSprites:
       135: Resources/Armors/Enemies/Bandits/bigob_BANDIT.png
       136: Resources/Armors/Enemies/Army/bigob_ARMY_FILED_SOLDIER.png
       137: Resources/Armors/Enemies/Army/bigob_ARMY_FILED_OFFICER.png
+      138: Resources/Armors/Xcom/ArmorVest/bigob_ARMORED_VEST.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -412,6 +413,7 @@ extraSprites:
       135: Resources/Armors/Enemies/Bandits/floorob_BANDIT.png
       136: Resources/Armors/Enemies/Army/floorob_ARMY_FILED_SOLDIER.png
       137: Resources/Armors/Enemies/Army/floorob_ARMY_FILED_OFFICER.png
+      138: Resources/Armors/Xcom/ArmorVest/floorob_ARMORED_VEST.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -1534,6 +1536,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Xcom/CoatArmor/COAT.png
+  - type: XCOM_ARMORED_VEST.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/ArmorVest/ARMORED_VEST.png
 
 ### PAPERDOLL LAYERS ###
 # Human nude
@@ -2508,10 +2517,7 @@ extraSprites:
     fileSingle: Resources/Armors/Xcom/JumpSuit/Inventory/Jumpsuit_M_big.png
   - typeSingle: HUMAN_AGENT__7__JUMPSUIT_F
     fileSingle: Resources/Armors/Xcom/JumpSuit/Inventory/Jumpsuit_F.png
-  - typeSingle: HYBRID_AGENT__7__JUMPSUIT_M
-    fileSingle: Resources/Armors/Xcom/JumpSuit/Inventory/Jumpsuit_M.png
-  - typeSingle: HYBRID_AGENT__7__JUMPSUIT_F
-    fileSingle: Resources/Armors/Xcom/JumpSuit/Inventory/Jumpsuit_F.png
+
 # Leather Coat
   - typeSingle: HUMAN_AGENT__7__LEATHER_COAT_M
     fileSingle: Resources/Armors/Xcom/CoatArmor/Inventory/Coat_M.png
@@ -2519,7 +2525,11 @@ extraSprites:
     fileSingle: Resources/Armors/Xcom/CoatArmor/Inventory/Coat_M_big.png
   - typeSingle: HUMAN_AGENT__7__LEATHER_COAT_F
     fileSingle: Resources/Armors/Xcom/CoatArmor/Inventory/Coat_F.png
-  - typeSingle: HYBRID_AGENT__7__LEATHER_COAT_M
-    fileSingle: Resources/Armors/Xcom/CoatArmor/Inventory/Coat_M.png
-  - typeSingle: HYBRID_AGENT__7__LEATHER_COAT_F
-    fileSingle: Resources/Armors/Xcom/CoatArmor/Inventory/Coat_F.png
+
+# Armomr vest
+  - typeSingle: HUMAN_AGENT__7__ARMORED_VEST_M
+    fileSingle: Resources/Armors/Xcom/ArmorVest/Inventory/ArmorVest_M.png
+  - typeSingle: HUMAN_AGENT__7__ARMORED_VEST_M_BIG
+    fileSingle: Resources/Armors/Xcom/ArmorVest/Inventory/ArmorVest_M_big.png
+  - typeSingle: HUMAN_AGENT__7__ARMORED_VEST_F
+    fileSingle: Resources/Armors/Xcom/ArmorVest/Inventory/ArmorVest_F.png

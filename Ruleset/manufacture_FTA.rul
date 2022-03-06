@@ -282,7 +282,7 @@ manufacture:
     requires:
       - STR_ENGINEER_STATUS_REPORT
     space: 1
-    time: 5
+    time: 15
     cost: 240
     producedItems:
       STR_SPARE_PARTS: 1
@@ -292,11 +292,11 @@ manufacture:
     requires:
       - STR_ENGINEER_STATUS_REPORT
     space: 1
-    time: 8
+    time: 18
     cost: 280
     producedItems:
       STR_CHEMICALS: 1
-    listOrder: 220030
+    listOrder: 220040
   - name: STR_HIGH_TECH_PARTS
     category: STR_COMPONENTS
     requiresBaseFunc: [WORK]
@@ -309,7 +309,7 @@ manufacture:
     cost: 950
     producedItems:
       STR_HIGH_TECH_PARTS: 1
-    listOrder: 220030
+    listOrder: 220050
 #special
   - name: STR_FAKE_AGENT_ID
     category: STR_COVERT_TOOLS
