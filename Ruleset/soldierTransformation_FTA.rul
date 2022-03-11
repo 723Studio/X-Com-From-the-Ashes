@@ -4,12 +4,12 @@ soldierTransformation:
     transformationTime: 408
     # recoveryTime: 50
     # cost: 5000000
-    # description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+    description: STR_SNIPER_TRAINING_DESC
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       firing: 70 
-    showMinMax: true
+       firing: 71 
+    showMinMax: false
     # requiredItems:
     #   STR_SNIPER_RIFLE: 1
     keepSoldierArmor: true
@@ -37,12 +37,13 @@ soldierTransformation:
   - name: STR_HEAVY_TRAINING
     minRank: 1
     transformationTime: 408
+    description: STR_HEAVY_TRAINING_DESC
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       stamina: 65
-       strength: 40
-    showMinMax: true
+       stamina: 72
+       strength: 48
+    showMinMax: false
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -73,12 +74,13 @@ soldierTransformation:
   - name: STR_ASSAULT_TRAINING
     minRank: 1
     transformationTime: 408
+    description: STR_ASSAULT_TRAINING_DESC
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       reactions: 57
-       firing: 55
-    showMinMax: true
+       reactions: 55
+       firing: 50
+    showMinMax: false
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -107,13 +109,14 @@ soldierTransformation:
   - name: STR_RANGER_TRAINING
     minRank: 1
     transformationTime: 408
+    description: STR_RANGER_TRAINING_DESC
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       stamina: 55
-       reactions: 45
+       stamina: 50
+       reactions: 43
        melee: 50
-    showMinMax: true
+    showMinMax: false
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -142,11 +145,12 @@ soldierTransformation:
   - name: STR_SPECIALIST_TRAINING
     minRank: 1
     transformationTime: 408
+    description: STR_SPECIALIST_TRAINING_DESC
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
-       bravery: 50
-    showMinMax: true
+       bravery: 60
+    showMinMax: false
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -175,6 +179,7 @@ soldierTransformation:
   - name: STR_UNARMED_COMBAT_TRAINING
     minRank: 1
     transformationTime: 250
+    description:  STR_UNARMED_COMBAT_TRAINING_DESC
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
@@ -182,7 +187,7 @@ soldierTransformation:
       reactions: 40
       strength: 52
       melee: 50
-    showMinMax: true
+    showMinMax: false
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false

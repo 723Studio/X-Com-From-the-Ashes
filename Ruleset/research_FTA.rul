@@ -665,23 +665,38 @@ research:
     points: 15
     dependencies:
       - STR_FACEHUGGER_CORPSE
+    unlocks:
+      - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_LIVE_INFECTOR
     cost: 0
     points: 15
     dependencies:
       - STR_FACEHUGGER
+    unlocks:
+      - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_ZOMBIE_AUTOPSY
     cost: 0
     points: 15
     dependencies:
       - STR_FRESH_ZOMBIE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
+    unlocks:
+      - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_LIVE_ZOMBIE
     cost: 0
     points: 15
     dependencies:
       - STR_FRESH_ZOMBIE
       - STR_ZOMBIE_GRUBAS_TERRORIST
+    unlocks:
+      - STR_ZOMBIE_PARASITE_PREREQ
+  - name: STR_ZOMBIE_PARASITE_PREREQ
+    hidden: true
+  - name: STR_ZOMBIE_PARASITE
+    cost: 800
+    points: 50
+    dependencies:
+      - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_ZOMBIE_BIOLOGY
     cost: 1920
     points: 75
@@ -690,6 +705,17 @@ research:
       - STR_LIVE_INFECTOR
       - STR_ZOMBIE_AUTOPSY
       - STR_LIVE_ZOMBIE
+  - name: STR_CROP_CIRCLES_ZOMBIES_PREREQ
+    hidden: true
+  - name: STR_ZOMBIE_SOURCE
+    cost: 700
+    points: 200
+    dependencies:
+      - STR_ZOMBIE_BIOLOGY
+      - STR_CROP_CIRCLES_ZOMBIES_PREREQ
+
+
+
 
 #enemies - humanoids
   - name: STR_XCOM_EX_COMMANDER

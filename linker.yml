@@ -46,6 +46,7 @@ config:
   - events.customAnswers.2.description
   - events.customAnswers.3.description
   - converter.countries
+  - soldierTransformation.description
   stringTypes:
   - alienDeployments.missionCompleteText
   - alienDeployments.missionFailedText

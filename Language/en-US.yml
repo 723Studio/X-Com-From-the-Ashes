@@ -1,5 +1,5 @@
 en-US:
-  STR_OPENXCOM: "From the Ashes v. 0.0.10"
+  STR_OPENXCOM: "From the Ashes v. 0.0.11"
   STR_XCOM: "X-COM"
   STR_FTA: "From the Ashes"
   STR_LAST_STAND: "Last Stand"
@@ -322,11 +322,17 @@ en-US:
   STR_YOU_HAVE_NOT_SUCCEEDED: "X-COM personnel does not treat you as a leader and scatter. It looks like our main mission has failed, and the M.I.B. agents are already covertly entrenched in our ranks, so any attempt to resist alien intentions will be cleverly prevented. Even if we come up with a recovery plan, most likely there will not be enough resources for it. The way they were thoughtlessly spent has long been noticed by the relatives of our hungry fighters. The remaining people with an unclouded mind are still trying to fight back, but they are fighting alone. Even they know that at best they're delaying the alien plans for our planet by a little bit. And that at the end they will end up just like our base now. Collapsed and broken."
   STR_COUNCIL_IS_DISSATISFIED: "We don't seem to be able to cope with the problems we have, Commander. Our resources are stretched thin and it's undermining the morale of our employees. You must be more responsible in your planning and management, or the last hope for the X-COM project's revival will be lost."
   STR_SNIPER_TRAINING: "Sniper Specialization"
+  STR_SNIPER_TRAINING_DESC: "As a result of training the soldier will be able to handle assault and sniper rifles much better, aiming at the most vulnerable parts of the enemy, as well as to get the most out of an advantageous sniper position."
   STR_HEAVY_TRAINING: "Heavy Specialization"
+  STR_HEAVY_TRAINING_DESC: "The specialization includes an extended physical training program, which will allow the soldier to wield heavy weapons more confidently."
   STR_ASSAULT_TRAINING: "Assault Specialization"
+  STR_ASSAULT_TRAINING_DESC: "The unique assault program develops the tactical skills necessary for close-range and confined firefighting. It allows the soldier to fire much more accurately from the hip and to be ever vigilant."
   STR_RANGER_TRAINING: "Ranger Specialization"
+  STR_RANGER_TRAINING_DESC: "The program includes survival courses, stealth movement, as well as mastery of bladed and throwing weapons."
   STR_SPECIALIST_TRAINING: "Support Specialization"
+  STR_SPECIALIST_TRAINING_DESC: "The program includes an advanced course in field medicine as well as training in the use of utility equipment such as smoke and flashbang grenades."
   STR_UNARMED_COMBAT_TRAINING: "Unarmed Combat Training"
+  STR_UNARMED_COMBAT_TRAINING_DESC: "Additional combat training for non-armed combat includes techniques effective when both hands of the soldier are unoccupied. This training is not a substitute for soldier specialization and may be chosen as an optional elective."
   STR_FIRE_AND_THROW: "Fire and throw it."
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of its members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and they are trying to cover up any traces of their activity."
@@ -414,6 +420,10 @@ en-US:
   STR_CHUPACABRA_HUNT_EVENING: "Monster Hunt"
   STR_ARMADILLO_HUNT_DAY: "Monster Hunt"
   STR_ARMADILLO_HUNT_EVENING: "Monster Hunt"
+  STR_AMPHIBIAN_HUNT_DAY: "Monster Hunt"
+  STR_AMPHIBIAN_HUNT_EVENING: "Monster Hunt"
+  STR_SWARMID_HUNT_DAY: "Monster Hunt"
+  STR_SWARMID_HUNT_EVENING: "Monster Hunt"
   STR_CHUPA_TERROR_EASY: "Monster Terror"
   STR_CHUPA_TERROR_HARD: "Monster Terror"
   STR_ARMADILLO_TERROR_EASY: "Monster Terror"
@@ -451,6 +461,10 @@ en-US:
   STR_CROP_CIRCLES_ALERT_DESCRIPTION: "We are receiving reports of anomalous circles appearing overnight in the fields. The reports are confusing and contradictory, the locals are in a panic. We should send our people to investigate the anomaly before M.I.B. agents eliminate all evidence and witnesses."
   STR_CROP_CIRCLES_MARKER: "Crop Circles"
   STR_CROP_CIRCLES_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area and gather all signs of alien activity, if any. It is recommended to act swiftly, because it is possible to encounter superior M.I.B. forces.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
+  STR_CROP_CIRCLES_NO_LOOT: "Crop Circles Anomaly"
+  STR_CROP_CIRCLES_NO_LOOT_MIB_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area and gather all signs of alien activity, if any. According to our information, there is a substantial concentration of M.I.B. forces in the area, we must consider our capabilities carefully before engaging.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
+  STR_CROP_CIRCLES_ZOMBIES_NO_LOOT: "Crop Circles Anomaly"
+  STR_CROP_CIRCLES_ZOMBIES_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area and gather all signs of alien activity, if any. On approach, we see no sign of M.I.B. in the area, but the farm is swarming with erratic, human-looking figures.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_CULTISTS_DETENTION: "Cultists Detention"
   STR_CULTISTS_DETENTION_TRAP: "Cultists Detention"
   STR_CULTISTS_DETENTION_BRIEFING: "We are on the trail of a crime group that may not be as simple as they might appear. Most likely, they are responsible for mysterious and unexplained disappearances of casual people. The general motive of these crimes is not traceable, we need to detain and interrogate the suspects."
@@ -1326,7 +1340,9 @@ en-US:
   STR_MONSTER_HUNT_RUMORS_DESCRIPTION: "Commander! We have just acquired a report from our alert system about an incident with mysterious monsters! We should send our agents to investigate it as quickly as possible, with a new covert operation planned.{NEWLINE}{ALT}New covert operation available."
   STR_MONSTER_HUNT_RUMORS_UFOPEDIA: "We managed to expand the number of information channels through which we receive information concerning the activity of unknown monsters that are contacting civilians. Based on machine learning algorithms, a huge amount of various information is analyzed, and we are able to get timely information about the location of a new incident. Thus, we will be able to send a squad of our agents there and conduct a 'hot pursuit' investigation, and ideally - try to capture one of those creatures for further study. The first reports will be available shortly."
   STR_LIVE_CREATURES_RESEARCH: "Research of Live Creatures"
+  STR_ZOMBIE_PARASITE: "Zombie Parasite"
   STR_ZOMBIE_BIOLOGY: "Zombie Biology"
+  STR_ZOMBIE_SOURCE: "Zombie Proliferation Source"
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
   STR_VOID_CORP_UFOPEDIA: #FIXME
@@ -1867,5 +1883,7 @@ en-US:
   STR_MONSTER_HUNT_RUMORS_PREREQ_HARD: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
   STR_PRODUCTION: STR_PRODUCTION
   STR_BIOLAB_PREREQ: STR_BIOLAB_PREREQ
+  STR_CROP_CIRCLES_ZOMBIES_PREREQ: STR_CROP_CIRCLES_ZOMBIES_PREREQ
+  STR_ZOMBIE_PARASITE_PREREQ: STR_ZOMBIE_PARASITE_PREREQ
 
   
