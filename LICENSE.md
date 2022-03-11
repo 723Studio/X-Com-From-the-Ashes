@@ -81,6 +81,8 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom E
 
 * **efrenespartano**, **thereaverofdarkness**, **Luke83**, **Thunder_andr**, **Dauntless1942** & **wolwerin**, authors of [UNEXCOM](https://openxcom.mod.io/unexcom) distributed under CC BY-NC 4.0 - various assets.
 
+* **Bulletdesigner**, author of [CH-47 chinnock and V-22 OSPREY for OpenXcom](https://openxcom.mod.io/ch-47-chinnock-and-v-22-osprey) - osprey assets.
+
 * **Luke83** & **efrenespartano**, authors of [OXC Factions](https://openxcom.mod.io/oxc-factions) distributed under CC BY-NC 4.0 - various terrains and maps.
 
 * **Niklas Jansson** [androidarts.com](http://androidarts.com/) and **Riccardo Gasperi**, authors of TerrorWeapons, distributed under reative Commons Attribution-ShareAlike 4.0 International License.

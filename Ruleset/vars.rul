@@ -1,5 +1,5 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
-ftaGameLength: 5
+ftaGameLength: 7
 ironManEnabled: false
 #Campaign
 startingTime:

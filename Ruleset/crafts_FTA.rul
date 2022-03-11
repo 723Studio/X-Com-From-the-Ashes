@@ -135,7 +135,7 @@ crafts:
       name: OSPREY
       mapDataSets:
         - BLANKS
-        - OSPREY
+        - PLANE5
       mapBlocks:
         - name: OSPREY
           width: 20
