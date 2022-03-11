@@ -127,6 +127,8 @@ research:
     points: 50
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
+    unlocks:
+      - STR_SIMPLE_CRAFT_WEAPONS
     listOrder: 20
   - name: STR_XCOM_LORE
     requiresBaseFunc: [ HQ ]
@@ -278,6 +280,9 @@ research:
   - name: STR_SPORTS_BOW_TINKERING
     hidden: true
 
+  - name: STR_SIMPLE_CRAFT_WEAPONS
+    dependencies:
+      - STR_XCOM_EQUIPMENT
   - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT

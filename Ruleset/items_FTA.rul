@@ -4067,7 +4067,7 @@ items:
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.05
     costBuy: 860
     costSell: 650
@@ -4093,7 +4093,7 @@ items:
   - type: STR_SMOKE_GRENADE
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_UTILITY, STR_CONCEALABLE]
     requiresBuy:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.05
     landOnly: true
     costBuy: 920
@@ -4215,7 +4215,7 @@ items:
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     requiresBuy:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
+      - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.05
     landOnly: true
     costBuy: 400
@@ -4294,7 +4294,7 @@ items:
     size: 0.1
     landOnly: true
     costSell: 42200
-    weight: 4
+    weight: 3
     bigSprite: 23
     floorSprite: 23
     handSprite: 1018
@@ -4328,7 +4328,7 @@ items:
     size: 0.4
     costBuy: 1000
     costSell: 750
-    weight: 5
+    weight: 4
     bigSprite: 354
     floorSprite: 354
     handSprite: 504
@@ -5117,7 +5117,7 @@ items:
     weight: 45
     bigSprite: 413
     floorSprite: 413
-    costSell: 14000
+    costSell: 34000
     costThrow:
       time: 70
       energy: 40
@@ -5277,32 +5277,40 @@ items:
     listOrder: 5
   - type: STR_CANNON
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
+    requiresBuy:
+      - STR_SIMPLE_CRAFT_WEAPONS
     size: 1.5
-    costBuy: 30000
-    costSell: 22500
-    transferTime: 48
+    costBuy: 55000
+    costSell: 46500
+    transferTime: 62
     listOrder: 550
   - type: STR_CANNON_ROUNDS_X50
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
-    size: 0.1
-    costBuy: 1240
-    costSell: 1012
-    transferTime: 48
+    requiresBuy:
+      - STR_SIMPLE_CRAFT_WEAPONS
+    size: 0.4
+    costBuy: 4500
+    costSell: 3600
+    transferTime: 62
     clipSize: 50
     listOrder: 551
   - type: STR_STINGRAY_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS]
+    requiresBuy:
+      - STR_SIMPLE_CRAFT_WEAPONS
     size: 0.6
-    costBuy: 32000
-    costSell: 24000
-    transferTime: 48
+    costBuy: 48000
+    costSell: 42000
+    transferTime: 62
     listOrder: 650
-  - type: STR_STINGRAY_MISSILES
+  - type: STR_STINGRAY_MISSILE
     categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
-    size: 0.4
-    costBuy: 6000
-    costSell: 4800
-    transferTime: 48
+    requiresBuy:
+      - STR_SIMPLE_CRAFT_WEAPONS
+    size: 0.8
+    costBuy: 12000
+    costSell: 8200
+    transferTime: 62
     clipSize: 1
     listOrder: 651
 

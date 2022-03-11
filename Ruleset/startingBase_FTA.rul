@@ -79,29 +79,29 @@ startingBase:
     STR_GRENADE: 12
     STR_SMOKE_GRENADE: 14
     STR_INCENDIARY_GRENADE: 10
-    STR_FLASHBANG_GRENADE: 15
+    STR_FLASHBANG_GRENADE: 16
     STR_PROXIMITY_GRENADE: 6
     STR_TRAUMA_PACK: 2
     STR_PERSONAL_AID_KIT: 8
     STR_STIMS_INJECTOR: 10
     STR_COMBAT_SHIELD: 4
     STR_STINGRAY_LAUNCHER: 1
-    STR_STINGRAY_MISSILES: 27
+    STR_STINGRAY_MISSILE: 17
     STR_CANNON: 1
-    STR_CANNON_ROUNDS_X50: 14
+    STR_CANNON_ROUNDS_X50: 8
     STR_ELECTRO_FLARE: 13
     STR_FLASHLIGHT: 10
     STR_SPARE_PARTS: 15
   crafts:
     - type: STR_DRAGONFLY
       id: 1
-      fuel: 0
+      fuel: 20
       damage: 5
       status: STR_REPAIRS
     - type: STR_STALKER
       id: 1
-      fuel: 0
-      damage: 3
+      fuel: 40
+      damage: 2
       weapons:
         - type: STR_STINGRAY
           ammo: 6

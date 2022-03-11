@@ -70,6 +70,7 @@ crafts:
     accel: 3
     weapons: 2
     refuelRate: 40
+    repairRate: 2
     transferTime: 96
     score: 100
     allowLanding: false

@@ -246,9 +246,9 @@ covertOperations:
       - STR_INFILTRATING_MILITARY_RND_PREREQ
     soldierSlots: 4
     optionalSoldierSlots: 4
-    optionalSoldierEffect: -5
+    optionalSoldierEffect: -2
     requiresBaseFunc: [HQ]
-    baseChances: 50
+    baseChances: 60
     concealedItemsBonus: 5 #default 4
     danger: 20
     costs: 430
@@ -417,8 +417,8 @@ covertOperations:
     baseChances: 70
     requiredItems:
       STR_BRIEFCASE_CASH: 1
-    removeRequiredItemsOnSuccess: false
-    removeRequiredItemsOnFailure: false
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
     danger: 0
     costs: 220
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
@@ -443,8 +443,8 @@ covertOperations:
     baseChances: 70
     requiredItems:
       STR_BRIEFCASE_CASH: 1
-    removeRequiredItemsOnSuccess: false
-    removeRequiredItemsOnFailure: false
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
     danger: 0
     costs: 350
     successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
@@ -471,13 +471,12 @@ covertOperations:
     costs: 30
     successDescription: STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_SUCCESS
     failureDescription: STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_FAIL
-    successFunds: -500000
     successScore: 350
     failureScore: -150
-    successEveryItemList:
-      STR_BIOLOGY_EQUIPMENT: 1
-    failureEveryItemList:
-      STR_BIOLOGY_EQUIPMENT: 1
+    requiredItems:
+      STR_BRIEFCASE_CASH: 1
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
     successEvent: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS
     failureEvent: STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION
 
@@ -508,7 +507,7 @@ covertOperations:
   #   failureDescription: "Oink! This test operation fails in the name of covert operation system testing!"
   #   successEveryItemList:
   #     STR_STINGRAY_LAUNCHER: 1
-  #     STR_STINGRAY_MISSILES: 5
+  #     STR_STINGRAY_MISSILE: 5
   #     STR_AVALANCHE_LAUNCHER: 1
   #     STR_AVALANCHE_MISSILES: 3   
   #     # STR_XCOM_EX_COMMANDER_CORPSE: 2

@@ -1121,6 +1121,7 @@ armors:
     psiDefence: *StandardDynamicPsiDefence
     bleedImmune: false
     allowsKneeling: true
+    turnBeforeFirstStep: true
     recovery:
       energy:
         flatHundred: 0.1
@@ -1150,6 +1151,7 @@ armors:
     psiDefence: *StandardDynamicPsiDefence
     bleedImmune: false
     allowsKneeling: true
+    turnBeforeFirstStep: true
     recovery:
       energy:
         flatHundred: 0.13

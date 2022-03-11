@@ -383,7 +383,7 @@ en-US:
   STR_RESISTANCE_HAVEN_ALERT: "Resistance Haven Attacked!"
   STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION: "We are receiving an encrypted distress signal from the Resistance haven. It seems they're in desperate situation and need urgent evacuation. We should dispatch an assault squad, and we would probably need enough free spots in our craft for the Resistance agents to be rescued if needed."
   STR_RESISTANCE_HAVEN_MARKER: "Resistance Haven"
-  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We are receiving a distress transmission from one of the Resistance's shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures; they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_ZOMBIE_FARM_BRIEFING: "We are receiving a distress transmission from one of the Resistance's shelters, covertly located on a farm. As we approached it, we detected countless movements in the dense wheat fields surrounding the farm. We caught a glimpse of monotonously moving figures; they all seemed to be rushing toward the buildings in the center, and people were trying to shoot back from there.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon. The secondary objective is to destroy the Resistance's radio equipment because it contains secret encryption codes."
   STR_RESISTANCE_FARM_CULTISTS: "Resistance Haven Attacked"
   STR_RESISTANCE_FARM_CULTISTS_BRIEFING: "It seems that members of the Resistance have some kind of trouble with the local thugs. As a result, the farm where the Resistance secret cell is located is being raided by outnumbering and well-armed bandits. Our objective is to help the Resistance repel the attack and secure the shelter by neutralizing all hostiles.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
   STR_RESISTANCE_FARM_BANDITS: "Resistance Haven Attacked"
@@ -525,7 +525,7 @@ en-US:
   STR_BIOLAB_EQUIPMENT_ACQUISITION: "Biology Science Equipment Acquisition"
   STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION: "We have a good chance to acquire  specialized equipment for our bio laboratory. Biology science equipment will be even more difficult to obtain than general equipment, but at one cost or another, we need to get this equipment in order to move further in our research.{NEWLINE}Required Items:{NEWLINE}Briefcase with Cash ($100000)>{ALT}1"
   STR_MILITARY_WEAPONRY_ACQUISITION: "Military Weaponry Acquisition"
-  STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION: "We are requested to send our operatives to negotiate with a corrupt general for the supply of military arms and equipment to our friends in the Resistance. The operation is very delicate, we must remain incognito. A cover of independent arms dealers has been prepared for the agents."
+  STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION: "We are requested to send our operatives to negotiate with a corrupt general for the supply of military arms and equipment to our friends in the Resistance. The operation is very delicate, we must remain incognito. A cover of independent arms dealers has been prepared for the agents.{NEWLINE}Required Items:{NEWLINE}Briefcase with Cash ($100000)>{ALT}1"
   STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_SUCCESS: "We were able to negotiate with the general, and the first consignments of weapons have already been sent to the coordinates given to us by the men from the Resistance."
   STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_FAIL: "  Unfortunately, we were unable to negotiate with the general - he suspected and our agents' cover was blown. A fight ensued and our operatives were forced to flee."
 
@@ -652,7 +652,7 @@ en-US:
   STR_IMPROVE_LIVING_FACILITY_DESCRIPTION: "For safety reasons, we strive to reduce contact with the outside world, so our team found itself almost completely isolated at the base. To make it easier to tolerate the new conditions, the staff is requesting new equipment for the gym and additional recreational areas with upholstered furniture, TV and audio equipment. This will help to relieve mental stress and boost morale on the team."
   STR_IMPROVE_LIVING_FACILITY_YES: "Improving base living conditions"
   STR_IMPROVE_LIVING_FACILITY_YES_CHOICE: "We have prepared a list of everything we need. The total amount is $80,000."
-  STR_IMPROVE_LIVING_FACILITY_YES_DESCRIPTION: "The team is very enthusiastic about the new base gear, and the psychological climate is improving.{NEWLINE}Funds>{ALT} -80000{NEWLINE}Loyalty score>{ALT} -100"
+  STR_IMPROVE_LIVING_FACILITY_YES_DESCRIPTION: "The team is very enthusiastic about the new base gear, and the psychological climate is improving.{NEWLINE}Funds>{ALT} -80000{NEWLINE}Loyalty score>{ALT} +100"
   STR_IMPROVE_LIVING_FACILITY_NO: "Improving base living conditions"
   STR_IMPROVE_LIVING_FACILITY_NO_DESCRIPTION: "The team is upset that management is not listening to their wishes.{NEWLINE}Loyalty score>{ALT} -100"
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
@@ -1268,6 +1268,7 @@ en-US:
   STR_CORPSE_ARMORED_VEST: "X-Com Operative Corpse"
 #crafts
   STR_LIGHT_MISSILES: "Light Missiles"
+  STR_STINGRAY_MISSILE: "Stingray Missle"
   STR_DRAGONFLY: "DRAGONFLY"
   STR_DRAGONFLY_UFOPEDIA: "This ultramodern aircraft is used by elite Special Forces units and is highly valued by the military for its vertical takeoff capability, high range and speed, as well as its decent cargo compartment capacity."
   STR_STALKER: "STALKER"
@@ -1773,6 +1774,7 @@ en-US:
   STR_TODOIUM: STR_TODOIUM
   STR_VOID_CONTACT: STR_VOID_CONTACT
   STR_ENIGMA_CONTACT: STR_ENIGMA_CONTACT
+  STR_SIMPLE_CRAFT_WEAPONS: STR_SIMPLE_CRAFT_WEAPONS
   STR_MIB_OFFICE_ENGINEER_ARMOR: STR_MIB_OFFICE_ENGINEER_ARMOR
   STR_MIB_OFFICE_MANAGER_ARMOR: STR_MIB_OFFICE_MANAGER_ARMOR
   STR_MIB_OFFICE_SECURITY_ARMOR: STR_MIB_OFFICE_SECURITY_ARMOR

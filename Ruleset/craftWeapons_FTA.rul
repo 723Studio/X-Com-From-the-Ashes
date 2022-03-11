@@ -33,6 +33,6 @@ craftWeapons:
     reloadAggressive: 50 #32
     ammoMax: 6
     launcher: STR_STINGRAY_LAUNCHER
-    clip: STR_STINGRAY_MISSILES
+    clip: STR_STINGRAY_MISSILE
     projectileType: 0
     projectileSpeed: 8

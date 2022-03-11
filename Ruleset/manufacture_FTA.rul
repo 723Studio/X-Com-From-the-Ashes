@@ -35,6 +35,8 @@ manufacture:
       STR_HIGH_TECH_PARTS: 65
     listOrder: 220030
 
+#armor
+
 #weapons
   - name: STR_KATANA
     category: STR_EQUIPMENT
