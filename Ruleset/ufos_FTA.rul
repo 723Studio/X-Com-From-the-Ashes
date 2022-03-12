@@ -1222,25 +1222,25 @@ ufos:
           width: 20
           length: 20
           items:
-            STR_ALIEN_COMMON_DEVICE:
+            STR_ALIEN_ARTIFACT_OPENER:
               - [9, 9, 0]
         - name: CROPCIRCLE01
           width: 20
           length: 20
           items:
-            STR_ALIEN_COMMON_DEVICE:
+            STR_ALIEN_ARTIFACT_OPENER:
               - [4, 6, 0]
         - name: CROPCIRCLE02
           width: 20
           length: 20
           items:
-            STR_ALIEN_COMMON_DEVICE:
+            STR_ALIEN_ARTIFACT_OPENER:
               - [4, 6, 0]
         - name: CROPCIRCLE03
           width: 20
           length: 20
           items:
-            STR_ALIEN_COMMON_DEVICE:
+            STR_ALIEN_ARTIFACT_OPENER:
               - [11, 8, 0]
 
 extended:

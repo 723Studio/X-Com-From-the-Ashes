@@ -127,8 +127,8 @@ events:
     researchList: [STR_INFILTRATING_MILITARY_RND_PREREQ]
   - name: STR_MISTERY_CULT_EVENT
     description: STR_MISTERY_CULT_EVENT_DESCRIPTION
-    timer: 7200 # 5 days
-    timerRandom: 2880 # 2 days
+    timer: 8640 # 6 days
+    timerRandom: 21600 # 15 days
     background: CULT_BACKGROUND.SCR
     customAnswers:
       0:
@@ -196,7 +196,6 @@ events:
     interruptResearch: STR_CULT_GANG_DEN
     removedCovertOperationsList:
       - STR_CULT_INVESTIGATION
-
 
 #Monsters
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA

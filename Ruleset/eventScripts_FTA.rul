@@ -269,7 +269,7 @@ eventScripts:
       STR_COVERT_OPERATIONS: true
       STR_UFOPEDIA_DECRYPTION: true
     allowedProcessor: 2 #xcom
-    executionOdds: 70
+    executionOdds: 80
 
 #resistance
   - type: STR_RESISTANCE_WEAPONRY_SCRIPT

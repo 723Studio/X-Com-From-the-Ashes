@@ -646,11 +646,6 @@ research:
       - STR_ARMADILLO_CORPSE
       - STR_AMPHIBIAN_CORPSE
       - STR_SWARMIDS_CORPSE
-  - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
-    cost: 288
-    points: 17
-    dependencies:
-      - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_STRANGE_CREATURE #for future tech tree dev
     cost: 0
     points: 0
@@ -1527,11 +1522,16 @@ research:
     listOrder: 30390
 
   #alien
-  - name: STR_ALIEN_COMMON_DEVICE
+  - name: STR_ALIEN_ARTIFACT_OPENER
     cost: 4500
     points: 20
     needItem: true
     listOrder: 40000
+  - name: STR_ALIEN_ARTIFACT_SNAKE_EYE
+    cost: 4500
+    points: 20
+    needItem: true
+    listOrder: 40010
   #evidence
   - name: STR_FLOPPY_SCIENTISTS_LOG
     cost: 8
@@ -1643,12 +1643,6 @@ research:
     points: 10
     dependencies:
       - STR_BASE_DEFENSE_SYSTEMS
-  - name: STR_CREATURES_CONTAINMENT
-    cost: 600
-    points: 60
-    dependencies:
-      - STR_FACILITIES_BLUEPRINTS
-      - STR_LIVE_CREATURES_RESEARCH
   - name: STR_ALIEN_CONTAINMENT
     cost: 2000
     points: 10

@@ -5166,7 +5166,7 @@ items:
     battleType: 0
     bigSprite: 427
     floorSprite: 427
-    handSprite: 836
+    handSprite: 832
     invWidth: 1
     invHeight: 1
     stackSize: 5
@@ -5336,7 +5336,7 @@ items:
     listOrder: 146030
 
 #alien
-  - type: STR_ALIEN_COMMON_DEVICE
+  - type: STR_ALIEN_ARTIFACT_OPENER
     categories: [STR_ALIEN_TECH]
     landOnly: true
     size: 0.01
@@ -5353,6 +5353,23 @@ items:
     invHeight: 1
     recoveryPoints: 180
     listOrder: 80000
+  - type: STR_ALIEN_ARTIFACT_SNAKE_EYE
+    categories: [STR_ALIEN_TECH]
+    landOnly: true
+    size: 0.01
+    #costSell: 170000 #Should be only sellable to VOID
+    missionObjective: true
+    tuThrow: 0
+    alienArtifact: true
+    weight: 7
+    battleType: 10
+    power: 8
+    bigSprite: 461
+    floorSprite: 461
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 180
+    listOrder: 80010
 
 #unit-related
 #aliens

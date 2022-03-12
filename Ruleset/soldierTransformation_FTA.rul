@@ -9,7 +9,7 @@ soldierTransformation:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
        firing: 71 
-    showMinMax: false
+    showMinMax: true
     # requiredItems:
     #   STR_SNIPER_RIFLE: 1
     keepSoldierArmor: true
@@ -43,7 +43,7 @@ soldierTransformation:
     requiredMinStats:
        stamina: 72
        strength: 48
-    showMinMax: false
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -80,7 +80,7 @@ soldierTransformation:
     requiredMinStats:
        reactions: 55
        firing: 50
-    showMinMax: false
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -116,7 +116,7 @@ soldierTransformation:
        stamina: 50
        reactions: 43
        melee: 50
-    showMinMax: false
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -150,7 +150,7 @@ soldierTransformation:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
        bravery: 60
-    showMinMax: false
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -187,7 +187,7 @@ soldierTransformation:
       reactions: 40
       strength: 52
       melee: 50
-    showMinMax: false
+    showMinMax: true
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
