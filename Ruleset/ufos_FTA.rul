@@ -1223,9 +1223,8 @@ ufos:
           length: 20
           randomizedItems:
               - position: [9, 9, 0]
-                amount: 5
-                mixed: true
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY] #add proxy
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE01
@@ -1233,9 +1232,8 @@ ufos:
           length: 20
           randomizedItems:
               - position: [4, 6, 0]
-                amount: 5
-                mixed: true
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY] #add proxy
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE02
@@ -1243,9 +1241,8 @@ ufos:
           length: 20
           randomizedItems:
               - position: [4, 6, 0]
-                amount: 5
-                mixed: true
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY] #add proxy
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE03
@@ -1253,9 +1250,8 @@ ufos:
           length: 20
           randomizedItems:
               - position: [11, 8, 0]
-                amount: 5
-                mixed: true
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY] #add proxy
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
 
