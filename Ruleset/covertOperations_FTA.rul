@@ -169,7 +169,6 @@ covertOperations:
     costs: 60
     allowedArmor:
       - STR_JUMPSUIT_UC
-
     instantSuccessDeployment: 
       STR_EX_COUNCIL_DATA_VAULT: 100
     instantTrapDeployment: 

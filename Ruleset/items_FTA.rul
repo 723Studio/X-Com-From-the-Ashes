@@ -5400,17 +5400,43 @@ items:
     floorSprite: 463
     battleType: 5
     power: 90
+    damageType: 9
     damageAlter:
-      IgnoreOverKill: false
-      ToTile: 0.01
-    damageType: 5
+      IgnoreSelfDestruct: true
+      RandomType: 4
+      ToStun: 0.4
+      ToMorale: 27.0
+      ToTime: 2.7
+      FixRadius: 15
+      RandomStun: false
     isExplodingInHands: true
+    blastRadius: 5
     armor: 5
     invWidth: 1
     invHeight: 1
     recover: false #FIXME Consider
     attraction: 0
     listOrder: 80020
+
+  # - type: TRAP_HALLUCINOGEN_BOMB
+  #   floorSprite: 800
+  #   hitAnimation: 24
+  #   explosionHitSound: 116
+  #   battleType: 5
+  #   power: 150
+  #   damageType: 9
+  #   damageAlter:
+  #     IgnoreSelfDestruct: true
+  #     RandomType: 4
+  #     ToStun: 0.4
+  #     ToMorale: 27.0
+  #     ToTime: 2.7
+  #     FixRadius: 15
+  #     RandomStun: false
+  #   armor: 250
+  #   invWidth: 0
+  #   invHeight: 0
+  #   recover: false
 
 #unit-related
 #aliens
@@ -5726,7 +5752,7 @@ items:
     size: 0.0
     recover: false #TODO Consider
     liveAlien: false
-    #prisonType: 1
+    prisonType: 1
     listOrder: 100376
 #Army
   - type: STR_ARMY_FIELD_SOLDIER_CORPSE

@@ -85,9 +85,7 @@ startingBase:
     STR_PERSONAL_AID_KIT: 8
     STR_STIMS_INJECTOR: 10
     STR_COMBAT_SHIELD: 4
-    STR_STINGRAY_LAUNCHER: 1
     STR_STINGRAY_MISSILE: 17
-    STR_CANNON: 1
     STR_CANNON_ROUNDS_X50: 8
     STR_ELECTRO_FLARE: 13
     STR_FLASHLIGHT: 10
@@ -103,10 +101,10 @@ startingBase:
       fuel: 40
       damage: 2
       weapons:
-        - type: STR_STINGRAY
-          ammo: 6
         - type: STR_CANNON_UC
           ammo: 200
+        - type: STR_STINGRAY
+          ammo: 6
       status: STR_REPAIRS
   # soldiers: #look at save section for rules. for patron reward!
   #   - type: STR_SOLDIER

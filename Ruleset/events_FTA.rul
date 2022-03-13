@@ -109,14 +109,13 @@ events:
     background: BACK01.SCR
     timer: 300
     timerRandom: 120
-    loyalty: -300
     researchList: [STR_EX_COUNCIL_DATA_VAULT_SUCCESS]
   - name: STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT
     description: STR_EX_COUNCIL_DATA_VAULT_FAIL_EVENT_DESCRIPTION
     background: BACK01.SCR
     timer: 300
     timerRandom: 120
-    loyalty: -300
+    loyalty: -100
     researchList: [STR_EX_COUNCIL_DATA_VAULT_FAIL]
 
   - name: STR_INFILTRATING_MILITARY_RND_PREREQ

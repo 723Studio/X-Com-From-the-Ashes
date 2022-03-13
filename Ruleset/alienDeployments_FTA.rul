@@ -2974,8 +2974,6 @@ alienDeployments:
     alertDescription: STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION
     markerName: STR_EX_COUNCIL_DATA_VAULT_ALERT_MARKER
     duration: [168, 336]
-    despawnPenalty: 150
-    #abortPenalty: 220
     extendedObjectiveType: STR_ITEM_EXTRACTION
     startingCondition: STR_COVERT_AGENT_GEAR
     successEvents:
