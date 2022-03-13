@@ -9,6 +9,8 @@ covertOperations:
     optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
     baseChances: 70
+    successLoyalty: 100500
+    failureLoyalty: -100500
     danger: 5
     costs: 60
     allowedArmor:

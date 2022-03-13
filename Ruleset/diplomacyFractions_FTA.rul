@@ -16,7 +16,7 @@ diplomacyFactions:
       STR_RESISTANCE_AGENT: 12
       #STR_SOLDIER: 10
       #STR_SCIENTIST: 12
-    genMissionFreq: 75 #75% chance to run the script
+    genMissionFreq: 85 #85% chance to run the script
     helpTreatyMissions:
       - havenFarm
       - havenForestHouse

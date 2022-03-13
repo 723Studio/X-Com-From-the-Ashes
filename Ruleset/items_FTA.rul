@@ -5411,10 +5411,11 @@ items:
       RandomStun: false
     isExplodingInHands: true
     blastRadius: 5
-    armor: 5
+    hiddenOnMinimap: true
+    armor: 4
     invWidth: 1
     invHeight: 1
-    recover: false #FIXME Consider
+    recover: false
     attraction: 0
     listOrder: 80020
 

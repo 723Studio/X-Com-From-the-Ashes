@@ -678,7 +678,7 @@ en-US:
   STR_BIOLAB_PREREQ_EVENT: "We need a better lab!"
   STR_BIOLAB_PREREQ_EVENT_DESCRIPTION: "Commander, we need a biolab to continue our research. And a good one, full of quality and innovative equipment. Our scientists will make a list of equipment and modify standard lab blueprints. A lot of specific hardware is not available  open market. So we need to get in touch with a certain circle of people who are able to provide us with everything we need. It is necessary to send our people on a covert operation to carry out negotiations.{NEWLINE}{ALT}New covert operations available."
   STR_MONSTER_HUNT_INVESTIGATION_FAILED: "Investigation Failed!"
-  STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: "Our agents returned with little or no data. There are a couple of conflicting testimonies, photos of old smudged footprints and a few clippings from old local newspapers."
+  STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION: "Our agents returned with little or no data. There are a couple of conflicting testimonies, photos of old smudged footprints and a few clippings from old local newspapers.{NEWLINE}Loyalty score>{ALT} -30"
   STR_MIB_CHASING_SUCCESS: "'Chasing M.I.B.' Operation Results"
   STR_MIB_CHASING_FAIL: "'Chasing M.I.B.' Operation Results"
   STR_MIB_CHASING_SUCCESS_DESCRIPTION: "Our agents managed to save and transmit the results of their investigation. Apparently, the M.I.B. are concentrating their activity in a small city east of our base, where we need to focus our search for traces of the Men in Black.  The incident on the road makes us confident that we are on the right course.{NEWLINE}{ALT}New covert operations available."

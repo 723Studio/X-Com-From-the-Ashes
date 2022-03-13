@@ -90,7 +90,8 @@ missionScripts:
         STR_MIB: 100
     researchTriggers:
       STR_CROP_CIRCLES_PREREQ: true
-    executionOdds: 40
+    executionOdds: 50
+    firstMonth: 2
     useTable: false
     spawnGap: 30
     randomSpawnGap: 15
@@ -102,7 +103,7 @@ missionScripts:
 #monsters
   - type: chupaTerror
     firstMonth: 3
-    executionOdds: 35
+    executionOdds: 50
     missionWeights:
       0:
         STR_CHUPA_TERROR_MISSION: 100
@@ -122,7 +123,7 @@ missionScripts:
     varName: chupaTerror
   - type: armodilTerror
     firstMonth: 3
-    executionOdds: 35
+    executionOdds: 50
     missionWeights:
       0:
         STR_ARMADILLO_TERROR_MISSION: 100
@@ -142,7 +143,7 @@ missionScripts:
     varName: armodilTerror
   - type: amphibianTerror
     firstMonth: 3
-    executionOdds: 35
+    executionOdds: 50
     missionWeights:
       0:
         STR_AMPHIBIAN_TERROR_MISSION: 100
@@ -162,7 +163,7 @@ missionScripts:
     varName: amphibianTerror
   - type: swarmidTerror
     firstMonth: 3
-    executionOdds: 35
+    executionOdds: 50
     missionWeights:
       0:
         STR_SWARMID_TERROR_MISSION: 100

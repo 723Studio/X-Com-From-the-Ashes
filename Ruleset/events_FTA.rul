@@ -147,7 +147,7 @@ events:
     background: COVEROPSHQ_BACKGROUND.SCR
     timer: 0
     timerRandom: 0
-    points: -200
+    loyalty: -30
     researchList: [STR_MONSTER_HUNT_RUMORS_PREREQ_HARD]
   - name: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT
     description: STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION
