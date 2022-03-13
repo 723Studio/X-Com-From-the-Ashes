@@ -371,6 +371,8 @@ extraSprites:
       459: Resources/Weapons/Earthbound/Faction/bigob_MilitaryRifleClip.png
       460: Resources/Weapons/Unarmed/bigob_PurpleBlob.png
       461: Resources/Weapons/Alien/Utilities/bigob_AlienSnakeEye.png
+      462: Resources/Weapons/Alien/Utilities/bigob_AlienContainer.png
+      463: Resources/Weapons/Alien/Utilities/bigob_AlienProxyMine.png
 
   - type: FLOOROB.PCK
     files:
@@ -551,6 +553,8 @@ extraSprites:
       459: Resources/Weapons/Earthbound/Faction/floorob_MilitaryRifleClip.png
       #460
       461: Resources/Weapons/Alien/Utilities/floorob_AlienSnakeEye.png
+      462: Resources/Weapons/Alien/Utilities/floorob_AlienContainer.png
+      463: Resources/Weapons/Alien/Utilities/floorob_AlienProxyMine.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -923,6 +927,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/CROPCIRCLES_BACKGROUND.png
+  - type: FARMHOUSE_UFO_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/FARMHOUSE_UFO_BACKGROUND.png
   - type: XCOM_UFO_DEFENSE_BACKGROUND.SCR
     singleImage: true
     width: 320

@@ -4146,7 +4146,7 @@ items:
     battleType: 5
     armor: 30
     attraction: 6
-    recoveryPoints: 2
+    recoveryPoints: 4
     listOrder: 21030
   - type: STR_LIQUID_FLAME
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE]
@@ -5346,7 +5346,7 @@ items:
     alienArtifact: true
     weight: 5
     battleType: 10
-    power: 5
+    power: 4
     bigSprite: 450
     floorSprite: 450
     invWidth: 1
@@ -5370,6 +5370,47 @@ items:
     invHeight: 1
     recoveryPoints: 180
     listOrder: 80010
+  - type: STR_ALIEN_ARTIFACT_DUMMY
+    categories: [STR_ALIEN_TECH]
+    landOnly: true
+    size: 0.01
+    #costSell: 120000 #Should be only sellable to VOID
+    missionObjective: true
+    tuThrow: 0
+    alienArtifact: true
+    weight: 4
+    battleType: 10
+    power: 4
+    bigSprite: 462
+    floorSprite: 462
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 180
+    listOrder: 80020
+  - type: STR_ALIEN_ARTIFACT_PROXY
+    categories: [STR_ALIEN_TECH]
+    landOnly: true
+    size: 0.01
+    #costSell: 120000 #Should be only sellable to VOID
+    missionObjective: true
+    tuThrow: 0
+    alienArtifact: true
+    weight: 4
+    bigSprite: 463
+    floorSprite: 463
+    battleType: 5
+    power: 90
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.01
+    damageType: 5
+    isExplodingInHands: true
+    armor: 5
+    invWidth: 1
+    invHeight: 1
+    recover: false #FIXME Consider
+    attraction: 0
+    listOrder: 80020
 
 #unit-related
 #aliens
@@ -6009,6 +6050,13 @@ items:
     recover: true
     recoverCorpse: false
     listOrder: 100610
+  - type: STR_MAD_MALE_CIVILIAN_FARMER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 100615
   - type: STR_FEMALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -6041,6 +6089,13 @@ items:
     recover: true
     recoverCorpse: false
     listOrder: 100630
+  - type: STR_MAD_CIVILIAN_HUNTER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    listOrder: 100635
   - type: STR_MALE_CITIZEN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -6085,6 +6140,9 @@ items:
     recoveryPoints: -2
     armor: 35
     listOrder: 100660
+  - type: STR_MAD_DOGE
+    refNode: *liveMonster
+    listOrder: 100665
 #xcom
   - type: STR_CORPSE_LEATHER_COAT
     categories: [STR_CORPSES]

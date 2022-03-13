@@ -1,5 +1,5 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
-ftaGameLength: 7
+ftaGameLength: 8
 ironManEnabled: false
 #Campaign
 startingTime:
@@ -114,7 +114,7 @@ loyaltySettings:
   coefGeoscape: 100
   coefDogfight: 100
   coefResearch: 40
-  coefAlienMission: 110
+  coefAlienMission: 100
   coefUfo: 100
   coefAlienBase: 100
   noFundsPenalty: 50

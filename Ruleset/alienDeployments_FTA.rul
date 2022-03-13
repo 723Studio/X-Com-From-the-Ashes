@@ -1222,7 +1222,7 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_5: 50
       STR_NOT_RESCUED_RESISTANCE_6: 50
     duration: [4, 6]
-    despawnPenalty: 200
+    despawnPenalty: 150
     #abortPenalty: 200
     extendedObjectiveType: STR_EVACUATION 
     briefing:
@@ -1297,7 +1297,7 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_5: 50
       STR_NOT_RESCUED_RESISTANCE_6: 50
     duration: [16, 18]
-    despawnPenalty: 200
+    despawnPenalty: 150
     abortPenalty: 240
     briefing:
       textOffset: -16
@@ -1459,7 +1459,7 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [4, 6]
-    despawnPenalty: 200
+    despawnPenalty: 150
     #abortPenalty: 220
     extendedObjectiveType: STR_EVACUATION 
     successEvents:
@@ -1610,7 +1610,7 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [4, 6]
-    despawnPenalty: 200
+    despawnPenalty: 150
     #abortPenalty: 220
     extendedObjectiveType: STR_EVACUATION
     successEvents:
@@ -1786,7 +1786,7 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [4, 6]
-    despawnPenalty: 200
+    despawnPenalty: 150
     abortPenalty: 40
     briefing:
       textOffset: -16
@@ -2019,7 +2019,7 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 24]
-    despawnPenalty: 200
+    despawnPenalty: 150
     abortPenalty: 20
     briefing:
       textOffset: -16
@@ -2144,7 +2144,7 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_HAVEN_ALERT_DESCRIPTION
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [8, 10]
-    despawnPenalty: 200
+    despawnPenalty: 150
     abortPenalty: 250
     briefing:
       textOffset: -16
@@ -2188,9 +2188,11 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RESISTANCE_MEMBER
     duration: [4, 6]
-    despawnPenalty: 200
+    despawnPenalty: 150
     #abortPenalty: 300
-    extendedObjectiveType: STR_EVACUATION 
+    extendedObjectiveType: STR_EVACUATION
+    unlockedResearch: STR_RESISTANCE_SCIENTIST
+    unlockedResearchOnFailure: STR_RESISTANCE_SCIENTIST
     successEvents:
       STR_RESCUED_SCIENTIST: 100
     failureEvents:
@@ -2243,9 +2245,11 @@ alienDeployments:
     alertDescription: STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION
     markerName: STR_RESCUE_RESISTANCE_MEMBER
     duration: [4, 6]
-    despawnPenalty: 200
+    despawnPenalty: 150
     #abortPenalty: 300
     extendedObjectiveType: STR_EVACUATION 
+    unlockedResearch: STR_DESERT_TELESCOPE
+    unlockedResearchOnFailure: STR_DESERT_TELESCOPE
     successEvents:
       STR_RESCUED_SCIENTISTS_TELESCOPE: 100
     failureEvents:
@@ -2838,7 +2842,7 @@ alienDeployments:
     alertDescription: STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION
     markerName: STR_EX_COUNCIL_DATA_VAULT_ALERT_MARKER
     duration: [168, 336]
-    despawnPenalty: 200
+    despawnPenalty: 150
     #abortPenalty: 220
     extendedObjectiveType: STR_ITEM_EXTRACTION
     startingCondition: STR_COVERT_AGENT_GEAR
@@ -2970,7 +2974,7 @@ alienDeployments:
     alertDescription: STR_EX_COUNCIL_DATA_VAULT_ALERT_DESCRIPTION
     markerName: STR_EX_COUNCIL_DATA_VAULT_ALERT_MARKER
     duration: [168, 336]
-    despawnPenalty: 200
+    despawnPenalty: 150
     #abortPenalty: 220
     extendedObjectiveType: STR_ITEM_EXTRACTION
     startingCondition: STR_COVERT_AGENT_GEAR
@@ -3126,11 +3130,12 @@ alienDeployments:
     alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
     markerName: STR_CROP_CIRCLES_MARKER
     duration: [12, 18]
-    despawnPenalty: 200
+    despawnPenalty: 100
     #abortPenalty: 220
     extendedObjectiveType: STR_ITEM_EXTRACTION
     briefing:
       textOffset: -16
+      palette: 2
       background: CROPCIRCLES_BACKGROUND.SCR
       showTarget: false
       desc: STR_CROP_CIRCLES_BRIEFING
@@ -3210,6 +3215,98 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP
             - STR_PDW_CLIP
+  - type: STR_CROP_CIRCLES_POOR_LOOT
+    race: STR_MIB
+    width: 60
+    length: 60
+    height: 6
+    alert: STR_CROP_CIRCLES_ALERT
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
+    markerName: STR_CROP_CIRCLES_MARKER
+    duration: [12, 18]
+    despawnPenalty: 100
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    briefing:
+      textOffset: -16
+      palette: 2
+      background: CROPCIRCLES_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CROP_CIRCLES_BRIEFING
+    terrains:
+      - CULTA
+    script: STR_CROP_CIRCLES_MIB
+    battleScript: MIB_ATTACK_CROP_CIRCLES
+    customUfo: STR_CROP_CIRCLE_POOR_LOOT
+    data:
+      - alienRank: 5
+        lowQty: 2
+        medQty: 4
+        highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
   - type: STR_CROP_CIRCLES_NO_LOOT
     race: STR_MIB
     width: 60
@@ -3220,9 +3317,10 @@ alienDeployments:
     alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
     markerName: STR_CROP_CIRCLES_MARKER
     duration: [12, 18]
-    despawnPenalty: 200
+    despawnPenalty: 100
     briefing:
       textOffset: -16
+      palette: 2
       background: CROPCIRCLES_BACKGROUND.SCR
       showTarget: false
       desc: STR_CROP_CIRCLES_NO_LOOT_MIB_BRIEFING
@@ -3443,11 +3541,12 @@ alienDeployments:
     alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
     markerName: STR_CROP_CIRCLES_MARKER
     duration: [12, 18]
-    despawnPenalty: 200
+    despawnPenalty: 100
     #abortPenalty: 220
     #extendedObjectiveType: STR_ITEM_EXTRACTION
     briefing:
       textOffset: -16
+      palette: 2
       background: CROPCIRCLES_BACKGROUND.SCR
       showTarget: false
       desc: STR_CROP_CIRCLES_ZOMBIES_BRIEFING
@@ -3480,7 +3579,45 @@ alienDeployments:
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
 
-
+  - type: STR_DEAD_CATTLE_MIB
+    race: STR_MAD_CITIZENS_MIB
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_DEAD_CATTLE
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_ALERT_DEAD_CATTLE_DESCRIPTION
+    briefing:
+      textOffset: -16
+      palette: 2
+      background: FARMHOUSE_UFO_BACKGROUND.SCR
+      #music: AS_2_INTRO #
+      showTarget: false
+      desc: STR_DEAD_CATTLE_BRIEFING
+    markerName: STR_DEAD_CATTLE
+    duration: [12, 18]
+    despawnPenalty: 100
+    customUfo: STR_DEAD_COW
+    script: STR_DEAD_CATTLE_MIB
+    #unlockedResearch: #TODO
+    # music:
+    #   - ZIZZ_STUDIO_SPOOKY_SCAPE
+    terrains:
+      - CULTA
+      #- RURAL
+    data:
+      - alienRank: 5 #STR_MAD_MALE_CIVILIAN_FARMER
+        lowQty: 2
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2 #STR_MIB_AGENT_SPAWN
+        lowQty: 4
+        highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 90
+        itemSets: *AnchorEmptyInventory
 
   - type: STR_CULTISTS_DETENTION
     race: STR_CULT_BANDITS

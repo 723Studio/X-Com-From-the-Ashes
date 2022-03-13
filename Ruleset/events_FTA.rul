@@ -583,7 +583,6 @@ events:
     loyalty: -15
     timer: 21600
     timerRandom: 17280
-
   - name: STR_IMPROVE_LIVING_FACILITY
     description: STR_IMPROVE_LIVING_FACILITY_DESCRIPTION
     #background: STR_RESISTANCE_BACKGROUND.SCR

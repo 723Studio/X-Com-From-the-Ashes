@@ -1713,6 +1713,13 @@ ufopaedia:
       - STR_ALIEN_ARTIFACT_SNAKE_EYE
     text: STR_ALIEN_ARTIFACT_SNAKE_EYE_UFOPEDIA
     listOrder: 30000
+  - id: STR_ALIEN_ARTIFACT_DUMMY
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_ALIEN_ARTIFACT_DUMMY
+    text: STR_ALIEN_ARTIFACT_DUMMY_UFOPEDIA
+    listOrder: 30000
 ## STR_ADVERSARY_KNOWLEDGE_UC 45-65
   - id: STR_EMPTY_MIB_EARLY_LORE_STAGE
     type_id: 8
@@ -1863,20 +1870,38 @@ ufopaedia:
       - MIB_BANKER
     text: MIB_BANKER_UFOPEDIA
     listOrder: 45190
+  - id: STR_INFO_UPLOAD
+    type_id: 7
+    image_id: RND_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_INFO_UPLOAD
+    text: STR_INFO_UPLOAD_UFOPEDIA
+    listOrder: 45200
+  - id: STR_MAD_DOGE
+    type_id: 7
+    image_id: RND_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MAD_DOGE
+    text: STR_MAD_DOGE_UFOPEDIA
+    listOrder: 45200
   - id: STR_CULT_GANGER
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC
     requires:
       - STR_CULT_GANGER
     text: STR_CULT_GANGER_UFOPEDIA
-    listOrder: 45200
+    listOrder: 45210
   - id: STR_CULT_COORDINATOR
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC
     requires:
       - STR_CULT_COORDINATOR
     text: STR_CULT_COORDINATOR_UFOPEDIA
-    listOrder: 45210
+    listOrder: 45220
 
 #STR_ALIEN_LIFE_FORMS 65-160
 #enemies - humanoids

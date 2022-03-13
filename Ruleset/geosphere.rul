@@ -971,6 +971,20 @@ regions:
         - [70.22, 74.8, -25.29, -28.4, -14]
         - [85.45, 100, -38.5, -43.7, -14]
 
+  - type: STR_CROP_CORCLES_EARLY_GAME
+    missionZones:
+      -
+        - [248.8, 264.37, -44.15, -34.61, -15] #TODO - add more zones!
+        - [268.671, 277.6, -31.86, -37.22, -15]
+        - [237.2, 246.3, -38.9, -48.2, -15]
+        - [251.4, 261.6, -45, -48.07, -15]
+        - [236.96, 280, -44.56, -40.5, -15]
+        - [356.713, 359.082, -52.165, -53.31, -15]
+        - [351.434, 353.075, -52.94, -53.92, -15]
+        - [351.434, 353.075, -52.94, -53.92, -15]
+        - [1.35, 7.32, -46.16, -49.45, -15]
+        - [36, 43, -48.25, -51, -15]
+
 globe:
   oceanPalette: 12
   countryColor: 239
@@ -1385,6 +1399,13 @@ globe:
       deployments:
         STR_SWARMID_DESERT_TERROR_EASY: 60
         STR_SWARMID_DESERT_TERROR_HARD: 40
+    - id: -15
+      deployments:
+        STR_CROP_CIRCLES_POOR_LOOT: 10
+        STR_CROP_CIRCLES_NO_LOOT: 40
+        STR_CROP_CIRCLES_ZOMBIES_NO_LOOT: 20
+        STR_DEAD_CATTLE_MIB: 30
+
 
 #GIS  
   polygons: 

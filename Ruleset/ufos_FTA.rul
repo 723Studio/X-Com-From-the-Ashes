@@ -1221,27 +1221,64 @@ ufos:
         - name: CROPCIRCLE00
           width: 20
           length: 20
-          items:
-            STR_ALIEN_ARTIFACT_OPENER:
-              - [9, 9, 0]
+          randomizedItems:
+              - position: [9, 9, 0]
+                amount: 5
+                mixed: true
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE01
           width: 20
           length: 20
-          items:
-            STR_ALIEN_ARTIFACT_OPENER:
-              - [4, 6, 0]
+          randomizedItems:
+              - position: [4, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE02
           width: 20
           length: 20
-          items:
-            STR_ALIEN_ARTIFACT_OPENER:
-              - [4, 6, 0]
+          randomizedItems:
+              - position: [4, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE03
           width: 20
           length: 20
-          items:
-            STR_ALIEN_ARTIFACT_OPENER:
-              - [11, 8, 0]
+          randomizedItems:
+              - position: [11, 8, 0]
+                amount: 5
+                mixed: true
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+
+  - type: STR_DEAD_COW
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: DEADCATTLE
+      mapDataSets:
+        - BLANKS
+        - DEADCATTLE
+      mapBlocks:
+        - name: DEADCATTLE00
+          width: 10
+          length: 10
 
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!

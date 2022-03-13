@@ -510,6 +510,10 @@ research:
       - STR_TODOIUM
     listOrder: 25240
 
+#Alien arc
+  - name: STR_INFO_UPLOAD
+    hidden: true
+
 #MIB arc
   #story
   - name: STR_MIB_CHASING_SUCCESS
@@ -708,9 +712,6 @@ research:
     dependencies:
       - STR_ZOMBIE_BIOLOGY
       - STR_CROP_CIRCLES_ZOMBIES_PREREQ
-
-
-
 
 #enemies - humanoids
   - name: STR_XCOM_EX_COMMANDER
@@ -1018,7 +1019,6 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
     listOrder: 6200
-
   - name: STR_ARMADILLO_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
@@ -1045,7 +1045,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
-    listOrder: 6221
+    listOrder: 6230
   - name: STR_AMPHIBIAN
     requiresBaseFunc: [ BIOLAB ]
     cost: 820
@@ -1054,7 +1054,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_STRANGE_CREATURE
-    listOrder: 6222
+    listOrder: 6240
   - name: STR_SWARMIDS_CORPSE
     points: 50
     needItem: true
@@ -1068,8 +1068,57 @@ research:
     destroyItem: true
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
-    listOrder: 115690
-
+    listOrder: 6250
+  - name: STR_MAD_MALE_CIVILIAN_FARMER
+    requiresBaseFunc: [ INTLAB ]
+    cost: 50
+    points: 15
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_INFO_UPLOAD
+      STR_INFO_UPLOAD:
+        - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED
+        - STR_PUMP_ACTION_SHOTGUN
+        - STR_HUNTING_RIFLE
+        - STR_WRENCH
+        - STR_CROWBAR
+        - STR_HATCHET
+    listOrder: 6160
+  - name: STR_MAD_CIVILIAN_HUNTER
+    requiresBaseFunc: [ INTLAB ]
+    cost: 50
+    points: 15
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_INFO_UPLOAD
+      STR_INFO_UPLOAD:
+        - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED
+        - STR_HUNTING_RIFLE
+        - STR_HATCHET
+        - STR_SPORTS_BOW
+        - STR_THROWING_KNIFE
+        - STR_MACHETE
+    listOrder: 6170
+  - name: STR_MAD_DOGE
+    requiresBaseFunc: [ INTLAB ]
+    cost: 30
+    points: 8
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    listOrder: 6180
   #enemies - aliens
   #combat analysis 
   - name: STR_MIB_AGENT_ARMOR
@@ -1532,6 +1581,11 @@ research:
     points: 20
     needItem: true
     listOrder: 40010
+  - name: STR_ALIEN_ARTIFACT_DUMMY
+    cost: 4500
+    points: 20
+    needItem: true
+    listOrder: 40020
   #evidence
   - name: STR_FLOPPY_SCIENTISTS_LOG
     cost: 8

@@ -42,7 +42,7 @@ alienMissions:
   # - delete: STR_ALIEN_SUPPLY
 #early-game scripts
   - type: STR_EARLY_GAME_TROLLING
-    points: 10
+    points: 2
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
@@ -63,6 +63,8 @@ alienMissions:
         trajectory: CA_SPAWN
         timer: 4000
         objective: true
+  - type: STR_CROP_CIRCLES
+    refNode: *TerrorLike
 
 #resistance scripts
   - type: STR_RESISTANCE_HAVEN_DEFENCE
