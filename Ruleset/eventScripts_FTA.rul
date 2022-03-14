@@ -69,12 +69,20 @@ eventScripts:
   - type: STR_EX_COUNCIL_OFFERS
     oneTimeRandomEvents:
       STR_INFILTRATING_MILITARY_RND_PREREQ: 100
-      
     researchTriggers:
       STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ: true
+    firstMonth: 3
     spawnGap: 20
     randomSpawnGap: 50
     executionOdds: 40
+  - type: STR_MISTERY_CULT_EVENT_INITIAL_SCRIPT
+    oneTimeRandomEvents:
+      STR_MISTERY_CULT_EVENT: 100
+    researchTriggers:
+      STR_COVERT_OPERATIONS: true
+      STR_UFOPEDIA_DECRYPTION: true
+    firstMonth: 3
+    executionOdds: 80
 
 #xcom
   - &STR_WORKSHOP_SCRIPT
@@ -86,11 +94,11 @@ eventScripts:
       STR_ENGINEER_STATUS_REPORT: true
       STR_WORKSHOP: false
     allowedProcessor: 2 #xcom
-    executionOdds: 15
+    executionOdds: 25
     maxDifficulty: 3
   - type: STR_WORKSHOP_SCRIPT_SH #extra SH copy
     refNode: *STR_WORKSHOP_SCRIPT
-    executionOdds: 10
+    executionOdds: 15
     minDifficulty: 4
     maxDifficulty: 4
   - &STR_SPORTS_BOW_TINKERING_SCRIPT
@@ -106,11 +114,11 @@ eventScripts:
     facilityTriggers:
       STR_WORKSHOP: true
     allowedProcessor: 2 #xcom
-    executionOdds: 20
+    executionOdds: 25
     maxDifficulty: 3
   - type: STR_SPORTS_BOW_TINKERING_SCRIPT_SH #extra SH copy
     refNode: *STR_SPORTS_BOW_TINKERING_SCRIPT
-    executionOdds: 5
+    executionOdds: 10
     minDifficulty: 4
     maxDifficulty: 4
   - &STR_IMPROVISED_GRENADE_TINKERING_SCRIPT
@@ -146,11 +154,11 @@ eventScripts:
     facilityTriggers:
       STR_WORKSHOP: true
     allowedProcessor: 2 #xcom
-    executionOdds: 8
+    executionOdds: 15
     maxDifficulty: 3
   - type: STR_KATANA_TINKERING_SCRIPT_SH #extra SH copy
     refNode: *STR_KATANA_TINKERING_SCRIPT
-    executionOdds: 3
+    executionOdds: 5
     minDifficulty: 4
     maxDifficulty: 4
   - &STR_ROCKET_GLOVE_TINKERING_SCRIPT
@@ -161,11 +169,11 @@ eventScripts:
     facilityTriggers:
       STR_WORKSHOP: true
     allowedProcessor: 2 #xcom
-    executionOdds: 10
+    executionOdds: 25
     maxDifficulty: 3
   - type: STR_ROCKET_GLOVE_TINKERING_SCRIPT_SH #extra SH copy
     refNode: *STR_ROCKET_GLOVE_TINKERING_SCRIPT
-    executionOdds: 4
+    executionOdds: 10
     minDifficulty: 4
     maxDifficulty: 4
   - type: STR_HELICOPTER_SCRIPT
@@ -187,11 +195,11 @@ eventScripts:
     facilityTriggers:
       STR_WORKSHOP: true
     allowedProcessor: 2 #xcom
-    executionOdds: 10
+    executionOdds: 40
     maxDifficulty: 3
   - type: STR_ELECTRIC_WEAPONS_SCRIPT_SH #extra SH copy
     refNode: *STR_ELECTRIC_WEAPONS_SCRIPT
-    executionOdds: 2
+    executionOdds: 15
     minDifficulty: 4
     maxDifficulty: 4
   - &BIOLAB_PREREQ_SCRIPT
@@ -205,7 +213,7 @@ eventScripts:
     itemTriggers:
       STR_FACEHUGGER_CORPSE: true
     allowedProcessor: 2 #xcom
-    executionOdds: 60
+    executionOdds: 50
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE
     refNode: *BIOLAB_PREREQ_SCRIPT
     itemTriggers:
@@ -262,14 +270,7 @@ eventScripts:
       STR_EX_COUNCIL_MEMBER_INITIAL: true
       STR_COVERT_OPERATIONS: true
     allowedProcessor: 2 #xcom
-  - type: STR_MISTERY_CULT_EVENT_INITIAL_SCRIPT
-    oneTimeRandomEvents:
-      STR_MISTERY_CULT_EVENT: 100
-    researchTriggers:
-      STR_COVERT_OPERATIONS: true
-      STR_UFOPEDIA_DECRYPTION: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 80
+
 
 #resistance
   - type: STR_RESISTANCE_WEAPONRY_SCRIPT

@@ -345,6 +345,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
             - STR_GRENADE
           -
             - STR_LIGHT_CANNON
@@ -364,10 +365,10 @@ alienDeployments:
             - STR_RIFLE_EXP_CLIP
             - STR_CASH_PACK
           -
-            - STR_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_RIFLE
@@ -396,6 +397,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
             - STR_GRENADE
             - STR_CASH_PACK
           -
@@ -406,8 +408,9 @@ alienDeployments:
             - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_FLASHBANG_GRENADE
             - STR_CASH_PACK
           -
@@ -644,67 +647,67 @@ alienDeployments:
         itemSets:
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_CASH_PACK
             - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_CASH_PACK
             - STR_CREDIT_CARD
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_CREDIT_CARD
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_CREDIT_CARD
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_CREDIT_CARD
+          -
+            - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_CREDIT_CARD_SILVER
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_CREDIT_CARD_SILVER
             - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_CASH_PACK
             - STR_CASH_PACK
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_CASH_PACK
-            - STR_CASH_PACK
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
       - alienRank: 7 #MIB_BANKER
         lowQty: 1
         highQty: 1
@@ -749,16 +752,20 @@ alienDeployments:
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
-            - STR_CREDIT_CARD_GOLD
-            - STR_BRIEFCASE_CASH
-          -
-            - STR_PISTOL
             - STR_PISTOL_CLIP
             - STR_CREDIT_CARD_GOLD
             - STR_BRIEFCASE_CASH
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_CREDIT_CARD_GOLD
             - STR_BRIEFCASE_CASH
 
@@ -1044,6 +1051,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_LIGHT_CANNON
@@ -1198,6 +1206,7 @@ alienDeployments:
             - STR_PISTOL_EXP_CLIP
           -
             - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_GRENADE
@@ -1582,11 +1591,11 @@ alienDeployments:
             - STR_SMG_CLIP
             - STR_SMG_CLIP
           -
-            - STR_PDW
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP
-            - STR_FLASHBANG_GRENADE 
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_GRENADE
           -
             - STR_RIFLE
             - STR_RIFLE_EXP_CLIP
@@ -1624,7 +1633,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_SEMI_AUTO_SHOTGUN
@@ -1920,7 +1929,7 @@ alienDeployments:
             - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_GRENADE
@@ -1944,7 +1953,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_FLASHBANG_GRENADE
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
         lowQty: 2
@@ -1962,7 +1971,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_SEMI_AUTO_SHOTGUN
@@ -2453,10 +2462,11 @@ alienDeployments:
             - STR_SMG_CLIP
             - STR_GRENADE
           -
-            - STR_PDW
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP 
-            - STR_FLASHBANG_GRENADE 
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_GRENADE 
           -
             - STR_RIFLE
             - STR_RIFLE_EXP_CLIP
@@ -2466,6 +2476,8 @@ alienDeployments:
             - STR_RIFLE
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_GRENADE
           -
             - STR_SHOTGUN
             - STR_SHOTGUN_SHELLS_BS
@@ -2474,6 +2486,7 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BATON 
           -
             - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE 
@@ -2487,11 +2500,13 @@ alienDeployments:
             - STR_PISTOL 
             - STR_PISTOL_CLIP
             - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
             - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_SEMI_AUTO_SHOTGUN
@@ -2518,6 +2533,7 @@ alienDeployments:
             - STR_GRENADE
           -
             - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_EXP_CLIP
             - STR_RIFLE_CLIP
@@ -3235,6 +3251,7 @@ alienDeployments:
             - STR_RIOT_PISTOL
             - STR_RIOT_PISTOL_CLIP
             - STR_RIOT_PISTOL_CLIP 
+            - STR_RIOT_PISTOL_CLIP
             - STR_DATA_VAULT
           -
             - STR_HEAVY_PISTOL
@@ -3244,9 +3261,9 @@ alienDeployments:
             - STR_DATA_VAULT
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
             - STR_DATA_VAULT
           -
             - STR_MACHINE_PISTOL
@@ -3338,7 +3355,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_RIFLE
@@ -3430,7 +3447,7 @@ alienDeployments:
             - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
@@ -3528,7 +3545,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_RIFLE
@@ -3599,7 +3616,7 @@ alienDeployments:
             - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
@@ -3959,7 +3976,8 @@ alienDeployments:
             - STR_PISTOL_EXP_CLIP
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_FLASHBANG_GRENADE
           -
@@ -4022,7 +4040,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_PISTOL
@@ -4148,8 +4166,9 @@ alienDeployments:
         itemSets:
           -
             - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
           -
             - STR_PISTOL
             - STR_PISTOL_EXP_CLIP
@@ -4183,11 +4202,13 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
           -
             - STR_PDW
             - STR_PDW_CLIP
@@ -4207,6 +4228,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
             - STR_FLASHBANG_GRENADE
           -

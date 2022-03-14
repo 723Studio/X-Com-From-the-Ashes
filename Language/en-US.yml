@@ -1066,6 +1066,7 @@ en-US:
   STR_HEAVY_PISTOL_UFOPEDIA: "A convenient and accurate pistol with a frame reinforced for a high caliber ammo. Each of the nine bullets contained in the clip is ready to tear the flesh of any enemy, if he did not take care of his armor."
   STR_HEAVY_PISTOL_CLIP: "Heavy Pistol Clip"
   STR_HEAVY_PISTOL_EXP_CLIP: "Heavy Pistol Exp. Clip"
+  STR_HEAVY_PISTOL_AA_CLIP: "Heavy Pistol AA Clip"
   STR_WOUNDGUN: "Woundgun"
   STR_WOUNDGUN_UFOPEDIA: "An insidious weapon that uses a tightly packed briquette of thin needles instead of a bullet. On contact with a hard surface the needles spread in a bunch. Upon reaching the soft tissues of the victim, the needles receive a transverse spinning impulse, shattering and tearing everything in their path. This causes the victim unimaginable suffering and very serious injury. Because of its cruelty, this technology is banned by the UN convention."
   STR_WOUNDGUN_CLIP: "Woundgun Clip"

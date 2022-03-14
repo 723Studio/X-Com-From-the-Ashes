@@ -1107,6 +1107,7 @@ items:
     compatibleAmmo:
       - STR_HEAVY_PISTOL_CLIP
       - STR_HEAVY_PISTOL_EXP_CLIP
+      - STR_HEAVY_PISTOL_AA_CLIP
     accuracyCloseQuarters: 125
     accuracySnap: 65
     accuracyAimed: 75
@@ -1142,7 +1143,7 @@ items:
     power: 38
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 1.05
+      ArmorEffectiveness: 1.1
     clipSize: 8
     battleType: 2
     armor: 30
@@ -1177,6 +1178,26 @@ items:
     armor: 30
     attraction: 15
     listOrder: 5112
+  - type: STR_HEAVY_PISTOL_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE]
+    size: 0.02
+    costSell: 500
+    weight: 2
+    landOnly: true
+    bigSprite: 301
+    floorSprite: 4
+    handSprite: 136
+    hitSound: 58
+    hitAnimation: 26
+    power: 52
+    damageAlter:
+      ArmorEffectiveness: 1.1
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 12
+    attraction: 8
+    listOrder: 5113
   - type: STR_WOUNDGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE]
     size: 0.1
