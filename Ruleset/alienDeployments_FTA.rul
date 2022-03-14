@@ -1288,6 +1288,7 @@ alienDeployments:
     extendedObjectiveType: STR_EVACUATION 
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_ZOMBIE_FARM_BRIEFING
@@ -1362,6 +1363,7 @@ alienDeployments:
     abortPenalty: 240
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_FARM_CULTISTS_BRIEFING
@@ -1550,6 +1552,7 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_6: 50
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_FOREST_HOUSE_DESCRIPTION
@@ -1716,6 +1719,7 @@ alienDeployments:
       STR_NOT_RESCUED_RESISTANCE_6: 50
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_URBAN_HIDEOUT_BRIEFING
@@ -1884,6 +1888,7 @@ alienDeployments:
     abortPenalty: 40
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION
@@ -2161,6 +2166,7 @@ alienDeployments:
     abortPenalty: 20
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_MIB_FOREST_BEACON_DESCRIPTION
@@ -2309,6 +2315,7 @@ alienDeployments:
     abortPenalty: 250
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION
@@ -2362,6 +2369,7 @@ alienDeployments:
       STR_NOT_RESCUED_SCIENTIST: 100
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_SCIENTIST_REFUGE_BRIEFING
@@ -2419,6 +2427,7 @@ alienDeployments:
       STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: 100
     briefing:
       textOffset: -16
+      palette: 2
       background: STR_RESISTANCE_BACKGROUND.SCR
       showTarget: false
       desc: STR_DESERT_TELESCOPE_BRIEFING
@@ -2761,6 +2770,7 @@ alienDeployments:
     abortPenalty: 200
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_TERROR_BRIEFING
@@ -2791,6 +2801,7 @@ alienDeployments:
     abortPenalty: 250
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_TERROR_BRIEFING
@@ -2821,6 +2832,7 @@ alienDeployments:
     abortPenalty: 200
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_TERROR_BRIEFING
@@ -2853,6 +2865,7 @@ alienDeployments:
     abortPenalty: 250
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_TERROR_BRIEFING
@@ -2884,6 +2897,7 @@ alienDeployments:
     abortPenalty: 200
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_TERROR_BRIEFING
@@ -2916,6 +2930,7 @@ alienDeployments:
     abortPenalty: 250
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_TERROR_BRIEFING
@@ -2948,6 +2963,7 @@ alienDeployments:
     abortPenalty: 200
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       desc: STR_MONSTER_TERROR_BRIEFING
@@ -3735,7 +3751,6 @@ alienDeployments:
             - STR_LMG
             - STR_LMG_CLIP
             - STR_LMG_CLIP
-
   - type: STR_CROP_CIRCLES_ZOMBIES_NO_LOOT
     race: STR_ZOMBIES
     width: 50
@@ -3783,7 +3798,6 @@ alienDeployments:
         highQty: 2
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
-
   - type: STR_DEAD_CATTLE_MIB
     race: STR_MAD_CITIZENS_MIB
     width: 50
@@ -4149,6 +4163,7 @@ alienDeployments:
     extendedObjectiveType: STR_EVACUATION 
     briefing:
       textOffset: -16
+      palette: 2
       background: MIB_BACKGROUND.SCR
       showTarget: false
       desc: STR_MIB_EARLY_TRAP_ESCAPE_BRIEFING
@@ -4288,6 +4303,7 @@ alienDeployments:
     escapeType: 1
     briefing:
       textOffset: -16
+      palette: 2
       background: SECRET_AGENT.SCR
       showTarget: false
       desc: STR_LOCALS_TRAP_BRIEFING  
@@ -4323,6 +4339,7 @@ alienDeployments:
     isHidden: true
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER.SCR
       showTarget: false
       showCraft: false
@@ -4346,6 +4363,7 @@ alienDeployments:
     isHidden: true
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER.SCR
       showTarget: false
       showCraft: false
@@ -4369,6 +4387,7 @@ alienDeployments:
     isHidden: true
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER.SCR
       showTarget: false
       showCraft: false
@@ -4392,6 +4411,7 @@ alienDeployments:
     isHidden: true
     briefing:
       textOffset: -16
+      palette: 2
       background: FOREST_MONSTER.SCR
       showTarget: false
       showCraft: false
@@ -4420,6 +4440,7 @@ alienDeployments:
     abortPenalty: 35
     briefing:
       textOffset: -16
+      palette: 2
       background: CULT_BACKGROUND.SCR
       showTarget: false
       desc: STR_CULTISTS_DETENTION_BRIEFING
