@@ -238,3 +238,114 @@ interfaces:
       - id: buttonExit
         pos: [255, 157]
         size: [20, 20]
+  - type: battlescape
+    palette: PAL_BATTLESCAPE
+    elements:
+      - id: textLoad
+        color: 15
+      - id: textName
+        color: 128
+      - id: numTUs
+        color: 64
+      - id: numEnergy
+        color: 16
+      - id: numHealth
+        color: 32
+      - id: numMorale
+        color: 192
+      - id: barTUs
+        color: 64
+      - id: barEnergy
+        color: 16
+      - id: barHealth
+        color: 32
+        color2: 82
+      - id: barMorale
+        color: 192
+      - id: barMana
+        color: 208
+      - id: numAmmoLeft
+        color: 2
+      - id: numAmmoRight
+        color: 2
+      - id: textTooltip
+        color: -1
+      - id: buttonReserveNone
+        color: 67
+      - id: buttonReserveSnap
+        color: 35
+      - id: buttonReserveAimed
+        color: 35
+      - id: buttonReserveAuto
+        color: 35
+      - id: buttonReserveKneel
+        color: 35
+      - id: buttonZeroTUs
+        color: 35
+      - id: infoBoxOK
+        color: 15
+        color2: 27
+        border: 20
+      - id: infoBoxOKButton
+        color: 15
+      - id: infoBox
+        color: -1
+        color2: 10
+        border: 2
+      - id: grenadeMenu
+        color: 15
+        color2: 27
+        border: 20
+      # The usage of the following is hard-coded, these ones MUST be defined
+      - id: visibleUnits
+        pos: [300, -16]
+        color: 16
+      - id: squadsightUnits
+        color: 54
+      - id: woundedUnits
+        color: 134
+      - id: passingOutUnits
+        color: 198
+      - id: icons
+        size: [320, 56]
+      - id: numLayers
+        color: 15
+      - id: warning
+        color: 16
+        color2: 32
+      - id: messageWindows
+        color: -1
+        color2: 14
+        border: 7
+      - id: optionLists
+        color: -1
+        color2: 14
+        border: -1
+      - id: disabledUserOption
+        color: 238
+      - id: messageWindowButtons
+        color: -1
+      - id: messageWindowBorder
+        color: -1
+      - id: actionMenu
+        color: -1
+        color2: 14
+        border: 3
+      - id: grenadeBackground
+        color: 24
+        color2: 28
+        border: 15
+      - id: medikitRed
+        color: 2
+      - id: medikitGreen
+        color: 4
+      - id: medikitBlue
+        color: 13
+      - id: medikitOrange
+        color: 6
+      - id: twoHandedRed
+        color: 36
+      - id: twoHandedGreen
+        color: 52
+      - id: battleObjects
+        color: 228
