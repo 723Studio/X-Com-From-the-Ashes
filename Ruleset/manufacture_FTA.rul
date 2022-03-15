@@ -1,75 +1,38 @@
 manufacture:
-#crafts
-  - name: STR_HELICOPTER
-    category: STR_CRAFT
+  - name: STR_FAKE_AGENT_ID
+    category: STR_COVERT_TOOLS
     requires:
-      - STR_HELICOPTER
-    space: 5
-    time: 450
-    cost: 2000
-    requiredItems:
-      STR_CRATED_HELICOPTER: 1
-      STR_SPARE_PARTS: 20
-    listOrder: 220030
-  - name: STR_OSPREY
-    category: STR_CRAFT
-    requires:
-      - STR_OSPREY
-    space: 10
-    time: 1300
-    cost: 10000
-    requiredItems:
-      STR_CRATED_OSPREY: 1
-      STR_SPARE_PARTS: 35
-    listOrder: 220030
-  - name: STR_DRAGONFLY
-    category: STR_CRAFT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
-    space: 25
-    time: 5300
-    cost: 260000
-    requiredItems:
-      STR_SPARE_PARTS: 215
-      STR_HIGH_TECH_PARTS: 65
-    listOrder: 220030
-
-#armor
-
-#weapons
-  - name: STR_KATANA
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_KATANA
+      - STR_MONSTER_HUNT_START
     space: 1
-    time: 860
-    cost: 2700
+    time: 3
+    cost: 22000
     producedItems:
-      STR_KATANA: 1
+      STR_FAKE_AGENT_ID: 1
     listOrder: 220030
-  - name: STR_ELECTRIC_STICK
+  - name: STR_TASER_CANNON
     category: STR_WEAPONS
-    requiresBaseFunc: [WORK]
     requires:
-      - STR_ELECTRIC_STICK
-    requiredItems:
-      STR_SPARE_PARTS: 6
-      STR_HIGH_TECH_PARTS: 2
-    space: 3
-    time: 620
-    cost: 15600
+      - STR_TASER_CANNON
+    space: 4
+    time: 450
+    cost: 43000
     producedItems:
-      STR_ELECTRIC_STICK: 1
+      STR_TASER_CANNON: 1
+    listOrder: 220030
+  - name: STR_TASER_CANNON_CLIP
+    category: STR_CLIPS
+    requires:
+      - STR_TASER_CANNON
+    space: 2
+    time: 120
+    cost: 15000
+    producedItems:
+      STR_TASER_CANNON_CLIP: 1
     listOrder: 220030
   - name: STR_BOW_ARROW_HE
     category: STR_CLIPS
-    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
-    requiredItems:
-      STR_CHEMICALS: 1
     space: 2
     time: 15
     cost: 800
@@ -78,11 +41,8 @@ manufacture:
     listOrder: 220030
   - name: STR_BOW_ARROW_IN
     category: STR_CLIPS
-    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
-    requiredItems:
-      STR_CHEMICALS: 1
     space: 2
     time: 22
     cost: 950
@@ -91,11 +51,8 @@ manufacture:
     listOrder: 220030
   - name: STR_BOW_ARROW_STUN
     category: STR_CLIPS
-    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
-    requiredItems:
-      STR_CHEMICALS: 1
     space: 3
     time: 36
     cost: 1300
@@ -104,261 +61,12 @@ manufacture:
     listOrder: 220030
   - name: STR_BOW_ARROW_ELECTRIC
     category: STR_CLIPS
-    requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
-      - STR_ELECTRIC_WEAPONS
-    requiredItems:
-      STR_HIGH_TECH_PARTS: 1
+      - STR_DAMAGE_11
     space: 4
     time: 70
     cost: 4000
     producedItems:
       STR_BOW_ARROW_ELECTRIC: 1
     listOrder: 220030
-  - name: STR_CHEMPISTOL
-    category: STR_WEAPONS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_CHEMPISTOL_MANUFACTURING
-    requiredItems:
-      STR_SPARE_PARTS: 8
-      STR_HIGH_TECH_PARTS: 3
-    space: 4
-    time: 940
-    cost: 6800
-    producedItems:
-      STR_CHEMPISTOL: 1
-    listOrder: 220030
-  - name: STR_CHEMPISTOL_CLIP
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_CHEMPISTOL_CLIP_MANUFACTURING
-    requiredItems:
-      STR_CHEMICALS: 4
-    space: 2
-    time: 260
-    cost: 2000
-    producedItems:
-      STR_CHEMPISTOL_CLIP: 1
-    listOrder: 220030
-  - name: STR_ROCKET_GLOVE
-    category: STR_WEAPONS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_ROCKET_GLOVE
-    requiredItems:
-      STR_SPARE_PARTS: 4
-      STR_HIGH_TECH_PARTS: 1
-    space: 4
-    time: 760
-    cost: 8600
-    producedItems:
-      STR_ROCKET_GLOVE: 1
-    listOrder: 220030
-  - name: STR_ROCKET_GLOVE_CLIP
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_ROCKET_GLOVE
-    requiredItems:
-      STR_SPARE_PARTS: 1
-      STR_CHEMICALS: 2
-    space: 2
-    time: 150
-    cost: 1400
-    producedItems:
-      STR_ROCKET_GLOVE_CLIP: 1
-    listOrder: 220030
-  - name: STR_TASER_CANNON
-    category: STR_WEAPONS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_TASER_CANNON
-    requiredItems:
-      STR_SPARE_PARTS: 18
-      STR_HIGH_TECH_PARTS: 10
-    space: 5
-    time: 810
-    cost: 43000
-    producedItems:
-      STR_TASER_CANNON: 1
-    listOrder: 220030
-  - name: STR_TASER_CANNON_CLIP
-    category: STR_CLIPS
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_TASER_CANNON
-    requiredItems:
-      STR_SPARE_PARTS: 6
-      STR_HIGH_TECH_PARTS: 4
-    space: 2
-    time: 140
-    cost: 15000
-    producedItems:
-      STR_TASER_CANNON_CLIP: 1
-    listOrder: 220030
-  - name: STR_RAILGUN #TODO balance
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_RAILGUN
-    requiredItems:
-      STR_SPARE_PARTS: 40
-      STR_HIGH_TECH_PARTS: 12
-    space: 1
-    time: 860
-    cost: 2700
-    producedItems:
-      STR_RAILGUN: 1
-    listOrder: 220030
-  - name: STR_RAILGUN_SLUG #TODO balance
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_RAILGUN
-    requiredItems:
-      STR_SPARE_PARTS: 8
-      STR_HIGH_TECH_PARTS: 2
-    space: 1
-    time: 860
-    cost: 2700
-    producedItems:
-      STR_RAILGUN_SLUG: 1
-    listOrder: 220030
-#equipment
-  - name: STR_IMPROVISED_GRENADE
-    category: STR_EQUIPMENT
-    requires:
-      - STR_IMPROVISED_GRENADE
-    requiredItems:
-      STR_CHEMICALS: 1
-    space: 1
-    time: 8
-    cost: 30
-    producedItems:
-      STR_IMPROVISED_GRENADE: 1
-    listOrder: 220030
-  - name: STR_IMPROVISED_SMOKE_GRENADE
-    category: STR_EQUIPMENT
-    requires:
-      - STR_IMPROVISED_SMOKE_GRENADE
-    requiredItems:
-      STR_CHEMICALS: 1
-    space: 1
-    time: 14
-    cost: 25
-    producedItems:
-      STR_IMPROVISED_SMOKE_GRENADE: 1
-    listOrder: 220030
-  - name: STR_COMBAT_SHIELD
-    category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
-    requires:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
-    requiredItems:
-      STR_SPARE_PARTS: 2
-    space: 1
-    time: 60
-    cost: 2700
-    producedItems:
-      STR_COMBAT_SHIELD: 1
-    listOrder: 220030
-  - name: STR_MOTION_SCANNER
-    category: STR_EQUIPMENT
-    requires:
-      - STR_MOTION_SCANNER_PROTOTYPE
-    space: 3
-    time: 630
-    cost: 36000
-    requiredItems:
-      STR_HIGH_TECH_PARTS: 2
-    producedItems:
-      STR_MOTION_SCANNER: 1
-    requiresBaseFunc: [WORK]
-    listOrder: 220040
-#components
-  - name: STR_SPARE_PARTS
-    category: STR_COMPONENTS
-    requires:
-      - STR_ENGINEER_STATUS_REPORT
-    space: 1
-    time: 15
-    cost: 240
-    producedItems:
-      STR_SPARE_PARTS: 1
-    listOrder: 220030
-  - name: STR_CHEMICALS
-    category: STR_COMPONENTS
-    requires:
-      - STR_ENGINEER_STATUS_REPORT
-    space: 1
-    time: 18
-    cost: 280
-    producedItems:
-      STR_CHEMICALS: 1
-    listOrder: 220040
-  - name: STR_HIGH_TECH_PARTS
-    category: STR_COMPONENTS
-    requiresBaseFunc: [WORK]
-    # requires:
-    #   - STR_HIGH_TECH_PARTS
-    requiredItems:
-      STR_SPARE_PARTS: 2
-    space: 1
-    time: 12
-    cost: 950
-    producedItems:
-      STR_HIGH_TECH_PARTS: 1
-    listOrder: 220050
-#special
-  - name: STR_FAKE_AGENT_ID
-    category: STR_COVERT_TOOLS
-    requires:
-      - STR_MONSTER_HUNT_START
-    space: 1
-    time: 25
-    cost: 22000
-    producedItems:
-      STR_FAKE_AGENT_ID: 1
-    listOrder: 220030
-#refining
-  - name: STR_CREDIT_CARD_BREACHING
-    category: STR_LOOT
-    requires:
-      - STR_CREDIT_CARD_BREACHING
-    requiredItems:
-      STR_CREDIT_CARD: 1
-    space: 1
-    time: 450
-    cost: -22000
-    producedItems:
-      STR_PLASTIC_CARD: 1
-    listOrder: 220040
-  - name: STR_SILVER_CREDIT_CARD_BREACHING
-    category: STR_LOOT
-    requires:
-      - STR_CREDIT_CARD_BREACHING
-    requiredItems:
-      STR_CREDIT_CARD_SILVER: 1
-    space: 1
-    time: 700
-    cost: -47000
-    producedItems:
-      STR_PLASTIC_CARD: 1
-    listOrder: 220040
-  - name: STR_GOLD_CREDIT_CARD_BREACHING
-    category: STR_LOOT
-    requires:
-      - STR_CREDIT_CARD_BREACHING
-    requiredItems:
-      STR_CREDIT_CARD_GOLD: 1
-    space: 1
-    time: 850
-    cost: -110000
-    producedItems:
-      STR_PLASTIC_CARD: 1
-    listOrder: 220040
-
-#misc

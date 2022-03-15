@@ -1,393 +1,184 @@
 eventScripts:
-#story
+#introduction
   - type: STR_RND_STATUS_REPORT_SCRIPT
     oneTimeSequentialEvents: [STR_RND_STATUS_REPORT_EVENT]
+    firstMonth: 0
     lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_INTEL_STATUS_REPORT_SCRIPT
     oneTimeSequentialEvents: [STR_INTEL_STATUS_REPORT_EVENT]
+    firstMonth: 0
     lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_ENGINEER_STATUS_REPORT_SCRIPT
     oneTimeSequentialEvents: [STR_ENGINEER_STATUS_REPORT_EVENT]
+    firstMonth: 0
     lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_QUARTERMASTER_STATUS_REPORT_SCRIPT
     oneTimeSequentialEvents: [STR_QUARTERMASTER_STATUS_REPORT_EVENT]
+    firstMonth: 0
     lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_MILITARY_STATUS_REPORT_SCRIPT
     oneTimeSequentialEvents: [STR_MILITARY_STATUS_REPORT_EVENT]
+    firstMonth: 0
     lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_VEHICLES_STATUS_REPORT_SCRIPT
     oneTimeSequentialEvents: [STR_VEHICLES_STATUS_REPORT_EVENT]
+    firstMonth: 0
     lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_NO_SUPPLY_WARNING_SCRIPT
     oneTimeSequentialEvents: [STR_NO_SUPPLY_WARNING_EVENT]
+    firstMonth: 0
     lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_NO_SUPPLY_SECOND_WARNING_SCRIPT
     oneTimeSequentialEvents: [STR_NO_SUPPLY_SECOND_WARNING_EVENT]
     firstMonth: 1
     lastMonth: 1
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
     researchTriggers:
       STR_SUPPLIES: false
   - type: STR_NO_SUPPLY_THIRD_WARNING_SCRIPT
-    oneTimeSequentialEvents: [STR_NO_SUPPLY_THIRD_WARNING_EVENT]
+    oneTimeSequentialEvents: [ STR_NO_SUPPLY_THIRD_WARNING_EVENT]
     firstMonth: 2
+    lastMonth: -1
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
     researchTriggers:
       STR_SUPPLIES: false
   - type: STR_MONSTER_HUNT_START #Start of monster hunt arc
     oneTimeSequentialEvents: [STR_MONSTER_HUNT_START_EVENT]
-    executionOdds: 60
-  - &STR_STEAL_OSPREY
-    type: STR_STEAL_OSPREY
-    oneTimeSequentialEvents: [STR_STEAL_OSPREY_EVENT]
-    firstMonth: 2
-    lastMonth: 7
-    executionOdds: 30
-    maxDifficulty: 3
-  - type: STR_STEAL_OSPREY_SH #extra SH copy
-    refNode: *STR_STEAL_OSPREY
-    lastMonth: 6
-    executionOdds: 20
-    minDifficulty: 4
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    minDifficulty: 0
     maxDifficulty: 4
-  - type: STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_SCRIPT #Start of monster hunt arc
-    oneTimeSequentialEvents: [STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_EVENT]
-    executionOdds: 85
-    researchTriggers:
-      STR_MIB_TRAP_DATA_VAULT_SUCCESS: true
-    itemTriggers:
-      STR_DATA_VAULT: true
-  - type: STR_MONSTER_HUNT_SCRIPT
-    oneTimeRandomEvents:
-      STR_MONSTER_HUNT_RUMORS_CHUPA: 100
-      STR_MONSTER_HUNT_RUMORS_ARMADILLO: 80
-      STR_MONSTER_HUNT_RUMORS_AMPHIBIAN: 80
-      STR_MONSTER_HUNT_RUMORS_SWARMID: 50
-    researchTriggers:
-      STR_MONSTER_HUNT_RUMORS: true
-    spawnGap: 20
-    randomSpawnGap: 50
-    executionOdds: 40
-  - type: STR_EX_COUNCIL_OFFERS
-    oneTimeRandomEvents:
-      STR_INFILTRATING_MILITARY_RND_PREREQ: 100
-    researchTriggers:
-      STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ: true
-    firstMonth: 3
-    spawnGap: 20
-    randomSpawnGap: 50
-    executionOdds: 40
-  - type: STR_MISTERY_CULT_EVENT_INITIAL_SCRIPT
-    oneTimeRandomEvents:
-      STR_MISTERY_CULT_EVENT: 100
-    researchTriggers:
-      STR_COVERT_OPERATIONS: true
-      STR_UFOPEDIA_DECRYPTION: true
-    firstMonth: 3
-    executionOdds: 80
 
 #xcom
-  - &STR_WORKSHOP_SCRIPT
-    type: STR_WORKSHOP_SCRIPT
-    oneTimeSequentialEvents: [STR_WORKSHOP_EVENT]
-    researchTriggers:
-      STR_SUPPLIES: true
-      STR_FACILITIES_BLUEPRINTS: true
-      STR_ENGINEER_STATUS_REPORT: true
-      STR_WORKSHOP: false
-    allowedProcessor: 2 #xcom
-    executionOdds: 25
-    maxDifficulty: 3
-  - type: STR_WORKSHOP_SCRIPT_SH #extra SH copy
-    refNode: *STR_WORKSHOP_SCRIPT
-    executionOdds: 15
-    minDifficulty: 4
-    maxDifficulty: 4
   - &STR_SPORTS_BOW_TINKERING_SCRIPT
     type: STR_SPORTS_BOW_TINKERING_SCRIPT
     oneTimeSequentialEvents: [STR_SPORTS_BOW_TINKERING]
-    researchTriggers:
-      STR_SPORTS_BOW_TINKERING: false
-      STR_SPORTS_BOW: true
-      STR_ENGINEER_STATUS_REPORT: true
+    # researchTriggers:
+    #   STR_BIOLAB_PREREQ: false
+    #   STR_BIOLAB: false
     itemTriggers:
       STR_SPORTS_BOW: true
       STR_BOW_ARROW: true
-    facilityTriggers:
-      STR_WORKSHOP: true
+    firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 25
+    executionOdds: 85
+    minDifficulty: 0
     maxDifficulty: 3
   - type: STR_SPORTS_BOW_TINKERING_SCRIPT_SH #extra SH copy
     refNode: *STR_SPORTS_BOW_TINKERING_SCRIPT
-    executionOdds: 10
+    executionOdds: 30
     minDifficulty: 4
     maxDifficulty: 4
-  - &STR_IMPROVISED_GRENADE_TINKERING_SCRIPT
-    type: STR_IMPROVISED_GRENADE_SCRIPT
-    oneTimeSequentialEvents: [STR_IMPROVISED_GRENADE_TINKERING]
-    researchTriggers:
-      STR_IMPROVISED_GRENADE: false
-      STR_ENGINEER_STATUS_REPORT: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 20
-    maxDifficulty: 3
-  - type: STR_IMPROVISED_GRENADE_SCRIPT_SH #extra SH copy
-    refNode: *STR_IMPROVISED_GRENADE_TINKERING_SCRIPT
-    executionOdds: 5
-    minDifficulty: 4
-    maxDifficulty: 4
-  - type: STR_IMPROVISED_SMOKE_GRENADE_SCRIPT
-    oneTimeSequentialEvents: [STR_IMPROVISED_SMOKE_GRENADE_TINKERING]
-    researchTriggers:
-      STR_IMPROVISED_GRENADE: true
-      STR_IMPROVISED_SMOKE_GRENADE: false
-      STR_ENGINEER_STATUS_REPORT: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 15
-  - &STR_KATANA_TINKERING_SCRIPT
-    type: STR_KATANA_TINKERING_SCRIPT
-    oneTimeSequentialEvents: [STR_KATANA_TINKERING]
-    researchTriggers:
-      STR_KATANA: false
-      STR_SWORD: true
-    itemTriggers:
-      STR_SWORD: true
-    facilityTriggers:
-      STR_WORKSHOP: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 15
-    maxDifficulty: 3
-  - type: STR_KATANA_TINKERING_SCRIPT_SH #extra SH copy
-    refNode: *STR_KATANA_TINKERING_SCRIPT
-    executionOdds: 5
-    minDifficulty: 4
-    maxDifficulty: 4
-  - &STR_ROCKET_GLOVE_TINKERING_SCRIPT
-    type: STR_ROCKET_GLOVE_TINKERING_SCRIPT
-    oneTimeSequentialEvents: [STR_ROCKET_GLOVE_TINKERING]
-    researchTriggers:
-      STR_ROCKET_GLOVE: false
-    facilityTriggers:
-      STR_WORKSHOP: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 25
-    maxDifficulty: 3
-  - type: STR_ROCKET_GLOVE_TINKERING_SCRIPT_SH #extra SH copy
-    refNode: *STR_ROCKET_GLOVE_TINKERING_SCRIPT
-    executionOdds: 10
-    minDifficulty: 4
-    maxDifficulty: 4
-  - type: STR_HELICOPTER_SCRIPT
-    oneTimeSequentialEvents: [STR_HELICOPTER]
-    researchTriggers:
-      STR_HELICOPTER: false
-    itemTriggers:
-      STR_CRATED_HELICOPTER: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 100
-    maxDifficulty: 4
-  - &STR_ELECTRIC_WEAPONS_SCRIPT
-    type: STR_ELECTRIC_WEAPONS_SCRIPT
-    oneTimeSequentialEvents: [STR_ELECTRIC_WEAPONS_PREREQ_EVENT]
-    researchTriggers:
-      STR_PRISONER_INTERROGATIONS: true
-      STR_ELECTRIC_WEAPONS_PREREQ: false
-      STR_PRODUCTION: true
-    facilityTriggers:
-      STR_WORKSHOP: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 40
-    maxDifficulty: 3
-  - type: STR_ELECTRIC_WEAPONS_SCRIPT_SH #extra SH copy
-    refNode: *STR_ELECTRIC_WEAPONS_SCRIPT
-    executionOdds: 15
-    minDifficulty: 4
-    maxDifficulty: 4
-  - &BIOLAB_PREREQ_SCRIPT
-    type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER
+  - type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER
     oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
     researchTriggers:
       STR_BIOLAB_PREREQ: false
       STR_BIOLAB: false
-      STR_FACILITIES_BLUEPRINTS: true
-      STR_COVERT_OPERATIONS: true
     itemTriggers:
       STR_FACEHUGGER_CORPSE: true
+    firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 50
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE
-    refNode: *BIOLAB_PREREQ_SCRIPT
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
     itemTriggers:
-      STR_FRESH_ZOMBIE_CORPSE: true
+      STR_ZOMBIE_STERILE_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_STERILE
-    refNode: *BIOLAB_PREREQ_SCRIPT
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
     itemTriggers:
-      STR_FRESH_ZOMBIE_CORPSE: true
+      STR_ZOMBIE_STERILE_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_ZOMBIE_GRUBAS
-    refNode: *BIOLAB_PREREQ_SCRIPT
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
     itemTriggers:
       STR_ZOMBIE_GRUBAS_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
+  - type: STR_BIOLAB_PREREQ_SCRIPT_JABBER
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
+    itemTriggers:
+      STR_JABBER_CORPSE: true
+    firstMonth: 0
+    allowedProcessor: 2 #xcom
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
   - type: STR_BIOLAB_PREREQ_SCRIPT_CHUPACABRA
-    refNode: *BIOLAB_PREREQ_SCRIPT
+    oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]
+    researchTriggers:
+      STR_BIOLAB_PREREQ: false
+      STR_BIOLAB: false
     itemTriggers:
       STR_CHUPACABRA_CORPSE: true
-  - type: STR_TELL_RESISTANCE_ABOUT_MIB_HQ
-    oneTimeSequentialEvents: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_EVENT]
-    researchTriggers:
-      STR_RESISTANCE_CONTACT: true
-      STR_REQ_HQ_LOCATION_DONE: true
-      STR_TELL_RESISTANCE_ABOUT_MIB_HQ_SPAWNED: false
+    firstMonth: 0
     allowedProcessor: 2 #xcom
-    executionOdds: 40
-  - &STR_EXPANDABLE_AMMO_SCRIPT
-    type: STR_EXPANDABLE_AMMO_SCRIPT
-    oneTimeSequentialEvents: [STR_EXPANDABLE_AMMO_EVENT]
-    researchTriggers:
-      STR_XCOM_EQUIPMENT: true
-      STR_EXPANDABLE_AMMO: false
-    itemTriggers:
-      STR_PISTOL_EXP_CLIP: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 90
-  - type: STR_EXPANDABLE_AMMO_SCRIPT_HEAVY_PISTOL
-    refNode: *STR_EXPANDABLE_AMMO_SCRIPT
-    itemTriggers:
-      STR_HEAVY_PISTOL_EXP_CLIP: true
-  - type: STR_EXPANDABLE_AMMO_SCRIPT_RIFLE
-    refNode: *STR_EXPANDABLE_AMMO_SCRIPT
-    itemTriggers:
-      STR_RIFLE_EXP_CLIP: true
+    executionOdds: 100
+    minDifficulty: 0
+    maxDifficulty: 4
 
-  - type: STR_EX_COUNCIL_MEMBER_INITIAL
-    oneTimeRandomEvents:
-      STR_EX_COUNCIL_MEMBER_INITIAL_EVENT: 100
-    researchTriggers:
-      STR_COMMUNICATION: true
-    allowedProcessor: 2 #xcom
-  - type: STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
-    oneTimeRandomEvents:
-      STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT: 100
-    researchTriggers:
-      STR_EX_COUNCIL_MEMBER_INITIAL: true
-      STR_COVERT_OPERATIONS: true
-    allowedProcessor: 2 #xcom
 
 
 #resistance
-  - type: STR_RESISTANCE_WEAPONRY_SCRIPT
-    oneTimeSequentialEvents: [STR_RESISTANCE_WEAPONRY_EVENT]
-    researchTriggers:
-      STR_RESISTANCE_CONTACT: true
-      STR_COVERT_OPERATIONS: true
-      STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED: false
-    requiredReputation:
-      STR_RESISTANCE: 5 #STR_HONORED
-    allowedProcessor: 1 #faction
-    executionOdds: 20
-  - type: STR_RESISTANCE_CELL_NEAR_MIB_HQ
-    oneTimeSequentialEvents: [STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT]
-    researchTriggers:
-      STR_RESISTANCE_CONTACT: true
-      STR_REQ_HQ_LOCATION_DONE: true
-      STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES: true
-      STR_RESISTANCE_CELL_CREATION_PREREQ: false
-    requiredReputation:
-      STR_RESISTANCE: 5 #STR_HONORED
-    allowedProcessor: 1 #faction
-    executionOdds: 70
-  - type: STR_RESISTANCE_GIFT_MIB_AGENT
-    oneTimeSequentialEvents: [STR_RESISTANCE_GIFT_MIB_AGENT_EVENT]
-    researchTriggers:
-      STR_RESISTANCE_CONTACT: true
-      STR_FRESH_MIB_AGENT: false
-      STR_PRISONER_INTERROGATIONS: true
-    requiredReputation:
-      STR_RESISTANCE: 5 #STR_HONORED
-    itemTriggers:
-      STR_MIB_AGENT: false
-      STR_MIB_SPECOPS: false
-    firstMonth: 4
-    allowedProcessor: 1 #faction
-    executionOdds: 10
-  - type: STR_RESISTANCE_GIFT_SOLDIERS
-    eventWeights:
-      0:
-        STR_RESISTANCE_GIFT_2_SOLDIERS: 100
-        STR_RESISTANCE_GIFT_3_SOLDIERS: 70
-        STR_RESISTANCE_GIFT_4_SOLDIERS: 50
-        STR_RESISTANCE_GIFT_5_SOLDIERS: 30
-    researchTriggers:
-      STR_RESISTANCE_CONTACT: true
-    requiredReputation:
-      STR_RESISTANCE: 5 #STR_FRIENDLY
-    minLoyalty: 400
-    maxScore: 300
-    maxFunds: 200000
-    allowedProcessor: 1 #faction
-    executionOdds: 5
-
-#random fun
-  - type: STR_MYSTERIOUS_SPONSOR
-    eventWeights:
-      0:
-        STR_MYSTERIOUS_SPONSOR_50000: 70
-        STR_MYSTERIOUS_SPONSOR_75000: 60
-        STR_MYSTERIOUS_SPONSOR_100000: 50
-        STR_MYSTERIOUS_SPONSOR_150000: 40
-        STR_MYSTERIOUS_SPONSOR_200000: 30
-        STR_MYSTERIOUS_SPONSOR_250000: 20
-        STR_MYSTERIOUS_SPONSOR_500000: 10
-        STR_MYSTERIOUS_SPONSOR_1000000: 5
-      7:
-        STR_MYSTERIOUS_SPONSOR_50000: 40
-        STR_MYSTERIOUS_SPONSOR_75000: 50
-        STR_MYSTERIOUS_SPONSOR_100000: 60
-        STR_MYSTERIOUS_SPONSOR_150000: 70
-        STR_MYSTERIOUS_SPONSOR_200000: 60
-        STR_MYSTERIOUS_SPONSOR_250000: 50
-        STR_MYSTERIOUS_SPONSOR_500000: 40
-        STR_MYSTERIOUS_SPONSOR_1000000: 30
-      16:
-        STR_MYSTERIOUS_SPONSOR_50000: 20
-        STR_MYSTERIOUS_SPONSOR_75000: 30
-        STR_MYSTERIOUS_SPONSOR_100000: 40
-        STR_MYSTERIOUS_SPONSOR_150000: 50
-        STR_MYSTERIOUS_SPONSOR_200000: 60
-        STR_MYSTERIOUS_SPONSOR_250000: 70
-        STR_MYSTERIOUS_SPONSOR_500000: 50
-        STR_MYSTERIOUS_SPONSOR_1000000: 30
-    firstMonth: 1
-    lastMonth: 24
-    executionOdds: 10
-    maxFunds: 100000
-    maxScore: 600
-    spawnGap: 100
-    allowedProcessor: 0
-  - type: STR_OLD_CROP_CIRCLES
-    eventWeights:
-      0:
-        STR_OLD_CROP_CIRCLES: 100
-    researchTriggers:
-      STR_CROP_CIRCLES_PREREQ: true 
-    firstMonth: 2
-    minLoyalty: 400
-    executionOdds: 5
-    allowedProcessor: 0
-    spawnGap: 80
-  - type: STR_UFO_SIGNS
-    eventWeights:
-      0:
-        STR_UFO_SIGNS: 100
-    firstMonth: 0
-    executionOdds: 10
-    minLoyalty: 400
-    allowedProcessor: 0
-    spawnGap: 60
-  - type: STR_LOYALTY_TO_MONEY
-    oneTimeRandomEvents:
-      STR_IMPROVE_LIVING_FACILITY: 100
-    firstMonth: 1
-    executionOdds: 50
-    maxLoyalty: 200
-    maxFunds: 200000
-    allowedProcessor: 0
-    spawnGap: 60
+  # - type: STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
+  #   oneTimeSequentialEvents: [STR_RESISTANCE_HEAVEN_SAVED_EVENT]
+  #   researchTriggers:
+  #     STR_RESISTANCE_FIRST_HELP: true
+  #   firstMonth: 0
+  #   lastMonth: 0
+  #   allowedProcessor: 1 #faction
+  #   executionOdds: 100
+  #   minDifficulty: 0
+  #   maxDifficulty: 4
+   

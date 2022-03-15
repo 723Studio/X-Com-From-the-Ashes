@@ -1,5 +1,4 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
-ftaGameLength: 8
 ironManEnabled: false
 #Campaign
 startingTime:
@@ -18,25 +17,25 @@ psiUnlockResearch: STR_PSIONIC
 allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70
 lessAliensDuringBaseDefense: true
-defeatFunds: -2000000
-gameOver:
+defeatFunds: -300 #much lower vanilla because loose logic is different
+gameOver: #TODO
   loseMoney: loseGame       # cutscene ID that should be played when the player loses due to poor economy management
   loseRating: loseGame      # cutscene ID that should be played when the player loses due to poor rating
   loseDefeat: loseGame      # cutscene ID that should be played when the player loses the last base
 
 #Basescape/Personnel
 timePersonnel: 96
-costEngineer: 6000
+costEngineer: 5000
 costHireEngineer: 70000
 costScientist: 8000
-costHireScientist: 120000
+costHireScientist: 100000
 displayCustomCategories: 1
 
 #Interception
 drawEnemyRadarCircles: 0
 showDogfightDistanceInKm: true
-crewEmergencyEvacuationSurvivalChance: 70
-pilotsEmergencyEvacuationSurvivalChance: 50
+crewEmergencyEvacuationSurvivalChance: 90
+pilotsEmergencyEvacuationSurvivalChance: 95
 
 #pedia
 pediaReplaceCraftFuelWithRangeType: 2
@@ -44,23 +43,22 @@ extraNerdyPediaInfo: true
 researchTreeDisabled: true
 
 #difficulty
-startingDifficulty: 1
+startingDifficulty: 2
 difficultyCoefficient: [0, 1, 2, 3, 4]
-aimAndArmorMultipliers: [0.9, 1.0, 1.03, 1.06, 1.12]
-sellPriceCoefficient: [105, 100, 90, 80, 70]
+aimAndArmorMultipliers: [0.8, 1.0, 1.0, 1.0, 1.1]
+sellPriceCoefficient: [110, 105, 100, 90, 75]
 statGrowthMultipliers:
-  tu: 6
+  tu: 5
   stamina: 4
-  health: 3
+  health: 2
   bravery: 0
   reactions: 6
   firing: 6
-  throwing: 4
+  throwing: 3
   strength: 2
   psiStrength: 4
   psiSkill: 4
   melee: 5
-  mana: 5
 
 #battlescape
 maxViewDistance: 40
@@ -68,20 +66,19 @@ enableCloseQuartersCombat: 1
 lighting:
   enhanced: 7
 noLOSAccuracyPenaltyGlobal: 60
-oneHandedPenaltyGlobal: 50
+#oneHandedPenaltyGlobal: 50
 #closeQuartersTuCostGlobal: 6      # TUs required to attempt CQC; unsuccessful attempt doesn't spend the TUs, successful does
 #closeQuartersEnergyCostGlobal: 5   # Energy required to attempt CQC; unsuccessful attempt doesn't spend the Energy, successful does
 tooMuchSmokeThreshold: 13
 giveScoreAlsoForResearchedArtifacts: true
 statisticalBulletConservation: true
 stunningImprovesMorale: true
-tuRecoveryWakeUpNewTurn: 60
-minReactionAccuracy: 40
-turnAIUseGrenade: 2 #Consider if changing back to 1
+tuRecoveryWakeUpNewTurn: 50
+minReactionAccuracy: 30
+turnAIUseGrenade: 2 #TODO Consider if changing back to 1
 turnAIUseBlaster: 2 
-surrenderMode: 1
-closeQuartersSneakUpGlobal: 60
-kneelBonusGlobal: 120 #default 115
+surrenderMode: 0 #TODO Consider
+closeQuartersSneakUpGlobal: 40
 
 hackingBaseTuCost: 20
 hackingFirewallBaseTuCost: 30
@@ -95,17 +92,17 @@ ai:
   fireChoiceAggroCoeff: 3 # Aggression doesn't matter as much (default 5)
 
 constants:
-  extendedItemReloadCost: false
+  extendedItemReloadCost: false #to consider, but with true bow is unplayable
   extendedRunningCost: true
-  damageRange: 70 #for good or bad
+  damageRange: 75 #for good or bad
   extendedTerrainMelee: 4
   extendedUnderwaterThrowFactor: 50
-  extendedMeleeReactions: 1
+  extendedMeleeReactions: 2
 
 
 mana:
-  enabled: true
-  battleUI: false #true #FIXME
+  enabled: false #true #TODO
+  battleUI: false #true #TODO
   unlockResearch: STR_PSIONIC
   trainingPrimary: false
   trainingSecondary: false
@@ -113,65 +110,37 @@ mana:
   replenishAfterMission: true
 
 loyaltySettings:
-  coefBattlescape: 40
-  coefGeoscape: 100
-  coefDogfight: 100
-  coefResearch: 40
-  coefAlienMission: 100
-  coefUfo: 100
-  coefAlienBase: 100
-  noFundsPenalty: 50
-  noFundsValue: -150000
-  performanceCap: 250 #would be deleted in further releases, no practical effect now
-  performanceFactor: 2 #would be deleted in further releases, no practical effect now
+  coefBattlescape: 99
+  coefGeoscape: 98
+  coefDogfight: 87
+  coefResearch: 50
+  coefAlienMission: 110
+  coefUfo: 70
+  coefAlienBase: 65
+  noFundsPenalty: 300
+  noFundsValue: -50000
+  performanceCap: 300
+  performanceFactor: 10
 
 loyaltyRatings:
    5000: STR_L_RATING_AMAZING
    2000: STR_L_RATING_PERFECT
    1000: STR_L_RATING_VERY_GOOD
    500: STR_L_RATING_GOOD
-   100: STR_L_RATING_OK
+   250: STR_L_RATING_OK
    0: STR_L_RATING_MEH
    -350: STR_L_RATING_BAD
-   -800: STR_L_RATING_VERY_BAD
+   -800: STR_L_RATING_BAD
    -1500: STR_L_RATING_TERRIBLE
 
 reputationLevels:
-   3500: STR_ALLY
-   800: STR_HONORED
-   350: STR_FRIENDLY
+   2000: STR_ALLY
+   500: STR_HONORED
+   250: STR_FRIENDLY
    0: STR_NEUTRAL
    -350: STR_UNFRIENDLY
-   -1000: STR_HOSTILE
-   -3000: STR_HATED
-
-missionRatings:
-  2000: STR_MS_RATING_2000
-  1500: STR_MS_RATING_1500
-  1000: STR_MS_RATING_1000
-  750: STR_MS_RATING_750
-  500: STR_MS_RATING_500
-  350: STR_MS_RATING_350
-  150: STR_MS_RATING_150
-  75: STR_MS_RATING_75
-  0: STR_MS_RATING_0
-  -200: STR_MS_RATING_BAD
-  -350: STR_MS_RATING_WORSE
-  -500: STR_MS_RATING_TERRIBLE
-  -1000: STR_MS_RATING_DISASTER
-  -51000: STR_MS_RATING_EPIC_FAIL
-monthlyRatings:
-  10000: STR_MT_RATING_10K
-  5000: STR_MT_RATING_5K
-  2000: STR_MT_RATING_2K
-  1000: STR_MT_RATING_1K
-  500: STR_MT_RATING_500
-  250: STR_MT_RATING_250
-  0: STR_MT_RATING_0
-  -350: STR_MT_RATING_POOR
-  -750: STR_MT_RATING_BAD
-  -1000: STR_MT_RATING_VERY_BAD
-  -9999: STR_MT_RATING_JOKE
+   -750: STR_HOSTILE
+   -1500: STR_HATED
 
 reputationBreakthroughValue: 500 #actually, it's default value, might be changed later
 
@@ -183,12 +152,12 @@ fixedUserOptions:
   alienBleeding: true
   globeSeasons: true
   allowPsiStrengthImprovement: false
-  allowPsionicCapture: false #Consider
+  allowPsionicCapture: false #TODO consider
   anytimePsiTraining: true
-  canSellLiveAliens: false #Consider
+  canSellLiveAliens: false #TODO consider
   psiStrengthEval: false
-  retainCorpses: true #Consider
-  sneakyAI: true
+  retainCorpses: true #TODO consider
+  sneakyAI: true #TODO consider
   battleUFOExtenderAccuracy: true
   includePrimeStateInSavedLayout: false
   battleExplosionHeight: 3

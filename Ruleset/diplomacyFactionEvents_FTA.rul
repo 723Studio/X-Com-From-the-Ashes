@@ -65,13 +65,13 @@ diplomacyFactionEvents:
     staffToAdd: 
       STR_RESISTANCE_AGENT: 4
   - type: STR_RESISTANCE_NEW_SCIENTIST_EG
-    executionOdds: 1
+    executionOdds: 3
     firstMonth: 2
     lastMonth: 4
     staffToAdd: 
       STR_SCIENTIST: 1
   - type: STR_RESISTANCE_NEW_SCIENTIST_MG
-    executionOdds: 3
+    executionOdds: 4
     firstMonth: 5
     staffToAdd: 
       STR_SCIENTIST: 1
@@ -80,42 +80,6 @@ diplomacyFactionEvents:
     firstMonth: 1
     staffToAdd: 
       STR_ENGINEER: 1
-  - type: STR_MILITARY_WEAPONRY_ACQUISITION
-    executionOdds: 100
-    playerResearchTriggers:
-      STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ: true
-    discoveredResearches: [STR_RESISTANCE_BASIC_EQUIPMENT, STR_SIMPLE_CRAFT_WEAPONS]
-    powerChange: 200
-    fundsChange: 120000
-    itemsToAdd:
-      STR_RIOT_PISTOL: 12
-      STR_RIOT_PISTOL_CLIP: 32
-      STR_MACHINE_PISTOL: 5
-      STR_MACHINE_PISTOL_CLIP: 22
-      STR_RIOT_RIFLE: 8
-      STR_RIOT_RIFLE_CLIP: 25
-      STR_LEVER_ACTION_CARBINE: 4
-      STR_LEVER_ACTION_CARBINE_CLIP: 16
-      STR_PUMP_ACTION_SHOTGUN: 4
-      STR_PUMP_ACTION_SHELLS: 23
-      STR_RIOT_GUN: 1
-      STR_RIOT_GUN_CLIP: 4
-      STR_SINGLE_ROCKET_LAUNCHER: 5
-      STR_GRENADE_LAUNCHER: 1
-      STR_GRENADE_LAUNCHER_FRAG: 8
-      STR_GRENADE_LAUNCHER_INC: 2
-      STR_GRENADE_LAUNCHER_SMOKE: 4
-      STR_GRENADE: 5
-      STR_SMOKE_GRENADE: 4
-      STR_FLASHBANG_GRENADE: 6
-      STR_MEDI_PACK: 4
-      STR_CANNON: 1
-      STR_CANNON_ROUNDS_X50: 6
-      STR_STINGRAY_LAUNCHER: 1
-      STR_STINGRAY_MISSILE: 7
-
-
-
 
   # - type: STR_SNIPPET
   #   executionOdds: 5

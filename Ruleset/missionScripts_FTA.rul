@@ -42,158 +42,18 @@ missionScripts:
     useTable: false
     randomDelay: 7200
 
-#alien-related
-  - type: cropCirclesInitial
-    missionWeights:
-      0:
-        STR_CROP_CIRCLES_INITIAL: 100
-    regionWeights:
-      0:
-        STR_CROP_CORCLES_INITIAL: 100
-    raceWeights:
-      0:
-        STR_MIB: 100
-    lastMonth: 0
-    startDelay: 4000
-    useTable: false
-    randomDelay: 5000
-  - type: cropCirclesInitialSecondary
-    missionWeights:
-      0:
-        STR_CROP_CIRCLES_INITIAL: 100
-    regionWeights:
-      0:
-        STR_CROP_CORCLES_INITIAL: 100
-    raceWeights:
-      0:
-        STR_MIB: 100
-    researchTriggers:
-      STR_CROP_CIRCLES_PREREQ: false
-    firstMonth: 1
-    useTable: false
-    spawnGap: 30
-    randomSpawnGap: 15
-    startDelay: 4320
-    randomDelay: 43500
-    avoidRepeats: 1
-    varName: cropCircles
-
-  - type: cropCirclesGeneral
-    missionWeights:
-      0:
-        STR_CROP_CIRCLES: 100
-    regionWeights:
-      0:
-        STR_CROP_CORCLES_EARLY_GAME: 100
-    raceWeights:
-      0:
-        STR_MIB: 100
-    researchTriggers:
-      STR_CROP_CIRCLES_PREREQ: true
-    executionOdds: 50
-    firstMonth: 2
-    useTable: false
-    spawnGap: 30
-    randomSpawnGap: 15
-    startDelay: 4320
-    randomDelay: 43500
-    avoidRepeats: 1
-    varName: cropCircles
-
-#monsters
-  - type: chupaTerror
-    firstMonth: 3
-    executionOdds: 50
-    missionWeights:
-      0:
-        STR_CHUPA_TERROR_MISSION: 100
-    regionWeights:
-      0:
-        STR_CHUPA_TERROR: 100
-    raceWeights:
-      0:
-        STR_CHUPACABRA: 100
-    researchTriggers:
-      STR_UNLEASH_CHUPAS_TRIGGER: true
-    useTable: false
-    spawnGap: 40
-    startDelay: 4320
-    randomDelay: 43500
-    avoidRepeats: 1
-    varName: chupaTerror
-  - type: armodilTerror
-    firstMonth: 3
-    executionOdds: 50
-    missionWeights:
-      0:
-        STR_ARMADILLO_TERROR_MISSION: 100
-    regionWeights:
-      0:
-        STR_ARMADILLO_TERROR: 100
-    raceWeights:
-      0:
-        STR_ARMADILLO: 100
-    researchTriggers:
-      STR_UNLEASH_ARMADILLO_TRIGGER: true
-    useTable: false
-    spawnGap: 40
-    startDelay: 4320
-    randomDelay: 43500
-    avoidRepeats: 1
-    varName: armodilTerror
-  - type: amphibianTerror
-    firstMonth: 3
-    executionOdds: 50
-    missionWeights:
-      0:
-        STR_AMPHIBIAN_TERROR_MISSION: 100
-    regionWeights:
-      0:
-        STR_AMPHIBIAN_TERROR: 100
-    raceWeights:
-      0:
-        STR_AMPHIBIAN: 100
-    researchTriggers:
-      STR_UNLEASH_AMPHIBIAN_TRIGGER: true
-    useTable: false
-    spawnGap: 40
-    startDelay: 4320
-    randomDelay: 43500
-    avoidRepeats: 1
-    varName: amphibianTerror
-  - type: swarmidTerror
-    firstMonth: 3
-    executionOdds: 50
-    missionWeights:
-      0:
-        STR_SWARMID_TERROR_MISSION: 100
-    regionWeights:
-      0:
-        STR_SWARMID_JUNGLE_TERROR: 50
-        STR_SWARMID_DESERT_TERROR: 50
-    raceWeights:
-      0:
-        STR_SWARMID: 100
-    researchTriggers:
-      STR_UNLEASH_SWARMID_TRIGGER: true
-    useTable: false
-    spawnGap: 40
-    startDelay: 4320
-    randomDelay: 43500
-    avoidRepeats: 1
-    varName: swarmidTerror
 
 #resistance
-  - type: havenFarm
+  - type: heavenZombieFarm
     firstMonth: 0
-    executionOdds: 40
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
-        STR_RESISTANCE_HAVEN_DEFENCE: 100
+        STR_RESISTANCE_HEAVEN_DEFENCE: 100
     regionWeights:
       0:
-        RESISTANCE_FARM_START_ZONE: 100
+        RESISTANCE_START_ZONE: 100
     raceWeights:
       0:
         STR_ZOMBIES: 100
@@ -203,14 +63,14 @@ missionScripts:
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: havenDefence
-  - type: havenForestHouse
+    varName: heavenDefence
+  - type: heavenForestHouse
     firstMonth: 0
-    executionOdds: 40
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
-        STR_RESISTANCE_FOREST_HAVEN: 100
+        STR_RESISTANCE_FOREST_HOUSE: 100
     regionWeights:
       0:
         RESISTANCE_FOREST_HOUSE_START_ZONE: 100
@@ -223,10 +83,10 @@ missionScripts:
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: havenDefence
-  - type: havenUrbanHideout
+    varName: heavenDefence
+  - type: heavenUrbanHideout
     firstMonth: 0
-    executionOdds: 40
+    executionOdds: 20
     allowedProcessor: 1
     missionWeights:
       0:
@@ -238,12 +98,12 @@ missionScripts:
       0:
         STR_MIB: 100
     useTable: false
-    spawnGap: 55
+    spawnGap: 70
     randomSpawnGap: 15
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: havenDefence
+    varName: heavenDefence
   - type: resistanceScientist
     firstMonth: 0
     executionOdds: 20
@@ -260,12 +120,12 @@ missionScripts:
     researchTriggers:
       STR_RESISTANCE_SCIENTIST: false
     useTable: false
-    spawnGap: 80
+    spawnGap: 70
     randomSpawnGap: 15
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: resistanceSpecial
+    varName: heavenDefence
   - type: desertTelescope
     firstMonth: 2
     executionOdds: 20
@@ -282,11 +142,9 @@ missionScripts:
     researchTriggers:
       STR_DESERT_TELESCOPE: false
     useTable: false
-    spawnGap: 80
+    spawnGap: 85
     randomSpawnGap: 15
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
-    varName: resistanceSpecial
-
-
+    varName: heavenDefence

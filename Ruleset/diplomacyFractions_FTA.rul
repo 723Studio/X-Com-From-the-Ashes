@@ -5,31 +5,30 @@ diplomacyFactions:
     cardBackground: RESISTANCE_DIPLOMACY_CARD.SCR
     discoverResearch: STR_RESISTANCE_CONTACT
     discoverEvent: STR_RESISTANCE_DISCOVER
-    startingReputation: 370
-    startingFunds: 935000
+    startingReputation: 270
+    startingFunds: 50000000 #TODO!
     startingPower: 350
     stockMod: 100
     startingResearches:
       - STR_RESISTANCE_TECH_TREE_START
+      - STR_RESISTANCE_STARTING_EQUIPMENT
     startingStaff:
       STR_ENGINEER: 2
       STR_RESISTANCE_AGENT: 12
       #STR_SOLDIER: 10
       #STR_SCIENTIST: 12
-    genMissionFreq: 85 #85% chance to run the script
+      #STR_SKYRANGER: 1
+    genMissionFreq: 60 #60% chance to run the script
     helpTreatyMissions:
-      - havenFarm
-      - havenForestHouse
-      - havenUrbanHideout
+      - heavenZombieFarm
+      - heavenForestHouse
+      - heavenUrbanHideout
       - resistanceScientist
       - desertTelescope
-    helpTreatyGap: 12
-    helpTreatyEventScripts:
-      - STR_RESISTANCE_WEAPONRY_SCRIPT
-      - STR_RESISTANCE_CELL_NEAR_MIB_HQ
-      - STR_RESISTANCE_GIFT_MIB_AGENT
-    # usualEventsScripts:
-    #   - STR_RESISTANCE_WEAPONRY_SCRIPT
+    helpTreatyGap: 5
+    genEventFreq: 100
+    # helpTreatyEventScripts:
+    #    - STR_RESISTANCE_HEAVEN_SAVED_SCRIPT
     factionalEvents:
        - STR_POWER_DROP_LOW
        - STR_POWER_DROP_MED
@@ -43,16 +42,6 @@ diplomacyFactions:
        - STR_FUNDS_DROP_LOW
        - STR_FUNDS_DROP_MED
        - STR_FUNDS_DROP_HIGH
-       - STR_EXTRA_INCOME_EG_LOW
-       - STR_EXTRA_INCOME_EG_MED
-       - STR_EXTRA_INCOME_EG_HIGH
-       - STR_RESISTANCE_REINFORCEMENTS_LOW
-       - STR_RESISTANCE_REINFORCEMENTS_MED
-       - STR_RESISTANCE_REINFORCEMENTS_HIGH
-       - STR_RESISTANCE_NEW_SCIENTIST_EG
-       - STR_RESISTANCE_NEW_SCIENTIST_MG
-       - STR_RESISTANCE_NEW_ENGINEER
-       - STR_MILITARY_WEAPONRY_ACQUISITION
     startingItems:
       STR_POLICE_BATON: 3
       STR_MACHETE: 4
@@ -109,8 +98,6 @@ diplomacyFactions:
       #rifles
       STR_RIOT_RIFLE: 1100
       STR_RIOT_RIFLE_CLIP: 500
-      STR_LEVER_ACTION_CARBINE: 1110
-      STR_LEVER_ACTION_CARBINE_CLIP: 500
       STR_ASSAULT_RIFLE: 1500
       STR_RIFLE: 1200
       STR_PRECISION_RIFLE: 1300
@@ -137,8 +124,6 @@ diplomacyFactions:
       STR_SHOTGUN_SHELLS_BS_AA: 200
       STR_SHOTGUN_SHELLS_AP_AA: 200
       #cannons
-      STR_RIOT_GUN: 1100
-      STR_RIOT_GUN_CLIP: 210
       STR_LMG: 1200
       STR_LMG_CLIP: 220
       STR_LMG_AA_CLIP: 400
@@ -168,10 +153,6 @@ diplomacyFactions:
       STR_MINIGUN_AA_CLIP: 900
       #launchers
       STR_SINGLE_ROCKET_LAUNCHER: 1200
-      STR_GRENADE_LAUNCHER: 1100
-      STR_GRENADE_LAUNCHER_FRAG: 300
-      STR_GRENADE_LAUNCHER_INC: 280
-      STR_GRENADE_LAUNCHER_SMOKE: 290
       STR_ROCKET_LAUNCHER: 1000
       STR_SMALL_ROCKET: 800
       STR_LARGE_ROCKET: 850
@@ -193,16 +174,9 @@ diplomacyFactions:
       STR_ELECTRO_FLARE: 35
       STR_COMBAT_SHIELD: 430
       STR_FIRE_EXTINGUISHER: 9
-      #craft-related
-      STR_CRATED_HELICOPTER: 3720
-      STR_CANNON: 2000
-      STR_CANNON_ROUNDS_X50: 2000
-      STR_STINGRAY_LAUNCHER: 2000
-      STR_STINGRAY_MISSILE: 2000
-      #other 
-      STR_BRIEFCASE_CASH: 2700
-      STR_SPARE_PARTS: 60
-
+    # staffWeights: - not used since 0.2.2
+    #   STR_SCIENTIST: 50
+    #   STR_RESISTANCE_AGENT: 4000  
 
 
 
@@ -216,3 +190,6 @@ diplomacyFactions:
   #   background: OFFICE_LADY_BACKGROUND.SCR
   #   cardBackground: OFFICE_LADY_BACKGROUND.SCR
   #   discoverResearch: STR_ENIGMA_CONTACT
+
+
+

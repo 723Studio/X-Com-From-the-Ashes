@@ -1,17 +1,10 @@
 soldierTransformation:
   - name: STR_SNIPER_TRAINING
     minRank: 1
-    transformationTime: 408
-    # recoveryTime: 50
-    # cost: 5000000
-    description: STR_SNIPER_TRAINING_DESC
-    requires:
-      - STR_MILITARY_STATUS_REPORT
+    transformationTime: 300
     requiredMinStats:
-       firing: 71 
+       firing: 65 
     showMinMax: true
-    # requiredItems:
-    #   STR_SNIPER_RIFLE: 1
     keepSoldierArmor: true
     createsClone: false
     needsCorpseRecovered: false
@@ -21,12 +14,13 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SOLDIER
       - STR_RESISTANCE_AGENT
+    # transferTime: 72
     flatMin:
       tu: -2
-      firing: 5
+      firing: 7
     flatMax:
       tu: 2
-      firing: 10
+      firing: 16
     soldierBonusType: STR_SNIPER
     forbiddenPreviousTransformations:
       - STR_SNIPER_TRAINING
@@ -36,13 +30,10 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_HEAVY_TRAINING
     minRank: 1
-    transformationTime: 408
-    description: STR_HEAVY_TRAINING_DESC
-    requires:
-      - STR_MILITARY_STATUS_REPORT
+    transformationTime: 300
     requiredMinStats:
-       stamina: 72
-       strength: 48
+       stamina: 60
+       strength: 35
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false
@@ -73,13 +64,10 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_ASSAULT_TRAINING
     minRank: 1
-    transformationTime: 408
-    description: STR_ASSAULT_TRAINING_DESC
-    requires:
-      - STR_MILITARY_STATUS_REPORT
+    transformationTime: 300
     requiredMinStats:
-       reactions: 55
-       firing: 50
+       reactions: 57
+       firing: 55
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false
@@ -108,14 +96,11 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_RANGER_TRAINING
     minRank: 1
-    transformationTime: 408
-    description: STR_RANGER_TRAINING_DESC
-    requires:
-      - STR_MILITARY_STATUS_REPORT
+    transformationTime: 300
     requiredMinStats:
-       stamina: 50
-       reactions: 43
-       melee: 50
+       stamina: 60
+       reactions: 52
+       melee: 58
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false
@@ -144,12 +129,9 @@ soldierTransformation:
       - STR_SPECIALIST_TRAINING
   - name: STR_SPECIALIST_TRAINING
     minRank: 1
-    transformationTime: 408
-    description: STR_SPECIALIST_TRAINING_DESC
-    requires:
-      - STR_MILITARY_STATUS_REPORT
+    transformationTime: 300
     requiredMinStats:
-       bravery: 60
+       bravery: 50
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false
@@ -179,14 +161,11 @@ soldierTransformation:
   - name: STR_UNARMED_COMBAT_TRAINING
     minRank: 1
     transformationTime: 250
-    description:  STR_UNARMED_COMBAT_TRAINING_DESC
-    requires:
-      - STR_MILITARY_STATUS_REPORT
-    requiredMinStats:
-      stamina: 55
-      reactions: 40
-      strength: 52
-      melee: 50
+    # requiredMinStats:
+    #   stamina: 55
+    #   reactions: 40
+    #   strength: 52
+    #   melee: 50
     showMinMax: true
     keepSoldierArmor: true
     createsClone: false

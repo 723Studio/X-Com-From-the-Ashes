@@ -23,11 +23,11 @@ I would like to give special thanks to the contributors to my project (in order 
 
 * **X-Man** - EN strings contribution;
 * **Drosan** - engine development, engine bugfixes;
-* **wolwerin** - weapon, item and tile image assets;
-* **efrenespartano** - full weapon image and tile assets, inspiration, info support;
+* **wolwerin** - weapon image assets;
+* **efrenespartano** - full weapon image assets, inspiration, info support;
 * **Brain_322** - full unit and weapon, terrain image assets, general help with image art;
 * **KoTiK03** - base facility sprite;
-* **Dr. Hans Woofington** - units (inventory, battlscape) and weapons image assets;
+* **Dr. Hans Woofington** - units (inventory, battlscape, autopsy) and weapons image assets, work on intro logo scene;
 * **Evil_bI** - music direction and support, reference help, info support;
 * **Ushna** - background image and sound reference help, weapon image and audio assets, weapon and related to it ruleset contribution;
 * **Ruslan Makovkin** - unit inventory and ufopedia image assets;
@@ -36,9 +36,7 @@ I would like to give special thanks to the contributors to my project (in order 
 * **Buscher** - great help with testing, fixing bugs in the engine code and rulesets;
 * **Xom126** - unit spritesheets, corpse sprites.
 * **Is0top** - engine development, engine bugfixes;
-* **ahegao aka Julian901** - mission design, deployment rules, mission-specific maps.
-* **Garr** - lore articles editing.
-* **misterjo** - monster rulesets
+* **ahegao aka Julian901** - mission design, deployment rules, mission-specific maps, item rulesets, balance and lore articles.
 
 ## Support
 
