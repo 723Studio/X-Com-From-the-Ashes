@@ -3096,6 +3096,40 @@ terrains:
         width: 10
         length: 10
         groups: 7
+
+  - name: OFFICE
+    mapDataSets:
+      - BLANKS
+      - OFFICE_EXTRA
+      - OFFICE
+    mapBlocks:
+      - name: MIL_OFFICE_ENT00
+        width: 30
+        length: 20
+        groups: 5 #enter
+      - name: MIL_OFFICE_MID00
+        width: 30
+        length: 20
+        groups: 6 #middle
+      - name: MIL_OFFICE_END00
+        width: 30
+        length: 20
+        groups: 7 #end
+        randomizedItems:
+        - position: [5, 9, 0]
+          amount: 1
+          mixed: true
+          itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+      - name: MIL_OFFICE_END01
+        width: 30
+        length: 20
+        groups: 7 #end
+        randomizedItems:
+        - position: [24, 16, 0]
+          amount: 1
+          mixed: true
+          itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+
   - name: MIB_SEWERS
     mapDataSets:
       - BLANKS
@@ -3107,7 +3141,40 @@ terrains:
         - name: MIB_SEWERS00
           width: 50
           length: 70
-          groups: 1
+          groups: 7
+          items:
+            STR_EXPLOSIVE_CHARGE:
+              - [38, 62, 1]
+              - [30, 63, 1]
+        - name: MIB_SEWERS00N #no enter
+          width: 50
+          length: 70
+          groups: 8
+        - name: MIB_SEWERS00R #underground with resistacne
+          width: 50
+          length: 70
+          groups: 9
+          items:
+            STR_SPAWN_RESISTANCE_AGENT:
+              - [30, 63, 1]
+              - [31, 64, 1]
+              - [38, 62, 1]
+              - [31, 68, 1]
+            STR_CROWBAR:
+              - [30, 63, 1]
+            STR_SWORD: 
+              - [31, 68, 1]
+            STR_THROWING_KNIFE:
+              - [31, 68, 1]
+            STR_EXPLOSIVE_CHARGE:
+              - [38, 62, 1]
+              - [30, 63, 1]
+            STR_RIOT_RIFLE:
+              - [31, 64, 1]
+            STR_RIOT_RIFLE_CLIP:
+              - [31, 64, 1]    
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT: [0, 0]
         - name: MIB_SEWERS_FILLER1
           width: 10
           length: 10
@@ -3138,10 +3205,46 @@ terrains:
         width: 10
         length: 10
         groups: 5
+        items:
+          STR_SNIPER_RIFLE:
+            - [1, 6, 2]
+          STR_SNIPER_RIFLE_CLIP:
+            - [1, 6, 2]
       - name: MIB_REGHQ_DEPL1 #with Resistance
         width: 10
         length: 10
         groups: 6
+        items:
+          STR_SNIPER_RIFLE:
+            - [1, 6, 2]
+          STR_SNIPER_RIFLE_CLIP:
+            - [1, 6, 2]
+          STR_SPAWN_RESISTANCE_AGENT:
+            - [2, 4, 1]
+            - [5, 7, 1]
+            - [2, 4, 0]
+          STR_SWORD: 
+            - [5, 7, 1]
+          STR_THROWING_KNIFE:
+            - [5, 7, 1]
+          STR_EXPLOSIVE_CHARGE:
+            - [2, 4, 0]
+            - [2, 4, 1]
+          STR_RIOT_RIFLE:
+            - [2, 4, 0]
+          STR_RIOT_RIFLE_CLIP:
+            - [2, 4, 0]
+        fuseTimers:
+          STR_SPAWN_RESISTANCE_AGENT: [0, 0]
+        randomizedItems:
+          - position: [7, 7, 0]
+            amount: 5
+            mixed: true
+            itemList: &generalResistanceStash [STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL_CLIP, STR_RIOT_PISTOL, STR_RIOT_PISTOL, STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SAWED_OFF, STR_SAWED_OFF, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_STIMS, STR_PAINKILLER]
+          - position: [1, 7, 1]
+            amount: 2
+            mixed: true
+            itemList: &suppliesResistanceStash [STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME,  STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT,  STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_PAINKILLER, STR_PAINKILLER, STR_STIMS, STR_STIMS, STR_MEDI_PACK]
       - name: MIB_REGHQ_DEPL_VAULT0 #without Resistance
         width: 10
         length: 10
@@ -3150,6 +3253,175 @@ terrains:
         width: 10
         length: 10
         groups: 8
+        items:
+          STR_SPAWN_RESISTANCE_AGENT:
+            - [5, 7, 4]
+
+          STR_RIOT_RIFLE:
+            - [5, 7, 4]
+          STR_RIOT_RIFLE_CLIP:
+            - [5, 7, 4]
+        randomizedItems:
+          - position: [3, 6, 4]
+            amount: 3
+            mixed: true
+            itemList: *generalResistanceStash
+          - position: [2, 2, 4]
+            amount: 6
+            mixed: true
+            itemList: &explosiveResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
+          - position: [7, 2, 4]
+            amount: 5
+            mixed: true
+            itemList: *suppliesResistanceStash
+          - position: [4, 4, 4]
+            amount: 4
+            mixed: true
+            itemList: *suppliesResistanceStash
+        fuseTimers:
+          STR_SPAWN_RESISTANCE_AGENT: [0, 0]
+  - name: MIB_BASE
+    mapDataSets:
+      - BLANKS
+      - MIB_BASE_DECOR
+      - MIB_BASE
+    mapBlocks:
+    #1 - lift
+    #2 - coridor
+    #3 - HQ
+    #4 - prison
+    #5 - living space
+    #6 - comm relay
+    #7 - storage
+    #8 - small filler
+    #9 - large filler
+    #10 - crossing coridor 
+      - name: MIB_B_LIFT
+        width: 20
+        length: 20
+        groups: 1
+        randomizedItems:
+        - position: [9, 16, 1]
+          amount: 8
+          mixed: false
+          itemList: &mediumMIBStash [STR_ASSAULT_RIFLE, STR_RIFLE, STR_RIFLE_CLIP, STR_PRECISION_RIFLE, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_RIFLE_EXP_CLIP, STR_RIFLE_EXP_CLIP, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SEMI_AUTO_SHOTGUN, STR_SEMI_AUTO_SHOTGUN, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_BATON, STR_SHOTGUN_SHELLS_DRAGON, STR_LMG, STR_LMG_CLIP, STR_LMG_CLIP, STR_LMG_CLIP, STR_LIGHT_CANNON, STR_LIGHT_CANNON, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_LC_I_AMMO, STR_HEAVY_CANNON, STR_HC_AP_AMMO, STR_HC_HE_AMMO, STR_HC_I_AMMO, STR_HC_BS_AMMO, STR_AUTO_CANNON, STR_AC_AP_AMMO, STR_AC_HE_AMMO, STR_AC_I_AMMO, STR_AC_BS_AMMO, STR_MINIGUN, STR_MINIGUN_CLIP, STR_ROCKET_LAUNCHER, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_STIMS_INJECTOR, STR_STIMS_INJECTOR, STR_STIMS_INJECTOR, STR_PERSONAL_AID_KIT, STR_PERSONAL_AID_KIT, STR_ELECTRO_FLARE]
+        - position: [9, 16, 1]
+          amount: 4
+          mixed: false
+          itemList: *mediumMIBStash
+        - position: [9, 16, 1]
+          amount: 4
+          mixed: false
+          itemList: &richMIBStash [STR_SNIPER_RIFLE, STR_SNIPER_RIFLE_CLIP, STR_LMG, STR_LMG_CLIP, STR_LIGHT_CANNON, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_LC_I_AMMO, STR_HEAVY_CANNON, STR_HEAVY_CANNON, STR_HC_AP_AMMO, STR_HC_AP_AMMO, STR_HC_HE_AMMO, STR_HC_HE_AMMO, STR_HC_I_AMMO, STR_HC_BS_AMMO, STR_HC_BS_AMMO, STR_AUTO_CANNON, STR_AUTO_CANNON,  STR_AC_AP_AMMO, STR_AC_AP_AMMO, STR_AC_HE_AMMO, STR_AC_HE_AMMO, STR_AC_I_AMMO, STR_AC_I_AMMO, STR_AC_BS_AMMO, STR_AC_BS_AMMO, STR_MINIGUN, STR_MINIGUN, STR_MINIGUN, STR_MINIGUN_CLIP, STR_MINIGUN_CLIP, STR_ROCKET_LAUNCHER, STR_ROCKET_LAUNCHER, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_LARGE_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET]
+      - name: MIB_B_CORIDOR00
+        width: 20
+        length: 30
+        groups: 2
+        randomizedItems:
+        - position: [11, 18, 0]
+          amount: 5
+          mixed: false
+          itemList: &poorMIBStash [STR_PISTOL, STR_PISTOL_CLIP,STR_PISTOL_EXP_CLIP, STR_HEAVY_PISTOL, STR_HEAVY_PISTOL_CLIP, STR_HEAVY_PISTOL_CLIP, STR_HEAVY_PISTOL_EXP_CLIP, STR_ASSAULT_RIFLE, STR_RIFLE, STR_RIFLE_CLIP, STR_PRECISION_RIFLE, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_RIFLE_EXP_CLIP, STR_RIFLE_EXP_CLIP, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SEMI_AUTO_SHOTGUN, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_BS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_BATON, STR_SHOTGUN_SHELLS_DRAGON, STR_LMG, STR_LMG_CLIP, STR_LMG_CLIP, STR_LMG_CLIP, STR_LIGHT_CANNON, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_LC_I_AMMO,  STR_AC_AP_AMMO, STR_AC_HE_AMMO, STR_AC_I_AMMO, STR_AC_BS_AMMO, STR_SMALL_ROCKET, STR_SMALL_ROCKET, STR_GRENADE, STR_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_TRAUMA_PACK, STR_STIMS_INJECTOR, STR_STIMS_INJECTOR, STR_PERSONAL_AID_KIT, STR_PERSONAL_AID_KIT]
+      - name: MIB_B_HQ
+        width: 60
+        length: 20
+        groups: 3
+        items:
+          STR_MIB_DATA_CONTAINER:
+            - [27, 11, 0]
+      - name: MIB_B_PRISON00
+        width: 10
+        length: 10
+        groups: 4
+        # items:
+        #   STR_SPAWN_RESISTANCE_AGENT_PRISONER:
+        #     - [2, 2, 0]
+        #     - [6, 2, 0]
+        #     - [3, 4, 0]
+        # fuseTimers:
+        #   STR_SPAWN_RESISTANCE_AGENT_PRISONER: [0, 0]
+      - name: MIB_B_LIV00
+        width: 10
+        length: 10
+        groups: 5 
+      - name: MIB_B_COMM00
+        width: 10
+        length: 10
+        groups: 6 
+      - name: MIB_B_STORE00
+        width: 10
+        length: 10
+        groups: 7
+        randomizedItems:
+        - position: [5, 7, 0]
+          amount: 3
+          mixed: false
+          itemList: *poorMIBStash
+        - position: [7, 1, 1]
+          amount: 7
+          mixed: true
+          itemList: *richMIBStash
+        - position: [7, 1, 1]
+          amount: 2
+          mixed: false
+          itemList: *richMIBStash
+        - position: [7, 1, 1]
+          amount: 6
+          mixed: true
+          itemList: *richMIBStash
+        - position: [7, 1, 1]
+          amount: 3
+          mixed: false
+          itemList: *mediumMIBStash
+        - position: [4, 7, 1]
+          amount: 5
+          mixed: true
+          itemList: *richMIBStash
+        - position: [4, 7, 1]
+          amount: 2
+          mixed: false
+          itemList: *richMIBStash
+        - position: [4, 7, 1]
+          amount: 3
+          mixed: false
+          itemList: *mediumMIBStash
+        - position: [6, 7, 1]
+          amount: 8
+          mixed: true
+          itemList: *richMIBStash
+        - position: [6, 7, 1]
+          amount: 3
+          mixed: false
+          itemList: *richMIBStash
+        - position: [6, 7, 1]
+          amount: 6
+          mixed: true
+          itemList: *mediumMIBStash    
+      - name: MIB_B_FIL_S00
+        width: 10
+        length: 10
+        groups: 8 
+      - name: MIB_B_FIL_S01
+        width: 10
+        length: 10
+        groups: 8 
+      - name: MIB_B_FIL_S02
+        width: 10
+        length: 10
+        groups: 8 
+      - name: MIB_B_SMALL_CORIDOR00
+        width: 10
+        length: 10
+        groups: 10 
+      - name: MIB_B_FIL_B00
+        width: 20
+        length: 20
+        groups: 9
+        items:
+            STR_SPAWN_MIB_AGENT: #for infinite battle
+              - [9, 9, 0] 
+        fuseTimers:
+          STR_SPAWN_MIB_AGENT: [0, 0]
 
   - name: MIB_CHASING
     mapDataSets:
@@ -3174,18 +3446,18 @@ terrains:
           length: 60
           groups: 5
 
-  - name: RESISTANCE_FOREST_HOUSE
-    mapDataSets:
-      - BLANKS
-      - FORESTSWAMP
-      - RESISTANCE_FOREST_HOUSE_01
-    mapBlocks:
-        - name: RESISTANCE_FOREST_HOUSE_01
-          width: 20
-          length: 20
-        - name: RESISTANCE_FOREST_HOUSE_02
-          width: 20
-          length: 20
+  # - name: RESISTANCE_FOREST_HOUSE
+  #   mapDataSets:
+  #     - BLANKS
+  #     - FORESTSWAMP
+  #     - RESISTANCE_FOREST_HOUSE
+  #   mapBlocks:
+  #       - name: RESISTANCE_FOREST_HOUSE
+  #         width: 20
+  #         length: 20
+  #       - name: RESISTANCE_FOREST_HOUSE_02
+  #         width: 20
+  #         length: 20
 
   - name: DESERT_MILITARY
     mapDataSets:
@@ -3218,3 +3490,34 @@ terrains:
         width: 10
         length: 10
         groups: [2, 3, 5]
+
+  - name: MIB_CARS
+    mapDataSets:
+      - BLANKS
+      - MIB_CARS
+    mapBlocks:
+      - name: MIB_VAN00
+        width: 10
+        length: 10
+        randomizedItems:
+        - position: [2, 5, 0]
+          amount: 9
+          mixed: true
+          itemList: *poorMIBStash
+        - position: [2, 4, 0]
+          amount: 6
+          mixed: true
+          itemList: *richMIBStash
+
+  - name: XBASE_PHOTO
+    mapDataSets:
+      - BLANKS
+      - XBASE1
+      - XBASE2
+      - XBASEF1-1
+      - XBASEF2-1
+    script: XBASE
+    mapBlocks:
+      - name: PHOTO_DRAGONFLY
+        width: 60
+        length: 60       

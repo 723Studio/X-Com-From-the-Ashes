@@ -21,8 +21,8 @@ extraSounds:
       72: Resources/Weapons/Sounds/Sztucer.wav
       73: Resources/Weapons/Sounds/SluggaFire.wav
       74: Resources/Weapons/Sounds/Inject.wav
-      75: Resources/Armors/Enemies/Zombies/Zombie_aggro.wav
-      76: Resources/Armors/Enemies/Zombies/Zombie_death.wav
+      #75: Resources/Armors/Enemies/Zombies/Zombie_aggro.wav
+      #76: Resources/Armors/Enemies/Zombies/Zombie_death.wav
       77: Resources/Armors/Enemies/Zombies/FACEHUGGER_aggro.ogg
       78: Resources/Armors/Enemies/Zombies/FACEHUGGER_death.ogg
       79: Resources/Armors/Enemies/Zombies/FACEHUGGER_melee.ogg
@@ -68,4 +68,48 @@ extraSounds:
       119: Resources/Weapons/Sounds/ArrowHitTazer.ogg
       120: Resources/Weapons/Sounds/Heavy_hit.wav
       121: Resources/Weapons/Sounds/AlienAcid.wav
-      
+      122: Resources/Weapons/Sounds/ElectroHit.wav
+      123: Resources/Armors/Enemies/Monsters/chupa-death.ogg
+      124: Resources/Armors/Enemies/Monsters/chupa-roar.ogg
+      125: Resources/Weapons/Sounds/shotgun-light.wav
+      126: Resources/Weapons/Sounds/shotgun-light_reload.wav
+      127: Resources/Weapons/Sounds/rocket.wav
+      128: Resources/Weapons/Sounds/rocketr.ogg
+      129: Resources/Weapons/Sounds/heavy_pistol.wav
+      130: Resources/Weapons/Sounds/flamer.wav #TODO add to flamer
+      131: Resources/Weapons/Sounds/flamerr.wav
+      132: Resources/Weapons/Sounds/rail cannon.wav
+      133: Resources/Weapons/Sounds/rail cannon reload.wav
+      134: Resources/Weapons/Sounds/AssaultCannon_fire.wav
+      135: Resources/Weapons/Sounds/boltar.wav
+      136: Resources/Weapons/Sounds/lever-action-fire.ogg
+      137: Resources/Weapons/Sounds/der.ogg
+      138: Resources/Armors/Enemies/Monsters/AM_Death.ogg
+      139: Resources/Armors/Enemies/Monsters/AM_agro.ogg
+      140: Resources/Weapons/Sounds/zombie_attack.wav
+      141: Resources/Armors/Enemies/Zombies/fat_zombie_aggro.wav
+      142: Resources/Armors/Enemies/Zombies/fat_zombie_aggro2.wav
+      143: Resources/Armors/Enemies/Zombies/fat_zombie_death.wav
+      144: Resources/Armors/Enemies/Zombies/fat_zombie_death2.ogg
+      145: Resources/Armors/Enemies/Zombies/old_zombie_aggro.ogg
+      146: Resources/Armors/Enemies/Zombies/old_zombie_aggro2.ogg
+      147: Resources/Armors/Enemies/Zombies/old_zombie_aggro3.ogg
+      148: Resources/Armors/Enemies/Zombies/old_zombie_aggro4.ogg
+      149: Resources/Armors/Enemies/Zombies/old_zombie_death.ogg
+      150: Resources/Armors/Enemies/Zombies/zombie_aggro.wav
+      151: Resources/Armors/Enemies/Zombies/zombie_aggro2.wav
+      152: Resources/Armors/Enemies/Zombies/zombie_aggro3.wav
+      153: Resources/Armors/Enemies/Zombies/zombie_aggro4.ogg
+      154: Resources/Armors/Enemies/Zombies/zombie_aggro5.wav
+      155: Resources/Armors/Enemies/Zombies/zombie_death.wav
+      156: Resources/Armors/Enemies/Zombies/zombie_death2.wav
+      157: Resources/Armors/Enemies/Monsters/SWARMIDS_movement.wav
+      158: Resources/Armors/Enemies/Monsters/SWARMIDS_attack.wav
+      159: Resources/Armors/Enemies/Monsters/SWARMIDS_death.wav
+      160: Resources/Weapons/Sounds/GL_fire.wav
+      161: Resources/Armors/Enemies/Monsters/ARMADILLO_aggro1.ogg
+      162: Resources/Armors/Enemies/Monsters/ARMADILLO_aggro2.ogg
+      163: Resources/Armors/Enemies/Monsters/ARMADILLO_aggro3.ogg
+      164: Resources/Armors/Enemies/Monsters/ARMADILLO_death1.ogg
+      165: Resources/Armors/Enemies/Monsters/ARMADILLO_death2.ogg
+      166: Resources/Armors/Enemies/Monsters/AM_fire.ogg

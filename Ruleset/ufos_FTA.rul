@@ -7,19 +7,19 @@ ufos:
     size: STR_VERY_SMALL
     sprite: 0
     damageMax: 50
-    avoidBonus: 20
-    shieldCapacity: 20
-    shieldRecharge: 45 #35 % to get 1 SP per sec
-    shieldRechargeInGeoscape: 200
+    avoidBonus: 25
+    shieldCapacity: 55
+    shieldRecharge: 22 #20 % to get 1 SP per sec
+    shieldRechargeInGeoscape: 1
     shieldBleedThrough: 100
     speedMax: 2140
     accel: 12
     power: 10
-    range: 30
+    range: 32
     score: 50
     reload: 50
-    hitBonus: 5
-    breakOffTime: 1200
+    #hitBonus: 5
+    breakOffTime: 1400
     unmanned: true #fight to death
     battlescapeTerrainData:
       name: UFO1A
@@ -36,43 +36,21 @@ ufos:
         - name: UFO1C
           width: 10
           length: 10
-  - type: STR_MEDIUM_SCOUT
-    size: STR_SMALL
-    sprite: 1
-    damageMax: 200
-    speedMax: 2400
-    power: 20
-    range: 15
-    score: 75
-    reload: 56
-    breakOffTime: 250
-    battlescapeTerrainData:
-      name: UFO_110
-      mapDataSets:
-        - BLANKS
-        - U_EXT02
-        - U_WALL02
-        - U_BITS
-      mapBlocks:
-        - name: UFO_110
-          width: 10
-          length: 10
-          objects:
-            STR_TERMINAL:
-              - [4, 4, 0]
+    tags:
+      UFO_DETECTION_CHANGE: 2
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4
     damageMax: 500
-    shieldCapacity: 200
+    shieldCapacity: 600
     shieldRecharge: 115 #1*100% + 15 % to get 1 SP per sec
     shieldRechargeInGeoscape: 200
     shieldBleedThrough: 100
     speedMax: 3940
     accel: 8
-    power: 50
+    power: 25
     range: 40
-    reload: 70
+    reload: 55
     breakOffTime: 3000
     score: 800
     missionScore: 3
@@ -148,15 +126,15 @@ ufos:
               - position: [1, 5, 0]
                 amount: 5
                 mixed: true
-                itemList: &generalResistanceStash [STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL_CLIP, STR_RIOT_PISTOL, STR_RIOT_PISTOL, STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SAWED_OFF, STR_SAWED_OFF, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_STIMS, STR_PAINKILLER]
+                itemList: &generalResistanceStash [STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL_CLIP, STR_RIOT_PISTOL, STR_RIOT_PISTOL, STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SAWED_OFF, STR_SAWED_OFF, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_GUN, STR_RIOT_GUN_CLIP, STR_RIOT_GUN_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_STIMS, STR_PAINKILLER]
               - position: [4, 5, 1]
-                amount: 3
+                amount: 4
                 mixed: true
-                itemList: &explosiveResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER]
+                itemList: &explosiveResistanceStash [STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_EXPLOSIVE_CHARGE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_GRENADE, STR_GRENADE, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_LIQUID_FLAME, STR_SINGLE_ROCKET_LAUNCHER, STR_SINGLE_ROCKET_LAUNCHER, STR_GRENADE_LAUNCHER, STR_GRENADE_LAUNCHER_FRAG, STR_GRENADE_LAUNCHER_FRAG, STR_GRENADE_LAUNCHER_SMOKE, STR_GRENADE_LAUNCHER_SMOKE, STR_GRENADE_LAUNCHER_INC, STR_GRENADE_LAUNCHER_INC]
               - position: [3, 0, 0]
-                amount: 2
+                amount: 7
                 mixed: true
-                itemList: &suppliesResistanceStash [STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME,  STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT,  STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_GRENADE, STR_SMOKE_GRENADE, STR_FLASHBANG_GRENADE, STR_EXPLOSIVE_CHARGE, STR_FIRST_AID, STR_FIRST_AID, STR_PAINKILLER, STR_PAINKILLER, STR_STIMS, STR_STIMS, STR_MEDI_PACK]
+                itemList: &suppliesResistanceStash [STR_RIOT_PISTOL_CLIP, STR_RIOT_PISTOL_CLIP, STR_LIQUID_FLAME,    STR_DOUBLE_BARRELED_BUCKSHOT, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_RIOT_RIFLE_CLIP, STR_FIRST_AID, STR_FIRST_AID, STR_PAINKILLER, STR_PAINKILLER, STR_STIMS, STR_STIMS, STR_MEDI_PACK, STR_SUPPLIES_1, STR_SUPPLIES_1, STR_CASH_PACK, STR_CASH_PACK, STR_CASH_PACK, STR_CASH_PACK]
           fuseTimers:
             STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
         - name: CULTA18
@@ -189,11 +167,11 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [1, 6, 2]
-                amount: 3
+                amount: 6
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [1, 2, 2]
-                amount: 1
+                amount: 2
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -211,11 +189,11 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [5, 6, 2]
-                amount: 4
+                amount: 7
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [5, 6, 2]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -232,11 +210,11 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [6, 0, 1]
-                amount: 5
+                amount: 6
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [6, 0, 1]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -249,11 +227,11 @@ ufos:
               - [3, 1, 1]
           randomizedItems:
               - position: [1, 5, 1]
-                amount: 6
+                amount: 4
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [1, 5, 1]
-                amount: 1
+                amount: 8
                 mixed: true
                 itemList: *suppliesResistanceStash
           fuseTimers:
@@ -271,7 +249,7 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [1, 0, 1]
-                amount: 2
+                amount: 6
                 mixed: true
                 itemList: *suppliesResistanceStash
           fuseTimers:
@@ -285,9 +263,13 @@ ufos:
               - [4, 1, 0]
           randomizedItems:
               - position: [4, 0, 0]
-                amount: 7
+                amount: 4
                 mixed: true
                 itemList: *generalResistanceStash
+              - position: [4, 0, 0]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
           fuseTimers:
             STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
         - name: CULTACIV01
@@ -299,11 +281,159 @@ ufos:
               - [6, 3, 1]
           randomizedItems:
               - position: [6, 7, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [6, 7, 1]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+  - type: STR_RESISTANCE_SHELTER_FARM_DESTROYED
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: RESISTANCE_SHELTER_FARM
+      mapDataSets:
+        - BLANKS
+        - CULTIVAT
+        - BARN
+        - ROADS
+        - CULTMACHINES
+      mapBlocks:
+        - name: CULTA16
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [1, 5, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [4, 5, 1]
+                amount: 4
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [3, 0, 0]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULTA18
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [0, 6, 0]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [0, 6, 0]
+                amount: 2
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULTAFARM01
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [6, 1, 2]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 6, 2]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [1, 2, 2]
+                amount: 3
+                mixed: true
+                itemList: *explosiveResistanceStash
+        - name: CULTAFARM20
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [5, 6, 2]
+                amount: 6
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [5, 6, 2]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [5, 6, 2]
+                amount: 3
+                mixed: true
+                itemList: *explosiveResistanceStash
+        - name: CULTAFARM21
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [3, 6, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [6, 0, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [6, 0, 1]
+                amount: 4
+                mixed: true
+                itemList: *explosiveResistanceStash
+        - name: CULT_NEW16
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [1, 5, 1]
                 amount: 4
                 mixed: true
                 itemList: *generalResistanceStash
-          fuseTimers:
-            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+              - position: [1, 5, 1]
+                amount: 8
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULT_NEW18
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [0, 0, 1]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 0, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULT_FINNIK00
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [4, 0, 0]
+                amount: 4
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [4, 0, 0]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+        - name: CULTACIV01
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [6, 7, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [6, 7, 1]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
   - type: STR_RESISTANCE_SHELTER_FARM_RADIO
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -336,11 +466,11 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [4, 5, 1]
-                amount: 3
+                amount: 4
                 mixed: true
                 itemList: *explosiveResistanceStash
               - position: [3, 0, 0]
-                amount: 2
+                amount: 5
                 mixed: true
                 itemList: *suppliesResistanceStash
           fuseTimers:
@@ -357,7 +487,7 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [0, 6, 0]
-                amount: 2
+                amount: 4
                 mixed: true
                 itemList: *suppliesResistanceStash
           fuseTimers:
@@ -374,11 +504,11 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [1, 6, 2]
-                amount: 3
+                amount: 7
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [1, 2, 2]
-                amount: 1
+                amount: 2
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -395,11 +525,11 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [5, 6, 2]
-                amount: 4
+                amount: 5
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [5, 6, 2]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -416,11 +546,11 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [6, 0, 1]
-                amount: 5
+                amount: 8
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [6, 0, 1]
-                amount: 2
+                amount: 3
                 mixed: true
                 itemList: *explosiveResistanceStash
           fuseTimers:
@@ -431,6 +561,15 @@ ufos:
           items:
             STR_SPAWN_RESISTANCE_RADIO:
               - [3, 4, 1]
+          randomizedItems:
+              - position: [1, 5, 1]
+                amount: 3
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 5, 1]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_RADIO: [0, 0]
         - name: CULT_NEW18
@@ -445,7 +584,7 @@ ufos:
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [1, 0, 1]
-                amount: 2
+                amount: 7
                 mixed: true
                 itemList: *suppliesResistanceStash
           fuseTimers:
@@ -458,9 +597,13 @@ ufos:
               - [1, 3, 1]
           randomizedItems:
               - position: [4, 0, 0]
-                amount: 7
+                amount: 3
                 mixed: true
                 itemList: *generalResistanceStash
+              - position: [4, 0, 0]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_RADIO: [0, 0]
         - name: CULTACIV01
@@ -474,6 +617,10 @@ ufos:
                 amount: 4
                 mixed: true
                 itemList: *generalResistanceStash
+              - position: [6, 7, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
           fuseTimers:
            STR_SPAWN_RESISTANCE_RADIO: [0, 0]
   - type: STR_RESISTANCE_FOREST_HOUSE
@@ -488,13 +635,13 @@ ufos:
     reload: 32
     breakOffTime: 500
     battlescapeTerrainData:
-      name: STR_RESISTANCE_FOREST_HOUSE
+      name: RESISTANCE_FOREST_HOUSE
       mapDataSets:
         - BLANKS
         - FORESTSWAMP
-        - RESISTANCE_FOREST_HOUSE_01
+        - RESISTANCE_FOREST_HOUSE
       mapBlocks:
-        - name: RESISTANCE_FOREST_HOUSE_01
+        - name: RESIST_FOREST_01
           width: 20
           length: 20
           items:
@@ -504,19 +651,19 @@ ufos:
               - [7, 8, 0]
             STR_SPAWN_RESISTANCE_COMPUTER:
               - [4, 5, 0]
-          fuseTimers:
-            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
-            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
           randomizedItems:
               - position: [8, 6, 0]
-                amount: 6
+                amount: 5
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [7, 2, 0]
-                amount: 5
+                amount: 9
                 mixed: true
                 itemList: *suppliesResistanceStash
-        - name: RESISTANCE_FOREST_HOUSE_02
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
+        - name: RESIST_FOREST_02
           width: 20
           length: 20
           items:
@@ -526,19 +673,66 @@ ufos:
               - [7, 8, 0]
             STR_SPAWN_RESISTANCE_COMPUTER:
               - [4, 5, 0]
-          fuseTimers:
-            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
-            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
           randomizedItems:
               - position: [7, 5, 0]
-                amount: 8
+                amount: 9
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [7, 2, 0]
-                amount: 3
+                amount: 6
                 mixed: true
                 itemList: *generalResistanceStash
-
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
+        - name: RESIST_FOREST_03
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [13, 8, 0]
+              - [17, 7, 0]
+              - [9, 13, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [11, 11, 0]
+          randomizedItems:
+              - position: [11, 14, 0]
+                amount: 8
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [8, 14, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
+        - name: RESIST_FOREST_04
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [6, 11, 0]
+              - [5, 8, 0]
+              - [11, 9, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER:
+              - [3, 8, 0]
+          randomizedItems:
+              - position: [4, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [9, 5, 0]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [10, 13, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
   - type: STR_RESISTANCE_FOREST_HOUSE_TRAP
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -555,51 +749,290 @@ ufos:
       mapDataSets:
         - BLANKS
         - FORESTSWAMP
-        - RESISTANCE_FOREST_HOUSE_01
+        - RESISTANCE_FOREST_HOUSE
       mapBlocks:
-        - name: RESISTANCE_FOREST_HOUSE_01
+        - name: RESIST_FOREST_01
           width: 20
           length: 20
           items:
-            STR_RESISTANCE_SOLDIER_CORPSE:
+            STR_RESISTANCE_AGENT_CORPSE_DECORATION:
               - [5, 3, 0]
               - [10, 3, 0]
               - [7, 8, 0]
-            STR_SPAWN_RESISTANCE_COMPUTER:
-              - [4, 5, 0]
-          fuseTimers:
-            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
           randomizedItems:
               - position: [8, 6, 0]
-                amount: 6
+                amount: 2
                 mixed: true
                 itemList: *generalResistanceStash
               - position: [7, 2, 0]
-                amount: 5
+                amount: 4
                 mixed: true
                 itemList: *suppliesResistanceStash
-        - name: RESISTANCE_FOREST_HOUSE_02
+        - name: RESIST_FOREST_02
           width: 20
           length: 20
           items:
-            STR_RESISTANCE_SOLDIER_CORPSE:
+            STR_RESISTANCE_AGENT_CORPSE_DECORATION:
               - [5, 5, 0]
               - [8, 3, 0]
               - [7, 8, 0]
-            STR_SPAWN_RESISTANCE_COMPUTER:
-              - [4, 5, 0]
-          fuseTimers:
-            STR_SPAWN_RESISTANCE_COMPUTER: [0, 0]
           randomizedItems:
               - position: [7, 5, 0]
-                amount: 8
+                amount: 5
                 mixed: true
                 itemList: *suppliesResistanceStash
               - position: [7, 2, 0]
                 amount: 3
                 mixed: true
                 itemList: *generalResistanceStash
-
+        - name: RESIST_FOREST_03
+          width: 20
+          length: 20
+          items:
+            STR_RESISTANCE_AGENT_CORPSE_DECORATION:
+              - [13, 8, 0]
+              - [17, 7, 0]
+              - [9, 13, 0]
+          randomizedItems:
+              - position: [11, 4, 0]
+                amount: 9
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [8, 14, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+        - name: RESIST_FOREST_04
+          width: 20
+          length: 20
+          items:
+            STR_RESISTANCE_AGENT_CORPSE_DECORATION:
+              - [6, 11, 0]
+              - [5, 8, 0]
+              - [11, 9, 0]
+          randomizedItems:
+              - position: [4, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [9, 5, 0]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [10, 13, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+  - type: STR_URBAN_HAZARD
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: URBAN_HAZARD
+      mapDataSets:
+        - BLANKS
+        - URBAN_LOW_FRN
+        - URBITS_JUNK
+        - URBAN_DAWN
+        - URBAN_SAFEHOUSE
+      mapBlocks:
+        - name: URBAN_HAZARD00
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [2, 6, 0]
+              - [5, 3, 1]
+              - [4, 7, 1]
+              - [7, 3, 0]
+            STR_FLOPPY_RESISTANCE:
+              - [2, 1, 1]
+          randomizedItems:
+              - position: [1, 3, 0]
+                amount: 4
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [6, 4, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [8, 3, 1]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [5, 3, 1]
+                amount: 9
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 3, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [3, 5, 0]
+                amount: 1
+                mixed: false
+                itemList: &bonusResistanceAgent [STR_SPAWN_RESISTANCE_AGENT_VIP, STR_SPAWN_RESISTANCE_AGENT_VIP, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_MEDI_PACK, STR_SMOKE_GRENADE]
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+        - name: URBAN_HAZARD01
+          width: 20
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [14, 5, 0]
+              - [5, 6, 0]
+              - [4, 7, 1]
+              - [7, 4, 1]
+            STR_FLOPPY_RESISTANCE:
+              - [9, 2, 1]
+          randomizedItems:
+              - position: [2, 2, 1]
+                amount: 4
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [12, 2, 1]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [11, 1, 1]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [11, 1, 1]
+                amount: 9
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [3, 4, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [3, 4, 1]
+                amount: 1
+                mixed: false
+                itemList: *bonusResistanceAgent
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+        - name: URBAN_HAZARD02
+          width: 10
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [4, 3, 1]
+              - [2, 11, 1]
+              - [2, 8, 0]
+              - [5, 3, 0]
+            STR_FLOPPY_RESISTANCE:
+              - [5, 9, 1]
+          randomizedItems:
+              - position: [7, 9, 0]
+                amount: 4
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [4, 12, 1]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [4, 12, 1]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [7, 5, 1]
+                amount: 9
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [5, 7, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [5, 7, 1]
+                amount: 1
+                mixed: false
+                itemList: *bonusResistanceAgent
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+        - name: URBAN_HAZARD03
+          width: 20
+          length: 10
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [2, 6, 1]
+              - [3, 2, 1]
+              - [8, 7, 0]
+              - [13, 2, 0]
+            STR_FLOPPY_RESISTANCE:
+              - [5, 4, 1]
+          randomizedItems:
+              - position: [4, 8, 0]
+                amount: 7
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [5, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [5, 6, 0]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [7, 3, 1]
+                amount: 9
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [7, 3, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [7, 3, 1]
+                amount: 1
+                mixed: false
+                itemList: *bonusResistanceAgent
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+        - name: URBAN_HAZARD04
+          width: 10
+          length: 20
+          items:
+            STR_SPAWN_RESISTANCE_AGENT_VIP:
+              - [2, 6, 1]
+              - [2, 13, 1]
+              - [3, 14, 0]
+              - [5, 7, 0]
+            STR_FLOPPY_RESISTANCE:
+              - [3, 11, 1]
+          randomizedItems:
+              - position: [3, 6, 0]
+                amount: 4
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [6, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [1, 13, 1]
+                amount: 2
+                mixed: true
+                itemList: *explosiveResistanceStash
+              - position: [2, 6, 0]
+                amount: 9
+                mixed: true
+                itemList: *generalResistanceStash
+              - position: [3, 10, 1]
+                amount: 6
+                mixed: true
+                itemList: *suppliesResistanceStash
+              - position: [4, 7, 0]
+                amount: 1
+                mixed: false
+                itemList: *bonusResistanceAgent
+          fuseTimers:
+            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
   - type: STR_MIB_FOREST_BEACON
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -618,10 +1051,9 @@ ufos:
         - FOREST
         - RADIO_BEACON
       mapBlocks:
-        - name: FOREST_BEACON00
+        - name: FOREST_BEACON00 #FIXME - add MIB beacon item to recovery
           width: 10
           length: 10
-
   - type: DESERT_TELESCOPE_HOUSE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -648,8 +1080,6 @@ ufos:
               - [3, 14, 0]
           fuseTimers:
             STR_SPAWN_RESISTANCE_SCIENTIST_VIP: [0, 0]
-
-
   - type: STR_SCIENTIST_REFUGE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -678,7 +1108,7 @@ ufos:
               - [7, 4, 0]
             STR_FLOPPY_SCIENTISTS_LOG:
               - [1, 1, 1]
-          # randomizedItems: #TODO
+          # randomizedItems: #FIXME
           #     - position: [9, 10, 0]
           #       amount: 1
           #       mixed: true
@@ -693,7 +1123,7 @@ ufos:
               - [7, 1, 0]
             STR_FLOPPY_SCIENTISTS_LOG:
               - [1, 1, 1]
-          # randomizedItems: #TODO
+          # randomizedItems: #FIXME
           #     - position: [9, 10, 0]
           #       amount: 1
           #       mixed: true
@@ -720,61 +1150,7 @@ ufos:
         - name: EVACZONE_N
           width: 10
           length: 10
-  - type: STR_URBAN_HAZARD
-    size: STR_MEDIUM_UC
-    modSprite: interception_jammed
-    damageMax: 500
-    speedMax: 5000
-    accel: 10
-    power: 40
-    range: 20
-    score: 700
-    reload: 32
-    breakOffTime: 500
-    battlescapeTerrainData:
-      name: URBAN_HAZARD
-      mapDataSets:
-        - BLANKS
-        - URBAN_LOW_FRN
-        - URBITS_JUNK
-        - URBAN_DAWN
-      mapBlocks:
-        - name: URBAN_HAZARD
-          width: 10
-          length: 10
-          items:
-            STR_SPAWN_RESISTANCE_AGENT_VIP:
-              - [2, 6, 0]
-              - [5, 3, 1]
-              - [4, 7, 1]
-              - [6, 9, 0]
-          randomizedItems:
-              - position: [1, 3, 0]
-                amount: 4
-                mixed: true
-                itemList: *suppliesResistanceStash
-              - position: [6, 4, 0]
-                amount: 5
-                mixed: true
-                itemList: *generalResistanceStash
-              - position: [9, 6, 0]
-                amount: 2
-                mixed: true
-                itemList: *explosiveResistanceStash
-              - position: [5, 3, 1]
-                amount: 8
-                mixed: true
-                itemList: *generalResistanceStash
-              - position: [1, 3, 1]
-                amount: 6
-                mixed: true
-                itemList: *suppliesResistanceStash
-              - position: [3, 5, 0]
-                amount: 1
-                mixed: false
-                itemList: [STR_SPAWN_RESISTANCE_AGENT_VIP, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_RIOT_RIFLE, STR_MEDI_PACK, STR_SMOKE_GRENADE]
-          fuseTimers:
-            STR_SPAWN_RESISTANCE_AGENT_VIP: [0, 0]
+
   - type: STR_RESISTANCE_URBAN_SAFEHOUSE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
@@ -796,3 +1172,112 @@ ufos:
         - name: URBAN_SAFEHOUSE
           width: 40
           length: 40
+          
+  - type: STR_CROP_CIRCLE_NO_LOOT
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCIRCLE00
+          width: 20
+          length: 20
+        - name: CROPCIRCLE01
+          width: 20
+          length: 20
+        - name: CROPCIRCLE02
+          width: 20
+          length: 20
+        - name: CROPCIRCLE03
+          width: 20
+          length: 20
+  - type: STR_CROP_CIRCLE_POOR_LOOT
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCIRCLE00
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [9, 9, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+        - name: CROPCIRCLE01
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [4, 6, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+        - name: CROPCIRCLE02
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [8, 12, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+        - name: CROPCIRCLE03
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [11, 8, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+
+  - type: STR_DEAD_COW
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: DEADCATTLE
+      mapDataSets:
+        - BLANKS
+        - DEADCATTLE
+      mapBlocks:
+        - name: DEADCATTLE00
+          width: 10
+          length: 10
+
+extended:
+  tags: # Remember to add tag definitions to same file as item/armor rulesets!
+    RuleUfo:
+      UFO_DETECTION_CHANGE: int

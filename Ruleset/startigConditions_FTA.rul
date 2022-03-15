@@ -3,5 +3,7 @@ startingConditions:
     defaultArmor:
       STR_SOLDIER:
         STR_LEATHER_COAT_UC: 100
+      STR_RESISTANCE_AGENT:
+        STR_LEATHER_COAT_UC: 100
     allowedArmors:
       - STR_LEATHER_COAT_UC

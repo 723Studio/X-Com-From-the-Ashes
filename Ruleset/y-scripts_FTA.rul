@@ -1,32 +1,3 @@
-soldierBonuses:
-  - name: STR_SNIPER
-    tags:
-      CENTER_MASS: 20           # bonus chance to land a critical hit (x1.5 damage for a sniper rifle, x1.2 for rifle)
-      AIM: 1                    # (1/0) enables 20% bonus accuracy with a sniper rifle when kneeling on the position you were kneeling at the start of the turn
-      DEATH_FROM_ABOVE: 1       # (1/0) enables additional damage to morale and suppress next reaction from the target if damaged with sniper rifle aim shot and distance is greater than 300 (~15 tiles)
-  - name: STR_HEAVY
-    tags:
-      SHREDDER: 10              # bonus % of resulting damage adds as to_armor damage if using heavy weapons
-      STEADY_GRIP: 10           # bonus to accuracy with heavy weapons
-      BULKY: 5                  # bonus % of reducing incoming stun damage
-  - name: STR_ASSAULT
-    tags:
-      EVER_VIGILANT: 1          # (1/0) restores 20-30% of TU on beginning of enemy turn 
-      RAPID_TARGETING: 5        # bonus to accuracy with snap and auto-shots with pistols, SMG, rifles, shotguns and LMG
-  - name: STR_RANGER
-    tags:
-      REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
-      DASH: 30                  # value to reduce reaction chance in close distance
-      UNIFIGHT: 10              # bonus to accuracy with trowing weapons
-  - name: STR_SPECIALIST
-    tags:
-      FIELD_SURGEON: 15         #X (1-XXX) percent reduction in recovery time if healed by field surgeon.
-      SAVIOR: 3                 #X (1-XXX) max amount of health restored when using heal
-      UTILITY_SPECIALIST: 1     # (1/0) enables additional accuracy of utility grenades throwing, using utilities refund 2-4% TU
-  - name: STR_UNARMED_FIGHTER
-    tags:
-      STR_UNARMED_FIGHTER: 15         #X (1-XXX) bonus for unarmed hit accuracy, doubles if both hands are free.
-
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
     RuleSoldierBonus:
@@ -75,6 +46,9 @@ extended:
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
+      FTAG_STUN_TO_HP: int #converts stun to hp damage, devide stun damage to 3
+    RuleUfo:
+      UFO_DETECTION_CHANGE: int
     BattleItem:
       ITEM_ENERGY_SHIELD_HP: int
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
@@ -687,7 +661,9 @@ extended:
           if eq battle_action battle_action_aimshoot;
             weapon_item.getTag temp Tag.BPL_AIMED_1_5X_POWER;
             if neq temp 0;
-              mul power 1.5;
+              set temp power;
+              div temp 2;
+              add power temp;
             end;
           end;
           return power part side;
@@ -742,7 +718,7 @@ extended:
 
           attacker.getTag centerMass Tag.CENTER_MASS_STATE;
 
-          set critChance centerMass; #TODO for now, we have only one crit chance source.
+          set critChance centerMass; #FIXME for now, we have only one crit chance source.
           set critSource 1; 
 
           if gt critChance 0;
@@ -1029,7 +1005,7 @@ extended:
 
           armorRuleset.getTag shieldType Tag.ARMOR_ENERGY_SHIELD_TYPE;
 
-          if or eq shieldType 0; # Default; Tzeentch
+          if or eq shieldType 0; # Default;
             # Check which damage type and set shield's 'resistance'
             # If it's special, choking, heat, or cold, just skip the rest
             if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 14;
@@ -1037,11 +1013,11 @@ extended:
 
             # resistances
             else eq damaging_type 1; # AP
-              set shieldResistCoeff 50;
+              set shieldResistCoeff 150; #was 50
             else eq damaging_type 2; # Incendiary
-              set shieldResistCoeff 50;
+              set shieldResistCoeff 120; #was 50
             else eq damaging_type 3; # Hi-Ex
-              set shieldResistCoeff 50;
+              set shieldResistCoeff 130; #was 50
             else eq damaging_type 5; # Plasma
               set shieldResistCoeff 125;
             else eq damaging_type 6; # Stun
@@ -1051,7 +1027,7 @@ extended:
             else eq damaging_type 8; # Acid
               set shieldResistCoeff 175;
             else eq damaging_type 11; # Electric
-              set shieldResistCoeff 66;
+              set shieldResistCoeff 75; #was 66
             else eq damaging_type 12; # Psi
               set shieldResistCoeff 33;
             else eq damaging_type 13; # Warp
@@ -1502,6 +1478,21 @@ extended:
               set to_transform 0;
             end;
           end;
+          return;
+
+      - offset: 5   # Handle extra hp damage from stun
+        code: |
+          var ptr RuleArmor armor_rule;
+          var int stunVul;
+
+          unit.getRuleArmor armor_rule;
+          armor_rule.getTag stunVul Tag.FTAG_STUN_TO_HP;
+
+          if gt stunVul 0;
+            set to_health to_stun;
+            div to_stun 3;
+          end;
+
           return;
 
       - offset: 25   # Handle death from above debuff apply
@@ -2139,3 +2130,64 @@ extended:
           end;
 
           return;
+
+    detectUfoFromBase:
+      - offset: 1   # handle small ufo increased detection
+        code: |
+          var ptr RuleUfo rule;
+          var int change;
+
+          ufo.getRuleUfo rule;
+          rule.getTag change Tag.UFO_DETECTION_CHANGE ;
+          if neq change 0;
+            debug_log "UFO detecting with addtional chance: " ufo change;
+            debug_log "original detection chance: " detection_chance;
+            add detection_chance change;
+            debug_log "new detection chance: " detection_chance;
+          end;
+          return detection_type detection_chance;
+
+
+
+# extended:
+#   tags:
+#     RuleItem:
+#       ITEM_NV_GOGGLES: int
+#     BattleUnitVisibility:
+#       VISIBILITY_NV_GOGGLES: int
+#   scripts:
+#     visibilityUnit:
+#       - offset: 3
+#         code: |
+#           var int itemA;
+#           var int itemB;
+#           var int targetShade;
+#           var ptr BattleItem item;
+#           var ptr RuleItem type;
+          
+#           #get info about left hand item
+#           observer_unit.getLeftHandWeapon item;
+#           item.getRuleItem type;
+#           type.getTag itemA Tag.ITEM_NV_GOGGLES;
+            
+#           #get info about left hand item
+#           observer_unit.getRightHandWeapon item;
+#           item.getRuleItem type;
+#           type.getTag itemB Tag.ITEM_NV_GOGGLES;
+#           if eq visibility_mode null; #default visibility
+            
+#             #if left or rigth item have NV bonus
+#             if or eq itemA 1 eq itemB 1;
+#               target_unit.getTileShade targetShade;
+#               if gt targetShade 9;
+#                 add current_visibility 48; #16*3 = 3 tiles better visibility in dark
+#                 set visibility_mode Tag.VISIBILITY_NV_GOGGLES; #toggle to NV mode
+#               end;
+#             end;
+#           else eq visibility_mode Tag.VISIBILITY_NV_GOGGLES; #assume that other script already set "NV" mode, we only add small bonus in that case
+#             if or eq itemA 1 eq itemB 1;
+#               add current_visibility 16;
+#             end;
+#           end;
+          
+#           return current_visibility visibility_mode;

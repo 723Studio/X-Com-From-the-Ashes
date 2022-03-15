@@ -1,8 +1,8 @@
 startingBase:
   randomSoldiers:
-    STR_SOLDIER: 15
-  scientists: 6
-  engineers: 4
+    STR_SOLDIER: 16
+  scientists: 7
+  engineers: 5
   facilities:
     - type: STR_ACCESS_LIFT
       x: 2
@@ -38,61 +38,73 @@ startingBase:
     STR_POLICE_BATON: 3
     STR_COMBAT_KNIFE: 2
     STR_TASER: 2
-    STR_TASER_CLIP: 16
-    STR_PISTOL: 4
-    STR_PISTOL_CLIP: 13
+    STR_TASER_CLIP: 10
+    STR_PISTOL: 3
+    STR_PISTOL_CLIP: 10
+    STR_HEAVY_PISTOL: 2
+    STR_HEAVY_PISTOL_CLIP: 6
     STR_PDW: 2
     STR_PDW_CLIP: 7
     STR_SMG: 2
     STR_SMG_CLIP: 6
-    STR_RIFLE: 5
+    STR_RIFLE: 4
     STR_ASSAULT_RIFLE: 3
-    STR_RIFLE_CLIP: 20
+    STR_PRECISION_RIFLE: 2
+    STR_RIFLE_CLIP: 24
     STR_SNIPER_RIFLE: 1
-    STR_SNIPER_RIFLE_CLIP: 6
+    STR_SNIPER_RIFLE_CLIP: 8
     STR_SHOTGUN: 2
-    STR_SHOTGUN_SHELLS_BS: 10
-    STR_SHOTGUN_SHELLS_AP: 6
-    STR_SHOTGUN_SHELLS_BATON: 4
+    STR_SHOTGUN_SHELLS_BS: 12
+    STR_SHOTGUN_SHELLS_AP: 8
+    STR_SHOTGUN_SHELLS_BATON: 6
+    STR_LMG: 1
+    STR_LMG_CLIP: 6
     STR_AUTO_CANNON: 1
-    STR_AC_AP_AMMO: 4
-    STR_AC_BS_AMMO: 2
+    STR_AC_AP_AMMO: 5
+    STR_AC_BS_AMMO: 4
     STR_AC_HE_AMMO: 2
     STR_LIGHT_CANNON: 2
     STR_LC_AP_AMMO: 8
-    STR_LC_BS_AMMO: 4
-    STR_LC_HE_AMMO: 2
+    STR_LC_BS_AMMO: 5
+    STR_LC_HE_AMMO: 3
     STR_LC_I_AMMO: 2
+    STR_MGL: 1
+    STR_MGL_CLIP: 2
+    STR_MGL_CLIP_SMOKE: 1
+    STR_MGL_CLIP_FLASHBANG: 1
     STR_ROCKET_LAUNCHER: 1
-    STR_SMALL_ROCKET: 4
+    STR_SMALL_ROCKET: 5
     STR_LARGE_ROCKET: 2
     STR_INCENDIARY_ROCKET: 2
-    STR_GRENADE: 8
-    STR_SMOKE_GRENADE: 5
-    STR_FLASHBANG_GRENADE: 6
+    STR_GRENADE: 12
+    STR_SMOKE_GRENADE: 14
+    STR_INCENDIARY_GRENADE: 10
+    STR_FLASHBANG_GRENADE: 16
+    STR_PROXIMITY_GRENADE: 6
     STR_TRAUMA_PACK: 2
     STR_PERSONAL_AID_KIT: 8
-    STR_STIMS_INJECTOR: 6
-    STR_COMBAT_SHIELD: 2
-    STR_STINGRAY_LAUNCHER: 1
-    STR_STINGRAY_MISSILES: 25
-    STR_CANNON: 1
-    STR_CANNON_ROUNDS_X50: 10
+    STR_STIMS_INJECTOR: 10
+    STR_COMBAT_SHIELD: 4
+    STR_STINGRAY_MISSILE: 17
+    STR_CANNON_ROUNDS_X50: 8
+    STR_ELECTRO_FLARE: 13
+    STR_FLASHLIGHT: 10
+    STR_SPARE_PARTS: 15
   crafts:
     - type: STR_DRAGONFLY
       id: 1
-      fuel: 0
-      damage: 10
+      fuel: 20
+      damage: 5
       status: STR_REPAIRS
     - type: STR_STALKER
       id: 1
-      fuel: 0
-      damage: 8
+      fuel: 40
+      damage: 2
       weapons:
-        - type: STR_STINGRAY
-          ammo: 6
         - type: STR_CANNON_UC
           ammo: 200
+        - type: STR_STINGRAY
+          ammo: 6
       status: STR_REPAIRS
   # soldiers: #look at save section for rules. for patron reward!
   #   - type: STR_SOLDIER
