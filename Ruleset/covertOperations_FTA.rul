@@ -7,10 +7,15 @@ covertOperations:
     soldierSlots: 2
     optionalSoldierSlots: 2
     optionalSoldierEffect: 1
+    requiresBaseFunc: [HQ]
     baseChances: 70
+    successLoyalty: 100500
+    failureLoyalty: -100500
     danger: 5
     costs: 60
-    #itemSpaceLimit: 10 #TODO - uncomment after bug fixed
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    #itemSpaceLimit: 10 #FIXME - uncomment after bug fixed
     instantSuccessDeployment: 
       STR_MIB_CHASING: 100
     instantTrapDeployment: 
@@ -23,12 +28,15 @@ covertOperations:
       - STR_MIB_CHASING_SUCCESS
     soldierSlots: 3
     optionalSoldierSlots: 2
-    baseChances: 70
-    danger: 8
-    costs: 120
-    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
-    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_FAILURE_DESCRIPTION
-    trapChance: 70
+    requiresBaseFunc: [HQ]
+    baseChances: 60
+    danger: 800
+    costs: 432
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
+    trapChance: 65
     instantTrapDeployment: 
       STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
@@ -43,11 +51,14 @@ covertOperations:
       - STR_MIB_CHASING_FAIL
     soldierSlots: 3
     optionalSoldierSlots: 2
-    baseChances: 65
-    danger: 9
-    costs: 216
-    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
-    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_SUCCESS_DESCRIPTION
+    requiresBaseFunc: [HQ]
+    baseChances: 45
+    danger: 10
+    costs: 600
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
+    failureDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
     trapChance: 85
     instantTrapDeployment: 
       STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
@@ -55,40 +66,220 @@ covertOperations:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     failureResearchList:
       - STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
-    successScore: 150
-    failureScore: -120
+    successScore: 110
+    failureScore: -150
 
-
-  - name: STR_REGIONAL_HQ #TODO
+  - name: STR_REGIONAL_HQ
     description: STR_REGIONAL_HQ_DESCRIPTION
-    successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
     requires:
-      - STR_TODOIUM
-      - STR_COVERT_OPERATIONS
-    soldierSlots: 2
+      - STR_REGIONAL_HQ_LOCATION
+    soldierSlots: 3
+    scientistSlots: 1
+    baseChances: 45
+    requiresBaseFunc: [HQ]
+    danger: 13
+    costs: 220
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    specialRule: STR_REGIONAL_HQ_DISCOVERY
+    successDescription: STR_REGIONAL_HQ_SUCCESS_DESCRIPTION
+    successScore: 130
+    successResearchList:
+      - STR_REQ_HQ_LOCATION_SUCCESS
+    failureDescription: STR_REGIONAL_HQ_FAILURE_DESCRIPTION
+    failureScore: -160
+    failureResearchList:
+      - STR_REQ_HQ_LOCATION_FAILED
+   
+  - name: STR_REGIONAL_HQ_SURVEY
+    description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
+    requires:
+      - STR_REQ_HQ_LOCATION_SUCCESS
+    soldierSlots: 3
     scientistSlots: 1
     baseChances: 70
-    requiredItems: #TODO
-      STR_POLICE_BATON: 2
-    danger: 3
-    costs: 120
-    specialRule: STR_REGIONAL_HQ_DISCOVERY
+    requiresBaseFunc: [HQ]
+    danger: 11
+    costs: 320
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    successDescription: STR_REGIONAL_HQ_SURVEY_SUCCESS_DESCRIPTION
+    successScore: 50
+    successResearchList:
+      - STR_REGIONAL_HQ_SURVEY_DONE
+    failureDescription: STR_REGIONAL_HQ_SURVEY_FAILURE_DESCRIPTION
+    failureScore: -80
+    failureResearchList:
+      - STR_REGIONAL_HQ_SURVEY_FAILED
+  - name: STR_REGIONAL_HQ_SURVEY_HARD
+    description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
+    requires:
+      - STR_REQ_HQ_LOCATION_FAILED
+    soldierSlots: 4
+    scientistSlots: 1
+    baseChances: 60
+    requiresBaseFunc: [HQ]
+    danger: 14
+    costs: 390
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    successDescription: STR_REGIONAL_HQ_SURVEY_SUCCESS_DESCRIPTION
+    successScore: 40
+    successResearchList:
+      - STR_REGIONAL_HQ_SURVEY_DONE
+    failureDescription: STR_REGIONAL_HQ_SURVEY_FAILURE_DESCRIPTION
+    failureScore: -90
+    failureResearchList:
+      - STR_REGIONAL_HQ_SURVEY_FAILED
+  - name: STR_RESISTANCE_CELL_CREATION
+    description: STR_RESISTANCE_CELL_CREATION_DESCRIPTION
+    requires:
+      - STR_RESISTANCE_CELL_CREATION_PREREQ
+    soldierSlots: 2
+    optionalSoldierSlots: 2
+    optionalSoldierEffect: 5
+    requiresBaseFunc: [HQ]
+    baseChances: 60
+    danger: 14
+    costs: 220
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    successDescription: STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION
+    successScore: 200
+    successResearchList:
+      - STR_RESISTANCE_CELL_CREATED
+    successReputationScore:
+      STR_RESISTANCE: 100
+    failureDescription: STR_RESISTANCE_CELL_CREATION_FAILURE_DESCRIPTION
+    failureScore: -150
+    failureReputationScore:
+      STR_RESISTANCE: -100
+    trapChance: 70
+    instantTrapDeployment:
+      STR_MIB_EARLY_TRAP_ESCAPE: 100
+
+  - name: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION
+    description: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION
+    requires:
+      - STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
+    soldierSlots: 2
+    optionalSoldierSlots: 2
+    optionalSoldierEffect: 1
+    requiresBaseFunc: [HQ]
+    baseChances: 40
+    danger: 0
+    costs: 60
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    instantSuccessDeployment: 
+      STR_EX_COUNCIL_DATA_VAULT: 100
+    instantTrapDeployment: 
+      STR_EX_COUNCIL_DATA_VAULT_HARD: 100
+    trapChance: 100
+  - name: STR_EX_COUNCIL_DATA_VAULT_CONVEY
+    description: STR_EX_COUNCIL_DATA_VAULT_CONVEY_DESCRIPTION
+    requires:
+      - STR_EX_COUNCIL_DATA_VAULT_SUCCESS
+    soldierSlots: 2
+    optionalSoldierSlots: 2
+    optionalSoldierEffect: 1
+    requiresBaseFunc: [HQ]
+    requiredItems:
+      STR_DATA_VAULT: 1
+    baseChances: 60
+    danger: 0
+    costs: 60
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    successDescription: STR_EX_COUNCIL_DATA_VAULT_CONVEY_DESCRIPTION_SUCCESS
+    successFunds: 600000
+    successLoyalty: 350
+    successResearchList:
+      - STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
+    instantTrapDeployment: 
+      STR_MIB_TRAP_DATA_VAULT: 100
+    trapChance: 100
+
+  - name: STR_CULT_INVESTIGATION
+    description: STR_CULT_INVESTIGATION_DESCRIPTION
+    requires:
+      - STR_CULT_INVESTIGATION
+    soldierSlots: 2
+    optionalSoldierSlots: 2
+    optionalSoldierEffect: 1
+    scientistSlots: 1
+    requiresBaseFunc: [HQ]
+    removeRequiredItemsOnSuccess: false
+    removeRequiredItemsOnFailure: false
+    baseChances: 50
+    danger: 0
+    costs: 160
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    instantSuccessDeployment: 
+      STR_CULTISTS_DETENTION: 100
+    instantTrapDeployment: 
+      STR_CULTISTS_DETENTION_TRAP: 100
+    trapChance: 100
+  - name: STR_STEAL_OSPREY_OPERATION
+    description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
+    requires:
+      - STR_STEAL_OSPREY_PREREQ
+    soldierSlots: 6
+    requiresBaseFunc: [HQ]
+    baseChances: 45
+    danger: 0
+    costs: 300
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    engineerSlots: 2
+    successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
+    successScore: 150
+    successWeightedItemList:
+      STR_CRATED_OSPREY: 100
+    failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
+    failureScore: -300
+    failureFunds: -42000
+
+  - name: STR_INFILTRATING_MILITARY_RND
+    description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
+    requires:
+      - STR_INFILTRATING_MILITARY_RND_PREREQ
+    soldierSlots: 4
+    optionalSoldierSlots: 4
+    optionalSoldierEffect: -2
+    requiresBaseFunc: [HQ]
+    baseChances: 60
+    concealedItemsBonus: 5 #default 4
+    danger: 20
+    costs: 430
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    #successDescription: STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION
+    #successScore: 200
+    instantSuccessDeployment:
+      STR_INFILTRATING_MILITARY_RND: 100
+    failureDescription: STR_INFILTRATING_MILITARY_RND_FAILURE_DESCRIPTION
+    failureScore: -180
+
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_START
-    #itemSpaceLimit: 10
-    baseChances: 75
-    costs: 5
+    baseChances: 60
+    costs: 130
     soldierSlots: 2
-    #optionalSoldierSlots: 2
+    optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
-    danger: 2
+    danger: 0
     requiredItems:
       STR_FAKE_AGENT_ID: 2
+    removeRequiredItemsOnSuccess: false
+    removeRequiredItemsOnFailure: false
     scientistSlots: 1
+    scientistEffect: 40
     allowedArmor:
       - STR_JUMPSUIT_UC
     successScore: 100
@@ -100,81 +291,197 @@ covertOperations:
       STR_LOCALS_TRAP: 100
     trapChance: 100
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA
-    description: STR_MONSTER_HUNT_RUMORS_CHUPA_DESCRIPTION
+    description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
     requires:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
-    #itemSpaceLimit: 10
-    baseChances: 75
-    costs: 5
-    soldierSlots: 2
-    #optionalSoldierSlots: 2
+    baseChances: 60
+    costs: 420
+    soldierSlots: 3
+    optionalSoldierSlots: 2
     requiresBaseFunc: [HQ]
     danger: 2
-    requiredItems:
-      STR_FAKE_AGENT_ID: 2
     scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
-    successScore: 100
-    #successEvent: #TODO - continue the arc?
-    #failureEvent: STR_MONSTER_HUNT_INVESTIGATION_FAILED
-    instantTrapDeployment: 
-      STR_LOCALS_TRAP: 30
-      STR_CHUPACABRA_HUNT_TRAP: 70
-    trapChance: 100
+    allowAllEquipment: true
+    successScore: 150
     instantSuccessDeployment:
-      STR_CHUPACABRA_HUNT: 100
-
-
+      STR_CHUPACABRA_HUNT_NIGHT: 70
+      STR_CHUPACABRA_HUNT_EVENING: 30
+    successResearchList:
+      - STR_UNLEASH_CHUPAS_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_CHUPA
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
+    failureScore: -300
+    trapChance: 65
+    instantTrapDeployment: 
+      STR_CHUPACABRA_HUNT_TRAP: 100
+    failureResearchList:
+      - STR_UNLEASH_CHUPAS_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_CHUPA
+  - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
+    description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
+    requires:
+      - STR_MONSTER_HUNT_RUMORS_ARMADILLO
+    baseChances: 70
+    costs: 460
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
+    danger: 2
+    scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    allowAllEquipment: true
+    successScore: 150
+    instantSuccessDeployment:
+      STR_ARMADILLO_HUNT_DAY: 50
+      STR_ARMADILLO_HUNT_EVENING: 50
+    successResearchList:
+      - STR_UNLEASH_ARMADILLO_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_ARMADILLO
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
+    failureScore: -300
+    trapChance: 60
+    instantTrapDeployment: 
+      STR_ARMADILLO_HUNT_TRAP: 100
+    failureResearchList:
+      - STR_UNLEASH_ARMADILLO_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_ARMADILLO
+  - name: STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
+    description: STR_MONSTER_HUNT_TROPIC_ECO_DESCRIPTION
+    requires:
+      - STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
+    baseChances: 55
+    costs: 520
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
+    danger: 2
+    scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    allowAllEquipment: true
+    successScore: 150
+    instantSuccessDeployment:
+      STR_AMPHIBIAN_HUNT_DAY: 50
+      STR_AMPHIBIAN_HUNT_EVENING: 50
+    successResearchList:
+      - STR_UNLEASH_AMPHIBIAN_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_AMPHIBIAN
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
+    failureScore: -300
+    trapChance: 75
+    instantTrapDeployment: 
+      STR_AMPHIBIAN_HUNT_TRAP: 100
+    failureResearchList:
+      - STR_UNLEASH_AMPHIBIAN_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_AMPHIBIAN
+  - name: STR_MONSTER_HUNT_RUMORS_SWARMID
+    description: STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION
+    requires:
+      - STR_MONSTER_HUNT_RUMORS_SWARMID
+    baseChances: 65
+    costs: 420
+    soldierSlots: 3
+    optionalSoldierSlots: 2
+    requiresBaseFunc: [HQ]
+    danger: 2
+    scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    allowAllEquipment: true
+    successScore: 150
+    instantSuccessDeployment:
+      STR_SWARMID_HUNT_DAY: 50
+      STR_SWARMID_HUNT_EVENING: 50
+    successResearchList:
+      - STR_UNLEASH_SWARMID_TRIGGER
+    successEvent: STR_MONSTER_RE_HUNT_SWARMID
+    failureDescription: STR_MONSTER_HUNT_FAILURE_DESCRIPTION
+    failureScore: -300
+    trapChance: 50
+    instantTrapDeployment: 
+      STR_SWARMID_HUNT_TRAP: 100
+    failureResearchList:
+      - STR_UNLEASH_SWARMID_TRIGGER
+    failureEvent: STR_MONSTER_RE_HUNT_SWARMID
 #supplies gathering
   - name: STR_LAB_EQUIPMENT_ACQUISITION
     description: STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION
     requires:
       - STR_COVERT_OPERATIONS
-      - STR_BIOLAB
+      - STR_BIOLAB_PREREQ
     soldierSlots: 2
     optionalSoldierSlots: 1
     scientistSlots: 1
-    baseChances: 60
+    baseChances: 70
+    requiredItems:
+      STR_BRIEFCASE_CASH: 1
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
     danger: 0
-    costs: 120
-    #itemSpaceLimit: 10
-    successDescription: STR_LAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
-    failureDescription: STR_LAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
-    successFunds: -420000
-    failureFunds: -650000
-    successScore: 300
-    failureScore: -250
+    costs: 220
+    successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
+    failureDescription: STR_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
+    failureFunds: -9000
+    successScore: 20
+    failureScore: -30
     successEveryItemList:
-      STR_LABORATORY_EQUIPMENT: 2
+      STR_LABORATORY_EQUIPMENT: 1
     failureEveryItemList:
-      STR_LABORATORY_EQUIPMENT: 2
+      STR_LABORATORY_EQUIPMENT: 1
     successEvent: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     failureEvent: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
   - name: STR_BIOLAB_EQUIPMENT_ACQUISITION
     description: STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION
     requires:
       - STR_COVERT_OPERATIONS
-      - STR_BIOLAB
+      - STR_BIOLAB_PREREQ
     soldierSlots: 2
     optionalSoldierSlots: 1
     scientistSlots: 1
-    baseChances: 60
+    baseChances: 70
+    requiredItems:
+      STR_BRIEFCASE_CASH: 1
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
     danger: 0
-    costs: 120
-    #itemSpaceLimit: 10
-    successDescription: STR_BIOLAB_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
-    failureDescription: STR_BIOLAB_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
-    successFunds: -370000
-    failureFunds: -480000
-    successScore: 270
-    failureScore: -230
+    costs: 350
+    successDescription: STR_EQUIPMENT_ACQUISITION_SUCCESS_DESCRIPTION
+    failureDescription: STR_EQUIPMENT_ACQUISITION_FAIL_DESCRIPTION
+    failureFunds: -9000
+    successScore: 30
+    failureScore: -40
     successEveryItemList:
       STR_BIOLOGY_EQUIPMENT: 1
     failureEveryItemList:
       STR_BIOLOGY_EQUIPMENT: 1
     successEvent: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     failureEvent: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
+
+#resistance
+  - name: STR_MILITARY_WEAPONRY_ACQUISITION
+    description: STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION
+    requires:
+      - STR_COVERT_OPERATIONS
+      - STR_RESISTANCE_WEAPONRY_PREREQ
+    soldierSlots: 2
+    baseChances: 70
+    danger: 15
+    costs: 30
+    successDescription: STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_SUCCESS
+    failureDescription: STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_FAIL
+    successScore: 350
+    failureScore: -150
+    requiredItems:
+      STR_BRIEFCASE_CASH: 1
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
+    successEvent: STR_MILITARY_WEAPONRY_ACQUISITION_SUCCESS
+    failureEvent: STR_MILITARY_WEAPONRY_ACQUISITION_REPEAT_OPERATION
+
+
 
   # - name: STR_TEST_OPERATION
   #   description: STR_TEST_OPERATION_DESCRIPTION
@@ -201,7 +508,7 @@ covertOperations:
   #   failureDescription: "Oink! This test operation fails in the name of covert operation system testing!"
   #   successEveryItemList:
   #     STR_STINGRAY_LAUNCHER: 1
-  #     STR_STINGRAY_MISSILES: 5
+  #     STR_STINGRAY_MISSILE: 5
   #     STR_AVALANCHE_LAUNCHER: 1
   #     STR_AVALANCHE_MISSILES: 3   
   #     # STR_XCOM_EX_COMMANDER_CORPSE: 2

@@ -236,13 +236,13 @@ units:
     stats:
       tu: 50
       stamina: 65
-      health: 25
+      health: 35
       bravery: 90
       reactions: 35
       firing: 48
       throwing: 36
       strength: 26
-      melee: 25
+      melee: 30
       psiStrength: 45
       psiSkill: 0
     armor: STR_XCOM_EX_COMMANDER_ARMOR
@@ -256,21 +256,21 @@ units:
     aggression: 1
     sniper: 75
     spotter: 2
-    canSurrender: true
+    canSurrender: false
   - &STR_MIB_AGENT
     type: STR_MIB_AGENT
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 58
+      tu: 60
       stamina: 90
       health: 35
-      bravery: 90
+      bravery: 100
       reactions: 50
       firing: 55
       throwing: 60
       strength: 45
-      melee: 43
+      melee: 50
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -287,13 +287,12 @@ units:
     armor: STR_MIB_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 20
+    value: 5
     deathSound: *MaleDeathSounds
     intelligence: 4
-    aggression: 1
-    sniper: 75
-    spotter: 2
-    canSurrender: true #todo - false
+    aggression: 3
+    spotter: 1
+    canSurrender: false
   - type: STR_MIB_AGENT_SPAWN
     refNode: *STR_MIB_AGENT
     value: 1
@@ -304,11 +303,13 @@ units:
         - STR_PISTOL_CLIP
         - STR_PISTOL_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_PDW
         - STR_PDW_CLIP
         - STR_PDW_CLIP
         - STR_PDW_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_SMG
         - STR_SMG_CLIP
         - STR_SMG_CLIP
@@ -353,12 +354,12 @@ units:
       tu: 56
       stamina: 90
       health: 35
-      bravery: 90
+      bravery: 100
       reactions: 50
       firing: 55
       throwing: 60
       strength: 45
-      melee: 40
+      melee: 48
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -375,16 +376,15 @@ units:
     armor: STR_MIB_AGENT_VEST_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 25
+    value: 5
     deathSound: *MaleDeathSounds
     intelligence: 4
-    aggression: 2
-    sniper: 25
+    aggression: 3
     spotter: 1
-    canSurrender: true
+    canSurrender: false
   - type: STR_MIB_ARMORED_AGENT_SPAWN
     refNode: *STR_MIB_ARMORED_AGENT
-    value: 2
+    value: 1
     altRecoveredUnit: STR_MIB_AGENT
     builtInWeaponSets: *MIBAgentLoadout
   - &STR_MIB_SPECOPS
@@ -399,7 +399,7 @@ units:
       firing: 68
       throwing: 64
       strength: 44
-      melee: 50
+      melee: 53
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -416,18 +416,18 @@ units:
     armor: STR_MIB_SPECOPS_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 27
+    value: 8
     deathSound: *MaleDeathSounds
-    intelligence: 3
-    aggression: 3
+    intelligence: 5
+    aggression: 4
     sniper: 50
-    spotter: 1
-    canSurrender: true
+    spotter: 2
+    canSurrender: false
     energyRecovery: 25
   - type: STR_MIB_SPECOPS_SPAWN
     refNode: *STR_MIB_SPECOPS
     altRecoveredUnit: STR_MIB_SPECOPS
-    value: 5
+    value: 2
     builtInWeaponSets:
       - - STR_LMG
         - STR_LMG_CLIP
@@ -471,15 +471,15 @@ units:
   - type: STR_MIB_BUTCHER
     race: STR_MIB
     stats:
-      tu: 58
-      stamina: 110
+      tu: 95
+      stamina: 140
       health: 85
       bravery: 120
-      reactions: 45
+      reactions: 50
       firing: 40
       throwing: 55
-      strength: 70
-      melee: 80
+      strength: 95
+      melee: 85
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -496,11 +496,12 @@ units:
     armor: STR_MIB_BUTCHER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 35
+    value: 8
     deathSound: *MaleDeathSounds
     intelligence: 2
     aggression: 8
-    energyRecovery: 25
+    energyRecovery: 40
+    canSurrender: false
   - type: STR_SEEKER_DRONE_TERRORIST
     race: STR_MIB
     rank: STR_LIVE_TERRORIST
@@ -531,22 +532,23 @@ units:
     standHeight: 11
     kneelHeight: 16
     floatHeight: 12
-    value: 15
+    value: 7
     deathSound: 23
     moveSound: 40
     specab: 1
     intelligence: 3
     aggression: 0
     spotter: 1
+    canSurrender: false
     builtInWeaponSets:
       - - STR_SEEKER_DRONE_WEAPON
   - type: STR_MIB_SCIENTIST
     race: STR_MIB
     stats:
-      tu: 62
+      tu: 70
       stamina: 80
       health: 26
-      bravery: 70
+      bravery: 90
       reactions: 45
       firing: 50
       throwing: 40
@@ -568,24 +570,25 @@ units:
     armor: STR_MIB_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 50
-    deathSound: *MaleDeathSounds
+    value: 10
+    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
     intelligence: 5
     aggression: 1
     energyRecovery: 25
+    canSurrender: false
   - type: STR_MIB_ENFORCER
     race: STR_MIB
-    rank: STR_LIVE_NAVIGATOR
+    rank: STR_LIVE_ENGINEER
     stats:
-      tu: 60
-      stamina: 90
-      health: 45
-      bravery: 90
-      reactions: 49
-      firing: 58
+      tu: 90
+      stamina: 140
+      health: 49
+      bravery: 120
+      reactions: 60
+      firing: 80
       throwing: 64
-      strength: 45
-      melee: 35
+      strength: 70
+      melee: 50
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -602,30 +605,30 @@ units:
     armor: STR_MIB_ENFORCER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: 40
+    value: 12
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
     intelligence: 4
-    aggression: 1
+    aggression: 8
     sniper: 75
     spotter: 2
-    canSurrender: true
+    canSurrender: false
 
 #MiB\Procured
   - &MIB_PROCURED_CIVILIAN
-    type: MIB_OFFICE_ENGINEER
-    race: STR_MIB
+    type: STR_MIB_OFFICE_ENGINEER
+    race: STR_HUMAN
     stats:
-      tu: 46
+      tu: 40
       stamina: 40
-      health: 35
-      bravery: 60
-      reactions: 30
-      firing: 40
-      throwing: 30
-      strength: 30
-      melee: 30
+      health: 25
+      bravery: 40
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
       psiStrength: 35
       psiSkill: 0
     statsRandom:
@@ -642,23 +645,41 @@ units:
     armor: STR_MIB_OFFICE_ENGINEER_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -20
+    value: -30
     deathSound: *MaleDeathSounds
     # panicSound: *MalePanicSounds
     # berserkSound: *MaleBerserkSounds
     energyRecovery: 20
-    intelligence: 1
-    aggression: 1
+    intelligence: 0
+    aggression: 0
     canSurrender: true
-  - type: MIB_OFFICE_MANAGER
+    pickUpWeaponsMoreActively: 0
+  - type: STR_MIB_OFFICE_MANAGER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_MANAGER_ARMOR
-    value: -15
-    deathSound: &FemaleDeathSounds [44, 45, 46] #, 160, 161, 162, 163, 164, 165, 166, 167]
+    value: -25
+    deathSound: *FemaleDeathSounds
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
-    aggression: 2
-  - type: MIB_OFFICE_SECURITY
+    aggression: 0
+    builtInWeaponSets: &MIBAgentLoadout
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CREDIT_CARD_SILVER
+      - - STR_CREDIT_CARD
+      - - STR_CREDIT_CARD
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_CASH_PACK
+      - - STR_CREDIT_CARD_SILVER
+        - STR_CASH_PACK
+        - STR_SHOTGUN_SHELLS_BS
+      - - STR_CREDIT_CARD_GOLD
+  - type: STR_MIB_OFFICE_SECURITY
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_SECURITY_ARMOR
     stats:
@@ -684,18 +705,20 @@ units:
       strength: 5
       melee: 10
       psiStrength: 15
-    value: -10
-    aggression: 6
-  - type: MIB_OFFICE_WORKER
+    value: -15
+    aggression: 3
+  - type: STR_MIB_OFFICE_WORKER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_WORKER_ARMOR
-  - type: MIB_VIP
+  - type: STR_MIB_VIP
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
+    pickUpWeaponsMoreActively: 1
   - type: MIB_BANKER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
-  - type: MIB_VIP_BODYGUARD
+    pickUpWeaponsMoreActively: 1
+  - type: STR_MIB_VIP_BODYGUARD
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_BODYGUARD_ARMOR
     stats:
@@ -721,15 +744,298 @@ units:
       strength: 5
       melee: 10
       psiStrength: 15
+    value: -15
+    aggression: 4
+    pickUpWeaponsMoreActively: 1
 
+#Cultists
+  - type: STR_CULT_GANGER
+    race: STR_CULT_BANDITS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 52
+      stamina: 60
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 50
+      throwing: 45
+      strength: 40
+      melee: 51
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 5
+      psiStrength: 15
+    armor: STR_CULT_GANGER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 3
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 8
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+  - type: STR_CULT_COORDINATOR
+    race: STR_CULT_BANDITS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 56
+      health: 38
+      bravery: 90
+      reactions: 45
+      firing: 50
+      throwing: 45
+      strength: 40
+      melee: 56
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 10
+      psiStrength: 15
+    armor: STR_CULT_COORDINATOR_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 6
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 7
+    sniper: 75
+    spotter: 2
+    canSurrender: true
 
+#Bandits
+  - type: STR_BANDIT
+    race: STR_BANDITS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 54
+      stamina: 60
+      health: 38
+      bravery: 80
+      reactions: 48
+      firing: 54
+      throwing: 45
+      strength: 42
+      melee: 54
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 10
+      stamina: 12
+      health: 7
+      bravery: 20
+      reactions: 8
+      firing: 7
+      throwing: 8
+      strength: 8
+      melee: 12
+      psiStrength: 15
+    armor: STR_BANDIT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 3
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 8
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+
+#Army
+  - &STR_ARMY_FIELD_SOLDIER
+    type: STR_ARMY_FIELD_SOLDIER
+    race: STR_ARMY
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 100
+      health: 38
+      bravery: 70
+      reactions: 40
+      firing: 50
+      throwing: 50
+      strength: 48
+      melee: 35
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 3
+      stamina: 8
+      health: 6
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 5
+      psiStrength: 15
+    armor: STR_ARMY_FIELD_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -10
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 1
+    canSurrender: false
+  - type: STR_ARMY_FIELD_SOLDIER_SPAWN
+    refNode: *STR_ARMY_FIELD_SOLDIER
+    altRecoveredUnit: STR_ARMY_FIELD_SOLDIER
+    builtInWeaponSets:
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_SINGLE_ROCKET_LAUNCHER
+        - STR_GRENADE
+        - STR_GRENADE
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_SINGLE_ROCKET_LAUNCHER
+        - STR_GRENADE
+        - STR_FLASHBANG_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_RIOT_GUN
+        - STR_RIOT_GUN_CLIP
+        - STR_RIOT_GUN_CLIP
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+  - &ARMY_FIELD_OFFICER
+    type: STR_ARMY_FIELD_OFFICER
+    race: STR_ARMY
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 62
+      stamina: 100
+      health: 40
+      bravery: 100
+      reactions: 45
+      firing: 60
+      throwing: 60
+      strength: 45
+      melee: 40
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 8
+      health: 5
+      bravery: 10
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      melee: 5
+      psiStrength: 15
+    armor: STR_ARMY_FIELD_OFFICER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: -12
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 2
+    sniper: 15
+    spotter: 1
+    canSurrender: true
+  - type: ARMY_FIELD_OFFICER_SPAWN
+    refNode: *ARMY_FIELD_OFFICER
+    altRecoveredUnit: STR_ARMY_FIELD_OFFICER
+    builtInWeaponSets:
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_FLASHBANG_GRENADE
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+      - - STR_MILITARY_RIFLE
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
+        - STR_MILITARY_RIFLE_CLIP
 
 #Zombies
   - type: STR_FACEHUGGER
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 80
+      tu: 90
       stamina: 140
       health: 20
       bravery: 110
@@ -753,30 +1059,30 @@ units:
       psiStrength: 4
     armor: STR_FACEHUGGER_ARMOR
     standHeight: 6
-    value: 12
+    value: 8
     aggroSound: 77
     deathSound: 78
     moveSound: 80
     intelligence: 4
     aggression: 8
+    isLeeroyJenkins: true
     energyRecovery: 50
     livingWeapon: true
-    isLeeroyJenkins: true
     builtInWeaponSets:
       - - STR_FACEHUGGER_WEAPON
-  - type: STR_ZOMBIE_STERILE_TERRORIST
+  - type: STR_FRESH_ZOMBIE
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 55
-      stamina: 120
-      health: 124
+      tu: 80
+      stamina: 140
+      health: 144
       bravery: 110
-      reactions: 40
+      reactions: 35
       firing: 0
       throwing: 0
       strength: 84
-      melee: 80
+      melee: 25
       psiStrength: 30
       psiSkill: 0
     statsRandom:
@@ -788,33 +1094,33 @@ units:
       firing: 0
       throwing: 0
       strength: 10
-      melee: 15
+      melee: 3
       psiStrength: 4
-    armor: STR_ZOMBIE_STERILE_ARMOR
+    armor: STR_FRESH_ZOMBIE_ARMOR
     standHeight: 22
     kneelHeight: 22
-    value: 4
+    value: 5
     intelligence: 3
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: 75
-    deathSound: 76
+    #aggroSound: [150, 151, 152, 153, 154] #TODO uncomment!
+    deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
   - type: STR_ZOMBIE_GRUBAS_TERRORIST
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 48
+      tu: 70
       stamina: 150
-      health: 184
+      health: 190
       bravery: 110
-      reactions: 44
+      reactions: 30
       firing: 0
       throwing: 0
       strength: 104
-      melee: 90
+      melee: 30
       psiStrength: 30
       psiSkill: 0
     statsRandom:
@@ -826,91 +1132,206 @@ units:
       firing: 0
       throwing: 0
       strength: 20
-      melee: 10
+      melee: 5
       psiStrength: 4
     armor: STR_ZOMBIE_GRUBAS_ARMOR
     standHeight: 22
     kneelHeight: 22
-    value: 6
+    value: 8
     intelligence: 3
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: 75
-    deathSound: 76
+    #aggroSound: [141, 142] #TODO uncomment!
+    deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 
 #Monsters
-  - type: STR_JABBER
-    race: STR_JABBER
-    rank: STR_LIVE_TERRORIST
-    stats:
-      tu: 90
-      stamina: 110
-      health: 30
-      bravery: 100
-      reactions: 75
-      firing: 0
-      throwing: 0
-      strength: 28
-      melee: 80
-      psiStrength: 50
-      psiSkill: 0
-    armor: STR_JABBER_ARMOR
-    standHeight: 18
-    kneelHeight: 12
-    value: 10
-    # aggroSound: 123 #TODO
-    deathSound: 7 #TODO
-    # panicSound: 265
-    # berserkSound: 266
-    intelligence: 3
-    aggression: 4
-    energyRecovery: 35
-    livingWeapon: true
-    builtInWeaponSets:
-      - - STR_JABBER_WEAPON
   - type: STR_CHUPACABRA
     race: STR_CHUPACABRA
     rank: STR_LIVE_TERRORIST
-    stats: #TODO
-      tu: 100
+    stats:
+      tu: 105
       stamina: 140
-      health: 35
-      bravery: 100
-      reactions: 75
+      health: 50
+      bravery: 110
+      reactions: 65
       firing: 0
       throwing: 0
-      strength: 28
+      strength: 60
       melee: 80
       psiStrength: 60
       psiSkill: 0
     statsRandom:
-      tu: 5
+      tu: 10
       stamina: 15
-      health: 2
+      health: 10
       bravery: 20
       reactions: 5
       firing: 0
       throwing: 0
-      strength: 1
-      melee: 10
+      strength: 10
+      melee: 15
       psiStrength: 4
     armor: STR_CHUPACABRA_ARMOR
     standHeight: 18
     kneelHeight: 12
-    value: 10
-    # aggroSound: 123 #TODO
-    deathSound: 7 #TODO
-    # panicSound: 265
-    # berserkSound: 266
+    value: 12
+    aggroSound: 123
+    deathSound: 124
+    panicSound: 123
+    berserkSound: 123
     intelligence: 3
-    aggression: 4
+    aggression: 8
+    isLeeroyJenkins: true
     energyRecovery: 35
     livingWeapon: true
     builtInWeaponSets:
-      - - STR_JABBER_WEAPON #TODO
+      - - STR_FANGS_WEAPON
+        - STR_CLAWS_WEAPON
+  - type: STR_ARMADILLO
+    race: STR_ARMADILLO
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 70
+      stamina: 160
+      health: 80
+      bravery: 110
+      reactions: 45
+      firing: 0
+      throwing: 0
+      strength: 65
+      melee: 50
+      psiStrength: 40
+      psiSkill: 0
+    statsRandom:
+      tu: 10
+      stamina: 15
+      health: 10
+      bravery: 20
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 10
+      melee: 10
+      psiStrength: 4
+    armor: STR_ARMADILLO_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 10
+    #aggroSound: [161, 162, 163] #TODO uncomment!
+    deathSound: [164, 165]
+    panicSound: [161, 162, 163]
+    berserkSound: [161, 162, 163]
+    intelligence: 2
+    aggression: 8
+    isLeeroyJenkins: true
+    energyRecovery: 45
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CLAWS_WEAPON
+  - type: STR_AMPHIBIAN
+    race: STR_AMPHIBIAN
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 65
+      stamina: 140
+      health: 85
+      bravery: 110
+      reactions: 40
+      firing: 50
+      throwing: 50
+      strength: 55
+      melee: 55
+      psiStrength: 65
+      psiSkill: 0
+    statsRandom:
+      tu: 10
+      stamina: 15
+      health: 10
+      bravery: 10
+      reactions: 3
+      firing: 0
+      throwing: 0
+      strength: 10
+      melee: 15
+      psiStrength: 4
+    armor: STR_AMPHIBIAN_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 10
+    aggroSound: 139
+    deathSound: 138 
+    panicSound: 139
+    berserkSound: 139
+    intelligence: 4
+    aggression: 8
+    energyRecovery: 35
+    livingWeapon: true
+    builtInWeaponSets:
+       - - STR_FANGS_WEAPON
+         - STR_AMPHIBIAN_WEAPON
+  - &Swarmid_unit
+    type: STR_SWARMIDS_SMALL
+    race: STR_SWARMIDS
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 95
+      stamina: 130
+      health: 20
+      bravery: 110
+      reactions: 35
+      firing: 0
+      throwing: 0
+      strength: 40
+      psiStrength: 100
+      psiSkill: 0
+      melee: 80
+    statsRandom:
+      tu: 10
+      stamina: 15
+      health: 3
+      bravery: 10
+      reactions: 3
+      firing: 0
+      throwing: 0
+      strength: 3
+      melee: 10
+      psiStrength: 4
+    armor: STR_SWARMIDS_SMALL_ARMOR
+    standHeight: 17
+    floatHeight: 5
+    kneelHeight: 11
+    value: 10
+    deathSound: 159
+    moveSound: 157
+    intelligence: 2
+    aggression: 8
+    energyRecovery: 50
+    livingWeapon: true
+    isLeeroyJenkins: true
+    builtInWeaponSets:
+      - - STR_SWARMIDS_SMALL_WEAPON
+  - type: STR_SWARMIDS_LARGE
+    refNode: *Swarmid_unit
+    stats:
+      tu: 85
+      stamina: 130
+      health: 100
+      bravery: 110
+      reactions: 30
+      firing: 0
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 80
+    armor: STR_SWARMIDS_LARGE_ARMOR
+    altRecoveredUnit: STR_SWARMIDS_SMALL
+    value: 20
+    builtInWeaponSets:
+      - - STR_SWARMIDS_LARGE_WEAPON
 
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
@@ -918,7 +1339,7 @@ units:
     stats:
       tu: 46
       stamina: 40
-      health: 35
+      health: 30
       bravery: 60
       reactions: 30
       firing: 40
@@ -941,7 +1362,7 @@ units:
     armor: STR_MALE_CITIZEN_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -80
+    value: -25
     deathSound: *MaleDeathSounds
     # panicSound: *MalePanicSounds
     # berserkSound: *MaleBerserkSounds
@@ -951,34 +1372,35 @@ units:
     canSurrender: true
     builtInWeaponSets:
       - []
-      - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
-        - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP
+      - - STR_BASEBALL_BAT
+        - STR_CASH_PACK
       - - STR_SAWED_OFF #- STR_PITCHFORK
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
+        - STR_CASH_PACK
+      - - STR_HATCHET
+        - STR_CREDIT_CARD
       - - STR_DOUBLE_BARRELED #- STR_AXE
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
-      - []
-      - []
+      - - STR_CASH_PACK
+        - STR_HATCHET
+      - - STR_CASH_PACK
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CREDIT_CARD
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-      - - STR_SNUBNOSE_PISTOL
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-  - type: STR_DOGE
+        - STR_CASH_PACK
+  - &Doge
+    type: STR_DOGE
     race: STR_DOGE
     stats:
       tu: 80
@@ -1006,14 +1428,19 @@ units:
     armor: STR_DOGE_ARMOR
     standHeight: 12
     kneelHeight: 12
-    value: 2
-    deathSound: [101, 102, 103] #TODO
+    value: -2
+    deathSound: [101, 102, 103]
     aggroSound: 104
     energyRecovery: 30
     livingWeapon: true
     intelligence: 3
     aggression: 6
     spotter: 1
+  - type: STR_MAD_DOGE
+    refNode: *Doge
+    treatedByAI: true
+    aggression: 8
+    canSurrender: false
   - type: STR_MALE_POLICE
     race: STR_HUMAN
     stats:
@@ -1028,7 +1455,6 @@ units:
       melee: 30
       psiStrength: 45
       psiSkill: 0
-      
     statsRandom:
       tu: 5
       stamina: 5
@@ -1043,7 +1469,7 @@ units:
     armor: STR_MALE_POLICE_ARMOR
     standHeight: 22
     kneelHeight: 14
-    value: -100
+    value: -20
     deathSound: *MaleDeathSounds
     # panicSound: *MalePanicSounds
     # berserkSound: *MaleBerserkSounds
@@ -1058,55 +1484,65 @@ units:
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_POLICE_BATON
-      - - STR_SNUBNOSE_PISTOL
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CREDIT_CARD
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
         - STR_POLICE_BATON
-      - - STR_PISTOL
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
         - STR_POLICE_BATON
-      - - STR_PISTOL
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
-        - STR_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_BATON
+        - STR_CASH_PACK
+      - - STR_TASER
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_POLICE_BATON
+        - STR_CASH_PACK
+      - - STR_TASER
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_POLICE_BATON
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_POLICE_PISTOL_CLIP
+        - STR_TASER
+        - STR_TASER_CLIP
+        - STR_CASH_PACK
+      - - STR_TASER
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_TASER_CLIP
+        - STR_POLICE_PISTOL
+        - STR_POLICE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
         - STR_POLICE_BATON
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - - STR_PUMP_ACTION_SHOTGUN
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-      - - STR_PUMP_ACTION_SHOTGUN
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
-      - - STR_SEMI_AUTO_SHOTGUN
-        - STR_SHOTGUN_SHELLS_BS
-        - STR_SHOTGUN_SHELLS_BS
-        - STR_SHOTGUN_SHELLS_BS
-        - STR_SHOTGUN_SHELLS_BS
-      - - STR_SEMI_AUTO_SHOTGUN
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-      - - STR_SEMI_AUTO_SHOTGUN
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_SHOTGUN_SHELLS_AP
-        - STR_FLASHBANG_GRENADE
 
 #Civilians
-  - type: STR_MALE_CIVILIAN_FARMER
+  - &MaleCivilianFarmer
+    type: STR_MALE_CIVILIAN_FARMER
     race: STR_HUMAN
     stats:
       tu: 46
@@ -1142,11 +1578,17 @@ units:
       - - STR_HUNTING_RIFLE #- STR_WOODEN_CLUB
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
-      - - STR_SAWED_OFF #- STR_PITCHFORK
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
+      - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-      - []
+        - STR_HATCHET
+        - STR_CASH_PACK
+      - - STR_HATCHET
       - - STR_DOUBLE_BARRELED #- STR_AXE
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1157,19 +1599,34 @@ units:
       - - STR_PUMP_ACTION_SHOTGUN
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - []
-      - - STR_HUNTING_RIFLE
+      - - STR_HATCHET
+        - STR_CASH_PACK
+      - - STR_HUNTING_RIFLE 
         - STR_HUNTING_RIFLE_CLIP
-        - STR_HUNTING_RIFLE_CLIP #- []
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP 
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT #- STR_AXE
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_HATCHET
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-  - type: STR_FEMALE_CIVILIAN_FARMER
+        - STR_CASH_PACK
+  - type: STR_MAD_MALE_CIVILIAN_FARMER
+    refNode: *MaleCivilianFarmer
+    treatedByAI: true
+    aggression: 8
+    canSurrender: false
+  - &FemaleCivilianFarmer
+    type: STR_FEMALE_CIVILIAN_FARMER
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
     stats:
@@ -1178,7 +1635,7 @@ units:
       health: 38
       bravery: 60
       reactions: 30
-      firing: 40
+      firing: 35
       throwing: 30
       strength: 25
       psiStrength: 35
@@ -1198,15 +1655,15 @@ units:
     builtInWeaponSets:
       - []
       - []
-      - []
-      - []
+      - - STR_CASH_PACK
+      - - STR_CASH_PACK
       - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
       - []
-      - []
-      - - STR_DOUBLE_BARRELED #- STR_WOODEN_CLUB
+      - - STR_HATCHET
+      - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1216,29 +1673,134 @@ units:
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
         - STR_HUNTING_RIFLE_CLIP
-
-
+  - type: STR_MAD_FEMALE_CIVILIAN_FARMER
+    refNode: *FemaleCivilianFarmer
+    treatedByAI: true
+    aggression: 8
+    canSurrender: false
+    altRecoveredUnit: STR_MAD_MALE_CIVILIAN_FARMER
+  - &CivilianHunter
+    type: STR_CIVILIAN_HUNTER
+    race: STR_HUMAN
+    stats:
+      tu: 52
+      stamina: 45
+      health: 35
+      bravery: 60
+      reactions: 30
+      firing: 70
+      throwing: 30
+      strength: 30
+      psiStrength: 35
+      psiSkill: 0
+      melee: 30
+    armor: STR_CIVILIAN_HUNTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
+      - - STR_HATCHET
+        - STR_CASH_PACK
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+      - - STR_HUNTING_RIFLE
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_HUNTING_RIFLE_CLIP
+        - STR_CASH_PACK
+  - type: STR_MAD_CIVILIAN_HUNTER
+    refNode: *CivilianHunter
+    treatedByAI: true
+    aggression: 8
+    canSurrender: false
 #Resistance
   - &STR_RESISTANCE_SCIENTIST
     type: STR_RESISTANCE_SCIENTIST
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 48
-      stamina: 50
-      health: 34
+      tu: 50
+      stamina: 55
+      health: 22
       bravery: 20
       reactions: 20
-      firing: 20
-      throwing: 15
+      firing: 25
+      throwing: 20
       strength: 20
       psiStrength: 51
       psiSkill: 0
       melee: 20
       mana: 0
     statsRandom:
-      tu: 2
-      stamina: 3
+      tu: 4
+      stamina: 5
       health: 3
       bravery: 10
       reactions: 5
@@ -1252,7 +1814,7 @@ units:
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SCIENTIST
-    value: 150
+    value: 60
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1264,59 +1826,81 @@ units:
   - type: STR_RESISTANCE_SCIENTIST_VIP
     refNode: *STR_RESISTANCE_SCIENTIST
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 200
+    value: 60
     builtInWeaponSets:
-      - []
-      - []
-      - []
-      - []
-      - []
-      - []
-      - - STR_SNUBNOSE_PISTOL
-        - STR_SNUBNOSE_PISTOL_CLIP
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
+        - STR_CASH_PACK
   - &STR_RESISTANCE_AGENT
     type: STR_RESISTANCE_AGENT
     race: STR_RESISTANCE
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 45
+      tu: 60
       stamina: 50
-      health: 27
-      bravery: 35
+      health: 30
+      bravery: 30
       reactions: 35
-      firing: 37
-      throwing: 30
+      firing: 45
+      throwing: 40
       strength: 30
-      melee: 28
+      melee: 30
       psiStrength: 45
       psiSkill: 0
     statsRandom:
-      tu: 3
+      tu: 10
       stamina: 10
-      health: 2
-      bravery: 25
-      reactions: 3
-      firing: 4
+      health: 5
+      bravery: 20
+      reactions: 5
+      firing: 5
       throwing: 5
-      strength: 7
-      melee: 8
+      strength: 10
+      melee: 10
       psiStrength: 15
     armor: STR_RESISTANCE_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_RESISTANCE_AGENT
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 30 #90
+    value: 20
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1330,10 +1914,16 @@ units:
         - STR_MACHINE_PISTOL_CLIP
         - STR_MACHINE_PISTOL_CLIP
         - STR_MACHINE_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
@@ -1346,7 +1936,11 @@ units:
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_LIQUID_FLAME
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
+        - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1356,13 +1950,18 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_CASH_PACK
       - - STR_RIOT_RIFLE
         - STR_RIOT_RIFLE_CLIP
         - STR_RIOT_RIFLE_CLIP
+        - STR_CASH_PACK
+        - STR_CASH_PACK
       - - STR_RIOT_PISTOL
+        - STR_HATCHET
         - STR_RIOT_PISTOL_CLIP
         - STR_RIOT_PISTOL_CLIP
         - STR_GRENADE
+        - STR_CASH_PACK
       - - STR_SAWED_OFF
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -1371,14 +1970,126 @@ units:
         - STR_FIRST_AID 
   - type: STR_RESISTANCE_AGENT_VIP
     refNode: *STR_RESISTANCE_AGENT
+    value: 50
+  - type: STR_RESISTANCE_AGENT_PRISONER
+    refNode: *STR_RESISTANCE_AGENT
     specialObjectiveType: STR_FRIENDLY_VIP
     civilianRecoveryType: STR_RESISTANCE_AGENT
-    value: 90
-  - type: STR_RESISTANCE_SOLDIER
+    #prisoner: true
+    value: 30
+    builtInWeaponSets:
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+      - []
+  - type: STR_RESISTANCE_SCOUT
+    race: STR_RESISTANCE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 70
+      health: 30
+      bravery: 30
+      reactions: 45
+      firing: 55
+      throwing: 50
+      strength: 40
+      melee: 50
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 5
+      health: 3
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 10
+      melee: 10
+      psiStrength: 15
+    armor: STR_RESISTANCE_SCOUT_ARMOR
+    standHeight: 22
+    kneelHeight: 14 
+    civilianRecoveryType: STR_RESISTANCE_SCOUT
+    specialObjectiveType: STR_FRIENDLY_VIP
+    value: 20
+    deathSound: *MaleDeathSounds
+    #panicSound: *MalePanicSounds
+    #berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_SWORD
+        - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+      - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_THROWING_KNIFE
+        - STR_THROWING_KNIFE
+        - STR_THROWING_KNIFE
+        - STR_GRENADE
+        - STR_MEDI_PACK
+      - - STR_MACHINE_PISTOL
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_GRENADE
+        - STR_GRENADE
+        - STR_MEDI_PACK
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_FIRST_AID
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+      - - STR_SINGLE_ROCKET_LAUNCHER
+        - STR_GRENADE
+        - STR_INCENDIARY_GRENADE
+        - STR_INCENDIARY_GRENADE
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_GRENADE
+      - - STR_RIOT_GUN
+        - STR_RIOT_GUN_CLIP
+        - STR_RIOT_GUN_CLIP
+      - - STR_RIOT_GUN
+        - STR_RIOT_GUN_CLIP
+        - STR_RIOT_GUN_CLIP
+        - STR_GRENADE
+  - type: STR_RESISTANCE_SOLDIER #TODO
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 55
+      tu: 65
       stamina: 55
       health: 32
       bravery: 35
@@ -1403,9 +2114,9 @@ units:
     armor: STR_RESISTANCE_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14 
-    civilianRecoveryType: STR_SOLDIER #TODO
+    civilianRecoveryType: STR_SOLDIER #FIXME
     specialObjectiveType: STR_FRIENDLY_VIP
-    value: 90
+    value: 35
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
     #berserkSound: *MaleBerserkSounds
@@ -1465,7 +2176,7 @@ units:
     stats:
       tu: 0
       stamina: 0
-      health: 80
+      health: 50
       bravery: 100
       reactions: 1
       firing: 0
@@ -1485,10 +2196,10 @@ units:
     canBeMindControlled: false
     berserkChance: 0
     showFullNameInAlienInventory: 1
-    value: 400
+    value: 150
   - type: STR_RESISTANCE_COMPUTER
     refNode: *RESISTANCE_EVIDENCE_DEVICE
-    value: 500
+    value: 180
 
   - type: STR_FREE_SPOT #placeholder unit to make alien race more clear to read
     refNode: *STR_MIB_AGENT    

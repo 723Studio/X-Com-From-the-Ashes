@@ -2,9 +2,11 @@ soldiers:
   - &STR_SOLDIER
     type: STR_SOLDIER
     costBuy: 50000
-    costSalary: 2000
+    costSalary: 3000
+    moraleLossWhenKilled: 150
+    value: 50
     minStats:
-      tu: 50
+      tu: 55
       stamina: 40
       health: 25
       bravery: 10
@@ -19,39 +21,39 @@ soldiers:
     maxStats:
       tu: 65
       stamina: 70
-      health: 40
+      health: 35
       bravery: 60
       reactions: 60
       firing: 70
       throwing: 65
-      strength: 40
-      melee: 70
+      strength: 45
+      melee: 60
       psiStrength: 60
       psiSkill: 0
       mana: 0
     statCaps:
-      tu: 90
+      tu: 100
       stamina: 110
-      health: 70
-      bravery: 100
+      health: 50
+      bravery: 90
       reactions: 100
       firing: 120
-      throwing: 100
-      strength: 80
+      throwing: 110
+      strength: 75
       melee: 120
       psiStrength: 100
       psiSkill: 100
       mana: 80
     trainingStatCaps:
-      tu: 75
-      stamina: 95
-      health: 50
+      tu: 70
+      stamina: 90
+      health: 40
       bravery: 100
       reactions: 50
       firing: 85
       throwing: 75
       strength: 50
-      melee: 90
+      melee: 80
       psiStrength: 60
       psiSkill: 0
     dogfightExperience:
@@ -64,7 +66,7 @@ soldiers:
     avatarOffsetY: 48
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 25
+    femaleFrequency: 35
     soldierNames:
       - delete
       - SoldierNames/
@@ -76,11 +78,11 @@ soldiers:
     # berserkFemale: [831, 832, 833]
   - type: STR_RESISTANCE_AGENT
     refNode: *STR_SOLDIER
-    costBuy: 15000
+    costBuy: 25000
     costSalary: 2000
     minStats:
-      tu: 40
-      stamina: 40
+      tu: 50
+      stamina: 60
       health: 25
       bravery: 10
       reactions: 30
@@ -92,22 +94,51 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 50
-      stamina: 60
-      health: 30
-      bravery: 60
+      tu: 65
+      stamina: 70
+      health: 35
+      bravery: 50
       reactions: 40
       firing: 50
       throwing: 45
-      strength: 35
-      melee: 35
+      strength: 40
+      melee: 40
       psiStrength: 60
       psiSkill: 0
       mana: 0
-    dogfightExperience:
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_RESISTANCE_SCOUT
+    refNode: *STR_SOLDIER
+    costBuy: 35000
+    costSalary: 3000
+    minStats:
+      tu: 60
+      stamina: 65
+      health: 27
       bravery: 10
-      reactions: 20
-      firing: 15
+      reactions: 40
+      firing: 50
+      throwing: 45
+      strength: 30
+      melee: 40
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
+    maxStats:
+      tu: 70
+      stamina: 75
+      health: 33
+      bravery: 50
+      reactions: 50
+      firing: 60
+      throwing: 55
+      strength: 50
+      melee: 60
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
     soldierNames:
       - delete
       - SoldierNames/

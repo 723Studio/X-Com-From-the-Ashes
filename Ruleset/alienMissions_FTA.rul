@@ -1,3 +1,35 @@
+#  -----------------------------------------------------------
+#  Summary of mission site spawning algorithms (objective: 3)
+#  -----------------------------------------------------------
+
+#  Type 1:
+#  - no UFOs involved
+#  - only 1 wave
+#  - the wave specifies the alien deployment directly (e.g. `ufo: STR_ARTIFACT_SITE_P1 # spawn this site directly`)
+#  - example (1): STR_ALIEN_ARTIFACT (TFTD)
+#  Support for non-point areas: yes, without any additional ruleset changes required
+
+#  Type 2:
+#  - no UFOs involved
+#  - only 1 wave
+#  - the wave does NOT specify the alien deployment directly (e.g. `ufo: dummy #don't spawn a ufo, we only want the site`)
+#    -> option A: alien deployment is chosen randomly = from the area's texture definition
+#    -> option B: alien deployment is specified by the mission's `siteType` (overrides option A if both are defined)
+#  - example (2A): STR_ALIEN_SHIP_ATTACK (TFTD)
+#  - example (2B): none in vanilla, only mods
+#  Support for non-point areas: yes, without any additional ruleset changes required
+
+#  Type 3:
+#  - with UFOs waves
+#  - only 1 wave with `objective: true`
+#  - the wave does NOT specify the alien deployment (because it already specifies the UFO type)
+#    -> option A: alien deployment is chosen randomly = from the area's texture definition
+#    -> option B: alien deployment is specified by the mission's `siteType` (overrides option A if both are defined)
+#  - example (3A): STR_ALIEN_SURFACE_ATTACK (TFTD)
+#  - example (3B): none in vanilla, only mods
+#  Support for non-point areas: yes, but it is recommended to use one more wave attribute: `objectiveOnTheLandingSite: true`
+#    -> false: UFO always lands in the top-left corner of the area; site spawns randomly inside the area
+#    ->  true: UFO lands randomly inside the area; site spawns exactly on the UFO landing site
 alienMissions:
 #delete vanilla missions
   # - delete: STR_ALIEN_RESEARCH
@@ -10,21 +42,19 @@ alienMissions:
   # - delete: STR_ALIEN_SUPPLY
 #early-game scripts
   - type: STR_EARLY_GAME_TROLLING
-    points: 40
+    points: 2
     waves:
       - ufo: STR_SMALL_SCOUT
-        count: 2
+        count: 1
         trajectory: F1
         timer: 9000
       - ufo: STR_ABDUCTOR
         count: 1
-        trajectory: F0 #TODO, change to landing
+        trajectory: F1 #FIXME, change to landing
         timer: 7800
-
-#resistance scripts
   - &TerrorLike
-    type: STR_RESISTANCE_HEAVEN_DEFENCE
-    despawnEvenIfTargeted: true
+    type: STR_CROP_CIRCLES_INITIAL
+    despawnEvenIfTargeted: false
     objective: 3
     spawnZone: 0
     waves:
@@ -33,11 +63,25 @@ alienMissions:
         trajectory: CA_SPAWN
         timer: 4000
         objective: true
+  - type: STR_CROP_CIRCLES
+    refNode: *TerrorLike
+
+#resistance scripts
+  - type: STR_RESISTANCE_HAVEN_DEFENCE
+    refNode: *TerrorLike
   - type: STR_RESISTANCE_SCIENTIST
     refNode: *TerrorLike
   - type: STR_RESISTANCE_URBAN_HIDEOUT
     refNode: *TerrorLike
   - type: STR_DESERT_TELESCOPE_MISSION
     refNode: *TerrorLike
-  - type: STR_RESISTANCE_FOREST_HOUSE
+  - type: STR_RESISTANCE_FOREST_HAVEN
+    refNode: *TerrorLike
+  - type: STR_CHUPA_TERROR_MISSION
+    refNode: *TerrorLike
+  - type: STR_ARMADILLO_TERROR_MISSION
+    refNode: *TerrorLike
+  - type: STR_AMPHIBIAN_TERROR_MISSION
+    refNode: *TerrorLike
+  - type: STR_SWARMID_TERROR_MISSION
     refNode: *TerrorLike

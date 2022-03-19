@@ -1,0 +1,27 @@
+arcScripts:
+  - type: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ_COMPENSATION1
+    sequentialArcs: # the type of research topics to be "discovered", each month 0 or 1, processed sequentially
+      - STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
+    firstMonth: 2 # months this command runs on, 0 runs on startup of a new game (default 0)
+    researchTriggers:
+      STR_MIB_TRAP_DATA_VAULT_SUCCESS: true
+    itemTriggers:
+      STR_DATA_VAULT: false
+    executionOdds: 60 # % chances of this command executing (default 100)
+    maxArcs: 1
+  - type: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ_COMPENSATION2
+    sequentialArcs: # the type of research topics to be "discovered", each month 0 or 1, processed sequentially
+      - STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
+    firstMonth: 4 # months this command runs on, 0 runs on startup of a new game (default 0)
+    researchTriggers:
+      STR_EX_COUNCIL_MEMBER_INITIAL: true
+    executionOdds: 60 # % chances of this command executing (default 100)
+    maxArcs: 1
+  - type: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ_COMPENSATION3
+    sequentialArcs: # the type of research topics to be "discovered", each month 0 or 1, processed sequentially
+      - STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
+    firstMonth: 2 # months this command runs on, 0 runs on startup of a new game (default 0)
+    researchTriggers:
+      STR_EX_COUNCIL_DATA_VAULT_FAIL: true
+    executionOdds: 40 # % chances of this command executing (default 100)
+    maxArcs: 1

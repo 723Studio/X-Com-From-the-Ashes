@@ -5,6 +5,7 @@ Some music assets were bought by me and I have personal right to use it in my pr
 Here is a list of those music tracks:
 
 * ENEMY_TERRITORY.ogg;
+* BOSS_BATTLE.ogg
 
 I am also ordered some art assets from professional pixel-artists in order to provide the best experience to my players I can offer. Those orders are partially funded by Patreon support and donations, and mostly from my personal budget, so I have personal rights to use it. I maid a decision to distribute those (and only those) assets under **All Rights Reserved license.** You **can not** redistribute or adapt it anyhow without my personal agree.
 Here is a list of that assets:
@@ -24,25 +25,47 @@ Here is a list of that assets:
 * ufopedia_MIB_BUTCHER_CPAL.png
 * inventory_MIB_BUTCHER.png
 * ufopedia_MIB_SPECOPS_CPAL.png
+* ufopedia_MIB_ENFORCER_CPAL.png
 * bigob_ChupacabraWeapon.png
 * CHUPACABRA.png
 * floorob_CHUPACABRA_CORPSE.png
 * inventory_CHUPACABRA.png
 * ufopedia_CHUPACABRA_AUTOPSY_CPAL.png
 * ufopedia_CHUPACABRA_CPAL.png
-* Extracted_MIB_Chip_CPAL.png
+* MIB_Chip_CPAL.png.png
 * ARMY_TRUCK.pck
 * Hacking_UI.png
+* bigob_HighTechParts.png
+* bigob_Chemicals.png
+* bigob_SpareParts.png
+* ARMADILLO.png
+* bigob_ARMADILLO_CORPSE.png
+* bigob_ArmadilloWeapon.png
+* floorob_ARMADILLO_CORPSE.png
+* inventory_ARMADILLO.png
+* ufopedia_ARMADILLO_AUTOPSY_CPAL.png
+* ufopedia_ARMADILLO_CPAL.png
+* EX_COUNCILMAN_CPAL.png
+* ufopedia_AM_CPAL.png
+* ufopedia_AM_AUTOPSY_CPAL.png
+* bigob_AM_CORPSE.png
+* inventory_AM.png
+* floorob_AM_CORPSE.png
+* AM.png
+* ufopedia_FACEHUGGER_AUTOPSY_CPAL.png
+* ufopedia_FACEHUGGER_CPAL.png
+* inventory_FACEHUGGER.png
+* ufopedia_ZOMBIE_PARAZITE_AUTOPSY.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 
 OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom Extended](https://openxcom.mod.io/openxcom-extended) (by Meridian and Yankes) and distributed under GNU General Public License v3.0. Source code can be found [here](https://github.com/Finnik723/OpenXcom_FTA).
 
-# CREDITS
+## CREDITS
 
 * **SupSuper**, **Warboy**, **Daiky** and [other developers](https://www.ufopaedia.org/index.php/Credits_(OpenXcom)) of [OpenXcom](https://openxcom.org/), distributed under GNU General Public License v3.0 - game engine, old brother of OpenXcom. Big thanks for code guidance.
 
-* **Meridian** and **Yankes** and other developers of [OpenXcom Extended](https://openxcom.mod.io/openxcom-extended), distributed under GNU General Public License v3.0 - game engine, based on OpenXcom engine. All differences listed here: (https://github.com/723Studio/OpenXcom_FTA/wiki). Also big thanks for guidance trough coding.
+* **Meridian** and **Yankes** and other developers of [OpenXcom Extended](https://openxcom.mod.io/openxcom-extended), distributed under GNU General Public License v3.0 - game engine, based on OpenXcom engine. All differences presented with [wiki](https://github.com/723Studio/OpenXcom_FTA/wiki). Also big thanks for guidance trough coding.
 
 * **Solarius Scorch**, author of [Final Mod Pack](https://openxcom.mod.io/final-mod-pack) and [The X-Com files](https://openxcom.mod.io/the-x-com-files), distributed under CC BY-NC 4.0 - graphic and sound assets, config data, terrains, mapblocks; general guidance, inspiration, teacher, sensei and senpai.
 
@@ -57,6 +80,8 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom E
 * **XOps**, author of [XenoOperations](https://openxcom.org/forum/index.php/topic,2913.0.html) - various assets.
 
 * **efrenespartano**, **thereaverofdarkness**, **Luke83**, **Thunder_andr**, **Dauntless1942** & **wolwerin**, authors of [UNEXCOM](https://openxcom.mod.io/unexcom) distributed under CC BY-NC 4.0 - various assets.
+
+* **Bulletdesigner**, author of [CH-47 chinnock and V-22 OSPREY for OpenXcom](https://openxcom.mod.io/ch-47-chinnock-and-v-22-osprey) - osprey assets.
 
 * **Luke83** & **efrenespartano**, authors of [OXC Factions](https://openxcom.mod.io/oxc-factions) distributed under CC BY-NC 4.0 - various terrains and maps.
 
@@ -73,3 +98,7 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom E
 * **Dr Reach**, author of original artwork for [SCP Foundation website](http://www.scp-wiki.net/reach-s-blueprint-folder), distributed under Creative Commons Attribution-ShareAlike 3.0 Unported - art that was used for facility blueprints ufopaedia article image.
 
 * **ohartenstein23**, y-script code snippets, big thanks for code guidance.
+
+* **Ksenni**, author of [X-Com X-Files Resound Mod](https://openxcom.org/forum/index.php/topic,8870.0.html), weapon sounds.
+
+Big thanks to people who contribute into early builds testing - **BratGronflo** and **misterjopper**
