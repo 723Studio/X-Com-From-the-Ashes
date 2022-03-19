@@ -2,7 +2,7 @@ soldiers:
   - &STR_SOLDIER
     type: STR_SOLDIER
     costBuy: 50000
-    costSalary: 2000
+    costSalary: 3000
     moraleLossWhenKilled: 150
     value: 50
     minStats:
@@ -78,7 +78,7 @@ soldiers:
     # berserkFemale: [831, 832, 833]
   - type: STR_RESISTANCE_AGENT
     refNode: *STR_SOLDIER
-    costBuy: 15000
+    costBuy: 25000
     costSalary: 2000
     minStats:
       tu: 50
@@ -103,6 +103,39 @@ soldiers:
       throwing: 45
       strength: 40
       melee: 40
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_RESISTANCE_SCOUT
+    refNode: *STR_SOLDIER
+    costBuy: 35000
+    costSalary: 3000
+    minStats:
+      tu: 60
+      stamina: 65
+      health: 27
+      bravery: 10
+      reactions: 40
+      firing: 50
+      throwing: 45
+      strength: 30
+      melee: 40
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
+    maxStats:
+      tu: 70
+      stamina: 75
+      health: 33
+      bravery: 50
+      reactions: 50
+      firing: 60
+      throwing: 55
+      strength: 50
+      melee: 60
       psiStrength: 60
       psiSkill: 0
       mana: 0

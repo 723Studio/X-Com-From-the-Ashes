@@ -1104,7 +1104,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: [150, 151, 152, 153, 154]
+    #aggroSound: [150, 151, 152, 153, 154] #TODO uncomment!
     deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -1142,7 +1142,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: [141, 142]
+    #aggroSound: [141, 142] #TODO uncomment!
     deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -1220,7 +1220,7 @@ units:
     standHeight: 18
     kneelHeight: 12
     value: 10
-    aggroSound: [161, 162, 163]
+    #aggroSound: [161, 162, 163] #TODO uncomment!
     deathSound: [164, 165]
     panicSound: [161, 162, 163]
     berserkSound: [161, 162, 163]
@@ -1332,7 +1332,6 @@ units:
     value: 20
     builtInWeaponSets:
       - - STR_SWARMIDS_LARGE_WEAPON
-
 
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
@@ -1989,6 +1988,103 @@ units:
       - []
       - []
       - []
+  - type: STR_RESISTANCE_SCOUT
+    race: STR_RESISTANCE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 70
+      health: 30
+      bravery: 30
+      reactions: 45
+      firing: 55
+      throwing: 50
+      strength: 40
+      melee: 50
+      psiStrength: 45
+      psiSkill: 0
+    statsRandom:
+      tu: 5
+      stamina: 5
+      health: 3
+      bravery: 20
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 10
+      melee: 10
+      psiStrength: 15
+    armor: STR_RESISTANCE_SCOUT_ARMOR
+    standHeight: 22
+    kneelHeight: 14 
+    civilianRecoveryType: STR_RESISTANCE_SCOUT
+    specialObjectiveType: STR_FRIENDLY_VIP
+    value: 20
+    deathSound: *MaleDeathSounds
+    #panicSound: *MalePanicSounds
+    #berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_SWORD
+        - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+      - - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_RIOT_PISTOL_CLIP
+        - STR_THROWING_KNIFE
+        - STR_THROWING_KNIFE
+        - STR_THROWING_KNIFE
+        - STR_GRENADE
+        - STR_MEDI_PACK
+      - - STR_MACHINE_PISTOL
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_MACHINE_PISTOL_CLIP
+        - STR_GRENADE
+        - STR_GRENADE
+        - STR_MEDI_PACK
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_FIRST_AID
+      - - STR_RIOT_RIFLE
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_RIOT_RIFLE_CLIP
+        - STR_GRENADE
+      - - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+        - STR_HEAVY_REVOLVER_DRUM
+      - - STR_SINGLE_ROCKET_LAUNCHER
+        - STR_GRENADE
+        - STR_INCENDIARY_GRENADE
+        - STR_INCENDIARY_GRENADE
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_SHOTGUN_SHELLS_BS
+        - STR_GRENADE
+      - - STR_RIOT_GUN
+        - STR_RIOT_GUN_CLIP
+        - STR_RIOT_GUN_CLIP
+      - - STR_RIOT_GUN
+        - STR_RIOT_GUN_CLIP
+        - STR_RIOT_GUN_CLIP
+        - STR_GRENADE
   - type: STR_RESISTANCE_SOLDIER #TODO
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR

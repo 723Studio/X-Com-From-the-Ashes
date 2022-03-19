@@ -207,6 +207,7 @@ extraSprites:
       136: Resources/Armors/Enemies/Army/bigob_ARMY_FILED_SOLDIER.png
       137: Resources/Armors/Enemies/Army/bigob_ARMY_FILED_OFFICER.png
       138: Resources/Armors/Xcom/ArmorVest/bigob_ARMORED_VEST.png
+      139: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCOUT.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
@@ -373,6 +374,8 @@ extraSprites:
       461: Resources/Weapons/Alien/Utilities/bigob_AlienSnakeEye.png
       462: Resources/Weapons/Alien/Utilities/bigob_AlienContainer.png
       463: Resources/Weapons/Alien/Utilities/bigob_AlienProxyMine.png
+      464: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifle.png
+      465: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifleClip.png
 
   - type: FLOOROB.PCK
     files:
@@ -417,6 +420,7 @@ extraSprites:
       136: Resources/Armors/Enemies/Army/floorob_ARMY_FILED_SOLDIER.png
       137: Resources/Armors/Enemies/Army/floorob_ARMY_FILED_OFFICER.png
       138: Resources/Armors/Xcom/ArmorVest/floorob_ARMORED_VEST.png
+      139: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SCOUT.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -555,6 +559,8 @@ extraSprites:
       461: Resources/Weapons/Alien/Utilities/floorob_AlienSnakeEye.png
       462: Resources/Weapons/Alien/Utilities/floorob_AlienContainer.png
       463: Resources/Weapons/Alien/Utilities/floorob_AlienProxyMine.png
+      464: Resources/Weapons/Earthbound/Faction/floorob_MilitarySniperRifle.png
+      465: Resources/Weapons/Earthbound/Faction/floorob_MilitarySniperRifleClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -675,6 +681,8 @@ extraSprites:
       1010: Resources/Weapons/Earthbound/Faction/handob_MilitaryRifleClip.png
       1018: Resources/Weapons/Earthbound/Utilities/handob_Scanner.png
       1026: Resources/Weapons/Earthbound/Faction/handob_RiotGunClip.png
+      1034: Resources/Weapons/Earthbound/Faction/handob_MilitarySniperRifle.png
+      1042: Resources/Weapons/Earthbound/Faction/handob_MilitarySniperRifleClip.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
@@ -1454,6 +1462,17 @@ extraSprites:
     height: 160
     files:
       0: Resources/Armors/Civilians/Resistance/RESISTANCE_COMPUTER.png
+  - type: RESISTANCE_SCOUT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Civilians/Resistance/RESISTANCE_SCOUT.png
+  - type: inventory_RESISTANCE_SCOUT
+    singleImage: true
+    files:
+      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCOUT.png
 #civilians
   - type: FARMER.PCK
     width: 512

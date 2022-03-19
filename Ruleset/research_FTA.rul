@@ -318,7 +318,7 @@ research:
     hidden: true
     getOneFree:
       - STR_MILITARY_RIFLE
-      - STR_MILITARY_RIFLE_CLIP
+      - STR_MILITARY_SNIPER_RIFLE
 
   - name: STR_ELECTRIC_WEAPONS_PREREQ
     hidden: true
@@ -425,6 +425,12 @@ research:
       - STR_XCOM_EQUIPMENT
     listOrder: 25110
   - name: STR_PISTOL_AA_CLIP
+    cost: 3200
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+    listOrder: 25120
+  - name: STR_HEAVY_PISTOL_AA_CLIP
     cost: 3200
     points: 5
     dependencies:
@@ -1419,11 +1425,14 @@ research:
     cost: 35
     points: 10
     needItem: true
+    unlocks:
+      - STR_MILITARY_RIFLE_CLIP
     listOrder: 30224
   - name: STR_MILITARY_RIFLE_CLIP
-    cost: 20
-    points: 5
-    needItem: true
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILITARY_RIFLE
     listOrder: 30225
   - name: STR_HUNTING_RIFLE
     cost: 15
@@ -1445,20 +1454,33 @@ research:
     unlocks:
       - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 30250
+  - name: STR_MILITARY_SNIPER_RIFLE
+    cost: 35
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_MILITARY_SNIPER_RIFLE_CLIP
+    listOrder: 30260
+  - name: STR_MILITARY_SNIPER_RIFLE_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILITARY_SNIPER_RIFLE
+    listOrder: 30265
   - name: STR_DOUBLE_BARRELED
     cost: 14
     points: 2
     needItem: true
     unlocks:
       - STR_DOUBLE_BARRELED_BUCKSHOT
-    listOrder: 30260
+    listOrder: 30270
   - name: STR_DOUBLE_BARRELED_BUCKSHOT
     cost: 0
     points: 0
     dependencies:
       - STR_DOUBLE_BARRELED
       - STR_SAWED_OFF
-    listOrder: 30270
+    listOrder: 30275
   - name: STR_PUMP_ACTION_SHOTGUN
     cost: 15
     points: 2

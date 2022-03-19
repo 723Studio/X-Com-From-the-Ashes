@@ -1961,7 +1961,7 @@ items:
     landOnly: true
     costBuy: 3500
     costSell: 2600
-    weight: 11
+    weight: 10
     bigSprite: 341
     floorSprite: 341
     handSprite: 400
@@ -1970,7 +1970,9 @@ items:
     compatibleAmmo:
       - STR_HUNTING_RIFLE_CLIP
     accuracyCloseQuarters: 66
-    accuracyAimed: 135
+    accuracyAimed: 120
+    accuracyMultiplier:
+      firing: [0, 0.01]
     tuAimed: 50
     tuLoad: 20
     costThrow:
@@ -1978,7 +1980,7 @@ items:
     battleType: 1
     twoHanded: true
     blockBothHands: true
-    kneelBonus: 170
+    kneelBonus: 165
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -1998,18 +2000,84 @@ items:
     hitSound: 58
     hitAnimation: 26
     reloadSound: 135
-    power: 33
+    power: 34
     damageAlter:
       RandomType: 7
     damageType: 1
     damageBonus:
-      firing: 0.15
+      firing: 0.10
     stackSize: 5
     clipSize: 1
     battleType: 2
     armor: 30
     attraction: 7
     listOrder: 10010
+  - type: STR_MILITARY_SNIPER_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
+    requiresBuy:
+      - STR_MILITARY_SNIPER_RIFLE
+      - STR_MILITARY_EQUIPMENT_ACQUISITION
+    size: 0.25
+    costBuy: 16000
+    costSell: 14500
+    weight: 13
+    landOnly: true
+    bigSprite: 464
+    floorSprite: 464
+    handSprite: 1034
+    bulletSprite: 14
+    fireSound: 167
+    reloadSound: 168
+    compatibleAmmo:
+      - STR_MILITARY_SNIPER_RIFLE_CLIP
+    accuracyCloseQuarters: 35
+    accuracyAimed: 130
+    accuracyMultiplier:
+      firing: [0, 0.01]
+    tuAimed: 63
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 200
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    minRange: 12
+    dropoff: 2
+    attraction: 5
+    recoveryPoints: 5
+    listOrder: 10020
+  - type: STR_MILITARY_SNIPER_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS]
+    requiresBuy:
+      - STR_MILITARY_SNIPER_RIFLE_CLIP
+      - STR_MILITARY_EQUIPMENT_ACQUISITION
+    size: 0.02
+    costBuy: 650
+    costSell: 400
+    weight: 3
+    landOnly: true
+    bigSprite: 465
+    floorSprite: 465
+    handSprite: 1042
+    hitSound: 62
+    hitAnimation: 26
+    power: 42
+    damageBonus:
+      firing: 0.18
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.05
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 20
+    attraction: 8
+    recoveryPoints: 1
+    listOrder: 10030
   - type: STR_SNIPER_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     requiresBuy:
@@ -2062,7 +2130,7 @@ items:
     hitAnimation: 26
     power: 48
     damageBonus:
-      firing: 0.28
+      firing: 0.3
     damageAlter:
       RandomType: 2
       ArmorEffectiveness: 0.7
@@ -5980,6 +6048,20 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+    listOrder: 100505
+  - type: STR_RESISTANCE_SCOUT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 32
+    bigSprite: 139
+    floorSprite: 139
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: -20
+    recover: true
+    recoverCorpse: false
     listOrder: 100510
   - type: STR_SPAWN_RESISTANCE_SOLDIER
     spawnUnit: STR_RESISTANCE_SOLDIER

@@ -1116,12 +1116,10 @@ armors:
     spriteInv: inventory_RESISTANCE_SCIENTIST
     corpseBattle:
       - STR_RESISTANCE_SCIENTIST_CORPSE
-    visibilityAtDark: 12
-    personalLight: 1
+    personalLight: 2
     psiDefence: *StandardDynamicPsiDefence
     bleedImmune: false
     allowsKneeling: true
-    turnBeforeFirstStep: true
     recovery:
       energy:
         flatHundred: 0.1
@@ -1146,12 +1144,12 @@ armors:
     spriteInv: inventory_RESISTANCE_AGENT
     corpseBattle:
       - STR_RESISTANCE_AGENT_CORPSE
-    visibilityAtDark: 8
     personalLight: 1
+    camouflageAtDay: -1
+    camouflageAtDark: -1
     psiDefence: *StandardDynamicPsiDefence
     bleedImmune: false
     allowsKneeling: true
-    turnBeforeFirstStep: true
     recovery:
       energy:
         flatHundred: 0.13
@@ -1175,7 +1173,7 @@ armors:
       - 1.0 #6 - Stun
       - 1.0 #7 - Melee - Cutting
       - 1.0 #8 - Acid
-      - 3.0 #9 - Smoke - Choke
+      - 2.7 #9 - Smoke - Choke
       - 0.0 #10 - EMP
       - 1.0 #11 - Electric
       - 1.0 #12 - Psi
@@ -1183,6 +1181,52 @@ armors:
       - 1.0 #14 - Pressure
       - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_STUN_TO_HP: 1
+  - type: STR_RESISTANCE_SCOUT_ARMOR
+    spriteSheet: RESISTANCE_SCOUT.PCK 
+    spriteInv: inventory_RESISTANCE_SCOUT
+    corpseBattle:
+      - STR_RESISTANCE_SCOUT_CORPSE
+    visibilityAtDark: 10
+    camouflageAtDay: -2
+    camouflageAtDark: -2
+    personalLight: 1
+    psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: false
+    allowsKneeling: true
+    recovery:
+      energy:
+        flatHundred: 0.14
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.65
+    meleeDodgeBackPenalty: 0.45
+    overKill: 1.5
+    damageModifier: #NoArmorHumanResistance, but with smoke resist
+      - 1.0 #0 - None - special
+      - 1.0 #1 - AP - kinetic
+      - 1.5 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.0 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 0.9 #7 - Melee - Cutting
+      - 1.0 #8 - Acid
+      - 2.7 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.0 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
+    specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
     tags:
       FTAG_STUN_TO_HP: 1
@@ -1370,7 +1414,6 @@ armors:
     camouflageAtDark: -2
     visibilityAtDark: 9
     personalLight: 5
-    turnBeforeFirstStep: true
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
@@ -1503,7 +1546,6 @@ armors:
       - STR_CORPSE_LEATHER_COAT
     visibilityAtDark: 9
     personalLight: 1
-    turnBeforeFirstStep: true
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
@@ -1635,7 +1677,6 @@ armors:
     camouflageAtDark: -2
     visibilityAtDark: 9
     personalLight: 5
-    turnBeforeFirstStep: true
     frontArmor: 22
     sideArmor: 12
     rearArmor: 16

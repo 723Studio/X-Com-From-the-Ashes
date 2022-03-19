@@ -587,7 +587,6 @@ mapScripts:
     - type: fillArea
       blocks: 6
 
-
   - type: CRAFT_UFO_SCRIPT
     commands:
     - type: addCraft
@@ -603,6 +602,69 @@ mapScripts:
       size: 2
       executions: 3
       executionChances: 65
+    - type: fillArea
+
+  - type: STR_ARMY_CONVOY_ATTACK
+    commands:
+    - type: addBlock
+      rects: 
+       - [3, 0, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [2]
+    - type: addBlock
+      rects: 
+       - [3, 1, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [2, 5]
+    - type: addBlock
+      rects: 
+       - [3, 2, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [5]
+    - type: addBlock
+      rects: 
+       - [3, 3, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [5]
+    - type: addBlock
+      rects: 
+       - [3, 4, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [5]
+    - type: addBlock
+      rects: 
+       - [3, 5, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [5]
+    - type: addBlock
+      rects: 
+       - [3, 6, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [5]
+    - type: addBlock #endroad
+      rects: 
+       - [3, 7, 1, 1]
+      terrain: DESERT_MILITARY
+      groups: [2]
+    - type: addCraft
+      rects: 
+       - [0, 0, 2, 8]
+       - [5, 0, 2, 8]
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: addBlock
+      size: 2
+      executions: 3
+      executionChances: 65
+    - type: fillArea
+      rects: 
+       - [0, 0, 2, 8]
+      markAsReinforcementsBlock: true
+    - type: fillArea
+      rects: 
+       - [5, 0, 2, 8]
+      markAsReinforcementsBlock: true
     - type: fillArea
 
   - type: CRAFT_UFO_SCRIPT_BIG_MAP

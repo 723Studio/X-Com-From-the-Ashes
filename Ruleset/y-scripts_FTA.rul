@@ -1489,7 +1489,7 @@ extended:
           armor_rule.getTag stunVul Tag.FTAG_STUN_TO_HP;
 
           if gt stunVul 0;
-            set to_health to_stun;
+            add to_health to_stun;
             div to_stun 3;
           end;
 

@@ -891,7 +891,13 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_EXPANDABLE_AMMO
+      - STR_HEAVY_PISTOL_EXP_CLIP
+    listOrder: 17095
+  - id: STR_HEAVY_PISTOL_AA_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HEAVY_PISTOL_AA_CLIP
     listOrder: 17095
   - id: STR_WOUNDGUN
     type_id: 4
@@ -1076,7 +1082,20 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_HUNTING_RIFLE_CLIP
+    listOrder: 20005
+  - id: STR_MILITARY_SNIPER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MILITARY_SNIPER_RIFLE_UFOPEDIA
+    requires:
+      - STR_MILITARY_SNIPER_RIFLE
     listOrder: 20010
+  - id: STR_MILITARY_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MILITARY_SNIPER_RIFLE_CLIP
+    listOrder: 20015
   - id: STR_SNIPER_RIFLE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

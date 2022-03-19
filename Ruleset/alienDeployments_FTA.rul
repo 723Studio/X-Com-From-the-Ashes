@@ -292,7 +292,6 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP
             - STR_PROXIMITY_GRENADE
-
   - &MIBRegionalHQ
     type: STR_INITIAL_REGIONAL_HQ #hardcoded, do not rename!
     race: STR_MIB_REGIONAL_HQ
@@ -768,7 +767,6 @@ alienDeployments:
             - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_CREDIT_CARD_GOLD
             - STR_BRIEFCASE_CASH
-
   - type: STR_INITIAL_REGIONAL_HQ_EASY
     refNode: *MIBRegionalHQ
     script: MIB_SEWERS_EASY
@@ -789,7 +787,6 @@ alienDeployments:
       showTarget: false
       showCraft: false
       desc: STR_INITIAL_REGIONAL_HQ_EASY_DESC
-
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
     race: STR_MIB_BASE_EARLY
     width: 70
@@ -1117,7 +1114,6 @@ alienDeployments:
             - STR_STUN_ROD_2
           -
             - STR_STUN_ROD_2
-
   - type: STR_MIB_CHASING
     race: STR_MIB
     width: 60
@@ -1248,7 +1244,6 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_AP 
             - STR_GRENADE 
-
   - type: STR_RESISTANCE_FARM_ZOMBIE
     race: STR_ZOMBIES
     civiliansByType:
@@ -1323,7 +1318,6 @@ alienDeployments:
             []
           -
             []
-
   - &ResistanceFarmBandits
     type: STR_RESISTANCE_FARM_CULTISTS
     race: STR_CULT_BANDITS
@@ -1509,14 +1503,11 @@ alienDeployments:
             - STR_RIOT_RIFLE_CLIP
             - STR_RIOT_RIFLE_CLIP
             - STR_GRENADE
-
-
   - type: STR_RESISTANCE_FARM_BANDITS
     refNode: *ResistanceFarmBandits
     race: STR_BANDITS
     abortPenalty: 150
     script: RESISTANCE_FARM_NO_RADIO
-    
   - type: STR_RESISTANCE_FOREST_HAVEN
     width: 80
     length: 80
@@ -1681,7 +1672,6 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_AP
             - STR_SHOTGUN_SHELLS_AP  
-
   - type: STR_RESISTANCE_URBAN_HIDEOUT
     race: STR_MIB
     width: 80
@@ -1874,7 +1864,6 @@ alienDeployments:
             []
           -
             []
-
   - type: STR_RESISTANCE_FOREST_HOUSE_AMBUSH
     width: 80
     length: 80
@@ -1885,7 +1874,7 @@ alienDeployments:
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [4, 6]
     despawnPenalty: 150
-    abortPenalty: 40
+    abortPenalty: 50
     briefing:
       textOffset: -16
       palette: 2
@@ -2151,7 +2140,6 @@ alienDeployments:
             - STR_ASSAULT_CANNON
             - STR_ASSAULT_CANNON_CLIP_AP
             - STR_ASSAULT_CANNON_CLIP_AP
-
   - type: STR_MIB_FOREST_BEACON_ASSAULT
     race: STR_MIB
     width: 60
@@ -2163,7 +2151,7 @@ alienDeployments:
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [16, 24]
     despawnPenalty: 150
-    abortPenalty: 20
+    abortPenalty: 30
     briefing:
       textOffset: -16
       palette: 2
@@ -2300,7 +2288,6 @@ alienDeployments:
             - STR_SMALL_ROCKET
             - STR_SMALL_ROCKET
             - STR_INCENDIARY_ROCKET  
-
   - type: STR_RESISTANCE_FARM_ZOMBIE_AMBUSH
     race: STR_ZOMBIES
     width: 80
@@ -2312,7 +2299,7 @@ alienDeployments:
     markerName: STR_RESISTANCE_HAVEN_MARKER
     duration: [8, 10]
     despawnPenalty: 150
-    abortPenalty: 250
+    abortPenalty: 150
     briefing:
       textOffset: -16
       palette: 2
@@ -2346,7 +2333,6 @@ alienDeployments:
         extraQty: 2
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
-
   - type: STR_SCIENTIST_REFUGE
     width: 80
     length: 80
@@ -2404,7 +2390,6 @@ alienDeployments:
             []
           -
             []
-
   - type: STR_DESERT_TELESCOPE
     width: 80
     length: 80
@@ -2564,6 +2549,98 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BS
             - STR_SHOTGUN_SHELLS_AP
             - STR_SHOTGUN_SHELLS_AP 
+
+  - type: STR_ARMY_CONVOY_ATTACK
+    race: STR_ARMY
+    civiliansByType:
+      STR_RESISTANCE_SCOUT: 12
+    width: 70
+    length: 80
+    height: 8
+    alert: STR_ARMY_CONVOY_ATTACK_ALERT
+    alertBackground: STR_RESISTANCE_BACKGROUND.SCR
+    alertDescription: STR_ARMY_CONVOY_ATTACK_DESCRIPTION
+    markerName: STR_ARMY_CONVOY_ATTACK
+    duration: [4, 6]
+    despawnPenalty: 10
+    abortPenalty: 50 
+    # successEvents: #TODO
+    #   STR_RESCUED_SCIENTISTS_TELESCOPE: 100
+    # failureEvents:
+    #   STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: 100
+    # despawnEvents:
+    #   STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: 100
+    briefing:
+      textOffset: -16
+      palette: 2
+      background: STR_RESISTANCE_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_ARMY_CONVOY_ATTACK_BRIEFING
+    terrains:
+      - DESERT
+    script: STR_ARMY_CONVOY_ATTACK
+    data:
+      - alienRank: 5 #STR_ARMY_FIELD_SOLDIER
+        lowQty: 10
+        medQty: 13
+        highQty: 16
+        dQty: 3
+        extraQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_SNIPER_RIFLE
+            - STR_MILITARY_SNIPER_RIFLE_CLIP
+            - STR_MILITARY_SNIPER_RIFLE_CLIP
+            - STR_MILITARY_SNIPER_RIFLE_CLIP 
+          -
+            - STR_MILITARY_SNIPER_RIFLE
+            - STR_MILITARY_SNIPER_RIFLE_CLIP
+            - STR_MILITARY_SNIPER_RIFLE_CLIP
+            - STR_MILITARY_SNIPER_RIFLE_CLIP 
+          -
+            - STR_SINGLE_ROCKET_LAUNCHER
+            - STR_GRENADE
+            - STR_INCENDIARY_GRENADE
+            - STR_GRENADE
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP
+            - STR_SHOTGUN_SHELLS_AP
+          -
+            - STR_LMG
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
 
   - type: STR_CHUPACABRA_HUNT_NIGHT
     race: STR_CHUPACABRA

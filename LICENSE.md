@@ -99,4 +99,6 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom E
 
 * **ohartenstein23**, y-script code snippets, big thanks for code guidance.
 
+* **Ksenni**, author of [X-Com X-Files Resound Mod](https://openxcom.org/forum/index.php/topic,8870.0.html), weapon sounds.
+
 Big thanks to people who contribute into early builds testing - **BratGronflo** and **misterjopper**

@@ -414,6 +414,10 @@ en-US:
   STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of an important Resistance member. Apparently M.I.B. agents have managed to locate it, and the Resistance asked us to launch a rescue operation as soon as possible."
   STR_DESERT_TELESCOPE_BRIEFING: "A group of radioastronomers recently discovered traces of alien signals reflecting in our planet's mesosphere, as well as the replies coming from a point in high orbit. They reported their discovery to NASA, but the incident was hastily hushed up. Fortunately, members of the local Resistance cell have managed to contact these scientists. They are in great danger: the Men in Black will most likely try to eliminate these witnesses as soon as possible. We must take decisive action and save the scientists before the main M.I.B. force arrives.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon."
   STR_RESCUE_RESISTANCE_MEMBER_MARKER: "Resistance member rescue"
+  STR_ARMY_CONVOY_ATTACK: #TODO
+  STR_ARMY_CONVOY_ATTACK_ALERT: #TODO
+  STR_ARMY_CONVOY_ATTACK_DESCRIPTION: #TODO
+  STR_ARMY_CONVOY_ATTACK_BRIEFING: #TODO
   STR_MONSTER_HUNT_MARKER: "Monster Hunt"
   STR_MONSTER_HUNT_BRIEFING: "We have succeeded in tracking this mysterious monster back to its den. Our agents slowly scout trough wildness, listening intently to every rustle. Our goal is to neutralize the monster and bring it back to the base for study. Keep in mind that we're beyond the point of no return: if something goes awry, we won't be able to retreat!"
   STR_CHUPACABRA_HUNT_NIGHT: "Monster Hunt"
@@ -893,6 +897,9 @@ en-US:
   STR_RESISTANCE_AGENT_ARMOR: "Resistance Agent"
   STR_RESISTANCE_AGENT_CORPSE: "Resistance Agent Corpse"
   STR_RESISTANCE_AGENT_CORPSE_DECORATION: "Resistance Agent Corpse"
+  STR_RESISTANCE_SCOUT: "Resistance Scout"
+  STR_RESISTANCE_SCOUT_ARMOR: "Resistance Scout"
+  STR_RESISTANCE_SCOUT_CORPSE: "Resistance Scout Corpse"
   STR_RESISTANCE_SOLDIER: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_ARMOR: "Resistance Soldier"
   STR_RESISTANCE_SOLDIER_CORPSE: "Resistance Soldier Corpse"
@@ -1107,7 +1114,10 @@ en-US:
   STR_CHEMOGUN_CLIP: "Chemogun Tank"
   STR_HUNTING_RIFLE: "Hunting Rifle"
   STR_HUNTING_RIFLE_UFOPEDIA: "A light bolt action rifle equipped with an optical sight, which ensures high accuracy of shooting at long distances. Hunting with such weapon is very easy and pleasant for both four- and two-legged animals."
-  STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip" 
+  STR_HUNTING_RIFLE_CLIP: "Hunting Rifle Clip"
+  STR_MILITARY_SNIPER_RIFLE: "Military Sniper Rifle"
+  STR_MILITARY_SNIPER_RIFLE_UFOPEDIA: "High-precision army rifle equipped with a powerful telescopic scope, designed to defeat manpower at long range. It is a reliable weapon used in various armed conflicts around the world. Thanks to its large-caliber cartridge it has good armor-piercing power."
+  STR_MILITARY_SNIPER_RIFLE_CLIP: "Military Sniper Rifle Clip"
   STR_SNIPER_RIFLE: "Sniper Rifle"
   STR_SNIPER_RIFLE_UFOPEDIA: "This high-precision semi-automatic rifle has superior accuracy at long distances. The enlarged projectiles have high initial velocity and can penetrate medium armor easily. However it is harder to use at short range and very inconvenient to perform Snap shooting. It is recommended to shoot from a kneeling position."
   STR_SNIPER_RIFLE_CLIP: "Sniper Rifle Clip"
