@@ -47,11 +47,19 @@ alienMissions:
       - ufo: STR_SMALL_SCOUT
         count: 1
         trajectory: F1
-        timer: 9000
+        timer: 10080 #7 days
       - ufo: STR_ABDUCTOR
         count: 1
         trajectory: F1 #FIXME, change to landing
-        timer: 7800
+        timer: 17280 #12 days
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: F1
+        timer: 43200 #30 days
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: F1
+        timer: 86400 #60 days
   - &TerrorLike
     type: STR_CROP_CIRCLES_INITIAL
     despawnEvenIfTargeted: false
