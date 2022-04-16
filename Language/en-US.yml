@@ -590,6 +590,8 @@ en-US:
   STR_ALLOY_AMMO: "Alien Alloy Ammo"
   STR_RESISTANCE_DISCOVER: "Resistance"
   STR_RESISTANCE_DISCOVER_DESCRIPTION: "'Roger. Roger. Looks like we've established an encrypted link to the remaining X-COM forces! My name is Vlad, and I speak on behalf of the Resistance, I repeat, on behalf of the Resistance. With this channel we will be able to covertly exchange intelligence and build friendly relations. We would appreciate any help from you, and we welcome the opportunity to trade resources. I hope that from today, through great diplomacy, our combined endeavors will go forward. To victory!'{NEWLINE}New Diplomacy Relationship> {ALT}Resistance"
+  STR_RESISTANCE_SHARE_COMMON_WEAPONS_DATA: "Common Equipment"
+  STR_RESISTANCE_SHARE_COMMON_WEAPONS_DATA_DESCRIPTION: "We are ready to share information about the civilian weapons and common equipment that our agents use for defense. Hopefully, you will find this information useful.{NEWLINE}Unlocked research project> {ALT}Common Equipment"
   STR_RESISTANCE_HAVEN_SAVED_EVENT: "Resistance haven defense"
   STR_RESCUED_RESISTANCE: "Resistance rescue: success"
   STR_RESCUED_SCIENTIST: "Scientist slip: success"

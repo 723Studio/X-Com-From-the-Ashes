@@ -253,7 +253,7 @@ research:
   - name: STR_STARTING_EQUIPMENT_PREREQ #TODO add ways to unlock!
     hidden: true
   - name: STR_STARTING_EQUIPMENT
-    cost: 17
+    cost: 12
     points: 15
     dependencies:
       - STR_STARTING_EQUIPMENT_PREREQ

@@ -273,6 +273,17 @@ eventScripts:
 
 
 #resistance
+  - type: STR_RESISTANCE_SHARE_COMMON_EQUIPMENT_DATA
+    oneTimeSequentialEvents: [STR_RESISTANCE_SHARE_COMMON_WEAPONS_DATA]
+    researchTriggers:
+      STR_RESISTANCE_CONTACT: true
+      STR_UFOPEDIA_DECRYPTION: true
+      STR_STARTING_EQUIPMENT_PREREQ: false
+      STR_STARTING_EQUIPMENT_RESEARCHED: false
+    requiredReputation:
+      STR_RESISTANCE: 4 #STR_FRIENDLY
+    allowedProcessor: 1 #faction
+    executionOdds: 10
   - type: STR_RESISTANCE_WEAPONRY_SCRIPT
     oneTimeSequentialEvents: [STR_RESISTANCE_WEAPONRY_EVENT]
     researchTriggers:
