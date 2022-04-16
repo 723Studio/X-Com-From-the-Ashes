@@ -20,8 +20,8 @@ crafts:
     pilots: 1
     maxItems: 999
     repairRate: 4
-    refuelRate: 46
-    fuelMax: 500
+    refuelRate: 40
+    fuelMax: 520
     transferTime: 72
     score: 200
     craftInventoryTile: [3, 12, 1]

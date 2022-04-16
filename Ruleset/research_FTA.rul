@@ -116,14 +116,14 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
-    cost: 1000
+    cost: 800
     points: 80
     dependencies:
       - STR_RND_STATUS_REPORT
     listOrder: 10
   - name: STR_XCOM_EQUIPMENT
     requiresBaseFunc: [ HQ ]
-    cost: 700
+    cost: 600
     points: 50
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
@@ -132,7 +132,7 @@ research:
     listOrder: 20
   - name: STR_XCOM_LORE
     requiresBaseFunc: [ HQ ]
-    cost: 1700
+    cost: 1600
     points: 130
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
@@ -145,8 +145,8 @@ research:
     listOrder: 30
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
-    cost: 350
-    points: 40
+    cost: 280
+    points: 20
     dependencies:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
@@ -166,14 +166,14 @@ research:
     listOrder: 60
   - name: STR_RESISTANCE_CONTACT
     requiresBaseFunc: [ HQ ]
-    cost: 300
+    cost: 260
     points: 40
     dependencies:
       - STR_COMMUNICATION
     listOrder: 70
   - name: STR_SUPPLIES
     requiresBaseFunc: [ HQ ]
-    cost: 300
+    cost: 250
     points: 120
     dependencies:
       - STR_QUARTERMASTER_STATUS_REPORT
@@ -182,7 +182,7 @@ research:
     listOrder: 80
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [ HQ ]
-    cost: 700
+    cost: 600
     points: 65
     dependencies:
       - STR_SUPPLIES
@@ -250,10 +250,10 @@ research:
   - name: STR_ROCKET_GLOVE
     dependencies:
       - STR_TROLLIUM
-  - name: STR_STARTING_EQUIPMENT_PREREQ
+  - name: STR_STARTING_EQUIPMENT_PREREQ #TODO add ways to unlock!
     hidden: true
   - name: STR_STARTING_EQUIPMENT
-    cost: 50
+    cost: 17
     points: 15
     dependencies:
       - STR_STARTING_EQUIPMENT_PREREQ
@@ -276,6 +276,29 @@ research:
       - STR_PAINKILLER
       - STR_STIMS
       - STR_FIRE_EXTINGUISHER
+    listOrder: 25002
+  - name: STR_STARTING_EQUIPMENT_RESEARCHED
+    points: 15
+    dependencies:
+      - STR_CROWBAR
+      - STR_MACHETE
+      - STR_THROWING_KNIFE
+      - STR_SPORTS_BOW
+      - STR_SNUBNOSE_PISTOL
+      - STR_SNUBNOSE_PISTOL_CLIP
+      - STR_RIOT_PISTOL
+      - STR_RIOT_PISTOL_CLIP
+      - STR_HUNTING_RIFLE
+      - STR_HUNTING_RIFLE_CLIP
+      - STR_SAWED_OFF
+      - STR_DOUBLE_BARRELED
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+      - STR_FIRST_AID
+      - STR_PAINKILLER
+      - STR_STIMS
+      - STR_FIRE_EXTINGUISHER
+    disables:
+      - STR_STARTING_EQUIPMENT
 
   - name: STR_SPORTS_BOW_TINKERING
     hidden: true

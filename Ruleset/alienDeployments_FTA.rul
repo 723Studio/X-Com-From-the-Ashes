@@ -162,7 +162,7 @@ alienDeployments:
           -
             []
   - type: STR_INITIAL_BASE_DEFENSE #hardcoded, do not rename!
-    race: STR_INITIAL_BASE_DEFENSE_RACE 
+    race: STR_INITIAL_BASE_DEFENSE_RACE
     width: 40
     length: 40
     height: 4
@@ -2561,15 +2561,15 @@ alienDeployments:
     alertBackground: STR_RESISTANCE_BACKGROUND.SCR
     alertDescription: STR_ARMY_CONVOY_ATTACK_DESCRIPTION
     markerName: STR_ARMY_CONVOY_ATTACK
-    duration: [4, 6]
-    despawnPenalty: 10
-    abortPenalty: 50 
-    # successEvents: #TODO
-    #   STR_RESCUED_SCIENTISTS_TELESCOPE: 100
-    # failureEvents:
-    #   STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: 100
-    # despawnEvents:
-    #   STR_NOT_RESCUED_SCIENTISTS_TELESCOPE: 100
+    duration: [18, 26]
+    despawnPenalty: 20
+    abortPenalty: 140 
+    successEvents:
+      STR_ARMY_CONVOY_ATTACK_SUCCESS: 100
+    failureEvents:
+      STR_ARMY_CONVOY_ATTACK_FAIL: 100
+    despawnEvents:
+      STR_ARMY_CONVOY_ATTACK_DESPAWN: 100
     briefing:
       textOffset: -16
       palette: 2
@@ -2581,11 +2581,11 @@ alienDeployments:
     script: STR_ARMY_CONVOY_ATTACK
     data:
       - alienRank: 5 #STR_ARMY_FIELD_SOLDIER
-        lowQty: 10
-        medQty: 13
-        highQty: 16
-        dQty: 3
-        extraQty: 1
+        lowQty: 12
+        medQty: 16
+        highQty: 24
+        dQty: 4
+        extraQty: 2
         percentageOutsideUfo: 100
         itemSets:
           -
@@ -2612,10 +2612,9 @@ alienDeployments:
             - STR_MILITARY_RIFLE_CLIP
             - STR_GRENADE
           -
-            - STR_MILITARY_RIFLE
-            - STR_MILITARY_RIFLE_CLIP
-            - STR_MILITARY_RIFLE_CLIP
-            - STR_MILITARY_RIFLE_CLIP
+            - STR_LMG
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
           -
             - STR_MILITARY_SNIPER_RIFLE
             - STR_MILITARY_SNIPER_RIFLE_CLIP
@@ -2630,6 +2629,7 @@ alienDeployments:
             - STR_SINGLE_ROCKET_LAUNCHER
             - STR_GRENADE
             - STR_INCENDIARY_GRENADE
+            - STR_GRENADE
             - STR_GRENADE
           -
             - STR_SHOTGUN

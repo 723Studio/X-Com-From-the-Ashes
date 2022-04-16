@@ -23,6 +23,7 @@ diplomacyFactions:
       - havenUrbanHideout
       - resistanceScientist
       - desertTelescope
+      - resistanceAttacksMilitaryConvoy
     helpTreatyGap: 12
     helpTreatyEventScripts:
       - STR_RESISTANCE_WEAPONRY_SCRIPT

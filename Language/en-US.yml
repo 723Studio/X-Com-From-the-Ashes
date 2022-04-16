@@ -405,19 +405,19 @@ en-US:
   STR_SCIENTIST_REFUGE: "Resistance Agent Extraction"
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT: "RESISTANCE AGENT EXTRACTION"
   STR_RESISTANCE_AGENT_EXTRACTION_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of an important Resistance member. Apparently M.I.B. agents have managed to locate it, and the Resistance asked us to launch a rescue operation as soon as possible."
-  STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander. Rescuing the scientist could be of great value to us, thus we must get him to the craft in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
+  STR_SCIENTIST_REFUGE_BRIEFING: "A prominent scientist witnessed an alien abduction about a year ago. Since then he abandoned a brilliant career and devoted himself to studying the activities of hostile extraterrestrials. He soon attracted attention of the Men in Black and was forced into hiding. He set up a small house deep in the woods, and there in near total isolation continued his research. Apparently, his location became known to the M.I.B. and they would soon pull in a substantial force to eliminate such an important bystander.{NEWLINE}Rescuing the scientist could be of great value to us, thus we must get him to the craft in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
   STR_RESCUE_RESISTANCE_MEMBER: "Rescue Resistance Member"
   STR_RECOVER_RESEARCH_LOGS_TITLE: "Scientist's task"
   STR_RECOVER_RESEARCH_LOGS_CONTENT: "Oh, dear, I forgot to grab my research notes with all the hustle and bustle! They are contained on the blue floppy disk upstairs and are invaluable. Please, we have to return for it! I've come a long way in investigating these horrible aliens from deep space; I refuse to lose these results!"
   STR_DESERT_TELESCOPE: "Resistance Agent Extraction"
   STR_DESERT_TELESCOPE_ALERT: "RESISTANCE AGENT EXTRACTION"
   STR_DESERT_TELESCOPE_ALERT_DESCRIPTION: "We have received a signal from the secret hideout of an important Resistance member. Apparently M.I.B. agents have managed to locate it, and the Resistance asked us to launch a rescue operation as soon as possible."
-  STR_DESERT_TELESCOPE_BRIEFING: "A group of radioastronomers recently discovered traces of alien signals reflecting in our planet's mesosphere, as well as the replies coming from a point in high orbit. They reported their discovery to NASA, but the incident was hastily hushed up. Fortunately, members of the local Resistance cell have managed to contact these scientists. They are in great danger: the Men in Black will most likely try to eliminate these witnesses as soon as possible. We must take decisive action and save the scientists before the main M.I.B. force arrives.{NEWLINE}To evacuate X-COM operatives and our allies, load them into a craft and click on the 'Abort Mission' icon."
+  STR_DESERT_TELESCOPE_BRIEFING: "A group of radioastronomers recently discovered traces of alien signals reflecting in our planet's mesosphere, as well as the replies coming from a point in high orbit. They reported their discovery to NASA, but the incident was hastily hushed up. Fortunately, members of the local Resistance cell have managed to contact these scientists. They are in great danger: the Men in Black will most likely try to eliminate these witnesses as soon as possible. We must take decisive action and save the scientists before the main M.I.B. force arrives.{NEWLINE}Rescuing the scientists could be of great value to us, thus we must get them to the craft in one piece. In order to launch the craft, click on the 'Abort Mission' icon."
   STR_RESCUE_RESISTANCE_MEMBER_MARKER: "Resistance member rescue"
-  STR_ARMY_CONVOY_ATTACK: #TODO
-  STR_ARMY_CONVOY_ATTACK_ALERT: #TODO
-  STR_ARMY_CONVOY_ATTACK_DESCRIPTION: #TODO
-  STR_ARMY_CONVOY_ATTACK_BRIEFING: #TODO
+  STR_ARMY_CONVOY_ATTACK: "The Resistance Attacks Military Convoy"
+  STR_ARMY_CONVOY_ATTACK_ALERT: "THE RESISTANCE ATTACKS MILITARY CONVOY"
+  STR_ARMY_CONVOY_ATTACK_DESCRIPTION: "This is the chief of the Resistance's special operations unit. Our scouts have detected the movement of a military group transporting massive loads of equipment to a new secret facility. We believe this facility is coordinated directly from a government corrupted by alien agents. If such centers are not prevented from developing, they will be used to carry out plans to occupy Earth. We plan to ambush a military convoy and we could really use your help. I'm sending you the coordinates of the planned attack."
+  STR_ARMY_CONVOY_ATTACK_BRIEFING: "Resistance scouts have detected the movement of a military group transporting large quantities of equipment to a new secret facility. They believe that the activities of this facility are coordinated directly from a government corrupted by alien agents. If such centers are not prevented from developing, they will be used to carry out plans to occupy Earth. Resistance forces are drawn into the area to conduct an ambush, we will land our soldiers nearby to provide them with fire support.{NEWLINE}To evacuate X-COM operatives, load them into a craft and click on the 'Abort Mission' icon."
   STR_MONSTER_HUNT_MARKER: "Monster Hunt"
   STR_MONSTER_HUNT_BRIEFING: "We have succeeded in tracking this mysterious monster back to its den. Our agents slowly scout trough wildness, listening intently to every rustle. Our goal is to neutralize the monster and bring it back to the base for study. Keep in mind that we're beyond the point of no return: if something goes awry, we won't be able to retreat!"
   STR_CHUPACABRA_HUNT_NIGHT: "Monster Hunt"
@@ -719,6 +719,12 @@ en-US:
   STR_CULT_INVESTIGATION_REPEAT_OPERATION_DESCRIPTION: "We have a chance to re-investigate the activities of a mysterious cult that we believe is responsible for kidnappings around the world.{NEWLINE}{ALT}New covert operation available."
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: "Investigation Data"
   STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT_DESCRIPTION: "Before our people were attacked by M.I.B. agents, they managed to transmit a report on the main results of the operation. The report shows that they were able to confirm the information that the regional headquarters of the Men in Black is located somewhere in the city being investigated. Unfortunately, we are unable to locate the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have been unable to decipher it or locate the signal source."
+  STR_ARMY_CONVOY_ATTACK_SUCCESS: "Army Convoy Attack"
+  STR_ARMY_CONVOY_ATTACK_SUCCESS_DESCRIPTION: "On behalf of the entire Resistance, I express great appreciation to the X-Com team for their help in this risky endeavor. We appreciate that you share our values. The weapons and supplies we received during this operation will make an invaluable contribution to clearing the planet of alien scourge and their minions!{NEWLINE}Resistance reputation score> {ALT}+120"
+  STR_ARMY_CONVOY_ATTACK_FAIL: "Army Convoy Attack"
+  STR_ARMY_CONVOY_ATTACK_FAIL_DESCRIPTION: "It's unfortunate that our joint operation was a failure; we had high hopes for it. We need weapons to counter the alien agents, but now it will serve them.{NEWLINE}Resistance reputation score> {ALT}-40"
+  STR_ARMY_CONVOY_ATTACK_DESPAWN: "Army Convoy Attack"
+  STR_ARMY_CONVOY_ATTACK_DESPAWN_DESCRIPTION: "It's unfortunate that you ignored our call; we had high hopes for it. We need weapons to counter the alien agents, but now it will serve them.{NEWLINE}Resistance reputation score> {ALT}-120"
   STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT: "Creating a new Resistance Cell"
   STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT_DESCRIPTION: "Commander, I think we can help each other. We want to establish a new Resistance cell in the city where you believe the M.I.B. is headquartered. We have no reason not to trust you and a great desire to take revenge on these scumbags! Since you have already explored the site, we could really use your help. Perhaps you could send a couple of your specialists in covert operations to help us set up a new cell?{NEWLINE}{ALT}New covert operation available."
   STR_RESISTANCE_GIFT_MIB_AGENT_EVENT: "Support from the Resistance"
@@ -1835,6 +1841,7 @@ en-US:
   DESERT_TELESCOPE: DESERT_TELESCOPE
   STR_CHUPA_TERROR: STR_CHUPA_TERROR
   STR_CROP_CORCLES_INITIAL: STR_CROP_CORCLES_INITIAL
+  STR_DESERT_MILITARY_CONVOY: STR_DESERT_MILITARY_CONVOY
   STR_RESISTANCE_SHELTER_FARM: STR_RESISTANCE_SHELTER_FARM
   STR_RESISTANCE_SHELTER_FARM_DESTROYED: STR_RESISTANCE_SHELTER_FARM_DESTROYED
   STR_RESISTANCE_SHELTER_FARM_RADIO: STR_RESISTANCE_SHELTER_FARM_RADIO
@@ -1913,5 +1920,14 @@ en-US:
   STR_BIOLAB_PREREQ: STR_BIOLAB_PREREQ
   STR_CROP_CIRCLES_ZOMBIES_PREREQ: STR_CROP_CIRCLES_ZOMBIES_PREREQ
   STR_ZOMBIE_PARASITE_PREREQ: STR_ZOMBIE_PARASITE_PREREQ
-
+  STR_EARLY_GAME_TROLLING: STR_EARLY_GAME_TROLLING
+  STR_RESISTANCE_HAVEN_DEFENCE: "Resistance Heaven Defence"
+  STR_DESERT_TELESCOPE_MISSION: STR_DESERT_TELESCOPE_MISSION
+  STR_CHUPA_TERROR_MISSION: STR_CHUPA_TERROR_MISSION
+  STR_ARMADILLO_TERROR_MISSION: STR_ARMADILLO_TERROR_MISSION
+  STR_AMPHIBIAN_TERROR_MISSION: STR_AMPHIBIAN_TERROR_MISSION
+  STR_SWARMID_TERROR_MISSION: STR_SWARMID_TERROR_MISSION
+  STR_DEAD_COW: STR_DEAD_COW
+  STR_CROP_CORCLES_EARLY_GAME: STR_CROP_CORCLES_EARLY_GAME
+  STR_STARTING_EQUIPMENT_RESEARCHED: STR_STARTING_EQUIPMENT_RESEARCHED
   

@@ -85,3 +85,5 @@ alienMissions:
     refNode: *TerrorLike
   - type: STR_SWARMID_TERROR_MISSION
     refNode: *TerrorLike
+  - type: STR_DESERT_MILITARY_CONVOY
+    refNode: *TerrorLike

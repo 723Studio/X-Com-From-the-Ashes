@@ -1,7 +1,7 @@
 startingBase:
   randomSoldiers:
     STR_SOLDIER: 16
-  scientists: 7
+  scientists: 6
   engineers: 5
   facilities:
     - type: STR_ACCESS_LIFT

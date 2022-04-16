@@ -245,8 +245,8 @@ missionScripts:
     avoidRepeats: 1
     varName: havenDefence
   - type: resistanceScientist
-    firstMonth: 0
-    executionOdds: 20
+    firstMonth: 3
+    executionOdds: 15
     allowedProcessor: 1
     missionWeights:
       0:
@@ -267,8 +267,8 @@ missionScripts:
     avoidRepeats: 1
     varName: resistanceSpecial
   - type: desertTelescope
-    firstMonth: 2
-    executionOdds: 20
+    firstMonth: 5
+    executionOdds: 10
     allowedProcessor: 1
     missionWeights:
       0:
@@ -288,5 +288,26 @@ missionScripts:
     randomDelay: 43500
     avoidRepeats: 1
     varName: resistanceSpecial
-
+  - type: resistanceAttacksMilitaryConvoy
+    firstMonth: 4
+    executionOdds: 40
+    allowedProcessor: 1
+    requiredReputation:
+      STR_RESISTANCE: 5 #STR_HONORED
+    missionWeights:
+      0:
+        STR_DESERT_MILITARY_CONVOY: 100
+    regionWeights:
+      0:
+        STR_DESERT_MILITARY_CONVOY: 100
+    raceWeights:
+      0:
+        STR_ARMY: 100
+    useTable: false
+    spawnGap: 100
+    randomSpawnGap: 25
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: resistanceWarOperation
 
