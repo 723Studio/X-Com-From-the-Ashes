@@ -76,7 +76,7 @@ extraSounds:
       127: Resources/Weapons/Sounds/rocket.wav
       128: Resources/Weapons/Sounds/rocketr.ogg
       129: Resources/Weapons/Sounds/heavy_pistol.wav
-      130: Resources/Weapons/Sounds/flamer.wav #TODO add to flamer
+      130: Resources/Weapons/Sounds/flamer.wav #FIXME add to flamer
       131: Resources/Weapons/Sounds/flamerr.wav
       132: Resources/Weapons/Sounds/rail cannon.wav
       133: Resources/Weapons/Sounds/rail cannon reload.wav

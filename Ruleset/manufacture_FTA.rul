@@ -199,7 +199,7 @@ manufacture:
     producedItems:
       STR_TASER_CANNON_CLIP: 1
     listOrder: 220030
-  - name: STR_RAILGUN #TODO balance
+  - name: STR_RAILGUN #FIXME balance
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
     requires:
@@ -213,7 +213,7 @@ manufacture:
     producedItems:
       STR_RAILGUN: 1
     listOrder: 220030
-  - name: STR_RAILGUN_SLUG #TODO balance
+  - name: STR_RAILGUN_SLUG #FIXME balance
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
     requires:
@@ -302,7 +302,7 @@ manufacture:
   - name: STR_HIGH_TECH_PARTS
     category: STR_COMPONENTS
     requiresBaseFunc: [WORK]
-    # requires:
+    # requires: #FIXME
     #   - STR_HIGH_TECH_PARTS
     requiredItems:
       STR_SPARE_PARTS: 2

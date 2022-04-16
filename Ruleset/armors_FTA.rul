@@ -1230,7 +1230,7 @@ armors:
     loftempsSet: [ 3 ]
     tags:
       FTAG_STUN_TO_HP: 1
-  - type: STR_RESISTANCE_SOLDIER_ARMOR #TODO
+  - type: STR_RESISTANCE_SOLDIER_ARMOR
     spriteSheet: RESISTANCE_AGENT.PCK
     spriteInv: inventory_RESISTANCE_AGENT
     corpseBattle:

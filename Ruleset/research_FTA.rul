@@ -104,7 +104,7 @@ research:
     hidden: true
   - name: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
     hidden: true
-  - name: STR_INFILTRATING_MILITARY_RND_PREREQ #TODO - way to unlock
+  - name: STR_INFILTRATING_MILITARY_RND_PREREQ
     hidden: true
   - name: STR_CULT_INVESTIGATION
     hidden: true
@@ -140,7 +140,7 @@ research:
     getOneFree:
       - STR_XCOM_FILES_1
       - STR_XCOM_FILES_2
-      #- STR_XCOM_FILES_3 #TODO
+      #- STR_XCOM_FILES_3 #FIXME - more lore!
       - STR_RECORD_WOW_SIGNAL
     listOrder: 30
   - name: STR_COMMUNICATION
@@ -245,7 +245,7 @@ research:
     cost: 100
     points: 50
     dependencies:
-      - STR_TODOIUM #TODO
+      - STR_TODOIUM #FIXME
     listOrder: 25002
   - name: STR_ROCKET_GLOVE
     dependencies:
@@ -940,7 +940,7 @@ research:
     needItem: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
-      - STR_PRISONER_INTERROGATIONS #TODO - add more lore
+      - STR_PRISONER_INTERROGATIONS #FIXME - add more lore
     listOrder: 6120
 
   #enemies - cultists

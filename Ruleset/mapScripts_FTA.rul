@@ -722,7 +722,7 @@ mapScripts:
       executionChances: 60
     - type: fillArea
 
-  - type: LAND_CRAFT_URBAN_LOW_SMALL_MAP #TODO add urban low child terrains cast
+  - type: LAND_CRAFT_URBAN_LOW_SMALL_MAP #FIXME add urban low child terrains cast
     commands:
     - type: addCraft
       craftName: STR_OPSCAR

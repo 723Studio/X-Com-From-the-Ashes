@@ -1104,7 +1104,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    #aggroSound: [150, 151, 152, 153, 154] #TODO uncomment!
+    aggroSound: [150, 151, 152, 153, 154]
     deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -1142,7 +1142,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    #aggroSound: [141, 142] #TODO uncomment!
+    aggroSound: [141, 142]
     deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -1220,7 +1220,7 @@ units:
     standHeight: 18
     kneelHeight: 12
     value: 10
-    #aggroSound: [161, 162, 163] #TODO uncomment!
+    aggroSound: [161, 162, 163]
     deathSound: [164, 165]
     panicSound: [161, 162, 163]
     berserkSound: [161, 162, 163]
@@ -2085,7 +2085,7 @@ units:
         - STR_RIOT_GUN_CLIP
         - STR_RIOT_GUN_CLIP
         - STR_GRENADE
-  - type: STR_RESISTANCE_SOLDIER #TODO
+  - type: STR_RESISTANCE_SOLDIER
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats:

@@ -959,6 +959,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/STRANGE_LIGHTS_EVENT_BACKGROUND.png
+  - type: SEWERS4.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SEWERS4.png
 
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT_CPAL

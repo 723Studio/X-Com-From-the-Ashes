@@ -482,7 +482,7 @@ extended:
             if eq catCheck 1;
               debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat: " bonus;
               set temp 20;
-              add bonus temp; #TODO balance it!
+              add bonus temp; #FIXME - balance here pls!
               debug_log "UTILITY_SPECIALIST_STATE activated, new stat: " bonus;
               debug_log "Script effect should be balanced, now it's value is: " temp;
             end;
@@ -603,7 +603,7 @@ extended:
             if eq catCheck 1;
               debug_log "Activating perk UTILITY_SPECIALIST_STATE, initial stat: " bonus;
               set temp 60;
-              add bonus temp; #TODO balance it!
+              add bonus temp; #FIXME - balance here pls!
               debug_log "UTILITY_SPECIALIST_STATE activated, new stat: " bonus;
               debug_log "Script effect should be balanced, now it's value is: " temp;
             end;
@@ -624,7 +624,7 @@ extended:
           if eq catCheck 1;
             debug_log "Activating STR_EXPLOSIVE_CHARGES category penalty, initial stat: " bonus;
             set temp 60;
-            sub bonus temp; #TODO balance it!
+            sub bonus temp; #FIXME - balance here pls!
             debug_log "STR_EXPLOSIVE_CHARGES category penalty activated, new stat: " bonus;
             debug_log "Script effect should be balanced, now it's value is: " temp;
           end;

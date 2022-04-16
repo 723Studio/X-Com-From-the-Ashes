@@ -3580,7 +3580,7 @@ items:
     listOrder: 15280
     landOnly: true
 
-  - type: STR_RAILGUN #TODO balance
+  - type: STR_RAILGUN #FIXME balance
     categories: [STR_HUMAN_TECH, STR_MASS_DRIVER, STR_CANNONS, STR_HEAVY_WEAPONS]
     size: 0.35
     costSell: 130000
@@ -3617,7 +3617,7 @@ items:
     # bulletSpeed: 8
     hitSound: 13
     hitAnimation: 26
-    power: 120 #TODO balance
+    power: 120 #FIXME - balance
     damageType: 1
     clipSize: 1
     battleType: 2
@@ -5840,7 +5840,7 @@ items:
   - type: STR_BANDIT
     categories: [STR_HUMANS]
     size: 0.0
-    recover: false #TODO Consider
+    recover: false #FIXME Consider
     liveAlien: false
     prisonType: 1
     listOrder: 100376
@@ -5853,7 +5853,7 @@ items:
   - type: STR_ARMY_FIELD_SOLDIER
     categories: [STR_HUMANS]
     size: 0.0
-    recover: false #TODO Consider
+    recover: false #FIXME Consider
     liveAlien: false
     #prisonType: 1
     listOrder: 100376
@@ -5865,7 +5865,7 @@ items:
   - type: STR_ARMY_FIELD_OFFICER
     categories: [STR_HUMANS]
     size: 0.0
-    recover: false #TODO Consider
+    recover: false #FIXME Consider
     liveAlien: false
     #prisonType: 1
     listOrder: 100378
