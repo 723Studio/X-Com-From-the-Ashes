@@ -239,7 +239,7 @@ covertOperations:
       STR_CRATED_OSPREY: 100
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -200
-    failureFunds: -32000
+    failureFunds: -42000
 
   - name: STR_INFILTRATING_MILITARY_RND
     description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
