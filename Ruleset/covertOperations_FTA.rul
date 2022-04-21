@@ -239,7 +239,7 @@ covertOperations:
       STR_CRATED_OSPREY: 100
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -200
-    failureFunds: -32000
+    failureFunds: -42000
 
   - name: STR_INFILTRATING_MILITARY_RND
     description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
@@ -414,7 +414,10 @@ covertOperations:
       - STR_BIOLAB_PREREQ
     soldierSlots: 2
     optionalSoldierSlots: 1
+    requiresBaseFunc: [HQ]
     scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     baseChances: 70
     requiredItems:
       STR_BRIEFCASE_CASH: 1
@@ -440,7 +443,10 @@ covertOperations:
       - STR_BIOLAB_PREREQ
     soldierSlots: 2
     optionalSoldierSlots: 1
+    requiresBaseFunc: [HQ]
     scientistSlots: 1
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     baseChances: 70
     requiredItems:
       STR_BRIEFCASE_CASH: 1
@@ -468,6 +474,9 @@ covertOperations:
       - STR_RESISTANCE_WEAPONRY_PREREQ
     soldierSlots: 2
     baseChances: 70
+    requiresBaseFunc: [HQ]
+    allowedArmor:
+      - STR_JUMPSUIT_UC
     danger: 15
     costs: 30
     successDescription: STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_SUCCESS

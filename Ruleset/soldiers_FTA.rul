@@ -1,6 +1,7 @@
 soldiers:
   - &STR_SOLDIER
     type: STR_SOLDIER
+    role: 0 #ROLE_SOLDIER
     costBuy: 50000
     costSalary: 3000
     moraleLossWhenKilled: 150
@@ -56,10 +57,6 @@ soldiers:
       melee: 80
       psiStrength: 60
       psiSkill: 0
-    dogfightExperience:
-      bravery: 10
-      reactions: 30
-      firing: 25
     armor: STR_JUMPSUIT_UC
     armorForAvatar: STR_JUMPSUIT_UC
     avatarOffsetX: 68
@@ -76,6 +73,57 @@ soldiers:
     # panicFemale: [731, 732, 733, 734, 735, 736, 737]
     # berserkMale: [801, 802, 803, 804, 805]
     # berserkFemale: [831, 832, 833]
+  - type: STR_PILOT
+    refNode: *STR_SOLDIER
+    role: 1 #ROLE_PILOT
+    costBuy: 25000
+    costSalary: 2000
+    minStats:
+      tu: 50
+      stamina: 60
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 40
+      throwing: 35
+      strength: 20
+      melee: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
+      manuvering: 30
+      missiles: 30
+      dogfight: 30
+      tracking: 20
+      tactics: 10
+    maxStats:
+      tu: 65
+      stamina: 70
+      health: 35
+      bravery: 50
+      reactions: 40
+      firing: 50
+      throwing: 45
+      strength: 40
+      melee: 40
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+      manuvering: 60
+      missiles: 70
+      dogfight: 70
+      tracking: 60
+      tactics: 50
+    dogfightExperience:
+      manuvering: 30
+      missiles: 25
+      dogfight: 25
+      tracking: 10
+      tactics: 10
+    femaleFrequency: 15
+    soldierNames:
+      - delete
+      - SoldierNames/
   - type: STR_RESISTANCE_AGENT
     refNode: *STR_SOLDIER
     costBuy: 25000
