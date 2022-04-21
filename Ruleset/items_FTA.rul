@@ -4653,8 +4653,8 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     landOnly: true
-    costBuy: 9200
-    costSell: 6000
+    costBuy: 6700
+    costSell: 4800
     size: 0.4
     weight: 22
     bigSprite: 389

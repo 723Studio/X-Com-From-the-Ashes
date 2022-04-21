@@ -260,8 +260,8 @@ manufacture:
     requiredItems:
       STR_SPARE_PARTS: 2
     space: 1
-    time: 60
-    cost: 2700
+    time: 90
+    cost: 3700
     producedItems:
       STR_COMBAT_SHIELD: 1
     listOrder: 220030
