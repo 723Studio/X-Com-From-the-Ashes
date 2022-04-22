@@ -19,6 +19,11 @@ soldiers:
       psiStrength: 30
       psiSkill: 0
       mana: 0
+      manuvering: 30
+      missiles: 30
+      dogfight: 30
+      tracking: 20
+      tactics: 10
     maxStats:
       tu: 65
       stamina: 70
@@ -32,6 +37,11 @@ soldiers:
       psiStrength: 60
       psiSkill: 0
       mana: 0
+      manuvering: 30
+      missiles: 30
+      dogfight: 30
+      tracking: 20
+      tactics: 10
     statCaps:
       tu: 100
       stamina: 110
@@ -45,6 +55,11 @@ soldiers:
       psiStrength: 100
       psiSkill: 100
       mana: 80
+      manuvering: 30
+      missiles: 30
+      dogfight: 30
+      tracking: 20
+      tactics: 10
     trainingStatCaps:
       tu: 70
       stamina: 90
@@ -114,6 +129,24 @@ soldiers:
       dogfight: 70
       tracking: 60
       tactics: 50
+    statCaps:
+      tu: 100
+      stamina: 110
+      health: 50
+      bravery: 90
+      reactions: 100
+      firing: 120
+      throwing: 110
+      strength: 75
+      melee: 120
+      psiStrength: 100
+      psiSkill: 100
+      mana: 80
+      manuvering: 100
+      missiles: 120
+      dogfight: 120
+      tracking: 110
+      tactics: 90
     dogfightExperience:
       manuvering: 30
       missiles: 25
