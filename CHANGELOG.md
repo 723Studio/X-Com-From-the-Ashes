@@ -1,7 +1,7 @@
 ####Versioning
 Milestone.Major.Minor.Patch
 
-####0.1.1.0
+####0.1.0.2
 - Fixed fundnding change on failing Osprey recovery operation.
 - Combat shield manufacturing profit reduced.
 - Some English texts edited by Garr
