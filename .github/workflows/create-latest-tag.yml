@@ -1,0 +1,19 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+name: Tag release as latest
+
+jobs:
+  build:
+    name: Tag release as latest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Tag release
+        run: |
+          git push --delete origin latest || echo 'No latest tag'
+          git tag latest
+          git push --tags
