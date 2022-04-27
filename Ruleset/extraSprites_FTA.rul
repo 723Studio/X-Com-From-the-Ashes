@@ -683,6 +683,7 @@ extraSprites:
       1026: Resources/Weapons/Earthbound/Faction/handob_RiotGunClip.png
       1034: Resources/Weapons/Earthbound/Faction/handob_MilitarySniperRifle.png
       1042: Resources/Weapons/Earthbound/Faction/handob_MilitarySniperRifleClip.png
+      1050: Resources/Weapons/Earthbound/Special/handob_Baseball_Bat.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

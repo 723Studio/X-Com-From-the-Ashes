@@ -1,6 +1,8 @@
 ####Versioning
 Milestone.Major.Minor.Patch
-
+####0.1.0.3
+- Fixed a bug that caused alien missions from the original game to appear in the game.
+- Cattle mutilation briefing screen image bug fixed.
 ####0.1.0.2
 - Fixed fundnding change on failing Osprey recovery operation.
 - Combat shield manufacturing profit reduced.
