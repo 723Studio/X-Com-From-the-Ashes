@@ -407,4 +407,4 @@ eventScripts:
   - type: STR_CHOCOLATE_FACTORY
     oneTimeSequentialEvents: [STR_CHOCOLATE_FACTORY_1]
     firstMonth: 0
-    executionOdds: 100
+    executionOdds: 40
