@@ -402,3 +402,9 @@ eventScripts:
     maxFunds: 200000
     allowedProcessor: 0
     spawnGap: 60
+
+#Chocolate Factory
+  - type: STR_CHOCOLATE_FACTORY
+    oneTimeSequentialEvents: [STR_CHOCOLATE_FACTORY_1]
+    firstMonth: 0
+    executionOdds: 100

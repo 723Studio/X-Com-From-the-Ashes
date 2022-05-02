@@ -625,6 +625,58 @@ events:
     #background: STR_RESISTANCE_BACKGROUND.SCR
     loyalty: -100
 
+# Chocolate Factory
+  - name: STR_CHOCOLATE_FACTORY_1
+    description: STR_CHOCOLATE_FACTORY_1_DESCRIPTION
+    background: STORES_STATE.SCR
+    customAnswers:
+      0:
+        title: STR_BUY_CHOCOLATE
+        description: STR_BUY_CHOCOLATE_DESCRIPTION
+        spawnEvent: [STR_BOUGHT_CHOCOLATE]
+        
+      1:
+        title: STR_BUY_FACTORY
+        description: STR_BUY_FACTORY_DESCRIPTION
+        spawnEvent: [STR_BOUGHT_FACTORY, STR_CHOCOLATE_FACTORY_PROFITS]
+      2:
+        title: STR_BUY_NOTHING
+        spawnEvent: [STR_BOUGHT_NOTHING]
+      3:
+        title: STR_SCOLD_SCIENTIST
+        spawnEvent: [STR_SCOLDED_SCIENTIST]
+    timer: 2880 #2 days since game start
+    timerRandom: 0
+  
+
+  - name: STR_BOUGHT_CHOCOLATE
+    description: STR_BOUGHT_CHOCOLATE_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: -5000
+    loyalty: 20
+
+  - name: STR_BOUGHT_FACTORY
+    description: STR_BOUGHT_FACTORY_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: -100000
+    loyalty: 50
+
+  - name: STR_BOUGHT_NOTHING
+    description: STR_BOUGHT_NOTHING_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+
+  - name: STR_SCOLDED_SCIENTIST
+    description: STR_SCOLDED_SCIENTIST_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    loyalty: -10
+
+  - name: STR_CHOCOLATE_FACTORY_PROFITS
+    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION
+    background: CASH_BACKGROUND.SCR
+    funds: 10000
+    loyalty: 20
+    timer: 43200
+
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
   #   customAnswers:
