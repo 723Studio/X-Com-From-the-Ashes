@@ -638,7 +638,7 @@ events:
       1:
         title: STR_BUY_FACTORY
         description: STR_BUY_FACTORY_DESCRIPTION
-        spawnEvent: [STR_BOUGHT_FACTORY, STR_CHOCOLATE_FACTORY_PROFITS]
+        spawnEvent: [STR_BOUGHT_FACTORY]
       2:
         title: STR_BUY_NOTHING
         spawnEvent: [STR_BOUGHT_NOTHING]
@@ -660,6 +660,7 @@ events:
     background: COVEROPSHQ_BACKGROUND.SCR
     funds: -100000
     loyalty: 50
+    researchList: [STR_CHOCOLATE_FACTORY_OPEN]
 
   - name: STR_BOUGHT_NOTHING
     description: STR_BOUGHT_NOTHING_DESCRIPTION
@@ -670,12 +671,55 @@ events:
     background: COVEROPSHQ_BACKGROUND.SCR
     loyalty: -10
 
-  - name: STR_CHOCOLATE_FACTORY_PROFITS
-    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION
+  - name: STR_CHOCOLATE_FACTORY_PROFITS_15000
+    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION_15000
     background: CASH_BACKGROUND.SCR
-    funds: 10000
+    funds: 15000
     loyalty: 20
-    timer: 43200
+    interruptResearch: STR_CHOCOLATE_FACTORY_CLOSED
+
+  - name: STR_CHOCOLATE_FACTORY_PROFITS_30000
+    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION_30000
+    background: CASH_BACKGROUND.SCR
+    funds: 30000
+    loyalty: 25
+    interruptResearch: STR_CHOCOLATE_FACTORY_CLOSED
+
+  - name: STR_CHOCOLATE_FACTORY_PROFITS_45000
+    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION_45000
+    background: CASH_BACKGROUND.SCR
+    funds: 45000
+    loyalty: 35
+    interruptResearch: STR_CHOCOLATE_FACTORY_CLOSED
+
+  - name: STR_CHOCOLATE_MIB_ALERT
+    description: STR_CHOCOLATE_MIB_ALERT_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    customAnswers:
+      0:
+        title: STR_CHOCOLATE_MIB_STAY
+        description: STR_CHOCOLATE_MIB_STAY_DESCRIPTION
+        spawnEvent: [STR_CHOCOLATE_MIB_STEALS_CANDY]
+        
+      1:
+        title: STR_CHOCOLATE_MIB_SELL
+        description: STR_CHOCOLATE_MIB_SELL_DESCRIPTION
+        spawnEvent: [STR_CHOCOLATE_GOOD_END]
+
+  - name: STR_CHOCOLATE_MIB_STEALS_CANDY
+    description: STR_CHOCOLATE_MIB_STEALS_CANDY_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    loyalty: -100
+    researchList: [STR_CHOCOLATE_FACTORY_CLOSED] 
+
+  - name: STR_CHOCOLATE_GOOD_END
+    description: STR_CHOCOLATE_GOOD_END_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: 200000
+    loyalty: 100
+    researchList: [STR_CHOCOLATE_FACTORY_CLOSED] 
+
+
 
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION

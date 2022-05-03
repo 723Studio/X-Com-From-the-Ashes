@@ -1778,3 +1778,10 @@ research:
     points: 800
     dependencies:
       - STR_TODOIUM
+
+#Chocolate Factory
+  - name: STR_CHOCOLATE_FACTORY_OPEN
+    hidden: true
+
+  - name: STR_CHOCOLATE_FACTORY_CLOSED
+    hidden: true
