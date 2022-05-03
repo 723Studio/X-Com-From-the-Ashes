@@ -194,6 +194,7 @@ crafts:
     soldiers: 1
     vehicles: 0
     pilots: 1
+    requiredRole: 1
     maxItems: 999
     sprite: 3
     fuelMax: 1000
