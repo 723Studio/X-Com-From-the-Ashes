@@ -112,6 +112,12 @@ research:
     hidden: true
   - name: STR_MILITARY_EQUIPMENT_ACQUISITION #TODO add way to unlock this
     hidden: true
+  - name: STR_CHOCOLATE_FACTORY_OPEN
+    hidden: true
+  - name: STR_CHOCOLATE_FACTORY_CLOSED
+    hidden: true
+    disables:
+      - STR_CHOCOLATE_FACTORY_OPEN
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
