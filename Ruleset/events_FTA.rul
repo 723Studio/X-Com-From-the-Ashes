@@ -542,54 +542,41 @@ events:
 
 #random fun events
   # Mysterious Sponsor
-  - name: STR_MYSTERIOUS_SPONSOR_50000
+  - &MystSponsor
+    name: STR_MYSTERIOUS_SPONSOR_50000
     description: STR_MYSTERIOUS_SPONSOR_50000_DESCRIPTION
     background: CASH_BACKGROUND.SCR
     funds: 50000
     timer: 1200
     timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_75000
+    refNode: *MystSponsor
     description: STR_MYSTERIOUS_SPONSOR_75000_DESCRIPTION
-    background: CASH_BACKGROUND.SCR
     funds: 75000
-    timer: 1200
-    timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_100000
+    refNode: *MystSponsor
     description: STR_MYSTERIOUS_SPONSOR_100000_DESCRIPTION
-    background: CASH_BACKGROUND.SCR
     funds: 100000
-    timer: 1200
-    timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_150000
+    refNode: *MystSponsor
     description: STR_MYSTERIOUS_SPONSOR_150000_DESCRIPTION
-    background: CASH_BACKGROUND.SCR
     funds: 150000
-    timer: 1200
-    timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_200000
+    refNode: *MystSponsor
     description: STR_MYSTERIOUS_SPONSOR_200000_DESCRIPTION
-    background: CASH_BACKGROUND.SCR
     funds: 200000
-    timer: 1200
-    timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_250000
+    refNode: *MystSponsor
     description: STR_MYSTERIOUS_SPONSOR_250000_DESCRIPTION
-    background: CASH_BACKGROUND.SCR
     funds: 250000
-    timer: 1200
-    timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_500000
+    refNode: *MystSponsor
     description: STR_MYSTERIOUS_SPONSOR_500000_DESCRIPTION
-    background: CASH_BACKGROUND.SCR
     funds: 500000
-    timer: 1200
-    timerRandom: 43500
   - name: STR_MYSTERIOUS_SPONSOR_1000000
+    refNode: *MystSponsor
     description: STR_MYSTERIOUS_SPONSOR_1000000_DESCRIPTION
-    background: CASH_BACKGROUND.SCR
     funds: 1000000
-    timer: 1200
-    timerRandom: 43500
   - name: STR_OLD_CROP_CIRCLES
     description: STR_OLD_CROP_CIRCLES_DESCRIPTION
     background: CROPCIRCLES_BACKGROUND.SCR
@@ -604,7 +591,6 @@ events:
     timerRandom: 17280
   - name: STR_IMPROVE_LIVING_FACILITY
     description: STR_IMPROVE_LIVING_FACILITY_DESCRIPTION
-    #background: STR_RESISTANCE_BACKGROUND.SCR
     timer: 480 # 8 hours
     timerRandom: 11520 # 8 days
     customAnswers:
@@ -617,13 +603,98 @@ events:
         spawnEvent: [STR_IMPROVE_LIVING_FACILITY_NO]
   - name: STR_IMPROVE_LIVING_FACILITY_YES
     description: STR_IMPROVE_LIVING_FACILITY_YES_DESCRIPTION
-    #background: STR_RESISTANCE_BACKGROUND.SCR
     loyalty: 80
     funds: -80000
   - name: STR_IMPROVE_LIVING_FACILITY_NO
     description: STR_IMPROVE_LIVING_FACILITY_NO_DESCRIPTION
-    #background: STR_RESISTANCE_BACKGROUND.SCR
     loyalty: -100
+  - name: STR_CHOCOLATE_FACTORY_1
+    description: STR_CHOCOLATE_FACTORY_1_DESCRIPTION
+    background: STORES_STATE.SCR
+    customAnswers:
+      0:
+        title: STR_BUY_CHOCOLATE
+        description: STR_BUY_CHOCOLATE_DESCRIPTION
+        spawnEvent: [STR_BOUGHT_CHOCOLATE]
+        
+      1:
+        title: STR_BUY_FACTORY
+        description: STR_BUY_FACTORY_DESCRIPTION
+        spawnEvent: [STR_BOUGHT_FACTORY]
+      2:
+        title: STR_BUY_NOTHING
+        spawnEvent: [STR_BOUGHT_NOTHING]
+      3:
+        title: STR_SCOLD_SCIENTIST
+        spawnEvent: [STR_SCOLDED_SCIENTIST]
+    timer: 7200 #5 days
+    timerRandom: 23040 #16 days
+  - name: STR_BOUGHT_CHOCOLATE
+    description: STR_BOUGHT_CHOCOLATE_DESCRIPTION
+    #background: COVEROPSHQ_BACKGROUND.SCR
+    funds: -5000
+    loyalty: 60
+  - name: STR_BOUGHT_FACTORY
+    description: STR_BOUGHT_FACTORY_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: -85000
+    loyalty: 30
+    researchList: [STR_CHOCOLATE_FACTORY_OPEN]
+  - name: STR_BOUGHT_NOTHING
+    description: STR_BOUGHT_NOTHING_DESCRIPTION
+    background: BACK05.SCR
+  - name: STR_SCOLDED_SCIENTIST
+    description: STR_SCOLDED_SCIENTIST_DESCRIPTION
+    #TODO - red colour pass to engine!
+    background: BACK05.SCR
+    loyalty: -20
+  - &ChocFactory
+    name: STR_CHOCOLATE_FACTORY_PROFITS_15000
+    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION_15000
+    background: CASH_BACKGROUND.SCR
+    funds: 15000
+    loyalty: 10
+    timer: 1440 #1 day
+    timerRandom: 1440 #1 day
+    interruptResearch: STR_CHOCOLATE_FACTORY_CLOSED
+  - name: STR_CHOCOLATE_FACTORY_PROFITS_30000
+    refNode: *ChocFactory
+    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION_30000
+    funds: 30000
+    loyalty: 15
+    interruptResearch: STR_CHOCOLATE_FACTORY_CLOSED
+  - name: STR_CHOCOLATE_FACTORY_PROFITS_45000
+    refNode: *ChocFactory
+    description: STR_CHOCOLATE_FACTORY_PROFITS_DESCRIPTION_45000
+    funds: 45000
+    loyalty: 25
+    interruptResearch: STR_CHOCOLATE_FACTORY_CLOSED
+  - name: STR_CHOCOLATE_MIB_ALERT
+    description: STR_CHOCOLATE_MIB_ALERT_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    customAnswers:
+      0:
+        title: STR_CHOCOLATE_MIB_STAY
+        description: STR_CHOCOLATE_MIB_STAY_DESCRIPTION
+        spawnEvent: [STR_CHOCOLATE_MIB_STEALS_CANDY]
+        
+      1:
+        title: STR_CHOCOLATE_MIB_SELL
+        description: STR_CHOCOLATE_MIB_SELL_DESCRIPTION
+        spawnEvent: [STR_CHOCOLATE_GOOD_END]
+  - name: STR_CHOCOLATE_MIB_STEALS_CANDY
+    description: STR_CHOCOLATE_MIB_STEALS_CANDY_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    music: GMLOSE
+    #TODO - red colour pass to engine!
+    loyalty: -120
+    researchList: [STR_CHOCOLATE_FACTORY_CLOSED] 
+  - name: STR_CHOCOLATE_GOOD_END
+    description: STR_CHOCOLATE_GOOD_END_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: 185000
+    loyalty: 80
+    researchList: [STR_CHOCOLATE_FACTORY_CLOSED] 
 
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
