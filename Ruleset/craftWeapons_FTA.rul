@@ -7,6 +7,7 @@ craftWeapons:
   #- delete: STR_PLASMA_BEAM_UC
   - type: STR_CANNON_UC
     weaponType: 0
+    projectileSubType: 0 #CWPST_CANNON
     sprite: 2
     sound: 4
     damage: 13
@@ -23,10 +24,11 @@ craftWeapons:
     projectileSpeed: 8
   - type: STR_STINGRAY
     weaponType: 2
+    projectileSubType: 1 #CWPST_MISSILE
     sprite: 0
     sound: 5
     damage: 60
-    range: 42 #30
+    range: 38 #30
     accuracy: 70
     reloadCautious: 64
     reloadStandard: 58 #48

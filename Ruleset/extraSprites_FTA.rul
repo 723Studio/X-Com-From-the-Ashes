@@ -66,6 +66,15 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/UI/avatar-background.png
+
+  - type: BASEBITS.PCK
+    width: 192
+    height: 160
+    subX: 32
+    subY: 32
+    files:
+      5000: Resources/UI/ranks_basescape.png
+
   - type: TinyRanks
     width: 42
     height: 7

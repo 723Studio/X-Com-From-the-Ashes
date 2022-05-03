@@ -31,6 +31,15 @@ costHireEngineer: 70000
 costScientist: 8000
 costHireScientist: 120000
 displayCustomCategories: 1
+pilotBraveryThresholds: [80, 50, 20]
+pilotAccuracyZeroPoint: 30 #used for both dogfight and missiles
+pilotAccuracyRange: 40
+pilotReactionsZeroPoint: 40 #used for manuevering
+pilotReactionsRange: 60
+pilotTrackingZeroPoint: 35
+pilotTrackingRange: 60
+pilotTacticsZeroPoint: 20
+pilotTacticsRange: 20
 
 #Interception
 drawEnemyRadarCircles: 0

@@ -236,6 +236,90 @@ interfaces:
         color: 246   # purple
       - id: button
         color: 218   # blue
+  - type: soldierInfo
+    palette: PAL_BASESCAPE
+    elements:
+      - id: text1
+        color: 218   # blue
+        color2: 208  # white
+      - id: text2
+        color: 241   # pink
+      - id: numbers
+        color: 208   # white
+      - id: button
+        color: 246   # purple
+      - id: barTUs
+        color: 52
+        color2: 56
+        border: 48
+      - id: barEnergy
+        color: 148
+        color2: 152
+        border: 144
+      - id: barHealth
+        color: 36
+        color2: 40
+        border: 32
+      - id: barBravery
+        color: 68
+        color2: 72
+        border: 64
+      - id: barReactions
+        color: 20
+        color2: 24
+        border: 16
+      - id: barFiring
+        color: 132
+        color2: 136
+        border: 128
+      - id: barThrowing
+        color: 164
+        color2: 168
+        border: 160
+      - id: barMelee
+        color: 68
+        color2: 72
+        border: 64
+      - id: barStrength
+        color: 84
+        color2: 88
+        border: 80
+      - id: barMana
+        color: 132
+        color2: 136
+        border: 128
+      - id: barPsiStrength
+        color: 180
+        color2: 184
+        border: 176
+      - id: barPsiSkill
+        color: 180
+        color2: 184
+        border: 176
+      - id: barManeuvering
+        color: 148
+        color2: 152
+        border: 144
+      - id: bartMissiles
+        color: 134
+        color2: 137
+        border: 130
+      - id: barDogfight
+        color: 100
+        color2: 103
+        border: 96
+      - id: barTracking
+        color: 52
+        color2: 55
+        border: 48
+      - id: barTactics
+        color: 83
+        color2: 86
+        border: 80
+      - id: errorPalette
+        color: 0     # brown
+      - id: errorMessage
+        color: 241   # pink
   - type: hacking
     palette: PAL_BATTLESCAPE
     elements:

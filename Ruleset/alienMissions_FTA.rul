@@ -32,14 +32,14 @@
 #    ->  true: UFO lands randomly inside the area; site spawns exactly on the UFO landing site
 alienMissions:
 #delete vanilla missions
-  # - delete: STR_ALIEN_RESEARCH
-  # - delete: STR_ALIEN_HARVEST
-  # - delete: STR_ALIEN_ABDUCTION
-  # - delete: STR_ALIEN_INFILTRATION
-  # - delete: STR_ALIEN_BASE
-  # - delete: STR_ALIEN_TERROR
-  # - delete: STR_ALIEN_RETALIATION
-  # - delete: STR_ALIEN_SUPPLY
+  - delete: STR_ALIEN_RESEARCH
+  - delete: STR_ALIEN_HARVEST
+  - delete: STR_ALIEN_ABDUCTION
+  - delete: STR_ALIEN_INFILTRATION
+  - delete: STR_ALIEN_BASE
+  - delete: STR_ALIEN_TERROR
+  - delete: STR_ALIEN_RETALIATION
+  - delete: STR_ALIEN_SUPPLY
 #early-game scripts
   - type: STR_EARLY_GAME_TROLLING
     points: 2

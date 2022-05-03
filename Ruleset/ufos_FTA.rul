@@ -5,10 +5,10 @@ ufos:
   - type: STR_SMALL_SCOUT
     size: STR_VERY_SMALL
     sprite: 0
-    damageMax: 50
+    damageMax: 45
     avoidBonus: 25
-    shieldCapacity: 55
-    shieldRecharge: 22 #20 % to get 1 SP per sec
+    shieldCapacity: 75
+    shieldRecharge: 20 #20 % to get 1 SP per sec
     shieldRechargeInGeoscape: 1
     shieldBleedThrough: 100
     speedMax: 2140
@@ -42,7 +42,7 @@ ufos:
     sprite: 4
     damageMax: 500
     shieldCapacity: 600
-    shieldRecharge: 115 #1*100% + 15 % to get 1 SP per sec
+    shieldRecharge: 115
     shieldRechargeInGeoscape: 200
     shieldBleedThrough: 100
     speedMax: 3940

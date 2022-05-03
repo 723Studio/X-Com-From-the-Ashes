@@ -1,7 +1,89 @@
 soldiers:
   - &STR_SOLDIER
     type: STR_SOLDIER
-    role: 0 #ROLE_SOLDIER
+    roles: [0] #ROLE_SOLDIER
+    rankSprite: 5000
+    pilotRankSprite: 5006
+    agentRankSprite: 5012
+    scientistRankSprite: 5018
+    engineerRankSprite: 5024
+    roleExpRequirments:
+      - role: 0 #ROLE_SOLDIER
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 1 #ROLE_PILOT
+        requirments: 
+          1: 1
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 2 #ROLE_AGENT
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 3 #ROLE_SCIENTIST
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 4 #ROLE_ENGINEER
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+    roleRankStrings:
+      - role: 0 #ROLE_SOLDIER
+        strings: 
+          1: STR_PRIVATE
+          2: STR_CORPORAL
+          3: STR_SERGANT
+          4: STR_WARRANT_OFFICER
+          5: STR_LIEUTENANT
+          6: STR_CAPTAIN
+      - role: 1 #ROLE_PILOT
+        strings: 
+          1: STR_PILOT
+          2: STR_SENIOR_PILOT
+          3: STR_TECHNICAL_SERGANT
+          4: STR_FLYING_OFFICER
+          5: STR_FLIGHT_LIEUTENANT
+          6: STR_SQUADRON_LEADER
+      - role: 2 #ROLE_AGENT
+        strings: 
+          1: STR_JUNIOR_AGENT
+          2: STR_AGENT
+          3: STR_SENIOR_AGENT
+          4: STR_STAFF_AGENT
+          5: STR_SPECIAL_AGENT
+          6: STR_COMMISSAR
+      - role: 3 #ROLE_SCIENTIST
+        strings: 
+          1: STR_ASSOCIATE_SCIENTIST
+          2: STR_SCIENTIST
+          3: STR_DOCENT
+          4: STR_LEAD_SCIENTIST
+          5: STR_PRINCIPAL_SCIENTIST
+          6: STR_ACADEMIC
+      - role: 4 #ROLE_ENGINEER
+        strings: 
+          1: STR_JOURNEYMAN
+          2: STR_ENGINEER
+          3: STR_SPECIALIST
+          4: STR_SENIOR_ENGINEER
+          5: STR_FOREMAN
+          6: STR_ARTISAN
     costBuy: 50000
     costSalary: 3000
     moraleLossWhenKilled: 150
@@ -19,11 +101,6 @@ soldiers:
       psiStrength: 30
       psiSkill: 0
       mana: 0
-      manuvering: 30
-      missiles: 30
-      dogfight: 30
-      tracking: 20
-      tactics: 10
     maxStats:
       tu: 65
       stamina: 70
@@ -37,11 +114,6 @@ soldiers:
       psiStrength: 60
       psiSkill: 0
       mana: 0
-      manuvering: 30
-      missiles: 30
-      dogfight: 30
-      tracking: 20
-      tactics: 10
     statCaps:
       tu: 100
       stamina: 110
@@ -55,11 +127,11 @@ soldiers:
       psiStrength: 100
       psiSkill: 100
       mana: 80
-      manuvering: 30
-      missiles: 30
-      dogfight: 30
-      tracking: 20
-      tactics: 10
+      maneuvering: 100
+      missiles: 120
+      dogfight: 120
+      tracking: 110
+      tactics: 90
     trainingStatCaps:
       tu: 70
       stamina: 90
@@ -72,6 +144,20 @@ soldiers:
       melee: 80
       psiStrength: 60
       psiSkill: 0
+      maneuvering: 60
+      missiles: 80
+      dogfight: 85
+      tracking: 60
+      tactics: 50
+    dogfightExperience:
+      bravery: 100
+      reactions: 0
+      firing: 0
+      maneuvering: 200
+      missiles: 200
+      dogfight: 200
+      tracking: 10
+      tactics: 10
     armor: STR_JUMPSUIT_UC
     armorForAvatar: STR_JUMPSUIT_UC
     avatarOffsetX: 68
@@ -90,9 +176,10 @@ soldiers:
     # berserkFemale: [831, 832, 833]
   - type: STR_PILOT
     refNode: *STR_SOLDIER
-    role: 1 #ROLE_PILOT
-    costBuy: 25000
-    costSalary: 2000
+    roles: [1] #ROLE_PILOT
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
     minStats:
       tu: 50
       stamina: 60
@@ -106,11 +193,11 @@ soldiers:
       psiStrength: 30
       psiSkill: 0
       mana: 0
-      manuvering: 30
-      missiles: 30
-      dogfight: 30
+      maneuvering: 10
+      missiles: 20
+      dogfight: 20
       tracking: 20
-      tactics: 10
+      tactics: 5
     maxStats:
       tu: 65
       stamina: 70
@@ -124,41 +211,26 @@ soldiers:
       psiStrength: 60
       psiSkill: 0
       mana: 0
-      manuvering: 60
-      missiles: 70
-      dogfight: 70
-      tracking: 60
-      tactics: 50
-    statCaps:
-      tu: 100
-      stamina: 110
-      health: 50
-      bravery: 90
-      reactions: 100
-      firing: 120
-      throwing: 110
-      strength: 75
-      melee: 120
-      psiStrength: 100
-      psiSkill: 100
-      mana: 80
-      manuvering: 100
-      missiles: 120
-      dogfight: 120
-      tracking: 110
-      tactics: 90
-    dogfightExperience:
-      manuvering: 30
-      missiles: 25
-      dogfight: 25
-      tracking: 10
-      tactics: 10
+      maneuvering: 50
+      missiles: 60
+      dogfight: 60
+      tracking: 50
+      tactics: 40
+    # dogfightExperience:
+    #   maneuvering: 30
+    #   missiles: 25
+    #   dogfight: 25
+    #   tracking: 10
+    #   tactics: 10
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
     femaleFrequency: 15
     soldierNames:
       - delete
       - SoldierNames/
   - type: STR_RESISTANCE_AGENT
     refNode: *STR_SOLDIER
+    roles: [0]
     costBuy: 25000
     costSalary: 2000
     minStats:
@@ -192,6 +264,7 @@ soldiers:
       - SoldierNames/
   - type: STR_RESISTANCE_SCOUT
     refNode: *STR_SOLDIER
+    roles: [0]
     costBuy: 35000
     costSalary: 3000
     minStats:
