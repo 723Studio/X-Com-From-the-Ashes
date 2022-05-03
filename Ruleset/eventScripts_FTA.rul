@@ -402,13 +402,10 @@ eventScripts:
     maxFunds: 200000
     allowedProcessor: 0
     spawnGap: 60
-
-#Chocolate Factory
   - type: STR_CHOCOLATE_FACTORY
     oneTimeSequentialEvents: [STR_CHOCOLATE_FACTORY_1]
     firstMonth: 0
     executionOdds: 40
-
   - type: STR_CHOCOLATE_FACTORY_BOUGHT
     eventWeights:
       0:
@@ -419,6 +416,5 @@ eventScripts:
     researchTriggers:
       STR_CHOCOLATE_FACTORY_OPEN: true
       STR_CHOCOLATE_FACTORY_CLOSED: false
-    firstMonth: 0
-    spawnGap: 10
+    firstMonth: 1
     executionOdds: 100
