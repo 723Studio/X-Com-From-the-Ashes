@@ -713,6 +713,7 @@ events:
   - name: STR_STONKS_ACTIVATED
     description: STR_STONKS_ACTIVATED_DESCRIPTION
     background: STONKS.SCR
+    funds: -50000
     researchList: [STR_STONKS_ACTIVE]
 
   - name: STR_STONKS_DENIED

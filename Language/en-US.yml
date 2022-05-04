@@ -805,7 +805,7 @@ en-US:
   STR_STONKS_CAPITALISM: "Organisation comes first"
   STR_STONKS_CAPITALISM_DESCRIPTION: "We have acquired the money and didn't spare a single cent for the brother's funeral. Our people were baffled by this decision and some of them started wondering if fighting for humanity was worth it if we had to act so inhuman in the process.{NEWLINE}Loyalty score> {ALT}-120"
   STR_STONKS_RATIONALISM: "Rational Approach"
-  STR_STONKS_RATIONALISM_DESCRIPTION: "We organised a decent funeral for the brother and redirected the rest of the money for our own needs. Our member got back to work but losing a brother like this had a negative impact on their morale.{NEWLINE}Loyalty score> {ALT}-25"
+  STR_STONKS_RATIONALISM_DESCRIPTION: "We have organised a decent funeral for the brother and redirected the rest of the money for our own needs. Our member got back to work but losing a brother like this has had a negative impact on their morale.{NEWLINE}Loyalty score> {ALT}-25"
 
 
 #enemies
