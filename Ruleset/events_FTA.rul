@@ -696,6 +696,103 @@ events:
     loyalty: 80
     researchList: [STR_CHOCOLATE_FACTORY_CLOSED] 
 
+  - name: STR_STONKS_START
+    description: STR_STONKS_START_DESCRIPTION
+    background: STORES_STATE.SCR
+    customAnswers:
+      0:
+        title: STR_STONKS_YES
+        spawnEvent: [STR_STONKS_ACTIVATED]
+        
+      1:
+        title: STR_STONKS_NO
+        spawnEvent: [STR_STONKS_DENIED]
+    timer: 7200 #5 days
+    timerRandom: 23040 #16 days
+
+  - name: STR_STONKS_ACTIVATED
+    description: STR_STONKS_ACTIVATED_DESCRIPTION
+    background: STONKS.SCR
+    researchList: [STR_STONKS_ACTIVE]
+
+  - name: STR_STONKS_DENIED
+    description: STR_STONKS_DENIED_DESCRIPTION
+    background: STORES_STATE.SCR
+    researchList: [STR_STONKS_FINISHED]
+
+  - &Stonks
+    name: STR_STONKS_25000
+    description: STR_STONKS_25000_DESCRIPTION
+    background: STONKS.SCR
+    funds: 15000
+    timer: 4320 #3 days
+    timerRandom: 2880 #2 days
+    interruptResearch: STR_STONKS_FINISHED
+  - name: STR_STONKS_50000
+    refNode: *Stonks
+    description: STR_STONKS_50000_DESCRIPTION
+    funds: 50000
+    interruptResearch: STR_STONKS_FINISHED
+  - name: STR_STONKS_75000
+    refNode: *Stonks
+    description: STR_STONKS_75000_DESCRIPTION
+    funds: 75000
+    interruptResearch: STR_STONKS_FINISHED
+  - name: STR_STONKS_100000
+    refNode: *Stonks
+    description: STR_STONKS_100000_DESCRIPTION
+    funds: 100000
+    interruptResearch: STR_STONKS_FINISHED
+  - name: STR_STONKS_200000
+    refNode: *Stonks
+    description: STR_STONKS_200000_DESCRIPTION
+    funds: 200000
+    interruptResearch: STR_STONKS_FINISHED
+
+  - name: STR_STONKS_OVERDOSE
+    description: STR_STONKS_OVERDOSE_DESCRIPTION
+    background: STONKS.SCR
+    customAnswers:
+      0:
+        title: STR_STONKS_BALANCE
+        description: STR_STONKS_BALANCE_DESCRIPTION
+        spawnEvent: [STR_STONKS_RATIONALISM]
+        
+      1:
+        title: STR_STONKS_MONEY
+        description: STR_STONKS_MONEY_DESCRIPTION
+        spawnEvent: [STR_STONKS_CAPITALISM]
+      2:
+        title: STR_STONKS_FUNERAL
+        description: STR_STONKS_FUNERAL_DESCRIPTION
+        spawnEvent: [STR_STONKS_HUMANISM]
+
+
+
+
+
+  - name: STR_STONKS_HUMANISM
+    description: STR_STONKS_HUMANISM_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: 500000
+    loyalty: 50
+    researchList: [STR_STONKS_FINISHED]
+
+  - name: STR_STONKS_CAPITALISM
+    description: STR_STONKS_CAPITALISM_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: 1000000
+    loyalty: -120
+    researchList: [STR_STONKS_FINISHED]
+
+  - name: STR_STONKS_RATIONALISM
+    description: STR_STONKS_RATIONALISM_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: 990000
+    loyalty: -25
+    researchList: [STR_STONKS_FINISHED]
+
+
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
   #   customAnswers:

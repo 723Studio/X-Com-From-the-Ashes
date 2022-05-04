@@ -418,3 +418,23 @@ eventScripts:
       STR_CHOCOLATE_FACTORY_CLOSED: false
     firstMonth: 1
     executionOdds: 100
+
+  - type: STR_STONKS_START
+    oneTimeSequentialEvents: [STR_STONKS_START]
+    firstMonth: 0
+    executionOdds: 40
+
+  - type: STR_STONKS
+    eventWeights:
+      0:
+        STR_STONKS_25000: 70
+        STR_STONKS_50000: 60
+        STR_STONKS_75000: 55
+        STR_STONKS_100000: 45
+        STR_STONKS_200000: 30
+        STR_STONKS_OVERDOSE: 15
+    researchTriggers:
+      STR_STONKS_ACTIVE: true
+      STR_STONKS_FINISHED: false
+    firstMonth: 1
+    executionOdds: 100

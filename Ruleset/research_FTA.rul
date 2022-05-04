@@ -118,6 +118,13 @@ research:
     hidden: true
     disables:
       - STR_CHOCOLATE_FACTORY_OPEN
+  - name: STR_STONKS_ACTIVE
+    hidden: true
+  - name: STR_STONKS_FINISHED
+    hidden: true
+    disables:
+      - STR_STONKS_ACTIVE
+
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
