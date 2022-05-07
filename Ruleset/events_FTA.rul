@@ -709,13 +709,11 @@ events:
         spawnEvent: [STR_STONKS_DENIED]
     timer: 7200 #5 days
     timerRandom: 23040 #16 days
-
   - name: STR_STONKS_ACTIVATED
     description: STR_STONKS_ACTIVATED_DESCRIPTION
     background: STONKS.SCR
     funds: -50000
     researchList: [STR_STONKS_ACTIVE]
-
   - name: STR_STONKS_DENIED
     description: STR_STONKS_DENIED_DESCRIPTION
     background: STORES_STATE.SCR
@@ -767,32 +765,24 @@ events:
         title: STR_STONKS_FUNERAL
         description: STR_STONKS_FUNERAL_DESCRIPTION
         spawnEvent: [STR_STONKS_HUMANISM]
-
-
-
-
-
   - name: STR_STONKS_HUMANISM
     description: STR_STONKS_HUMANISM_DESCRIPTION
     background: COVEROPSHQ_BACKGROUND.SCR
-    funds: 500000
-    loyalty: 50
+    funds: 550000
+    loyalty: 80
     researchList: [STR_STONKS_FINISHED]
-
   - name: STR_STONKS_CAPITALISM
     description: STR_STONKS_CAPITALISM_DESCRIPTION
     background: COVEROPSHQ_BACKGROUND.SCR
-    funds: 1000000
+    funds: 650000
     loyalty: -120
     researchList: [STR_STONKS_FINISHED]
-
   - name: STR_STONKS_RATIONALISM
     description: STR_STONKS_RATIONALISM_DESCRIPTION
     background: COVEROPSHQ_BACKGROUND.SCR
-    funds: 990000
+    funds: 640000
     loyalty: -25
     researchList: [STR_STONKS_FINISHED]
-
 
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION

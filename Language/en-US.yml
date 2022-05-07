@@ -793,20 +793,19 @@ en-US:
   STR_STONKS_200000: "Stock Profits"
   STR_STONKS_200000_DESCRIPTION: "Our member's brother has managed to make $200,000 in stocks this month. The funds have been transferred to one of our clandestine accounts."
   STR_STONKS_OVERDOSE: "Market Crash"
-  STR_STONKS_OVERDOSE_DESCRIPTION: "Our member has found their brother dead in his room. Empty bottles of Red Ox suggest he was trying to stay awake to keep trading and died from a heart attack. Selling all his stocks now would net us $1,000,000. What should we do with the money?"
+  STR_STONKS_OVERDOSE_DESCRIPTION: "Our member has found their brother dead in his room. Empty bottles of Red Ox suggest he was trying to stay awake to keep trading and died from a heart attack. Selling all his stocks now would net us $650,000. What should we do with the money?"
   STR_STONKS_FUNERAL: "Immortalise the brother*"
-  STR_STONKS_FUNERAL_DESCRIPTION: "We will spend $500,000 to make a memorial for the brother and donate to charity in his name."
+  STR_STONKS_FUNERAL_DESCRIPTION: "We will spend $100,000 to make a memorial for the brother and donate to charity in his name."
   STR_STONKS_MONEY: "Take all the money*"
   STR_STONKS_MONEY_DESCRIPTION: "Every single dollar of the profits was supposed to fund the organisation. Death of the brother does not change it."
   STR_STONKS_BALANCE: "Decent funeral*"
   STR_STONKS_BALANCE_DESCRIPTION: "We will spend $10,000 to organise a decent funeral for the brother. It's the least we can do."
   STR_STONKS_HUMANISM: "Honouring the Dead"
-  STR_STONKS_HUMANISM_DESCRIPTION: "We decided to honour the brother's noble sacrifice. Even if it was unintended. This act of humanism reminded our people what we were fighting for and significantly improved morale.{NEWLINE}Loyalty score> {ALT}+50"
+  STR_STONKS_HUMANISM_DESCRIPTION: "We decided to honour the brother's noble sacrifice. Even if it was unintended. This act of humanism reminded our people what we were fighting for and significantly improved morale.{NEWLINE}Loyalty score> {ALT}+80"
   STR_STONKS_CAPITALISM: "Organisation comes first"
   STR_STONKS_CAPITALISM_DESCRIPTION: "We have acquired the money and didn't spare a single cent for the brother's funeral. Our people were baffled by this decision and some of them started wondering if fighting for humanity was worth it if we had to act so inhuman in the process.{NEWLINE}Loyalty score> {ALT}-120"
   STR_STONKS_RATIONALISM: "Rational Approach"
   STR_STONKS_RATIONALISM_DESCRIPTION: "We have organised a decent funeral for the brother and redirected the rest of the money for our own needs. Our member got back to work but losing a brother like this has had a negative impact on their morale.{NEWLINE}Loyalty score> {ALT}-25"
-
 
 #enemies
   STR_SECTOID_COMMANDER_CORPSE: "Sectoid Commander Corpse"
