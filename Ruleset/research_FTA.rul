@@ -116,6 +116,19 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
+    statRequirments:
+      biology: 55
+      stamina: 40
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 45
+      throwing: 35
+      strength: 20
+      melee: 20
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
     cost: 800
     points: 80
     dependencies:
@@ -1531,12 +1544,10 @@ research:
       - STR_RIOT_GUN
     listOrder: 30292
   - name: STR_IMPROVISED_GRENADE
-    cost: 15
     points: 1
     needItem: true
     listOrder: 30300
   - name: STR_IMPROVISED_SMOKE_GRENADE
-    cost: 22
     points: 2
     needItem: true
     listOrder: 30302

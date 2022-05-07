@@ -316,6 +316,20 @@ interfaces:
         color: 83
         color2: 86
         border: 80
+
+      - id: barBeams
+        color: 100
+        color2: 103
+        border: 96
+      - id: barSynaptic
+        color: 52
+        color2: 55
+        border: 48
+      - id: barGravity
+        color: 83
+        color2: 86
+        border: 80
+
       - id: errorPalette
         color: 0     # brown
       - id: errorMessage

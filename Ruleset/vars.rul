@@ -13,7 +13,11 @@ startingTime:
 initialFunding: 532
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
-ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered
+ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION
+xenologyUnlockResearch: STR_TODOIUM
+craftsBeamUnlockResearch: STR_TODOIUM
+craftSynapseUnlockResearch: STR_TODOIUM
+craftGravControlUnlockResearch: STR_TODOIUM
 psiUnlockResearch: STR_PSIONIC
 allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70

@@ -1785,7 +1785,7 @@ units:
     type: STR_RESISTANCE_SCIENTIST
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
-    stats:
+    stats: #TODO - sync with xcom scientist stats
       tu: 50
       stamina: 55
       health: 22

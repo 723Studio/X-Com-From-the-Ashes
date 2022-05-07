@@ -89,34 +89,34 @@ soldiers:
     moraleLossWhenKilled: 150
     value: 50
     minStats:
-      tu: 55
-      stamina: 40
-      health: 25
+      tu: 60
+      stamina: 50
+      health: 27
       bravery: 10
-      reactions: 30
+      reactions: 40
       firing: 45
       throwing: 35
-      strength: 20
-      melee: 20
+      strength: 30
+      melee: 40
       psiStrength: 30
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 65
-      stamina: 70
-      health: 35
+      tu: 75
+      stamina: 80
+      health: 37
       bravery: 60
       reactions: 60
-      firing: 70
-      throwing: 65
-      strength: 45
-      melee: 60
+      firing: 75
+      throwing: 70
+      strength: 50
+      melee: 70
       psiStrength: 60
       psiSkill: 0
       mana: 0
     statCaps:
-      tu: 100
-      stamina: 110
+      tu: 120
+      stamina: 130
       health: 50
       bravery: 90
       reactions: 100
@@ -134,21 +134,13 @@ soldiers:
       tactics: 90
     trainingStatCaps:
       tu: 70
-      stamina: 90
+      stamina: 80
       health: 40
-      bravery: 100
-      reactions: 50
-      firing: 85
-      throwing: 75
+      reactions: 40
+      firing: 55
+      throwing: 50
       strength: 50
-      melee: 80
-      psiStrength: 60
-      psiSkill: 0
-      maneuvering: 60
-      missiles: 80
-      dogfight: 85
-      tracking: 60
-      tactics: 50
+      melee: 45
     dogfightExperience:
       bravery: 100
       reactions: 0
@@ -181,13 +173,13 @@ soldiers:
     costSalary: 4000
     value: 60
     minStats:
-      tu: 50
+      tu: 55
       stamina: 60
       health: 25
       bravery: 10
-      reactions: 30
-      firing: 40
-      throwing: 35
+      reactions: 20
+      firing: 30
+      throwing: 20
       strength: 20
       melee: 20
       psiStrength: 30
@@ -203,11 +195,11 @@ soldiers:
       stamina: 70
       health: 35
       bravery: 50
-      reactions: 40
-      firing: 50
+      reactions: 45
+      firing: 45
       throwing: 45
-      strength: 40
-      melee: 40
+      strength: 35
+      melee: 35
       psiStrength: 60
       psiSkill: 0
       mana: 0
@@ -235,11 +227,11 @@ soldiers:
     costSalary: 2000
     minStats:
       tu: 50
-      stamina: 60
+      stamina: 50
       health: 25
       bravery: 10
-      reactions: 30
-      firing: 40
+      reactions: 25
+      firing: 35
       throwing: 35
       strength: 20
       melee: 20
@@ -247,9 +239,9 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 65
-      stamina: 70
-      health: 35
+      tu: 60
+      stamina: 65
+      health: 32
       bravery: 50
       reactions: 40
       firing: 50
