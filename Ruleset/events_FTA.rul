@@ -38,10 +38,10 @@ events:
     customAnswers:
       0:
         title: STR_WE_DONT_NEED_THAT
-        #spawnEvent: [STR_ANSWER1_EVENT]
+        #spawnEvents: [STR_ANSWER1_EVENT]
       1:
         title: STR_CONTINUE_INVESTIGATION
-        spawnEvent: [STR_MONSTER_HUNT_START_EVENT_YES]
+        spawnEvents: [STR_MONSTER_HUNT_START_EVENT_YES]
         description: STR_CONTINUE_INVESTIGATION_DESCRIPTION
   - name: STR_MONSTER_HUNT_START_EVENT_YES
     description: STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION
@@ -78,7 +78,7 @@ events:
         title: STR_WE_ARE_NOT_CRIMINALS
       1:
         title: STR_GREAT_PLAN
-        spawnEvent: [STR_STEAL_OSPREY_EVENT_YES]
+        spawnEvents: [STR_STEAL_OSPREY_EVENT_YES]
   - name: STR_STEAL_OSPREY_EVENT_YES
     description: STR_STEAL_OSPREY_EVENT_YES_DESCRIPTION
     timer: 0
@@ -134,7 +134,7 @@ events:
         title: STR_WE_HAVE_MORE_IMPORTANT_THINGS
       1:
         title: STR_PROCEED_INVESTIGATION
-        spawnEvent: [STR_MISTERY_CULT_EVENT_YES]
+        spawnEvents: [STR_MISTERY_CULT_EVENT_YES]
   - name: STR_MISTERY_CULT_EVENT_YES
     description: STR_MISTERY_CULT_EVENT_YES_DESCRIPTION
     timer: 0
@@ -361,7 +361,7 @@ events:
     customAnswers:
       0:
         title: STR_YES_LC
-        spawnEvent: [STR_RESISTANCE_WEAPONRY_EVENT_YES]
+        spawnEvents: [STR_RESISTANCE_WEAPONRY_EVENT_YES]
       1:
         title: STR_NO_LC
   - name: STR_RESISTANCE_WEAPONRY_EVENT_YES
@@ -523,7 +523,7 @@ events:
     customAnswers:
       0:
         title: STR_YES
-        spawnEvent: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES]
+        spawnEvents: [STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES]
       1:
         title: STR_NO
   - name: STR_TELL_RESISTANCE_ABOUT_MIB_HQ_YES
@@ -596,11 +596,11 @@ events:
     customAnswers:
       0:
         title: STR_OK
-        spawnEvent: [STR_IMPROVE_LIVING_FACILITY_YES]
+        spawnEvents: [STR_IMPROVE_LIVING_FACILITY_YES]
         description: STR_IMPROVE_LIVING_FACILITY_YES_CHOICE
       1:
         title: STR_NO_LC
-        spawnEvent: [STR_IMPROVE_LIVING_FACILITY_NO]
+        spawnEvents: [STR_IMPROVE_LIVING_FACILITY_NO]
   - name: STR_IMPROVE_LIVING_FACILITY_YES
     description: STR_IMPROVE_LIVING_FACILITY_YES_DESCRIPTION
     loyalty: 80
@@ -615,18 +615,18 @@ events:
       0:
         title: STR_BUY_CHOCOLATE
         description: STR_BUY_CHOCOLATE_DESCRIPTION
-        spawnEvent: [STR_BOUGHT_CHOCOLATE]
+        spawnEvents: [STR_BOUGHT_CHOCOLATE]
         
       1:
         title: STR_BUY_FACTORY
         description: STR_BUY_FACTORY_DESCRIPTION
-        spawnEvent: [STR_BOUGHT_FACTORY]
+        spawnEvents: [STR_BOUGHT_FACTORY]
       2:
         title: STR_BUY_NOTHING
-        spawnEvent: [STR_BOUGHT_NOTHING]
+        spawnEvents: [STR_BOUGHT_NOTHING]
       3:
         title: STR_SCOLD_SCIENTIST
-        spawnEvent: [STR_SCOLDED_SCIENTIST]
+        spawnEvents: [STR_SCOLDED_SCIENTIST]
     timer: 7200 #5 days
     timerRandom: 23040 #16 days
   - name: STR_BOUGHT_CHOCOLATE
@@ -676,12 +676,12 @@ events:
       0:
         title: STR_CHOCOLATE_MIB_STAY
         description: STR_CHOCOLATE_MIB_STAY_DESCRIPTION
-        spawnEvent: [STR_CHOCOLATE_MIB_STEALS_CANDY]
+        spawnEvents: [STR_CHOCOLATE_MIB_STEALS_CANDY]
         
       1:
         title: STR_CHOCOLATE_MIB_SELL
         description: STR_CHOCOLATE_MIB_SELL_DESCRIPTION
-        spawnEvent: [STR_CHOCOLATE_GOOD_END]
+        spawnEvents: [STR_CHOCOLATE_GOOD_END]
   - name: STR_CHOCOLATE_MIB_STEALS_CANDY
     description: STR_CHOCOLATE_MIB_STEALS_CANDY_DESCRIPTION
     background: MIB_BACKGROUND.SCR
@@ -702,11 +702,11 @@ events:
     customAnswers:
       0:
         title: STR_STONKS_YES
-        spawnEvent: [STR_STONKS_ACTIVATED]
+        spawnEvents: [STR_STONKS_ACTIVATED]
         
       1:
         title: STR_STONKS_NO
-        spawnEvent: [STR_STONKS_DENIED]
+        spawnEvents: [STR_STONKS_DENIED]
     timer: 7200 #5 days
     timerRandom: 23040 #16 days
   - name: STR_STONKS_ACTIVATED
@@ -755,16 +755,16 @@ events:
       0:
         title: STR_STONKS_BALANCE
         description: STR_STONKS_BALANCE_DESCRIPTION
-        spawnEvent: [STR_STONKS_RATIONALISM]
+        spawnEvents: [STR_STONKS_RATIONALISM]
         
       1:
         title: STR_STONKS_MONEY
         description: STR_STONKS_MONEY_DESCRIPTION
-        spawnEvent: [STR_STONKS_CAPITALISM]
+        spawnEvents: [STR_STONKS_CAPITALISM]
       2:
         title: STR_STONKS_FUNERAL
         description: STR_STONKS_FUNERAL_DESCRIPTION
-        spawnEvent: [STR_STONKS_HUMANISM]
+        spawnEvents: [STR_STONKS_HUMANISM]
   - name: STR_STONKS_HUMANISM
     description: STR_STONKS_HUMANISM_DESCRIPTION
     background: COVEROPSHQ_BACKGROUND.SCR
@@ -789,17 +789,19 @@ events:
   #   customAnswers:
   #     0:
   #       title: STR_ANSWER0
-  #       spawnEvent: [STR_ANSWER0_EVENT]
+  #       spawnEvents: [STR_ANSWER0_EVENT]
   #       description: "STR_SOME_WISE_WORDS"
   #     1:
   #       title: STR_ANSWER1
-  #       spawnEvent: [STR_ANSWER1_EVENT]
+  #       spawnEvents: [STR_ANSWER1_EVENT]
   #     2:
   #       title: STR_ANSWER2
-  #       spawnEvent: [STR_ANSWER2_EVENT]
+  #       weightedEvents: 
+  #         STR_ANSWER2_EVENT1: 10
+  #         STR_ANSWER2_EVENT2: 90
   #     3:
   #       title: STR_ANSWER3
-  #       spawnEvent: [STR_ANSWER3_EVENT, STR_ANSWER4_EVENT]
+  #       spawnEvents: [STR_ANSWER3_EVENT, STR_ANSWER4_EVENT]
   #   timer: 90
   #   timerRandom: 0
   #   researchList: [STR_RND_STATUS_REPORT] 
