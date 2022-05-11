@@ -16,8 +16,9 @@ Releases with minor version normally consists of some content, balance improveme
 Emergency hotfix for critical bugs in content or engine logic.
 ####0.2.0.0
 ######Balance
-- Lowered Stingray range
-- UFO's improve their shields
+- Lowered Stingray range.
+- UFO's improve their shields.
+- General storage and Abandoned lab have more storage space.
 #####0.1.0.3
 - Fixed a bug that caused alien missions from the original game to appear in the game.
 - Cattle mutilation briefing screen image bug fixed.

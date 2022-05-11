@@ -125,7 +125,7 @@ facilities:
     buildCost: 80000 #just to reduce build over cost
     buildTime: 6
     rightClickActionType: 3
-    storage: 20
+    storage: 40
     storageTiles: [[-1, -1, -1]]
     monthlyCost: 1000
     mapName: XBASF_06
@@ -163,7 +163,7 @@ facilities:
     buildCost: 250000
     buildTime: 10
     monthlyCost: 4000
-    storage: 70
+    storage: 80
     storageTiles:
         - [6, 3, 1]
         - [5, 4, 1]
