@@ -8,6 +8,17 @@ soldiers:
     scientistRankSprite: 5018
     engineerRankSprite: 5024
     roleExpRequirments:
+    rankBattleSprite: 5000
+    pilotRankSpriteBattlescape: 5006
+    agentRankSpriteBattlescape: 5012
+    scientistRankSpriteBattlescape: 5018
+    engineerRankSpriteBattlescape: 5024
+    rankTinySprite: 5000
+    pilotRankSpriteTiny: 5006
+    agentRankSpriteTiny: 5012
+    scientistRankSpriteTiny: 5018
+    engineerRankSpriteTiny: 5024
+    roleExpRequirments:
       - role: 0 #ROLE_SOLDIER
         requirments: 
           1: 3
@@ -70,17 +81,17 @@ soldiers:
           6: STR_COMMISSAR
       - role: 3 #ROLE_SCIENTIST
         strings: 
-          1: STR_ASSOCIATE_SCIENTIST
+          1: STR_JUNIOR_SCIENTIST
           2: STR_SCIENTIST
           3: STR_DOCENT
-          4: STR_LEAD_SCIENTIST
-          5: STR_PRINCIPAL_SCIENTIST
+          4: STR_SCHOLAR
+          5: STR_LEAD_SCIENTIST
           6: STR_ACADEMIC
       - role: 4 #ROLE_ENGINEER
         strings: 
           1: STR_JOURNEYMAN
           2: STR_ENGINEER
-          3: STR_SPECIALIST
+          3: STR_SUPPORT
           4: STR_SENIOR_ENGINEER
           5: STR_FOREMAN
           6: STR_ARTISAN
@@ -132,6 +143,20 @@ soldiers:
       dogfight: 120
       tracking: 110
       tactics: 90
+      beams: 120
+      synaptic: 70
+      gravity: 80
+      physics: 100
+      chemistry: 100
+      biology: 100
+      insight: 90
+      data: 100
+      computers: 100
+      materials: 100
+      psychology: 100
+      designing: 100
+      psionics: 100
+      xenolinguistics: 100
     trainingStatCaps:
       tu: 70
       stamina: 80
@@ -217,6 +242,60 @@ soldiers:
     armor: STR_JUMPSUIT_UC #TODO
     armorForAvatar: STR_JUMPSUIT_UC #TODO
     femaleFrequency: 15
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_SCIENTIST
+    refNode: *STR_SOLDIER
+    roles: [3] #ROLE_SCIENTIST
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      tu: 46
+      stamina: 50
+      health: 19
+      bravery: 10
+      reactions: 15
+      firing: 20
+      throwing: 15
+      strength: 15
+      melee: 10
+      physics: 10
+      chemistry: 10
+      biology: 10
+      insight: 20
+      data: 20
+      computers: 15
+      materials: 10
+      psychology: 5
+      designing: 15
+      psionics: 0
+      xenolinguistics: 0
+    maxStats:
+      tu: 54
+      stamina: 60
+      health: 25
+      bravery: 30
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
+      physics: 70
+      chemistry: 70
+      biology: 70
+      insight: 90
+      data: 80
+      computers: 70
+      materials: 70
+      psychology: 70
+      designing: 70
+      psionics: 0
+      xenolinguistics: 0
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    femaleFrequency: 60
     soldierNames:
       - delete
       - SoldierNames/

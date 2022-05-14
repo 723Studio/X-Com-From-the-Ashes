@@ -31,7 +31,7 @@ facilities:
     canBeBuiltOver: true
     storage: 5
     storageTiles: [[-1, -1, -1]]
-    labs: 8
+    labs: 5
     manaRecoveryPerDay: 1
     rightClickActionType: 3
     radarRange: 10800
@@ -67,8 +67,7 @@ facilities:
     monthlyCost: 5000
     aliens: 10
     prisonType: 1
-    labs: 1
-    storage: 2
+    storage: 10
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
     mapName: XBASF_03

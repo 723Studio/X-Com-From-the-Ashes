@@ -316,24 +316,85 @@ interfaces:
         color: 83
         color2: 86
         border: 80
-
       - id: barBeams
-        color: 100
-        color2: 103
-        border: 96
+        color: 36
+        color2: 39
+        border: 32
       - id: barSynaptic
-        color: 52
-        color2: 55
-        border: 48
+        color: 243
+        color2: 244
+        border: 242
       - id: barGravity
-        color: 83
-        color2: 86
+        color: 215
+        color2: 216
+        border: 214
+      - id: barPhysics
+        color: 220
+        color2: 138
+        border: 219
+      - id: barChemistry
+        color: 20
+        color2: 24
+        border: 16
+      - id: barBiology
+        color: 58
+        color2: 53
+        border: 49
+      - id: barInsight
+        color: 68
+        color2: 72
         border: 80
-
+      - id: barData
+        color: 148
+        color2: 151
+        border: 144
+      - id: barComputers
+        color: 240
+        color2: 211
+        border: 241
+      - id: barMaterials
+        color: 215
+        color2: 216
+        border: 214
+      - id: barPsychology
+        color: 180
+        color2: 183
+        border: 176
+      - id: barDesigning
+        color: 84
+        color2: 88
+        border: 1
+      - id: barPsionics
+        color: 248
+        color2: 249
+        border: 247
+      - id: barXenolinguistics
+        color: 99
+        color2: 102
+        border: 96
       - id: errorPalette
         color: 0     # brown
       - id: errorMessage
         color: 241   # pink
+  - type: scientistsList
+    backgroundImage: BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 1     # burgundy
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 246   # purple
+        color2: 208  # white
+        border: 218  # blue
+      - id: button
+        color: 246   # purple
+      - id: otherDuty
+        color: 218   # blue
   - type: hacking
     palette: PAL_BATTLESCAPE
     elements:
@@ -543,3 +604,7 @@ interfaces:
       - id: battleObjects
         color: 228
 
+customPalettes:
+  - type: PAL_BASESCAPE_FTA
+    target: PAL_BASESCAPE
+    file: Resources/Pals/PAL_BASESCAPE_FTA.pal

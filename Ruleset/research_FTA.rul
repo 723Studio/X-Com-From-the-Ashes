@@ -116,19 +116,17 @@ research:
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
-    statRequirments:
-      biology: 55
-      stamina: 40
-      health: 25
-      bravery: 10
-      reactions: 30
-      firing: 45
-      throwing: 35
-      strength: 20
-      melee: 20
-      psiStrength: 30
-      psiSkill: 0
-      mana: 0
+    stats:
+      physics: 0
+      chemistry: 0
+      biology: 0
+      data: 5
+      computers: 30
+      materials: 0
+      psychology: 0
+      designing: 0
+      psionics: 0
+      xenolinguistics: 0
     cost: 800
     points: 80
     dependencies:

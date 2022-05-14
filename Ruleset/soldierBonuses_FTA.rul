@@ -18,7 +18,7 @@ soldierBonuses:
       REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
       DASH: 40                  # value to reduce reaction chance in close distance
       UNIFIGHT: 15              # bonus to accuracy with trowing weapons
-  - name: STR_SPECIALIST
+  - name: STR_SUPPORT
     tags:
       FIELD_SURGEON: 15         #X (1-XXX) percent reduction in recovery time if healed by field surgeon.
       SAVIOR: 3                 #X (1-XXX) max amount of health restored when using heal
