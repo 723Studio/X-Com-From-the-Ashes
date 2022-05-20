@@ -4,6 +4,7 @@ events:
     description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 90
     timerRandom: 0
+    backgroundColor: 4
     researchList: [STR_RND_STATUS_REPORT] 
   - name: STR_INTEL_STATUS_REPORT_EVENT
     description: STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION
