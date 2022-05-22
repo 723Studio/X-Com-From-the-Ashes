@@ -351,7 +351,7 @@ en-US:
   STR_GYM: "Training Center"
   STR_GYM_UFOPEDIA: "This facility is a training room for X-COM soldiers. When assigned to training, a soldier has a daily chance to raise his or her physical stat. Only up to 10 soldiers can be assigned to one training facility at a time. It's also used to conduct special training courses and has a briefing room for tactical trainings."
   STR_SICK_BAY: "Sick Bay"
-  STR_SICK_BAY_UFOPEDIA: "This Sick Bay will serve to ensure that every wounded or sick soldier can receive the necessary medical attention as soon as possible. Thanks to this, everyone at the base will be able to recover faster and better. Such attention to our subordinates's health will definitely not go unnoticed."
+  STR_SICK_BAY_UFOPEDIA: "This Sick Bay will serve to ensure that every wounded or sick soldier can receive the necessary medical attention 43.12% faster. Thanks to this, everyone at the base will be able to recover faster and better. Such attention to our subordinates's health will definitely not go unnoticed."
   STR_CLOSED_LAB: "Abandoned Laboratory"
   STR_ADVANCED_WORKSHOP: "Advanced Workshop"
   STR_BIOLAB: "Bio-laboratory"
@@ -361,7 +361,7 @@ en-US:
   STR_BASE_DEFENSE_SYSTEMS: "Base Defense Systems"
   STR_HANGAR_UFOPEDIA: "Each hangar can accommodate one craft and 25 storage units. There are facilities for maintenance, refueling and repair of X-COM craft (5 workspaces). Each craft stationed at a base must have a free hangar assigned to it which cannot be used by other craft, even if the assigned craft is out on a mission."
   STR_LABORATORY_UFOPEDIA: "Up to 20 scientists can work in a laboratory facility. Science laboratories are equipped with the latest technology for research into materials, physics and cosmology (but not biology or intelligence). There is privileged access to the best research labs throughout the world, including military establishments.{NEWLINE}This facility requires 5 units of laboratory equipment in order to function."
-  STR_GENERAL_STORES_UFOPEDIA: "This facility is designed to efficiently store a wide variety of supplies, weapons and ammunition. It also has special containers with which we can safely store alien artifacts in perfect isolation."
+  STR_GENERAL_STORES_UFOPEDIA: "This facility is designed to efficiently store up to 1124 metric tons of supplies, weapons and ammunition. It also has special containers with which we can safely store alien artifacts in perfect isolation."
   STR_WORKSHOP_UFOPEDIA: "In this facility our engineers can assemble common household apparatus - a milling machine, a lathe, a sawing machine. A small molding press, furnace, anvil and large, comfortable workbenches and racks all allow our engineers to work on simple projects. Up to 12 engineers can occupy a workshop, although items under construction will also consume some space."
 #missions
   STR_INITIAL_BASE_DEFENSE: "BASE DEFENSE"
@@ -806,6 +806,13 @@ en-US:
   STR_STONKS_CAPITALISM_DESCRIPTION: "We have acquired the money and didn't spare a single cent for the brother's funeral. Our people were baffled by this decision and some of them started wondering if fighting for humanity was worth it if we had to act so inhuman in the process.{NEWLINE}Loyalty score> {ALT}-120"
   STR_STONKS_RATIONALISM: "Rational Approach"
   STR_STONKS_RATIONALISM_DESCRIPTION: "We have organised a decent funeral for the brother and redirected the rest of the money for our own needs. Our member got back to work but losing a brother like this has had a negative impact on their morale.{NEWLINE}Loyalty score> {ALT}-25"
+  STR_PUZZLE_START: "Commander's Vault"
+  STR_PUZZLE_START_DESCRIPTION: "We have discovered a secret door in the former commander's office which was protected by multiple biometric scanners. We've sedated the commander and used his body to open the door. Inside we've found -insert loot- a safe and a handwritten note attached to it. It appears, the safe requires a 4-digit code to open and the commander has put it in one of the UFOpedia articles."
+  STR_READ_COMMANDER_NOTE: "Read the note"
+  STR_COMMANDER_NOTE_1: "Former Commander's Note"
+  STR_COMMANDER_NOTE_1_TEXT: "I don't trust anyone lately, not even myself. All failures of X-COM have been pinned on me. However, I merely followed orders. They provided me with a protocol for every situation we've encountered. Every. Single. One. How could they know what we'd face? Why appoint me as a commander if I was supposed to just follow the script? I can only guess. I've also started having nightmares after I was appointed. Same time every month. I wake up in fear but can't recall what I was dreaming about. They now insist I should consult a professional about my mental health. I never told them about the nightmares. I never told anyone. I didn't act like a deranged lunatic either. How would they know? Either way, the appointment is tomorrow. I'll put... things in this safe. I'll change the code to something I saw in one of our articles. And then I'll take an amnesiac to ensure even I can't open it on the first try. My reasons should be apparent to anyone who reads this. If you're one of us, I wish you luck. If you're one of them, may you burn in hell.{NEWLINE}X-COM Commander, signing off."
+
+
 
 #enemies
   STR_SECTOID_COMMANDER_CORPSE: "Sectoid Commander Corpse"
@@ -1105,7 +1112,7 @@ en-US:
   STR_MACHETE: "Machete"  
   STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone.{NEWLINE}{ALT}>Concealable, Silent"
   STR_SWORD: "Sword"
-  STR_SWORD_UFOPEDIA: "A well-made sword crafted from hard stainless steel. Sharpened on one side of the blade, handy handle and excellent balance allows to make strong sweeping blows.{NEWLINE}{ALT}>Silent"
+  STR_SWORD_UFOPEDIA: "A symbol of war since 1234 BC, this well-made sword is crafted from hard stainless steel. Sharpened on one side of the blade, handy handle and excellent balance allows to make strong sweeping blows.{NEWLINE}{ALT}>Silent"
   STR_KATANA: "Oriental Blade"
   STR_KATANA_UFOPEDIA: "The long, elegant blade has a razor-sharp edge and excellent balance. Combining centuries of proven design and modern fabrication techniques, this blade, in capable hands, is deadly even to lightly armored opponents.{NEWLINE}{ALT}>Silent"
   STR_ELECTRIC_STICK: "Electric Stick"
@@ -1124,7 +1131,7 @@ en-US:
   STR_BOW_ARROW_ELECTRIC: "Bow Arrow - Electric"
   STR_TASER: "TASER"
   STR_TASER_CLIP: "TASER Clip"
-  STR_TASER_UFOPEDIA: "A TASER device is a non-lethal electroshock weapon, intended for use by police in cases of criminal pursuit, resisting arrest. It fires two small dart-like electrodes for a distance up to 10 meters, which stay connected to the main unit by thin insulated copper wire as they are propelled by small compressed nitrogen charges. The cartridge contains a pair of electrodes and propellant for a single shot and is replaced after each use.{NEWLINE}{ALT}>Concealable"
+  STR_TASER_UFOPEDIA: "A TASER device is a non-lethal (only 1.432% chance of a fatality) electroshock weapon intended for use by police in cases of criminal pursuit, resisting arrest. It fires two small dart-like electrodes for a distance up to 10 meters, which stay connected to the main unit by thin insulated copper wire as they are propelled by small compressed nitrogen charges. The cartridge contains a pair of electrodes and propellant for a single shot and is replaced after each use.{NEWLINE}{ALT}>Concealable"
   STR_SNUBNOSE_PISTOL: "Snubnose pistol"
   STR_SNUBNOSE_PISTOL_UFOPEDIA: "A mini-revolver, designed primarily for self-defense purposes, loaded by .22 Short caliber bullets. It’s not very powerful, but low recoil and good inherent accuracy makes this weapon relatively dangerous against unarmored enemies - a good choice for damsels in distress and agents under cover.{NEWLINE}{ALT}>Concealable"
   STR_SNUBNOSE_PISTOL_CLIP: "Snubnose Pistol Clip"

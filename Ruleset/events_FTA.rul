@@ -784,6 +784,168 @@ events:
     loyalty: -25
     researchList: [STR_STONKS_FINISHED]
 
+
+
+
+
+
+  - name: STR_PUZZLE_START
+    description: STR_PUZZLE_START_DESCRIPTION
+    researchList: [STR_COMMANDER_NOTE_1]
+    customAnswers:
+      0:
+
+        title: STR_READ_COMMANDER_NOTE
+        weightedEvents: 
+          STR_CODE_COMBO_1234_1: 50
+          STR_CODE_COMBO_4312_1: 50
+      1:
+        title: STR_BURN_THE_NOTE
+        spawnEvents: [STR_NO_PUZZLE]
+ 
+
+  - name: STR_CODE_COMBO_1234_1
+    description: STR_CODE_ENTER_1
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_COMBO_1234_2]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+
+  - name: STR_CODE_COMBO_1234_2
+    description: STR_CODE_ENTER_2
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_COMBO_1234_3]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+
+  - name: STR_CODE_COMBO_1234_3
+    description: STR_CODE_ENTER_3
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_COMBO_1234_4]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+
+  - name: STR_CODE_COMBO_1234_4
+    description: STR_CODE_ENTER_4
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_1234_1]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_COMBO_1234_SUCCESS]
+
+  - name: STR_CODE_COMBO_4312_1
+    description: STR_CODE_ENTER_1
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_COMBO_4312_2]
+
+  - name: STR_CODE_COMBO_4312_2
+    description: STR_CODE_ENTER_2
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_COMBO_4312_3]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+
+  - name: STR_CODE_COMBO_4312_3
+    description: STR_CODE_ENTER_3
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_COMBO_4312_4]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+
+  - name: STR_CODE_COMBO_4312_4
+    description: STR_CODE_ENTER_4
+    customAnswers:
+      0:
+        title: STR_CODE_1
+        spawnEvents: [STR_CODE_COMBO_4312_4]
+      1:
+        title: STR_CODE_2
+        spawnEvents: [STR_CODE_COMBO_4312_SUCCESS]
+      2:
+        title: STR_CODE_3
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+      3:
+        title: STR_CODE_4
+        spawnEvents: [STR_CODE_FAIL, STR_CODE_COMBO_4312_1]
+
+  - name: STR_CODE_FAIL
+    description: STR_CODE_FAIL_DESCRIPTION
+
+  - name: STR_NO_PUZZLE
+    description: STR_NO_PUZZLE_DESCRIPTION
+
+
+  - name: STR_CODE_COMBO_1234_SUCCESS
+    description: STR_CODE_COMBO_1234_SUCCESS_DESCRIPTION
+
+  - name: STR_CODE_COMBO_4312_SUCCESS
+    description: STR_CODE_COMBO_4312_SUCCESS_DESCRIPTION
+ 
+
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
   #   customAnswers:

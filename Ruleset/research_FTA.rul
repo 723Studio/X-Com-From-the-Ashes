@@ -124,6 +124,8 @@ research:
     hidden: true
     disables:
       - STR_STONKS_ACTIVE
+  - name: STR_COMMANDER_NOTE_1
+    hidden: true
 
 
 #game start

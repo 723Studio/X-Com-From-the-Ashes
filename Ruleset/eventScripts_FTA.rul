@@ -436,3 +436,11 @@ eventScripts:
       STR_STONKS_FINISHED: false
     firstMonth: 1
     executionOdds: 100
+
+  - type: STR_PUZZLE_START
+    oneTimeSequentialEvents: [STR_PUZZLE_START]
+    itemTriggers:
+      STR_XCOM_EX_COMMANDER: true
+    firstMonth: 0
+    executionOdds: 100
+    

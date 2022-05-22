@@ -418,6 +418,14 @@ ufopaedia:
     text: STR_VOID_CORP_UFOPEDIA
     listOrder: 300
 
+  - id: STR_COMMANDER_NOTE_1
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_COMMANDER_NOTE_1
+    text: STR_COMMANDER_NOTE_1_TEXT
+    listOrder: 310
+
 #STR_TECHNOLOGY 7000
   - id: STR_EXPANDABLE_AMMO
     type_id: 8
