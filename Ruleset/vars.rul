@@ -92,7 +92,7 @@ ai:
   fireChoiceAggroCoeff: 3 # Aggression doesn't matter as much (default 5)
 
 constants:
-  extendedItemReloadCost: false
+  extendedItemReloadCost: true
   extendedRunningCost: true
   damageRange: 70 #for good or bad
   extendedTerrainMelee: 4

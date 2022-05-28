@@ -554,6 +554,7 @@ items:
     bulletSprite: 23
     fireSound: 110
     reloadSound: 117
+    extendedItemReloadCostLocal: 2
     compatibleAmmo:
       - STR_BOW_ARROW
       - STR_BOW_ARROW_HE
@@ -1967,6 +1968,7 @@ items:
     handSprite: 400
     bulletSprite: 2
     fireSound: 72
+    extendedItemReloadCostLocal: 2
     compatibleAmmo:
       - STR_HUNTING_RIFLE_CLIP
     accuracyCloseQuarters: 66
