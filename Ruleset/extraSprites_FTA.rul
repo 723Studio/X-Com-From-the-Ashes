@@ -85,7 +85,7 @@ extraSprites:
 
   - type: TinyRanks
     width: 42
-    height: 7
+    height: 35
     subX: 7
     subY: 7
     files:

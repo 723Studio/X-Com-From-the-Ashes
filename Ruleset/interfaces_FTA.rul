@@ -395,6 +395,27 @@ interfaces:
         color: 246   # purple
       - id: otherDuty
         color: 218   # blue
+  - type: allocateResearch
+    backgroundImage: BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 1     # burgundy
+      - id: window
+        color: 213   # gold
+      - id: text
+        color: 213   # gold
+        color2: 208  # white
+      - id: button1
+        color: 213   # gold
+      - id: button2
+        color: 218   # blue
+      - id: button3
+        color: 246   # purple
+      - id: list
+        color: 218   # blue
+        color2: 213   # gold
+        border: 208  # white
   - type: hacking
     palette: PAL_BATTLESCAPE
     elements:

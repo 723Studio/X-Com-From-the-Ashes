@@ -119,12 +119,12 @@ research:
     stats:
       physics: 0
       chemistry: 0
-      biology: 0
+      biology: 1
       data: 5
       computers: 30
       materials: 0
       psychology: 0
-      designing: 0
+      designing: 2
       psionics: 0
       xenolinguistics: 0
     cost: 800

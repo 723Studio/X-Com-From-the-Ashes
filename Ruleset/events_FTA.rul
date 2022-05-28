@@ -2,6 +2,7 @@ events:
 #Introduction
   - name: STR_RND_STATUS_REPORT_EVENT
     description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
+    backgroundColor: 5
     timer: 90
     timerRandom: 0
     researchList: [STR_RND_STATUS_REPORT] 
