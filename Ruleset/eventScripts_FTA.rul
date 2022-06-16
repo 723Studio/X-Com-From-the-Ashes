@@ -305,6 +305,11 @@ eventScripts:
       STR_RESISTANCE: 5 #STR_HONORED
     allowedProcessor: 1 #faction
     executionOdds: 70
+  - type: STR_RESISTANCE_FAR_CELL_CREATION
+    oneTimeSequentialEvents: [STR_RESISTANCE_FAR_CELL_CREATION_EVENT]
+    firstMonth: 2
+    executionOdds: 100
+
   - type: STR_RESISTANCE_GIFT_MIB_AGENT
     oneTimeSequentialEvents: [STR_RESISTANCE_GIFT_MIB_AGENT_EVENT]
     researchTriggers:

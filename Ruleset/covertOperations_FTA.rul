@@ -157,6 +157,31 @@ covertOperations:
     trapChance: 70
     instantTrapDeployment:
       STR_MIB_EARLY_TRAP_ESCAPE: 100
+  - name: STR_RESISTANCE_FAR_CELL_CREATION
+    description: STR_RESISTANCE_FAR_CELL_CREATION_DESCRIPTION
+    requires:
+      - STR_RESISTANCE_CELL_CREATION_PREREQ
+    soldierSlots: 1
+    optionalSoldierSlots: 5
+    optionalSoldierEffect: 15
+    requiresBaseFunc: [HQ]
+    baseChances: 40
+    danger: 10
+    costs: 268
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+    successDescription: STR_RESISTANCE_FAR_CELL_CREATION_SUCCESS_DESCRIPTION
+    successScore: 200
+    successReputationScore:
+      STR_RESISTANCE: 75
+    failureDescription: STR_RESISTANCE_FAR_CELL_CREATION_FAILURE_DESCRIPTION
+    failureScore: -150
+    failureReputationScore:
+      STR_RESISTANCE: -150
+    trapChance: 70
+    instantTrapDeployment:
+      STR_MIB_EARLY_TRAP_ESCAPE: 100
+
 
   - name: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION
     description: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION

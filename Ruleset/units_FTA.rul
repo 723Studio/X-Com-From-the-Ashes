@@ -1104,8 +1104,8 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: [150, 151, 152, 153, 154]
-    deathSound: [155, 156]
+    #aggroSound: [150, 151, 152, 153, 154]
+    #deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
   - type: STR_ZOMBIE_GRUBAS_TERRORIST
@@ -1142,8 +1142,8 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: [141, 142]
-    deathSound: [143, 144]
+    #aggroSound: [141, 142]
+    #deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
 
@@ -1220,10 +1220,10 @@ units:
     standHeight: 18
     kneelHeight: 12
     value: 10
-    aggroSound: [161, 162, 163]
-    deathSound: [164, 165]
-    panicSound: [161, 162, 163]
-    berserkSound: [161, 162, 163]
+    #aggroSound: [161, 162, 163]
+    #deathSound: [164, 165]
+    #panicSound: [161, 162, 163]
+    #berserkSound: [161, 162, 163]
     intelligence: 2
     aggression: 8
     isLeeroyJenkins: true
