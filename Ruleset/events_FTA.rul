@@ -615,18 +615,25 @@ events:
       0:
         title: STR_BUY_CHOCOLATE
         description: STR_BUY_CHOCOLATE_DESCRIPTION
-        spawnEvents: [STR_BOUGHT_CHOCOLATE]
+        weightedEvents: 
+          STR_BOUGHT_CHOCOLATE: 90
+          STR_CHOCOLATE_SPOILED: 10
         
       1:
         title: STR_BUY_FACTORY
         description: STR_BUY_FACTORY_DESCRIPTION
-        spawnEvents: [STR_BOUGHT_FACTORY]
+        weightedEvents: 
+          STR_BOUGHT_FACTORY: 80
+          STR_CHOCOLATE_FAIL: 20
+
       2:
         title: STR_BUY_NOTHING
         spawnEvents: [STR_BOUGHT_NOTHING]
       3:
         title: STR_SCOLD_SCIENTIST
-        spawnEvents: [STR_SCOLDED_SCIENTIST]
+        weightedEvents: 
+          STR_SCOLDED_SCIENTIST: 80
+          STR_SCIENTIST_MAKES_CHOCOLATE: 20
     timer: 7200 #5 days
     timerRandom: 23040 #16 days
   - name: STR_BOUGHT_CHOCOLATE
@@ -676,7 +683,9 @@ events:
       0:
         title: STR_CHOCOLATE_MIB_STAY
         description: STR_CHOCOLATE_MIB_STAY_DESCRIPTION
-        spawnEvents: [STR_CHOCOLATE_MIB_STEALS_CANDY]
+        weightedEvents: 
+          STR_CHOCOLATE_MIB_STEALS_CANDY: 60
+          STR_CHOCOLATE_PARANOID: 40
         
       1:
         title: STR_CHOCOLATE_MIB_SELL
@@ -695,6 +704,34 @@ events:
     funds: 185000
     loyalty: 80
     researchList: [STR_CHOCOLATE_FACTORY_CLOSED] 
+
+
+  
+  - name: STR_CHOCOLATE_SPOILED
+    description: STR_CHOCOLATE_SPOILED_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: -5000
+    loyalty: -10
+
+  - name: STR_SCIENTIST_MAKES_CHOCOLATE
+    description: STR_SCIENTIST_MAKES_CHOCOLATE_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    loyalty: -10
+    everyMultiItemList:
+      STR_STIMS: 10
+
+  - name: STR_CHOCOLATE_FAIL
+    description: STR_CHOCOLATE_FAIL_DESCRIPTION
+    background: SECRET_AGENT.SCR
+    funds: -85000
+    loyalty: -50
+
+  - name: STR_CHOCOLATE_PARANOID
+    description: STR_CHOCOLATE_PARANOID_DESCRIPTION
+    background: COVEROPSHQ_BACKGROUND.SCR
+    funds: 50000
+    loyalty: 40
+    
 
   - name: STR_STONKS_START
     description: STR_STONKS_START_DESCRIPTION

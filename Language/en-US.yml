@@ -806,6 +806,17 @@ en-US:
   STR_STONKS_CAPITALISM_DESCRIPTION: "We have acquired the money and didn't spare a single cent for the brother's funeral. Our people were baffled by this decision and some of them started wondering if fighting for humanity was worth it if we had to act so inhuman in the process.{NEWLINE}Loyalty score> {ALT}-120"
   STR_STONKS_RATIONALISM: "Rational Approach"
   STR_STONKS_RATIONALISM_DESCRIPTION: "We have organised a decent funeral for the brother and redirected the rest of the money for our own needs. Our member got back to work but losing a brother like this has had a negative impact on their morale.{NEWLINE}Loyalty score> {ALT}-25"
+  STR_CHOCOLATE_SPOILED: "On sale for a reason"
+  STR_CHOCOLATE_SPOILED_DESCRIPTION: "We have acquired the chocolate. All of it happened to be spoiled. The scientist understood that blaming it on the leadership was unreasonable but it sill took a toll on his morale. {NEWLINE}Loyalty score> {ALT}-10"
+  STR_SCIENTIST_MAKES_CHOCOLATE: "Very bitter chocolate"
+  STR_SCIENTIST_MAKES_CHOCOLATE_DESCRIPTION: "You denied the scientist's request. You also lectured him about the hardships our organisation was facing and shamed him for requesting something so ridiculous. The scientist got drunk and decided to make his own chocolate with chemicals and spare parts. The resulting substance proved to be much more stimulating and even fit for use in combat. The formula has not been written down but we are now in possession of 10 more stim shots. The scientist, however, is still upset.{NEWLINE}Loyalty score> {ALT}-10"
+  STR_CHOCOLATE_FAIL: "Sweet Life"
+  STR_CHOCOLATE_FAIL_DESCRIPTION: "The figurehead disappearead shortly after recieving the money. Our agents saw him getting on a plane heading for the Maldives. Such a baffling and cynical betrayal had an impact not only on our finances but on the morale as well.{NEWLINE}Loyalty score> {ALT}-50"
+  STR_CHOCOLATE_PARANOID: "Risk it for the biscuit"
+  STR_CHOCOLATE_PARANOID_DESCRIPTION: "The figurehead's hunch proved wrong as the MIB never showed up. It was certainly a risk but it paid off and made our people trust in your leadership even more.{NEWLINE}Loyalty score> {ALT}+50"
+
+
+
 
 #enemies
   STR_SECTOID_COMMANDER_CORPSE: "Sectoid Commander Corpse"
