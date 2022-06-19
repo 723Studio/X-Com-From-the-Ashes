@@ -443,4 +443,26 @@ eventScripts:
       STR_XCOM_EX_COMMANDER: true
     firstMonth: 0
     executionOdds: 100
+
+  - type: STR_CODE_COMBO_1234
+    eventWeights:
+      0:
+        STR_CODE_COMBO_1234_1: 100
+    researchTriggers:
+      STR_CODE_COMBO_1234: true
+      STR_PUZZLE_SOLVED: false
+    firstMonth: 0
+    executionOdds: 100
+
+  - type: STR_CODE_COMBO_4312
+    eventWeights:
+      0:
+        STR_CODE_COMBO_4312_1: 100
+    researchTriggers:
+      STR_CODE_COMBO_4312: true
+      STR_PUZZLE_SOLVED: false
+    firstMonth: 0
+    executionOdds: 100
+
+    
     

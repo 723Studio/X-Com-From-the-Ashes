@@ -127,6 +127,15 @@ research:
   - name: STR_COMMANDER_NOTE_1
     hidden: true
 
+  - name: STR_CODE_COMBO_1234
+    hidden: true
+
+  - name: STR_CODE_COMBO_4312
+    hidden: true
+
+  - name: STR_PUZZLE_SOLVED
+    hidden: true
+
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
