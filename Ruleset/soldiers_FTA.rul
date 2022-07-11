@@ -142,7 +142,7 @@ soldiers:
       missiles: 120
       dogfight: 120
       tracking: 110
-      tactics: 90
+      cooperation: 50
       beams: 120
       synaptic: 70
       gravity: 80
@@ -152,6 +152,7 @@ soldiers:
       insight: 90
       data: 100
       computers: 100
+      tactics: 90
       materials: 100
       psychology: 100
       designing: 100
@@ -214,7 +215,7 @@ soldiers:
       missiles: 20
       dogfight: 20
       tracking: 20
-      tactics: 5
+      cooperation: 5
     maxStats:
       tu: 65
       stamina: 70
@@ -232,7 +233,7 @@ soldiers:
       missiles: 60
       dogfight: 60
       tracking: 50
-      tactics: 40
+      cooperation: 40
     # dogfightExperience:
     #   maneuvering: 30
     #   missiles: 25
@@ -267,6 +268,7 @@ soldiers:
       insight: 20
       data: 20
       computers: 15
+      tactics: 15
       materials: 10
       psychology: 5
       designing: 15
@@ -288,11 +290,66 @@ soldiers:
       insight: 90
       data: 80
       computers: 70
+      tactics: 70
       materials: 70
       psychology: 70
       designing: 70
       psionics: 0
       xenolinguistics: 0
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    femaleFrequency: 60
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_ENGINEER
+    refNode: *STR_SOLDIER
+    roles: [4] #ROLE_ENGINEER
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      tu: 46
+      stamina: 50
+      health: 19
+      bravery: 10
+      reactions: 15
+      firing: 20
+      throwing: 15
+      strength: 15
+      efficiency: 30
+      diligence: 10
+      weaponry: 25
+      explosives: 20
+      microelectronics: 10
+      metallurgy: 10
+      robotics: 0
+      hacking: 0
+      construction: 70
+      reverseEngineering: 40
+      alienTech: 0
+    maxStats:
+      tu: 54
+      stamina: 60
+      health: 25
+      bravery: 30
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
+      efficiency: 100
+      diligence: 60
+      weaponry: 70
+      explosives: 70
+      microelectronics: 70
+      metallurgy: 70
+      processing: 70
+      robotics: 60
+      hacking: 50
+      construction: 70
+      reverseEngineering: 40
+      alienTech: 0
     armor: STR_JUMPSUIT_UC #TODO
     armorForAvatar: STR_JUMPSUIT_UC #TODO
     femaleFrequency: 60

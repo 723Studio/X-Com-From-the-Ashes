@@ -57,6 +57,7 @@ crafts:
     costBuy: 350000
     costRent: 40000
     costSell: 260000
+    
     requires:
       - STR_TODOIUM
     weaponTypes:

@@ -1,10 +1,11 @@
 startingBase:
   randomSoldiers:
-    STR_SOLDIER: 3
-    STR_PILOT: 2
-    STR_SCIENTIST: 2
-  scientists: 6
-  engineers: 5
+    STR_SOLDIER: 12
+    STR_PILOT: 3
+    STR_SCIENTIST: 4
+    STR_ENGINEER: 5
+  scientists: 0
+  engineers: 0
   facilities:
     - type: STR_ACCESS_LIFT
       x: 2

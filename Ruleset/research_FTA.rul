@@ -119,15 +119,15 @@ research:
     stats:
       physics: 0
       chemistry: 0
-      biology: 1
-      data: 5
-      computers: 30
+      biology: 0
+      data: 120
+      computers: 80
       materials: 0
       psychology: 0
-      designing: 2
+      designing: 0
       psionics: 0
       xenolinguistics: 0
-    cost: 800
+    cost: 500
     points: 80
     dependencies:
       - STR_RND_STATUS_REPORT

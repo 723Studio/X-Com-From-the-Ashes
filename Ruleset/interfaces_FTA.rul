@@ -312,7 +312,7 @@ interfaces:
         color: 52
         color2: 55
         border: 48
-      - id: barTactics
+      - id: barCooperation
         color: 83
         color2: 86
         border: 80
@@ -337,9 +337,9 @@ interfaces:
         color2: 24
         border: 16
       - id: barBiology
-        color: 58
-        color2: 53
-        border: 49
+        color: 36
+        color2: 40
+        border: 32
       - id: barInsight
         color: 68
         color2: 72
@@ -352,6 +352,13 @@ interfaces:
         color: 240
         color2: 211
         border: 241
+      - id: barTactics
+        # color: 58
+        # color2: 53
+        # border: 49
+        color: 62
+        color2: 57
+        border: 50
       - id: barMaterials
         color: 215
         color2: 216
@@ -411,6 +418,26 @@ interfaces:
       - id: button2
         color: 218   # blue
       - id: button3
+        color: 246   # purple
+      - id: list
+        color: 218   # blue
+        color2: 213   # gold
+        border: 208  # white
+  - type: manufactureInfo
+    backgroundImage: BACK17.SCR
+    parent: manufactureMenu
+    elements:
+      - id: window
+        color: 241   # pink
+      - id: text
+        color: 241   # pink
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+      - id: button1
+        color: 241   # pink
+      - id: button2
         color: 246   # purple
       - id: list
         color: 218   # blue
