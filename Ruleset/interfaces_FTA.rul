@@ -350,7 +350,7 @@ interfaces:
         border: 144
       - id: barComputers
         color: 240
-        color2: 211
+        color2: 15
         border: 241
       - id: barTactics
         # color: 58
@@ -651,8 +651,3 @@ interfaces:
         color: 52
       - id: battleObjects
         color: 228
-
-customPalettes:
-  - type: PAL_BASESCAPE_FTA
-    target: PAL_BASESCAPE
-    file: Resources/Pals/PAL_BASESCAPE_FTA.pal

@@ -1,0 +1,4 @@
+﻿customPalettes:
+  - type: PAL_BASESCAPE_FTA
+    target: PAL_BASESCAPE
+    file: Resources/Pals/PAL_BASESCAPE_FTA.pal

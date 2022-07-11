@@ -52,9 +52,9 @@ facilities:
      STR_BIOLOGY_EQUIPMENT:
        build: 1
        refund: 1         
-    buildCost: 430000
+    buildCost: 480000
     buildTime: 32
-    monthlyCost: 17000
+    monthlyCost: 19000
     labs: 5
     mapName: XBASF_07
   - type: STR_PRISON_CELLS

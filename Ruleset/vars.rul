@@ -1,6 +1,7 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
 ftaGameLength: 8
 ironManEnabled: false
+requiredExtendedVersion: "FtA"
 #Campaign
 startingTime:
   second: 34
@@ -14,11 +15,11 @@ initialFunding: 532
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
 ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION
+psiUnlockResearch: STR_PSIONIC
 xenologyUnlockResearch: STR_TODOIUM
 craftsBeamUnlockResearch: STR_TODOIUM
 craftSynapseUnlockResearch: STR_TODOIUM
 craftGravControlUnlockResearch: STR_TODOIUM
-psiUnlockResearch: STR_PSIONIC
 allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70
 lessAliensDuringBaseDefense: true
