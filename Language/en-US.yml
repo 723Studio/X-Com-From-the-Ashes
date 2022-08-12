@@ -551,7 +551,7 @@ en-US:
   STR_MILITARY_WEAPONRY_ACQUISITION: "Military Weaponry Acquisition"
   STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION: "We are requested to send our operatives to negotiate with a corrupt general for the supply of military arms and equipment to our friends in the Resistance. The operation is very delicate, we must remain incognito. A cover of independent arms dealers has been prepared for the agents.{NEWLINE}Required Items:{NEWLINE}Briefcase with Cash ($100000)>{ALT}1"
   STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_SUCCESS: "We were able to negotiate with the general, and the first consignments of weapons have already been sent to the coordinates given to us by men from the Resistance."
-  STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_FAIL: "Unfortunately, we were unable to negotiate with the general - he gre suspicious and our agents' cover was blown. A fight ensued and our operatives were forced to flee."
+  STR_MILITARY_WEAPONRY_ACQUISITION_OPERATION_FAIL: "Unfortunately, we were unable to negotiate with the general - he grew suspicious and our agents' cover was blown. A fight ensued and our operatives were forced to flee."
 
 #events
   STR_RND_STATUS_REPORT_EVENT: "R&D status report is ready!"
