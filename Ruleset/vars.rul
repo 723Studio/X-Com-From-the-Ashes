@@ -40,7 +40,7 @@ pilotsEmergencyEvacuationSurvivalChance: 50
 
 #pedia
 pediaReplaceCraftFuelWithRangeType: 2
-extraNerdyPediaInfo: true
+extraNerdyPediaInfoType: 2
 researchTreeDisabled: true
 
 #difficulty
