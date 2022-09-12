@@ -1,5 +1,6 @@
 diplomacyFactions:
   - name: STR_RESISTANCE
+    nameUc: STR_RESISTANCE_UC
     description: STR_RESISTANCE_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
     cardBackground: RESISTANCE_DIPLOMACY_CARD.SCR
