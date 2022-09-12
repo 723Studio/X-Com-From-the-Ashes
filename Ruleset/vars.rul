@@ -46,7 +46,8 @@ researchTreeDisabled: true
 #difficulty
 startingDifficulty: 1
 difficultyCoefficient: [0, 1, 2, 3, 4]
-aimAndArmorMultipliers: [0.9, 1.0, 1.03, 1.06, 1.12]
+aimMultipliers: [0.6, 1.0, 1.1, 1.2, 1.4]
+armorMultipliers: [0.75, 1.0, 1.0, 1.1, 1.33]
 sellPriceCoefficient: [105, 100, 90, 80, 70]
 statGrowthMultipliers:
   tu: 6
