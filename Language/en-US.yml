@@ -160,6 +160,8 @@ en-US:
   STR_CATEGORIES: "Categories"
   STR_IN_LAB: "LABORATORY"
   STR_IN_WORKSHOP: "WORKSHOP"
+  STR_INTEL: "INTEL"
+  STR_ALLOCATE: "Allocate"
   STR_BASE_LABOR_COSTS: "Base labor costs>{ALT}{0}"
   STR_COST_PER_UNIT_: "Approx. production costs>{ALT}{0}"
   STR_REQUIRED_STATS: "Required production skills:"
