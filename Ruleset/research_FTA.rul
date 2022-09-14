@@ -122,13 +122,15 @@ research:
       biology: 0
       data: 120
       computers: 80
+      tactics: 0
       materials: 0
-      psychology: 0
       designing: 0
+      alienTech: 0
       psionics: 0
       xenolinguistics: 0
     cost: 500
     points: 80
+    funds: 5000
     dependencies:
       - STR_RND_STATUS_REPORT
     listOrder: 10
@@ -165,6 +167,8 @@ research:
     listOrder: 40
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     requiresBaseFunc: [ HQ ]
+    stats:
+      tactics: 100
     cost: 400
     points: 15
     dependencies:

@@ -31,7 +31,7 @@ facilities:
     canBeBuiltOver: true
     storage: 5
     storageTiles: [[-1, -1, -1]]
-    labs: 5
+    labs: 7
     manaRecoveryPerDay: 1
     rightClickActionType: 3
     radarRange: 10800

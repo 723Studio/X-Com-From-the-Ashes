@@ -363,14 +363,14 @@ interfaces:
         color: 215
         color2: 216
         border: 214
-      - id: barPsychology
-        color: 180
-        color2: 183
-        border: 176
       - id: barDesigning
         color: 84
         color2: 88
         border: 1
+      - id: barAlienTech
+        color: 52
+        color2: 56
+        border: 48
       - id: barPsionics
         color: 248
         color2: 249
@@ -379,6 +379,49 @@ interfaces:
         color: 99
         color2: 102
         border: 96
+      - id: barWeaponry
+        color: 220
+        color2: 138
+        border: 219
+      - id: barExplosives
+        color: 20
+        color2: 24
+        border: 16
+      - id: barMicroelectronics
+        color: 36
+        color2: 40
+        border: 32
+      - id: barMetallurgy
+        color: 68
+        color2: 72
+        border: 80
+      - id: barProcessing
+        color: 148
+        color2: 151
+        border: 144
+      - id: barEfficiency
+        color: 240
+        color2: 15
+        border: 241
+      - id: barDiligence
+        # color: 58
+        # color2: 53
+        # border: 49
+        color: 62
+        color2: 57
+        border: 50
+      - id: barHacking
+        color: 215
+        color2: 216
+        border: 214
+      - id: barConstruction
+        color: 180
+        color2: 183
+        border: 176
+      - id: barReverseEngineering
+        color: 84
+        color2: 88
+        border: 1
       - id: errorPalette
         color: 0     # brown
       - id: errorMessage
@@ -423,6 +466,43 @@ interfaces:
         color: 218   # blue
         color2: 213   # gold
         border: 208  # white
+  - type: researchAllocateScientists
+    backgroundImage: BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+      - id: otherCraft
+        color: 246   # purple
+  - type: manufactureMenu
+    backgroundImage: BACK17.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 6     # oxide
+      - id: window
+        color: 246   # purple
+      - id: text1
+        color: 246   # purple
+        color2: 208  # white
+      - id: text2
+        color: 241   # pink
+      - id: list
+        color: 218   # blue
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
   - type: manufactureInfo
     backgroundImage: BACK17.SCR
     parent: manufactureMenu
@@ -441,8 +521,29 @@ interfaces:
         color: 246   # purple
       - id: list
         color: 218   # blue
-        color2: 213   # gold
-        border: 208  # white
+        color2: 208  # white
+        border: 241  # purple
+  - type: manufactureAllocateEngineers
+    backgroundImage: BACK17.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+      - id: button2
+        color: 218   # purple
+      - id: otherCraft
+        color: 246   # purple
   - type: hacking
     palette: PAL_BATTLESCAPE
     elements:

@@ -207,17 +207,17 @@ fixedUserOptions:
   oxceLinks: true
   oxceUpdateCheck: false
   noAlienPanicMessagesL: true
+  allowBuildingQueue: false
+  aggressiveRetaliation: false
+  battleAutoEnd: false
+  fieldPromotions: true
+  noAlienPanicMessages: true
 
 recommendedUserOptions:
   playIntro: true
-  aggressiveRetaliation: false
-  allowBuildingQueue: false
   canTransferCraftsWhileAirborne: true
-  battleAutoEnd: true
-  fieldPromotions: true
   strafe: true
   forceFire: true
-  noAlienPanicMessages: true
   oxceEnableOffCentreShooting: true
   oxceHighlightNewTopics: true
   weaponSelfDestruction: false

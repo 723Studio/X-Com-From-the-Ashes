@@ -364,3 +364,11 @@ manufacture:
     listOrder: 220040
 
 #misc
+  - name: STR_FACILITY_CONSTRUCTION #hardcoded, do not rename!
+    requires:
+      - STR_TROLLIUM
+    space: 0
+    time: 1
+    cost: 0
+    stats:
+      construction: 100

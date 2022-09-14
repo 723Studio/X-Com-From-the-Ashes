@@ -112,6 +112,7 @@ soldiers:
       psiStrength: 30
       psiSkill: 0
       mana: 0
+      diligence: 10
     maxStats:
       tu: 75
       stamina: 80
@@ -126,6 +127,7 @@ soldiers:
       psiSkill: 0
       mana: 0
     statCaps:
+      #soldiers
       tu: 120
       stamina: 130
       health: 50
@@ -138,6 +140,7 @@ soldiers:
       psiStrength: 100
       psiSkill: 100
       mana: 80
+      #pilots
       maneuvering: 100
       missiles: 120
       dogfight: 120
@@ -146,6 +149,7 @@ soldiers:
       beams: 120
       synaptic: 70
       gravity: 80
+      #science
       physics: 100
       chemistry: 100
       biology: 100
@@ -154,10 +158,28 @@ soldiers:
       computers: 100
       tactics: 90
       materials: 100
-      psychology: 100
       designing: 100
+      alienTech: 100
       psionics: 100
       xenolinguistics: 100
+      #engineers
+      weaponry: 100
+      explosives: 100
+      efficiency: 100
+      microelectronics: 90
+      metallurgy: 100
+      processing: 100
+      hacking: 90
+      construction: 100
+      diligence: 100
+      reverseEngineering: 100
+      #agents
+      stealth: 100
+      perseption: 100
+      charisma: 100
+      deception: 100
+      interrogation: 100
+      perseption: 100
     trainingStatCaps:
       tu: 70
       stamina: 80
@@ -207,7 +229,7 @@ soldiers:
       firing: 30
       throwing: 20
       strength: 20
-      melee: 20
+      melee: 30
       psiStrength: 30
       psiSkill: 0
       mana: 0
@@ -217,15 +239,15 @@ soldiers:
       tracking: 20
       cooperation: 5
     maxStats:
-      tu: 65
+      tu: 70
       stamina: 70
-      health: 35
+      health: 32
       bravery: 50
       reactions: 45
-      firing: 45
+      firing: 50
       throwing: 45
-      strength: 35
-      melee: 35
+      strength: 40
+      melee: 55
       psiStrength: 60
       psiSkill: 0
       mana: 0
@@ -294,6 +316,7 @@ soldiers:
       materials: 70
       psychology: 70
       designing: 70
+      alienTech: 0
       psionics: 0
       xenolinguistics: 0
     armor: STR_JUMPSUIT_UC #TODO
@@ -317,17 +340,18 @@ soldiers:
       firing: 20
       throwing: 15
       strength: 15
-      efficiency: 30
+      melee: 10
+      efficiency: 40
       diligence: 10
       weaponry: 25
       explosives: 20
-      microelectronics: 10
-      metallurgy: 10
-      robotics: 0
-      hacking: 0
-      construction: 70
-      reverseEngineering: 40
+      microelectronics: 15
+      metallurgy: 20
+      processing: 25
+      hacking: 20
+      construction: 25
       alienTech: 0
+      reverseEngineering: 5
     maxStats:
       tu: 54
       stamina: 60
@@ -338,15 +362,14 @@ soldiers:
       throwing: 25
       strength: 25
       melee: 25
-      efficiency: 100
+      efficiency: 80
       diligence: 60
       weaponry: 70
       explosives: 70
-      microelectronics: 70
+      microelectronics: 60
       metallurgy: 70
       processing: 70
-      robotics: 60
-      hacking: 50
+      hacking: 60
       construction: 70
       reverseEngineering: 40
       alienTech: 0
