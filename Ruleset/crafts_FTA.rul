@@ -80,7 +80,7 @@ crafts:
     requires:
       - STR_HELICOPTER
     sprite: 802
-    fuelMax: 80
+    fuelMax: 110
     damageMax: 20
     speedMax: 170
     accel: 1
@@ -116,9 +116,9 @@ crafts:
     requires:
       - STR_OSPREY
     sprite: 803
-    fuelMax: 250
+    fuelMax: 325
     damageMax: 80
-    speedMax: 245
+    speedMax: 355
     accel: 1
     weapons: 0
     soldiers: 14
