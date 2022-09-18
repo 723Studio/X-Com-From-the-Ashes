@@ -1104,7 +1104,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: [150, 151, 152, 153, 154]
+    #aggroSound: [150, 151, 152, 153, 154]
     deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON

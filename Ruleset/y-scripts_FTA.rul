@@ -694,8 +694,6 @@ extended:
 
           weapon_item.getRuleItem itemRuleset; #get stats from item
           itemRuleset.getTag coeff Tag.FTAG_SAWED_OFF;
-          debug_log "coeff: " coeff;
-          debug_log "weapon_item: " weapon_item;
 
           if neq coeff 0;
             debug_log "Ops, its Sawed-Off, power drop from: " power;

@@ -1,6 +1,48 @@
 alienDeployments:
   - delete: STR_BASE_DEFENSE
   - delete: STR_MEDIUM_SCOUT
+#UFOs
+  - type: STR_MEDIUM_SCOUT
+    width: 40
+    length: 40
+    height: 8
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+
+#missions
   - type: STR_BASE_DEFENSE
     width: 60
     length: 60
@@ -3952,6 +3994,7 @@ alienDeployments:
     height: 2
     shade: 0
     extendedObjectiveType: STR_ITEM_EXTRACTION
+    undercoverArmors: [STR_JUMPSUIT_UC]
     briefing:
       textOffset: -16
       background: SEWERS4.SCR

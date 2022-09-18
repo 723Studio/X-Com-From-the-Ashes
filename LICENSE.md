@@ -7,8 +7,8 @@ Here is a list of those music tracks:
 * ENEMY_TERRITORY.ogg;
 * BOSS_BATTLE.ogg
 
-I am also ordered some art assets from professional pixel-artists in order to provide the best experience to my players I can offer. Those orders are partially funded by Patreon support and donations, and mostly from my personal budget, so I have personal rights to use it. I maid a decision to distribute those (and only those) assets under **All Rights Reserved license.** You **can not** redistribute or adapt it anyhow without my personal agree.
-Here is a list of that assets:
+I am also ordered some art assets from professional pixel-artists in order to provide the best experience to my players I can offer. Those orders are partially funded by Patreon support and donations, and mostly from my personal budget, so I have full personal rights to use it. I maid a decision to distribute those (and only those) assets under **All Rights Reserved license.** You **can not** use, redistribute or adapt it anyhow without my personal agree.
+Here is a full list of that assets:
 
 * Commando_CPAL.png
 * Engineer_Chief_CPAL.png
@@ -56,6 +56,9 @@ Here is a list of that assets:
 * ufopedia_FACEHUGGER_CPAL.png
 * inventory_FACEHUGGER.png
 * ufopedia_ZOMBIE_PARAZITE_AUTOPSY.png
+* ufopedia_CULT_WITCH_CPAL.png
+* bigob_CULT_WITCH.png
+* inventory_CULT_WITCH.png.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

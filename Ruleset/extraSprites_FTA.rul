@@ -53,6 +53,10 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/UI/Shock.png
+  - type: UnitWarnedIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Warn.png
   - type: CustomArmorPreviews
     width: 71
     height: 32
