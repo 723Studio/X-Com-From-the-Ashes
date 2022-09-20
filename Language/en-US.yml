@@ -1118,7 +1118,7 @@ en-US:
   STR_MACHETE: "Machete"  
   STR_MACHETE_UFOPEDIA: "Blade with a single-sided sharpening, convex blade, sometimes with a curved tip to the blade. It requires a greater swing than a knife to strike, but it can be handled by anyone.{NEWLINE}{ALT}>Concealable, Silent"
   STR_SWORD: "Sword"
-  STR_SWORD_UFOPEDIA: "A well-made sword crafted from hard stainless steel. Sharpened on one side of the blade, handy handle and excellent balance allows to make strong sweeping blows.{NEWLINE}{ALT}>Silent"
+  STR_SWORD_UFOPEDIA: "A well-made sword crafted from hardened steel. Single-edged, tight leather grip, expertly balanced for one-handed use.{NEWLINE}{ALT}>Silent"
   STR_KATANA: "Oriental Blade"
   STR_KATANA_UFOPEDIA: "The long, elegant blade has a razor-sharp edge and excellent balance. Combining centuries of proven design and modern fabrication techniques, this blade, in capable hands, is deadly even to lightly armored opponents.{NEWLINE}{ALT}>Silent"
   STR_ELECTRIC_STICK: "Electric Stick"
