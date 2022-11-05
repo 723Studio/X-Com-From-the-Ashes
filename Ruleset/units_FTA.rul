@@ -246,6 +246,7 @@ units:
       psiStrength: 45
       psiSkill: 0
     armor: STR_XCOM_EX_COMMANDER_ARMOR
+    prisoner: STR_MIB_AGENT #TODO
     standHeight: 22
     kneelHeight: 14
     value: 20
@@ -285,6 +286,7 @@ units:
       melee: 10
       psiStrength: 15
     armor: STR_MIB_AGENT_ARMOR
+    prisoner: STR_MIB_AGENT
     standHeight: 22
     kneelHeight: 14
     value: 5
@@ -544,6 +546,7 @@ units:
       - - STR_SEEKER_DRONE_WEAPON
   - type: STR_MIB_SCIENTIST
     race: STR_MIB
+    roles: [3] #ROLE_SCIENTIST
     stats:
       tu: 70
       stamina: 80

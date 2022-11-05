@@ -56,6 +56,7 @@ Here is a list of that assets:
 * ufopedia_FACEHUGGER_CPAL.png
 * inventory_FACEHUGGER.png
 * ufopedia_ZOMBIE_PARAZITE_AUTOPSY.png
+* ufopedia_ZOMBIE_PARAZITE_AUTOPSY.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

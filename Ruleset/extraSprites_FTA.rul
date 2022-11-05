@@ -886,6 +886,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/COVEROPSHQ_BACKGROUND.png
+  - type: PRISON_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/PRISON_BACKGROUND.png
   - type: CASH_BACKGROUND.SCR
     singleImage: true
     width: 320

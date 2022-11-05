@@ -2,6 +2,8 @@ intelligence:
   - name: STR_UFO_TRACKING
     description: STR_UFO_TRACKING_DESCRIPTION
     cost: 1000
+    costIncrease: 2
+    requiredResearch: STR_LOG1
     specialRule: 1 #INTEL_NONE = 0, INTEL_UFO_TRACKING = 1, INTEL_COVERT_OPERATIONS = 2, INTEL_DEPLOYMENT_HINTS = 3
     stats:
       tu: 65

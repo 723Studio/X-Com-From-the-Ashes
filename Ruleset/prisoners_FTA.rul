@@ -1,0 +1,26 @@
+prisoners:
+  - type: STR_MIB_AGENT
+    startingСooperation: -500
+    damageOverTime: 3
+    containType: 1 #human
+    interrogation:
+      unlockResearches: [STR_TROLLIUM, STR_TROLLIUM]
+      #requiredResearch: STR_TROLLIUM
+      diesAfter: true
+      baseResistance: 100
+    recruiting:
+      requiredResearch: STR_TROLLIUM
+      spawnedSoldierRule: STR_SOLDIER
+      difficulty: 100
+      spawnEvent: STR_
+    torture:
+      difficulty: 100
+      loyaltyChange: -5
+      moraleChange: -10
+      cooperationChange: -30
+      spawnEvent: STR_
+      eventChance: 30
+    contain:
+      requiredResearch: STR_TROLLIUM
+      funds: -800
+      cooperationChange: 5

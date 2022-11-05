@@ -112,7 +112,8 @@ soldiers:
       psiStrength: 30
       psiSkill: 0
       mana: 0
-      diligence: 10
+      stealth: 10
+      perseption: 20
     maxStats:
       tu: 75
       stamina: 80
@@ -179,7 +180,6 @@ soldiers:
       charisma: 100
       deception: 100
       interrogation: 100
-      perseption: 100
     trainingStatCaps:
       tu: 70
       stamina: 80
@@ -265,6 +265,48 @@ soldiers:
     armor: STR_JUMPSUIT_UC #TODO
     armorForAvatar: STR_JUMPSUIT_UC #TODO
     femaleFrequency: 15
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_AGENT
+    refNode: *STR_SOLDIER
+    roles: [2] #ROLE_AGENT
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      tu: 46
+      stamina: 50
+      health: 19
+      bravery: 10
+      reactions: 15
+      firing: 20
+      throwing: 15
+      strength: 15
+      melee: 10
+      stealth: 30
+      perseption: 35
+      charisma: 20
+      deception: 30
+      interrogation: 10
+    maxStats:
+      tu: 54
+      stamina: 60
+      health: 25
+      bravery: 30
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
+      stealth: 50
+      perseption: 60
+      charisma: 60
+      deception: 50
+      interrogation: 40
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    femaleFrequency: 60
     soldierNames:
       - delete
       - SoldierNames/
@@ -379,6 +421,7 @@ soldiers:
     soldierNames:
       - delete
       - SoldierNames/
+
   - type: STR_RESISTANCE_AGENT
     refNode: *STR_SOLDIER
     roles: [0]

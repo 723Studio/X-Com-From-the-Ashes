@@ -4,6 +4,7 @@ startingBase:
     STR_PILOT: 3
     STR_SCIENTIST: 5
     STR_ENGINEER: 4
+    STR_AGENT: 3
   scientists: 0
   engineers: 0
   facilities:
