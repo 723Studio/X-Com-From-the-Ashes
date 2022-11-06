@@ -98,6 +98,7 @@ facilities:
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 4
     mapName: XBASF_04
+    manufacture: STR_FACILITY_CONSTRUCTION
     listOrder: 6960
   - type: STR_SICK_BAY
     spriteShape: 1
