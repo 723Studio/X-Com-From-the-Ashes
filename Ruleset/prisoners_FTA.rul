@@ -1,8 +1,30 @@
 prisoners:
-  - type: STR_MIB_AGENT
+  - type: STR_XCOM_SOLDIER_PRISONER
     startingСooperation: -500
     damageOverTime: 3
-    containType: 1 #human
+    interrogation:
+      unlockResearches: [STR_TROLLIUM, STR_TROLLIUM]
+      #requiredResearch: STR_TROLLIUM
+      diesAfter: true
+      baseResistance: 100
+    torture:
+      difficulty: 50
+      loyaltyChange: 50
+      moraleChange: 10
+      cooperationChange: 30
+      spawnEvent: STR_
+      eventChance: 30
+    contain:
+      funds: -1000
+      cooperationChange: 5
+    recruiting:
+      requiredResearch: STR_TROLLIUM
+      spawnedSoldierRule: STR_SOLDIER
+      difficulty: 100
+      spawnEvent: STR_
+  - type: STR_MIB_AGENT
+    startingСooperation: -50
+    damageOverTime: 3
     interrogation:
       unlockResearches: [STR_TROLLIUM, STR_TROLLIUM]
       #requiredResearch: STR_TROLLIUM
@@ -15,12 +37,35 @@ prisoners:
       spawnEvent: STR_
     torture:
       difficulty: 100
-      loyaltyChange: -5
-      moraleChange: -10
-      cooperationChange: -30
+      loyaltyChange: 5
+      moraleChange: 10
+      cooperationChange: 30
       spawnEvent: STR_
       eventChance: 30
     contain:
       requiredResearch: STR_TROLLIUM
       funds: -800
       cooperationChange: 5
+  - type: STR_XCOM_EX_COMMANDER
+    startingСooperation: -100
+    interrogation:
+      unlockResearches: [STR_TROLLIUM, STR_TROLLIUM]
+      #requiredResearch: STR_TROLLIUM
+      diesAfter: false
+      baseResistance: 100
+    recruiting:
+      requiredResearch: STR_TROLLIUM #suicide commander after psi emitter will be down
+      #spawnedSoldierRule: STR_SOLDIER
+      difficulty: 100
+      spawnEvent: STR_ 
+    torture:
+      difficulty: 70
+      loyaltyChange: 15
+      moraleChange: 10
+      cooperationChange: 40
+      spawnEvent: STR_
+      eventChance: 30
+    contain:
+      #requiredResearch: STR_NONE
+      funds: -800
+      cooperationChange: 0

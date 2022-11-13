@@ -572,6 +572,32 @@ interfaces:
         color: 138   # yellow
       - id: button
         color: 133   # minty green
+  - type: geoPrisonerReportNormal #TODO
+    backgroundImage: BACK05.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 239   # bright green
+      - id: text2
+        color: 138   # yellow
+      - id: button
+        color: 133   # minty green
+  - type: geoPrisonerReportDeath #TODO
+    backgroundImage: BACK05.SCR
+    elements:
+      - id: palette
+        color: 2     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 239   # bright green
+      - id: text2
+        color: 138   # yellow
+      - id: button
+        color: 133   # minty green
   - type: prisonManagement #TODO
     backgroundImage: PRISON_BACKGROUND.SCR
     palette: PAL_BASESCAPE
@@ -579,7 +605,7 @@ interfaces:
       - id: palette
         color: 5     # metal
       - id: window
-        color: 133   # minty green
+        color: 246   # purple
       - id: text1
         color: 218   # blue
         color2: 208  # white

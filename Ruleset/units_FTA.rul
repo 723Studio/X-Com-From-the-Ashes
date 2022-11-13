@@ -246,7 +246,7 @@ units:
       psiStrength: 45
       psiSkill: 0
     armor: STR_XCOM_EX_COMMANDER_ARMOR
-    prisoner: STR_MIB_AGENT #TODO
+    prisoner: STR_XCOM_EX_COMMANDER #TODO
     standHeight: 22
     kneelHeight: 14
     value: 20

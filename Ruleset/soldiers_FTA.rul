@@ -306,6 +306,7 @@ soldiers:
       interrogation: 40
     armor: STR_JUMPSUIT_UC #TODO
     armorForAvatar: STR_JUMPSUIT_UC #TODO
+    prisoner: STR_XCOM_SOLDIER_PRISONER
     femaleFrequency: 60
     soldierNames:
       - delete

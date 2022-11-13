@@ -29,7 +29,7 @@ facilities:
     buildTime: 40
     monthlyCost: 13000
     canBeBuiltOver: true
-    storage: 5
+    storage: 10
     storageTiles: [[-1, -1, -1]]
     labs: 7
     manaRecoveryPerDay: 1
@@ -66,8 +66,9 @@ facilities:
     buildCost: 260000
     buildTime: 16
     monthlyCost: 5000
+    interrogationSpace: 2
     ftaPrisonSpace: 10
-    storage: 10
+    storage: 15
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
     mapName: XBASF_03

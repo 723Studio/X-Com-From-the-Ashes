@@ -16,6 +16,8 @@ facilities:
     crafts: 999
     psiLabs: 999
     storage: 999
+    interrogationSpace: 1
+    ftaPrisonSpace: 100
     mapName: XBASE_05
     requires:
       - STR_TROLLIUM
