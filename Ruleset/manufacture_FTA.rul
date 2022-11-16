@@ -363,12 +363,12 @@ manufacture:
       STR_PLASTIC_CARD: 1
     listOrder: 220040
 
-#misc
-  - name: STR_FACILITY_CONSTRUCTION #hardcoded, do not rename!
+#facility
+  - name: STR_WORKSHOP
     requires:
       - STR_TROLLIUM
     space: 0
-    time: 1
+    time: 400
     cost: 0
     stats:
-      construction: 100
+      construction: 40

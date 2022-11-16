@@ -99,7 +99,6 @@ facilities:
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 4
     mapName: XBASF_04
-    manufacture: STR_FACILITY_CONSTRUCTION
     listOrder: 6960
   - type: STR_SICK_BAY
     spriteShape: 1
@@ -207,13 +206,14 @@ facilities:
     spriteShape: 1
     spriteFacility: 307
     provideBaseFunc: [WORK]
-    requires:
-      - STR_FACILITIES_BLUEPRINTS
-      - STR_WORKSHOP
+    # requires:
+    #   - STR_FACILITIES_BLUEPRINTS
+    #   - STR_WORKSHOP
     buildCost: 220000
     buildTime: 15
     monthlyCost: 7000
     workshops: 12
+    manufacture: STR_WORKSHOP
     mapName: XBASE_03 #FIXME - make map!
   - type: STR_ADVANCED_WORKSHOP
     spriteShape: 1

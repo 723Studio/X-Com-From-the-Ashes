@@ -6310,7 +6310,7 @@ items:
     costSell: 26000
     listOrder: 16850
 
-  - type: STR_FACILITY_CONSTRUCTION
+  - type: STR_WORKSHOP
 extended:
   tags:
     RuleItem:
