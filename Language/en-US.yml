@@ -1385,7 +1385,8 @@ en-US:
   STR_BIOLOGY_EQUIPMENT: "Biolab Equipment"
   STR_RADAR_SYSTEM: "Radar Systems"
   STR_TRADIUM: "Tradium"
-
+  STR_CTG_CONCEALABLE: "Concealable"
+  STR_CTG_SILENT: "Silent"
 #armors
   STR_JUMPSUIT_UC: "X-COM UNIFORM"
   STR_LEATHER_COAT_UC: "LEATHER COAT"
