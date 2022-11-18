@@ -368,7 +368,7 @@ manufacture:
     requires:
       - STR_TROLLIUM
     space: 0
-    time: 400
+    time: 40000
     cost: 0
     stats:
       construction: 40

@@ -296,6 +296,30 @@ interfaces:
         color: 215
         color2: 216
         border: 214
+      - id: barStealth
+        color: 220
+        color2: 138
+        border: 219
+      - id: barPerseption
+        color: 20
+        color2: 24
+        border: 16
+      - id: barCharisma
+        color: 36
+        color2: 40
+        border: 32
+      - id: barInvestigation
+        color: 68
+        color2: 72
+        border: 80
+      - id: barDeception
+        color: 148
+        color2: 151
+        border: 144
+      - id: barInterrogation
+        color: 240
+        color2: 15
+        border: 241
       - id: barPhysics
         color: 220
         color2: 138
