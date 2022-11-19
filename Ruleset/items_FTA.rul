@@ -5140,8 +5140,8 @@ items:
   - type: STR_ENERGY_WISP_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 450 # Blank placeholder
-    meleeSound: 160
+    bigSprite: 460 # Blank placeholder
+    meleeSound: 170
     clipSize: -1
     power: 20
     strengthApplied: false

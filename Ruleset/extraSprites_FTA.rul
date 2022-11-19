@@ -397,8 +397,6 @@ extraSprites:
       463: Resources/Weapons/Alien/Utilities/bigob_AlienProxyMine.png
       464: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifle.png
       465: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifleClip.png
-      466: Resources/Armors/Enemies/Monsters/bigob_SwarmidWeapon.png
-      467: Resources/UI/Blanks/bigob_Blank.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png

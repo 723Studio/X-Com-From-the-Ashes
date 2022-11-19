@@ -1366,8 +1366,8 @@ units:
     floatHeight: 5
     kneelHeight: 11
     value: 10
-    deathSound: 161 # TODO 
-    moveSound: 161
+    deathSound: 169 # TODO 
+    moveSound: 171
     intelligence: 2
     aggression: 8
     energyRecovery: 50

@@ -1320,6 +1320,7 @@ en-US:
   STR_ENERGY_WISP_AUTOPSY_UFOPEDIA: #TODO
   STR_ENERGY_WISP_ARMOR: "Energy Wisp Combat Analysis"
   STR_ENERGY_WISP_ARMOR_UFOPEDIA: #TODO
+  STR_ENERGY_WISP_WEAPON: "Energy Wisp Weapon"
 #other units
   STR_RESISTANCE_AGENT: "Resistance Agent"
   STR_RESISTANCE_AGENT_VIP: "Resistance Agent"
