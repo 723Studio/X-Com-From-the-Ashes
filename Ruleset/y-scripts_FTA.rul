@@ -2138,10 +2138,7 @@ extended:
           ufo.getRuleUfo rule;
           rule.getTag change Tag.UFO_DETECTION_CHANGE ;
           if neq change 0;
-            debug_log "UFO detecting with addtional chance: " ufo change;
-            debug_log "original detection chance: " detection_chance;
             add detection_chance change;
-            debug_log "new detection chance: " detection_chance;
           end;
           return detection_type detection_chance;
 

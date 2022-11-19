@@ -1,39 +1,215 @@
 soldiers:
   - &STR_SOLDIER
     type: STR_SOLDIER
+    roles: [0] #ROLE_SOLDIER
+    rankSprite: 5000
+    pilotRankSprite: 5006
+    agentRankSprite: 5012
+    scientistRankSprite: 5018
+    engineerRankSprite: 5024
+    roleExpRequirments:
+    rankBattleSprite: 5000
+    pilotRankSpriteBattlescape: 5006
+    agentRankSpriteBattlescape: 5012
+    scientistRankSpriteBattlescape: 5018
+    engineerRankSpriteBattlescape: 5024
+    rankTinySprite: 5000
+    pilotRankSpriteTiny: 5006
+    agentRankSpriteTiny: 5012
+    scientistRankSpriteTiny: 5018
+    engineerRankSpriteTiny: 5024
+    roleExpRequirments:
+      - role: 0 #ROLE_SOLDIER
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 1 #ROLE_PILOT
+        requirments: 
+          1: 1
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 2 #ROLE_AGENT
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 3 #ROLE_SCIENTIST
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+      - role: 4 #ROLE_ENGINEER
+        requirments: 
+          1: 3
+          2: 6
+          3: 15
+          4: 30
+          5: 60
+    roleRankStrings:
+      - role: 0 #ROLE_SOLDIER
+        strings: 
+          1: STR_PRIVATE
+          2: STR_CORPORAL
+          3: STR_SERGANT
+          4: STR_WARRANT_OFFICER
+          5: STR_LIEUTENANT
+          6: STR_CAPTAIN
+      - role: 1 #ROLE_PILOT
+        strings: 
+          1: STR_PILOT
+          2: STR_SENIOR_PILOT
+          3: STR_TECHNICAL_SERGANT
+          4: STR_FLYING_OFFICER
+          5: STR_FLIGHT_LIEUTENANT
+          6: STR_SQUADRON_LEADER
+      - role: 2 #ROLE_AGENT
+        strings: 
+          1: STR_JUNIOR_AGENT
+          2: STR_AGENT
+          3: STR_SENIOR_AGENT
+          4: STR_STAFF_AGENT
+          5: STR_SPECIAL_AGENT
+          6: STR_COMMISSAR
+      - role: 3 #ROLE_SCIENTIST
+        strings: 
+          1: STR_JUNIOR_SCIENTIST
+          2: STR_SCIENTIST
+          3: STR_DOCENT
+          4: STR_SCHOLAR
+          5: STR_LEAD_SCIENTIST
+          6: STR_ACADEMIC
+      - role: 4 #ROLE_ENGINEER
+        strings: 
+          1: STR_JOURNEYMAN
+          2: STR_ENGINEER
+          3: STR_SUPPORT
+          4: STR_SENIOR_ENGINEER
+          5: STR_FOREMAN
+          6: STR_ARTISAN
     costBuy: 50000
     costSalary: 3000
     moraleLossWhenKilled: 150
     value: 50
     minStats:
-      tu: 55
-      stamina: 40
-      health: 25
+      #soldier
+      tu: 60
+      stamina: 50
+      health: 27
       bravery: 10
-      reactions: 30
+      reactions: 40
       firing: 45
       throwing: 35
-      strength: 20
-      melee: 20
+      strength: 30
+      melee: 40
       psiStrength: 30
       psiSkill: 0
       mana: 0
+      #pilot
+      maneuvering: 0
+      missiles: 0
+      dogfight: 0
+      tracking: 0
+      cooperation: 0
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 10
+      perseption: 20
+      charisma: 10
+      investigation: 5
+      deception: 10
+      interrogation: 5
+      #scientist
+      physics: 0
+      chemistry: 0
+      biology: 0
+      insight: 0
+      data: 0
+      computers: 0
+      tactics: 0
+      materials: 0
+      designing: 0
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 10
+      explosives: 25
+      efficiency: 15
+      microelectronics: 0
+      metallurgy: 0
+      processing: 0
+      hacking: 0
+      construction: 20
+      diligence: 20
+      alienTech: 0
+      reverseEngineering: 0
     maxStats:
-      tu: 65
-      stamina: 70
-      health: 35
+      tu: 75
+      stamina: 80
+      health: 37
       bravery: 60
       reactions: 60
-      firing: 70
-      throwing: 65
-      strength: 45
-      melee: 60
+      firing: 75
+      throwing: 70
+      strength: 50
+      melee: 70
       psiStrength: 60
       psiSkill: 0
       mana: 0
+      #pilot
+      maneuvering: 0
+      missiles: 0
+      dogfight: 0
+      tracking: 0
+      cooperation: 0
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 25
+      perseption: 50
+      charisma: 30
+      investigation: 20
+      deception: 25
+      interrogation: 20
+      #scientist
+      physics: 10
+      chemistry: 10
+      biology: 10
+      insight: 50
+      data: 10
+      computers: 10
+      tactics: 20
+      materials: 10
+      designing: 10
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 35
+      explosives: 35
+      efficiency: 40
+      microelectronics: 20
+      metallurgy: 30
+      processing: 35
+      hacking: 15
+      construction: 20
+      diligence: 25
+      alienTech: 0
+      reverseEngineering: 0
     statCaps:
-      tu: 100
-      stamina: 110
+      #soldiers
+      tu: 120
+      stamina: 130
       health: 50
       bravery: 90
       reactions: 100
@@ -44,22 +220,63 @@ soldiers:
       psiStrength: 100
       psiSkill: 100
       mana: 80
+      #pilots
+      maneuvering: 100
+      missiles: 120
+      dogfight: 120
+      tracking: 110
+      cooperation: 50
+      beams: 120
+      synaptic: 70
+      gravity: 80
+      #science
+      physics: 100
+      chemistry: 100
+      biology: 100
+      insight: 90
+      data: 100
+      computers: 100
+      tactics: 90
+      materials: 100
+      designing: 100
+      alienTech: 100
+      psionics: 100
+      xenolinguistics: 100
+      #engineers
+      weaponry: 100
+      explosives: 100
+      efficiency: 100
+      microelectronics: 90
+      metallurgy: 100
+      processing: 100
+      hacking: 90
+      construction: 100
+      diligence: 100
+      reverseEngineering: 100
+      #agents
+      stealth: 100
+      perseption: 100
+      charisma: 100
+      deception: 100
+      interrogation: 100
     trainingStatCaps:
       tu: 70
-      stamina: 90
+      stamina: 80
       health: 40
-      bravery: 100
-      reactions: 50
-      firing: 85
-      throwing: 75
+      reactions: 40
+      firing: 55
+      throwing: 50
       strength: 50
-      melee: 80
-      psiStrength: 60
-      psiSkill: 0
+      melee: 45
     dogfightExperience:
-      bravery: 10
-      reactions: 30
-      firing: 25
+      bravery: 100
+      reactions: 0
+      firing: 0
+      maneuvering: 200
+      missiles: 200
+      dogfight: 200
+      tracking: 10
+      tactics: 10
     armor: STR_JUMPSUIT_UC
     armorForAvatar: STR_JUMPSUIT_UC
     avatarOffsetX: 68
@@ -76,17 +293,442 @@ soldiers:
     # panicFemale: [731, 732, 733, 734, 735, 736, 737]
     # berserkMale: [801, 802, 803, 804, 805]
     # berserkFemale: [831, 832, 833]
+  - type: STR_PILOT
+    refNode: *STR_SOLDIER
+    roles: [1] #ROLE_PILOT
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      #soldier
+      tu: 55
+      stamina: 60
+      health: 25
+      bravery: 10
+      reactions: 20
+      firing: 30
+      throwing: 20
+      strength: 20
+      melee: 30
+      mana: 0
+      psiStrength: 30
+      psiSkill: 0
+      #pilot
+      maneuvering: 10
+      missiles: 20
+      dogfight: 20
+      tracking: 20
+      cooperation: 5
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 10
+      perseption: 20
+      charisma: 10
+      investigation: 0
+      deception: 0
+      interrogation: 0
+      #scientist - inherit soldier
+      #engineer - inherit soldier
+    maxStats:
+      tu: 70
+      stamina: 70
+      health: 32
+      bravery: 50
+      reactions: 45
+      firing: 50
+      throwing: 45
+      strength: 40
+      melee: 55
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+      #pilot
+      maneuvering: 50
+      missiles: 60
+      dogfight: 60
+      tracking: 50
+      cooperation: 40
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 20
+      perseption: 40
+      charisma: 30
+      investigation: 20
+      deception: 25
+      interrogation: 20
+      #scientist - inherit soldier
+      #engineer - inherit soldier
+    # dogfightExperience:
+    #   maneuvering: 30
+    #   missiles: 25
+    #   dogfight: 25
+    #   tracking: 10
+    #   tactics: 10
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    femaleFrequency: 15
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_AGENT
+    refNode: *STR_SOLDIER
+    roles: [2] #ROLE_AGENT
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      #soldier
+      tu: 46
+      stamina: 50
+      health: 19
+      bravery: 10
+      reactions: 15
+      firing: 20
+      throwing: 15
+      strength: 15
+      melee: 10
+      mana: 0
+      psiStrength: 30
+      psiSkill: 0
+      #pilot - inherit from soldier
+      maneuvering: 0
+      missiles: 0
+      dogfight: 0
+      tracking: 0
+      cooperation: 0
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 30
+      perseption: 35
+      charisma: 20
+      investigation: 25
+      deception: 30
+      interrogation: 10
+      #scientist
+      physics: 0
+      chemistry: 0
+      biology: 0
+      insight: 0
+      data: 35
+      computers: 10
+      tactics: 10
+      materials: 0
+      designing: 0
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 15
+      explosives: 25
+      efficiency: 15
+      microelectronics: 0
+      metallurgy: 0
+      processing: 0
+      hacking: 20
+      construction: 20
+      diligence: 20
+      alienTech: 0
+      reverseEngineering: 0
+    maxStats:
+      tu: 54
+      stamina: 60
+      health: 25
+      bravery: 30
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+      #pilot - inherit from soldier
+      maneuvering: 0
+      missiles: 0
+      dogfight: 0
+      tracking: 0
+      cooperation: 0
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 50
+      perseption: 60
+      charisma: 60
+      investigation: 70
+      deception: 50
+      interrogation: 40
+      #scientist
+      physics: 20
+      chemistry: 20
+      biology: 20
+      insight: 60
+      data: 70
+      computers: 30
+      tactics: 30
+      materials: 20
+      designing: 20
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 30
+      explosives: 50
+      efficiency: 30
+      microelectronics: 0
+      metallurgy: 0
+      processing: 0
+      hacking: 45
+      construction: 20
+      diligence: 30
+      alienTech: 0
+      reverseEngineering: 0
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    prisoner: STR_XCOM_SOLDIER_PRISONER
+    femaleFrequency: 60
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_SCIENTIST
+    refNode: *STR_SOLDIER
+    roles: [3] #ROLE_SCIENTIST
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      #soldier
+      tu: 46
+      stamina: 50
+      health: 19
+      bravery: 10
+      reactions: 15
+      firing: 20
+      throwing: 15
+      strength: 15
+      melee: 10
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
+      #pilot - inherit from soldier
+      #agent
+      stealth: 5
+      perseption: 10
+      charisma: 10
+      investigation: 5
+      deception: 0
+      interrogation: 0
+      #scientist
+      physics: 10
+      chemistry: 10
+      biology: 10
+      insight: 20
+      data: 20
+      computers: 15
+      tactics: 15
+      materials: 10
+      psychology: 5
+      designing: 15
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 0
+      explosives: 0
+      efficiency: 20
+      microelectronics: 0
+      metallurgy: 0
+      processing: 0
+      hacking: 0
+      construction: 10
+      diligence: 5
+      alienTech: 0
+      reverseEngineering: 0
+    maxStats:
+      #soldier
+      tu: 54
+      stamina: 60
+      health: 25
+      bravery: 30
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+      #pilot - inherit from soldier
+      maneuvering: 0
+      missiles: 0
+      dogfight: 0
+      tracking: 0
+      cooperation: 0
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 20
+      perseption: 30
+      charisma: 20
+      investigation: 20
+      deception: 5
+      interrogation: 10
+      #scientist
+      physics: 70
+      chemistry: 70
+      biology: 70
+      insight: 90
+      data: 80
+      computers: 70
+      tactics: 70
+      materials: 70
+      psychology: 70
+      designing: 70
+      alienTech: 0
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 10
+      explosives: 10
+      efficiency: 40
+      microelectronics: 10
+      metallurgy: 10
+      processing: 10
+      hacking: 20
+      construction: 20
+      diligence: 30
+      alienTech: 0
+      reverseEngineering: 0
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    femaleFrequency: 60
+    soldierNames:
+      - delete
+      - SoldierNames/
+  - type: STR_ENGINEER
+    refNode: *STR_SOLDIER
+    roles: [4] #ROLE_ENGINEER
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      #soldier
+      tu: 46
+      stamina: 50
+      health: 19
+      bravery: 10
+      reactions: 15
+      firing: 20
+      throwing: 15
+      strength: 15
+      melee: 10
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
+      #pilot - inherit from soldier
+      #agent
+      stealth: 5
+      perseption: 10
+      charisma: 10
+      investigation: 5
+      deception: 0
+      interrogation: 0
+      #scientist
+      physics: 0
+      chemistry: 0
+      biology: 0
+      insight: 10
+      data: 10
+      computers: 10
+      tactics: 0
+      materials: 10
+      psychology: 0
+      designing: 10
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 25
+      explosives: 20
+      efficiency: 40
+      microelectronics: 20
+      metallurgy: 20
+      processing: 25
+      hacking: 20
+      construction: 25
+      diligence: 10
+      alienTech: 0
+      reverseEngineering: 5
+    maxStats:
+      #soldier
+      tu: 54
+      stamina: 60
+      health: 25
+      bravery: 30
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+      #pilot - inherit from soldier
+      #agent
+      stealth: 15
+      perseption: 20
+      charisma: 20
+      investigation: 15
+      deception: 5
+      interrogation: 5
+      #scientist
+      physics: 20
+      chemistry: 30
+      biology: 10
+      insight: 60
+      data: 30
+      computers: 40
+      tactics: 10
+      materials: 40
+      psychology: 10
+      designing: 40
+      alienTech: 0
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 70
+      efficiency: 80
+      explosives: 70
+      microelectronics: 60
+      metallurgy: 70
+      processing: 70
+      hacking: 60
+      construction: 70
+      diligence: 60
+      reverseEngineering: 40
+      alienTech: 0
+    armor: STR_JUMPSUIT_UC #TODO
+    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    femaleFrequency: 60
+    soldierNames:
+      - delete
+      - SoldierNames/
+
   - type: STR_RESISTANCE_AGENT
     refNode: *STR_SOLDIER
+    roles: [0]
     costBuy: 25000
     costSalary: 2000
     minStats:
       tu: 50
-      stamina: 60
+      stamina: 50
       health: 25
       bravery: 10
-      reactions: 30
-      firing: 40
+      reactions: 25
+      firing: 35
       throwing: 35
       strength: 20
       melee: 20
@@ -94,9 +736,9 @@ soldiers:
       psiSkill: 0
       mana: 0
     maxStats:
-      tu: 65
-      stamina: 70
-      health: 35
+      tu: 60
+      stamina: 65
+      health: 32
       bravery: 50
       reactions: 40
       firing: 50
@@ -111,6 +753,7 @@ soldiers:
       - SoldierNames/
   - type: STR_RESISTANCE_SCOUT
     refNode: *STR_SOLDIER
+    roles: [0]
     costBuy: 35000
     costSalary: 3000
     minStats:

@@ -70,13 +70,30 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/UI/avatar-background.png
+
+  - type: BASEBITS.PCK
+    width: 192
+    height: 160
+    subX: 32
+    subY: 32
+    files:
+      5000: Resources/UI/ranks_basescape.png
+
+  - type: SMOKE.PCK
+    width: 192
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      5000: Resources/UI/ranks_battlescape.png
+
   - type: TinyRanks
     width: 42
-    height: 7
+    height: 35
     subX: 7
     subY: 7
     files:
-      0: Resources/UI/TinyRanks.png
+      5000: Resources/UI/ranks_tiny.png
   - type: Commendations
     width: 31
     height: 48
@@ -874,6 +891,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/COVEROPSHQ_BACKGROUND.png
+  - type: PRISON_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/PRISON_BACKGROUND.png
   - type: CASH_BACKGROUND.SCR
     singleImage: true
     width: 320

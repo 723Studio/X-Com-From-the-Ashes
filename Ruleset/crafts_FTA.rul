@@ -15,9 +15,13 @@ crafts:
     damageMax: 50
     speedMax: 380
     accel: 1
+    avoidBonus: -15
     soldiers: 8
     vehicles: 1
-    pilots: 1
+    pilots: 0
+    radarRange: 300
+    radarChance: 20
+    sightRange: 200
     maxItems: 999
     repairRate: 4
     refuelRate: 40
@@ -53,6 +57,7 @@ crafts:
     costBuy: 350000
     costRent: 40000
     costSell: 260000
+    
     requires:
       - STR_TODOIUM
     weaponTypes:
@@ -62,13 +67,17 @@ crafts:
     soldiers: 1
     vehicles: 0
     pilots: 1
+    requiredRole: 1
     maxItems: 15
-    fuelMax: 440
+    fuelMax: 445
     damageMax: 45
     avoidBonus: 10
-    speedMax: 1800
-    accel: 3
+    speedMax: 1700
+    accel: 2
     weapons: 2
+    radarRange: 450
+    radarChance: 35
+    sightRange: 300
     refuelRate: 40
     repairRate: 2
     transferTime: 96
@@ -186,6 +195,7 @@ crafts:
     soldiers: 1
     vehicles: 0
     pilots: 1
+    requiredRole: 1
     maxItems: 999
     sprite: 3
     fuelMax: 1000

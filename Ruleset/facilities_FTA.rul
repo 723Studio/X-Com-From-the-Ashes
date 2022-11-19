@@ -29,11 +29,12 @@ facilities:
     buildTime: 40
     monthlyCost: 13000
     canBeBuiltOver: true
-    storage: 5
+    storage: 10
     storageTiles: [[-1, -1, -1]]
-    labs: 8
+    labs: 7
     manaRecoveryPerDay: 1
-    rightClickActionType: 3
+    rightClickActionType: 8 #for FtA it is link to intelligence
+    interrogationSpace: 1
     radarRange: 10800
     radarChance: 2
     mapName: XBASF_01
@@ -52,9 +53,9 @@ facilities:
      STR_BIOLOGY_EQUIPMENT:
        build: 1
        refund: 1         
-    buildCost: 430000
+    buildCost: 480000
     buildTime: 32
-    monthlyCost: 17000
+    monthlyCost: 19000
     labs: 5
     mapName: XBASF_07
   - type: STR_PRISON_CELLS
@@ -65,10 +66,9 @@ facilities:
     buildCost: 260000
     buildTime: 16
     monthlyCost: 5000
-    aliens: 10
-    prisonType: 1
-    labs: 1
-    storage: 2
+    interrogationSpace: 2
+    ftaPrisonSpace: 10
+    storage: 15
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
     mapName: XBASF_03
@@ -206,13 +206,14 @@ facilities:
     spriteShape: 1
     spriteFacility: 307
     provideBaseFunc: [WORK]
-    requires:
-      - STR_FACILITIES_BLUEPRINTS
-      - STR_WORKSHOP
+    # requires:
+    #   - STR_FACILITIES_BLUEPRINTS
+    #   - STR_WORKSHOP
     buildCost: 220000
     buildTime: 15
     monthlyCost: 7000
     workshops: 12
+    manufacture: STR_WORKSHOP
     mapName: XBASE_03 #FIXME - make map!
   - type: STR_ADVANCED_WORKSHOP
     spriteShape: 1

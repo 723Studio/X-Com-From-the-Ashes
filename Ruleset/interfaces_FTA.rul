@@ -18,6 +18,24 @@ interfaces:
         color: 239   # bright green
       - id: name
         color: 138   # yellow
+  - type: pilotsList
+    backgroundImage: BACK14.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 3     # pink
+      - id: window
+        color: 218   # blue
+      - id: text1
+        color: 218   # blue
+      - id: text2
+        color: 213   # gold
+      - id: list
+        color: 218   # blue
+        color2: 246  # purple
+        border: 241  # pink
+      - id: button
+        color: 218   # blue
   - type: covertOperationsMenu
     backgroundImage: COVEROPSHQ_BACKGROUND.SCR #BACK05.SCR
     palette: PAL_BASESCAPE
@@ -186,6 +204,505 @@ interfaces:
         color: 138   # yellow
       - id: button
         color: 133   # minty green
+  - type: soldierInfo
+    palette: PAL_BASESCAPE
+    elements:
+      - id: text1
+        color: 218   # blue
+        color2: 208  # white
+      - id: text2
+        color: 241   # pink
+      - id: numbers
+        color: 208   # white
+      - id: button
+        color: 246   # purple
+      - id: barTUs
+        color: 52
+        color2: 56
+        border: 48
+      - id: barEnergy
+        color: 148
+        color2: 152
+        border: 144
+      - id: barHealth
+        color: 36
+        color2: 40
+        border: 32
+      - id: barBravery
+        color: 68
+        color2: 72
+        border: 64
+      - id: barReactions
+        color: 20
+        color2: 24
+        border: 16
+      - id: barFiring
+        color: 132
+        color2: 136
+        border: 128
+      - id: barThrowing
+        color: 164
+        color2: 168
+        border: 160
+      - id: barMelee
+        color: 68
+        color2: 72
+        border: 64
+      - id: barStrength
+        color: 84
+        color2: 88
+        border: 80
+      - id: barMana
+        color: 132
+        color2: 136
+        border: 128
+      - id: barPsiStrength
+        color: 180
+        color2: 184
+        border: 176
+      - id: barPsiSkill
+        color: 180
+        color2: 184
+        border: 176
+      - id: barManeuvering
+        color: 148
+        color2: 152
+        border: 144
+      - id: bartMissiles
+        color: 134
+        color2: 137
+        border: 130
+      - id: barDogfight
+        color: 100
+        color2: 103
+        border: 96
+      - id: barTracking
+        color: 52
+        color2: 55
+        border: 48
+      - id: barCooperation
+        color: 83
+        color2: 86
+        border: 80
+      - id: barBeams
+        color: 36
+        color2: 39
+        border: 32
+      - id: barSynaptic
+        color: 243
+        color2: 244
+        border: 242
+      - id: barGravity
+        color: 215
+        color2: 216
+        border: 214
+      - id: barStealth
+        color: 220
+        color2: 138
+        border: 219
+      - id: barPerseption
+        color: 20
+        color2: 24
+        border: 16
+      - id: barCharisma
+        color: 36
+        color2: 40
+        border: 32
+      - id: barInvestigation
+        color: 68
+        color2: 72
+        border: 80
+      - id: barDeception
+        color: 148
+        color2: 151
+        border: 144
+      - id: barInterrogation
+        color: 240
+        color2: 15
+        border: 241
+      - id: barPhysics
+        color: 220
+        color2: 138
+        border: 219
+      - id: barChemistry
+        color: 20
+        color2: 24
+        border: 16
+      - id: barBiology
+        color: 36
+        color2: 40
+        border: 32
+      - id: barInsight
+        color: 68
+        color2: 72
+        border: 80
+      - id: barData
+        color: 148
+        color2: 151
+        border: 144
+      - id: barComputers
+        color: 240
+        color2: 15
+        border: 241
+      - id: barTactics
+        # color: 58
+        # color2: 53
+        # border: 49
+        color: 62
+        color2: 57
+        border: 50
+      - id: barMaterials
+        color: 215
+        color2: 216
+        border: 214
+      - id: barDesigning
+        color: 84
+        color2: 88
+        border: 1
+      - id: barAlienTech
+        color: 52
+        color2: 56
+        border: 48
+      - id: barPsionics
+        color: 248
+        color2: 249
+        border: 247
+      - id: barXenolinguistics
+        color: 99
+        color2: 102
+        border: 96
+      - id: barWeaponry
+        color: 220
+        color2: 138
+        border: 219
+      - id: barExplosives
+        color: 20
+        color2: 24
+        border: 16
+      - id: barMicroelectronics
+        color: 36
+        color2: 40
+        border: 32
+      - id: barMetallurgy
+        color: 68
+        color2: 72
+        border: 80
+      - id: barProcessing
+        color: 148
+        color2: 151
+        border: 144
+      - id: barEfficiency
+        color: 240
+        color2: 15
+        border: 241
+      - id: barDiligence
+        # color: 58
+        # color2: 53
+        # border: 49
+        color: 62
+        color2: 57
+        border: 50
+      - id: barHacking
+        color: 215
+        color2: 216
+        border: 214
+      - id: barConstruction
+        color: 180
+        color2: 183
+        border: 176
+      - id: barReverseEngineering
+        color: 84
+        color2: 88
+        border: 1
+      - id: errorPalette
+        color: 0     # brown
+      - id: errorMessage
+        color: 241   # pink
+  - type: scientistsList
+    backgroundImage: BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 1     # burgundy
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 246   # purple
+        color2: 208  # white
+        border: 218  # blue
+      - id: button
+        color: 246   # purple
+      - id: otherDuty
+        color: 218   # blue
+  - type: allocateResearch
+    backgroundImage: BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 1     # burgundy
+      - id: window
+        color: 213   # gold
+      - id: text
+        color: 213   # gold
+        color2: 208  # white
+      - id: button1
+        color: 213   # gold
+      - id: button2
+        color: 218   # blue
+      - id: button3
+        color: 246   # purple
+      - id: list
+        color: 218   # blue
+        color2: 213   # gold
+        border: 208  # white
+  - type: researchAllocateScientists
+    backgroundImage: BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+      - id: otherCraft
+        color: 246   # purple
+  - type: researchDetailsMenu
+    backgroundImage: BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 1     # burgundy
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 246   # purple
+        border: 218  # blue
+      - id: button
+        color: 246   # purple
+  - type: manufactureMenu
+    backgroundImage: BACK17.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 6     # oxide
+      - id: window
+        color: 246   # purple
+      - id: text1
+        color: 246   # purple
+        color2: 208  # white
+      - id: text2
+        color: 241   # pink
+      - id: list
+        color: 218   # blue
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+  - type: manufactureInfo
+    backgroundImage: BACK17.SCR
+    parent: manufactureMenu
+    elements:
+      - id: window
+        color: 241   # pink
+      - id: text
+        color: 241   # pink
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+      - id: button1
+        color: 241   # pink
+      - id: button2
+        color: 246   # purple
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 241  # purple
+  - type: manufactureAllocateEngineers
+    backgroundImage: BACK17.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+      - id: button2
+        color: 218   # purple
+      - id: otherCraft
+        color: 246   # purple
+
+  - type: intelMenu #TODO
+    backgroundImage: COVEROPSHQ_BACKGROUND.SCR #BACK05.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 7     # violet
+      - id: window
+        color: 213   # gold
+      - id: text
+        color: 213   # gold
+        color2: 208  # white
+      - id: list
+        color: 246   # purple
+        color2: 213  # gold
+      - id: button
+        color: 213   # gold
+
+  - type: geoIntelComplete #TODO
+    backgroundImage: BACK05.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 239   # bright green
+      - id: text2
+        color: 138   # yellow
+      - id: button
+        color: 133   # minty green
+  - type: geoIntelAvailable #TODO
+    backgroundImage: BACK05.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 239   # bright green
+      - id: text2
+        color: 138   # yellow
+      - id: button
+        color: 133   # minty green
+  - type: geoPrisonerReportNormal #TODO
+    backgroundImage: BACK05.SCR
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 239   # bright green
+      - id: text2
+        color: 138   # yellow
+      - id: button
+        color: 133   # minty green
+  - type: geoPrisonerReportDeath #TODO
+    backgroundImage: BACK05.SCR
+    elements:
+      - id: palette
+        color: 2     # brown
+      - id: window
+        color: 239   # bright green
+      - id: text1
+        color: 239   # bright green
+      - id: text2
+        color: 138   # yellow
+      - id: button
+        color: 133   # minty green
+  - type: prisonManagement #TODO
+    backgroundImage: PRISON_BACKGROUND.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 5     # metal
+      - id: window
+        color: 246   # purple
+      - id: text1
+        color: 218   # blue
+        color2: 208  # white
+      - id: text2
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 246   # purple
+      - id: button
+        color: 218   # blue
+  - type: prisonerInfo #TODO
+    backgroundImage: PRISON_BACKGROUND.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 5     # metal
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button1
+        color: 218   # blue
+      - id: button2
+        border: 218   # blue
+      - id: button3
+        color: 218   # blue
+      - id: buttonDisabled
+        color: 6   # grey
+  - type: allocateAgentPrison
+    backgroundImage: PRISON_BACKGROUND.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+      - id: otherCraft
+        color: 246   # purple
+  - type: prisonerAllocateAgents
+    backgroundImage: PRISON_BACKGROUND.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+      - id: otherCraft
+        color: 246   # purple
+
   - type: storesInfo
     backgroundImage: STORES_STATE.SCR
     palette: PAL_BASESCAPE
@@ -218,6 +735,7 @@ interfaces:
         color: 246   # purple
       - id: button
         color: 218   # blue
+
   - type: hacking
     palette: PAL_BATTLESCAPE
     elements:
@@ -426,4 +944,3 @@ interfaces:
         color: 52
       - id: battleObjects
         color: 228
-

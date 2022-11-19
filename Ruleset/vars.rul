@@ -1,6 +1,7 @@
 ﻿ftaGame: true # a new property that enables all FTA stuff
 ftaGameLength: 8
 ironManEnabled: false
+requiredExtendedVersion: "FtA"
 #Campaign
 startingTime:
   second: 34
@@ -13,8 +14,12 @@ startingTime:
 initialFunding: 532
 baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
-ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION # a new property - ufopedia would be available after this research discovered
+ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION
 psiUnlockResearch: STR_PSIONIC
+xenologyUnlockResearch: STR_TODOIUM
+craftsBeamUnlockResearch: STR_TODOIUM
+craftSynapseUnlockResearch: STR_TODOIUM
+craftGravControlUnlockResearch: STR_TODOIUM
 allowAlienBasesOnWrongTextures: false
 chanceToStopRetaliation: 70
 lessAliensDuringBaseDefense: true
@@ -31,6 +36,15 @@ costHireEngineer: 70000
 costScientist: 8000
 costHireScientist: 120000
 displayCustomCategories: 1
+pilotBraveryThresholds: [80, 50, 20]
+pilotAccuracyZeroPoint: 30 #used for both dogfight and missiles
+pilotAccuracyRange: 40
+pilotReactionsZeroPoint: 40 #used for manuevering
+pilotReactionsRange: 60
+pilotTrackingZeroPoint: 35
+pilotTrackingRange: 60
+pilotTacticsZeroPoint: 20
+pilotTacticsRange: 20
 
 #Interception
 drawEnemyRadarCircles: 0
@@ -194,17 +208,17 @@ fixedUserOptions:
   oxceLinks: true
   oxceUpdateCheck: false
   noAlienPanicMessagesL: true
+  allowBuildingQueue: false
+  aggressiveRetaliation: false
+  battleAutoEnd: false
+  fieldPromotions: true
+  noAlienPanicMessages: true
 
 recommendedUserOptions:
   playIntro: true
-  aggressiveRetaliation: false
-  allowBuildingQueue: false
   canTransferCraftsWhileAirborne: true
-  battleAutoEnd: true
-  fieldPromotions: true
   strafe: true
   forceFire: true
-  noAlienPanicMessages: true
   oxceEnableOffCentreShooting: true
   oxceHighlightNewTopics: true
   weaponSelfDestruction: false

@@ -286,6 +286,8 @@ manufacture:
     space: 1
     time: 15
     cost: 240
+    stats:
+      metallurgy: 30
     producedItems:
       STR_SPARE_PARTS: 1
     listOrder: 220030
@@ -361,4 +363,12 @@ manufacture:
       STR_PLASTIC_CARD: 1
     listOrder: 220040
 
-#misc
+#facility
+  - name: STR_WORKSHOP
+    requires:
+      - STR_TROLLIUM
+    space: 0
+    time: 40000
+    cost: 0
+    stats:
+      construction: 40

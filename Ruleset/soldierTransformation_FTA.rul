@@ -33,7 +33,7 @@ soldierTransformation:
       - STR_HEAVY_TRAINING
       - STR_ASSAULT_TRAINING
       - STR_RANGER_TRAINING
-      - STR_SPECIALIST_TRAINING
+      - STR_SUPPORT_TRAINING
   - name: STR_HEAVY_TRAINING
     minRank: 1
     transformationTime: 408
@@ -70,7 +70,7 @@ soldierTransformation:
       - STR_HEAVY_TRAINING
       - STR_ASSAULT_TRAINING
       - STR_RANGER_TRAINING
-      - STR_SPECIALIST_TRAINING
+      - STR_SUPPORT_TRAINING
   - name: STR_ASSAULT_TRAINING
     minRank: 1
     transformationTime: 408
@@ -105,7 +105,7 @@ soldierTransformation:
       - STR_HEAVY_TRAINING
       - STR_ASSAULT_TRAINING
       - STR_RANGER_TRAINING
-      - STR_SPECIALIST_TRAINING
+      - STR_SUPPORT_TRAINING
   - name: STR_RANGER_TRAINING
     minRank: 1
     transformationTime: 408
@@ -141,11 +141,11 @@ soldierTransformation:
       - STR_HEAVY_TRAINING
       - STR_ASSAULT_TRAINING
       - STR_RANGER_TRAINING
-      - STR_SPECIALIST_TRAINING
-  - name: STR_SPECIALIST_TRAINING
+      - STR_SUPPORT_TRAINING
+  - name: STR_SUPPORT_TRAINING
     minRank: 1
     transformationTime: 408
-    description: STR_SPECIALIST_TRAINING_DESC
+    description: STR_SUPPORT_TRAINING_DESC
     requires:
       - STR_MILITARY_STATUS_REPORT
     requiredMinStats:
@@ -169,13 +169,13 @@ soldierTransformation:
       tu: 2
       bravery: 20
       throwing: 8
-    soldierBonusType: STR_SPECIALIST
+    soldierBonusType: STR_SUPPORT
     forbiddenPreviousTransformations:
       - STR_SNIPER_TRAINING
       - STR_HEAVY_TRAINING
       - STR_ASSAULT_TRAINING
       - STR_RANGER_TRAINING
-      - STR_SPECIALIST_TRAINING
+      - STR_SUPPORT_TRAINING
   - name: STR_UNARMED_COMBAT_TRAINING
     minRank: 1
     transformationTime: 250
