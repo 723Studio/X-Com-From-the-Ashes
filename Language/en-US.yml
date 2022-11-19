@@ -396,9 +396,7 @@ en-US:
   STR_OVER_ITEM_SIZE_LIMIT:
     one: "NO MORE EQUIPMENT ALLOWED!{SMALLLINE}The maximum total item size for this covert operation is exceeded.{NEWLINE}You can take items with a total size of less than {N}."
     other: "NO MORE EQUIPMENT ALLOWED!{SMALLLINE}The maximum total item size for this covert operation is exceeded.{NEWLINE}You can take items with a total size of less than {N}."
-  STR_SCIENTISTS_N: "Scientists>{ALT}{0}"
-  STR_ENGINEERS_N: "Engineers>{ALT}{0}"
-  STR_SOLDIERS_N: "Soldiers on operation:"
+  STR_SOLDIERS_N: "Personnel on operation:"
   STR_ADDITIONAL_INFO: "Additional info:"
   STR_OPERATION_PROGRESS: "Day of operation>{ALT}{0}"
   STR_DANGER_LEVEL: "Danger level>{ALT}{0}"
