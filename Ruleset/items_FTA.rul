@@ -4755,6 +4755,29 @@ items:
     attraction: 15
     listOrder: 25030
     landOnly: true
+  - type: STR_HACKING_TOOL
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
+    requiresBuy:
+        - STR_TODOIUM
+    size: 0.4
+    weight: 1
+    landOnly: true
+    bigSprite: 304 #temp
+    floorSprite: 304 #temp
+    handSprite: 504 #temp
+    battleType: 12 #new type for hacking
+    invWidth: 2
+    invHeight: 1
+    maxRange: 20
+    costUse:
+      time: 20
+    flatRate: false
+    attraction: 5
+    hackingHp: 25
+    hackingTu: 250
+    LOSRequired: true
+    #experienceTrainingMode: 19
+    listOrder: 48150
 
 #built-in weapons
   - type: STR_UNARMED
