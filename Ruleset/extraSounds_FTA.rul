@@ -115,3 +115,6 @@ extraSounds:
       166: Resources/Armors/Enemies/Monsters/AM_fire.ogg
       167: Resources/Weapons/Sounds/arasaka3000.ogg
       168: Resources/Weapons/Sounds/arasaka3000r.ogg
+      169: Resources/Armors/Enemies/Monsters/SWARMIDS_death.wav  
+      170: Resources/Armors/Enemies/Monsters/pkn_slice.wav
+      171: Resources/Armors/Enemies/Monsters/EnergyWispMove.ogg  

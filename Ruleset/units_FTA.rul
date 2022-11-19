@@ -1335,7 +1335,45 @@ units:
     value: 20
     builtInWeaponSets:
       - - STR_SWARMIDS_LARGE_WEAPON
-
+  - type: STR_ENERGY_WISP
+    race: STR_ENERGY_WISP
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 120
+      stamina: 130
+      health: 20
+      bravery: 110
+      reactions: 35
+      firing: 0
+      throwing: 0
+      strength: 40
+      psiStrength: 100
+      psiSkill: 0
+      melee: 80
+    statsRandom:
+      tu: 10
+      stamina: 15
+      health: 3
+      bravery: 10
+      reactions: 3
+      firing: 0
+      throwing: 0
+      strength: 3
+      melee: 10
+      psiStrength: 4
+    armor: STR_ENERGY_WISP_ARMOR
+    standHeight: 17
+    floatHeight: 5
+    kneelHeight: 11
+    value: 10
+    deathSound: 161 # TODO 
+    moveSound: 161
+    intelligence: 2
+    aggression: 8
+    energyRecovery: 50
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ENERGY_WISP_WEAPON
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
     race: STR_HUMAN

@@ -1313,7 +1313,13 @@ en-US:
   STR_AMPHIBIAN_ARMOR: "Amphibian Combat Analysis"
   STR_AMPHIBIAN_ARMOR_UFOPEDIA: "Although this creature lacks any meaningful natural defense against firearms, its ability to spit neuroparalytic venom makes it a significant threat on the battlefield. Because of its large size and impressive muscle mass, weapons with high power are recommended."
   STR_AMPHIBIAN_WEAPON: "Amphibian Spit"
-
+  STR_ENERGY_WISP: "Energy Wisp"
+  STR_ENERGY_WISP_CORPSE: "Energy Wisp Corpse"
+  STR_ENERGY_WISP_UFOPEDIA: #TODO
+  STR_ENERGY_WISP_AUTOPSY: "Energy Wisp Autopsy"
+  STR_ENERGY_WISP_AUTOPSY_UFOPEDIA: #TODO
+  STR_ENERGY_WISP_ARMOR: "Energy Wisp Combat Analysis"
+  STR_ENERGY_WISP_ARMOR_UFOPEDIA: #TODO
 #other units
   STR_RESISTANCE_AGENT: "Resistance Agent"
   STR_RESISTANCE_AGENT_VIP: "Resistance Agent"

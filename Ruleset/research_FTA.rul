@@ -707,6 +707,12 @@ research:
       - STR_ARMADILLO_CORPSE
       - STR_AMPHIBIAN_CORPSE
       - STR_SWARMIDS_CORPSE
+      - STR_ENERGY_WISP_CORPSE
+  - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
+    cost: 288
+    points: 17
+    dependencies:
+      - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_STRANGE_CREATURE #for future tech tree dev
     cost: 0
     points: 0
@@ -1176,6 +1182,25 @@ research:
     dependencies:
       - STR_INTEL_STATUS_REPORT
     listOrder: 6180
+  - name: STR_ENERGY_WISP_CORPSE
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 750
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 6190
+  - name: STR_ENERGY_WISP
+    requiresBaseFunc: [ BIOLAB ]
+    cost: 820
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    listOrder: 6200
+
   #enemies - aliens
   #combat analysis 
   - name: STR_MIB_AGENT_ARMOR
@@ -1275,6 +1300,12 @@ research:
     dependencies:
       - STR_SWARMIDS_SMALL
       - STR_SWARMIDS_CORPSE
+  - name: STR_ENERGY_WISP_ARMOR
+    cost: 180
+    points: 5
+    dependencies:
+      - STR_ENERGY_WISP
+      - STR_ENERGY_WISP_CORPSE
 #weapons and equipment
   - name: STR_WRENCH
     cost: 5

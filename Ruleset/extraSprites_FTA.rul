@@ -229,7 +229,7 @@ extraSprites:
       137: Resources/Armors/Enemies/Army/bigob_ARMY_FILED_OFFICER.png
       138: Resources/Armors/Xcom/ArmorVest/bigob_ARMORED_VEST.png
       139: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCOUT.png
-
+      140: Resources/Armors/Enemies/Monsters/bigob_EnergyWispCorpse.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -397,7 +397,8 @@ extraSprites:
       463: Resources/Weapons/Alien/Utilities/bigob_AlienProxyMine.png
       464: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifle.png
       465: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifleClip.png
-
+      466: Resources/Armors/Enemies/Monsters/bigob_SwarmidWeapon.png
+      467: Resources/UI/Blanks/bigob_Blank.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -442,6 +443,7 @@ extraSprites:
       137: Resources/Armors/Enemies/Army/floorob_ARMY_FILED_OFFICER.png
       138: Resources/Armors/Xcom/ArmorVest/floorob_ARMORED_VEST.png
       139: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SCOUT.png
+      140: Resources/Armors/Enemies/Monsters/floorob_EnergyWisp_Corpse.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -1089,6 +1091,18 @@ extraSprites:
     height: 200
     files:
       0: Resources/UfopediaPics/Enemies/ufopedia_AM_AUTOPSY_CPAL.png 
+  - type: UFOPEDIA_IMG_ENERGY_WISP_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_ENERGY_WISP_CPAL.png
+  - type: UFOPEDIA_IMG_ENERGY_WISP_AUTOPSY_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaPics/Enemies/ufopedia_ENERGY_WISP_AUTOPSY_CPAL.png 
   - type: UFOPEDIA_IMG_ZOMBIE_STERILE
     singleImage: true
     width: 320
@@ -1465,6 +1479,17 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors/Enemies/Monsters/inventory_SWARMIDS.png
+  - type: ENERGY_WISP.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Armors/Enemies/Monsters/EnergyWisp.png
+  - type: inventory_ENERGY_WISP
+    singleImage: true
+    files:
+      0: Resources/Armors/Enemies/Monsters/inventory_EnergyWisp.png
 #resistance
   - type: RESISTANCE_AGENT.PCK
     width: 512
