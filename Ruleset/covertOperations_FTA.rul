@@ -2,10 +2,11 @@ covertOperations:
 #main path
   - name: STR_CHASING_MIB
     description: STR_CHASING_MIB_DESCRIPTION
+    categories: [STR_INVESTIGATION]
     requires:
       - STR_COVERT_OPERATIONS
-    soldierSlots: 2
-    optionalSoldierSlots: 2
+    soldiersMin: 2
+    soldiersMax: 4
     optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
     baseChances: 70
@@ -24,10 +25,11 @@ covertOperations:
 
   - name: STR_REGIONAL_HQ_AREA_SURVEY
     description: STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
+    categories: [STR_INVESTIGATION]
     requires:
       - STR_MIB_CHASING_SUCCESS
-    soldierSlots: 3
-    optionalSoldierSlots: 2
+    soldiersMin: 3
+    soldiersMax: 5
     requiresBaseFunc: [HQ]
     baseChances: 60
     danger: 800
@@ -47,10 +49,11 @@ covertOperations:
     failureScore: -120
   - name: STR_REGIONAL_HQ_AREA_SURVEY_LONG
     description: STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
+    categories: [STR_INVESTIGATION]
     requires:
       - STR_MIB_CHASING_FAIL
-    soldierSlots: 3
-    optionalSoldierSlots: 2
+    soldiersMin: 3
+    soldiersMax: 5
     requiresBaseFunc: [HQ]
     baseChances: 45
     danger: 10
@@ -71,9 +74,11 @@ covertOperations:
 
   - name: STR_REGIONAL_HQ
     description: STR_REGIONAL_HQ_DESCRIPTION
+    categories: [STR_INVESTIGATION]
     requires:
       - STR_REGIONAL_HQ_LOCATION
-    soldierSlots: 3
+    soldiersMin: 3
+    soldiersMax: 4
     scientistSlots: 1
     baseChances: 45
     requiresBaseFunc: [HQ]
@@ -93,9 +98,11 @@ covertOperations:
    
   - name: STR_REGIONAL_HQ_SURVEY
     description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
+    categories: [STR_INVESTIGATION, STR_INFILTRATION, STR_ENGINEERING]
     requires:
       - STR_REQ_HQ_LOCATION_SUCCESS
-    soldierSlots: 3
+    soldiersMin: 3
+    soldiersMax: 4
     scientistSlots: 1
     baseChances: 70
     requiresBaseFunc: [HQ]
@@ -113,9 +120,11 @@ covertOperations:
       - STR_REGIONAL_HQ_SURVEY_FAILED
   - name: STR_REGIONAL_HQ_SURVEY_HARD
     description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
+    categories: [STR_INVESTIGATION, STR_INFILTRATION, STR_ENGINEERING]
     requires:
       - STR_REQ_HQ_LOCATION_FAILED
-    soldierSlots: 4
+    soldiersMin: 4
+    soldiersMax: 5
     scientistSlots: 1
     baseChances: 60
     requiresBaseFunc: [HQ]
@@ -133,10 +142,11 @@ covertOperations:
       - STR_REGIONAL_HQ_SURVEY_FAILED
   - name: STR_RESISTANCE_CELL_CREATION
     description: STR_RESISTANCE_CELL_CREATION_DESCRIPTION
+    categories: [STR_INFILTRATION, STR_NEGOTIATION]
     requires:
       - STR_RESISTANCE_CELL_CREATION_PREREQ
-    soldierSlots: 2
-    optionalSoldierSlots: 2
+    soldiersMin: 2
+    soldiersMax: 3
     optionalSoldierEffect: 5
     requiresBaseFunc: [HQ]
     baseChances: 60
@@ -160,10 +170,11 @@ covertOperations:
 
   - name: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION
     description: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION
+    categories: [STR_INVESTIGATION]
     requires:
       - STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
-    soldierSlots: 2
-    optionalSoldierSlots: 2
+    soldiersMin: 2
+    soldiersMax: 4
     optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
     baseChances: 40
@@ -178,10 +189,11 @@ covertOperations:
     trapChance: 100
   - name: STR_EX_COUNCIL_DATA_VAULT_CONVEY
     description: STR_EX_COUNCIL_DATA_VAULT_CONVEY_DESCRIPTION
+    categories: [STR_INFILTRATION]
     requires:
       - STR_EX_COUNCIL_DATA_VAULT_SUCCESS
-    soldierSlots: 2
-    optionalSoldierSlots: 2
+    soldiersMin: 2
+    soldiersMax: 4
     optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
     requiredItems:
@@ -202,10 +214,11 @@ covertOperations:
 
   - name: STR_CULT_INVESTIGATION
     description: STR_CULT_INVESTIGATION_DESCRIPTION
+    categories: [STR_INVESTIGATION]
     requires:
       - STR_CULT_INVESTIGATION
-    soldierSlots: 2
-    optionalSoldierSlots: 2
+    soldiersMin: 2
+    soldiersMax: 4
     optionalSoldierEffect: 1
     scientistSlots: 1
     requiresBaseFunc: [HQ]
@@ -223,9 +236,11 @@ covertOperations:
     trapChance: 100
   - name: STR_STEAL_OSPREY_OPERATION
     description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
+    categories: [STR_NEGOTIATION, STR_DECEPTION, STR_ENGINEERING]
     requires:
       - STR_STEAL_OSPREY_PREREQ
-    soldierSlots: 6
+    soldiersMin: 4
+    soldiersMax: 6
     requiresBaseFunc: [HQ]
     baseChances: 45
     danger: 0
@@ -243,10 +258,11 @@ covertOperations:
 
   - name: STR_INFILTRATING_MILITARY_RND
     description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
+    categories: [STR_INFILTRATION, STR_DECEPTION]
     requires:
       - STR_INFILTRATING_MILITARY_RND_PREREQ
-    soldierSlots: 4
-    optionalSoldierSlots: 4
+    soldiersMin: 4
+    soldiersMax: 8
     optionalSoldierEffect: -2
     requiresBaseFunc: [HQ]
     baseChances: 60
@@ -266,12 +282,13 @@ covertOperations:
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
+    categories: [STR_INVESTIGATION]
     requires:
       - STR_MONSTER_HUNT_START
     baseChances: 60
     costs: 130
-    soldierSlots: 2
-    optionalSoldierSlots: 2
+    soldiersMin: 2
+    soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 0
     requiredItems:
@@ -292,12 +309,13 @@ covertOperations:
     trapChance: 100
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA
     description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
+    categories: [STR_INVESTIGATION, STR_NEGOTIATION]
     requires:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
     baseChances: 60
     costs: 420
-    soldierSlots: 3
-    optionalSoldierSlots: 2
+    soldiersMin: 3
+    soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
     scientistSlots: 1
@@ -321,12 +339,13 @@ covertOperations:
     failureEvent: STR_MONSTER_RE_HUNT_CHUPA
   - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
     description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
+    categories: [STR_INVESTIGATION, STR_NEGOTIATION]
     requires:
       - STR_MONSTER_HUNT_RUMORS_ARMADILLO
     baseChances: 70
     costs: 460
-    soldierSlots: 3
-    optionalSoldierSlots: 2
+    soldiersMin: 3
+    soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
     scientistSlots: 1
@@ -350,12 +369,13 @@ covertOperations:
     failureEvent: STR_MONSTER_RE_HUNT_ARMADILLO
   - name: STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
     description: STR_MONSTER_HUNT_TROPIC_ECO_DESCRIPTION
+    categories: [STR_INVESTIGATION, STR_NEGOTIATION]
     requires:
       - STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
     baseChances: 55
     costs: 520
-    soldierSlots: 3
-    optionalSoldierSlots: 2
+    soldiersMin: 3
+    soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
     scientistSlots: 1
@@ -379,12 +399,13 @@ covertOperations:
     failureEvent: STR_MONSTER_RE_HUNT_AMPHIBIAN
   - name: STR_MONSTER_HUNT_RUMORS_SWARMID
     description: STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION
+    categories: [STR_INVESTIGATION, STR_NEGOTIATION]
     requires:
       - STR_MONSTER_HUNT_RUMORS_SWARMID
     baseChances: 65
     costs: 420
-    soldierSlots: 3
-    optionalSoldierSlots: 2
+    soldiersMin: 3
+    soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
     scientistSlots: 1
@@ -409,11 +430,12 @@ covertOperations:
 #supplies gathering
   - name: STR_LAB_EQUIPMENT_ACQUISITION
     description: STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION
+    categories: [STR_NEGOTIATION]
     requires:
       - STR_COVERT_OPERATIONS
       - STR_BIOLAB_PREREQ
-    soldierSlots: 2
-    optionalSoldierSlots: 1
+    soldiersMin: 2
+    soldiersMax: 3
     requiresBaseFunc: [HQ]
     scientistSlots: 1
     allowedArmor:
@@ -438,11 +460,12 @@ covertOperations:
     failureEvent: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
   - name: STR_BIOLAB_EQUIPMENT_ACQUISITION
     description: STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION
+    categories: [STR_NEGOTIATION]
     requires:
       - STR_COVERT_OPERATIONS
       - STR_BIOLAB_PREREQ
-    soldierSlots: 2
-    optionalSoldierSlots: 1
+    soldiersMin: 2
+    soldiersMax: 3
     requiresBaseFunc: [HQ]
     scientistSlots: 1
     allowedArmor:
@@ -469,10 +492,12 @@ covertOperations:
 #resistance
   - name: STR_MILITARY_WEAPONRY_ACQUISITION
     description: STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION
+    categories: [STR_NEGOTIATION, STR_DECEPTION]
     requires:
       - STR_COVERT_OPERATIONS
       - STR_RESISTANCE_WEAPONRY_PREREQ
-    soldierSlots: 2
+    soldiersMin: 2
+    soldiersMax: 3
     baseChances: 70
     requiresBaseFunc: [HQ]
     allowedArmor:
@@ -499,12 +524,12 @@ covertOperations:
   #   #itemSpaceLimit: 5
   #   baseChances: 0
   #   costs: 20
-  #   soldierSlots: 2
+  #   soldiersMin: 2
   #   danger: 5
   #   requiresBaseFunc: [HQ]
   #   requiredReputationLvl:
   #     STR_RESISTANCE: 1
-  #   optionalSoldierSlots: 2
+  #   soldiersMax: 2
   #   scientistSlots: 2
   #   engineerSlots: 1
   #   requiredItems:

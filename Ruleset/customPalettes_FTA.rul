@@ -1,0 +1,7 @@
+﻿customPalettes:
+  # - type: PAL_BASESCAPE_FTA
+  #   target: PAL_BASESCAPE
+  #   file: Resources/Pals/PAL_BASESCAPE_FTA.pal
+  - type: PAL_BASE_INFO
+    target: PAL_BASE_INFO
+    file: Resources/Pals/PAL_BASE_INFO.pal

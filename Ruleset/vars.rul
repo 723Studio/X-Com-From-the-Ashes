@@ -200,7 +200,7 @@ fixedUserOptions:
   canSellLiveAliens: false #Consider
   psiStrengthEval: false
   retainCorpses: true #Consider
-  sneakyAI: true
+  sneakyAI: false
   battleUFOExtenderAccuracy: true
   includePrimeStateInSavedLayout: false
   battleExplosionHeight: 3

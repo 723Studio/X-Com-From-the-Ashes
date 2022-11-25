@@ -21,42 +21,24 @@ extraSprites:
     subY: 32
     files:
       0: Resources/Geoscape/FTA_GLOBE_TEXTURE.png
-  - type: BigBurnIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/burning.png
-  - type: BigStunIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/Zzz.png
-  - type: BigWoundIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/Bleed.png
-  - type: BigShockIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/Shock.png
-  - type: FloorBurnIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/burning.png
-  - type: FloorStunIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/Zzz.png
-  - type: FloorWoundIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/Bleed.png
+  - typeSingle: BigBurnIndicator
+    fileSingle: Resources/UI/burning.png
+  - typeSingle: BigStunIndicator
+    fileSingle: Resources/UI/Zzz.png
+  - typeSingle: BigWoundIndicator
+    fileSingle: Resources/UI/Bleed.png
+  - typeSingle: BigShockIndicator
+    fileSingle: Resources/UI/Shock.png
+  - typeSingle: FloorBurnIndicator
+    fileSingle: Resources/UI/burning.png
+  - typeSingle: FloorStunIndicator
+    fileSingle: Resources/UI/Zzz.png
+  - typeSingle: FloorWoundIndicator
+    fileSingle: Resources/UI/Bleed.png
   - type: FloorShockIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/Shock.png
-  - type: UnitWarnedIndicator
-    singleImage: true
-    files:
-      0: Resources/UI/Warn.png
+    fileSingle: Resources/UI/Shock.png
+  - typeSingle: UnitWarnedIndicator
+    fileSingle: Resources/UI/Warn.png
   - type: CustomArmorPreviews
     width: 71
     height: 32
@@ -66,11 +48,8 @@ extraSprites:
       0: Resources/UI/GUI_Soldiers.png
   - typeSingle: BACK08.SCR
     fileSingle: Resources/UI/EQP_Blue7.png
-  - type: AvatarBackground
-    singleImage: true
-    files:
-      0: Resources/UI/avatar-background.png
-
+  - typeSingle: AvatarBackground
+    fileSingle: Resources/UI/avatar-background.png
   - type: BASEBITS.PCK
     width: 192
     height: 160
@@ -78,7 +57,6 @@ extraSprites:
     subY: 32
     files:
       5000: Resources/UI/ranks_basescape.png
-
   - type: SMOKE.PCK
     width: 192
     height: 200
@@ -86,7 +64,6 @@ extraSprites:
     subY: 40
     files:
       5000: Resources/UI/ranks_battlescape.png
-
   - type: TinyRanks
     width: 42
     height: 35
@@ -108,10 +85,17 @@ extraSprites:
     subY: 8
     files:
       0: Resources/UI/Decorations.png
-  - type: HackingUI
-    singleImage: true
+  - typeSingle: HackingUI
+    fileSingle: Resources/UI/Hacking_UI.png
+  - typeSingle: BaseInfoScreen
+    fileSingle: Resources/UI/base_info.png
+  - type: BaseInfoMinibaseTile
+    width: 16
+    height: 16
+    subX: 16
+    subY: 16
     files:
-      0: Resources/UI/Hacking_UI.png
+      41: Resources/UI/base_info_minibase_tile.png #41 ID is a hardcoded...
 #Projectiles, MeleeAnimations, ExplosionAnimations, HitAnimations, specialIcons
   - type: Projectiles #index step 35
     height: 3

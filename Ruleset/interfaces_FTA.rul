@@ -204,6 +204,29 @@ interfaces:
         color: 138   # yellow
       - id: button
         color: 133   # minty green
+  - type: baseInfoFta
+    palette: PAL_BASE_INFO
+    elements:
+      - id: text1
+        color: 241   # pink
+      - id: text2
+        color: 213   # gold
+      - id: numbers
+        color: 208   # white
+      - id: button
+        color: 246   # purple
+      - id: personnelBars
+        color: 16    # orange
+      - id: facilityBars
+        color: 48    # light green
+      - id: defenceBar
+        color: 32    # sorta red
+      - id: detectionBars
+        color: 128   # pale blue
+      - id: miniBase
+        color: 48    # green
+        color2: 32   # red
+        border: 218  # blue
   - type: soldierInfo
     palette: PAL_BASESCAPE
     elements:
