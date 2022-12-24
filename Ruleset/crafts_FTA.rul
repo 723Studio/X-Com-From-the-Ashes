@@ -18,7 +18,7 @@ crafts:
     avoidBonus: -15
     soldiers: 8
     vehicles: 1
-    pilots: 0
+    pilots: 1
     radarRange: 300
     radarChance: 20
     sightRange: 200
@@ -35,7 +35,7 @@ crafts:
         - BLANKS
         - DRAGONFLY_2
       mapBlocks:
-        - name: DRAGONFLY_2
+        - name: DRAGONFLY_3
           width: 10
           length: 20
     deployment:
@@ -51,6 +51,7 @@ crafts:
       - [3, 12, 1, 0]
       - [4, 13, 1, 0]
       - [4, 14, 1, 6]
+      - [4, 16, 1, 6]
     listOrder: 7380
   - type: STR_STALKER
     sprite: 801
@@ -132,7 +133,7 @@ crafts:
     weapons: 0
     soldiers: 14
     vehicles: 1
-    pilots: 1
+    pilots: 2
     maxItems: 999
     costBuy: 250000
     costRent: 25000

@@ -77,7 +77,7 @@ facilities:
     spriteShape: 1
     spriteFacility: 306
     requires:
-      - STR_CREATURES_CONTAINMENT
+      - STR_CREATURES_CONTAINMENT #hardcoded, do not rename!
     buildCost: 470000
     buildTime: 20
     monthlyCost: 18000
@@ -268,7 +268,7 @@ facilities:
     spriteShape: 1
     spriteFacility: 25
     requires:
-      - STR_ALIEN_CONTAINMENT
+      - STR_ALIEN_CONTAINMENT #hardcoded, do not rename!
     buildCost: 400000
     buildTime: 18
     monthlyCost: 15000

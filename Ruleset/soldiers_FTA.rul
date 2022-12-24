@@ -103,7 +103,7 @@ soldiers:
       #soldier
       tu: 60
       stamina: 50
-      health: 27
+      health: 32
       bravery: 10
       reactions: 40
       firing: 45
@@ -156,7 +156,7 @@ soldiers:
     maxStats:
       tu: 75
       stamina: 80
-      health: 37
+      health: 42
       bravery: 60
       reactions: 60
       firing: 75
@@ -210,7 +210,7 @@ soldiers:
       #soldiers
       tu: 120
       stamina: 130
-      health: 50
+      health: 55
       bravery: 90
       reactions: 100
       firing: 120
@@ -303,7 +303,7 @@ soldiers:
       #soldier
       tu: 55
       stamina: 60
-      health: 25
+      health: 30
       bravery: 10
       reactions: 20
       firing: 30
@@ -334,7 +334,7 @@ soldiers:
     maxStats:
       tu: 70
       stamina: 70
-      health: 32
+      health: 37
       bravery: 50
       reactions: 45
       firing: 50
@@ -384,7 +384,7 @@ soldiers:
       #soldier
       tu: 46
       stamina: 50
-      health: 19
+      health: 24
       bravery: 10
       reactions: 15
       firing: 20
@@ -437,7 +437,7 @@ soldiers:
     maxStats:
       tu: 54
       stamina: 60
-      health: 25
+      health: 30
       bravery: 30
       reactions: 25
       firing: 30
@@ -619,7 +619,7 @@ soldiers:
       #soldier
       tu: 46
       stamina: 50
-      health: 19
+      health: 24
       bravery: 10
       reactions: 15
       firing: 20
@@ -666,7 +666,7 @@ soldiers:
       #soldier
       tu: 54
       stamina: 60
-      health: 25
+      health: 30
       bravery: 30
       reactions: 25
       firing: 30
@@ -725,7 +725,7 @@ soldiers:
     minStats:
       tu: 50
       stamina: 50
-      health: 25
+      health: 30
       bravery: 10
       reactions: 25
       firing: 35
@@ -738,7 +738,7 @@ soldiers:
     maxStats:
       tu: 60
       stamina: 65
-      health: 32
+      health: 42
       bravery: 50
       reactions: 40
       firing: 50
@@ -759,7 +759,7 @@ soldiers:
     minStats:
       tu: 60
       stamina: 65
-      health: 27
+      health: 32
       bravery: 10
       reactions: 40
       firing: 50
@@ -772,7 +772,7 @@ soldiers:
     maxStats:
       tu: 70
       stamina: 75
-      health: 33
+      health: 38
       bravery: 50
       reactions: 50
       firing: 60

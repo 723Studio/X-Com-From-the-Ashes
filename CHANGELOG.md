@@ -38,29 +38,32 @@ Emergency hotfix for critical bugs in content or engine logic.
 
 ### Balance
 
+- Soldiers now have more health
+- No expensive autopilot for Dragonfly
+
 ## 0.2.0.0
 
 ### Balance
 
-- Lowered Stingray range.
-- UFO's improve their shields.
-- General storage and Abandoned lab have more storage space.
+- Lowered Stingray range
+- UFO's improve their shields
+- General storage and Abandoned lab have more storage space
 
 ## 0.1.0.3
 
-- Fixed a bug that caused alien missions from the original game to appear in the game.
-- Cattle mutilation briefing screen image bug fixed.
+- Fixed a bug that caused alien missions from the original game to appear in the game
+- Cattle mutilation briefing screen image bug fixed
 - Minor fixes.
 
 ## 0.1.0.2
 
-- Fixed fundnding change on failing Osprey recovery operation.
-- Combat shield manufacturing profit reduced.
+- Fixed fundnding change on failing Osprey recovery operation
+- Combat shield manufacturing profit reduced
 - Some English texts edited by Garr
 
 ## 0.1.0.1
 
-- Hotfix for bugged loyalty on resolving Chaising MIB operation.
+- Hotfix for bugged loyalty on resolving Chaising MIB operation
 
 ## 0.1.0.0
 

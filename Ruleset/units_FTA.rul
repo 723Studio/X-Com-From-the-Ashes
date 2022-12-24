@@ -1145,7 +1145,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    aggroSound: [141, 142]
+    #aggroSound: [141, 142]
     deathSound: [143, 144]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -1223,7 +1223,7 @@ units:
     standHeight: 18
     kneelHeight: 12
     value: 10
-    aggroSound: [161, 162, 163]
+    #aggroSound: [161, 162, 163]
     deathSound: [164, 165]
     panicSound: [161, 162, 163]
     berserkSound: [161, 162, 163]
@@ -1827,9 +1827,9 @@ units:
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
     stats: #TODO - sync with xcom scientist stats
-      tu: 50
-      stamina: 55
-      health: 22
+      tu: 52
+      stamina: 58
+      health: 26
       bravery: 20
       reactions: 20
       firing: 25
@@ -1916,7 +1916,7 @@ units:
     stats:
       tu: 60
       stamina: 50
-      health: 30
+      health: 35
       bravery: 30
       reactions: 35
       firing: 45
@@ -2035,7 +2035,7 @@ units:
     stats:
       tu: 65
       stamina: 70
-      health: 30
+      health: 35
       bravery: 30
       reactions: 45
       firing: 55

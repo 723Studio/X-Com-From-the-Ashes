@@ -38,6 +38,12 @@ research:
     hidden: true
   - name: STR_INTEL_STATUS_REPORT
     hidden: true
+    getOneFree:
+      - STR_COVERT_OPERATIONS
+  - name: STR_COVERT_OPERATIONS
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    hidden: true
   - name: STR_MILITARY_STATUS_REPORT
     hidden: true
     unlocks:
@@ -175,8 +181,6 @@ research:
     points: 20
     dependencies:
       - STR_INTEL_STATUS_REPORT
-    getOneFree:
-      - STR_COVERT_OPERATIONS
     listOrder: 40
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     requiresBaseFunc: [ HQ ]
@@ -187,11 +191,6 @@ research:
     dependencies:
       - STR_INTEL_STATUS_REPORT
     listOrder: 50
-  - name: STR_COVERT_OPERATIONS
-    requiresBaseFunc: [ HQ ]
-    dependencies:
-      - STR_COMMUNICATION
-    listOrder: 60
   - name: STR_RESISTANCE_CONTACT
     requiresBaseFunc: [ HQ ]
     cost: 260
