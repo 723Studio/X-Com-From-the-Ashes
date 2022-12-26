@@ -368,8 +368,8 @@ soldiers:
     #   dogfight: 25
     #   tracking: 10
     #   tactics: 10
-    armor: STR_JUMPSUIT_UC #TODO
-    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    armor: STR_FLIGHTSUIT_UC
+    armorForAvatar: STR_FLIGHTSUIT_UC
     femaleFrequency: 15
     soldierNames:
       - delete
@@ -487,8 +487,8 @@ soldiers:
       diligence: 30
       alienTech: 0
       reverseEngineering: 0
-    armor: STR_JUMPSUIT_UC #TODO
-    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    armor: STR_AGENT_UNIFORM_UC
+    armorForAvatar: STR_AGENT_UNIFORM_UC
     prisoner: STR_XCOM_SOLDIER_PRISONER
     femaleFrequency: 60
     soldierNames:
@@ -603,8 +603,8 @@ soldiers:
       diligence: 30
       alienTech: 0
       reverseEngineering: 0
-    armor: STR_JUMPSUIT_UC #TODO
-    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    armor: STR_XCOM_LABCOAT_UC
+    armorForAvatar: STR_XCOM_LABCOAT_UC
     femaleFrequency: 60
     soldierNames:
       - delete
@@ -710,8 +710,8 @@ soldiers:
       diligence: 60
       reverseEngineering: 40
       alienTech: 0
-    armor: STR_JUMPSUIT_UC #TODO
-    armorForAvatar: STR_JUMPSUIT_UC #TODO
+    armor: STR_XCOM_ENGINEER_SUIT_UC
+    armorForAvatar: STR_XCOM_ENGINEER_SUIT_UC
     femaleFrequency: 60
     soldierNames:
       - delete

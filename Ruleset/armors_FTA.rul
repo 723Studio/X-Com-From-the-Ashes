@@ -1445,7 +1445,7 @@ armors:
     spriteFaceColor: &SpriteFaceColorAgent [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 160, 160, 160, 160, 96, 96, 96, 96, 160, 160, 160, 160, 96, 96, 96, 96, 160, 163, 160, 158, 16, 16, 20, 16, 101, 101, 160, 104, 96, 96, 96, 96, 160, 160, 163, 163, 176, 176, 145, 96, 96, 95, 163, 160, 176, 96, 98, 96, 160, 95, 163, 163, 97, 96, 97, 96, 159, 95, 161, 161, 96, 96, 16, 96, 160, 160, 161, 161, 96, 96, 96, 98, 99, 101, 160, 163, 100, 101, 99, 98, 160, 101, 161, 162] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteHairGroup: 9
     spriteHairColor: &SpriteHairColorAgent [144, 144, 160, 164, 245, 245, 164, 164, 146, 145, 160, 147, 245, 245, 160, 245, 160, 37, 164, 163, 245, 245, 245, 245, 96, 160, 96, 162, 246, 246, 80, 245, 96, 225, 96, 96, 164, 96, 245, 164, 164, 160, 96, 6, 241, 37, 241, 241, 176, 33, 164, 37, 245, 178, 164, 225, 82, 144, 98, 246, 246, 246, 163, 246, 246, 146, 147, 20, 4, 164, 246, 246, 246, 224, 96, 159, 246, 246, 164, 246, 160, 33, 81, 163, 99, 23, 225, 215, 84, 144, 99, 197, 98, 246, 246, 246] #M0 F0 M1 F1 M2 F2 M3 F3
-    customArmorPreviewIndex: 1
+    customArmorPreviewIndex: 0
     storeItem: STR_NONE
     corpseBattle:
       - STR_CORPSE
@@ -1461,10 +1461,10 @@ armors:
       energy:
         flatHundred: 0.12
         healthCurrent: 0.25
-      stun: &StandardAgentStunRes
+      stun: &StandardSoldierStunRes
         healthCurrent: 0.1
         health: -0.05
-      health:
+      health: &StandardSoldierHPRes
         stunNormalized: -0.08
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
@@ -1472,9 +1472,650 @@ armors:
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_FLIGHTSUIT_UC
+    spriteSheet: FLIGHT_SUIT.PCK
+    layersDefaultPrefix: HUMAN_SOLDIER
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "FLIGHTSUIT_M", "", "", "M47_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F0_HEAD"]
+      F1: ["", "", "F1_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F1_HEAD"]
+      F2: ["", "", "F2_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F2_HEAD"]
+      F3: ["", "", "F3_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F3_HEAD"]
+      F4: ["", "", "F4_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F4_HEAD"]
+      F5: ["", "", "F5_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F5_HEAD"]
+      F6: ["", "", "F6_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F6_HEAD"]
+      F7: ["", "", "F7_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F7_HEAD"]
+      F8: ["", "", "F8_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F8_HEAD"]
+      F9: ["", "", "F9_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F9_HEAD"]
+      F10: ["", "", "F10_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F10_HEAD"]
+      F11: ["", "", "F11_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F11_HEAD"]
+      F12: ["", "", "F12_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F12_HEAD"]
+      F13: ["", "", "F13_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F13_HEAD"]
+      F14: ["", "", "F14_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F14_HEAD"]
+      F15: ["", "", "F15_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F15_HEAD"]
+      F16: ["", "", "F16_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F16_HEAD"]
+      F17: ["", "", "F17_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F17_HEAD"]
+      F18: ["", "", "F18_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F18_HEAD"]
+      F19: ["", "", "F19_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F19_HEAD"]
+      F20: ["", "", "F20_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F20_HEAD"]
+      F21: ["", "", "F21_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F21_HEAD"]
+      F22: ["", "", "F22_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F22_HEAD"]
+      F23: ["", "", "F23_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F23_HEAD"]
+      F24: ["", "", "F24_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F24_HEAD"]
+      F25: ["", "", "F25_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F25_HEAD"]
+      F26: ["", "", "F26_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F26_HEAD"]
+      F27: ["", "", "F27_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F27_HEAD"]
+      F28: ["", "", "F28_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F28_HEAD"]
+      F29: ["", "", "F29_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F29_HEAD"]
+      F30: ["", "", "F30_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F30_HEAD"]
+      F31: ["", "", "F31_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F31_HEAD"]
+      F32: ["", "", "F32_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F32_HEAD"]
+      F33: ["", "", "F33_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F33_HEAD"]
+      F34: ["", "", "F34_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F34_HEAD"]
+      F35: ["", "", "F35_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F35_HEAD"]
+      F36: ["", "", "F36_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F36_HEAD"]
+      F37: ["", "", "F37_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F37_HEAD"]
+      F38: ["", "", "F38_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F38_HEAD"]
+      F39: ["", "", "F39_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F39_HEAD"]
+      F40: ["", "", "F40_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F40_HEAD"]
+      F41: ["", "", "F41_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F41_HEAD"]
+      F42: ["", "", "F42_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F42_HEAD"]
+      F43: ["", "", "F43_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F43_HEAD"]
+      F44: ["", "", "F44_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F44_HEAD"]
+      F45: ["", "", "F45_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F45_HEAD"]
+      F46: ["", "", "F46_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F46_HEAD"]
+      F47: ["", "", "F47_NUDE", "", "", "", "", "FLIGHTSUIT_F", "", "", "F47_HEAD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_FLIGHTSUIT
+    #camouflageAtDay: 30
+    #camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.10
+        healthCurrent: 0.25
+      stun: *StandardSoldierStunRes
+      health: *StandardSoldierHPRes
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    specialWeapon: STR_UNARMED_TRAINED
+    units:
+      - STR_PILOT
+    loftempsSet: [ 3 ]
+  - type: STR_AGENT_UNIFORM_UC
+    spriteSheet: AGENT_UNIFORM.PCK
+    layersDefaultPrefix: HUMAN_SOLDIER
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "AGENTUNIFORM_M", "", "", "M47_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F0_HEAD"]
+      F1: ["", "", "F1_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F1_HEAD"]
+      F2: ["", "", "F2_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F2_HEAD"]
+      F3: ["", "", "F3_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F3_HEAD"]
+      F4: ["", "", "F4_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F4_HEAD"]
+      F5: ["", "", "F5_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F5_HEAD"]
+      F6: ["", "", "F6_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F6_HEAD"]
+      F7: ["", "", "F7_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F7_HEAD"]
+      F8: ["", "", "F8_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F8_HEAD"]
+      F9: ["", "", "F9_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F9_HEAD"]
+      F10: ["", "", "F10_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F10_HEAD"]
+      F11: ["", "", "F11_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F11_HEAD"]
+      F12: ["", "", "F12_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F12_HEAD"]
+      F13: ["", "", "F13_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F13_HEAD"]
+      F14: ["", "", "F14_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F14_HEAD"]
+      F15: ["", "", "F15_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F15_HEAD"]
+      F16: ["", "", "F16_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F16_HEAD"]
+      F17: ["", "", "F17_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F17_HEAD"]
+      F18: ["", "", "F18_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F18_HEAD"]
+      F19: ["", "", "F19_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F19_HEAD"]
+      F20: ["", "", "F20_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F20_HEAD"]
+      F21: ["", "", "F21_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F21_HEAD"]
+      F22: ["", "", "F22_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F22_HEAD"]
+      F23: ["", "", "F23_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F23_HEAD"]
+      F24: ["", "", "F24_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F24_HEAD"]
+      F25: ["", "", "F25_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F25_HEAD"]
+      F26: ["", "", "F26_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F26_HEAD"]
+      F27: ["", "", "F27_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F27_HEAD"]
+      F28: ["", "", "F28_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F28_HEAD"]
+      F29: ["", "", "F29_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F29_HEAD"]
+      F30: ["", "", "F30_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F30_HEAD"]
+      F31: ["", "", "F31_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F31_HEAD"]
+      F32: ["", "", "F32_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F32_HEAD"]
+      F33: ["", "", "F33_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F33_HEAD"]
+      F34: ["", "", "F34_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F34_HEAD"]
+      F35: ["", "", "F35_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F35_HEAD"]
+      F36: ["", "", "F36_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F36_HEAD"]
+      F37: ["", "", "F37_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F37_HEAD"]
+      F38: ["", "", "F38_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F38_HEAD"]
+      F39: ["", "", "F39_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F39_HEAD"]
+      F40: ["", "", "F40_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F40_HEAD"]
+      F41: ["", "", "F41_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F41_HEAD"]
+      F42: ["", "", "F42_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F42_HEAD"]
+      F43: ["", "", "F43_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F43_HEAD"]
+      F44: ["", "", "F44_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F44_HEAD"]
+      F45: ["", "", "F45_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F45_HEAD"]
+      F46: ["", "", "F46_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F46_HEAD"]
+      F47: ["", "", "F47_NUDE", "", "", "", "", "AGENTUNIFORM_F", "", "", "F47_HEAD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 2
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_AGENTUNIFORM
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.12
+        healthCurrent: 0.25
+      stun: *StandardSoldierStunRes
+      health: *StandardSoldierHPRes
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    specialWeapon: STR_UNARMED_TRAINED
+    units:
+      - STR_SCIENTIST
+    loftempsSet: [ 3 ]
+  - type: STR_XCOM_LABCOAT_UC
+    spriteSheet: LABCOAT.PCK
+    layersDefaultPrefix: HUMAN_SOLDIER
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "LABCOAT_M", "", "", "M47_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F0_HEAD"]
+      F1: ["", "", "F1_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F1_HEAD"]
+      F2: ["", "", "F2_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F2_HEAD"]
+      F3: ["", "", "F3_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F3_HEAD"]
+      F4: ["", "", "F4_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F4_HEAD"]
+      F5: ["", "", "F5_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F5_HEAD"]
+      F6: ["", "", "F6_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F6_HEAD"]
+      F7: ["", "", "F7_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F7_HEAD"]
+      F8: ["", "", "F8_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F8_HEAD"]
+      F9: ["", "", "F9_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F9_HEAD"]
+      F10: ["", "", "F10_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F10_HEAD"]
+      F11: ["", "", "F11_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F11_HEAD"]
+      F12: ["", "", "F12_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F12_HEAD"]
+      F13: ["", "", "F13_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F13_HEAD"]
+      F14: ["", "", "F14_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F14_HEAD"]
+      F15: ["", "", "F15_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F15_HEAD"]
+      F16: ["", "", "F16_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F16_HEAD"]
+      F17: ["", "", "F17_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F17_HEAD"]
+      F18: ["", "", "F18_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F18_HEAD"]
+      F19: ["", "", "F19_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F19_HEAD"]
+      F20: ["", "", "F20_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F20_HEAD"]
+      F21: ["", "", "F21_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F21_HEAD"]
+      F22: ["", "", "F22_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F22_HEAD"]
+      F23: ["", "", "F23_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F23_HEAD"]
+      F24: ["", "", "F24_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F24_HEAD"]
+      F25: ["", "", "F25_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F25_HEAD"]
+      F26: ["", "", "F26_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F26_HEAD"]
+      F27: ["", "", "F27_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F27_HEAD"]
+      F28: ["", "", "F28_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F28_HEAD"]
+      F29: ["", "", "F29_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F29_HEAD"]
+      F30: ["", "", "F30_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F30_HEAD"]
+      F31: ["", "", "F31_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F31_HEAD"]
+      F32: ["", "", "F32_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F32_HEAD"]
+      F33: ["", "", "F33_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F33_HEAD"]
+      F34: ["", "", "F34_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F34_HEAD"]
+      F35: ["", "", "F35_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F35_HEAD"]
+      F36: ["", "", "F36_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F36_HEAD"]
+      F37: ["", "", "F37_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F37_HEAD"]
+      F38: ["", "", "F38_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F38_HEAD"]
+      F39: ["", "", "F39_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F39_HEAD"]
+      F40: ["", "", "F40_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F40_HEAD"]
+      F41: ["", "", "F41_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F41_HEAD"]
+      F42: ["", "", "F42_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F42_HEAD"]
+      F43: ["", "", "F43_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F43_HEAD"]
+      F44: ["", "", "F44_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F44_HEAD"]
+      F45: ["", "", "F45_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F45_HEAD"]
+      F46: ["", "", "F46_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F46_HEAD"]
+      F47: ["", "", "F47_NUDE", "", "", "", "", "LABCOAT_F", "", "", "F47_HEAD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 3
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_LABCOAT
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.12
+        healthCurrent: 0.25
+      stun: &LowSoldierStunRes
+        healthCurrent: 0.09
+        health: -0.05
+      health: &LowSoldierHPRes
+        stunNormalized: -0.09
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    specialWeapon: STR_UNARMED
+    units:
+      - STR_SCIENTIST
+    loftempsSet: [ 3 ]
+  - type: STR_XCOM_ENGINEER_SUIT_UC
+    spriteSheet: ENGINEER_SUIT.PCK
+    layersDefaultPrefix: HUMAN_SOLDIER
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "ENGINEERSUIT_M", "", "", "M47_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F0_HEAD"]
+      F1: ["", "", "F1_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F1_HEAD"]
+      F2: ["", "", "F2_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F2_HEAD"]
+      F3: ["", "", "F3_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F3_HEAD"]
+      F4: ["", "", "F4_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F4_HEAD"]
+      F5: ["", "", "F5_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F5_HEAD"]
+      F6: ["", "", "F6_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F6_HEAD"]
+      F7: ["", "", "F7_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F7_HEAD"]
+      F8: ["", "", "F8_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F8_HEAD"]
+      F9: ["", "", "F9_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F9_HEAD"]
+      F10: ["", "", "F10_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F10_HEAD"]
+      F11: ["", "", "F11_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F11_HEAD"]
+      F12: ["", "", "F12_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F12_HEAD"]
+      F13: ["", "", "F13_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F13_HEAD"]
+      F14: ["", "", "F14_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F14_HEAD"]
+      F15: ["", "", "F15_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F15_HEAD"]
+      F16: ["", "", "F16_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F16_HEAD"]
+      F17: ["", "", "F17_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F17_HEAD"]
+      F18: ["", "", "F18_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F18_HEAD"]
+      F19: ["", "", "F19_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F19_HEAD"]
+      F20: ["", "", "F20_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F20_HEAD"]
+      F21: ["", "", "F21_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F21_HEAD"]
+      F22: ["", "", "F22_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F22_HEAD"]
+      F23: ["", "", "F23_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F23_HEAD"]
+      F24: ["", "", "F24_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F24_HEAD"]
+      F25: ["", "", "F25_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F25_HEAD"]
+      F26: ["", "", "F26_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F26_HEAD"]
+      F27: ["", "", "F27_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F27_HEAD"]
+      F28: ["", "", "F28_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F28_HEAD"]
+      F29: ["", "", "F29_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F29_HEAD"]
+      F30: ["", "", "F30_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F30_HEAD"]
+      F31: ["", "", "F31_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F31_HEAD"]
+      F32: ["", "", "F32_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F32_HEAD"]
+      F33: ["", "", "F33_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F33_HEAD"]
+      F34: ["", "", "F34_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F34_HEAD"]
+      F35: ["", "", "F35_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F35_HEAD"]
+      F36: ["", "", "F36_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F36_HEAD"]
+      F37: ["", "", "F37_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F37_HEAD"]
+      F38: ["", "", "F38_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F38_HEAD"]
+      F39: ["", "", "F39_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F39_HEAD"]
+      F40: ["", "", "F40_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F40_HEAD"]
+      F41: ["", "", "F41_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F41_HEAD"]
+      F42: ["", "", "F42_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F42_HEAD"]
+      F43: ["", "", "F43_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F43_HEAD"]
+      F44: ["", "", "F44_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F44_HEAD"]
+      F45: ["", "", "F45_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F45_HEAD"]
+      F46: ["", "", "F46_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F46_HEAD"]
+      F47: ["", "", "F47_NUDE", "", "", "", "", "ENGINEERSUIT_F", "", "", "F47_HEAD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 4
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_ENGINEERSUIT
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.12
+        healthCurrent: 0.25
+      stun: *LowSoldierStunRes
+      health: *LowSoldierHPRes
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    specialWeapon: STR_UNARMED
+    units:
+      - STR_ENGINEER
+    loftempsSet: [ 3 ]
+  - type: STR_XCOM_RESISTANCE_AGENT_SUIT_UC
+    spriteSheet: RESISTANCE_SUIT.PCK
+    layersDefaultPrefix: HUMAN_SOLDIER
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "RESISTANCESUIT_M", "", "", "M47_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F0_HEAD"]
+      F1: ["", "", "F1_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F1_HEAD"]
+      F2: ["", "", "F2_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F2_HEAD"]
+      F3: ["", "", "F3_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F3_HEAD"]
+      F4: ["", "", "F4_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F4_HEAD"]
+      F5: ["", "", "F5_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F5_HEAD"]
+      F6: ["", "", "F6_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F6_HEAD"]
+      F7: ["", "", "F7_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F7_HEAD"]
+      F8: ["", "", "F8_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F8_HEAD"]
+      F9: ["", "", "F9_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F9_HEAD"]
+      F10: ["", "", "F10_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F10_HEAD"]
+      F11: ["", "", "F11_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F11_HEAD"]
+      F12: ["", "", "F12_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F12_HEAD"]
+      F13: ["", "", "F13_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F13_HEAD"]
+      F14: ["", "", "F14_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F14_HEAD"]
+      F15: ["", "", "F15_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F15_HEAD"]
+      F16: ["", "", "F16_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F16_HEAD"]
+      F17: ["", "", "F17_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F17_HEAD"]
+      F18: ["", "", "F18_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F18_HEAD"]
+      F19: ["", "", "F19_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F19_HEAD"]
+      F20: ["", "", "F20_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F20_HEAD"]
+      F21: ["", "", "F21_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F21_HEAD"]
+      F22: ["", "", "F22_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F22_HEAD"]
+      F23: ["", "", "F23_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F23_HEAD"]
+      F24: ["", "", "F24_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F24_HEAD"]
+      F25: ["", "", "F25_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F25_HEAD"]
+      F26: ["", "", "F26_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F26_HEAD"]
+      F27: ["", "", "F27_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F27_HEAD"]
+      F28: ["", "", "F28_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F28_HEAD"]
+      F29: ["", "", "F29_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F29_HEAD"]
+      F30: ["", "", "F30_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F30_HEAD"]
+      F31: ["", "", "F31_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F31_HEAD"]
+      F32: ["", "", "F32_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F32_HEAD"]
+      F33: ["", "", "F33_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F33_HEAD"]
+      F34: ["", "", "F34_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F34_HEAD"]
+      F35: ["", "", "F35_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F35_HEAD"]
+      F36: ["", "", "F36_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F36_HEAD"]
+      F37: ["", "", "F37_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F37_HEAD"]
+      F38: ["", "", "F38_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F38_HEAD"]
+      F39: ["", "", "F39_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F39_HEAD"]
+      F40: ["", "", "F40_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F40_HEAD"]
+      F41: ["", "", "F41_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F41_HEAD"]
+      F42: ["", "", "F42_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F42_HEAD"]
+      F43: ["", "", "F43_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F43_HEAD"]
+      F44: ["", "", "F44_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F44_HEAD"]
+      F45: ["", "", "F45_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F45_HEAD"]
+      F46: ["", "", "F46_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F46_HEAD"]
+      F47: ["", "", "F47_NUDE", "", "", "", "", "RESISTANCESUIT_F", "", "", "F47_HEAD"]
+    spriteFaceGroup: 5
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    #customArmorPreviewIndex: 5
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_ENGINEERSUIT
+    camouflageAtDay: 26
+    camouflageAtDark: -4
+    visibilityAtDark: 9
+    personalLight: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.12
+        healthCurrent: 0.25
+      stun: *StandardSoldierStunRes
+      health: *StandardSoldierHPRes
+    overKill: 1.5
+    damageModifier: *NoArmorHumanResistance
+    specialWeapon: STR_UNARMED_TRAINED
+    units:
+      - STR_RESISTANCE_AGENT
+    loftempsSet: [ 3 ]
 
-
-    
   - type: STR_LEATHER_COAT_UC
     spriteSheet: XCOM_16.PCK
     layersDefaultPrefix: HUMAN_SOLDIER
@@ -1580,7 +2221,7 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
     camouflageAtDark: -3
-    # customArmorPreviewIndex: 2
+    #customArmorPreviewIndex: 5
     storeItem: STR_LEATHER_COAT
     weight: 3
     corpseBattle:
@@ -1595,7 +2236,7 @@ armors:
       energy:
         flatHundred: 0.1
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *StandardSoldierStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -1709,7 +2350,7 @@ armors:
     spriteFaceColor: *SpriteFaceColorAgent
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
-    customArmorPreviewIndex: 1
+    #customArmorPreviewIndex: 8
     storeItem: STR_ARMORED_VEST
     weight: 20
     corpseBattle:
@@ -1735,7 +2376,7 @@ armors:
       energy:
         flatHundred: 0.10
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *StandardSoldierStunRes
       health:
         stunNormalized: -0.08
     overKill: 1.5

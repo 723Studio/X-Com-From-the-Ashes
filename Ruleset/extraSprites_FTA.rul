@@ -214,6 +214,11 @@ extraSprites:
       138: Resources/Armors/Xcom/ArmorVest/bigob_ARMORED_VEST.png
       139: Resources/Armors/Civilians/Resistance/bigob_RESISTANCE_SCOUT.png
       140: Resources/Armors/Enemies/Monsters/bigob_EnergyWispCorpse.png
+      141: Resources/Armors/Xcom/BaseArmors/AgentUniform/bigob_AgentUniform.png
+      142: Resources/Armors/Xcom/BaseArmors/EngineerSuit/bigob_EngineerSuit.png
+      143: Resources/Armors/Xcom/BaseArmors/FlightSuit/bigob_FLIGHT_SUIT.png
+      144: Resources/Armors/Xcom/BaseArmors/LabCoat/bigob_LABCOAT.png
+      145: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/bigob_RESISTANCE_SUIT.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -426,6 +431,11 @@ extraSprites:
       138: Resources/Armors/Xcom/ArmorVest/floorob_ARMORED_VEST.png
       139: Resources/Armors/Civilians/Resistance/floorob_RESISTANCE_SCOUT.png
       140: Resources/Armors/Enemies/Monsters/floorob_EnergyWisp_Corpse.png
+      141: Resources/Armors/Xcom/BaseArmors/AgentUniform/floorob_AgentUniform.png
+      142: Resources/Armors/Xcom/BaseArmors/EngineerSuit/floorob_EngineerSuit.png
+      143: Resources/Armors/Xcom/BaseArmors/FlightSuit/floorob_FLIGHT_SUIT.png
+      144: Resources/Armors/Xcom/BaseArmors/LabCoat/floorob_LABCOAT.png
+      145: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/floorob_RESISTANCE_SUIT.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -1137,10 +1147,8 @@ extraSprites:
 
 
 #armors, inventory screens
-  - type: sectoidInventoryImage
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Aliens/Sectoids/inventory_SECTOID.png
+  - typeSingle: sectoidInventoryImage
+    fileSingle: Resources/Armors/Enemies/Aliens/Sectoids/inventory_SECTOID.png
   - type: SECTOID_COMMANDER.PCK
     width: 320
     height: 1080
@@ -1148,10 +1156,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/Aliens/Sectoids/SECTOID_COMMANDER.png
-  - type: sectoidCommanderInventoryImage
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Aliens/Sectoids/inventory_SECTOID_COMMANDER.png
+  - typeSingle: sectoidCommanderInventoryImage
+    fileSingle: Resources/Armors/Enemies/Aliens/Sectoids/inventory_SECTOID_COMMANDER.png
 #MIB
   - type: XCOM_EX_COMMANDER.PCK
     width: 512
@@ -1160,10 +1166,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/Special/XCOM_EX_COMMANDER.png
-  - type: inventory_XCOM_EX_COMMANDER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Special/inventory_XCOM_EX_COMMANDER.png
+  - typeSingle: inventory_XCOM_EX_COMMANDER
+    fileSingle: Resources/Armors/Enemies/Special/inventory_XCOM_EX_COMMANDER.png
   - type: MIB_AGENT.PCK
     width: 512
     height: 720
@@ -1171,10 +1175,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/MIB_AGENT.png
-  - type: inventory_MIB_AGENT
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
+  - typeSingle: inventory_MIB_AGENT
+    fileSingle: Resources/Armors/Enemies/MiB/inventory_MIB_AGENT.png
   - type: MIB_ARMORED_AGENT.PCK
     width: 512
     height: 720
@@ -1182,10 +1184,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/MIB_ARMORED_AGENT.png
-  - type: inventory_MIB_ARMORED_AGENT
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_ARMORED_AGENT.png
+  - typeSingle: inventory_MIB_ARMORED_AGENT
+    fileSingle: Resources/Armors/Enemies/MiB/inventory_MIB_ARMORED_AGENT.png
   - type: MIB_SPECOPS.PCK
     subX: 32
     subY: 40
@@ -1193,10 +1193,8 @@ extraSprites:
     height: 1480
     files:
       0: Resources/Armors/Enemies/MiB/MIB_SPECOPS.png
-  - type: inventory_MIB_SPECOPS
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_SPECOPS.png
+  - typeSingle: inventory_MIB_SPECOPS
+    fileSingle: Resources/Armors/Enemies/MiB/inventory_MIB_SPECOPS.png
   - type: MIB_BUTCHER.PCK
     width: 512
     height: 720
@@ -1204,10 +1202,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/MIB_BUTCHER.png
-  - type: inventory_MIB_BUTCHER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_BUTCHER.png
+  - typeSingle: inventory_MIB_BUTCHER
+    fileSingle: Resources/Armors/Enemies/MiB/inventory_MIB_BUTCHER.png
   - type: SEEKER_DRONE.PCK
     subX: 32
     subY: 40
@@ -1215,10 +1211,8 @@ extraSprites:
     height: 120
     files:
       0: Resources/Armors/Enemies/MiB/SEEKER_DRONE.png
-  - type: inventory_SEEKER_DRONE
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/inventory_SeekerDrone.png
+  - typeSingle: inventory_SEEKER_DRONE
+    fileSingle: Resources/Armors/Enemies/MiB/inventory_SeekerDrone.png
   - type: MIB_SCIENTIST.PCK
     width: 512
     height: 720
@@ -1226,10 +1220,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/MIB_SCIENTIST.png
-  - type: inventory_MIB_SCIENTIST
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_SCIENTIST.png
+  - typeSingle: inventory_MIB_SCIENTIST
+    fileSingle: Resources/Armors/Enemies/MiB/inventory_MIB_SCIENTIST.png
   - type: MIB_ENFORCER.PCK
     width: 512
     height: 720
@@ -1237,10 +1229,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/MIB_ENFORCER.png
-  - type: inventory_MIB_ENFORCER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/inventory_MIB_ENFORCER.png
+  - typeSingle: inventory_MIB_ENFORCER
+    fileSingle: Resources/Armors/Enemies/MiB/inventory_MIB_ENFORCER.png
   - type: MIB_OFFICE_ENGINEER.PCK
     width: 512
     height: 720
@@ -1248,10 +1238,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_ENGINEER.png
-  - type: inventory_MIB_OFFICE_ENGINEER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_ENGINEER.png
+  - typeSingle: inventory_MIB_OFFICE_ENGINEER
+    fileSingle: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_ENGINEER.png
   - type: MIB_OFFICE_MANAGER.PCK
     width: 512
     height: 720
@@ -1259,10 +1247,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_MANAGER.png
-  - type: inventory_MIB_OFFICE_MANAGER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_MANAGER.png
+  - typeSingle: inventory_MIB_OFFICE_MANAGER
+    fileSingle: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_MANAGER.png
   - type: MIB_OFFICE_SECURITY.PCK
     width: 512
     height: 720
@@ -1270,10 +1256,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_SECURITY.png
-  - type: inventory_MIB_OFFICE_SECURITY
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_SECURITY.png
+  - typeSingle: inventory_MIB_OFFICE_SECURITY
+    fileSingle: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_SECURITY.png
   - type: MIB_OFFICE_WORKER.PCK
     width: 512
     height: 720
@@ -1281,10 +1265,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/Procured/MIB_OFFICE_WORKER.png
-  - type: inventory_MIB_OFFICE_WORKER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_WORKER.png
+  - typeSingle: inventory_MIB_OFFICE_WORKER
+    fileSingle: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_OFFICE_WORKER.png
   - type: MIB_VIP.PCK
     width: 512
     height: 720
@@ -1292,10 +1274,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/Procured/MIB_VIP.png
-  - type: inventory_MIB_VIP
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_VIP.png
+  - typeSingle: inventory_MIB_VIP
+    fileSingle: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_VIP.png
   - type: MIB_VIP_BODYGUARD.PCK
     width: 512
     height: 720
@@ -1303,10 +1283,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/MiB/Procured/MIB_VIP_BODYGUARD.png
-  - type: inventory_MIB_VIP_BODYGUARD
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_VIP_BODYGUARD.png
+  - typeSingle: inventory_MIB_VIP_BODYGUARD
+    fileSingle: Resources/Armors/Enemies/MiB/Procured/inventory_MIB_VIP_BODYGUARD.png
 #cultists
   - type: CULT_GANGER.PCK
     width: 512
@@ -1315,10 +1293,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/Cultists/CULT_GANGER.png
-  - type: inventory_CULT_GANGER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Cultists/inventory_CULT_GANGER.png
+  - typeSingle: inventory_CULT_GANGER
+    fileSingle: Resources/Armors/Enemies/Cultists/inventory_CULT_GANGER.png
   - type: CULT_COORDINATOR.PCK
     width: 512
     height: 720
@@ -1326,10 +1302,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/Cultists/CULT_COORDINATOR.png
-  - type: inventory_CULT_COORDINATOR
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Cultists/inventory_CULT_COORDINATOR.png
+  - typeSingle: inventory_CULT_COORDINATOR
+    fileSingle: Resources/Armors/Enemies/Cultists/inventory_CULT_COORDINATOR.png
 #bandits
   - type: BANDIT.PCK
     width: 512
@@ -1338,10 +1312,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/Bandits/BANDIT.png
-  - type: inventory_BANDIT
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Bandits/inventory_BANDIT.png
+  - typeSingle: inventory_BANDIT
+    fileSingle: Resources/Armors/Enemies/Bandits/inventory_BANDIT.png
 #army
   - type: ARMY_FIELD_SOLDIER.PCK
     subX: 32
@@ -1350,10 +1322,8 @@ extraSprites:
     height: 1480
     files:
       0: Resources/Armors/Enemies/Army/ARMY_FIELD_SOLDIER.png
-  - type: inventory_ARMY_FIELD_SOLDIER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Army/inventory_ARMY_FIELD_SOLDIER.png
+  - typeSingle: inventory_ARMY_FIELD_SOLDIER
+    fileSingle: Resources/Armors/Enemies/Army/inventory_ARMY_FIELD_SOLDIER.png
   - type: ARMY_FIELD_OFFICER.PCK
     subX: 32
     subY: 40
@@ -1361,10 +1331,8 @@ extraSprites:
     height: 1480
     files:
       0: Resources/Armors/Enemies/Army/ARMY_FIELD_OFFICER.png
-  - type: inventory_ARMY_FIELD_OFFICER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Army/inventory_ARMY_FIELD_OFFICER.png
+  - typeSingle: inventory_ARMY_FIELD_OFFICER
+    fileSingle: Resources/Armors/Enemies/Army/inventory_ARMY_FIELD_OFFICER.png
 #monsters
   - type: FACEHUGGER.PCK
     subX: 32
@@ -1373,10 +1341,8 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Enemies/Zombies/FACEHUGGER.png
-  - type: inventory_FACEHUGGER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Zombies/inventory_FACEHUGGER.png
+  - typeSingle: inventory_FACEHUGGER
+    fileSingle: Resources/Armors/Enemies/Zombies/inventory_FACEHUGGER.png
   - type: FRESH_ZOMBIE.PCK
     width: 512
     height: 720
@@ -1385,9 +1351,7 @@ extraSprites:
     files:
       0: Resources/Armors/Enemies/Zombies/FRESH_ZOMBIE.png
   - type: inventory_ZOMBIE
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE.png
+    fileSingle: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE.png
   - type: ZOMBIE_GRUBAS.PCK
     subX: 32
     subY: 40
@@ -1395,10 +1359,8 @@ extraSprites:
     height: 720
     files:
       0: Resources/Armors/Enemies/Zombies/ZOMBIE_GRUBAS.png
-  - type: inventory_ZOMBIE_GRUBAS
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE_GRUBAS.png
+  - typeSingle: inventory_ZOMBIE_GRUBAS
+    fileSingle: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE_GRUBAS.png
   - type: JABBER.PCK
     subX: 32
     subY: 40
@@ -1406,10 +1368,8 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Enemies/Monsters/legacy/JABBER.png
-  - type: inventory_JABBER
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Monsters/legacy/inventory_JABBER.png
+  - typeSingle: inventory_JABBER
+    fileSingle: Resources/Armors/Enemies/Monsters/legacy/inventory_JABBER.png
   - type: CHUPACABRA.PCK
     subX: 32
     subY: 40
@@ -1417,10 +1377,8 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Enemies/Monsters/CHUPACABRA.png
-  - type: inventory_CHUPACABRA
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Monsters/inventory_CHUPACABRA.png
+  - typeSingle: inventory_CHUPACABRA
+    fileSingle: Resources/Armors/Enemies/Monsters/inventory_CHUPACABRA.png
   - type: ARMADILLO.PCK
     subX: 32
     subY: 40
@@ -1428,10 +1386,8 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Enemies/Monsters/ARMADILLO.png
-  - type: inventory_ARMADILLO
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Monsters/inventory_ARMADILLO.png
+  - typeSingle: inventory_ARMADILLO
+    fileSingle: Resources/Armors/Enemies/Monsters/inventory_ARMADILLO.png
   - type: AM.PCK
     subX: 32
     subY: 40
@@ -1439,10 +1395,8 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Enemies/Monsters/AM.png
-  - type: inventory_AM
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Monsters/inventory_AM.png
+  - typeSingle: inventory_AM
+    fileSingle: Resources/Armors/Enemies/Monsters/inventory_AM.png
   - type: SWARMIDS_SMALL.PCK
     width: 512
     height: 40
@@ -1450,17 +1404,15 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/Monsters/SWARMIDS_SMALL.png
-  - type: SWARMIDS_LARGE.PCK
+  - typeSingle: SWARMIDS_LARGE.PCK
     width: 256
     height: 200
     subX: 32
     subY: 40
     files:
       0: Resources/Armors/Enemies/Monsters/SWARMIDS_LARGE.png
-  - type: inventory_SWARMIDS
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Monsters/inventory_SWARMIDS.png
+  - typeSingle: inventory_SWARMIDS
+    fileSingle: Resources/Armors/Enemies/Monsters/inventory_SWARMIDS.png
   - type: ENERGY_WISP.PCK
     subX: 32
     subY: 40
@@ -1468,10 +1420,8 @@ extraSprites:
     height: 200
     files:
       0: Resources/Armors/Enemies/Monsters/EnergyWisp.png
-  - type: inventory_ENERGY_WISP
-    singleImage: true
-    files:
-      0: Resources/Armors/Enemies/Monsters/inventory_EnergyWisp.png
+  - typeSingle: inventory_ENERGY_WISP
+    fileSingle: Resources/Armors/Enemies/Monsters/inventory_EnergyWisp.png
 #resistance
   - type: RESISTANCE_AGENT.PCK
     width: 512
@@ -1480,10 +1430,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Resistance/RESISTANCE_AGENT.png
-  - type: inventory_RESISTANCE_AGENT
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_AGENT.png
+  - typeSingle: inventory_RESISTANCE_AGENT
+    fileSingle: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_AGENT.png
   - type: RESISTANCE_SCIENTIST.PCK
     width: 512
     height: 720
@@ -1491,10 +1439,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Resistance/RESISTANCE_SCIENTIST.png
-  - type: inventory_RESISTANCE_SCIENTIST
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCIENTIST.png
+  - typeSingle: inventory_RESISTANCE_SCIENTIST
+    fileSingle: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCIENTIST.png
   - type: RESISTANCE_RADIO.PCK
     subX: 32
     subY: 40
@@ -1516,10 +1462,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Resistance/RESISTANCE_SCOUT.png
-  - type: inventory_RESISTANCE_SCOUT
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCOUT.png
+  - typeSingle: inventory_RESISTANCE_SCOUT
+    fileSingle: Resources/Armors/Civilians/Resistance/inventory_RESISTANCE_SCOUT.png
 #civilians
   - type: FARMER.PCK
     width: 512
@@ -1528,10 +1472,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Citizens/FARMER.png
-  - type: inventory_MALE_FARMER
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Citizens/inventory_MALE_FARMER.png
+  - typeSingle: inventory_MALE_FARMER
+    fileSingle: Resources/Armors/Civilians/Citizens/inventory_MALE_FARMER.png
   - type: FEMALE_FARMER.PCK
     width: 512
     height: 720
@@ -1539,10 +1481,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Citizens/FEMALE_FARMER.png
-  - type: inventory_FEMALE_FARMER
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Citizens/inventory_FEMALE_FARMER.png
+  - typeSingle: inventory_FEMALE_FARMER
+    fileSingle: Resources/Armors/Civilians/Citizens/inventory_FEMALE_FARMER.png
   - type: CIVILIAN_HUNTER.PCK
     width: 512
     height: 720
@@ -1550,10 +1490,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Citizens/HUNTER.png
-  - type: inventory_CIVILIAN_HUNTER
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Citizens/inventory_CIVILIAN_HUNTER.png
+  - typeSingle: inventory_CIVILIAN_HUNTER
+    fileSingle: Resources/Armors/Civilians/Citizens/inventory_CIVILIAN_HUNTER.png
   - type: MALE_CITIZEN.PCK
     width: 512
     height: 720
@@ -1561,10 +1499,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Citizens/MALE_CIVILIAN.png
-  - type: inventory_MALE_CITIZEN
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Citizens/inventory_MALE_CIVILIAN.png
+  - typeSingle: inventory_MALE_CITIZEN
+    fileSingle: Resources/Armors/Civilians/Citizens/inventory_MALE_CIVILIAN.png
   - type: MALE_POLICE.PCK
     width: 512
     height: 720
@@ -1572,10 +1508,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Police/POLICEMAN.png
-  - type: inventory_MALE_POLICE
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Police/inventory_POLICEMAN.png
+  - typeSingle: inventory_MALE_POLICE
+    fileSingle: Resources/Armors/Civilians/Police/inventory_POLICEMAN.png
   - type: DOGE.PCK
     width: 512
     height: 720
@@ -1583,10 +1517,8 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Civilians/Animals/DOGE.png
-  - type: inventory_DOGE
-    singleImage: true
-    files:
-      0: Resources/Armors/Civilians/Animals/inventory_DOGE.png
+  - typeSingle: inventory_DOGE
+    fileSingle: Resources/Armors/Civilians/Animals/inventory_DOGE.png
 #xcom armors
   - type: XCOM_0.PCK
     width: 512
@@ -1623,6 +1555,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Xcom/BaseArmors/EngineerSuit/ENGINEER_SUIT.png
+  - type: RESISTANCE_SUIT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/RESISTANCE_SUIT.png
   - type: XCOM_16.PCK
     width: 512
     height: 720
@@ -2611,15 +2550,29 @@ extraSprites:
     fileSingle: Resources/Armors/Xcom/BaseArmors/JumpSuit/Inventory/Jumpsuit_F.png
 #Flightsuit
   - typeSingle: HUMAN_SOLDIER__7__FLIGHTSUIT_M
-    fileSingle: Resources/Armors/Xcom/BaseArmors/JumpSuit/Inventory/Jumpsuit_M.png
+    fileSingle: Resources/Armors/Xcom/BaseArmors/FlightSuit/Inventory/FlightSuit_M.png
   - typeSingle: HUMAN_SOLDIER__7__FLIGHTSUIT_F
-    fileSingle: Resources/Armors/Xcom/BaseArmors/JumpSuit/Inventory/Jumpsuit_F.png
+    fileSingle: Resources/Armors/Xcom/BaseArmors/FlightSuit/Inventory/FlightSuit_F.png
 #Agent uniform
-
+  - typeSingle: HUMAN_SOLDIER__7__AGENTUNIFORM_M
+    fileSingle: Resources/Armors/Xcom/BaseArmors/AgentUniform/Inventory/AgentUniform_M.png
+  - typeSingle: HUMAN_SOLDIER__7__AGENTUNIFORM_F
+    fileSingle: Resources/Armors/Xcom/BaseArmors/AgentUniform/Inventory/AgentUniform_F.png
 #Lab coat
-
+  - typeSingle: HUMAN_SOLDIER__7__LABCOAT_M
+    fileSingle: Resources/Armors/Xcom/BaseArmors/LabCoat/Inventory/Labcoat_M.png
+  - typeSingle: HUMAN_SOLDIER__7__LABCOAT_F
+    fileSingle: Resources/Armors/Xcom/BaseArmors/LabCoat/Inventory/Labcoat_F.png
 #Engineer suit
-
+  - typeSingle: HUMAN_SOLDIER__7__ENGINEERSUIT_M
+    fileSingle: Resources/Armors/Xcom/BaseArmors/EngineerSuit/Inventory/EngineerSuit_M.png
+  - typeSingle: HUMAN_SOLDIER__7__ENGINEERSUIT_F
+    fileSingle: Resources/Armors/Xcom/BaseArmors/EngineerSuit/Inventory/EngineerSuit_F.png
+#Resistance base suit
+  - typeSingle: HUMAN_SOLDIER__7__RESISTANCESUIT_M
+    fileSingle: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/Inventory/Resistance_M.png
+  - typeSingle: HUMAN_SOLDIER__7__RESISTANCESUIT_F
+    fileSingle: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/Inventory/Resistance_F.png
 # Leather Coat
   - typeSingle: HUMAN_SOLDIER__7__LEATHER_COAT_M
     fileSingle: Resources/Armors/Xcom/Situational/CoatArmor/Inventory/Coat_M.png
