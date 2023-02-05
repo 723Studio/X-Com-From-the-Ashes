@@ -16,6 +16,7 @@ baseConstructionUnlockResearch: STR_BASE_CONSTRUCTION
 fakeUnderwaterBaseUnlockResearch: STR_UNDERWATER_BASES
 ufopaediaUnlockResearch: STR_UFOPEDIA_DECRYPTION
 psiUnlockResearch: STR_PSIONIC
+alienTechUnlockResearch: STR_TODOIUM
 xenologyUnlockResearch: STR_TODOIUM
 craftsBeamUnlockResearch: STR_TODOIUM
 craftSynapseUnlockResearch: STR_TODOIUM
@@ -45,6 +46,9 @@ pilotTrackingZeroPoint: 35
 pilotTrackingRange: 60
 pilotTacticsZeroPoint: 20
 pilotTacticsRange: 20
+#performanceBonusFactor: 100
+covertOpsExperienceFactor: 
+covertOpsIntelBonusFactor: 50
 
 #Interception
 drawEnemyRadarCircles: 0

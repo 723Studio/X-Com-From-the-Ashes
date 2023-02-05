@@ -18,6 +18,8 @@ soldierTransformation:
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
+    roleRankRequirements:
+      1: 1
     allowedSoldierTypes:
       - STR_SOLDIER
       - STR_RESISTANCE_AGENT

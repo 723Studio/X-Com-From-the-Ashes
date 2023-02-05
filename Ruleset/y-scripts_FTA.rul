@@ -1560,10 +1560,10 @@ extended:
 
                 #handle reaper crit
                   if lt unit_health unit_half_max_health; # attacked unit hp < 50%
-                    add critChance 30;
+                    add critChance 40;
                   end;
                   if eq side 3; #attack coming from behind
-                    add critChance 35; 
+                    add critChance 50; 
                   end;
 
                   battle_game.randomChance critChance;

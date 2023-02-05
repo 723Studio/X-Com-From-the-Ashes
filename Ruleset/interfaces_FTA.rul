@@ -36,6 +36,21 @@ interfaces:
         border: 241  # pink
       - id: button
         color: 218   # blue
+  - type: soldierTransformationStats
+    backgroundImage: BACK02.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 4     # aqua
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+      - id: button
+        color: 218   # blue
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
   - type: covertOperationsMenu
     backgroundImage: COVEROPSHQ_BACKGROUND.SCR #BACK05.SCR
     palette: PAL_BASESCAPE

@@ -1866,7 +1866,7 @@ units:
     canSurrender: true
   - type: STR_RESISTANCE_SCIENTIST_VIP
     refNode: *STR_RESISTANCE_SCIENTIST
-    specialObjectiveType: STR_FRIENDLY_VIP
+    specialObjective: STR_FRIENDLY_VIP
     value: 60
     builtInWeaponSets:
       - - STR_SNUBNOSE_PISTOL
@@ -1940,7 +1940,7 @@ units:
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_RESISTANCE_AGENT
-    specialObjectiveType: STR_FRIENDLY_VIP
+    specialObjective: STR_FRIENDLY_VIP
     value: 20
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
@@ -2014,7 +2014,7 @@ units:
     value: 50
   - type: STR_RESISTANCE_AGENT_PRISONER
     refNode: *STR_RESISTANCE_AGENT
-    specialObjectiveType: STR_FRIENDLY_VIP
+    specialObjective: STR_FRIENDLY_VIP
     civilianRecoveryType: STR_RESISTANCE_AGENT
     #prisoner: true
     value: 30
@@ -2059,7 +2059,7 @@ units:
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_RESISTANCE_SCOUT
-    specialObjectiveType: STR_FRIENDLY_VIP
+    specialObjective: STR_FRIENDLY_VIP
     value: 20
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds
@@ -2156,7 +2156,7 @@ units:
     standHeight: 22
     kneelHeight: 14 
     civilianRecoveryType: STR_SOLDIER #FIXME
-    specialObjectiveType: STR_FRIENDLY_VIP
+    specialObjective: STR_FRIENDLY_VIP
     value: 35
     deathSound: *MaleDeathSounds
     #panicSound: *MalePanicSounds

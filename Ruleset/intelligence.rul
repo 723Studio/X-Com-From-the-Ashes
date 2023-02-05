@@ -6,10 +6,11 @@ intelligence:
     requiredResearch: STR_LOG1
     specialRule: 1 #INTEL_NONE = 0, INTEL_UFO_TRACKING = 1, INTEL_COVERT_OPERATIONS = 2, INTEL_DEPLOYMENT_HINTS = 3
     stats:
-      tu: 65
-      stamina: 70
-      health: 30
-      bravery: 30
+      data: 40
+      computers: 70
+      xenolinguistics: 60
+      alienTech: 40
+      investigation: 80
     listOrder: 100
     stages:
       - stageName: testName

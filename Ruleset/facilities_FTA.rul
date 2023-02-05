@@ -35,7 +35,8 @@ facilities:
     manaRecoveryPerDay: 1
     rightClickActionType: 8 #for FtA it is link to intelligence
     interrogationSpace: 1
-    radarRange: 10800
+    #radarRange: 10800
+    globalRadar: true
     radarChance: 2
     mapName: XBASF_01
     listOrder: 6830

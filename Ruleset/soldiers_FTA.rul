@@ -712,7 +712,7 @@ soldiers:
       alienTech: 0
     armor: STR_XCOM_ENGINEER_SUIT_UC
     armorForAvatar: STR_XCOM_ENGINEER_SUIT_UC
-    femaleFrequency: 60
+    femaleFrequency: 50
     soldierNames:
       - delete
       - SoldierNames/
@@ -748,6 +748,9 @@ soldiers:
       psiStrength: 60
       psiSkill: 0
       mana: 0
+    armor: STR_XCOM_RESISTANCE_AGENT_SUIT_UC
+    armorForAvatar: STR_XCOM_RESISTANCE_AGENT_SUIT_UC
+    femaleFrequency: 40
     soldierNames:
       - delete
       - SoldierNames/

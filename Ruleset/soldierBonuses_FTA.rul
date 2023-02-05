@@ -1,23 +1,23 @@
 soldierBonuses:
   - name: STR_SNIPER
     tags:
-      CENTER_MASS: 20           # bonus chance to land a critical hit (x1.5 damage for a sniper rifle, x1.2 for rifle)
-      AIM: 1                    # (1/0) enables 20% bonus accuracy with a sniper rifle when kneeling on the position you were kneeling at the start of the turn
-      DEATH_FROM_ABOVE: 1       # (1/0) enables additional damage to morale and suppress next reaction from the target if damaged with sniper rifle aim shot and distance is greater than 300 (~15 tiles)
+      CENTER_MASS: 20           # bonus chance to land a critical hit (x1.5 damage for a sniper rifle, x1.2 for rifle)
+      AIM: 1                    # (1/0) enables 20% bonus accuracy with a sniper rifle when kneeling on the position you were kneeling at the start of the turn
+      DEATH_FROM_ABOVE: 1       # (1/0) enables additional damage to morale and suppress next reaction from the target if damaged with sniper rifle aim shot and distance is greater than 300 (~15 tiles)
   - name: STR_HEAVY
     tags:
-      SHREDDER: 10              # bonus % of resulting damage adds as to_armor damage if using heavy weapons
-      STEADY_GRIP: 15           # bonus to accuracy with heavy weapons
+      SHREDDER: 10              # bonus % of resulting damage adds as to_armor damage if using heavy weapons
+      STEADY_GRIP: 15           # bonus to accuracy with heavy weapons
       BULKY: 5                  # bonus % of reducing incoming stun damage
   - name: STR_ASSAULT
     tags:
       EVER_VIGILANT: 1          # (1/0) restores 20-30% of TU on beginning of enemy turn 
-      RAPID_TARGETING: 5        # bonus to accuracy with snap and auto-shots with pistols, SMG, rifles, shotguns and LMG
+      RAPID_TARGETING: 5        # bonus to accuracy with snap and auto-shots with pistols, SMG, rifles, shotguns and LMG
   - name: STR_RANGER
     tags:
       REAPER: 1                 # (1/0) enables 40% crit (x1.5 damage with melee weapons) if target is below 50% hp, regain TU if the target dies.
       DASH: 40                  # value to reduce reaction chance in close distance
-      UNIFIGHT: 15              # bonus to accuracy with trowing weapons
+      UNIFIGHT: 15              # bonus to accuracy with trowing weapons
   - name: STR_SUPPORT
     tags:
       FIELD_SURGEON: 15         #X (1-XXX) percent reduction in recovery time if healed by field surgeon.
