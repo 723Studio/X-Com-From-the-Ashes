@@ -1,10 +1,11 @@
 name: "X-COM: From the Ashes"
 version: "0.1.0"
-versionDisplay: "Alpha 1.1"
+versionDisplay: "Alpha 2.0"
 author: "Finnik"
 description: "From the ashes of XCOM will rise the Phoenix, the defender of the innocent, crushing the foreigners!"
 id: From the Ashes
 isMaster: true
 requiredExtendedEngine: "FtA"
+requiredExtendedVersion: "1.0.0"
 master: xcom1
 reservedSpace: 12

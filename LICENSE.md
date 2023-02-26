@@ -63,6 +63,8 @@ Here is a full list of that assets:
 * CULT_BACKGROUND.png
 * INTEL_STATE.png
 * SECRET_AGENT.png
+* COVEROPSHQ_BACKGROUND.png
+* Resources\Backgrounds\INTEL_BACKGROUND.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 

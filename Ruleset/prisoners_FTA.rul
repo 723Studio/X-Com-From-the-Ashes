@@ -1,6 +1,6 @@
 prisoners:
   - type: STR_XCOM_SOLDIER_PRISONER
-    startingСooperation: -500
+    startingCooperation: -500
     damageOverTime: 3
     interrogation:
       unlockResearches: [STR_TROLLIUM, STR_TROLLIUM]
@@ -23,7 +23,7 @@ prisoners:
       difficulty: 100
       spawnEvent: STR_
   - type: STR_MIB_AGENT
-    startingСooperation: -50
+    startingCooperation: -50
     damageOverTime: 3
     interrogation:
       unlockResearches: [STR_TROLLIUM, STR_TROLLIUM]
@@ -47,7 +47,7 @@ prisoners:
       funds: -800
       cooperationChange: 5
   - type: STR_XCOM_EX_COMMANDER
-    startingСooperation: -100
+    startingCooperation: -100
     interrogation:
       unlockResearches: [STR_TROLLIUM, STR_TROLLIUM]
       #requiredResearch: STR_TROLLIUM

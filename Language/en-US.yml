@@ -12,6 +12,10 @@ en-US:
   STR_UNFRIENDLY: "Unfriendly"
   STR_HOSTILE: "Hostile"
   STR_HATED: "Hated"
+  STR_HIRE_PERSONNEL: "Hire Personnel"
+  STR_COST_TITLE: "COST"
+  STR_TOTAL_UC_ARG: "TOTAL>{ALT}{0}"
+  STR_NOT_ENOUGH_SPACE: "NOT ENOUGH SPACE!"
   STR_PILOT_PANICING: "PILOT PANICED!"
   STR_PILOT_PANICING_OVER: "PILOT PANIC OVER"
   STR_BUTTON_HINT: "RMB for details"
@@ -328,7 +332,6 @@ en-US:
   STR_PRISONER_RECRUITING_PT1: "The recruitment of prisoner"
   STR_PRISONER_RECRUITING_PT2: "has been accomplished.{NEWLINE}"
   STR_PRISONER_RECRUITING_PT3: "is ready for duty."
-  STR_NOT_ENOUGH_SPACE: "NOT ENOUGH SPACE!"
   STR_ALLOCATE: "Allocate"
   STR_BASE_LABOR_COSTS: "Base labor costs>{ALT}{0}"
   STR_COST_PER_UNIT_: "Approx. production costs>{ALT}{0}"
@@ -458,6 +461,11 @@ en-US:
   STR_HACKING_VIRUS_TERMINATED: "Virus is terminated!"
   STR_HACKING_NOT_ENOUGH_TU: "Not enough time units"
   STR_HACKING_OBJECTIVE_DETECTED: "Objective detected"
+  STR_CENTER_ON_BATTLE_OBJECT: "Center on Access Terminal"
+  STR_USE_SAMPLING_TOOL: "Use Sampling Tool"
+  STR_SAMPLES_GATHERED: "Sample gathered!"
+  STR_SAMPLES_GATHERING_FAILED: "Sample gathering failed!"
+  STR_NOTHING_TO_GATHER: "There is nothing to gather!"
   STR_MIA: "M.I.A"
   STR_NEW_DATA_ACQUIRED: "New data acquired."
   STR_REGIONAL_HQ_FOUND: "We discovered the M.I.B. regional headquarters!"
@@ -483,6 +491,7 @@ en-US:
   STR_AGENT_JOINED_XCOM: "AGENT JOINED X-COM"
   STR_SCIENTIST_JOINED_XCOM: "SCIENTIST JOINED X-COM"
   STR_ENGINEER_JOINED_XCOM: "ENGINEER JOINED X-COM"
+  STR_NON_COMBAT_STATS: "Non-combat stats"
   STR_ITEM_EXTRACTION: "Item extraction"
   STR_ITEM_EXTRACTION_FAILED: "Item extraction failed"
   STR_ALL_OBJECTIVES_SECURED: "All objectives secured"
@@ -752,6 +761,8 @@ en-US:
   STR_MIB_CONTROL_CENTER_NOT_DESTROYED: "M.I.B. CONTROL CENTER NOT DESTROYED"
   STR_MIB_BASE_ALARM: "M.I.B. Defence System"
   STR_MIB_BASE_ALARM_DESCRIPTION: "Commander! Our sensors have detected a spike in radiation levels! There's a neutron radiation source in the base, and it's gradually increasing in power. According to our calculations, very soon our soldiers will be unable to withstand the exposure level and stay alive afterwards. We must destroy the servers in the command center as quickly as possible and get out of here!" 
+  STR_MIB_BASE_PRISONERS: "Prisoners"
+  STR_MIB_BASE_PRISONERS_DESCRIPTION: "<White noise> Now I see where they disappeared to... <Inaudible> Important members of the Resistance are at the base... <White Noise> Commander, help release...  <Inaudible> ... this is their last chance... <White noise>" 
   STR_MIB_REGIONAL_HQ: "M.I.B. Regional HQ"
   STR_MIB_REGIONAL_HQ_: "M.I.B. Regional HQ"
   STR_RESISTANCE_FARM_ZOMBIE: "Resistance Haven Attacked"
@@ -1365,7 +1376,8 @@ en-US:
   STR_RESISTANCE_SCIENTIST: "Scientist"
   STR_RESISTANCE_SCIENTIST_VIP: "Scientist"
   STR_RESISTANCE_SCIENTIST_ARMOR: "Scientist"
-  STR_RESISTANCE_SCIENTIST_CORPSE: "Scientists Corpse"
+  STR_RESISTANCE_SCIENTIST_CORPSE: "Scientist Corpse"
+  STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION: "Scientist Corpse"
   STR_RESISTANCE_RADIO: "Resistance Radio"
   STR_RESISTANCE_RADIO_ARMOR: "Resistance Radio"
   STR_RESISTANCE_RADIO_REMAINS: "Resistance Radio Remains"
@@ -2351,11 +2363,8 @@ en-US:
   SWARMIDS_CORPSE_3: SWARMIDS_CORPSE_3
   SWARMIDS_CORPSE_4: SWARMIDS_CORPSE_4
   STR_SPAWN_RESISTANCE_AGENT: STR_SPAWN_RESISTANCE_AGENT
-  STR_SPAWN_RESISTANCE_AGENT_VIP: STR_SPAWN_RESISTANCE_AGENT_VIP
-  STR_SPAWN_RESISTANCE_AGENT_PRISONER: STR_SPAWN_RESISTANCE_AGENT_PRISONER
   STR_SPAWN_RESISTANCE_SOLDIER: STR_SPAWN_RESISTANCE_SOLDIER
   STR_SPAWN_RESISTANCE_SCIENTIST: STR_SPAWN_RESISTANCE_SCIENTIST
-  STR_SPAWN_RESISTANCE_SCIENTIST_VIP: STR_SPAWN_RESISTANCE_SCIENTIST_VIP
   STR_SPAWN_RESISTANCE_RADIO: STR_SPAWN_RESISTANCE_RADIO
   STR_SPAWN_RESISTANCE_COMPUTER: STR_SPAWN_RESISTANCE_COMPUTER
   STR_ARMADILLO_TERROR: STR_ARMADILLO_TERROR

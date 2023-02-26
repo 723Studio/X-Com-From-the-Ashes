@@ -4756,15 +4756,15 @@ items:
     listOrder: 25030
     landOnly: true
   - type: STR_HACKING_TOOL
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT]
     requiresBuy:
         - STR_TODOIUM
     size: 0.4
     weight: 1
     landOnly: true
-    bigSprite: 304 #temp
-    floorSprite: 304 #temp
-    handSprite: 504 #temp
+    bigSprite: 99 #temp
+    floorSprite: 99 #temp
+    handSprite: 930 #temp
     battleType: 12 #new type for hacking
     invWidth: 2
     invHeight: 1
@@ -4775,6 +4775,28 @@ items:
     attraction: 5
     hackingHp: 25
     hackingTu: 250
+    LOSRequired: true
+    #experienceTrainingMode: 19
+    listOrder: 48150
+  - type: STR_SAMPLING_TOOL
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT]
+    requiresBuy:
+        - STR_TODOIUM
+    size: 0.4
+    weight: 1
+    landOnly: true
+    bigSprite: 466
+    floorSprite: 466
+    handSprite: 1058
+    battleType: 13 #new type for sampling
+    invWidth: 2
+    invHeight: 2
+    maxRange: 20
+    costUse:
+      time: 20
+    flatRate: false
+    attraction: 5
+    samplingPower: 100
     LOSRequired: true
     #experienceTrainingMode: 19
     listOrder: 48150
@@ -6049,8 +6071,9 @@ items:
     listOrder: 100053
 #Resistance units
   - type: STR_SPAWN_RESISTANCE_AGENT
-    spawnUnit: STR_RESISTANCE_AGENT
-    spawnUnitFaction: 0 #Player faction
+    spawnSoldier: STR_RESISTANCE_AGENT
+    #spawnUnit: STR_RESISTANCE_AGENT
+    #spawnUnitFaction: 0 #Player faction
     bigSprite: 0
     floorSprite: 302 #green
     battleType: 4
@@ -6084,24 +6107,6 @@ items:
     armor: 30
     recover: false
     listOrder: 100490
-  - type: STR_SPAWN_RESISTANCE_AGENT_VIP
-    spawnUnit: STR_RESISTANCE_AGENT_VIP
-    spawnUnitFaction: 0
-    bigSprite: 0
-    battleType: 4
-    invWidth: 0
-    invHeight: 0
-    recover: false
-    listOrder: 100500
-  - type: STR_SPAWN_RESISTANCE_AGENT_PRISONER
-    spawnUnit: STR_RESISTANCE_AGENT_PRISONER
-    spawnUnitFaction: 0
-    bigSprite: 0
-    battleType: 4
-    invWidth: 0
-    invHeight: 0
-    recover: false
-    listOrder: 100505
   - type: STR_RESISTANCE_SCOUT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -6141,7 +6146,7 @@ items:
     recoverCorpse: false
     listOrder: 100530
   - type: STR_SPAWN_RESISTANCE_SCIENTIST
-    spawnUnit: STR_RESISTANCE_SCIENTIST
+    spawnSoldier: STR_SCIENTIST
     spawnUnitFaction: 0
     bigSprite: 0
     floorSprite: 302 #green
@@ -6150,16 +6155,6 @@ items:
     invHeight: 0
     recover: false
     listOrder: 100540
-  - type: STR_SPAWN_RESISTANCE_SCIENTIST_VIP
-    spawnUnit: STR_RESISTANCE_SCIENTIST_VIP
-    spawnUnitFaction: 0
-    bigSprite: 0
-    floorSprite: 302 #green
-    battleType: 4
-    invWidth: 0
-    invHeight: 0
-    recover: false
-    listOrder: 100550
   - type: STR_RESISTANCE_SCIENTIST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -6175,6 +6170,18 @@ items:
     recover: true
     recoverCorpse: false
     listOrder: 100560
+  - type: STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 32
+    bigSprite: 104
+    floorSprite: 104
+    invWidth: 2
+    invHeight: 3
+    battleType: 0
+    armor: 30
+    recover: false
+    listOrder: 100490
   - type: STR_SPAWN_RESISTANCE_RADIO
     spawnUnit: STR_RESISTANCE_RADIO
     spawnUnitFaction: -1

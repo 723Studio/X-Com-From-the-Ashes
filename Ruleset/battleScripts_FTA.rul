@@ -369,7 +369,7 @@ battleScripts:
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
     commands:
     - type: showMessage
-      startTurn: 2
+      startTurn: 1
       executionChances: 100
       maxRuns: 1
       variable: first alarm
@@ -377,6 +377,15 @@ battleScripts:
         0:
           title: STR_MIB_BASE_ALARM
           content: STR_MIB_BASE_ALARM_DESCRIPTION
+    - type: showMessage
+      startTurn: 2
+      executionChances: 100
+      maxRuns: 1
+      variable: prisoners
+      messages:
+        0:
+          title: STR_MIB_BASE_PRISONERS
+          content: STR_MIB_BASE_PRISONERS_DESCRIPTION
     - type: showMessage
       startTurn: 500
       executionChances: 1

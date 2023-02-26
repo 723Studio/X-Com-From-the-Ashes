@@ -3333,13 +3333,22 @@ terrains:
         width: 10
         length: 10
         groups: 4
-        # items:
-        #   STR_SPAWN_RESISTANCE_AGENT_PRISONER:
-        #     - [2, 2, 0]
-        #     - [6, 2, 0]
-        #     - [3, 4, 0]
-        # fuseTimers:
-        #   STR_SPAWN_RESISTANCE_AGENT_PRISONER: [0, 0]
+        randomizedItems:
+              - position: [2, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_SPAWN_RESISTANCE_SCIENTIST, STR_SPAWN_RESISTANCE_AGENT, STR_SPAWN_RESISTANCE_AGENT, STR_RESISTANCE_AGENT_CORPSE_DECORATION, STR_RESISTANCE_AGENT_CORPSE_DECORATION, STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION, STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION]
+              - position: [6, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_SPAWN_RESISTANCE_SCIENTIST, STR_SPAWN_RESISTANCE_AGENT, STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION, STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION]
+              - position: [3, 4, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_SPAWN_RESISTANCE_SCIENTIST]
+        fuseTimers:
+          STR_SPAWN_RESISTANCE_SCIENTIST: [2, 2]
+          STR_SPAWN_RESISTANCE_AGENT: [2, 2]
       - name: MIB_B_LIV00
         width: 10
         length: 10

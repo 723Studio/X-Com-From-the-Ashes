@@ -3,3 +3,7 @@ objects:
     hackingDefence: 1
     alterationMCDNumber: 16
     alterationMCDRadius: 5
+  - type: STR_CATTLE_SAMPLING_SITE
+    samplingDefence: 1
+    spawnedItem: STR_FIRE_EXTINGUISHER
+    spawnedEvents: []

@@ -18,6 +18,25 @@ interfaces:
         color: 239   # bright green
       - id: name
         color: 138   # yellow
+  - type: diplomacyHirePersonnel
+    backgroundImage: BACK02.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 2     # orange
+      - id: window
+        color: 246   # purple
+      - id: text
+        color: 246   # purple
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 208  # white
+        border: 246  # purple
+      - id: button
+        color: 218   # blue
+      - id: otherCraft
+        color: 246   # purple
   - type: pilotsList
     backgroundImage: BACK14.SCR
     palette: PAL_BASESCAPE
@@ -619,24 +638,24 @@ interfaces:
         color: 246   # purple
       - id: otherDuty
         color: 218   # blue
-  - type: intelMenu #TODO
-    backgroundImage: COVEROPSHQ_BACKGROUND.SCR #BACK05.SCR
+  - type: intelMenu
+    backgroundImage: INTEL_BACKGROUND.SCR
     palette: PAL_BASESCAPE
     elements:
       - id: palette
-        color: 7     # violet
+        color: 4     # green
       - id: window
-        color: 213   # gold
+        color: 246   # purple
       - id: text
-        color: 213   # gold
+        color: 246   # purple
         color2: 208  # white
       - id: list
-        color: 246   # purple
-        color2: 213  # gold
+        color: 218   # blue
+        color2: 208  # white
       - id: button
-        color: 213   # gold
+        color: 246   # purple
   - type: agentsList
-    backgroundImage: COVEROPSHQ_BACKGROUND.SCR #TODO
+    backgroundImage: INTEL_BACKGROUND.SCR
     palette: PAL_BASESCAPE
     elements:
       - id: palette
@@ -655,7 +674,7 @@ interfaces:
       - id: otherDuty
         color: 218   # blue
   - type: intelAllocateAgents
-    backgroundImage: COVEROPSHQ_BACKGROUND.SCR #TODO
+    backgroundImage: INTEL_BACKGROUND.SCR
     palette: PAL_BASESCAPE
     elements:
       - id: palette
@@ -674,7 +693,7 @@ interfaces:
       - id: otherCraft
         color: 246   # purple
   - type: geoIntelComplete #TODO
-    backgroundImage: COVEROPSHQ_BACKGROUND.SCR #BACK05.SCR
+    backgroundImage: INTEL_BACKGROUND.SCR
     elements:
       - id: palette
         color: 0     # brown
@@ -686,8 +705,8 @@ interfaces:
         color: 138   # yellow
       - id: button
         color: 133   # minty green
-  - type: geoIntelAvailable #TODO
-    backgroundImage: BACK05.SCR
+  - type: geoIntelAvailable
+    backgroundImage: INTEL_BACKGROUND.SCR
     elements:
       - id: palette
         color: 0     # brown
@@ -699,8 +718,8 @@ interfaces:
         color: 138   # yellow
       - id: button
         color: 133   # minty green
-  - type: geoPrisonerReportNormal #TODO
-    backgroundImage: BACK05.SCR
+  - type: geoPrisonerReportNormal
+    backgroundImage: PRISON_BACKGROUND.SCR
     elements:
       - id: palette
         color: 0     # brown
@@ -713,7 +732,7 @@ interfaces:
       - id: button
         color: 133   # minty green
   - type: geoPrisonerReportDeath #TODO
-    backgroundImage: BACK05.SCR
+    backgroundImage: PRISON_BACKGROUND.SCR
     elements:
       - id: palette
         color: 2     # brown
@@ -744,7 +763,7 @@ interfaces:
         color2: 246   # purple
       - id: button
         color: 218   # blue
-  - type: prisonerInfo #TODO
+  - type: prisonerInfo
     backgroundImage: PRISON_BACKGROUND.SCR
     palette: PAL_BASESCAPE
     elements:

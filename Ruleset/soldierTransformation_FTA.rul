@@ -1,6 +1,6 @@
 soldierTransformation:
   - name: STR_SNIPER_TRAINING
-    minRank: 1
+    #minRank: 1
     transformationTime: 408
     # recoveryTime: 50
     # cost: 5000000
@@ -37,7 +37,7 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_HEAVY_TRAINING
-    minRank: 1
+    #minRank: 1
     transformationTime: 408
     description: STR_HEAVY_TRAINING_DESC
     requires:
@@ -74,7 +74,7 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_ASSAULT_TRAINING
-    minRank: 1
+    #minRank: 1
     transformationTime: 408
     description: STR_ASSAULT_TRAINING_DESC
     requires:
@@ -109,7 +109,7 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_RANGER_TRAINING
-    minRank: 1
+    #minRank: 1
     transformationTime: 408
     description: STR_RANGER_TRAINING_DESC
     requires:
@@ -145,7 +145,7 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_SUPPORT_TRAINING
-    minRank: 1
+    #minRank: 1
     transformationTime: 408
     description: STR_SUPPORT_TRAINING_DESC
     requires:
@@ -179,7 +179,7 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_UNARMED_COMBAT_TRAINING
-    minRank: 1
+    #minRank: 1
     transformationTime: 250
     description:  STR_UNARMED_COMBAT_TRAINING_DESC
     requires:

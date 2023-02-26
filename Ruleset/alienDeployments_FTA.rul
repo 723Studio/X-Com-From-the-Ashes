@@ -3994,7 +3994,7 @@ alienDeployments:
     height: 2
     shade: 0
     extendedObjectiveType: STR_ITEM_EXTRACTION
-    undercoverArmors: [STR_JUMPSUIT_UC]
+    undercoverArmors: [STR_JUMPSUIT_UC] #TODO
     briefing:
       textOffset: -16
       background: SEWERS4.SCR

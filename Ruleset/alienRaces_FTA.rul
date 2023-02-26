@@ -5,6 +5,7 @@ alienRaces:
       0:
         STR_EARLY_GAME_TROLLING: 0
         STR_ALIEN_ABDUCTION: 5
+    raceType: 0 #-1 - mixed, 0 - alien, 1 - human, 2 - monster
     members:
       - STR_SECTOID_COMMANDER # 0 - Commander
       - STR_SECTOID_LEADER # 1 - Leader

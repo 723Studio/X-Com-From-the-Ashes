@@ -7,7 +7,6 @@ soldiers:
     agentRankSprite: 5012
     scientistRankSprite: 5018
     engineerRankSprite: 5024
-    roleExpRequirments:
     rankBattleSprite: 5000
     pilotRankSpriteBattlescape: 5006
     agentRankSpriteBattlescape: 5012
@@ -21,39 +20,39 @@ soldiers:
     roleExpRequirments:
       - role: 0 #ROLE_SOLDIER
         requirments: 
-          1: 3
-          2: 6
-          3: 15
-          4: 30
-          5: 60
+          1: 10
+          2: 15
+          3: 25
+          4: 50
+          5: 100
       - role: 1 #ROLE_PILOT
         requirments: 
-          1: 1
-          2: 6
-          3: 15
-          4: 30
-          5: 60
+          1: 10
+          2: 15
+          3: 25
+          4: 50
+          5: 100
       - role: 2 #ROLE_AGENT
         requirments: 
-          1: 3
-          2: 6
-          3: 15
-          4: 30
-          5: 60
+          1: 10
+          2: 15
+          3: 25
+          4: 50
+          5: 100
       - role: 3 #ROLE_SCIENTIST
         requirments: 
-          1: 3
-          2: 6
-          3: 15
-          4: 30
-          5: 60
+          1: 10
+          2: 15
+          3: 25
+          4: 50
+          5: 100
       - role: 4 #ROLE_ENGINEER
         requirments: 
-          1: 3
-          2: 6
-          3: 15
-          4: 30
-          5: 60
+          1: 10
+          2: 15
+          3: 25
+          4: 50
+          5: 100
     roleRankStrings:
       - role: 0 #ROLE_SOLDIER
         strings: 
