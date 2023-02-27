@@ -1193,7 +1193,27 @@ en-US:
   STR_CHOCOLATE_FAIL_DESCRIPTION: "The figurehead disappearead shortly after recieving the money. Our agents saw him getting on a plane heading for the Maldives. Such a baffling and cynical betrayal had an impact not only on our finances but on the morale as well.{NEWLINE}Loyalty score> {ALT}-50"
   STR_CHOCOLATE_PARANOID: "Risk it for the biscuit"
   STR_CHOCOLATE_PARANOID_DESCRIPTION: "The figurehead's hunch proved wrong as the MIB never showed up. It was certainly a risk but it paid off and made our people trust in your leadership even more.{NEWLINE}Loyalty score> {ALT}+50"
-
+  #torture events
+  STR_RANDOM_TORTURE_EVENT_1: "Useless wimp"
+  STR_RANDOM_TORTURE_EVENT_1_DESCRIPTION: "Turns out this prisoner had surprisingly low pain tolerance. As soon as the first few lacerations were applied, the subject hollered. They immediately agreed to tell us everything - which sounded good. Unfortunately, 'everything' was confusing and contradictory. The poor sod was just trying to avoid pain. A pretty natural reaction, to be fair.{NEWLINE}That scream was something else, though! I feel chills even now just remembering it. And, unfortunately, so do other nearby personnel.{NEWLINE}Loyalty score> {ALT}-10"   #Loyalty -10
+  STR_RANDOM_TORTURE_EVENT_2: ""
+  STR_RANDOM_TORTURE_EVENT_2_DESCRIPTION: "" #Loyalty -25
+  STR_RANDOM_TORTURE_EVENT_3: ""
+  STR_RANDOM_TORTURE_EVENT_3_DESCRIPTION: "" #Loyalty -50
+  STR_RANDOM_TORTURE_EVENT_4: "Car Battery Enthusiast"
+  STR_RANDOM_TORTURE_EVENT_4_DESCRIPTION: "Well, this one could have gone much better. Seems that our interrogator decided to test the rumored 'car battery and nipples' approach to torture. Of course, that didn't work quite as intended: skin was breached, and current turned from nonexistent to heart-stopping instantly. The scream was short, but very loud. Now, I know you didn't authorise this, Commander, but some of our people don't - and are now doubting your sanity.{NEWLINE}Loyalty score> {ALT}-100" #Loyalty -100
+  STR_RANDOM_TORTURE_EVENT_FUNDS_1: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "" #Loyalty -5, Funds +25k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_2: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_2_DESCRIPTION: "" #Loyalty -10, Funds +50k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_3: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_3_DESCRIPTION: "" #Loyalty -15, Funds +84k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_4: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_4_DESCRIPTION: "" #Loyalty -20, Funds +125k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_5: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_5_DESCRIPTION: "" #Loyalty -25, Funds +174k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_6: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION: "" #Loyalty -30, Funds +240k
 
 
 
