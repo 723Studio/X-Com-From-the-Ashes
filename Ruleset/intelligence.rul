@@ -7,7 +7,7 @@ intelligence:
     specialRule: 1 #INTEL_NONE = 0, INTEL_UFO_TRACKING = 1, INTEL_COVERT_OPERATIONS = 2, INTEL_DEPLOYMENT_HINTS = 3
     stats:
       data: 40
-      computers: 70
+      computers: 30
       xenolinguistics: 60
       alienTech: 40
       investigation: 80

@@ -716,6 +716,7 @@ soldiers:
       - delete
       - SoldierNames/
 
+#Resistance
   - type: STR_RESISTANCE_AGENT
     refNode: *STR_SOLDIER
     roles: [0]
@@ -787,3 +788,4 @@ soldiers:
     soldierNames:
       - delete
       - SoldierNames/
+#Prisoner reqruits

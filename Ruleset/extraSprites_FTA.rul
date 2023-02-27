@@ -386,7 +386,8 @@ extraSprites:
       463: Resources/Weapons/Alien/Utilities/bigob_AlienProxyMine.png
       464: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifle.png
       465: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifleClip.png
-      466: Resources/Weapons/Earthbound/Utilities/bigob_SamplingPack.png
+      466: Resources/Weapons/Earthbound/Utilities/bigob_HackingTool.png
+      467: Resources/Weapons/Earthbound/Utilities/bigob_SamplingPack.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -577,7 +578,8 @@ extraSprites:
       463: Resources/Weapons/Alien/Utilities/floorob_AlienProxyMine.png
       464: Resources/Weapons/Earthbound/Faction/floorob_MilitarySniperRifle.png
       465: Resources/Weapons/Earthbound/Faction/floorob_MilitarySniperRifleClip.png
-      466: Resources/Weapons/Earthbound/Utilities/floorob_SamplingPack.png
+      466: Resources/Weapons/Earthbound/Utilities/floorob_HackingTool.png
+      467: Resources/Weapons/Earthbound/Utilities/floorob_SamplingPack.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40

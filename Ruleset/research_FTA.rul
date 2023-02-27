@@ -61,6 +61,8 @@ research:
     hidden: true
   - name: STR_PRISONER_INTERROGATIONS
     hidden: true
+  - name: STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    hidden: true
   - name: STR_LOYALTY
     hidden: true
   - name: STR_XCOM_EQUIPMENT_UNLOCKED
@@ -652,6 +654,13 @@ research:
   #   hidden: true
   - name: STR_STEAL_OSPREY_PREREQ
     hidden: true
+  - name: STR_RECRUIT_CIVILIAN_PRISONERS
+    requiresBaseFunc: [ INTLAB ]
+    cost: 3800
+    points: 100
+    dependencies:
+      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    listOrder: 1020
 
 #shared creatures arc
   - name: STR_MONSTER_HUNT_START_PREREQ
@@ -786,7 +795,7 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     listOrder: 6000
-  - name: STR_MIB_AGENT
+  - name: STR_MIB_AGENT #TODO - rework with points
     requiresBaseFunc: [ INTLAB ]
     cost: 960
     points: 26
@@ -925,6 +934,7 @@ research:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6070
   - name: STR_MIB_OFFICE_WORKER
     requiresBaseFunc: [ INTLAB ]
@@ -935,6 +945,7 @@ research:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6080
   - name: STR_MIB_OFFICE_MANAGER
     requiresBaseFunc: [ INTLAB ]
@@ -945,6 +956,7 @@ research:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6090
   - name: STR_MIB_OFFICE_SECURITY
     requiresBaseFunc: [ INTLAB ]
@@ -955,6 +967,7 @@ research:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6100
   - name: STR_MIB_VIP_BODYGUARD
     requiresBaseFunc: [ INTLAB ]
@@ -965,6 +978,7 @@ research:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6110
   - name: MIB_BANKER
     requiresBaseFunc: [ INTLAB ]
@@ -973,7 +987,8 @@ research:
     needItem: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
-      - STR_PRISONER_INTERROGATIONS #FIXME - add more lore
+      - STR_PRISONER_INTERROGATIONS #TODO - add more lore
+      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6120
 
   #enemies - cultists

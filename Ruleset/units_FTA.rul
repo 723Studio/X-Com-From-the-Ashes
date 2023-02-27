@@ -376,6 +376,7 @@ units:
       melee: 10
       psiStrength: 15
     armor: STR_MIB_AGENT_VEST_ARMOR
+    prisoner: STR_MIB_AGENT
     standHeight: 22
     kneelHeight: 14
     value: 5
@@ -416,6 +417,7 @@ units:
       melee: 10
       psiStrength: 15
     armor: STR_MIB_SPECOPS_ARMOR
+    prisoner: STR_MIB_SPECOPS
     standHeight: 22
     kneelHeight: 14
     value: 8
@@ -496,6 +498,7 @@ units:
       melee: 10
       psiStrength: 15
     armor: STR_MIB_BUTCHER_ARMOR
+    prisoner: STR_MIB_BUTCHER
     standHeight: 22
     kneelHeight: 14
     value: 8
@@ -571,6 +574,7 @@ units:
       melee: 10
       psiStrength: 15
     armor: STR_MIB_SCIENTIST_ARMOR
+    prisoner: STR_MIB_SCIENTIST
     standHeight: 22
     kneelHeight: 14
     value: 10
@@ -606,6 +610,7 @@ units:
       melee: 5
       psiStrength: 15
     armor: STR_MIB_ENFORCER_ARMOR
+    prisoner: STR_MIB_ENFORCER
     standHeight: 22
     kneelHeight: 14
     value: 12
@@ -622,6 +627,7 @@ units:
   - &MIB_PROCURED_CIVILIAN
     type: STR_MIB_OFFICE_ENGINEER
     race: STR_HUMAN
+    roles: [4] #ROLE_ENGINEER
     stats:
       tu: 40
       stamina: 40
@@ -646,6 +652,7 @@ units:
       melee: 10
       psiStrength: 15
     armor: STR_MIB_OFFICE_ENGINEER_ARMOR
+    prisoner: STR_MIB_OFFICE_ENGINEER
     standHeight: 22
     kneelHeight: 14
     value: -30
@@ -660,12 +667,13 @@ units:
   - type: STR_MIB_OFFICE_MANAGER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_MANAGER_ARMOR
+    prisoner: STR_MIB_OFFICE_MANAGER
     value: -25
     deathSound: *FemaleDeathSounds
     # panicSound: *FemalePanicSounds
     # berserkSound: *FemaleBerserkSounds
     aggression: 0
-    builtInWeaponSets: &MIBAgentLoadout
+    builtInWeaponSets: &MIBProcuredLoadout
       - - STR_CREDIT_CARD_SILVER
       - - STR_CREDIT_CARD_SILVER
       - - STR_CASH_PACK
@@ -684,7 +692,6 @@ units:
       - - STR_CREDIT_CARD_GOLD
   - type: STR_MIB_OFFICE_SECURITY
     refNode: *MIB_PROCURED_CIVILIAN
-    armor: STR_MIB_OFFICE_SECURITY_ARMOR
     stats:
       tu: 54
       stamina: 80
@@ -708,22 +715,28 @@ units:
       strength: 5
       melee: 10
       psiStrength: 15
+    armor: STR_MIB_OFFICE_SECURITY_ARMOR
+    prisoner: STR_MIB_OFFICE_SECURITY
     value: -15
     aggression: 3
   - type: STR_MIB_OFFICE_WORKER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_OFFICE_WORKER_ARMOR
+    prisoner: STR_MIB_OFFICE_WORKER
   - type: STR_MIB_VIP
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
+    prisoner: STR_MIB_VIP
+    value: 60
     pickUpWeaponsMoreActively: 1
   - type: MIB_BANKER
     refNode: *MIB_PROCURED_CIVILIAN
     armor: STR_MIB_VIP_ARMOR
+    prisoner: STR_MIB_VIP #TODO - no difference for now
+    value: 30
     pickUpWeaponsMoreActively: 1
   - type: STR_MIB_VIP_BODYGUARD
     refNode: *MIB_PROCURED_CIVILIAN
-    armor: STR_MIB_VIP_BODYGUARD_ARMOR
     stats:
       tu: 60
       stamina: 80
@@ -747,7 +760,9 @@ units:
       strength: 5
       melee: 10
       psiStrength: 15
-    value: -15
+    armor: STR_MIB_VIP_BODYGUARD_ARMOR
+    prisoner: STR_MIB_VIP_BODYGUARD
+    value: 10
     aggression: 4
     pickUpWeaponsMoreActively: 1
 
@@ -1374,6 +1389,7 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ENERGY_WISP_WEAPON
+
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
     race: STR_HUMAN
@@ -1821,6 +1837,7 @@ units:
     treatedByAI: true
     aggression: 8
     canSurrender: false
+
 #Resistance
   - &STR_RESISTANCE_SCIENTIST
     type: STR_RESISTANCE_SCIENTIST

@@ -34,6 +34,7 @@ Emergency hotfix for critical bugs in content or engine logic.
 
 ### New content
 
+- Support Soldier role engine feature - soldiers and starting base conditions rebalanced, vanilla scientists and engineers removed from the game
 - Energy wisp monster
 
 ### Balance

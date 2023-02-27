@@ -4762,9 +4762,9 @@ items:
     size: 0.4
     weight: 1
     landOnly: true
-    bigSprite: 99 #temp
-    floorSprite: 99 #temp
-    handSprite: 930 #temp
+    bigSprite: 466
+    floorSprite: 466
+    #handSprite: 930 #temp
     battleType: 12 #new type for hacking
     invWidth: 2
     invHeight: 1
@@ -4776,7 +4776,7 @@ items:
     hackingHp: 25
     hackingTu: 250
     LOSRequired: true
-    #experienceTrainingMode: 19
+    #experienceTrainingMode: 19 - hacking experince is hardcoded
     listOrder: 48150
   - type: STR_SAMPLING_TOOL
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT]
@@ -4785,8 +4785,8 @@ items:
     size: 0.4
     weight: 1
     landOnly: true
-    bigSprite: 466
-    floorSprite: 466
+    bigSprite: 467
+    floorSprite: 467
     handSprite: 1058
     battleType: 13 #new type for sampling
     invWidth: 2
@@ -4798,7 +4798,7 @@ items:
     attraction: 5
     samplingPower: 100
     LOSRequired: true
-    #experienceTrainingMode: 19
+    #experienceTrainingMode: 19 - hacking experince is hardcoded
     listOrder: 48150
 
 #built-in weapons
