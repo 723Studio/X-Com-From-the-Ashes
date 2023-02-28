@@ -63,6 +63,8 @@ research:
     hidden: true
   - name: STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     hidden: true
+  - name: STR_CRIMINAL_RECRUITING_PREREQ
+    hidden: true
   - name: STR_LOYALTY
     hidden: true
   - name: STR_XCOM_EQUIPMENT_UNLOCKED
@@ -661,6 +663,14 @@ research:
     dependencies:
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 1020
+  - name: STR_CRIMINAL_RECRUITING
+    requiresBaseFunc: [ INTLAB ]
+    cost: 3800
+    points: 100
+    dependencies:
+      - STR_CRIMINAL_RECRUITING_PREREQ
+    listOrder: 1020
+
 
 #shared creatures arc
   - name: STR_MONSTER_HUNT_START_PREREQ
@@ -784,7 +794,8 @@ research:
       - STR_ZOMBIE_BIOLOGY
       - STR_CROP_CIRCLES_ZOMBIES_PREREQ
 
-#enemies - humanoids
+#Prisoner interrogation research
+#MIB
   - name: STR_XCOM_EX_COMMANDER
     requiresBaseFunc: [ INTLAB ]
     cost: 800
@@ -905,26 +916,36 @@ research:
     #     - STR_EMPTY_MIB_EARLY_LORE8
     #     - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6040
-  - name: STR_SEEKER_DRONE_TERRORIST
-    requiresBaseFunc: [ HQ ]
-    cost: 4800
-    points: 150
-    needItem: true
-    destroyItem: true
-    spawnedItem: STR_SEEKER_DRONE_CORPSE
-    dependencies:
-      - STR_TODOIUM
-    listOrder: 6050
-  - name: STR_SEEKER_DRONE_CORPSE
-    requiresBaseFunc: [ HQ ]
-    cost: 4000
+  - name: STR_MIB_SCIENTIST
+    requiresBaseFunc: [ INTLAB ]
+    cost: 1440
     points: 40
     needItem: true
     destroyItem: true
-    dependencies:
-      - STR_TODOIUM
-    listOrder: 6060
-  #MiB\Procured
+    # dependencies:
+    #   - STR_INTEL_STATUS_REPORT
+    # getOneFree:
+    #   - STR_PRISONER_INTERROGATIONS
+    # getOneFreeProtected: #FIXME - more specific lore, not agent
+    #   STR_PRISONER_INTERROGATIONS:
+    #     - STR_EMPTY_MIB_EARLY_LORE_STAGE
+    #     - STR_EMPTY_MIB_EARLY_LORE1
+    #     - STR_EMPTY_MIB_EARLY_LORE2
+    #     - STR_EMPTY_MIB_EARLY_LORE3
+    #   STR_EMPTY_MIB_EARLY_LORE_STAGE:
+    #     - STR_FRESH_MIB_AGENT
+    #     - STR_EMPTY_MIB_EARLY_LORE1
+    #     - STR_EMPTY_MIB_EARLY_LORE2
+    #     - STR_EMPTY_MIB_EARLY_LORE3
+    #     - STR_EMPTY_MIB_EARLY_LORE4
+    #     - STR_EMPTY_MIB_EARLY_LORE5
+    #     - STR_EMPTY_MIB_EARLY_LORE6
+    #     - STR_EMPTY_MIB_EARLY_LORE7
+    #     - STR_EMPTY_MIB_EARLY_LORE8
+    #     - STR_EMPTY_MIB_EARLY_LORE9
+    listOrder: 6040
+
+  #MiB-Procured
   - name: STR_MIB_OFFICE_ENGINEER
     requiresBaseFunc: [ INTLAB ]
     cost: 60
@@ -988,10 +1009,18 @@ research:
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
       - STR_PRISONER_INTERROGATIONS #TODO - add more lore
-      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    listOrder: 6120
+  - name: STR_MIB_VIP
+    requiresBaseFunc: [ INTLAB ]
+    cost: 300
+    points: 10
+    needItem: true
+    spawnedEvent: STR_MIB_BANKER_ACCOUNTS
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS #TODO - add more lore
     listOrder: 6120
 
-  #enemies - cultists
+#Cultists
   - name: STR_CULT_GANGER
     requiresBaseFunc: [ INTLAB ]
     cost: 100
@@ -1001,6 +1030,7 @@ research:
       - STR_INTEL_STATUS_REPORT
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_CRIMINAL_RECRUITING_PREREQ
     listOrder: 6121
   - name: STR_CULT_COORDINATOR
     requiresBaseFunc: [ INTLAB ]
@@ -1015,8 +1045,116 @@ research:
       STR_PRISONER_INTERROGATIONS:
         - STR_CULT_GANG_DEN
     listOrder: 6122
+#Other humans
+  - name: STR_ARMY_FIELD_OFFICER
+    requiresBaseFunc: [ INTLAB ]
+    cost: 200
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    # getOneFreeProtected: #army interrogation lore pls
+    #   STR_PRISONER_INTERROGATIONS:
+    #     - STR_CULT_GANG_DEN
+    listOrder: 6122
+  - name: STR_ARMY_FIELD_SOLDIER
+    requiresBaseFunc: [ INTLAB ]
+    cost: 200
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_CULT_GANG_DEN
+    listOrder: 6122
+  - name: STR_MAD_CIVILIAN
+    requiresBaseFunc: [ INTLAB ]
+    cost: 50
+    points: 15
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_INFO_UPLOAD
+      STR_INFO_UPLOAD:
+        - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED
+        - STR_HUNTING_RIFLE
+        - STR_HATCHET
+        - STR_SPORTS_BOW
+        - STR_THROWING_KNIFE
+        - STR_MACHETE
+    listOrder: 6170
+  - name: STR_MALE_POLICE
+    requiresBaseFunc: [ INTLAB ]
+    cost: 200
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    # getOneFreeProtected: #army interrogation lore pls
+    #   STR_PRISONER_INTERROGATIONS:
+    #     - STR_CULT_GANG_DEN
+    listOrder: 6122
+  - name: STR_CIVILIAN_FARMER
+    requiresBaseFunc: [ INTLAB ]
+    cost: 200
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    # getOneFreeProtected: #army interrogation lore pls
+    #   STR_PRISONER_INTERROGATIONS:
+    #     - STR_CULT_GANG_DEN
+    listOrder: 6122
+  - name: STR_CIVILIAN_HUNTER
+    requiresBaseFunc: [ INTLAB ]
+    cost: 200
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    # getOneFreeProtected: #army interrogation lore pls
+    #   STR_PRISONER_INTERROGATIONS:
+    #     - STR_CULT_GANG_DEN
+    listOrder: 6122
 
-  #enemies - zombies 
+#True enemies study
+#MiB
+  - name: STR_SEEKER_DRONE_TERRORIST
+    requiresBaseFunc: [ HQ ]
+    cost: 4800
+    points: 150
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_SEEKER_DRONE_CORPSE
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 6050
+  - name: STR_SEEKER_DRONE_CORPSE
+    requiresBaseFunc: [ HQ ]
+    cost: 4000
+    points: 40
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_TODOIUM
+    listOrder: 6060
+#Zombies 
   - name: STR_FACEHUGGER_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 600
@@ -1077,7 +1215,7 @@ research:
       - STR_STRANGE_CREATURE
       - STR_LIVE_ZOMBIE
     listOrder: 6180
-  #enemies - creatures
+#Monsters
   - name: STR_CHUPACABRA_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
@@ -1146,48 +1284,6 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
     listOrder: 6250
-  - name: STR_MAD_MALE_CIVILIAN_FARMER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 50
-    points: 15
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
-    getOneFree:
-      - STR_PRISONER_INTERROGATIONS
-    getOneFreeProtected:
-      STR_PRISONER_INTERROGATIONS:
-        - STR_INFO_UPLOAD
-      STR_INFO_UPLOAD:
-        - STR_SAWED_OFF
-        - STR_DOUBLE_BARRELED
-        - STR_PUMP_ACTION_SHOTGUN
-        - STR_HUNTING_RIFLE
-        - STR_WRENCH
-        - STR_CROWBAR
-        - STR_HATCHET
-    listOrder: 6160
-  - name: STR_MAD_CIVILIAN_HUNTER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 50
-    points: 15
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
-    getOneFree:
-      - STR_PRISONER_INTERROGATIONS
-    getOneFreeProtected:
-      STR_PRISONER_INTERROGATIONS:
-        - STR_INFO_UPLOAD
-      STR_INFO_UPLOAD:
-        - STR_SAWED_OFF
-        - STR_DOUBLE_BARRELED
-        - STR_HUNTING_RIFLE
-        - STR_HATCHET
-        - STR_SPORTS_BOW
-        - STR_THROWING_KNIFE
-        - STR_MACHETE
-    listOrder: 6170
   - name: STR_MAD_DOGE
     requiresBaseFunc: [ INTLAB ]
     cost: 30
@@ -1215,8 +1311,8 @@ research:
       - STR_STRANGE_CREATURE
     listOrder: 6200
 
-  #enemies - aliens
-  #combat analysis 
+#Aliens
+#combat analysis 
   - name: STR_MIB_AGENT_ARMOR
     cost: 50
     points: 7

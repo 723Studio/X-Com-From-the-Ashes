@@ -794,6 +794,7 @@ units:
       melee: 5
       psiStrength: 15
     armor: STR_CULT_GANGER_ARMOR
+    prisoner: STR_CULT_GANGER
     standHeight: 22
     kneelHeight: 14
     value: 3
@@ -830,6 +831,7 @@ units:
       melee: 10
       psiStrength: 15
     armor: STR_CULT_COORDINATOR_ARMOR
+    prisoner: STR_CULT_COORDINATOR
     standHeight: 22
     kneelHeight: 14
     value: 6
@@ -907,6 +909,7 @@ units:
       melee: 5
       psiStrength: 15
     armor: STR_ARMY_FIELD_SOLDIER_ARMOR
+    prisoner: STR_ARMY_FIELD_SOLDIER
     standHeight: 22
     kneelHeight: 14
     value: -10
@@ -991,6 +994,7 @@ units:
       melee: 5
       psiStrength: 15
     armor: STR_ARMY_FIELD_OFFICER_ARMOR
+    prisoner: STR_ARMY_FIELD_OFFICER
     standHeight: 22
     kneelHeight: 14
     value: -12
@@ -1417,6 +1421,7 @@ units:
       melee: 3
       psiStrength: 5
     armor: STR_MALE_CITIZEN_ARMOR
+    prisoner: STR_MALE_MILITIA_CITIZEN
     standHeight: 22
     kneelHeight: 14
     value: -25
@@ -1524,6 +1529,7 @@ units:
       melee: 3
       psiStrength: 15
     armor: STR_MALE_POLICE_ARMOR
+    prisoner: STR_MALE_POLICE
     standHeight: 22
     kneelHeight: 14
     value: -20
@@ -1614,6 +1620,7 @@ units:
       psiSkill: 0
       melee: 30
     armor: STR_MALE_CIVILIAN_FARMER_ARMOR
+    prisoner: STR_MALE_CIVILIAN_FARMER
     standHeight: 22
     kneelHeight: 14
     value: 30
@@ -1679,6 +1686,7 @@ units:
         - STR_CASH_PACK
   - type: STR_MAD_MALE_CIVILIAN_FARMER
     refNode: *MaleCivilianFarmer
+    prisoner: STR_MAD_CIVILIAN
     treatedByAI: true
     aggression: 8
     canSurrender: false
@@ -1699,6 +1707,7 @@ units:
       psiSkill: 0
       melee: 30
     armor: STR_FEMALE_FARMER_ARMOR
+    prisoner: STR_FEMALE_CIVILIAN_FARMER
     standHeight: 22
     kneelHeight: 14
     value: 30
@@ -1732,6 +1741,7 @@ units:
         - STR_HUNTING_RIFLE_CLIP
   - type: STR_MAD_FEMALE_CIVILIAN_FARMER
     refNode: *FemaleCivilianFarmer
+    prisoner: STR_MAD_CIVILIAN
     treatedByAI: true
     aggression: 8
     canSurrender: false
@@ -1752,6 +1762,7 @@ units:
       psiSkill: 0
       melee: 30
     armor: STR_CIVILIAN_HUNTER_ARMOR
+    prisoner: STR_CIVILIAN_HUNTER
     standHeight: 22
     kneelHeight: 14
     value: 30
@@ -1834,6 +1845,7 @@ units:
         - STR_CASH_PACK
   - type: STR_MAD_CIVILIAN_HUNTER
     refNode: *CivilianHunter
+    prisoner: STR_MAD_CIVILIAN
     treatedByAI: true
     aggression: 8
     canSurrender: false

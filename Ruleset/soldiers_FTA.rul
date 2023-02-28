@@ -375,7 +375,7 @@ soldiers:
       - SoldierNames/
   - type: STR_AGENT
     refNode: *STR_SOLDIER
-    roles: [2] #ROLE_AGENT
+    #roles: [2] #ROLE_AGENT
     costBuy: 60000
     costSalary: 4000
     value: 60

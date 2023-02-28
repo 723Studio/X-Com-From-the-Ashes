@@ -8,12 +8,17 @@ prisoners:
       diesAfter: false
       baseResistance: 100
     torture:
-      difficulty: 50
+      difficulty: 70
       loyaltyChange: 50
       moraleChange: 10
       cooperationChange: 30
-      spawnEvent: STR_RANDOM_TORTURE_EVENT
       eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 20
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 50
+          STR_RANDOM_TORTURE_EVENT_4: 40
     contain:
       funds: -200
       cooperationChange: -5
@@ -183,7 +188,7 @@ prisoners:
   - type: STR_MIB_SCIENTIST
     startingCooperation: -250
     interrogation:
-      #unlockResearches: [STR_MIB_SCIENTIST] #TODO
+      unlockResearches: [STR_MIB_SCIENTIST] #TODO
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
       baseResistance: 100
@@ -389,7 +394,7 @@ prisoners:
   - type: STR_MIB_VIP
     startingCooperation: -10
     interrogation:
-      #unlockResearches: [STR_MIB_VIP] #TODO
+      unlockResearches: [STR_MIB_VIP] #TODO
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
       baseResistance: 30
@@ -459,8 +464,111 @@ prisoners:
       diesAfter: false
       baseResistance: 40
     recruiting:
-      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      requiredResearch: STR_CRIMINAL_RECRUITING
       spawnedSoldierRule: STR bandit #TODO add new soldier type for recruited MIBs
+      difficulty: 70
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 50
+      loyaltyChange: 20
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 10
+          STR_RANDOM_TORTURE_EVENT_3: 5
+          STR_RANDOM_TORTURE_EVENT_4: 1
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+  - type: STR_CULT_COORDINATOR
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_CULT_GANGER]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 40
+    recruiting:
+      requiredResearch: STR_CRIMINAL_RECRUITING
+      spawnedSoldierRule: STR bandit #TODO add new soldier type for recruited MIBs
+      difficulty: 70
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 50
+      loyaltyChange: 20
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 10
+          STR_RANDOM_TORTURE_EVENT_3: 5
+          STR_RANDOM_TORTURE_EVENT_4: 1
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 40
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 30
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+
+ #Bandits     
+  - type: STR_CULT_GANGER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_CULT_GANGER]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 40
+    recruiting:
+      requiredResearch: STR_CRIMINAL_RECRUITING
+      spawnedSoldierRule: STR bandit #TODO add new soldier type for recruited MIBs
+      difficulty: 70
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 50
+      loyaltyChange: 20
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 10
+          STR_RANDOM_TORTURE_EVENT_3: 5
+          STR_RANDOM_TORTURE_EVENT_4: 1
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+
+#Army
+  - type: STR_ARMY_FIELD_SOLDIER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_ARMY_FIELD_SOLDIER]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 40
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR same as MIB agent #TODO add new soldier type for recruited MIBs
       difficulty: 70
       spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
@@ -483,4 +591,230 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
     contain:
       funds: -800
+      cooperationChange: 5    
+  - type: STR_ARMY_FIELD_OFFICER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_ARMY_FIELD_OFFICER]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 40
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR same as MIB agent #TODO add new soldier type for recruited MIBs
+      difficulty: 70
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 50
+      loyaltyChange: 20
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 40
+          STR_RANDOM_TORTURE_EVENT_4: 50
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5 
+
+#Militia
+  - type: STR_MALE_MILITIA_CITIZEN
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_MIB_OFFICE_WORKER]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      difficulty: 60
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 30
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 40
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 40
+          STR_RANDOM_TORTURE_EVENT_2: 50
+          STR_RANDOM_TORTURE_EVENT_3: 60
+          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
       cooperationChange: 5
+  - type: STR_MALE_POLICE
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_MALE_POLICE]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      difficulty: 60
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 30
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 40
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 40
+          STR_RANDOM_TORTURE_EVENT_2: 50
+          STR_RANDOM_TORTURE_EVENT_3: 60
+          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+  - type: STR_MALE_CIVILIAN_FARMER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_CIVILIAN_FARMER] #TODO
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      difficulty: 60
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 30
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 40
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 40
+          STR_RANDOM_TORTURE_EVENT_2: 50
+          STR_RANDOM_TORTURE_EVENT_3: 60
+          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -500
+      cooperationChange: 5
+  - type: STR_FEMALE_CIVILIAN_FARMER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_CIVILIAN_FARMER] #TODO
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      difficulty: 60
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 30
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 40
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 40
+          STR_RANDOM_TORTURE_EVENT_2: 50
+          STR_RANDOM_TORTURE_EVENT_3: 60
+          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -500
+      cooperationChange: 5
+  - type: STR_CIVILIAN_HUNTER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_CIVILIAN_HUNTER] #TODO
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      difficulty: 60
+      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
+    torture:
+      difficulty: 30
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 40
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 40
+          STR_RANDOM_TORTURE_EVENT_2: 50
+          STR_RANDOM_TORTURE_EVENT_3: 60
+          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -500
+      cooperationChange: 5
+  - type: STR_MAD_CIVILIAN
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_MAD_CIVILIAN] #TODO
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_TROLLIUM
+    torture:
+      difficulty: 40
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 20
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 20
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 35
+          STR_RANDOM_TORTURE_EVENT_4: 40
+    contain:
+      funds: -500
+      cooperationChange: 5
+
+# Resistance - do I even need it?
