@@ -232,6 +232,7 @@ units:
   - type: STR_XCOM_EX_COMMANDER
     race: STR_INITIAL_BASE_DEFENSE_RACE
     rank: STR_LIVE_COMMANDER
+    roles: [2] #ROLE_AGENT
     showFullNameInAlienInventory: 1
     stats:
       tu: 50
@@ -262,6 +263,7 @@ units:
     type: STR_MIB_AGENT
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
+    roles: [0] #ROLE_SOLDIER
     stats:
       tu: 60
       stamina: 90
@@ -351,6 +353,7 @@ units:
     type: STR_MIB_ARMORED_AGENT 
     race: STR_MIB
     rank: STR_LIVE_SOLDIER
+    roles: [0]
     altRecoveredUnit: STR_MIB_AGENT
     stats:
       tu: 56
@@ -393,6 +396,7 @@ units:
   - &STR_MIB_SPECOPS
     type: STR_MIB_SPECOPS 
     race: STR_MIB
+    roles: [0]
     stats:
       tu: 64
       stamina: 100
@@ -474,6 +478,7 @@ units:
         - STR_LC_I_AMMO
   - type: STR_MIB_BUTCHER
     race: STR_MIB
+    roles: [0]
     stats:
       tu: 95
       stamina: 140
@@ -586,6 +591,7 @@ units:
   - type: STR_MIB_ENFORCER
     race: STR_MIB
     rank: STR_LIVE_ENGINEER
+    roles: [0]
     stats:
       tu: 90
       stamina: 140
@@ -666,6 +672,7 @@ units:
     pickUpWeaponsMoreActively: 0
   - type: STR_MIB_OFFICE_MANAGER
     refNode: *MIB_PROCURED_CIVILIAN
+    roles: [-1]
     armor: STR_MIB_OFFICE_MANAGER_ARMOR
     prisoner: STR_MIB_OFFICE_MANAGER
     value: -25
@@ -692,6 +699,7 @@ units:
       - - STR_CREDIT_CARD_GOLD
   - type: STR_MIB_OFFICE_SECURITY
     refNode: *MIB_PROCURED_CIVILIAN
+    roles: [0]
     stats:
       tu: 54
       stamina: 80
@@ -721,22 +729,26 @@ units:
     aggression: 3
   - type: STR_MIB_OFFICE_WORKER
     refNode: *MIB_PROCURED_CIVILIAN
+    roles: [-1]
     armor: STR_MIB_OFFICE_WORKER_ARMOR
     prisoner: STR_MIB_OFFICE_WORKER
   - type: STR_MIB_VIP
     refNode: *MIB_PROCURED_CIVILIAN
+    roles: [-1]
     armor: STR_MIB_VIP_ARMOR
     prisoner: STR_MIB_VIP
     value: 60
     pickUpWeaponsMoreActively: 1
   - type: MIB_BANKER
     refNode: *MIB_PROCURED_CIVILIAN
+    roles: [-1]
     armor: STR_MIB_VIP_ARMOR
     prisoner: STR_MIB_VIP #TODO - no difference for now
     value: 30
     pickUpWeaponsMoreActively: 1
   - type: STR_MIB_VIP_BODYGUARD
     refNode: *MIB_PROCURED_CIVILIAN
+    roles: [0]
     stats:
       tu: 60
       stamina: 80
@@ -770,16 +782,17 @@ units:
   - type: STR_CULT_GANGER
     race: STR_CULT_BANDITS
     rank: STR_LIVE_SOLDIER
+    roles: [-1]
     stats:
-      tu: 52
-      stamina: 60
-      health: 35
-      bravery: 80
-      reactions: 45
-      firing: 50
-      throwing: 45
-      strength: 40
-      melee: 51
+      tu: 46
+      stamina: 55
+      health: 30
+      bravery: 30
+      reactions: 30
+      firing: 40
+      throwing: 35
+      strength: 35
+      melee: 45
       psiStrength: 45
       psiSkill: 0
     statsRandom:
@@ -807,6 +820,7 @@ units:
   - type: STR_CULT_COORDINATOR
     race: STR_CULT_BANDITS
     rank: STR_LIVE_SOLDIER
+    roles: [0]
     stats:
       tu: 56
       stamina: 56
@@ -846,6 +860,7 @@ units:
   - type: STR_BANDIT
     race: STR_BANDITS
     rank: STR_LIVE_SOLDIER
+    roles: [0]
     stats:
       tu: 54
       stamina: 60
@@ -885,6 +900,7 @@ units:
     type: STR_ARMY_FIELD_SOLDIER
     race: STR_ARMY
     rank: STR_LIVE_SOLDIER
+    roles: [0]
     stats:
       tu: 56
       stamina: 100
@@ -970,6 +986,7 @@ units:
     type: STR_ARMY_FIELD_OFFICER
     race: STR_ARMY
     rank: STR_LIVE_SOLDIER
+    roles: [0]
     stats:
       tu: 62
       stamina: 100
@@ -1006,6 +1023,7 @@ units:
     canSurrender: true
   - type: ARMY_FIELD_OFFICER_SPAWN
     refNode: *ARMY_FIELD_OFFICER
+    roles: [0]
     altRecoveredUnit: STR_ARMY_FIELD_OFFICER
     builtInWeaponSets:
       - - STR_MILITARY_RIFLE
@@ -1397,6 +1415,7 @@ units:
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
     race: STR_HUMAN
+    roles: [-1]
     stats:
       tu: 46
       stamina: 40
@@ -1505,6 +1524,7 @@ units:
     canSurrender: false
   - type: STR_MALE_POLICE
     race: STR_HUMAN
+    roles: [-1]
     stats:
       tu: 46
       stamina: 40
@@ -1607,6 +1627,7 @@ units:
   - &MaleCivilianFarmer
     type: STR_MALE_CIVILIAN_FARMER
     race: STR_HUMAN
+    roles: [-1]
     stats:
       tu: 46
       stamina: 40
@@ -1686,6 +1707,7 @@ units:
         - STR_CASH_PACK
   - type: STR_MAD_MALE_CIVILIAN_FARMER
     refNode: *MaleCivilianFarmer
+    roles: [-1]
     prisoner: STR_MAD_CIVILIAN
     treatedByAI: true
     aggression: 8
@@ -1694,6 +1716,7 @@ units:
     type: STR_FEMALE_CIVILIAN_FARMER
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
+    roles: [-1]
     stats:
       tu: 44
       stamina: 50
@@ -1742,6 +1765,7 @@ units:
   - type: STR_MAD_FEMALE_CIVILIAN_FARMER
     refNode: *FemaleCivilianFarmer
     prisoner: STR_MAD_CIVILIAN
+    roles: [-1]
     treatedByAI: true
     aggression: 8
     canSurrender: false
@@ -1749,13 +1773,14 @@ units:
   - &CivilianHunter
     type: STR_CIVILIAN_HUNTER
     race: STR_HUMAN
+    roles: [-1]
     stats:
       tu: 52
       stamina: 45
       health: 35
-      bravery: 60
+      bravery: 50
       reactions: 30
-      firing: 70
+      firing: 60
       throwing: 30
       strength: 30
       psiStrength: 35
@@ -1845,6 +1870,7 @@ units:
         - STR_CASH_PACK
   - type: STR_MAD_CIVILIAN_HUNTER
     refNode: *CivilianHunter
+    roles: [-1]
     prisoner: STR_MAD_CIVILIAN
     treatedByAI: true
     aggression: 8
@@ -1855,6 +1881,7 @@ units:
     type: STR_RESISTANCE_SCIENTIST
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
+    roles: [3] #ROLE_SCIENTIST
     stats: #TODO - sync with xcom scientist stats
       tu: 52
       stamina: 58
@@ -1942,6 +1969,7 @@ units:
     type: STR_RESISTANCE_AGENT
     race: STR_RESISTANCE
     rank: STR_LIVE_SOLDIER
+    roles: [2] #ROLE_AGENT
     stats:
       tu: 60
       stamina: 50
@@ -2058,6 +2086,7 @@ units:
   - type: STR_RESISTANCE_SCOUT
     race: STR_RESISTANCE
     rank: STR_LIVE_SOLDIER
+    roles: [2] #ROLE_AGENT
     stats:
       tu: 65
       stamina: 70
@@ -2155,6 +2184,7 @@ units:
   - type: STR_RESISTANCE_SOLDIER
     race: STR_RESISTANCE
     rank: STR_LIVE_NAVIGATOR
+    roles: [0, 2] #ROLE_AGENT
     stats:
       tu: 65
       stamina: 55

@@ -375,7 +375,7 @@ soldiers:
       - SoldierNames/
   - type: STR_AGENT
     refNode: *STR_SOLDIER
-    #roles: [2] #ROLE_AGENT
+    roles: [2] #ROLE_AGENT
     costBuy: 60000
     costSalary: 4000
     value: 60
@@ -789,3 +789,18 @@ soldiers:
       - delete
       - SoldierNames/
 #Prisoner reqruits
+
+  - type: STR_RECRUITED_MALE
+    refNode: *STR_SOLDIER
+    roles: [-1] #ROLE_NONE
+    requires: [STR_TROLLIUM]
+    costSalary: 4000
+    value: 40
+    femaleFrequency: 0
+  - type: STR_RECRUITED_FEMALE
+    refNode: *STR_SOLDIER
+    roles: [-1] #ROLE_NONE
+    requires: [STR_TROLLIUM]
+    costSalary: 4000
+    value: 40
+    femaleFrequency: 100

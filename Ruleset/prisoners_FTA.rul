@@ -26,7 +26,7 @@ prisoners:
       requiredResearch: STR_TROLLIUM
       spawnedSoldierRule: STR_SOLDIER
       difficulty: 100
-      spawnEvent: STR_
+      spawnEvent: STR_XCOM_SOLDIER_PRISONER_RECRUITED_EVENT
 #MiB
   - type: STR_XCOM_EX_COMMANDER #TODO
     startingCooperation: -100
@@ -36,10 +36,10 @@ prisoners:
       diesAfter: false
       baseResistance: 100
     recruiting:
-      requiredResearch: STR_TROLLIUM #suicide commander after psi emitter will be down
+      requiredResearch: STR_TODOIUM #suicide commander after psi emitter will be down
       #spawnedSoldierRule: STR_SOLDIER
       #difficulty: 100
-      #spawnEvent: STR_ 
+      spawnEvent: STR_XCOM_EX_COMMANDER_SUICIDE_EVENT 
     torture:
       difficulty: 70
       loyaltyChange: 15
@@ -58,8 +58,7 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_3: 20
           STR_RANDOM_TORTURE_EVENT_4: 15
     contain:
-      #requiredResearch: STR_NONE
-      funds: -300
+      funds: -200
       cooperationChange: 0
   - type: STR_MIB_AGENT
     startingCooperation: -50
@@ -71,15 +70,13 @@ prisoners:
       baseResistance: 100
     recruiting:
       requiredResearch: STR_TROLLIUM #TODO
-      spawnedSoldierRule: STR_SOLDIER #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 100
-      spawnEvent: STR_MIB_AGENT_RECRUITED_EVENT
     torture:
       difficulty: 100
       loyaltyChange: 5
       moraleChange: 10
       cooperationChange: 30
-      #spawnEvent: STR_
       eventWeights:
         0:
           STR_RANDOM_TORTURE_EVENT_1: 20
@@ -113,14 +110,12 @@ prisoners:
     damageOverTime: 2
     interrogation:
       unlockResearches: [STR_MIB_SPECOPS]
-      #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
       baseResistance: 100
     recruiting:
       requiredResearch: STR_TROLLIUM #TODO
-      spawnedSoldierRule: STR_SOLDIER #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 100
-      spawnEvent: STR_MIB_AGENT_RECRUITED_EVENT
     torture:
       difficulty: 150
       loyaltyChange: 3
@@ -224,9 +219,8 @@ prisoners:
       baseResistance: 100
     recruiting:
       requiredResearch: STR_TROLLIUM #TODO
-      spawnedSoldierRule: STR_SOLDIER #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 100
-      spawnEvent: STR_MIB_AGENT_RECRUITED_EVENT
     torture:
       difficulty: 100
       loyaltyChange: 2
@@ -269,9 +263,8 @@ prisoners:
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN_ENGINEER #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 30
       loyaltyChange: 25
@@ -301,9 +294,8 @@ prisoners:
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_FEMALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 20
       loyaltyChange: 25
@@ -334,9 +326,8 @@ prisoners:
       baseResistance: 40
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN_ENGINEER #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 45
       loyaltyChange: 25
@@ -367,9 +358,8 @@ prisoners:
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 30
       loyaltyChange: 25
@@ -394,12 +384,12 @@ prisoners:
   - type: STR_MIB_VIP
     startingCooperation: -10
     interrogation:
-      unlockResearches: [STR_MIB_VIP] #TODO
+      unlockResearches: [STR_MIB_VIP]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
       baseResistance: 30
     recruiting:
-      requiredResearch: STR_TROLLIUM #none
+      requiredResearch: STR_TROLLIUM #TODO - consider if worth putting something here
     torture:
       difficulty: 20
       loyaltyChange: 10
@@ -430,9 +420,8 @@ prisoners:
       baseResistance: 40
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR same as MIB agent #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 50
       loyaltyChange: 20
@@ -465,9 +454,8 @@ prisoners:
       baseResistance: 40
     recruiting:
       requiredResearch: STR_CRIMINAL_RECRUITING
-      spawnedSoldierRule: STR bandit #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 50
       loyaltyChange: 20
@@ -498,9 +486,8 @@ prisoners:
       baseResistance: 40
     recruiting:
       requiredResearch: STR_CRIMINAL_RECRUITING
-      spawnedSoldierRule: STR bandit #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 50
       loyaltyChange: 20
@@ -524,18 +511,17 @@ prisoners:
       cooperationChange: 5
 
  #Bandits     
-  - type: STR_CULT_GANGER
+  - type: STR_BANDIT
     startingCooperation: -10
     interrogation:
-      unlockResearches: [STR_CULT_GANGER]
+      unlockResearches: [STR_BANDIT]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
       baseResistance: 40
     recruiting:
       requiredResearch: STR_CRIMINAL_RECRUITING
-      spawnedSoldierRule: STR bandit #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 50
       loyaltyChange: 20
@@ -568,9 +554,8 @@ prisoners:
       baseResistance: 40
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR same as MIB agent #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 50
       loyaltyChange: 20
@@ -601,9 +586,8 @@ prisoners:
       baseResistance: 40
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR same as MIB agent #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 50
       loyaltyChange: 20
@@ -636,9 +620,8 @@ prisoners:
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 30
       loyaltyChange: 25
@@ -669,9 +652,8 @@ prisoners:
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 30
       loyaltyChange: 25
@@ -702,9 +684,8 @@ prisoners:
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 30
       loyaltyChange: 25
@@ -735,9 +716,8 @@ prisoners:
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_FEMALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 30
       loyaltyChange: 25
@@ -762,15 +742,13 @@ prisoners:
   - type: STR_CIVILIAN_HUNTER
     startingCooperation: -10
     interrogation:
-      unlockResearches: [STR_CIVILIAN_HUNTER] #TODO
-      #requiredResearch: STR_INTEL_STATUS_REPORT
+      unlockResearches: [STR_CIVILIAN_HUNTER]
       diesAfter: false
       baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
-      spawnedSoldierRule: STR_CIVILIAN #TODO add new soldier type for recruited MIBs
+      spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 60
-      spawnEvent: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
     torture:
       difficulty: 30
       loyaltyChange: 25
@@ -795,8 +773,7 @@ prisoners:
   - type: STR_MAD_CIVILIAN
     startingCooperation: -10
     interrogation:
-      unlockResearches: [STR_MAD_CIVILIAN] #TODO
-      #requiredResearch: STR_INTEL_STATUS_REPORT
+      unlockResearches: [STR_MAD_CIVILIAN]
       diesAfter: false
       baseResistance: 30
     recruiting:

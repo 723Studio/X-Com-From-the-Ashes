@@ -863,14 +863,14 @@ events:
     loyalty: -30
     funds: 240000
 #reqruiting events
-  - name: STR_MIB_AGENT_RECRUITED_EVENT
-    description: STR_MIB_AGENT_RECRUITED_DESCRIPTION
+  - name: STR_XCOM_SOLDIER_PRISONER_RECRUITED_EVENT
+    description: STR_XCOM_SOLDIER_PRISONER_RECRUITED_DESCRIPTION
     background: BACK02.SCR
     loyalty: 10
-  - name: STR_MIB_OFFICE_ENGINEER_RECRUITED_EVENT
-    description: STR_MIB_OFFICE_ENGINEER_RECRUITED_DESCRIPTION
-    background: BACK02.SCR
-    loyalty: 15
+  - name: STR_XCOM_EX_COMMANDER_SUICIDE_EVENT
+    description: STR_XCOM_EX_COMMANDER_SUICIDE_EVENT_DESCRIPTION
+    background: BACK02.SCR #TODO
+    loyalty: 10
   # - name: STR_SNIPPET
   #   description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
   #   customAnswers:

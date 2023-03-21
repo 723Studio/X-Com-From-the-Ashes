@@ -328,6 +328,7 @@ en-US:
   STR_PRISONER_DIED_PT2: "dies in prison cell."
   STR_PRISONER_INTERROGATED_PT1: "Interrogation of the prisoner"
   STR_PRISONER_INTERROGATED_PT2: "yielded results."
+  STR_PRISONER_INTERROGATED_PT3: "was inconclusive."
   STR_VIEW_REPORT: "View report"
   STR_PRISONER_RECRUITING_PT1: "The recruitment of prisoner"
   STR_PRISONER_RECRUITING_PT2: "has been accomplished.{NEWLINE}"
@@ -1219,6 +1220,7 @@ en-US:
 
 
 #enemies
+  STR_XCOM_SOLDIER_PRISONER: STR_XCOM_SOLDIER_PRISONER
   STR_SECTOID_COMMANDER_CORPSE: "Sectoid Commander Corpse"
   STR_FREE_SPOT: "Free Spot Unit Placeholder"
   STR_MIB: "Men In Black"
@@ -1800,6 +1802,11 @@ en-US:
   STR_ARMORED_VEST_UC: "ARMORED VEST"
   STR_ARMORED_VEST: "Armored Vest"
   STR_CORPSE_ARMORED_VEST: "X-Com Operative Corpse"
+  STR_CORPSE_FLIGHTSUIT: "X-Com Operative Corpse"
+  STR_CORPSE_AGENTUNIFORM: "X-Com Operative Corpse"
+  STR_CORPSE_LABCOAT: "X-Com Operative Corpse"
+  STR_CORPSE_ENGINEERSUIT: "X-Com Operative Corpse"
+  STR_RESISTANCE_SUIT: "Resistance Suit"
 #crafts
   STR_LIGHT_MISSILES: "Light Missiles"
   STR_STINGRAY_MISSILE: "Stingray Missle"
@@ -2443,4 +2450,3 @@ en-US:
   STR_DEAD_COW: STR_DEAD_COW
   STR_CROP_CORCLES_EARLY_GAME: STR_CROP_CORCLES_EARLY_GAME
   STR_STARTING_EQUIPMENT_RESEARCHED: STR_STARTING_EQUIPMENT_RESEARCHED
-  
