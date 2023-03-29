@@ -1890,8 +1890,8 @@ en-US:
   STR_ELECTRIC_WEAPONS: "Electric Weapons"
   STR_ELECTRIC_WEAPONS_UFOPEDIA: "The production of effective electric weapons is a rather labor-intensive and high-tech process. Even the simplest samples require a large variety of rara and expensive components - high-volume capacitors, reliable conductors, and decent cooling systems. Nevertheless, all the most necessary equipment and components are freely available and we can safely acquire it."
   STR_MAGNET_WEAPONS: "Magnet Weapons"
-  STR_CHEMICAL_WEAPONRY: "Chemical Weaponry"
-  STR_CHEMICAL_WEAPONRY_UFOPEDIA: "In order to create chemical weapons it is necessary to solve a number of technical problems. The first is the analysis of acid composition used in it and development of the reproduction method for this solution. The second is the technology of coating all of the weapon's internal surfaces with a highly resistant anti-corrosion agent. We are able to reverse-engineer the samples that we have received in order to develop a production blueprint."
+  STR_CHEMICAL_WEAPONS: "Chemical Weaponry"
+  STR_CHEMICAL_WEAPONS_UFOPEDIA: "In order to create chemical weapons it is necessary to solve a number of technical problems. The first is the analysis of acid composition used in it and development of the reproduction method for this solution. The second is the technology of coating all of the weapon's internal surfaces with a highly resistant anti-corrosion agent. We are able to reverse-engineer the samples that we have received in order to develop a production blueprint."
   STR_ACID_SYNTHESIS: "Acid Synthesis"
   STR_ACID_SYNTHESIS_UFOPEDIA: "A comprehensive analysis of the high-molecular-weight organic acid samples we received was carried out. This is an incredibly aggressive compound with high corrosive properties. In contact with oxygen, it decomposes quite quickly into very toxic components, each aggressive to various types of surfaces, to which the composition lands. This results in an extremely effective weapon with a wide range of applications. The structural properties of this acid molecule are striking in their elegance. It is not easy to synthesize it, but our scientists have managed to develop a fairly straightforward process so that production can begin."
   STR_CHEMPISTOL_MANUFACTURING: "Chempistol Manufacturing"
@@ -2422,7 +2422,7 @@ en-US:
   STR_STARTING_EQUIPMENT_PREREQ: STR_STARTING_EQUIPMENT_PREREQ
   STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
   STR_ELECTRIC_WEAPONS_PREREQ: STR_ELECTRIC_WEAPONS_PREREQ
-  STR_CHEMICAL_WEAPONRY_PREREQ: STR_CHEMICAL_WEAPONRY_PREREQ
+  STR_CHEMICAL_WEAPONS_PREREQ: STR_CHEMICAL_WEAPONS_PREREQ
   STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
   STR_REQ_HQ_LOCATION_DONE: STR_REQ_HQ_LOCATION_DONE
   STR_REQ_HQ_LOCATION_SUCCESS: STR_REQ_HQ_LOCATION_SUCCESS

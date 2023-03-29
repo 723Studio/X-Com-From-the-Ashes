@@ -235,7 +235,7 @@ soldiers:
       insight: 90
       data: 100
       computers: 100
-      tactics: 90
+      tactics: 100
       materials: 100
       designing: 100
       alienTech: 100
@@ -530,7 +530,7 @@ soldiers:
       computers: 15
       tactics: 15
       materials: 10
-      psychology: 5
+      #psychology: 5
       designing: 15
       psionics: 0
       xenolinguistics: 0
@@ -585,7 +585,7 @@ soldiers:
       computers: 70
       tactics: 70
       materials: 70
-      psychology: 70
+      #psychology: 70
       designing: 70
       alienTech: 0
       psionics: 0
@@ -600,7 +600,6 @@ soldiers:
       hacking: 20
       construction: 20
       diligence: 30
-      alienTech: 0
       reverseEngineering: 0
     armor: STR_XCOM_LABCOAT_UC
     armorForAvatar: STR_XCOM_LABCOAT_UC
@@ -645,7 +644,7 @@ soldiers:
       computers: 10
       tactics: 0
       materials: 10
-      psychology: 0
+      #psychology: 0
       designing: 10
       psionics: 0
       xenolinguistics: 0
@@ -692,7 +691,7 @@ soldiers:
       computers: 40
       tactics: 10
       materials: 40
-      psychology: 10
+      #psychology: 10
       designing: 40
       alienTech: 0
       psionics: 0
@@ -708,7 +707,6 @@ soldiers:
       construction: 70
       diligence: 60
       reverseEngineering: 40
-      alienTech: 0
     armor: STR_XCOM_ENGINEER_SUIT_UC
     armorForAvatar: STR_XCOM_ENGINEER_SUIT_UC
     femaleFrequency: 50

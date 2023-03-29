@@ -33,6 +33,9 @@ research:
   - name: STR_ENIGMA_CONTACT #FIXME scheduled to alpha 3
     hidden: true
   - name: STR_NONE
+    hidden: true
+  - name: STR_SPORTS_BOW_TINKERING
+    hidden: true
 #story
   - name: STR_RND_STATUS_REPORT
     hidden: true
@@ -134,24 +137,16 @@ research:
     hidden: true
     disables:
       - STR_STONKS_ACTIVE
-
+  - name: STR_CROP_CIRCLES_ZOMBIES_PREREQ
+    hidden: true
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [ HQ ]
+    cost: 500
     stats:
-      physics: 0
-      chemistry: 0
-      biology: 0
       data: 120
       computers: 80
-      tactics: 0
-      materials: 0
-      designing: 0
-      alienTech: 0
-      psionics: 0
-      xenolinguistics: 0
-    cost: 500
     points: 80
     funds: 5000
     dependencies:
@@ -160,6 +155,9 @@ research:
   - name: STR_XCOM_EQUIPMENT
     requiresBaseFunc: [ HQ ]
     cost: 600
+    stats:
+      data: 120
+      computers: 80
     points: 50
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
@@ -169,6 +167,9 @@ research:
   - name: STR_XCOM_LORE
     requiresBaseFunc: [ HQ ]
     cost: 1600
+    stats:
+      data: 120
+      computers: 80
     points: 130
     dependencies:
       - STR_UFOPEDIA_DECRYPTION
@@ -182,22 +183,27 @@ research:
   - name: STR_COMMUNICATION
     requiresBaseFunc: [ HQ ]
     cost: 280
+    stats:
+      data: 100
+      computers: 80
     points: 20
     dependencies:
       - STR_INTEL_STATUS_REPORT
     listOrder: 40
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     requiresBaseFunc: [ HQ ]
+    cost: 400
     stats:
       tactics: 100
-    cost: 400
     points: 15
     dependencies:
       - STR_INTEL_STATUS_REPORT
     listOrder: 50
-  - name: STR_RESISTANCE_CONTACT
+  - name: STR_RESISTANCE_CONTACT #TODO - convert to intel?
     requiresBaseFunc: [ HQ ]
     cost: 260
+    stats:
+      data: 100
     points: 40
     dependencies:
       - STR_COMMUNICATION
@@ -205,6 +211,8 @@ research:
   - name: STR_SUPPLIES
     requiresBaseFunc: [ HQ ]
     cost: 250
+    stats:
+      data: 100
     points: 120
     dependencies:
       - STR_QUARTERMASTER_STATUS_REPORT
@@ -214,6 +222,9 @@ research:
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [ HQ ]
     cost: 600
+    stats:
+      data: 120
+      computers: 80
     points: 65
     dependencies:
       - STR_SUPPLIES
@@ -221,6 +232,9 @@ research:
     listOrder: 90
   - name: STR_CROP_CIRCLES
     cost: 400
+    stats:
+      data: 100
+      tactics: 80
     points: 45
     dependencies:
       - STR_CROP_CIRCLES_PREREQ
@@ -274,17 +288,25 @@ research:
 #technology
   - name: STR_HIGH_TECH_PARTS
     cost: 100
+    stats:
+      designing: 100
     points: 50
     dependencies:
       - STR_TODOIUM #FIXME
     listOrder: 25002
   - name: STR_ROCKET_GLOVE
+    cost: 200
+    stats:
+      designing: 100
+    points: 50
     dependencies:
-      - STR_TROLLIUM
+      - STR_TROLLIUM #FIXME
   - name: STR_STARTING_EQUIPMENT_PREREQ #TODO add ways to unlock!
     hidden: true
   - name: STR_STARTING_EQUIPMENT
-    cost: 12
+    cost: 50
+    stats:
+      tactics: 100
     points: 15
     dependencies:
       - STR_STARTING_EQUIPMENT_PREREQ
@@ -330,10 +352,6 @@ research:
       - STR_FIRE_EXTINGUISHER
     disables:
       - STR_STARTING_EQUIPMENT
-
-  - name: STR_SPORTS_BOW_TINKERING
-    hidden: true
-
   - name: STR_SIMPLE_CRAFT_WEAPONS
     dependencies:
       - STR_XCOM_EQUIPMENT
@@ -341,6 +359,8 @@ research:
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT
     cost: 60
+    stats:
+      tactics: 100
     points: 35
     dependencies:
       - STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
@@ -368,28 +388,37 @@ research:
       - STR_GRENADE_LAUNCHER_INC
       - STR_GRENADE_LAUNCHER_SMOKE
 
-  - name: STR_MILITARY_TECH #TODO add way to unlock
+  - name: STR_MILITARY_TECH
     hidden: true
     getOneFree:
       - STR_MILITARY_RIFLE
       - STR_MILITARY_SNIPER_RIFLE
 
-  - name: STR_ELECTRIC_WEAPONS_PREREQ
+  - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - refine
     hidden: true
   - name: STR_ELECTRIC_WEAPONS
     cost: 3072
+    stats:
+      physics: 100
+      designing: 100
     points: 15
     dependencies:
       - STR_ELECTRIC_WEAPONS_PREREQ
       - STR_PRODUCTION
   - name: STR_ELECTRIC_STICK
     cost: 1440
+    stats:
+      physics: 120
+      designing: 80
     points: 20
     dependencies:
       - STR_ELECTRIC_WEAPONS
     listOrder: 25002
   - name: STR_TASER_CANNON
     cost: 6400
+    stats:
+      physics: 120
+      designing: 100
     points: 40
     dependencies:
       - STR_ELECTRIC_WEAPONS
@@ -405,35 +434,50 @@ research:
 
   - name: STR_MOTION_SCANNER_PROTOTYPE
     cost: 100
+    stats:
+      designing: 80
+      tactics: 120
+      physics: 100
     points: 50
     needItem: true
     listOrder: 25025
 
 
-  - name: STR_CHEMICAL_WEAPONRY_PREREQ
+  - name: STR_CHEMICAL_WEAPONS_PREREQ #TODO ways to unlock
     hidden: true
-  - name: STR_CHEMICAL_WEAPONRY
+  - name: STR_CHEMICAL_WEAPONS
     cost: 2880
+    stats:
+      chemistry: 100
+      designing: 120
     points: 30
     dependencies:
-      - STR_CHEMICAL_WEAPONRY_PREREQ
+      - STR_CHEMICAL_WEAPONS_PREREQ
       - STR_PRODUCTION
     listOrder: 25030
   - name: STR_ACID_SYNTHESIS
     cost: 8800
+    stats:
+      chemistry: 100
     points: 35
     dependencies:
-      - STR_CHEMICAL_WEAPONRY
+      - STR_CHEMICAL_WEAPONS
     listOrder: 25040
   - name: STR_CHEMPISTOL_MANUFACTURING
     cost: 16800
+    stats:
+      chemistry: 100
+      designing: 80
     points: 60
     dependencies:
-      - STR_CHEMICAL_WEAPONRY
+      - STR_CHEMICAL_WEAPONS
       - STR_CHEMPISTOL
     listOrder: 25050
   - name: STR_CHEMPISTOL_CLIP_MANUFACTURING
     cost: 2400
+    stats:
+      chemistry: 100
+      designing: 80
     points: 5
     dependencies:
       - STR_CHEMPISTOL
@@ -442,12 +486,17 @@ research:
 
   - name: STR_MAGNET_WEAPONS
     cost: 48000
+    stats:
+      physics: 100
     points: 100
     dependencies:
       - STR_TODOIUM
     listOrder: 25070
   - name: STR_RAILGUN #FIXME
     cost: 48000
+    stats:
+      physics: 100
+      designing: 80
     points: 100
     dependencies:
       - STR_MAGNET_WEAPONS
@@ -455,6 +504,8 @@ research:
 
   - name: STR_LASER_WEAPONS
     cost: 48000
+    stats:
+      physics: 100
     points: 100
     dependencies:
       - STR_TODOIUM
@@ -473,6 +524,9 @@ research:
       - STR_EXPANDABLE_AMMO
   - name: STR_ALLOY_AMMO
     cost: 20000
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 100
     dependencies:
       - STR_TODOIUM
@@ -480,84 +534,126 @@ research:
     listOrder: 25110
   - name: STR_PISTOL_AA_CLIP
     cost: 3200
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25120
   - name: STR_HEAVY_PISTOL_AA_CLIP
     cost: 3200
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25120
   - name: STR_PDW_AA_CLIP
     cost: 3400
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25130
   - name: STR_SMG_AA_CLIP
     cost: 3400
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25140
   - name: STR_RIFLE_AA_CLIP
     cost: 3600
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25150
   - name: STR_SNIPER_RIFLE_AA_CLIP
     cost: 3600
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25160
   - name: STR_SHOTGUN_SHELLS_AA
     cost: 3600
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25170
   - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     cost: 3600
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25180
   - name: STR_LMG_AA_CLIP
     cost: 3680
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25190
   - name: STR_ASSAULT_CANNON_CLIP_AA
     cost: 3680
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25190
   - name: STR_LC_AA_AMMO
     cost: 3800
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25200
   - name: STR_HC_AA_AMMO
     cost: 4000
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25210
   - name: STR_AC_AA_AMMO
     cost: 4000
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25220
   - name: STR_MINIGUN_AA_CLIP
     cost: 4000
+    stats:
+      metallurgy: 100
+      designing: 120
     points: 5
     dependencies:
       - STR_ALLOY_AMMO
@@ -565,6 +661,9 @@ research:
 
   - name: STR_PSIONIC #FIXME add pedia and lore
     cost: 4400
+    stats:
+      biology: 100
+      psionics: 60
     points: 100
     dependencies:
       - STR_TODOIUM
@@ -584,6 +683,8 @@ research:
     hidden: true
   - name: STR_REGIONAL_HQ_LOCATION
     cost: 80
+    stats:
+      data: 100
     points: 20
     dependencies:
       - STR_MIB_DATA_TRANSFER_DECRYPTION
@@ -595,6 +696,8 @@ research:
   - name: STR_MIB_AGENT_LOBOTOMY
     requiresBaseFunc: [ SURGERY ]
     cost: 1660
+    stats:
+      biology: 100
     points: 50
     dependencies:
       - STR_FRESH_MIB_AGENT
@@ -602,6 +705,8 @@ research:
   - name: STR_MIB_HEAD_CHIP
     requiresBaseFunc: [ INTLAB ]
     cost: 3800
+    stats:
+      biology: 100
     points: 100
     dependencies:
       - STR_MIB_AGENT_LOBOTOMY
@@ -609,6 +714,8 @@ research:
   - name: STR_MIB_DATA_TRANSFER_DECRYPTION
     requiresBaseFunc: [ INTLAB ]
     cost: 1500
+    stats:
+      computers: 100
     points: 180
     dependencies: #FIXME - more stuff, hacking info?
       - STR_MIB_HEAD_CHIP
@@ -659,6 +766,8 @@ research:
   - name: STR_RECRUIT_CIVILIAN_PRISONERS
     requiresBaseFunc: [ INTLAB ]
     cost: 3800
+    stats:
+      tactics: 100
     points: 100
     dependencies:
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
@@ -666,6 +775,8 @@ research:
   - name: STR_CRIMINAL_RECRUITING
     requiresBaseFunc: [ INTLAB ]
     cost: 3800
+    stats:
+      tactics: 100
     points: 100
     dependencies:
       - STR_CRIMINAL_RECRUITING_PREREQ
@@ -690,6 +801,8 @@ research:
   - name: STR_MONSTER_HUNT_START
     requiresBaseFunc: [ HQ ]
     cost: 360
+    stats:
+      data: 100
     points: 3
     dependencies:
       - STR_MONSTER_HUNT_START_PREREQ
@@ -698,6 +811,8 @@ research:
   - name: STR_MONSTER_HUNT_RUMORS
     requiresBaseFunc: [ HQ ]
     cost: 520
+    stats:
+      data: 100
     points: 15
     #spawnedEvent: STR_MONSTER_HUNT_RUMORS
     dependencies:
@@ -705,17 +820,18 @@ research:
     listOrder: 3010
   - name: STR_MONSTER_HUNT_RUMORS_ANALYSIS
     requiresBaseFunc: [ HQ ]
-    unlocks: [ STR_MONSTER_HUNT_RUMORS_PREREQ ]
     cost: 2016
+    stats:
+      data: 100
     points: 10
+    unlocks: 
+      - STR_MONSTER_HUNT_RUMORS_PREREQ
     dependencies:
       - STR_MONSTER_HUNT_RUMORS_PREREQ_HARD
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 3020
 
   - name: STR_STRANGE_CREATURE_AUTOPSY
-    cost: 0
-    points: 0
     spawnedEvent: STR_STRANGE_CREATURE_AUTOPSY
     dependencies:
       - STR_FACEHUGGER_CORPSE
@@ -728,12 +844,12 @@ research:
       - STR_ENERGY_WISP_CORPSE
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 288
+    stats:
+       biology : 100
     points: 17
     dependencies:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_STRANGE_CREATURE #for future tech tree dev
-    cost: 0
-    points: 0
     dependencies:
       - STR_FACEHUGGER
       - STR_FRESH_ZOMBIE
@@ -741,30 +857,22 @@ research:
 
 #Zombie arc
   - name: STR_INFECTOR_AUTOPSY
-    cost: 0
-    points: 15
     dependencies:
       - STR_FACEHUGGER_CORPSE
     unlocks:
       - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_LIVE_INFECTOR
-    cost: 0
-    points: 15
     dependencies:
       - STR_FACEHUGGER
     unlocks:
       - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_ZOMBIE_AUTOPSY
-    cost: 0
-    points: 15
     dependencies:
       - STR_FRESH_ZOMBIE_CORPSE
       - STR_ZOMBIE_GRUBAS_CORPSE
     unlocks:
       - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_LIVE_ZOMBIE
-    cost: 0
-    points: 15
     dependencies:
       - STR_FRESH_ZOMBIE
       - STR_ZOMBIE_GRUBAS_TERRORIST
@@ -774,21 +882,25 @@ research:
     hidden: true
   - name: STR_ZOMBIE_PARASITE
     cost: 800
+    stats:
+      biology: 100
     points: 50
     dependencies:
       - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_ZOMBIE_BIOLOGY
     cost: 1920
+    stats:
+      biology: 100
     points: 75
     dependencies:
       - STR_INFECTOR_AUTOPSY
       - STR_LIVE_INFECTOR
       - STR_ZOMBIE_AUTOPSY
       - STR_LIVE_ZOMBIE
-  - name: STR_CROP_CIRCLES_ZOMBIES_PREREQ
-    hidden: true
   - name: STR_ZOMBIE_SOURCE
     cost: 700
+    stats:
+      biology: 100
     points: 200
     dependencies:
       - STR_ZOMBIE_BIOLOGY
@@ -797,23 +909,12 @@ research:
 #Prisoner interrogation research
 #MIB
   - name: STR_XCOM_EX_COMMANDER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 800
-    points: 25
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     listOrder: 6000
   - name: STR_MIB_AGENT #TODO - rework with points
-    requiresBaseFunc: [ INTLAB ]
-    cost: 960
-    points: 26
-    needItem: true
-    destroyItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -835,13 +936,7 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6010
   - name: STR_MIB_SPECOPS
-    requiresBaseFunc: [ INTLAB ]
-    cost: 1200
-    points: 30
-    needItem: true
-    destroyItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -863,13 +958,7 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6020
   - name: STR_MIB_BUTCHER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 1440
-    points: 35
-    needItem: true
-    destroyItem: true
-    getOneFree:
-      - STR_PRISONER_INTERROGATIONS
+    hidden: true
     getOneFreeProtected: #FIXME - more specific lore, not agent
       STR_MIB_BUTCHER:
         - STR_EMPTY_MIB_EARLY_LORE_STAGE
@@ -889,11 +978,7 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6030
   - name: STR_MIB_ENFORCER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 1440
-    points: 40
-    needItem: true
-    destroyItem: true
+    hidden: true
     # dependencies:
     #   - STR_INTEL_STATUS_REPORT
     # getOneFree:
@@ -917,11 +1002,7 @@ research:
     #     - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6040
   - name: STR_MIB_SCIENTIST
-    requiresBaseFunc: [ INTLAB ]
-    cost: 1440
-    points: 40
-    needItem: true
-    destroyItem: true
+    hidden: true
     # dependencies:
     #   - STR_INTEL_STATUS_REPORT
     # getOneFree:
@@ -947,74 +1028,43 @@ research:
 
   #MiB-Procured
   - name: STR_MIB_OFFICE_ENGINEER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 60
-    points: 3
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6070
   - name: STR_MIB_OFFICE_WORKER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 60
-    points: 3
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6080
   - name: STR_MIB_OFFICE_MANAGER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 60
-    points: 5
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6090
   - name: STR_MIB_OFFICE_SECURITY
-    requiresBaseFunc: [ INTLAB ]
-    cost: 80
-    points: 5
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6100
   - name: STR_MIB_VIP_BODYGUARD
-    requiresBaseFunc: [ INTLAB ]
-    cost: 90
-    points: 5
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6110
   - name: MIB_BANKER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 300
-    points: 10
-    needItem: true
+    hidden: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
       - STR_PRISONER_INTERROGATIONS #TODO - add more lore
     listOrder: 6120
   - name: STR_MIB_VIP
-    requiresBaseFunc: [ INTLAB ]
-    cost: 300
-    points: 10
-    needItem: true
+    hidden: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
       - STR_PRISONER_INTERROGATIONS #TODO - add more lore
@@ -1022,23 +1072,13 @@ research:
 
 #Cultists
   - name: STR_CULT_GANGER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 100
-    points: 5
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_CRIMINAL_RECRUITING_PREREQ
     listOrder: 6121
   - name: STR_CULT_COORDINATOR
-    requiresBaseFunc: [ INTLAB ]
-    cost: 200
-    points: 10
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1047,27 +1087,19 @@ research:
     listOrder: 6122
 #Other humans
   - name: STR_ARMY_FIELD_OFFICER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 200
-    points: 10
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_MILITARY_TECH
     # getOneFreeProtected: #army interrogation lore pls
     #   STR_PRISONER_INTERROGATIONS:
     #     - STR_CULT_GANG_DEN
     listOrder: 6122
   - name: STR_ARMY_FIELD_SOLDIER
-    requiresBaseFunc: [ INTLAB ]
-    cost: 200
-    points: 10
-    needItem: true
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+      - STR_MILITARY_TECH
     # getOneFreeProtected: #TODO
     #   STR_PRISONER_INTERROGATIONS:
     #     - STR_CULT_GANG_DEN
@@ -1116,29 +1148,29 @@ research:
       - STR_CRIMINAL_RECRUITING_PREREQ
 #Vanilla-like enemies study
 #MiB
-  - name: STR_SEEKER_DRONE_TERRORIST
-    requiresBaseFunc: [ HQ ]
+  - name: STR_SEEKER_DRONE_TERRORIST #TODO - add more tech about it
     cost: 4800
+    stats:
+      computers: 100
     points: 150
     needItem: true
     destroyItem: true
     spawnedItem: STR_SEEKER_DRONE_CORPSE
-    dependencies:
-      - STR_TODOIUM
     listOrder: 6050
   - name: STR_SEEKER_DRONE_CORPSE
-    requiresBaseFunc: [ HQ ]
     cost: 4000
+    stats:
+      computers: 100
     points: 40
     needItem: true
     destroyItem: true
-    dependencies:
-      - STR_TODOIUM
     listOrder: 6060
 #Zombies 
   - name: STR_FACEHUGGER_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 600
+    stats:
+      biology: 100
     points: 20
     needItem: true
     destroyItem: true
@@ -1148,6 +1180,8 @@ research:
     listOrder: 6130
   - name: STR_FACEHUGGER
     requiresBaseFunc: [ BIOLAB ]
+    stats:
+      biology: 100
     cost: 700
     points: 30
     needItem: true
@@ -1159,6 +1193,8 @@ research:
   - name: STR_FRESH_ZOMBIE_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
+    stats:
+      biology: 100
     points: 15
     needItem: true
     destroyItem: true
@@ -1169,6 +1205,8 @@ research:
   - name: STR_FRESH_ZOMBIE
     requiresBaseFunc: [ BIOLAB ]
     cost: 780
+    stats:
+      biology: 100
     points: 25
     needItem: true
     destroyItem: true
@@ -1179,6 +1217,8 @@ research:
   - name: STR_ZOMBIE_GRUBAS_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 800
+    stats:
+      biology: 100
     points: 20
     needItem: true
     destroyItem: true
@@ -1189,6 +1229,8 @@ research:
   - name: STR_ZOMBIE_GRUBAS_TERRORIST
     requiresBaseFunc: [ BIOLAB ]
     cost: 850
+    stats:
+      biology: 100
     points: 30
     needItem: true
     destroyItem: true
@@ -1200,6 +1242,8 @@ research:
   - name: STR_CHUPACABRA_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
+    stats:
+      biology: 100
     points: 30
     needItem: true
     destroyItem: true
@@ -1209,6 +1253,8 @@ research:
   - name: STR_CHUPACABRA
     requiresBaseFunc: [ BIOLAB ]
     cost: 820
+    stats:
+      biology: 100
     points: 40
     needItem: true
     destroyItem: true
@@ -1218,6 +1264,8 @@ research:
   - name: STR_ARMADILLO_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
+    stats:
+      biology: 100
     points: 30
     needItem: true
     destroyItem: true
@@ -1227,6 +1275,8 @@ research:
   - name: STR_ARMADILLO
     requiresBaseFunc: [ BIOLAB ]
     cost: 820
+    stats:
+      biology: 100
     points: 40
     needItem: true
     destroyItem: true
@@ -1236,6 +1286,8 @@ research:
   - name: STR_AMPHIBIAN_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
+    stats:
+      biology: 100
     points: 30
     needItem: true
     destroyItem: true
@@ -1245,6 +1297,8 @@ research:
   - name: STR_AMPHIBIAN
     requiresBaseFunc: [ BIOLAB ]
     cost: 820
+    stats:
+      biology: 100
     points: 40
     needItem: true
     destroyItem: true
@@ -1252,13 +1306,19 @@ research:
       - STR_STRANGE_CREATURE
     listOrder: 6240
   - name: STR_SWARMIDS_CORPSE
-    points: 50
+    requiresBaseFunc: [BIOLAB]
+    cost: 800
+    stats:
+      biology: 100
+    points: 30
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SWARMIDS_SMALL
     requiresBaseFunc: [BIOLAB]
-    cost: 90
+    cost: 900
+    stats:
+      biology: 100
     points: 50
     needItem: true
     destroyItem: true
@@ -1268,6 +1328,8 @@ research:
   - name: STR_MAD_DOGE
     requiresBaseFunc: [ INTLAB ]
     cost: 30
+    stats:
+      biology: 100
     points: 8
     needItem: true
     dependencies:
@@ -1276,6 +1338,8 @@ research:
   - name: STR_ENERGY_WISP_CORPSE
     requiresBaseFunc: [ BIOLAB ]
     cost: 750
+    stats:
+      biology: 100
     points: 30
     needItem: true
     destroyItem: true
@@ -1285,6 +1349,8 @@ research:
   - name: STR_ENERGY_WISP
     requiresBaseFunc: [ BIOLAB ]
     cost: 820
+    stats:
+      biology: 100
     points: 40
     needItem: true
     destroyItem: true
@@ -1293,9 +1359,12 @@ research:
     listOrder: 6200
 
 #Aliens
+
 #combat analysis 
   - name: STR_MIB_AGENT_ARMOR
     cost: 50
+    stats:
+      tactics: 100
     points: 7
     dependencies:
       - STR_MIB_AGENT
@@ -1306,40 +1375,52 @@ research:
     listOrder: 6220
   - name: STR_MIB_SPECOPS_ARMOR
     cost: 70
+    stats:
+      tactics: 100
     points: 11
     dependencies:
       - STR_MIB_SPECOPS
     listOrder: 6230
   - name: STR_MIB_BUTCHER_ARMOR
     cost: 70
+    stats:
+      tactics: 100
     points: 11
     dependencies:
       - STR_MIB_BUTCHER
-      - STR_TODOIUM #FIXME - something about MIB body enchantment here pls
+      - STR_TODOIUM #TODO - something about MIB body enchantment here pls
     listOrder: 6240
   - name: STR_MIB_ENFORCER_ARMOR
     cost: 90
+    stats:
+      tactics: 100
     points: 11
     dependencies:
       - STR_MIB_ENFORCER
     listOrder: 6250
   - name: STR_SEEKER_DRONE_ARMOR
     cost: 130
+    stats:
+      tactics: 100
     points: 15
     dependencies:
       - STR_SEEKER_DRONE_CORPSE
       - STR_SEEKER_DRONE_TERRORIST
-      - STR_TODOIUM
+      - STR_TODOIUM #TODO - something about drone energy weapon here pls
     listOrder: 6260
 
   - name: STR_CULT_GANGER_ARMOR
     cost: 40
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_CULT_GANGER
     listOrder: 6261
   - name: STR_CULT_COORDINATOR_ARMOR
     cost: 45
+    stats:
+      tactics: 100
     points: 6
     dependencies:
       - STR_CULT_COORDINATOR
@@ -1347,6 +1428,8 @@ research:
 
   - name: STR_FACEHUGGER_ARMOR
     cost: 150
+    stats:
+      tactics: 100
     points: 25
     dependencies:
       - STR_FACEHUGGER
@@ -1354,18 +1437,24 @@ research:
     listOrder: 6270
   - name: STR_FRESH_ZOMBIE_ARMOR
     cost: 160
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_ZOMBIE_BIOLOGY
     listOrder: 6280
   - name: STR_ZOMBIE_GRUBAS_ARMOR
     cost: 180
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_ZOMBIE_BIOLOGY
     listOrder: 6290
   - name: STR_CHUPACABRA_ARMOR
     cost: 180
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_CHUPACABRA
@@ -1373,6 +1462,8 @@ research:
     listOrder: 6300
   - name: STR_ARMADILLO_ARMOR
     cost: 180
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_ARMADILLO
@@ -1380,6 +1471,8 @@ research:
     listOrder: 6310
   - name: STR_AMPHIBIAN_ARMOR
     cost: 180
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_AMPHIBIAN
@@ -1387,12 +1480,16 @@ research:
     listOrder: 6300
   - name: STR_SWARMIDS_SMALL_ARMOR
     cost: 200
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_SWARMIDS_SMALL
       - STR_SWARMIDS_CORPSE
   - name: STR_ENERGY_WISP_ARMOR
     cost: 180
+    stats:
+      tactics: 100
     points: 5
     dependencies:
       - STR_ENERGY_WISP
@@ -1400,228 +1497,246 @@ research:
 #weapons and equipment
   - name: STR_WRENCH
     cost: 5
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30000
   - name: STR_CROWBAR
     cost: 4
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30005
   - name: STR_HATCHET
     cost: 6
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30008
   - name: STR_BASEBALL_BAT
     cost: 5
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30009
   - name: STR_MACHETE
     cost: 6
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30010
   - name: STR_SWORD
     cost: 6
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30020
   - name: STR_KATANA
     cost: 10
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30025
   - name: STR_STUN_ROD_2
     cost: 16
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     listOrder: 30030
   - name: STR_THROWING_KNIFE
     cost: 6
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30040
   - name: STR_SPORTS_BOW
     cost: 6
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     listOrder: 30050
   - name: STR_BOW_ARROW_HE
-    cost: 0
-    points: 0
     dependencies:
       - STR_SPORTS_BOW_TINKERING
     listOrder: 30070
   - name: STR_BOW_ARROW_IN
-    cost: 0
-    points: 0
     dependencies:
       - STR_SPORTS_BOW_TINKERING
     listOrder: 30080
   - name: STR_BOW_ARROW_STUN
-    cost: 0
-    points: 0
     dependencies:
       - STR_SPORTS_BOW_TINKERING
     listOrder: 30090
   - name: STR_BOW_ARROW_ELECTRIC
-    cost: 0
-    points: 0
     dependencies:
       - STR_SPORTS_BOW_TINKERING
     listOrder: 30100
   - name: STR_SNUBNOSE_PISTOL
     cost: 8
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     unlocks:
       - STR_SNUBNOSE_PISTOL_CLIP
     listOrder: 30110
   - name: STR_SNUBNOSE_PISTOL_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_SNUBNOSE_PISTOL
     listOrder: 30120
   - name: STR_RIOT_PISTOL
     cost: 8
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     unlocks:
       - STR_RIOT_PISTOL_CLIP
     listOrder: 30130
   - name: STR_RIOT_PISTOL_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_RIOT_PISTOL
     listOrder: 30132
   - name: STR_POLICE_PISTOL
     cost: 10
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     unlocks:
       - STR_POLICE_PISTOL_CLIP
     listOrder: 30134
   - name: STR_POLICE_PISTOL_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_POLICE_PISTOL
     listOrder: 30136
   - name: STR_HEAVY_REVOLVER
     cost: 10
+    stats:
+      tactics: 100
     points: 1
     needItem: true
     unlocks:
       - STR_HEAVY_REVOLVER_DRUM
     listOrder: 30140
   - name: STR_HEAVY_REVOLVER_DRUM
-    cost: 0
-    points: 0
     dependencies:
       - STR_HEAVY_REVOLVER
     listOrder: 30145
   - name: STR_WOUNDGUN
-    cost: 12
+    cost: 100
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
       - STR_WOUNDGUN_CLIP
     listOrder: 30150
   - name: STR_WOUNDGUN_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_WOUNDGUN
     listOrder: 30160
   - name: STR_CHEMPISTOL
     cost: 1200
+    stats:
+      tactics: 100
+      chemistry: 100
     points: 10
     needItem: true
-    destroyItem: true
     unlocks:
       - STR_DAMAGE_ACID
-      - STR_CHEMICAL_WEAPONRY_PREREQ
+      - STR_CHEMICAL_WEAPONS_PREREQ
     listOrder: 30170
   - name: STR_CHEMOGUN
     cost: 2500
+    stats:
+      tactics: 100
+      chemistry: 100
     points: 20
     needItem: true
-    destroyItem: true
     unlocks:
       - STR_DAMAGE_ACID
-      - STR_CHEMICAL_WEAPONRY_PREREQ
+      - STR_CHEMICAL_WEAPONS_PREREQ
     listOrder: 30180
   - name: STR_MACHINE_PISTOL
     cost: 10
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
       - STR_MACHINE_PISTOL_CLIP
     listOrder: 30190
   - name: STR_MACHINE_PISTOL_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_MACHINE_PISTOL
     listOrder: 30200
   - name: STR_RIOT_RIFLE
     cost: 16
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
       - STR_RIOT_RIFLE_CLIP
     listOrder: 30210
   - name: STR_RIOT_RIFLE_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_RIOT_RIFLE
     listOrder: 30220
   - name: STR_LEVER_ACTION_CARBINE
     cost: 16
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
       - STR_LEVER_ACTION_CARBINE_CLIP
     listOrder: 30210
   - name: STR_LEVER_ACTION_CARBINE_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_LEVER_ACTION_CARBINE
     listOrder: 30220
   - name: STR_MILITARY_RIFLE
     cost: 35
+    stats:
+      tactics: 100
     points: 10
     needItem: true
     unlocks:
       - STR_MILITARY_RIFLE_CLIP
     listOrder: 30224
   - name: STR_MILITARY_RIFLE_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_MILITARY_RIFLE
     listOrder: 30225
   - name: STR_HUNTING_RIFLE
     cost: 15
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
       - STR_HUNTING_RIFLE_CLIP
     listOrder: 30230
   - name: STR_HUNTING_RIFLE_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_HUNTING_RIFLE
     listOrder: 30240
   - name: STR_SAWED_OFF
     cost: 14
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
@@ -1629,135 +1744,163 @@ research:
     listOrder: 30250
   - name: STR_MILITARY_SNIPER_RIFLE
     cost: 35
+    stats:
+      tactics: 100
     points: 10
     needItem: true
     unlocks:
       - STR_MILITARY_SNIPER_RIFLE_CLIP
     listOrder: 30260
   - name: STR_MILITARY_SNIPER_RIFLE_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_MILITARY_SNIPER_RIFLE
     listOrder: 30265
   - name: STR_DOUBLE_BARRELED
     cost: 14
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
       - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 30270
   - name: STR_DOUBLE_BARRELED_BUCKSHOT
-    cost: 0
-    points: 0
     dependencies:
       - STR_DOUBLE_BARRELED
       - STR_SAWED_OFF
     listOrder: 30275
   - name: STR_PUMP_ACTION_SHOTGUN
     cost: 15
+    stats:
+      tactics: 100
     points: 2
     needItem: true
     unlocks:
       - STR_PUMP_ACTION_SHELLS
     listOrder: 30280
   - name: STR_PUMP_ACTION_SHELLS
-    cost: 0
-    points: 0
     dependencies:
       - STR_PUMP_ACTION_SHOTGUN
     listOrder: 30290
   - name: STR_RIOT_GUN
     cost: 25
+    stats:
+      tactics: 100
     points: 4
     needItem: true
     unlocks:
       - STR_RIOT_GUN_CLIP
     listOrder: 30292
   - name: STR_RIOT_GUN_CLIP
-    cost: 0
-    points: 0
     dependencies:
       - STR_RIOT_GUN
     listOrder: 30292
   - name: STR_IMPROVISED_GRENADE
-    points: 1
+    cost: 15
+    stats:
+      tactics: 100
+      chemistry: 100
+    points: 5
     needItem: true
     listOrder: 30300
   - name: STR_IMPROVISED_SMOKE_GRENADE
-    points: 2
+    cost: 15
+    stats:
+      tactics: 100
+      chemistry: 100
+    points: 5
     needItem: true
     listOrder: 30302
   - name: STR_LIQUID_FLAME
-    cost: 10
-    points: 1
+    cost: 15
+    stats:
+      tactics: 100
+      chemistry: 100
+    points: 5
     needItem: true
     listOrder: 30305
   - name: STR_EXPLOSIVE_CHARGE
-    cost: 18
-    points: 4
+    cost: 40
+    stats:
+      tactics: 100
+      chemistry: 100
+    points: 10
     needItem: true
     listOrder: 30310
   - name: STR_SINGLE_ROCKET_LAUNCHER
     cost: 40
+    stats:
+      tactics: 100
+      chemistry: 100
     points: 5
     needItem: true
     listOrder: 30320
   - name: STR_GRENADE_LAUNCHER
     cost: 40
+    stats:
+      tactics: 100
     points: 5
     needItem: true
     listOrder: 30322
   - name: STR_GRENADE_LAUNCHER_FRAG
-    cost: 0
-    points: 0
     dependencies:
       - STR_GRENADE_LAUNCHER
     listOrder: 30322
   - name: STR_GRENADE_LAUNCHER_INC
-    cost: 0
-    points: 0
     dependencies:
       - STR_GRENADE_LAUNCHER
     listOrder: 30322
   - name: STR_GRENADE_LAUNCHER_SMOKE
-    cost: 0
-    points: 0
     dependencies:
       - STR_GRENADE_LAUNCHER
     listOrder: 30322
   - name: STR_MOTION_SCANNER
     cost: 360
+    stats:
+      tactics: 100
+      physics: 100
     points: 30
     needItem: true
     listOrder: 30330
   - name: STR_FIRST_AID
     cost: 48
+    stats:
+      tactics: 100
     points: 20
     needItem: true
     listOrder: 30340
   - name: STR_PAINKILLER
     cost: 40
+    stats:
+      tactics: 100
     points: 10
     needItem: true
     listOrder: 30350
   - name: STR_STIMS
     cost: 40
+    stats:
+      tactics: 100
     points: 10
     needItem: true
     listOrder: 30360
   - name: STR_MEDI_PACK
     cost: 55
+    stats:
+      tactics: 100
     points: 25
     needItem: true
     listOrder: 30370
   - name: STR_FIRE_EXTINGUISHER
     cost: 15
+    stats:
+      tactics: 100
     points: 5
     needItem: true
     listOrder: 30380
   - name: STR_MEDI_KIT
     cost: 2100
+    stats:
+      tactics: 100
     points: 200
     dependencies:
       - STR_TODOIUM
@@ -1766,32 +1909,49 @@ research:
   #alien
   - name: STR_ALIEN_ARTIFACT_OPENER
     cost: 4500
+    stats:
+      physics: 150
+      chemistry: 150
+      alienTech: 75
     points: 20
     needItem: true
     listOrder: 40000
   - name: STR_ALIEN_ARTIFACT_SNAKE_EYE
     cost: 4500
+    stats:
+      physics: 150
+      chemistry: 150
+      alienTech: 75
     points: 20
     needItem: true
     listOrder: 40010
   - name: STR_ALIEN_ARTIFACT_DUMMY
     cost: 4500
+    stats:
+      physics: 150
+      chemistry: 150
+      alienTech: 75
     points: 20
     needItem: true
     listOrder: 40020
   #evidence
   - name: STR_FLOPPY_SCIENTISTS_LOG
     cost: 8
+    stats:
+      data: 100
     points: 60
     needItem: true
     destroyItem: true
-    dependencies: #FIXME!! remove
+    dependencies: #TODO!! remove
       - STR_TODOIUM
     # getOneFree: #FIXME!! add
     #   - ""
     listOrder: 5000
   - name: STR_MIB_DATA_CONTAINER
     cost: 500
+    stats:
+      computers: 100
+      data: 150
     points: 150
     needItem: true
     destroyItem: true
@@ -1803,30 +1963,36 @@ research:
       - STR_CREDIT_CARD_BREACHING_PREREQ
   - name: STR_CREDIT_CARD
     lookup: STR_CREDIT_CARD_BREACHING
+    cost: 100
+    stats:
+      computers: 100
+    points: 20
+    needItem: true
     dependencies:
       - STR_SUPPLIES
       - STR_CREDIT_CARD_BREACHING_PREREQ
-    cost: 100
-    points: 20
-    needItem: true
     listOrder: 5020
   - name: STR_CREDIT_CARD_SILVER
     lookup: STR_CREDIT_CARD_BREACHING
+    cost: 150
+    stats:
+      computers: 100
+    points: 20
+    needItem: true
     dependencies:
       - STR_SUPPLIES
       - STR_CREDIT_CARD_BREACHING_PREREQ
-    cost: 150
-    points: 20
-    needItem: true
     listOrder: 5030
   - name: STR_CREDIT_CARD_GOLD
     lookup: STR_CREDIT_CARD_BREACHING
-    dependencies:
-      - STR_SUPPLIES
-      - STR_CREDIT_CARD_BREACHING_PREREQ
+    stats:
+      computers: 100
     cost: 300
     points: 20
     needItem: true
+    dependencies:
+      - STR_SUPPLIES
+      - STR_CREDIT_CARD_BREACHING_PREREQ
     listOrder: 5040
 
   #crafts
@@ -1837,15 +2003,17 @@ research:
     hidden: true
     listOrder: 7460
   - name: STR_INTERCEPTOR
-    #requiresBaseFunc: [STDLAB]
-    cost: 500
+    cost: 5000
+    stats:
+      designing: 100
     points: 100
     dependencies:
       - STR_TODOIUM
     listOrder: 7460
   - name: STR_SKYRANGER
-    #requiresBaseFunc: [STDLAB]
-    cost: 300
+    cost: 5000
+    stats:
+      designing: 100
     points: 100
     dependencies:
       - STR_TODOIUM
@@ -1863,6 +2031,9 @@ research:
     hidden: true
   - name: STR_BIOLAB
     cost: 1600
+    stats:
+      designing: 100
+      biology: 120
     points: 50
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
@@ -1871,33 +2042,49 @@ research:
     hidden: true
   - name: STR_CREATURES_CONTAINMENT
     cost: 1900
+    stats:
+      designing: 100
+      biology: 120
     points: 50
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
   - name: STR_LARGE_RADAR_SYSTEM
-    cost: 1200
+    cost: 2000
+    stats:
+      designing: 100
+      computers: 120
     points: 10
     dependencies:
       - STR_TODOIUM
   - name: STR_BASE_DEFENSE_SYSTEMS
-    cost: 900
+    cost: 400
+    stats:
+      tactics: 100
     points: 10
     dependencies:
       - STR_TODOIUM
   - name: STR_MISSILE_DEFENSES
-    cost: 600
+    cost: 3000
+    stats:
+      designing: 100
+      computers: 120
     points: 10
     dependencies:
       - STR_BASE_DEFENSE_SYSTEMS
   - name: STR_ALIEN_CONTAINMENT
-    cost: 2000
+    cost: 5000
+    stats:
+      designing: 100
+      biology: 120
     points: 10
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
       - STR_TODOIUM
   - name: STR_BASE_CONSTRUCTION
     cost: 450
+    stats:
+      designing: 100
     points: 15
     dependencies:
       - STR_FACILITIES_BLUEPRINTS
@@ -1905,6 +2092,8 @@ research:
     listOrder: 7460
   - name: STR_UNDERWATER_BASES
     cost: 2500
+    stats:
+      designing: 100
     points: 15
     dependencies:
       - STR_BASE_CONSTRUCTION
