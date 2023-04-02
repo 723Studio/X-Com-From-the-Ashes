@@ -85,6 +85,23 @@ eventScripts:
     executionOdds: 80
 
 #xcom
+  - &STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT
+    type: STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT
+    oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES_EVENT]
+    researchTriggers:
+      STR_UFOPEDIA_DECRYPTION: true
+      STR_FACILITIES_BLUEPRINTS: true
+      STR_ENGINEER_STATUS_REPORT: true
+      STR_WORKSHOP: false
+    allowedProcessor: 2 #xcom
+    executionOdds: 85
+    maxDifficulty: 3
+  - type: STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT_SH #extra SH copy
+    refNode: *STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT
+    executionOdds: 50
+    minDifficulty: 4
+    maxDifficulty: 4
+
   - &STR_WORKSHOP_SCRIPT
     type: STR_WORKSHOP_SCRIPT
     oneTimeSequentialEvents: [STR_WORKSHOP_EVENT]
@@ -94,11 +111,11 @@ eventScripts:
       STR_ENGINEER_STATUS_REPORT: true
       STR_WORKSHOP: false
     allowedProcessor: 2 #xcom
-    executionOdds: 25
+    executionOdds: 100
     maxDifficulty: 3
   - type: STR_WORKSHOP_SCRIPT_SH #extra SH copy
     refNode: *STR_WORKSHOP_SCRIPT
-    executionOdds: 15
+    executionOdds: 75
     minDifficulty: 4
     maxDifficulty: 4
   - &STR_SPORTS_BOW_TINKERING_SCRIPT
@@ -184,23 +201,6 @@ eventScripts:
       STR_CRATED_HELICOPTER: true
     allowedProcessor: 2 #xcom
     executionOdds: 100
-    maxDifficulty: 4
-  - &STR_ELECTRIC_WEAPONS_SCRIPT
-    type: STR_ELECTRIC_WEAPONS_SCRIPT
-    oneTimeSequentialEvents: [STR_ELECTRIC_WEAPONS_PREREQ_EVENT]
-    researchTriggers:
-      STR_PRISONER_INTERROGATIONS: true
-      STR_ELECTRIC_WEAPONS_PREREQ: false
-      STR_PRODUCTION: true
-    facilityTriggers:
-      STR_WORKSHOP: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 40
-    maxDifficulty: 3
-  - type: STR_ELECTRIC_WEAPONS_SCRIPT_SH #extra SH copy
-    refNode: *STR_ELECTRIC_WEAPONS_SCRIPT
-    executionOdds: 15
-    minDifficulty: 4
     maxDifficulty: 4
   - &BIOLAB_PREREQ_SCRIPT
     type: STR_BIOLAB_PREREQ_SCRIPT_FACEHUGGER

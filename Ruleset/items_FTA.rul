@@ -1263,7 +1263,7 @@ items:
     attraction: 15
     listOrder: 5130
   - type: STR_CHEMPISTOL
-    categories: [STR_CHEMICAL_WEAPONS, STR_PISTOLS, STR_ALIEN_TECH]
+    categories: [STR_CHEMICAL, STR_PISTOLS, STR_ALIEN_TECH]
     requires:
       - STR_CHEMPISTOL
     size: 0.1
@@ -1293,7 +1293,7 @@ items:
     recoveryPoints: 4
     listOrder: 5140
   - type: STR_CHEMPISTOL_CLIP
-    categories: [STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
+    categories: [STR_CHEMICAL, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
     requires:
       - STR_CHEMPISTOL
     size: 0.1
@@ -1891,7 +1891,7 @@ items:
     recoveryPoints: 2
     listOrder: 7150
   - type: STR_CHEMOGUN
-    categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_SMOKE, STR_RIFLES]
+    categories: [STR_HUMAN_TECH, STR_CHEMICAL, STR_SMOKE, STR_RIFLES]
     requires:
       - STR_CHEMOGUN
     size: 0.2
@@ -1924,7 +1924,7 @@ items:
     recoveryPoints: 6
     listOrder: 7160
   - type: STR_CHEMOGUN_CLIP
-    categories: [STR_HUMAN_TECH, STR_CHEMICAL_WEAPONS, STR_RIFLES, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_CHEMICAL, STR_RIFLES, STR_CLIPS]
     requires:
       - STR_CHEMOGUN
     size: 0.1

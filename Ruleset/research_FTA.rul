@@ -139,6 +139,10 @@ research:
       - STR_STONKS_ACTIVE
   - name: STR_CROP_CIRCLES_ZOMBIES_PREREQ
     hidden: true
+  - name: STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
+    hidden: true
+  - name: STR_WEAPON_COMPONENTS
+    hidden: true
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
@@ -148,7 +152,6 @@ research:
       data: 120
       computers: 80
     points: 80
-    funds: 5000
     dependencies:
       - STR_RND_STATUS_REPORT
     listOrder: 10
@@ -241,6 +244,62 @@ research:
       - STR_CROP_CIRCLES_PREREQ
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 100
+
+
+#own study
+  - name: STR_XCOM_FUNDAMENTAL_STUDIES #TODO-pedia
+    requiresBaseFunc: [HQ]
+    cost: 400
+    stats:
+      data: 120
+      computers: 80
+    points: 20
+    dependencies:
+      - STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
+    listOrder: 10
+  - name: STR_HIGH_ENERGY_PSYSICS #TODO-pedia
+    requiresBaseFunc: [HQ]
+    cost: 1200
+    stats:
+      physics: 100
+    points: 30
+    dependencies:
+      - STR_XCOM_FUNDAMENTAL_STUDIES
+    listOrder: 10
+  - name: STR_ELECTRIC_WEAPONS_CONCEPT #TODO-pedia
+    cost: 1200
+    stats:
+      physics: 80
+      designing: 100
+      tactics: 120
+    points: 30
+    unlocks:
+      - STR_WEAPON_COMPONENTS
+    dependencies:
+      - STR_HIGH_ENERGY_PSYSICS
+    listOrder: 10
+  - name: STR_LASER_WEAPONS_CONCEPT #TODO-pedia
+    cost: 1200
+    stats:
+      physics: 80
+      designing: 100
+      tactics: 120
+    points: 30
+    unlocks:
+      - STR_WEAPON_COMPONENTS
+    dependencies:
+      - STR_HIGH_ENERGY_PSYSICS
+    listOrder: 10
+  - name: STR_ELECTROMAGNETIC_WEAPONS_CONCEPT #TODO-pedia
+    requiresBaseFunc: [HQ]
+    cost: 1200
+    stats:
+      physics: 100
+      tactics: 100
+    points: 30
+    dependencies:
+      - STR_XCOM_FUNDAMENTAL_STUDIES
+    listOrder: 10   
 
 #damage types
   - name: STR_DAMAGE_ARMOR_PIERCING
@@ -395,26 +454,77 @@ research:
       - STR_MILITARY_RIFLE
       - STR_MILITARY_SNIPER_RIFLE
 
-  - name: STR_ELECTRIC_WEAPONS_PREREQ #TODO - refine
-    hidden: true
-  - name: STR_ELECTRIC_WEAPONS
-    cost: 2700
+
+  - name: STR_ADVANCED_COOLING_SYSTEMS #TODO pedia
+    cost: 3000
     stats:
-      physics: 100
-      designing: 100
+      materials: 80
+      chemistry: 100
+      designing: 120
     points: 15
     dependencies:
-      - STR_ELECTRIC_WEAPONS_PREREQ
+      - STR_WEAPON_COMPONENTS
+  - name: STR_HIGH_DENSITY_CAPACITORS #TODO pedia
+    cost: 3000
+    stats:
+      physics: 120
+      chemistry: 80
+    points: 15
+    dependencies:
+      - STR_WEAPON_COMPONENTS
+  - name: STR_ULTRA_DENSE_CAPACITORS #TODO pedia
+    cost: 4500
+    stats:
+      chemistry: 100
+    points: 15
+    dependencies:
+      - STR_HIGH_DENSITY_CAPACITORS
+  - name: STR_ADVANCED_BATTERIES #TODO pedia
+    cost: 3000
+    stats:
+      chemistry: 80
+      materials: 120
+    points: 15
+    dependencies:
+      - STR_WEAPON_COMPONENTS
+  - name: STR_HIGH_PERFORMANCE_BATTERIES #TODO pedia
+    cost: 4500
+    stats:
+      chemistry: 80
+      materials: 120
+    points: 15
+    dependencies:
+      - STR_ADVANCED_BATTERIES
+
+
+  - name: STR_ELECTRIC_WEAPONS_PRODUCTION
+    cost: 2700
+    stats:
+      physics: 80
+      materials: 100
+      designing: 120
+    points: 15
+    dependencies:
+      - STR_ELECTRIC_WEAPONS_CONCEPT
       - STR_PRODUCTION
   - name: STR_ELECTRIC_STICK
     cost: 1200
     stats:
-      physics: 120
-      designing: 80
+      designing: 100
     points: 20
     dependencies:
-      - STR_ELECTRIC_WEAPONS
+      - STR_ELECTRIC_WEAPONS_PRODUCTION
+      - STR_ADVANCED_BATTERIES
     listOrder: 25002
+  - name: STR_ARC_TROWER #TODO pedia
+    cost: 1300
+    stats:
+      physics: 100
+    points: 15
+    dependencies:
+      - STR_ELECTRIC_WEAPONS_PRODUCTION
+      - STR_HIGH_PERFORMANCE_BATTERIES
+      - STR_HIGH_DENSITY_CAPACITORS
   - name: STR_TASER_CANNON
     cost: 6400
     stats:
@@ -422,7 +532,7 @@ research:
       designing: 100
     points: 40
     dependencies:
-      - STR_ELECTRIC_WEAPONS
+      - STR_ARC_TROWER
     unlocks:
       - STR_TASER_CANNON_CLIP
     listOrder: 25010
@@ -437,8 +547,8 @@ research:
     cost: 1000
     stats:
       designing: 80
-      tactics: 120
-      physics: 100
+      tactics: 100
+      physics: 120
     points: 50
     needItem: true
     listOrder: 25025
@@ -2019,10 +2129,21 @@ research:
 
 #craft items
 #facilities
-  - name: STR_WORKSHOP
+  - name: STR_WORKSHOP_PREREQ
     hidden: true
     unlocks:
       - STR_PRODUCTION
+  - name: STR_WORKSHOP
+    cost: 1600
+    stats:
+      designing: 100
+      biology: 120
+    points: 50
+    unlocks:
+      - STR_PRODUCTION
+    dependencies:
+      - STR_FACILITIES_BLUEPRINTS
+      - STR_WORKSHOP_PREREQ
   - name: STR_PRODUCTION
     hidden: true
   - name: STR_BIOLAB_PREREQ

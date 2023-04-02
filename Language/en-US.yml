@@ -1034,8 +1034,6 @@ en-US:
   STR_ROCKET_GLOVE_TINKERING_DESCRIPTION: "Our engineers have developed an promising prototype of a portable launcher for shooting unguided rockets. The technical specifications of the device are included in the Ufopedia database."
   STR_KATANA_TINKERING: "Oriental Blade"
   STR_KATANA_TINKERING_DESCRIPTION: "Analyzing possible application of full-size blade weapons in encounters our soldiers might engage in, we have concluded that it is possible to produce more effective weapons than conventional swords. Traditional oriental swords have greater potential to penetrate armor, and the narrower cutting edge will do more damage to unarmored targets. We are ready to start producing new swords based on the new design.{NEWLINE}New technology> {ALT}Oriental Blade"
-  STR_ELECTRIC_WEAPONS_PREREQ_EVENT: "Electric Weapons"
-  STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION: "Given our serious lack of data on the adversary, it makes sense for us to try to capture enemy units alive if possible. It is likely that by interrogating our enemies we will be able to learn the most valuable strategic information. One of the most effective ways to render a living creature unconscious is to shock it with a strong electric shock. Perhaps we might try to develop our own electric weapons, which would be quite effective on battlescape."
   STR_MYSTERIOUS_SPONSOR_50000: "Mysterious Sponsor"
   STR_MYSTERIOUS_SPONSOR_50000_DESCRIPTION: "$50,000 was deposited into one of our clandestine accounts. It is unclear whether this is a banking error, a well-wisher who desires to remain anonymous, or an insidious attempt of the Men in Black to get to our accounts. Either way, we must remain vigilant."
   STR_MYSTERIOUS_SPONSOR_75000: "Mysterious Sponsor"
@@ -1468,7 +1466,7 @@ en-US:
   STR_SONIC: "Sonic Weapons"
   STR_ELECTRIC: "Electric Weapons"
   STR_EMP: "EMP Weapons"
-  STR_CHEMICAL_WEAPONS: "Chemical Weapons"
+  STR_CHEMICAL: "Chemical Weapons"
   STR_WARP: "Warp Weapons"
   STR_PSI: "Psi Weapons"
   STR_INCAPACITATE: "Stun Weapons"
@@ -1848,6 +1846,14 @@ en-US:
   STR_UFOPEDIA_DECRYPTION: "Ufopaedia decryption"
   STR_UFOPEDIA: "Ufopaedia"
   STR_UFOPEDIA_UFOPEDIA: "We managed to break through the primary protection of the blocked Ufopaedia archive! Sadly, once we had accessed the system, we found inner layers of data encryption. One section seems to hold all the technical data on the equipment we use. It won't be difficult to decipher that part. The other is much better protected, and it seems that only the commander had access to it before the lockdown. I can't say for sure, but it most likely contains strategic data about the project history and its formation background. Perhaps the analysis of past events will allow us to avoid these errors in the future."
+  STR_XCOM_FUNDAMENTAL_STUDIES: "X-COM Fundamental Studies"
+  STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA:
+  STR_HIGH_ENERGY_PSYSICS: "Applied High Energy Physics"
+  STR_HIGH_ENERGY_PSYSICS_UFOPEDIA: 
+  STR_ELECTRIC_WEAPONS_CONCEPT: "Electric Weapons Concept"
+  STR_ELECTRIC_WEAPONS_CONCEPT_UFOPEDIA: "Given our serious lack of data on the adversary, it makes sense for us to try to capture enemy units alive if possible. It is likely that by interrogating our enemies we will be able to learn the most valuable strategic information. One of the most effective ways to render a living creature unconscious is to shock it with a strong electric shock. Perhaps we might try to develop our own electric weapons, which would be quite effective on battlescape."
+  STR_LASER_WEAPONS_CONCEPT: "Laser Weapons Concept"
+  STR_LASER_WEAPONS_CONCEPT_UFOPEDIA:
   STR_XCOM_EQUIPMENT: "X-COM Equipment Ufopaedia files"
   STR_XCOM_EQUIPMENT_ARTICLE_HEADER: "X-COM Equipment"
   STR_XCOM_EQUIPMENT_UNLOCKED: "X-COM Equipment"
@@ -1887,8 +1893,20 @@ en-US:
   STR_MILITARY_TECH: "Military Technology"
   STR_EXPANDABLE_AMMO: "Expansive Ammunition"
   STR_EXPANDABLE_AMMO_UFOPEDIA: "Expansive bullets are designed to significantly increase their diameter when hitting soft tissue in order to increase their lethality. This is achieved by increasing the softness of the metal from which the bullet is made, as well as the cavity at the apex. At the same time, this makes it significantly less effective against even lightly armored targets.{NEWLINE}Such ammunition is forbidden for use by the military and is used mainly for hunting, so it was not part of the standard X-COM ammunition."
-  STR_ELECTRIC_WEAPONS: "Electric Weapons"
-  STR_ELECTRIC_WEAPONS_UFOPEDIA: "The production of effective electric weapons is a rather labor-intensive and high-tech process. Even the simplest samples require a large variety of rara and expensive components - high-volume capacitors, reliable conductors, and decent cooling systems. Nevertheless, all the most necessary equipment and components are freely available and we can safely acquire it."
+  STR_ADVANCED_COOLING_SYSTEMS: "Advanced Cooling Systems"
+  STR_ADVANCED_COOLING_SYSTEMS_UFOPEDIA: 
+  STR_HIGH_DENSITY_CAPACITORS: "High-density Capacitors"
+  STR_HIGH_DENSITY_CAPACITORS_UFOPEDIA: 
+  STR_ULTRA_DENSE_CAPACITORS: "Ultra-dense Capacitors"
+  STR_ULTRA_DENSE_CAPACITORS_UFOPEDIA: 
+  STR_ADVANCED_BATTERIES: "Advanced Batteries"
+  STR_ADVANCED_BATTERIES_UFOPEDIA: 
+  STR_HIGH_PERFORMANCE_BATTERIES: "High-performance Batteries"
+  STR_HIGH_PERFORMANCE_BATTERIES_UFOPEDIA: 
+
+  STR_ELECTRIC_WEAPONS_PRODUCTION: "Electric Weapons Production"
+  STR_ELECTRIC_WEAPONS_PRODUCTION_UFOPEDIA: "The production of effective electric weapons is a rather labor-intensive and high-tech process. Even the simplest samples require a large variety of rara and expensive components - high-volume capacitors, reliable conductors, and decent cooling systems. Nevertheless, all the most necessary equipment and components are freely available and we can safely acquire it."
+  STR_ARC_TROWER: "Arc Thrower"
   STR_MAGNET_WEAPONS: "Magnet Weapons"
   STR_CHEMICAL_WEAPONS: "Chemical Weaponry"
   STR_CHEMICAL_WEAPONS_UFOPEDIA: "In order to create chemical weapons it is necessary to solve a number of technical problems. The first is the analysis of acid composition used in it and development of the reproduction method for this solution. The second is the technology of coating all of the weapon's internal surfaces with a highly resistant anti-corrosion agent. We are able to reverse-engineer the samples that we have received in order to develop a production blueprint."
@@ -2421,7 +2439,6 @@ en-US:
   STR_MILITARY_EQUIPMENT_ACQUISITION: STR_MILITARY_EQUIPMENT_ACQUISITION
   STR_STARTING_EQUIPMENT_PREREQ: STR_STARTING_EQUIPMENT_PREREQ
   STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
-  STR_ELECTRIC_WEAPONS_PREREQ: STR_ELECTRIC_WEAPONS_PREREQ
   STR_CHEMICAL_WEAPONS_PREREQ: STR_CHEMICAL_WEAPONS_PREREQ
   STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
   STR_REQ_HQ_LOCATION_DONE: STR_REQ_HQ_LOCATION_DONE

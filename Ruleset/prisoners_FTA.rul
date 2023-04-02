@@ -23,7 +23,7 @@ prisoners:
       funds: -200
       cooperationChange: -5
     recruiting:
-      requiredResearch: STR_TROLLIUM
+      requiredResearch: STR_TODOIUM
       spawnedSoldierRule: STR_SOLDIER
       difficulty: 100
       spawnEvent: STR_XCOM_SOLDIER_PRISONER_RECRUITED_EVENT
@@ -39,7 +39,7 @@ prisoners:
       requiredResearch: STR_TODOIUM #suicide commander after psi emitter will be down
       #spawnedSoldierRule: STR_SOLDIER
       #difficulty: 100
-      spawnEvent: STR_XCOM_EX_COMMANDER_SUICIDE_EVENT 
+      spawnEvent: STR_XCOM_EX_COMMANDER_SUICIDE_EVENT
     torture:
       difficulty: 70
       loyaltyChange: 15
@@ -69,7 +69,7 @@ prisoners:
       diesAfter: true
       baseResistance: 100
     recruiting:
-      requiredResearch: STR_TROLLIUM #TODO
+      requiredResearch: STR_TODOIUM #TODO
       spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 100
     torture:
@@ -102,7 +102,7 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 3
       eventChance: 30
     contain:
-      requiredResearch: STR_TROLLIUM #TODO
+      requiredResearch: STR_TODOIUM #TODO
       funds: -800
       cooperationChange: 5
   - type: STR_MIB_SPECOPS
@@ -113,7 +113,7 @@ prisoners:
       diesAfter: true
       baseResistance: 100
     recruiting:
-      requiredResearch: STR_TROLLIUM #TODO
+      requiredResearch: STR_TODOIUM #TODO
       spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 100
     torture:
@@ -146,7 +146,7 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_5: 5
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 3
     contain:
-      requiredResearch: STR_TROLLIUM #TODO
+      requiredResearch: STR_TODOIUM #TODO
       funds: -800
       cooperationChange: 5
   - type: STR_MIB_BUTCHER
@@ -158,7 +158,7 @@ prisoners:
       diesAfter: true
       baseResistance: 100
     recruiting:
-      requiredResearch: STR_TROLLIUM #no recruit ever
+      requiredResearch: STR_TODOIUM #no recruit ever
     torture:
       difficulty: 300
       loyaltyChange: 2
@@ -177,18 +177,20 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_3: 15
           STR_RANDOM_TORTURE_EVENT_4: 10
     contain:
-      requiredResearch: STR_TROLLIUM #TODO
+      requiredResearch: STR_TODOIUM #TODO
       funds: -800
       cooperationChange: 5
   - type: STR_MIB_SCIENTIST
     startingCooperation: -250
     interrogation:
-      unlockResearches: [STR_MIB_SCIENTIST] #TODO
+      unlockResearches:
+        [STR_MIB_SCIENTIST]
+        #TODO
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
       baseResistance: 100
     recruiting:
-      requiredResearch: STR_TROLLIUM #no recruit ever
+      requiredResearch: STR_TODOIUM #no recruit ever
     torture:
       difficulty: 50
       loyaltyChange: 2
@@ -213,12 +215,12 @@ prisoners:
     startingCooperation: -150
     damageOverTime: 2
     interrogation:
-      unlockResearches: [STR_MIB_SPECOPS]
+      unlockResearches: [STR_MIB_ENFORCER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
       baseResistance: 100
     recruiting:
-      requiredResearch: STR_TROLLIUM #TODO
+      requiredResearch: STR_TODOIUM #TODO
       spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 100
     torture:
@@ -251,7 +253,7 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_5: 5
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 3
     contain:
-      requiredResearch: STR_TROLLIUM #TODO
+      requiredResearch: STR_TODOIUM #TODO
       funds: -800
       cooperationChange: 5
   - type: STR_MIB_OFFICE_ENGINEER
@@ -269,7 +271,7 @@ prisoners:
       difficulty: 30
       loyaltyChange: 25
       moraleChange: 30
-      cooperationChange: 50
+      cooperationChange: 120
       eventWeights:
         0:
           STR_RANDOM_TORTURE_EVENT_1: 40
@@ -300,7 +302,7 @@ prisoners:
       difficulty: 20
       loyaltyChange: 25
       moraleChange: 30
-      cooperationChange: 60
+      cooperationChange: 140
       eventChance: 50
       eventWeights:
         0:
@@ -318,7 +320,7 @@ prisoners:
       funds: -800
       cooperationChange: 5
   - type: STR_MIB_OFFICE_SECURITY
-    startingCooperation: -10
+    startingCooperation: -30
     interrogation:
       unlockResearches: [STR_MIB_OFFICE_SECURITY]
       #requiredResearch: STR_INTEL_STATUS_REPORT
@@ -332,7 +334,7 @@ prisoners:
       difficulty: 45
       loyaltyChange: 25
       moraleChange: 30
-      cooperationChange: 50
+      cooperationChange: 75
       eventChance: 50
       eventWeights:
         0:
@@ -364,7 +366,7 @@ prisoners:
       difficulty: 30
       loyaltyChange: 25
       moraleChange: 30
-      cooperationChange: 50
+      cooperationChange: 120
       eventChance: 40
       eventWeights:
         0:
@@ -382,19 +384,19 @@ prisoners:
       funds: -800
       cooperationChange: 5
   - type: STR_MIB_VIP
-    startingCooperation: -10
+    startingCooperation: -5
     interrogation:
       unlockResearches: [STR_MIB_VIP]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 10
     recruiting:
       requiredResearch: STR_TROLLIUM #TODO - consider if worth putting something here
     torture:
       difficulty: 20
       loyaltyChange: 10
       moraleChange: 30
-      cooperationChange: 50
+      cooperationChange: 100
       eventChance: 60
       eventWeights: #TODO - add more content pls
         0:
@@ -412,7 +414,7 @@ prisoners:
       funds: -1000
       cooperationChange: 5
   - type: STR_MIB_VIP_BODYGUARD
-    startingCooperation: -10
+    startingCooperation: -40
     interrogation:
       unlockResearches: [STR_MIB_VIP_BODYGUARD]
       #requiredResearch: STR_INTEL_STATUS_REPORT
@@ -478,12 +480,12 @@ prisoners:
       funds: -800
       cooperationChange: 5
   - type: STR_CULT_COORDINATOR
-    startingCooperation: -10
+    startingCooperation: -20
     interrogation:
-      unlockResearches: [STR_CULT_GANGER]
+      unlockResearches: [STR_CULT_COORDINATOR]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 40
+      baseResistance: 30
     recruiting:
       requiredResearch: STR_CRIMINAL_RECRUITING
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -510,7 +512,7 @@ prisoners:
       funds: -800
       cooperationChange: 5
 
- #Bandits     
+  #Bandits
   - type: STR_BANDIT
     startingCooperation: -10
     interrogation:
@@ -546,7 +548,7 @@ prisoners:
 
 #Army
   - type: STR_ARMY_FIELD_SOLDIER
-    startingCooperation: -10
+    startingCooperation: -20
     interrogation:
       unlockResearches: [STR_ARMY_FIELD_SOLDIER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
@@ -576,14 +578,14 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
     contain:
       funds: -800
-      cooperationChange: 5    
+      cooperationChange: 5
   - type: STR_ARMY_FIELD_OFFICER
-    startingCooperation: -10
+    startingCooperation: -25
     interrogation:
       unlockResearches: [STR_ARMY_FIELD_OFFICER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 40
+      baseResistance: 50
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -608,13 +610,13 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
     contain:
       funds: -800
-      cooperationChange: 5 
+      cooperationChange: 5
 
 #Militia
   - type: STR_MALE_MILITIA_CITIZEN
-    startingCooperation: -10
+    startingCooperation: -50
     interrogation:
-      unlockResearches: [STR_MIB_OFFICE_WORKER]
+      unlockResearches: [STR_MALE_MILITIA_CITIZEN]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
       baseResistance: 30
@@ -644,7 +646,7 @@ prisoners:
       funds: -800
       cooperationChange: 5
   - type: STR_MALE_POLICE
-    startingCooperation: -10
+    startingCooperation: -40
     interrogation:
       unlockResearches: [STR_MALE_POLICE]
       #requiredResearch: STR_INTEL_STATUS_REPORT
@@ -678,7 +680,9 @@ prisoners:
   - type: STR_MALE_CIVILIAN_FARMER
     startingCooperation: -10
     interrogation:
-      unlockResearches: [STR_CIVILIAN_FARMER] #TODO
+      unlockResearches:
+        [STR_CIVILIAN_FARMER]
+        #TODO
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
       baseResistance: 30
@@ -688,9 +692,9 @@ prisoners:
       difficulty: 60
     torture:
       difficulty: 30
-      loyaltyChange: 25
+      loyaltyChange: 35
       moraleChange: 30
-      cooperationChange: 50
+      cooperationChange: 200
       eventChance: 40
       eventWeights:
         0:
@@ -706,30 +710,32 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
     contain:
       funds: -500
-      cooperationChange: 5
+      cooperationChange: -5
   - type: STR_FEMALE_CIVILIAN_FARMER
     startingCooperation: -10
     interrogation:
-      unlockResearches: [STR_CIVILIAN_FARMER] #TODO
+      unlockResearches:
+        [STR_CIVILIAN_FARMER]
+        #TODO
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 10
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_FEMALE
       difficulty: 60
     torture:
-      difficulty: 30
-      loyaltyChange: 25
+      difficulty: 20
+      loyaltyChange: 35
       moraleChange: 30
-      cooperationChange: 50
-      eventChance: 40
+      cooperationChange: 200
+      eventChance: 45
       eventWeights:
         0:
           STR_RANDOM_TORTURE_EVENT_1: 40
           STR_RANDOM_TORTURE_EVENT_2: 50
-          STR_RANDOM_TORTURE_EVENT_3: 60
-          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_3: 70
+          STR_RANDOM_TORTURE_EVENT_4: 80
           STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
           STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
           STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
@@ -738,22 +744,22 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
     contain:
       funds: -500
-      cooperationChange: 5
+      cooperationChange: -5
   - type: STR_CIVILIAN_HUNTER
     startingCooperation: -10
     interrogation:
       unlockResearches: [STR_CIVILIAN_HUNTER]
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 20
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 60
     torture:
       difficulty: 30
-      loyaltyChange: 25
+      loyaltyChange: 35
       moraleChange: 30
-      cooperationChange: 50
+      cooperationChange: 200
       eventChance: 40
       eventWeights:
         0:
@@ -769,17 +775,17 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
     contain:
       funds: -500
-      cooperationChange: 5
+      cooperationChange: -5
   - type: STR_MAD_CIVILIAN
-    startingCooperation: -10
+    startingCooperation: -100
     interrogation:
       unlockResearches: [STR_MAD_CIVILIAN]
-      diesAfter: false
+      diesAfter: true
       baseResistance: 30
     recruiting:
       requiredResearch: STR_TROLLIUM
     torture:
-      difficulty: 40
+      difficulty: 70
       loyaltyChange: 25
       moraleChange: 30
       cooperationChange: 50
@@ -793,5 +799,6 @@ prisoners:
     contain:
       funds: -500
       cooperationChange: 5
-
+      requiredResearch: STR_TODOIUM
+    damageOverTime: 1
 # Resistance - do I even need it?

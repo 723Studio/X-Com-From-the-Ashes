@@ -442,12 +442,19 @@ events:
     timerRandom: 1200 # 20 hours
 
 #xcom
+  - name: STR_XCOM_FUNDAMENTAL_STUDIES
+    description: STR_XCOM_FUNDAMENTAL_STUDIES_DESCRIPTION
+    background: BACK05.SCR
+    researchList: [STR_WORKSHOP_PREREQ]
+    timer: 4320 #3 days
+    timerRandom: 8640 #6 days
+    interruptResearch: STR_WORKSHOP
   - name: STR_WORKSHOP_EVENT
     description: STR_WORKSHOP_EVENT_DESCRIPTION
     background: BACK17.SCR
-    researchList: [STR_WORKSHOP]
-    timer: 10080
-    timerRandom: 30240 #3 weeks
+    researchList: [STR_WORKSHOP_PREREQ]
+    timer: 4320 #3 days
+    timerRandom: 8640 #6 days
     interruptResearch: STR_WORKSHOP
   - name: STR_SPORTS_BOW_TINKERING
     description: STR_SPORTS_BOW_TINKERING_DESCRIPTION
@@ -494,13 +501,6 @@ events:
     timer: 30
     timerRandom: 0
     interruptResearch: STR_HELICOPTER
-  - name: STR_ELECTRIC_WEAPONS_PREREQ_EVENT
-    description: STR_ELECTRIC_WEAPONS_PREREQ_EVENT_DESCRIPTION
-    background: BACK05.SCR
-    researchList: [STR_ELECTRIC_WEAPONS_PREREQ]
-    timer: 4320
-    timerRandom: 30240 #3 weeks
-    interruptResearch: STR_ELECTRIC_WEAPONS_PREREQ
   - name: STR_BIOLAB_PREREQ_EVENT
     description: STR_BIOLAB_PREREQ_EVENT_DESCRIPTION
     background: BACK05.SCR
