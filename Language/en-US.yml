@@ -1854,6 +1854,71 @@ en-US:
   STR_ELECTRIC_WEAPONS_CONCEPT_UFOPEDIA: "Given our serious lack of data on the adversary, it makes sense for us to try to capture enemy units alive if possible. It is likely that by interrogating our enemies we will be able to learn the most valuable strategic information. One of the most effective ways to render a living creature unconscious is to shock it with a strong electric shock. Perhaps we might try to develop our own electric weapons, which would be quite effective on battlescape."
   STR_LASER_WEAPONS_CONCEPT: "Laser Weapons Concept"
   STR_LASER_WEAPONS_CONCEPT_UFOPEDIA:
+  STR_ELECTROMAGNETIC_WEAPONS_CONCEPT: "Electromagnetic Weapons Concept"
+  STR_ELECTROMAGNETIC_WEAPONS_CONCEPT_UFOPEDIA: 
+  STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION: "Electromagnetic Weapons Production"
+  STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION_UFOPEDIA: 
+  STR_SUPERCONDUCTIVITY_THEORY: "Superconductivity Theory"
+  STR_SUPERCONDUCTIVITY_THEORY_UFOPEDIA: 
+  STR_CERAMIC_SUPERCONDUCTOR: "Ceramic Superconductor"
+  STR_CERAMIC_SUPERCONDUCTOR_UFOPEDIA: 
+  STR_CARBON_SUPERCONDUCTOR: "Carbon Superconductor"
+  STR_CARBON_SUPERCONDUCTOR_UFOPEDIA: 
+  STR_HYDRID_ALLOY_SUPERCONDUCTOR: "Superconductivity of Hydride Alloys"
+  STR_HYDRID_ALLOY_SUPERCONDUCTOR_UFOPEDIA: 
+  STR_COIL_WEAPONS: "Coil Weapons"
+  STR_COIL_WEAPONS_UFOPEDIA: 
+  STR_COIL_RIFLE: "Coil Rifle"
+  STR_COIL_RIFLE_UFOPEDIA: 
+  STR_COIL_SNIPER_RIFLE: "Coil Sniper Rifle"
+  STR_COIL_SNIPER_RIFLE_UFOPEDIA: 
+  STR_COIL_CANNON: "Coil Cannon"
+  STR_COIL_CANNON_UFOPEDIA: 
+  STR_LASER_SCATTERING_PROBLEM: "Laser Scattering Problem"
+  STR_LASER_SCATTERING_PROBLEM_UFOPEDIA: 
+  STR_PULSE_LASER: "Pulse Laser"
+  STR_PULSE_LASER_UFOPEDIA: 
+  STR_PHASE_LASER: "Phase-conjugate Laser"
+  STR_PHASE_LASER_UFOPEDIA: 
+  STR_PHASER_MIRROR: "Phaser Mirror"
+  STR_PHASER_MIRROR_UFOPEDIA: 
+  STR_PHASER_TARGETTING_SYSTEM: "Phaser Targetting System"
+  STR_PHASER_TARGETTING_SYSTEM_UFOPEDIA: 
+  STR_PHASERS_PRODUCTION: "Phasers Production"
+  STR_PHASERS_PRODUCTION_UFOPEDIA: 
+  STR_PHASER_CANNON: "Phaser Cannon"
+  STR_PHASER_CANNON_UFOPEDIA: 
+  STR_FIREARMS_STUDY: "Exploring the Firearms Perspective"
+  STR_FIREARMS_STUDY_UFOPEDIA: 
+  STR_SMART_WEAPONS: "Smart Weapons"
+  STR_SMART_TARGETING: "Smart Targeting System"
+  STR_SMART_TARGETING_UFOPEDIA: 
+  STR_SMART_ROUNDS: "Smart Rounds"
+  STR_SMART_ROUNDS_UFOPEDIA: 
+  STR_SMART_WEAPONS_PRODUCTION: "Smart Weapons Production"
+  STR_SMART_WEAPONS_UFOPEDIA: 
+  STR_SMART_RIFLE_ROUNDS: "Smart Rifle Rounds"
+  STR_SMART_RIFLE_ROUNDS_UFOPEDIA: 
+  STR_SMART_RIFLE: "Smart Rifle"
+  STR_SMART_RIFLE_UFOPEDIA: 
+  STR_SMART_ASSAULT_RIFLE: "Smart Assault Rifle"
+  STR_SMART_ASSAULT_RIFLE_UFOPEDIA: 
+  STR_SMART_SNIPER_ROUNDS: "Smart Sniper Rounds"
+  STR_SMART_SNIPER_ROUNDS_UFOPEDIA: 
+  STR_SMART_SNIPER_RIFLE: "Smart Sniper Rifle"
+  STR_SMART_SNIPER_RIFLE_UFOPEDIA: 
+  STR_SMART_SMG_ROUNDS: "Smart SMG Rounds"
+  STR_SMART_SMG_ROUNDS_UFOPEDIA: 
+  STR_SMART_SMG_RIFLE: "Smart SMG"
+  STR_SMART_SMG_RIFLE_UFOPEDIA: 
+  STR_SMART_PISTOL_ROUNDS: "Smart Pistol Rounds"
+  STR_SMART_PISTOL_ROUNDS_UFOPEDIA: 
+  STR_SMART_PISTOL: "Smart Pistol"
+  STR_SMART_PISTOL_UFOPEDIA: 
+  STR_SMART_LMG_ROUNDS: "Smart LMG Rounds"
+  STR_SMART_LMG_ROUNDS_UFOPEDIA: 
+  STR_SMART_LMG_RIFLE: "Smart LMG"
+  STR_SMART_LMG_RIFLE_UFOPEDIA: 
   STR_XCOM_EQUIPMENT: "X-COM Equipment Ufopaedia files"
   STR_XCOM_EQUIPMENT_ARTICLE_HEADER: "X-COM Equipment"
   STR_XCOM_EQUIPMENT_UNLOCKED: "X-COM Equipment"
@@ -1882,6 +1947,10 @@ en-US:
   STR_STARTING_EQUIPMENT_UFOPEDIA: "Since the X-COM project was discontinued, we have lost our regular armament and gear suppliers. But we continue to fight, and we vitally need new sources of weaponry and ammunition. Maybe our new friends can help out with that? Regrettably, lacking established illegal arms channels, they can only offer us weapons that are available for purchase by civilians. Our contact in the Resistance transferred the tactical specifications of the items we can buy from them, all information analyzed and uploaded to Ufopedia."
   STR_SUPPLIES: "Supplies"
   STR_SUPPLIES_UFOPEDIA: "In the current circumstances we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project voluntarily, as long as we take care of providing them with everything they need to work, and it would be good to keep the morale high."
+  STR_IMPROVISED_MANUFACTURING: "Improvised Manufacturing"
+  STR_IMPROVISED_MANUFACTURING_UFOPEDIA: 
+  STR_HIGH_TECH_MANUFACTURING: "High Tech Manufacturing"
+  STR_HIGH_TECH_MANUFACTURING_UFOPEDIA: 
   STR_LOYALTY: "Loyalty"
   STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down and now we can only count on ourselves. The loss of the Council’s support is a severe blow to our organization but despite all hard circumstances our people are determined to fight against alien invaders at all costs. 'Ad victoriam' - that’s our new motto! Today isn’t money determining our future, but how strong our men’s spirit is. It is essential not to let the morale go down and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, and progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that’s why we should be extremely careful and wise in our strategic and tactical choices."
   STR_EX_COUNCIL_MEMBER_INITIAL: "Encrypted Transmission"

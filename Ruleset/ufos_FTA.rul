@@ -58,11 +58,11 @@ ufos:
         - name: UFO_110
           width: 10
           length: 10
-          objects: #TODO - test data!
-            STR_CATTLE_SAMPLING_SITE:
-              - [5, 5, 0]
-            STR_TERMINAL:
-              - [4, 4, 0]
+          # objects: #TODO - test data!
+          #   STR_CATTLE_SAMPLING_SITE:
+          #     - [5, 5, 0]
+          #   STR_TERMINAL:
+          #     - [4, 4, 0]
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4

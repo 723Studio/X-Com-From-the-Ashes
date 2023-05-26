@@ -109,6 +109,7 @@ eventScripts:
       STR_SUPPLIES: true
       STR_FACILITIES_BLUEPRINTS: true
       STR_ENGINEER_STATUS_REPORT: true
+      STR_IMPROVISED_MANUFACTURING: true
       STR_WORKSHOP: false
     allowedProcessor: 2 #xcom
     executionOdds: 100

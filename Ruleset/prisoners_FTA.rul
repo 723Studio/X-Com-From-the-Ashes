@@ -616,7 +616,7 @@ prisoners:
   - type: STR_MALE_MILITIA_CITIZEN
     startingCooperation: -50
     interrogation:
-      unlockResearches: [STR_MALE_MILITIA_CITIZEN]
+      #unlockResearches: [STR_MALE_MILITIA_CITIZEN]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
       baseResistance: 30

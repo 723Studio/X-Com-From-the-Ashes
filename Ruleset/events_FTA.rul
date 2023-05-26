@@ -453,8 +453,8 @@ events:
     description: STR_WORKSHOP_EVENT_DESCRIPTION
     background: BACK17.SCR
     researchList: [STR_WORKSHOP_PREREQ]
-    timer: 4320 #3 days
-    timerRandom: 8640 #6 days
+    timer: 1440 #1 day
+    timerRandom: 4320 #3 days
     interruptResearch: STR_WORKSHOP
   - name: STR_SPORTS_BOW_TINKERING
     description: STR_SPORTS_BOW_TINKERING_DESCRIPTION

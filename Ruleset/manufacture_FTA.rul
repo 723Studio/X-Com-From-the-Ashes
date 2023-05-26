@@ -107,7 +107,7 @@ manufacture:
     requiresBaseFunc: [WORK]
     requires:
       - STR_SPORTS_BOW_TINKERING
-      - STR_ELECTRIC_WEAPONS
+      - STR_HIGH_DENSITY_CAPACITORS
     requiredItems:
       STR_HIGH_TECH_PARTS: 1
     space: 4

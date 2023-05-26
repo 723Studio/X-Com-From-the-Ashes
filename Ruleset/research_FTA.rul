@@ -214,7 +214,7 @@ research:
     listOrder: 70
   - name: STR_SUPPLIES
     requiresBaseFunc: [HQ]
-    cost: 250
+    cost: 150
     stats:
       data: 100
     points: 120
@@ -222,6 +222,24 @@ research:
       - STR_QUARTERMASTER_STATUS_REPORT
     getOneFree:
       - STR_LOYALTY
+    listOrder: 80
+  - name: STR_IMPROVISED_MANUFACTURING #TODO - pedia pls
+    cost: 250
+    stats:
+      designing: 100
+    points: 100
+    dependencies:
+      - STR_SUPPLIES
+    listOrder: 80
+  - name: STR_HIGH_TECH_MANUFACTURING #TODO - pedia pls
+    cost: 250
+    stats:
+      designing: 100
+      materials: 100
+    points: 100
+    dependencies:
+      - STR_IMPROVISED_MANUFACTURING
+      - STR_WORKSHOP
     listOrder: 80
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [HQ]
@@ -244,9 +262,6 @@ research:
       - STR_CROP_CIRCLES_PREREQ
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 100
-
-
-#own study
   - name: STR_XCOM_FUNDAMENTAL_STUDIES #TODO-pedia
     requiresBaseFunc: [HQ]
     cost: 400
@@ -257,6 +272,8 @@ research:
     dependencies:
       - STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
     listOrder: 10
+
+#high energy study
   - name: STR_HIGH_ENERGY_PSYSICS #TODO-pedia
     requiresBaseFunc: [HQ]
     cost: 1200
@@ -291,15 +308,427 @@ research:
       - STR_HIGH_ENERGY_PSYSICS
     listOrder: 10
   - name: STR_ELECTROMAGNETIC_WEAPONS_CONCEPT #TODO-pedia
-    requiresBaseFunc: [HQ]
     cost: 1200
     stats:
       physics: 100
       tactics: 100
     points: 30
     dependencies:
+      - STR_FIREARMS_STUDY
+    listOrder: 10  
+  - name: STR_ADVANCED_COOLING_SYSTEMS #TODO pedia
+    cost: 3000
+    stats:
+      materials: 80
+      chemistry: 100
+      designing: 120
+    points: 15
+    dependencies:
+      - STR_WEAPON_COMPONENTS
+  - name: STR_HIGH_DENSITY_CAPACITORS #TODO pedia
+    cost: 3000
+    stats:
+      physics: 120
+      chemistry: 80
+    points: 15
+    dependencies:
+      - STR_WEAPON_COMPONENTS
+  - name: STR_ULTRA_DENSE_CAPACITORS #TODO pedia
+    cost: 4500
+    stats:
+      chemistry: 100
+    points: 15
+    dependencies:
+      - STR_HIGH_DENSITY_CAPACITORS
+  - name: STR_ADVANCED_BATTERIES #TODO pedia
+    cost: 3000
+    stats:
+      chemistry: 80
+      materials: 120
+    points: 15
+    dependencies:
+      - STR_WEAPON_COMPONENTS
+  - name: STR_HIGH_PERFORMANCE_BATTERIES #TODO pedia
+    cost: 4500
+    stats:
+      chemistry: 80
+      materials: 120
+    points: 15
+    dependencies:
+      - STR_ADVANCED_BATTERIES
+
+#electric weapons
+  - name: STR_ELECTRIC_WEAPONS_PRODUCTION
+    cost: 2700
+    stats:
+      physics: 120
+      materials: 100
+      designing: 80
+    points: 15
+    dependencies:
+      - STR_ELECTRIC_WEAPONS_CONCEPT
+      - STR_ADVANCED_BATTERIES
+      - STR_PRODUCTION
+  - name: STR_ELECTRIC_STICK
+    cost: 1200
+    stats:
+      designing: 100
+    points: 20
+    dependencies:
+      - STR_ELECTRIC_WEAPONS_PRODUCTION
+    listOrder: 25002
+  - name: STR_ARC_TROWER #TODO pedia
+    cost: 1300
+    stats:
+      physics: 100
+    points: 15
+    dependencies:
+      - STR_ELECTRIC_WEAPONS_PRODUCTION
+      - STR_HIGH_PERFORMANCE_BATTERIES
+      - STR_HIGH_DENSITY_CAPACITORS
+  - name: STR_TASER_CANNON
+    cost: 6400
+    stats:
+      physics: 120
+      designing: 100
+    points: 40
+    dependencies:
+      - STR_ARC_TROWER
+    unlocks:
+      - STR_TASER_CANNON_CLIP
+    listOrder: 25010
+  - name: STR_TASER_CANNON_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TASER_CANNON
+    listOrder: 25020
+
+#electro-magnet weapons
+  - name: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION #TODO pedia
+    cost: 2700
+    stats:
+      physics: 120
+      materials: 100
+      designing: 80
+    points: 15
+    unlocks:
+      - STR_SUPERCONDUCTIVITY_THEORY_PREREQ
+    dependencies:
+      - STR_ELECTROMAGNETIC_WEAPONS_CONCEPT
+      - STR_PRODUCTION
+      - STR_HIGH_DENSITY_CAPACITORS
+      - STR_ADVANCED_COOLING_SYSTEMS
+      - STR_HIGH_PERFORMANCE_BATTERIES
+  - name: STR_RAILGUN
+    cost: 3000
+    stats:
+      designing: 100
+    points: 100
+    dependencies:
+      - STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
+    listOrder: 25070
+  - name: STR_SUPERCONDUCTIVITY_THEORY_PREREQ
+    hidden: true
+  - name: STR_SUPERCONDUCTIVITY_THEORY #TODO pedia
+    cost: 2700
+    stats:
+      physics: 100
+      chemistry: 100
+    points: 15
+    dependencies:
+      - STR_SUPERCONDUCTIVITY_THEORY_PREREQ
+  - name: STR_CERAMIC_SUPERCONDUCTOR #TODO pedia
+    cost: 2700
+    stats:
+      physics: 100
+      chemistry: 80
+      materials: 120
+    points: 15
+    dependencies:
+      - STR_SUPERCONDUCTIVITY_THEORY
+  - name: STR_CARBON_SUPERCONDUCTOR #TODO pedia
+    cost: 2700
+    stats:
+      physics: 100
+      chemistry: 80
+      materials: 120
+    points: 15
+    dependencies:
+      - STR_CERAMIC_SUPERCONDUCTOR
+  - name: STR_HYDRID_ALLOY_SUPERCONDUCTOR #TODO pedia
+    cost: 2700
+    stats:
+      physics: 120
+      chemistry: 100
+      materials: 80
+    points: 15
+    dependencies:
+      - STR_CARBON_SUPERCONDUCTOR
+  - name: STR_COIL_WEAPONS #TODO pedia
+    cost: 2700
+    stats:
+      designing: 80
+      materials: 120
+    points: 15
+    dependencies:
+      - STR_HYDRID_ALLOY_SUPERCONDUCTOR
+      - STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
+      - STR_ULTRA_DENSE_CAPACITORS
+  - name: STR_COIL_RIFLE #TODO pedia
+    cost: 2700
+    stats:
+      designing: 100
+    points: 15
+    dependencies:
+      - STR_COIL_WEAPONS
+  - name: STR_COIL_PISTOL #TODO pedia
+    cost: 2700
+    stats:
+      designing: 100
+    points: 15
+    dependencies:
+      - STR_COIL_RIFLE
+  - name: STR_COIL_SNIPER_RIFLE #TODO pedia
+    cost: 2700
+    stats:
+      designing: 100
+    points: 15
+    dependencies:
+      - STR_COIL_RIFLE
+  - name: STR_COIL_CANNON #TODO pedia
+    cost: 2700
+    stats:
+      designing: 100
+    points: 15
+    dependencies:
+      - STR_COIL_RIFLE
+
+#lasers
+  - name: STR_LASER_SCATTERING_PROBLEM #TODO-pedia
+    cost: 3500
+    stats:
+      physics: 100
+    points: 30
+    dependencies:
+      - STR_LASER_WEAPONS_CONCEPT
+    listOrder: 10
+  - name: STR_PULSE_LASER #TODO-pedia
+    cost: 3500
+    stats:
+      physics: 100
+    points: 30
+    dependencies:
+      - STR_LASER_SCATTERING_PROBLEM
+    listOrder: 10
+  - name: STR_PHASE_LASER #TODO-pedia
+    cost: 3500
+    stats:
+      physics: 100
+    points: 30
+    dependencies:
+      - STR_LASER_SCATTERING_PROBLEM
+    listOrder: 10
+  - name: STR_PHASER_MIRROR #TODO-pedia
+    cost: 2000
+    stats:
+      materials: 100
+    points: 30
+    dependencies:
+      - STR_PHASE_LASER
+    listOrder: 10
+  - name: STR_PHASER_TARGETTING_SYSTEM #TODO-pedia
+    cost: 2000
+    stats:
+      computers: 100
+    points: 30
+    dependencies:
+      - STR_PHASE_LASER
+    listOrder: 10
+  - name: STR_PHASERS_PRODUCTION
+    cost: 2700
+    stats:
+      physics: 120
+      materials: 100
+      designing: 80
+    points: 15
+    dependencies:
+      - STR_PHASER_TARGETTING_SYSTEM
+      - STR_PHASER_MIRROR
+      - STR_HIGH_PERFORMANCE_BATTERIES
+      - STR_ULTRA_DENSE_CAPACITORS
+      - STR_ADVANCED_COOLING_SYSTEMS
+      - STR_PRODUCTION
+  - name: STR_PHASER_CANNON #TODO pedia
+    cost: 2700
+    stats:
+      designing: 100
+    points: 15
+    dependencies:
+      - STR_PHASERS_PRODUCTION
+#smart weapons
+  - name: STR_FIREARMS_STUDY #TODO-pedia
+    requiresBaseFunc: [HQ]
+    cost: 800
+    stats:
+      tactics: 100
+      designing: 100
+    points: 30
+    dependencies:
       - STR_XCOM_FUNDAMENTAL_STUDIES
-    listOrder: 10   
+    listOrder: 10
+  - name: STR_SMART_WEAPONS #TODO-pedia
+    cost: 1200
+    stats:
+      tactics: 100
+      designing: 80
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_TODOIUM
+      - STR_FIREARMS_STUDY
+    listOrder: 10
+  - name: STR_SMART_TARGETING #TODO-pedia
+    cost: 1500
+    stats:
+      computers: 80
+      tactics: 120
+      designing: 100
+    points: 30
+    dependencies:
+      - STR_SMART_WEAPONS
+    listOrder: 10
+  - name: STR_SMART_ROUNDS #TODO-pedia
+    cost: 1500
+    stats:
+      computers: 80
+      tactics: 120
+      materials: 100
+    points: 30
+    dependencies:
+      - STR_SMART_WEAPONS
+    listOrder: 10
+  - name: STR_SMART_WEAPONS_PRODUCTION #TODO-pedia
+    cost: 1500
+    stats:
+      designing: 100
+      computers: 100
+    points: 30
+    dependencies:
+      - STR_SMART_TARGETING
+      - STR_SMART_ROUNDS
+      - STR_HIGH_TECH_MANUFACTURING
+    listOrder: 10
+  - name: STR_SMART_RIFLE_ROUNDS #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_WEAPONS_PRODUCTION
+    listOrder: 10
+  - name: STR_SMART_RIFLE #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_RIFLE_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_ASSAULT_RIFLE #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_RIFLE
+    listOrder: 10
+  - name: STR_SMART_SNIPER_ROUNDS #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_RIFLE_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_SNIPER_RIFLE #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_SNIPER_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_SMG_ROUNDS #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_RIFLE_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_SMG_RIFLE #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_SMG_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_PISTOL_ROUNDS #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_SMG_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_PISTOL #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_PISTOL_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_LMG_ROUNDS #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_RIFLE_ROUNDS
+    listOrder: 10
+  - name: STR_SMART_LMG #TODO-pedia
+    cost: 1200
+    stats:
+      designing: 80
+      computers: 100
+      materials: 120
+    points: 30
+    dependencies:
+      - STR_SMART_LMG_ROUNDS
+    listOrder: 10
 
 #damage types
   - name: STR_DAMAGE_ARMOR_PIERCING
@@ -352,7 +781,7 @@ research:
       designing: 100
     points: 50
     dependencies:
-      - STR_TODOIUM #FIXME
+      - STR_HIGH_TECH_MANUFACTURING
     listOrder: 25002
   - name: STR_ROCKET_GLOVE
     cost: 400
@@ -360,7 +789,7 @@ research:
       designing: 100
     points: 50
     dependencies:
-      - STR_TROLLIUM #FIXME
+      - STR_IMPROVISED_MANUFACTURING
   - name: STR_STARTING_EQUIPMENT_PREREQ #TODO add ways to unlock!
     hidden: true
   - name: STR_STARTING_EQUIPMENT
@@ -453,96 +882,6 @@ research:
     getOneFree:
       - STR_MILITARY_RIFLE
       - STR_MILITARY_SNIPER_RIFLE
-
-
-  - name: STR_ADVANCED_COOLING_SYSTEMS #TODO pedia
-    cost: 3000
-    stats:
-      materials: 80
-      chemistry: 100
-      designing: 120
-    points: 15
-    dependencies:
-      - STR_WEAPON_COMPONENTS
-  - name: STR_HIGH_DENSITY_CAPACITORS #TODO pedia
-    cost: 3000
-    stats:
-      physics: 120
-      chemistry: 80
-    points: 15
-    dependencies:
-      - STR_WEAPON_COMPONENTS
-  - name: STR_ULTRA_DENSE_CAPACITORS #TODO pedia
-    cost: 4500
-    stats:
-      chemistry: 100
-    points: 15
-    dependencies:
-      - STR_HIGH_DENSITY_CAPACITORS
-  - name: STR_ADVANCED_BATTERIES #TODO pedia
-    cost: 3000
-    stats:
-      chemistry: 80
-      materials: 120
-    points: 15
-    dependencies:
-      - STR_WEAPON_COMPONENTS
-  - name: STR_HIGH_PERFORMANCE_BATTERIES #TODO pedia
-    cost: 4500
-    stats:
-      chemistry: 80
-      materials: 120
-    points: 15
-    dependencies:
-      - STR_ADVANCED_BATTERIES
-
-
-  - name: STR_ELECTRIC_WEAPONS_PRODUCTION
-    cost: 2700
-    stats:
-      physics: 80
-      materials: 100
-      designing: 120
-    points: 15
-    dependencies:
-      - STR_ELECTRIC_WEAPONS_CONCEPT
-      - STR_PRODUCTION
-  - name: STR_ELECTRIC_STICK
-    cost: 1200
-    stats:
-      designing: 100
-    points: 20
-    dependencies:
-      - STR_ELECTRIC_WEAPONS_PRODUCTION
-      - STR_ADVANCED_BATTERIES
-    listOrder: 25002
-  - name: STR_ARC_TROWER #TODO pedia
-    cost: 1300
-    stats:
-      physics: 100
-    points: 15
-    dependencies:
-      - STR_ELECTRIC_WEAPONS_PRODUCTION
-      - STR_HIGH_PERFORMANCE_BATTERIES
-      - STR_HIGH_DENSITY_CAPACITORS
-  - name: STR_TASER_CANNON
-    cost: 6400
-    stats:
-      physics: 120
-      designing: 100
-    points: 40
-    dependencies:
-      - STR_ARC_TROWER
-    unlocks:
-      - STR_TASER_CANNON_CLIP
-    listOrder: 25010
-  - name: STR_TASER_CANNON_CLIP
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TASER_CANNON
-    listOrder: 25020
-
   - name: STR_MOTION_SCANNER_PROTOTYPE
     cost: 1000
     stats:
@@ -552,6 +891,7 @@ research:
     points: 50
     needItem: true
     listOrder: 25025
+
 
   - name: STR_CHEMICAL_WEAPONS_PREREQ #TODO ways to unlock
     hidden: true
@@ -594,32 +934,7 @@ research:
       - STR_ACID_SYNTHESIS
     listOrder: 25060
 
-  - name: STR_MAGNET_WEAPONS
-    cost: 48000
-    stats:
-      physics: 100
-    points: 100
-    dependencies:
-      - STR_TODOIUM
-    listOrder: 25070
-  - name: STR_RAILGUN #FIXME
-    cost: 48000
-    stats:
-      physics: 100
-      designing: 80
-    points: 100
-    dependencies:
-      - STR_MAGNET_WEAPONS
-    listOrder: 25070
 
-  - name: STR_LASER_WEAPONS
-    cost: 48000
-    stats:
-      physics: 100
-    points: 100
-    dependencies:
-      - STR_TODOIUM
-    listOrder: 25070
 
   - name: STR_EXPANDABLE_AMMO
     hidden: true
