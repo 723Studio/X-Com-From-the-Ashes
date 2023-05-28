@@ -1389,9 +1389,9 @@ items:
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.16
-    costBuy: 7000
-    costSell: 5000
-    weight: 6
+    costBuy: 7500
+    costSell: 5500
+    weight: 7
     landOnly: true
     bigSprite: 331
     floorSprite: 331
@@ -1402,7 +1402,7 @@ items:
       - STR_PDW_CLIP
       - STR_PDW_AA_CLIP
     accuracyCloseQuarters: 125
-    accuracySnap: 65
+    accuracySnap: 60
     accuracyAuto: 50
     tuSnap: 30
     tuAuto: 40
@@ -1434,7 +1434,9 @@ items:
     handSprite: 360
     hitSound: 22
     hitAnimation: 26
-    power: 25
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.95
     damageType: 1
     clipSize: 24
     battleType: 2
@@ -1462,7 +1464,7 @@ items:
     attraction: 7
     listOrder: 7040
   - type: STR_SMG
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.17
@@ -1489,7 +1491,7 @@ items:
       energy: 12
     battleType: 1
     twoHanded: true
-    oneHandedPenalty: 75
+    oneHandedPenalty: 90
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -1513,7 +1515,7 @@ items:
     handSprite: 360
     hitSound: 22
     hitAnimation: 26
-    power: 25
+    power: 26
     damageType: 1
     clipSize: 24
     costThrow:
