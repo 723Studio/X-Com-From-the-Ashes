@@ -1995,8 +1995,8 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS]
     size: 0.04
     landOnly: true
-    costBuy: 100
-    costSell: 70
+    costBuy: 10
+    costSell: 8
     weight: 1
     bigSprite: 342
     floorSprite: 342
@@ -2600,8 +2600,8 @@ items:
     compatibleAmmo:
       - STR_RIOT_GUN_CLIP
     accuracyCloseQuarters: 42
-    accuracySnap: 48
-    accuracyAuto: 45
+    accuracySnap: 47
+    accuracyAuto: 43
     tuSnap: 38
     tuAuto: 42
     tuLoad: 50
@@ -2738,11 +2738,11 @@ items:
       - STR_LMG_CLIP
       - STR_LMG_AA_CLIP
     accuracyCloseQuarters: 60
-    accuracyAuto: 52
-    accuracySnap: 52
-    accuracyAimed: 65
+    accuracyAuto: 45
+    accuracySnap: 50
+    accuracyAimed: 63
     tuSnap: 33
-    tuAuto: 40
+    tuAuto: 38
     tuAimed: 55
     tuLoad: 30
     autoRange: 30
@@ -4093,8 +4093,8 @@ items:
   - type: STR_IMPROVISED_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE]
     size: 0.05
-    costBuy: 500
-    costSell: 420
+    costBuy: 600
+    costSell: 500
     weight: 3
     landOnly: true
     bigSprite: 441
@@ -4128,7 +4128,7 @@ items:
     handSprite: 954
     hitAnimation: 88
     explosionHitSound: 70 #0 or 284 xcf
-    power: 55
+    power: 60
     damageType: 9
     damageAlter:
       ResistType: 6
@@ -4196,7 +4196,7 @@ items:
     floorSprite: 20
     handSprite: 248
     hitAnimation: 88
-    power: 70
+    power: 75
     damageType: 9
     damageAlter:
       RadiusEffectiveness: 1.1

@@ -1,15 +1,15 @@
 invs:
   - id: STR_GROUND
     costs:
-      STR_QD_SLOT: 20
-      STR_BACK_PACK: 20
-      STR_BELT: 18
+      STR_QD_SLOT: 18
+      STR_BACK_PACK: 18
+      STR_BELT: 16
       STR_LEFT_HAND: 14
       STR_LEFT_LEG: 16
-      STR_LEFT_SHOULDER: 22
+      STR_LEFT_SHOULDER: 20
       STR_RIGHT_HAND: 14
       STR_RIGHT_LEG: 16
-      STR_RIGHT_SHOULDER: 22
+      STR_RIGHT_SHOULDER: 20
   - id: STR_RIGHT_HAND
     costs:
       STR_QD_SLOT: 5
@@ -98,15 +98,15 @@ invs:
       STR_RIGHT_SHOULDER: 10
   - id: STR_BACK_PACK
     costs:
-      STR_QD_SLOT: 26
-      STR_BELT: 26
-      STR_GROUND: 24
-      STR_LEFT_HAND: 22
-      STR_LEFT_LEG: 26
-      STR_LEFT_SHOULDER: 26
-      STR_RIGHT_HAND: 22
-      STR_RIGHT_LEG: 26
-      STR_RIGHT_SHOULDER: 26
+      STR_QD_SLOT: 22
+      STR_BELT: 22
+      STR_GROUND: 20
+      STR_LEFT_HAND: 18
+      STR_LEFT_LEG: 22
+      STR_LEFT_SHOULDER: 22
+      STR_RIGHT_HAND: 18
+      STR_RIGHT_LEG: 22
+      STR_RIGHT_SHOULDER: 22
   - id: STR_QD_SLOT
     x: 176
     y: 104

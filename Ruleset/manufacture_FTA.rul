@@ -290,7 +290,7 @@ manufacture:
       - STR_ENGINEER_STATUS_REPORT
     space: 1
     time: 15
-    cost: 240
+    cost: 220
     stats:
       metallurgy: 30
     producedItems:
@@ -302,7 +302,7 @@ manufacture:
       - STR_ENGINEER_STATUS_REPORT
     space: 1
     time: 18
-    cost: 280
+    cost: 250
     producedItems:
       STR_CHEMICALS: 1
     listOrder: 220040
@@ -326,7 +326,7 @@ manufacture:
       - STR_MONSTER_HUNT_START
     space: 1
     time: 25
-    cost: 22000
+    cost: 21000
     producedItems:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
