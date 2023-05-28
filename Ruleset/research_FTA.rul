@@ -2,11 +2,11 @@ research:
   - delete: STR_LASER_WEAPONS
   - delete: STR_MOTION_SCANNER
   - delete: STR_MEDI_KIT
-
-#   - delete: STR_LASER_PISTOL
-#   - delete: STR_LASER_RIFLE
-#   - delete: STR_HEAVY_LASER
-#   - delete: STR_LASER_DEFENSE
+  - delete: STR_LASER_PISTOL
+  - delete: STR_LASER_RIFLE
+  - delete: STR_HEAVY_LASER
+  - delete: STR_LASER_CANNON
+  - delete: STR_LASER_DEFENSE
 #   - delete: STR_FUSION_MISSILE
 #   - delete: STR_PLASMA_DEFENSE
 #   - delete: STR_PLASMA_CANNON_DEP1
@@ -518,6 +518,8 @@ research:
     stats:
       physics: 100
     points: 30
+    unlocks:
+      - STR_LASER_WEAPONS
     dependencies:
       - STR_LASER_SCATTERING_PROBLEM
     listOrder: 10
@@ -526,9 +528,13 @@ research:
     stats:
       physics: 100
     points: 30
+    unlocks:
+      - STR_LASER_WEAPONS
     dependencies:
       - STR_LASER_SCATTERING_PROBLEM
     listOrder: 10
+  - name: STR_LASER_WEAPONS
+    hidden: true
   - name: STR_PHASER_MIRROR #TODO-pedia
     cost: 2000
     stats:
