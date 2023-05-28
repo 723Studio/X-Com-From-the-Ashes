@@ -1590,7 +1590,7 @@ items:
     handSprite: 424
     hitSound: 58
     hitAnimation: 26
-    power: 35
+    power: 36
     damageAlter:
       ArmorEffectiveness: 0.95
     damageType: 1
@@ -1771,19 +1771,19 @@ items:
       - STR_RIFLE_EXP_CLIP
       - STR_RIFLE_AA_CLIP
     accuracyCloseQuarters: 100
-    accuracyAuto: 40
-    accuracySnap: 60
-    accuracyAimed: 110
-    tuAuto: 36
-    tuSnap: 25
-    tuAimed: 60
+    accuracyAuto: 45
+    accuracySnap: 70
+    accuracyAimed: 115
+    tuAuto: 32
+    tuSnap: 22
+    tuAimed: 55
     battleType: 1
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    aimRange: 25
-    snapRange: 20
-    autoRange: 11
+    aimRange: 35
+    snapRange: 30
+    autoRange: 22
     attraction: 8
     recoveryPoints: 5
     listOrder: 7110
@@ -1834,7 +1834,7 @@ items:
     handSprite: 144
     hitAnimation: 26
     hitSound: 22
-    power: 32
+    power: 33
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 0.9
