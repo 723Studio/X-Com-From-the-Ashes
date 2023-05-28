@@ -4118,15 +4118,15 @@ items:
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
     size: 0.05
     landOnly: true
-    costBuy: 320
-    costSell: 200
+    costBuy: 550
+    costSell: 480
     weight: 3
     bigSprite: 448
     floorSprite: 448
     handSprite: 954
     hitAnimation: 88
     explosionHitSound: 70 #0 or 284 xcf
-    power: 50
+    power: 55
     damageType: 9
     damageAlter:
       ResistType: 6
@@ -4161,7 +4161,7 @@ items:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.05
     costBuy: 860
-    costSell: 650
+    costSell: 700
     weight: 3
     landOnly: true
     bigSprite: 19
@@ -4188,7 +4188,7 @@ items:
     size: 0.05
     landOnly: true
     costBuy: 920
-    costSell: 450
+    costSell: 650
     weight: 4
     bigSprite: 20
     floorSprite: 20
