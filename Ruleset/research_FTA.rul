@@ -183,6 +183,16 @@ research:
       #- STR_XCOM_FILES_3 #FIXME - more lore!
       - STR_RECORD_WOW_SIGNAL
     listOrder: 30
+  - name: STR_XCOM_FUNDAMENTAL_STUDIES
+    requiresBaseFunc: [HQ]
+    cost: 400
+    stats:
+      data: 120
+      computers: 80
+    points: 20
+    dependencies:
+      - STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
+    listOrder: 10
   - name: STR_COMMUNICATION
     requiresBaseFunc: [HQ]
     cost: 200
@@ -262,16 +272,7 @@ research:
       - STR_CROP_CIRCLES_PREREQ
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 100
-  - name: STR_XCOM_FUNDAMENTAL_STUDIES #TODO-pedia
-    requiresBaseFunc: [HQ]
-    cost: 400
-    stats:
-      data: 120
-      computers: 80
-    points: 20
-    dependencies:
-      - STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
-    listOrder: 10
+
 
 #high energy study
   - name: STR_HIGH_ENERGY_PSYSICS #TODO-pedia
@@ -295,7 +296,7 @@ research:
     dependencies:
       - STR_HIGH_ENERGY_PSYSICS
     listOrder: 10
-  - name: STR_LASER_WEAPONS_CONCEPT #TODO-pedia
+  - name: STR_LASER_WEAPONS_CONCEPT
     cost: 1200
     stats:
       physics: 80
@@ -377,7 +378,7 @@ research:
     dependencies:
       - STR_ELECTRIC_WEAPONS_PRODUCTION
     listOrder: 25002
-  - name: STR_ARC_TROWER #TODO pedia
+  - name: STR_ARC_TROWER
     cost: 1300
     stats:
       physics: 100
@@ -405,7 +406,7 @@ research:
     listOrder: 25020
 
 #electro-magnet weapons
-  - name: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION #TODO pedia
+  - name: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
     cost: 2700
     stats:
       physics: 120
@@ -430,7 +431,7 @@ research:
     listOrder: 25070
   - name: STR_SUPERCONDUCTIVITY_THEORY_PREREQ
     hidden: true
-  - name: STR_SUPERCONDUCTIVITY_THEORY #TODO pedia
+  - name: STR_SUPERCONDUCTIVITY_THEORY
     cost: 2700
     stats:
       physics: 100
@@ -438,7 +439,7 @@ research:
     points: 15
     dependencies:
       - STR_SUPERCONDUCTIVITY_THEORY_PREREQ
-  - name: STR_CERAMIC_SUPERCONDUCTOR #TODO pedia
+  - name: STR_CERAMIC_SUPERCONDUCTOR
     cost: 2700
     stats:
       physics: 100
@@ -447,7 +448,7 @@ research:
     points: 15
     dependencies:
       - STR_SUPERCONDUCTIVITY_THEORY
-  - name: STR_CARBON_SUPERCONDUCTOR #TODO pedia
+  - name: STR_CARBON_SUPERCONDUCTOR
     cost: 2700
     stats:
       physics: 100
@@ -456,7 +457,7 @@ research:
     points: 15
     dependencies:
       - STR_CERAMIC_SUPERCONDUCTOR
-  - name: STR_HYDRID_ALLOY_SUPERCONDUCTOR #TODO pedia
+  - name: STR_HYDRID_ALLOY_SUPERCONDUCTOR
     cost: 2700
     stats:
       physics: 120
@@ -465,7 +466,7 @@ research:
     points: 15
     dependencies:
       - STR_CARBON_SUPERCONDUCTOR
-  - name: STR_COIL_WEAPONS #TODO pedia
+  - name: STR_COIL_WEAPONS
     cost: 2700
     stats:
       designing: 80
@@ -475,34 +476,46 @@ research:
       - STR_HYDRID_ALLOY_SUPERCONDUCTOR
       - STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
       - STR_ULTRA_DENSE_CAPACITORS
-  - name: STR_COIL_RIFLE #TODO pedia
+  - name: STR_COIL_RIFLE
     cost: 2700
     stats:
       designing: 100
     points: 15
     dependencies:
       - STR_COIL_WEAPONS
-  - name: STR_COIL_PISTOL #TODO pedia
+  - name: STR_COIL_RIFLE_CLIP
+    dependencies:
+      - STR_COIL_RIFLE
+  - name: STR_COIL_PISTOL
     cost: 2700
     stats:
       designing: 100
     points: 15
     dependencies:
       - STR_COIL_RIFLE
-  - name: STR_COIL_SNIPER_RIFLE #TODO pedia
+  - name: STR_COIL_PISTOL_CLIP
+    dependencies:
+      - STR_COIL_PISTOL
+  - name: STR_COIL_SNIPER_RIFLE
     cost: 2700
     stats:
       designing: 100
     points: 15
     dependencies:
       - STR_COIL_RIFLE
-  - name: STR_COIL_CANNON #TODO pedia
+  - name: STR_COIL_SNIPER_RIFLE_CLIP
+    dependencies:
+      - STR_COIL_SNIPER_RIFLE
+  - name: STR_COIL_CANNON
     cost: 2700
     stats:
       designing: 100
     points: 15
     dependencies:
       - STR_COIL_RIFLE
+  - name: STR_COIL_CANNON_CLIP
+    dependencies:
+      - STR_COIL_CANNON
 
 #lasers
   - name: STR_LASER_SCATTERING_PROBLEM #TODO-pedia
@@ -513,7 +526,7 @@ research:
     dependencies:
       - STR_LASER_WEAPONS_CONCEPT
     listOrder: 10
-  - name: STR_PULSE_LASER #TODO-pedia
+  - name: STR_PULSE_LASER
     cost: 3500
     stats:
       physics: 100
@@ -522,8 +535,9 @@ research:
       - STR_LASER_WEAPONS
     dependencies:
       - STR_LASER_SCATTERING_PROBLEM
+      - STR_TODOIUM #advanced alien power sourge required
     listOrder: 10
-  - name: STR_PHASE_LASER #TODO-pedia
+  - name: STR_PHASE_LASER
     cost: 3500
     stats:
       physics: 100
@@ -535,13 +549,22 @@ research:
     listOrder: 10
   - name: STR_LASER_WEAPONS
     hidden: true
-  - name: STR_PHASER_MIRROR #TODO-pedia
+  - name: STR_NON_LINEAR_OPTICS
     cost: 2000
     stats:
       materials: 100
     points: 30
     dependencies:
       - STR_PHASE_LASER
+    listOrder: 10
+  - name: STR_PHASER_MIRROR #TODO-pedia
+    cost: 2000
+    stats:
+      materials: 100
+    points: 30
+    dependencies:
+      - STR_NON_LINEAR_OPTICS
+      - STR_ADVANCED_COOLING_SYSTEMS
     listOrder: 10
   - name: STR_PHASER_TARGETTING_SYSTEM #TODO-pedia
     cost: 2000
@@ -550,6 +573,7 @@ research:
     points: 30
     dependencies:
       - STR_PHASE_LASER
+      - STR_SMART_TARGETING
     listOrder: 10
   - name: STR_PHASERS_PRODUCTION
     cost: 2700
@@ -565,7 +589,7 @@ research:
       - STR_ULTRA_DENSE_CAPACITORS
       - STR_ADVANCED_COOLING_SYSTEMS
       - STR_PRODUCTION
-  - name: STR_PHASER_CANNON #TODO pedia
+  - name: STR_PHASER_CANNON #TODO manufacture
     cost: 2700
     stats:
       designing: 100
@@ -573,7 +597,7 @@ research:
     dependencies:
       - STR_PHASERS_PRODUCTION
 #smart weapons
-  - name: STR_FIREARMS_STUDY #TODO-pedia
+  - name: STR_FIREARMS_STUDY
     requiresBaseFunc: [HQ]
     cost: 800
     stats:
@@ -591,7 +615,6 @@ research:
       materials: 120
     points: 30
     dependencies:
-      - STR_TODOIUM
       - STR_FIREARMS_STUDY
     listOrder: 10
   - name: STR_SMART_TARGETING #TODO-pedia

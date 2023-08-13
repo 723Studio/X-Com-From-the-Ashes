@@ -7,7 +7,6 @@ covertOperations:
       - STR_COVERT_OPERATIONS
     soldiersMin: 2
     soldiersMax: 4
-    optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
     baseChances: 70
     successLoyalty: 100
@@ -79,7 +78,6 @@ covertOperations:
       - STR_REGIONAL_HQ_LOCATION
     soldiersMin: 3
     soldiersMax: 4
-    scientistSlots: 1
     baseChances: 45
     requiresBaseFunc: [HQ]
     danger: 13
@@ -103,7 +101,6 @@ covertOperations:
       - STR_REQ_HQ_LOCATION_SUCCESS
     soldiersMin: 3
     soldiersMax: 4
-    scientistSlots: 1
     baseChances: 70
     requiresBaseFunc: [HQ]
     danger: 11
@@ -125,7 +122,6 @@ covertOperations:
       - STR_REQ_HQ_LOCATION_FAILED
     soldiersMin: 4
     soldiersMax: 5
-    scientistSlots: 1
     baseChances: 60
     requiresBaseFunc: [HQ]
     danger: 14
@@ -147,7 +143,6 @@ covertOperations:
       - STR_RESISTANCE_CELL_CREATION_PREREQ
     soldiersMin: 2
     soldiersMax: 3
-    optionalSoldierEffect: 5
     requiresBaseFunc: [HQ]
     baseChances: 60
     danger: 14
@@ -175,7 +170,6 @@ covertOperations:
       - STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
     soldiersMin: 2
     soldiersMax: 4
-    optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
     baseChances: 40
     danger: 0
@@ -194,7 +188,6 @@ covertOperations:
       - STR_EX_COUNCIL_DATA_VAULT_SUCCESS
     soldiersMin: 2
     soldiersMax: 4
-    optionalSoldierEffect: 1
     requiresBaseFunc: [HQ]
     requiredItems:
       STR_DATA_VAULT: 1
@@ -219,8 +212,6 @@ covertOperations:
       - STR_CULT_INVESTIGATION
     soldiersMin: 2
     soldiersMax: 4
-    optionalSoldierEffect: 1
-    scientistSlots: 1
     requiresBaseFunc: [HQ]
     removeRequiredItemsOnSuccess: false
     removeRequiredItemsOnFailure: false
@@ -247,7 +238,6 @@ covertOperations:
     costs: 300
     allowedArmor:
       - STR_JUMPSUIT_UC
-    engineerSlots: 2
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 100
     successWeightedItemList:
@@ -263,7 +253,6 @@ covertOperations:
       - STR_INFILTRATING_MILITARY_RND_PREREQ
     soldiersMin: 4
     soldiersMax: 8
-    optionalSoldierEffect: -2
     requiresBaseFunc: [HQ]
     baseChances: 60
     concealedItemsBonus: 5 #default 4
@@ -295,8 +284,6 @@ covertOperations:
       STR_FAKE_AGENT_ID: 2
     removeRequiredItemsOnSuccess: false
     removeRequiredItemsOnFailure: false
-    scientistSlots: 1
-    scientistEffect: 40
     allowedArmor:
       - STR_JUMPSUIT_UC
     successScore: 100
@@ -318,7 +305,6 @@ covertOperations:
     soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
-    scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
     allowAllEquipment: true
@@ -348,7 +334,6 @@ covertOperations:
     soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
-    scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
     allowAllEquipment: true
@@ -378,7 +363,6 @@ covertOperations:
     soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
-    scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
     allowAllEquipment: true
@@ -408,7 +392,6 @@ covertOperations:
     soldiersMax: 5
     requiresBaseFunc: [HQ]
     danger: 2
-    scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
     allowAllEquipment: true
@@ -437,7 +420,6 @@ covertOperations:
     soldiersMin: 2
     soldiersMax: 3
     requiresBaseFunc: [HQ]
-    scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
     baseChances: 70
@@ -467,7 +449,6 @@ covertOperations:
     soldiersMin: 2
     soldiersMax: 3
     requiresBaseFunc: [HQ]
-    scientistSlots: 1
     allowedArmor:
       - STR_JUMPSUIT_UC
     baseChances: 70
@@ -525,13 +506,11 @@ covertOperations:
   #   baseChances: 0
   #   costs: 20
   #   soldiersMin: 2
+  #   soldiersMax: 2
   #   danger: 5
   #   requiresBaseFunc: [HQ]
   #   requiredReputationLvl:
   #     STR_RESISTANCE: 1
-  #   soldiersMax: 2
-  #   scientistSlots: 2
-  #   engineerSlots: 1
   #   requiredItems:
   #     STR_POLICE_BATON: 2
   #   allowedArmor:
@@ -551,17 +530,6 @@ covertOperations:
   #     # STR_COMBAT_KNIFE: 2
   #     # STR_PISTOL: 1
   #     # STR_PISTOL_CLIP: 1
-  #     # STR_PISTOL_AA_CLIP: 1
-  #     # STR_PDW: 1
-  #     # STR_PDW_AA_CLIP: 1
-  #     # STR_SMG: 1
-  #     # STR_SMG_CLIP: 1
-  #     # STR_SMG_AA_CLIP: 1
-  #     # STR_RIFLE: 1
-  #     # STR_RIFLE_CLIP: 1
-  #     # STR_RIFLE_AA_CLIP: 1
-  #     # STR_SNIPER_RIFLE: 1
-  #     # STR_SNIPER_RIFLE_CLIP: 1
   #   successScore: 100
   #   successFunds: -15
   #   #successMusic: GMNEWMAR
@@ -572,5 +540,5 @@ covertOperations:
   #   instantTrapDeployment: 
   #     STR_GENERAL_TRAP: 100
   #   trapChance: 100
-  #   # instantSuccessDeployment:
-  #   #   STR_GENERAL_TRAP: 100
+  #   instantSuccessDeployment:
+  #     STR_GENERAL_TRAP: 100

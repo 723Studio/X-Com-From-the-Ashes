@@ -16,7 +16,7 @@ en-US:
   STR_COST_TITLE: "COST"
   STR_TOTAL_UC_ARG: "TOTAL>{ALT}{0}"
   STR_NOT_ENOUGH_SPACE: "NOT ENOUGH SPACE!"
-  STR_PILOT_PANICING: "PILOT PANICED!"
+  STR_PILOT_PANICING: "PILOT PANICKED!"
   STR_PILOT_PANICING_OVER: "PILOT PANIC OVER"
   STR_BUTTON_HINT: "RMB for details"
   STR_BONUSES_BUTTON: " " #add special symbol for bonuses in Soldier Info State
@@ -1687,6 +1687,9 @@ en-US:
   STR_RAILGUN: "Railgun"
   STR_RAILGUN_SLUG: "Railgun Slug"
   STR_RAILGUN_UFOPEDIA: "To be done" #Fixme after item balance
+  STR_PHASER_CANNON: "Phaser Cannon"
+  STR_PHASER_CANNON_CLIP: "Phaser Cannon Battery"
+  STR_PHASER_CANNON_UFOPEDIA: "The phaser cannon, although it is relatively heavy, is nevertheless an extremely effective weapon. The use of phaser technology allows for fractions of microseconds to form cascading shock waves that transmit a huge amount of electromagnetic energy to the target, applying it to a tiny area. When a shock wave passes through a solid, a jet of high-temperature plasma is formed, destroying everything in its path. Thus, conventional ballistic armor are absolutely ineffective against a phaser cannon. The emitter is calibrated to work in an air environment, but the system can adapt to work in a vacuum."
   STR_ROCKET_GLOVE: "Rocket Glove"
   STR_ROCKET_GLOVE_UFOPEDIA: "This portable device is worn on a soldier's wrist and allows firing of a specially designed projectile. The shot does not have much accuracy, which drops noticeably with distance. However, the launcher has a collapsible design and a small size, which makes it suitable for concealed carry."
   STR_ROCKET_GLOVE_CLIP: "Rocket Glove Charge"
@@ -1847,17 +1850,22 @@ en-US:
   STR_UFOPEDIA: "Ufopaedia"
   STR_UFOPEDIA_UFOPEDIA: "We managed to break through the primary protection of the blocked Ufopaedia archive! Sadly, once we had accessed the system, we found inner layers of data encryption. One section seems to hold all the technical data on the equipment we use. It won't be difficult to decipher that part. The other is much better protected, and it seems that only the commander had access to it before the lockdown. I can't say for sure, but it most likely contains strategic data about the project history and its formation background. Perhaps the analysis of past events will allow us to avoid these errors in the future."
   STR_XCOM_FUNDAMENTAL_STUDIES: "X-COM Fundamental Studies"
-  STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA:
+  STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA: "We were unable to obtain any valuable and reliable information about the aliens, their nature, or to collect samples of their technology. Therefore, XCOM scientists were focused on theoretical solutions to complex problems in a variety of fields, from the natural sciences to military tactics. However, due to a dramatic decrease in funding and drastic staff reductions, all projects were eventually frozen. Now we have an opportunity to carry out some studies, but given the limited capacity, it is important to properly prioritize our efforts."
+  STR_FIREARMS_STUDY: "Firearms study"
+  STR_FIREARMS_STUDY_UFOPEDIA: "Almost from the very invention, firearms were the most effective infantry weapons. Modern small arms have approached their limit of practical effectiveness - since the late 70s, new models differ slightly from their predecessors in basic parameters. The marginal increase in one or more parameters requires a radical revision of the design and material of weapons and ammunition, as well as the introduction of innovative technologies. Such developments are underway in some countries, and the Ufopedia archives contain information about interesting super-secret developments. However, there were no own developments in this area."
+  STR_SMART_WEAPONS: "Smart Weapons"
+  STR_SMART_WEAPONS_UFOPEDIA: "One of the most promising areas that can radically reduce the aiming time and accuracy is the development of the so-called 'Smart Weapons'. This concept implies the introduction of an advanced targeting system based on machine learning, automatic correction of the fire direction and the bullet's trajectory adjustment. The computer fire control system must perform all the necessary ballistic calculations on its own, allowing the soldier to focus on target designation and conduct tactical actions."
   STR_HIGH_ENERGY_PSYSICS: "Applied High Energy Physics"
-  STR_HIGH_ENERGY_PSYSICS_UFOPEDIA: 
+  STR_HIGH_ENERGY_PSYSICS_UFOPEDIA: "Ufopedia archives contain a detailed analysis of promising research in the field of physics, unique materials and a huge array of experimental data, including secret ones. This knowledge could help us develop hand-held energy weapons in the future as an alternative to conventional infantry weapons. However, our own research has been frozen and is at the very early stage of development."
   STR_ELECTRIC_WEAPONS_CONCEPT: "Electric Weapons Concept"
   STR_ELECTRIC_WEAPONS_CONCEPT_UFOPEDIA: "Given our serious lack of data on the adversary, it makes sense for us to try to capture enemy units alive if possible. It is likely that by interrogating our enemies we will be able to learn the most valuable strategic information. One of the most effective ways to render a living creature unconscious is to shock it with a strong electric shock. Perhaps we might try to develop our own electric weapons, which would be quite effective on battlescape."
   STR_LASER_WEAPONS_CONCEPT: "Laser Weapons Concept"
-  STR_LASER_WEAPONS_CONCEPT_UFOPEDIA:
+  STR_LASER_WEAPONS_CONCEPT_UFOPEDIA: "Laser weapons could have several major advantages over traditional weapons:{NEWLINE}{ALT}>{ALT}Laser beams propagate at the speed of light, so there is no need to account for target movement and no need to apply anticipation. In ground and air combat, it is impossible to evade laser beam irradiation.{NEWLINE}{ALT}>{ALT}The laser beam is not affected by the planet's gravity, making aiming easier.{NEWLINE}{ALT}>{ALT}The laser has configuration options for focusing the active area, which can be much smaller than the size of a firearm weapon's striking element. This can result in a much greater armor penetration.{NEWLINE}{ALT}>{ALT}The 'ammunition' of a laser depends solely on the energy source.{NEWLINE}{ALT}>{ALT}Since light has virtually zero energy impulse, the laser has no perceptible recoil, which has a very positive effect on the accuracy of such weapons.{NEWLINE}However, before we can effectively utilize laser weapons in tactical or aerial combat, there are some serious problems that must be solved:{NEWLINE}{ALT}>{ALT}The scattering effect causes the laser to lose focus and scatter energy in the atmosphere. The problem is dramatically exacerbated in conditions of fog, clouds, or smoke.{NEWLINE}{ALT}>{ALT}One of the major problems with laser weapons (as with any directed energy weapon) is their extreme power consumption."
   STR_ELECTROMAGNETIC_WEAPONS_CONCEPT: "Electromagnetic Weapons Concept"
   STR_ELECTROMAGNETIC_WEAPONS_CONCEPT_UFOPEDIA: 
   STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION: "Electromagnetic Weapons Production"
   STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION_UFOPEDIA: 
+  STR_SUPERCONDUCTIVITY_THEORY_PREREQ: STR_SUPERCONDUCTIVITY_THEORY_PREREQ
   STR_SUPERCONDUCTIVITY_THEORY: "Superconductivity Theory"
   STR_SUPERCONDUCTIVITY_THEORY_UFOPEDIA: 
   STR_CERAMIC_SUPERCONDUCTOR: "Ceramic Superconductor"
@@ -1868,26 +1876,33 @@ en-US:
   STR_HYDRID_ALLOY_SUPERCONDUCTOR_UFOPEDIA: 
   STR_COIL_WEAPONS: "Coil Weapons"
   STR_COIL_WEAPONS_UFOPEDIA: 
+  STR_COIL_PISTOL: "Coil Rifle"
+  STR_COIL_PISTOL_CLIP: "Coil Rifle Clip"
+  STR_COIL_PISTOL_UFOPEDIA: 
   STR_COIL_RIFLE: "Coil Rifle"
+  STR_COIL_RIFLE_CLIP: "Coil Rifle Clip"
   STR_COIL_RIFLE_UFOPEDIA: 
   STR_COIL_SNIPER_RIFLE: "Coil Sniper Rifle"
+  STR_COIL_SNIPER_RIFLE_CLIP: "Coil Sniper Rifle Clip"
   STR_COIL_SNIPER_RIFLE_UFOPEDIA: 
   STR_COIL_CANNON: "Coil Cannon"
+  STR_COIL_CANNON_CLIP: "Coil Cannon Clip"
   STR_COIL_CANNON_UFOPEDIA: 
   STR_LASER_SCATTERING_PROBLEM: "Laser Scattering Problem"
-  STR_LASER_SCATTERING_PROBLEM_UFOPEDIA: 
+  STR_LASER_SCATTERING_PROBLEM_UFOPEDIA: "Laser beams begin to cause plasma breakdown in the atmosphere at an energy density of about one megajoule per cubic centimeter. This effect, called 'blooming,' causes the laser to defocus and disperse energy into the surrounding air. Blooming can be more severe if there is fog, smoke, dust, rain, snow, smog, or foam in the air. Methods to reduce these effects include:{NEWLINE}{ALT}>{ALT}Spreading the beam through a large, curved mirror that focuses the power on the target so that the energy density along the path is too low to cause a bloom. This requires a large, very precise, fragile mirror mounted like a searchlight and cumbersome equipment to rotate the mirror to aim the laser, making such a solution inapplicable to tactical or aircraft weapons.{NEWLINE}{ALT}>{ALT}Use of a phased array. For typical laser wavelengths, this method would require billions of micrometer-sized antennas. There is currently no known way to realize them, although carbon nanotubes have been proposed.{NEWLINE}{ALT}>{ALT}Using a phase-conjugate laser system. This method employs a 'guide' laser illuminating the target. Any mirror-like ('specular') points on the target reflect light that is sensed by the weapon's primary amplifier. The weapon then amplifies inverted waves, in a positive feedback loop, destroying the target, with shockwaves as the specular regions evaporate. This avoids blooming because the waves from the target pass through the blooming, and therefore show the most conductive optical path; this automatically corrects for the distortions caused by blooming. Experimental systems using this method usually use special chemicals to form a 'phase-conjugate mirror'. However, such mirror overheats dramatically at weapon-useful power levels.{NEWLINE}{ALT}>{ALT}Using a very short pulse ending before blooming creates interference, but it requires a very powerful laser to concentrate a tremendous amount of energy into that pulse, which does not exist in a form suitable for weapon use."
   STR_PULSE_LASER: "Pulse Laser"
-  STR_PULSE_LASER_UFOPEDIA: 
-  STR_PHASE_LASER: "Phase-conjugate Laser"
-  STR_PHASE_LASER_UFOPEDIA: 
+  STR_PULSE_LASER_UFOPEDIA: "Advanced alien tech requierd"
+  STR_PHASE_LASER: "Phase-Conjugate Laser"
+  STR_PHASE_LASER_UFOPEDIA: "We have focused our efforts on developing the theory of a phase-conjugate laser system (we call it a 'phaser' for short). Experimental work has confirmed that the produced positive feedback loop by wavefront reverse avoids blooming, but causes significant damage focused on a tiny area. Almost any surface, even very hard materials, can be destroyed, while the energy consumption remains acceptable.{NEWLINE}Overheating of the phase mirror, however, remains a major problem. Optimization of the molecular structure of the mirror surface requires significant theoretical research in the field of nonlinear optics."
+  STR_NON_LINEAR_OPTICS: "Non-Linear Optics Theory"
+  STR_NON_LINEAR_OPTICS_UFOPEDIA: "We managed to develop a new method of creating mirrors for lasers using advanced nonlinear optics theory. By using nonlinear optical processes, it is possible to precisely change the direction of propagation and phase change of the light beam. The new material obtained by sputtering titanium and cobalt ions onto gold amalgam in an inert xenon environment under a strong alternating magnetic field has amazing properties.{NEWLINE}Essentially, it allows you to change the properties of light when exposed to other light. Thanks to this, it was possible to create a mirror that reflects light with the highest efficiency and does not allow its scattering.{NEWLINE}However, practical applications are complicated by the extreme heating of the mirror when used in a phase-matching laser."
   STR_PHASER_MIRROR: "Phaser Mirror"
-  STR_PHASER_MIRROR_UFOPEDIA: 
+  STR_PHASER_MIRROR_UFOPEDIA: "Using our knowledge of advanced materials, we selected the design parameters of the phase reflector so that it could function under a powerful load (in the form of an effective arms weapon), but without reaching the vaporization temperature of the mirror surface. {NEWLINE}Heat dissipation can be carried out through layers of graphene, if it is possible to preserve its strict 2-D structure during sputtering. The surface thus created will have a huge dissipation area from which heat can be removed by more conventional heat sinks. The mirror can be mounted using aerogel to prevent heat transfer to the rest of the weapon structure."
   STR_PHASER_TARGETTING_SYSTEM: "Phaser Targetting System"
-  STR_PHASER_TARGETTING_SYSTEM_UFOPEDIA: 
+  STR_PHASER_TARGETTING_SYSTEM_UFOPEDIA: "Practical application of phase-conjugate laser system in tactical combat environments requires the development of a fundamentally new targeting system. The primary laser beam must be reflected from the target onto the laser mirror for repeated nonlinear amplification, resulting in the formation of 'shock waves' of electromagnetic radiation with a specific spectrum that destroys the target.{NEWLINE}Finding the efficient reflection point on the target, as well as adjusting the target designation under conditions of turbulent air distortion, must be accomplished in microseconds. Using the latest developments in deep machine learning has allowed us to create a unique targeting computer system for our phased weapons."
   STR_PHASERS_PRODUCTION: "Phasers Production"
-  STR_PHASERS_PRODUCTION_UFOPEDIA: 
-  STR_PHASER_CANNON: "Phaser Cannon"
-  STR_PHASER_CANNON_UFOPEDIA: 
+  STR_PHASERS_PRODUCTION_UFOPEDIA: "Recent breakthroughs in the field of advanced optics, as well as gained knowledge about innovative materials and computer technologies, have allowed us to approach the application of laser weapons in the form of hand-held weapons, which can be considered as an alternative to standard ballistic weapons.{NEWLINE}Having focused on the development of technological processes, taking into account our current production capabilities, we can now safely say that for the production of effective weapons. We need the last steps - the development of a prototype and setup of serial production."
+
   STR_FIREARMS_STUDY: "Exploring the Firearms Perspective"
   STR_FIREARMS_STUDY_UFOPEDIA: 
   STR_SMART_WEAPONS: "Smart Weapons"
@@ -1976,7 +1991,9 @@ en-US:
   STR_ELECTRIC_WEAPONS_PRODUCTION: "Electric Weapons Production"
   STR_ELECTRIC_WEAPONS_PRODUCTION_UFOPEDIA: "The production of effective electric weapons is a rather labor-intensive and high-tech process. Even the simplest samples require a large variety of rara and expensive components - high-volume capacitors, reliable conductors, and decent cooling systems. Nevertheless, all the most necessary equipment and components are freely available and we can safely acquire it."
   STR_ARC_TROWER: "Arc Thrower"
+  STR_ARC_TROWER_UFOPEDIA: 
   STR_MAGNET_WEAPONS: "Magnet Weapons"
+  STR_MAGNET_WEAPONS_UFOPEDIA: 
   STR_CHEMICAL_WEAPONS: "Chemical Weaponry"
   STR_CHEMICAL_WEAPONS_UFOPEDIA: "In order to create chemical weapons it is necessary to solve a number of technical problems. The first is the analysis of acid composition used in it and development of the reproduction method for this solution. The second is the technology of coating all of the weapon's internal surfaces with a highly resistant anti-corrosion agent. We are able to reverse-engineer the samples that we have received in order to develop a production blueprint."
   STR_ACID_SYNTHESIS: "Acid Synthesis"

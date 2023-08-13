@@ -266,6 +266,15 @@ ufopaedia:
       - STR_FACILITIES_BLUEPRINTS
     text: STR_FACILITIES_BLUEPRINTS_UFOPEDIA
     listOrder: 140
+  - id: STR_XCOM_FUNDAMENTAL_STUDIES
+    type_id: 7
+    image_id: FACILITY_DECRYPTION.SPK
+    text_width: 153
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FUNDAMENTAL_STUDIES
+    text: STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA
+    listOrder: 140
   # - id: STR_XCOM_LORE #probably not needed...
   #   type_id: 8
   #   section: STR_XCOM_REPORTS_UC
@@ -426,6 +435,27 @@ ufopaedia:
       - STR_EXPANDABLE_AMMO
     text: STR_EXPANDABLE_AMMO_UFOPEDIA
     listOrder: 7000
+  - id: STR_FIREARMS_STUDY
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_FIREARMS_STUDY
+    text: STR_FIREARMS_STUDY_UFOPEDIA
+    listOrder: 7000
+  - id: STR_SMART_WEAPONS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_SMART_WEAPONS
+    text: STR_SMART_WEAPONS_UFOPEDIA
+    listOrder: 7000
+  - id: STR_HIGH_ENERGY_PSYSICS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_HIGH_ENERGY_PSYSICS
+    text: STR_HIGH_ENERGY_PSYSICS_UFOPEDIA
+    listOrder: 7000
   - id: STR_ELECTRIC_WEAPONS_PRODUCTION
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -433,6 +463,86 @@ ufopaedia:
       - STR_ELECTRIC_WEAPONS_PRODUCTION
     text: STR_ELECTRIC_WEAPONS_PRODUCTION_UFOPEDIA
     listOrder: 7010
+  - id: STR_ARC_TROWER
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_ARC_TROWER
+    text: STR_ARC_TROWER_UFOPEDIA
+    listOrder: 7010
+  - id: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
+    text: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION_UFOPEDIA
+    listOrder: 7010
+  - id: STR_SUPERCONDUCTIVITY_THEORY
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_SUPERCONDUCTIVITY_THEORY
+    text: STR_SUPERCONDUCTIVITY_THEORY_UFOPEDIA
+    listOrder: 7010
+  - id: STR_CERAMIC_SUPERCONDUCTOR
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_CERAMIC_SUPERCONDUCTOR
+    text: STR_CERAMIC_SUPERCONDUCTOR_UFOPEDIA
+    listOrder: 7010
+  - id: STR_CARBON_SUPERCONDUCTOR
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_CARBON_SUPERCONDUCTOR
+    text: STR_CARBON_SUPERCONDUCTOR_UFOPEDIA
+    listOrder: 7010
+  - id: STR_HYDRID_ALLOY_SUPERCONDUCTOR
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_HYDRID_ALLOY_SUPERCONDUCTOR
+    text: STR_HYDRID_ALLOY_SUPERCONDUCTOR_UFOPEDIA
+    listOrder: 7010
+  - id: STR_COIL_WEAPONS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_COIL_WEAPONS
+    text: STR_COIL_WEAPONS_UFOPEDIA
+    listOrder: 7010
+  - id: STR_LASER_SCATTERING_PROBLEM
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_LASER_SCATTERING_PROBLEM
+    text: STR_LASER_SCATTERING_PROBLEM_UFOPEDIA
+    listOrder: 7010
+  - id: STR_PHASE_LASER
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_PHASE_LASER
+    text: STR_PHASE_LASER_UFOPEDIA
+    listOrder: 7010
+  - id: STR_NON_LINEAR_OPTICS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_NON_LINEAR_OPTICS
+    text: STR_NON_LINEAR_OPTICS_UFOPEDIA
+    listOrder: 7010
+
+  - id: STR_PULSE_LASER
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_PULSE_LASER
+    text: STR_PULSE_LASER_UFOPEDIA
+    listOrder: 7010
+
+
   - id: STR_CREDIT_CARD_BREACHING
     type_id: 8
     text_width: 158
@@ -1069,6 +1179,19 @@ ufopaedia:
     requires:
       - STR_CHEMOGUN
     listOrder: 19090
+  - id: STR_COIL_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_COIL_RIFLE_UFOPEDIA
+    requires:
+      - STR_COIL_RIFLE
+    listOrder: 19080
+  - id: STR_COIL_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_COIL_RIFLE
+    listOrder: 19090
 #sniper rifles
   - id: STR_HUNTING_RIFLE
     type_id: 4
@@ -1115,6 +1238,19 @@ ufopaedia:
       - STR_SNIPER_RIFLE_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 20040
+  - id: STR_COIL_SNIPER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_COIL_SNIPER_RIFLE
+    text: STR_COIL_SNIPER_RIFLE_UFOPEDIA
+    listOrder: 20020
+  - id: STR_COIL_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_COIL_SNIPER_RIFLE
+    listOrder: 20030
 #shotguns
   - id: STR_SAWED_OFF
     type_id: 4
@@ -1452,6 +1588,32 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_RAILGUN
+    listOrder: 22300
+  - id: STR_COIL_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_COIL_CANNON
+    text: STR_COIL_CANNON_UFOPEDIA
+    listOrder: 22290
+  - id: STR_COIL_CANNON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_COIL_CANNON
+    listOrder: 22300
+  - id: STR_PHASER_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PHASER_CANNON
+    text: STR_COIL_CANNON_UFOPEDIA
+    listOrder: 22290
+  - id: STR_PHASER_CANNON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_PHASER_CANNON
     listOrder: 22300
 #launchers
   - id: STR_ROCKET_GLOVE
