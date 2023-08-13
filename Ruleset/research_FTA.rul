@@ -607,7 +607,7 @@ research:
     dependencies:
       - STR_XCOM_FUNDAMENTAL_STUDIES
     listOrder: 10
-  - name: STR_SMART_WEAPONS #TODO-pedia
+  - name: STR_SMART_WEAPONS
     cost: 1200
     stats:
       tactics: 100
@@ -617,7 +617,7 @@ research:
     dependencies:
       - STR_FIREARMS_STUDY
     listOrder: 10
-  - name: STR_SMART_TARGETING #TODO-pedia
+  - name: STR_SMART_TARGETING
     cost: 1500
     stats:
       computers: 80
@@ -627,7 +627,7 @@ research:
     dependencies:
       - STR_SMART_WEAPONS
     listOrder: 10
-  - name: STR_SMART_ROUNDS #TODO-pedia
+  - name: STR_SMART_ROUNDS
     cost: 1500
     stats:
       computers: 80
@@ -637,7 +637,7 @@ research:
     dependencies:
       - STR_SMART_WEAPONS
     listOrder: 10
-  - name: STR_SMART_WEAPONS_PRODUCTION #TODO-pedia
+  - name: STR_SMART_WEAPONS_PRODUCTION
     cost: 1500
     stats:
       designing: 100
@@ -648,7 +648,7 @@ research:
       - STR_SMART_ROUNDS
       - STR_HIGH_TECH_MANUFACTURING
     listOrder: 10
-  - name: STR_SMART_RIFLE_ROUNDS #TODO-pedia
+  - name: STR_SMART_RIFLE #TODO manufacturing
     cost: 1200
     stats:
       designing: 80
@@ -658,17 +658,7 @@ research:
     dependencies:
       - STR_SMART_WEAPONS_PRODUCTION
     listOrder: 10
-  - name: STR_SMART_RIFLE #TODO-pedia
-    cost: 1200
-    stats:
-      designing: 80
-      computers: 100
-      materials: 120
-    points: 30
-    dependencies:
-      - STR_SMART_RIFLE_ROUNDS
-    listOrder: 10
-  - name: STR_SMART_ASSAULT_RIFLE #TODO-pedia
+  - name: STR_SMART_ASSAULT_RIFLE #TODO manufacturing
     cost: 1200
     stats:
       designing: 80
@@ -678,7 +668,7 @@ research:
     dependencies:
       - STR_SMART_RIFLE
     listOrder: 10
-  - name: STR_SMART_SNIPER_ROUNDS #TODO-pedia
+  - name: STR_SMART_SNIPER_RIFLE #TODO manufacturing
     cost: 1200
     stats:
       designing: 80
@@ -686,9 +676,9 @@ research:
       materials: 120
     points: 30
     dependencies:
-      - STR_SMART_RIFLE_ROUNDS
+      - STR_SMART_RIFLE
     listOrder: 10
-  - name: STR_SMART_SNIPER_RIFLE #TODO-pedia
+  - name: STR_SMART_SMG #TODO manufacturing
     cost: 1200
     stats:
       designing: 80
@@ -696,9 +686,9 @@ research:
       materials: 120
     points: 30
     dependencies:
-      - STR_SMART_SNIPER_ROUNDS
+      - STR_SMART_RIFLE
     listOrder: 10
-  - name: STR_SMART_SMG_ROUNDS #TODO-pedia
+  - name: STR_SMART_PISTOL #TODO manufacturing
     cost: 1200
     stats:
       designing: 80
@@ -706,9 +696,9 @@ research:
       materials: 120
     points: 30
     dependencies:
-      - STR_SMART_RIFLE_ROUNDS
+      - STR_SMART_RIFLE
     listOrder: 10
-  - name: STR_SMART_SMG_RIFLE #TODO-pedia
+  - name: STR_SMART_LMG #TODO manufacturing
     cost: 1200
     stats:
       designing: 80
@@ -716,47 +706,7 @@ research:
       materials: 120
     points: 30
     dependencies:
-      - STR_SMART_SMG_ROUNDS
-    listOrder: 10
-  - name: STR_SMART_PISTOL_ROUNDS #TODO-pedia
-    cost: 1200
-    stats:
-      designing: 80
-      computers: 100
-      materials: 120
-    points: 30
-    dependencies:
-      - STR_SMART_SMG_ROUNDS
-    listOrder: 10
-  - name: STR_SMART_PISTOL #TODO-pedia
-    cost: 1200
-    stats:
-      designing: 80
-      computers: 100
-      materials: 120
-    points: 30
-    dependencies:
-      - STR_SMART_PISTOL_ROUNDS
-    listOrder: 10
-  - name: STR_SMART_LMG_ROUNDS #TODO-pedia
-    cost: 1200
-    stats:
-      designing: 80
-      computers: 100
-      materials: 120
-    points: 30
-    dependencies:
-      - STR_SMART_RIFLE_ROUNDS
-    listOrder: 10
-  - name: STR_SMART_LMG #TODO-pedia
-    cost: 1200
-    stats:
-      designing: 80
-      computers: 100
-      materials: 120
-    points: 30
-    dependencies:
-      - STR_SMART_LMG_ROUNDS
+      - STR_SMART_RIFLE
     listOrder: 10
 
 #damage types

@@ -449,6 +449,27 @@ ufopaedia:
       - STR_SMART_WEAPONS
     text: STR_SMART_WEAPONS_UFOPEDIA
     listOrder: 7000
+  - id: STR_SMART_TARGETING
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_SMART_TARGETING
+    text: STR_SMART_TARGETING_UFOPEDIA
+    listOrder: 7000
+  - id: STR_SMART_ROUNDS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_SMART_ROUNDS
+    text: STR_SMART_ROUNDS_UFOPEDIA
+    listOrder: 7000
+  - id: STR_SMART_WEAPONS_PRODUCTION
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_SMART_WEAPONS_PRODUCTION
+    text: STR_SMART_WEAPONS_PRODUCTION_UFOPEDIA
+    listOrder: 7000
   - id: STR_HIGH_ENERGY_PSYSICS
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -1022,6 +1043,19 @@ ufopaedia:
     requires:
       - STR_WOUNDGUN
     listOrder: 17130
+  - id: STR_SMART_PISTOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SMART_PISTOL_UFOPEDIA
+    requires:
+      - STR_SMART_PISTOL
+    listOrder: 17060
+  - id: STR_SMART_PISTOL_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_PISTOL
+    listOrder: 17070
   - id: STR_CHEMPISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1087,6 +1121,19 @@ ufopaedia:
       - STR_SMG_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 18070
+  - id: STR_SMART_SMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SMART_SMG
+    text: STR_SMART_SMG_UFOPEDIA
+    listOrder: 18050
+  - id: STR_SMART_SMG_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_SMG
+    listOrder: 18060
 #rifles
   - id: STR_RIOT_RIFLE
     type_id: 4
@@ -1166,6 +1213,26 @@ ufopaedia:
       - STR_RIFLE_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 19070
+  - id: STR_SMART_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SMART_RIFLE
+    text: STR_SMART_RIFLE_UFOPEDIA
+    listOrder: 19040
+  - id: STR_SMART_ASSAULT_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SMART_ASSAULT_RIFLE
+    text: STR_SMART_ASSAULT_RIFLE_UFOPEDIA
+    listOrder: 19040
+  - id: STR_SMART_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_RIFLE
+    listOrder: 19050
   - id: STR_CHEMOGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1238,6 +1305,19 @@ ufopaedia:
       - STR_SNIPER_RIFLE_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 20040
+  - id: STR_SMART_SNIPER_RIFLE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SMART_SNIPER_RIFLE
+    text: STR_SMART_SNIPER_RIFLE_UFOPEDIA
+    listOrder: 20020
+  - id: STR_SMART_SNIPER_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_SNIPER_RIFLE
+    listOrder: 20030
   - id: STR_COIL_SNIPER_RIFLE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1364,19 +1444,6 @@ ufopaedia:
     requires:
       - STR_RIOT_GUN
     listOrder: 22003
-  - id: STR_TASER_CANNON
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_TASER_CANNON
-    text: STR_TASER_CANNON_UFOPEDIA
-    listOrder: 22008
-  - id: STR_TASER_CANNON_CLIP
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_TASER_CANNON_CLIP
-    listOrder: 22010
   - id: STR_LMG
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1461,6 +1528,19 @@ ufopaedia:
       - STR_LC_AA_AMMO
     section: STR_NOT_AVAILABLE
     listOrder: 22110
+  - id: STR_SMART_LMG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SMART_LMG
+    text: STR_SMART_LMG_UFOPEDIA
+    listOrder: 22020
+  - id: STR_SMART_LMG_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_LMG
+    listOrder: 22030
   - id: STR_HEAVY_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1576,6 +1656,19 @@ ufopaedia:
       - STR_MINIGUN_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 22280
+  - id: STR_TASER_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_TASER_CANNON
+    text: STR_TASER_CANNON_UFOPEDIA
+    listOrder: 22008
+  - id: STR_TASER_CANNON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_TASER_CANNON_CLIP
+    listOrder: 22010
   - id: STR_RAILGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

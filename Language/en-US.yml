@@ -1855,6 +1855,29 @@ en-US:
   STR_FIREARMS_STUDY_UFOPEDIA: "Almost from the very invention, firearms were the most effective infantry weapons. Modern small arms have approached their limit of practical effectiveness - since the late 70s, new models differ slightly from their predecessors in basic parameters. The marginal increase in one or more parameters requires a radical revision of the design and material of weapons and ammunition, as well as the introduction of innovative technologies. Such developments are underway in some countries, and the Ufopedia archives contain information about interesting super-secret developments. However, there were no own developments in this area."
   STR_SMART_WEAPONS: "Smart Weapons"
   STR_SMART_WEAPONS_UFOPEDIA: "One of the most promising areas that can radically reduce the aiming time and accuracy is the development of the so-called 'Smart Weapons'. This concept implies the introduction of an advanced targeting system based on machine learning, automatic correction of the fire direction and the bullet's trajectory adjustment. The computer fire control system must perform all the necessary ballistic calculations on its own, allowing the soldier to focus on target designation and conduct tactical actions."
+  STR_SMART_TARGETING: "Smart Targeting"
+  STR_SMART_TARGETING_UFOPEDIA: "The advanced aiming system will include a multispectral camera complex located under the barrel, connected to the target recognition module. A set of images from cameras is analyzed taking into account the movement pattern, thermal signature, as well as insignia for recognition. The most important information for aiming is transmitted to a special display that occupies the place and functions of the scope. To analyze the image, we use an artificial neural network developed by us, the setting of the weights of which we will constantly adjust during the operation of Smart Weapons."
+  STR_SMART_ROUNDS: "Smart Rounds"
+  STR_SMART_ROUNDS_UFOPEDIA: "An innovative system of inertial trajectory  correction of the of a bullet fired from a rifled weapon has been developed. This is achieved by integrating a high-speed variable weight displacement mechanism into the bullet body, as well as a control unit. When passing through the barrel, trajectory correction parameters are entered into the control unit, which can be changed several times in flight. To do this, we have developed a miniature impulse  encrypted signal receiver. Corrections are used to compensate the target movement and wind gusts. The device is powered by thermoelectric conversion from the heat of a hot bullet and a microcondensor charged when the bullet is released."
+  STR_SMART_WEAPONS_PRODUCTION: "Smart Weapons Production"
+  STR_SMART_WEAPONS_PRODUCTION_UFOPEDIA: "A prototype has been developed and tested that combines innovative systems for aiming and controlling the trajectory of a bullet into an advance fire control system, compact and lightweight enough to be installed on a hand weapon without significantly reducing its operational properties. An important feature is the deflected design of the barrel inside the body of the weapon, which performs an 'aim assist', correcting the fire vector within 7 degrees from the longitudinal axis. Such a system has numerous moving parts and microelectronics, has sealed nodes, is expensive and difficult to utilize."
+  STR_SMART_RIFLE: "Smart Rifle"
+  STR_SMART_RIFLE_UFOPEDIA: 
+  STR_SMART_ASSAULT_RIFLE: "Smart Assault Rifle"
+  STR_SMART_ASSAULT_RIFLE_UFOPEDIA: 
+  STR_SMART_RIFLE_CLIP: "Smart Rifle Clip"
+  STR_SMART_SNIPER_RIFLE: "Smart Sniper Rifle"
+  STR_SMART_SNIPER_RIFLE_UFOPEDIA: 
+  STR_SMART_SNIPER_RIFLE_CLIP: "Smart Sniper Rifle Clip"
+  STR_SMART_SMG: "Smart SMG"
+  STR_SMART_SMG_UFOPEDIA:
+  STR_SMART_SMG_CLIP: "Smart SMG Clip"
+  STR_SMART_PISTOL: "Smart Pistol"
+  STR_SMART_PISTOL_UFOPEDIA:
+  STR_SMART_PISTOL_CLIP: "Smart Pistol Clip"
+  STR_SMART_LMG: "Smart LMG"
+  STR_SMART_LMG_UFOPEDIA:
+  STR_SMART_LMG_CLIP: "Smart LMG Clip"
   STR_HIGH_ENERGY_PSYSICS: "Applied High Energy Physics"
   STR_HIGH_ENERGY_PSYSICS_UFOPEDIA: "Ufopedia archives contain a detailed analysis of promising research in the field of physics, unique materials and a huge array of experimental data, including secret ones. This knowledge could help us develop hand-held energy weapons in the future as an alternative to conventional infantry weapons. However, our own research has been frozen and is at the very early stage of development."
   STR_ELECTRIC_WEAPONS_CONCEPT: "Electric Weapons Concept"
@@ -1903,37 +1926,6 @@ en-US:
   STR_PHASERS_PRODUCTION: "Phasers Production"
   STR_PHASERS_PRODUCTION_UFOPEDIA: "Recent breakthroughs in the field of advanced optics, as well as gained knowledge about innovative materials and computer technologies, have allowed us to approach the application of laser weapons in the form of hand-held weapons, which can be considered as an alternative to standard ballistic weapons.{NEWLINE}Having focused on the development of technological processes, taking into account our current production capabilities, we can now safely say that for the production of effective weapons. We need the last steps - the development of a prototype and setup of serial production."
 
-  STR_FIREARMS_STUDY: "Exploring the Firearms Perspective"
-  STR_FIREARMS_STUDY_UFOPEDIA: 
-  STR_SMART_WEAPONS: "Smart Weapons"
-  STR_SMART_TARGETING: "Smart Targeting System"
-  STR_SMART_TARGETING_UFOPEDIA: 
-  STR_SMART_ROUNDS: "Smart Rounds"
-  STR_SMART_ROUNDS_UFOPEDIA: 
-  STR_SMART_WEAPONS_PRODUCTION: "Smart Weapons Production"
-  STR_SMART_WEAPONS_UFOPEDIA: 
-  STR_SMART_RIFLE_ROUNDS: "Smart Rifle Rounds"
-  STR_SMART_RIFLE_ROUNDS_UFOPEDIA: 
-  STR_SMART_RIFLE: "Smart Rifle"
-  STR_SMART_RIFLE_UFOPEDIA: 
-  STR_SMART_ASSAULT_RIFLE: "Smart Assault Rifle"
-  STR_SMART_ASSAULT_RIFLE_UFOPEDIA: 
-  STR_SMART_SNIPER_ROUNDS: "Smart Sniper Rounds"
-  STR_SMART_SNIPER_ROUNDS_UFOPEDIA: 
-  STR_SMART_SNIPER_RIFLE: "Smart Sniper Rifle"
-  STR_SMART_SNIPER_RIFLE_UFOPEDIA: 
-  STR_SMART_SMG_ROUNDS: "Smart SMG Rounds"
-  STR_SMART_SMG_ROUNDS_UFOPEDIA: 
-  STR_SMART_SMG_RIFLE: "Smart SMG"
-  STR_SMART_SMG_RIFLE_UFOPEDIA: 
-  STR_SMART_PISTOL_ROUNDS: "Smart Pistol Rounds"
-  STR_SMART_PISTOL_ROUNDS_UFOPEDIA: 
-  STR_SMART_PISTOL: "Smart Pistol"
-  STR_SMART_PISTOL_UFOPEDIA: 
-  STR_SMART_LMG_ROUNDS: "Smart LMG Rounds"
-  STR_SMART_LMG_ROUNDS_UFOPEDIA: 
-  STR_SMART_LMG_RIFLE: "Smart LMG"
-  STR_SMART_LMG_RIFLE_UFOPEDIA: 
   STR_XCOM_EQUIPMENT: "X-COM Equipment Ufopaedia files"
   STR_XCOM_EQUIPMENT_ARTICLE_HEADER: "X-COM Equipment"
   STR_XCOM_EQUIPMENT_UNLOCKED: "X-COM Equipment"
