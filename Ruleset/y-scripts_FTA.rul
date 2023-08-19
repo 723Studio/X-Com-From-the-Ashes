@@ -16,6 +16,7 @@ extended:
       SAVIOR: int
       UTILITY_SPECIALIST: int
       STR_UNARMED_FIGHTER: int
+      STR_RAPID_DEPLOYMENT_TRAINING: int
     RuleItem: # Remember to add tag definitions to same file as item/armor rulesets!
       PHYSICAL_SHIELD_ARMOR: int
       ITEM_IS_MELEE: int
@@ -361,6 +362,23 @@ extended:
             if gt tu tu_max;
               # we have extra bonus
               unit.setTag Tag.EVER_VIGILANT_STATE 2;
+            end;
+          end;
+
+          return;
+
+      - offset: 34   # Handle rapid deployment main effect
+        code: |
+          var int turn;
+          var int bonus;
+
+          unit.getTag bonus Tag.STR_RAPID_DEPLOYMENT_TRAINING;
+          if gt bonus 0; #unit have rapid deployment bonus
+            battle_game.getTurn turn;
+            debug_log unit " - found unit with Repid deployment bonus: " bonus;
+            if lt turn 2;
+              debug_log unit " activating Repid deployment bonus on turn: " turn 
+              unit.addTimeUnits bonus;
             end;
           end;
 

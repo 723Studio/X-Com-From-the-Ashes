@@ -87,14 +87,14 @@ eventScripts:
 #xcom
   - &STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT
     type: STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT
-    oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES_EVENT]
+    oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES]
     researchTriggers:
       STR_UFOPEDIA_DECRYPTION: true
       STR_FACILITIES_BLUEPRINTS: true
-      STR_ENGINEER_STATUS_REPORT: true
-      STR_WORKSHOP: false
+      STR_RND_STATUS_REPORT: true
+      STR_XCOM_FUNDAMENTAL_STUDIES: false
     allowedProcessor: 2 #xcom
-    executionOdds: 85
+    executionOdds: 90
     maxDifficulty: 3
   - type: STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT_SH #extra SH copy
     refNode: *STR_XCOM_FUNDAMENTAL_STUDIES_SCRIPT

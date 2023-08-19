@@ -154,3 +154,25 @@ startingBase:
   #       missionIdList:
   #         - 0
   #     tags: ~
+hiddenBase:
+  scientists: 0
+  engineers: 0
+  facilities:
+    - type: STR_ACCESS_LIFT
+      x: 2
+      y: 2  
+    - type: STR_HANGAR
+      x: 2
+      y: 0
+    - type: STR_PRISON_CELLS
+      x: 3
+      y: 2
+    - type: STR_GENERAL_STORES
+      x: 2
+      y: 3
+    - type: STR_LIVING_QUARTERS
+      x: 1
+      y: 2
+    - type: STR_HQ
+      x: 0
+      y: 2

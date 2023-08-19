@@ -1,48 +1,19 @@
 soldierTransformation:
-  - name: STR_MILITARY_TRAINING
-    transformationTime: 1460
-    # recoveryTime: 50
-    # cost: 5000000
-    description: STR_SNIPER_TRAINING_DESC
-    requires:
-      - STR_MILITARY_STATUS_REPORT
-    requiredMinStats:
-       firing: 71 
-    showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
-    allowsLiveSoldiers: true
-    allowsWoundedSoldiers: false
-    forbiddentRole: 1 #Soldier
-    addRole: 1
-    flatMin:
-      tu: 10
-      stamina: 15
-      health: 5
-      reactions: 10
-      firing: 20
-      throwing: 20
-      strength: 20
-      melee: 10
-    flatMax:
-      tu: 15
-      stamina: 25
-      health: 10
-      reactions: 20
-      firing: 30
-      throwing: 30
-      strength: 30
-      melee: 25
   - name: STR_SNIPER_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
     #minRank: 1
     transformationTime: 408
     # recoveryTime: 50
     # cost: 5000000
     description: STR_SNIPER_TRAINING_DESC
     requires:
-      - STR_MILITARY_STATUS_REPORT
+      - STR_SNIPER_TRAINING
     requiredMinStats:
        firing: 71 
     showMinMax: true
@@ -70,11 +41,18 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_HEAVY_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
     #minRank: 1
     transformationTime: 408
     description: STR_HEAVY_TRAINING_DESC
     requires:
-      - STR_MILITARY_STATUS_REPORT
+      - STR_HEAVY_TRAINING
     requiredMinStats:
        stamina: 72
        strength: 48
@@ -105,10 +83,17 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_ASSAULT_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
     transformationTime: 408
     description: STR_ASSAULT_TRAINING_DESC
     requires:
-      - STR_MILITARY_STATUS_REPORT
+      - STR_ASSAULT_TRAINING
     requiredMinStats:
        reactions: 55
        firing: 50
@@ -137,10 +122,17 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_RANGER_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
     transformationTime: 408
     description: STR_RANGER_TRAINING_DESC
     requires:
-      - STR_MILITARY_STATUS_REPORT
+      - STR_RANGER_TRAINING
     requiredMinStats:
        stamina: 50
        reactions: 43
@@ -170,10 +162,17 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_SUPPORT_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
     transformationTime: 408
     description: STR_SUPPORT_TRAINING_DESC
     requires:
-      - STR_MILITARY_STATUS_REPORT
+      - STR_SUPPORT_TRAINING
     requiredMinStats:
        bravery: 60
     showMinMax: true
@@ -201,10 +200,17 @@ soldierTransformation:
       - STR_RANGER_TRAINING
       - STR_SUPPORT_TRAINING
   - name: STR_UNARMED_COMBAT_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
     transformationTime: 250
     description:  STR_UNARMED_COMBAT_TRAINING_DESC
     requires:
-      - STR_MILITARY_STATUS_REPORT
+      - STR_ADDITIONAL_COURSES
     requiredMinStats:
       stamina: 55
       reactions: 40
@@ -232,3 +238,125 @@ soldierTransformation:
     soldierBonusType: STR_UNARMED_FIGHTER
     forbiddenPreviousTransformations:
       - STR_UNARMED_COMBAT_TRAINING
+  - name: STR_RAPID_DEPLOYMENT_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
+    transformationTime: 150
+    description: STR_RAPID_DEPLOYMENT_TRAINING_DESC
+    requires:
+      - STR_ADDITIONAL_COURSES
+    requiredMinStats:
+      stamina: 55
+      reactions: 40
+    showMinMax: true
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    roleRankRequirements:
+      1: 1
+    flatMin:
+      stamina: 2
+      reactions: 2
+      strength: 2
+      melee: 5
+    flatMax:
+      stamina: 4
+      reactions: 3
+      strength: 3
+      melee: 9
+    soldierBonusType: STR_RAPID_DEPLOYMENT_TRAINING
+    forbiddenPreviousTransformations:
+      - STR_RAPID_DEPLOYMENT_TRAINING
+  - name: STR_MILITARY_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
+    transformationTime: 1000
+    # recoveryTime: 50
+    # cost: 5000000
+    description: STR_MILITARY_TRAINING_DESC
+    requires:
+      - STR_ADDITIONAL_COURSES
+    requiredMinStats:
+      tu: 54
+      stamina: 60
+      health: 25
+      bravery: 30
+      reactions: 25
+      firing: 30
+      throwing: 25
+      strength: 25
+      melee: 25
+    showMinMax: true
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    forbiddenRole: 1 #Soldier
+    addRole: 1
+    flatMin:
+      tu: 10
+      stamina: 15
+      health: 5
+      reactions: 10
+      firing: 20
+      throwing: 20
+      strength: 20
+      melee: 10
+    flatMax:
+      tu: 15
+      stamina: 25
+      health: 10
+      reactions: 20
+      firing: 30
+      throwing: 30
+      strength: 30
+      melee: 25
+  - name: STR_AGENT_TRAINING
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PILOT
+      - STR_SCIENTIST
+      - STR_ENGINEER
+      - STR_RESISTANCE_AGENT
+    transformationTime: 1000
+    description: STR_MILITARY_TRAINING_DESC
+    requires:
+      - STR_ADDITIONAL_COURSES
+    showMinMax: true
+    keepSoldierArmor: true
+    createsClone: false
+    needsCorpseRecovered: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    forbiddenRole: 2 #ROLE_AGENT
+    addRole: 2
+    flatMin:
+      stealth: 30
+      perseption: 35
+      charisma: 20
+      investigation: 25
+      deception: 30
+      interrogation: 10
+    flatMax:
+      stealth: 50
+      perseption: 60
+      charisma: 60
+      investigation: 70
+      deception: 50
+      interrogation: 40

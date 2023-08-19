@@ -49,11 +49,6 @@ research:
     hidden: true
   - name: STR_MILITARY_STATUS_REPORT
     hidden: true
-    unlocks:
-      - STR_SOLDIER_SPECS
-  - name: STR_SOLDIER_SPECS
-    dependencies:
-      - STR_MILITARY_STATUS_REPORT
   - name: STR_ENGINEER_STATUS_REPORT
     hidden: true
   - name: STR_QUARTERMASTER_STATUS_REPORT
@@ -273,10 +268,73 @@ research:
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 100
 
-
+#tactics
+  - name: STR_SOLDIER_SPECS
+    cost: 500
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_XCOM_FUNDAMENTAL_STUDIES
+    listOrder: 10
+  - name: STR_SNIPER_TRAINING
+    cost: 400
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_SOLDIER_SPECS
+    listOrder: 10
+  - name: STR_HEAVY_TRAINING
+    cost: 400
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_SOLDIER_SPECS
+    listOrder: 10
+  - name: STR_ASSAULT_TRAINING
+    cost: 400
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_SOLDIER_SPECS
+    listOrder: 10
+  - name: STR_RANGER_TRAINING
+    cost: 400
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_SOLDIER_SPECS
+    listOrder: 10
+  - name: STR_SUPPORT_TRAINING
+    cost: 400
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_SOLDIER_SPECS
+    listOrder: 10
+  - name: STR_ADDITIONAL_COURSES
+    cost: 400
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_SOLDIER_SPECS
+    listOrder: 10
+  - name: STR_AGENT_TRAINING
+    cost: 600
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_SOLDIER_SPECS
+    listOrder: 10
 #high energy study
-  - name: STR_HIGH_ENERGY_PSYSICS #TODO-pedia
-    requiresBaseFunc: [HQ]
+  - name: STR_HIGH_ENERGY_PSYSICS
     cost: 1200
     stats:
       physics: 100

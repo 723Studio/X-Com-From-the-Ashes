@@ -184,13 +184,6 @@ ufopaedia:
       - STR_MILITARY_STATUS_REPORT
     text: STR_MILITARY_STATUS_REPORT_UFOPEDIA
     listOrder: 60
-  - id: STR_SOLDIER_SPECS
-    type_id: 8
-    section: STR_XCOM_REPORTS_UC
-    requires:
-      - STR_SOLDIER_SPECS
-    text: STR_SOLDIER_SPECS_UFOPEDIA
-    listOrder: 60
   - id: STR_VEHICLES_STATUS_REPORT
     type_id: 7
     image_id: STORE_CHIEF_CPAL.SPK
@@ -314,6 +307,70 @@ ufopaedia:
     requires:
       - STR_RECORD_WOW_SIGNAL
     listOrder: 170
+  - id: STR_SOLDIER_SPECS
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_SOLDIER_SPECS
+    text: STR_SOLDIER_SPECS_UFOPEDIA
+    listOrder: 60
+  - id: STR_SNIPER_TRAINING
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_SNIPER_TRAINING
+    text: STR_SNIPER_TRAINING_UFOPEDIA
+    listOrder: 60
+  - id: STR_HEAVY_TRAINING
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_HEAVY_TRAINING
+    text: STR_HEAVY_TRAINING_UFOPEDIA
+    listOrder: 60
+  - id: STR_ASSAULT_TRAINING
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_ASSAULT_TRAINING
+    text: STR_ASSAULT_TRAINING_UFOPEDIA
+    listOrder: 60
+  - id: STR_RANGER_TRAINING
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_RANGER_TRAINING
+    text: STR_RANGER_TRAINING_UFOPEDIA
+    listOrder: 60
+  - id: STR_SUPPORT_TRAINING
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_SUPPORT_TRAINING
+    text: STR_SUPPORT_TRAINING_UFOPEDIA
+    listOrder: 60
+  - id: STR_ADDITIONAL_COURSES
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_ADDITIONAL_COURSES
+    text: STR_ADDITIONAL_COURSES_UFOPEDIA
+    listOrder: 60
+  - id: STR_AGENT_TRAINING
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    requires:
+      - STR_AGENT_TRAINING
+    text: STR_AGENT_TRAINING_UFOPEDIA
+    listOrder: 60
   - id: STR_CULT_ACTIVITY
     type_id: 7
     image_id: CULT_ACTIVITY

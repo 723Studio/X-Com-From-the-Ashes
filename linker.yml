@@ -46,7 +46,15 @@ config:
   - events.customAnswers.2.description
   - events.customAnswers.3.description
   - converter.countries
+  - diplomacyFactions.nameUc
+  - covertOperations.categories
   - soldierTransformation.description
+  - soldiers.roleRankStrings[].strings.1
+  - soldiers.roleRankStrings[].strings.2
+  - soldiers.roleRankStrings[].strings.3
+  - soldiers.roleRankStrings[].strings.4
+  - soldiers.roleRankStrings[].strings.5
+  - soldiers.roleRankStrings[].strings.6
   stringTypes:
   - alienDeployments.missionCompleteText
   - alienDeployments.missionFailedText
@@ -121,6 +129,10 @@ config:
     - research
     diplomacyFactions.interrogation.unlockResearches:
     - research
+    facilities.manufacture:
+    - manufacture
+    soldiers.prisoner:
+    - prisoners
   keyReferenceTypes:
     - covertOperations.instantSuccessDeployment
     - covertOperations.instantTrapDeployment

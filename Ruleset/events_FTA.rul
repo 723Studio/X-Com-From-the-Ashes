@@ -445,10 +445,10 @@ events:
   - name: STR_XCOM_FUNDAMENTAL_STUDIES
     description: STR_XCOM_FUNDAMENTAL_STUDIES_DESCRIPTION
     background: BACK05.SCR
-    researchList: [STR_WORKSHOP_PREREQ]
+    researchList: [STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ]
     timer: 4320 #3 days
     timerRandom: 8640 #6 days
-    interruptResearch: STR_WORKSHOP
+    interruptResearch: STR_XCOM_FUNDAMENTAL_STUDIES
   - name: STR_WORKSHOP_EVENT
     description: STR_WORKSHOP_EVENT_DESCRIPTION
     background: BACK17.SCR

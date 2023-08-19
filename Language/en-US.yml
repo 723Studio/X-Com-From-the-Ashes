@@ -670,16 +670,28 @@ en-US:
   STR_COUNCIL_IS_DISSATISFIED: "We don't seem to be able to cope with the problems we have, Commander. Our resources are stretched thin and it's undermining the morale of our personnel. You must be more responsible in your planning and management, or the last hope for the X-COM project's revival will be lost."
   STR_SNIPER_TRAINING: "Sniper Specialization"
   STR_SNIPER_TRAINING_DESC: "The soldier will be able to handle assault and sniper rifles much better, aiming at the most vulnerable parts of the enemy, as well as to get the most out of an advantageous sniper position."
+  STR_SNIPER_TRAINING_UFOPEDIA: 
   STR_HEAVY_TRAINING: "Heavy Specialization"
   STR_HEAVY_TRAINING_DESC: "The specialization includes an extended physical training program, which will allow the soldier to wield heavy weapons more confidently."
+  STR_HEAVY_TRAINING_UFOPEDIA: 
   STR_ASSAULT_TRAINING: "Assault Specialization"
   STR_ASSAULT_TRAINING_DESC: "The unique assault program develops the tactical skills necessary for close-range and confined firefighting. It allows the soldier to fire much more accurately from the hip and to be ever vigilant."
+  STR_ASSAULT_TRAINING_UFOPEDIA: 
   STR_RANGER_TRAINING: "Ranger Specialization"
   STR_RANGER_TRAINING_DESC: "The program includes survival courses, stealth movement, as well as mastery of bladed and throwing weapons."
+  STR_RANGER_TRAINING_UFOPEDIA:
   STR_SUPPORT_TRAINING: "Support Specialization"
   STR_SUPPORT_TRAINING_DESC: "The program includes an advanced course in field medicine as well as training in the use of utility equipment such as smoke and flashbang grenades."
+  STR_SUPPORT_TRAINING_UFOPEDIA: 
   STR_UNARMED_COMBAT_TRAINING: "Unarmed Combat Training"
-  STR_UNARMED_COMBAT_TRAINING_DESC: "Additional combat training for non-armed combat includes techniques effective when both hands of the soldier are unoccupied. This training is not a substitute for soldier specialization and may be chosen as an optional elective."
+  STR_UNARMED_COMBAT_TRAINING_DESC: "Additional combat training for non-armed combat includes techniques effective when both hands of the soldier are unoccupied."
+  STR_RAPID_DEPLOYMENT_TRAINING: "Rapid Deployment Training"
+  STR_RAPID_DEPLOYMENT_TRAINING_DESC: "Additional course for practicing tactical interaction when deploying at the beginning of engagement. Grants the soldier a +10 TU bonus on the first turn."
+  STR_AGENT_TRAINING: "Agent Training"
+  STR_AGENT_TRAINING_DESC: "An X-COM agent certification program that allows him to participate in intelligence activities, developing specific skills."
+  STR_AGENT_TRAINING_UFOPEDIA: "Based on many years of experience in intelligence activities, we have developed a course aimed at obtaining specific skills that any X-COM special agent should possess. The program includes modules on analyzing large amounts of data, developing deduction, attentiveness. Basic interrogation techniques are taught, and skillful conversation skills are developed. In addition, there are practical lessons on disguise in a variety of conditions, as well as the basics of hacking art. The program includes only the basics, so our experienced agents will not be able to learn anything new there."
+  STR_MILITARY_TRAINING: "Soldier Training"
+  STR_MILITARY_TRAINING_DESC: "A basic military training course focused on the development of essential skills in small arms combat and tactical cooperation within the squad. Besides, a great deal of attention is paid to physical and shooting training, hand-to-hand combat and throwing exercises."
   STR_FIRE_AND_THROW: "Fire and throw it."
   STR_PRIVATE: "Private"
   STR_CORPORAL: "Corporal"
@@ -706,7 +718,7 @@ en-US:
   STR_JOURNEYMAN: "Journeyman"
   STR_ENGINEER: "Engineer"
   STR_SPECIALIST: "Specialist"
-  STR_SENIOR_ENGINEER: "Senior Enineer"
+  STR_SENIOR_ENGINEER: "Senior Engineer"
   STR_FOREMAN: "Foreman"
   STR_ARTISAN: "Artisan"
 #cutscenes
@@ -719,6 +731,7 @@ en-US:
   STR_MIB_CHASING_SLIDE2_CAPTION: "A black sedan has been following them steadily for more than 20 minutes, with no one on the road but them. Because of the bright headlights it is unclear who is driving the car."
 #diplomacy
   STR_RESISTANCE: "Resistance"
+  STR_RESISTANCE_UC: "RESISTANCE"
   STR_VOID_CORP: "VOID Corp."
   STR_ENIGMA: "Enigma"
   STR_RESISTANCE_DESCRIPTION: "A group of people who do not want to submit to an alien invasion and are extremely hostile to any of their accomplices. They help those who have become the target of persecution, seek to survive in a rapidly changing world and sabotage aliens' sinister plans. To achieve their goals they rely on a network of guerrilla cells, and they value self-sacrifice and courage in people."
@@ -875,6 +888,8 @@ en-US:
   MILITARY_RND_ALARM_CONTENT: "The base is on alert, and reinforcements from adjacent sectors will be arriving soon. We need to evacuate our soldiers as quickly as possible!"
   STR_LOCALS_TRAP: "Cover blown"
   STR_LOCALS_TRAP_BRIEFING: "The cover for our agents is compromised and the locals are livid. We need to evacuate our people immediately before the locals and police get to them. Get to the car parked at the roadside - it is our only chance of survival.{NEWLINE}To complete the mission place the soldiers on the green tiles and click on the 'Abort Mission' icon."
+  STR_TERMINAL: "Terminal"
+  STR_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
 
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
@@ -1796,7 +1811,12 @@ en-US:
   STR_RADAR_SYSTEM: "Radar Systems"
   STR_TRADIUM: "Tradium"
 #armors
-  STR_JUMPSUIT_UC: "X-COM UNIFORM"
+  STR_JUMPSUIT_UC: "SOLDIER UNIFORM"
+  STR_FLIGHTSUIT_UC: "FLIGHTSUIT"
+  STR_AGENT_UNIFORM_UC: "AGENT UNIFORM"
+  STR_XCOM_LABCOAT_UC: "LABCOAT"
+  STR_XCOM_ENGINEER_SUIT_UC: "ENGINEER SUIT"
+  STR_XCOM_RESISTANCE_AGENT_SUIT_UC: "RESISTANCE AGENT SUIT"
   STR_LEATHER_COAT_UC: "LEATHER COAT"
   STR_LEATHER_COAT: "Leather Coat"
   STR_CORPSE_LEATHER_COAT: "X-Com Operative Corpse"
@@ -1839,9 +1859,7 @@ en-US:
   STR_QUARTERMASTER_STATUS_REPORT: "Quartermaster's Report"
   STR_QUARTERMASTER_STATUS_REPORT_UFOPEDIA: "Hello, Commander! I've completed a diagnostic of the base's main systems. I am happy to report that the power and water supply systems are operating normally. However, it is not at all clear where we will get supplies, even the most basic ones. Intelligence has forbidden my guys to leave the base, and where are we going to get everything we need for maintenance, let alone to build modules? Maybe the R&D folks could think of a reliable source of general supplies?"
   STR_MILITARY_STATUS_REPORT: "Chief Staff Officer Report"
-  STR_MILITARY_STATUS_REPORT_UFOPEDIA: "Status report, Commander! The XCOM squad is set for the next mission! Though recent events have left us rather bruised, and with very few experienced fighters left in the ranks, our new recruits show great promise. Participating in combat actions and continually training at the base will enhance their capabilities and they can be promoted for their accomplishments on the battlefield. Starting at the rank of Squaddie, soldiers can distinguish themselves and they can be assigned a specialization to become noticeably more effective in their chosen area of expertise."
-  STR_SOLDIER_SPECS: "Soldier Specializations"
-  STR_SOLDIER_SPECS_UFOPEDIA: "Specialized training for X-COM soldiers is designed to develop a variety of combat and tactical skills. After receiving their first promotion, each soldier can gain a specialty in one of several different areas. Successful completion of a specialty course not only improves a soldier's performance, but also gives them abilities appropriate to their specialty."
+  STR_MILITARY_STATUS_REPORT_UFOPEDIA: "Status report, Commander! The XCOM squad is set for the next mission! Though recent events have left us rather bruised, and with very few experienced fighters left in the ranks, our new recruits show great promise. Participating in combat actions and continually training at the base will enhance their capabilities and they can be promoted for their accomplishments on the battlefield. Check that personnel not busy on other tasks are assigned to the GYM. Keep in mind that for some missions we will need some of the scientists and engineers involved in the deployment, so it is worth paying attention to their physical fitness."
   STR_VEHICLES_STATUS_REPORT: "Vehicles Status"
   STR_VEHICLES_STATUS_REPORT_UFOPEDIA: "Our aircrafts are repaired, refueled, and ready to use. It's just that we don't have a radar system anymore. The intelligence guys are constantly monitoring reports of UFOs' signs all over the globe, but the real chance of alien ship tracking is very poor. Although if we manage to do that, Stalker-1 is ready for takeoff. Hopefully, it will get luckier than Stalker-2, hit by a burst of plasma. We've got a good deal of ammo left, but we don't have a restocking source - Stingray missiles aren't for sale at the supermarket, you know. The Dragonfly-1 landing craft is ready for full deployment once the mission site located."
   STR_PRISONER_INTERROGATIONS: "Prisoner Interrogations"
@@ -1850,7 +1868,12 @@ en-US:
   STR_UFOPEDIA: "Ufopaedia"
   STR_UFOPEDIA_UFOPEDIA: "We managed to break through the primary protection of the blocked Ufopaedia archive! Sadly, once we had accessed the system, we found inner layers of data encryption. One section seems to hold all the technical data on the equipment we use. It won't be difficult to decipher that part. The other is much better protected, and it seems that only the commander had access to it before the lockdown. I can't say for sure, but it most likely contains strategic data about the project history and its formation background. Perhaps the analysis of past events will allow us to avoid these errors in the future."
   STR_XCOM_FUNDAMENTAL_STUDIES: "X-COM Fundamental Studies"
+  STR_XCOM_FUNDAMENTAL_STUDIES_DESCRIPTION: "Having decrypted Ufopedia, we now have access to our fundamental research. Alas, due to lack of funding, most of it was conducted (or at least leaded) by Dr. Meyer personally, and we will need some time to analyze his notes. Perhaps we should devote resources to this.{NEWLINE}{ALT}New research project available."
   STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA: "We were unable to obtain any valuable and reliable information about the aliens, their nature, or to collect samples of their technology. Therefore, XCOM scientists were focused on theoretical solutions to complex problems in a variety of fields, from the natural sciences to military tactics. However, due to a dramatic decrease in funding and drastic staff reductions, all projects were eventually frozen. Now we have an opportunity to carry out some studies, but given the limited capacity, it is important to properly prioritize our efforts."
+  STR_SOLDIER_SPECS: "Soldier Specializations"
+  STR_SOLDIER_SPECS_UFOPEDIA: "Specialized training for X-COM soldiers can develop a variety of combat and tactical skills. After receiving their first promotion, each soldier can gain a specialty in one of several different areas. Successful completion of a specialty course not only improves a soldier's performance, but also gives them abilities appropriate to their specialty. A soldier can have only one specialization."
+  STR_ADDITIONAL_COURSES: "Additional Courses"
+  STR_ADDITIONAL_COURSES_UFOPEDIA: "We have developed several additional training courses for our soldiers:{NEWLINE}*Unarmed Combat{NEWLINE}*Desert Combat{NEWLINE}*Jungle Combat{NEWLINE}*Mountain Combat{NEWLINE}*Arctic Combat{NEWLINE}*Urban Combat{NEWLINE}*Rapid deployment{NEWLINE}These courses are available for soldiers and don't replace their specialization, but provide additional traits. In addition, we have developed a basic military training course for our non-combat personnel and agent training cource."
   STR_FIREARMS_STUDY: "Firearms study"
   STR_FIREARMS_STUDY_UFOPEDIA: "Almost from the very invention, firearms were the most effective infantry weapons. Modern small arms have approached their limit of practical effectiveness - since the late 70s, new models differ slightly from their predecessors in basic parameters. The marginal increase in one or more parameters requires a radical revision of the design and material of weapons and ammunition, as well as the introduction of innovative technologies. Such developments are underway in some countries, and the Ufopedia archives contain information about interesting super-secret developments. However, there were no own developments in this area."
   STR_SMART_WEAPONS: "Smart Weapons"
@@ -2545,3 +2568,13 @@ en-US:
   STR_DEAD_COW: STR_DEAD_COW
   STR_CROP_CORCLES_EARLY_GAME: STR_CROP_CORCLES_EARLY_GAME
   STR_STARTING_EQUIPMENT_RESEARCHED: STR_STARTING_EQUIPMENT_RESEARCHED
+  STR_CHOCOLATE_FACTORY_OPEN: STR_CHOCOLATE_FACTORY_OPEN
+  STR_CHOCOLATE_FACTORY_CLOSED: STR_CHOCOLATE_FACTORY_CLOSED
+  STR_STONKS_ACTIVE: STR_STONKS_ACTIVE
+  STR_STONKS_FINISHED: STR_STONKS_FINISHED
+  STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ: STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
+  STR_WEAPON_COMPONENTS: STR_WEAPON_COMPONENTS
+  STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ: STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+  STR_CRIMINAL_RECRUITING_PREREQ: STR_CRIMINAL_RECRUITING_PREREQ
+  STR_WORKSHOP_PREREQ: STR_WORKSHOP_PREREQ
+  PAL_BASE_INFO: PAL_BASE_INFO

@@ -277,7 +277,7 @@ facilities:
     mapName: XBASE_08
   - type: STR_LASER_DEFENSES
     requires:
-      - STR_LASER_DEFENSE
+      - STR_TODOIUM
     spriteShape: 3
     spriteFacility: 26
     buildCost: 400000
