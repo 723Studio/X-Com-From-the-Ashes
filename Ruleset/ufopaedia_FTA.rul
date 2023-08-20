@@ -211,6 +211,15 @@ ufopaedia:
       - STR_COVERT_OPERATIONS
     text: STR_COVERT_OPERATIONS_UFOPEDIA
     listOrder: 90
+  - id: STR_INTELLIGENCE
+    type_id: 7
+    image_id: INTEL_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_INTELLIGENCE
+    text: STR_INTELLIGENCE_UFOPEDIA
+    listOrder: 90
   - id: STR_COMMUNICATION
     type_id: 8
     section: STR_XCOM_REPORTS_UC
@@ -311,6 +320,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_SOLDIER_SPECS
     text: STR_SOLDIER_SPECS_UFOPEDIA
@@ -319,6 +329,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_SNIPER_TRAINING
     text: STR_SNIPER_TRAINING_UFOPEDIA
@@ -327,6 +338,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_HEAVY_TRAINING
     text: STR_HEAVY_TRAINING_UFOPEDIA
@@ -335,6 +347,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_ASSAULT_TRAINING
     text: STR_ASSAULT_TRAINING_UFOPEDIA
@@ -343,6 +356,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_RANGER_TRAINING
     text: STR_RANGER_TRAINING_UFOPEDIA
@@ -351,6 +365,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_SUPPORT_TRAINING
     text: STR_SUPPORT_TRAINING_UFOPEDIA
@@ -359,6 +374,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_ADDITIONAL_COURSES
     text: STR_ADDITIONAL_COURSES_UFOPEDIA
@@ -367,6 +383,7 @@ ufopaedia:
     type_id: 7
     image_id: COMMANDO_CPAL.SPK
     text_width: 158
+    section: STR_XCOM_REPORTS_UC
     requires:
       - STR_AGENT_TRAINING
     text: STR_AGENT_TRAINING_UFOPEDIA
@@ -1113,6 +1130,12 @@ ufopaedia:
     requires:
       - STR_SMART_PISTOL
     listOrder: 17070
+  - id: STR_SMART_PISTOL_AA_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_PISTOL_AA_CLIP
+    listOrder: 17070
   - id: STR_CHEMPISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1178,19 +1201,19 @@ ufopaedia:
       - STR_SMG_AA_CLIP
     section: STR_NOT_AVAILABLE
     listOrder: 18070
-  - id: STR_SMART_SMG
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_SMART_SMG
-    text: STR_SMART_SMG_UFOPEDIA
-    listOrder: 18050
-  - id: STR_SMART_SMG_CLIP
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_SMART_SMG
-    listOrder: 18060
+  # - id: STR_SMART_SMG
+  #   type_id: 4
+  #   section: STR_WEAPONS_AND_EQUIPMENT
+  #   requires:
+  #     - STR_SMART_SMG
+  #   text: STR_SMART_SMG_UFOPEDIA
+  #   listOrder: 18050
+  # - id: STR_SMART_SMG_CLIP
+  #   type_id: 4
+  #   section: STR_NOT_AVAILABLE
+  #   requires:
+  #     - STR_SMART_SMG
+  #   listOrder: 18060
 #rifles
   - id: STR_RIOT_RIFLE
     type_id: 4
@@ -1277,18 +1300,24 @@ ufopaedia:
       - STR_SMART_RIFLE
     text: STR_SMART_RIFLE_UFOPEDIA
     listOrder: 19040
-  - id: STR_SMART_ASSAULT_RIFLE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_SMART_ASSAULT_RIFLE
-    text: STR_SMART_ASSAULT_RIFLE_UFOPEDIA
-    listOrder: 19040
+  # - id: STR_SMART_ASSAULT_RIFLE
+  #   type_id: 4
+  #   section: STR_WEAPONS_AND_EQUIPMENT
+  #   requires:
+  #     - STR_SMART_ASSAULT_RIFLE
+  #   text: STR_SMART_ASSAULT_RIFLE_UFOPEDIA
+  #   listOrder: 19040
   - id: STR_SMART_RIFLE_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
       - STR_SMART_RIFLE
+    listOrder: 19050
+  - id: STR_SMART_RIFLE_AA_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_RIFLE_AA_CLIP
     listOrder: 19050
   - id: STR_CHEMOGUN
     type_id: 4
@@ -1374,6 +1403,12 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_SMART_SNIPER_RIFLE
+    listOrder: 20030
+  - id: STR_SMART_SNIPER_RIFLE_AA_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_SNIPER_RIFLE_AA_CLIP
     listOrder: 20030
   - id: STR_COIL_SNIPER_RIFLE
     type_id: 4
@@ -1597,6 +1632,12 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_SMART_LMG
+    listOrder: 22030
+  - id: STR_SMART_LMG_AA_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SMART_LMG_AA_CLIP
     listOrder: 22030
   - id: STR_HEAVY_CANNON
     type_id: 4

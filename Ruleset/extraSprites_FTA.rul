@@ -388,6 +388,19 @@ extraSprites:
       465: Resources/Weapons/Earthbound/Faction/bigob_MilitarySniperRifleClip.png
       466: Resources/Weapons/Earthbound/Utilities/bigob_HackingTool.png
       467: Resources/Weapons/Earthbound/Utilities/bigob_SamplingPack.png
+      468: Resources/Weapons/Earthbound/Xcom/smart/bigob_Smartpistol.png
+      469: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartpistolClip.png
+      470: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartpistolAAClip.png
+      471: Resources/Weapons/Earthbound/Xcom/smart/bigob_Smartrifle.png
+      472: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartrifleClip.png
+      473: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartrifleAAClip.png
+      474: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartGun.png
+      475: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartGunClip.png
+      476: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartGunAAClip.png
+      477: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartSniperRifle.png
+      478: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartSniperRifleClip.png
+      479: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartSniperRifleAPClip.png
+      480: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartSniperRifleAAClip.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -579,7 +592,20 @@ extraSprites:
       464: Resources/Weapons/Earthbound/Faction/floorob_MilitarySniperRifle.png
       465: Resources/Weapons/Earthbound/Faction/floorob_MilitarySniperRifleClip.png
       466: Resources/Weapons/Earthbound/Utilities/floorob_HackingTool.png
-      467: Resources/Weapons/Earthbound/Utilities/floorob_SamplingPack.png
+      467: Resources/Weapons/Earthbound/Utilities/floorob_SamplingPack.png 
+      468: Resources/Weapons/Earthbound/Xcom/smart/floorob_Smartpistol.png
+      469: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartpistolClip.png
+      #470: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartpistolAAClip.png
+      471: Resources/Weapons/Earthbound/Xcom/smart/floorob_Smartrifle.png
+      472: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartrifleClip.png
+      #473: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartrifleAAClip.png
+      474: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartGun.png
+      475: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartGunClip.png
+      #476: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartGunAAClip.png
+      477: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifle.png
+      478: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifleClip.png
+      #479: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifleAPClip.png
+      #480: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifleAAClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -704,6 +730,10 @@ extraSprites:
       1042: Resources/Weapons/Earthbound/Faction/handob_MilitarySniperRifleClip.png
       1050: Resources/Weapons/Earthbound/Special/handob_Baseball_Bat.png
       1058: Resources/Weapons/Earthbound/Utilities/handob_SamplingPack.png
+      1066: Resources/Weapons/Earthbound/Xcom/smart/handob_Smartpistol.png
+      1074: Resources/Weapons/Earthbound/Xcom/smart/handob_Smartrifle.png
+      1082: Resources/Weapons/Earthbound/Xcom/smart/handob_SmartGun.png
+      1090: Resources/Weapons/Earthbound/Xcom/smart/handob_SmartSniperRifle.png
 
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons

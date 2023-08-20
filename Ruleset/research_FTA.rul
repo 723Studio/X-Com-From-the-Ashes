@@ -47,6 +47,10 @@ research:
     dependencies:
       - STR_INTEL_STATUS_REPORT
     hidden: true
+  - name: STR_INTELLIGENCE
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    hidden: true
   - name: STR_MILITARY_STATUS_REPORT
     hidden: true
   - name: STR_ENGINEER_STATUS_REPORT
@@ -716,16 +720,16 @@ research:
     dependencies:
       - STR_SMART_WEAPONS_PRODUCTION
     listOrder: 10
-  - name: STR_SMART_ASSAULT_RIFLE #TODO manufacturing
-    cost: 1200
-    stats:
-      designing: 80
-      computers: 100
-      materials: 120
-    points: 30
-    dependencies:
-      - STR_SMART_RIFLE
-    listOrder: 10
+  # - name: STR_SMART_ASSAULT_RIFLE #TODO manufacturing
+  #   cost: 1200
+  #   stats:
+  #     designing: 80
+  #     computers: 100
+  #     materials: 120
+  #   points: 30
+  #   dependencies:
+  #     - STR_SMART_RIFLE
+  #   listOrder: 10
   - name: STR_SMART_SNIPER_RIFLE #TODO manufacturing
     cost: 1200
     stats:
@@ -736,17 +740,17 @@ research:
     dependencies:
       - STR_SMART_RIFLE
     listOrder: 10
-  - name: STR_SMART_SMG #TODO manufacturing
-    cost: 1200
-    stats:
-      designing: 80
-      computers: 100
-      materials: 120
-    points: 30
-    dependencies:
-      - STR_SMART_RIFLE
-    listOrder: 10
-  - name: STR_SMART_PISTOL #TODO manufacturing
+  # - name: STR_SMART_SMG #TODO manufacturing
+  #   cost: 1200
+  #   stats:
+  #     designing: 80
+  #     computers: 100
+  #     materials: 120
+  #   points: 30
+  #   dependencies:
+  #     - STR_SMART_RIFLE
+  #   listOrder: 10
+  - name: STR_SMART_PISTOL
     cost: 1200
     stats:
       designing: 80

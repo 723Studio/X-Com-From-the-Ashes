@@ -148,6 +148,35 @@ manufacture:
     producedItems:
       STR_CHEMPISTOL_CLIP: 1
     listOrder: 220030
+  - name: STR_SMART_PISTOL
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_PISTOL
+    requiredItems:
+      STR_SPARE_PARTS: 3
+      STR_HIGH_TECH_PARTS: 6
+      STR_PISTOL: 1
+    space: 4
+    time: 1100
+    cost: 8200
+    producedItems:
+      STR_SMART_PISTOL: 1
+    listOrder: 220030
+  - name: STR_SMART_PISTOL_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_PISTOL
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 1
+      STR_PISTOL_CLIP: 1
+    space: 2
+    time: 320
+    cost: 600
+    producedItems:
+      STR_SMART_PISTOL_CLIP: 1
+    listOrder: 220030
   - name: STR_ROCKET_GLOVE
     category: STR_WEAPONS
     requiresBaseFunc: [WORK]
@@ -175,6 +204,64 @@ manufacture:
     cost: 1400
     producedItems:
       STR_ROCKET_GLOVE_CLIP: 1
+    listOrder: 220030
+  - name: STR_SMART_RIFLE
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_RIFLE
+    requiredItems:
+      STR_SPARE_PARTS: 5
+      STR_HIGH_TECH_PARTS: 10
+      STR_RIFLE: 1
+    space: 4
+    time: 2050
+    cost: 12000
+    producedItems:
+      STR_SMART_RIFLE: 1
+    listOrder: 220030
+  - name: STR_SMART_RIFLE_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_RIFLE
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 2
+      STR_RIFLE_CLIP: 1
+    space: 2
+    time: 320
+    cost: 800
+    producedItems:
+      STR_SMART_RIFLE_CLIP: 1
+    listOrder: 220030
+  - name: STR_SMART_SNIPER_RIFLE
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_SNIPER_RIFLE
+    requiredItems:
+      STR_SPARE_PARTS: 6
+      STR_HIGH_TECH_PARTS: 12
+      STR_SNIPER_RIFLE: 1
+    space: 4
+    time: 2450
+    cost: 16000
+    producedItems:
+      STR_SMART_SNIPER_RIFLE: 1
+    listOrder: 220030
+  - name: STR_SMART_SNIPER_RIFLE_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_SNIPER_RIFLE
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 1
+      STR_SNIPER_RIFLE_CLIP: 1
+    space: 2
+    time: 370
+    cost: 840
+    producedItems:
+      STR_SMART_SNIPER_RIFLE_CLIP: 1
     listOrder: 220030
   - name: STR_TASER_CANNON
     category: STR_WEAPONS
@@ -204,7 +291,36 @@ manufacture:
     producedItems:
       STR_TASER_CANNON_CLIP: 1
     listOrder: 220030
-  - name: STR_RAILGUN #FIXME balance
+  - name: STR_SMART_LMG
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_LMG
+    requiredItems:
+      STR_SPARE_PARTS: 10
+      STR_HIGH_TECH_PARTS: 10
+      STR_LMG: 1
+    space: 4
+    time: 2200
+    cost: 14000
+    producedItems:
+      STR_SMART_LMG: 1
+    listOrder: 220030
+  - name: STR_SMART_LMG_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_SMART_LMG
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 5
+      STR_LMG_CLIP: 1
+    space: 2
+    time: 600
+    cost: 1200
+    producedItems:
+      STR_SMART_LMG_CLIP: 1
+    listOrder: 220030
+  - name: STR_RAILGUN
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
     requires:
@@ -214,20 +330,20 @@ manufacture:
       STR_HIGH_TECH_PARTS: 12
     space: 1
     time: 860
-    cost: 2700
+    cost: 16000
     producedItems:
       STR_RAILGUN: 1
     listOrder: 220030
-  - name: STR_RAILGUN_SLUG #FIXME balance
+  - name: STR_RAILGUN_SLUG
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
     requires:
       - STR_RAILGUN
     requiredItems:
-      STR_SPARE_PARTS: 8
+      STR_SPARE_PARTS: 3
       STR_HIGH_TECH_PARTS: 2
     space: 1
-    time: 860
+    time: 360
     cost: 2700
     producedItems:
       STR_RAILGUN_SLUG: 1
