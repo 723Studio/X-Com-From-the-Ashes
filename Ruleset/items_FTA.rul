@@ -1366,6 +1366,62 @@ items:
     attraction: 15
     recoveryPoints: 4
     listOrder: 5140
+  - type: STR_COIL_PISTOL
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE]
+    requires:
+      - STR_COIL_PISTOL
+    size: 0.1
+    landOnly: true
+    costSell: 63000
+    weight: 15
+    bigSprite: 483
+    floorSprite: 483
+    handSprite: 1106
+    bulletSprite: 19
+    fireSound: 180
+    reloadSound: 177
+    compatibleAmmo:
+      - STR_COIL_PISTOL_CLIP
+    accuracyCloseQuarters: 133
+    accuracySnap: 72
+    accuracyAimed: 82
+    aimRange: 20
+    dropoff: 3
+    kneelBonus: 105
+    tuSnap: 22
+    tuAimed: 35
+    tuLoad: 15
+    battleType: 1
+    twoHanded: false
+    noiseValue: 0
+    invWidth: 1
+    invHeight: 2
+    armor: 40
+    bulletSpeed: 5
+    attraction: 15
+    listOrder: 20420
+  - type: STR_COIL_PISTOL_CLIP
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE]
+    requires:
+      - STR_COIL_PISTOL_CLIP
+    size: 0.1
+    landOnly: true
+    costSell: 1500
+    weight: 3
+    bigSprite: 484
+    floorSprite: 484
+    hitSound: 183
+    hitAnimation: 26
+    power: 43
+    damageAlter:
+      ArmorEffectiveness: 0.85
+      ToArmorPre: 0.01
+    damageType: 1
+    clipSize: 9
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 20430
   - type: STR_CHEMPISTOL_CLIP
     categories: [STR_CHEMICAL, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
     requires:
@@ -2043,6 +2099,62 @@ items:
     attraction: 8
     recoveryPoints: 2
     listOrder: 7150
+  - type: STR_COIL_RIFLE
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_RIFLES, STR_SPACE]
+    requires:
+      - STR_COIL_RIFLE
+    size: 0.1
+    landOnly: true
+    costSell: 115000
+    weight: 23
+    bigSprite: 485
+    floorSprite: 485
+    handSprite: 1114
+    bulletSprite: 19
+    fireSound: 181
+    reloadSound: 178
+    compatibleAmmo:
+      - STR_COIL_RIFLE_CLIP
+    accuracyCloseQuarters: 100
+    accuracySnap: 80
+    accuracyAuto: 75
+    accuracyAimed: 115
+    tuSnap: 35
+    tuAuto: 42
+    tuAimed: 70
+    snapRange: 17
+    autoRange: 14
+    autoShots: 3
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    bulletSpeed: 5
+    attraction: 20
+    listOrder: 21700
+  - type: STR_COIL_RIFLE_CLIP
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_RIFLES, STR_CLIPS, STR_SPACE]
+    requires:
+      - STR_COIL_RIFLE_CLIP
+    size: 0.1
+    landOnly: true
+    costSell: 2400
+    weight: 3
+    bigSprite: 486
+    floorSprite: 484
+    hitSound: 183
+    hitAnimation: 26
+    power: 52
+    damageAlter:
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.01
+    damageType: 1
+    clipSize: 19
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 21710
   - type: STR_CHEMOGUN
     categories: [STR_HUMAN_TECH, STR_CHEMICAL, STR_SMOKE, STR_RIFLES]
     requires:
@@ -2404,11 +2516,67 @@ items:
       ArmorEffectiveness: 0.63
       ToArmorPre: 0.12
     damageType: 1
-    clipSize: 5
+    clipSize: 6
     battleType: 2
     armor: 20
     attraction: 9
     listOrder: 10040
+  - type: STR_COIL_SNIPER_RIFLE
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_SPACE]
+    requires:
+      - STR_COIL_SNIPER_RIFLE
+    size: 0.2
+    landOnly: true
+    costSell: 140000
+    weight: 36
+    bigSprite: 487
+    floorSprite: 487
+    handSprite: 1122
+    bulletSprite: 19
+    fireSound: 181
+    reloadSound: 178
+    compatibleAmmo:
+      - STR_COIL_SNIPER_RIFLE_CLIP
+    accuracyCloseQuarters: 80
+    accuracyAimed: 150
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+    tuAimed: 75
+    minRange: 15
+    dropoff: 3
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    bulletSpeed: 5
+    attraction: 20
+    listOrder: 22240
+  - type: STR_COIL_SNIPER_RIFLE_CLIP
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE]
+    requires:
+      - STR_COIL_SNIPER_RIFLE_CLIP
+    size: 0.1
+    landOnly: true
+    costSell: 3150
+    weight: 3
+    bigSprite: 488
+    floorSprite: 484
+    hitSound: 183
+    hitAnimation: 26
+    power: 92
+    damageBonus:
+      firing: 0.3
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.55
+      ToArmorPre: 0.015
+    damageType: 1
+    clipSize: 7
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 22250
 #shotguns
   - type: STR_SAWED_OFF
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CONCEALABLE]
@@ -3928,7 +4096,7 @@ items:
     fireSound: 132
     reloadSound: 133
     compatibleAmmo:
-      - STR_RAILGUN_SLUG
+      - STR_RAILGUN_CLIP
     accuracyAimed: 75
     tuAimed: 75
     battleType: 1
@@ -3943,7 +4111,7 @@ items:
     minRange: 30
     dropoff: 4
     listOrder: 15290
-  - type: STR_RAILGUN_SLUG
+  - type: STR_RAILGUN_CLIP
     size: 0.1
     costSell: 2300
     weight: 4
@@ -3959,6 +4127,109 @@ items:
     battleType: 2
     armor: 30
     listOrder: 15300
+  - type: STR_COIL_CANNON
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE]
+    requires:
+      - STR_COIL_CANNON
+    size: 0.2
+    landOnly: true
+    costSell: 185000
+    weight: 45
+    bigSprite: 489
+    floorSprite: 489
+    handSprite: 1130
+    bulletSprite: 19
+    fireSound: 182
+    reloadSound: 179
+    compatibleAmmo:
+      - STR_COIL_CANNON_CLIP
+    accuracyCloseQuarters: 60
+    accuracySnap: 60
+    accuracyAimed: 100
+    tuSnap: 35
+    tuAimed: 75
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    bulletSpeed: 5
+    attraction: 24
+    listOrder: 23600
+  - type: STR_COIL_CANNON_CLIP
+    categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE]
+    requires:
+      - STR_COIL_CANNON_CLIP
+    size: 0.1
+    landOnly: true
+    costSell: 4100
+    weight: 4
+    bigSprite: 490
+    floorSprite: 490
+    hitSound: 183
+    hitAnimation: 26
+    power: 100
+    damageAlter:
+      ArmorEffectiveness: 0.45
+      ToArmorPre: 0.02
+      ToTime: 0.2
+      ToTile: 1.2
+    damageType: 1
+    clipSize: 15
+    battleType: 2
+    armor: 30
+    invWidth: 2
+    invHeight: 1
+    attraction: 16
+    listOrder: 23610
+  - type: STR_PHASER_CANNON
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE]
+    size: 0.3
+    landOnly: true
+    costSell: 250000
+    weight: 47
+    bigSprite: 481
+    floorSprite: 481
+    handSprite: 1098
+    bulletSprite: 7
+    fireSound: 172
+    reloadSound: 176
+    compatibleAmmo:
+      - STR_PHASER_CANNON_CLIP
+    accuracyCloseQuarters: 60
+    accuracySnap: 63
+    accuracyAimed: 105
+    tuSnap: 33
+    tuAimed: 75
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 22
+    listOrder: 30080
+  - type: STR_PHASER_CANNON_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE]
+    size: 0.1
+    landOnly: true
+    costSell: 15400
+    weight: 6
+    bigSprite: 482
+    floorSprite: 482
+    hitSound: 85
+    hitAnimation: 36
+    power: 75
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.4
+      ToArmor: 0.05
+    damageType: 4
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 30090
 #launchers
   - type: STR_ROCKET_GLOVE
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES]
@@ -5736,8 +6007,8 @@ items:
     categories: [STR_COMPONENTS]
     landOnly: true
     size: 0.02
-    costBuy: 1300
-    costSell: 900
+    costBuy: 1600
+    costSell: 1300
     weight: 1
     battleType: 0
     bigSprite: 445

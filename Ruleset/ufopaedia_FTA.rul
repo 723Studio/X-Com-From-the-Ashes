@@ -544,13 +544,20 @@ ufopaedia:
       - STR_SMART_WEAPONS_PRODUCTION
     text: STR_SMART_WEAPONS_PRODUCTION_UFOPEDIA
     listOrder: 7000
-  - id: STR_HIGH_ENERGY_PSYSICS
+  - id: STR_ENERGY_WEAPONS
     type_id: 8
     section: STR_TECHNOLOGY_UC
     requires:
-      - STR_HIGH_ENERGY_PSYSICS
-    text: STR_HIGH_ENERGY_PSYSICS_UFOPEDIA
+      - STR_ENERGY_WEAPONS
+    text: STR_ENERGY_WEAPONS_UFOPEDIA
     listOrder: 7000
+  - id: STR_ELECTRIC_WEAPONS_CONCEPT
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_ELECTRIC_WEAPONS_CONCEPT
+    text: STR_ELECTRIC_WEAPONS_CONCEPT_UFOPEDIA
+    listOrder: 7010
   - id: STR_ELECTRIC_WEAPONS_PRODUCTION
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -565,6 +572,13 @@ ufopaedia:
       - STR_ARC_TROWER
     text: STR_ARC_TROWER_UFOPEDIA
     listOrder: 7010
+  - id: STR_ELECTROMAGNETIC_WEAPONS_CONCEPT
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_ELECTROMAGNETIC_WEAPONS_CONCEPT
+    text: STR_ELECTROMAGNETIC_WEAPONS_CONCEPT_UFOPEDIA
+    listOrder: 7010
   - id: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -572,6 +586,43 @@ ufopaedia:
       - STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
     text: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION_UFOPEDIA
     listOrder: 7010
+
+  - id: STR_ADVANCED_COOLING_SYSTEMS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_ADVANCED_COOLING_SYSTEMS
+    text: STR_ADVANCED_COOLING_SYSTEMS_UFOPEDIA
+    listOrder: 7010
+  - id: STR_HIGH_DENSITY_CAPACITORS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_HIGH_DENSITY_CAPACITORS
+    text: STR_HIGH_DENSITY_CAPACITORS_UFOPEDIA
+    listOrder: 7010
+  - id: STR_ULTRA_DENSE_CAPACITORS
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_ULTRA_DENSE_CAPACITORS
+    text: STR_ULTRA_DENSE_CAPACITORS_UFOPEDIA
+    listOrder: 7010
+  - id: STR_ADVANCED_BATTERIES
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_ADVANCED_BATTERIES
+    text: STR_ADVANCED_BATTERIES_UFOPEDIA
+    listOrder: 7010
+  - id: STR_HIGH_PERFORMANCE_BATTERIES
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_HIGH_PERFORMANCE_BATTERIES
+    text: STR_HIGH_PERFORMANCE_BATTERIES_UFOPEDIA
+    listOrder: 7010
+
   - id: STR_SUPERCONDUCTIVITY_THEORY
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -586,6 +637,13 @@ ufopaedia:
       - STR_CERAMIC_SUPERCONDUCTOR
     text: STR_CERAMIC_SUPERCONDUCTOR_UFOPEDIA
     listOrder: 7010
+  - id: STR_IRON_BASED_SUPERCONDUCTOR
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_IRON_BASED_SUPERCONDUCTOR
+    text: STR_IRON_BASED_SUPERCONDUCTOR_UFOPEDIA
+    listOrder: 7010
   - id: STR_CARBON_SUPERCONDUCTOR
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -593,19 +651,43 @@ ufopaedia:
       - STR_CARBON_SUPERCONDUCTOR
     text: STR_CARBON_SUPERCONDUCTOR_UFOPEDIA
     listOrder: 7010
-  - id: STR_HYDRID_ALLOY_SUPERCONDUCTOR
+  - id: STR_HYDRID_SUPERCONDUCTOR
     type_id: 8
     section: STR_TECHNOLOGY_UC
     requires:
-      - STR_HYDRID_ALLOY_SUPERCONDUCTOR
-    text: STR_HYDRID_ALLOY_SUPERCONDUCTOR_UFOPEDIA
+      - STR_HYDRID_SUPERCONDUCTOR
+    text: STR_HYDRID_SUPERCONDUCTOR_UFOPEDIA
     listOrder: 7010
+
+  - id: STR_SUPERCONDUCTOR_QUANTUM_MODEL
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_SUPERCONDUCTOR_QUANTUM_MODEL
+    text: STR_SUPERCONDUCTOR_QUANTUM_MODEL_UFOPEDIA
+    listOrder: 7010
+  - id: STR_SUPERCONDUCTOR
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_SUPERCONDUCTOR
+    text: STR_SUPERCONDUCTOR_UFOPEDIA
+    listOrder: 7010
+
   - id: STR_COIL_WEAPONS
     type_id: 8
     section: STR_TECHNOLOGY_UC
     requires:
       - STR_COIL_WEAPONS
     text: STR_COIL_WEAPONS_UFOPEDIA
+    listOrder: 7010
+
+  - id: STR_LASER_WEAPONS_CONCEPT
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_LASER_WEAPONS_CONCEPT
+    text: STR_LASER_WEAPONS_CONCEPT_UFOPEDIA
     listOrder: 7010
   - id: STR_LASER_SCATTERING_PROBLEM
     type_id: 8
@@ -627,6 +709,20 @@ ufopaedia:
     requires:
       - STR_NON_LINEAR_OPTICS
     text: STR_NON_LINEAR_OPTICS_UFOPEDIA
+    listOrder: 7010
+  - id: STR_PHASER_MIRROR
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_PHASER_MIRROR
+    text: STR_PHASER_MIRROR_UFOPEDIA
+    listOrder: 7010
+  - id: STR_PHASER_TARGETTING_SYSTEM
+    type_id: 8
+    section: STR_TECHNOLOGY_UC
+    requires:
+      - STR_PHASER_TARGETTING_SYSTEM
+    text: STR_PHASER_TARGETTING_SYSTEM_UFOPEDIA
     listOrder: 7010
 
   - id: STR_PULSE_LASER
@@ -1774,7 +1870,7 @@ ufopaedia:
       - STR_RAILGUN
     text: STR_RAILGUN_UFOPEDIA
     listOrder: 22290
-  - id: STR_RAILGUN_SLUG
+  - id: STR_RAILGUN_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:

@@ -401,6 +401,16 @@ extraSprites:
       478: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartSniperRifleClip.png
       479: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartSniperRifleAPClip.png
       480: Resources/Weapons/Earthbound/Xcom/smart/bigob_SmartSniperRifleAAClip.png
+      481: Resources/Weapons/Earthbound/Xcom/laser/bigob_PhaserCannon.png
+      482: Resources/Weapons/Earthbound/Xcom/laser/bigob_PhaserCannonClip.png
+      483: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_GaussPistol.png
+      484: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_GaussPistolClip.png
+      485: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_GaussRifle.png
+      486: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_GaussRifleClip.png
+      487: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_GaussSniper.png
+      488: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_GaussSniperClip.png
+      489: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_HeavyGauss.png
+      490: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_HeavyGaussClip.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -574,7 +584,6 @@ extraSprites:
       446: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_Carbine.png
       447: Resources/Weapons/Earthbound/Faction/floorob_Lever_action_CarbineAmmo.png
       448: Resources/Weapons/Earthbound/Grenades/floorob_ImprovisedSmokeGrenade.png
-      #449
       450: Resources/Weapons/Alien/Utilities/floorob_AlienCommDevice.png
       451: Resources/MiscItems/floorob_Data_Vault.png
       452: Resources/Weapons/Earthbound/General/floorob_GrenadeLauncher.png
@@ -585,7 +594,6 @@ extraSprites:
       457: Resources/Weapons/Earthbound/Faction/floorob_RiotGun_Clip.png
       458: Resources/Weapons/Earthbound/Faction/floorob_MilitaryRifle.png
       459: Resources/Weapons/Earthbound/Faction/floorob_MilitaryRifleClip.png
-      #460
       461: Resources/Weapons/Alien/Utilities/floorob_AlienSnakeEye.png
       462: Resources/Weapons/Alien/Utilities/floorob_AlienContainer.png
       463: Resources/Weapons/Alien/Utilities/floorob_AlienProxyMine.png
@@ -595,17 +603,20 @@ extraSprites:
       467: Resources/Weapons/Earthbound/Utilities/floorob_SamplingPack.png 
       468: Resources/Weapons/Earthbound/Xcom/smart/floorob_Smartpistol.png
       469: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartpistolClip.png
-      #470: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartpistolAAClip.png
       471: Resources/Weapons/Earthbound/Xcom/smart/floorob_Smartrifle.png
       472: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartrifleClip.png
-      #473: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartrifleAAClip.png
       474: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartGun.png
       475: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartGunClip.png
-      #476: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartGunAAClip.png
       477: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifle.png
       478: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifleClip.png
-      #479: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifleAPClip.png
-      #480: Resources/Weapons/Earthbound/Xcom/smart/floorob_SmartSniperRifleAAClip.png
+      481: Resources/Weapons/Earthbound/Xcom/laser/floorob_PhaserCannon.png
+      482: Resources/Weapons/Earthbound/Xcom/laser/floorob_PhaserCannonClip.png
+      483: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_GaussPistol.png
+      484: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_GaussClip.png
+      485: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_GaussRifle.png
+      487: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_GaussSniper.png
+      489: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_HeavyGauss.png
+      490: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_HeavyGaussClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -734,7 +745,11 @@ extraSprites:
       1074: Resources/Weapons/Earthbound/Xcom/smart/handob_Smartrifle.png
       1082: Resources/Weapons/Earthbound/Xcom/smart/handob_SmartGun.png
       1090: Resources/Weapons/Earthbound/Xcom/smart/handob_SmartSniperRifle.png
-
+      1098: Resources/Weapons/Earthbound/Xcom/laser/handob_PhaserCannon.png
+      1106: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_GaussPistol.png
+      1114: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_GaussRifle.png
+      1122: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_GaussSniper.png
+      1130: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_HeavyGauss.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

@@ -117,6 +117,46 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
 
+  - type: STR_DEAD_CATTLE_MIB
+    commands:
+    - type: spawnUnit #firstWave
+      executionChances: 50
+      startTurn: 9
+      maxRuns: 1
+      variable: firstWave
+      packSize: 2
+      randomPackSize: false
+      unitSide: 1
+      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
+      unitSet: [STR_MIB_ARMORED_AGENT_SPAWN]
+    - type: spawnUnit #continues
+      executionChances: 30
+      startTurn: 13
+      packSize: 3
+      randomPackSize: true
+      unitSide: 1
+      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
+      unitSet: [STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #secondWave
+      executionChances: 85
+      startTurn: 15
+      packSize: 6
+      randomPackSize: false
+      unitSide: 1
+      maxRuns: 2
+      variable: secondWave
+      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN]
+    - type: spawnUnit #extra SH gift
+      executionChances: 10
+      packSize: 6
+      startTurn: 8
+      randomPackSize: false
+      unitSide: 1
+      minDifficulty: 4
+      spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
+
 
   - type: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
     commands:

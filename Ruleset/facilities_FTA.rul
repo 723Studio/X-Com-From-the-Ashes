@@ -192,6 +192,7 @@ facilities:
   - type: STR_LABORATORY
     spriteShape: 1
     spriteFacility: 19
+    provideBaseFunc: [LAB]
     requires:
       - STR_FACILITIES_BLUEPRINTS
     buildCostItems:

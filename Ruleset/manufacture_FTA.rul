@@ -334,7 +334,7 @@ manufacture:
     producedItems:
       STR_RAILGUN: 1
     listOrder: 220030
-  - name: STR_RAILGUN_SLUG
+  - name: STR_RAILGUN_CLIP
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
     requires:
@@ -346,7 +346,35 @@ manufacture:
     time: 360
     cost: 2700
     producedItems:
-      STR_RAILGUN_SLUG: 1
+      STR_RAILGUN_CLIP: 1
+    listOrder: 220030
+  - name: STR_PHASER_CANNON
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_PHASER_CANNON
+    requiredItems:
+      STR_SPARE_PARTS: 32
+      STR_HIGH_TECH_PARTS: 16
+    space: 1
+    time: 1350
+    cost: 45000
+    producedItems:
+      STR_PHASER_CANNON: 1
+    listOrder: 220030
+  - name: STR_PHASER_CANNON_CLIP
+    category: STR_EQUIPMENT
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_PHASER_CANNON
+    requiredItems:
+      STR_SPARE_PARTS: 4
+      STR_HIGH_TECH_PARTS: 6
+    space: 1
+    time: 760
+    cost: 9200
+    producedItems:
+      STR_PHASER_CANNON_CLIP: 1
     listOrder: 220030
 #equipment
   - name: STR_IMPROVISED_GRENADE
@@ -408,7 +436,7 @@ manufacture:
     time: 15
     cost: 220
     stats:
-      metallurgy: 30
+      metallurgy: 100
     producedItems:
       STR_SPARE_PARTS: 1
     listOrder: 220030
@@ -425,8 +453,8 @@ manufacture:
   - name: STR_HIGH_TECH_PARTS
     category: STR_COMPONENTS
     requiresBaseFunc: [WORK]
-    # requires: #FIXME
-    #   - STR_HIGH_TECH_PARTS
+    requires:
+      - STR_HIGH_TECH_PARTS
     requiredItems:
       STR_SPARE_PARTS: 2
     space: 1

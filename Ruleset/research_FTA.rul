@@ -59,6 +59,8 @@ research:
     hidden: true
   - name: STR_VEHICLES_STATUS_REPORT
     hidden: true
+  - name: STR_RESISTANCE_CONTACT
+    hidden: true
   - name: STR_REGIONAL_HQ_FOUND
     hidden: true
   - name: STR_PRISONER_INTERROGATIONS
@@ -211,16 +213,7 @@ research:
     dependencies:
       - STR_INTEL_STATUS_REPORT
     listOrder: 50
-  - name: STR_RESISTANCE_CONTACT #TODO - convert to intel?
-    requiresBaseFunc: [HQ]
-    cost: 150
-    stats:
-      data: 100
-      computers: 100
-    points: 40
-    dependencies:
-      - STR_COMMUNICATION
-    listOrder: 70
+
   - name: STR_SUPPLIES
     requiresBaseFunc: [HQ]
     cost: 150
@@ -338,7 +331,7 @@ research:
       - STR_SOLDIER_SPECS
     listOrder: 10
 #high energy study
-  - name: STR_HIGH_ENERGY_PSYSICS
+  - name: STR_ENERGY_WEAPONS
     cost: 1200
     stats:
       physics: 100
@@ -346,40 +339,7 @@ research:
     dependencies:
       - STR_XCOM_FUNDAMENTAL_STUDIES
     listOrder: 10
-  - name: STR_ELECTRIC_WEAPONS_CONCEPT #TODO-pedia
-    cost: 1200
-    stats:
-      physics: 80
-      designing: 100
-      tactics: 120
-    points: 30
-    unlocks:
-      - STR_WEAPON_COMPONENTS
-    dependencies:
-      - STR_HIGH_ENERGY_PSYSICS
-    listOrder: 10
-  - name: STR_LASER_WEAPONS_CONCEPT
-    cost: 1200
-    stats:
-      physics: 80
-      designing: 100
-      tactics: 120
-    points: 30
-    unlocks:
-      - STR_WEAPON_COMPONENTS
-    dependencies:
-      - STR_HIGH_ENERGY_PSYSICS
-    listOrder: 10
-  - name: STR_ELECTROMAGNETIC_WEAPONS_CONCEPT #TODO-pedia
-    cost: 1200
-    stats:
-      physics: 100
-      tactics: 100
-    points: 30
-    dependencies:
-      - STR_FIREARMS_STUDY
-    listOrder: 10  
-  - name: STR_ADVANCED_COOLING_SYSTEMS #TODO pedia
+  - name: STR_ADVANCED_COOLING_SYSTEMS
     cost: 3000
     stats:
       materials: 80
@@ -388,7 +348,7 @@ research:
     points: 15
     dependencies:
       - STR_WEAPON_COMPONENTS
-  - name: STR_HIGH_DENSITY_CAPACITORS #TODO pedia
+  - name: STR_HIGH_DENSITY_CAPACITORS
     cost: 3000
     stats:
       physics: 120
@@ -396,14 +356,16 @@ research:
     points: 15
     dependencies:
       - STR_WEAPON_COMPONENTS
-  - name: STR_ULTRA_DENSE_CAPACITORS #TODO pedia
+  - name: STR_ULTRA_DENSE_CAPACITORS
     cost: 4500
     stats:
-      chemistry: 100
+      chemistry: 80
+      physics: 100
+      materials: 120
     points: 15
     dependencies:
       - STR_HIGH_DENSITY_CAPACITORS
-  - name: STR_ADVANCED_BATTERIES #TODO pedia
+  - name: STR_ADVANCED_BATTERIES
     cost: 3000
     stats:
       chemistry: 80
@@ -411,16 +373,29 @@ research:
     points: 15
     dependencies:
       - STR_WEAPON_COMPONENTS
-  - name: STR_HIGH_PERFORMANCE_BATTERIES #TODO pedia
+  - name: STR_HIGH_PERFORMANCE_BATTERIES
     cost: 4500
     stats:
       chemistry: 80
+      physics: 100
       materials: 120
     points: 15
     dependencies:
       - STR_ADVANCED_BATTERIES
 
 #electric weapons
+  - name: STR_ELECTRIC_WEAPONS_CONCEPT
+    cost: 1200
+    stats:
+      physics: 80
+      designing: 100
+      tactics: 120
+    points: 30
+    unlocks:
+      - STR_WEAPON_COMPONENTS
+    dependencies:
+      - STR_ENERGY_WEAPONS
+    listOrder: 10
   - name: STR_ELECTRIC_WEAPONS_PRODUCTION
     cost: 2700
     stats:
@@ -449,6 +424,7 @@ research:
       - STR_ELECTRIC_WEAPONS_PRODUCTION
       - STR_HIGH_PERFORMANCE_BATTERIES
       - STR_HIGH_DENSITY_CAPACITORS
+      - STR_HIGH_TECH_MANUFACTURING
   - name: STR_TASER_CANNON
     cost: 6400
     stats:
@@ -468,6 +444,15 @@ research:
     listOrder: 25020
 
 #electro-magnet weapons
+  - name: STR_ELECTROMAGNETIC_WEAPONS_CONCEPT
+    cost: 1200
+    stats:
+      physics: 100
+      tactics: 100
+    points: 30
+    dependencies:
+      - STR_FIREARMS_STUDY
+    listOrder: 10  
   - name: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
     cost: 2700
     stats:
@@ -479,10 +464,9 @@ research:
       - STR_SUPERCONDUCTIVITY_THEORY_PREREQ
     dependencies:
       - STR_ELECTROMAGNETIC_WEAPONS_CONCEPT
-      - STR_PRODUCTION
+      - STR_HIGH_TECH_MANUFACTURING
       - STR_HIGH_DENSITY_CAPACITORS
-      - STR_ADVANCED_COOLING_SYSTEMS
-      - STR_HIGH_PERFORMANCE_BATTERIES
+      - STR_ADVANCED_BATTERIES
   - name: STR_RAILGUN
     cost: 3000
     stats:
@@ -501,33 +485,50 @@ research:
     points: 15
     dependencies:
       - STR_SUPERCONDUCTIVITY_THEORY_PREREQ
-  - name: STR_CERAMIC_SUPERCONDUCTOR
-    cost: 2700
+  - name: STR_LOOKING_FOR_HIGHT_TEMP_SUPERCONDUCTOR
+    cost: 4300
+    requiresBaseFunc: [LAB]
     stats:
-      physics: 100
-      chemistry: 80
+      physics: 80
+      chemistry: 100
       materials: 120
     points: 15
     dependencies:
       - STR_SUPERCONDUCTIVITY_THEORY
-  - name: STR_CARBON_SUPERCONDUCTOR
-    cost: 2700
-    stats:
-      physics: 100
-      chemistry: 80
-      materials: 120
-    points: 15
-    dependencies:
+    sequentialGetOneFree: true
+    getOneFree:
       - STR_CERAMIC_SUPERCONDUCTOR
-  - name: STR_HYDRID_ALLOY_SUPERCONDUCTOR
-    cost: 2700
-    stats:
-      physics: 120
-      chemistry: 100
-      materials: 80
+      - STR_IRON_BASED_SUPERCONDUCTOR
+      - STR_CARBON_SUPERCONDUCTOR
+      - STR_HYDRID_SUPERCONDUCTOR
+      - STR_SUPERCONDUCTOR_QUANTUM_MODEL
+    getOneFreeProtected:
+      STR_SUPERCONDUCTOR_QUANTUM_MODEL:
+        - STR_SUPERCONDUCTOR
+  - name: STR_CERAMIC_SUPERCONDUCTOR
+    points: 20
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_IRON_BASED_SUPERCONDUCTOR
+    points: 30
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CARBON_SUPERCONDUCTOR
     points: 15
     dependencies:
-      - STR_CARBON_SUPERCONDUCTOR
+      - STR_TROLLIUM
+  - name: STR_HYDRID_SUPERCONDUCTOR
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_SUPERCONDUCTOR_QUANTUM_MODEL
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_SUPERCONDUCTOR
+    points: 1000
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_COIL_WEAPONS
     cost: 2700
     stats:
@@ -535,7 +536,7 @@ research:
       materials: 120
     points: 15
     dependencies:
-      - STR_HYDRID_ALLOY_SUPERCONDUCTOR
+      - STR_SUPERCONDUCTOR
       - STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
       - STR_ULTRA_DENSE_CAPACITORS
   - name: STR_COIL_RIFLE
@@ -580,7 +581,19 @@ research:
       - STR_COIL_CANNON
 
 #lasers
-  - name: STR_LASER_SCATTERING_PROBLEM #TODO-pedia
+  - name: STR_LASER_WEAPONS_CONCEPT
+    cost: 1200
+    stats:
+      physics: 80
+      designing: 100
+      tactics: 120
+    points: 30
+    unlocks:
+      - STR_WEAPON_COMPONENTS
+    dependencies:
+      - STR_ENERGY_WEAPONS
+    listOrder: 10
+  - name: STR_LASER_SCATTERING_PROBLEM
     cost: 3500
     stats:
       physics: 100
@@ -619,7 +632,7 @@ research:
     dependencies:
       - STR_PHASE_LASER
     listOrder: 10
-  - name: STR_PHASER_MIRROR #TODO-pedia
+  - name: STR_PHASER_MIRROR
     cost: 2000
     stats:
       materials: 100
@@ -628,7 +641,7 @@ research:
       - STR_NON_LINEAR_OPTICS
       - STR_ADVANCED_COOLING_SYSTEMS
     listOrder: 10
-  - name: STR_PHASER_TARGETTING_SYSTEM #TODO-pedia
+  - name: STR_PHASER_TARGETTING_SYSTEM
     cost: 2000
     stats:
       computers: 100
@@ -1007,6 +1020,15 @@ research:
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25120
+  - name: STR_SMART_PISTOL_AA_CLIP
+    cost: 3200
+    stats:
+      metallurgy: 100
+      designing: 120
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+    listOrder: 25120
   - name: STR_HEAVY_PISTOL_AA_CLIP
     cost: 3200
     stats:
@@ -1043,7 +1065,25 @@ research:
     dependencies:
       - STR_ALLOY_AMMO
     listOrder: 25150
+  - name: STR_SMART_RIFLE_AA_CLIP
+    cost: 3600
+    stats:
+      metallurgy: 100
+      designing: 120
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+    listOrder: 25150
   - name: STR_SNIPER_RIFLE_AA_CLIP
+    cost: 3600
+    stats:
+      metallurgy: 100
+      designing: 120
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+    listOrder: 25160
+  - name: STR_SMART_SNIPER_RIFLE_AA_CLIP
     cost: 3600
     stats:
       metallurgy: 100
@@ -1071,6 +1111,15 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25180
   - name: STR_LMG_AA_CLIP
+    cost: 3680
+    stats:
+      metallurgy: 100
+      designing: 120
+    points: 5
+    dependencies:
+      - STR_ALLOY_AMMO
+    listOrder: 25190
+  - name: STR_SMART_LMG_AA_CLIP
     cost: 3680
     stats:
       metallurgy: 100

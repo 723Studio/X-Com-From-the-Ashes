@@ -21,8 +21,8 @@ extraSounds:
       72: Resources/Weapons/Sounds/Sztucer.wav
       73: Resources/Weapons/Sounds/SluggaFire.wav
       74: Resources/Weapons/Sounds/Inject.wav
-      #75: Resources/Armors/Enemies/Zombies/Zombie_aggro.wav
-      #76: Resources/Armors/Enemies/Zombies/Zombie_death.wav
+      75: Resources/Armors/Enemies/Zombies/Zombie_aggro.wav
+      76: Resources/Armors/Enemies/Zombies/Zombie_death.wav
       77: Resources/Armors/Enemies/Zombies/FACEHUGGER_aggro.ogg
       78: Resources/Armors/Enemies/Zombies/FACEHUGGER_death.ogg
       79: Resources/Armors/Enemies/Zombies/FACEHUGGER_melee.ogg
@@ -117,4 +117,16 @@ extraSounds:
       168: Resources/Weapons/Sounds/arasaka3000r.ogg
       169: Resources/Armors/Enemies/Monsters/SWARMIDS_death.wav  
       170: Resources/Armors/Enemies/Monsters/pkn_slice.wav
-      171: Resources/Armors/Enemies/Monsters/EnergyWispMove.ogg  
+      171: Resources/Armors/Enemies/Monsters/EnergyWispMove.ogg
+      172: Resources/Weapons/Sounds/LaserRepeaterFire.wav
+      173: Resources/Weapons/Sounds/Reload_Laser_Pistol.wav
+      174: Resources/Weapons/Sounds/Reload_Laser_Rifle.wav
+      175: Resources/Weapons/Sounds/Reload_Light_Sniper.wav
+      176: Resources/Weapons/Sounds/Reload_Heavy_Laser.wav
+      177: Resources/Weapons/Sounds/Reload_Gauss_Pistol.wav
+      178: Resources/Weapons/Sounds/Reload_Gauss_Rifle.wav
+      179: Resources/Weapons/Sounds/Reload_Heavy_Gauss.wav
+      180: Resources/Weapons/Sounds/MassDriverPistol_fire.wav
+      181: Resources/Weapons/Sounds/MassDriverRifle_fire.wav
+      182: Resources/Weapons/Sounds/MassDriverHeavy_fire.wav
+      183: Resources/Weapons/Sounds/MassDriverHit.wav

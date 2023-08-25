@@ -3937,6 +3937,7 @@ alienDeployments:
     despawnPenalty: 100
     customUfo: STR_DEAD_COW
     script: STR_DEAD_CATTLE_MIB
+    battleScript: STR_DEAD_CATTLE_MIB
     #unlockedResearch: #FIXME - some arc here pls!
     # music:
     #   - ZIZZ_STUDIO_SPOOKY_SCAPE
