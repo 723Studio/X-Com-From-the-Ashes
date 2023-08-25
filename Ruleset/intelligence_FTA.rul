@@ -1,9 +1,9 @@
 intelligence:
   - name: STR_UFO_TRACKING
     description: STR_UFO_TRACKING_DESCRIPTION
-    cost: 1000
-    costIncrease: 2
-    requiredResearch: STR_LOG1
+    cost: 12
+    costIncrease: 1
+    requiredResearch: STR_INTEL_STATUS_REPORT
     specialRule: 1 #INTEL_NONE = 0, INTEL_UFO_TRACKING = 1, INTEL_COVERT_OPERATIONS = 2, INTEL_DEPLOYMENT_HINTS = 3
     stats:
       data: 40
@@ -13,10 +13,10 @@ intelligence:
       investigation: 80
     listOrder: 100
     stages:
-      - stageName: testName
+      - stageName: firstUFOstage
         odds: 5
         requireRolls: 1
-        requiredResearch: STR_LOG1
+        requiredResearch: STR_INTEL_STATUS_REPORT
         disabledByResearch: STR_TROLLIUM
         requiresBaseFunc: [HQ]
         eventScripts: [testScript]

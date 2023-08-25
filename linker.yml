@@ -32,6 +32,11 @@ config:
     - NE
     - SW
     - SE
+    intelligence.specialRule:
+    - 0
+    - 1
+    - 2
+    - 3
   vetoTypes:
     - battleScripts.commands[]
   ignoreTypes:
@@ -55,6 +60,9 @@ config:
   - soldiers.roleRankStrings[].strings.4
   - soldiers.roleRankStrings[].strings.5
   - soldiers.roleRankStrings[].strings.6
+  - intelligence.name
+  - intelligence.description
+  - intelligence.stages[].stageName
   stringTypes:
   - alienDeployments.missionCompleteText
   - alienDeployments.missionFailedText

@@ -736,6 +736,9 @@ en-US:
   STR_VOID_CORP: "VOID Corp."
   STR_ENIGMA: "Enigma"
   STR_RESISTANCE_DESCRIPTION: "A group of people who do not want to submit to an alien invasion and are extremely hostile to any of their accomplices. They help those who have become the target of persecution, seek to survive in a rapidly changing world and sabotage aliens' sinister plans. To achieve their goals they rely on a network of guerrilla cells, and they value self-sacrifice and courage in people."
+#intelligence
+  STR_UFO_TRACKING: "UFO Tracking"
+  STR_UFO_TRACKING_DESCRIPTION: "Radar installations have shown their relatively poor ability to detect alien craft flying in the Earth's atmosphere. However, with the development of communication systems and the Internet in particular, portable video recorders, the growing popularity of such a new phenomenon as social media, we can collect data by analyzing large amounts of public data. The reporting of simple eyewitnesses and the development of a conspiratorial network of observers will allow us to expand the search and tracking of UFOs activity globally."
 #facilities
   STR_HQ: "Headquarters"
   STR_HQ_UFOPEDIA: "The headquarters staff collects reports on abnormal activity in human society from around the world and analyzes media reports. Headquarters contain a variety of high-tech communication and computing equipment and have everything you need to run X-COM, including our fantastic holographic globe! Up to 7 scientists can conduct analytical work here, and there's even a small room for interrogations."
@@ -1134,7 +1137,7 @@ en-US:
   STR_ARMY_CONVOY_ATTACK_DESPAWN_DESCRIPTION: "It's unfortunate that you ignored our call; we had high hopes for it. We need weapons to counter the alien agents, but now it will serve them.{NEWLINE}Resistance reputation score> {ALT}-120"
   STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT: "Creating a new Resistance Cell"
   STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT_DESCRIPTION: "Commander, I think we can help each other. We want to establish a new Resistance cell in the city where you believe the M.I.B. is headquartered. We have no reason not to trust you and a great desire to take revenge on these scumbags! Since you have already explored the site, we could really use your help. Perhaps you could send a couple of your specialists in covert operations to help us set up a new cell?{NEWLINE}{ALT}New covert operation available."
-  STR_RESISTANCE_GIFT_MIB_AGENT_EVENT: "Support from the Resistance"
+  STR_RESISTANCE_GIFT_MIB_AGENT_EVENT: "Support from the Resistance" #TODO - redo lore
   STR_RESISTANCE_GIFT_MIB_AGENT_EVENT_DESCRIPTION: "X-Com, do you copy? A couple of days ago our guys managed to capture the M.I.B. agent. We tried to interrogate him, but got nothing, and yesterday his condition took a turn for the worse. He needs advanced medical care, which we don't have. We'd like to move him to your base, see if you can find out anything important."
   STR_RESISTANCE_GIFT_2_SOLDIERS: "Support from the Resistance"
   STR_RESISTANCE_GIFT_2_SOLDIERS_DESCRIPTION: "Your success and high morale in the X-Com inspired two Resistance agents to join our ranks."

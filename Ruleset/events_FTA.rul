@@ -405,13 +405,13 @@ events:
     description: STR_RESISTANCE_CELL_NEAR_MIB_HQ_EVENT_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
     researchList: [STR_RESISTANCE_CELL_CREATION_PREREQ]
-  - name: STR_RESISTANCE_GIFT_MIB_AGENT_EVENT
-    description: STR_RESISTANCE_GIFT_MIB_AGENT_EVENT_DESCRIPTION
-    background: STR_RESISTANCE_BACKGROUND.SCR
-    everyItemList:
-      - STR_MIB_AGENT
-    timer: 120 # 2 hours
-    timerRandom: 1200 # 20 hours
+  # - name: STR_RESISTANCE_GIFT_MIB_AGENT_EVENT
+  #   description: STR_RESISTANCE_GIFT_MIB_AGENT_EVENT_DESCRIPTION
+  #   background: STR_RESISTANCE_BACKGROUND.SCR
+  #   everyItemList:
+  #     - STR_MIB_AGENT
+  #   timer: 120 # 2 hours
+  #   timerRandom: 1200 # 20 hours
   - name: STR_RESISTANCE_GIFT_2_SOLDIERS
     description: STR_RESISTANCE_GIFT_2_SOLDIERS_DESCRIPTION
     background: STR_RESISTANCE_BACKGROUND.SCR
