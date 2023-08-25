@@ -1211,14 +1211,14 @@ en-US:
   #torture events
   STR_RANDOM_TORTURE_EVENT_1: "Useless wimp"
   STR_RANDOM_TORTURE_EVENT_1_DESCRIPTION: "Turns out this prisoner had surprisingly low pain tolerance. As soon as the first few lacerations were applied, the subject hollered. They immediately agreed to tell us everything - which sounded good. Unfortunately, 'everything' was confusing and contradictory. The poor sod was just trying to avoid pain. A pretty natural reaction, to be fair.{NEWLINE}That scream was something else, though! I feel chills even now just remembering it. And, unfortunately, so do other nearby personnel.{NEWLINE}Loyalty score> {ALT}-10"   #Loyalty -10
-  STR_RANDOM_TORTURE_EVENT_2: ""
-  STR_RANDOM_TORTURE_EVENT_2_DESCRIPTION: "" #Loyalty -25
-  STR_RANDOM_TORTURE_EVENT_3: ""
-  STR_RANDOM_TORTURE_EVENT_3_DESCRIPTION: "" #Loyalty -50
+  STR_RANDOM_TORTURE_EVENT_2: "Unnerving look"
+  STR_RANDOM_TORTURE_EVENT_2_DESCRIPTION: "So that last prisoner was something else, really. During whole interrogation he didn't spoke a word, only stared at our interrogators while they were doing their job.{NEWLINE}And that stare, it really reached deep in our soul. Honestly, i dont want to talk about that experience ever again, Commander. {NEWLINE}Loyalty score> {ALT}-25" #Loyalty -25
+  STR_RANDOM_TORTURE_EVENT_3: "Beria's legacy"
+  STR_RANDOM_TORTURE_EVENT_3_DESCRIPTION: "It appears that grandfather of one of out interrogators have served in NKVD during Stalin's regime and has told his grandsom some of his ... working methods. They didnt help to get new information from prisoner, but turned him into bloody mess.{NEWLINE}I had a talk with interrogator, but some of our soldiers are questioning our methods now.{NEWLINE}Loyalty score> {ALT}-50" #Loyalty -50
   STR_RANDOM_TORTURE_EVENT_4: "Car Battery Enthusiast"
   STR_RANDOM_TORTURE_EVENT_4_DESCRIPTION: "Well, this one could have gone much better. Seems that our interrogator decided to test the rumored 'car battery and nipples' approach to torture. Of course, that didn't work quite as intended: skin was breached, and current turned from nonexistent to heart-stopping instantly. The scream was short, but very loud. Now, I know you didn't authorise this, Commander, but some of our people don't - and are now doubting your sanity.{NEWLINE}Loyalty score> {ALT}-100" #Loyalty -100
-  STR_RANDOM_TORTURE_EVENT_FUNDS_1: ""
-  STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "" #Loyalty -5, Funds +25k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_1: "Interesting stash"
+  STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "That prisoner died during interrogation, so we decided to cut him open because he gave us strange readings during medical examination. And inside his stomach area we found some gold and silver jewelry. While they are certainlly gonna be useful for our funds, process of extracting them was not a pleasant one.{NEWLINE}Oh, and interrogation room now stinks to the point of causing your eyes to tear.{NEWLINE}Loyalty score> {ALT}-5{NEWLINE}Funds> {ALT}+25k" #Loyalty -5, Funds +25k
   STR_RANDOM_TORTURE_EVENT_FUNDS_2: ""
   STR_RANDOM_TORTURE_EVENT_FUNDS_2_DESCRIPTION: "" #Loyalty -10, Funds +50k
   STR_RANDOM_TORTURE_EVENT_FUNDS_3: ""
@@ -1227,8 +1227,8 @@ en-US:
   STR_RANDOM_TORTURE_EVENT_FUNDS_4_DESCRIPTION: "" #Loyalty -20, Funds +125k
   STR_RANDOM_TORTURE_EVENT_FUNDS_5: ""
   STR_RANDOM_TORTURE_EVENT_FUNDS_5_DESCRIPTION: "" #Loyalty -25, Funds +174k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_6: ""
-  STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION: "" #Loyalty -30, Funds +240k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_6: "Black gold successor"
+  STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION: "So last prisoner didn't knew anything useful, but we checked his background and it turns out that his parents are actually very rich people in Arabian Emirates. So we did only thing that we thought of at that moment - we ransomed him for a hefty sum of money.{NEWLINE}Looking back now i must say - that was not our brightest idea. People are questioning our goals now.{NEWLINE}Loyalty score> {ALT}-30{NEWLINE}Funds> {ALT}+240k" #Loyalty -30, Funds +240k
 
 #enemies
   STR_XCOM_SOLDIER_PRISONER: STR_XCOM_SOLDIER_PRISONER
