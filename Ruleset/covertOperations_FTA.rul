@@ -161,7 +161,7 @@ covertOperations:
     trapChance: 70
     instantTrapDeployment:
       STR_MIB_EARLY_TRAP_ESCAPE: 100
-
+#side operations
   - name: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION
     description: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION
     categories: [STR_INVESTIGATION]
@@ -201,26 +201,6 @@ covertOperations:
     instantTrapDeployment: 
       STR_MIB_TRAP_DATA_VAULT: 100
     trapChance: 100
-
-  - name: STR_CULT_INVESTIGATION
-    description: STR_CULT_INVESTIGATION_DESCRIPTION
-    categories: [STR_INVESTIGATION]
-    requires:
-      - STR_CULT_INVESTIGATION
-    soldiersMin: 2
-    soldiersMax: 4
-    requiresBaseFunc: [HQ]
-    removeRequiredItemsOnSuccess: false
-    removeRequiredItemsOnFailure: false
-    baseChances: 50
-    danger: 0
-    costs: 160
-    allowedArmor: *StandardXcomArmors
-    instantSuccessDeployment: 
-      STR_CULTISTS_DETENTION: 100
-    instantTrapDeployment: 
-      STR_CULTISTS_DETENTION_TRAP: 100
-    trapChance: 100
   - name: STR_STEAL_OSPREY_OPERATION
     description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION, STR_ENGINEERING]
@@ -240,7 +220,6 @@ covertOperations:
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -200
     failureFunds: -42000
-
   - name: STR_INFILTRATING_MILITARY_RND
     description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
     categories: [STR_INFILTRATION, STR_DECEPTION]
@@ -251,16 +230,14 @@ covertOperations:
     requiresBaseFunc: [HQ]
     baseChances: 60
     concealedItemsBonus: 5 #default 4
-    danger: 20
+    danger: 0
     costs: 430
     allowedArmor: *StandardXcomArmors
-    #successDescription: STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION
-    #successScore: 200
     instantSuccessDeployment:
+      STR_INFILTRATING_MILITARY_RND: 100 #TODO - add special deployment with disguised traitor
+    trapChance: 100
+    instantTrapDeployment:
       STR_INFILTRATING_MILITARY_RND: 100
-    failureDescription: STR_INFILTRATING_MILITARY_RND_FAILURE_DESCRIPTION
-    failureScore: -180
-
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
@@ -399,10 +376,82 @@ covertOperations:
     failureResearchList:
       - STR_UNLEASH_SWARMID_TRIGGER
     failureEvent: STR_MONSTER_RE_HUNT_SWARMID
+#cultists
+  - name: STR_CULT_INVESTIGATION
+    description: STR_CULT_INVESTIGATION_DESCRIPTION
+    categories: [STR_INVESTIGATION]
+    requires:
+      - STR_CULT_INVESTIGATION
+    soldiersMin: 2
+    soldiersMax: 4
+    requiresBaseFunc: [HQ]
+    removeRequiredItemsOnSuccess: false
+    removeRequiredItemsOnFailure: false
+    baseChances: 50
+    danger: 0
+    costs: 160
+    allowedArmor: *StandardXcomArmors
+    instantSuccessDeployment: 
+      STR_CULTISTS_DETENTION: 100
+    instantTrapDeployment: 
+      STR_CULTISTS_DETENTION_TRAP: 100
+    trapChance: 100
 #supplies gathering
+  - name: STR_IMPROVISED_MANUFACTURING_SUPPLIMENT
+    description: STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_DESCRIPTION
+    categories: [STR_NEGOTIATION, STR_DECEPTION]
+    requires:
+      - STR_COVERT_OPERATIONS
+      - STR_IMPROVISED_MANUFACTURING
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [HQ]
+    allowedArmor: *StandardXcomArmors
+    baseChances: 80
+    requiredItems:
+      STR_CASH_PACK_BIG: 2
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
+    danger: 0
+    costs: 250
+    successDescription: STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_SUCCESS_DESCRIPTION
+    failureDescription: STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_FAIL_DESCRIPTION
+    failureFunds: -4000
+    successScore: 20
+    failureScore: -10
+    successResearchList: [STR_IMPROVISED_MANUFACTURING_POSTREQ]
+    trapChance: 15
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
+  - name: STR_HIGH_TECH_MANUFACTURING_SUPPLIMENT
+    description: STR_HIGH_TECH_MANUFACTURING_SUPPLIMENT_DESCRIPTION
+    categories: [STR_NEGOTIATION, STR_DECEPTION]
+    requires:
+      - STR_COVERT_OPERATIONS
+      - STR_HIGH_TECH_MANUFACTURING
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [HQ]
+    allowedArmor: *StandardXcomArmors
+    baseChances: 80
+    requiredItems:
+      STR_CASH_PACK_BIG: 4
+    removeRequiredItemsOnSuccess: true
+    removeRequiredItemsOnFailure: true
+    danger: 0
+    costs: 350
+    successDescription: STR_HIGH_TECH_MANUFACTURING_SUPPLIMENT_SUCCESS_DESCRIPTION
+    failureDescription: STR_HIGH_TECH_MANUFACTURING_SUPPLIMENT_FAIL_DESCRIPTION
+    failureFunds: -6000
+    successScore: 20
+    failureScore: -10
+    successResearchList: [STR_HIGH_TECH_MANUFACTURING_POSTREQ]
+    trapChance: 20
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
   - name: STR_LAB_EQUIPMENT_ACQUISITION
     description: STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION
-    categories: [STR_NEGOTIATION]
+    categories: [STR_NEGOTIATION, STR_DECEPTION]
     requires:
       - STR_COVERT_OPERATIONS
       - STR_BIOLAB_PREREQ
@@ -430,7 +479,7 @@ covertOperations:
     failureEvent: STR_LAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
   - name: STR_BIOLAB_EQUIPMENT_ACQUISITION
     description: STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION
-    categories: [STR_NEGOTIATION]
+    categories: [STR_NEGOTIATION, STR_DECEPTION]
     requires:
       - STR_COVERT_OPERATIONS
       - STR_BIOLAB_PREREQ
@@ -472,13 +521,13 @@ covertOperations:
     danger: 3
     costs: 80
     allowedArmor: *StandardXcomArmors
-    instantTrapDeployment: 
-      STR_MIB_EARLY_TRAP_ESCAPE_SPECIAL: 100
     successResearchList:
       - STR_RESISTANCE_CONTACT
     failureResearchList:
       - STR_RESISTANCE_CONTACT
     trapChance: 100
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
   - name: STR_MILITARY_WEAPONRY_ACQUISITION
     description: STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION]

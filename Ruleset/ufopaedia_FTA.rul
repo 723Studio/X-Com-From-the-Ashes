@@ -234,6 +234,20 @@ ufopaedia:
       - STR_SUPPLIES
     text: STR_SUPPLIES_UFOPEDIA
     listOrder: 110
+  - id: STR_IMPROVISED_MANUFACTURING
+    type_id: 7
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    requires:
+      - STR_IMPROVISED_MANUFACTURING
+    text: STR_IMPROVISED_MANUFACTURING_UFOPEDIA
+    listOrder: 110
+  - id: STR_HIGH_TECH_MANUFACTURING
+    type_id: 7
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    requires:
+      - STR_HIGH_TECH_MANUFACTURING
+    text: STR_HIGH_TECH_MANUFACTURING_UFOPEDIA
+    listOrder: 110
   - id: STR_LOYALTY
     type_id: 8
     section: STR_XCOM_REPORTS_UC

@@ -5959,6 +5959,21 @@ items:
     invHeight: 1
     recover: false
     listOrder: 31090
+  - type: STR_CASH_PACK_BIG
+    categories: [STR_LOOT]
+    landOnly: true
+    size: 0.01
+    costSell: 10000
+    weight: 0
+    battleType: 0
+    bigSprite: 428 #TODO
+    floorSprite: 428 #TODO
+    handSprite: 842
+    invWidth: 1
+    invHeight: 1
+    stackSize: 20
+    recoveryPoints: 8
+    listOrder: 31080
   - type: STR_BRIEFCASE_CASH
     categories: [STR_LOOT, STR_CONCEALABLE]
     size: 0.1

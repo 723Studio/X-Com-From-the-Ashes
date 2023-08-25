@@ -45,18 +45,6 @@ prisoners:
       loyaltyChange: 15
       moraleChange: 10
       cooperationChange: 40
-      eventChance: 20
-      eventWeights:
-        0:
-          STR_RANDOM_TORTURE_EVENT_1: 20
-          STR_RANDOM_TORTURE_EVENT_2: 30
-          STR_RANDOM_TORTURE_EVENT_3: 50
-          STR_RANDOM_TORTURE_EVENT_4: 40
-        8:
-          STR_RANDOM_TORTURE_EVENT_1: 40
-          STR_RANDOM_TORTURE_EVENT_2: 30
-          STR_RANDOM_TORTURE_EVENT_3: 20
-          STR_RANDOM_TORTURE_EVENT_4: 15
     contain:
       funds: -200
       cooperationChange: 0

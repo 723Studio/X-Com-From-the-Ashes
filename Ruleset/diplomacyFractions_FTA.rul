@@ -76,6 +76,8 @@ diplomacyFactions:
       STR_FLASHLIGHT: 16
       STR_ELECTRO_FLARE: 20
       STR_FIRE_EXTINGUISHER: 2
+      STR_CASH_PACK: 6
+      STR_CASH_PACK_BIG: 2
     wishList:
       #melee
       STR_POLICE_BATON: 50
@@ -201,7 +203,9 @@ diplomacyFactions:
       STR_CANNON_ROUNDS_X50: 2000
       STR_STINGRAY_LAUNCHER: 2000
       STR_STINGRAY_MISSILE: 2000
-      #other 
+      #other
+      STR_CASH_PACK: 30
+      STR_CASH_PACK_BIG: 280
       STR_BRIEFCASE_CASH: 2700
       STR_SPARE_PARTS: 60
 

@@ -324,6 +324,46 @@ battleScripts:
           #background: SOME_EXTRA_SPRITE.PCK
         # 1:
         #   content: content2
+
+  - type: MIB_TRAP_ESCAPE_EASY
+    commands:
+    - type: spawnUnit #med
+      executionChances: 60
+      maxDifficulty: 3
+      packSize: 3
+      randomPackSize: true
+      startTurn: 8
+      unitSide: 1
+      minAlarmLevel: 3
+      #groups: [1, 2, 3, 4]
+      spawnBlocks: [WEST, EAST]
+      unitSet: [STR_MIB_AGENT_SPAWN]
+    - type: spawnUnit #sh
+      executionChances: 70
+      minDifficulty: 4
+      minLevel: 5
+      maxLevel: 5
+      packSize: 4
+      randomPackSize: true
+      startTurn: 5
+      unitSide: 1
+      minAlarmLevel: 3
+      spawnBlocks: [WEST, EAST]
+      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
+    - type: showMessage
+      maxRuns: 1
+      variable: alarm
+      minAlarmLevel: 3
+      startTurn: 1
+      messages:
+        0:
+          title: MIB_TRAP_ESCAPE_MAP_ALARM_TITLE
+          content: MIB_TRAP_ESCAPE_MAP_ALARM_CONTENT
+          #answer: STR_SOME_TEXT
+          #background: SOME_EXTRA_SPRITE.PCK
+        # 1:
+        #   content: content2
+
   - type: MULITARY_UNDERGROUND_RND
     commands:
     - type: spawnUnit #med

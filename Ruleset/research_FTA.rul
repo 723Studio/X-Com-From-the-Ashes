@@ -225,7 +225,7 @@ research:
     getOneFree:
       - STR_LOYALTY
     listOrder: 80
-  - name: STR_IMPROVISED_MANUFACTURING #TODO - pedia pls
+  - name: STR_IMPROVISED_MANUFACTURING
     cost: 250
     stats:
       designing: 100
@@ -233,7 +233,9 @@ research:
     dependencies:
       - STR_SUPPLIES
     listOrder: 80
-  - name: STR_HIGH_TECH_MANUFACTURING #TODO - pedia pls
+  - name: STR_IMPROVISED_MANUFACTURING_POSTREQ
+    hidden: true
+  - name: STR_HIGH_TECH_MANUFACTURING
     cost: 250
     stats:
       designing: 100
@@ -243,6 +245,8 @@ research:
       - STR_IMPROVISED_MANUFACTURING
       - STR_WORKSHOP
     listOrder: 80
+  - name: STR_HIGH_TECH_MANUFACTURING_POSTREQ
+    hidden: true
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [HQ]
     cost: 800
@@ -424,7 +428,7 @@ research:
       - STR_ELECTRIC_WEAPONS_PRODUCTION
       - STR_HIGH_PERFORMANCE_BATTERIES
       - STR_HIGH_DENSITY_CAPACITORS
-      - STR_HIGH_TECH_MANUFACTURING
+      - STR_HIGH_TECH_MANUFACTURING_POSTREQ
   - name: STR_TASER_CANNON
     cost: 6400
     stats:
@@ -464,7 +468,7 @@ research:
       - STR_SUPERCONDUCTIVITY_THEORY_PREREQ
     dependencies:
       - STR_ELECTROMAGNETIC_WEAPONS_CONCEPT
-      - STR_HIGH_TECH_MANUFACTURING
+      - STR_HIGH_TECH_MANUFACTURING_POSTREQ
       - STR_HIGH_DENSITY_CAPACITORS
       - STR_ADVANCED_BATTERIES
   - name: STR_RAILGUN
@@ -721,7 +725,7 @@ research:
     dependencies:
       - STR_SMART_TARGETING
       - STR_SMART_ROUNDS
-      - STR_HIGH_TECH_MANUFACTURING
+      - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 10
   - name: STR_SMART_RIFLE #TODO manufacturing
     cost: 1200
@@ -830,12 +834,12 @@ research:
 
 #technology
   - name: STR_HIGH_TECH_PARTS
-    cost: 300
+    cost: 100
     stats:
       designing: 100
     points: 50
     dependencies:
-      - STR_HIGH_TECH_MANUFACTURING
+      - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 25002
   - name: STR_ROCKET_GLOVE
     cost: 400

@@ -4407,6 +4407,9 @@ alienDeployments:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
     failureEvents:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
+  - type: STR_MIB_EARLY_TRAP_ESCAPE_EASY
+    refNode: *MIBEarlyTrap
+    battleScript: MIB_TRAP_ESCAPE_EASY
   - type: STR_MIB_TRAP_DATA_VAULT
     refNode: *MIBEarlyTrap
     unlockedResearch: STR_MIB_TRAP_DATA_VAULT_SUCCESS
