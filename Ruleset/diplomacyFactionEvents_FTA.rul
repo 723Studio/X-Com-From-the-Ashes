@@ -85,8 +85,8 @@ diplomacyFactionEvents:
     playerResearchTriggers:
       STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ: true
     discoveredResearches: [STR_RESISTANCE_BASIC_EQUIPMENT, STR_SIMPLE_CRAFT_WEAPONS]
-    powerChange: 200
-    fundsChange: 120000
+    powerChange: 250
+    fundsChange: 1200000
     itemsToAdd:
       STR_RIOT_PISTOL: 12
       STR_RIOT_PISTOL_CLIP: 32
@@ -98,8 +98,8 @@ diplomacyFactionEvents:
       STR_LEVER_ACTION_CARBINE_CLIP: 16
       STR_PUMP_ACTION_SHOTGUN: 4
       STR_PUMP_ACTION_SHELLS: 23
-      STR_RIOT_GUN: 1
-      STR_RIOT_GUN_CLIP: 4
+      STR_RIOT_GUN: 3
+      STR_RIOT_GUN_CLIP: 12
       STR_SINGLE_ROCKET_LAUNCHER: 5
       STR_GRENADE_LAUNCHER: 1
       STR_GRENADE_LAUNCHER_FRAG: 8

@@ -513,11 +513,20 @@ manufacture:
     listOrder: 220040
 
 #facility
-  - name: STR_WORKSHOP
+  - &facility
+    name: STR_WORKSHOP
+    category: "STR_FACILITY"
     requires:
       - STR_TROLLIUM
     space: 0
-    time: 40000
+    time: 30 #30000 #15 days, req days * 2000 
     cost: 0
     stats:
-      construction: 40
+      construction: 100
+  - name: STR_HANGAR
+    refNode: *facility
+    time: 60000
+
+# items: #sad, it has to be defined to abuse afteloader check
+#   #- type: STR_WORKSHOP
+#   - type: STR_HANGAR

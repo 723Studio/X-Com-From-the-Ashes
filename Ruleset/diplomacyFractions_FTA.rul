@@ -29,7 +29,7 @@ diplomacyFactions:
     helpTreatyEventScripts:
       - STR_RESISTANCE_WEAPONRY_SCRIPT
       - STR_RESISTANCE_CELL_NEAR_MIB_HQ
-      - STR_RESISTANCE_GIFT_MIB_AGENT
+      #- STR_RESISTANCE_GIFT_MIB_AGENT
     # usualEventsScripts:
     #   - STR_RESISTANCE_WEAPONRY_SCRIPT
     factionalEvents:

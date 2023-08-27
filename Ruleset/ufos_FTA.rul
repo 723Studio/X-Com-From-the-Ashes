@@ -1302,6 +1302,41 @@ ufos:
           width: 10
           length: 10
 
+  - type: STR_MIB_HIDEOUT_MEDIUM
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_MIB_HIDEOUT_MEDIUM
+      mapDataSets:
+        - BLANKS
+        - MIB_HIDEOUT_BITS
+        - MIB_HIDEOUT
+      mapBlocks:
+        - name: MIB_HID_MED_00 #store and intel
+          width: 30
+          length: 30
+        - name: MIB_HID_MED_01 #living and lab
+          width: 30
+          length: 30
+        - name: MIB_HID_MED_02 #double storage
+          width: 30
+          length: 30
+        # - name: MIB_HID_MED_03
+        #   width: 30
+        #   length: 30
+        # - name: MIB_HID_MED_04
+        #   width: 30
+        #   length: 30
+
+
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
     RuleUfo:

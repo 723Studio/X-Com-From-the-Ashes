@@ -7054,7 +7054,6 @@ items:
     armor: 30
     recover: false
     listOrder: 100670
-  - type: STR_WORKSHOP
 extended:
   tags:
     RuleItem:

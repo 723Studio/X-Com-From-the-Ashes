@@ -1,6 +1,7 @@
 en-US:
   STR_OPENXCOM: "From the Ashes"
   STR_XCOM: "X-COM"
+  STR_ALIENS: "Hostiles"
   STR_FTA: "From the Ashes"
   STR_LAST_STAND: "Last Stand"
 #UI
@@ -342,6 +343,7 @@ en-US:
   STR_ALLOCATE_ENGINEERS: "Allocate Engineers"
   STR_AVERAGE_DILIGENCE_UC: "AVARAGE DILIGENCE>{ALT}{0}"
   STR_AVERAGE_EFFICIENCY_UC: "AVARAGE EFFICIENCY>{ALT}{0}"
+  STR_CONSTRUCTION_TIME_UC: "CONSTRUCTION TIME>{ALT}{0}"
   STR_GRADE_UC: "GRADE"
   STR_PSI_TRAINING: "PSI TRAINING"
   STR_COMBAT_TRAINING: "COMBAT TRAINING"
@@ -748,7 +750,7 @@ en-US:
   STR_GYM_UFOPEDIA: "This facility is a training room for X-COM soldiers. When assigned to training, a soldier has a daily chance to raise his or her physical stat. Only up to 10 soldiers can be assigned to one training facility at a time. It's also used to conduct special training courses and has a briefing room for tactical trainings."
   STR_SICK_BAY: "Sick Bay"
   STR_SICK_BAY_UFOPEDIA: "This Sick Bay will serve to ensure that every wounded or sick soldier can receive the necessary medical attention as soon as possible. Thanks to this, everyone at the base will be able to recover faster and better. Such attention to our subordinates's health will definitely not go unnoticed."
-  STR_CLOSED_LAB: "Abandoned Laboratory"
+  STR_CLOSED_LAB: "Ransacked Laboratory"
   STR_ADVANCED_WORKSHOP: "Advanced Workshop"
   STR_BIOLAB: "Bio-laboratory"
   STR_BIOLAB_UFOPEDIA: "This research facility is necessary for study of living life forms, such as autopsies and biological experiments on captured creatures. It can accommodate up to 5 scientists. The lab space it provides can be used to research other projects, but you won't be able to research biology projects without this lab present.{NEWLINE}This facility requires 1 unit of laboratory equipment and 1 unit of special biological equipment to function normally."
@@ -2008,7 +2010,7 @@ en-US:
   STR_IMPROVISED_MANUFACTURING_POSTREQ: STR_IMPROVISED_MANUFACTURING_POSTREQ
   STR_HIGH_TECH_MANUFACTURING: "High Tech Manufacturing"
   STR_HIGH_TECH_MANUFACTURING_POSTREQ: STR_HIGH_TECH_MANUFACTURING_POSTREQ
-  STR_HIGH_TECH_MANUFACTURING_UFOPEDIA: "Recently, governments of many countries have been introducing measures to control the production and circulation of high-tech components and microelectronics. The reasons for this are not obvious to us; perhaps it is related to the increasing international tensions in the context of the ongoing Cold War. Nevertheless, in order to further develop our production capabilities, we need a constant and reliable source of microelectronics components. In addition, for in-house electronics manufacturing, we need to acquire a number of specific equipment, which can hardly be done easily without attracting undue attention. We have several possible options, and we have prepared a plan for another covert operation."
+  STR_HIGH_TECH_MANUFACTURING_UFOPEDIA: "Recently, governments of many countries have been introducing measures to control the production and circulation of high-tech components and microelectronics. The reasons for this are not obvious to us; perhaps it is related to the increasing international tensions. Nevertheless, in order to further develop our production capabilities, we need a constant and reliable source of microelectronics components. In addition, for in-house electronics manufacturing, we need to acquire a number of specific equipment, which can hardly be done easily without attracting undue attention. We have several possible options, and we have prepared a plan for another covert operation." #TODO? - raplace "international tensions" with "international tensions in the context of the ongoing Cold War" if USSR not collapsed
   STR_LOYALTY: "Loyalty"
   STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down and now we can only count on ourselves. The loss of the Council's support is a severe blow to our organization but despite all hard circumstances our people are determined to fight against alien invaders at all costs. 'Ad victoriam' - that's our new motto! Today isn't money determining our future, but how strong our men's spirit is. It is essential not to let the morale go down and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, and progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that's why we should be extremely careful and wise in our strategic and tactical choices."
   STR_EX_COUNCIL_MEMBER_INITIAL: "Encrypted Transmission"
@@ -2593,6 +2595,7 @@ en-US:
   STR_AMPHIBIAN_TERROR_MISSION: STR_AMPHIBIAN_TERROR_MISSION
   STR_SWARMID_TERROR_MISSION: STR_SWARMID_TERROR_MISSION
   STR_DEAD_COW: STR_DEAD_COW
+  STR_MIB_HIDEOUT_MEDIUM: MIB_HIDEOUT_MEDIUM
   STR_CROP_CORCLES_EARLY_GAME: STR_CROP_CORCLES_EARLY_GAME
   STR_STARTING_EQUIPMENT_RESEARCHED: STR_STARTING_EQUIPMENT_RESEARCHED
   STR_CHOCOLATE_FACTORY_OPEN: STR_CHOCOLATE_FACTORY_OPEN
