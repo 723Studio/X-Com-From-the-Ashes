@@ -157,3 +157,4 @@ config:
     - cutscenes.type
     - battleScripts.type
     - facilities.provideBaseFunc
+    - missionScripts.missionMarkerName

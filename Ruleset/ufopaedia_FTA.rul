@@ -1930,6 +1930,19 @@ ufopaedia:
     requires:
       - STR_ROCKET_GLOVE
     listOrder: 2302
+  - id: STR_FLAMETHROWER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_FLAMETHROWER
+    text: STR_FLAMETHROWER_UFOPEDIA
+    listOrder: 23003
+  - id: STR_FLAMETHROWER_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_FLAMETHROWER
+    listOrder: 2304
   - id: STR_SINGLE_ROCKET_LAUNCHER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

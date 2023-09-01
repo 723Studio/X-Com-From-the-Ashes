@@ -1,3 +1,12 @@
+#specialTypes
+#1-30 - aliens
+#31-50 - MIBs
+#31 - MIB Interrogation
+#32 - MIB Conditioning
+#33 - MIB Lab
+#34 - MIB Hyper Communicator
+#35 - MIB Communication Equipment
+
 items:
 #deletes
   - delete: STR_PISTOL
@@ -4084,7 +4093,7 @@ items:
     listOrder: 15280
     landOnly: true
 
-  - type: STR_RAILGUN #FIXME balance
+  - type: STR_RAILGUN #TODO balance
     categories: [STR_HUMAN_TECH, STR_MASS_DRIVER, STR_CANNONS, STR_HEAVY_WEAPONS]
     size: 0.35
     costSell: 130000
@@ -4281,6 +4290,68 @@ items:
     invHeight: 2
     attraction: 15
     listOrder: 19001
+
+  - type: STR_FLAMETHROWER
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS]
+    size: 0.2
+    landOnly: true
+    costBuy: 900
+    costSell: 8100
+    weight: 11
+    bigSprite: 491
+    floorSprite: 491
+    handSprite: 1138
+    bulletSprite: 5
+    fireSound: 64
+    reloadSound: 184
+    compatibleAmmo:
+      - STR_FLAMETHROWER_CLIP
+    accuracyCloseQuarters: 90
+    accuracyAuto: 18
+    tuAuto: 40
+    tuLoad: 30
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    maxRange: 10
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    autoShots: 6
+    bulletSpeed: 80
+    experienceTrainingMode: 9
+    attraction: 20
+    listOrder: 19001
+  - type: STR_FLAMETHROWER_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CLIPS]
+    size: 0.2
+    landOnly: true
+    costBuy: 950
+    costSell: 800
+    weight: 5
+    bigSprite: 492
+    floorSprite: 492
+    explosionHitSound: 186
+    hitAnimation: 86
+    power: 40
+    damageType: 2
+    damageAlter:
+      ToMorale: 30.0
+      ToTime: 0.5
+    powerRangeThreshold: 9
+    powerRangeReduction: 999
+    clipSize: 28
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 15
+    attraction: 16
+    listOrder: 19001
+
   - type: STR_SINGLE_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES]
     requiresBuy:
@@ -4733,33 +4804,19 @@ items:
     explosionHitSound: 70 #0 or 284 xcf
     power: 60
     damageType: 9
-    damageAlter:
-      ResistType: 6
-      RandomType: 3
-      IgnorePainImmunity: true
-      ArmorEffectiveness: 0
-      ToStun: 0.1
-      ToMorale: 0.05
-      ToHealth: 0
-      ToArmor: 0
-      ToTile: 0
-      ToItem: 0
-      ToWound: 0
-      FixRadius: -1
     costThrow:
       energy: 6
     costPrime:
-      time: 32
+      time: 45
     costUnprime:
       time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    isExplodingInHands: true
     battleType: 4
-    fuseType: -2
-    recoveryPoints: 2
+    #fuseType: -2
+    recoveryPoints: 1
     experienceTrainingMode: 7
     listOrder: 21040
-    tags:
-      FTAG_DAZE_VALUE: 30
-      FTAG_DAZE_TIME: 1
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
@@ -4802,7 +4859,7 @@ items:
     power: 75
     damageType: 9
     damageAlter:
-      RadiusEffectiveness: 1.1
+      RadiusEffectiveness: 1.15
     costThrow:
       energy: 7
       time: 30
@@ -4813,7 +4870,7 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     isExplodingInHands: true
     battleType: 4
-    recoveryPoints: 1
+    recoveryPoints: 2
     listOrder: 21020
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
@@ -4969,9 +5026,8 @@ items:
       IgnoreOverKill: false
       ToTile: 1.0
       FixRadius: 1
-    costThrow:
-      energy: 35
-      time: 40
+      RandomType: 5 #no random
+    tuThrow: 0
     costPrime:
       time: 65
     costUnprime:
@@ -4983,6 +5039,35 @@ items:
     invHeight: 1
     attraction: 6
     recoveryPoints: 2
+    listOrder: 21050
+  - type: STR_HIGH_EXPLOSIVE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EXPLOSIVE_CHARGES]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.2
+    landOnly: true
+    costBuy: 1500
+    costSell: 1200
+    weight: 10
+    bigSprite: 22
+    floorSprite: 22
+    power: 110
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 1.0
+      RandomType: 5 #no random
+    blastRadius: -1 #vanilla 5
+    damageType: 3
+    tuThrow: 0
+    costPrime:
+      time: 75
+    costUnprime:
+      time: 60
+    battleType: 4
+    invWidth: 2
+    invHeight: 1
+    attraction: 6
+    recoveryPoints: 6
     listOrder: 21050
 #tools
   - type: STR_MOTION_SCANNER
@@ -5989,12 +6074,165 @@ items:
     invHeight: 2
     recoveryPoints: 40
     listOrder: 31100
+  - type: STR_MIB_INTERROGATION #TODO - research
+    categories: [STR_LOOT]
+    size: 0.3
+    specialType: 31
+    costSell: 15000
+    battleType: 0
+    recoveryPoints: 5
+    listOrder: 60020
+  - type: STR_MIB_CONDITIONING #TODO - research
+    categories: [STR_LOOT]
+    size: 0.3
+    specialType: 32
+    costSell: 90000
+    battleType: 0
+    recoveryPoints: 15
+    listOrder: 60020
+  - type: STR_MIB_LAB_EQUIPMENT #TODO - research
+    categories: [STR_LOOT]
+    size: 0.4
+    specialType: 33
+    costSell: 80000
+    battleType: 0
+    recoveryPoints: 10
+    listOrder: 60020
+  - type: STR_MIB_HYPER_COMMUNICATOR #TODO - research
+    categories: [STR_LOOT]
+    size: 0.4
+    costSell: 150000
+    specialType: 34
+    battleType: 0
+    recoveryPoints: 30
+    listOrder: 60020
+  - type: STR_MIB_COMMUNICATION_EQUIPMENT #TODO - research
+    categories: [STR_LOOT]
+    size: 0.4
+    costSell: 20000
+    specialType: 35
+    battleType: 0
+    recoveryPoints: 7
+    listOrder: 60020
+  - type: STR_MIB_CRATE_CASH_SMALL
+    categories: [STR_LOOT]
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_CASH_PACK: [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]
+      STR_CASH_PACK_BIG: [0, 2, 4, 6, 4, 2]
+    listOrder: 60020
+  - type: STR_MIB_CRATE_CASH_BIG
+    categories: [STR_LOOT]
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_CASH_PACK_BIG: [0, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1]
+      STR_BRIEFCASE_CASH: [0, 2, 3, 4, 3, 2, 1]
+    listOrder: 60020
+  - type: STR_MIB_CRATE_EQUIPMENT
+    categories: [STR_LOOT]
+    size: 0.02
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_GRENADE: [10]
+      STR_SMOKE_GRENADE: [10]
+      STR_FLASHBANG_GRENADE: [10]
+      STR_PROXIMITY_GRENADE: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      STR_INCENDIARY_GRENADE: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      STR_PERSONAL_AID_KIT: [2, 1, 1, 1, 1]
+      STR_STIMS_INJECTOR: [2, 1, 1, 1, 1]
+      STR_TRAUMA_PACK: [3, 1, 1]
+    listOrder: 60020
+  - type: STR_MIB_CRATE_WEAPONS_LIGHT
+    categories: [STR_LOOT]
+    size: 0.02
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_TASER: [10, 1]
+      STR_TASER_CLIP: [3, 1, 1, 1]
+      STR_PISTOL: [2]
+      STR_PISTOL_CLIP: [10]
+      STR_PISTOL_EXP_CLIP: [5]
+      STR_HEAVY_PISTOL: [0, 1, 1]
+      STR_HEAVY_PISTOL_CLIP: [0, 0, 0, 1, 2, 3, 2, 1]
+      STR_HEAVY_PISTOL_EXP_CLIP: [0, 0, 1, 2, 3, 2, 1]
+      STR_PDW: [1, 1]
+      STR_PDW_CLIP: [0, 1, 2, 1]
+      STR_SMG: [1, 1]
+      STR_SMG_CLIP: [0, 1, 2, 1]
+    listOrder: 60020
+  - type: STR_MIB_CRATE_WEAPONS_MEDIUM
+    categories: [STR_LOOT]
+    size: 0.02
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_ASSAULT_RIFLE: [0, 1, 2, 2, 2, 1]
+      STR_RIFLE: [0, 1, 2, 2, 2, 1]
+      STR_PRECISION_RIFLE: [0, 1, 2, 2, 2, 1]
+      STR_RIFLE_CLIP: [10]
+      STR_RIFLE_EXP_CLIP: [5]
+      STR_SNIPER_RIFLE: [3, 1]
+      STR_SNIPER_RIFLE_CLIP: [0, 0, 1, 2, 3, 2, 1]
+      STR_SHOTGUN: [0, 1, 2, 2, 2, 1]
+      STR_SEMI_AUTO_SHOTGUN: [1, 1, 1, 1]
+      STR_SHOTGUN_SHELLS_BS: [10]
+      STR_SHOTGUN_SHELLS_AP: [10]
+      STR_SHOTGUN_SHELLS_BATON: [8]
+      STR_SHOTGUN_SHELLS_DRAGON: [1, 1, 1]
+    listOrder: 60020
+  - type: STR_MIB_CRATE_WEAPONS_HEAVY
+    categories: [STR_LOOT]
+    size: 0.02
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_LMG: [1]
+      STR_LMG_CLIP: [0, 0, 1, 2, 3, 2, 1]
+      STR_ASSAULT_CANNON: [1, 1]
+      STR_ASSAULT_CANNON_CLIP_AP: [0, 1, 2, 2, 1]
+      STR_LIGHT_CANNON: [1]
+      STR_LC_AP_AMMO: [0, 0, 0, 1, 1, 1, 1]
+      STR_LC_BS_AMMO: [0, 0, 0, 1, 1, 1, 1]
+      STR_LC_HE_AMMO: [0, 0, 1, 1, 1, 1]
+      STR_LC_I_AMMO: [0, 1, 1, 1, 1]
+      STR_HEAVY_CANNON: [3, 1]
+      STR_HC_AP_AMMO: [1, 1, 1]
+      STR_HC_HE_AMMO: [1, 1, 1]
+      STR_HC_I_AMMO: [1, 1, 1]
+      STR_HC_BS_AMMO: [1, 1, 1]
+      STR_AUTO_CANNON: [3, 1]
+      STR_AC_AP_AMMO: [1, 1, 1]
+      STR_AC_HE_AMMO: [1, 1, 1]
+      STR_AC_I_AMMO: [1, 1, 1]
+      STR_AC_BS_AMMO: [1, 1, 1]
+      STR_MINIGUN: [5, 1]
+      STR_MINIGUN_CLIP: [3, 2, 1]
+      STR_GRENADE_LAUNCHER: [1, 1]
+      STR_GRENADE_LAUNCHER_FRAG: [1, 1, 2, 2, 1, 1]
+      STR_GRENADE_LAUNCHER_INC: [1, 1, 2, 2, 1, 1]
+      STR_GRENADE_LAUNCHER_SMOKE: [1, 1, 2, 2, 1, 1]
+      STR_MGL: [2, 1]
+      STR_MGL_CLIP: [1, 2, 1]
+      STR_MGL_CLIP_SMOKE: [1, 2, 1]
+      STR_MGL_CLIP_INC: [1, 2, 1]
+      STR_MGL_CLIP_FLASHBANG: [1, 2, 1]
+      STR_ROCKET_LAUNCHER: [6, 1]
+      STR_SMALL_ROCKET: [1, 2, 3, 2, 1]
+      STR_LARGE_ROCKET: [1, 2, 2, 1]
+      STR_INCENDIARY_ROCKET: [1, 2, 2, 1]
+    listOrder: 60020
+
+#components
   - type: STR_SPARE_PARTS
     categories: [STR_COMPONENTS]
     landOnly: true
     size: 0.1
     costBuy: 450
-    costSell: 320
+    costSell: 380
     weight: 3
     battleType: 0
     bigSprite: 443
@@ -6008,7 +6246,7 @@ items:
     landOnly: true
     size: 0.01
     costBuy: 500
-    costSell: 360
+    costSell: 410
     weight: 1
     battleType: 0
     bigSprite: 444
@@ -6033,6 +6271,8 @@ items:
     stackSize: 15
     recoveryPoints: 5
     listOrder: 60020
+
+
 
 #geoscape-only
   - type: STR_CRATED_HELICOPTER

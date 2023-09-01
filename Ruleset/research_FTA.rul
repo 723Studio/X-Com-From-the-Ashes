@@ -847,7 +847,7 @@ research:
       designing: 100
     points: 50
     dependencies:
-      - STR_IMPROVISED_MANUFACTURING
+      - STR_IMPROVISED_MANUFACTURING_POSTREQ
   - name: STR_STARTING_EQUIPMENT_PREREQ #TODO add ways to unlock!
     hidden: true
   - name: STR_STARTING_EQUIPMENT
@@ -1431,8 +1431,9 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     listOrder: 6000
-  - name: STR_MIB_AGENT #TODO - rework with points
+  - name: STR_MIB_AGENT
     hidden: true
+    increaseCounter: [STR_MIB_ACTIVITY_KNOWLEGE]
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1455,6 +1456,7 @@ research:
     listOrder: 6010
   - name: STR_MIB_SPECOPS
     hidden: true
+    increaseCounter: [STR_MIB_ACTIVITY_KNOWLEGE]
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1495,53 +1497,43 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6030
-  - name: STR_MIB_ENFORCER
+  - name: STR_MIB_ENFORCER #TODO - only specific lore as enfor, not agent
     hidden: true
-    # dependencies:
-    #   - STR_INTEL_STATUS_REPORT
-    # getOneFree:
-    #   - STR_PRISONER_INTERROGATIONS
-    # getOneFreeProtected: #FIXME - more specific lore, not agent
-    #   STR_PRISONER_INTERROGATIONS:
-    #     - STR_EMPTY_MIB_EARLY_LORE_STAGE
-    #     - STR_EMPTY_MIB_EARLY_LORE1
-    #     - STR_EMPTY_MIB_EARLY_LORE2
-    #     - STR_EMPTY_MIB_EARLY_LORE3
-    #   STR_EMPTY_MIB_EARLY_LORE_STAGE:
-    #     - STR_FRESH_MIB_AGENT
-    #     - STR_EMPTY_MIB_EARLY_LORE1
-    #     - STR_EMPTY_MIB_EARLY_LORE2
-    #     - STR_EMPTY_MIB_EARLY_LORE3
-    #     - STR_EMPTY_MIB_EARLY_LORE4
-    #     - STR_EMPTY_MIB_EARLY_LORE5
-    #     - STR_EMPTY_MIB_EARLY_LORE6
-    #     - STR_EMPTY_MIB_EARLY_LORE7
-    #     - STR_EMPTY_MIB_EARLY_LORE8
-    #     - STR_EMPTY_MIB_EARLY_LORE9
+    increaseCounter: [STR_MIB_ACTIVITY_KNOWLEGE]
+    dependencies:
+      - STR_INTEL_STATUS_REPORT
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_EMPTY_MIB_EARLY_LORE_STAGE
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+      STR_EMPTY_MIB_EARLY_LORE_STAGE:
+        - STR_FRESH_MIB_AGENT
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+        - STR_EMPTY_MIB_EARLY_LORE4
+        - STR_EMPTY_MIB_EARLY_LORE5
+        - STR_EMPTY_MIB_EARLY_LORE6
+        - STR_EMPTY_MIB_EARLY_LORE7
+        - STR_EMPTY_MIB_EARLY_LORE8
+        - STR_EMPTY_MIB_EARLY_LORE9
     listOrder: 6040
   - name: STR_MIB_SCIENTIST
     hidden: true
-    # dependencies:
-    #   - STR_INTEL_STATUS_REPORT
-    # getOneFree:
-    #   - STR_PRISONER_INTERROGATIONS
-    # getOneFreeProtected: #FIXME - more specific lore, not agent
-    #   STR_PRISONER_INTERROGATIONS:
-    #     - STR_EMPTY_MIB_EARLY_LORE_STAGE
-    #     - STR_EMPTY_MIB_EARLY_LORE1
-    #     - STR_EMPTY_MIB_EARLY_LORE2
-    #     - STR_EMPTY_MIB_EARLY_LORE3
-    #   STR_EMPTY_MIB_EARLY_LORE_STAGE:
-    #     - STR_FRESH_MIB_AGENT
-    #     - STR_EMPTY_MIB_EARLY_LORE1
-    #     - STR_EMPTY_MIB_EARLY_LORE2
-    #     - STR_EMPTY_MIB_EARLY_LORE3
-    #     - STR_EMPTY_MIB_EARLY_LORE4
-    #     - STR_EMPTY_MIB_EARLY_LORE5
-    #     - STR_EMPTY_MIB_EARLY_LORE6
-    #     - STR_EMPTY_MIB_EARLY_LORE7
-    #     - STR_EMPTY_MIB_EARLY_LORE8
-    #     - STR_EMPTY_MIB_EARLY_LORE9
+    increaseCounter: [STR_MIB_ACTIVITY_KNOWLEGE]
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected: #TODO - only specific lore as scientist, not agent
+      STR_PRISONER_INTERROGATIONS:
+        - STR_EMPTY_MIB_EARLY_LORE_STAGE
+        - STR_EMPTY_MIB_EARLY_LORE1
+        - STR_EMPTY_MIB_EARLY_LORE2
+        - STR_EMPTY_MIB_EARLY_LORE3
+
     listOrder: 6040
 
   #MiB-Procured
@@ -1563,13 +1555,13 @@ research:
       - STR_PRISONER_INTERROGATIONS
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6090
-  - name: STR_MIB_OFFICE_SECURITY
+  - name: STR_MIB_OFFICE_SECURITY #TODO - add more lore
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6100
-  - name: STR_MIB_VIP_BODYGUARD
+  - name: STR_MIB_VIP_BODYGUARD #TODO - add more lore
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
@@ -2312,6 +2304,16 @@ research:
     dependencies:
       - STR_RIOT_GUN
     listOrder: 30292
+  - name: STR_FLAMETHROWER
+    cost: 120
+    stats:
+      tactics: 120
+      designing: 100
+      chemistry: 80
+    points: 5
+    dependencies:
+      - STR_IMPROVISED_MANUFACTURING_POSTREQ
+    listOrder: 30300
   - name: STR_IMPROVISED_GRENADE
     cost: 15
     stats:
@@ -2540,8 +2542,6 @@ research:
 #facilities
   - name: STR_WORKSHOP_PREREQ
     hidden: true
-    unlocks:
-      - STR_PRODUCTION
   - name: STR_WORKSHOP
     cost: 1600
     stats:

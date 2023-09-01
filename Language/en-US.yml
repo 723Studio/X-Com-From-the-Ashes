@@ -259,10 +259,10 @@ en-US:
   STR_STEALTH_LC: "Stealth"
   STR_STEALTH_SHORT: "Stealth>{ALT}{0}"
   STR_STEALTH_ABBREV: "STE"
-  STR_PERSEPTION_UC: "PERSEPTION"
-  STR_PERSEPTION_LC: "Perseption"
-  STR_PERSEPTION_SHORT: "Perseption>{ALT}{0}"
-  STR_PERSEPTION_ABBREV: "PRS"
+  STR_PERCEPTION_UC: "PERCEPTION"
+  STR_PERCEPTION_LC: "Perception"
+  STR_PERCEPTION_SHORT: "Perception>{ALT}{0}"
+  STR_PERCEPTION_ABBREV: "PRC"
   STR_CHARISMA_UC: "CHARISMA"
   STR_CHARISMA_LC: "Charisma"
   STR_CHARISMA_SHORT: "Charisma>{ALT}{0}"
@@ -453,6 +453,8 @@ en-US:
   STR_GLOBAL_DETECTION: "Global detection"
   STR_SOLDIERS_RECRUITED_UC: "PERSONNEL RECRUITED"
   STR_SOLDIERS_LOST_UC: "PERSONNEL LOST"
+  STR_ENGINE_IS_COOLING: "Engine is cooling down>{ALT}{0}"
+  STR_ACTIVE_ENEMIES_ONBOARD: "Can't abort while enemies in exit area!"
   STR_USE_HACKING_TOOL: "Use Hacking Tool"
   STR_NOT_HACKING_TARGET: "This target cannot be hacked!"
   STR_HACKING_LOGIN: "Logging in..."
@@ -518,6 +520,7 @@ en-US:
   STR_LIVE_MONSTERS_SURRENDERED: "LIVE MONSTERS SURRENDERED"
   STR_LIVE_ENEMIES_SURRENDERED: "LIVE ENEMIES SURRENDERED"
   STR_PRISONER_CAPTURED: "PRISONERS CAPTURED"
+  STR_ASSETS_RECOVERED: "ASSETS RECOVERED"
   STR_LOYALTY_UPDATE: "LOYALTY> {ALT}{0}"
   STR_PRISONER_EXECUTED_NO_PRISON_SPACE_FACILITY: "We had to execute the captive because our prisons are overcrowded"
   STR_PRISON_EXCEEDED: "PRISON SPACE LIMITS EXCEEDED!{SMALLLINE}Insufficient prison space at {0}. You must decide which prisoner is to be executed."
@@ -689,7 +692,7 @@ en-US:
   STR_UNARMED_COMBAT_TRAINING: "Unarmed Combat Training"
   STR_UNARMED_COMBAT_TRAINING_DESC: "Additional combat training for non-armed combat includes techniques effective when both hands of the soldier are unoccupied."
   STR_RAPID_DEPLOYMENT_TRAINING: "Rapid Deployment Training"
-  STR_RAPID_DEPLOYMENT_TRAINING_DESC: "Additional course for practicing tactical interaction when deploying at the beginning of engagement. Grants the soldier a +10 TU bonus on the first turn."
+  STR_RAPID_DEPLOYMENT_TRAINING_DESC: "Additional course for practicing tactical interaction." #when deploying at the beginning of engagement. Grants the soldier a +10 TU bonus on the first turn
   STR_AGENT_TRAINING: "Agent Training"
   STR_AGENT_TRAINING_DESC: "An X-COM agent certification program that allows him to participate in intelligence activities, developing specific skills."
   STR_AGENT_TRAINING_UFOPEDIA: "Based on many years of experience in intelligence activities, we have developed a course aimed at obtaining specific skills that any X-COM special agent should possess. The program includes modules on analyzing large amounts of data, developing deduction, attentiveness. Basic interrogation techniques are taught, and skillful conversation skills are developed. In addition, there are practical lessons on disguise in a variety of conditions, as well as the basics of hacking art. The program includes only the basics, so our experienced agents will not be able to learn anything new there."
@@ -881,6 +884,16 @@ en-US:
   STR_CULTISTS_DETENTION_BRIEFING: "We are on the trail of a crime group that may not be as ordinary as it appears. They are most likely responsible for mysterious and unexplained disappearances of ordinary people. The general motive of these crimes cannot be identified. We need to detain and interrogate the suspects."
   STR_INFILTRATING_MILITARY_RND: "Infiltrating RnD Facility"
   STR_INFILTRATING_MILITARY_RND_BRIEFING: "With the help of bribery and intimidation of some low-ranking army officials, X-Com agents manage to infiltrate a secret military installation where advanced weaponry is being developed. Our operatives took an elevator down to the underground floors of the facility; our task is to steal a prototype of the equipment being developed here. We must proceed with extreme caution - if the guards spot any sign of our presence here they will raise the alarm, which could attract reinforcements from adjacent base sectors. To successfully complete the mission, you must deliver the prototype to the elevator and press the 'Abort Mission' icon."
+  STR_MIB_HIDEOUT_MEDIUM: "M.I.B. Hideout"
+  STR_MIB_HIDEOUT_SMALL: "M.I.B. Hideout"
+  STR_MIB_HIDEOUT_ALERT: "M.I.B. HIDEOUT DISCOVERED"
+  STR_MIB_HIDEOUT_ALERT_DESCRIPTION: "We've located the secret hideout of the Men in Black! An obscure facility in the middle of nowhere, probably used as a staging post. It doesn't appear to be well defended. If we act quickly, we can strike a sudden and devastating blow to our enemy!"
+  STR_MIB_HIDEOUT_MEDIUM_BRIEFING: "We have located the secret hideout of the Men in Black! Our aircraft landed near an inconspicuous structure in the middle of nowhere, probably used as a staging point. The enemy obviously didn't expect us, M.I.B. agents are preparing to repel the assault, they can hardly expect reinforcements to arrive soon.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
+  STR_MIB_HIDEOUT_SMALL_BRIEFING: "We have located the secret hideout of the Men in Black! Our aircraft landed near a small inconspicuous structure in the middle of nowhere, probably used as a staging point. It doesn't look like it's well-defended. The enemy obviously didn't expect us, M.I.B. agents are preparing to repel the assault, they can hardly expect reinforcements to arrive soon.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
+  STR_MIB_HIDEOUT_MINE: "Enemy signal has been intercepted!"
+  STR_MIB_HIDEOUT_MEDIUM_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 14 turns, the whole building will blow up with the defenders, destroying all evidences.All charges must be defused."
+  STR_MIB_HIDEOUT_SMALL_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 9 turns, the whole building will blow up with the defenders, destroying all evidences.All charges must be defused."
+  #traps
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_TRAP: "Chasing M.I.B."
   STR_MIB_CHASING_BRIEFING: "A black van, parked perpendicular to the road, is blocking the way forward, and a black sedan has stopped behind our agents' car, boxing them in. Several men in black blazers get out of the cars, and they are armed. It seems that the only way out of this situation is to take the fight."
@@ -1339,7 +1352,6 @@ en-US:
   STR_ARMY_FIELD_OFFICER_ARMOR: "Army Field Officer Combat Analysis"
   STR_ARMY_FIELD_OFFICER_ARMOR_UFOPEDIA: "Field officers are engaged in the operational command of their units, as well as often involved in the protection of critical facilities or special operations. They usually carry the most modern weapons used in the army and medium armor"
   
-  STR_ZOMBIES: "Zombies"
   STR_ZOMBIE: "Zombie"
   STR_FACEHUGGER: "Facehugger"
   STR_FACEHUGGER_UFOPEDIA: "This rubbish jumps on a victim, using its stinger to inject the parasite with a neuroparalytic poison. The parasite quickly makes its way through the body and attaches itself to the brain of the host with its flagella. The parasite completely controls the signals sent to the spinal cord, artificially keeping the person alive. At the moment of application of the parasite, it is still connected for some time with the facehugger, but before the latter breaks apart it is restrained by cramps, and because of the physical strain it has a ruptured heart and dies, letting the victim go. The details of this terrible process are still not clear to us."
@@ -1721,6 +1733,9 @@ en-US:
   STR_ROCKET_GLOVE: "Rocket Glove"
   STR_ROCKET_GLOVE_UFOPEDIA: "This portable device is worn on a soldier's wrist and allows firing of a specially designed projectile. The shot does not have much accuracy, which drops noticeably with distance. However, the launcher has a collapsible design and a small size, which makes it suitable for concealed carry."
   STR_ROCKET_GLOVE_CLIP: "Rocket Glove Charge"
+  STR_FLAMETHROWER: "Flamethrower"
+  STR_FLAMETHROWER_CLIP: "Flamethrower tank"
+  STR_FLAMETHROWER_UFOPEDIA: #
   STR_SINGLE_ROCKET_LAUNCHER: "Single Rocket Launcher"
   STR_SINGLE_ROCKET_UFOPEDIA: "This single charge launcher fires an unguided rocket that causes significant damage to enemy troops and light armored vehicles."
   STR_GRENADE_LAUNCHER: "Grenade Launcher"
@@ -1814,7 +1829,7 @@ en-US:
   STR_CASH_PACK: "Small Cash Pack ($1 000)"
   STR_PLASTIC_CARD: "Plastic Card"
   STR_CASH_PACK_BIG: "Big Cash Pack ($10 000)"
-  STR_BRIEFCASE_CASH: "Briefcase with Cash ($1 000 00)"
+  STR_BRIEFCASE_CASH: "Briefcase with Cash ($100 000)"
   STR_SPARE_PARTS: "Spare Parts"
   STR_CHEMICALS: "Chemicals"
   STR_HIGH_TECH_PARTS: "High-tech Parts"
@@ -1887,7 +1902,7 @@ en-US:
   STR_SOLDIER_SPECS: "Soldier Specializations"
   STR_SOLDIER_SPECS_UFOPEDIA: "Specialized training for X-COM soldiers can develop a variety of combat and tactical skills. After receiving their first promotion, each soldier can gain a specialty in one of several different areas. Successful completion of a specialty course not only improves a soldier's performance, but also gives them abilities appropriate to their specialty. A soldier can have only one specialization."
   STR_ADDITIONAL_COURSES: "Additional Courses"
-  STR_ADDITIONAL_COURSES_UFOPEDIA: "We have developed several additional training courses for our soldiers:{NEWLINE}*Unarmed Combat{NEWLINE}*Desert Combat{NEWLINE}*Jungle Combat{NEWLINE}*Mountain Combat{NEWLINE}*Arctic Combat{NEWLINE}*Urban Combat{NEWLINE}*Rapid deployment{NEWLINE}These courses are available for soldiers and don't replace their specialization, but provide additional traits. In addition, we have developed a basic military training course for our non-combat personnel and agent training cource."
+  STR_ADDITIONAL_COURSES_UFOPEDIA: "We have developed several additional training courses for our soldiers:{NEWLINE}{ALT}*{ALT}Unarmed Combat{NEWLINE}{ALT}*{ALT}Rapid deployment{NEWLINE}These courses are available for soldiers and don't replace their specialization, but provide additional traits. In addition, we have developed a basic military training course for our non-combat personnel and agent training cource."
   STR_FIREARMS_STUDY: "Firearms study"
   STR_FIREARMS_STUDY_UFOPEDIA: "Almost from the very invention, firearms were the most effective infantry weapons. Modern small arms have approached their limit of practical effectiveness - since the late 70s, new models differ slightly from their predecessors in basic parameters. The marginal increase in one or more parameters requires a radical revision of the design and material of weapons and ammunition, as well as the introduction of innovative technologies. Such developments are underway in some countries, and the Ufopedia archives contain information about interesting super-secret developments. However, there were no own developments in this area."
   STR_SMART_WEAPONS: "Smart Weapons"
@@ -2513,6 +2528,7 @@ en-US:
   STR_CHUPA_TERROR: STR_CHUPA_TERROR
   STR_CROP_CORCLES_INITIAL: STR_CROP_CORCLES_INITIAL
   STR_DESERT_MILITARY_CONVOY: STR_DESERT_MILITARY_CONVOY
+  STR_MIB_HIDEOUT: STR_MIB_HIDEOUT
   STR_RESISTANCE_SHELTER_FARM: STR_RESISTANCE_SHELTER_FARM
   STR_RESISTANCE_SHELTER_FARM_DESTROYED: STR_RESISTANCE_SHELTER_FARM_DESTROYED
   STR_RESISTANCE_SHELTER_FARM_RADIO: STR_RESISTANCE_SHELTER_FARM_RADIO
@@ -2595,7 +2611,6 @@ en-US:
   STR_AMPHIBIAN_TERROR_MISSION: STR_AMPHIBIAN_TERROR_MISSION
   STR_SWARMID_TERROR_MISSION: STR_SWARMID_TERROR_MISSION
   STR_DEAD_COW: STR_DEAD_COW
-  STR_MIB_HIDEOUT_MEDIUM: MIB_HIDEOUT_MEDIUM
   STR_CROP_CORCLES_EARLY_GAME: STR_CROP_CORCLES_EARLY_GAME
   STR_STARTING_EQUIPMENT_RESEARCHED: STR_STARTING_EQUIPMENT_RESEARCHED
   STR_CHOCOLATE_FACTORY_OPEN: STR_CHOCOLATE_FACTORY_OPEN

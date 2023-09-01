@@ -74,7 +74,6 @@ alienMissions:
   - type: STR_CROP_CIRCLES
     refNode: *TerrorLike
 
-#resistance scripts
   - type: STR_RESISTANCE_HAVEN_DEFENCE
     refNode: *TerrorLike
   - type: STR_RESISTANCE_SCIENTIST
@@ -94,4 +93,6 @@ alienMissions:
   - type: STR_SWARMID_TERROR_MISSION
     refNode: *TerrorLike
   - type: STR_DESERT_MILITARY_CONVOY
+    refNode: *TerrorLike
+  - type: STR_MIB_HIDEOUT
     refNode: *TerrorLike

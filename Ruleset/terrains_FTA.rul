@@ -147,6 +147,14 @@ terrains:
         width: 10
         length: 10
         groups: 4
+      - name: FOREST_ROAD_T_CROSS # Special crossroad
+        width: 10
+        length: 10
+        groups: 6
+      - name: FOREST_ROAD_TN_CROSS # Special crossroad
+        width: 10
+        length: 10
+        groups: 7
   - name: FORESTSWAMP
     mapDataSets:
       - BLANKS

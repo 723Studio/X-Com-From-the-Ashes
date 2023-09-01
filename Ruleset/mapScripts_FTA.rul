@@ -828,6 +828,50 @@ mapScripts:
     # - type: addCraft
     - type: fillArea
 
+  - type: STR_MIB_HIDEOUT_MEDIUM
+    commands:
+    - type: addUFO
+      rects:
+        - [2, 2, 3, 3]
+    - type: addLine
+      direction: horizontal
+      terrain: FOREST
+      rects:
+        - [5, 5, 1, 1]
+    - type: addCraft
+    - type: removeBlock
+      rects:
+        - [4, 5, 1, 1]
+    - type: addBlock
+      terrain: FOREST
+      groups: [6]
+      rects:
+        - [4, 5, 1, 1]
+    - type: fillArea
+      terrain: FOREST
+
+  - type: STR_MIB_HIDEOUT_SMALL
+    commands:
+    - type: addUFO
+      rects:
+        - [2, 2, 2, 2]
+    - type: addLine
+      direction: vertical
+      terrain: FOREST
+      rects:
+        - [4, 4, 1, 1]
+    - type: addCraft
+    - type: removeBlock
+      rects:
+        - [4, 3, 1, 1]
+    - type: addBlock
+      terrain: FOREST
+      groups: [7]
+      rects:
+        - [4, 3, 1, 1]
+    - type: fillArea
+      terrain: FOREST
+
   - type: URBAN_LOW_TRAP_ESCAPE
     commands:
     # - type: addBlock 

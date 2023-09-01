@@ -263,16 +263,10 @@ soldierTransformation:
     roleRankRequirements:
       1: 1
     flatMin:
-      stamina: 2
-      reactions: 2
-      strength: 2
-      melee: 5
+      tu: 5
     flatMax:
-      stamina: 4
-      reactions: 3
-      strength: 3
-      melee: 9
-    soldierBonusType: STR_RAPID_DEPLOYMENT_TRAINING
+      tu: 10
+    #soldierBonusType: STR_RAPID_DEPLOYMENT_TRAINING
     forbiddenPreviousTransformations:
       - STR_RAPID_DEPLOYMENT_TRAINING
   - name: STR_MILITARY_TRAINING
@@ -348,14 +342,14 @@ soldierTransformation:
     addRole: 2
     flatMin:
       stealth: 30
-      perseption: 35
+      perception: 35
       charisma: 20
       investigation: 25
       deception: 30
       interrogation: 10
     flatMax:
       stealth: 50
-      perseption: 60
+      perception: 60
       charisma: 60
       investigation: 70
       deception: 50

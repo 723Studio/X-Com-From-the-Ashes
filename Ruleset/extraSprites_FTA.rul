@@ -149,6 +149,7 @@ extraSprites:
     files:
       80: Resources/Weapons/ExplosionAnimations/Triple_Ripple_exp.png
       88: Resources/Weapons/ExplosionAnimations/Grey_Skull_exp.png
+      86: Resources/Weapons/ExplosionAnimations/Flames_hit.png
   - type: SMOKE.PCK #HitAnimations, index step 10
     height: 80
     width: 160
@@ -411,6 +412,8 @@ extraSprites:
       488: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_GaussSniperClip.png
       489: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_HeavyGauss.png
       490: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_HeavyGaussClip.png
+      491: Resources/Weapons/Earthbound/Tinkering/bigob_Flamethrower.png
+      492: Resources/Weapons/Earthbound/Tinkering/bigob_FlamethrowerClip.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -617,6 +620,8 @@ extraSprites:
       487: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_GaussSniper.png
       489: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_HeavyGauss.png
       490: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_HeavyGaussClip.png
+      491: Resources/Weapons/Earthbound/Tinkering/floorob_Flamethrower.png
+      492: Resources/Weapons/Earthbound/Tinkering/floorob_FlamethrowerClip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -750,6 +755,7 @@ extraSprites:
       1114: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_GaussRifle.png
       1122: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_GaussSniper.png
       1130: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_HeavyGauss.png
+      1138: Resources/Weapons/Earthbound/Tinkering/handob_Flamethrower.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

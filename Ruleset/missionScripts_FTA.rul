@@ -196,7 +196,7 @@ missionScripts:
         RESISTANCE_FARM_START_ZONE: 100
     raceWeights:
       0:
-        STR_ZOMBIES: 100
+        STR_ZOMBIE: 100
     useTable: false
     spawnGap: 70
     randomSpawnGap: 15
@@ -311,3 +311,46 @@ missionScripts:
     avoidRepeats: 1
     varName: resistanceWarOperation
 
+  - type: mibHideoutStart
+    firstMonth: 2
+    executionOdds: 100
+    allowedProcessor: 0
+    missionMarkerName: STR_MIB_ACTIVITY_KNOWLEGE
+    counterMin: 2
+    minDifficulty: 4
+    missionWeights:
+      0:
+        STR_MIB_HIDEOUT: 100
+    regionWeights:
+      0:
+        STR_MIB_HIDEOUT: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    useTable: false
+    spawnGap: 100
+    randomSpawnGap: 25
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: mibHideout
+  - type: mibHideoutNormal
+    firstMonth: 4
+    executionOdds: 5
+    allowedProcessor: 0
+    missionWeights:
+      0:
+        STR_MIB_HIDEOUT: 100
+    regionWeights:
+      0:
+        STR_MIB_HIDEOUT: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    useTable: false
+    spawnGap: 100
+    randomSpawnGap: 25
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: mibHideout

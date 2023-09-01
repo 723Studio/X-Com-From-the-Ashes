@@ -26,6 +26,6 @@ soldierBonuses:
   - name: STR_UNARMED_FIGHTER
     tags:
       STR_UNARMED_FIGHTER: 15   #X (1-XXX) bonus for unarmed hit accuracy, doubles if both hands are free.
-  - name: STR_RAPID_DEPLOYMENT_TRAINING
-    tags:
-      STR_RAPID_DEPLOYMENT_TRAINING: 10   #X (1-XXX) bonus for TU at the turn 0.
+  # - name: STR_RAPID_DEPLOYMENT_TRAINING
+  #   tags:
+  #     STR_RAPID_DEPLOYMENT_TRAINING: 10   #X (1-XXX) bonus for TU at the turn 0.

@@ -3,12 +3,14 @@ objects:
     hackingDefence: 1
     alterationMCDNumber: 16
     alterationMCDRadius: 5
-  - type: STR_CATTLE_SAMPLING_SITE
-    samplingDefence: 1
-    spawnedItem: STR_FIRE_EXTINGUISHER
-    #spawnedEvents: []
+  - type: STR_MIB_HIDEOUT_TERMINAL
+    hackingDefence: 5
+    # spawnedEvents: []
     # eventWeights:
     #   0:
     #     STR_RANDOM_TORTURE_EVENT_1: 50
     #     STR_RANDOM_TORTURE_EVENT_2: 30
     #     STR_RANDOM_TORTURE_EVENT_3: 20
+  - type: STR_CATTLE_SAMPLING_SITE
+    samplingDefence: 1
+    spawnedItem: STR_FIRE_EXTINGUISHER

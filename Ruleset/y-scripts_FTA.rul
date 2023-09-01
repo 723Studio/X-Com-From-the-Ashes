@@ -98,6 +98,7 @@ extended:
       UTILITY_SPECIALIST_STATE: int
       #unarmed
       STR_UNARMED_FIGHTER_STATE: int
+      STR_RAPID_DEPLOYMENT_STATE: int
 
   scripts:
     createUnit: 
@@ -367,22 +368,40 @@ extended:
 
           return;
 
-      - offset: 34   # Handle rapid deployment main effect
-        code: |
-          var int turn;
-          var int bonus;
+      # - offset: 34   # Handle rapid deployment main effect
+      #   code: |
+      #     var int gameTurn;
+      #     var int bonus;
+      #     var int origTU;
+      #     var int test1;
 
-          unit.getTag bonus Tag.STR_RAPID_DEPLOYMENT_TRAINING;
-          if gt bonus 0; #unit have rapid deployment bonus
-            battle_game.getTurn turn;
-            debug_log unit " - found unit with Repid deployment bonus: " bonus;
-            if lt turn 2;
-              debug_log unit " activating Repid deployment bonus on turn: " turn 
-              unit.addTimeUnits bonus;
-            end;
-          end;
+      #     unit.getTag bonus Tag.STR_RAPID_DEPLOYMENT_TRAINING;
+      #     if gt bonus 0; #unit have rapid deployment bonus
+      #       battle_game.getTurn gameTurn;
+      #       set bonus 10;
+      #       debug_log unit " - found unit with Repid deployment bonus: " bonus;
+      #       unit.getTimeUnits test1;
+      #       unit.Stats.getTimeUnits origTU;
+      #       debug_log "getTimeUnits = " test1;
+      #       debug_log "Stats.getTimeUnits = " origTU;
+      #       if eq gameTurn 0;
+      #         debug_log unit " activating Repid deployment bonus on turn: " gameTurn;
+      #         unit.setTag Tag.STR_RAPID_DEPLOYMENT_STATE: origTU;
+      #         unit.addTimeUnits bonus;
+      #         unit.getTimeUnits test1;
+      #         debug_log "now, getTimeUnits = " test1;
+      #       else gt gameTurn 0;
+      #         debug_log unit " dactivating Repid deployment bonus on turn: " gameTurn; 
+      #         unit.getTimeUnits test1;
+      #         debug_log "getTimeUnits = " test1;
+      #         unit.getTag origTU Tag.STR_RAPID_DEPLOYMENT_STATE;
+      #         unit.unit.Stats.setTimeUnits origTU;
+      #         unit.getTimeUnits test1;
+      #         debug_log "after updating from tag, getTimeUnits = " test1;
+      #       end;
+      #     end;
 
-          return;
+      #     return;
 
     newTurnItem:
       - offset: 2     # Handle energy shield on items regeneration/degeneration every turn

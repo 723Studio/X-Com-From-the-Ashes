@@ -27,8 +27,9 @@ crafts:
     refuelRate: 40
     fuelMax: 520
     transferTime: 72
+    engineCooldown: 3
     score: 200
-    craftInventoryTile: [3, 12, 1]
+    craftInventoryTile: [3, 10, 1]
     battlescapeTerrainData:
       name: DRAGONFLY
       mapDataSets:

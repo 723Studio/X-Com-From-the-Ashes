@@ -114,7 +114,7 @@ manufacture:
       - STR_SPORTS_BOW_TINKERING
       - STR_HIGH_DENSITY_CAPACITORS
     requiredItems:
-      STR_HIGH_TECH_PARTS: 1
+      STR_SPARE_PARTS: 5
     space: 4
     time: 70
     cost: 4000
@@ -263,6 +263,30 @@ manufacture:
     producedItems:
       STR_SMART_SNIPER_RIFLE_CLIP: 1
     listOrder: 220030
+  - name: STR_FLAMETHROWER
+    category: STR_WEAPONS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_FLAMETHROWER
+    space: 1
+    time: 860
+    cost: 2700
+    producedItems:
+      STR_FLAMETHROWER: 1
+    listOrder: 220030
+  - name: STR_FLAMETHROWER_CLIP
+    category: STR_CLIPS
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_FLAMETHROWER
+    requiredItems:
+      STR_CHEMICALS: 3
+    space: 2
+    time: 32
+    cost: 100
+    producedItems:
+      STR_FLAMETHROWER_CLIP: 1
+    listOrder: 220030
   - name: STR_TASER_CANNON
     category: STR_WEAPONS
     requiresBaseFunc: [WORK]
@@ -405,9 +429,8 @@ manufacture:
     category: STR_EQUIPMENT
     requiresBaseFunc: [WORK]
     requires:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
-    requiredItems:
-      STR_SPARE_PARTS: 2
+      - STR_IMPROVISED_MANUFACTURING_POSTREQ
+      - STR_XCOM_EQUIPMENT
     space: 1
     time: 90
     cost: 3700
@@ -418,6 +441,7 @@ manufacture:
     category: STR_EQUIPMENT
     requires:
       - STR_MOTION_SCANNER_PROTOTYPE
+      - STR_PRODUCTION
     space: 3
     time: 630
     cost: 36000
@@ -434,7 +458,7 @@ manufacture:
       - STR_ENGINEER_STATUS_REPORT
     space: 1
     time: 15
-    cost: 220
+    cost: 180
     stats:
       metallurgy: 100
     producedItems:
@@ -446,7 +470,7 @@ manufacture:
       - STR_ENGINEER_STATUS_REPORT
     space: 1
     time: 18
-    cost: 250
+    cost: 200
     producedItems:
       STR_CHEMICALS: 1
     listOrder: 220040
@@ -527,6 +551,6 @@ manufacture:
     refNode: *facility
     time: 60000
 
-# items: #sad, it has to be defined to abuse afteloader check
-#   #- type: STR_WORKSHOP
-#   - type: STR_HANGAR
+items: #sad, it has to be defined to abuse afteloader check
+  - type: STR_WORKSHOP
+  - type: STR_HANGAR

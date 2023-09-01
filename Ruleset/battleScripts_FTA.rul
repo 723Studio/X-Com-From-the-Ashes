@@ -474,6 +474,28 @@ battleScripts:
           title: "You are pretty patient"
           content: "What a long play!"
 
+  - type: STR_MIB_HIDEOUT_MEDIUM
+    commands:
+    - type: showMessage
+      startTurn: 1
+      executionChances: 100
+      maxRuns: 1
+      variable: first alarm
+      messages:
+        0:
+          title: STR_MIB_HIDEOUT_MINE
+          content: STR_MIB_HIDEOUT_MEDIUM_MINE_DESCRIPTION
+  - type: STR_MIB_HIDEOUT_SMALL
+    commands:
+    - type: showMessage
+      startTurn: 1
+      executionChances: 100
+      maxRuns: 1
+      variable: first alarm
+      messages:
+        0:
+          title: STR_MIB_HIDEOUT_MINE
+          content: STR_MIB_HIDEOUT_SMALL_MINE_DESCRIPTION
 
   # - type: TEST_SCRIPT
   #   commands:

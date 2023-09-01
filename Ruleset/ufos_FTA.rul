@@ -58,11 +58,6 @@ ufos:
         - name: UFO_110
           width: 10
           length: 10
-          # objects: #TODO - test data!
-          #   STR_CATTLE_SAMPLING_SITE:
-          #     - [5, 5, 0]
-          #   STR_TERMINAL:
-          #     - [4, 4, 0]
   - type: STR_ABDUCTOR
     size: STR_MEDIUM_UC
     sprite: 4
@@ -1323,19 +1318,290 @@ ufos:
         - name: MIB_HID_MED_00 #store and intel
           width: 30
           length: 30
+          randomizedItems:
+              - position: [19, 11, 0]
+                amount: 1
+                itemList: &MIBHideoutItem [STR_MIB_CRATE_CASH_SMALL, STR_MIB_CRATE_CASH_SMALL, STR_MIB_CRATE_CASH_BIG, STR_MIB_CRATE_EQUIPMENT, STR_MIB_CRATE_EQUIPMENT, STR_MIB_CRATE_WEAPONS_LIGHT, STR_MIB_CRATE_WEAPONS_MEDIUM, STR_MIB_CRATE_WEAPONS_HEAVY]
+              - position: [19, 12, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [8, 24, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [6, 24, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+          items: &MIBMediumHideoutSet
+            STR_MIB_CRATE_CASH_BIG:
+              - [20, 11, 0]
+              - [18, 14, 0]
+            STR_HIGH_EXPLOSIVE:
+              - [21, 11, 0]
+              - [19, 15, 0]
+              - [7, 21, 0]
+              - [8, 9, 0]
+              - [7, 15, 0]
+              - [7, 5, 0]
+              - [14, 15, 1]
+              - [14, 8, 1]
+          fuseTimers: &MIBHideoutExplosiveFuse15
+            STR_HIGH_EXPLOSIVE: [15, 15]
+          objects:
+            STR_MIB_HIDEOUT_TERMINAL:
+              - [5, 15, 0]
         - name: MIB_HID_MED_01 #living and lab
           width: 30
           length: 30
+          randomizedItems:
+              - position: [19, 11, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [19, 12, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [6, 19, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [5, 22, 0]
+                amount: 1
+                itemList: &MIBMediumHideoutSpawns [STR_SPAWN_MIB_AGENT, STR_SPAWN_MIB_AGENT, STR_SPAWN_MIB_AGENT, STR_SPAWN_MIB_AGENT, STR_SUPPLIES_1]
+              - position: [7, 22, 0]
+                amount: 1
+                itemList: *MIBMediumHideoutSpawns
+              - position: [9, 22, 0]
+                amount: 1
+                itemList: *MIBMediumHideoutSpawns
+              - position: [9, 20, 0]
+                amount: 1
+                itemList: *MIBMediumHideoutSpawns
+              - position: [6, 20, 0]
+                amount: 1
+                itemList: *MIBMediumHideoutSpawns
+          items: *MIBMediumHideoutSet
+          fuseTimers:
+            STR_HIGH_EXPLOSIVE: [15, 15]
+            STR_SPAWN_MIB_AGENT: [0, 0]
         - name: MIB_HID_MED_02 #double storage
           width: 30
           length: 30
-        # - name: MIB_HID_MED_03
+          randomizedItems:
+              - position: [19, 11, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [19, 12, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [8, 24, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [6, 24, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [6, 14, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [6, 16, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [6, 18, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+          items: *MIBMediumHideoutSet
+          fuseTimers: *MIBHideoutExplosiveFuse15
+        - name: MIB_HID_MED_03
+          width: 30
+          length: 30
+          randomizedItems:
+              - position: [5, 13, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [5, 11, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [5, 15, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [9, 5, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [12, 5, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [10, 8, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [15, 21, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [9, 6, 1]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [9, 6, 1]
+                amount: 1
+                itemList: *MIBHideoutItem
+          items:
+            STR_MIB_CRATE_CASH_BIG:
+              - [17, 16, 1]
+              - [5, 13, 0]
+            STR_HIGH_EXPLOSIVE:
+              - [5, 8, 0]
+              - [8, 19, 0]
+              - [7, 13, 0]
+              - [11, 7, 0]
+              - [20, 7, 0]
+              - [24, 7, 0]
+              - [16, 10, 1]
+              - [17, 20, 1]
+          fuseTimers: *MIBHideoutExplosiveFuse15
+          objects:
+            STR_MIB_HIDEOUT_TERMINAL:
+              - [18, 9, 0]
+        # - name: MIB_HID_MED_04 #TODO with terminal
         #   width: 30
         #   length: 30
-        # - name: MIB_HID_MED_04
-        #   width: 30
-        #   length: 30
-
+  - type: STR_MIB_HIDEOUT_SMALL
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_MIB_HIDEOUT_SMALL
+      mapDataSets:
+        - BLANKS
+        - MIB_HIDEOUT_BITS
+        - MIB_HIDEOUT
+      mapBlocks:
+        - name: MIB_HID_SMALL_00
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [5, 16, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [11, 4, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+          items:
+            STR_MIB_CRATE_CASH_BIG:
+              - [7, 4, 1]
+            STR_HIGH_EXPLOSIVE:
+              - [9, 5, 1]
+              - [5, 15, 0]
+              - [3, 6, 0]
+          fuseTimers: &MIBHideoutExplosiveFuse10
+            STR_HIGH_EXPLOSIVE: [10, 10]
+        - name: MIB_HID_SMALL_01
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [5, 16, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [11, 4, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [8, 4, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [7, 4, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+          items:
+            STR_MIB_CRATE_CASH_BIG:
+              - [7, 4, 1]
+            STR_HIGH_EXPLOSIVE:
+              - [9, 5, 1]
+              - [5, 15, 0]
+              - [3, 5, 0]
+          fuseTimers: *MIBHideoutExplosiveFuse10
+        - name: MIB_HID_SMALL_02
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [5, 16, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [11, 4, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+          items:
+            STR_MIB_CRATE_CASH_BIG:
+              - [7, 4, 1]
+            STR_HIGH_EXPLOSIVE:
+              - [9, 5, 1]
+              - [5, 15, 0]
+              - [3, 6, 0]
+          fuseTimers: *MIBHideoutExplosiveFuse10
+          objects:
+            STR_MIB_HIDEOUT_TERMINAL:
+              - [1, 3, 0]
+        - name: MIB_HID_SMALL_03
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [5, 16, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [11, 4, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [2, 4, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [3, 4, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [4, 4, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+          items:
+            STR_MIB_CRATE_CASH_BIG:
+              - [7, 4, 1]
+            STR_HIGH_EXPLOSIVE:
+              - [9, 5, 1]
+              - [5, 15, 0]
+              - [3, 6, 0]
+        - name: MIB_HID_SMALL_04
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [5, 16, 0]
+                amount: 2
+                itemList: *MIBHideoutItem
+              - position: [11, 4, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [9, 8, 0]
+                amount: 1
+                itemList: *MIBHideoutItem
+              - position: [8, 5, 0]
+                amount: 1
+                itemList: *MIBMediumHideoutSpawns
+              - position: [6, 5, 0]
+                amount: 1
+                itemList: *MIBMediumHideoutSpawns
+              - position: [10, 5, 0]
+                amount: 1
+                itemList: *MIBMediumHideoutSpawns
+          items:
+            STR_MIB_CRATE_CASH_BIG:
+              - [7, 4, 1]
+            STR_HIGH_EXPLOSIVE:
+              - [9, 5, 1]
+              - [5, 15, 0]
+              - [3, 6, 0]
+          fuseTimers:
+            STR_HIGH_EXPLOSIVE: [10, 10]
+            STR_SPAWN_MIB_AGENT: [0, 0]
+          objects:
+            STR_MIB_HIDEOUT_TERMINAL:
+              - [1, 3, 0]
 
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!

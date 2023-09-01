@@ -130,3 +130,6 @@ extraSounds:
       181: Resources/Weapons/Sounds/MassDriverRifle_fire.wav
       182: Resources/Weapons/Sounds/MassDriverHeavy_fire.wav
       183: Resources/Weapons/Sounds/MassDriverHit.wav
+      184: Resources/Weapons/Sounds/FlameThrower.wav
+      185: Resources/Weapons/Sounds/Reload_Insert.wav
+      186: Resources/Weapons/Sounds/Ex_Fire.wav
