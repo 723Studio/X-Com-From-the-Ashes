@@ -3120,10 +3120,17 @@ terrains:
         length: 20
         groups: 6 #middle
         objects:
-            STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL:
-              - [4, 8, 0]
-            STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL:
-              - [24, 5, 0]
+          STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL:
+            - [4, 8, 0]
+          STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL:
+            - [24, 5, 0]
+          STR_MILITARY_DATA_TERMINAL:
+            - [5, 2, 0]
+        # randomizedItems:
+        #   - position: [22, 1, 0]
+        #     amount: 1
+        #     mixed: true
+        #     itemList: [STR_TRADIUM] #TODO replace it with something valuable
       - name: MIL_OFFICE_END00
         width: 30
         length: 20
@@ -3135,10 +3142,10 @@ terrains:
             STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL:
               - [2, 19, 0]
         randomizedItems:
-        - position: [5, 9, 0]
-          amount: 1
-          mixed: true
-          itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+          - position: [5, 9, 0]
+            amount: 1
+            mixed: true
+            itemList: [STR_MOTION_SCANNER_PROTOTYPE]
       - name: MIL_OFFICE_END01
         width: 30
         length: 20
@@ -3148,10 +3155,10 @@ terrains:
               - [9, 13, 0]
               - [19, 13, 0]
         randomizedItems:
-        - position: [24, 16, 0]
-          amount: 1
-          mixed: true
-          itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+          - position: [24, 16, 0]
+            amount: 1
+            mixed: true
+            itemList: [STR_MOTION_SCANNER_PROTOTYPE]
 
   - name: MIB_SEWERS
     mapDataSets:
@@ -3213,10 +3220,22 @@ terrains:
       - MIB_URBAN_OBJ
       - MIB_CORP
     mapBlocks:
-        - name: MIB_CORP_SURFACE00
-          width: 50
-          length: 70
-          groups: 1
+      - name: MIB_CORP_SURFACE00
+        width: 50
+        length: 70
+        groups: 1
+        objects:
+          STR_MIB_CORP_BLASTDOOR_LOCKER:
+            - [25, 29, 0]
+            - [16, 26, 1]
+            - [18, 27, 1]
+          STR_CORP_DOOR_LOCKER:
+            - [19, 30, 1]
+          STR_MIB_CORP_CIVILIAN_TERMINAL:
+            - [20, 39, 2]
+          STR_MIB_HIDEOUT_TERMINAL:
+            - [28, 33, 0]
+            - [27, 16, 3]
   - name: STR_MIB_REGIONAL_HQ_DEPLOYMENT
     mapDataSets:
       - BLANKS

@@ -5094,13 +5094,13 @@ items:
     battleType: 12 #new type for hacking
     invWidth: 2
     invHeight: 2
-    maxRange: 20
+    maxRange: 10
     costUse:
-      time: 20
+      time: 60
     flatRate: false
     attraction: 5
-    hackingHp: 25
-    hackingTu: 250
+    hackingHp: 20
+    hackingTu: 100
     LOSRequired: true
     #experienceTrainingMode: 19 - hacking experince is hardcoded
     listOrder: 48150

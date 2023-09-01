@@ -1164,6 +1164,42 @@ en-US:
   STR_RESISTANCE_GIFT_5_SOLDIERS_DESCRIPTION: "Your success and high morale in the X-Com inspired five Resistance agents to join our ranks."
   STR_MIB_BANKER_ACCOUNTS: "M.I.B. Secret Bank Accounts"
   STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. With his help we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+2 832 548"
+  
+  STR_MILITARY_DATA_TERMINAL_EVENT_1: "Results of the military terminal hack"
+  STR_MILITARY_DATA_TERMINAL_EVENT_1_DESCRIPTION: #TODO funds: +600000
+  STR_MILITARY_DATA_TERMINAL_EVENT_2: "Results of the military terminal hack"
+  STR_MILITARY_DATA_TERMINAL_EVENT_2_DESCRIPTION: #TODO funds: +1120000
+  STR_MILITARY_DATA_TERMINAL_EVENT_3: "Results of the military terminal hack"
+  STR_MILITARY_DATA_TERMINAL_EVENT_3_DESCRIPTION: #TODO funds: +1350000
+  STR_MILITARY_DATA_TERMINAL_EVENT_4: "Results of the military terminal hack"
+  STR_MILITARY_DATA_TERMINAL_EVENT_4_DESCRIPTION: #TODO funds: +2100000
+
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_1: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_1_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_2: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_2_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_3: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_3_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_4: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_4_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_5: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_5_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_6: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_6_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_7: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_7_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_8: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_8_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_9: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_9_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_10: "Results of the M.I.B. terminal hack"
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_10_DESCRIPTION: #TODO
+
+  STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_1: "Results of the terminal hack"
+  STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_1_DESCRIPTION: "By hacking into the terminal of the financial organization that covered M.I.B.'s activities, we learned that it was also involved in financing their clandestine operations. The data we obtained allowed us to access the funds from the secret accounts and through a complex chain to safely transfer the funds to the accounts under our control.{NEWLINE}Funds income> {ALT}+480 000"
+  STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_2: "Results of the terminal hack"
+  STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_2_DESCRIPTION: "By hacking into the terminal of the financial organization that was covering M.I.B.'s activities, we learned that it was also involved in funding their clandestine operations. Unfortunately, we didn't have a way to safely transfer funds to our accounts, but we published the data in the public domain and hackers from all over the world swooped in. This way, at least it would inflict some damage on our adversary, which boosted our team's morale.{NEWLINE}Loyalty score> {ALT}+100"
+
   STR_CHOCOLATE_FACTORY_1: "Chocolate Factory"
   STR_CHOCOLATE_FACTORY_1_DESCRIPTION: "One of our scientists has learned his favourite chocolate factory is shutting down. He claims this chocolate is essential for his thought process and asks if we could stock up on it while there's still a chance."
   STR_BUY_CHOCOLATE: "Buy Chocolate*"
@@ -1778,7 +1814,7 @@ en-US:
   STR_MOTION_SCANNER_PROTOTYPE: "Motion Scanner Prototype"
   STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA: #TODO
   STR_MOTION_SCANNER: "Motion Scanner"
-  STR_MOTION_SCANNER_UFOPEDIA: #TODO
+  STR_MOTION_SCANNER_UFOPEDIA: "This sophisticated device uses a variety of detectors and advanced computer algorithms to identify moving enemy units. However, it requires some practice to use effectively. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected." #TODO
   STR_HACKING_COMPUTER: "Hacking Computer"
   STR_HACKING_COMPUTER_UFOPEDIA: #TODO
   STR_SAMPLING_TOOL: "Sampling Toolset"

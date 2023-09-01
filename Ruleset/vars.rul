@@ -103,8 +103,8 @@ kneelBonusGlobal: 120 #default 115
 hackingBaseTuCost: 5
 hackingFirewallBaseTuCost: 10
 hackingFirewallBaseHpCost: 5
-hackingStatToTuCoef: 250 #virus stat adjustment = unitHacking / hackingStatToTuCoef * 100 
-hackingStatToHpCoef: 500
+hackingStatToTuCoef: 200 #virus stat adjustment = unitHacking / hackingStatToTuCoef * 100 
+hackingStatToHpCoef: 400
 visibilityStatsMod: 10
 
 ai:

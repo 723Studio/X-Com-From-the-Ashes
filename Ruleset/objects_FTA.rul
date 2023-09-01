@@ -1,22 +1,51 @@
 objects:
 #teminals
   - type: STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL
-    hackingDefence: 60
-    alterationMCDNumber: 57
-    alterationMCDRadius: 5
+    hackingDefence: 30
+    alterationMCDNumber: 50 #looks for tile with this number in alt_mcd and replace it with it.
+    alterationMCDRadius: 2
   - type: STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL
-    hackingDefence: 60
-    alterationMCDNumber: 56
-    alterationMCDRadius: 5
+    hackingDefence: 30
+    alterationMCDNumber: 52
+    alterationMCDRadius: 2
+  - type: STR_MILITARY_DATA_TERMINAL
+    hackingDefence: 45
+    eventWeights:
+      0:
+        STR_MILITARY_DATA_TERMINAL_EVENT_1: 90
+        STR_MILITARY_DATA_TERMINAL_EVENT_2: 60
+        STR_MILITARY_DATA_TERMINAL_EVENT_3: 30
+        STR_MILITARY_DATA_TERMINAL_EVENT_4: 10
+
+  - type: STR_MIB_CORP_BLASTDOOR_LOCKER
+    hackingDefence: 70
+    alterationMCDNumber: 43
+    alterationMCDRadius: 2
+  - type: STR_CORP_DOOR_LOCKER
+    hackingDefence: 45
+    alterationMCDNumber: 43
+    alterationMCDRadius: 2
+  - type: STR_MIB_CORP_CIVILIAN_TERMINAL
+    hackingDefence: 30
+    eventWeights:
+      0:
+        STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_1: 100
+        STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_2: 90
 
   - type: STR_MIB_HIDEOUT_TERMINAL
-    hackingDefence: 5
-    # spawnedEvents: []
-    # eventWeights:
-    #   0:
-    #     STR_RANDOM_TORTURE_EVENT_1: 50
-    #     STR_RANDOM_TORTURE_EVENT_2: 30
-    #     STR_RANDOM_TORTURE_EVENT_3: 20
+    hackingDefence: 45
+    eventWeights:
+      0:
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_1: 100
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_2: 90
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_3: 80
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_4: 70
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_5: 60
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_6: 50
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_7: 40
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_8: 30
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_9: 20
+        STR_MIB_HIDEOUT_TERMINAL_EVENT_10: 10
 
 #sampling sites
   - type: STR_CATTLE_SAMPLING_SITE
