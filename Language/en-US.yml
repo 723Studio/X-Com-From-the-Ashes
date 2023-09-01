@@ -1773,8 +1773,16 @@ en-US:
   STR_FLASHBANG_GRENADE_UFOPEDIA: "A Flashbang Grenade is designed to overwhelm a person's senses in order to blind and disorient them with a bright light coupled with a loud sound. Such non-lethal devices are in use by the army, law enforcement and special forces.{NEWLINE}A target hit by the grenade has it's available TUs halved, as well as decreased Reactions by 25-35, Firing and Throwing by 20-30, and Melee by 10-20 for 2 turns."
   STR_EXPLOSIVE_CHARGE: "Explosive Charge"
   STR_EXPLOSIVE_CHARGE_UFOPEDIA: "A simple plastic explosive charge with timer mechanism. Very useful for removing obstacles and destroying objects, as it creates a dense explosion that quickly loses its destructive power with distance."
+  STR_HIGH_EXPLOSIVE: "High Explosive"
+  STR_HIGH_EXPLOSIVE_UFOPEDIA: "This explosive should only be used for demolition purposes. Keep personnel clear of demolition sites." #TODO
   STR_MOTION_SCANNER_PROTOTYPE: "Motion Scanner Prototype"
+  STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA: #TODO
+  STR_MOTION_SCANNER: "Motion Scanner"
+  STR_MOTION_SCANNER_UFOPEDIA: #TODO
   STR_HACKING_COMPUTER: "Hacking Computer"
+  STR_HACKING_COMPUTER_UFOPEDIA: #TODO
+  STR_SAMPLING_TOOL: "Sampling Toolset"
+  STR_SAMPLING_TOOL_UFOPEDIA: #TODO
   STR_FIRST_AID: "First Aid"
   STR_FIRST_AID_UFOPEDIA: "This bag contains a minimum set of medical items that allow for temporary stopping of bleeding, treatment of the circumference of wounds and the application of primary bandage. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored."
   STR_PAINKILLER: "Painkillers"

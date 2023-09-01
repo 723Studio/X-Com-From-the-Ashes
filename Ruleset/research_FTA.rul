@@ -841,6 +841,27 @@ research:
     dependencies:
       - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 25002
+  - name: STR_HACKING_COMPUTER
+    cost: 100
+    stats:
+      designing: 120
+      computers: 80
+    points: 50
+    dependencies:
+      - STR_HIGH_TECH_PARTS
+    listOrder: 25002
+  - name: STR_SAMPLING_TOOL
+    cost: 100
+    stats:
+      designing: 100
+      tactics: 100
+      biology: 100
+      physics: 100
+    points: 50
+    dependencies:
+      - STR_CROP_CIRCLES
+    listOrder: 25002
+
   - name: STR_ROCKET_GLOVE
     cost: 400
     stats:
@@ -948,6 +969,17 @@ research:
       physics: 120
     points: 50
     needItem: true
+    listOrder: 25025
+  - name: STR_MOTION_SCANNER
+    cost: 1000
+    stats:
+      designing: 80
+      computers: 100
+      physics: 120
+    points: 50
+    dependencies:
+      - STR_MOTION_SCANNER_PROTOTYPE
+      - STR_HIGH_TECH_PARTS
     listOrder: 25025
 
 
@@ -2373,11 +2405,11 @@ research:
     dependencies:
       - STR_GRENADE_LAUNCHER
     listOrder: 30322
-  - name: STR_MOTION_SCANNER
+  - name: STR_HIGH_EXPLOSIVE
     cost: 360
     stats:
       tactics: 100
-      physics: 100
+      chemistry: 100
     points: 30
     needItem: true
     listOrder: 30330

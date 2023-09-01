@@ -427,7 +427,6 @@ manufacture:
     listOrder: 220030
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT
-    requiresBaseFunc: [WORK]
     requires:
       - STR_IMPROVISED_MANUFACTURING_POSTREQ
       - STR_XCOM_EQUIPMENT
@@ -440,16 +439,45 @@ manufacture:
   - name: STR_MOTION_SCANNER
     category: STR_EQUIPMENT
     requires:
-      - STR_MOTION_SCANNER_PROTOTYPE
-      - STR_PRODUCTION
+      - STR_MOTION_SCANNER
     space: 3
+    stats:
+      microelectronics: 100
     time: 630
     cost: 36000
     requiredItems:
-      STR_HIGH_TECH_PARTS: 2
+      STR_HIGH_TECH_PARTS: 3
     producedItems:
       STR_MOTION_SCANNER: 1
-    requiresBaseFunc: [WORK]
+    listOrder: 220040
+  - name: STR_HACKING_COMPUTER
+    category: STR_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER
+    space: 3
+    stats:
+      microelectronics: 100
+    time: 630
+    cost: 36000
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 5
+    producedItems:
+      STR_HACKING_COMPUTER: 1
+    listOrder: 220040
+  - name: STR_SAMPLING_TOOL
+    category: STR_EQUIPMENT
+    requires:
+      - STR_SAMPLING_TOOL
+    space: 3
+    stats:
+      microelectronics: 200
+    time: 630
+    cost: 36000
+    requiredItems:
+      STR_CHEMICALS: 2
+      STR_HIGH_TECH_PARTS: 1
+    producedItems:
+      STR_SAMPLING_TOOL: 1
     listOrder: 220040
 #components
   - name: STR_SPARE_PARTS

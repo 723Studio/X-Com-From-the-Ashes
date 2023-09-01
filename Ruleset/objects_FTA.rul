@@ -1,8 +1,14 @@
 objects:
-  - type: STR_TERMINAL
-    hackingDefence: 1
-    alterationMCDNumber: 16
+#teminals
+  - type: STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL
+    hackingDefence: 60
+    alterationMCDNumber: 57
     alterationMCDRadius: 5
+  - type: STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL
+    hackingDefence: 60
+    alterationMCDNumber: 56
+    alterationMCDRadius: 5
+
   - type: STR_MIB_HIDEOUT_TERMINAL
     hackingDefence: 5
     # spawnedEvents: []
@@ -11,6 +17,8 @@ objects:
     #     STR_RANDOM_TORTURE_EVENT_1: 50
     #     STR_RANDOM_TORTURE_EVENT_2: 30
     #     STR_RANDOM_TORTURE_EVENT_3: 20
+
+#sampling sites
   - type: STR_CATTLE_SAMPLING_SITE
     samplingDefence: 1
     spawnedItem: STR_FIRE_EXTINGUISHER

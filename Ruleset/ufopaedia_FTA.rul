@@ -2100,7 +2100,42 @@ ufopaedia:
       - STR_EXPLOSIVE_CHARGE
     text: STR_EXPLOSIVE_CHARGE_UFOPEDIA
     listOrder: 24070
+  - id: STR_HIGH_EXPLOSIVE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HIGH_EXPLOSIVE
+    text: STR_HIGH_EXPLOSIVE_UFOPEDIA
+    listOrder: 24040
 #equipment
+  - id: STR_MOTION_SCANNER_PROTOTYPE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER_PROTOTYPE
+    text: STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA
+    listOrder: 24040
+  - id: STR_MOTION_SCANNER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER
+    text: STR_MOTION_SCANNER_UFOPEDIA
+    listOrder: 24040
+  - id: STR_HACKING_COMPUTER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HACKING_COMPUTER
+    text: STR_HACKING_COMPUTER_UFOPEDIA
+    listOrder: 24040
+  - id: STR_SAMPLING_TOOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_SAMPLING_TOOL
+    text: STR_SAMPLING_TOOL_UFOPEDIA
+    listOrder: 24040
   - id: STR_FIRST_AID
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

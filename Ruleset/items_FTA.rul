@@ -5084,24 +5084,47 @@ items:
     flatRate: true
     listOrder: 22000
   - type: STR_HACKING_COMPUTER
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
-    requiresBuy:
-      - STR_TODOIUM
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
     size: 0.4
     weight: 1
     landOnly: true
-    bigSprite: 400 #temp
-    floorSprite: 400 #temp
-    handSprite: 704 #temp
-    #battleType: 12 #new type for hacking
+    bigSprite: 466
+    floorSprite: 466
+    #handSprite: 930
+    battleType: 12 #new type for hacking
     invWidth: 2
-    invHeight: 1
+    invHeight: 2
+    maxRange: 20
     costUse:
       time: 20
     flatRate: false
     attraction: 5
-    #experienceTrainingMode: 19
-    listOrder: 22010
+    hackingHp: 25
+    hackingTu: 250
+    LOSRequired: true
+    #experienceTrainingMode: 19 - hacking experince is hardcoded
+    listOrder: 48150
+  - type: STR_SAMPLING_TOOL
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
+    requiresBuy:
+        - STR_TODOIUM
+    size: 0.4
+    weight: 1
+    landOnly: true
+    bigSprite: 467
+    floorSprite: 467
+    #handSprite: 1058
+    battleType: 13 #new type for sampling
+    invWidth: 2
+    invHeight: 2
+    costUse:
+      time: 20
+    flatRate: false
+    attraction: 5
+    samplingPower: 100
+    LOSRequired: true
+    #experienceTrainingMode: 19 - hacking experince is hardcoded
+    listOrder: 48150
 #medical
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
@@ -5445,51 +5468,7 @@ items:
     attraction: 15
     listOrder: 25030
     landOnly: true
-  - type: STR_HACKING_TOOL
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT]
-    requiresBuy:
-        - STR_TODOIUM
-    size: 0.4
-    weight: 1
-    landOnly: true
-    bigSprite: 466
-    floorSprite: 466
-    #handSprite: 930 #temp
-    battleType: 12 #new type for hacking
-    invWidth: 2
-    invHeight: 1
-    maxRange: 20
-    costUse:
-      time: 20
-    flatRate: false
-    attraction: 5
-    hackingHp: 25
-    hackingTu: 250
-    LOSRequired: true
-    #experienceTrainingMode: 19 - hacking experince is hardcoded
-    listOrder: 48150
-  - type: STR_SAMPLING_TOOL
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT]
-    requiresBuy:
-        - STR_TODOIUM
-    size: 0.4
-    weight: 1
-    landOnly: true
-    bigSprite: 467
-    floorSprite: 467
-    handSprite: 1058
-    battleType: 13 #new type for sampling
-    invWidth: 2
-    invHeight: 2
-    maxRange: 20
-    costUse:
-      time: 20
-    flatRate: false
-    attraction: 5
-    samplingPower: 100
-    LOSRequired: true
-    #experienceTrainingMode: 19 - hacking experince is hardcoded
-    listOrder: 48150
+
 
 #built-in weapons
   - type: STR_UNARMED

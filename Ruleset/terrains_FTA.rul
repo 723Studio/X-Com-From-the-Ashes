@@ -3119,10 +3119,21 @@ terrains:
         width: 30
         length: 20
         groups: 6 #middle
+        objects:
+            STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL:
+              - [4, 8, 0]
+            STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL:
+              - [24, 5, 0]
       - name: MIL_OFFICE_END00
         width: 30
         length: 20
         groups: 7 #end
+        objects:
+            STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL:
+              - [9, 13, 0]
+              - [19, 13, 0]
+            STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL:
+              - [2, 19, 0]
         randomizedItems:
         - position: [5, 9, 0]
           amount: 1
@@ -3132,6 +3143,10 @@ terrains:
         width: 30
         length: 20
         groups: 7 #end
+        objects:
+            STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL:
+              - [9, 13, 0]
+              - [19, 13, 0]
         randomizedItems:
         - position: [24, 16, 0]
           amount: 1
