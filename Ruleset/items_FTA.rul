@@ -5939,15 +5939,27 @@ items:
   - type: STR_SUPPLIES_1
     categories: [STR_LOOT]
     size: 3
-    weight: 45
+    weight: 36
     bigSprite: 413
     floorSprite: 413
-    costSell: 34000
-    costThrow:
-      time: 70
-      energy: 40
+    costSell: 24000
+    tuThrow: 0
     battleType: 0
     armor: 10
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 4
+    listOrder: 31040
+  - type: STR_SEALED_CRATE
+    categories: [STR_LOOT]
+    size: 3
+    weight: 42
+    bigSprite: 493
+    floorSprite: 493
+    costSell: 16000
+    tuThrow: 0
+    battleType: 0
+    armor: 20
     invWidth: 2
     invHeight: 3
     recoveryPoints: 4
@@ -6012,17 +6024,6 @@ items:
     stackSize: 20
     recoveryPoints: 8
     listOrder: 31080
-  - type: STR_PLASTIC_CARD
-    categories: [STR_LOOT]
-    landOnly: true
-    size: 0.01
-    costSell: 10
-    weight: 0
-    battleType: 0
-    invWidth: 1
-    invHeight: 1
-    recover: false
-    listOrder: 31090
   - type: STR_CASH_PACK_BIG
     categories: [STR_LOOT]
     landOnly: true

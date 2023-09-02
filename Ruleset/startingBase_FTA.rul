@@ -64,9 +64,10 @@ startingBase:
     STR_LMG: 1
     STR_LMG_CLIP: 6
     STR_AUTO_CANNON: 1
-    STR_AC_AP_AMMO: 5
-    STR_AC_BS_AMMO: 4
-    STR_AC_HE_AMMO: 2
+    STR_AC_AP_AMMO: 6
+    STR_AC_BS_AMMO: 6
+    STR_AC_HE_AMMO: 4
+    STR_AC_I_AMMO: 4
     STR_LIGHT_CANNON: 2
     STR_LC_AP_AMMO: 8
     STR_LC_BS_AMMO: 5
@@ -94,6 +95,7 @@ startingBase:
     STR_ELECTRO_FLARE: 13
     STR_FLASHLIGHT: 10
     STR_SPARE_PARTS: 15
+    STR_SEALED_CRATE: 4
   crafts:
     - type: STR_DRAGONFLY
       id: 1

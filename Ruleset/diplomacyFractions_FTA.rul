@@ -27,8 +27,9 @@ diplomacyFactions:
       - resistanceAttacksMilitaryConvoy
     helpTreatyGap: 12
     helpTreatyEventScripts:
-      - STR_RESISTANCE_WEAPONRY_SCRIPT
-      - STR_RESISTANCE_CELL_NEAR_MIB_HQ
+      - resistanceWeaponryScript
+      - resistanceCellNearMibHq
+      - resistanceGiftSoldiers
       #- STR_RESISTANCE_GIFT_MIB_AGENT
     # usualEventsScripts:
     #   - STR_RESISTANCE_WEAPONRY_SCRIPT

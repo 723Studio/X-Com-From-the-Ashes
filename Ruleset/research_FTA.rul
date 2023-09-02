@@ -2495,7 +2495,7 @@ research:
     destroyItem: true
     dependencies: #TODO!! remove
       - STR_TODOIUM
-    # getOneFree: #FIXME!! add
+    # getOneFree: #TODO!! add
     #   - ""
     listOrder: 5000
   - name: STR_MIB_DATA_CONTAINER
@@ -2507,6 +2507,8 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 5010
+  - name: STR_SEALED_CRATE_BREACHING
+    hidden: true
   - name: STR_CREDIT_CARD_BREACHING_PREREQ
   - name: STR_CREDIT_CARD_BREACHING
     hidden: true

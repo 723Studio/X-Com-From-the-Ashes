@@ -32,6 +32,12 @@ events:
     timerRandom: 400
     researchList: [STR_MILITARY_STATUS_REPORT]
 #Story
+  - name: STR_XCOM_SEALED_CRATES_EVENT
+    description: STR_XCOM_SEALED_CRATES_EVENT_DESCRIPTION
+    background: BACK17.SCR
+    timer: 2880
+    timerRandom: 2880
+    researchList: [STR_SEALED_CRATE_BREACHING]
   - name: STR_MONSTER_HUNT_START_EVENT
     description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
     timer: 15840 # 11 days

@@ -414,6 +414,7 @@ extraSprites:
       490: Resources/Weapons/Earthbound/Xcom/electro-magnet/bigob_HeavyGaussClip.png
       491: Resources/Weapons/Earthbound/Tinkering/bigob_Flamethrower.png
       492: Resources/Weapons/Earthbound/Tinkering/bigob_FlamethrowerClip.png
+      493: Resources/MiscItems/bigob_SealedCrate.png
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -622,6 +623,7 @@ extraSprites:
       490: Resources/Weapons/Earthbound/Xcom/electro-magnet/floorob_HeavyGaussClip.png
       491: Resources/Weapons/Earthbound/Tinkering/floorob_Flamethrower.png
       492: Resources/Weapons/Earthbound/Tinkering/floorob_FlamethrowerClip.png
+      493: Resources/MiscItems/floorob_SealedCrate.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40

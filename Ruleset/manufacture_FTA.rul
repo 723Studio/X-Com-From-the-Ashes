@@ -527,17 +527,40 @@ manufacture:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
 #refining
+  - name: STR_SEALED_CRATE_BREACHING
+    category: STR_LOOT
+    requires:
+      - STR_SEALED_CRATE_BREACHING
+    stats:
+      hacking: 100
+    requiredItems:
+      STR_SEALED_CRATE: 1
+    space: 1
+    time: 750
+    randomProducedItems:
+      - [40, {STR_POLICE_BATON: 2, STR_TASER: 2, STR_TASER_CLIP: 6, STR_SHOTGUN_SHELLS_BATON: 12}]
+      - [40, {STR_GRENADE: 10, STR_SMOKE_GRENADE: 10, STR_FLASHBANG_GRENADE: 10, STR_INCENDIARY_GRENADE: 10, STR_PROXIMITY_GRENADE: 10}]
+      - [40, {STR_COMBAT_SHIELD: 6}]
+      - [40, {STR_TRAUMA_PACK: 2, STR_PERSONAL_AID_KIT: 6, STR_STIMS_INJECTOR: 6}]
+      - [40, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 6, STR_LARGE_ROCKET: 6, STR_INCENDIARY_ROCKET: 6}]
+      - [40, {STR_AUTO_CANNON: 1, STR_AC_AP_AMMO: 6, STR_AC_BS_AMMO: 6, STR_AC_HE_AMMO: 6, STR_AC_I_AMMO: 6}]
+      - [40, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 6, STR_LC_BS_AMMO: 6, STR_LC_HE_AMMO: 6, STR_LC_I_AMMO: 6}]
+      - [40, {STR_LMG: 1, STR_LMG_CLIP: 8}]
+      - [40, {STR_MGL: 1, STR_MGL_CLIP: 6, STR_MGL_CLIP_SMOKE: 6, STR_MGL_CLIP_FLASHBANG: 6}]
+      - [40, {STR_STINGRAY_MISSILE: 6}]
+      - [40, {STR_CANNON_ROUNDS_X50: 6}]
+    listOrder: 220040
   - name: STR_CREDIT_CARD_BREACHING
     category: STR_LOOT
     requires:
       - STR_CREDIT_CARD_BREACHING
+    stats:
+      hacking: 100
     requiredItems:
       STR_CREDIT_CARD: 1
     space: 1
     time: 450
     cost: -22000
-    producedItems:
-      STR_PLASTIC_CARD: 1
     listOrder: 220040
   - name: STR_SILVER_CREDIT_CARD_BREACHING
     category: STR_LOOT
@@ -548,8 +571,6 @@ manufacture:
     space: 1
     time: 700
     cost: -47000
-    producedItems:
-      STR_PLASTIC_CARD: 1
     listOrder: 220040
   - name: STR_GOLD_CREDIT_CARD_BREACHING
     category: STR_LOOT
@@ -560,8 +581,6 @@ manufacture:
     space: 1
     time: 850
     cost: -110000
-    producedItems:
-      STR_PLASTIC_CARD: 1
     listOrder: 220040
 
 #facility

@@ -141,6 +141,8 @@ config:
     - manufacture
     soldiers.prisoner:
     - prisoners
+    objects.eventWeights:
+    - events
   keyReferenceTypes:
     - covertOperations.instantSuccessDeployment
     - covertOperations.instantTrapDeployment

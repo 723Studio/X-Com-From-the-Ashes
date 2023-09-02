@@ -1,5 +1,5 @@
 battleScripts:
-  - type: ZOMBIE_ATTACK_RESISTANCE_FARM
+  - type: zombieAttackResistanceFarm
     commands:
     - type: spawnUnit #for low diff
       startTurn: 3
@@ -37,7 +37,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_FACEHUGGER, STR_FACEHUGGER,STR_FRESH_ZOMBIE, STR_ZOMBIE_GRUBAS_TERRORIST]
 
-  - type: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
+  - type: mibAttackResistanceForestHouse
     commands:
     - type: spawnUnit #firstWave
       executionChances: 80
@@ -77,7 +77,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
 
-  - type: MIB_ATTACK_CROP_CIRCLES
+  - type: mibAttackCropCircles
     commands:
     - type: spawnUnit #firstWave
       executionChances: 80
@@ -117,7 +117,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
 
-  - type: STR_DEAD_CATTLE_MIB
+  - type: deadCattleMib
     commands:
     - type: spawnUnit #firstWave
       executionChances: 50
@@ -157,8 +157,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN]
 
-
-  - type: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
+  - type: mibAttackResistanceUrbanHideout
     commands:
     - type: spawnUnit #firstWave
       executionChances: 75
@@ -198,7 +197,7 @@ battleScripts:
       spawnBlocks: [NORTH, WEST, SOUTH, EAST, NW, NE, SW, SE]
       unitSet: [STR_MIB_SPECOPS_SPAWN]
 
-  - type: MIB_ATTACK_SCIENTIST
+  - type: mibAttackScientist
     commands:
     - type: spawnUnit #start
       executionChances: 75
@@ -246,7 +245,7 @@ battleScripts:
           title: STR_RECOVER_RESEARCH_LOGS_TITLE
           content: STR_RECOVER_RESEARCH_LOGS_CONTENT
 
-  - type: MIB_HQ_SURFACE
+  - type: mibHqSurface
     commands:
     - type: spawnUnit #med
       executionChances: 60
@@ -270,23 +269,18 @@ battleScripts:
       randomPackSize: true
       startTurn: 3
       unitSide: 1
-      minAlarmLevel: 2
+      minAlarmLevel: 3
       spawnBlocks: [WEST]
       unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
     - type: showMessage
       maxRuns: 1
       variable: alarm
-      minAlarmLevel: 2
-      startTurn: 1
+      minAlarmLevel: 3
       messages:
         0:
-          title: MIB_TRAP_ESCAPE_MAP_ALARM_TITLE
-          content: MIB_TRAP_ESCAPE_MAP_ALARM_CONTENT
-          #answer: STR_SOME_TEXT
-          #background: SOME_EXTRA_SPRITE.PCK
-        # 1:
-        #   content: content2
-  - type: MIB_TRAP_ESCAPE_EARLY
+          title: STR_MIB_REGIONAL_HQ_ALARM_TITLE
+          content: STR_MIB_REGIONAL_HQ_ALARM_CONTENT
+  - type: mibTrapEscapeEarly
     commands:
     - type: spawnUnit #med
       executionChances: 60
@@ -325,7 +319,7 @@ battleScripts:
         # 1:
         #   content: content2
 
-  - type: MIB_TRAP_ESCAPE_EASY
+  - type: mibTrapEscapeEasy
     commands:
     - type: spawnUnit #med
       executionChances: 60
@@ -364,7 +358,7 @@ battleScripts:
         # 1:
         #   content: content2
 
-  - type: MULITARY_UNDERGROUND_RND
+  - type: mulitaryUndergroundRnd
     commands:
     - type: spawnUnit #med
       executionChances: 40
@@ -402,7 +396,7 @@ battleScripts:
         # 1:
         #   content: content2
 
-  - type: STR_LOCALS_TRAP_BAT_SCRIPT
+  - type: localsTrapBatScript
     commands:
     - type: spawnUnit
       executions: 1
@@ -423,30 +417,7 @@ battleScripts:
       spawnBlocks: [NORTH, SOUTH]
       unitSet: [STR_MALE_POLICE]
 
-  - type: STR_MIB_REGIONAL_HQ
-    commands:
-    - type: spawnUnit
-      executionChances: 40
-      packSize: 3
-      randomPackSize: true
-      #startTurn: 5
-      unitSide: 1
-      minAlarmLevel: 3
-      spawnBlocks: [WEST]
-      minLevel: 5
-      maxLevel: 5
-      unitSet: [STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_SPECOPS_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_ARMORED_AGENT_SPAWN, STR_MIB_AGENT_SPAWN]
-    - type: showMessage
-      maxRuns: 1
-      variable: alarm
-      minAlarmLevel: 3
-      #startTurn: 1
-      messages:
-        0:
-          title: STR_MIB_REGIONAL_HQ_ALARM_TITLE
-          content: STR_MIB_REGIONAL_HQ_ALARM_CONTENT
-
-  - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
+  - type: strMibRegionalHqUnderground
     commands:
     - type: showMessage
       startTurn: 1
@@ -474,7 +445,7 @@ battleScripts:
           title: "You are pretty patient"
           content: "What a long play!"
 
-  - type: STR_MIB_HIDEOUT_MEDIUM
+  - type: mibHideoutMediumBS
     commands:
     - type: showMessage
       startTurn: 1
@@ -485,7 +456,7 @@ battleScripts:
         0:
           title: STR_MIB_HIDEOUT_MINE
           content: STR_MIB_HIDEOUT_MEDIUM_MINE_DESCRIPTION
-  - type: STR_MIB_HIDEOUT_SMALL
+  - type: mibHideoutMediumBSSmall
     commands:
     - type: showMessage
       startTurn: 1
@@ -518,13 +489,3 @@ battleScripts:
   #     randomPackSize: true
   #     unitSide: 1
   #     unitSet: [STR_XCOM_EX_COMMANDER]
-
-  - type: STR_ENDLESS_WAR_SCRIPT
-    commands:
-    - type: showMessage
-      startTurn: 500
-      executionChances: 1
-      messages:
-        0:
-          title: "You are pretty patient"
-          content: "What a long play!"

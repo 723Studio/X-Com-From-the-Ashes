@@ -346,7 +346,7 @@ alienDeployments:
     height: 11
     terrains:
       - MIB_SEWERS
-    script: MIB_SEWERS
+    script: mibSewers
     briefing:
       textOffset: -16
       background: MIB_BACKGROUND.SCR
@@ -358,7 +358,7 @@ alienDeployments:
     alert: STR_ALERT_MIB_REGIONAL_HQ
     alertBackground: MIB_BACKGROUND.SCR
     alertDescription: STR_ALERT_MIB_REGIONAL_HQ_DESCRIPTION
-    battleScript: MIB_HQ_SURFACE
+    battleScript: mibHqSurface
     alienBase: true
     keepCraftAfterFailedMission: true
     escapeType: 1
@@ -811,7 +811,7 @@ alienDeployments:
             - STR_BRIEFCASE_CASH
   - type: STR_INITIAL_REGIONAL_HQ_EASY
     refNode: *MIBRegionalHQ
-    script: MIB_SEWERS_EASY
+    script: mibSewersEasy
     alternativeDeploymentResearch: STR_RESISTANCE_CELL_CREATED
     alternativeDeployment: STR_INITIAL_REGIONAL_HQ_EASY_RESISTANCE
     briefing:
@@ -822,7 +822,7 @@ alienDeployments:
       desc: STR_INITIAL_REGIONAL_HQ_EASY_DESC
   - type: STR_INITIAL_REGIONAL_HQ_EASY_RESISTANCE
     refNode: *MIBRegionalHQ
-    script: MIB_SEWERS_EASY_RESISTANCE
+    script: mibSewersEasyResistance
     briefing:
       textOffset: -16
       background: SEWERS_BACKGROUND.SCR
@@ -830,14 +830,14 @@ alienDeployments:
       showCraft: false
       desc: STR_INITIAL_REGIONAL_HQ_EASY_DESC
   - type: STR_MIB_REGIONAL_HQ_UNDERGROUND
-    race: STR_MIB_BASE_EARLY
+    race: STR_MIB
     width: 70
     length: 70
     height: 2
     terrains:
       - MIB_BASE
     shade: 10
-    script: MIB_BASE_EARLY
+    script: mibBaseEarly
     briefing:
       textOffset: -16
       background: BACK01.SCR
@@ -847,7 +847,7 @@ alienDeployments:
     alienBase: true
     objectiveType: 3
     #objectivesRequired: 3
-    battleScript: STR_MIB_REGIONAL_HQ_UNDERGROUND
+    battleScript: strMibRegionalHqUnderground
     missionCompleteText: STR_MIB_BASE_DESTROYED
     missionFailedText: STR_MIB_BASE_NOT_DESTROYED
     objectiveComplete: [STR_MIB_CONTROL_CENTER_DESTROYED, 500]
@@ -1171,7 +1171,7 @@ alienDeployments:
     terrains:
       - FOREST
     shade: 6
-    script: MIB_CHASING
+    script: mibChasing
     successEvents:
       STR_MIB_CHASING_SUCCESS: 100
     failureEvents:
@@ -1331,8 +1331,8 @@ alienDeployments:
       desc: STR_RESISTANCE_ZOMBIE_FARM_BRIEFING
     terrains:
       - CULTA
-    script: RESISTANCE_FARM
-    battleScript: ZOMBIE_ATTACK_RESISTANCE_FARM
+    script: resistanceFarm
+    battleScript: zombieAttackResistanceFarm
     data:
       - alienRank: 5
         lowQty: 6
@@ -1405,7 +1405,7 @@ alienDeployments:
       desc: STR_RESISTANCE_FARM_CULTISTS_BRIEFING
     terrains:
       - CULTA
-    script: RESISTANCE_FARM_NO_RADIO
+    script: resistanceFarmNoRadio
     data:
       - alienRank: 5 #STR_CULT_GANGER
         lowQty: 4
@@ -1549,7 +1549,7 @@ alienDeployments:
     refNode: *ResistanceFarmBandits
     race: STR_BANDITS
     abortPenalty: 150
-    script: RESISTANCE_FARM_NO_RADIO
+    script: resistanceFarmNoRadio
   - type: STR_RESISTANCE_FOREST_HAVEN
     width: 80
     length: 80
@@ -1592,8 +1592,8 @@ alienDeployments:
     terrains:
       - FORESTSWAMP
     customUfo: STR_RESISTANCE_FOREST_HOUSE
-    script: CRAFT_UFO_SCRIPT_BIG_MAP
-    battleScript: MIB_ATTACK_RESISTANCE_FOREST_HOUSE
+    script: craftUfoScriptBigMap
+    battleScript: mibAttackResistanceForestHouse
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 3
@@ -1758,8 +1758,8 @@ alienDeployments:
     terrains:
       - URBAN_LOW
     customUfo: STR_URBAN_HAZARD
-    script: CRAFT_UFO_STREETS_SCRIPT_BIG_MAP
-    battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
+    script: craftUfoStreetsScriptBigMap
+    battleScript: mibAttackResistanceUrbanHideout
     data:
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
         lowQty: 3
@@ -1926,7 +1926,7 @@ alienDeployments:
     terrains:
       - FORESTSWAMP
     customUfo: STR_RESISTANCE_FOREST_HOUSE_TRAP
-    script: CRAFT_UFO_SCRIPT_BIG_MAP
+    script: craftUfoScriptBigMap
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 2
@@ -2204,7 +2204,7 @@ alienDeployments:
       - FORESTSWAMP
       - FOREST
     customUfo: STR_MIB_FOREST_BEACON
-    script: CRAFT_UFO_SCRIPT
+    script: craftUfoScript
     data:
       - alienRank: 9 #STR_MIB_SPECOPS
         lowQty: 3
@@ -2350,7 +2350,7 @@ alienDeployments:
       desc: STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION
     terrains:
       - CULTA
-    script: RESISTANCE_FARM_AMBUSH
+    script: resistanceFarmAmbush
     data:
       - alienRank: 5 #STR_FRESH_ZOMBIE
         lowQty: 9
@@ -2404,8 +2404,8 @@ alienDeployments:
     terrains:
       - FOREST
     customUfo: STR_SCIENTIST_REFUGE
-    script: CRAFT_UFO_SCRIPT_BIG_MAP
-    battleScript: MIB_ATTACK_SCIENTIST
+    script: craftUfoScriptBigMap
+    battleScript: mibAttackScientist
     data:
       - alienRank: 6
         lowQty: 1
@@ -2441,8 +2441,8 @@ alienDeployments:
     terrains:
       - DESERT
     customUfo: DESERT_TELESCOPE_HOUSE
-    script: CRAFT_UFO_SCRIPT_BIG_MAP
-    battleScript: MIB_ATTACK_RESISTANCE_URBAN_HIDEOUT
+    script: craftUfoScriptBigMap
+    battleScript: mibAttackResistanceUrbanHideout
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 3
@@ -2600,7 +2600,7 @@ alienDeployments:
       desc: STR_ARMY_CONVOY_ATTACK_BRIEFING
     terrains:
       - DESERT
-    script: STR_ARMY_CONVOY_ATTACK
+    script: armyConvoyAttack
     data:
       - alienRank: 5 #STR_ARMY_FIELD_SOLDIER
         lowQty: 12
@@ -2877,7 +2877,7 @@ alienDeployments:
       - FOREST
       - MOUNTBD_ARBOREAL
       - PLAINS_ARBOREAL
-    script: HUNT_50x50
+    script: hunt_50x50
     data:
       - alienRank: 6
         lowQty: 3
@@ -2908,7 +2908,7 @@ alienDeployments:
       - FOREST
       - MOUNTBD_ARBOREAL
       - PLAINS_ARBOREAL
-    script: HUNT_50x50
+    script: hunt_50x50
     data:
       - alienRank: 6
         lowQty: 5
@@ -2940,7 +2940,7 @@ alienDeployments:
       - MOUNTBD_MUD
       - PLAINS_ARBOREAL
       - PLAINS_MUD
-    script: HUNT_50x50
+    script: hunt_50x50
     data:
       - alienRank: 6
         lowQty: 3
@@ -2973,7 +2973,7 @@ alienDeployments:
       - MOUNTBD_MUD
       - PLAINS_ARBOREAL
       - PLAINS_MUD
-    script: HUNT_50x50
+    script: hunt_50x50
     data:
       - alienRank: 6
         lowQty: 5
@@ -3005,7 +3005,7 @@ alienDeployments:
       - MOUNTBD_TROPICAL
       - PLAINS_TROPICAL
       - PLAINS_MUD
-    script: HUNT_50x50
+    script: hunt_50x50
     data:
       - alienRank: 6
         lowQty: 3
@@ -3038,7 +3038,7 @@ alienDeployments:
       - MOUNTBD_TROPICAL
       - PLAINS_TROPICAL
       - PLAINS_MUD
-    script: HUNT_50x50
+    script: hunt_50x50
     data:
       - alienRank: 6
         lowQty: 5
@@ -3071,7 +3071,7 @@ alienDeployments:
       - MOUNTBD_TROPICAL
       - PLAINS_TROPICAL
       - PLAINS_MUD
-    script: HUNT_50x50
+    script: hunt_50x50
     data:
       - alienRank: 6
         lowQty: 2
@@ -3153,7 +3153,7 @@ alienDeployments:
       desc: STR_EX_COUNCIL_DATA_VAULT_BRIEFING
     terrains:
       - URBAN_LOW
-    script: LAND_CRAFT_URBAN_LOW_SMALL_MAP
+    script: landCraftUrbanLowSmallMap
     data:
       - alienRank: 5 #STR_BANDIT
         lowQty: 2
@@ -3284,7 +3284,7 @@ alienDeployments:
       showTarget: false
       showCraft: false
       desc: STR_EX_COUNCIL_DATA_VAULT_HARD_BRIEFING
-    script: LAND_CRAFT_URBAN_LOW_SMALL_MAP
+    script: landCraftUrbanLowSmallMap
     terrains:
       - URBAN_LOW
     data:
@@ -3438,8 +3438,8 @@ alienDeployments:
       desc: STR_CROP_CIRCLES_BRIEFING
     terrains:
       - CULTA
-    script: STR_CROP_CIRCLES_MIB
-    battleScript: MIB_ATTACK_CROP_CIRCLES
+    script: cropCirclesMib
+    battleScript: mibAttackCropCircles
     customUfo: STR_CROP_CIRCLE_POOR_LOOT
     unlockedResearch: STR_CROP_CIRCLES_PREREQ
     unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
@@ -3535,8 +3535,8 @@ alienDeployments:
       desc: STR_CROP_CIRCLES_BRIEFING
     terrains:
       - CULTA
-    script: STR_CROP_CIRCLES_MIB
-    battleScript: MIB_ATTACK_CROP_CIRCLES
+    script: cropCirclesMib
+    battleScript: mibAttackCropCircles
     customUfo: STR_CROP_CIRCLE_POOR_LOOT
     data:
       - alienRank: 5
@@ -3631,7 +3631,7 @@ alienDeployments:
       desc: STR_CROP_CIRCLES_NO_LOOT_MIB_BRIEFING
     terrains:
       - CULTA
-    script: STR_CROP_CIRCLES_DOUBLE_MIB
+    script: cropCirclesDoubleMib
     customUfo: STR_CROP_CIRCLE_NO_LOOT
     data:
       - alienRank: 5 #STR_MIB_AGENT
@@ -3871,7 +3871,7 @@ alienDeployments:
       desc: STR_CROP_CIRCLES_ZOMBIES_BRIEFING
     terrains:
       - CULTA
-    #script: STR_CROP_CIRCLES_MIB
+    #script: cropCirclesMib
     #battleScript: MIB_ATTACK_CROP_CIRCLES
     customUfo: STR_CROP_CIRCLE_NO_LOOT
     unlockedResearch: STR_CROP_CIRCLES_ZOMBIES_PREREQ
@@ -3916,8 +3916,8 @@ alienDeployments:
     duration: [12, 18]
     despawnPenalty: 100
     customUfo: STR_DEAD_COW
-    script: STR_DEAD_CATTLE_MIB
-    battleScript: STR_DEAD_CATTLE_MIB
+    script: deadCattleMib
+    battleScript: deadCattleMib
     #unlockedResearch: #FIXME - some arc here pls!
     # music:
     #   - ZIZZ_STUDIO_SPOOKY_SCAPE
@@ -3984,8 +3984,8 @@ alienDeployments:
       desc: STR_INFILTRATING_MILITARY_RND_BRIEFING
     terrains:
       - OFFICE
-    script: MULITARY_UNDERGROUND_RND
-    battleScript: MULITARY_UNDERGROUND_RND
+    script: mulitaryUndergroundRnD
+    battleScript: mulitaryUndergroundRnd
     data:
       - alienRank: 4 #STR_ARMY_FIELD_OFFICER
         lowQty: 4
@@ -4069,8 +4069,8 @@ alienDeployments:
     terrains:
       - FOREST
     customUfo: STR_MIB_HIDEOUT_MEDIUM
-    script: STR_MIB_HIDEOUT_MEDIUM
-    battleScript: STR_MIB_HIDEOUT_MEDIUM
+    script: mibHideoutMedium
+    battleScript: mibHideoutMediumBS
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 4
@@ -4259,8 +4259,8 @@ alienDeployments:
     terrains:
       - FOREST
     customUfo: STR_MIB_HIDEOUT_SMALL
-    script: STR_MIB_HIDEOUT_SMALL
-    battleScript: STR_MIB_HIDEOUT_SMALL
+    script: mibHideoutSmall
+    battleScript: mibHideoutMediumBSSmall
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 2
@@ -4447,7 +4447,7 @@ alienDeployments:
     terrains:
       - FOREST
     shade: 6
-    script: MIB_CHASING
+    script: mibChasing
     successEvents:
       STR_MIB_CHASING_SUCCESS: 100
     failureEvents:
@@ -4652,8 +4652,8 @@ alienDeployments:
     terrains:
       - URBAN_LOW
     shade: 9
-    script: URBAN_LOW_TRAP_ESCAPE
-    battleScript: MIB_TRAP_ESCAPE_EARLY
+    script: urbanLowTrapEscape
+    battleScript: mibTrapEscapeEarly
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 2
@@ -4770,7 +4770,7 @@ alienDeployments:
       STR_MIB_AREA_SURVEY_DESCRIPTION_EVENT: 100
   - type: STR_MIB_EARLY_TRAP_ESCAPE_EASY
     refNode: *MIBEarlyTrap
-    battleScript: MIB_TRAP_ESCAPE_EASY
+    battleScript: mibTrapEscapeEasy
   - type: STR_MIB_TRAP_DATA_VAULT
     refNode: *MIBEarlyTrap
     unlockedResearch: STR_MIB_TRAP_DATA_VAULT_SUCCESS
@@ -4796,8 +4796,8 @@ alienDeployments:
       - FOREST
     # missionCompleteText: STR_LOCALS_TRAP_COMPLETE_TEXT
     # missionFailedText: STR_LOCALS_TRAP_COMPLETE_TEXT
-    script: STR_LOCALS_TRAP_SCRIPT
-    battleScript: STR_LOCALS_TRAP_BAT_SCRIPT
+    script: localsTrapScript
+    battleScript: localsTrapBatScript
     data:
       - alienRank: 6 #STR_DOGE
         lowQty: 1

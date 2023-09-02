@@ -509,7 +509,7 @@ en-US:
   STR_INCOMING_ALLY_REINFORCEMENTS: "Our reinforcements arrived!"
   STR_ITEMS_RECOVERED: "ITEMS RECOVERED"
   STR_OBJECTIVE_SECURED: "OBJECTIVE SECURED"
-  STR_ALIENS_KILLED: "ENEMIES KILLED" #FIXME change after code fixed !
+  STR_ALIENS_KILLED: "ALIENS KILLED" #FIXME change after code fixed !
   STR_ALIEN_CORPSES_RECOVERED: "ALIEN CORPSES RECOVERED"
   STR_MONSTER_CORPSES_RECOVERED: "MONSTER CORPSES RECOVERED"
   STR_ENEMY_CORPSES_RECOVERED: "ENEMY CORPSES RECOVERED"
@@ -991,6 +991,8 @@ en-US:
   STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Training Center."
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report is ready!"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to Hangar 1."
+  STR_XCOM_SEALED_CRATES_EVENT: "Имущество под замком"
+  STR_XCOM_SEALED_CRATES_EVENT_DESCRIPTION: "При инициации протокола Обливион, были запечатаны контейнеры, в которых хранилось большое количество нашего снаряжения и экиперовки. Предполагалось, что разблокировать их смогут только сотрудники Совета, "
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies are running low!"
   STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another way of procuring the resources needed to keep the base operational and our forces alive.{NEWLINE}Loyalty score> {ALT}-100"
   STR_NO_SUPPLY_SECOND_WARNING_EVENT: "We are running out of supplies!"
@@ -1283,13 +1285,13 @@ en-US:
   STR_RANDOM_TORTURE_EVENT_4_DESCRIPTION: "Well, this one could have gone much better. Seems that our interrogator decided to test the rumored 'car battery and nipples' approach to torture. Of course, that didn't work quite as intended: skin was breached, and current turned from nonexistent to heart-stopping instantly. The scream was short, but very loud. Now, I know you didn't authorise this, Commander, but some of our people don't - and are now doubting your sanity.{NEWLINE}Loyalty score> {ALT}-100" #Loyalty -100
   STR_RANDOM_TORTURE_EVENT_FUNDS_1: "Interesting stash"
   STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "That prisoner died during interrogation, so we decided to cut him open because he gave us strange readings during medical examination. And inside his stomach area we found some gold and silver jewelry. While they are certainlly gonna be useful for our funds, process of extracting them was not a pleasant one.{NEWLINE}Oh, and interrogation room now stinks to the point of causing your eyes to tear.{NEWLINE}Loyalty score> {ALT}-5{NEWLINE}Funds> {ALT}+25k" #Loyalty -5, Funds +25k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_2: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_2: "" #TODO
   STR_RANDOM_TORTURE_EVENT_FUNDS_2_DESCRIPTION: "" #Loyalty -10, Funds +50k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_3: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_3: "" #TODO
   STR_RANDOM_TORTURE_EVENT_FUNDS_3_DESCRIPTION: "" #Loyalty -15, Funds +84k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_4: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_4: "" #TODO
   STR_RANDOM_TORTURE_EVENT_FUNDS_4_DESCRIPTION: "" #Loyalty -20, Funds +125k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_5: ""
+  STR_RANDOM_TORTURE_EVENT_FUNDS_5: "" #TODO
   STR_RANDOM_TORTURE_EVENT_FUNDS_5_DESCRIPTION: "" #Loyalty -25, Funds +174k
   STR_RANDOM_TORTURE_EVENT_FUNDS_6: "Black gold successor"
   STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION: "So last prisoner didn't knew anything useful, but we checked his background and it turns out that his parents are actually very rich people in Arabian Emirates. So we did only thing that we thought of at that moment - we ransomed him for a hefty sum of money.{NEWLINE}Looking back now i must say - that was not our brightest idea. People are questioning our goals now.{NEWLINE}Loyalty score> {ALT}-30{NEWLINE}Funds> {ALT}+240k" #Loyalty -30, Funds +240k
@@ -1661,7 +1663,7 @@ en-US:
   STR_SMG_CLIP: "SMG Clip"
   STR_SMG_AA_CLIP: "SMG AA Clip"
   STR_RIOT_RIFLE: "Riot Rifle"
-  STR_RIOT_RIFLE_UFOPEDIA: "Don’t look at a bit archaic design of this weapon. Its low cost, reliability of construction and wide availability contribute to the top-1 assault rifle among different armies and outlaws all over the world. A high recoil causes automatic fire mode less effective in a greeny’s hands."
+  STR_RIOT_RIFLE_UFOPEDIA: "Don't look at a bit archaic design of this weapon. Its low cost, reliability of construction and wide availability contribute to the top-1 assault rifle among different armies and outlaws all over the world. A high recoil causes automatic fire mode less effective in a greeny’s hands."
   STR_RIOT_RIFLE_CLIP: "Riot Rifle Clip"
   STR_LEVER_ACTION_CARBINE: "Lever Action Carbine"
   STR_LEVER_ACTION_CARBINE_UFOPEDIA: "Mainly used by thugs, this short-barreled lever action carbine packs a punch at close range and it's easy to conceal under clothes."
@@ -1762,7 +1764,7 @@ en-US:
   STR_MINIGUN_UFOPEDIA: "Military four-barrel rotary machine gun with extremely high rate of fire. Considerable muscle power is required to carry and operate this intimidating weapon. The unique recoil compensation system and high weight make it very stable, allowing for long-time automatic fire without serious loss of accuracy."
   STR_RAILGUN: "Railgun"
   STR_RAILGUN_CLIP: "Railgun Slug"
-  STR_RAILGUN_UFOPEDIA: "To be done" #Fixme after item balance
+  STR_RAILGUN_UFOPEDIA:  #TODO
   STR_PHASER_CANNON: "Phaser Cannon"
   STR_PHASER_CANNON_CLIP: "Phaser Cannon Battery"
   STR_PHASER_CANNON_UFOPEDIA: "The phaser cannon, although it is relatively heavy, is nevertheless an extremely effective weapon. The use of phaser technology allows for fractions of microseconds to form cascading shock waves that transmit a huge amount of electromagnetic energy to the target, applying it to a tiny area. When a shock wave passes through a solid, a jet of high-temperature plasma is formed, destroying everything in its path. Thus, conventional ballistic armor are absolutely ineffective against a phaser cannon. The emitter is calibrated to work in an air environment, but the system can adapt to work in a vacuum."
@@ -1771,7 +1773,7 @@ en-US:
   STR_ROCKET_GLOVE_CLIP: "Rocket Glove Charge"
   STR_FLAMETHROWER: "Flamethrower"
   STR_FLAMETHROWER_CLIP: "Flamethrower tank"
-  STR_FLAMETHROWER_UFOPEDIA: #
+  STR_FLAMETHROWER_UFOPEDIA:  #TODO
   STR_SINGLE_ROCKET_LAUNCHER: "Single Rocket Launcher"
   STR_SINGLE_ROCKET_UFOPEDIA: "This single charge launcher fires an unguided rocket that causes significant damage to enemy troops and light armored vehicles."
   STR_GRENADE_LAUNCHER: "Grenade Launcher"
@@ -1863,6 +1865,8 @@ en-US:
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: "The device was a kind of escape pod into which data from the M.I.B. command center servers was pumped. Apparently, the servers were on an isolated network and this was an attempt to save information during our assault. The data in it is encrypted and we are not yet able to crack it."
   STR_SUPPLIES_1: "Supplies Pack"
+  STR_SEALED_CRATE: "Sealed Crate"
+  STR_SEALED_CRATE_BREACHING: "Breaching Sealed Crate"
   STR_CREDIT_CARD: "Credit Card"
   STR_CREDIT_CARD_SILVER: "Silver Credit Card"
   STR_CREDIT_CARD_GOLD: "Golden Credit Card"
@@ -1871,7 +1875,6 @@ en-US:
   STR_SILVER_CREDIT_CARD_BREACHING: "Silver Credit Card Breaching"
   STR_GOLD_CREDIT_CARD_BREACHING: "Golden Credit Card Breaching"
   STR_CASH_PACK: "Small Cash Pack ($1 000)"
-  STR_PLASTIC_CARD: "Plastic Card"
   STR_CASH_PACK_BIG: "Big Cash Pack ($10 000)"
   STR_BRIEFCASE_CASH: "Briefcase with Cash ($100 000)"
   STR_SPARE_PARTS: "Spare Parts"
@@ -1960,7 +1963,7 @@ en-US:
   STR_SMART_RIFLE: "Smart Rifle"
   STR_SMART_RIFLE_UFOPEDIA: "This rifle fully embodies the Smart Weapons concept for a radical increase of accuracy. An intelligent target acquisition and tracking system integrated with the sighting system. During the firing process, the rifle matches the direction of the barrel axis with vulnerable points on the enemy's body and provides 'aim assist'. The Smart Rounds programmer is installed at the end of the barrel before flame arrester."
   # STR_SMART_ASSAULT_RIFLE: "Smart Assault Rifle"
-  # STR_SMART_ASSAULT_RIFLE_UFOPEDIA: 
+  # STR_SMART_ASSAULT_RIFLE_UFOPEDIA: #not needed yet
   STR_SMART_RIFLE_CLIP: "Smart Rifle Clip"
   STR_SMART_RIFLE_AA_CLIP: "Smart Rifle AA Clip"
   STR_SMART_SNIPER_RIFLE: "Smart Sniper Rifle"
@@ -1968,7 +1971,7 @@ en-US:
   STR_SMART_SNIPER_RIFLE_CLIP: "Smart Sniper Rifle Clip"
   STR_SMART_SNIPER_RIFLE_AA_CLIP: "Smart Sniper Rifle AA Clip"
   # STR_SMART_SMG: "Smart SMG"
-  # STR_SMART_SMG_UFOPEDIA:
+  # STR_SMART_SMG_UFOPEDIA: #not needed yet
   # STR_SMART_SMG_CLIP: "Smart SMG Clip"
   STR_SMART_PISTOL: "Smart Pistol"
   STR_SMART_PISTOL_UFOPEDIA: "All Smart weapon systems have been miniaturized, which, on the one hand, noticeably affected the weight of the weapon, and on the other hand, significantly increased the accuracy of shooting, especially for snapping shots."
@@ -2059,7 +2062,7 @@ en-US:
   STR_RESISTANCE_CONTACT: "Contact with the Resistance"
   STR_RESISTANCE_CONTACT_DESCRIPTION: "We need to make contact with the scattered Resistance cells scattered around the world. It's probable that our adversaries are also looking for them, so we can't rule out a combat engagement. However, the main purpose of this operation is covert investigation, so heavy equipment will hinder our agents."
   STR_RESISTANCE_CONTACT_UFOPEDIA: "The Resistance is a voluntary union of people not willing to obey the new world regime. This initiative began to emerge in the early '70s and in the beginning, consisted of ufologists and conspiracy theorists. Who could ever guess that they would be in the right? In the past few years, the Resistance began to be joined by a large number of very different people - scientists, journalists, doctors, ordinary people, and even former military officers. They all had one thing in common - they had somehow come into contact with the aliens and now Men in Black are hunting them down. Most of those who have discovered even a little about the aliens after a very short time have disappeared under mysterious and often frightening circumstances. The rest learn to hide well and form guerrilla cells around the world. The goal of the Resistance is to unite and protect these disparate groups, reveal the mysterious plans of the invaders, and consolidate all mankind against an extraterrestrial threat."
-  STR_VOID_CORP_UFOPEDIA: #FIXME
+  STR_VOID_CORP_UFOPEDIA: #TODO
   STR_STARTING_EQUIPMENT: "Common Equipment"
   STR_STARTING_EQUIPMENT_UFOPEDIA: "Since the X-COM project was discontinued, we have lost our regular armament and gear suppliers. But we continue to fight, and we vitally need new sources of weaponry and ammunition. Maybe our new friends can help out with that? Regrettably, lacking established illegal arms channels, they can only offer us weapons that are available for purchase by civilians. Our contact in the Resistance transferred the tactical specifications of the items we can buy from them, all information analyzed and uploaded to Ufopedia."
   STR_SUPPLIES: "Supplies"
@@ -2107,9 +2110,9 @@ en-US:
   STR_FACILITIES_BLUEPRINTS: "Facility Blueprints"
   STR_FACILITIES_BLUEPRINTS_UFOPEDIA: "We deciphered the Ufopaedia segments containing plans for the various base facilities. Unfortunately, some of them had to be dismantled last year, and some had never been built. Since we have figured out how to get basic construction materials, we can start the construction work if necessary and if we have money to buy everything we need. Of course, it will take some time to remove soil, reinforce walls and ceilings, and install internal equipment. In addition, most of the specialized facilities require special equipment, and we will have to figure out how to get it."
   STR_BASE_CONSTRUCTION: "New Base Construction"
-  STR_BASE_CONSTRUCTION_UFOPEDIA: "STR_BASE_CONSTRUCTION_UFOPEDIA" #FIXME
+  STR_BASE_CONSTRUCTION_UFOPEDIA: #TODO
   STR_UNDERWATER_BASES: "Underwater Bases"
-  STR_UNDERWATER_BASES_UFOPEDIA: "STR_UNDERWATER_BASES_UFOPEDIA" #FIXME
+  STR_UNDERWATER_BASES_UFOPEDIA: #FIXME
   STR_XCOM_FILES_1: "X-COM FILES #094597"
   STR_XCOM_FILES_1_UFOPEDIA: "UFOs have been the subject of governmental attention since the late 1940s. Until then, such incidents were not investigated because of the war, and before that the military did not have a sufficiently reliable way of detecting flying objects. The conditions of the Cold War, namely the active scanning of NATO and Soviet airspace, the development of detection technology and mutual mistrust actively contributed to the investigation of UFO activity in different countries.{NEWLINE}In 1984, an unsuccessful endeavor was made to create a secret intergovernmental committee at the UN, designed to unite the efforts of different countries. In 1996 a second attempt was made to create a supranational secret organization dedicated to investigating alien activity on Earth, called X-COM. Funding was supposed to come from a covert group of influential politicians and military officers from various countries named The Council.{NEWLINE}*** New entry ***{NEWLINE}On March 5, 1999, X-COM was disbanded.{NEWLINE}*** Confirm saving a new entry? (Y/N)"
   STR_XCOM_FILES_2: "X-COM FILES #096231"
