@@ -79,6 +79,7 @@ diplomacyFactions:
       STR_FIRE_EXTINGUISHER: 2
       STR_CASH_PACK: 6
       STR_CASH_PACK_BIG: 2
+      STR_RESISTANCE_SUITE: 6
     wishList:
       #melee
       STR_POLICE_BATON: 50
@@ -209,6 +210,7 @@ diplomacyFactions:
       STR_CASH_PACK_BIG: 280
       STR_BRIEFCASE_CASH: 2700
       STR_SPARE_PARTS: 60
+      STR_RESISTANCE_SUITE: 600
 
 
 

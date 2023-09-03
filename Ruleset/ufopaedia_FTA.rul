@@ -236,6 +236,7 @@ ufopaedia:
     listOrder: 110
   - id: STR_IMPROVISED_MANUFACTURING
     type_id: 7
+    section: STR_XCOM_REPORTS_UC
     image_id: ENGINEER_CHIEF_CPAL.SPK
     requires:
       - STR_IMPROVISED_MANUFACTURING
@@ -243,6 +244,7 @@ ufopaedia:
     listOrder: 110
   - id: STR_HIGH_TECH_MANUFACTURING
     type_id: 7
+    section: STR_XCOM_REPORTS_UC
     image_id: ENGINEER_CHIEF_CPAL.SPK
     requires:
       - STR_HIGH_TECH_MANUFACTURING
@@ -969,7 +971,63 @@ ufopaedia:
     listOrder: 10140
 
 #STR_ARMORS 12-14k
+  - id: STR_JUMPSUIT_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_JUMPSUIT_UC_UFOPEDIA
+    requires:
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 12000
+  - id: STR_FLIGHTSUIT_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_FLIGHTSUIT_UC_UFOPEDIA
+    requires:
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 12000
+  - id: STR_AGENT_UNIFORM_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_AGENT_UNIFORM_UC_UFOPEDIA
+    requires:
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 12000
+  - id: STR_XCOM_LABCOAT_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_XCOM_LABCOAT_UC_UFOPEDIA
+    requires:
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 12000
+  - id: STR_XCOM_ENGINEER_SUIT_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_XCOM_ENGINEER_SUIT_UC_UFOPEDIA
+    requires:
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 12000
+  - id: STR_XCOM_RESISTANCE_AGENT_SUIT_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_XCOM_RESISTANCE_AGENT_SUIT_UC_UFOPEDIA
+    requires:
+      - STR_RESISTANCE_SUITE
+    listOrder: 12000
+  - id: STR_FLIGHTSUIT_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_FLIGHTSUIT_UC_UFOPEDIA
+    requires:
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 12000
 
+  - id: STR_ARMORED_VEST_UC
+    type_id: 5
+    section: STR_ARMORS_UC
+    text: STR_ARMORED_VEST_UC_UFOPEDIA
+    requires:
+      - STR_ARMORED_VEST
+    listOrder: 12000
 #STR_WEAPONS_AND_EQUIPMENT 15-29:
 #melee
   - id: STR_WRENCH

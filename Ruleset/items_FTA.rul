@@ -7261,7 +7261,7 @@ items:
     armor: 30
     recover: false
     listOrder: 100670
-  - type: STR_RESISTANCE_SUIT
+  - type: STR_CORPSE_RESISTANCE_SUITE
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.5
@@ -7273,6 +7273,12 @@ items:
     battleType: 11
     armor: 30
     recover: false
+    listOrder: 100670
+  - type: STR_RESISTANCE_SUITE
+    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    size: 1.1
+    costBuy: 2200
+    costSell: 1300
     listOrder: 100670
 extended:
   tags:

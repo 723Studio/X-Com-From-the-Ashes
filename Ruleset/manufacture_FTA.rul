@@ -41,10 +41,20 @@ manufacture:
     listOrder: 220030
 
 #armor
-
+  - name: STR_ARMORED_VEST
+    category: STR_PERSONAL_ARMOR
+    requiresBaseFunc: [WORK]
+    requires:
+      - STR_ARMORED_VEST
+    space: 1
+    time: 860
+    cost: 3500
+    producedItems:
+      STR_ARMORED_VEST: 1
+    listOrder: 220030
 #weapons
   - name: STR_KATANA
-    category: STR_EQUIPMENT
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_KATANA
@@ -55,7 +65,7 @@ manufacture:
       STR_KATANA: 1
     listOrder: 220030
   - name: STR_ELECTRIC_STICK
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_ELECTRIC_STICK
@@ -122,7 +132,7 @@ manufacture:
       STR_BOW_ARROW_ELECTRIC: 1
     listOrder: 220030
   - name: STR_CHEMPISTOL
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_CHEMPISTOL_MANUFACTURING
@@ -149,7 +159,7 @@ manufacture:
       STR_CHEMPISTOL_CLIP: 1
     listOrder: 220030
   - name: STR_SMART_PISTOL
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_SMART_PISTOL
@@ -178,7 +188,7 @@ manufacture:
       STR_SMART_PISTOL_CLIP: 1
     listOrder: 220030
   - name: STR_ROCKET_GLOVE
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_ROCKET_GLOVE
@@ -206,7 +216,7 @@ manufacture:
       STR_ROCKET_GLOVE_CLIP: 1
     listOrder: 220030
   - name: STR_SMART_RIFLE
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_SMART_RIFLE
@@ -235,7 +245,7 @@ manufacture:
       STR_SMART_RIFLE_CLIP: 1
     listOrder: 220030
   - name: STR_SMART_SNIPER_RIFLE
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_SMART_SNIPER_RIFLE
@@ -264,7 +274,7 @@ manufacture:
       STR_SMART_SNIPER_RIFLE_CLIP: 1
     listOrder: 220030
   - name: STR_FLAMETHROWER
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_FLAMETHROWER
@@ -288,7 +298,7 @@ manufacture:
       STR_FLAMETHROWER_CLIP: 1
     listOrder: 220030
   - name: STR_TASER_CANNON
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_TASER_CANNON
@@ -316,7 +326,7 @@ manufacture:
       STR_TASER_CANNON_CLIP: 1
     listOrder: 220030
   - name: STR_SMART_LMG
-    category: STR_WEAPONS
+    category: STR_WEAPON
     requiresBaseFunc: [WORK]
     requires:
       - STR_SMART_LMG
@@ -527,7 +537,7 @@ manufacture:
       STR_FAKE_AGENT_ID: 1
     listOrder: 220030
 #refining
-  - name: STR_SEALED_CRATE_BREACHING
+  - name: STR_SEALED_CRATE
     category: STR_LOOT
     requires:
       - STR_SEALED_CRATE_BREACHING
@@ -550,7 +560,7 @@ manufacture:
       - [40, {STR_STINGRAY_MISSILE: 6}]
       - [40, {STR_CANNON_ROUNDS_X50: 6}]
     listOrder: 220040
-  - name: STR_CREDIT_CARD_BREACHING
+  - name: STR_CREDIT_CARD
     category: STR_LOOT
     requires:
       - STR_CREDIT_CARD_BREACHING
@@ -562,17 +572,17 @@ manufacture:
     time: 450
     cost: -22000
     listOrder: 220040
-  - name: STR_SILVER_CREDIT_CARD_BREACHING
+  - name: STR_CREDIT_CARD_SILVER
     category: STR_LOOT
     requires:
-      - STR_CREDIT_CARD_BREACHING
+      - STR_CREDIT_CARD
     requiredItems:
       STR_CREDIT_CARD_SILVER: 1
     space: 1
     time: 700
     cost: -47000
     listOrder: 220040
-  - name: STR_GOLD_CREDIT_CARD_BREACHING
+  - name: STR_CREDIT_CARD_GOLD
     category: STR_LOOT
     requires:
       - STR_CREDIT_CARD_BREACHING

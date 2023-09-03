@@ -42,6 +42,7 @@ config:
   ignoreTypes:
   - battleScripts.commands[].variable
   - manufacture.category
+  - research.increaseCounter
   - events.customAnswers.0.title
   - events.customAnswers.1.title
   - events.customAnswers.2.title
