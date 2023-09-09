@@ -1196,14 +1196,14 @@ en-US:
   #torture events
   STR_RANDOM_TORTURE_EVENT_1: "Useless wimp"
   STR_RANDOM_TORTURE_EVENT_1_DESCRIPTION: "Turns out this prisoner had surprisingly low pain tolerance. As soon as the first few lacerations were applied, the subject hollered. They immediately agreed to tell us everything - which sounded good. Unfortunately, 'everything' was confusing and contradictory. The poor sod was just trying to avoid pain. A pretty natural reaction, to be fair.{NEWLINE}That scream was something else, though! I feel chills even now just remembering it. And, unfortunately, so do other nearby personnel.{NEWLINE}Loyalty score> {ALT}-10"   #Loyalty -10
-  STR_RANDOM_TORTURE_EVENT_2: ""
-  STR_RANDOM_TORTURE_EVENT_2_DESCRIPTION: "" #Loyalty -25
-  STR_RANDOM_TORTURE_EVENT_3: ""
-  STR_RANDOM_TORTURE_EVENT_3_DESCRIPTION: "" #Loyalty -50
+  STR_RANDOM_TORTURE_EVENT_2: "Wagging a finger"
+  STR_RANDOM_TORTURE_EVENT_2_DESCRIPTION: "Our most recent captive proved to be resilient - very much so. None of the minor and inconsequential techniques have managed to break their resolve. That would be admirable were it not so annoying. Our resident 'warden' decided to employ harsher measures and tried chopping off a pinky from our prisoner.{NEWLINE}The process went about as well as one can expect from an improvized amputation: messy and drawn out. Eventually the captive did scream - and attracted some guards to the gruesome scene. Still, our 'guest' did not crack. Both of those will not be good for morale, Commander.{NEWLINE}Loyalty score> {ALT}-25" #Loyalty -25
+  STR_RANDOM_TORTURE_EVENT_3: "A dirty technique"
+  STR_RANDOM_TORTURE_EVENT_3_DESCRIPTION: "This time, for some reason, the interrogator decided to take their sweet time and make the starvation and thirst do the trick. Unfortunately, they remembered to order guards to NOT enter the room, but forgot to check up on the prisoner themselves.{NEWLINE}When finally they visited the chamber it was a bit late: our captive became utterly unresponsive. And covered in their own... refuse, shall we say. Not a good look - both for the eyes and the organisation.{NEWLINE}Loyalty score> {ALT}-50" #Loyalty -50
   STR_RANDOM_TORTURE_EVENT_4: "Car Battery Enthusiast"
   STR_RANDOM_TORTURE_EVENT_4_DESCRIPTION: "Well, this one could have gone much better. Seems that our interrogator decided to test the rumored 'car battery and nipples' approach to torture. Of course, that didn't work quite as intended: skin was breached, and current turned from nonexistent to heart-stopping instantly. The scream was short, but very loud. Now, I know you didn't authorise this, Commander, but some of our people don't - and are now doubting your sanity.{NEWLINE}Loyalty score> {ALT}-100" #Loyalty -100
-  STR_RANDOM_TORTURE_EVENT_FUNDS_1: ""
-  STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "" #Loyalty -5, Funds +25k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_1: "Wimpy donation"
+  STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "This prisoner was not accustomed to pain all that well. Our interrogator has barely begun applying pressure when the subject began to cry and promised to tell whatever we wanted to know.{NEWLINE}Information-wise we got little, but our 'guest' has shared their bank account details. Said account did not have extremely much, but what can one expect from a single person's savings. Still, this is not exactly a 'good guy' move.{NEWLINE}Money obtained> {ALT}$25,000{NEWLINE}Loyalty score> {ALT}-5" #Loyalty -5, Funds +25k
   STR_RANDOM_TORTURE_EVENT_FUNDS_2: ""
   STR_RANDOM_TORTURE_EVENT_FUNDS_2_DESCRIPTION: "" #Loyalty -10, Funds +50k
   STR_RANDOM_TORTURE_EVENT_FUNDS_3: ""
@@ -1235,19 +1235,19 @@ en-US:
   STR_MIB_SPECOPS: "M.I.B. SpecOps"
   STR_MIB_SPECOPS_SPAWN: "M.I.B. SpecOps"
   STR_MIB_SPECOPS_CORPSE: "M.I.B. SpecOps Corpse"
-  STR_MIB_SPECOPS_UFOPEDIA: "This elite soldier has excellent physical attributes and tactical training. His equipment uses the latest scientific achievements in the field of armor materials and optical systems. Unfortunately, the suit has a safety mechanism that rendered it unusable. The soldier remembers nothing about what happened to him before the operation we managed to capture him. Shortly after his detention he complained of an intolerable headache and within two hours his condition worsened considerably. He began having seizures, his pulse rate increased to 220 beats, after which his heart failed. The reasons for this rapid condition change are being investigated."
+  STR_MIB_SPECOPS_UFOPEDIA: "This elite soldier has excellent physical attributes and tactical training. His equipment uses the latest scientific achievements in the field of armor materials and optical systems. Unfortunately, the suit has a safety mechanism that rendered it unusable. The soldier remembers nothing about what happened to him before the operation we managed to capture him. Shortly after his detention he complained of an intolerable headache and within two hours his condition worsened considerably. He began having seizures, his pulse rate increased to 220 bpm, after which his heart failed. The reasons for this rapid condition deterioration are being investigated."
   STR_MIB_SPECOPS_ARMOR: "M.I.B. SpecOps Combat Analysis"
-  STR_MIB_SPECOPS_ARMOR_UFOPEDIA: "Protective suit gives the M.I.B. soldier not only excellent armor, but also excellent tactical capabilities. The night and infrared vision system allows the soldier to navigate the battlefield in all conditions."
+  STR_MIB_SPECOPS_ARMOR_UFOPEDIA: "Their protective suit not only strengthens the M.I.B. soldier's armor, but also provides excellent tactical capabilities. The night and infrared vision system allows the soldier to navigate the battlefield in all conditions."
   STR_MIB_BUTCHER: "M.I.B. Butcher"
   STR_MIB_BUTCHER_CORPSE: "M.I.B. Butcher Corpse"
   STR_MIB_BUTCHER_UFOPEDIA: "It is hard to believe that such incredible muscle mass can be gained through normal exercise and diet. These operatives have inhuman strength, health and stamina and are especially dangerous in close combat. A study of DNA samples revealed mutations in the genes encoding the production of myostatin, a protein that inhibits the growth and differentiation of muscle tissue. The nature of this mutation remains unclear, but the other mutations perfectly maintain the stability and organicity of the individual."
   STR_MIB_BUTCHER_ARMOR: "M.I.B. Butcher Combat Analysis"
-  STR_MIB_BUTCHER_ARMOR_UFOPEDIA: "Despite their brutal strength and advanced melee skills, Butchers are usually poor marksmen and almost never wear heavy armor. Small-caliber weapons can't do them much damage, but a shotgun blast at close range can be very effective."
+  STR_MIB_BUTCHER_ARMOR_UFOPEDIA: "Despite their brutal strength and advanced melee skills, Butchers are usually poor marksmen and almost never wear heavy armor. Small-caliber weapons can't do much damage to them, but a shotgun blast at close range can be very effective."
   STR_MIB_ENFORCER: "M.I.B. Enforcer"
   STR_MIB_ENFORCER_CORPSE: "M.I.B. Enforcer Corpse"
-  STR_MIB_ENFORCER_UFOPEDIA: "Enforcers serve as heavy duty units and usually guard the most important M.I.B. installations. Their primary mission is to destroy anyone who gains unauthorized access to the facility. Rarely they are used in punitive operations where high firepower is required. The subject has undergone a massive psychological conditioning - his personality is almost completely erased, leaving only weapon skills, polished to an instinctive level, as well as absolute loyalty to his masters. An example of human transformation into a perfect war machine."
+  STR_MIB_ENFORCER_UFOPEDIA: "Enforcers serve as heavy duty units and usually guard the most important M.I.B. installations. Their primary mission is to destroy anyone who gains unauthorized access to the facility. In rare cases they are used in punitive operations - where high firepower is required. The subject has undergone a massive psychological conditioning - their personality is almost completely erased, leaving only weapon skills polished to an instinctive level, as well as absolute loyalty to his masters. An example of human transformation into a perfect war machine."
   STR_MIB_ENFORCER_ARMOR: "M.I.B. Enforcer Combat Analysis"
-  STR_MIB_ENFORCER_ARMOR_UFOPEDIA: "Heavily armored, usually armed with high-caliber weapons, these units pose a significant threat on the battlescape."
+  STR_MIB_ENFORCER_ARMOR_UFOPEDIA: "Heavily armored, usually armed with high-caliber weapons, these units pose a significant threat on the battlefield."
   STR_MIB_SCIENTIST: "M.I.B. Scientist"
   STR_MIB_SCIENTIST_CORPSE: "M.I.B. Scientist Corpse"
   STR_MIB_SCIENTIST_ARMOR: "M.I.B. Enforcer Combat Analysis"
