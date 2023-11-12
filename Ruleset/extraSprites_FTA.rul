@@ -415,6 +415,9 @@ extraSprites:
       491: Resources/Weapons/Earthbound/Tinkering/bigob_Flamethrower.png
       492: Resources/Weapons/Earthbound/Tinkering/bigob_FlamethrowerClip.png
       493: Resources/MiscItems/bigob_SealedCrate.png
+      494: Resources/MiscItems/bigob_MoneyBag.png
+      495: Resources/Weapons/Earthbound/Utilities/bigob_BattleCocktail.png
+
   - type: FLOOROB.PCK
     files:
       #41: Resources/Armors/Xcom/PowerSuit/floorob_POWER_SUIT.png
@@ -624,6 +627,8 @@ extraSprites:
       491: Resources/Weapons/Earthbound/Tinkering/floorob_Flamethrower.png
       492: Resources/Weapons/Earthbound/Tinkering/floorob_FlamethrowerClip.png
       493: Resources/MiscItems/floorob_SealedCrate.png
+      494: Resources/MiscItems/floorob_MoneyBag.png
+      495: Resources/Weapons/Earthbound/Utilities/floorob_BattleCocktail.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -758,6 +763,7 @@ extraSprites:
       1122: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_GaussSniper.png
       1130: Resources/Weapons/Earthbound/Xcom/electro-magnet/handob_HeavyGauss.png
       1138: Resources/Weapons/Earthbound/Tinkering/handob_Flamethrower.png
+      1146: Resources/Weapons/Earthbound/Utilities/handob_BattleCocktail.png
 #baseScape
   - type: INTICON.PCK #crafts, craft weapons
     files:

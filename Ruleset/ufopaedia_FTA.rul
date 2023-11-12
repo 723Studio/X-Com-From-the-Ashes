@@ -458,6 +458,24 @@ ufopaedia:
       - STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
     text: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA
     listOrder: 200
+  - id: STR_LIVE_CREATURES_RESEARCH
+    type_id: 7
+    image_id: RND_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_LIVE_CREATURES_RESEARCH
+    text: STR_LIVE_CREATURES_RESEARCH_UFOPEDIA
+    listOrder: 200
+  - id: STR_CHUPACABRA_BIOLOGY
+    type_id: 7
+    image_id: RND_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_CHUPACABRA_BIOLOGY
+    text: STR_CHUPACABRA_BIOLOGY_UFOPEDIA
+    listOrder: 200
   - id: STR_MONSTER_HUNT_START
     type_id: 7
     image_id: INTEL_CHIEF_CPAL.SPK
@@ -498,13 +516,20 @@ ufopaedia:
     text: STR_STARTING_EQUIPMENT_UFOPEDIA
     listOrder: 250
   - id: STR_RESISTANCE_BASIC_EQUIPMENT
-    type_id: 8 #FIXME converting to 7
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
     section: STR_XCOM_REPORTS_UC
     requires:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     text: STR_RESISTANCE_BASIC_EQUIPMENT_UFOPEDIA
     listOrder: 260
-
+  - id: STR_MOTION_SCANNER_PROTOTYPE
+    type_id: 8
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER_PROTOTYPE
+    text: STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA
+    listOrder: 260
 
 
   - id: STR_VOID_CORP
@@ -2166,13 +2191,6 @@ ufopaedia:
     text: STR_HIGH_EXPLOSIVE_UFOPEDIA
     listOrder: 24040
 #equipment
-  - id: STR_MOTION_SCANNER_PROTOTYPE
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    requires:
-      - STR_MOTION_SCANNER_PROTOTYPE
-    text: STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA
-    listOrder: 24040
   - id: STR_MOTION_SCANNER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -2214,6 +2232,13 @@ ufopaedia:
     requires:
       - STR_STIMS
     text: STR_STIMS_UFOPEDIA
+    listOrder: 24060
+  - id: STR_BATTLE_COCKTAIL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_CHUPACABRA_BIOLOGY
+    text: STR_BATTLE_COCKTAIL_UFOPEDIA
     listOrder: 24060
   - id: STR_MEDI_PACK
     type_id: 4

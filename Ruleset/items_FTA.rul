@@ -5198,6 +5198,41 @@ items:
     invHeight: 1
     recoveryPoints: 1
     listOrder: 23020
+  - type: STR_BATTLE_COCKTAIL
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 640
+    costSell: 380
+    weight: 2
+    bigSprite: 495
+    floorSprite: 495
+    handSprite: 1146
+    hitSound: 74
+    battleType: 6
+    stimulant: 1
+    medikitType: 2
+    medikitTargetSelf: true
+    isConsumable: true
+    stunRecovery: -15
+    energyRecovery: 15
+    tuUse: 22
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 2
+    listOrder: 23020
+    tags: 
+      FTAG_BUFF_VALUE_TIMEUNITS: 20
+      FTAG_BUFF_VALUE_STAMINA: 20
+      #FTAG_BUFF_VALUE_HEALTH: 0 
+      #FTAG_BUFF_VALUE_BRAVERY: -20
+      FTAG_BUFF_VALUE_REACTIONS: 10
+      #FTAG_BUFF_VALUE_FIRING: 20
+      #FTAG_BUFF_VALUE_THROWING: 20
+      #FTAG_BUFF_VALUE_MELEE: 20
+      #FTAG_BUFF_VALUE_STRENGTH: 20
+      #FTAG_BUFF_VALUE_PSISTRENGTH: 20
+      #FTAG_BUFF_VALUE_PSISKILL: 20
   - type: STR_MEDI_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
     requiresBuy:
@@ -6022,7 +6057,7 @@ items:
     invWidth: 1
     invHeight: 1
     stackSize: 20
-    recoveryPoints: 8
+    recoveryPoints: 1
     listOrder: 31080
   - type: STR_CASH_PACK_BIG
     categories: [STR_LOOT]
@@ -6037,7 +6072,7 @@ items:
     invWidth: 1
     invHeight: 1
     stackSize: 20
-    recoveryPoints: 8
+    recoveryPoints: 3
     listOrder: 31080
   - type: STR_BRIEFCASE_CASH
     categories: [STR_LOOT, STR_CONCEALABLE]
@@ -6048,11 +6083,52 @@ items:
     bigSprite: 429
     floorSprite: 429
     handSprite: 850
-    weight: 5
+    weight: 4
     battleType: 10
     invWidth: 2
     invHeight: 2
-    recoveryPoints: 40
+    recoveryPoints: 10
+    listOrder: 31100
+  - type: STR_MONEY_BAG
+    categories: [STR_LOOT, STR_CONCEALABLE]
+    size: 0.1
+    landOnly: true
+    costSell: 500000
+    bigSprite: 494
+    floorSprite: 494
+    weight: 6
+    battleType: 10
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 20
+    listOrder: 31100
+  - type: STR_JEWEL
+    categories: [STR_LOOT, STR_CONCEALABLE]
+    size: 0.1
+    landOnly: true
+    costBuy: 430000
+    costSell: 380000
+    bigSprite: 99 #TODO!
+    floorSprite: 99 #TODO!
+    weight: 1
+    battleType: 10
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 20
+    listOrder: 31100
+  - type: STR_ANCIENT_ARTIFACT
+    categories: [STR_LOOT, STR_CONCEALABLE]
+    size: 0.1
+    landOnly: true
+    costBuy: 1600000
+    costSell: 1300000
+    bigSprite: 99 #TODO!
+    floorSprite: 99 #TODO!
+    weight: 1
+    battleType: 10
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 20
     listOrder: 31100
   - type: STR_MIB_INTERROGATION #TODO - research
     categories: [STR_LOOT]
@@ -6101,6 +6177,7 @@ items:
     recoveryTransformations:
       STR_CASH_PACK: [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]
       STR_CASH_PACK_BIG: [0, 2, 4, 6, 4, 2]
+      STR_BRIEFCASE_CASH: [4, 2, 1]
     listOrder: 60020
   - type: STR_MIB_CRATE_CASH_BIG
     categories: [STR_LOOT]
@@ -6109,6 +6186,7 @@ items:
     recoveryTransformations:
       STR_CASH_PACK_BIG: [0, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1]
       STR_BRIEFCASE_CASH: [0, 2, 3, 4, 3, 2, 1]
+      STR_MONEY_BAG: [7, 2, 1]
     listOrder: 60020
   - type: STR_MIB_CRATE_EQUIPMENT
     categories: [STR_LOOT]
@@ -6251,7 +6329,13 @@ items:
     stackSize: 15
     recoveryPoints: 5
     listOrder: 60020
-
+  - type: STR_CHUPACABRA_ESSENCE
+    categories: [STR_COMPONENTS]
+    size: 0.1
+    costSell: 2500
+    battleType: 0
+    recoveryPoints: 1
+    listOrder: 60020
 
 
 #geoscape-only
@@ -7304,6 +7388,18 @@ extended:
       FTAG_EXPANDING: int
       FTAG_SAWED_OFF: int # % of resulting power (85 means only 85% power would be provided)
       BPL_AIMED_1_5X_POWER: int
+
+      FTAG_BUFF_VALUE_TIMEUNITS: int
+      FTAG_BUFF_VALUE_STAMINA: int
+      FTAG_BUFF_VALUE_HEALTH: int
+      FTAG_BUFF_VALUE_BRAVERY: int
+      FTAG_BUFF_VALUE_REACTIONS: int
+      FTAG_BUFF_VALUE_FIRING: int
+      FTAG_BUFF_VALUE_THROWING: int
+      FTAG_BUFF_VALUE_MELEE: int
+      FTAG_BUFF_VALUE_STRENGTH: int
+      FTAG_BUFF_VALUE_PSISTRENGTH: int
+      FTAG_BUFF_VALUE_PSISKILL: int
   # - type: STR_RIFLE #battle rifle
   #   categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES]
   #   requiresBuy:

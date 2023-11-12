@@ -1812,13 +1812,13 @@ en-US:
   STR_EXPLOSIVE_CHARGE: "Explosive Charge"
   STR_EXPLOSIVE_CHARGE_UFOPEDIA: "A simple plastic explosive charge with timer mechanism. Very useful for removing obstacles and destroying objects, as it creates a dense explosion that quickly loses its destructive power with distance."
   STR_HIGH_EXPLOSIVE: "High Explosive"
-  STR_HIGH_EXPLOSIVE_UFOPEDIA: "This explosive should only be used for demolition purposes. Keep personnel clear of demolition sites." #TODO
+  STR_HIGH_EXPLOSIVE_UFOPEDIA: "This explosive should only be used for demolition purposes. Keep personnel clear of demolition sites." #TODO переделать описание ваниллы
   STR_MOTION_SCANNER_PROTOTYPE: "Motion Scanner Prototype"
-  STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA: #TODO
+  STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA: #TODO прототип военных, работает плохо, но можно доработать самим.
   STR_MOTION_SCANNER: "Motion Scanner"
-  STR_MOTION_SCANNER_UFOPEDIA: "This sophisticated device uses a variety of detectors and advanced computer algorithms to identify moving enemy units. However, it requires some practice to use effectively. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected." #TODO
+  STR_MOTION_SCANNER_UFOPEDIA: "This sophisticated device uses a variety of detectors and advanced computer algorithms to identify moving enemy units. However, it requires some practice to use effectively. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected." #TODO переделать описание ваниллы
   STR_HACKING_COMPUTER: "Hacking Computer"
-  STR_HACKING_COMPUTER_UFOPEDIA: #TODO
+  STR_HACKING_COMPUTER_UFOPEDIA: #TODO Сложный портативный компьютер с интеллектуальной системой беспроводного влома. Пользователю нужно указывать приоритеты для распространения вируса по системе, обходя firewall, атакуя уязвимости защиты, нужно довести до цели. https://www.youtube.com/watch?v=7w18DqvTXwA
   STR_SAMPLING_TOOL: "Sampling Toolset"
   STR_SAMPLING_TOOL_UFOPEDIA: #TODO
   STR_FIRST_AID: "First Aid"
@@ -1827,6 +1827,8 @@ en-US:
   STR_PAINKILLER_UFOPEDIA: "These pills quickly alleviate pain-related effects on an agent's performance."
   STR_STIMS: "Stims"
   STR_STIMS_UFOPEDIA: "Stims help to restore agent's energy and may force an incapacitated person to regain consciousness. One use restores 30 Energy points and removes 7 Stun points."
+  STR_BATTLE_COCKTAIL: "Battle Cocktail"
+  STR_BATTLE_COCKTAIL_UFOPEDIA: #TODO Смесь высокомолекулярных белков имеет сильнейший эффект на работу мускулатуры, но общий эффект на нервную систему как удар по голове
   STR_MEDI_PACK: "Medipack"
   STR_MEDI_PACK_UFOPEDIA: "The Medipack is equipped with basic medical equipment up to field surgeries, it contains 3 bandage packs, 3 stimulants, and 3 painkillers. The bandage heals one wound and restores 3 Health points, the stimulant restores 25 Energy points and removes 5 Stun points. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the First Aid Kit icon and select 'Use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored."
   STR_STIMS_INJECTOR: "Stims Injector"
@@ -1877,6 +1879,11 @@ en-US:
   STR_CASH_PACK: "Small Cash Pack ($1 000)"
   STR_CASH_PACK_BIG: "Big Cash Pack ($10 000)"
   STR_BRIEFCASE_CASH: "Briefcase with Cash ($100 000)"
+  STR_MONEY_BAG: "Money Bag ($500 000)"
+  STR_JEWEL: "Jewel"
+  STR_ANCIENT_ARTIFACT: "Ancient Artifact"
+  STR_CHUPACABRA_REFINING: "Chupacabra Processing"
+  STR_CHUPACABRA_CORPSE_REFINING: "Chupacabra Corpse Processing"
   STR_SPARE_PARTS: "Spare Parts"
   STR_CHEMICALS: "Chemicals"
   STR_HIGH_TECH_PARTS: "High-tech Parts"
@@ -2081,7 +2088,7 @@ en-US:
   STR_IMPROVISED_MANUFACTURING_POSTREQ: STR_IMPROVISED_MANUFACTURING_POSTREQ
   STR_HIGH_TECH_MANUFACTURING: "High Tech Manufacturing"
   STR_HIGH_TECH_MANUFACTURING_POSTREQ: STR_HIGH_TECH_MANUFACTURING_POSTREQ
-  STR_HIGH_TECH_MANUFACTURING_UFOPEDIA: "Recently, governments of many countries have been introducing measures to control the production and circulation of high-tech components and microelectronics. The reasons for this are not obvious to us; perhaps it is related to the increasing international tensions. Nevertheless, in order to further develop our production capabilities, we need a constant and reliable source of microelectronics components. In addition, for in-house electronics manufacturing, we need to acquire a number of specific equipment, which can hardly be done easily without attracting undue attention. We have several possible options, and we have prepared a plan for another covert operation." #TODO? - raplace "international tensions" with "international tensions in the context of the ongoing Cold War" if USSR not collapsed
+  STR_HIGH_TECH_MANUFACTURING_UFOPEDIA: "Recently, governments of many countries have been introducing measures to control the production and circulation of high-tech components and microelectronics. The reasons for this are not obvious to us; perhaps it is related to the increasing international tensions. Nevertheless, in order to further develop our production capabilities, we need a constant and reliable source of microelectronics components. In addition, for in-house electronics manufacturing, we need to acquire a number of specific equipment, which can hardly be done easily without attracting undue attention. We have several possible options, and we have prepared a plan for another covert operation."
   STR_LOYALTY: "Loyalty"
   STR_LOYALTY_UFOPEDIA: "The X-COM Project was officially shut down and now we can only count on ourselves. The loss of the Council's support is a severe blow to our organization but despite all hard circumstances our people are determined to fight against alien invaders at all costs. 'Ad victoriam' - that's our new motto! Today isn't money determining our future, but how strong our men's spirit is. It is essential not to let the morale go down and there are many points of influence on it. The successful operations against our adversaries, major scientific and technological breakthroughs, and progress towards understanding the nature of our enemies, - all these factors will significantly raise the morale and bring the team together, that's why we should be extremely careful and wise in our strategic and tactical choices."
   STR_EX_COUNCIL_MEMBER_INITIAL: "Encrypted Transmission"
@@ -2171,6 +2178,10 @@ en-US:
   STR_INFO_UPLOAD_UFOPEDIA: "It seems that the mad civilian we captured had encrypted information 'uploaded' into his brain. This caused significant neurological disorders, hallucinations and manic behavior. When the subject is exposed to certain stimuli, he falls into a trance, straightens up, and very articulate begins to speak in a language unknown to us. When exposed to the same stimuli, the phrases are also the same. Unfortunately, we are not yet able to translate the meaning."
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT: "Creature Containment"
   STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT_UFOPEDIA: "Chief! The staggering results of that monster autopsy have raised a lot more new questions than answers to old ones. It would be great to research this thing alive, but it is impossible without a special facility at our base. Perhaps by analyzing the Ufopaedia files, we can design a new compartment in which such creatures can be kept safely and completely isolated, while still maintaining access to them for study"
+  STR_LIVE_CREATURES_RESEARCH: "Live Monsters Study"
+  STR_LIVE_CREATURES_RESEARCH_UFOPEDIA: "Autopsies provide us with a wealth of scientific information about the mysterious monsters we find. However, a full understanding of the species traits and biology is impossible without studying live specimens. We need to develop protocols for keeping dangerous creatures at our base and methods for studying them."
+  STR_CHUPACABRA_BIOLOGY: "Chupacabra Biology"
+  STR_CHUPACABRA_BIOLOGY_UFOPEDIA: #TODO
 #tags
   CENTER_MASS: "Center Mass"
   CENTER_MASS_DESCRIPTION: "A bonus chance to land a critical hit."

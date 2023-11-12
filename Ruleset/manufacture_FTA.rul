@@ -489,6 +489,16 @@ manufacture:
     producedItems:
       STR_SAMPLING_TOOL: 1
     listOrder: 220040
+  - name: STR_BATTLE_COCKTAIL
+    category: STR_REFINING
+    requires:
+      - STR_CHUPACABRA_BIOLOGY
+    requiredItems:
+      STR_CHUPACABRA_ESSENCE: 2
+    space: 1
+    time: 850
+    listOrder: 220040
+
 #components
   - name: STR_SPARE_PARTS
     category: STR_COMPONENTS
@@ -561,7 +571,7 @@ manufacture:
       - [40, {STR_CANNON_ROUNDS_X50: 6}]
     listOrder: 220040
   - name: STR_CREDIT_CARD
-    category: STR_LOOT
+    category: STR_REFINING
     requires:
       - STR_CREDIT_CARD_BREACHING
     stats:
@@ -573,7 +583,7 @@ manufacture:
     cost: -22000
     listOrder: 220040
   - name: STR_CREDIT_CARD_SILVER
-    category: STR_LOOT
+    category: STR_REFINING
     requires:
       - STR_CREDIT_CARD
     requiredItems:
@@ -583,7 +593,7 @@ manufacture:
     cost: -47000
     listOrder: 220040
   - name: STR_CREDIT_CARD_GOLD
-    category: STR_LOOT
+    category: STR_REFINING
     requires:
       - STR_CREDIT_CARD_BREACHING
     requiredItems:
@@ -591,6 +601,30 @@ manufacture:
     space: 1
     time: 850
     cost: -110000
+    listOrder: 220040
+  - name: STR_CHUPACABRA_REFINING
+    category: STR_REFINING
+    stats:
+      processing: 100
+    requires:
+      - STR_CHUPACABRA_BIOLOGY
+    requiredItems:
+      STR_CHUPACABRA: 1
+    producedItems:
+      STR_CHUPACABRA_ESSENCE: 3
+    space: 1
+    time: 520
+    listOrder: 220040
+  - name: STR_CHUPACABRA_CORPSE_REFINING
+    category: STR_REFINING
+    requires:
+      - STR_CHUPACABRA_BIOLOGY
+    requiredItems:
+      STR_CHUPACABRA_CORPSE: 1
+    producedItems:
+      STR_CHUPACABRA_ESSENCE: 1
+    space: 1
+    time: 320
     listOrder: 220040
 
 #facility

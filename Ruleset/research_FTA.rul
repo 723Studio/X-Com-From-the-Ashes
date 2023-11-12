@@ -1814,6 +1814,15 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
     listOrder: 6200
+  - name: STR_CHUPACABRA_BIOLOGY
+    cost: 1400
+    stats:
+      biology: 100
+    points: 30
+    dependencies:
+      - STR_CHUPACABRA_CORPSE
+      - STR_CHUPACABRA
+    listOrder: 6200
   - name: STR_ARMADILLO_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 750

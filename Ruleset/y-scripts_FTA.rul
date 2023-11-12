@@ -39,6 +39,17 @@ extended:
       FTAG_EXPANDING: int
       FTAG_SAWED_OFF: int
       BPL_AIMED_1_5X_POWER: int
+      FTAG_BUFF_VALUE_TIMEUNITS: int
+      FTAG_BUFF_VALUE_STAMINA: int
+      FTAG_BUFF_VALUE_HEALTH: int
+      FTAG_BUFF_VALUE_BRAVERY: int
+      FTAG_BUFF_VALUE_REACTIONS: int
+      FTAG_BUFF_VALUE_FIRING: int
+      FTAG_BUFF_VALUE_THROWING: int
+      FTAG_BUFF_VALUE_MELEE: int
+      FTAG_BUFF_VALUE_STRENGTH: int
+      FTAG_BUFF_VALUE_PSISTRENGTH: int
+      FTAG_BUFF_VALUE_PSISKILL: int
     RuleArmor: # Remember to add tag definitions to same file as item/armor rulesets!
       #psi shield (mana-dependent mechanic)
       ARMOR_PSI_SHIELD_TYPE: int #0 - default, no shield, 1 - usual psi shield
@@ -1785,6 +1796,116 @@ extended:
               debug_log target "was healed by field surgeon.";
               target.setTag Tag.HEALED_BY_FIELD_SURGEON fieldSurgeon;
             end;
+          end;
+
+          return;
+
+      - offset: 26   # Handle buffing of medicin item
+        code: |
+          var ptr RuleItem itemRuleset;
+
+          var int buffValueTimeUnits;
+          var int buffValueStamina;
+          var int buffValueHealth;
+          var int buffValueBravery;
+          var int buffValueReactions;
+          var int buffValueFiring;
+          var int buffValueThrowing;
+          var int buffValueMelee;
+          var int buffValueStrength;
+          var int buffValuePsiStrength;
+          var int buffValuePsiSkill;
+          var int newValue;
+
+          item.getRuleItem itemRuleset; #get stats from item
+
+          itemRuleset.getTag buffValueTimeUnits Tag.FTAG_BUFF_VALUE_TIMEUNITS;
+          itemRuleset.getTag buffValueStamina Tag.FTAG_BUFF_VALUE_STAMINA;
+          itemRuleset.getTag buffValueHealth Tag.FTAG_BUFF_VALUE_HEALTH;
+          itemRuleset.getTag buffValueBravery Tag.FTAG_BUFF_VALUE_BRAVERY;
+          itemRuleset.getTag buffValueReactions Tag.FTAG_BUFF_VALUE_REACTIONS;
+          itemRuleset.getTag buffValueFiring Tag.FTAG_BUFF_VALUE_FIRING;
+          itemRuleset.getTag buffValueThrowing Tag.FTAG_BUFF_VALUE_THROWING;
+          itemRuleset.getTag buffValueMelee Tag.FTAG_BUFF_VALUE_MELEE;
+          itemRuleset.getTag buffValueStrength Tag.FTAG_BUFF_VALUE_STRENGTH;
+          itemRuleset.getTag buffValuePsiStrength Tag.FTAG_BUFF_VALUE_PSISTRENGTH;
+          itemRuleset.getTag buffValuePsiSkill Tag.FTAG_BUFF_VALUE_PSISKILL;
+
+          if neq buffValueTimeUnits 0; #if item has TimeUnits effect
+            target.Stats.getTimeUnits newValue; #get original stat
+            add newValue buffValueTimeUnits; #calculate effect
+            target.Stats.setTimeUnits newValue; #apply effect
+            clear newValue;
+          end;
+
+          if neq buffValueStamina 0; #if item has Stamina effect
+            target.Stats.getStamina newValue;
+            add newValue buffValueStamina;
+            target.Stats.setStamina newValue;
+            clear newValue;
+          end;
+
+          if neq buffValueHealth 0; #if item has Health effect
+            target.Stats.getHealth newValue;
+            add newValue buffValueHealth;
+            target.Stats.setHealth newValue;
+            clear newValue;
+          end;
+
+          if neq buffValueBravery 0; #if item has Bravery effect
+            target.Stats.getBravery newValue;
+            add newValue buffValueBravery;
+            target.Stats.setBravery newValue;
+            clear newValue;
+          end;
+
+          if neq buffValueReactions 0; #if item has Reactions effect
+            target.Stats.getReactions newValue;
+            add newValue buffValueReactions;
+            target.Stats.setReactions newValue;
+            clear newValue;
+          end;
+
+          if neq buffValueFiring 0; #if item has Firing effect
+            target.Stats.getFiring newValue;
+            add newValue buffValueFiring;
+            target.Stats.setFiring newValue;
+            clear newValue;
+          end;
+
+          if neq buffValueThrowing 0; #if item has Throwing effect
+            target.Stats.getThrowing newValue;
+            add newValue buffValueThrowing;
+            target.Stats.setThrowing newValue;
+            clear newValue;
+          end;
+
+          if neq buffValueMelee 0; #if item has Melee effect
+            target.Stats.getMelee newValue;
+            add newValue buffValueMelee;
+            target.Stats.setMelee newValue;
+            clear newValue;
+          end;
+
+          if neq buffValueStrength 0; #if item has Strength effect
+            target.Stats.getStrength newValue;
+            add newValue buffValueStrength;
+            target.Stats.setStrength newValue;
+            clear newValue;
+          end;
+
+          if neq buffValuePsiStrength 0; #if item has PsiStrength effect
+            target.Stats.getPsiStrength newValue;
+            add newValue buffValuePsiStrength;
+            target.Stats.setPsiStrength newValue;
+            clear newValue;
+          end;
+
+          if neq buffValuePsiSkill 0; #if item has PsiSkill effect
+            target.Stats.getPsiSkill newValue;
+            add newValue buffValuePsiSkill;
+            target.Stats.setPsiSkill newValue;
+            clear newValue;
           end;
 
           return;
