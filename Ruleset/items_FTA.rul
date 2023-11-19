@@ -5202,9 +5202,9 @@ items:
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
     landOnly: true
     size: 0.1
-    costBuy: 640
-    costSell: 380
-    weight: 2
+    costBuy: 28000
+    costSell: 26000
+    weight: 1
     bigSprite: 495
     floorSprite: 495
     handSprite: 1146
@@ -5214,12 +5214,12 @@ items:
     medikitType: 2
     medikitTargetSelf: true
     isConsumable: true
-    stunRecovery: -15
+    stunRecovery: 5
     energyRecovery: 15
     tuUse: 22
     invWidth: 1
     invHeight: 1
-    recoveryPoints: 2
+    recoveryPoints: 5
     listOrder: 23020
     tags: 
       FTAG_BUFF_VALUE_TIMEUNITS: 20
@@ -5231,6 +5231,40 @@ items:
       #FTAG_BUFF_VALUE_THROWING: 20
       #FTAG_BUFF_VALUE_MELEE: 20
       #FTAG_BUFF_VALUE_STRENGTH: 20
+      #FTAG_BUFF_VALUE_PSISTRENGTH: 20
+      #FTAG_BUFF_VALUE_PSISKILL: 20
+  - type: STR_ENERGY_BOOSTER
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.1
+    costBuy: 24000
+    costSell: 21500
+    weight: 2
+    bigSprite: 496
+    floorSprite: 496
+    hitSound: 74
+    battleType: 6
+    stimulant: 1
+    medikitType: 2
+    medikitTargetSelf: true
+    isConsumable: true
+    stunRecovery: -15
+    energyRecovery: 15
+    tuUse: 30
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 5
+    listOrder: 23020
+    tags: 
+      #FTAG_BUFF_VALUE_TIMEUNITS: 20
+      FTAG_BUFF_VALUE_STAMINA: 30
+      FTAG_BUFF_VALUE_HEALTH: 10 
+      #FTAG_BUFF_VALUE_BRAVERY: -20
+      #FTAG_BUFF_VALUE_REACTIONS: 10
+      #FTAG_BUFF_VALUE_FIRING: 20
+      #FTAG_BUFF_VALUE_THROWING: 20
+      #FTAG_BUFF_VALUE_MELEE: 10
+      FTAG_BUFF_VALUE_STRENGTH: 10
       #FTAG_BUFF_VALUE_PSISTRENGTH: 20
       #FTAG_BUFF_VALUE_PSISKILL: 20
   - type: STR_MEDI_PACK
@@ -6332,11 +6366,17 @@ items:
   - type: STR_CHUPACABRA_ESSENCE
     categories: [STR_COMPONENTS]
     size: 0.1
-    costSell: 2500
+    costSell: 5500
     battleType: 0
     recoveryPoints: 1
     listOrder: 60020
-
+  - type: STR_ZOMBIE_ESSENCE
+    categories: [STR_COMPONENTS]
+    size: 0.1
+    costSell: 6100
+    battleType: 0
+    recoveryPoints: 1
+    listOrder: 60020
 
 #geoscape-only
   - type: STR_CRATED_HELICOPTER

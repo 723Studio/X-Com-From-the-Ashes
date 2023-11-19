@@ -417,6 +417,7 @@ extraSprites:
       493: Resources/MiscItems/bigob_SealedCrate.png
       494: Resources/MiscItems/bigob_MoneyBag.png
       495: Resources/Weapons/Earthbound/Utilities/bigob_BattleCocktail.png
+      496: Resources/Weapons/Earthbound/Utilities/bigob_EnergyBooster.png
 
   - type: FLOOROB.PCK
     files:
@@ -629,6 +630,7 @@ extraSprites:
       493: Resources/MiscItems/floorob_SealedCrate.png
       494: Resources/MiscItems/floorob_MoneyBag.png
       495: Resources/Weapons/Earthbound/Utilities/floorob_BattleCocktail.png
+      496: Resources/Weapons/Earthbound/Utilities/floorob_BattleCocktail.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40

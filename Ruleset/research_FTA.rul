@@ -69,6 +69,10 @@ research:
     hidden: true
   - name: STR_CRIMINAL_RECRUITING_PREREQ
     hidden: true
+  - name: STR_MILITARY_RECRUITING_PREREQ
+    hidden: true
+  - name: STR_OFFICIALS_RECRUITING_PREREQ
+    hidden: true
   - name: STR_LOYALTY
     hidden: true
   - name: STR_XCOM_EQUIPMENT_UNLOCKED
@@ -792,6 +796,28 @@ research:
       - STR_SMART_RIFLE
     listOrder: 10
 
+#other items
+  - name: STR_BATTLE_COCKTAIL
+    requiresBaseFunc: [HQ]
+    cost: 650
+    stats:
+      tactics: 100
+      biology: 100
+    points: 30
+    dependencies:
+      - STR_CHUPACABRA_BIOLOGY
+    listOrder: 10
+  - name: STR_ENERGY_BOOSTER
+    requiresBaseFunc: [HQ]
+    cost: 500
+    stats:
+      tactics: 100
+      biology: 100
+    points: 30
+    dependencies:
+      - STR_ZOMBIE_BIOLOGY
+    listOrder: 10
+
 #damage types
   - name: STR_DAMAGE_ARMOR_PIERCING
     dependencies:
@@ -1403,8 +1429,6 @@ research:
   - name: STR_INFECTOR_AUTOPSY
     dependencies:
       - STR_FACEHUGGER_CORPSE
-    unlocks:
-      - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_LIVE_INFECTOR
     dependencies:
       - STR_FACEHUGGER
@@ -1432,23 +1456,33 @@ research:
     dependencies:
       - STR_ZOMBIE_PARASITE_PREREQ
   - name: STR_ZOMBIE_BIOLOGY
-    cost: 2000
+    cost: 3000
     stats:
       biology: 100
     points: 75
     dependencies:
-      - STR_INFECTOR_AUTOPSY
       - STR_LIVE_INFECTOR
-      - STR_ZOMBIE_AUTOPSY
       - STR_LIVE_ZOMBIE
+      - STR_ZOMBIE_PARASITE
   - name: STR_ZOMBIE_SOURCE
     cost: 1200
     stats:
       biology: 100
     points: 200
     dependencies:
-      - STR_ZOMBIE_BIOLOGY
       - STR_CROP_CIRCLES_ZOMBIES_PREREQ
+      - STR_ZOMBIE_BIOLOGY
+      - STR_TODOIUM #remove after making STR_EMPTY_ALIEN_CONTAINER item
+      #- STR_EMPTY_ALIEN_CONTAINER #TODO add item, research and pedia
+  - name: STR_ZOMBIE_AGENDA
+    requiresBaseFunc: [INTLAB]
+    cost: 1000
+    stats:
+      psionics: 100
+      biology: 100
+    dependencies:
+      - STR_ZOMBIE_SOURCE
+      - STR_TODOIUM #psionic network, human psionic and aliens attacking resistance missions outcome trigger.
 
 #Prisoner interrogation research
   - name: STR_RECRUIT_CIVILIAN_PRISONERS
@@ -1468,6 +1502,24 @@ research:
     points: 100
     dependencies:
       - STR_CRIMINAL_RECRUITING_PREREQ
+    listOrder: 1020
+  - name: STR_MILITARY_RECRUITING
+    requiresBaseFunc: [INTLAB]
+    cost: 3200
+    stats:
+      tactics: 100
+    points: 100
+    dependencies:
+      - STR_MILITARY_RECRUITING_PREREQ #TODO add ways to unlock
+    listOrder: 1020
+  - name: STR_OFFICIALS_RECRUITING
+    requiresBaseFunc: [INTLAB]
+    cost: 3200
+    stats:
+      tactics: 100
+    points: 100
+    dependencies:
+      - STR_OFFICIALS_RECRUITING_PREREQ #TODO add ways to unlock
     listOrder: 1020
 #MIB
   - name: STR_XCOM_EX_COMMANDER

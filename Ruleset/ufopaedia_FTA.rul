@@ -1038,13 +1038,6 @@ ufopaedia:
     requires:
       - STR_RESISTANCE_SUITE
     listOrder: 12000
-  - id: STR_FLIGHTSUIT_UC
-    type_id: 5
-    section: STR_ARMORS_UC
-    text: STR_FLIGHTSUIT_UC_UFOPEDIA
-    requires:
-      - STR_UFOPEDIA_DECRYPTION
-    listOrder: 12000
 
   - id: STR_ARMORED_VEST_UC
     type_id: 5
@@ -2237,8 +2230,15 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_CHUPACABRA_BIOLOGY
+      - STR_BATTLE_COCKTAIL
     text: STR_BATTLE_COCKTAIL_UFOPEDIA
+    listOrder: 24060
+  - id: STR_ENERGY_BOOSTER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_CHUPACABRA_BIOLOGY
+    text: STR_ENERGY_BOOSTER_UFOPEDIA
     listOrder: 24060
   - id: STR_MEDI_PACK
     type_id: 4
@@ -2615,6 +2615,13 @@ ufopaedia:
     text: STR_FACEHUGGER_AUTOPSY_UFOPEDIA
     text_width: 149
     listOrder: 95010
+  - id: STR_ZOMBIE_PARASITE
+    type_id: 8
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ZOMBIE_PARASITE
+    text: STR_ZOMBIE_PARASITE_UFOPEDIA
+    listOrder: 95015
   - id: STR_FRESH_ZOMBIE
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -2650,6 +2657,27 @@ ufopaedia:
     image_id: UFOPEDIA_IMG_ZOMBIE_GRUBAS_AUTOPSY
     text: STR_ZOMBIE_GRUBAS_AUTOPSY_UFOPEDIA
     text_width: 153
+    listOrder: 95050
+  - id: STR_ZOMBIE_BIOLOGY
+    type_id: 8
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ZOMBIE_BIOLOGY
+    text: STR_ZOMBIE_BIOLOGY_UFOPEDIA
+    listOrder: 95050
+  - id: STR_ZOMBIE_SOURCE
+    type_id: 8
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ZOMBIE_SOURCE
+    text: STR_ZOMBIE_SOURCE_UFOPEDIA
+    listOrder: 95050
+  - id: STR_ZOMBIE_AGENDA
+    type_id: 8
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ZOMBIE_AGENDA
+    text: STR_ZOMBIE_AGENDA_UFOPEDIA
     listOrder: 95050
   - id: STR_CHUPACABRA
     type_id: 7

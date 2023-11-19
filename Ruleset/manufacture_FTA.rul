@@ -492,11 +492,22 @@ manufacture:
   - name: STR_BATTLE_COCKTAIL
     category: STR_REFINING
     requires:
-      - STR_CHUPACABRA_BIOLOGY
+      - STR_BATTLE_COCKTAIL
     requiredItems:
       STR_CHUPACABRA_ESSENCE: 2
     space: 1
+    cost: 1200
     time: 850
+    listOrder: 220040
+  - name: STR_ENERGY_BOOSTER
+    category: STR_REFINING
+    requires:
+      - STR_ENERGY_BOOSTER
+    requiredItems:
+      STR_ZOMBIE_ESSENCE: 2
+    space: 1
+    cost: 850
+    time: 620
     listOrder: 220040
 
 #components
@@ -602,6 +613,79 @@ manufacture:
     time: 850
     cost: -110000
     listOrder: 220040
+  - name: STR_FACEHUGGER_REFINING
+    category: STR_REFINING
+    stats:
+      processing: 100
+    requires:
+      - STR_ZOMBIE_BIOLOGY
+    requiredItems:
+      STR_FACEHUGGER: 1
+    producedItems:
+      STR_ZOMBIE_ESSENCE: 5
+    space: 1
+    time: 520
+    listOrder: 220040
+  - name: STR_FACEHUGGER_CORPSE_REFINING
+    category: STR_REFINING
+    requires:
+      - STR_ZOMBIE_BIOLOGY
+    requiredItems:
+      STR_FACEHUGGER_CORPSE: 1
+    producedItems:
+      STR_ZOMBIE_ESSENCE: 1
+    space: 1
+    time: 320
+    listOrder: 220040
+  - name: STR_ZOMBIE_REFINING
+    category: STR_REFINING
+    stats:
+      processing: 100
+    requires:
+      - STR_ZOMBIE_BIOLOGY
+    requiredItems:
+      STR_FRESH_ZOMBIE: 1
+    producedItems:
+      STR_ZOMBIE_ESSENCE: 3
+    space: 1
+    time: 520
+    listOrder: 220040
+  - name: STR_ZOMBIE_CORPSE_REFINING
+    category: STR_REFINING
+    requires:
+      - STR_ZOMBIE_BIOLOGY
+    requiredItems:
+      STR_FRESH_ZOMBIE_CORPSE: 1
+    producedItems:
+      STR_ZOMBIE_ESSENCE: 1
+    space: 1
+    time: 320
+    listOrder: 220040
+  - name: STR_FAT_ZOMBIE_REFINING #TODO more or less essence based on lore - why they are fat? more time after transformation?
+    category: STR_REFINING
+    stats:
+      processing: 100
+    requires:
+      - STR_ZOMBIE_BIOLOGY
+    requiredItems:
+      STR_ZOMBIE_GRUBAS_TERRORIST: 1
+    producedItems:
+      STR_ZOMBIE_ESSENCE: 5
+    space: 1
+    time: 520
+    listOrder: 220040
+  - name: STR_FAT_ZOMBIE_CORPSE_REFINING
+    category: STR_REFINING
+    requires:
+      - STR_ZOMBIE_BIOLOGY
+    requiredItems:
+      STR_ZOMBIE_GRUBAS_CORPSE: 1
+    producedItems:
+      STR_ZOMBIE_ESSENCE: 2
+    space: 1
+    time: 320
+    listOrder: 220040
+
   - name: STR_CHUPACABRA_REFINING
     category: STR_REFINING
     stats:
