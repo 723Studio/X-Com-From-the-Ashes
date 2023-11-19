@@ -2797,8 +2797,8 @@ items:
     accuracyCloseQuarters: 100
     accuracySnap: 110
     accuracyAimed: 145
-    tuSnap: 28
-    tuAimed: 62
+    tuSnap: 38
+    tuAimed: 68
     aimRange: 14
     snapRange: 8
     dropoff: 6
@@ -2837,12 +2837,12 @@ items:
     accuracyCloseQuarters: 100
     accuracySnap: 135
     accuracyAimed: 155
-    tuSnap: 36
-    tuAimed: 68
-    aimRange: 14
-    snapRange: 8
+    tuSnap: 28
+    tuAimed: 60
+    aimRange: 16
+    snapRange: 12
     dropoff: 6
-    tuLoad: 35
+    tuLoad: 30
     battleType: 1
     twoHanded: true
     blockBothHands: true
