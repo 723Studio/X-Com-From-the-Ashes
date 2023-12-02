@@ -5123,7 +5123,7 @@ items:
     attraction: 5
     samplingPower: 100
     LOSRequired: true
-    #experienceTrainingMode: 19 - hacking experince is hardcoded
+    #experienceTrainingMode: 19 - sampling experince is hardcoded
     listOrder: 48150
 #medical
   - type: STR_FIRST_AID
@@ -6317,6 +6317,34 @@ items:
       STR_LARGE_ROCKET: [1, 2, 2, 1]
       STR_INCENDIARY_ROCKET: [1, 2, 2, 1]
     listOrder: 60020
+  - type: STR_FARM_CATTLE_SAMPLE
+    categories: [STR_LOOT]
+    size: 3
+    weight: 36
+    bigSprite: 497
+    floorSprite: 497
+    costSell: 42000
+    tuThrow: 0
+    battleType: 0
+    armor: 10
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 4
+    listOrder: 31040
+  - type: STR_FOREST_CATTLE_SAMPLE
+    categories: [STR_LOOT]
+    size: 3
+    weight: 36
+    bigSprite: 497
+    floorSprite: 497
+    costSell: 42000
+    tuThrow: 0
+    battleType: 0
+    armor: 10
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 4
+    listOrder: 31040
 
 #components
   - type: STR_SPARE_PARTS

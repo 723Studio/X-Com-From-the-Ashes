@@ -48,6 +48,9 @@ pilotTacticsZeroPoint: 20
 pilotTacticsRange: 20
 covertOpsExperienceFactor: 20
 covertOpsIntelBonusFactor: 50
+researchTrainingFactor: 30
+engineeringTrainingFactor: 30
+intelTrainingFactor: 30
 
 #Interception
 drawEnemyRadarCircles: 0

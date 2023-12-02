@@ -1022,7 +1022,6 @@ research:
       - STR_HIGH_TECH_PARTS
     listOrder: 25025
 
-
   - name: STR_CHEMICAL_WEAPONS_PREREQ #TODO ways to unlock
     hidden: true
   - name: STR_CHEMICAL_WEAPONS
@@ -1412,6 +1411,7 @@ research:
       - STR_AMPHIBIAN_CORPSE
       - STR_SWARMIDS_CORPSE
       - STR_ENERGY_WISP_CORPSE
+    listOrder: 3020
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
     cost: 400
     stats:
@@ -1419,11 +1419,13 @@ research:
     points: 17
     dependencies:
       - STR_STRANGE_CREATURE_AUTOPSY
+    listOrder: 3020
   - name: STR_STRANGE_CREATURE #for future tech tree dev
     dependencies:
       - STR_FACEHUGGER
       - STR_FRESH_ZOMBIE
       - STR_ZOMBIE_GRUBAS_TERRORIST
+    listOrder: 3020
 
 #Zombie arc
   - name: STR_INFECTOR_AUTOPSY
@@ -1455,6 +1457,7 @@ research:
     points: 50
     dependencies:
       - STR_ZOMBIE_PARASITE_PREREQ
+    listOrder: 3020
   - name: STR_ZOMBIE_BIOLOGY
     cost: 3000
     stats:
@@ -1464,6 +1467,7 @@ research:
       - STR_LIVE_INFECTOR
       - STR_LIVE_ZOMBIE
       - STR_ZOMBIE_PARASITE
+    listOrder: 3020
   - name: STR_ZOMBIE_SOURCE
     cost: 1200
     stats:
@@ -1474,6 +1478,7 @@ research:
       - STR_ZOMBIE_BIOLOGY
       - STR_TODOIUM #remove after making STR_EMPTY_ALIEN_CONTAINER item
       #- STR_EMPTY_ALIEN_CONTAINER #TODO add item, research and pedia
+    listOrder: 3020
   - name: STR_ZOMBIE_AGENDA
     requiresBaseFunc: [INTLAB]
     cost: 1000
@@ -1483,6 +1488,89 @@ research:
     dependencies:
       - STR_ZOMBIE_SOURCE
       - STR_TODOIUM #psionic network, human psionic and aliens attacking resistance missions outcome trigger.
+    listOrder: 3020
+
+#samples
+  - name: STR_FARM_CATTLE_SAMPLE
+    cost: 600
+    stats:
+      biology: 150
+      alienTech: 50
+    needItem: true
+    destroyItem: true
+    getOneFree: #TODO в случае простого распределения лора, иначе поменять
+      - STR_FARM_CATTLE_SAMPLE_RESULT_1
+      - STR_FARM_CATTLE_SAMPLE_RESULT_2
+      - STR_FARM_CATTLE_SAMPLE_RESULT_3
+      - STR_FARM_CATTLE_SAMPLE_RESULT_4
+      - STR_FARM_CATTLE_SAMPLE_RESULT_5
+      - STR_FARM_CATTLE_SAMPLE_RESULT_6
+      - STR_FARM_CATTLE_SAMPLE_RESULT_7
+      - STR_FARM_CATTLE_SAMPLE_RESULT_8
+      - STR_FARM_CATTLE_SAMPLE_RESULT_9
+      - STR_FARM_CATTLE_SAMPLE_RESULT_10
+    listOrder: 3020
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_6
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_7
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_8
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_9
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_10
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+
+  - name: STR_FOREST_CATTLE_SAMPLE
+    cost: 600
+    stats:
+      biology: 150
+      alienTech: 50
+    needItem: true
+    destroyItem: true
+    getOneFree: #TODO в случае простого распределения лора, иначе поменять
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_1
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_2
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_3
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_4
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_5
+    listOrder: 3020
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+
 
 #Prisoner interrogation research
   - name: STR_RECRUIT_CIVILIAN_PRISONERS

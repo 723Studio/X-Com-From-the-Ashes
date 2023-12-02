@@ -2775,13 +2775,121 @@ ufopaedia:
     listOrder: 95096
 
 ## STR_ALIEN_RESEARCH_UC 160-230k
+    #listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_1
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_1
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_1_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_2
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_2
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_2_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_3
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_3
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_3_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_4
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_4
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_4_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_5
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_5
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_5_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_6
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_6
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_6_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_7
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_7
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_7_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_8
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_8
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_8_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_9
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_9
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_9_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FARM_CATTLE_SAMPLE_RESULT_10
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FARM_CATTLE_SAMPLE_RESULT_10
+    text: STR_FARM_CATTLE_SAMPLE_RESULT_10_UFOPEDIA
+    listOrder: 161000
+
+  - id: STR_FOREST_CATTLE_SAMPLE_RESULT_1
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_1
+    text: STR_FOREST_CATTLE_SAMPLE_RESULT_1_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FOREST_CATTLE_SAMPLE_RESULT_2
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_2
+    text: STR_FOREST_CATTLE_SAMPLE_RESULT_2_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FOREST_CATTLE_SAMPLE_RESULT_3
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_3
+    text: STR_FOREST_CATTLE_SAMPLE_RESULT_3_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FOREST_CATTLE_SAMPLE_RESULT_4
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_4
+    text: STR_FOREST_CATTLE_SAMPLE_RESULT_4_UFOPEDIA
+    listOrder: 161000
+  - id: STR_FOREST_CATTLE_SAMPLE_RESULT_5
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_5
+    text: STR_FOREST_CATTLE_SAMPLE_RESULT_5_UFOPEDIA
+    listOrder: 161000
+
   - id: STR_ALIEN_ORIGINS
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
     requires:
       - STR_ALIEN_ORIGINS
     text: STR_ALIEN_ORIGINS_UFOPEDIA
-    listOrder: 160000
+    listOrder: 170000
 ## STR_UFOS 230-250k    
   - id: STR_SMALL_SCOUT
     type_id: 9

@@ -1296,6 +1296,59 @@ ufos:
         - name: DEADCATTLE00
           width: 10
           length: 10
+          objects:
+            STR_FARM_CATTLE_SAMPLING_SITE:
+              - [4, 5, 0]
+        - name: DEADCATTLE01
+          width: 10
+          length: 10
+          objects:
+            STR_FARM_CATTLE_SAMPLING_SITE:
+              - [4, 1, 0]
+        - name: DEADCATTLE02
+          width: 10
+          length: 10
+          objects:
+            STR_FARM_CATTLE_SAMPLING_SITE:
+              - [6, 7, 0]
+        - name: DEADCATTLE03
+          width: 10
+          length: 10
+          objects:
+            STR_FARM_CATTLE_SAMPLING_SITE:
+              - [5, 4, 0]
+        - name: DEADCATTLE04
+          width: 10
+          length: 10
+          objects:
+            STR_FARM_CATTLE_SAMPLING_SITE: #bonus
+              - [4, 5, 0]
+              - [6, 4, 0]
+
+  - type: STR_DEAD_FOREST_CATTLE
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: DEADCATTLE
+      mapDataSets:
+        - BLANKS
+        - DEADCATTLE
+      mapBlocks:
+        - name: DEADCATTLESMALL
+          width: 10
+          length: 10
+          objects:
+            STR_FOREST_CATTLE_SAMPLING_SITE:
+              - [4, 4, 0]
+
 
   - type: STR_MIB_HIDEOUT_MEDIUM
     size: STR_MEDIUM_UC

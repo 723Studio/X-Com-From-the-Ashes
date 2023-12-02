@@ -910,7 +910,8 @@ en-US:
   STR_LOCALS_TRAP: "Cover blown"
   STR_LOCALS_TRAP_BRIEFING: "The cover for our agents is compromised and the locals are livid. We need to evacuate our people immediately before the locals and police get to them. Get to the car parked at the roadside - it is our only chance of survival.{NEWLINE}To complete the mission place the soldiers on the green tiles and click on the 'Abort Mission' icon."
   STR_TERMINAL: "Terminal"
-  STR_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
+  STR_FARM_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
+  STR_FOREST_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
 
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
@@ -1884,6 +1885,8 @@ en-US:
   STR_MONEY_BAG: "Money Bag ($500 000)"
   STR_JEWEL: "Jewel"
   STR_ANCIENT_ARTIFACT: "Ancient Artifact"
+  STR_FARM_CATTLE_SAMPLE: "Biological Sample"
+  STR_FOREST_CATTLE_SAMPLE: "Biological Sample"
   STR_FACEHUGGER_REFINING: "Facehugger Processing"
   STR_FACEHUGGER_CORPSE_REFINING: "Facehugger Corpse Processing"
   STR_ZOMBIE_REFINING: "Zombie Processing"
@@ -2181,7 +2184,7 @@ en-US:
   STR_MIB_AGENT_LOBOTOMY: "M.I.B. Agent Lobotomy"
   STR_MIB_AGENT_LOBOTOMY_UFOPEDIA: "By dissecting the M.I.B. agent's cranium, we were able to remove a strange implant integrated into the frontal and temporal lobes of the cerebral cortex. The device consists of a miniature power supply, a memory unit, a processor, and a complex receiving antenna. We also found that the centers responsible for long-term memory were practically burned out, probably by a strong electrical impulse."
   STR_MIB_HEAD_CHIP: "M.I.B. Head Implant"
-  STR_MIB_HEAD_CHIP_UFOPEDIA: "We figured out the power system of the chip, so we can keep it running. Apparently, previously it was recharged from two sources - directly from the electromagnetic activity of the brain, as well as wireless from an external device. It was possible to connect to the microcomputer of the implant, but we are not able to overcome the protection of its firmware and view the embedded programs." #FIXME - redo lore, i dislike it
+  STR_MIB_HEAD_CHIP_UFOPEDIA: "We figured out the power system of the chip, so we can keep it running. Apparently, previously it was recharged from two sources - directly from the electromagnetic activity of the brain, as well as wireless from an external device. It was possible to connect to the microcomputer of the implant, but we are not able to overcome the protection of its firmware and view the embedded programs."
   STR_MIB_DATA_TRANSFER_DECRYPTION: "M.I.B. Signal Decryption"
   STR_MIB_SIGNAL: "M.I.B. Signal"
   STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA: "The signal that the M.I.B. head chip was tuned to receive was partially decoded. It is a very weak, and the phased array on the surface of the chip is constantly calibrated, adjusting to the direction of the source, in order to enhance the reception.It appears to be less than 1,000 kilometers to the east.  We will be able to localize the source more precisely if we get close to it."
@@ -2194,7 +2197,39 @@ en-US:
   STR_LIVE_CREATURES_RESEARCH: "Live Monsters Study"
   STR_LIVE_CREATURES_RESEARCH_UFOPEDIA: "Autopsies provide us with a wealth of scientific information about the mysterious monsters we find. However, a full understanding of the species traits and biology is impossible without studying live specimens. We need to develop protocols for keeping dangerous creatures at our base and methods for studying them."
   STR_CHUPACABRA_BIOLOGY: "Chupacabra Biology"
-  STR_CHUPACABRA_BIOLOGY_UFOPEDIA: #TODO
+  STR_CHUPACABRA_BIOLOGY_UFOPEDIA: #TODO Даёт ответ на то, откуда у чупакабры такая скорость и сила (хотя они довольно тощие) - сложные белки в крови. Сыворотку можно выделить и использовать как боевой стимулятор
+  STR_FARM_CATTLE_SAMPLE_RESULT_1: #Следы антисептика пришельцев
+  STR_FARM_CATTLE_SAMPLE_RESULT_1_UFOPEDIA: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_2: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_2_UFOPEDIA: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_3: #Следы хирургических инструментов пришельцев
+  STR_FARM_CATTLE_SAMPLE_RESULT_3_UFOPEDIA: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_4: #Следы проведённой биопсии пришельцами
+  STR_FARM_CATTLE_SAMPLE_RESULT_4_UFOPEDIA: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_5: #инопланетная флора
+  STR_FARM_CATTLE_SAMPLE_RESULT_5_UFOPEDIA: #Следы флоры пришельцев, растущей в туше коровы (погибают, так как кислород для них токсичен) - дают представление о среде, в которой живут пришельцы.
+  STR_FARM_CATTLE_SAMPLE_RESULT_6: #белка
+  STR_FARM_CATTLE_SAMPLE_RESULT_6_UFOPEDIA: #Выпотрошенная белка, удалены все внутренние органы, нервная система созжена
+  STR_FARM_CATTLE_SAMPLE_RESULT_7: #зайчиха
+  STR_FARM_CATTLE_SAMPLE_RESULT_7_UFOPEDIA: #Труп беременной зайчихи, удалены эмбрионы
+  STR_FARM_CATTLE_SAMPLE_RESULT_8: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_8_UFOPEDIA: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_9: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_9_UFOPEDIA: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_10: 
+  STR_FARM_CATTLE_SAMPLE_RESULT_10_UFOPEDIA: 
+
+  STR_FOREST_CATTLE_SAMPLE_RESULT_1: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_1_UFOPEDIA: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_2: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_2_UFOPEDIA: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_3: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_3_UFOPEDIA: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_4: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_4_UFOPEDIA: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_5: 
+  STR_FOREST_CATTLE_SAMPLE_RESULT_5_UFOPEDIA:
+
 #tags
   CENTER_MASS: "Center Mass"
   CENTER_MASS_DESCRIPTION: "A bonus chance to land a critical hit."
@@ -2691,6 +2726,7 @@ en-US:
   STR_AMPHIBIAN_TERROR_MISSION: STR_AMPHIBIAN_TERROR_MISSION
   STR_SWARMID_TERROR_MISSION: STR_SWARMID_TERROR_MISSION
   STR_DEAD_COW: STR_DEAD_COW
+  STR_DEAD_FOREST_CATTLE: STR_DEAD_FOREST_CATTLE
   STR_CROP_CORCLES_EARLY_GAME: STR_CROP_CORCLES_EARLY_GAME
   STR_STARTING_EQUIPMENT_RESEARCHED: STR_STARTING_EQUIPMENT_RESEARCHED
   STR_CHOCOLATE_FACTORY_OPEN: STR_CHOCOLATE_FACTORY_OPEN

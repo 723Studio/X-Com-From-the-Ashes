@@ -48,6 +48,9 @@ objects:
         STR_MIB_HIDEOUT_TERMINAL_EVENT_10: 10
 
 #sampling sites
-  - type: STR_CATTLE_SAMPLING_SITE
+  - type: STR_FARM_CATTLE_SAMPLING_SITE
     samplingDefence: 1
-    spawnedItem: STR_FIRE_EXTINGUISHER
+    spawnedItem: STR_FARM_CATTLE_SAMPLE
+  - type: STR_FOREST_CATTLE_SAMPLING_SITE
+    samplingDefence: 1
+    spawnedItem: STR_FOREST_CATTLE_SAMPLE
