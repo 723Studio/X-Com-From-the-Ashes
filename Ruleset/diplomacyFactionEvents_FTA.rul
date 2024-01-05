@@ -65,18 +65,18 @@ diplomacyFactionEvents:
     staffToAdd: 
       STR_RESISTANCE_AGENT: 4
   - type: STR_RESISTANCE_NEW_SCIENTIST_EG
-    executionOdds: 1
+    executionOdds: 3
     firstMonth: 2
     lastMonth: 4
     staffToAdd: 
       STR_SCIENTIST: 1
   - type: STR_RESISTANCE_NEW_SCIENTIST_MG
-    executionOdds: 3
+    executionOdds: 6
     firstMonth: 5
     staffToAdd: 
       STR_SCIENTIST: 1
   - type: STR_RESISTANCE_NEW_ENGINEER
-    executionOdds: 3
+    executionOdds: 6
     firstMonth: 1
     staffToAdd: 
       STR_ENGINEER: 1

@@ -1,21 +1,20 @@
 intelligence:
   - name: STR_UFO_TRACKING
     description: STR_UFO_TRACKING_DESCRIPTION
-    cost: 12
-    costIncrease: 1
+    cost: 400
+    costIncrease: 2
     requiredResearch: STR_INTEL_STATUS_REPORT
     specialRule: 1 #INTEL_NONE = 0, INTEL_UFO_TRACKING = 1, INTEL_COVERT_OPERATIONS = 2, INTEL_DEPLOYMENT_HINTS = 3
     stats:
-      data: 40
-      computers: 30
-      xenolinguistics: 60
-      alienTech: 40
-      investigation: 80
+      data: 70
+      computers: 120
+      xenolinguistics: 70
+      alienTech: 70
     listOrder: 100
     stages:
       - stageName: firstUFOstage
         odds: 5
-        requireRolls: 1
+        requireRolls: 10
         requiredResearch: STR_INTEL_STATUS_REPORT
         disabledByResearch: STR_TROLLIUM
         requiresBaseFunc: [HQ]

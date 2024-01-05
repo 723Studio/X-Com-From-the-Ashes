@@ -1,0 +1,6 @@
+﻿diplomacyActions:
+  - type: STR_HIRE_PERSONNEL
+    specificFaction: STR_RESISTANCE
+    attune:
+      reputation: 3
+      

@@ -28,14 +28,13 @@ facilities:
     buildCost: 2000000
     buildTime: 40
     monthlyCost: 13000
-    canBeBuiltOver: true
+    #canBeBuiltOver: true
     storage: 10
     storageTiles: [[-1, -1, -1]]
-    labs: 7
+    labs: 1
     manaRecoveryPerDay: 1
     rightClickActionType: 8 #for FtA it is link to intelligence
     interrogationSpace: 1
-    #radarRange: 10800
     globalRadar: true
     radarChance: 2
     mapName: XBASF_01
@@ -57,8 +56,22 @@ facilities:
     buildCost: 480000
     buildTime: 32
     monthlyCost: 19000
-    labs: 5
+    buildOverFacilities:
+      - STR_SMALL_LABORATORY
+    labs: 10
     mapName: XBASF_07
+  - type: STR_WORKSHOP
+    spriteShape: 1
+    spriteFacility: 307
+    provideBaseFunc: [WORK]
+    requires:
+      - STR_WORKSHOP
+    buildCost: 220000
+    buildTime: 15
+    monthlyCost: 7000
+    workshops: 12
+    manufacture: STR_WORKSHOP
+    mapName: XBASE_03 #FIXME - make map!
   - type: STR_PRISON_CELLS
     spriteShape: 1
     spriteFacility: 301
@@ -117,6 +130,22 @@ facilities:
     provideBaseFunc: [MEDBAY, SURGERY]
     mapName: XBASF_05
     listOrder: 6920
+  - type: STR_SMALL_LABORATORY
+    spriteShape: 1
+    spriteFacility: 19
+    provideBaseFunc: [LAB]
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+    buildCostItems:
+     STR_LABORATORY_EQUIPMENT:
+       build: 1
+       refund: 1
+    buildCost: 350000
+    buildTime: 26
+    monthlyCost: 10000
+    canBeBuiltOver: true
+    labs: 7
+    mapName: XBASE_02
   - type: STR_CLOSED_LAB
     spriteShape: 1
     spriteFacility: 304
@@ -205,19 +234,7 @@ facilities:
     monthlyCost: 30000
     labs: 15
     mapName: XBASE_02
-  - type: STR_WORKSHOP
-    spriteShape: 1
-    spriteFacility: 307
-    provideBaseFunc: [WORK]
-    # requires:
-    #   - STR_FACILITIES_BLUEPRINTS
-    #   - STR_WORKSHOP
-    buildCost: 220000
-    buildTime: 15
-    monthlyCost: 7000
-    workshops: 12
-    manufacture: STR_WORKSHOP
-    mapName: XBASE_03 #FIXME - make map!
+
   - type: STR_ADVANCED_WORKSHOP
     spriteShape: 1
     spriteFacility: 20

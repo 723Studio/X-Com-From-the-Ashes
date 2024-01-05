@@ -937,6 +937,13 @@ ufopaedia:
     requires:
       - STR_CREATURES_CONTAINMENT
     listOrder: 10060
+  - id: STR_SMALL_LABORATORY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_SMALL_LABORATORY_UFOPEDIA
+    requires:
+      - STR_FACILITIES_BLUEPRINTS
+    listOrder: 10065
   - id: STR_LABORATORY
     type_id: 6
     section: STR_BASE_FACILITIES
