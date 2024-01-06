@@ -72,6 +72,16 @@ facilities:
     workshops: 12
     manufacture: STR_WORKSHOP
     mapName: XBASE_03 #FIXME - make map!
+  - type: STR_ADVANCED_WORKSHOP
+    spriteShape: 1
+    spriteFacility: 20
+    requires:
+      - STR_TODOIUM
+    buildCost: 800000
+    buildTime: 32
+    monthlyCost: 35000
+    workshops: 50
+    mapName: XBASE_03
   - type: STR_PRISON_CELLS
     spriteShape: 1
     spriteFacility: 301
@@ -145,7 +155,7 @@ facilities:
     monthlyCost: 10000
     canBeBuiltOver: true
     labs: 7
-    mapName: XBASE_02
+    mapName: XBASF_09
   - type: STR_CLOSED_LAB
     spriteShape: 1
     spriteFacility: 304
@@ -235,16 +245,6 @@ facilities:
     labs: 15
     mapName: XBASE_02
 
-  - type: STR_ADVANCED_WORKSHOP
-    spriteShape: 1
-    spriteFacility: 20
-    requires:
-      - STR_TODOIUM
-    buildCost: 800000
-    buildTime: 32
-    monthlyCost: 35000
-    workshops: 50
-    mapName: XBASE_03
   - type: STR_SMALL_RADAR_SYSTEM
     spriteShape: 2
     spriteFacility: 21

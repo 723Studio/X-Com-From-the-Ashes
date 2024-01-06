@@ -3094,9 +3094,10 @@ terrains:
       - name: XBASF_08
         width: 10
         length: 10
-      - name: ABANDONED_BASE
-        width: 20
-        length: 50
+      - name: XBASF_09
+        width: 10
+        length: 10
+
   - name: TRANSPORT_EVAC
     mapDataSets:
       - BLANKS
@@ -3579,6 +3580,29 @@ terrains:
           amount: 6
           mixed: true
           itemList: *richMIBStash
+
+  - name: ABANDONED_BASE
+    mapDataSets:
+      - BLANKS
+      - XBASE1
+      - XBASE2
+      - XBASEF1
+      - XBASEF2
+    mapBlocks:
+      - name: ABANDONED_BASE
+        width: 20
+        length: 50
+      - name: ABAN_BASE_FILLE
+        width: 10
+        length: 10
+  - name: DESERT_BASE
+    mapDataSets:
+      - BLANKS
+      - DESERT_BASE
+    mapBlocks:
+      - name: DESERT_BASE_SUR
+        width: 20
+        length: 50
 
   - name: XBASE_PHOTO
     mapDataSets:

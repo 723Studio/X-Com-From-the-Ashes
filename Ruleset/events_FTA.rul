@@ -148,6 +148,13 @@ events:
     timerRandom: 0
     researchList: [STR_CULT_INVESTIGATION]
 
+  - name: STR_ABANDONED_BASE_DESPAWNED
+    description: STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION
+    background: BACK01.SCR
+    timer: 30
+    timerRandom: 0
+    loyalty: -200
+
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
     description: STR_MONSTER_HUNT_INVESTIGATION_FAILED_DESCRIPTION

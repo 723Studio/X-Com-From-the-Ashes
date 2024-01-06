@@ -4431,6 +4431,38 @@ alienDeployments:
             - STR_CHEMPISTOL
             - STR_CHEMPISTOL_CLIP
             - STR_CHEMPISTOL_CLIP 
+
+  - type: STR_ABANDONED_BASE
+    race: STR_ZOMBIE
+    width: 70
+    length: 70
+    height: 8
+    alert: STR_ABANDONED_BASE_ALERT
+    alertBackground: BACK01.SCR
+    alertDescription: STR_ABANDONED_BASE_ALERT_DESCRIPTION
+    markerName: STR_ABANDONED_BASE
+    duration: [500, 700] #3-4 weeks
+    despawnPenalty: 100
+    despawnEvents:
+      STR_ABANDONED_BASE_DESPAWNED: 100
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_ABANDONED_BASE_BRIEFING
+    script: abandonedDesertBase
+    terrains:
+      - DESERT #all terrains defined with script
+    data:
+      - alienRank: 5
+        lowQty: 9
+        medQty: 13
+        highQty: 20
+        dQty: 4
+        extraQty: 2
+        itemSets: *AnchorEmptyInventory
+
+
 #traps 
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB
