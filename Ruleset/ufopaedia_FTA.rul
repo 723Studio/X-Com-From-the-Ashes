@@ -331,7 +331,41 @@ ufopaedia:
     text: STR_RECORD_WOW_SIGNAL_UFOPEDIA
     requires:
       - STR_RECORD_WOW_SIGNAL
-    listOrder: 170
+    listOrder: 153
+
+  - id: STR_XCOM_FILES_4
+    type_id: 8
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_4
+    text: STR_XCOM_FILES_4_UFOPEDIA
+    listOrder: 152
+  - id: STR_XCOM_FILES_5
+    type_id: 8
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_5
+    text: STR_XCOM_FILES_5_UFOPEDIA
+    listOrder: 152
+  - id: STR_XCOM_FILES_6
+    type_id: 8
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_XCOM_FILES_6
+    text: STR_XCOM_FILES_6_UFOPEDIA
+    listOrder: 152
+  - id: STR_ABANDONED_BASE
+    type_id: 8
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_ABANDONED_BASE
+    text: STR_ABANDONED_BASE_UFOPEDIA
+    listOrder: 152
+
   - id: STR_SOLDIER_SPECS
     type_id: 7
     image_id: COMMANDO_CPAL.SPK

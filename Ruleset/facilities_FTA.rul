@@ -41,7 +41,7 @@ facilities:
     listOrder: 6830
   - type: STR_BIOLAB
     spriteShape: 1
-    spriteFacility: 305
+    spriteFacility: 308
     provideBaseFunc: [BIOLAB, SURGERY]
     #maxAllowedPerBase: 1
     requires:

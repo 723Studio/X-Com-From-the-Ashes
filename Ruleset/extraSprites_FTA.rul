@@ -789,6 +789,7 @@ extraSprites:
       305: Resources/Facilities/Bio_Lab.png
       306: Resources/Facilities/Zoo.png
       307: Resources/Facilities/Handcraft_Workshop.png
+      308: Resources/Facilities/Small_Lab.png  
       833: Resources/Crafts/Basebits/Dragonfly_base.png
       834: Resources/Crafts/Basebits/Stalker_base.png
       835: Resources/Crafts/Basebits/Copter_base.png

@@ -4434,8 +4434,9 @@ alienDeployments:
 
   - type: STR_ABANDONED_BASE
     race: STR_ZOMBIE
-    width: 70
-    length: 70
+    isHiddentXcomBase: true
+    width: 40
+    length: 60
     height: 8
     alert: STR_ABANDONED_BASE_ALERT
     alertBackground: BACK01.SCR
@@ -4445,6 +4446,7 @@ alienDeployments:
     despawnPenalty: 100
     despawnEvents:
       STR_ABANDONED_BASE_DESPAWNED: 100
+    unlockedResearch: STR_ABANDONED_BASE_DONE
     briefing:
       textOffset: -16
       background: BACK01.SCR

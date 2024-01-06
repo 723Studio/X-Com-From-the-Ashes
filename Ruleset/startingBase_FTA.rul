@@ -157,8 +157,6 @@ startingBase:
   #         - 0
   #     tags: ~
 hiddenBase:
-  scientists: 0
-  engineers: 0
   facilities:
     - type: STR_ACCESS_LIFT
       x: 2
@@ -166,6 +164,9 @@ hiddenBase:
     - type: STR_HANGAR
       x: 2
       y: 0
+    - type: STR_HANGAR
+      x: 0
+      y: 4
     - type: STR_PRISON_CELLS
       x: 3
       y: 2
@@ -178,3 +179,86 @@ hiddenBase:
     - type: STR_HQ
       x: 0
       y: 2
+    - type: STR_GYM
+      x: 1
+      y: 3
+    - type: STR_SICK_BAY
+      x: 1
+      y: 1
+    - type: STR_SMALL_LABORATORY
+      x: 3
+      y: 3
+  items:
+    STR_POLICE_BATON: 3
+    STR_COMBAT_KNIFE: 2
+    STR_TASER: 2
+    STR_TASER_CLIP: 10
+    STR_PISTOL: 3
+    STR_PISTOL_CLIP: 10
+    STR_HEAVY_PISTOL: 2
+    STR_HEAVY_PISTOL_CLIP: 6
+    STR_PDW: 2
+    STR_PDW_CLIP: 7
+    STR_SMG: 2
+    STR_SMG_CLIP: 6
+    STR_RIFLE: 4
+    STR_ASSAULT_RIFLE: 3
+    STR_PRECISION_RIFLE: 2
+    STR_RIFLE_CLIP: 24
+    STR_SNIPER_RIFLE: 1
+    STR_SNIPER_RIFLE_CLIP: 8
+    STR_SHOTGUN: 2
+    STR_SHOTGUN_SHELLS_BS: 12
+    STR_SHOTGUN_SHELLS_AP: 8
+    STR_SHOTGUN_SHELLS_BATON: 6
+    STR_LMG: 1
+    STR_LMG_CLIP: 6
+    STR_AUTO_CANNON: 1
+    STR_AC_AP_AMMO: 6
+    STR_AC_BS_AMMO: 6
+    STR_AC_HE_AMMO: 4
+    STR_AC_I_AMMO: 4
+    STR_LIGHT_CANNON: 2
+    STR_LC_AP_AMMO: 8
+    STR_LC_BS_AMMO: 5
+    STR_LC_HE_AMMO: 3
+    STR_LC_I_AMMO: 2
+    STR_MGL: 1
+    STR_MGL_CLIP: 2
+    STR_MGL_CLIP_SMOKE: 1
+    STR_MGL_CLIP_FLASHBANG: 1
+    STR_ROCKET_LAUNCHER: 1
+    STR_SMALL_ROCKET: 5
+    STR_LARGE_ROCKET: 2
+    STR_INCENDIARY_ROCKET: 2
+    STR_GRENADE: 12
+    STR_SMOKE_GRENADE: 14
+    STR_INCENDIARY_GRENADE: 10
+    STR_FLASHBANG_GRENADE: 16
+    STR_PROXIMITY_GRENADE: 6
+    STR_TRAUMA_PACK: 2
+    STR_PERSONAL_AID_KIT: 8
+    STR_STIMS_INJECTOR: 10
+    STR_COMBAT_SHIELD: 4
+    STR_STINGRAY_MISSILE: 17
+    STR_CANNON_ROUNDS_X50: 8
+    STR_ELECTRO_FLARE: 13
+    STR_FLASHLIGHT: 10
+    STR_SPARE_PARTS: 15
+    STR_SEALED_CRATE: 4
+  crafts:
+    - type: STR_DRAGONFLY
+      id: 1
+      fuel: 20
+      damage: 5
+      status: STR_REPAIRS
+    - type: STR_STALKER
+      id: 1
+      fuel: 40
+      damage: 2
+      weapons:
+        - type: STR_CANNON_UC
+          ammo: 200
+        - type: STR_STINGRAY
+          ammo: 6
+      status: STR_REPAIRS

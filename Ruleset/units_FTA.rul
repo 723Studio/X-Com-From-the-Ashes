@@ -1075,8 +1075,8 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 90
-      stamina: 140
+      tu: 75
+      stamina: 100
       health: 20
       bravery: 110
       reactions: 45
@@ -1088,7 +1088,7 @@ units:
       psiSkill: 0
     statsRandom:
       tu: 5
-      stamina: 15
+      stamina: 10
       health: 2
       bravery: 20
       reactions: 5
@@ -1097,13 +1097,13 @@ units:
       strength: 1
       melee: 10
       psiStrength: 4
-    armor: STR_FACEHUGGER_ARMOR
+    armor: STR_FACEHUGGER_ARMO
     standHeight: 6
     value: 8
     aggroSound: 77
     deathSound: 78
     moveSound: 80
-    intelligence: 4
+    intelligence: 3
     aggression: 8
     isLeeroyJenkins: true
     energyRecovery: 50
@@ -1114,8 +1114,8 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 80
-      stamina: 140
+      tu: 70
+      stamina: 100
       health: 144
       bravery: 110
       reactions: 35
@@ -1140,10 +1140,11 @@ units:
     standHeight: 22
     kneelHeight: 22
     value: 5
-    intelligence: 3
+    intelligence: 1
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
+    
     #aggroSound: [150, 151, 152, 153, 154]
     deathSound: [155, 156]
     builtInWeaponSets:
@@ -1152,8 +1153,8 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 70
-      stamina: 150
+      tu: 60
+      stamina: 130
       health: 190
       bravery: 110
       reactions: 30
@@ -1178,7 +1179,7 @@ units:
     standHeight: 22
     kneelHeight: 22
     value: 8
-    intelligence: 3
+    intelligence: 1
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true

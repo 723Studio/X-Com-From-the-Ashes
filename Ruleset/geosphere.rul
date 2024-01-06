@@ -1017,6 +1017,12 @@ regions:
         - [284, 288, -44, -41, -17]
         - [268, 271, -46, -44, -17]
         - [134, 137, -49, -47, -17]
+
+  - type: STR_ABANDONED_BASE
+    missionZones:
+      -
+        - [279, -32, 279, -32, -18]
+
 globe:
   oceanPalette: 12
   countryColor: 239
@@ -1444,6 +1450,9 @@ globe:
       deployments:
         STR_MIB_HIDEOUT_MEDIUM: 50
         STR_MIB_HIDEOUT_SMALL: 100
+    - id: -18
+      deployments:
+        STR_ABANDONED_BASE: 100
 
 #GIS  
   polygons: 

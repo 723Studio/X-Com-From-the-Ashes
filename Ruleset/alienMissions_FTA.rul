@@ -73,6 +73,8 @@ alienMissions:
         objective: true
   - type: STR_CROP_CIRCLES
     refNode: *TerrorLike
+  - type: STR_ABANDONED_BASE
+    refNode: *TerrorLike
 
   - type: STR_RESISTANCE_HAVEN_DEFENCE
     refNode: *TerrorLike

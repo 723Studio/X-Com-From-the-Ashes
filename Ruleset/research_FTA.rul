@@ -86,6 +86,16 @@ research:
     hidden: true
   - name: STR_RECORD_WOW_SIGNAL
     hidden: true
+  - name: STR_XCOM_FILES_4
+    hidden: true
+  - name: STR_XCOM_FILES_5
+    hidden: true
+  - name: STR_XCOM_FILES_6
+    hidden: true
+  - name: STR_ABANDONED_BASE
+    hidden: true
+  - name: STR_ABANDONED_BASE_DONE
+    hidden: true
   - name: STR_RESISTANCE_FIRST_HELP
     hidden: true
   - name: STR_RESISTANCE_SCIENTIST
@@ -176,7 +186,7 @@ research:
     listOrder: 20
   - name: STR_XCOM_LORE
     requiresBaseFunc: [HQ]
-    cost: 1600
+    cost: 2000
     stats:
       data: 120
       computers: 80
@@ -187,8 +197,12 @@ research:
     getOneFree:
       - STR_XCOM_FILES_1
       - STR_XCOM_FILES_2
-      #- STR_XCOM_FILES_3 #FIXME - more lore!
+      - STR_XCOM_FILES_3 #FIXME - more lore!
       - STR_RECORD_WOW_SIGNAL
+      - STR_XCOM_FILES_4
+      - STR_XCOM_FILES_5
+      - STR_XCOM_FILES_6
+      - STR_ABANDONED_BASE
     listOrder: 30
   - name: STR_XCOM_FUNDAMENTAL_STUDIES
     requiresBaseFunc: [HQ]

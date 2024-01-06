@@ -899,7 +899,6 @@ en-US:
   STR_MIB_HIDEOUT_MINE: "Enemy signal has been intercepted!"
   STR_MIB_HIDEOUT_MEDIUM_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 14 turns, the whole building will blow up with the defenders, destroying all evidences.All charges must be defused."
   STR_MIB_HIDEOUT_SMALL_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 9 turns, the whole building will blow up with the defenders, destroying all evidences.All charges must be defused."
-  STR_ABANDONED_BASE: "Abandoned Base"
   STR_ABANDONED_BASE_ALERT: "DISCOVERED ABANDONED BASE"
   STR_ABANDONED_BASE_ALERT_DESCRIPTION: "According to the decoded Ufopedia data, we were able to locate the abandoned base. The scouts avoided approaching the entrance to the underground structure. According to our scanners, the base is completely blacked out. We have no idea why XCOM abandoned it, and we need to be extremely careful. An assault squad must be dispatched to clear the facility. We may only have one shot at it - intense warfare may draw unwanted attention to the facility from the M.I.B."
   STR_ABANDONED_BASE_BRIEFING: ""
@@ -2161,9 +2160,17 @@ en-US:
   STR_XCOM_FILES_2: "X-COM FILES #096231"
   STR_XCOM_FILES_2_UFOPEDIA: "Disagreements within the Council regarding X-COM began about a year ago. Many were dissatisfied with the lack of practical results. For 4 years X-COM did not come close to understanding the objectives and motivations of the aliens, the peculiarities of their biology and technologies. In all that time, not once did it manage to shoot down an alien vessel. Twice a group of soldiers was dispatched to a UFO landing site, but both times contact with the squad broke off a few minutes after disembarkation. The soldiers relayed that they had made contact with the enemy, suffering casualties from some sort of energy weapon. The alien armor and some sort of force shields proved extremely effective against standard weapons. Because of the former commander's poor performance and controversial decisions, several members resigned from the council. Four more were forced to leave because they were hiding from the criminal prosecution conducted by Interpol."
   STR_XCOM_FILES_3: "X-COM FILES #097164"
-  STR_XCOM_FILES_3_UFOPEDIA: "STR_XCOM_FILES_1_UFOPEDIA" #FIXME - secret base lore
+  STR_XCOM_FILES_3_UFOPEDIA: #TODO
   STR_RECORD_WOW_SIGNAL: "The Wow! Signal"
   STR_RECORD_WOW_SIGNAL_UFOPEDIA: "Strong narrowband radio signal received on August 15, 1977 by Ohio State University's radio telescope, appeared to come from the constellation Sagittarius and bore the expected hallmarks of extraterrestrial origin. Astronomer Jerry Ehman was so impressed by the result that he circled the reading on printout and wrote the comment Wow! According to eyewitnesses, next day he was visited by two people who introduced themselves as federal agents. They insistently asked the scientist to go with them, and at night all the recordings on the signal disappeared from his office. Of the witnesses, there was only a photograph of the decrypted record, taken by a graduate student of Ehman."
+  STR_XCOM_FILES_4: "X-COM FILES #098549"
+  STR_XCOM_FILES_4_UFOPEDIA: #TODO
+  STR_XCOM_FILES_5: "X-COM FILES #121473"
+  STR_XCOM_FILES_5_UFOPEDIA:  #TODO
+  STR_XCOM_FILES_6: "X-COM FILES #173442"
+  STR_XCOM_FILES_6_UFOPEDIA: #TODO
+  STR_ABANDONED_BASE: "ABANDONED XCOM BASE"
+  STR_ABANDONED_BASE_UFOPEDIA: 
   STR_CULT_ACTIVITY: "Cult Activity"
   STR_CULT_INVESTIGATION_UFOPEDIA: "Over the past 15 years cases of mysterious murders have been documented all over the world - slashed, exsanguinated bodies found in forests, ditches, and garbage dumps. The only connection between the victims was the intricate pattern of cuts on the bodies. We suspect that some mysterious cult is behind this.{NEWLINE}Interestingly, the dynamics of murder intensity is cyclical, with peaks coinciding with an increase in neurological disorder complaints and the admission of new patients to mental hospitals. Common symptoms are acute schizophrenia, hallucinations and panic attacks."
   STR_CROP_CIRCLES: "Crop Circles"

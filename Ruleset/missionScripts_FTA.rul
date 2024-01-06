@@ -28,6 +28,27 @@ missionScripts:
   #   startDelay: 20
   #   randomDelay: 43500
 
+  - type: abandonedBase
+    firstMonth: 5
+    executionOdds: 80
+    missionWeights:
+      0:
+        STR_ABANDONED_BASE: 100
+    regionWeights:
+      0:
+        STR_ABANDONED_BASE: 100
+    raceWeights:
+      0:
+        STR_ZOMBIE: 100
+    researchTriggers:
+      STR_ABANDONED_BASE: true
+      STR_ABANDONED_BASE_DONE: false
+    useTable: false
+    startDelay: 4320
+    randomDelay: 43500
+    maxRuns: 1
+    varName: chupaTerror
+
 #aliens
   - type: startTrolling
     missionWeights:

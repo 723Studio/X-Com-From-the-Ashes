@@ -1255,7 +1255,7 @@ mapScripts:
         terrain: ABANDONED_BASE
         blocks: [1]
         size: [1, 1, 4]
-      - type: middle
+      - type: ceiling
         terrain: DESERT
         size: [1, 1, 2]
   # - type: TEST_SCRIPT
