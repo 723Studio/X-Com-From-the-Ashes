@@ -37,7 +37,6 @@ facilities:
     interrogationSpace: 1
     globalRadar: true
     radarChance: 2
-    manufacture: STR_HQ
     mapName: XBASF_01
     listOrder: 6830
   - type: STR_BIOLAB
@@ -60,7 +59,6 @@ facilities:
     buildOverFacilities:
       - STR_SMALL_LABORATORY
     labs: 10
-    manufacture: STR_BIOLAB
     mapName: XBASF_07
   - type: STR_WORKSHOP
     spriteShape: 1
@@ -72,7 +70,6 @@ facilities:
     buildTime: 15
     monthlyCost: 7000
     workshops: 12
-    manufacture: STR_WORKSHOP
     mapName: XBASE_03 #FIXME - make map!
   - type: STR_ADVANCED_WORKSHOP
     spriteShape: 1
@@ -83,7 +80,6 @@ facilities:
     buildTime: 32
     monthlyCost: 35000
     workshops: 25
-    manufacture: STR_ADVANCED_WORKSHOP
     mapName: XBASE_03
   - type: STR_PRISON_CELLS
     spriteShape: 1
@@ -98,7 +94,6 @@ facilities:
     storage: 15
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 1
-    manufacture: STR_PRISON_CELLS
     mapName: XBASF_03
     listOrder: 7030
   - type: STR_CREATURES_CONTAINMENT
@@ -113,7 +108,6 @@ facilities:
     prisonType: 2
     rightClickActionType: 1
     mapName: XBASF_08
-    manufacture: STR_CREATURES_CONTAINMENT
     listOrder: 7030
   - type: STR_GYM
     spriteShape: 1
@@ -127,7 +121,6 @@ facilities:
     storage: 2
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 4
-    manufacture: STR_GYM
     mapName: XBASF_04
     listOrder: 6960
   - type: STR_SICK_BAY
@@ -144,7 +137,6 @@ facilities:
     sickBayRelativeBonus: 1.0
     manaRecoveryPerDay: 1
     provideBaseFunc: [MEDBAY, SURGERY]
-    manufacture: STR_SICK_BAY
     mapName: XBASF_05
     listOrder: 6920
   - type: STR_SMALL_LABORATORY
@@ -162,7 +154,6 @@ facilities:
     monthlyCost: 10000
     canBeBuiltOver: true
     labs: 7
-    manufacture: STR_SMALL_LABORATORY
     mapName: XBASF_09
   - type: STR_CLOSED_LAB #do I still need it?
     spriteShape: 1
@@ -202,7 +193,6 @@ facilities:
     storage: 10
     storageTiles: [[-1, -1, -1]]
     rightClickActionType: 6
-    manufacture: STR_LIVING_QUARTERS
     mapName: XBASE_01
   - type: STR_GENERAL_STORES
     spriteShape: 1
@@ -221,7 +211,6 @@ facilities:
         - [6, 5, 1]
         - [7, 1, 0]
         - [7, 6, 0]
-    manufacture: STR_GENERAL_STORES
     mapName: XBASF_02
   - type: STR_HANGAR
     spriteShape: 9
@@ -235,7 +224,6 @@ facilities:
     monthlyCost: 8000
     crafts: 1
     workshops: 4
-    manufacture: STR_HANGAR
     storage: 20
     storageTiles: [[-1, -1, -1]]
     mapName: XBASE_16
@@ -253,7 +241,6 @@ facilities:
     buildTime: 26
     monthlyCost: 30000
     labs: 15
-    manufacture: STR_LABORATORY
     mapName: XBASE_02
   - type: STR_SMALL_RADAR_SYSTEM
     spriteShape: 2
@@ -269,7 +256,6 @@ facilities:
     monthlyCost: 10000
     radarRange: 1695
     radarChance: 10
-    manufacture: STR_SMALL_RADAR_SYSTEM
     mapName: XBASE_04
   - type: STR_LARGE_RADAR_SYSTEM
     spriteShape: 1
@@ -285,7 +271,6 @@ facilities:
     monthlyCost: 15000
     radarRange: 2577
     radarChance: 20
-    manufacture: STR_LARGE_RADAR_SYSTEM
     mapName: XBASE_05
   - type: STR_MISSILE_DEFENSES
     spriteShape: 2
@@ -299,7 +284,6 @@ facilities:
     hitRatio: 50
     fireSound: 5
     hitSound: 10
-    manufacture: STR_MISSILE_DEFENSES
     mapName: XBASE_06
   - type: STR_ALIEN_CONTAINMENT
     spriteShape: 1
@@ -310,7 +294,6 @@ facilities:
     buildTime: 18
     monthlyCost: 15000
     aliens: 10
-    manufacture: STR_ALIEN_CONTAINMENT
     mapName: XBASE_08
   - type: STR_LASER_DEFENSES
     requires:
@@ -324,7 +307,6 @@ facilities:
     hitRatio: 60
     fireSound: 8
     hitSound: 10
-    manufacture: STR_LASER_DEFENSES
     mapName: XBASE_09
   - type: STR_PLASMA_DEFENSES
     requires:
@@ -338,7 +320,6 @@ facilities:
     hitRatio: 70
     fireSound: 9
     hitSound: 10
-    manufacture: STR_PLASMA_DEFENSES
     mapName: XBASE_10
   - type: STR_FUSION_BALL_DEFENSES
     requires:
@@ -352,7 +333,6 @@ facilities:
     hitRatio: 80
     fireSound: 7
     hitSound: 10
-    manufacture: STR_FUSION_BALL_DEFENSES
     mapName: XBASE_11
   - type: STR_GRAV_SHIELD
     requires:
@@ -363,7 +343,6 @@ facilities:
     buildCost: 1200000
     buildTime: 38
     monthlyCost: 15000
-    manufacture: STR_GRAV_SHIELD
     mapName: XBASE_12
   - type: STR_MIND_SHIELD
     requires:
@@ -374,7 +353,6 @@ facilities:
     buildCost: 1300000
     buildTime: 33
     monthlyCost: 5000
-    manufacture: STR_MIND_SHIELD
     mapName: XBASE_13
   - type: STR_PSIONIC_LABORATORY
     requires:
@@ -385,7 +363,6 @@ facilities:
     buildTime: 24
     monthlyCost: 16000
     psiLabs: 10
-    manufacture: STR_PSIONIC_LABORATORY
     mapName: XBASE_14
   - type: STR_HYPER_WAVE_DECODER
     requires:
@@ -398,5 +375,4 @@ facilities:
     monthlyCost: 30000
     radarRange: 2759
     radarChance: 100
-    manufacture: STR_HYPER_WAVE_DECODER
     mapName: XBASE_15

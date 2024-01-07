@@ -150,7 +150,7 @@ soldiers:
       metallurgy: 0
       processing: 0
       hacking: 0
-      construction: 20
+      robotics: 20
       diligence: 20
       alienTech: 0
       reverseEngineering: 0
@@ -203,7 +203,7 @@ soldiers:
       metallurgy: 30
       processing: 35
       hacking: 15
-      construction: 20
+      robotics: 20
       diligence: 25
       alienTech: 0
       reverseEngineering: 0
@@ -251,7 +251,7 @@ soldiers:
       metallurgy: 100
       processing: 100
       hacking: 90
-      construction: 100
+      robotics: 100
       diligence: 100
       reverseEngineering: 100
       #agents
@@ -431,7 +431,7 @@ soldiers:
       metallurgy: 0
       processing: 0
       hacking: 20
-      construction: 20
+      robotics: 20
       diligence: 20
       alienTech: 0
       reverseEngineering: 0
@@ -484,7 +484,7 @@ soldiers:
       metallurgy: 0
       processing: 0
       hacking: 45
-      construction: 20
+      robotics: 20
       diligence: 30
       alienTech: 0
       reverseEngineering: 0
@@ -544,7 +544,7 @@ soldiers:
       metallurgy: 0
       processing: 0
       hacking: 0
-      construction: 10
+      robotics: 10
       diligence: 5
       alienTech: 0
       reverseEngineering: 0
@@ -600,7 +600,7 @@ soldiers:
       metallurgy: 10
       processing: 10
       hacking: 20
-      construction: 20
+      robotics: 20
       diligence: 30
       reverseEngineering: 0
     armor: STR_XCOM_LABCOAT_UC
@@ -658,7 +658,7 @@ soldiers:
       metallurgy: 20
       processing: 25
       hacking: 20
-      construction: 25
+      robotics: 25
       diligence: 10
       alienTech: 0
       reverseEngineering: 5
@@ -706,7 +706,7 @@ soldiers:
       metallurgy: 70
       processing: 70
       hacking: 60
-      construction: 70
+      robotics: 70
       diligence: 60
       reverseEngineering: 40
     armor: STR_XCOM_ENGINEER_SUIT_UC

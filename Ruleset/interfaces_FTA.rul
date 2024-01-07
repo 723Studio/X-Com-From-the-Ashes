@@ -408,9 +408,9 @@ interfaces:
         color2: 151
         border: 144
       - id: barComputers
-        color: 240
-        color2: 15
-        border: 241
+        color: 131
+        color2: 133
+        border: 128
       - id: barTactics
         # color: 58
         # color2: 53
@@ -459,21 +459,18 @@ interfaces:
         color2: 151
         border: 144
       - id: barEfficiency
-        color: 240
-        color2: 15
-        border: 241
+        color: 132
+        color2: 136
+        border: 128
       - id: barDiligence
-        # color: 58
-        # color2: 53
-        # border: 49
-        color: 62
-        color2: 57
-        border: 50
-      - id: barHacking
         color: 215
         color2: 216
         border: 214
-      - id: barConstruction
+      - id: barHacking
+        color: 58
+        color2: 53
+        border: 49
+      - id: barRobotics
         color: 180
         color2: 183
         border: 176
