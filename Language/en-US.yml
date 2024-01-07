@@ -875,8 +875,10 @@ en-US:
   STR_CROP_CIRCLES_ALERT_DESCRIPTION: "We are receiving reports of anomalous circles appearing overnight in the fields. The reports are confusing and contradictory, the locals are in a panic. We should send our people to investigate the anomaly before M.I.B. agents eliminate all evidence and witnesses."
   STR_CROP_CIRCLES_MARKER: "Crop Circles"
   STR_CROP_CIRCLES_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area, retrieve all signs of alien activity, if any, and extract. It is possible to encounter superior M.I.B. forces, so act swiftly.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
-  STR_CROP_CIRCLES_POOR_LOOT: "Crop Circles Anomaly"
+  STR_CROP_CIRCLES_LOOT: "Crop Circles Anomaly"
   STR_CROP_CIRCLES_NO_LOOT: "Crop Circles Anomaly"
+  STR_CROP_CIRCLES_SAMPLES: "Crop Circles Anomaly"
+  STR_CROP_CIRCLES_SAMPLES_AND_LOOT: "Crop Circles Anomaly"
   STR_CROP_CIRCLES_NO_LOOT_MIB_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area, retrieve all signs of alien activity, if any, and extract. According to our information, there is a substantial concentration of M.I.B. forces in the area. We must consider our capabilities carefully before engaging.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_CROP_CIRCLES_ZOMBIES_NO_LOOT: "Crop Circles Anomaly"
   STR_CROP_CIRCLES_ZOMBIES_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area, retrieve all signs of alien activity, if any, and extract. On approach, we see no sign of M.I.B. in the area, but the farm is swarming with erratic human-looking figures.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
@@ -885,6 +887,8 @@ en-US:
   STR_ALERT_DEAD_CATTLE: "CATTLE MUTILATION REPORTED"
   STR_ALERT_DEAD_CATTLE_DESCRIPTION: "We have received information that there has been a report of mutilated cattle in the remote countryside and extremely strange behavior of the locals. We must go to the site and investigate the incident by interviewing witnesses. If they resist, they should be captured and taken to the base for further interrogation. We should be on alert because we are likely to encounter M.I.B. agents."
   STR_DEAD_CATTLE_BRIEFING: "We have received information that there has been a report of mutilated cattle in the remote countryside and extremely strange behavior of the locals. We must go to the site and investigate the incident by interviewing witnesses. If they resist, they should be captured and taken to the base for further interrogation. We should be on alert because we are likely to encounter M.I.B. agents.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
+  STR_FOREST_CATTLE_MIB: "Forest Mutilation"
+  STR_FOREST_CATTLE_BRIEFING: "We have received information that there has been a report of mutilated cattle in the remote forests and extremely strange behavior of the locals. We must go to the site and investigate the incident by interviewing witnesses. If they resist, they should be captured and taken to the base for further interrogation. We should be on alert because we are likely to encounter M.I.B. agents.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_CULTISTS_DETENTION: "Cultists Detention"
   STR_CULTISTS_DETENTION_TRAP: "Cultists Detention"
   STR_CULTISTS_DETENTION_BRIEFING: "We are on the trail of a crime group that may not be as ordinary as it appears. They are most likely responsible for mysterious and unexplained disappearances of ordinary people. The general motive of these crimes cannot be identified. We need to detain and interrogate the suspects."
@@ -920,7 +924,7 @@ en-US:
   STR_TERMINAL: "Terminal"
   STR_FARM_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
   STR_FOREST_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
-
+  STR_CROP_CIRCLES_SAMPLING_SITE: "Crop Circle Sampling Site"
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
   STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals and attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
@@ -1831,7 +1835,7 @@ en-US:
   STR_HACKING_COMPUTER: "Hacking Computer"
   STR_HACKING_COMPUTER_UFOPEDIA: #TODO Сложный портативный компьютер с интеллектуальной системой беспроводного влома. Пользователю нужно указывать приоритеты для распространения вируса по системе, обходя firewall, атакуя уязвимости защиты, нужно довести до цели. https://www.youtube.com/watch?v=7w18DqvTXwA
   STR_SAMPLING_TOOL: "Sampling Toolset"
-  STR_SAMPLING_TOOL_UFOPEDIA: #TODO
+  STR_SAMPLING_TOOL_UFOPEDIA: "This set contains everything needed to gather field samples during the encounter. The compact yet spacious container holds all the necessary consumables for collecting samples of gases, liquids, soil and biological tissues. Practical skills in biology or physics are required for use, depending on the type of sampling site. For sampling, move unit on top of the sampling site and click on the Sampling Toolset icon. Select 'Use Sampling tool' from actions menu and on success, pick up the samples packed and ready for transportation."
   STR_FIRST_AID: "First Aid"
   STR_FIRST_AID_UFOPEDIA: "This bag contains a minimum set of medical items that allow for temporary stopping of bleeding, treatment of the circumference of wounds and the application of primary bandage. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored."
   STR_PAINKILLER: "Painkillers"
@@ -1897,6 +1901,7 @@ en-US:
   STR_ANCIENT_ARTIFACT: "Ancient Artifact"
   STR_FARM_CATTLE_SAMPLE: "Biological Sample"
   STR_FOREST_CATTLE_SAMPLE: "Biological Sample"
+  STR_CROP_CIRCLES_SAMPLE: "Crop Circle Sample"
   STR_FACEHUGGER_REFINING: "Facehugger Processing"
   STR_FACEHUGGER_CORPSE_REFINING: "Facehugger Corpse Processing"
   STR_ZOMBIE_REFINING: "Zombie Processing"
@@ -2236,7 +2241,6 @@ en-US:
   STR_FARM_CATTLE_SAMPLE_RESULT_9_UFOPEDIA: 
   STR_FARM_CATTLE_SAMPLE_RESULT_10: 
   STR_FARM_CATTLE_SAMPLE_RESULT_10_UFOPEDIA: 
-
   STR_FOREST_CATTLE_SAMPLE_RESULT_1: 
   STR_FOREST_CATTLE_SAMPLE_RESULT_1_UFOPEDIA: 
   STR_FOREST_CATTLE_SAMPLE_RESULT_2: 
@@ -2247,6 +2251,26 @@ en-US:
   STR_FOREST_CATTLE_SAMPLE_RESULT_4_UFOPEDIA: 
   STR_FOREST_CATTLE_SAMPLE_RESULT_5: 
   STR_FOREST_CATTLE_SAMPLE_RESULT_5_UFOPEDIA:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_1:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_1_UFOPEDIA: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_2: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_2_UFOPEDIA: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_3:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_3_UFOPEDIA: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_4:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_4_UFOPEDIA: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_5:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_5_UFOPEDIA:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_6:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_6_UFOPEDIA:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_7:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_7_UFOPEDIA:
+  STR_CROP_CIRCLES_SAMPLE_RESULT_8: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_8_UFOPEDIA: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_9: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_9_UFOPEDIA: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_10: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_10_UFOPEDIA: 
 
 #tags
   CENTER_MASS: "Center Mass"
@@ -2673,7 +2697,9 @@ en-US:
   EVAC_ZONE_N: EVAC_ZONE_N
   STR_RESISTANCE_URBAN_SAFEHOUSE: STR_RESISTANCE_URBAN_SAFEHOUSE
   STR_CROP_CIRCLE_NO_LOOT: STR_CROP_CIRCLE_NO_LOOT
-  STR_CROP_CIRCLE_POOR_LOOT: STR_CROP_CIRCLE_POOR_LOOT
+  STR_CROP_CIRCLE_LOOT: STR_CROP_CIRCLE_LOOT
+  STR_CROP_CIRCLE_SAMPLING: STR_CROP_CIRCLE_SAMPLING
+  STR_CROP_CIRCLE_LOOT_AND_SAMPLING: STR_CROP_CIRCLE_LOOT_AND_SAMPLING
   STR_STRANGE_CREATURE: STR_STRANGE_CREATURE
   STR_INFECTOR_AUTOPSY: STR_INFECTOR_AUTOPSY
   STR_LIVE_INFECTOR: STR_LIVE_INFECTOR

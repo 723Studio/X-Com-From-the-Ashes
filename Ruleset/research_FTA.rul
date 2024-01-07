@@ -902,8 +902,6 @@ research:
       biology: 100
       physics: 100
     points: 50
-    dependencies:
-      - STR_CROP_CIRCLES
     listOrder: 25002
 
   - name: STR_ROCKET_GLOVE
@@ -1585,6 +1583,55 @@ research:
     hidden: true
     increaseCounter: [alienEarlyLore]
 
+  - name: STR_CROP_CIRCLES_SAMPLE
+    cost: 600
+    stats:
+      biology: 150
+      alienTech: 50
+    needItem: true
+    destroyItem: true
+    getOneFree: #TODO в случае простого распределения лора, иначе поменять
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_1
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_2
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_3
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_4
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_5
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_6
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_7
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_8
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_9
+      - STR_CROP_CIRCLES_SAMPLE_RESULT_10
+    listOrder: 3020
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_1
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_2
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_3
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_4
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_5
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_6
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_7
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_8
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_9
+    hidden: true
+    increaseCounter: [alienEarlyLore]
+  - name: STR_CROP_CIRCLES_SAMPLE_RESULT_10
+    hidden: true
+    increaseCounter: [alienEarlyLore]
 
 #Prisoner interrogation research
   - name: STR_RECRUIT_CIVILIAN_PRISONERS

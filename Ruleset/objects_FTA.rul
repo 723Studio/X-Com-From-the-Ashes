@@ -31,6 +31,10 @@ objects:
       0:
         STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_1: 100
         STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_2: 90
+  - type: STR_MIB_CORP_PRISONDOOR_LOCKER
+    hackingDefence: 45
+    alterationMCDNumber: 3
+    alterationMCDRadius: 3
 
   - type: STR_MIB_HIDEOUT_TERMINAL
     hackingDefence: 45
@@ -47,6 +51,7 @@ objects:
         STR_MIB_HIDEOUT_TERMINAL_EVENT_9: 20
         STR_MIB_HIDEOUT_TERMINAL_EVENT_10: 10
 
+
 #sampling sites
   - type: STR_FARM_CATTLE_SAMPLING_SITE
     samplingDefence: 1
@@ -54,3 +59,6 @@ objects:
   - type: STR_FOREST_CATTLE_SAMPLING_SITE
     samplingDefence: 1
     spawnedItem: STR_FOREST_CATTLE_SAMPLE
+  - type: STR_CROP_CIRCLES_SAMPLING_SITE
+    samplingDefence: 1
+    spawnedItem: STR_CROP_CIRCLES_SAMPLE

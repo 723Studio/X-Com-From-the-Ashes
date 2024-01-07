@@ -3440,7 +3440,7 @@ alienDeployments:
       - CULTA
     script: cropCirclesMib
     battleScript: mibAttackCropCircles
-    customUfo: STR_CROP_CIRCLE_POOR_LOOT
+    customUfo: STR_CROP_CIRCLE_LOOT
     unlockedResearch: STR_CROP_CIRCLES_PREREQ
     unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
     data:
@@ -3515,7 +3515,7 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_PDW_CLIP
             - STR_GRENADE
-  - type: STR_CROP_CIRCLES_POOR_LOOT
+  - type: STR_CROP_CIRCLES_LOOT
     race: STR_MIB
     width: 60
     length: 60
@@ -3537,12 +3537,212 @@ alienDeployments:
       - CULTA
     script: cropCirclesMib
     battleScript: mibAttackCropCircles
-    customUfo: STR_CROP_CIRCLE_POOR_LOOT
+    customUfo: STR_CROP_CIRCLE_LOOT
+    unlockedResearch: STR_CROP_CIRCLES_PREREQ
+    unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
     data:
       - alienRank: 5
         lowQty: 2
         medQty: 4
         highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+            - STR_FLASHBANG_GRENADE
+            - STR_GRENADE
+  - type: STR_CROP_CIRCLES_SAMPLES
+    race: STR_MIB
+    width: 60
+    length: 60
+    height: 6
+    alert: STR_CROP_CIRCLES_ALERT
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
+    markerName: STR_CROP_CIRCLES_MARKER
+    duration: [12, 18]
+    despawnPenalty: 100
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    briefing:
+      textOffset: -16
+      palette: 2
+      background: CROPCIRCLES_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CROP_CIRCLES_BRIEFING
+    terrains:
+      - CULTA
+    script: cropCirclesMib
+    battleScript: mibAttackCropCircles
+    customUfo: STR_CROP_CIRCLE_SAMPLING
+    unlockedResearch: STR_CROP_CIRCLES_PREREQ
+    unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
+    data:
+      - alienRank: 5
+        lowQty: 1
+        medQty: 4
+        highQty: 6
+        dQty: 3
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP
+            - STR_FLASHBANG_GRENADE
+            - STR_GRENADE
+  - type: STR_CROP_CIRCLES_SAMPLES_AND_LOOT
+    race: STR_MIB
+    width: 60
+    length: 60
+    height: 6
+    alert: STR_CROP_CIRCLES_ALERT
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
+    markerName: STR_CROP_CIRCLES_MARKER
+    duration: [12, 18]
+    despawnPenalty: 100
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    briefing:
+      textOffset: -16
+      palette: 2
+      background: CROPCIRCLES_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CROP_CIRCLES_BRIEFING
+    terrains:
+      - CULTA
+    script: cropCirclesMib
+    battleScript: mibAttackCropCircles
+    customUfo: STR_CROP_CIRCLE_LOOT_AND_SAMPLING
+    unlockedResearch: STR_CROP_CIRCLES_PREREQ
+    unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
+    data:
+      - alienRank: 5
+        lowQty: 3
+        medQty: 5
+        highQty: 8
         dQty: 2
         percentageOutsideUfo: 50
         itemSets:
@@ -3621,7 +3821,7 @@ alienDeployments:
     alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
     alertDescription: STR_CROP_CIRCLES_ALERT_DESCRIPTION
     markerName: STR_CROP_CIRCLES_MARKER
-    duration: [12, 18]
+    duration: [18, 26]
     despawnPenalty: 100
     briefing:
       textOffset: -16
@@ -3633,6 +3833,8 @@ alienDeployments:
       - CULTA
     script: cropCirclesDoubleMib
     customUfo: STR_CROP_CIRCLE_NO_LOOT
+    unlockedResearch: STR_CROP_CIRCLES_PREREQ
+    unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
     data:
       - alienRank: 5 #STR_MIB_AGENT
         lowQty: 4
@@ -3918,7 +4120,8 @@ alienDeployments:
     customUfo: STR_DEAD_COW
     script: deadCattleMib
     battleScript: deadCattleMib
-    #unlockedResearch: #FIXME - some arc here pls!
+    unlockedResearch: STR_CROP_CIRCLES_PREREQ
+    unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
     # music:
     #   - ZIZZ_STUDIO_SPOOKY_SCAPE
     terrains:
@@ -3935,6 +4138,53 @@ alienDeployments:
         lowQty: 4
         highQty: 6
         dQty: 2
+        percentageOutsideUfo: 90
+        itemSets: *AnchorEmptyInventory
+  - type: STR_FOREST_CATTLE_MIB
+    race: STR_MIB
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_DEAD_CATTLE
+    alertBackground: XCOM_UFO_DEFENSE_BACKGROUND.SCR
+    alertDescription: STR_ALERT_DEAD_CATTLE_DESCRIPTION
+    briefing:
+      textOffset: -16
+      palette: 2
+      background: FOREST_BACKGROUND.SCR
+      #music: AS_2_INTRO #
+      showTarget: false
+      desc: STR_FOREST_CATTLE_BRIEFING
+    markerName: STR_DEAD_CATTLE
+    duration: [12, 18]
+    despawnPenalty: 100
+    customUfo: STR_DEAD_FOREST_CATTLE
+    script: deadCattleMib
+    battleScript: deadCattleMib
+    unlockedResearch: STR_CROP_CIRCLES_PREREQ
+    unlockedResearchOnFailure: STR_CROP_CIRCLES_PREREQ
+    # music:
+    #   - ZIZZ_STUDIO_SPOOKY_SCAPE
+    terrains:
+      - FOREST
+    data:
+      - alienRank: 7 #STR_MAD_CIVILIAN_HUNTER
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7 #STR_MAD_DOGE
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2 #STR_MIB_AGENT_SPAWN
+        lowQty: 2
+        medQty: 3
+        highQty: 5
+        dQty: 3
         percentageOutsideUfo: 90
         itemSets: *AnchorEmptyInventory
 
@@ -4859,7 +5109,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       palette: 2
-      background: FOREST_MONSTER.SCR
+      background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       showCraft: false
       desc: STR_MONSTER_HUNT_NIGHT_FOREST_TRAP_BRIEFING
@@ -4883,7 +5133,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       palette: 2
-      background: FOREST_MONSTER.SCR
+      background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       showCraft: false
       desc: STR_MONSTER_HUNT_NIGHT_PLAINS_TRAP_BRIEFING
@@ -4907,7 +5157,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       palette: 2
-      background: FOREST_MONSTER.SCR
+      background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       showCraft: false
       desc: STR_MONSTER_HUNT_NIGHT_JUNGLE_TRAP_BRIEFING
@@ -4931,7 +5181,7 @@ alienDeployments:
     briefing:
       textOffset: -16
       palette: 2
-      background: FOREST_MONSTER.SCR
+      background: FOREST_MONSTER_BACKGROUND.SCR
       showTarget: false
       showCraft: false
       desc: STR_MONSTER_HUNT_NIGHT_DESERT_TRAP_BRIEFING

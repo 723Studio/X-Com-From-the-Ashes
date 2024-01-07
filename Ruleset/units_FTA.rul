@@ -2071,7 +2071,7 @@ units:
     refNode: *STR_RESISTANCE_AGENT
     specialObjective: 1 #STR_FRIENDLY_VIP
     civilianRecoveryType: STR_RESISTANCE_AGENT
-    #prisoner: true
+    #changeSideOnSight: 0
     value: 30
     builtInWeaponSets:
       - []

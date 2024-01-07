@@ -463,14 +463,14 @@ manufacture:
   - name: STR_HACKING_COMPUTER
     category: STR_EQUIPMENT
     requires:
-      - STR_MOTION_SCANNER
+      - STR_HACKING_COMPUTER
     space: 3
     stats:
       microelectronics: 100
     time: 630
-    cost: 36000
+    cost: 16000
     requiredItems:
-      STR_HIGH_TECH_PARTS: 5
+      STR_HIGH_TECH_PARTS: 1
     producedItems:
       STR_HACKING_COMPUTER: 1
     listOrder: 220040
@@ -478,14 +478,15 @@ manufacture:
     category: STR_EQUIPMENT
     requires:
       - STR_SAMPLING_TOOL
-    space: 3
+    space: 2
     stats:
-      microelectronics: 200
-    time: 630
-    cost: 36000
+      biology: 100
+      physics: 100
+      materials: 100
+    time: 100
+    cost: 4000
     requiredItems:
-      STR_CHEMICALS: 2
-      STR_HIGH_TECH_PARTS: 1
+      STR_CHEMICALS: 5
     producedItems:
       STR_SAMPLING_TOOL: 1
     listOrder: 220040

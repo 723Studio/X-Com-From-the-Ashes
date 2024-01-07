@@ -3391,10 +3391,13 @@ terrains:
               - position: [3, 4, 0]
                 amount: 1
                 mixed: true
-                itemList: [STR_SPAWN_RESISTANCE_SCIENTIST]
+                itemList: [STR_SPAWN_RESISTANCE_AGENT]
         fuseTimers:
           STR_SPAWN_RESISTANCE_SCIENTIST: [2, 2]
           STR_SPAWN_RESISTANCE_AGENT: [2, 2]
+        objects:
+          STR_MIB_CORP_PRISONDOOR_LOCKER:
+            - [6, 6, 0]
       - name: MIB_B_LIV00
         width: 10
         length: 10

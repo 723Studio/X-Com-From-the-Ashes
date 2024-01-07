@@ -1222,7 +1222,7 @@ ufos:
         - name: CROPCIRCLE03
           width: 20
           length: 20
-  - type: STR_CROP_CIRCLE_POOR_LOOT
+  - type: STR_CROP_CIRCLE_LOOT
     size: STR_SMALL
     modSprite: interception_jammed
     damageMax: 500
@@ -1275,7 +1275,112 @@ ufos:
                 itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
-
+  - type: STR_CROP_CIRCLE_SAMPLING
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCIRCLE00
+          width: 20
+          length: 20
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [6, 10, 0]
+        - name: CROPCIRCLE01
+          width: 20
+          length: 20
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [6, 6, 0]
+        - name: CROPCIRCLE02
+          width: 20
+          length: 20
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [5, 16, 0]
+        - name: CROPCIRCLE03
+          width: 20
+          length: 20
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [14, 8, 0]
+  - type: STR_CROP_CIRCLE_LOOT_AND_SAMPLING
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCIRCLE00
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [9, 9, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [6, 10, 0]
+        - name: CROPCIRCLE01
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [4, 6, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [6, 6, 0]
+        - name: CROPCIRCLE02
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [8, 12, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [5, 16, 0]
+        - name: CROPCIRCLE03
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [11, 8, 0]
+                amount: 1
+                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+          fuseTimers:
+            STR_ALIEN_ARTIFACT_PROXY: [0, 0]
+          objects:
+            STR_CROP_CIRCLES_SAMPLING_SITE:
+              - [14, 8, 0]
   - type: STR_DEAD_COW
     size: STR_VERY_SMALL
     modSprite: interception_jammed
@@ -1324,7 +1429,6 @@ ufos:
             STR_FARM_CATTLE_SAMPLING_SITE: #bonus
               - [4, 5, 0]
               - [6, 4, 0]
-
   - type: STR_DEAD_FOREST_CATTLE
     size: STR_VERY_SMALL
     modSprite: interception_jammed
@@ -1348,7 +1452,6 @@ ufos:
           objects:
             STR_FOREST_CATTLE_SAMPLING_SITE:
               - [4, 4, 0]
-
 
   - type: STR_MIB_HIDEOUT_MEDIUM
     size: STR_MEDIUM_UC

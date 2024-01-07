@@ -5106,10 +5106,8 @@ items:
     listOrder: 48150
   - type: STR_SAMPLING_TOOL
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
-    requiresBuy:
-        - STR_TODOIUM
     size: 0.4
-    weight: 1
+    weight: 5
     landOnly: true
     bigSprite: 467
     floorSprite: 467
@@ -5121,7 +5119,7 @@ items:
       time: 20
     flatRate: false
     attraction: 5
-    samplingPower: 100
+    samplingPower: 50
     LOSRequired: true
     #experienceTrainingMode: 19 - sampling experince is hardcoded
     listOrder: 48150
@@ -6319,8 +6317,8 @@ items:
     listOrder: 60020
   - type: STR_FARM_CATTLE_SAMPLE
     categories: [STR_LOOT]
-    size: 3
-    weight: 36
+    size: 1
+    weight: 1
     bigSprite: 497
     floorSprite: 497
     costSell: 42000
@@ -6333,11 +6331,25 @@ items:
     listOrder: 31040
   - type: STR_FOREST_CATTLE_SAMPLE
     categories: [STR_LOOT]
-    size: 3
-    weight: 36
+    size: 1
+    weight: 1
     bigSprite: 497
     floorSprite: 497
     costSell: 42000
+    tuThrow: 0
+    battleType: 0
+    armor: 10
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 4
+    listOrder: 31040
+  - type: STR_CROP_CIRCLES_SAMPLE
+    categories: [STR_LOOT]
+    size: 1
+    weight: 1
+    bigSprite: 498
+    floorSprite: 498
+    costSell: 56000
     tuThrow: 0
     battleType: 0
     armor: 10
@@ -7139,7 +7151,6 @@ items:
     listOrder: 100530
   - type: STR_SPAWN_RESISTANCE_SCIENTIST
     spawnSoldier: STR_SCIENTIST
-    spawnUnitFaction: 0
     bigSprite: 0
     floorSprite: 302 #green
     battleType: 4

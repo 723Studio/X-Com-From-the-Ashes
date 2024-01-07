@@ -419,6 +419,7 @@ extraSprites:
       495: Resources/Weapons/Earthbound/Utilities/bigob_BattleCocktail.png
       496: Resources/Weapons/Earthbound/Utilities/bigob_EnergyBooster.png
       497: Resources/MiscItems/bigob_bio_sample.png
+      498: Resources/MiscItems/bigob_phis_sample .png
 
   - type: FLOOROB.PCK
     files:
@@ -633,6 +634,7 @@ extraSprites:
       495: Resources/Weapons/Earthbound/Utilities/floorob_BattleCocktail.png
       496: Resources/Weapons/Earthbound/Utilities/floorob_BattleCocktail.png
       497: Resources/MiscItems/floorob_bio_sample.png
+      498: Resources/MiscItems/floorob_phis_sample.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -1014,12 +1016,6 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/SEWERS4.png
-  - type: FOREST_MONSTER.SCR
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/Backgrounds/FOREST_MONSTER.png
   - type: SECRET_AGENT.SCR
     singleImage: true
     width: 320
@@ -1068,6 +1064,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/STONKS.png
+  - type: FOREST_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/FOREST_DARK.png
 
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT_CPAL
