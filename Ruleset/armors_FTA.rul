@@ -1466,9 +1466,6 @@ armors:
         health: -0.05
       health: &StandardSoldierHPRes
         stunNormalized: -0.08
-    stats:
-      tu: 5
-      reactions: 5
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED_TRAINED
@@ -1597,11 +1594,6 @@ armors:
         healthCurrent: 0.25
       stun: *StandardSoldierStunRes
       health: *StandardSoldierHPRes
-    stats:
-      maneuvering: 10
-      missiles: 10
-      dogfight: 10
-      tu: -5
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED_TRAINED
@@ -1861,9 +1853,6 @@ armors:
         health: -0.05
       health: &LowSoldierHPRes
         stunNormalized: -0.09
-    stats:
-      physics: 5
-      biology: 5
     overKill: 1.5
     damageModifier: *NoArmorHumanResistance
     specialWeapon: STR_UNARMED
@@ -2261,6 +2250,10 @@ armors:
     units:
       - STR_SOLDIER
       - STR_RESISTANCE_AGENT
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
     loftempsSet: [ 3 ]
   - type: STR_ARMORED_VEST_UC
     spriteSheet: XCOM_ARMORED_VEST.PCK
@@ -2380,10 +2373,8 @@ armors:
     rearArmor: 16
     underArmor: 10
     stats:
-      tu: -10
-      stamina: -10
-      reactions: -5
-      melee: -5
+      tu: -5
+      stamina: -5
     psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.7
     meleeDodge:
@@ -2401,6 +2392,10 @@ armors:
     units:
       - STR_SOLDIER
       - STR_RESISTANCE_AGENT
+      - STR_PILOT
+      - STR_AGENT
+      - STR_SCIENTIST
+      - STR_ENGINEER
     loftempsSet: [ 3 ]
 
 extended:

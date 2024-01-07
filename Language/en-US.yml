@@ -346,7 +346,8 @@ en-US:
   STR_ALLOCATE_ENGINEERS: "Allocate Engineers"
   STR_AVERAGE_DILIGENCE_UC: "AVARAGE DILIGENCE>{ALT}{0}"
   STR_AVERAGE_EFFICIENCY_UC: "AVARAGE EFFICIENCY>{ALT}{0}"
-  STR_CONSTRUCTION_TIME_UC: "CONSTRUCTION TIME>{ALT}{0}"
+  STR_CONSTRUCTION_TIME_UC_ARG: "AVARAGE CONSTRUCTION TIME>{ALT}{0}"
+  STR_AVG_CONSTRUCTION_TIME_UC: ""
   STR_GRADE_UC: "GRADE"
   STR_PSI_TRAINING: "PSI TRAINING"
   STR_COMBAT_TRAINING: "COMBAT TRAINING"
@@ -850,8 +851,8 @@ en-US:
   STR_SWARMID_DESERT_TERROR_HARD: "Monster Terror"
   STR_MONSTER_TERROR: "Monster Terror"
   STR_MONSTER_TERROR_ALERT: "MONSTERS TERRORIZE LOCALS"
-  STR_MONSTER_TERROR_ALERT_DESCRIPTION: "We managed to localize a hotspot of alien monster activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the wilderness. We should deploy a squad there and purge it, while collecting samples for scientific study, if possible."
-  STR_MONSTER_TERROR_BRIEFING: "We managed to localize a hotspot of alien monster activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the wilderness. We should deploy a squad there and purge it, while collecting samples for scientific study, if possible.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
+  STR_MONSTER_TERROR_ALERT_DESCRIPTION: "We managed to localize a hotspot of alien monster activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the wilderness. We should deploy a squad there and purge it, while collecting monster corpses for scientific study, if possible."
+  STR_MONSTER_TERROR_BRIEFING: "We managed to localize a hotspot of alien monster activity in the region. Locals are extremely worried - cases of missing people and pets are on the rise. Sometimes they are found mauled deep in the wilderness. We should deploy a squad there and purge it, while collecting monster corpses for scientific study, if possible.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
   STR_CHUPACABRA_HUNT_TRAP: "Monster Hunt - Trap"
   STR_ARMADILLO_HUNT_TRAP: "Monster Hunt - Trap"
   STR_AMPHIBIAN_HUNT_TRAP: "Monster Hunt - Trap"
@@ -2221,20 +2222,20 @@ en-US:
   STR_LIVE_CREATURES_RESEARCH_UFOPEDIA: "Autopsies provide us with a wealth of scientific information about the mysterious monsters we find. However, a full understanding of the species traits and biology is impossible without studying live specimens. We need to develop protocols for keeping dangerous creatures at our base and methods for studying them."
   STR_CHUPACABRA_BIOLOGY: "Chupacabra Biology"
   STR_CHUPACABRA_BIOLOGY_UFOPEDIA: #TODO Даёт ответ на то, откуда у чупакабры такая скорость и сила (хотя они довольно тощие) - сложные белки в крови. Сыворотку можно выделить и использовать как боевой стимулятор
-  STR_FARM_CATTLE_SAMPLE_RESULT_1: #Следы антисептика пришельцев
+  STR_FARM_CATTLE_SAMPLE_RESULT_1:
   STR_FARM_CATTLE_SAMPLE_RESULT_1_UFOPEDIA: 
   STR_FARM_CATTLE_SAMPLE_RESULT_2: 
   STR_FARM_CATTLE_SAMPLE_RESULT_2_UFOPEDIA: 
-  STR_FARM_CATTLE_SAMPLE_RESULT_3: #Следы хирургических инструментов пришельцев
+  STR_FARM_CATTLE_SAMPLE_RESULT_3:
   STR_FARM_CATTLE_SAMPLE_RESULT_3_UFOPEDIA: 
-  STR_FARM_CATTLE_SAMPLE_RESULT_4: #Следы проведённой биопсии пришельцами
+  STR_FARM_CATTLE_SAMPLE_RESULT_4:
   STR_FARM_CATTLE_SAMPLE_RESULT_4_UFOPEDIA: 
-  STR_FARM_CATTLE_SAMPLE_RESULT_5: #инопланетная флора
-  STR_FARM_CATTLE_SAMPLE_RESULT_5_UFOPEDIA: #Следы флоры пришельцев, растущей в туше коровы (погибают, так как кислород для них токсичен) - дают представление о среде, в которой живут пришельцы.
-  STR_FARM_CATTLE_SAMPLE_RESULT_6: #белка
-  STR_FARM_CATTLE_SAMPLE_RESULT_6_UFOPEDIA: #Выпотрошенная белка, удалены все внутренние органы, нервная система созжена
-  STR_FARM_CATTLE_SAMPLE_RESULT_7: #зайчиха
-  STR_FARM_CATTLE_SAMPLE_RESULT_7_UFOPEDIA: #Труп беременной зайчихи, удалены эмбрионы
+  STR_FARM_CATTLE_SAMPLE_RESULT_5:
+  STR_FARM_CATTLE_SAMPLE_RESULT_5_UFOPEDIA:
+  STR_FARM_CATTLE_SAMPLE_RESULT_6:
+  STR_FARM_CATTLE_SAMPLE_RESULT_6_UFOPEDIA:
+  STR_FARM_CATTLE_SAMPLE_RESULT_7:
+  STR_FARM_CATTLE_SAMPLE_RESULT_7_UFOPEDIA:
   STR_FARM_CATTLE_SAMPLE_RESULT_8: 
   STR_FARM_CATTLE_SAMPLE_RESULT_8_UFOPEDIA: 
   STR_FARM_CATTLE_SAMPLE_RESULT_9: 

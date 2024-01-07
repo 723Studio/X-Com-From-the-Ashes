@@ -719,14 +719,82 @@ manufacture:
     requires:
       - STR_TROLLIUM
     space: 0
-    time: 30 #30000 #15 days, req days * 2000 
+    time: 30000 #15 days, req days * 2000 
     cost: 0
     stats:
       construction: 100
+  - name: STR_HQ
+    refNode: *facility
+    time: 80000
+  - name: STR_BIOLAB
+    refNode: *facility
+    time: 64000
+  - name: STR_ADVANCED_WORKSHOP
+    refNode: *facility
+    time: 64000
+  - name: STR_PRISON_CELLS
+    refNode: *facility
+    time: 32000
+  - name: STR_CREATURES_CONTAINMENT
+    refNode: *facility
+    time: 50000
+  - name: STR_GYM
+    refNode: *facility
+    time: 35000
+  - name: STR_SICK_BAY
+    refNode: *facility
+    time: 45000
+  - name: STR_SMALL_LABORATORY
+    refNode: *facility
+    time: 52000
+
+  - name: STR_LIVING_QUARTERS
+    refNode: *facility
+    time: 32000
+  - name: STR_GENERAL_STORES
+    refNode: *facility
+    time: 20000
   - name: STR_HANGAR
     refNode: *facility
     time: 60000
+  - name: STR_LABORATORY
+    refNode: *facility
+    time: 80000 #35 days
+  - name: STR_SMALL_RADAR_SYSTEM
+    refNode: *facility
+    time: 40000 #20 days
+  - name: STR_LARGE_RADAR_SYSTEM
+    refNode: *facility
+    time: 60000
+  - name: STR_MISSILE_DEFENSES
+    refNode: *facility
+    time: 16000
+  - name: STR_ALIEN_CONTAINMENT
+    refNode: *facility
+    time: 64000
+  - name: STR_LASER_DEFENSES
+    refNode: *facility
+    time: 48000
+  - name: STR_PLASMA_DEFENSES
+    refNode: *facility
+    time: 68000
+  - name: STR_FUSION_BALL_DEFENSES
+    refNode: *facility
+    time: 68000
+  - name: STR_GRAV_SHIELD
+    refNode: *facility
+    time: 76000
+  - name: STR_MIND_SHIELD
+    refNode: *facility
+    time: 66000
+  - name: STR_PSIONIC_LABORATORY
+    refNode: *facility
+    time: 48000
+  - name: STR_HYPER_WAVE_DECODER
+    refNode: *facility
+    time: 52000
 
-items: #sad, it has to be defined to abuse afteloader check
-  - type: STR_WORKSHOP
-  - type: STR_HANGAR
+
+# items: #sad, it has to be defined to abuse afteloader check
+#   - type: STR_WORKSHOP
+#   - type: STR_HANGAR

@@ -5536,6 +5536,7 @@ items:
     listOrder: 25030
     landOnly: true
 
+#armor
 
 #built-in weapons
   - type: STR_UNARMED
