@@ -1097,7 +1097,7 @@ units:
       strength: 1
       melee: 10
       psiStrength: 4
-    armor: STR_FACEHUGGER_ARMO
+    armor: STR_FACEHUGGER_ARMOR
     standHeight: 6
     value: 8
     aggroSound: 77
