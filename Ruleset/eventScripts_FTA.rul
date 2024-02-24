@@ -88,6 +88,12 @@ eventScripts:
     executionOdds: 80
 
 #xcom
+  - type: mibstoryMilestone1
+    oneTimeSequentialEvents: [STR_MIB_STORY_MILESTONE_1_EVENT]
+    missionMarkerName: mibActivityKnowlege
+    allowedProcessor: 2 #xcom
+    counterMin: 10
+    executionOdds: 90
   - &xcomFundamentalStudiesScript
     type: xcomFundamentalStudiesScript
     oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES]

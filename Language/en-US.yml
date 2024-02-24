@@ -1023,6 +1023,8 @@ en-US:
   STR_NO_SUPPLY_SECOND_WARNING_DESCRIPTION: "Our reserves are depleted, and the base requires more and more resources every day. People are beginning to starve and there is no longer enough money even to provide food for our forces.{NEWLINE}Loyalty score> {ALT}-500"
   STR_NO_SUPPLY_THIRD_WARNING_EVENT: "Starvation!"
   STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: "Our reserves are long gone, people are starving, and our forces refuse to risk their lives amid the famine. It's time to resolve the crisis, because this is the last warning.{NEWLINE}Loyalty score> {ALT}-900"
+  STR_MIB_STORY_MILESTONE_1_EVENT: "Crumb trails"
+  STR_MIB_STORY_MILESTONE_1_EVENT_DESCRIPTION: "We've made some progress in studying the Men in Black, but we still don't know their methods of communication and organization of operations. That could be the key to understanding how to deal a devastating blow to their plans. All that remains is to keep looking for clues in the bits of information we can glean from the interrogations of M.I.B. agents."
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: "We constantly receive information about encounters with strange creatures. X-COM has previously investigated such cases, but we have not achieved any meaningful results. It is likely that if we continue our research we will be able to draw a more complete picture of what is happening with these mysterious monsters. However, given our current state of affairs, perhaps it makes sense to focus on the project's survival instead of wasting energy on unconfirmed rumors."
   STR_CONTINUE_INVESTIGATION: "Continue investigation *"

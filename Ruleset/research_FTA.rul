@@ -1673,12 +1673,17 @@ research:
       - STR_OFFICIALS_RECRUITING_PREREQ #TODO add ways to unlock
     listOrder: 1020
 #MIB
+  - name: STR_MIB_STORY_MILESTONE_1
+    hidden: true
+  - name: STR_MIB_STORY_MILESTONE_2
+    hidden: true
+  - name: STR_MIB_STORY_MILESTONE_3
+    hidden: true
   - name: STR_XCOM_EX_COMMANDER
     hidden: true
     increaseCounter: [mibActivityKnowlege]
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-    listOrder: 6000
   - name: STR_MIB_AGENT
     hidden: true
     increaseCounter: [mibActivityKnowlege]
@@ -1690,18 +1695,14 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
-      STR_EMPTY_MIB_EARLY_LORE_STAGE:
-        - STR_FRESH_MIB_AGENT
-        - STR_EMPTY_MIB_EARLY_LORE1
-        - STR_EMPTY_MIB_EARLY_LORE2
-        - STR_EMPTY_MIB_EARLY_LORE3
         - STR_EMPTY_MIB_EARLY_LORE4
         - STR_EMPTY_MIB_EARLY_LORE5
         - STR_EMPTY_MIB_EARLY_LORE6
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
-    listOrder: 6010
+      STR_MIB_STORY_MILESTONE_1:
+        - STR_FRESH_MIB_AGENT
   - name: STR_MIB_SPECOPS
     hidden: true
     increaseCounter: [mibActivityKnowlege]
@@ -1713,18 +1714,14 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
-      STR_EMPTY_MIB_EARLY_LORE_STAGE:
-        - STR_FRESH_MIB_AGENT
-        - STR_EMPTY_MIB_EARLY_LORE1
-        - STR_EMPTY_MIB_EARLY_LORE2
-        - STR_EMPTY_MIB_EARLY_LORE3
         - STR_EMPTY_MIB_EARLY_LORE4
         - STR_EMPTY_MIB_EARLY_LORE5
         - STR_EMPTY_MIB_EARLY_LORE6
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
-    listOrder: 6020
+      STR_MIB_STORY_MILESTONE_1:
+        - STR_FRESH_MIB_AGENT
   - name: STR_MIB_BUTCHER
     hidden: true
     increaseCounter: [mibActivityKnowlege]
@@ -1734,18 +1731,14 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
-      STR_EMPTY_MIB_EARLY_LORE_STAGE:
-        - STR_FRESH_MIB_AGENT
-        - STR_EMPTY_MIB_EARLY_LORE1
-        - STR_EMPTY_MIB_EARLY_LORE2
-        - STR_EMPTY_MIB_EARLY_LORE3
         - STR_EMPTY_MIB_EARLY_LORE4
         - STR_EMPTY_MIB_EARLY_LORE5
         - STR_EMPTY_MIB_EARLY_LORE6
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
-    listOrder: 6030
+      STR_MIB_STORY_MILESTONE_1:
+        - STR_FRESH_MIB_AGENT
   - name: STR_MIB_ENFORCER #TODO - only specific lore as enforcer, not agent
     hidden: true
     increaseCounter: [mibActivityKnowlege]
@@ -1754,13 +1747,8 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
-      STR_PRISONER_INTERROGATIONS:
+      STR_MIB_ENFORCER:
         - STR_EMPTY_MIB_EARLY_LORE_STAGE
-        - STR_EMPTY_MIB_EARLY_LORE1
-        - STR_EMPTY_MIB_EARLY_LORE2
-        - STR_EMPTY_MIB_EARLY_LORE3
-      STR_EMPTY_MIB_EARLY_LORE_STAGE:
-        - STR_FRESH_MIB_AGENT
         - STR_EMPTY_MIB_EARLY_LORE1
         - STR_EMPTY_MIB_EARLY_LORE2
         - STR_EMPTY_MIB_EARLY_LORE3
@@ -1770,15 +1758,26 @@ research:
         - STR_EMPTY_MIB_EARLY_LORE7
         - STR_EMPTY_MIB_EARLY_LORE8
         - STR_EMPTY_MIB_EARLY_LORE9
+      STR_MIB_STORY_MILESTONE_1:
+        - STR_FRESH_MIB_AGENT
     listOrder: 6040
   - name: STR_MIB_SCIENTIST
     hidden: true
     increaseCounter: [mibActivityKnowlege]
-    getOneFree:
-      - STR_PRISONER_INTERROGATIONS
-    # getOneFreeProtected: #TODO - only specific lore as scientist, not agent
-    #   STR_PRISONER_INTERROGATIONS:
-    #     - STR_
+    # getOneFreeProtected:
+    #   STR_MIB_SCIENTIST:
+    #     - STR_EMPTY_MIB_EARLY_LORE_STAGE
+    #     - STR_EMPTY_MIB_EARLY_LORE1
+    #     - STR_EMPTY_MIB_EARLY_LORE2
+    #     - STR_EMPTY_MIB_EARLY_LORE3
+    #     - STR_EMPTY_MIB_EARLY_LORE4
+    #     - STR_EMPTY_MIB_EARLY_LORE5
+    #     - STR_EMPTY_MIB_EARLY_LORE6
+    #     - STR_EMPTY_MIB_EARLY_LORE7
+    #     - STR_EMPTY_MIB_EARLY_LORE8
+    #     - STR_EMPTY_MIB_EARLY_LORE9
+    #   STR_MIB_STORY_MILESTONE_1:
+    #     - STR_FRESH_MIB_AGENT
 
     listOrder: 6040
 

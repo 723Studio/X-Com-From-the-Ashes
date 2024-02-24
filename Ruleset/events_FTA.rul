@@ -38,6 +38,12 @@ events:
     timer: 2880
     timerRandom: 2880
     researchList: [STR_SEALED_CRATE_BREACHING]
+  - name: STR_MIB_STORY_MILESTONE_1_EVENT
+    description: STR_MIB_STORY_MILESTONE_1_EVENT_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    timer: 2880
+    timerRandom: 2880
+    researchList: [STR_MIB_STORY_MILESTONE_1]
   - name: STR_MONSTER_HUNT_START_EVENT
     description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
     timer: 15840 # 11 days
