@@ -419,7 +419,10 @@ extraSprites:
       495: Resources/Weapons/Earthbound/Utilities/bigob_BattleCocktail.png
       496: Resources/Weapons/Earthbound/Utilities/bigob_EnergyBooster.png
       497: Resources/MiscItems/bigob_bio_sample.png
-      498: Resources/MiscItems/bigob_phis_sample .png
+      498: Resources/MiscItems/bigob_phis_sample.png
+      499: Resources/MiscItems/bigob_Jewel.png
+      500: Resources/MiscItems/bigob_StoneOfAtlantis.png
+      501: Resources/MiscItems/bigob_Drugs.png
 
   - type: FLOOROB.PCK
     files:
@@ -635,6 +638,9 @@ extraSprites:
       496: Resources/Weapons/Earthbound/Utilities/floorob_BattleCocktail.png
       497: Resources/MiscItems/floorob_bio_sample.png
       498: Resources/MiscItems/floorob_phis_sample.png
+      499: Resources/MiscItems/floorob_Jewel.png
+      500: Resources/MiscItems/floorob_StoneOfAtlantis.png
+      501: Resources/MiscItems/floorob_Drugs.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40

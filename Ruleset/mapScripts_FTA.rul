@@ -1220,6 +1220,15 @@ mapScripts:
         - [0, 4, 5, 1]
     - type: fillArea
 
+  - type: groundConvoy
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+
 
   - type: mulitaryUndergroundRnD
     commands:

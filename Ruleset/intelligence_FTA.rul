@@ -6,9 +6,9 @@ intelligence:
     requiredResearch: STR_INTEL_STATUS_REPORT
     specialRule: 1 #INTEL_NONE = 0, INTEL_UFO_TRACKING = 1, INTEL_COVERT_OPERATIONS = 2, INTEL_DEPLOYMENT_HINTS = 3
     stats:
-      data: 70
+      data: 80
       computers: 120
-      xenolinguistics: 70
+      xenolinguistics: 120
       alienTech: 70
     listOrder: 100
     stages:
@@ -17,7 +17,69 @@ intelligence:
         requireRolls: 10
         requiredResearch: STR_INTEL_STATUS_REPORT
         disabledByResearch: STR_TROLLIUM
-        requiresBaseFunc: [HQ]
+        requiresBaseFunc: [INTEL]
+        eventScripts: [testScript]
+        spawnMission: STR_TEST_MISSTION
+        finalStage: false
+
+  - name: STR_MIB_ACTIVITY
+    description: STR_MIB_ACTIVITY_DESCRIPTION
+    cost: 400
+    costIncrease: 2
+    requiredResearch: STR_INTEL_STATUS_REPORT
+    specialRule: 0 #INTEL_NONE = 0
+    stats:
+      data: 80
+      computers: 120
+    listOrder: 200
+    stages:
+      - stageName: firstUFOstage
+        odds: 5
+        requireRolls: 10
+        requiredResearch: STR_INTEL_STATUS_REPORT
+        # disabledByResearch: STR_TROLLIUM
+        # requiresBaseFunc: [INTEL]
+        # eventScripts: [testScript]
+        # spawnMission: STR_TEST_MISSTION
+        # finalStage: false
+
+  - name: STR_CULT_ACTIVITY
+    description: STR_CULT_ACTIVITY_DESCRIPTION
+    cost: 400
+    costIncrease: 2
+    requiredResearch: STR_CULT_INVESTIGATION_PREREQ
+    specialRule: 0 #INTEL_NONE = 0
+    stats:
+      data: 80
+      computers: 120
+    listOrder: 300
+    stages:
+      - stageName: firstCultStage
+        odds: 20
+        requireRolls: 1
+        requiredResearch: STR_INTEL_STATUS_REPORT
+        requiresBaseFunc: [INTEL]
+        eventScripts: [testScript]
+        spawnMission: STR_TEST_MISSTION
+        finalStage: false
+
+  - name: STR_MONSTER_ACTIVITY
+    description: STR_CULT_ACTIVITY_DESCRIPTION
+    cost: 400
+    costIncrease: 2
+    requiredResearch: STR_INTEL_STATUS_REPORT
+    specialRule: 0 #INTEL_NONE = 0
+    stats:
+      data: 80
+      computers: 120
+    listOrder: 400
+    stages:
+      - stageName: firstUFOstage
+        odds: 5
+        requireRolls: 10
+        requiredResearch: STR_INTEL_STATUS_REPORT
+        disabledByResearch: STR_TROLLIUM
+        requiresBaseFunc: [INTEL]
         eventScripts: [testScript]
         spawnMission: STR_TEST_MISSTION
         finalStage: false

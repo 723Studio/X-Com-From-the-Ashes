@@ -337,6 +337,8 @@ en-US:
   STR_PRISONER_RECRUITING_PT1: "The recruitment of prisoner"
   STR_PRISONER_RECRUITING_PT2: "has been accomplished.{NEWLINE}"
   STR_PRISONER_RECRUITING_PT3: "is ready for duty."
+  STR_PRISONER_RECRUITING_PT4: "New asset acquired!"
+  STR_NO_PRISON_SPACE_FOR_TRANSFER: "NO FREE PRISON SPACE FOR TRANSFER!{SMALLLINE}Sufficient space is needed at the destination facility to accommodate prisoners securely."
   STR_ALLOCATE: "Allocate"
   STR_BASE_LABOR_COSTS: "Base labor costs>{ALT}{0}"
   STR_COST_PER_UNIT_: "Approx. production costs>{ALT}{0}"
@@ -344,10 +346,10 @@ en-US:
   STR_REQUIRED_STATS_SHORT: "Req. stats:"
   STR_ENGINEERS_ALLOCATED_UC: "ENGINEERS ALLOCATED>{ALT}{0}"
   STR_ALLOCATE_ENGINEERS: "Allocate Engineers"
-  STR_AVERAGE_DILIGENCE_UC: "AVARAGE DILIGENCE>{ALT}{0}"
-  STR_AVERAGE_EFFICIENCY_UC: "AVARAGE EFFICIENCY>{ALT}{0}"
+  STR_AVERAGE_DILIGENCE_UC: "AVERAGE DILIGENCE>{ALT}{0}"
+  STR_AVERAGE_EFFICIENCY_UC: "AVERAGE EFFICIENCY>{ALT}{0}"
   STR_CONSTRUCTION_TIME_UC_ARG: "CONSTRUCTION TIME>{ALT}{0}"
-  STR_AVG_CONSTRUCTION_TIME_UC: "AVARAGE CONSTRUCTION TIME>"
+  STR_AVG_CONSTRUCTION_TIME_UC: "AVERAGE CONSTRUCTION TIME>"
   STR_GRADE_UC: "GRADE"
   STR_PSI_TRAINING: "PSI TRAINING"
   STR_COMBAT_TRAINING: "COMBAT TRAINING"
@@ -539,6 +541,7 @@ en-US:
   STR_FTA_ALPHA_END: "Thank you for completing X-COM: From the Ashes Alpha 1!"
   STR_FTA_ALPHA_END_DESC: "This concludes the closed pre-alpha version of X-COM: From the Ashes. Thank you for your participation! It's very important for me to know your opinion about the game! Feedback, suggestions and bug reports are very welcome. Stay tuned for ongoing development of the game on my Discord server and Twitch!{NEWLINE}*https://discord.gg/epmtzH9{NEWLINE}*https://www.twitch.tv/finnik723studio{NEWLINE}{NEWLINE}{NEWLINE}You can also find my development blog on Patreon (EN) or Boosty (RU), where you can support development!{NEWLINE}*https://www.patreon.com/m/Finnik{NEWLINE}*https://boosty.to/finnik"
   STR_TRAINING: "Combat training"
+  STR_BUSY: "BUSY"
   STR_TRANSFORMATIONS_OVERVIEW: "Special training courses"
   STR_TRANSFORMATION_TIME: "Training time> {ALT}{0}"
   STR_IN_TRANSFORMATION_UC: "SPECIALIZING"
@@ -902,11 +905,17 @@ en-US:
   STR_MIB_HIDEOUT_MEDIUM_BRIEFING: "We have located the secret hideout of the Men in Black! Our aircraft landed near an inconspicuous structure in the middle of nowhere, probably used as a staging point. The enemy obviously didn't expect us, M.I.B. agents are preparing to repel the assault, they can hardly expect reinforcements to arrive soon.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_MIB_HIDEOUT_SMALL_BRIEFING: "We have located the secret hideout of the Men in Black! Our aircraft landed near a small inconspicuous structure in the middle of nowhere, probably used as a staging point. It doesn't look like it's well-defended. The enemy obviously didn't expect us, M.I.B. agents are preparing to repel the assault, they can hardly expect reinforcements to arrive soon.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_MIB_HIDEOUT_MINE: "Enemy signal has been intercepted!"
-  STR_MIB_HIDEOUT_MEDIUM_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 14 turns, the whole building will blow up with the defenders, destroying all evidences.All charges must be defused."
-  STR_MIB_HIDEOUT_SMALL_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 9 turns, the whole building will blow up with the defenders, destroying all evidences.All charges must be defused."
+  STR_MIB_HIDEOUT_MEDIUM_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 14 turns, the whole building will blow up with the defenders, destroying all evidences. All charges must be defused."
+  STR_MIB_HIDEOUT_SMALL_MINE_DESCRIPTION: "It seems that things have gotten very complicated. We managed to intercept a signal, deciphering which it became clear - the whole building is mined! In 9 turns, the whole building will blow up with the defenders, destroying all evidences. All charges must be defused."
+  STR_MIB_SMALL_GROUND_CONVOY: "M.I.B. Convoy"
+  STR_MIB_MEDIUM_GROUND_CONVOY: "M.I.B. Convoy"
+  STR_MIB_GROUND_CONVOY_ALERT: "M.I.B. CONVOY LOCATED"
   STR_ABANDONED_BASE_ALERT: "DISCOVERED ABANDONED BASE"
+  STR_MIB_GROUND_CONVOY_DESCRIPTION: "We managed to locate M.I.B. Agents on the move. They're using light vehicles and minimal security to keep a low profile. They may be carrying something valuable. Intercepting the convoy with an assault squad will allow us to inflict significant damage on our adversaries with little risk."
+  STR_MIB_SMALL_GROUND_CONVOY_BRIEFING: "We intercepted a small M.I.B. convoy, taking them by surprise, so they can't expect reinforcements to arrive soon. Eliminate or capture all hostiles but avoid destroying the cargo.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
+  STR_MIB_MEDIUM_GROUND_CONVOY_BRIEFING: "We intercepted a M.I.B. convoy, taking them by surprise, so they can't expect reinforcements to arrive soon. Eliminate or capture all hostiles but avoid destroying the cargo.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_ABANDONED_BASE_ALERT_DESCRIPTION: "According to the decoded Ufopedia data, we were able to locate the abandoned base. The scouts avoided approaching the entrance to the underground structure. According to our scanners, the base is completely blacked out. We have no idea why XCOM abandoned it, and we need to be extremely careful. An assault squad must be dispatched to clear the facility. We may only have one shot at it - intense warfare may draw unwanted attention to the facility from the M.I.B."
-  STR_ABANDONED_BASE_BRIEFING: ""
+  STR_ABANDONED_BASE_BRIEFING: "The assault squad disembarked near the entrance of the abandoned subsurface base. It's obviously been disused for a long time - the entrance is partially blocked with sand, and the hangar hatch is open. There is activity on the lower level of the facility, therefore extreme caution is required. It is necessary to descend underground and clear the area.{NEWLINE}To abort the mission return X-Com operatives to the green area and click on the 'Abort Mission' icon."
   #traps
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_TRAP: "Chasing M.I.B."
@@ -1312,7 +1321,8 @@ en-US:
   STR_RANDOM_TORTURE_EVENT_FUNDS_5_DESCRIPTION: "" #Loyalty -25, Funds +174k
   STR_RANDOM_TORTURE_EVENT_FUNDS_6: "Black gold successor"
   STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION: "So last prisoner didn't knew anything useful, but we checked his background and it turns out that his parents are actually very rich people in Arabian Emirates. So we did only thing that we thought of at that moment - we ransomed him for a hefty sum of money.{NEWLINE}Looking back now i must say - that was not our brightest idea. People are questioning our goals now.{NEWLINE}Loyalty score> {ALT}-30{NEWLINE}Funds> {ALT}+240k" #Loyalty -30, Funds +240k
-
+  STR_MIB_TORTURE_EVENT_CONVOY_LEAD: "Lead on the M.I.B. convoy"
+  STR_MIB_TORTURE_EVENT_CONVOY_LEAD_DESCRIPTION: "A strong adrenaline rush from the pain caused by the torture broke through the mental barrier that kept the M.I.B. agent from confessing. He was involved in the preparation of the transportation of a valuable shipment. We need to verify this information, because if it's true, we could be looking at an unprecedented opportunity.{NEWLINE}New covert operation available."
 #enemies
   STR_XCOM_SOLDIER_PRISONER: STR_XCOM_SOLDIER_PRISONER
   STR_SECTOID_COMMANDER_CORPSE: "Sectoid Commander Corpse"
@@ -1894,12 +1904,26 @@ en-US:
   STR_CREDIT_CARD_BREACHING_UFOPEDIA: "Hard times call for drastic solutions. With the credit card we were recently recovered, we have developed a unique mechanism to compromise the bank account to which the card is linked. Thanks to the network of proxy accounts we use for secure transactions, the money leaves the card completely untraceable. During the cracking process, our engineers adapt the algorithm every time, giving it uniqueness, so that these cybercrimes cannot be related to each other."
   STR_SILVER_CREDIT_CARD_BREACHING: "Silver Credit Card Breaching"
   STR_GOLD_CREDIT_CARD_BREACHING: "Golden Credit Card Breaching"
-  STR_CASH_PACK: "Small Cash Pack ($1 000)"
-  STR_CASH_PACK_BIG: "Big Cash Pack ($10 000)"
+  STR_CASH_PACK: "Small Cash Pack ($5 000)"
+  STR_CASH_PACK_BIG: "Big Cash Pack ($50 000)"
   STR_BRIEFCASE_CASH: "Briefcase with Cash ($100 000)"
   STR_MONEY_BAG: "Money Bag ($500 000)"
   STR_JEWEL: "Jewel"
+  STR_DRUGS_PACK: "Drugs Pack"
   STR_ANCIENT_ARTIFACT: "Ancient Artifact"
+  STR_ANCIENT_ARTIFACT_UFOPEDIA: "Stone tablet with roughly engraved pictograms, approximate age is from 25 to 28 thousand years. Obviously, the drawings were made by ancient people. The drawings themselves are extremely curious and have no other interpretation - they depict alien vessels as we know them."
+  STR_TOOTHPASTE_PACKET: "Toothpaste Packet"
+  STR_TOOTHPASTE_PACKET_UFOPEDIA: "Initially, it appears to be an ordinary pack of toothpaste servings packaged for retail sale. A detailed chemical analysis revealed the presence of an unusual drug in the toothpaste. We had not encountered such a compound before, so we performed computer simulation of its pharmacokinetic interaction on humans. According to the obtained results we can make the following conclusions:{NEWLINE}- A person is not able to notice the consequences of interaction with the drug;{NEWLINE}- The drug is able to cause only weak addiction;{NEWLINE}- With long-term use of the person's behavior changes - manifest symptoms of apathy, depression, decreased motivation and strongly increased suggestibility."
+  STR_MIB_INTERROGATION: "M.I.B. Interrogation Equipment"
+  STR_MIB_INTERROGATION_UFOPEDIA: #TODO
+  STR_MIB_CONDITIONING: "M.I.B. Conditioning Equipment"
+  STR_MIB_CONDITIONING_UFOPEDIA: #TODO
+  STR_MIB_LAB_EQUIPMENT: "M.I.B. Laboratory Equipment"
+  STR_MIB_LAB_EQUIPMENT_UFOPEDIA: #TODO
+  STR_MIB_HYPER_COMMUNICATOR: "M.I.B. Translator Equipment"
+  STR_MIB_HYPER_COMMUNICATOR_UFOPEDIA: #TODO
+  STR_MIB_COMMUNICATION_EQUIPMENT: "M.I.B. Communication Equipment"
+  STR_MIB_COMMUNICATION_EQUIPMENT_UFOPEDIA: #TODO
   STR_FARM_CATTLE_SAMPLE: "Biological Sample"
   STR_FOREST_CATTLE_SAMPLE: "Biological Sample"
   STR_CROP_CIRCLES_SAMPLE: "Crop Circle Sample"
@@ -2724,6 +2748,8 @@ en-US:
   STR_AMPHIBIAN_TERROR: STR_AMPHIBIAN_TERROR
   STR_SWARMID_JUNGLE_TERROR: STR_SWARMID_JUNGLE_TERROR
   STR_SWARMID_DESERT_TERROR: STR_SWARMID_DESERT_TERROR
+  STR_SMALL_GROUND_CONVOY: STR_SMALL_GROUND_CONVOY
+  STR_MEDIUM_GROUND_CONVOY: STR_MEDIUM_GROUND_CONVOY
 
   
   STR_RESISTANCE_FIRST_HELP: STR_RESISTANCE_FIRST_HELP

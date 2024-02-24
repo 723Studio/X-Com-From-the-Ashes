@@ -449,6 +449,7 @@ battleScripts:
     commands:
     - type: showMessage
       startTurn: 1
+      endTurn: 2
       executionChances: 100
       maxRuns: 1
       variable: first alarm
@@ -460,6 +461,7 @@ battleScripts:
     commands:
     - type: showMessage
       startTurn: 1
+      endTurn: 2
       executionChances: 100
       maxRuns: 1
       variable: first alarm

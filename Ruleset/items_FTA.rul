@@ -6081,7 +6081,7 @@ items:
     categories: [STR_LOOT]
     landOnly: true
     size: 0.01
-    costSell: 1000
+    costSell: 5000
     weight: 0
     battleType: 0
     bigSprite: 428
@@ -6096,7 +6096,7 @@ items:
     categories: [STR_LOOT]
     landOnly: true
     size: 0.01
-    costSell: 10000
+    costSell: 50000
     weight: 0
     battleType: 0
     bigSprite: 428 #TODO
@@ -6139,10 +6139,10 @@ items:
     categories: [STR_LOOT, STR_CONCEALABLE]
     size: 0.1
     landOnly: true
-    costBuy: 430000
-    costSell: 380000
-    bigSprite: 99 #TODO!
-    floorSprite: 99 #TODO!
+    costBuy: 16000
+    costSell: 12000
+    bigSprite: 499
+    floorSprite: 499
     weight: 1
     battleType: 10
     invWidth: 1
@@ -6153,17 +6153,45 @@ items:
     categories: [STR_LOOT, STR_CONCEALABLE]
     size: 0.1
     landOnly: true
-    costBuy: 1600000
+    costBuy: 1900000
     costSell: 1300000
-    bigSprite: 99 #TODO!
-    floorSprite: 99 #TODO!
+    bigSprite: 500
+    floorSprite: 500
     weight: 1
     battleType: 10
     invWidth: 1
     invHeight: 1
-    recoveryPoints: 20
+    recoveryPoints: 30
     listOrder: 31100
-  - type: STR_MIB_INTERROGATION #TODO - research
+  - type: STR_DRUGS_PACK
+    categories: [STR_LOOT, STR_CONCEALABLE]
+    size: 0.1
+    landOnly: true
+    costBuy: 45000
+    costSell: 35000
+    bigSprite: 501
+    floorSprite: 501
+    weight: 1
+    battleType: 10
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 2
+    listOrder: 31100
+  - type: STR_TOOTHPASTE_PACKET
+    categories: [STR_LOOT]
+    size: 3
+    weight: 20
+    bigSprite: 413
+    floorSprite: 413
+    costSell: 1100
+    tuThrow: 0
+    battleType: 0
+    armor: 10
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 6
+    listOrder: 31100
+  - type: STR_MIB_INTERROGATION
     categories: [STR_LOOT]
     size: 0.3
     specialType: 31
@@ -6171,7 +6199,7 @@ items:
     battleType: 0
     recoveryPoints: 5
     listOrder: 60020
-  - type: STR_MIB_CONDITIONING #TODO - research
+  - type: STR_MIB_CONDITIONING
     categories: [STR_LOOT]
     size: 0.3
     specialType: 32
@@ -6179,7 +6207,7 @@ items:
     battleType: 0
     recoveryPoints: 15
     listOrder: 60020
-  - type: STR_MIB_LAB_EQUIPMENT #TODO - research
+  - type: STR_MIB_LAB_EQUIPMENT
     categories: [STR_LOOT]
     size: 0.4
     specialType: 33
@@ -6187,7 +6215,7 @@ items:
     battleType: 0
     recoveryPoints: 10
     listOrder: 60020
-  - type: STR_MIB_HYPER_COMMUNICATOR #TODO - research
+  - type: STR_MIB_HYPER_COMMUNICATOR
     categories: [STR_LOOT]
     size: 0.4
     costSell: 150000
@@ -6195,7 +6223,7 @@ items:
     battleType: 0
     recoveryPoints: 30
     listOrder: 60020
-  - type: STR_MIB_COMMUNICATION_EQUIPMENT #TODO - research
+  - type: STR_MIB_COMMUNICATION_EQUIPMENT
     categories: [STR_LOOT]
     size: 0.4
     costSell: 20000
@@ -6315,6 +6343,35 @@ items:
       STR_SMALL_ROCKET: [1, 2, 3, 2, 1]
       STR_LARGE_ROCKET: [1, 2, 2, 1]
       STR_INCENDIARY_ROCKET: [1, 2, 2, 1]
+    listOrder: 60020
+  - type: STR_MIB_CRATE_SUPPLIES
+    categories: [STR_LOOT]
+    size: 0.02
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_SUPPLIES_1: [0, 1, 4, 3, 2, 1, 1]
+  - type: STR_MIB_CRATE_RARE_ITEMS
+    categories: [STR_LOOT]
+    size: 0.02
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_JEWEL: [10, 0, 0, 0, 0, 1, 2, 3, 4, 3, 2, 1]
+      STR_ANCIENT_ARTIFACT: [10, 1]
+      STR_DRUGS_PACK: [5, 1, 1, 2, 3, 4, 5, 4, 3, 2, 1]
+      STR_TOOTHPASTE_PACKET: [10, 1]
+  - type: STR_MIB_CRATE_MONSTER_CORPSE
+    categories: [STR_LOOT]
+    size: 0.02
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_CHUPACABRA_CORPSE: [5, 1]
+      STR_ARMADILLO_CORPSE: [5, 1]
+      STR_AMPHIBIAN_CORPSE: [5, 1]
+      STR_FACEHUGGER_CORPSE: [5, 1]
+      STR_FRESH_ZOMBIE: [5, 1]
     listOrder: 60020
   - type: STR_FARM_CATTLE_SAMPLE
     categories: [STR_LOOT]

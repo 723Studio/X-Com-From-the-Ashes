@@ -136,6 +136,8 @@ research:
     hidden: true
   - name: STR_STEAL_OSPREY_PREREQ
     hidden: true
+  - name: STR_CULT_INVESTIGATION_PREREQ
+    hidden: true
   - name: STR_CULT_INVESTIGATION
     hidden: true
   - name: STR_CULT_GANG_DEN
@@ -160,6 +162,9 @@ research:
     hidden: true
   - name: STR_WEAPON_COMPONENTS
     hidden: true
+  - name: STR_MIB_CONVOY_LEAD_OPERATION_PREREQ
+    hidden: true
+
 
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
@@ -1305,7 +1310,6 @@ research:
       - STR_FRESH_MIB_AGENT
     listOrder: 1010
   - name: STR_MIB_HEAD_CHIP
-    requiresBaseFunc: [INTLAB]
     cost: 2700
     stats:
       biology: 100
@@ -1314,7 +1318,6 @@ research:
       - STR_MIB_AGENT_LOBOTOMY
     listOrder: 1020
   - name: STR_MIB_DATA_TRANSFER_DECRYPTION
-    requiresBaseFunc: [INTLAB]
     cost: 1500
     stats:
       computers: 100
@@ -1492,7 +1495,6 @@ research:
       #- STR_EMPTY_ALIEN_CONTAINER #TODO add item, research and pedia
     listOrder: 3020
   - name: STR_ZOMBIE_AGENDA
-    requiresBaseFunc: [INTLAB]
     cost: 1000
     stats:
       psionics: 100
@@ -1635,7 +1637,7 @@ research:
 
 #Prisoner interrogation research
   - name: STR_RECRUIT_CIVILIAN_PRISONERS
-    requiresBaseFunc: [INTLAB]
+    requiresBaseFunc: [HQ]
     cost: 2500
     stats:
       tactics: 100
@@ -1644,7 +1646,7 @@ research:
       - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 1020
   - name: STR_CRIMINAL_RECRUITING
-    requiresBaseFunc: [INTLAB]
+    requiresBaseFunc: [HQ]
     cost: 3200
     stats:
       tactics: 100
@@ -1653,7 +1655,7 @@ research:
       - STR_CRIMINAL_RECRUITING_PREREQ
     listOrder: 1020
   - name: STR_MILITARY_RECRUITING
-    requiresBaseFunc: [INTLAB]
+    requiresBaseFunc: [HQ]
     cost: 3200
     stats:
       tactics: 100
@@ -1662,7 +1664,7 @@ research:
       - STR_MILITARY_RECRUITING_PREREQ #TODO add ways to unlock
     listOrder: 1020
   - name: STR_OFFICIALS_RECRUITING
-    requiresBaseFunc: [INTLAB]
+    requiresBaseFunc: [HQ]
     cost: 3200
     stats:
       tactics: 100
@@ -2089,7 +2091,6 @@ research:
       - STR_STRANGE_CREATURE_AUTOPSY
     listOrder: 6250
   - name: STR_MAD_DOGE
-    requiresBaseFunc: [INTLAB]
     cost: 100
     stats:
       biology: 100
@@ -2744,7 +2745,7 @@ research:
       - STR_CREDIT_CARD_BREACHING_PREREQ
   - name: STR_CREDIT_CARD
     lookup: STR_CREDIT_CARD_BREACHING
-    cost: 100
+    cost: 400
     stats:
       computers: 100
     points: 20
@@ -2775,6 +2776,69 @@ research:
       - STR_SUPPLIES
       - STR_CREDIT_CARD_BREACHING_PREREQ
     listOrder: 5040
+  - name: STR_ANCIENT_ARTIFACT
+    cost: 10
+    stats:
+      alienTech: 100
+    points: 40
+    needItem: true
+    destroyItem: false
+    increaseCounter: [alienEarlyLore]
+    listOrder: 5020
+  - name: STR_TOOTHPASTE_PACKET
+    cost: 600
+    stats:
+      biology: 100
+    points: 50
+    needItem: true
+    destroyItem: false
+    increaseCounter: [mibActivityKnowlege]
+    listOrder: 5020
+  - name: STR_MIB_INTERROGATION
+    cost: 600
+    stats:
+      biology: 100
+    points: 50
+    needItem: true
+    destroyItem: false
+    increaseCounter: [mibActivityKnowlege]
+    listOrder: 5020
+  - name: STR_MIB_CONDITIONING
+    cost: 600
+    stats:
+      biology: 100
+    points: 50
+    needItem: true
+    destroyItem: false
+    increaseCounter: [mibActivityKnowlege]
+    listOrder: 5020
+  - name: STR_MIB_LAB_EQUIPMENT
+    cost: 600
+    stats:
+      data: 100
+    points: 50
+    needItem: true
+    destroyItem: false
+    increaseCounter: [mibActivityKnowlege]
+    listOrder: 5020
+  - name: STR_MIB_HYPER_COMMUNICATOR
+    cost: 600
+    stats:
+      physics: 100
+    points: 50
+    needItem: true
+    destroyItem: false
+    increaseCounter: [mibActivityKnowlege]
+    listOrder: 5020
+  - name: STR_MIB_COMMUNICATION_EQUIPMENT
+    cost: 600
+    stats:
+      computers: 100
+    points: 50
+    needItem: true
+    destroyItem: false
+    increaseCounter: [mibActivityKnowlege]
+    listOrder: 5020
 
   #crafts
   - name: STR_HELICOPTER

@@ -21,7 +21,7 @@ facilities:
   - type: STR_HQ
     spriteShape: 1
     spriteFacility: 300
-    provideBaseFunc: [HQ, INTLAB]
+    provideBaseFunc: [HQ, INTEL]
     maxAllowedPerBase: 1
     requires:
       - STR_FACILITIES_BLUEPRINTS

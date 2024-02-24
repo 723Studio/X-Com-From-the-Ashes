@@ -146,7 +146,7 @@ events:
     description: STR_MISTERY_CULT_EVENT_YES_DESCRIPTION
     timer: 0
     timerRandom: 0
-    researchList: [STR_CULT_INVESTIGATION]
+    researchList: [STR_CULT_INVESTIGATION_PREREQ]
 
   - name: STR_ABANDONED_BASE_DESPAWNED
     description: STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION
@@ -930,6 +930,12 @@ events:
     funds: 174000
   - name: STR_RANDOM_TORTURE_EVENT_FUNDS_6
     description: STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION
+    background: PRISON_BACKGROUND.SCR
+    loyalty: -30
+    funds: 240000
+
+  - name: STR_MIB_TORTURE_EVENT_CONVOY_LEAD
+    description: STR_MIB_TORTURE_EVENT_CONVOY_LEAD_DESCRIPTION
     background: PRISON_BACKGROUND.SCR
     loyalty: -30
     funds: 240000

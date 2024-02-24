@@ -831,6 +831,7 @@ ufopaedia:
       - STR_CHEMICAL_WEAPONS
     text: STR_ACID_SYNTHESIS_UFOPEDIA
     listOrder: 7030
+
 #STR_XCOM_CRAFT_ARMAMENT 9000
   - id: STR_DRAGONFLY
     type_id: 1
@@ -2481,6 +2482,41 @@ ufopaedia:
     requires:
       - STR_MIB_DATA_TRANSFER_DECRYPTION
     text: STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_INTERROGATION
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_INTERROGATION
+    text: STR_MIB_INTERROGATION_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_CONDITIONING
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_CONDITIONING
+    text: STR_MIB_CONDITIONING_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_LAB_EQUIPMENT
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_LAB_EQUIPMENT
+    text: STR_MIB_LAB_EQUIPMENT_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_HYPER_COMMUNICATOR
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_HYPER_COMMUNICATOR
+    text: STR_MIB_HYPER_COMMUNICATOR_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_COMMUNICATION_EQUIPMENT
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_COMMUNICATION_EQUIPMENT
+    text: STR_MIB_COMMUNICATION_EQUIPMENT_UFOPEDIA
     listOrder: 45130
   - id: STR_RECRUIT_CIVILIAN_PRISONERS
     type_id: 8
