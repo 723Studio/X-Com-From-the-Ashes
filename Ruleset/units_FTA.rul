@@ -2267,6 +2267,46 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_FIRST_AID 
+  - type: STR_ALLY_MILITARY_OFFICER
+    race: STR_RESISTANCE
+    rank: STR_LIVE_NAVIGATOR
+    roles: [0, 3] #ROLE_SCIENTIST
+    stats:
+      tu: 65
+      stamina: 55
+      health: 32
+      bravery: 35
+      reactions: 37
+      firing: 57
+      throwing: 50
+      strength: 30
+      melee: 45
+      psiStrength: 45
+      psiSkill: 0
+      tactics: 60
+    statsRandom:
+      tu: 5
+      stamina: 15
+      health: 7
+      bravery: 25
+      reactions: 7
+      firing: 12
+      throwing: 15
+      strength: 10
+      melee: 20
+      psiStrength: 15
+      tactics: 15
+    armor: STR_ALLY_MILITARY_OFFICER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 35
+    deathSound: *MaleDeathSounds
+    intelligence: 4
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+
   - &RESISTANCE_EVIDENCE_DEVICE
     type: STR_RESISTANCE_RADIO
     race: STR_RESISTANCE

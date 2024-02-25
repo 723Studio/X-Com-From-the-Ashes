@@ -3119,6 +3119,15 @@ terrains:
         width: 30
         length: 20
         groups: 5 #enter
+      - name: MIL_OFFICE_ENT00_ALLY
+        width: 30
+        length: 20
+        groups: 10 #enter with ally
+        items:
+          STR_SPAWN_ALLY_MILITARY_OFFICER_AS_XCOM:
+            - [12, 17, 0] 
+        fuseTimers:
+          STR_SPAWN_ALLY_MILITARY_OFFICER_AS_XCOM: [0, 0]
       - name: MIL_OFFICE_MID00
         width: 30
         length: 20

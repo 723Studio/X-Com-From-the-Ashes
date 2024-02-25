@@ -231,27 +231,27 @@ soldiers:
       synaptic: 70
       gravity: 80
       #science
-      physics: 100
-      chemistry: 100
-      biology: 100
+      physics: 120
+      chemistry: 120
+      biology: 120
       insight: 90
-      data: 100
-      computers: 100
-      tactics: 100
-      materials: 100
-      designing: 100
-      alienTech: 100
+      data: 120
+      computers: 120
+      tactics: 120
+      materials: 120
+      designing: 120
+      alienTech: 120
       psionics: 100
       xenolinguistics: 100
       #engineers
-      weaponry: 100
-      explosives: 100
-      efficiency: 100
-      microelectronics: 90
+      weaponry: 120
+      explosives: 120
+      efficiency: 120
+      microelectronics: 120
       metallurgy: 100
       processing: 100
-      hacking: 90
-      robotics: 100
+      hacking: 120
+      robotics: 120
       diligence: 100
       reverseEngineering: 100
       #agents
@@ -544,7 +544,7 @@ soldiers:
       metallurgy: 0
       processing: 0
       hacking: 0
-      robotics: 10
+      robotics: 0
       diligence: 5
       alienTech: 0
       reverseEngineering: 0
@@ -600,7 +600,7 @@ soldiers:
       metallurgy: 10
       processing: 10
       hacking: 20
-      robotics: 20
+      robotics: 10
       diligence: 30
       reverseEngineering: 0
     armor: STR_XCOM_LABCOAT_UC
@@ -643,7 +643,7 @@ soldiers:
       biology: 0
       insight: 10
       data: 10
-      computers: 10
+      computers: 20
       tactics: 0
       materials: 10
       #psychology: 0
@@ -690,10 +690,9 @@ soldiers:
       biology: 10
       insight: 60
       data: 30
-      computers: 40
+      computers: 50
       tactics: 10
       materials: 40
-      #psychology: 10
       designing: 40
       alienTech: 0
       psionics: 0
@@ -702,10 +701,10 @@ soldiers:
       weaponry: 70
       efficiency: 80
       explosives: 70
-      microelectronics: 60
+      microelectronics: 70
       metallurgy: 70
       processing: 70
-      hacking: 60
+      hacking: 70
       robotics: 70
       diligence: 60
       reverseEngineering: 40
@@ -788,8 +787,121 @@ soldiers:
     soldierNames:
       - delete
       - SoldierNames/
-#Prisoner reqruits
 
+  - type: STR_ALLY_MILITARY_OFFICER
+    refNode: *STR_SOLDIER
+    roles: [0, 3] #SOLDIER AND SCIENTIST
+    costBuy: 60000
+    costSalary: 4000
+    value: 60
+    minStats:
+      #soldier
+      tu: 75
+      stamina: 60
+      health: 34
+      bravery: 40
+      reactions: 50
+      firing: 55
+      throwing: 45
+      strength: 40
+      melee: 50
+      psiStrength: 30
+      psiSkill: 0
+      mana: 0
+      #pilot - inherit from soldier
+      #agent
+      stealth: 5
+      perception: 10
+      charisma: 10
+      investigation: 5
+      deception: 0
+      interrogation: 0
+      #scientist
+      physics: 0
+      chemistry: 0
+      biology: 0
+      insight: 30
+      data: 0
+      computers: 0
+      tactics: 70
+      materials: 0
+      designing: 5
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 0
+      explosives: 0
+      efficiency: 20
+      microelectronics: 0
+      metallurgy: 0
+      processing: 0
+      hacking: 0
+      robotics: 0
+      diligence: 5
+      alienTech: 0
+      reverseEngineering: 0
+    maxStats:
+      #soldier
+      tu: 90
+      stamina: 75
+      health: 44
+      bravery: 60
+      reactions: 70
+      firing: 80
+      throwing: 70
+      strength: 60
+      melee: 70
+      psiStrength: 60
+      psiSkill: 0
+      mana: 0
+      #pilot - inherit from soldier
+      maneuvering: 0
+      missiles: 0
+      dogfight: 0
+      tracking: 0
+      cooperation: 0
+      beams: 0
+      synaptic: 0
+      gravity: 0
+      #agent
+      stealth: 20
+      perception: 30
+      charisma: 20
+      investigation: 20
+      deception: 5
+      interrogation: 10
+      #scientist
+      physics: 0
+      chemistry: 0
+      biology: 0
+      insight: 60
+      data: 0
+      computers: 0
+      tactics: 120
+      materials: 0
+      designing: 30
+      alienTech: 0
+      psionics: 0
+      xenolinguistics: 0
+      #engineer
+      weaponry: 10
+      explosives: 10
+      efficiency: 40
+      microelectronics: 10
+      metallurgy: 10
+      processing: 10
+      hacking: 20
+      robotics: 20
+      diligence: 30
+      reverseEngineering: 0
+    armor: STR_ALLY_MILITARY_OFFICER_ARMOR
+    armorForAvatar: STR_ALLY_MILITARY_OFFICER_ARMOR
+    femaleFrequency: 0 #TODO - we dont have sprite for lady
+    soldierNames:
+      - delete
+      - SoldierNames/
+
+#Prisoner reqruits
   - type: STR_RECRUITED_MALE
     refNode: *STR_SOLDIER
     roles: [-1] #ROLE_NONE

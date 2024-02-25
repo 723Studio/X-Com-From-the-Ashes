@@ -220,6 +220,7 @@ extraSprites:
       143: Resources/Armors/Xcom/BaseArmors/FlightSuit/bigob_FLIGHT_SUIT.png
       144: Resources/Armors/Xcom/BaseArmors/LabCoat/bigob_LABCOAT.png
       145: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/bigob_RESISTANCE_SUIT.png
+      146: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/bigob_ALLY_MILITARY_OFFICER.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -474,6 +475,7 @@ extraSprites:
       143: Resources/Armors/Xcom/BaseArmors/FlightSuit/floorob_FLIGHT_SUIT.png
       144: Resources/Armors/Xcom/BaseArmors/LabCoat/floorob_LABCOAT.png
       145: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/floorob_RESISTANCE_SUIT.png
+      146: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/floorob_ALLY_MILITARY_OFFICER.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -1652,6 +1654,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Xcom/Situational/CoatArmor/COAT.png
+  - type: ALLY_MILITARY_OFFICER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/ALLY_MILITARY_OFFICER.png
   - type: XCOM_ARMORED_VEST.PCK
     width: 512
     height: 720
@@ -2661,6 +2670,11 @@ extraSprites:
     fileSingle: Resources/Armors/Xcom/Situational/CoatArmor/Inventory/Coat_M.png
   - typeSingle: HUMAN_SOLDIER__7__LEATHER_COAT_F
     fileSingle: Resources/Armors/Xcom/Situational/CoatArmor/Inventory/Coat_F.png
+# Ally Military Officer
+  - typeSingle: HUMAN_SOLDIER__7__MILITARY_OFFICER_SUIT_M
+    fileSingle: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/Inventory/MilitaryOfficer_M.png
+  - typeSingle: HUMAN_SOLDIER__7__MILITARY_OFFICER_SUIT_F #TODO
+    fileSingle: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/Inventory/MilitaryOfficer_F.png
 # Armomr vest
   - typeSingle: HUMAN_SOLDIER__7__ARMORED_VEST_M
     fileSingle: Resources/Armors/Xcom/ArmorVest/Inventory/ArmorVest_M.png

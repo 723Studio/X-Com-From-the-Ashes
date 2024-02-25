@@ -1230,6 +1230,25 @@ mapScripts:
     - type: fillArea
 
 
+  - type: mulitaryUndergroundRnDdisguise
+    commands:
+    - type: addBlock #end
+      groups: [7]
+      size: [3, 2, 2]
+      rects:
+        - [0, 0, 3, 2]
+    - type: addBlock #mid
+      groups: [6]
+      size: [3, 2, 2]
+      rects:
+        - [0, 2, 3, 2]
+    - type: addBlock #lift with ally
+      groups: [10]
+      size: [3, 2, 2]
+      rects:
+        - [0, 4, 3, 2]
+    - type: fillArea
+      terrain: XBASE
   - type: mulitaryUndergroundRnD
     commands:
     - type: addBlock #end

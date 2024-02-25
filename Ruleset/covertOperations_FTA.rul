@@ -230,11 +230,11 @@ covertOperations:
     requiresBaseFunc: [HQ]
     baseChances: 60
     concealedItemsBonus: 5 #default 4
-    danger: 0
+    danger: 2
     costs: 430
     allowedArmor: *StandardXcomArmors
     instantSuccessDeployment:
-      STR_INFILTRATING_MILITARY_RND: 100 #TODO - add special deployment with disguised traitor
+      STR_INFILTRATING_MILITARY_RND_DISGUISE: 100
     trapChance: 100
     instantTrapDeployment:
       STR_INFILTRATING_MILITARY_RND: 100

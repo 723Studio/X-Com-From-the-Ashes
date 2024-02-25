@@ -4218,6 +4218,88 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets: *gangerMediumLoadout
 
+  - type: STR_INFILTRATING_MILITARY_RND_DISGUISE
+    race: STR_ARMY
+    width: 30
+    length: 60
+    height: 2
+    shade: 0
+    extendedObjectiveType: STR_ITEM_EXTRACTION
+    undercoverArmors: [STR_ALLY_MILITARY_OFFICER_ARMOR]
+    briefing:
+      textOffset: -16
+      background: SEWERS4.SCR
+      showTarget: false
+      showCraft: false
+      desc: STR_INFILTRATING_MILITARY_RND_DISGUISE_BRIEFING
+    terrains:
+      - OFFICE
+    script: mulitaryUndergroundRnDdisguise
+    battleScript: mulitaryUndergroundRnd
+    data:
+      - alienRank: 4 #STR_ARMY_FIELD_OFFICER
+        lowQty: 4
+        medQty: 5
+        highQty: 7
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_MILITARY_RIFLE
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_MILITARY_RIFLE_CLIP
+            - STR_GRENADE
+
   - type: STR_INFILTRATING_MILITARY_RND
     race: STR_ARMY
     width: 30
@@ -4225,7 +4307,6 @@ alienDeployments:
     height: 2
     shade: 0
     extendedObjectiveType: STR_ITEM_EXTRACTION
-    undercoverArmors: [STR_JUMPSUIT_UC] #TODO
     briefing:
       textOffset: -16
       background: SEWERS4.SCR

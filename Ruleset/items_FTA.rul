@@ -6371,7 +6371,7 @@ items:
       STR_ARMADILLO_CORPSE: [5, 1]
       STR_AMPHIBIAN_CORPSE: [5, 1]
       STR_FACEHUGGER_CORPSE: [5, 1]
-      STR_FRESH_ZOMBIE: [5, 1]
+      STR_FRESH_ZOMBIE_CORPSE: [5, 1]
     listOrder: 60020
   - type: STR_FARM_CATTLE_SAMPLE
     categories: [STR_LOOT]
@@ -7207,6 +7207,29 @@ items:
     recover: true
     recoverCorpse: false
     listOrder: 100530
+  - type: STR_ALLY_MILITARY_OFFICER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 32
+    bigSprite: 146
+    floorSprite: 146
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 30
+    recoveryPoints: -30
+    recover: true
+    recoverCorpse: false
+    listOrder: 100530
+  - type: STR_SPAWN_ALLY_MILITARY_OFFICER_AS_XCOM
+    spawnSoldier: STR_ALLY_MILITARY_OFFICER
+    bigSprite: 0
+    floorSprite: 302 #green
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+    listOrder: 100480
   - type: STR_SPAWN_RESISTANCE_SCIENTIST
     spawnSoldier: STR_SCIENTIST
     bigSprite: 0

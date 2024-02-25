@@ -896,8 +896,10 @@ en-US:
   STR_CULTISTS_DETENTION: "Cultists Detention"
   STR_CULTISTS_DETENTION_TRAP: "Cultists Detention"
   STR_CULTISTS_DETENTION_BRIEFING: "We are on the trail of a crime group that may not be as ordinary as it appears. They are most likely responsible for mysterious and unexplained disappearances of ordinary people. The general motive of these crimes cannot be identified. We need to detain and interrogate the suspects."
+  STR_INFILTRATING_MILITARY_RND_DISGUISE: "Infiltrating RnD Facility"
+  STR_INFILTRATING_MILITARY_RND_DISGUISE_BRIEFING: "Our agents managed to recruit an officer from a secret military base, convincing him to fight on our side against the alien invaders. Using his access level, he secretly led operatives to the lower floors of the facility; our task is to steal a prototype of the equipment being developed here. The guards on the level don't suspect treachery, but they will attack if they see our agents. If the guards raise the alarm, we can expect enemy reinforcements soon. To successfully complete the mission, you must deliver the objective to the entrance area and press the 'Abort Mission' icon."
   STR_INFILTRATING_MILITARY_RND: "Infiltrating RnD Facility"
-  STR_INFILTRATING_MILITARY_RND_BRIEFING: "With the help of bribery and intimidation of some low-ranking army officials, X-Com agents manage to infiltrate a secret military installation where advanced weaponry is being developed. Our operatives took an elevator down to the underground floors of the facility; our task is to steal a prototype of the equipment being developed here. We must proceed with extreme caution - if the guards spot any sign of our presence here they will raise the alarm, which could attract reinforcements from adjacent base sectors. To successfully complete the mission, you must deliver the prototype to the elevator and press the 'Abort Mission' icon."
+  STR_INFILTRATING_MILITARY_RND_BRIEFING: "With the help of bribery and intimidation of some low-ranking army officials, X-Com agents manage to infiltrate a secret military installation where advanced weaponry is being developed. Our operatives took an elevator down to the underground floors of the facility; our task is to steal a prototype of the equipment being developed here. We must proceed with extreme caution - if the guards spot any sign of our presence here they will raise the alarm, which could attract reinforcements from adjacent base sectors. To successfully complete the mission, you must deliver the objective to the elevator and press the 'Abort Mission' icon."
   STR_MIB_HIDEOUT_MEDIUM: "M.I.B. Hideout"
   STR_MIB_HIDEOUT_SMALL: "M.I.B. Hideout"
   STR_MIB_HIDEOUT_ALERT: "M.I.B. HIDEOUT DISCOVERED"
@@ -1506,6 +1508,9 @@ en-US:
   STR_RESISTANCE_SCIENTIST_ARMOR: "Scientist"
   STR_RESISTANCE_SCIENTIST_CORPSE: "Scientist Corpse"
   STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION: "Scientist Corpse"
+  STR_ALLY_MILITARY_OFFICER:  "Military Officer"
+  STR_ALLY_MILITARY_OFFICER_ARMOR: "Military Officer"
+  STR_ALLY_MILITARY_OFFICER_CORPSE: "Military Officer Corpse"
   STR_RESISTANCE_RADIO: "Resistance Radio"
   STR_RESISTANCE_RADIO_ARMOR: "Resistance Radio"
   STR_RESISTANCE_RADIO_REMAINS: "Resistance Radio Remains"
@@ -2743,6 +2748,7 @@ en-US:
   SWARMIDS_CORPSE_4: SWARMIDS_CORPSE_4
   STR_SPAWN_RESISTANCE_AGENT: STR_SPAWN_RESISTANCE_AGENT
   STR_SPAWN_RESISTANCE_SOLDIER: STR_SPAWN_RESISTANCE_SOLDIER
+  STR_SPAWN_ALLY_MILITARY_OFFICER_AS_XCOM: STR_SPAWN_ALLY_MILITARY_OFFICER_AS_XCOM
   STR_SPAWN_RESISTANCE_SCIENTIST: STR_SPAWN_RESISTANCE_SCIENTIST
   STR_SPAWN_RESISTANCE_RADIO: STR_SPAWN_RESISTANCE_RADIO
   STR_SPAWN_RESISTANCE_COMPUTER: STR_SPAWN_RESISTANCE_COMPUTER
