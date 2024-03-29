@@ -2089,7 +2089,7 @@ armors:
     spriteFaceColor: *SpriteFaceColorAgent
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
-    #customArmorPreviewIndex: 5
+    customArmorPreviewIndex: 5
     storeItem: STR_RESISTANCE_SUITE
     corpseBattle:
       - STR_CORPSE_RESISTANCE_SUITE
@@ -2355,8 +2355,8 @@ armors:
     spriteFaceColor: *SpriteFaceColorAgent
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
-    customArmorPreviewIndex: 4
-    storeItem: STR_NONE
+    customArmorPreviewIndex: 9
+    storeItem: STR_MILITARY_OFFICER_SUIT
     corpseBattle:
       - STR_ALLY_MILITARY_OFFICER_CORPSE
     visibilityAtDark: 10
@@ -2484,7 +2484,7 @@ armors:
     spriteFaceColor: *SpriteFaceColorAgent
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
-    #customArmorPreviewIndex: 8
+    customArmorPreviewIndex: 8
     storeItem: STR_ARMORED_VEST
     weight: 20
     corpseBattle:
@@ -2512,7 +2512,23 @@ armors:
       health:
         stunNormalized: -0.08
     overKill: 1.5
-    damageModifier: *NoArmorHumanResistance
+    damageModifier: &ConventionalLightArmorHumanResistance
+      - 1.0 #0 - None - special
+      - 0.9 #1 - AP - kinetic
+      - 1.0 #2 - Incendiary
+      - 1.0 #3 - High Explosive - Explosive
+      - 1.0 #4 - Laser
+      - 1.1 #5 - Plasma
+      - 1.0 #6 - Stun
+      - 1.0 #7 - Melee - Cutting
+      - 1.2 #8 - Acid
+      - 4.0 #9 - Smoke - Choke
+      - 0.0 #10 - EMP
+      - 1.0 #11 - Electric
+      - 1.0 #12 - Psi
+      - 1.1 #13 - Warp
+      - 1.0 #14 - Pressure
+      - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED_TRAINED
     units:
       - STR_SOLDIER
@@ -2521,6 +2537,77 @@ armors:
       - STR_AGENT
       - STR_SCIENTIST
       - STR_ENGINEER
+    loftempsSet: [ 3 ]
+
+  - type: STR_DRONE_SCOUT_ARMOR
+    spriteSheet: DRONE_SCOUT.PCK
+    #spriteInv: DRONE
+    customArmorPreviewIndex: 10
+    weight: -10
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_DRONE_SCOUT_CORPSE
+    visibilityAtDark: 15
+    personalLight: 0
+    heatVision: 15
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    stats:
+      tu: 15
+      stamina: 20
+      reactions: 10
+    frontArmor: 25
+    sideArmor: 25
+    rearArmor: 25
+    underArmor: 15
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 4
+    size: 1
+    createsMeleeThreat: false
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.10
+    psiDefence: &MachineDynamicPsiDefence
+      flatHundred: 10.0
+    hackingDefense: 30
+    allowsRunning: false
+    allowsKneeling: false
+    instantWoundRecovery: true
+    overKill: 1.5
+    damageModifier:
+      - 1.0 #0 - None - special
+      - 0.9 #1 - AP - kinetic
+      - 0.4 #2 - Incendiary
+      - 0.8 #3 - High Explosive - Explosive
+      - 1.1 #4 - Laser
+      - 1.2 #5 - Plasma
+      - 0.2 #6 - Stun
+      - 0.4 #7 - Melee - Cutting
+      - 3.0 #8 - Acid
+      - 0.0 #9 - Smoke - Choke
+      - 5.0 #10 - EMP
+      - 4.0 #11 - Electric
+      - 0.0 #12 - Psi
+      - 1.5 #13 - Warp
+      - 0.1 #14 - Pressure
+      - 0.0 #15 - Bio
+    units:
+      - STR_DRONE_CONTROL_UNIT
+    builtInWeapons:
+      - INV_NULL_HAND_L
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    allowedItemCategories:
+      - 
     loftempsSet: [ 3 ]
 
 extended:

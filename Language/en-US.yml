@@ -76,8 +76,10 @@ en-US:
   STR_SOLDIER_INFO: "Soldiers"
   STR_AGENT_INFO: "Agents"
   STR_PILOT_INFO: "Pilots"
+  STR_ROBOT: "Robot"
   STR_SCIENTIST_INFO: "Scientists"
   STR_ENGINEER_INFO: "Engineers"
+  STR_ROBOT_INFO: "Robots"
   STR_SOLDIER_LIST: "Base Personnel"
   STR_ROLE_UC: "ROLE"
   STR_ROLE: "Role"
@@ -283,6 +285,7 @@ en-US:
   STR_INTERROGATION_SHORT: "Interrogation>{ALT}{0}"
   STR_INTERROGATION_ABBREV: "INT"
   STR_BASE_UC: "BASE"
+  STR_NOT_ENOUGH_RELAY_POWER: "Relay channel capacity is insufficient!"
   STR_MONTHLY_EXPERIENCE: "Monthly Experience"
   STR_RECOMMENDED_ROLES: "Recommended staff"
   STR_ALLOCATE_SCIENTISTS: "Allocate"
@@ -459,6 +462,8 @@ en-US:
   STR_GLOBAL_DETECTION: "Global detection"
   STR_SOLDIERS_RECRUITED_UC: "PERSONNEL RECRUITED"
   STR_SOLDIERS_LOST_UC: "PERSONNEL LOST"
+  STR_CANNOT_PLACE_ITEM_WHILE_IN_COMBAT: "CAN NOT CHANGE EQUIPMENT WHILE IN COMBAT!"
+  STR_CANNOT_USE_THIS_ITEM: "CAN NOT USE THIS ITEM!"
   STR_ENGINE_IS_COOLING: "Engine is cooling down>{ALT}{0}"
   STR_ACTIVE_ENEMIES_ONBOARD: "Can't abort while enemies in exit area!"
   STR_USE_HACKING_TOOL: "Use Hacking Tool"
@@ -548,6 +553,8 @@ en-US:
   STR_NO_TRANSFORMATION: "-"
   STR_TRANSFORMING_FINISHED: "Special Training Finished{NEWLINE}at {0}"
   STR_MELEE_SHORT: "Ml>{ALT}{0}"
+  STR_ENGINE_COOLDOWN: "ENGINE COOLDOWN>{ALT}{0}{ALT}"
+  STR_RELAY_POWER: "RELAY POWER>{ALT}{0}{ALT}"
   #mana stuff
   STR_MANA_POOL: "MANA POOL"
   STR_MANA_MISSING: "MANA MISSING"
@@ -1609,6 +1616,8 @@ en-US:
 #manufacturing
   STR_EQUIPMENT: "Equipment"
   STR_COVERT_TOOLS: "Covert Tools"
+  STR_ROBOT_EQUIPMENT: "Robot Equipment"
+  STR_DRONE_CONTROLLER_MANUFACTURING: "Drone Manufacturing"
   STR_ACCESSORIES: "Accessories"
   STR_LOOT: "Loot"
   STR_JUNK: "Junk"
@@ -1977,6 +1986,15 @@ en-US:
   STR_CORPSE_LABCOAT: "X-Com Operative Corpse"
   STR_CORPSE_ENGINEERSUIT: "X-Com Operative Corpse"
   STR_RESISTANCE_SUIT: "Resistance Suit"
+  STR_CORPSE_RESISTANCE_SUITE: "Resistance Agent Corps"
+  STR_MILITARY_OFFICER_SUIT: "Military Officer Uniform"
+  STR_DRONE_CONTROL_UNIT: "Drone Control Unit"
+  STR_DRONE_SCOUT_SMOKE_WEAPON: "Drone Smoke Launcher"
+  STR_DRONE_SMOKE_AMMO: "Drone Smoke Pellets"
+  STR_DRONE_SCOUT: "Drone/Scout"
+  STR_DRONE_SCOUT_ARMOR: "Drone/Scout"
+  STR_DRONE_SCOUT_CORPSE: "Drone Wreck"
+  STR_DRONE_SCOUT_UFOPEDIA: "This small rugged drone is designed for scout and reconnaissance. Although lacking in offensive weaponry or heavy armor, it is fast and allows ground units to quickly scout out enemy positions and act as a spotter without risk to X-Com personnel."
 
 #crafts
   STR_LIGHT_MISSILES: "Light Missiles"
@@ -2020,11 +2038,19 @@ en-US:
   STR_XCOM_FUNDAMENTAL_STUDIES: "X-COM Fundamental Studies"
   STR_XCOM_FUNDAMENTAL_STUDIES_DESCRIPTION: "Having decrypted Ufopedia, we now have access to our fundamental research. Alas, due to lack of funding, most of it was conducted (or at least leaded) by Dr. Meyer personally, and we will need some time to analyze his notes. Perhaps we should devote resources to this.{NEWLINE}{ALT}New research project available."
   STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA: "We were unable to obtain any valuable and reliable information about the aliens, their nature, or to collect samples of their technology. Therefore, XCOM scientists were focused on theoretical solutions to complex problems in a variety of fields, from the natural sciences to military tactics. However, due to a dramatic decrease in funding and drastic staff reductions, all projects were eventually frozen. Now we have an opportunity to carry out some studies, but given the limited capacity, it is important to properly prioritize our efforts."
+  STR_ADVANCED_WARFARE: "Advanced Warfare"
+  STR_ADVANCED_WARFARE_UFOPEDIA: "The new reality that came after the official shutdown of the project dictates new tactics on the battlescape. The value of a well-trained soldier is tremendously increasing for us. The requirements for stealthy operations, the adoption of the Hit-and-Run behavior, impose severe limitations on the size of the squads we can deploy on missions. Under these conditions, we need to intensify the development and application of the most advanced technologies and methods of training soldiers to maximize the combat potential and versatility of a small unit of our fighters."
   STR_SOLDIER_SPECS: "Soldier Specializations"
   STR_SOLDIER_SPECS_UFOPEDIA: "Specialized training for X-COM soldiers can develop a variety of combat and tactical skills. After receiving their first promotion, each soldier can gain a specialty in one of several different areas. Successful completion of a specialty course not only improves a soldier's performance, but also gives them abilities appropriate to their specialty. A soldier can have only one specialization."
   STR_ADDITIONAL_COURSES: "Additional Courses"
   STR_ADDITIONAL_COURSES_UFOPEDIA: "We have developed several additional training courses for our soldiers:{NEWLINE}{ALT}*{ALT}Unarmed Combat{NEWLINE}{ALT}*{ALT}Rapid deployment{NEWLINE}These courses are available for soldiers and don't replace their specialization, but provide additional traits. In addition, we have developed a basic military training course for our non-combat personnel and agent training cource."
-  STR_FIREARMS_STUDY: "Firearms study"
+  STR_SUPPORT_DRONES: "Support Drones"
+  STR_SUPPORT_DRONES_UFOPEDIA: "Remote-controlled robots and drones are an important component of assault squads, performing reconnaissance roles without exposing personnel to risk. In addition, drones can carry utility and small arms to support the squad. A drone unit consists of a command and control complex and the drone itself. The characteristics of the unit are made up of the characteristics of the control complex and the drone - by improving the drone models and control complexes, combining compatible models with each other we can achieve different combinations of characteristics. The drone is controlled and monitored by an officer from the base headquarters, our dropship provides relay functions. The availability and maximum number of drone control channels is specified in the craft specifications, it can be increased by installing additional systems.{NEWLINE}Obviously, we can't rely on commercial or military drones - their command channel could easily be compromised by our adversaries, which could jeopardize both the operation and our entire project. We need to design our own equipment and establish production."
+  STR_DRONES_REMOTE_CONTROL: "Drone Control Systems"
+  STR_DRONES_REMOTE_CONTROL_UFOPEDIA: "Remote control of a drone from the base is a non-trivial task, given the high requirements for secrecy, low latency, long distances and quality of transmitted video information. Obviously, a powerful transmitter cannot be installed on the drone itself, so the equipment on the landing craft will act as a retransmitter. Unfortunately, this scheme limits the use of drones to landing missions only, they cannot be used in covert operations. For communication between the ship and the base, we use a hacked high-speed channel of a low-orbit group of military satellites. Data in the channel is transmitted on dynamically changing frequencies, encryption keys are changed in a random interval from one to three minutes. The keys themselves and the interval of their change are transmitted to the craft directly from the base at low radio frequencies, which can be repeatedly reflected from the ionosphere and the earth, overcoming huge distances.{NEWLINE}This method is not suitable for the transfer of large amounts of data, but for the transfer of encryption keys, it is quite sufficient. Of course, the signal transmitted from the base is also encrypted, and the parameters for decryption are put into the ship's onboard computer before departure. Not all landing ships available to us have all the necessary equipment, so we have developed a modernization kit that can be connected to the ship's system."
+  STR_DRONES_MANUFACTURING: "Drone Manufacturing"
+  STR_DRONES_MANUFACTURING_UFOPEDIA: "We have sufficient resources to produce both the drones themselves, designed for direct support of assault troops, and remote control systems. For the basic model of the support drone, we have chosen a crawler chassis equipped with wide-angle and infrared cameras on a moving arm. The chassis has a modular design, in the expansion slot can be installed various additional equipment to perform more specific tasks and expand the combat application of the drone. By default, a manipulator capable of moving light objects is set as the utility slot."
+  STR_FIREARMS_STUDY: "Firearms Study"
   STR_FIREARMS_STUDY_UFOPEDIA: "Almost from the very invention, firearms were the most effective infantry weapons. Modern small arms have approached their limit of practical effectiveness - since the late 70s, new models differ slightly from their predecessors in basic parameters. The marginal increase in one or more parameters requires a radical revision of the design and material of weapons and ammunition, as well as the introduction of innovative technologies. Such developments are underway in some countries, and the Ufopedia archives contain information about interesting super-secret developments. However, there were no own developments in this area."
   STR_SMART_WEAPONS: "Smart Weapons"
   STR_SMART_WEAPONS_UFOPEDIA: "One of the most promising areas that can radically reduce the aiming time and accuracy is the development of the so-called 'Smart Weapons'. This concept implies the introduction of an advanced targeting system based on machine learning, automatic correction of the fire direction and the bullet's trajectory adjustment. The computer fire control system must perform all the necessary ballistic calculations on its own, allowing the soldier to focus on target designation and conduct tactical actions."
@@ -2758,7 +2784,7 @@ en-US:
   STR_SWARMID_DESERT_TERROR: STR_SWARMID_DESERT_TERROR
   STR_SMALL_GROUND_CONVOY: STR_SMALL_GROUND_CONVOY
   STR_MEDIUM_GROUND_CONVOY: STR_MEDIUM_GROUND_CONVOY
-
+  
   
   STR_RESISTANCE_FIRST_HELP: STR_RESISTANCE_FIRST_HELP
   STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED: STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED
@@ -2818,3 +2844,19 @@ en-US:
   STR_CRIMINAL_RECRUITING_PREREQ: STR_CRIMINAL_RECRUITING_PREREQ
   STR_WORKSHOP_PREREQ: STR_WORKSHOP_PREREQ
   PAL_BASE_INFO: PAL_BASE_INFO
+  INV_NULL_HAND_L: INV_NULL_HAND_L
+  INV_NULL_HAND_R: INV_NULL_HAND_R
+  INV_NULL_2X1_LEFT_LEG: INV_NULL_2X1_LEFT_LEG
+  INV_NULL_2X1_RIGHT_LEG: INV_NULL_2X1_RIGHT_LEG
+  INV_NULL_2X1_LEFT_SHOULDER: INV_NULL_2X1_LEFT_SHOULDER
+  INV_NULL_2X1_RIGHT_SHOULDER: INV_NULL_2X1_RIGHT_SHOULDER
+  INV_NULL_1X1_LEFT_HAND: INV_NULL_1X1_LEFT_HAND
+  INV_NULL_3X3_BACK_PACK: INV_NULL_3X3_BACK_PACK
+  INV_NULL_2X3_BACK_PACK: INV_NULL_2X3_BACK_PACK
+  INV_NULL_4X2_BELT: INV_NULL_4X2_BELT
+  INV_NULL_1X2_QD_SLOT: INV_NULL_1X2_QD_SLOT
+  INV_NULL_1X1_QD_SLOT: INV_NULL_1X1_QD_SLOT
+  INV_NULL_1X1_RIGHT_SHOULDER: INV_NULL_1X1_RIGHT_SHOULDER
+  INV_NULL_1X1_LEFT_SHOULDER: INV_NULL_1X1_LEFT_SHOULDER
+  INV_NULL_1X1_RIGHT_LEG: INV_NULL_1X1_RIGHT_LEG
+  INV_NULL_1X1_LEFT_LEG: INV_NULL_1X1_LEFT_LEG

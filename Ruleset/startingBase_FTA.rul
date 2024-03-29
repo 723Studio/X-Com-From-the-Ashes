@@ -39,6 +39,7 @@ startingBase:
       x: 3
       y: 3
   items:
+    STR_DRONE_SMOKE_AMMO: 60
     STR_POLICE_BATON: 3
     STR_COMBAT_KNIFE: 2
     STR_TASER: 2

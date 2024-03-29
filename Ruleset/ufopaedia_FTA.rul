@@ -366,6 +366,31 @@ ufopaedia:
     text: STR_ABANDONED_BASE_UFOPEDIA
     listOrder: 152
 
+  - id: STR_ADVANCED_WARFARE
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_ADVANCED_WARFARE
+    text: STR_ADVANCED_WARFARE_UFOPEDIA
+    listOrder: 60
+  - id: STR_DRONES_REMOTE_CONTROL
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_DRONES_REMOTE_CONTROL
+    text: STR_DRONES_REMOTE_CONTROL_UFOPEDIA
+    listOrder: 60
+  - id: STR_DRONES_MANUFACTURING
+    type_id: 7
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    text_width: 170
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_DRONES_MANUFACTURING
+    text: STR_DRONES_MANUFACTURING_UFOPEDIA
+    listOrder: 60
   - id: STR_SOLDIER_SPECS
     type_id: 7
     image_id: COMMANDO_CPAL.SPK

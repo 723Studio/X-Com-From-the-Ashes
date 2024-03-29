@@ -40,7 +40,7 @@ extraSprites:
   - typeSingle: UnitWarnedIndicator
     fileSingle: Resources/UI/Warn.png
   - type: CustomArmorPreviews
-    width: 71
+    width: 132
     height: 32
     subX: 12
     subY: 20
@@ -131,6 +131,7 @@ extraSprites:
       1260: Resources/Weapons/Projectiles/Harpoon_bullet.png #36
       1295: Resources/Weapons/Projectiles/Purple_Fireball_bullet.png #37
       1330: Resources/Weapons/Projectiles/Puprle_spit_bullet.png #38
+      1365: Resources/Weapons/Projectiles/DroneTaser_bullet.png #39
   - type: HIT.PCK #MeleeAnimations, index step 4
     height: 40
     width: 128
@@ -221,6 +222,8 @@ extraSprites:
       144: Resources/Armors/Xcom/BaseArmors/LabCoat/bigob_LABCOAT.png
       145: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/bigob_RESISTANCE_SUIT.png
       146: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/bigob_ALLY_MILITARY_OFFICER.png
+      147: Resources/Armors/Xcom/Robots/SupportDrones/DroneScout/bigob_DroneScout_Corpse.png
+      151: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScout/BigOb_AlloyDroneScout_Corpse.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -424,6 +427,16 @@ extraSprites:
       499: Resources/MiscItems/bigob_Jewel.png
       500: Resources/MiscItems/bigob_StoneOfAtlantis.png
       501: Resources/MiscItems/bigob_Drugs.png
+      502: Resources/Weapons/Earthbound/Xcom/hwp/bigob_DroneSmoke_Weapon.png
+      503: Resources/Weapons/Earthbound/Xcom/hwp/bigob_DroneScanner_Weapon.png
+      504: Resources/Weapons/Earthbound/Xcom/hwp/bigob_DroneTaser_Weapon.png
+      600: Resources/UI/Blanks/Null_Void_transparent_3x3.png
+      601: Resources/UI/Blanks/Null_Void_2x1.png
+      602: Resources/UI/Blanks/Null_Void_4x2.png
+      603: Resources/UI/Blanks/Null_Void_1x2.png
+      604: Resources/UI/Blanks/Null_Void_1x1.png
+      605: Resources/UI/Blanks/Null_Void_2x3.png
+      606: Resources/UI/Blanks/Null_Void_3x3.png
 
   - type: FLOOROB.PCK
     files:
@@ -476,6 +489,14 @@ extraSprites:
       144: Resources/Armors/Xcom/BaseArmors/LabCoat/floorob_LABCOAT.png
       145: Resources/Armors/Xcom/BaseArmors/ResistanceSuit/floorob_RESISTANCE_SUIT.png
       146: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/floorob_ALLY_MILITARY_OFFICER.png
+      147: Resources/Armors/Xcom/Robots/SupportDrones/DroneScout/floorob_DroneScout_Corpse.png
+      148: Resources/Armors/Xcom/Robots/SupportDrones/DroneScanner/FloorOb_DroneScanner_Corpse.png
+      149: Resources/Armors/Xcom/Robots/SupportDrones/DroneMedikit/FloorOb_DroneMedikit_Corpse.png
+      150: Resources/Armors/Xcom/Robots/SupportDrones/DroneTaser/FloorOb_DroneTaser_Corpse.png
+      151: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScout/FloorOb_AlloyDroneScout_Corpse.png
+      152: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScanner/FloorOb_AlloyDroneScanner_Corpse.png
+      153: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneMedikit/FloorOb_AlloyDroneMedikit_Corpse.png
+      154: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneTaser/FloorOb_AlloyDroneTaser_Corpse.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -1668,6 +1689,63 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Xcom/ArmorVest/ARMORED_VEST.png
+  - type: DRONE_SCOUT.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/DroneScout/DRONE_SCOUT.png
+
+  - type: DRONE_SCANNER.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/DroneScanner/SpriteSheet_DroneScanner.png
+  - type: DRONE_MEDIKIT.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/DroneMedikit/SpriteSheet_DroneMedikit.png
+  - type: DRONE_TASER.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/DroneTaser/SpriteSheet_DroneTaser.png
+  - type: ALLOY_DRONE_SCOUT.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScout/SpriteSheet_AlloyDroneScout.png
+  - type: ALLOY_DRONE_SCANNER.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScanner/SpriteSheet_AlloyDroneScanner.png
+  - type: ALLOY_DRONE_MEDIKIT.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneMedikit/SpriteSheet_AlloyDroneMedikit.png
+  - type: ALLOY_DRONE_TASER.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneTaser/SpriteSheet_AlloyDroneTaser.png
 
 ### PAPERDOLL LAYERS ###
 # Human nude
@@ -2673,7 +2751,7 @@ extraSprites:
 # Ally Military Officer
   - typeSingle: HUMAN_SOLDIER__7__MILITARY_OFFICER_SUIT_M
     fileSingle: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/Inventory/MilitaryOfficer_M.png
-  - typeSingle: HUMAN_SOLDIER__7__MILITARY_OFFICER_SUIT_F #TODO
+  - typeSingle: HUMAN_SOLDIER__7__MILITARY_OFFICER_SUIT_F
     fileSingle: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/Inventory/MilitaryOfficer_F.png
 # Armomr vest
   - typeSingle: HUMAN_SOLDIER__7__ARMORED_VEST_M

@@ -295,13 +295,21 @@ research:
     listOrder: 100
 
 #tactics
-  - name: STR_SOLDIER_SPECS
+  - name: STR_ADVANCED_WARFARE
     cost: 500
     stats:
       tactics: 100
     points: 10
     dependencies:
       - STR_XCOM_FUNDAMENTAL_STUDIES
+    listOrder: 10
+  - name: STR_SOLDIER_SPECS
+    cost: 500
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_ADVANCED_WARFARE
     listOrder: 10
   - name: STR_SNIPER_TRAINING
     cost: 400
@@ -359,6 +367,36 @@ research:
     dependencies:
       - STR_SOLDIER_SPECS
     listOrder: 10
+
+  - name: STR_SUPPORT_DRONES
+    cost: 500
+    stats:
+      tactics: 100
+    points: 10
+    dependencies:
+      - STR_ADVANCED_WARFARE
+    listOrder: 10
+  - name: STR_DRONES_REMOTE_CONTROL
+    cost: 900
+    stats:
+      computers: 100
+      designing: 100
+    points: 10
+    dependencies:
+      - STR_ADVANCED_WARFARE
+      - STR_HIGH_TECH_MANUFACTURING_POSTREQ
+    listOrder: 10
+  - name: STR_DRONES_MANUFACTURING
+    cost: 700
+    stats:
+      tactics: 120
+      designing: 80
+    points: 10
+    dependencies:
+      - STR_SUPPORT_DRONES
+      - STR_HIGH_TECH_MANUFACTURING_POSTREQ
+    listOrder: 10
+
 
 #high energy study
   - name: STR_ENERGY_WEAPONS

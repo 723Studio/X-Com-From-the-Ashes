@@ -901,6 +901,52 @@ soldiers:
       - delete
       - SoldierNames/
 
+  - type: STR_DRONE_CONTROL_UNIT
+    requires:
+      - STR_DRONES_MANUFACTURING
+    costSalary: 1000
+    transferTime: 72
+    minStats: &AIStats
+      tu: 50
+      stamina: 120
+      health: 15
+      bravery: 0
+      reactions: 0
+      firing: 40
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 0
+    maxStats: *AIStats
+    statCaps: *AIStats
+    trainingStatCaps: &AITrainingStatCaps
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 0
+    armor: STR_DRONE_SCOUT_ARMOR
+    standHeight: 6
+    kneelHeight: 6
+    femaleFrequency: 0
+    soldierNames:
+      - AIName/
+    rankStrings:
+    - STR_DRONE_SCOUT
+    deathMale: 23
+    deathFemale: 23
+    allowPromotion: false
+    flagOffset: 888
+
 #Prisoner reqruits
   - type: STR_RECRUITED_MALE
     refNode: *STR_SOLDIER

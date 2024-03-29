@@ -5474,6 +5474,7 @@ items:
     listOrder: 25020
   - type: STR_FIRE_EXTINGUISHER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
+    landOnly: true
     size: 0.2
     costBuy: 140
     costSell: 90
@@ -5534,9 +5535,47 @@ items:
     #Gun Butt segment end
     attraction: 15
     listOrder: 25030
-    landOnly: true
 
-#armor
+#support drones
+  - type: STR_DRONE_SMOKE_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    requires:
+      - STR_DRONES_MANUFACTURING
+    size: 2
+    costSell: 45000
+    weight: 7
+    bigSprite: 502
+    bulletSprite: 4
+    fireSound: 187
+    compatibleAmmo:
+      - STR_DRONE_SMOKE_AMMO
+    accuracySnap: 100
+    tuSnap: 33
+    battleType: 1
+    canBeEquippedInBattle: false
+    arcingShot: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 10
+    listOrder: 1070
+  - type: STR_DRONE_SMOKE_AMMO
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT]
+    landOnly: true
+    requires:
+      - STR_DRONES_MANUFACTURING
+    size: 0.05
+    costSell: 600
+    transferTime: 48
+    weight: 3
+    floorSprite: 12
+    hitAnimation: 88
+    power: 50
+    canBeEquippedInBattle: false
+    damageType: 9
+    battleType: 2
+    clipSize: 4
+    listOrder: 25030
 
 #built-in weapons
   - type: STR_UNARMED
@@ -7453,6 +7492,12 @@ items:
     costBuy: 30000
     costSell: 26000
     listOrder: 16850
+  - type: STR_MILITARY_OFFICER_SUIT
+    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    size: 1.1
+    costBuy: 30000
+    costSell: 26000
+    listOrder: 16850
   - type: STR_CORPSE_FLIGHTSUIT
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -7524,6 +7569,163 @@ items:
     costBuy: 2200
     costSell: 1300
     listOrder: 100670
+  - type: STR_DRONE_SCOUT_CORPSE
+    categories: [STR_CORPSES]
+    size: 2
+    weight: 40
+    battleType: 11
+    bigSprite: 147
+    floorSprite: 147
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false #fixme - drone repaire transformation?
+    listOrder: 4990
+
+# blanks
+  - type: INV_NULL_HAND_L
+    weight: 0
+    bigSprite: 600
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    recover: false
+  - type: INV_NULL_HAND_R
+    weight: 0
+    bigSprite: 600
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    recover: false
+  - type: INV_NULL_2X1_LEFT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_LEG
+    recover: false
+  - type: INV_NULL_2X1_RIGHT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_LEG
+    recover: false
+  - type: INV_NULL_2X1_LEFT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_SHOULDER
+    recover: false
+  - type: INV_NULL_2X1_RIGHT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_SHOULDER
+    recover: false
+  - type: INV_NULL_1X1_LEFT_HAND
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    recover: false
+  - type: INV_NULL_3X3_BACK_PACK
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 606
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: INV_NULL_2X3_BACK_PACK
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 605
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: INV_NULL_4X2_BELT
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 602
+    invWidth: 4
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_BELT
+    recover: false
+  - type: INV_NULL_1X2_QD_SLOT
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 603
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_QD_SLOT
+    recover: false
+  - type: INV_NULL_1X1_QD_SLOT
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_QD_SLOT
+    recover: false
+  - type: INV_NULL_1X1_RIGHT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_SHOULDER
+    recover: false
+  - type: INV_NULL_1X1_LEFT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_SHOULDER
+    recover: false
+  - type: INV_NULL_1X1_RIGHT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_LEG
+    recover: false
+  - type: INV_NULL_1X1_LEFT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_LEG
+    recover: false
+
 extended:
   tags:
     RuleItem:
