@@ -148,22 +148,6 @@ eventScripts:
     executionOdds: 10
     minDifficulty: 4
     maxDifficulty: 4
-  - type: improvisedGrenadeTinkeringScript
-    oneTimeSequentialEvents: [STR_IMPROVISED_GRENADE_TINKERING]
-    researchTriggers:
-      STR_IMPROVISED_GRENADE: false
-      STR_ENGINEER_STATUS_REPORT: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 20
-    maxDifficulty: 3
-  - type: improvisedSmokeGrenadeScript
-    oneTimeSequentialEvents: [STR_IMPROVISED_SMOKE_GRENADE_TINKERING]
-    researchTriggers:
-      STR_IMPROVISED_GRENADE: true
-      STR_IMPROVISED_SMOKE_GRENADE: false
-      STR_ENGINEER_STATUS_REPORT: true
-    allowedProcessor: 2 #xcom
-    executionOdds: 15
   - &katanaTinkeringScript
     type: katanaTinkeringScript
     oneTimeSequentialEvents: [STR_KATANA_TINKERING]

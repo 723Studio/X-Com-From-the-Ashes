@@ -483,7 +483,7 @@ manufacture:
   - name: STR_IMPROVISED_GRENADE
     category: STR_EQUIPMENT
     requires:
-      - STR_IMPROVISED_GRENADE
+      - STR_IMPROVISED_GRENADES
     stats:
       explosives: 100
     requiredItems:
@@ -497,7 +497,7 @@ manufacture:
   - name: STR_IMPROVISED_SMOKE_GRENADE
     category: STR_EQUIPMENT
     requires:
-      - STR_IMPROVISED_SMOKE_GRENADE
+      - STR_IMPROVISED_GRENADES
     stats:
       explosives: 100
     requiredItems:
@@ -505,6 +505,20 @@ manufacture:
     space: 1
     time: 14
     cost: 25
+    producedItems:
+      STR_IMPROVISED_SMOKE_GRENADE: 1
+    listOrder: 220030
+  - name: STR_IMPROVISED_FLASHBANG_GRENADE
+    category: STR_EQUIPMENT
+    requires:
+      - STR_IMPROVISED_GRENADES
+    stats:
+      explosives: 100
+    requiredItems:
+      STR_CHEMICALS: 2
+    space: 1
+    time: 20
+    cost: 30
     producedItems:
       STR_IMPROVISED_SMOKE_GRENADE: 1
     listOrder: 220030
@@ -595,8 +609,8 @@ manufacture:
     requires:
       - STR_DRONES_MANUFACTURING
     stats:
-      robotics: 80
-      microelectronics: 120
+      robotics: 100
+      microelectronics: 100
     space: 0
     time: 1200
     cost: 16000
@@ -606,7 +620,22 @@ manufacture:
       STR_HIGH_TECH_PARTS: 32
     spawnedPersonType: STR_DRONE_CONTROL_UNIT
     listOrder: 1450
-
+  - name: STR_DRONE_LAUNCHER
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONES_MANUFACTURING
+    stats:
+      robotics: 100
+      microelectronics: 100
+    space: 0
+    time: 1200
+    cost: 16000
+    requiresBaseFunc: [WORK]
+    requiredItems:
+      STR_SPARE_PARTS: 40
+      STR_HIGH_TECH_PARTS: 32
+    spawnedPersonType: STR_DRONE_CONTROL_UNIT
+    listOrder: 1450
 
 
 #components

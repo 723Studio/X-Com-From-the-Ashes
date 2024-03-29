@@ -260,6 +260,14 @@ research:
     listOrder: 80
   - name: STR_IMPROVISED_MANUFACTURING_POSTREQ
     hidden: true
+  - name: STR_IMPROVISED_GRENADES
+    cost: 150
+    stats:
+      designing: 100
+    points: 100
+    dependencies:
+      - STR_IMPROVISED_MANUFACTURING_POSTREQ
+    listOrder: 80
   - name: STR_HIGH_TECH_MANUFACTURING
     cost: 250
     stats:

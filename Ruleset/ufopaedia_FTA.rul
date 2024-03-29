@@ -242,6 +242,14 @@ ufopaedia:
       - STR_IMPROVISED_MANUFACTURING
     text: STR_IMPROVISED_MANUFACTURING_UFOPEDIA
     listOrder: 110
+  - id: STR_IMPROVISED_GRENADES
+    type_id: 7
+    section: STR_XCOM_REPORTS_UC
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    requires:
+      - STR_IMPROVISED_GRENADES
+    text: STR_IMPROVISED_GRENADES_UFOPEDIA
+    listOrder: 110
   - id: STR_HIGH_TECH_MANUFACTURING
     type_id: 7
     section: STR_XCOM_REPORTS_UC

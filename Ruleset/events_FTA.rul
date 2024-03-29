@@ -482,20 +482,6 @@ events:
     timer: 10080
     timerRandom: 30240 #3 weeks
     interruptResearch: STR_SPORTS_BOW_TINKERING
-  - name: STR_IMPROVISED_GRENADE_TINKERING
-    description: STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION
-    background: BACK17.SCR
-    researchList: [STR_IMPROVISED_GRENADE]
-    timer: 10080
-    timerRandom: 30240 #3 weeks
-    interruptResearch: STR_IMPROVISED_GRENADE
-  - name: STR_IMPROVISED_SMOKE_GRENADE_TINKERING
-    description: STR_IMPROVISED_SMOKE_GRENADE_TINKERING_DESCRIPTION
-    background: BACK17.SCR
-    researchList: [STR_IMPROVISED_SMOKE_GRENADE]
-    timer: 10080
-    timerRandom: 30240 #3 weeks
-    interruptResearch: STR_IMPROVISED_SMOKE_GRENADE
   - name: STR_ROCKET_GLOVE_TINKERING
     description: STR_ROCKET_GLOVE_TINKERING_DESCRIPTION
     background: BACK17.SCR
