@@ -98,3 +98,6 @@ alienMissions:
     refNode: *TerrorLike
   - type: STR_MIB_HIDEOUT
     refNode: *TerrorLike
+  - type: STR_MIB_CONVOY
+    refNode: *TerrorLike
+    

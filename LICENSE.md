@@ -64,7 +64,7 @@ Here is a full list of that assets:
 * INTEL_STATE.png
 * SECRET_AGENT.png
 * COVEROPSHQ_BACKGROUND.png
-* Resources\Backgrounds\INTEL_BACKGROUND.png
+* INTEL_BACKGROUND.png
 
 Any other content, created by me, contributed for free by the community members, and of course, adapted or reused from another projects is distributed under **CC BY-NC-SA 4.0.**
 
@@ -105,6 +105,8 @@ OXCE/FTA game engine, that is distributed with this mod is a fork of [OpenXcom E
 * **jayattic**, author of [Geoscape Track #3](http://stallone.gfxile.net/music/Geoscape.mp3).
 
 * **Dr Reach**, author of original artwork for [SCP Foundation website](http://www.scp-wiki.net/reach-s-blueprint-folder), distributed under Creative Commons Attribution-ShareAlike 3.0 Unported - art that was used for facility blueprints ufopaedia article image.
+
+* **hellrazor**, author of [Support Drones](https://mod.io/g/openxcom/m/support-drones) - mod is integrated with small ruleset adjustments.
 
 * **ohartenstein23**, y-script code snippets, big thanks for code guidance.
 

@@ -2296,7 +2296,7 @@ units:
       melee: 20
       psiStrength: 15
       tactics: 15
-    armor: STR_ALLY_MILITARY_OFFICER_ARMOR
+    armor: STR_MILITARY_OFFICER_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 35

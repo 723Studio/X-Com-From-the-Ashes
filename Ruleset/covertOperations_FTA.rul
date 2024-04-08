@@ -3,6 +3,7 @@ covertOperations:
   - name: STR_CHASING_MIB
     description: STR_CHASING_MIB_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: &militaryRoles [0, 2]
     requires:
       - STR_COVERT_OPERATIONS
     soldiersMin: 2
@@ -30,6 +31,7 @@ covertOperations:
   - name: STR_REGIONAL_HQ_AREA_SURVEY
     description: STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_MIB_CHASING_SUCCESS
     soldiersMin: 3
@@ -53,6 +55,7 @@ covertOperations:
   - name: STR_REGIONAL_HQ_AREA_SURVEY_LONG
     description: STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_MIB_CHASING_FAIL
     soldiersMin: 3
@@ -77,6 +80,7 @@ covertOperations:
   - name: STR_REGIONAL_HQ
     description: STR_REGIONAL_HQ_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_REGIONAL_HQ_LOCATION
     soldiersMin: 3
@@ -99,6 +103,7 @@ covertOperations:
   - name: STR_REGIONAL_HQ_SURVEY
     description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
     categories: [STR_INVESTIGATION, STR_INFILTRATION, STR_ENGINEERING]
+    allowedRoles: *militaryRoles
     requires:
       - STR_REQ_HQ_LOCATION_SUCCESS
     soldiersMin: 3
@@ -119,6 +124,7 @@ covertOperations:
   - name: STR_REGIONAL_HQ_SURVEY_HARD
     description: STR_REGIONAL_HQ_SURVEY_DESCRIPTION
     categories: [STR_INVESTIGATION, STR_INFILTRATION, STR_ENGINEERING]
+    allowedRoles: *militaryRoles
     requires:
       - STR_REQ_HQ_LOCATION_FAILED
     soldiersMin: 4
@@ -139,6 +145,7 @@ covertOperations:
   - name: STR_RESISTANCE_CELL_CREATION
     description: STR_RESISTANCE_CELL_CREATION_DESCRIPTION
     categories: [STR_INFILTRATION, STR_NEGOTIATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_RESISTANCE_CELL_CREATION_PREREQ
     soldiersMin: 2
@@ -165,6 +172,7 @@ covertOperations:
   - name: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION
     description: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
     soldiersMin: 2
@@ -182,6 +190,7 @@ covertOperations:
   - name: STR_EX_COUNCIL_DATA_VAULT_CONVEY
     description: STR_EX_COUNCIL_DATA_VAULT_CONVEY_DESCRIPTION
     categories: [STR_INFILTRATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_EX_COUNCIL_DATA_VAULT_SUCCESS
     soldiersMin: 2
@@ -204,6 +213,7 @@ covertOperations:
   - name: STR_STEAL_OSPREY_OPERATION
     description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION, STR_ENGINEERING]
+    allowedRoles: *militaryRoles
     requires:
       - STR_STEAL_OSPREY_PREREQ
     soldiersMin: 4
@@ -223,6 +233,7 @@ covertOperations:
   - name: STR_INFILTRATING_MILITARY_RND
     description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
     categories: [STR_INFILTRATION, STR_DECEPTION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_INFILTRATING_MILITARY_RND_PREREQ
     soldiersMin: 4
@@ -232,7 +243,14 @@ covertOperations:
     concealedItemsBonus: 5 #default 4
     danger: 2
     costs: 430
-    allowedArmor: *StandardXcomArmors
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+      - STR_FLIGHTSUIT_UC
+      - STR_AGENT_UNIFORM_UC
+      - STR_XCOM_LABCOAT_UC
+      - STR_XCOM_ENGINEER_SUIT_UC
+      - STR_XCOM_RESISTANCE_AGENT_SUIT_UC
+      - STR_MILITARY_OFFICER_ARMOR
     instantSuccessDeployment:
       STR_INFILTRATING_MILITARY_RND_DISGUISE: 100
     trapChance: 100
@@ -243,6 +261,7 @@ covertOperations:
   - name: STR_MONSTER_HUNT_INVESTIGATION
     description: STR_MONSTER_HUNT_INVESTIGATION_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_MONSTER_HUNT_START
     baseChances: 60
@@ -267,6 +286,7 @@ covertOperations:
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA
     description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
     categories: [STR_INVESTIGATION, STR_NEGOTIATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_MONSTER_HUNT_RUMORS_CHUPA
     baseChances: 60
@@ -295,6 +315,7 @@ covertOperations:
   - name: STR_MONSTER_HUNT_RUMORS_ARMADILLO
     description: STR_MONSTER_HUNT_MIDDLE_ECO_DESCRIPTION
     categories: [STR_INVESTIGATION, STR_NEGOTIATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_MONSTER_HUNT_RUMORS_ARMADILLO
     baseChances: 70
@@ -323,6 +344,7 @@ covertOperations:
   - name: STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
     description: STR_MONSTER_HUNT_TROPIC_ECO_DESCRIPTION
     categories: [STR_INVESTIGATION, STR_NEGOTIATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_MONSTER_HUNT_RUMORS_AMPHIBIAN
     baseChances: 55
@@ -351,6 +373,7 @@ covertOperations:
   - name: STR_MONSTER_HUNT_RUMORS_SWARMID
     description: STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION
     categories: [STR_INVESTIGATION, STR_NEGOTIATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_MONSTER_HUNT_RUMORS_SWARMID
     baseChances: 65
@@ -380,6 +403,7 @@ covertOperations:
   - name: STR_CULT_INVESTIGATION
     description: STR_CULT_INVESTIGATION_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_CULT_INVESTIGATION
     soldiersMin: 2
@@ -400,6 +424,7 @@ covertOperations:
   - name: STR_IMPROVISED_MANUFACTURING_SUPPLIMENT
     description: STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_COVERT_OPERATIONS
       - STR_IMPROVISED_MANUFACTURING
@@ -426,6 +451,7 @@ covertOperations:
   - name: STR_HIGH_TECH_MANUFACTURING_SUPPLIMENT
     description: STR_HIGH_TECH_MANUFACTURING_SUPPLIMENT_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_COVERT_OPERATIONS
       - STR_HIGH_TECH_MANUFACTURING
@@ -452,6 +478,7 @@ covertOperations:
   - name: STR_LAB_EQUIPMENT_ACQUISITION
     description: STR_LAB_EQUIPMENT_ACQUISITION_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_COVERT_OPERATIONS
       - STR_BIOLAB_PREREQ
@@ -480,6 +507,7 @@ covertOperations:
   - name: STR_BIOLAB_EQUIPMENT_ACQUISITION
     description: STR_BIOLAB_EQUIPMENT_ACQUISITION_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_COVERT_OPERATIONS
       - STR_BIOLAB_PREREQ
@@ -510,6 +538,7 @@ covertOperations:
   - name: STR_RESISTANCE_CONTACT
     description: STR_RESISTANCE_CONTACT_DESCRIPTION
     categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_COVERT_OPERATIONS
     soldiersMin: 1
@@ -531,6 +560,7 @@ covertOperations:
   - name: STR_MILITARY_WEAPONRY_ACQUISITION
     description: STR_MILITARY_WEAPONRY_ACQUISITION_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION]
+    allowedRoles: *militaryRoles
     requires:
       - STR_COVERT_OPERATIONS
       - STR_RESISTANCE_WEAPONRY_PREREQ

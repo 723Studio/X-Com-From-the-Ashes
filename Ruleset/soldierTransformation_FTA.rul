@@ -7,22 +7,14 @@ soldierTransformation:
       - STR_SCIENTIST
       - STR_ENGINEER
       - STR_RESISTANCE_AGENT
-    #minRank: 1
     transformationTime: 408
-    # recoveryTime: 50
-    # cost: 5000000
     description: STR_SNIPER_TRAINING_DESC
     requires:
       - STR_SNIPER_TRAINING
     requiredMinStats:
        firing: 71 
     showMinMax: true
-    # requiredItems:
-    #   STR_SNIPER_RIFLE: 1
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     roleRankRequirements:
@@ -48,7 +40,6 @@ soldierTransformation:
       - STR_SCIENTIST
       - STR_ENGINEER
       - STR_RESISTANCE_AGENT
-    #minRank: 1
     transformationTime: 408
     description: STR_HEAVY_TRAINING_DESC
     requires:
@@ -57,10 +48,7 @@ soldierTransformation:
        stamina: 72
        strength: 48
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     roleRankRequirements:
@@ -98,10 +86,7 @@ soldierTransformation:
        reactions: 55
        firing: 50
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     roleRankRequirements:
@@ -138,10 +123,7 @@ soldierTransformation:
        reactions: 43
        melee: 50
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     roleRankRequirements:
@@ -176,10 +158,7 @@ soldierTransformation:
     requiredMinStats:
        bravery: 60
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     roleRankRequirements:
@@ -217,10 +196,7 @@ soldierTransformation:
       strength: 52
       melee: 50
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     roleRankRequirements:
@@ -254,10 +230,7 @@ soldierTransformation:
       stamina: 55
       reactions: 40
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     roleRankRequirements:
@@ -294,10 +267,7 @@ soldierTransformation:
       strength: 25
       melee: 25
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     forbiddenRole: 1 #Soldier
@@ -332,10 +302,7 @@ soldierTransformation:
     requires:
       - STR_ADDITIONAL_COURSES
     showMinMax: true
-    keepSoldierArmor: true
-    createsClone: false
-    needsCorpseRecovered: false
-    allowsDeadSoldiers: false
+    keepSoldierArmor: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: false
     forbiddenRole: 2 #ROLE_AGENT
@@ -354,3 +321,78 @@ soldierTransformation:
       investigation: 70
       deception: 50
       interrogation: 40
+
+  - name: STR_INSTALL_COMBAT_CHIP
+    transformationTime: 300
+    description: STR_INSTALL_COMBAT_CHIP_DESC
+    requires:
+      - STR_DRONE_UPGRADES
+    requiredItems:
+      STR_DRONE_COMBAT_CHIP: 1
+    showMinMax: true
+    keepSoldierArmor: true
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    roleRankRequirements:
+      2: 1
+    flatMin:
+      reactions: 10
+      firing: 20
+      throwing: 15
+    flatMax:
+      reactions: 10
+      firing: 20
+      throwing: 15
+  - name: STR_INSTALL_DRONE_AGILITY_CHIP
+    transformationTime: 300
+    description: STR_INSTALL_DRONE_AGILITY_CHIP_DESC
+    requires:
+      - STR_DRONE_UPGRADES
+    requiredItems:
+      STR_DRONE_AGILITY_CHIP: 1
+    showMinMax: true
+    keepSoldierArmor: true
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    roleRankRequirements:
+      2: 1
+    flatMin:
+      tu: 20
+    flatMax:
+      tu: 20
+  - name: STR_INSTALL_DRONE_HACKING_CHIP
+    transformationTime: 300
+    description: STR_INSTALL_DRONE_HACKING_CHIP_DESC
+    requires:
+      - STR_DRONE_HACKING
+    requiredItems:
+      STR_DRONE_HACKING_CHIP: 1
+    showMinMax: true
+    keepSoldierArmor: true
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    roleRankRequirements:
+      2: 1
+    flatMin:
+      hacking: 45
+    flatMax:
+      hacking: 40
+  - name: STR_INSTALL_DRONE_SAMPLING_CHIP
+    transformationTime: 300
+    description: STR_INSTALL_DRONE_SAMPLING_CHIP_DESC
+    requires:
+      - STR_DRONE_SAMPLING
+    requiredItems:
+      STR_DRONE_SAMPLING_CHIP: 1
+    showMinMax: true
+    keepSoldierArmor: true
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: false
+    roleRankRequirements:
+      2: 1
+    flatMin:
+      biology: 25
+      physics: 20
+    flatMax:
+      biology: 25
+      physics: 20

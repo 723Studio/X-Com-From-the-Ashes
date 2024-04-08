@@ -32,12 +32,6 @@ events:
     timerRandom: 400
     researchList: [STR_MILITARY_STATUS_REPORT]
 #Story
-  - name: STR_XCOM_SEALED_CRATES_EVENT
-    description: STR_XCOM_SEALED_CRATES_EVENT_DESCRIPTION
-    background: BACK17.SCR
-    timer: 2880
-    timerRandom: 2880
-    researchList: [STR_SEALED_CRATE_BREACHING]
   - name: STR_MIB_STORY_MILESTONE_1_EVENT
     description: STR_MIB_STORY_MILESTONE_1_EVENT_DESCRIPTION
     background: MIB_BACKGROUND.SCR
@@ -468,6 +462,13 @@ events:
     timer: 4320 #3 days
     timerRandom: 8640 #6 days
     interruptResearch: STR_XCOM_FUNDAMENTAL_STUDIES
+  - name: STR_XCOM_SAMPLING
+    description: STR_XCOM_SAMPLING_DESCRIPTION
+    background: BACK05.SCR
+    researchList: [STR_SAMPLING_PREREQ]
+    timer: 4320 #3 days
+    timerRandom: 8640 #6 days
+    interruptResearch: STR_XCOM_FUNDAMENTAL_STUDIES
   - name: STR_WORKSHOP_EVENT
     description: STR_WORKSHOP_EVENT_DESCRIPTION
     background: BACK17.SCR
@@ -482,20 +483,6 @@ events:
     timer: 10080
     timerRandom: 30240 #3 weeks
     interruptResearch: STR_SPORTS_BOW_TINKERING
-  - name: STR_IMPROVISED_GRENADE_TINKERING
-    description: STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION
-    background: BACK17.SCR
-    researchList: [STR_IMPROVISED_GRENADE]
-    timer: 10080
-    timerRandom: 30240 #3 weeks
-    interruptResearch: STR_IMPROVISED_GRENADE
-  - name: STR_IMPROVISED_SMOKE_GRENADE_TINKERING
-    description: STR_IMPROVISED_SMOKE_GRENADE_TINKERING_DESCRIPTION
-    background: BACK17.SCR
-    researchList: [STR_IMPROVISED_SMOKE_GRENADE]
-    timer: 10080
-    timerRandom: 30240 #3 weeks
-    interruptResearch: STR_IMPROVISED_SMOKE_GRENADE
   - name: STR_ROCKET_GLOVE_TINKERING
     description: STR_ROCKET_GLOVE_TINKERING_DESCRIPTION
     background: BACK17.SCR

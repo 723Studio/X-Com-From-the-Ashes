@@ -73,6 +73,10 @@
     listOrder: 245
   - type: STR_EQUIPMENT
     listOrder: 250
+  - type: STR_ROBOT_EQUIPMENT
+    listOrder: 252
+  - type: STR_ROBOT_UPGRADES
+    listOrder: 253
   - type: STR_COVERT_TOOLS
     listOrder: 254
   - type: STR_ACCESSORIES

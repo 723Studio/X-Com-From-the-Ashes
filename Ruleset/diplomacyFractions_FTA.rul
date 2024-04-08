@@ -15,8 +15,6 @@ diplomacyFactions:
     startingStaff:
       STR_ENGINEER: 2
       STR_RESISTANCE_AGENT: 12
-      #STR_SOLDIER: 10
-      #STR_SCIENTIST: 12
     genMissionFreq: 85 #85% chance to run the script
     helpTreatyMissions:
       - havenFarm
@@ -65,6 +63,8 @@ diplomacyFactions:
       STR_BOW_ARROW: 80
       STR_SNUBNOSE_PISTOL: 4
       STR_SNUBNOSE_PISTOL_CLIP: 28
+      STR_TASER: 2
+      STR_TASER_CLIP: 12
       STR_HUNTING_RIFLE: 10
       STR_HUNTING_RIFLE_CLIP: 130
       STR_SAWED_OFF: 9
@@ -91,8 +91,8 @@ diplomacyFactions:
       STR_SPORTS_BOW: 60
       STR_BOW_ARROW: 80
       #pistols
-      STR_TASER: 150
-      STR_TASER_CLIP: 80
+      STR_TASER: 160
+      STR_TASER_CLIP: 100
       STR_SNUBNOSE_PISTOL: 100
       STR_SNUBNOSE_PISTOL_CLIP: 65
       STR_RIOT_PISTOL: 450
@@ -200,7 +200,7 @@ diplomacyFactions:
       STR_COMBAT_SHIELD: 430
       STR_FIRE_EXTINGUISHER: 9
       #craft-related
-      STR_CRATED_HELICOPTER: 3720
+      STR_CRATED_HELICOPTER: 37200
       STR_CANNON: 2000
       STR_CANNON_ROUNDS_X50: 2000
       STR_STINGRAY_LAUNCHER: 2000

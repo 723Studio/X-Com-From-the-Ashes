@@ -8,4 +8,4 @@ isMaster: true
 requiredExtendedEngine: "FtA"
 requiredExtendedVersion: "1.0.0"
 master: xcom1
-reservedSpace: 12
+reservedSpace: 50

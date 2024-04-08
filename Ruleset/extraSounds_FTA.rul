@@ -133,3 +133,5 @@ extraSounds:
       184: Resources/Weapons/Sounds/FlameThrower.wav
       185: Resources/Weapons/Sounds/Reload_Insert.wav
       186: Resources/Weapons/Sounds/Ex_Fire.wav
+      187: Resources/Weapons/Sounds/Sound_Shoot_DroneSmoke.wav
+      188: Resources/Weapons/Sounds/Sound_Shoot_DroneTaser.wav

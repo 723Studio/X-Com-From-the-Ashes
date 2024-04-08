@@ -709,8 +709,6 @@ items:
   - type: STR_TASER
     categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE]
     landOnly: true
-    requiresBuy:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.2
     costBuy: 4500
     costSell: 3600
@@ -731,7 +729,7 @@ items:
     invHeight: 2
     armor: 20
     kneelBonus: 100 #no kneel bonus
-    maxRange: 10
+    maxRange: 5
     aimRange: 5
     powerRangeReduction: 999
     powerRangeThreshold: 9
@@ -742,8 +740,6 @@ items:
   - type: STR_TASER_CLIP
     categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE]
     landOnly: true
-    requiresBuy:
-      - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.1
     costBuy: 200
     costSell: 100
@@ -753,19 +749,19 @@ items:
     hitSound: 54
     hitAnimation: 56
     blastRadius: 0
-    power: 44
+    power: 48
     damageType: 11
     damageAlter:
       ResistType: 11 #pretends to be electric damage
       ToHealth: 0.1
       ToStun: 1.0
       RandomStun: false
-      ToArmor: 0.01
+      ToArmor: 0.001
       ToArmorPre: 0.3
-      ArmorEffectiveness: 0.75
+      ArmorEffectiveness: 0.4
       ToWound: 0.0
-      ToTime: 0.4
-      RandomType: 6
+      ToTime: 0.5
+      RandomType: 1
       IgnoreDirection: true
       ToTile: 0.05
     clipSize: 1
@@ -3118,18 +3114,18 @@ items:
     power: 70
     damageType: 11
     damageAlter:
-      ToHealth: 0.1
-      ToStun: 1.0
+      ToHealth: 0.3
+      ToStun: 1.2
       ToArmor: 0.0
       ToWound: 0.0
-      ToTime: 1.2
+      ToTime: 1.4
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
       IgnoreSelfDestruct: true
-      RandomType: 2
+      RandomType: 1
       IgnoreDirection: false
-      ArmorEffectiveness: 0.6
+      ArmorEffectiveness: 0.2
       ToTile: 0.1
     clipSize: 3
     battleType: 2
@@ -4243,7 +4239,7 @@ items:
   - type: STR_ROCKET_GLOVE
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_LAUNCHERS, STR_EXPLOSIVES]
     size: 0.2
-    #landOnly: true
+    landOnly: true
     costSell: 12000
     weight: 5
     bigSprite: 436
@@ -4648,7 +4644,7 @@ items:
     listOrder: 19009
     tags:
       FTAG_DAZE_VALUE: 100
-      FTAG_DAZE_TIME: 1
+      FTAG_DAZE_TIME: 2
   - type: STR_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE]
     requiresBuy:
@@ -4667,8 +4663,6 @@ items:
       - STR_SMALL_ROCKET
       - STR_LARGE_ROCKET
       - STR_INCENDIARY_ROCKET
-      # - STR_SHRAPNEL_ROCKET
-      # - STR_TRITANIUM_SHRAPNEL_ROCKET
     accuracyCloseQuarters: 33
     accuracyAimed: 110
     tuAimed: 75
@@ -4817,6 +4811,47 @@ items:
     recoveryPoints: 1
     experienceTrainingMode: 7
     listOrder: 21040
+  - type: STR_IMPROVISED_FLASHBANG_GRENADE
+    categories: [STR_HUMAN_TECH, STR_GRENADES, STR_UTILITY, STR_INCAPACITATE, STR_CONCEALABLE]
+    landOnly: true
+    size: 0.05
+    costSell: 1200
+    transferTime: 48
+    weight: 3
+    bigSprite: 300 #TODO
+    floorSprite: 300 #TODO
+    hitAnimation: 88
+    explosionHitSound: 70 #0 or 284 xcf
+    power: 40
+    hidePower: true
+    damageType: 1
+    damageAlter:
+      ResistType: 6
+      RandomType: 3
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToStun: 0.1
+      ToMorale: 0.1
+      ToHealth: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 6
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 40
+    costUnprime:
+      time: 25
+    battleType: 4
+    fuseType: -2
+    recoveryPoints: 2
+    experienceTrainingMode: 7
+    listOrder: 21040
+    tags:
+      FTAG_DAZE_VALUE: 80
+      FTAG_DAZE_TIME: 2
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     requiresBuy:
@@ -5008,7 +5043,7 @@ items:
     listOrder: 21040
     tags:
       FTAG_DAZE_VALUE: 100
-      FTAG_DAZE_TIME: 1
+      FTAG_DAZE_TIME: 2
   - type: STR_EXPLOSIVE_CHARGE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EXPLOSIVE_CHARGES]
     requiresBuy:
@@ -5071,7 +5106,7 @@ items:
     listOrder: 21050
 #tools
   - type: STR_MOTION_SCANNER
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
     size: 0.1
     landOnly: true
     costSell: 42200
@@ -5085,9 +5120,9 @@ items:
     listOrder: 22000
   - type: STR_HACKING_COMPUTER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY]
+    landOnly: true
     size: 0.4
     weight: 1
-    landOnly: true
     bigSprite: 466
     floorSprite: 466
     #handSprite: 930
@@ -5144,7 +5179,7 @@ items:
     woundRecovery: 1
     costUse:
       time: 12
-      morale: -5
+      morale: -2
     flatRate: false
     experienceTrainingMode: 19
     attraction: 5
@@ -5168,7 +5203,7 @@ items:
     painKiller: 1
     costUse:
       time: 10
-      morale: -5
+      morale: -1
     invWidth: 1
     invHeight: 1
     recoveryPoints: 1
@@ -5290,7 +5325,7 @@ items:
     isConsumable: false
     costUse:
       time: 22
-      morale: -5
+      morale: -3
     flatRate: false
     attraction: 5
     experienceTrainingMode: 19
@@ -5343,14 +5378,14 @@ items:
     healthRecovery: 4
     stunRecovery: 3
     medikitTargetSelf: true
-    isConsumable: false
+    isConsumable: true
     costUse:
-      time: 19
-      morale: -5
+      time: 16
+      morale: -4
     flatRate: false
     experienceTrainingMode: 19
     attraction: 5
-    recoveryPoints: 5
+    recoveryPoints: 6
     listOrder: 23050
   - type: STR_TRAUMA_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL]
@@ -5386,6 +5421,7 @@ items:
 #utilities
   - type: STR_FLASHLIGHT
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_CONCEALABLE]
+    landOnly: true
     size: 0.1
     costBuy: 140
     costSell: 75
@@ -5394,6 +5430,7 @@ items:
     floorSprite: 388
     handSprite: 632
     power: 25
+    coneSize: 1
     battleType: 10
     #Prime/Unprime segment
     # costPrime:
@@ -5414,9 +5451,7 @@ items:
     invWidth: 1
     invHeight: 2
     armor: 8
-    coneSize: 1
     listOrder: 25000
-    landOnly: true
   - type: STR_ELECTRO_FLARE
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_UTILITY, STR_CONCEALABLE]
     size: 0.1
@@ -5474,6 +5509,7 @@ items:
     listOrder: 25020
   - type: STR_FIRE_EXTINGUISHER
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
+    landOnly: true
     size: 0.2
     costBuy: 140
     costSell: 90
@@ -5534,10 +5570,383 @@ items:
     #Gun Butt segment end
     attraction: 15
     listOrder: 25030
+
+#robots
+  - type: STR_DRONE_FLASHLIGHT
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
     landOnly: true
-
-#armor
-
+    size: 0.1
+    costSell: 90
+    weight: 3
+    bigSprite: 506
+    power: 20
+    coneSize: 2
+    battleType: 10
+    canBeEquippedInBattle: false
+    #Prime/Unprime segment
+    # costPrime:
+    #   time: 3
+    # costUnprime:
+    #   time: 3
+    # primeActionName: STR_TURN_ON
+    # unprimeActionName: STR_TURN_OFF
+    # primeActionMessage: STR_LIGHT_IT_UP
+    # unprimeActionMessage: STR_LIGHTS_OUT
+    # fuseType: -2
+    # fuseTriggerEvents:
+    #   defaultBehavior: true
+    #   throwTrigger: false
+    #   throwExplode: true
+    # throwMultiplier:
+    #   throwing: 0.6
+    invWidth: 1
+    invHeight: 2
+    armor: 8
+    listOrder: 25000
+  - type: STR_DRONE_FIRE_EXTINGUISHER
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    size: 0.2
+    costBuy: 140
+    costSell: 90
+    weight: 10
+    bigSprite: 392
+    floorSprite: 392
+    handSprite: 664
+    bulletSprite: 1
+    fireSound: 114
+    explosionHitSound: 115
+    hitAnimation: 88
+    power: 20
+    hidePower: true
+    accuracyAimed: 100
+    accuracyCloseQuarters: 115
+    tuAimed: 48
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 1
+      ToStun: 0.8
+      ToTime: 1
+    battleType: 1
+    costThrow:
+      energy: 18
+    clipSize: 2
+    isFireExtinguisher: true
+    arcingShot: true
+    maxRange: 6
+    invWidth: 2
+    invHeight: 2
+    bulletSpeed: 80
+    #Gun Butt segment
+    meleeHitSound: 55
+    meleeAnimation: 0
+    meleeType: 6
+    meleePower: 15
+    meleeBonus:
+      strength: 0.8
+    meleeAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 2.0
+      ToStun: 1.4
+      ToHealth: 0.3
+      ToTile: 0.25
+    accuracyMelee: 60
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 16
+      energy: 6
+    flatMelee:
+      time: true
+    experienceTrainingMode: 21
+    #Gun Butt segment end
+    attraction: 15
+    listOrder: 25030
+  - type: STR_DRONE_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    size: 2
+    costSell: 45000
+    weight: 7
+    bigSprite: 502
+    bulletSprite: 4
+    fireSound: 187
+    compatibleAmmo:
+      - STR_DRONE_LAUNCHER_FRAG_AMMO
+      - STR_DRONE_LAUNCHER_SMOKE_AMMO
+      - STR_DRONE_LAUNCHER_FLASBANG_AMMO
+    accuracySnap: 100
+    tuSnap: 33
+    battleType: 1
+    canBeEquippedInBattle: false
+    arcingShot: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 10
+    listOrder: 1070
+  - type: STR_DRONE_LAUNCHER_FRAG_AMMO
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    requires:
+      - STR_DRONES_MANUFACTURING
+    size: 0.05
+    costSell: 1000
+    transferTime: 48
+    weight: 3
+    bigSprite: 503
+    hitAnimation: 88
+    power: 45
+    canBeEquippedInBattle: false
+    damageType: 3
+    battleType: 2
+    clipSize: 4
+    listOrder: 25030
+  - type: STR_DRONE_LAUNCHER_SMOKE_AMMO
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    requires:
+      - STR_DRONES_MANUFACTURING
+    size: 0.05
+    costSell: 600
+    transferTime: 48
+    weight: 3
+    bigSprite: 504
+    hitAnimation: 88
+    power: 40
+    canBeEquippedInBattle: false
+    damageType: 9
+    battleType: 2
+    clipSize: 4
+    listOrder: 25030
+  - type: STR_DRONE_LAUNCHER_FLASBANG_AMMO
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    requires:
+      - STR_DRONES_MANUFACTURING
+    size: 0.05
+    costSell: 1200
+    transferTime: 48
+    weight: 3
+    bigSprite: 505
+    hitAnimation: 88
+    explosionHitSound: 70 #0 or 284 xcf
+    power: 50
+    canBeEquippedInBattle: false
+    hidePower: true
+    damageType: 1
+    damageAlter:
+      ResistType: 6
+      RandomType: 3
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToStun: 0.1
+      ToMorale: 0.1
+      ToHealth: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 6
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 32
+    costUnprime:
+      time: 25
+    battleType: 4
+    fuseType: -2
+    recoveryPoints: 2
+    experienceTrainingMode: 7
+    listOrder: 21040
+    tags:
+      FTAG_DAZE_VALUE: 80
+      FTAG_DAZE_TIME: 2
+  - type: STR_DRONE_MEDICINE
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    size: 0.4
+    costSell: 800
+    weight: 6
+    bigSprite: 510
+    hitSound: 74
+    invWidth: 2
+    invHeight: 1
+    battleType: 6
+    canBeEquippedInBattle: false
+    medikitType: 0
+    painKiller: 2
+    heal: 2
+    stimulant: 2
+    healthRecovery: 3
+    woundRecovery: 1
+    stunRecovery: 10
+    energyRecovery: 35
+    isConsumable: false
+    costUse:
+      time: 25
+    flatRate: false
+    experienceTrainingMode: 19
+    attraction: 5
+    recoveryPoints: 1
+    listOrder: 23000
+  - type: STR_DRONE_MOTION_SCANNER
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    size: 0.1
+    landOnly: true
+    costSell: 36500
+    weight: 3
+    bigSprite: 508
+    battleType: 7
+    canBeEquippedInBattle: false
+    tuUse: 8
+    flatRate: true
+    listOrder: 22000
+  - type: STR_DRONE_HACKING_COMPUTER
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    size: 0.4
+    weight: 3
+    bigSprite: 513
+    battleType: 12 #new type for hacking
+    canBeEquippedInBattle: false
+    maxRange: 15
+    costUse:
+      time: 60
+    flatRate: false
+    attraction: 5
+    hackingHp: 15
+    hackingTu: 120
+    LOSRequired: true
+    #experienceTrainingMode: 19 - hacking experince is hardcoded
+    listOrder: 48150
+  - type: STR_DRONE_SAMPLING_TOOL
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    size: 0.4
+    weight: 10
+    landOnly: true
+    bigSprite: 514
+    battleType: 13 #new type for sampling
+    canBeEquippedInBattle: false
+    invWidth: 2
+    invHeight: 2
+    costUse:
+      time: 100
+    flatRate: false
+    attraction: 5
+    samplingPower: 20
+    LOSRequired: true
+    #experienceTrainingMode: 19 - sampling experince is hardcoded
+    listOrder: 48150
+  - type: STR_DRONE_TASER
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT, STR_SPACE]
+    landOnly: true
+    size: 0.2
+    costSell: 2800
+    weight: 6
+    bigSprite: 509
+    bulletSprite: 13
+    fireSound: 188
+    compatibleAmmo:
+      - STR_DRONE_TASER_CLIP
+    accuracyCloseQuarters: 133
+    accuracyAimed: 75
+    tuAimed: 45
+    battleType: 1
+    canBeEquippedInBattle: false
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 20
+    maxRange: 5
+    aimRange: 5
+    powerRangeReduction: 999
+    powerRangeThreshold: 5
+    experienceTrainingMode: 4
+    recoveryPoints: 2
+    attraction: 15
+    listOrder: 5000
+  - type: STR_DRONE_TASER_CLIP
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT, STR_SPACE]
+    landOnly: true
+    size: 0.1
+    costSell: 400
+    weight: 4
+    bigSprite: 397
+    floorSprite: 397
+    hitSound: 54
+    hitAnimation: 56
+    blastRadius: 0
+    power: 56
+    damageType: 11
+    damageAlter:
+      ResistType: 11 #pretends to be electric damage
+      ToHealth: 0.1
+      ToStun: 1.0
+      RandomStun: false
+      ToArmor: 0.001
+      ToArmorPre: 0.4
+      ArmorEffectiveness: 0.3
+      ToWound: 0.0
+      ToTime: 0.4
+      RandomType: 1
+      IgnoreDirection: true
+      ToTile: 0.05
+    clipSize: 6
+    battleType: 2
+    canBeEquippedInBattle: false
+    armor: 20
+    attraction: 15
+    recoveryPoints: 1
+    listOrder: 5010
+  - type: STR_DRONE_ROCKET_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    landOnly: true
+    size: 0.2
+    costSell: 9000
+    weight: 4
+    bigSprite: 512
+    bulletSprite: 0
+    fireSound: 127
+    reloadSound: 128
+    compatibleAmmo:
+      - STR_DRONE_ROCKET_CLIP
+    accuracySnap: 85
+    accuracyAimed: 110
+    accuracyCloseQuarters: 80
+    tuSnap: 35
+    tuAimed: 45
+    battleType: 1
+    canBeEquippedInBattle: false
+    invWidth: 1
+    invHeight: 2
+    aimRange: 20
+    dropoff: 4
+    maxRange: 30
+    experienceTrainingMode: 5
+    attraction: 20
+    listOrder: 19000
+  - type: STR_DRONE_ROCKET_CLIP
+    categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
+    size: 0.1
+    landOnly: true
+    costSell: 2100
+    weight: 6
+    bigSprite: 513
+    power: 52
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 5
+    battleType: 2
+    canBeEquippedInBattle: false
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 19001
 #built-in weapons
   - type: STR_UNARMED
     categories: [STR_BUILT_INS, STR_MELEE, STR_UNARMED]
@@ -5548,17 +5957,17 @@ items:
     power: 0
     damageType: 6
     damageBonus:
-      strength: 0.2
-      melee: 0.15
+      strength: 0.3
+      melee: 0.35
       reactions: 0.05
     damageAlter:
-      RandomType: 1
+      RandomType: 7
       FixRadius: 0
       IgnoreDirection: false
       ArmorEffectiveness: 1.7
-      ToArmor: 0.2
-      ToHealth: 0.2
-      ToTile: 0.05
+      ToArmor: 0.01
+      ToHealth: 0.15
+      ToTile: 0.01
     accuracyMelee: 90
     meleeMultiplier:
       melee: 0.5
@@ -5566,8 +5975,8 @@ items:
     confMelee:
       name: STR_PUNCH
     costMelee:
-      time: 12
-      energy: 4
+      time: 11
+      energy: 6
     flatRate: true
     battleType: 3
     clipSize: -1
@@ -5586,11 +5995,11 @@ items:
     power: 0
     damageType: 6
     damageBonus:
-      strength: 0.2
-      melee: 0.2
+      strength: 0.4
+      melee: 0.45
       reactions: 0.1
     damageAlter:
-      RandomType: 1
+      RandomType: 7
       FixRadius: 0
       IgnoreDirection: false
       ArmorEffectiveness: 1.5
@@ -5598,7 +6007,7 @@ items:
       ToTile: 0.1
     accuracyMelee: 100
     meleeMultiplier:
-      melee: 0.5
+      melee: 0.6
       reactions: 0.3
     confMelee:
       name: STR_PUNCH
@@ -6417,13 +6826,27 @@ items:
     listOrder: 31040
 
 #components
+  - type: STR_METAL_SCRAPS
+    categories: [STR_COMPONENTS]
+    landOnly: true
+    size: 10
+    costBuy: 450
+    costSell: 380
+    weight: 15
+    battleType: 0
+    bigSprite: 443
+    floorSprite: 443
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 1
+    listOrder: 60000
   - type: STR_SPARE_PARTS
     categories: [STR_COMPONENTS]
     landOnly: true
     size: 0.1
     costBuy: 450
     costSell: 380
-    weight: 3
+    weight: 2
     battleType: 0
     bigSprite: 443
     floorSprite: 443
@@ -6434,7 +6857,7 @@ items:
   - type: STR_CHEMICALS
     categories: [STR_COMPONENTS]
     landOnly: true
-    size: 0.01
+    size: 0.03
     costBuy: 500
     costSell: 410
     weight: 1
@@ -6449,7 +6872,7 @@ items:
   - type: STR_HIGH_TECH_PARTS
     categories: [STR_COMPONENTS]
     landOnly: true
-    size: 0.02
+    size: 0.01
     costBuy: 1600
     costSell: 1300
     weight: 1
@@ -6480,10 +6903,10 @@ items:
   - type: STR_CRATED_HELICOPTER
     categories: [STR_HUMAN_TECH, STR_CRAFT]
     size: 30
-    costBuy: 130000
-    costSell: 100000
+    costBuy: 1300000
+    costSell: 1000000
     transferTime: 96
-    listOrder: 1 # =)
+    listOrder: 1
   - type: STR_CRATED_OSPREY
     categories: [STR_HUMAN_TECH, STR_CRAFT]
     size: 50
@@ -6531,6 +6954,23 @@ items:
     transferTime: 62
     clipSize: 1
     listOrder: 651
+
+  - type: STR_DRONE_COMBAT_CHIP
+    categories: [STR_HUMANS, STR_ROBOT_UPGRADES]
+    size: 0.01
+    listOrder: 146030
+  - type: STR_DRONE_AGILITY_CHIP
+    categories: [STR_HUMANS, STR_ROBOT_UPGRADES]
+    size: 0.01
+    listOrder: 146030
+  - type: STR_DRONE_HACKING_CHIP
+    categories: [STR_HUMANS, STR_ROBOT_UPGRADES]
+    size: 0.01
+    listOrder: 146030
+  - type: STR_DRONE_SAMPLING_CHIP
+    categories: [STR_HUMANS, STR_ROBOT_UPGRADES]
+    size: 0.01
+    listOrder: 146030
 
   - type: STR_LABORATORY_EQUIPMENT
     categories: [STR_HUMANS, STR_COMPONENTS]
@@ -7453,6 +7893,12 @@ items:
     costBuy: 30000
     costSell: 26000
     listOrder: 16850
+  - type: STR_MILITARY_OFFICER_SUIT
+    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    size: 1.1
+    costBuy: 30000
+    costSell: 26000
+    listOrder: 16850
   - type: STR_CORPSE_FLIGHTSUIT
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -7524,6 +7970,163 @@ items:
     costBuy: 2200
     costSell: 1300
     listOrder: 100670
+  - type: STR_DRONE_SCOUT_CORPSE
+    categories: [STR_CORPSES]
+    size: 2
+    weight: 40
+    battleType: 11
+    bigSprite: 147
+    floorSprite: 147
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: false #fixme - drone repaire transformation?
+    listOrder: 4990
+
+# blanks
+  - type: INV_NULL_HAND_L
+    weight: 0
+    bigSprite: 605 #TODO 600
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    recover: false
+  - type: INV_NULL_HAND_R
+    weight: 0
+    bigSprite: 605 #TODO 600
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    recover: false
+  - type: INV_NULL_2X1_LEFT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_LEG
+    recover: false
+  - type: INV_NULL_2X1_RIGHT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_LEG
+    recover: false
+  - type: INV_NULL_2X1_LEFT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_SHOULDER
+    recover: false
+  - type: INV_NULL_2X1_RIGHT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 601
+    invWidth: 2
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_SHOULDER
+    recover: false
+  - type: INV_NULL_1X1_LEFT_HAND
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    recover: false
+  - type: INV_NULL_3X3_BACK_PACK
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 606
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: INV_NULL_2X3_BACK_PACK
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 605
+    invWidth: 3
+    invHeight: 3
+    fixedWeapon: true
+    defaultInventorySlot: STR_BACK_PACK
+    recover: false
+  - type: INV_NULL_4X2_BELT
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 602
+    invWidth: 4
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_BELT
+    recover: false
+  - type: INV_NULL_1X2_QD_SLOT
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 603
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_QD_SLOT
+    recover: false
+  - type: INV_NULL_1X1_QD_SLOT
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_QD_SLOT
+    recover: false
+  - type: INV_NULL_1X1_RIGHT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_SHOULDER
+    recover: false
+  - type: INV_NULL_1X1_LEFT_SHOULDER
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_SHOULDER
+    recover: false
+  - type: INV_NULL_1X1_RIGHT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_LEG
+    recover: false
+  - type: INV_NULL_1X1_LEFT_LEG
+    categories: [STR_BLANKS]
+    weight: 0
+    bigSprite: 604
+    invWidth: 1
+    invHeight: 1
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_LEG
+    recover: false
+
 extended:
   tags:
     RuleItem:

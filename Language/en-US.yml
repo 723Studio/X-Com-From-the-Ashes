@@ -5,6 +5,7 @@ en-US:
   STR_FTA: "From the Ashes"
   STR_LAST_STAND: "Last Stand"
 #UI
+  STR_THINKING: "Turn progress..."
   STR_DIPLOMACY: "Diplomacy"
   STR_ALLY: "Ally"
   STR_HONORED: "Honored"
@@ -76,8 +77,10 @@ en-US:
   STR_SOLDIER_INFO: "Soldiers"
   STR_AGENT_INFO: "Agents"
   STR_PILOT_INFO: "Pilots"
+  STR_ROBOT: "Robot"
   STR_SCIENTIST_INFO: "Scientists"
   STR_ENGINEER_INFO: "Engineers"
+  STR_ROBOT_INFO: "Robots"
   STR_SOLDIER_LIST: "Base Personnel"
   STR_ROLE_UC: "ROLE"
   STR_ROLE: "Role"
@@ -283,6 +286,7 @@ en-US:
   STR_INTERROGATION_SHORT: "Interrogation>{ALT}{0}"
   STR_INTERROGATION_ABBREV: "INT"
   STR_BASE_UC: "BASE"
+  STR_NOT_ENOUGH_RELAY_POWER: "Relay channel capacity is insufficient!"
   STR_MONTHLY_EXPERIENCE: "Monthly Experience"
   STR_RECOMMENDED_ROLES: "Recommended staff"
   STR_ALLOCATE_SCIENTISTS: "Allocate"
@@ -459,6 +463,9 @@ en-US:
   STR_GLOBAL_DETECTION: "Global detection"
   STR_SOLDIERS_RECRUITED_UC: "PERSONNEL RECRUITED"
   STR_SOLDIERS_LOST_UC: "PERSONNEL LOST"
+  STR_CANNOT_PLACE_ITEM_WHILE_IN_COMBAT: "CAN NOT CHANGE EQUIPMENT WHILE IN COMBAT!"
+  STR_CANNOT_USE_THIS_ITEM: "CAN NOT USE THIS ITEM!"
+  STR_CANNOT_CHANGE_INVENTORY: "CAN NOT CHANGE INVENTORY!"
   STR_ENGINE_IS_COOLING: "Engine is cooling down>{ALT}{0}"
   STR_ACTIVE_ENEMIES_ONBOARD: "Can't abort while enemies in exit area!"
   STR_USE_HACKING_TOOL: "Use Hacking Tool"
@@ -548,6 +555,8 @@ en-US:
   STR_NO_TRANSFORMATION: "-"
   STR_TRANSFORMING_FINISHED: "Special Training Finished{NEWLINE}at {0}"
   STR_MELEE_SHORT: "Ml>{ALT}{0}"
+  STR_ENGINE_COOLDOWN: "ENGINE COOLDOWN>{ALT}{0}{ALT}"
+  STR_RELAY_POWER: "RELAY POWER>{ALT}{0}{ALT}"
   #mana stuff
   STR_MANA_POOL: "MANA POOL"
   STR_MANA_MISSING: "MANA MISSING"
@@ -706,6 +715,14 @@ en-US:
   STR_AGENT_TRAINING_UFOPEDIA: "Based on many years of experience in intelligence activities, we have developed a course aimed at obtaining specific skills that any X-COM special agent should possess. The program includes modules on analyzing large amounts of data, developing deduction, attentiveness. Basic interrogation techniques are taught, and skillful conversation skills are developed. In addition, there are practical lessons on disguise in a variety of conditions, as well as the basics of hacking art. The program includes only the basics, so our experienced agents will not be able to learn anything new there."
   STR_MILITARY_TRAINING: "Soldier Training"
   STR_MILITARY_TRAINING_DESC: "A basic military training course focused on the development of essential skills in small arms combat and tactical cooperation within the squad. Besides, a great deal of attention is paid to physical and shooting training, hand-to-hand combat and throwing exercises."
+  STR_INSTALL_COMBAT_CHIP: "Install Combat Chip"
+  STR_INSTALL_COMBAT_CHIP_DESC: "An additional chip is installed in addition to the drone's main computing complex. The chip firmware contains a set of firmware designed to improve fire control systems."
+  STR_INSTALL_DRONE_AGILITY_CHIP: "Install Agility Chip"
+  STR_INSTALL_DRONE_AGILITY_CHIP_DESC: "The optional chip improves the drone's propulsion system by adjusting the power of the motors to optimize maneuverability and speed on different surfaces. At the same time, the drone's battery consumption is optimized."
+  STR_INSTALL_DRONE_HACKING_CHIP: "Install Hacking Chip"
+  STR_INSTALL_DRONE_HACKING_CHIP_DESC: "An additional chip containing firmware to bypass security protocols. Significantly increases the drone's computational capabilities required for successful hacking."
+  STR_INSTALL_DRONE_SAMPLING_CHIP: "Install Sampling Chip"
+  STR_INSTALL_DRONE_SAMPLING_CHIP_DESC: "The large number of manipulators and optical sensors of the drone's sample collection device cannot be provided by its standard on-board computer. The add-on chip contains a set of microprograms specially designed for precise manipulators and all necessary instruments."
   STR_FIRE_AND_THROW: "Fire and throw it."
   STR_PRIVATE: "Private"
   STR_CORPORAL: "Corporal"
@@ -735,6 +752,12 @@ en-US:
   STR_SENIOR_ENGINEER: "Senior Engineer"
   STR_FOREMAN: "Foreman"
   STR_ARTISAN: "Artisan"
+  STR_DRONE: "Drone"
+  STR_ROBOT_RANK: "Robot"
+  STR_DROID: "Droid"
+  STR_SAPIENT_AI: "Sapient AI"
+  STR_SYNTH: "Synthetics"
+
 #cutscenes
   STR_INTRO2_SLIDE1_CAPTION: "The Council of Funding Nations has decided to terminate the X-COM project and all its activities. Perhaps this has something to do with the recent changes of Council membership, with several of its members facing clearly fabricated charges. Agents of a top secret supragovernmental organization known to us as the Men in Black have been assigned to the Council as the exclusive security force. We are confident that the purpose of this organization extends far beyond the protection services - there are reasons to suspect them of aiding the aliens, and they are trying to cover up any traces of their activity."
   STR_INTRO2_SLIDE2_CAPTION: "Commander of X-COM has been called to the Council to receive the final instructions. Two days later, he returned to the base accompanied by M.I.B. agents and initiated the 'Oblivion' protocol: an irreversible encryption of the Ufopaedia (X-COM's archive of scientific and technological achievements), decreed dismissal of all personnel and issued orders to dismantle the base facilities."
@@ -1017,8 +1040,7 @@ en-US:
   STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Training Center."
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report is ready!"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to Hangar 1."
-  STR_XCOM_SEALED_CRATES_EVENT: "Assets sealed"
-  STR_XCOM_SEALED_CRATES_EVENT_DESCRIPTION: "During the initiation of the Oblivion protocol, the containers that held a large amount of our gear and equipment were sealed. It was assumed that only Council employees would be able to unlock them, but we can try to break the security mechanisms on the containers ourselves to get the items that we so desperately need."
+  
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies are running low!"
   STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another way of procuring the resources needed to keep the base operational and our forces alive.{NEWLINE}Loyalty score> {ALT}-100"
   STR_NO_SUPPLY_SECOND_WARNING_EVENT: "We are running out of supplies!"
@@ -1099,10 +1121,6 @@ en-US:
   STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION: "Unfortunately, we delayed landing at the site of the abandoned base for too long. Apparently, the M.I.B. managed to locate the structure. We detected a massive explosion that probably destroyed the entire base.{NEWLINE}Loyalty score>{ALT} -200"
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
-  STR_IMPROVISED_GRENADE_TINKERING: "Improvised Grenade"
-  STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION: "While we can't make sophisticated weapons, but something simple like explosives - that's an easy thing to do! Let me know if you need spare grenades."
-  STR_IMPROVISED_SMOKE_GRENADE_TINKERING: "Improvised Smoke Grenade"
-  STR_IMPROVISED_SMOKE_GRENADE_TINKERING_DESCRIPTION: "Obviously, we need to restock our support grenades to be able to cover our soldiers in a critical situation from enemy fire. We have developed designs for a simple smoke grenade, which can be produced without special equipment."
   STR_SPORTS_BOW_TINKERING: "Sports Bow Advanced Arrows"
   STR_SPORTS_BOW_TINKERING_DESCRIPTION: "After some thought and a little experimentation, our engineers came up with an interesting design of advanced arrows for the sport bow, equipped with various special charges or tips. This will greatly expand the tactical capabilities of the conventional bow. If you like, we can begin production immediately.{NEWLINE}New technology> {ALT}Advanced bow arrows"
   STR_ROCKET_GLOVE_TINKERING: "Rocket Glove"
@@ -1509,7 +1527,7 @@ en-US:
   STR_RESISTANCE_SCIENTIST_CORPSE: "Scientist Corpse"
   STR_RESISTANCE_SCIENTIST_CORPSE_DECORATION: "Scientist Corpse"
   STR_ALLY_MILITARY_OFFICER:  "Military Officer"
-  STR_ALLY_MILITARY_OFFICER_ARMOR: "Military Officer"
+  STR_MILITARY_OFFICER_ARMOR: "Military Officer"
   STR_ALLY_MILITARY_OFFICER_CORPSE: "Military Officer Corpse"
   STR_RESISTANCE_RADIO: "Resistance Radio"
   STR_RESISTANCE_RADIO_ARMOR: "Resistance Radio"
@@ -1609,6 +1627,8 @@ en-US:
 #manufacturing
   STR_EQUIPMENT: "Equipment"
   STR_COVERT_TOOLS: "Covert Tools"
+  STR_ROBOT_EQUIPMENT: "Robot Equipment"
+  STR_DRONE_CONTROLLER_MANUFACTURING: "Drone Manufacturing"
   STR_ACCESSORIES: "Accessories"
   STR_LOOT: "Loot"
   STR_JUNK: "Junk"
@@ -1833,7 +1853,9 @@ en-US:
   STR_IMPROVISED_GRENADE: "Improvised Grenade"
   STR_IMPROVISED_GRENADE_UFOPEDIA: "A plain tube sealed on both sides and filled with an explosive substance and fragments. Activated by igniting the fuse. Simple yet effective."
   STR_IMPROVISED_SMOKE_GRENADE: "Improvised Smoke Grenade"
-  STR_IMPROVISED_SMOKE_GRENADE_UFOPEDIA: "This smoke grenade, while having a modest construction, is still quite effective. The difference from the standard smoke grenade used by our soldiers is the simpler design of the detonator, which makes it impossible to delay the explosion of the grenade. Almost immediately after activation the grenade explodes, producing quite a lot of noise, spreading fine dust particles in the air."
+  STR_IMPROVISED_SMOKE_GRENADE_UFOPEDIA: "This smoke grenade, while having a modest construction, is still quite effective. After fuse activated, it spreads a lot of dense smoke particles around it, providing cover for our troops."
+  STR_IMPROVISED_FLASHBANG_GRENADE: "Improvised Flasbang Grenade"
+  STR_IMPROVISED_FLASHBANG_GRENADE_UFOPEDIA: "A crude, makeshift device that is detonated by a fuse without a retarder. When triggered, the smokeless explosive emits a powerful cotton sound, and the phosphorus particles sprayed in a small radius produce a bright flash, blinding everyone in a radius."
   STR_GRENADE: "Grenade"
   STR_GRENADE_UFOPEDIA: "This standard issue grenade has an accurate and sophisticated timer for precise control."
   STR_SMOKE_GRENADE: "Smoke Grenade"
@@ -1851,9 +1873,9 @@ en-US:
   STR_MOTION_SCANNER: "Motion Scanner"
   STR_MOTION_SCANNER_UFOPEDIA: "This sophisticated device uses a variety of detectors and advanced computer algorithms to identify moving enemy units. However, it requires some practice to use effectively. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected." #TODO переделать описание ваниллы
   STR_HACKING_COMPUTER: "Hacking Computer"
-  STR_HACKING_COMPUTER_UFOPEDIA: #TODO Сложный портативный компьютер с интеллектуальной системой беспроводного влома. Пользователю нужно указывать приоритеты для распространения вируса по системе, обходя firewall, атакуя уязвимости защиты, нужно довести до цели. https://www.youtube.com/watch?v=7w18DqvTXwA
+  STR_HACKING_COMPUTER_UFOPEDIA: "A high-performance handheld computer designed for wireless hacking of terminals and servers. Equipped with a rugged, waterproof case that allows tactical use in direct engagement. The smart system recognizes any type of wireless network and makes it easy for the operator to connect and program a virus to defeat the target's cyber defenses. Nevertheless, practical skills in hacking are necessary to use the device effectively. The skill of the operator, the quality of the hacking device, the degree of the target's defense depend on the parameters of the virus and the ease of its injection. To perform hacking, click the Hacking Computer icon and select 'Use Hacking Tool' action, then click on the terminal to be hacked. You need to route the virus through the target's RAM nodes to a key vulnerability in the system. Each move consumes the virus's Time Units. Firewalls block the path in adjacent nodes, but sometimes it's worth attacking the firewall core, spending some Health Points of the virus."
   STR_SAMPLING_TOOL: "Sampling Toolset"
-  STR_SAMPLING_TOOL_UFOPEDIA: "This set contains everything needed to gather field samples during the encounter. The compact yet spacious container holds all the necessary consumables for collecting samples of gases, liquids, soil and biological tissues. Practical skills in biology or physics are required for use, depending on the type of sampling site. For sampling, move unit on top of the sampling site and click on the Sampling Toolset icon. Select 'Use Sampling tool' from actions menu and on success, pick up the samples packed and ready for transportation."
+  STR_SAMPLING_TOOL_UFOPEDIA: "This set contains everything needed to gather field samples during the encounter. The compact yet spacious container holds all the necessary consumables for collecting samples of gases, liquids, soil and biological tissues. Practical skills in biology or physics are required for use, depending on the type of sampling site.{NEWLINE}For sampling, move unit on sampling site tile and click on the Sampling Toolset icon. Select 'Use Sampling tool' from actions menu and on success, pick up the samples packed and ready for transportation."
   STR_FIRST_AID: "First Aid"
   STR_FIRST_AID_UFOPEDIA: "This bag contains a minimum set of medical items that allow for temporary stopping of bleeding, treatment of the circumference of wounds and the application of primary bandage. In order to use it, you must face towards the operative requiring treatment. If the operative is stunned you must stand over the body. Click on the Trauma Pack icon and select 'use' from the menu. Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored."
   STR_PAINKILLER: "Painkillers"
@@ -1878,6 +1900,38 @@ en-US:
   STR_FLASHLIGHT_UFOPEDIA: "An ordinary flashlight powered by reusable batteries. It shines brightly, but the sparks from the opponent's eyes will shine even brighter if you hit him on the forehead with this heavy tool."
   STR_FIRE_EXTINGUISHER: "Fire Extinguisher"
   STR_FIRE_EXTINGUISHER_UFOPEDIA: "A Fire Extinguisher can be a useful field tool for our agents, potentially saving both human life and property. Due to its weight and hardness, it can also be used to subdue any uncooperative individuals."
+  STR_DRONE_FLASHLIGHT: "Drone Flaslight"
+  STR_DRONE_FLASHLIGHT_UFOPEDIA: "A powerful directional wide-angle illuminator adapted to be mounted on a drone as a utility slot. It is standard equipment of the reconnaissance drone."
+  STR_DRONE_FIRE_EXTINGUISHER: "Drone Fire Extinguisher"
+  STR_DRONE_FIRE_EXTINGUISHER_UFOPEDIA: "Despite its considerable weight, the modified fire extinguisher can be used by drones on crawler chassis. The safety pin has been removed, and the release valve has been adapted for connection to a drone servo."
+  STR_DRONE_LAUNCHER: "Drone Grenade Launcher"
+  STR_DRONE_LAUNCHER_UFOPEDIA: "Compact launcher installed as a weapon for small scout drones. It is fired by a signal from the control station. The gun is equipped with a system of automatic loading of makeshift small-caliber grenades with different warheads. Due to design specifics, the grenade pack cannot be reloaded in the launcher during combat."
+  STR_DRONE_LAUNCHER_FRAG_AMMO: "Drone Frag Greandes Pack"
+  STR_DRONE_LAUNCHER_SMOKE_AMMO: "Drone Smoke Pellets"
+  STR_DRONE_LAUNCHER_FLASBANG_AMMO: "Drone Flashbang Grenades Pack"
+  STR_DRONE_MEDICINE: "Drone Medicine"
+  STR_DRONE_MEDICINE_UFOPEDIA: "A drone module equipped with a set of precision manipulators for applying a tourniquet to a wounded limb or a hemostatic compress. In addition, the kit includes a system for injecting stimulant and anesthetic drugs. A camera on the flexible arm allows the drone operator to accurately and quickly assess injuries and select a program to perform first aid for our soldiers on the battlefield."
+  STR_DRONE_MOTION_SCANNER: "Drone Motion Scanner"
+  STR_DRONE_MOTION_SCANNER_UFOPEDIA: "Modification of the motion scanner for installation on our drone. The received information is output on the display for the soldiers following the drone, as well as transmitted via an additional communication channel to the mission command center."
+  STR_DRONE_HACKING_COMPUTER: "A version of the hacking computer adapted for installation on a drone. It has a more powerful wide-wave transmitter for connecting to the enemy's data channels. The hacking process is controlled remotely from our base, and the resulting signal delay negatively affects the virus' Health Points. However, the increased transmitter power boosts the number of Time Units of the virus.{NEWLINE}In order to use it, a special chip must be installed in the drone's main system, increasing its processing power. Without it, using the hacking computer will be practically useless."
+  STR_DRONE_SAMPLING_TOOL: "Drone Sampling Tool"
+  STR_DRONE_SAMPLING_TOOL_UFOPEDIA: "The device is a set of precision hydraulic manipulators with multiple degrees of freedom and various tools. Combined with several high-resolution digital cameras on the flexible arms, it allows our drone to collect samples for further analysis. The samples are placed in special protected containers with an inert argon atmosphere. Packed sample containers can be moved into the drone's quick access compartment (if available). To be used, a special chip with manipulator control programs must be installed in the drone's main computer. Without it, sample collection will be very inefficient."
+  STR_DRONE_TASER: "Drone Taser"
+  STR_DRONE_TASER_CLIP: "Drone Taser Cartridge"
+  STR_DRONE_TASER_UFOPEDIA: "A modification of the hand taser for use on a drone chassis. The custom-designed cartridge is essentially made up of 6 regular hand taser cartridges put together. With the additional power supply from the drone's battery, it was possible to slightly increase the power of the current supplied through the copper wire to the target."
+  STR_DRONE_ROCKET_LAUNCHER: "Drone Rocket Launcher"
+  STR_DRONE_ROCKET_CLIP: "Drone Rocket Pack"
+  STR_DRONE_ROCKET_LAUNCHER_UFOPEDIA: "Compact and relatively lightweight rocket launcher for mounting on drone chassis. It can be loaded with a package of 5 small unguided rockets. For greater accuracy, it is equipped with a laser rangefinder and ballistic computer system to facilitate targeting."
+  STR_DRONE_UPGRADES: "Drone Upgrades"
+  STR_DRONE_UPGRADES_UFOPEDIA: "The capabilities of the drone's on-board computer can be extended relatively easily with add-on modules optimized for the special tasks that the drone may be assigned. The hardware and accessories are manufactured by engineers, then mounting and installation of the new software is required."
+  STR_DRONE_HACKING: "Drone Hacking"
+  STR_DRONE_HACKING_UFOPEDIA: "Our drones can be used as proxy devices to remotely hack into secure, isolated enemy digital networks. Although the drone's chassis was not originally designed for such tasks, with additional hardware and installation of the necessary software in the onboard computer, a reasonable degree of efficiency can be achieved. Such a solution will help lessen the risk of experienced hackers in a combat encounter with the enemy."
+  STR_DRONE_SAMPLING: "Drona Sampling"
+  STR_DRONE_SAMPLING_UFOPEDIA: "Collecting samples of alien activity during a engagement could be very dangerous for our scientists, and training our soldiers in the right skills would be extremely time-consuming. Instead, we could send a drone to the site, controlled by our scientist from the base. Unfortunately, sample collection is a very complex process, and it's extremely difficult to be robotized effectively. We have developed a special module for the drone, as well as new firmware to help us use it effectively. Despite all our efforts, the process of remote sample collection remains less convenient due to possible delays in the signal sent, as well as the limitations of robotic arms."
+  STR_DRONE_COMBAT_CHIP: "Drone Combat Chip"
+  STR_DRONE_AGILITY_CHIP: "Drone Agility Chip"
+  STR_DRONE_HACKING_CHIP: "Drone Hacking Chip"
+  STR_DRONE_SAMPLING_CHIP: "Drone Sampling Chip"
   STR_ALIEN_ARTIFACT_OPENER: "Alien Artifact XC-18F 'Can Opener'"
   STR_ALIEN_ARTIFACT_OPENER_UFOPEDIA: "We have comprehensively studied this puzzling device, but we could not come to an unequivocal opinion about its purpose. The density and other physical properties of the alloy of which it is composed are very heterogeneous, the most of it is very strong, much stronger than titanium alloys. It appears that the device is hollow inside.  Device emits beta particles, and the intensity is cyclic and pulsating. Interestingly, the body alloy changes its ferromagnetic properties abruptly in opposition to the radiation. We tried to cut it open, which was extremely difficult. The inner cavity was filled with gas at very low pressure, on contact with air the gas began to rapidly decompose, which was accompanied by the formation of antimatter, which instantly annihilated. Fortunately, the amount of produced antimatter was very small, so the explosion was not so powerful and no one was hurt."
   STR_ALIEN_ARTIFACT_SNAKE_EYE: "Alien Artifact NJ-03A 'Snake Eye'"
@@ -1903,7 +1957,6 @@ en-US:
   STR_MIB_DATA_CONTAINER_UFOPEDIA: "The device was a kind of escape pod into which data from the M.I.B. command center servers was pumped. Apparently, the servers were on an isolated network and this was an attempt to save information during our assault. The data in it is encrypted and we are not yet able to crack it."
   STR_SUPPLIES_1: "Supplies Pack"
   STR_SEALED_CRATE: "Sealed Crate"
-  STR_SEALED_CRATE_BREACHING: "Breaching Sealed Crate"
   STR_CREDIT_CARD: "Credit Card"
   STR_CREDIT_CARD_SILVER: "Silver Credit Card"
   STR_CREDIT_CARD_GOLD: "Golden Credit Card"
@@ -1942,6 +1995,7 @@ en-US:
   STR_FAT_ZOMBIE_CORPSE_REFINING: "Fat Zombie Corpse Processing"
   STR_CHUPACABRA_REFINING: "Chupacabra Processing"
   STR_CHUPACABRA_CORPSE_REFINING: "Chupacabra Corpse Processing"
+  STR_METAL_SCRAPS: "Metal Scraps"
   STR_SPARE_PARTS: "Spare Parts"
   STR_CHEMICALS: "Chemicals"
   STR_HIGH_TECH_PARTS: "High-tech Parts"
@@ -1977,6 +2031,14 @@ en-US:
   STR_CORPSE_LABCOAT: "X-Com Operative Corpse"
   STR_CORPSE_ENGINEERSUIT: "X-Com Operative Corpse"
   STR_RESISTANCE_SUIT: "Resistance Suit"
+  STR_CORPSE_RESISTANCE_SUITE: "Resistance Agent Corps"
+  STR_MILITARY_OFFICER_SUIT: "Military Officer Uniform"
+  STR_DRONE_CONTROL_UNIT: "Drone Control Unit"
+  STR_DRONE_SCOUT_SMOKE_WEAPON: "Drone Smoke Launcher"
+  STR_DRONE_SCOUT: "Drone/Scout"
+  STR_DRONE_SCOUT_ARMOR: "CRAWLER CHASSIS"
+  STR_DRONE_SCOUT_CORPSE: "Drone Wreck"
+  STR_DRONE_SCOUT_UFOPEDIA: "This small rugged drone is designed for scout and reconnaissance. Although lacking in offensive weaponry or heavy armor, it is fast and allows ground units to quickly scout out enemy positions and act as a spotter without risk to X-Com personnel."
 
 #crafts
   STR_LIGHT_MISSILES: "Light Missiles"
@@ -1994,7 +2056,7 @@ en-US:
 
 #manufacture
   STR_FAKE_AGENT_ID: "Special Agent Fake IDs"
-  STR_UNCRATE_HELICOPTER: "Unpack Helicopter"
+  STR_METAL_SCRAPS_PROCESSING: "Metal Scraps Processing"
 
 #ufopedia
   STR_TACTICAL_ANALYSIS: "TACTICAL ANALYSIS"
@@ -2020,11 +2082,21 @@ en-US:
   STR_XCOM_FUNDAMENTAL_STUDIES: "X-COM Fundamental Studies"
   STR_XCOM_FUNDAMENTAL_STUDIES_DESCRIPTION: "Having decrypted Ufopedia, we now have access to our fundamental research. Alas, due to lack of funding, most of it was conducted (or at least leaded) by Dr. Meyer personally, and we will need some time to analyze his notes. Perhaps we should devote resources to this.{NEWLINE}{ALT}New research project available."
   STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA: "We were unable to obtain any valuable and reliable information about the aliens, their nature, or to collect samples of their technology. Therefore, XCOM scientists were focused on theoretical solutions to complex problems in a variety of fields, from the natural sciences to military tactics. However, due to a dramatic decrease in funding and drastic staff reductions, all projects were eventually frozen. Now we have an opportunity to carry out some studies, but given the limited capacity, it is important to properly prioritize our efforts."
+  STR_XCOM_SAMPLING: "Sample Сollection"
+  STR_XCOM_SAMPLING_DESCRIPTION: "Usually, we are not able to get any traces of alien presence at suspected landing sites of their vessels. It is likely that the LHF agents who arrive at the location promptly clean up the area to prevent any information leakage. Thus, we are probably losing important, if not key, information about our enemy. Perhaps a sample collection kit should be developed that can be used when our soldiers are directly on the ground."
+  STR_ADVANCED_WARFARE: "Advanced Warfare"
+  STR_ADVANCED_WARFARE_UFOPEDIA: "The new reality that came after the official shutdown of the project dictates new tactics on the battlescape. The value of a well-trained soldier is tremendously increasing for us. The requirements for stealthy operations, the adoption of the Hit-and-Run behavior, impose severe limitations on the size of the squads we can deploy on missions. Under these conditions, we need to intensify the development and application of the most advanced technologies and methods of training soldiers to maximize the combat potential and versatility of a small unit of our fighters."
   STR_SOLDIER_SPECS: "Soldier Specializations"
   STR_SOLDIER_SPECS_UFOPEDIA: "Specialized training for X-COM soldiers can develop a variety of combat and tactical skills. After receiving their first promotion, each soldier can gain a specialty in one of several different areas. Successful completion of a specialty course not only improves a soldier's performance, but also gives them abilities appropriate to their specialty. A soldier can have only one specialization."
   STR_ADDITIONAL_COURSES: "Additional Courses"
   STR_ADDITIONAL_COURSES_UFOPEDIA: "We have developed several additional training courses for our soldiers:{NEWLINE}{ALT}*{ALT}Unarmed Combat{NEWLINE}{ALT}*{ALT}Rapid deployment{NEWLINE}These courses are available for soldiers and don't replace their specialization, but provide additional traits. In addition, we have developed a basic military training course for our non-combat personnel and agent training cource."
-  STR_FIREARMS_STUDY: "Firearms study"
+  STR_SUPPORT_DRONES: "Support Drones"
+  STR_SUPPORT_DRONES_UFOPEDIA: "Remote-controlled robots and drones are an important component of assault squads, performing reconnaissance roles without exposing personnel to risk. In addition, drones can carry utility and small arms to support the squad. A drone unit consists of a command and control complex and the drone itself. The characteristics of the unit are made up of the characteristics of the control complex and the drone - by improving the drone models and control complexes, combining compatible models with each other we can achieve different combinations of characteristics. The drone is controlled and monitored by an officer from the base headquarters, our dropship provides relay functions. The availability and maximum number of drone control channels is specified in the craft specifications, it can be increased by installing additional systems.{NEWLINE}Obviously, we can't rely on commercial or military drones - their command channel could easily be compromised by our adversaries, which could jeopardize both the operation and our entire project. We need to design our own equipment and establish production."
+  STR_DRONES_REMOTE_CONTROL: "Drone Control Systems"
+  STR_DRONES_REMOTE_CONTROL_UFOPEDIA: "Remote control of a drone from the base is a non-trivial task, given the high requirements for secrecy, low latency, long distances and quality of transmitted video information. Obviously, a powerful transmitter cannot be installed on the drone itself, so the equipment on the landing craft will act as a retransmitter. Unfortunately, this scheme limits the use of drones to landing missions only, they cannot be used in covert operations. For communication between the ship and the base, we use a hacked high-speed channel of a low-orbit group of military satellites. Data in the channel is transmitted on dynamically changing frequencies, encryption keys are changed in a random interval from one to three minutes. The keys themselves and the interval of their change are transmitted to the craft directly from the base at low radio frequencies, which can be repeatedly reflected from the ionosphere and the earth, overcoming huge distances.{NEWLINE}This method is not suitable for the transfer of large amounts of data, but for the transfer of encryption keys, it is quite sufficient. Of course, the signal transmitted from the base is also encrypted, and the parameters for decryption are put into the ship's onboard computer before departure. Not all landing ships available to us have all the necessary equipment, so we have developed a modernization kit that can be connected to the ship's system."
+  STR_DRONES_MANUFACTURING: "Drone Manufacturing"
+  STR_DRONES_MANUFACTURING_UFOPEDIA: "We have sufficient resources to produce both the drones themselves, designed for direct support of assault troops, and remote control systems. For the basic model of the support drone, we have chosen a crawler chassis equipped with wide-angle and infrared cameras on a moving arm. The chassis has a modular design, in the expansion slot can be installed various additional equipment to perform more specific tasks and expand the combat application of the drone. By default, a manipulator capable of moving light objects is set as the utility slot."
+  STR_FIREARMS_STUDY: "Firearms Study"
   STR_FIREARMS_STUDY_UFOPEDIA: "Almost from the very invention, firearms were the most effective infantry weapons. Modern small arms have approached their limit of practical effectiveness - since the late 70s, new models differ slightly from their predecessors in basic parameters. The marginal increase in one or more parameters requires a radical revision of the design and material of weapons and ammunition, as well as the introduction of innovative technologies. Such developments are underway in some countries, and the Ufopedia archives contain information about interesting super-secret developments. However, there were no own developments in this area."
   STR_SMART_WEAPONS: "Smart Weapons"
   STR_SMART_WEAPONS_UFOPEDIA: "One of the most promising areas that can radically reduce the aiming time and accuracy is the development of the so-called 'Smart Weapons'. This concept implies the introduction of an advanced targeting system based on machine learning, automatic correction of the fire direction and the bullet's trajectory adjustment. The computer fire control system must perform all the necessary ballistic calculations on its own, allowing the soldier to focus on target designation and conduct tactical actions."
@@ -2146,9 +2218,17 @@ en-US:
   STR_STARTING_EQUIPMENT_UFOPEDIA: "Since the X-COM project was discontinued, we have lost our regular armament and gear suppliers. But we continue to fight, and we vitally need new sources of weaponry and ammunition. Maybe our new friends can help out with that? Regrettably, lacking established illegal arms channels, they can only offer us weapons that are available for purchase by civilians. Our contact in the Resistance transferred the tactical specifications of the items we can buy from them, all information analyzed and uploaded to Ufopedia."
   STR_SUPPLIES: "Supplies"
   STR_SUPPLIES_UFOPEDIA: "In the current circumstances we must act as carefully as possible to avoid unnecessary attention to ourselves. Fortunately, in many aspects our base is autonomous - we have a source of drinking water and electricity generators. We have developed a system by which we can organize safe purchases of food and basic supplies, and some simple spare parts in several nearby cities. We've had major funding issues for a long time, so we're already left with people who put the fight against aliens ahead of taking care of their personal earnings. We've resigned contracts with all the staff, all of them willing to continue working on the project voluntarily, as long as we take care of providing them with everything they need to work, and it would be good to keep the morale high."
+  STR_NON_LETHAL_EQUIPMENT: "Non-Lethal Weapons"
+  STR_NON_LETHAL_EQUIPMENT_UFOPEDIA: "In the past, we have envisioned fighting aliens and their agents with lethal weapons. Captured alive enemies can be a valuable resource, with the help of which we can get critical information. It is not difficult to stun an enemy - it is enough to deliver a powerful blow to a certain area of the head without damaging the skull. An alternative is an electric jolt that shocks the nervous system. Tactical information about known non-lethal weapons has been added to the Ufopaedia database. Unfortunately, they have limited effectiveness in intense combat. Perhaps our engineers can create more powerful devices."
+  STR_SEALED_CRATE_BREACHING: "Assets sealed"
+  STR_SEALED_CRATE_BREACHING_UFOPEDIA: "During the initiation of the Oblivion protocol, the containers that held a large amount of our gear and equipment were sealed. It was assumed that only Council employees would be able to unlock them, but we can try to break the security mechanisms on the containers ourselves to get the items that we so desperately need. Desent hacking skills of our engeneers would help greatly."
   STR_IMPROVISED_MANUFACTURING: "Improvised Manufacturing"
   STR_IMPROVISED_MANUFACTURING_UFOPEDIA: "We have designed technological processes for the manufacture of a wide variety of items from common materials. Special attention was paid to the fact that all purchases of machine tools and other equipment could be made without attracting unnecessary attention and were widely available. We established a list of suppliers who would be able to provide the necessary equipment and raw materials. It is necessary to send our agents to sign agreements with them. At the same time, of course, it is necessary to create a network of false confidants who will disguise the supplies from possible disclosure of these schemes by our adversaries."
   STR_IMPROVISED_MANUFACTURING_POSTREQ: STR_IMPROVISED_MANUFACTURING_POSTREQ
+  STR_IMPROVISED_GRENADES: "Improvised Grenades"
+  STR_IMPROVISED_GRENADES_UFOPEDIA: "While we can't make sophisticated weapons, but something simple like explosives - that's an easy thing to do! Let me know if you need spare grenades."
+  STR_IMPROVISED_GRENADE_TINKERING_DESCRIPTION: "While we can't make sophisticated weapons, but something simple like explosives - that's an easy thing to do! We have also been able to develop designs for simple support grenades that do not require sophisticated equipment. Although they are less effective than combat grenades, our designs can be useful in resource-limited settings.{NEWLINE}Let me know if you need some spare grenades!"
+  STR_IMPROVISED_SMOKE_GRENADE_TINKERING_DESCRIPTION: "Obviously, we need to restock our support grenades to be able to cover our soldiers in a critical situation from enemy fire. We have developed designs for a simple smoke grenade, which can be produced without special equipment."
   STR_HIGH_TECH_MANUFACTURING: "High Tech Manufacturing"
   STR_HIGH_TECH_MANUFACTURING_POSTREQ: STR_HIGH_TECH_MANUFACTURING_POSTREQ
   STR_HIGH_TECH_MANUFACTURING_UFOPEDIA: "Recently, governments of many countries have been introducing measures to control the production and circulation of high-tech components and microelectronics. The reasons for this are not obvious to us; perhaps it is related to the increasing international tensions. Nevertheless, in order to further develop our production capabilities, we need a constant and reliable source of microelectronics components. In addition, for in-house electronics manufacturing, we need to acquire a number of specific equipment, which can hardly be done easily without attracting undue attention. We have several possible options, and we have prepared a plan for another covert operation."
@@ -2758,7 +2838,7 @@ en-US:
   STR_SWARMID_DESERT_TERROR: STR_SWARMID_DESERT_TERROR
   STR_SMALL_GROUND_CONVOY: STR_SMALL_GROUND_CONVOY
   STR_MEDIUM_GROUND_CONVOY: STR_MEDIUM_GROUND_CONVOY
-
+  
   
   STR_RESISTANCE_FIRST_HELP: STR_RESISTANCE_FIRST_HELP
   STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED: STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED
@@ -2813,8 +2893,25 @@ en-US:
   STR_STONKS_ACTIVE: STR_STONKS_ACTIVE
   STR_STONKS_FINISHED: STR_STONKS_FINISHED
   STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ: STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
+  STR_MIB_CONVOY_LEAD_OPERATION_PREREQ: STR_MIB_CONVOY_LEAD_OPERATION_PREREQ
   STR_WEAPON_COMPONENTS: STR_WEAPON_COMPONENTS
   STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ: STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
   STR_CRIMINAL_RECRUITING_PREREQ: STR_CRIMINAL_RECRUITING_PREREQ
   STR_WORKSHOP_PREREQ: STR_WORKSHOP_PREREQ
   PAL_BASE_INFO: PAL_BASE_INFO
+  INV_NULL_HAND_L: INV_NULL_HAND_L
+  INV_NULL_HAND_R: INV_NULL_HAND_R
+  INV_NULL_2X1_LEFT_LEG: INV_NULL_2X1_LEFT_LEG
+  INV_NULL_2X1_RIGHT_LEG: INV_NULL_2X1_RIGHT_LEG
+  INV_NULL_2X1_LEFT_SHOULDER: INV_NULL_2X1_LEFT_SHOULDER
+  INV_NULL_2X1_RIGHT_SHOULDER: INV_NULL_2X1_RIGHT_SHOULDER
+  INV_NULL_1X1_LEFT_HAND: INV_NULL_1X1_LEFT_HAND
+  INV_NULL_3X3_BACK_PACK: INV_NULL_3X3_BACK_PACK
+  INV_NULL_2X3_BACK_PACK: INV_NULL_2X3_BACK_PACK
+  INV_NULL_4X2_BELT: INV_NULL_4X2_BELT
+  INV_NULL_1X2_QD_SLOT: INV_NULL_1X2_QD_SLOT
+  INV_NULL_1X1_QD_SLOT: INV_NULL_1X1_QD_SLOT
+  INV_NULL_1X1_RIGHT_SHOULDER: INV_NULL_1X1_RIGHT_SHOULDER
+  INV_NULL_1X1_LEFT_SHOULDER: INV_NULL_1X1_LEFT_SHOULDER
+  INV_NULL_1X1_RIGHT_LEG: INV_NULL_1X1_RIGHT_LEG
+  INV_NULL_1X1_LEFT_LEG: INV_NULL_1X1_LEFT_LEG

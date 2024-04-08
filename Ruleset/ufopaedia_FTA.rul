@@ -234,6 +234,14 @@ ufopaedia:
       - STR_SUPPLIES
     text: STR_SUPPLIES_UFOPEDIA
     listOrder: 110
+  - id: STR_SEALED_CRATE_BREACHING
+    type_id: 7
+    section: STR_XCOM_REPORTS_UC
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    requires:
+      - STR_SEALED_CRATE_BREACHING
+    text: STR_SEALED_CRATE_BREACHING_UFOPEDIA
+    listOrder: 110
   - id: STR_IMPROVISED_MANUFACTURING
     type_id: 7
     section: STR_XCOM_REPORTS_UC
@@ -241,6 +249,14 @@ ufopaedia:
     requires:
       - STR_IMPROVISED_MANUFACTURING
     text: STR_IMPROVISED_MANUFACTURING_UFOPEDIA
+    listOrder: 110
+  - id: STR_IMPROVISED_GRENADES
+    type_id: 7
+    section: STR_XCOM_REPORTS_UC
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    requires:
+      - STR_IMPROVISED_GRENADES
+    text: STR_IMPROVISED_GRENADES_UFOPEDIA
     listOrder: 110
   - id: STR_HIGH_TECH_MANUFACTURING
     type_id: 7
@@ -274,6 +290,15 @@ ufopaedia:
     requires:
       - STR_XCOM_EQUIPMENT
     text: STR_XCOM_EQUIPMENT_UFOPEDIA
+    listOrder: 130
+  - id: STR_NON_LETHAL_EQUIPMENT
+    type_id: 7
+    image_id: INTEL_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_NON_LETHAL_EQUIPMENT
+    text: STR_NON_LETHAL_EQUIPMENT_UFOPEDIA
     listOrder: 130
   - id: STR_FACILITIES_BLUEPRINTS
     type_id: 7
@@ -365,6 +390,60 @@ ufopaedia:
       - STR_ABANDONED_BASE
     text: STR_ABANDONED_BASE_UFOPEDIA
     listOrder: 152
+
+  - id: STR_ADVANCED_WARFARE
+    type_id: 7
+    image_id: COMMANDO_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_ADVANCED_WARFARE
+    text: STR_ADVANCED_WARFARE_UFOPEDIA
+    listOrder: 60
+  - id: STR_DRONES_REMOTE_CONTROL
+    type_id: 8
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_DRONES_REMOTE_CONTROL
+    text: STR_DRONES_REMOTE_CONTROL_UFOPEDIA
+    listOrder: 60
+  - id: STR_DRONES_MANUFACTURING
+    type_id: 7
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    text_width: 170
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_DRONES_MANUFACTURING
+    text: STR_DRONES_MANUFACTURING_UFOPEDIA
+    listOrder: 60
+
+  - id: STR_DRONE_UPGRADES
+    type_id: 7
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    text_width: 170
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_DRONE_UPGRADES
+    text: STR_DRONE_UPGRADES_UFOPEDIA
+    listOrder: 60
+  - id: STR_DRONE_HACKING
+    type_id: 7
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    text_width: 170
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_DRONE_HACKING
+    text: STR_DRONE_HACKING_UFOPEDIA
+    listOrder: 60
+  - id: STR_DRONE_SAMPLING
+    type_id: 7
+    image_id: ENGINEER_CHIEF_CPAL.SPK
+    text_width: 170
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_DRONE_SAMPLING
+    text: STR_DRONE_SAMPLING_UFOPEDIA
+    listOrder: 60
 
   - id: STR_SOLDIER_SPECS
     type_id: 7
@@ -577,6 +656,7 @@ ufopaedia:
     listOrder: 300
 
 #STR_TECHNOLOGY 7000
+
   - id: STR_EXPANDABLE_AMMO
     type_id: 8
     section: STR_TECHNOLOGY_UC
@@ -839,14 +919,14 @@ ufopaedia:
     image_id: DRAGONFLY_CPAL.SPK
     rect_stats:
       x: 208
-      y: 135
+      y: 125
       width: 160
-      height: 65
+      height: 75
     rect_text:
       x: 5
       y: 40
-      width: 100
-      height: 160
+      width: 105
+      height: 170
     text: STR_DRAGONFLY_UFOPEDIA
     requires:
       - STR_XCOM_EQUIPMENT_UNLOCKED
@@ -1123,7 +1203,7 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_POLICE_BATON_UFOPEDIA
     requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
+      - STR_POLICE_BATON
     listOrder: 15010
   - id: STR_COMBAT_KNIFE
     type_id: 4
@@ -1217,19 +1297,7 @@ ufopaedia:
       - STR_BOW_ARROW_ELECTRIC
     listOrder: 16060
 #pistols
-  - id: STR_TASER
-    type_id: 4
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_TASER_UFOPEDIA
-    requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
-    listOrder: 17000
-  - id: STR_TASER_CLIP
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_XCOM_EQUIPMENT_UNLOCKED
-    listOrder: 17010
+
   - id: STR_SNUBNOSE_PISTOL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1269,6 +1337,19 @@ ufopaedia:
     requires:
       - STR_POLICE_PISTOL_CLIP
     listOrder: 17046
+  - id: STR_TASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_TASER_UFOPEDIA
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 17000
+  - id: STR_TASER_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_XCOM_EQUIPMENT_UNLOCKED
+    listOrder: 17010
   - id: STR_HEAVY_REVOLVER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -2159,15 +2240,22 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_IMPROVISED_GRENADE
+      - STR_IMPROVISED_GRENADES
     text: STR_IMPROVISED_GRENADE_UFOPEDIA
     listOrder: 24000
   - id: STR_IMPROVISED_SMOKE_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
-      - STR_IMPROVISED_SMOKE_GRENADE
+      - STR_IMPROVISED_GRENADES
     text: STR_IMPROVISED_SMOKE_GRENADE_UFOPEDIA
+    listOrder: 24000
+  - id: STR_IMPROVISED_FLASHBANG_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_IMPROVISED_GRENADES
+    text: STR_IMPROVISED_FLASHBANG_GRENADE_UFOPEDIA
     listOrder: 24000
   - id: STR_GRENADE
     type_id: 4
@@ -2338,6 +2426,103 @@ ufopaedia:
       - STR_FIRE_EXTINGUISHER
     text: STR_FIRE_EXTINGUISHER_UFOPEDIA
     listOrder: 24140
+
+
+  - id: STR_DRONE_FLASHLIGHT
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONES_MANUFACTURING
+    text: STR_DRONE_FLASHLIGHT_UFOPEDIA
+    listOrder: 24110
+  - id: STR_DRONE_FIRE_EXTINGUISHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONES_MANUFACTURING
+      - STR_FIRE_EXTINGUISHER
+    text: STR_DRONE_FIRE_EXTINGUISHER_UFOPEDIA
+    listOrder: 24110
+  - id: STR_DRONE_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONE_LAUNCHER
+    text: STR_DRONE_LAUNCHER_UFOPEDIA
+    listOrder: 24140
+  - id: STR_DRONE_LAUNCHER_FRAG_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DRONE_LAUNCHER
+    listOrder: 23020
+  - id: STR_DRONE_LAUNCHER_SMOKE_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DRONE_LAUNCHER
+    listOrder: 23020
+  - id: STR_DRONE_LAUNCHER_FLASBANG_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DRONE_LAUNCHER
+    listOrder: 23020
+  - id: STR_DRONE_MEDICINE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONE_MEDICINE
+    text: STR_DRONE_MEDICINE_UFOPEDIA
+    listOrder: 24140
+  - id: STR_DRONE_MOTION_SCANNER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER
+      - STR_DRONES_MANUFACTURING
+    text: STR_DRONE_MOTION_SCANNER_UFOPEDIA
+    listOrder: 24140
+  - id: STR_DRONE_HACKING_COMPUTER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONE_HACKING
+    text: STR_DRONE_HACKING_COMPUTER_UFOPEDIA
+    listOrder: 24140
+  - id: STR_DRONE_SAMPLING_TOOL
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONE_SAMPLING
+    text: STR_DRONE_SAMPLING_TOOL_UFOPEDIA
+    listOrder: 24140
+  - id: STR_DRONE_TASER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONE_TASER
+    text: STR_DRONE_TASER_UFOPEDIA
+    listOrder: 24140
+  - id: STR_DRONE_TASER_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DRONE_TASER
+    listOrder: 23020
+  - id: STR_DRONE_ROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DRONE_ROCKET_LAUNCHER
+    text: STR_DRONE_ROCKET_LAUNCHER_UFOPEDIA
+    listOrder: 24140
+  - id: STR_DRONE_ROCKET_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DRONE_ROCKET_LAUNCHER
+    listOrder: 23020
 
 #STR_ALIEN_ARTIFACTS 30-45
   - id: STR_HEAVY_PLASMA
