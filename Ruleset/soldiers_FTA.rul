@@ -55,6 +55,12 @@ soldiers:
           3: 25
           4: 50
           5: 100
+      - role: 5 #ROLE_ROBOT
+        requirments: 
+          1: 100
+          2: 100
+          3: 100
+          4: 100
     roleRankStrings:
       - role: 0 #ROLE_SOLDIER
         strings: 
@@ -96,6 +102,13 @@ soldiers:
           4: STR_SENIOR_ENGINEER
           5: STR_FOREMAN
           6: STR_ARTISAN
+      - role: 4 #ROLE_ENGINEER
+        strings: 
+          1: STR_DRONE
+          2: STR_ROBOT_RANK
+          3: STR_DROID
+          4: STR_SAPIENT_AI
+          5: STR_SYNTH
     costBuy: 50000
     costSalary: 3000
     moraleLossWhenKilled: 150
@@ -296,7 +309,7 @@ soldiers:
     # berserkFemale: [831, 832, 833]
   - type: STR_PILOT
     refNode: *STR_SOLDIER
-    roles: [1] #ROLE_PILOT
+    roles: [2] #ROLE_PILOT
     costBuy: 60000
     costSalary: 4000
     value: 60
@@ -377,7 +390,7 @@ soldiers:
       - SoldierNames/
   - type: STR_AGENT
     refNode: *STR_SOLDIER
-    roles: [2] #ROLE_AGENT
+    roles: [3] #ROLE_AGENT
     costBuy: 60000
     costSalary: 4000
     value: 60
@@ -497,7 +510,7 @@ soldiers:
       - SoldierNames/
   - type: STR_SCIENTIST
     refNode: *STR_SOLDIER
-    roles: [3] #ROLE_SCIENTIST
+    roles: [4] #ROLE_SCIENTIST
     costBuy: 60000
     costSalary: 4000
     value: 60
@@ -611,7 +624,7 @@ soldiers:
       - SoldierNames/
   - type: STR_ENGINEER
     refNode: *STR_SOLDIER
-    roles: [4] #ROLE_ENGINEER
+    roles: [5] #ROLE_ENGINEER
     costBuy: 60000
     costSalary: 4000
     value: 60
@@ -790,7 +803,7 @@ soldiers:
 
   - type: STR_ALLY_MILITARY_OFFICER
     refNode: *STR_SOLDIER
-    roles: [0, 3] #SOLDIER AND SCIENTIST
+    roles: [0, 4] #SOLDIER AND SCIENTIST
     costBuy: 60000
     costSalary: 4000
     value: 60
@@ -894,14 +907,16 @@ soldiers:
       robotics: 20
       diligence: 30
       reverseEngineering: 0
-    armor: STR_ALLY_MILITARY_OFFICER_ARMOR
-    armorForAvatar: STR_ALLY_MILITARY_OFFICER_ARMOR
+    armor: STR_MILITARY_OFFICER_ARMOR
+    armorForAvatar: STR_MILITARY_OFFICER_ARMOR
     femaleFrequency: 0 #TODO - we dont have sprite for lady
     soldierNames:
       - delete
       - SoldierNames/
 
   - type: STR_DRONE_CONTROL_UNIT
+    roles: [1] # ROLE_ROBOT
+    refNode: *STR_SOLDIER
     requires:
       - STR_DRONES_MANUFACTURING
     costSalary: 1000
@@ -935,6 +950,9 @@ soldiers:
       melee: 0
       mana: 0
     armor: STR_DRONE_SCOUT_ARMOR
+    armorForAvatar: STR_DRONE_SCOUT_ARMOR
+    avatarOffsetX: 79
+    avatarOffsetY: 62
     standHeight: 6
     kneelHeight: 6
     femaleFrequency: 0

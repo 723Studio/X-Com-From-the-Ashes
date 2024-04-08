@@ -21,9 +21,6 @@ eventScripts:
   - type: noSupplyWarningScript
     oneTimeSequentialEvents: [STR_NO_SUPPLY_WARNING_EVENT]
     lastMonth: 0
-  - type: xcomSealedCratesScript
-    oneTimeSequentialEvents: [STR_XCOM_SEALED_CRATES_EVENT]
-    lastMonth: 0
   - type: noSupplySecondWarningScript
     oneTimeSequentialEvents: [STR_NO_SUPPLY_SECOND_WARNING_EVENT]
     firstMonth: 1
@@ -96,7 +93,7 @@ eventScripts:
     executionOdds: 90
   - &xcomFundamentalStudiesScript
     type: xcomFundamentalStudiesScript
-    oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES]
+    oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ]
     researchTriggers:
       STR_UFOPEDIA_DECRYPTION: true
       STR_FACILITIES_BLUEPRINTS: true
@@ -105,11 +102,27 @@ eventScripts:
     allowedProcessor: 2 #xcom
     executionOdds: 90
     maxDifficulty: 3
-  - type: XCOM_FUNDAMENTAL_STUDIES_SCRIPT_SH #extra SH copy
+  - type: xcomFundamentalStudiesScriptSH #extra SH copy
     refNode: *xcomFundamentalStudiesScript
     executionOdds: 50
     minDifficulty: 4
     maxDifficulty: 4
+
+  - &xcomSamplingScript
+    type: xcomSamplingScript
+    oneTimeSequentialEvents: [STR_XCOM_SAMPLING]
+    researchTriggers:
+      STR_CROP_CIRCLES_PREREQ: true
+      STR_SAMPLING_PREREQ: false
+    allowedProcessor: 2 #xcom
+    executionOdds: 90
+    maxDifficulty: 3
+  - type: xcomSamplingScriptSH #extra SH copy
+    refNode: *xcomSamplingScript
+    executionOdds: 50
+    minDifficulty: 4
+    maxDifficulty: 4
+
 
   - &workshopScript
     type: workshopScript

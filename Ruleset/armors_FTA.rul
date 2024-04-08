@@ -2251,7 +2251,7 @@ armors:
       - STR_ENGINEER
     loftempsSet: [ 3 ]
 
-  - type: STR_ALLY_MILITARY_OFFICER_ARMOR
+  - type: STR_MILITARY_OFFICER_ARMOR
     spriteSheet: ALLY_MILITARY_OFFICER.PCK
     layersDefaultPrefix: HUMAN_SOLDIER
     layersDefinition:
@@ -2541,7 +2541,7 @@ armors:
 
   - type: STR_DRONE_SCOUT_ARMOR
     spriteSheet: DRONE_SCOUT.PCK
-    #spriteInv: DRONE
+    spriteInv: inventory_DRONE_SCOUT
     customArmorPreviewIndex: 10
     weight: -10
     storeItem: STR_NONE
@@ -2603,11 +2603,11 @@ armors:
       - INV_NULL_2X1_RIGHT_SHOULDER
       - INV_NULL_2X1_LEFT_LEG
       - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X2_QD_SLOT
+      #- INV_NULL_1X2_QD_SLOT
       - INV_NULL_4X2_BELT
       - INV_NULL_3X3_BACK_PACK
     allowedItemCategories:
-      - 
+      - STR_ROBOT_EQUIPMENT
     loftempsSet: [ 3 ]
 
 extended:

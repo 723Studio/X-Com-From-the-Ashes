@@ -36,6 +36,8 @@ research:
     hidden: true
   - name: STR_SPORTS_BOW_TINKERING
     hidden: true
+  - name: STR_SAMPLING_PREREQ
+    hidden: true
 #story
   - name: STR_RND_STATUS_REPORT
     hidden: true
@@ -236,9 +238,8 @@ research:
       tactics: 100
     points: 15
     dependencies:
-      - STR_INTEL_STATUS_REPORT
+      - STR_RND_STATUS_REPORT
     listOrder: 50
-
   - name: STR_SUPPLIES
     requiresBaseFunc: [HQ]
     cost: 150
@@ -404,8 +405,77 @@ research:
       - STR_SUPPORT_DRONES
       - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 10
+  - name: STR_DRONE_LAUNCHER
+    cost: 700
+    stats:
+      tactics: 120
+      designing: 80
+    points: 10
+    dependencies:
+      - STR_DRONES_MANUFACTURING
+      - STR_IMPROVISED_GRENADES
+    listOrder: 10
+  - name: STR_DRONE_MEDICINE
+    cost: 2000
+    stats:
+      tactics: 120
+      designing: 80
+      biology: 100
+    points: 50
+    dependencies:
+      - STR_DRONES_MANUFACTURING
+      - STR_XCOM_EQUIPMENT
+    listOrder: 10
+  - name: STR_DRONE_TASER
+    cost: 1200
+    stats:
+      tactics: 120
+      designing: 80
+    points: 20
+    dependencies:
+      - STR_DRONES_MANUFACTURING
+      - STR_ROCKET_GLOVE
+    listOrder: 10
+  - name: STR_DRONE_ROCKET_LAUNCHER
+    cost: 900
+    stats:
+      tactics: 120
+      designing: 80
+    points: 20
+    dependencies:
+      - STR_DRONES_MANUFACTURING
+      - STR_ROCKET_GLOVE
+    listOrder: 10
 
-
+  - name: STR_DRONE_UPGRADES
+    cost: 1200
+    stats:
+      computers: 100
+    points: 20
+    dependencies:
+      - STR_DRONES_MANUFACTURING
+    listOrder: 10
+  - name: STR_DRONE_HACKING
+    cost: 800
+    stats:
+      computers: 100
+    points: 20
+    dependencies:
+      - STR_DRONES_MANUFACTURING
+      - STR_HACKING_COMPUTER
+      - STR_DRONE_UPGRADES
+    listOrder: 10
+  - name: STR_DRONE_SAMPLING
+    cost: 2500
+    stats:
+      biology: 100
+      designing: 100
+    points: 20
+    dependencies:
+      - STR_DRONES_MANUFACTURING
+      - STR_SAMPLING_TOOL
+      - STR_DRONE_UPGRADES
+    listOrder: 10
 #high energy study
   - name: STR_ENERGY_WEAPONS
     cost: 1200
@@ -928,6 +998,14 @@ research:
       - STR_TODOIUM
 
 #technology
+  - name: STR_SEALED_CRATE_BREACHING
+    cost: 150
+    stats:
+      computers: 100
+    points: 25
+    dependencies:
+      - STR_UFOPEDIA_DECRYPTION
+    listOrder: 25002
   - name: STR_HIGH_TECH_PARTS
     cost: 100
     stats:
@@ -947,12 +1025,14 @@ research:
     listOrder: 25002
   - name: STR_SAMPLING_TOOL
     cost: 100
-    stats:
-      designing: 100
-      tactics: 100
-      biology: 100
-      physics: 100
     points: 50
+    dependencies:
+      - STR_SAMPLING_PREREQ
+    stats:
+      designing: 80
+      tactics: 80
+      biology: 120
+      physics: 120
     listOrder: 25002
 
   - name: STR_ROCKET_GLOVE
@@ -1001,6 +1081,19 @@ research:
       - STR_STIMS
       - STR_FIRE_EXTINGUISHER
     listOrder: 25002
+  - name: STR_NON_LETHAL_EQUIPMENT
+    cost: 350
+    stats:
+      tactics: 100
+    points: 15
+    dependencies:
+      - STR_BASE_DEFENSE_COMBAT_ANALYSIS
+      - STR_UFOPEDIA_DECRYPTION
+    unlocks:
+      - STR_POLICE_BATON
+      - STR_TASER
+    listOrder: 25002
+
   - name: STR_STARTING_EQUIPMENT_RESEARCHED
     points: 15
     dependencies:
@@ -2324,6 +2417,13 @@ research:
     points: 1
     needItem: true
     listOrder: 30005
+  - name: STR_POLICE_BATON
+    cost: 10
+    stats:
+      tactics: 100
+    points: 2
+    needItem: true
+    listOrder: 30005
   - name: STR_HATCHET
     cost: 9
     stats:
@@ -2434,6 +2534,19 @@ research:
   - name: STR_POLICE_PISTOL_CLIP
     dependencies:
       - STR_POLICE_PISTOL
+    listOrder: 30136
+  - name: STR_TASER
+    cost: 20
+    stats:
+      tactics: 100
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_TASER_CLIP
+    listOrder: 30134
+  - name: STR_TASER_CLIP
+    dependencies:
+      - STR_TASER
     listOrder: 30136
   - name: STR_HEAVY_REVOLVER
     cost: 10
@@ -2620,22 +2733,6 @@ research:
     dependencies:
       - STR_IMPROVISED_MANUFACTURING_POSTREQ
     listOrder: 30300
-  - name: STR_IMPROVISED_GRENADE
-    cost: 15
-    stats:
-      tactics: 100
-      chemistry: 100
-    points: 5
-    needItem: true
-    listOrder: 30300
-  - name: STR_IMPROVISED_SMOKE_GRENADE
-    cost: 15
-    stats:
-      tactics: 100
-      chemistry: 100
-    points: 5
-    needItem: true
-    listOrder: 30302
   - name: STR_LIQUID_FLAME
     cost: 15
     stats:
@@ -2781,8 +2878,7 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 5010
-  - name: STR_SEALED_CRATE_BREACHING
-    hidden: true
+
   - name: STR_CREDIT_CARD_BREACHING_PREREQ
   - name: STR_CREDIT_CARD_BREACHING
     hidden: true

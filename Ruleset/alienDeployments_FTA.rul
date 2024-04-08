@@ -4225,7 +4225,7 @@ alienDeployments:
     height: 2
     shade: 0
     extendedObjectiveType: STR_ITEM_EXTRACTION
-    undercoverArmors: [STR_ALLY_MILITARY_OFFICER_ARMOR]
+    undercoverArmors: [STR_MILITARY_OFFICER_ARMOR]
     briefing:
       textOffset: -16
       background: SEWERS4.SCR

@@ -243,7 +243,14 @@ covertOperations:
     concealedItemsBonus: 5 #default 4
     danger: 2
     costs: 430
-    allowedArmor: *StandardXcomArmors
+    allowedArmor:
+      - STR_JUMPSUIT_UC
+      - STR_FLIGHTSUIT_UC
+      - STR_AGENT_UNIFORM_UC
+      - STR_XCOM_LABCOAT_UC
+      - STR_XCOM_ENGINEER_SUIT_UC
+      - STR_XCOM_RESISTANCE_AGENT_SUIT_UC
+      - STR_MILITARY_OFFICER_ARMOR
     instantSuccessDeployment:
       STR_INFILTRATING_MILITARY_RND_DISGUISE: 100
     trapChance: 100

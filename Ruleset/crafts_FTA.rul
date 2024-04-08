@@ -9,16 +9,17 @@ crafts:
     sprite: 800
     requires:
       - STR_TODOIUM
-    costBuy: 300000
-    costRent: 32000
-    costSell: 200000
+    costBuy: 7000000
+    costRent: 12000
+    costSell: 6400000
     damageMax: 50
     speedMax: 380
     accel: 1
     avoidBonus: -15
     soldiers: 8
-    vehicles: 1
+    vehicles: 0
     pilots: 1
+    relay: 1
     radarRange: 300
     radarChance: 20
     sightRange: 200
@@ -28,7 +29,7 @@ crafts:
     fuelMax: 520
     transferTime: 72
     engineCooldown: 3
-    score: 200
+    score: 2000
     craftInventoryTile: [3, 10, 1]
     battlescapeTerrainData:
       name: DRAGONFLY
@@ -54,12 +55,11 @@ crafts:
     listOrder: 7380
   - type: STR_STALKER
     sprite: 801
-    costBuy: 350000
+    costBuy: 10450000
     costRent: 40000
-    costSell: 260000
-    
+    costSell: 9800000
     requires:
-      - STR_TODOIUM
+      - STR_TROLLIUM
     weaponTypes:
       - [0]
       - [2]
@@ -68,20 +68,19 @@ crafts:
     vehicles: 0
     pilots: 1
     requiredRole: 1
-    maxItems: 15
     fuelMax: 445
-    damageMax: 45
-    avoidBonus: 10
-    speedMax: 1700
+    damageMax: 50
+    avoidBonus: 15
+    speedMax: 1750
     accel: 2
     weapons: 2
     radarRange: 450
     radarChance: 35
-    sightRange: 300
+    sightRange: 100
     refuelRate: 40
     repairRate: 2
     transferTime: 96
-    score: 100
+    score: 1000
     allowLanding: false
     listOrder: 7400
 
@@ -97,9 +96,9 @@ crafts:
     vehicles: 0
     pilots: 1
     maxItems: 999
-    costBuy: 130000
-    costRent: 16000
-    costSell: 100000
+    costBuy: 1300000
+    costRent: 8000
+    costSell: 1000000
     refuelRate: 25
     repairRate: 4
     transferTime: 72
@@ -134,9 +133,9 @@ crafts:
     vehicles: 1
     pilots: 2
     maxItems: 999
-    costBuy: 250000
-    costRent: 25000
-    costSell: 160000
+    costBuy: 5650000
+    costRent: 8000
+    costSell: 5100000
     refuelRate: 8
     transferTime: 72
     score: 75
@@ -166,8 +165,8 @@ crafts:
     pilots: 1
     maxItems: 999
     costBuy: 0
-    costSell: 750000
-    costRent: 100000
+    costSell: 7500000
+    costRent: 12000
     repairRate: 4
     refuelRate: 50
     transferTime: 72
@@ -186,8 +185,8 @@ crafts:
     requires:
       - STR_INTERCEPTOR
     costBuy: 0
-    costRent: 600000
-    costSell: 260000
+    costRent: 6000000
+    costSell: 55000000
     weaponTypes:
       - 0
       - 2
@@ -227,8 +226,8 @@ crafts:
     vehicles: 1
     pilots: 1
     maxItems: 999
-    costRent: 750000
-    costSell: 1200000
+    costRent: 7500
+    costSell: 120000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
     repairRate: 25

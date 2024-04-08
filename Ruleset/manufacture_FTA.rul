@@ -13,10 +13,10 @@ manufacture:
       metallurgy: 100
     space: 5
     time: 450
-    cost: 2000
+    cost: 20000
     requiredItems:
       STR_CRATED_HELICOPTER: 1
-      STR_SPARE_PARTS: 20
+      STR_SPARE_PARTS: 30
     listOrder: 220030
   - name: STR_OSPREY
     category: STR_CRAFT
@@ -39,11 +39,11 @@ manufacture:
     stats:
       metallurgy: 100
     space: 25
-    time: 5300
-    cost: 260000
+    time: 15300
+    cost: 2600000
     requiredItems:
-      STR_SPARE_PARTS: 215
-      STR_HIGH_TECH_PARTS: 65
+      STR_SPARE_PARTS: 4550
+      STR_HIGH_TECH_PARTS: 2100
     listOrder: 220030
 
 #armor
@@ -516,11 +516,12 @@ manufacture:
       explosives: 100
     requiredItems:
       STR_CHEMICALS: 2
+      STR_SPARE_PARTS: 1
     space: 1
-    time: 20
-    cost: 30
+    time: 25
+    cost: 40
     producedItems:
-      STR_IMPROVISED_SMOKE_GRENADE: 1
+      STR_IMPROVISED_FLASHBANG_GRENADE: 1
     listOrder: 220030
   - name: STR_COMBAT_SHIELD
     category: STR_EQUIPMENT
@@ -542,8 +543,6 @@ manufacture:
     stats:
       microelectronics: 100
     space: 3
-    stats:
-      microelectronics: 100
     time: 630
     cost: 36000
     requiredItems:
@@ -619,26 +618,318 @@ manufacture:
       STR_SPARE_PARTS: 40
       STR_HIGH_TECH_PARTS: 32
     spawnedPersonType: STR_DRONE_CONTROL_UNIT
+    producedItems:
+      STR_DRONE_FLASHLIGHT: 1
     listOrder: 1450
-  - name: STR_DRONE_LAUNCHER
+  - name: STR_DRONE_FLASHLIGHT
     category: STR_ROBOT_EQUIPMENT
     requires:
       - STR_DRONES_MANUFACTURING
     stats:
       robotics: 100
-      microelectronics: 100
     space: 0
-    time: 1200
-    cost: 16000
+    time: 20
+    cost: 50
     requiresBaseFunc: [WORK]
     requiredItems:
-      STR_SPARE_PARTS: 40
-      STR_HIGH_TECH_PARTS: 32
-    spawnedPersonType: STR_DRONE_CONTROL_UNIT
+      STR_SPARE_PARTS: 1
+    producedItems:
+      STR_DRONE_FLASHLIGHT: 1
     listOrder: 1450
+  - name: STR_DRONE_FIRE_EXTINGUISHER
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONES_MANUFACTURING
+      - STR_FIRE_EXTINGUISHER
+    stats:
+      robotics: 100
+    space: 0
+    time: 30
+    cost: 10
+    requiresBaseFunc: [WORK]
+    requiredItems:
+      STR_SPARE_PARTS: 1
+      STR_FIRE_EXTINGUISHER: 1
+    producedItems:
+      STR_DRONE_FIRE_EXTINGUISHER: 1
+    listOrder: 1450
+  - name: STR_DRONE_LAUNCHER
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_LAUNCHER
+    stats:
+      robotics: 100
+      weaponry: 100
+    space: 0
+    time: 300
+    cost: 900
+    requiresBaseFunc: [WORK]
+    requiredItems:
+      STR_SPARE_PARTS: 10
+      STR_HIGH_TECH_PARTS: 1
+    producedItems:
+      STR_DRONE_LAUNCHER: 1
+    listOrder: 1450
+  - name: STR_DRONE_LAUNCHER_FRAG_AMMO
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_LAUNCHER
+    stats:
+      robotics: 100
+      explosives: 100
+    space: 0
+    time: 40
+    cost: 1500
+    requiredItems:
+      STR_CHEMICALS: 3
+    producedItems:
+      STR_DRONE_LAUNCHER_FRAG_AMMO: 1
+    listOrder: 1450
+  - name: STR_DRONE_LAUNCHER_SMOKE_AMMO
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_LAUNCHER
+    stats:
+      robotics: 100
+      explosives: 100
+    space: 0
+    time: 30
+    cost: 900
+    requiredItems:
+      STR_CHEMICALS: 2
+    producedItems:
+      STR_DRONE_LAUNCHER_SMOKE_AMMO: 1
+    listOrder: 1450
+  - name: STR_DRONE_LAUNCHER_FLASBANG_AMMO
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_LAUNCHER
+    stats:
+      robotics: 100
+      explosives: 100
+    space: 0
+    time: 45
+    cost: 1900
+    requiredItems:
+      STR_CHEMICALS: 4
+    producedItems:
+      STR_DRONE_LAUNCHER_FLASBANG_AMMO: 1
+    listOrder: 1450
+  - name: STR_DRONE_MEDICINE
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_MEDICINE
+    stats:
+      robotics: 100
+      processing: 100
+    space: 0
+    time: 1100
+    cost: 3500
+    requiredItems:
+      STR_CHEMICALS: 2
+      STR_SPARE_PARTS: 2
+      STR_HIGH_TECH_PARTS: 2
+    producedItems:
+      STR_DRONE_MEDICINE: 1
+    listOrder: 1450
+  - name: STR_DRONE_MOTION_SCANNER
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_MOTION_SCANNER
+      - STR_DRONES_MANUFACTURING
+    stats:
+      robotics: 100
+      microelectronics: 100
+    space: 3
+    time: 570
+    cost: 32000
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 2
+    producedItems:
+      STR_DRONE_MOTION_SCANNER: 1
+    listOrder: 220040
+  - name: STR_DRONE_HACKING_COMPUTER
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_HACKING
+    space: 2
+    stats:
+      robotics: 100
+      microelectronics: 100
+    time: 470
+    cost: 13000
+    requiredItems:
+      STR_HIGH_TECH_PARTS: 1
+    producedItems:
+      STR_DRONE_HACKING_COMPUTER: 1
+    listOrder: 220040
+  - name: STR_DRONE_SAMPLING_TOOL
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_SAMPLING
+    space: 2
+    stats:
+      robotics: 100
+      processing: 100
+    time: 700
+    cost: 10000
+    requiredItems:
+      STR_CHEMICALS: 5
+      STR_HIGH_TECH_PARTS: 2
+      STR_SPARE_PARTS: 2
+    producedItems:
+      STR_DRONE_SAMPLING_TOOL: 1
+    listOrder: 220040
+  - name: STR_DRONE_TASER
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_TASER
+    space: 2
+    stats:
+      robotics: 100
+      weaponry: 100
+    time: 200
+    cost: 450
+    requiredItems:
+      STR_TASER: 1
+      STR_HIGH_TECH_PARTS: 1
+    producedItems:
+      STR_DRONE_TASER: 1
+    listOrder: 220040
+  - name: STR_DRONE_TASER_CLIP
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_TASER
+    space: 2
+    stats:
+      robotics: 100
+      weaponry: 100
+    time: 200
+    cost: 450
+    requiredItems:
+      STR_TASER_CLIP: 6
+      STR_SPARE_PARTS: 2
+    producedItems:
+      STR_DRONE_TASER_CLIP: 1
+    listOrder: 220040
 
+  - name: STR_DRONE_ROCKET_LAUNCHER
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_ROCKET_LAUNCHER
+    space: 2
+    stats:
+      robotics: 100
+      weaponry: 100
+    time: 200
+    cost: 450
+    requiredItems:
+      STR_TASER: 1
+      STR_HIGH_TECH_PARTS: 1
+    producedItems:
+      STR_DRONE_TASER: 1
+    listOrder: 220040
+  - name: STR_DRONE_ROCKET_CLIP
+    category: STR_ROBOT_EQUIPMENT
+    requires:
+      - STR_DRONE_ROCKET_LAUNCHER
+    space: 2
+    stats:
+      robotics: 100
+      weaponry: 100
+    time: 200
+    cost: 450
+    requiredItems:
+      STR_TASER_CLIP: 6
+      STR_SPARE_PARTS: 2
+    producedItems:
+      STR_DRONE_TASER_CLIP: 1
+    listOrder: 220040
 
+  - name: STR_DRONE_COMBAT_CHIP
+    category: STR_ROBOT_UPGRADES
+    requires:
+      - STR_DRONE_UPGRADES
+    space: 2
+    stats:
+      robotics: 100
+    time: 1200
+    cost: 42000
+    producedItems:
+      STR_DRONE_COMBAT_CHIP: 1
+    listOrder: 220040
+  - name: STR_DRONE_AGILITY_CHIP
+    category: STR_ROBOT_UPGRADES
+    requires:
+      - STR_DRONE_UPGRADES
+    space: 2
+    stats:
+      robotics: 100
+    time: 900
+    cost: 34000
+    producedItems:
+      STR_DRONE_AGILITY_CHIP: 1
+    listOrder: 220040
+  - name: STR_DRONE_HACKING_CHIP
+    category: STR_ROBOT_UPGRADES
+    requires:
+      - STR_DRONE_HACKING
+    space: 2
+    stats:
+      robotics: 100
+    time: 1000
+    cost: 25000
+    producedItems:
+      STR_DRONE_HACKING_CHIP: 1
+    listOrder: 220040
+  - name: STR_DRONE_SAMPLING_CHIP
+    category: STR_ROBOT_UPGRADES
+    requires:
+      - STR_DRONE_SAMPLING
+    space: 2
+    stats:
+      robotics: 100
+    time: 1500
+    cost: 27000
+    producedItems:
+      STR_DRONE_SAMPLING_CHIP: 1
+    listOrder: 220040
 #components
+  - name: STR_METAL_SCRAPS_PROCESSING
+    category: STR_COMPONENTS
+    requires:
+      - STR_ENGINEER_STATUS_REPORT
+    requiredItems:
+      STR_METAL_SCRAPS: 10
+    stats:
+      processing: 100
+    space: 6
+    time: 480
+    cost: 0
+    randomProducedItems:
+      - [5, {STR_SPARE_PARTS: 12}]
+      - [5, {STR_SPARE_PARTS: 19}]
+      - [5, {STR_SPARE_PARTS: 23}]
+      - [5, {STR_SPARE_PARTS: 31}]
+      - [5, {STR_SPARE_PARTS: 39}]
+      - [5, {STR_SPARE_PARTS: 44}]
+      - [5, {STR_SPARE_PARTS: 32, STR_CHEMICALS: 1}]
+      - [5, {STR_SPARE_PARTS: 26, STR_CHEMICALS: 5}]
+      - [5, {STR_SPARE_PARTS: 21, STR_CHEMICALS: 9}]
+      - [5, {STR_SPARE_PARTS: 9, STR_CHEMICALS: 13}]
+      - [5, {STR_SPARE_PARTS: 16, STR_CHEMICALS: 3, STR_HIGH_TECH_PARTS: 1}]
+      - [5, {STR_SPARE_PARTS: 17, STR_CHEMICALS: 2, STR_HIGH_TECH_PARTS: 3}]
+      - [5, {STR_SPARE_PARTS: 22, STR_CHEMICALS: 1, STR_HIGH_TECH_PARTS: 4}]
+      - [5, {STR_SPARE_PARTS: 25, STR_CHEMICALS: 5, STR_HIGH_TECH_PARTS: 5}]
+      - [5, {STR_SPARE_PARTS: 29, STR_CHEMICALS: 4, STR_HIGH_TECH_PARTS: 2}]
+      - [5, {STR_SPARE_PARTS: 27, STR_HIGH_TECH_PARTS: 2}]
+      - [5, {STR_SPARE_PARTS: 18, STR_HIGH_TECH_PARTS: 4}]
+      - [5, {STR_SPARE_PARTS: 15, STR_HIGH_TECH_PARTS: 6}]
+      - [5, {STR_SPARE_PARTS: 11, STR_HIGH_TECH_PARTS: 8}]
+      - [5, {STR_SPARE_PARTS: 8, STR_HIGH_TECH_PARTS: 10}]
+    producedItems:
+      STR_SPARE_PARTS: 1
+    listOrder: 220030
   - name: STR_SPARE_PARTS
     category: STR_COMPONENTS
     requires:
@@ -673,7 +964,7 @@ manufacture:
     requiredItems:
       STR_SPARE_PARTS: 2
     space: 1
-    time: 12
+    time: 25
     cost: 950
     producedItems:
       STR_HIGH_TECH_PARTS: 1
@@ -703,17 +994,16 @@ manufacture:
     space: 1
     time: 750
     randomProducedItems:
-      - [40, {STR_POLICE_BATON: 2, STR_TASER: 2, STR_TASER_CLIP: 6, STR_SHOTGUN_SHELLS_BATON: 12}]
+      - [20, {STR_POLICE_BATON: 4, STR_TASER: 4, STR_TASER_CLIP: 12, STR_SHOTGUN_SHELLS_BATON: 20}]
       - [40, {STR_GRENADE: 10, STR_SMOKE_GRENADE: 10, STR_FLASHBANG_GRENADE: 10, STR_INCENDIARY_GRENADE: 10, STR_PROXIMITY_GRENADE: 10}]
-      - [40, {STR_COMBAT_SHIELD: 6}]
-      - [40, {STR_TRAUMA_PACK: 2, STR_PERSONAL_AID_KIT: 6, STR_STIMS_INJECTOR: 6}]
-      - [40, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 6, STR_LARGE_ROCKET: 6, STR_INCENDIARY_ROCKET: 6}]
-      - [40, {STR_AUTO_CANNON: 1, STR_AC_AP_AMMO: 6, STR_AC_BS_AMMO: 6, STR_AC_HE_AMMO: 6, STR_AC_I_AMMO: 6}]
-      - [40, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 6, STR_LC_BS_AMMO: 6, STR_LC_HE_AMMO: 6, STR_LC_I_AMMO: 6}]
-      - [40, {STR_LMG: 1, STR_LMG_CLIP: 8}]
-      - [40, {STR_MGL: 1, STR_MGL_CLIP: 6, STR_MGL_CLIP_SMOKE: 6, STR_MGL_CLIP_FLASHBANG: 6}]
-      - [40, {STR_STINGRAY_MISSILE: 6}]
-      - [40, {STR_CANNON_ROUNDS_X50: 6}]
+      - [40, {STR_COMBAT_SHIELD: 10}]
+      - [40, {STR_TRAUMA_PACK: 2, STR_PERSONAL_AID_KIT: 10, STR_STIMS_INJECTOR: 15}]
+      - [35, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 6, STR_LARGE_ROCKET: 6, STR_INCENDIARY_ROCKET: 6}]
+      - [35, {STR_AUTO_CANNON: 1, STR_AC_AP_AMMO: 6, STR_AC_BS_AMMO: 6, STR_AC_HE_AMMO: 6, STR_AC_I_AMMO: 6}]
+      - [35, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 6, STR_LC_BS_AMMO: 6, STR_LC_HE_AMMO: 6, STR_LC_I_AMMO: 6}]
+      - [30, {STR_LMG: 1, STR_LMG_CLIP: 8}]
+      - [30, {STR_MGL: 1, STR_MGL_CLIP: 6, STR_MGL_CLIP_SMOKE: 6, STR_MGL_CLIP_FLASHBANG: 6}]
+      - [40, {STR_STINGRAY_MISSILE: 8, STR_CANNON_ROUNDS_X50: 4}]
     listOrder: 220040
   - name: STR_CREDIT_CARD
     category: STR_REFINING

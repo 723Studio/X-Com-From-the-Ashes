@@ -32,12 +32,6 @@ events:
     timerRandom: 400
     researchList: [STR_MILITARY_STATUS_REPORT]
 #Story
-  - name: STR_XCOM_SEALED_CRATES_EVENT
-    description: STR_XCOM_SEALED_CRATES_EVENT_DESCRIPTION
-    background: BACK17.SCR
-    timer: 2880
-    timerRandom: 2880
-    researchList: [STR_SEALED_CRATE_BREACHING]
   - name: STR_MIB_STORY_MILESTONE_1_EVENT
     description: STR_MIB_STORY_MILESTONE_1_EVENT_DESCRIPTION
     background: MIB_BACKGROUND.SCR
@@ -465,6 +459,13 @@ events:
     description: STR_XCOM_FUNDAMENTAL_STUDIES_DESCRIPTION
     background: BACK05.SCR
     researchList: [STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ]
+    timer: 4320 #3 days
+    timerRandom: 8640 #6 days
+    interruptResearch: STR_XCOM_FUNDAMENTAL_STUDIES
+  - name: STR_XCOM_SAMPLING
+    description: STR_XCOM_SAMPLING_DESCRIPTION
+    background: BACK05.SCR
+    researchList: [STR_SAMPLING_PREREQ]
     timer: 4320 #3 days
     timerRandom: 8640 #6 days
     interruptResearch: STR_XCOM_FUNDAMENTAL_STUDIES
