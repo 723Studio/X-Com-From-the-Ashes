@@ -941,6 +941,7 @@ en-US:
   STR_MIB_MEDIUM_GROUND_CONVOY_BRIEFING: "We intercepted a M.I.B. convoy, taking them by surprise, so they can't expect reinforcements to arrive soon. Eliminate or capture all hostiles but avoid destroying the cargo.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_ABANDONED_BASE_ALERT_DESCRIPTION: "According to the decoded Ufopedia data, we were able to locate the abandoned base. The scouts avoided approaching the entrance to the underground structure. According to our scanners, the base is completely blacked out. We have no idea why XCOM abandoned it, and we need to be extremely careful. An assault squad must be dispatched to clear the facility. We may only have one shot at it - intense warfare may draw unwanted attention to the facility from the M.I.B."
   STR_ABANDONED_BASE_BRIEFING: "The assault squad disembarked near the entrance of the abandoned subsurface base. It's obviously been disused for a long time - the entrance is partially blocked with sand, and the hangar hatch is open. There is activity on the lower level of the facility, therefore extreme caution is required. It is necessary to descend underground and clear the area.{NEWLINE}To abort the mission return X-Com operatives to the green area and click on the 'Abort Mission' icon."
+  STR_CALL_OF_DUTY_BRIEFING: "We managed to organize a meeting with a former X-COM employee and prepare a cover to return to the base. However, the sudden appearance of M.I.B. agents jeopardized the whole operation. Get the mission objective to the evacuation point in one piece, neutralize the enemies if possible. To successfully complete the mission, place all X-Com operatives to the green area and click on the 'Abort Mission' icon."
   #traps
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_TRAP: "Chasing M.I.B."
@@ -1008,6 +1009,7 @@ en-US:
   STR_MONSTER_HUNT_TROPIC_ECO_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the tropics. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
   STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the desert enviroment. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
   STR_MONSTER_HUNT_FAILURE_DESCRIPTION: "Our operatives failed in their mission; they could not find any sign of the mysterious monster terrorizing locals. Alas, we can only wait for the next report of paranormal activity - we have done all we can here."
+  STR_CALL_OF_DUTY_OPERATION_DESCRIPTION: "A former X-COM employee has agreed to rejoin our ranks. We need to organize a covert transfer of the objective person to our base. According to our information, M.I.B. agents have organized surveillance on the objective."
   STR_IMPROVISED_MANUFACTURING_SUPPLIMENT: "Supplies for Improvised Manufacturing"
   STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_DESCRIPTION: "Our agents need to organize a covert network of diversified shipments of equipment and raw materials to our base for improvised manufacturing. To do this, we need to enter into agreements with suppliers through proxies and set up covert supply chains. It is important that the established logistics network maintains a high level of secrecy for a long period of time."
   STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_SUCCESS_DESCRIPTION: "We managed to achieve all our goals - all the necessary equipment is at the base, our engineers are already unpacking it and preparing for work."
@@ -1040,7 +1042,6 @@ en-US:
   STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION: "Commander, please proceed to the Training Center."
   STR_VEHICLES_STATUS_REPORT_EVENT: "Vehicles status report is ready!"
   STR_VEHICLES_STATUS_REPORT_DESCRIPTION: "Commander, please proceed to Hangar 1."
-  
   STR_NO_SUPPLY_WARNING_EVENT: "Our supplies are running low!"
   STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION: "Commander, we're running out of vital supplies. We no longer have a steady supply from the Council and need to find another way of procuring the resources needed to keep the base operational and our forces alive.{NEWLINE}Loyalty score> {ALT}-100"
   STR_NO_SUPPLY_SECOND_WARNING_EVENT: "We are running out of supplies!"
@@ -1127,6 +1128,12 @@ en-US:
   STR_ROCKET_GLOVE_TINKERING_DESCRIPTION: "Our engineers have developed an promising prototype of a portable launcher for shooting unguided rockets. The technical specifications of the device are included in the Ufopedia database."
   STR_KATANA_TINKERING: "Oriental Blade"
   STR_KATANA_TINKERING_DESCRIPTION: "Analyzing possible application of full-size blade weapons in encounters our soldiers might engage in, we have concluded that it is possible to produce more effective weapons than conventional swords. Traditional oriental swords have greater potential to penetrate armor, and the narrower cutting edge will do more damage to unarmored targets. We are ready to start producing new swords based on the new design.{NEWLINE}New technology> {ALT}Oriental Blade"
+  STR_CALL_OF_DUTY_SOLDIER: "Call of Duty"
+  STR_CALL_OF_DUTY_AGENT: "Call of Duty"
+  STR_CALL_OF_DUTY_PILOT: "Call of Duty"
+  STR_CALL_OF_DUTY_ENGINEER: "Call of Duty"
+  STR_CALL_OF_DUTY_SCIENTIST: "Call of Duty"
+  STR_CALL_OF_DUTY_EVENT_DESCRIPTION: "Due to lack of funding in the past, we had to lay off an excellent staff member. We have managed to covertly contact the former employee and have gotten an agreement to rejoin X-COM. We need to organize a covert operation for covert transportation to our base.{NEWLINE}{ALT}New covert operation available."
   STR_MYSTERIOUS_SPONSOR_50000: "Mysterious Sponsor"
   STR_MYSTERIOUS_SPONSOR_50000_DESCRIPTION: "$50,000 was deposited into one of our clandestine accounts. It is unclear whether this is a banking error, a well-wisher who desires to remain anonymous, or an insidious attempt of the Men in Black to get to our accounts. Either way, we must remain vigilant."
   STR_MYSTERIOUS_SPONSOR_75000: "Mysterious Sponsor"
@@ -1952,6 +1959,7 @@ en-US:
   STR_ARMADILLO_WEAPON: "Armadillo attack"
   STR_DATA_VAULT: "Data Vault"
   STR_FLOPPY_SCIENTISTS_LOG: "Scientist's Floppy Disk"
+  STR_FLOPPY_SCIENTISTS_LOG_DESCRIPTION: "Благодаря изучению данных с диска мы смогли лучше понять природу агентов M.I.B., узнать больше об их методах и тактике. Они отличаются невероятной расчётливостью, коварством, безжалостностью и хладнокровием. Все риски, на которые они идут, всегда оправданны. К сожалению, сведения об их общей численности и ресурсах, а также о конечных целях остались для нас недоступны."
   STR_FLOPPY_RESISTANCE: "Resistance Floppy Disk"
   STR_MIB_DATA_CONTAINER: "M.I.B. Data Container"
   STR_MIB_DATA_CONTAINER_UFOPEDIA: "The device was a kind of escape pod into which data from the M.I.B. command center servers was pumped. Apparently, the servers were on an isolated network and this was an attempt to save information during our assault. The data in it is encrypted and we are not yet able to crack it."
@@ -2870,6 +2878,7 @@ en-US:
   STR_RESISTANCE_CELL_CREATION_PREREQ: STR_RESISTANCE_CELL_CREATION_PREREQ
   STR_RESISTANCE_CELL_CREATED: STR_RESISTANCE_CELL_CREATED
   STR_STEAL_OSPREY_PREREQ: STR_STEAL_OSPREY_PREREQ
+  STR_CULT_INVESTIGATION_PREREQ: STR_CULT_INVESTIGATION_PREREQ
   STR_MONSTER_HUNT_START_PREREQ: STR_MONSTER_HUNT_START_PREREQ
   STR_MONSTER_HUNT_RUMORS_PREREQ: STR_MONSTER_HUNT_RUMORS_PREREQ
   STR_MONSTER_HUNT_RUMORS_PREREQ_HARD: STR_MONSTER_HUNT_RUMORS_PREREQ_HARD

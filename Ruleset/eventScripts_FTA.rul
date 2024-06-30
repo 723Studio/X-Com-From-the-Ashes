@@ -47,7 +47,6 @@ eventScripts:
     lastMonth: 6
     executionOdds: 20
     minDifficulty: 4
-    maxDifficulty: 4
   - type: exCouncilDataVaultConveyRepeatScript #Start of monster hunt arc
     oneTimeSequentialEvents: [STR_EX_COUNCIL_DATA_VAULT_CONVEY_REPEAT_EVENT]
     executionOdds: 85
@@ -84,6 +83,27 @@ eventScripts:
     firstMonth: 3
     executionOdds: 80
 
+  - &callOfDutyScript
+    type: callOfDutyScript
+    eventWeights:
+      0:
+        STR_CALL_OF_DUTY_SOLDIER: 100
+        # STR_CALL_OF_DUTY_AGENT: 70
+        # STR_CALL_OF_DUTY_PILOT: 50
+        # STR_CALL_OF_DUTY_ENGINEER: 30
+        # STR_CALL_OF_DUTY_SCIENTIST: 10
+    # researchTriggers:
+    #   STR_COVERT_OPERATIONS: true
+    #   STR_COMMUNICATION: true
+    #firstMonth: 2
+    #executionOdds: 15
+    maxDifficulty: 3
+  - type: callOfDutyScript_SH
+    refNode: *callOfDutyScript
+    firstMonth: 3
+    executionOdds: 3
+    minDifficulty: 4
+
 #xcom
   - type: mibstoryMilestone1
     oneTimeSequentialEvents: [STR_MIB_STORY_MILESTONE_1_EVENT]
@@ -106,7 +126,6 @@ eventScripts:
     refNode: *xcomFundamentalStudiesScript
     executionOdds: 50
     minDifficulty: 4
-    maxDifficulty: 4
 
   - &xcomSamplingScript
     type: xcomSamplingScript
@@ -121,8 +140,6 @@ eventScripts:
     refNode: *xcomSamplingScript
     executionOdds: 50
     minDifficulty: 4
-    maxDifficulty: 4
-
 
   - &workshopScript
     type: workshopScript
@@ -140,7 +157,6 @@ eventScripts:
     refNode: *workshopScript
     executionOdds: 75
     minDifficulty: 4
-    maxDifficulty: 4
   - &sportsBowTinkeringScript
     type: sportsBowTinkeringScript
     oneTimeSequentialEvents: [STR_SPORTS_BOW_TINKERING]
@@ -160,7 +176,6 @@ eventScripts:
     refNode: *sportsBowTinkeringScript
     executionOdds: 10
     minDifficulty: 4
-    maxDifficulty: 4
   - &katanaTinkeringScript
     type: katanaTinkeringScript
     oneTimeSequentialEvents: [STR_KATANA_TINKERING]
@@ -178,7 +193,6 @@ eventScripts:
     refNode: *katanaTinkeringScript
     executionOdds: 5
     minDifficulty: 4
-    maxDifficulty: 4
   - type: helicopterScript
     oneTimeSequentialEvents: [STR_HELICOPTER]
     researchTriggers:
@@ -187,7 +201,6 @@ eventScripts:
       STR_CRATED_HELICOPTER: true
     allowedProcessor: 2 #xcom
     executionOdds: 100
-    maxDifficulty: 4
   - &biolabPrereqScript
     type: biolabPrereqScriptFacehugger
     oneTimeSequentialEvents: [STR_BIOLAB_PREREQ_EVENT]

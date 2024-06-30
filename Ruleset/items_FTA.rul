@@ -5629,6 +5629,7 @@ items:
       ToStun: 0.8
       ToTime: 1
     battleType: 1
+    canBeEquippedInBattle: false
     costThrow:
       energy: 18
     clipSize: 2

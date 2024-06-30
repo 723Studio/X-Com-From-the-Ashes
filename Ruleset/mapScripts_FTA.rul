@@ -761,6 +761,41 @@ mapScripts:
       executionChances: 60
     - type: fillArea
 
+  - type: callOfDuty3x3
+    commands:
+    - type: addBlock
+      groups: 7
+      terrain: TRANSPORT_EVAC
+      label: 1
+      executionChances: 50
+      rects:
+        - [1, 0, 1, 1]
+    - type: addBlock
+      groups: 7
+      terrain: TRANSPORT_EVAC
+      label: 2
+      conditionals: [-1]
+      rects:
+        - [1, 2, 1, 1]
+    - type: addBlock
+      groups: 3
+      terrain: URBAN_ROADS
+      conditionals: 2
+      rects:
+        - [1, 0, 1, 1]
+    - type: addBlock
+      groups: 3
+      terrain: URBAN_ROADS
+      conditionals: 1
+      rects:
+        - [1, 2, 1, 1]
+    - type: addBlock #fill the center block
+      groups: 3
+      terrain: URBAN_ROADS
+      rects:
+        - [1, 1, 1, 1]
+    - type: fillArea
+
   - type: localsTrapScript
     commands:
     - type: addLine
@@ -825,7 +860,6 @@ mapScripts:
       conditionals: 1
       rects:
         - [2, 4, 1, 1]
-    # - type: addCraft
     - type: fillArea
 
   - type: mibHideoutMedium
@@ -874,15 +908,10 @@ mapScripts:
 
   - type: urbanLowTrapEscape
     commands:
-    # - type: addBlock 
-    #   terrain: URBAN_OPERATIONS
-    #   groups: 5
+    # - type: addCraft 
+    #   craftName: STR_HELICOPTER
     #   rects:
     #     - [0, 7, 3, 1]
-    - type: addCraft 
-      craftName: STR_HELICOPTER
-      rects:
-        - [0, 7, 3, 1]
     - type: addUFO
       UFOName: EVAC_ZONE_N
       rects:

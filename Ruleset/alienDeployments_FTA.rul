@@ -5139,6 +5139,188 @@ alienDeployments:
         extraQty: 2
         itemSets: *AnchorEmptyInventory
 
+  - type: STR_CALL_OF_DUTY_SOLDIER
+    race: STR_MIB
+    width: 30
+    length: 30
+    height: 8
+    abortPenalty: 35
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_BRIEFING
+    terrains:
+      - URBAN_LOW
+      - URBAN
+      #- URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        medQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: &callOfDutyMiBLoadout
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+            - STR_CASH_PACK
+          -
+            - STR_SEMI_AUTO_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_FLASHBANG_GRENADE
+            - STR_CREDIT_CARD
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_GRENADE
+            - STR_CREDIT_CARD_SILVER
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_GRENADE
+
+  - type: STR_CALL_OF_DUTY_AGENT
+    race: STR_MIB
+    width: 30
+    length: 30
+    height: 8
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_BRIEFING
+    missionBountyItem: STR_BRIEFCASE_CASH
+    terrains:
+      - URBAN_LOW
+      #- URBAN
+      #- URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        medQty: 3
+        highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: *callOfDutyMiBLoadout
+
+  - type: STR_CALL_OF_DUTY_PILOT
+    race: STR_MIB
+    width: 30
+    length: 30
+    height: 8
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_BRIEFING
+    terrains:
+      - URBAN_LOW
+      - URBAN
+      - URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        medQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *callOfDutyMiBLoadout 
+  - type: STR_CALL_OF_DUTY_ENGINEER
+    race: STR_MIB
+    width: 30
+    length: 30
+    height: 8
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_BRIEFING
+    missionBountyItem: STR_WRENCH
+    terrains:
+      - URBAN_LOW
+      - URBAN
+      - URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        medQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *callOfDutyMiBLoadout 
+  - type: STR_CALL_OF_DUTY_SCIENTIST
+    race: STR_MIB
+    width: 30
+    length: 30
+    height: 8
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_BRIEFING
+    missionBountyItem: STR_FLOPPY_SCIENTISTS_LOG
+    terrains:
+      - URBAN_LOW
+      - URBAN
+      - URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 3
+        medQty: 5
+        highQty: 7
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *callOfDutyMiBLoadout 
 
 #traps 
   - type: STR_MIB_CHASING_TRAP

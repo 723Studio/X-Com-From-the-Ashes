@@ -259,6 +259,48 @@ events:
     timer: 43800 #1 month
     timerRandom: 43800 #another 1 month
 
+#Call of Duty
+  - name: STR_CALL_OF_DUTY_SOLDIER
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_SOLDIER
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_SOLDIER]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_AGENT
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_AGENT
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_AGENT]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_PILOT
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_PILOT
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_PILOT]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_ENGINEER
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_ENGINEER
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_ENGINEER]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_SCIENTIST
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_SCIENTIST
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_SCIENTIST]
+    timer: 5760
+    timerRandom: 30240
+
+  - name: STR_FLOPPY_SCIENTISTS_LOG
+    description: STR_FLOPPY_SCIENTISTS_LOG_DESCRIPTION
+    timer: 5760
+    timerRandom: 30240
+
 #Resistance
   - name: STR_RESISTANCE_DISCOVER
     description: STR_RESISTANCE_DISCOVER_DESCRIPTION

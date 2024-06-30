@@ -144,6 +144,16 @@ research:
     hidden: true
   - name: STR_CULT_GANG_DEN
     hidden: true
+  - name: STR_CALL_OF_DUTY_SOLDIER
+    hidden: true
+  - name: STR_CALL_OF_DUTY_AGENT
+    hidden: true
+  - name: STR_CALL_OF_DUTY_PILOT
+    hidden: true
+  - name: STR_CALL_OF_DUTY_ENGINEER
+    hidden: true
+  - name: STR_CALL_OF_DUTY_SCIENTIST
+    hidden: true
   - name: STR_MILITARY_EQUIPMENT_ACQUISITION #TODO add way to unlock this
     hidden: true
   - name: STR_CHOCOLATE_FACTORY_OPEN
@@ -2861,11 +2871,11 @@ research:
     cost: 12
     stats:
       data: 100
-    points: 60
+    points: 600
     needItem: true
     destroyItem: true
-    dependencies: #TODO!! remove
-      - STR_TODOIUM
+    spawnedEvents: 
+      STR_FLOPPY_SCIENTISTS_LOG: 100
     # getOneFree: #TODO!! add
     #   - ""
     listOrder: 5000
@@ -2874,7 +2884,8 @@ research:
     stats:
       computers: 100
       data: 150
-    points: 150
+    points: 400
+    increaseCounter: [mibActivityKnowlege]
     needItem: true
     destroyItem: true
     listOrder: 5010
