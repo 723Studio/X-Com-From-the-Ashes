@@ -92,6 +92,35 @@ events:
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
 
+  - name: STR_MIB_AGENT_INTERROGATION
+    description: STR_MIB_AGENT_INTERROGATION_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 1
+    timer: 0
+    timerRandom: 0
+  - name: STR_MIB_SPECIALIST_INTERROGATION
+    description: STR_MIB_SPECIALIST_INTERROGATION_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 2
+    timer: 0
+    timerRandom: 0
+  - name: STR_FLOPPY_SCIENTISTS_LOG_MIB
+    description: STR_FLOPPY_SCIENTISTS_LOG_MIB_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 2
+    timer: 0
+    timerRandom: 0
+  - name: STR_MIB_DATA_CONTAINER
+    description: STR_MIB_DATA_CONTAINER_MIB_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 3
+    timer: 0
+    timerRandom: 0
+
   - name: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT
     description: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT_DESCRIPTION
     background: BACK01.SCR
@@ -296,10 +325,7 @@ events:
     timer: 5760
     timerRandom: 30240
 
-  - name: STR_FLOPPY_SCIENTISTS_LOG
-    description: STR_FLOPPY_SCIENTISTS_LOG_DESCRIPTION
-    timer: 5760
-    timerRandom: 30240
+
 
 #Resistance
   - name: STR_RESISTANCE_DISCOVER

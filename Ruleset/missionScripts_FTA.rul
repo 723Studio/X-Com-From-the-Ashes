@@ -336,7 +336,7 @@ missionScripts:
     firstMonth: 2
     executionOdds: 100
     allowedProcessor: 0
-    missionMarkerName: mibActivityKnowlege
+    missionMarkerName: mibActivityKnowledge
     counterMin: 2
     minDifficulty: 4
     missionWeights:

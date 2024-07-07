@@ -4382,6 +4382,7 @@ alienDeployments:
             - STR_GRENADE
 
   - type: STR_MIB_HIDEOUT_MEDIUM
+    race: STR_MIB
     width: 70
     length: 70
     height: 8
@@ -4572,6 +4573,7 @@ alienDeployments:
             - STR_CHEMPISTOL_CLIP
             - STR_CHEMPISTOL_CLIP 
   - type: STR_MIB_HIDEOUT_SMALL
+    race: STR_MIB
     width: 60
     length: 60
     height: 8
@@ -4764,6 +4766,7 @@ alienDeployments:
             - STR_CHEMPISTOL_CLIP 
 
   - type: STR_MIB_SMALL_GROUND_CONVOY
+    race: STR_MIB
     width: 50
     length: 50
     height: 10
@@ -4909,6 +4912,7 @@ alienDeployments:
             - STR_RIFLE_CLIP
 
   - type: STR_MIB_MEDIUM_GROUND_CONVOY
+    race: STR_MIB
     width: 50
     length: 50
     height: 10
@@ -5224,7 +5228,6 @@ alienDeployments:
             - STR_SMG_CLIP
             - STR_SMG_CLIP
             - STR_GRENADE
-
   - type: STR_CALL_OF_DUTY_AGENT
     race: STR_MIB
     width: 30
@@ -5249,7 +5252,6 @@ alienDeployments:
         dQty: 2
         percentageOutsideUfo: 100
         itemSets: *callOfDutyMiBLoadout
-
   - type: STR_CALL_OF_DUTY_PILOT
     race: STR_MIB
     width: 30

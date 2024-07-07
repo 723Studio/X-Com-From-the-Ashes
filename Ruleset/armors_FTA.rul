@@ -338,7 +338,8 @@ armors:
       - 0.8 #14 - Pressure
       - 0.0 #15 - Bio
     loftempsSet: [ 2 ]
-  - type: STR_MIB_SCIENTIST_ARMOR
+  - &STR_MIB_SCIENTIST_ARMOR
+    type: STR_MIB_SCIENTIST_ARMOR
     spriteSheet: MIB_SCIENTIST.PCK
     spriteInv: inventory_MIB_SCIENTIST
     corpseBattle:
@@ -384,6 +385,13 @@ armors:
       - 1.0 #15 - Bio
     specialWeapon: STR_UNARMED_TRAINED
     loftempsSet: [ 3 ]
+
+  - type: STR_MIB_MEDIC_ARMOR
+    refNode: *STR_MIB_SCIENTIST_ARMOR #TODO - separate visual assets
+    corpseBattle:
+      - STR_MIB_MEDIC_CORPSE
+
+
   - type: STR_MIB_ENFORCER_ARMOR
     spriteSheet: MIB_ENFORCER.PCK
     spriteInv: inventory_MIB_ENFORCER

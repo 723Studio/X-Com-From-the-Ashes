@@ -88,15 +88,15 @@ eventScripts:
     eventWeights:
       0:
         STR_CALL_OF_DUTY_SOLDIER: 100
-        # STR_CALL_OF_DUTY_AGENT: 70
-        # STR_CALL_OF_DUTY_PILOT: 50
-        # STR_CALL_OF_DUTY_ENGINEER: 30
-        # STR_CALL_OF_DUTY_SCIENTIST: 10
-    # researchTriggers:
-    #   STR_COVERT_OPERATIONS: true
-    #   STR_COMMUNICATION: true
-    #firstMonth: 2
-    #executionOdds: 15
+        STR_CALL_OF_DUTY_AGENT: 70
+        STR_CALL_OF_DUTY_PILOT: 50
+        STR_CALL_OF_DUTY_ENGINEER: 30
+        STR_CALL_OF_DUTY_SCIENTIST: 10
+    researchTriggers:
+      STR_COVERT_OPERATIONS: true
+      STR_COMMUNICATION: true
+    firstMonth: 2
+    executionOdds: 15
     maxDifficulty: 3
   - type: callOfDutyScript_SH
     refNode: *callOfDutyScript
@@ -107,9 +107,9 @@ eventScripts:
 #xcom
   - type: mibstoryMilestone1
     oneTimeSequentialEvents: [STR_MIB_STORY_MILESTONE_1_EVENT]
-    missionMarkerName: mibActivityKnowlege
-    allowedProcessor: 2 #xcom
+    missionMarkerName: mibActivityKnowledge
     counterMin: 10
+    allowedProcessor: 2 #xcom
     executionOdds: 90
   - &xcomFundamentalStudiesScript
     type: xcomFundamentalStudiesScript

@@ -552,7 +552,8 @@ units:
     canSurrender: false
     builtInWeaponSets:
       - - STR_SEEKER_DRONE_WEAPON
-  - type: STR_MIB_SCIENTIST
+  - &STR_MIB_SCIENTIST
+    type: STR_MIB_SCIENTIST
     race: STR_MIB
     roles: [3] #ROLE_SCIENTIST
     stats:
@@ -588,6 +589,10 @@ units:
     aggression: 1
     energyRecovery: 25
     canSurrender: false
+  - type: STR_MIB_MEDIC
+    refNode: *STR_MIB_SCIENTIST #TODO - separate visual assets
+    armor: STR_MIB_MEDIC_ARMOR
+    prisoner: STR_MIB_MEDIC
   - type: STR_MIB_ENFORCER
     race: STR_MIB
     rank: STR_LIVE_ENGINEER
@@ -885,6 +890,7 @@ units:
       melee: 12
       psiStrength: 15
     armor: STR_BANDIT_ARMOR
+    prisoner: STR_BANDIT
     standHeight: 22
     kneelHeight: 14
     value: 3
@@ -1484,6 +1490,7 @@ units:
   - &Doge
     type: STR_DOGE
     race: STR_DOGE
+    #liveAlien: - #TODO - research for dogs, altering to xcom dog (via manufacturing or with new event type that can remove items)
     stats:
       tu: 80
       stamina: 90
@@ -1517,6 +1524,7 @@ units:
     livingWeapon: true
     intelligence: 3
     aggression: 6
+    canSurrender: false
     spotter: 1
   - type: STR_MAD_DOGE
     refNode: *Doge
@@ -2267,45 +2275,6 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_FIRST_AID 
-  - type: STR_ALLY_MILITARY_OFFICER
-    race: STR_RESISTANCE
-    rank: STR_LIVE_NAVIGATOR
-    roles: [0, 3] #ROLE_SCIENTIST
-    stats:
-      tu: 65
-      stamina: 55
-      health: 32
-      bravery: 35
-      reactions: 37
-      firing: 57
-      throwing: 50
-      strength: 30
-      melee: 45
-      psiStrength: 45
-      psiSkill: 0
-      tactics: 60
-    statsRandom:
-      tu: 5
-      stamina: 15
-      health: 7
-      bravery: 25
-      reactions: 7
-      firing: 12
-      throwing: 15
-      strength: 10
-      melee: 20
-      psiStrength: 15
-      tactics: 15
-    armor: STR_MILITARY_OFFICER_ARMOR
-    standHeight: 22
-    kneelHeight: 14
-    value: 35
-    deathSound: *MaleDeathSounds
-    intelligence: 4
-    aggression: 1
-    sniper: 75
-    spotter: 2
-    canSurrender: true
 
   - &RESISTANCE_EVIDENCE_DEVICE
     type: STR_RESISTANCE_RADIO

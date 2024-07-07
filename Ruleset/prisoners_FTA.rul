@@ -203,6 +203,36 @@ prisoners:
     contain:
       funds: -800
       cooperationChange: 0
+  - type: STR_MIB_MEDIC
+    startingCooperation: -250
+    interrogation:
+      unlockResearches:
+        [STR_MIB_MEDIC]
+        #TODO
+      diesAfter: true
+      baseResistance: 100
+    recruiting:
+      requiredResearch: STR_TODOIUM #no recruit ever
+    torture:
+      difficulty: 50
+      loyaltyChange: 2
+      moraleChange: 10
+      cooperationChange: 30
+      eventChance: 30
+      eventWeights: #TODO - add more midgame content here pls
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 20
+          STR_RANDOM_TORTURE_EVENT_2: 15
+          STR_RANDOM_TORTURE_EVENT_3: 10
+          STR_RANDOM_TORTURE_EVENT_4: 5
+        8:
+          STR_RANDOM_TORTURE_EVENT_1: 15
+          STR_RANDOM_TORTURE_EVENT_2: 10
+          STR_RANDOM_TORTURE_EVENT_3: 5
+          STR_RANDOM_TORTURE_EVENT_4: 2
+    contain:
+      funds: -800
+      cooperationChange: 0
   - type: STR_MIB_ENFORCER
     startingCooperation: -150
     damageOverTime: 2
