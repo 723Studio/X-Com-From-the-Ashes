@@ -27,40 +27,42 @@ soldiers:
           3: 25
           4: 50
           5: 100
-      - role: 1 #ROLE_PILOT
+      - role: 1 #ROLE_ROBOT
+        requirments: 
+          1: 1000000
+          2: 1000000
+          3: 1000000
+          4: 1000000
+          5: 1000000
+      - role: 2 #ROLE_PILOT
         requirments: 
           1: 10
           2: 15
           3: 25
           4: 50
           5: 100
-      - role: 2 #ROLE_AGENT
+      - role: 3 #ROLE_AGENT
         requirments: 
           1: 10
           2: 15
           3: 25
           4: 50
           5: 100
-      - role: 3 #ROLE_SCIENTIST
+      - role: 4 #ROLE_SCIENTIST
         requirments: 
           1: 10
           2: 15
           3: 25
           4: 50
           5: 100
-      - role: 4 #ROLE_ENGINEER
+      - role: 5 #ROLE_ENGINEER
         requirments: 
           1: 10
           2: 15
           3: 25
           4: 50
           5: 100
-      - role: 5 #ROLE_ROBOT
-        requirments: 
-          1: 100
-          2: 100
-          3: 100
-          4: 100
+
     roleRankStrings:
       - role: 0 #ROLE_SOLDIER
         strings: 
@@ -70,7 +72,14 @@ soldiers:
           4: STR_WARRANT_OFFICER
           5: STR_LIEUTENANT
           6: STR_CAPTAIN
-      - role: 1 #ROLE_PILOT
+      - role: 1 #ROLE_ROBOT
+        strings: 
+          1: STR_DRONE
+          2: STR_ROBOT_RANK
+          3: STR_DROID
+          4: STR_SAPIENT_AI
+          5: STR_SYNTH
+      - role: 2 #ROLE_PILOT
         strings: 
           1: STR_PILOT
           2: STR_SENIOR_PILOT
@@ -78,7 +87,7 @@ soldiers:
           4: STR_FLYING_OFFICER
           5: STR_FLIGHT_LIEUTENANT
           6: STR_SQUADRON_LEADER
-      - role: 2 #ROLE_AGENT
+      - role: 3 #ROLE_AGENT
         strings: 
           1: STR_JUNIOR_AGENT
           2: STR_AGENT
@@ -86,7 +95,7 @@ soldiers:
           4: STR_STAFF_AGENT
           5: STR_SPECIAL_AGENT
           6: STR_COMMISSAR
-      - role: 3 #ROLE_SCIENTIST
+      - role: 4 #ROLE_SCIENTIST
         strings: 
           1: STR_JUNIOR_SCIENTIST
           2: STR_SCIENTIST
@@ -94,7 +103,7 @@ soldiers:
           4: STR_SCHOLAR
           5: STR_LEAD_SCIENTIST
           6: STR_ACADEMIC
-      - role: 4 #ROLE_ENGINEER
+      - role: 5 #ROLE_ENGINEER
         strings: 
           1: STR_JOURNEYMAN
           2: STR_ENGINEER
@@ -102,13 +111,6 @@ soldiers:
           4: STR_SENIOR_ENGINEER
           5: STR_FOREMAN
           6: STR_ARTISAN
-      - role: 4 #ROLE_ENGINEER
-        strings: 
-          1: STR_DRONE
-          2: STR_ROBOT_RANK
-          3: STR_DROID
-          4: STR_SAPIENT_AI
-          5: STR_SYNTH
     costBuy: 50000
     costSalary: 3000
     moraleLossWhenKilled: 150
@@ -409,14 +411,6 @@ soldiers:
       psiStrength: 30
       psiSkill: 0
       #pilot - inherit from soldier
-      maneuvering: 0
-      missiles: 0
-      dogfight: 0
-      tracking: 0
-      cooperation: 0
-      beams: 0
-      synaptic: 0
-      gravity: 0
       #agent
       stealth: 30
       perception: 35
@@ -440,7 +434,7 @@ soldiers:
       weaponry: 15
       explosives: 25
       efficiency: 15
-      microelectronics: 0
+      microelectronics: 10
       metallurgy: 0
       processing: 0
       hacking: 20
@@ -462,14 +456,6 @@ soldiers:
       psiSkill: 0
       mana: 0
       #pilot - inherit from soldier
-      maneuvering: 0
-      missiles: 0
-      dogfight: 0
-      tracking: 0
-      cooperation: 0
-      beams: 0
-      synaptic: 0
-      gravity: 0
       #agent
       stealth: 50
       perception: 60
@@ -493,11 +479,11 @@ soldiers:
       weaponry: 30
       explosives: 50
       efficiency: 30
-      microelectronics: 0
-      metallurgy: 0
-      processing: 0
+      microelectronics: 35
+      metallurgy: 10
+      processing: 15
       hacking: 45
-      robotics: 20
+      robotics: 30
       diligence: 30
       alienTech: 0
       reverseEngineering: 0
@@ -534,8 +520,8 @@ soldiers:
       perception: 10
       charisma: 10
       investigation: 5
-      deception: 0
-      interrogation: 0
+      deception: 5
+      interrogation: 5
       #scientist
       physics: 10
       chemistry: 10
@@ -547,6 +533,7 @@ soldiers:
       materials: 10
       #psychology: 5
       designing: 15
+      alienTech: 0
       psionics: 0
       xenolinguistics: 0
       #engineer
@@ -559,7 +546,6 @@ soldiers:
       hacking: 0
       robotics: 0
       diligence: 5
-      alienTech: 0
       reverseEngineering: 0
     maxStats:
       #soldier
@@ -576,21 +562,13 @@ soldiers:
       psiSkill: 0
       mana: 0
       #pilot - inherit from soldier
-      maneuvering: 0
-      missiles: 0
-      dogfight: 0
-      tracking: 0
-      cooperation: 0
-      beams: 0
-      synaptic: 0
-      gravity: 0
       #agent
-      stealth: 20
-      perception: 30
-      charisma: 20
+      stealth: 15
+      perception: 20
+      charisma: 30
       investigation: 20
-      deception: 5
-      interrogation: 10
+      deception: 15
+      interrogation: 15
       #scientist
       physics: 70
       chemistry: 70
@@ -602,8 +580,8 @@ soldiers:
       materials: 70
       #psychology: 70
       designing: 70
-      alienTech: 0
       psionics: 0
+      alienTech: 0
       xenolinguistics: 0
       #engineer
       weaponry: 10
@@ -659,7 +637,6 @@ soldiers:
       computers: 20
       tactics: 0
       materials: 10
-      #psychology: 0
       designing: 10
       psionics: 0
       xenolinguistics: 0
