@@ -1681,8 +1681,9 @@ research:
       alienTech: 50
     needItem: true
     destroyItem: true
-    getOneFree: #TODO в случае простого распределения лора, иначе поменять
-      - STR_FARM_CATTLE_SAMPLE_RESULT_1
+    sequentialGetOneFree: true
+    getOneFree:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_1
       - STR_FARM_CATTLE_SAMPLE_RESULT_2
       - STR_FARM_CATTLE_SAMPLE_RESULT_3
       - STR_FARM_CATTLE_SAMPLE_RESULT_4
@@ -1693,7 +1694,7 @@ research:
       - STR_FARM_CATTLE_SAMPLE_RESULT_9
       - STR_FARM_CATTLE_SAMPLE_RESULT_10
     listOrder: 3020
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_1
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_1
     hidden: true
     increaseCounter: [alienEarlyLore]
   - name: STR_FARM_CATTLE_SAMPLE_RESULT_2
