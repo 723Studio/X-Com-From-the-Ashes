@@ -775,6 +775,10 @@ en-US:
 #intelligence
   STR_UFO_TRACKING: "UFO Tracking"
   STR_UFO_TRACKING_DESCRIPTION: "Radar installations have shown their relatively poor ability to detect alien craft flying in the Earth's atmosphere. However, with the development of communication systems and the Internet in particular, portable video recorders, the growing popularity of such a new phenomenon as social media, we can collect data by analyzing large amounts of public data. The reporting of simple eyewitnesses and the development of a conspiratorial network of observers will allow us to expand the search and tracking of UFOs activity globally."
+  STR_INTEL_NETWORKING: "Building an Intelligence Network"
+  STR_INTEL_NETWORKING_DESCRIPTION: "After the formal shutdown of the XCOM project, our methods of information gathering changed drastically - covert information gathering, covert operations and espionage took center stage. To succeed in this arena, a well-developed intelligence network is essential."
+  STR_MIB_ACTIVITY: "M.I.B. Activity"
+  STR_MIB_ACTIVITY_DESCRIPTION: "We need to get as much information as we can about an enemy as powerful and insidious as the Men in Black. Obviously, they are linked to extraterrestrial activity, but their motives, capabilities and goals are still unclear. Efforts must be devoted to analyzing the known information and seeking new leads."
 #facilities
   STR_HQ: "Headquarters"
   STR_HQ_UFOPEDIA: "The headquarters staff collects reports on abnormal activity in human society from around the world and analyzes media reports. Headquarters contain a variety of high-tech communication and computing equipment and have everything you need to run X-COM, including our fantastic holographic globe! Up to 7 scientists can conduct analytical work here, and there's even a small room for interrogations."
@@ -980,6 +984,14 @@ en-US:
   STR_RESISTANCE_CELL_CREATION_DESCRIPTION: "We need to help the Resistance establish a new cell in the vicinity of M.I.B. headquarters. Despite the great risk, this could greatly help us in preparing for the coming assault."
   STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION: "Resistance agents managed to set up a new cell near the M.I.B. headquarters. Now we can count on their support."
   STR_RESISTANCE_CELL_CREATION_FAILURE_DESCRIPTION: "We failed to organize a new Resistance cell close to the M.I.B. headquarters. We were to meet at the safe house, but as we approached it there was an agreed upon sign. A flower on the windowsill - signifying danger, a complete failure of the operation. Apparently, one of the Resistance agents had managed to put it up before the Men in Black raided the place."
+  STR_MIB_CONVOY_OPERATION: "M.I.B. Activity Investigation"
+  STR_MIB_CONVOY_OPERATION_DESCRIPTION: "We need to follow up on an important lead in the M.I.B. investigation. We must proceed with caution."
+  STR_MIB_CONVOY_OPERATION_SUCCESS_DESCRIPTION: "We've managed to find a weak spot in our enemy's operations! The M.I.B. agents are driving in a small convoy of several vehicles, carrying important assets. We're tracking their movements, if our assault team is dispatched now, they can be intercepted while on the move.{NEWLINE}{ALT}New mission available."
+  STR_MIB_CONVOY_OPERATION_FAILURE_DESCRIPTION: "Unfortunately, we were unable to confirm our earlier intelligence, no trace of M.I.B. was discovered. The agents have returned to base."
+  STR_MIB_HIDEOUT_OPERATION: "M.I.B. Activity Investigation"
+  STR_MIB_HIDEOUT_OPERATION_DESCRIPTION: "We need to follow up on an important lead in the M.I.B. investigation. We must proceed with caution."
+  STR_MIB_HIDEOUT_OPERATION_SUCCESS_DESCRIPTION: "We've managed to find a weak spot in our enemy's operations! .{NEWLINE}{ALT}New mission available."
+  STR_MIB_HIDEOUT_OPERATION_FAILURE_DESCRIPTION: "Unfortunately, we were unable to confirm our earlier intelligence, no trace of M.I.B. was discovered. The agents have returned to base."
   STR_EX_COUNCIL_DATA_VAULT_EXTRACTION: "Data Vault Recovery"
   STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION: "Based on the data provided by the ex-Council member, we can investigate the theft of the Data Vault and endeavor to track down the thieves. This is a very delicate task, and we must be extremely careful not to draw unnecessary attention."
   STR_EX_COUNCIL_DATA_VAULT_CONVEY: "Convey Data Vault"
@@ -1099,6 +1111,10 @@ en-US:
   STR_GREAT_PLAN: "Great plan!"
   STR_STEAL_OSPREY_EVENT_YES: "Steal the Osprey"
   STR_STEAL_OSPREY_EVENT_YES_DESCRIPTION: "Okay, we need to carefully plan the operation. Most importantly, we have to do everything completely undetected and in no way reveal the location of our base in the action. Not such an easy task given the size of the craft.{NEWLINE}{ALT}New covert operation available."
+  STR_CALL_OF_DUTY_EVENT: "Call of Duty"
+  STR_CALL_OF_DUTY_EVENT_DESCRIPTION: "Многие сотрудники XCOM были уволены за последние полгода из-за острой нехватки финансирования проекта XCOM, которого не хватало даже на зарплаты. Тем не менее, среди них было много самоотверженных людей, которые могут захотеть вернуться на службу в текущих условиях. С развитием нашей продвинутой системы скрытой связи, мы могли бы связаться с добровольцами и доставить их на базу, не привлекая ненужного внимания.{NEWLINE}{ALT}New covert operation available." #TODO
+  STR_CALL_OF_DUTY_ENABLER: "Call Of Duty"
+  STR_CALL_OF_DUTY_ENABLER_DESCRIPTION: "Мы вышли на связь с ещё одни ранее уволенным сотрудником XCOM, который бы хотел вернуться в наши ряды. Требуется организовать тайную операцию, что бы незаметно доставить его на нашу базу.{NEWLINE}{ALT}New covert operation available." #TODO
   STR_EX_COUNCIL_MEMBER_INITIAL_EVENT: "Incoming encrypted message!"
   STR_EX_COUNCIL_MEMBER_INITIAL_EVENT_DESCRIPTION: "Commander, we are receiving an encrypted message through one of our secure communication channels. Would you like to display it on the main screen?"
   STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT: "Transmission decoding completed!"
@@ -1118,7 +1134,7 @@ en-US:
   STR_MISTERY_CULT_EVENT_YES: "Mysterious Cult"
   STR_MISTERY_CULT_EVENT_YES_DESCRIPTION: "We are developing a plot for a covert operation to investigate the cult activities, and all available information is organized and documented in Ufopedia.{NEWLINE}{ALT}New covert operation available."
   STR_ABANDONED_BASE_DESPAWNED: "Abandoned base revealed by M.I.B."
-  STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION: "Unfortunately, we delayed landing at the site of the abandoned base for too long. Apparently, the M.I.B. managed to locate the structure. We detected a massive explosion that probably destroyed the entire base.{NEWLINE}Loyalty score>{ALT} -200"
+  STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION: "Unfortunately, we delayed landing at the site of the abandoned base for too long. Apparently, the M.I.B. managed to locate the facility. We detected a massive explosion that probably destroyed the entire base.{NEWLINE}Loyalty score>{ALT} -400"
   STR_WORKSHOP_EVENT: "Basic Workshop"
   STR_WORKSHOP_EVENT_DESCRIPTION: "After dismantling all the production facilities at the base, the remaining engineers on staff are completely unemployed. Maybe we could at least partially restore X-COM's production capacity by establishing a simple workshop in which we can assemble the currently available equipment."
   STR_SPORTS_BOW_TINKERING: "Sports Bow Advanced Arrows"
@@ -1147,6 +1163,23 @@ en-US:
   STR_OLD_CROP_CIRCLES_DESCRIPTION: "Some crop circles were reported, but apparently our opponents got to them before we even learned of them. Whatever had been there to uncover, it is now beyond our grasp - forever...{NEWLINE}Loyalty score>{ALT} -20"
   STR_UFO_SIGNS: "UFO Signs"
   STR_UFO_SIGNS_DESCRIPTION: "We get scattered information about the observation from the ground of a strange phenomenon in the upper atmosphere, published in the 'yellow press'. Apparently, this is evidence of an alien ship passing through. Unfortunately, we were not able to react to this event in time.{NEWLINE}Loyalty score>{ALT} -15"
+  STR_MIB_CONVOY_OPERATION_ENABLER: "M.I.B. Investigation lead."
+  STR_MIB_CONVOY_OPERATION_ENABLER_DESCRIPTION: "We've received an important lead in the Men in Black investigation. It would be wise to pursue it - to further the inquiry, we need to send our agents out to gather further evidence.{NEWLINE}{ALT}New covert operations available."
+  STR_MIB_HIDEOUT_OPERATION_ENABLER: "M.I.B. Investigation lead."
+  STR_MIB_HIDEOUT_OPERATION_ENABLER_DESCRIPTION: "We've received an important lead in the Men in Black investigation. It would be wise to pursue it - to further the inquiry, we need to send our agents out to gather further evidence.{NEWLINE}{ALT}New covert operations available."
+  STR_MIB_CLUE_EVENT_1: "Опасная Астрономия"
+  STR_MIB_CLUE_EVENT_1_DESCRIPTION: "We've managed to contact a radio astronomer being hunted by M.I.B. agents. She was able to detect a strange object at the L1 point of the Earth-Sun system by filtering out the reflected signal from the noise emitted by the Sun. From its signature, the object appeared to be at least several kilometers in diameter and composed of metal. She was preparing to publish the results, but someone deleted all the data from her work computer. She's in grave danger, and we've prepared a safe passage to base."
+  STR_MIB_CLUE_EVENT_2: #TODO
+  STR_MIB_CLUE_EVENT_2_DESCRIPTION: #TODO
+  STR_MIB_CLUE_EVENT_3: "Пилот в Отставке"
+  STR_MIB_CLUE_EVENT_3_DESCRIPTION: "Лётчик ВВС США во время тренировочных полётов с военной базы в Калифорнии в 1988 году несколько раз сталкивался с НЛО, которые по его описанию очень похожи на корабли пришельцев. Его доклады начальству в то время замялись. После отставки он решил написать книгу, подробно описав свой опыт. Но она книга так и не вышла - в издательстве начали происходить странные события, а за самим пилотом началась слежка агентов M.I.B. Очевидно, он в смертельной опасности."
+  STR_MIB_CLUE_EVENT_4: #TODO
+  STR_MIB_CLUE_EVENT_4_DESCRIPTION: #TODO
+  STR_MIB_CLUE_EVENT_5: "The Alien Killer"
+  STR_MIB_CLUE_EVENT_5_DESCRIPTION: "We've managed to contact a man who's being actively hunted by M.I.B. agents. He works as a logger and claims to have seen an alien ship landing in the woods. Moreover, he says that he managed to kill one of the aliens with bare hands! He describes this alien as follows - gray skin, short, with a large head and giant black eyes. While he was choking the alien, horrible pictures flashed before his eyes that made his blood run cold. Nevertheless, our hero was not intimidated and did not loosen his grip. He will soon arrive at our base."
+  STR_LOW_FUNDS_EVENT: "Заканчиваются Деньги"
+  STR_LOW_FUNDS_EVENT_DESCRIPTION: "Коммандер, поступил Quartermaster's report.{NEWLINE}{NEWLINE}{NEWLINE}Funds>{ALT} -+35500{NEWLINE}Loyalty score>{ALT} -10"
+  STR_LOW_FUNDS_EVENT_UFOPEDIA: "Ежемесячного финансирования проекта XCOM больше нет и наши банковские счета  счета почти пусты. У нас может нехватить денег на обслуживание базы. Я проверил наши запасы, и мне удалось собрать некоторое количество ненужного барахла на продажу. Однако, вырученных денег на долго не хватит. Вам нужно внимательно следить за содержимым наших складов и стараться продавать всё, кроме самого необходимово, что бы keep positive funding."
   STR_IMPROVE_LIVING_FACILITY: "Improving base living conditions"
   STR_IMPROVE_LIVING_FACILITY_DESCRIPTION: "For safety reasons, we strive to reduce contact with the outside world, so our team found itself almost completely isolated at the base. To make it easier to tolerate the new conditions, the staff is requesting new equipment for the gym and additional recreational areas with upholstered furniture, TV and audio equipment. This will help to relieve mental stress and boost morale on the team."
   STR_IMPROVE_LIVING_FACILITY_YES: "Improving base living conditions"
@@ -2384,6 +2417,9 @@ en-US:
   STR_CROP_CIRCLES_SAMPLE_RESULT_10: 
   STR_CROP_CIRCLES_SAMPLE_RESULT_10_UFOPEDIA: 
 
+#UFOs
+  STR_SMALL_SCOUT_EARLY: "Small Scout"
+
 #tags
   CENTER_MASS: "Center Mass"
   CENTER_MASS_DESCRIPTION: "A bonus chance to land a critical hit."
@@ -2414,6 +2450,9 @@ en-US:
   UTILITY_SPECIALIST: "Utility Specialist"
   UTILITY_SPECIALIST_DESCRIPTION: "Enables additional accuracy of utility grenades throwing, using utilities refund 2-4% TU."
   STR_UNARMED_FIGHTER_DESCRIPTION: "Bonus for unarmed hit accuracy, doubles if both hands are free."
+  STR_HERO_NAME_ANDREY_ZAHAROV: "Andrei Zakharov"
+  STR_HERO_NAME_JACK_NIGHT: "Jack Night"
+  STR_HERO_NAME_MARIA_PEREZ: "Maria Perez"
 #cities
   # ARCTIC CITIES
   STR_INUVIK: "Inuvik"
@@ -2798,6 +2837,7 @@ en-US:
   STR_CROP_CORCLES_INITIAL: STR_CROP_CORCLES_INITIAL
   STR_DESERT_MILITARY_CONVOY: STR_DESERT_MILITARY_CONVOY
   STR_MIB_HIDEOUT: STR_MIB_HIDEOUT
+  STR_MIB_CONVOY: STR_MIB_CONVOY
   STR_RESISTANCE_SHELTER_FARM: STR_RESISTANCE_SHELTER_FARM
   STR_RESISTANCE_SHELTER_FARM_DESTROYED: STR_RESISTANCE_SHELTER_FARM_DESTROYED
   STR_RESISTANCE_SHELTER_FARM_RADIO: STR_RESISTANCE_SHELTER_FARM_RADIO
@@ -2897,7 +2937,11 @@ en-US:
   STR_WEAPON_COMPONENTS: STR_WEAPON_COMPONENTS
   STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ: STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
   STR_CRIMINAL_RECRUITING_PREREQ: STR_CRIMINAL_RECRUITING_PREREQ
+  STR_MIB_CONVOY_OPERATION_PREREQ: STR_MIB_CONVOY_OPERATION_PREREQ
+  STR_ABANDONED_BASE_DONE: STR_ABANDONED_BASE_DONE
   STR_WORKSHOP_PREREQ: STR_WORKSHOP_PREREQ
+  STR_MILITARY_RECRUITING_PREREQ: STR_MILITARY_RECRUITING_PREREQ
+  STR_OFFICIALS_RECRUITING_PREREQ: STR_OFFICIALS_RECRUITING_PREREQ
   PAL_BASE_INFO: PAL_BASE_INFO
   INV_NULL_HAND_L: INV_NULL_HAND_L
   INV_NULL_HAND_R: INV_NULL_HAND_R

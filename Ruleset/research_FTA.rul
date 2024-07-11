@@ -98,6 +98,16 @@ research:
     hidden: true
   - name: STR_ABANDONED_BASE_DONE
     hidden: true
+  - name: STR_MIB_CONVOY_OPERATION_PREREQ
+    hidden: true
+  - name: STR_MIB_HIDEOUT_OPERATION_PREREQ
+    hidden: true
+  - name: STR_MIB_CLUE_EVENT_5
+    hidden: true
+  - name: STR_LOW_FUNDS
+    hidden: true
+  - name: STR_CALL_OF_DUTY_PREREQ
+    hidden: true
   - name: STR_RESISTANCE_FIRST_HELP
     hidden: true
   - name: STR_RESISTANCE_SCIENTIST
@@ -117,6 +127,8 @@ research:
   - name: STR_UNLEASH_SWARMID_TRIGGER
     hidden: true
   - name: STR_MIB_HQ_DESTROYED
+    hidden: true
+  - name: STR_FAILED_MIB_HQ_ASSAULT
     hidden: true
   - name: STR_CROP_CIRCLES_PREREQ
     hidden: true

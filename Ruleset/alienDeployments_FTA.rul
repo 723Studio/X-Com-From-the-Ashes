@@ -268,12 +268,12 @@ alienDeployments:
             - STR_PISTOL
             - STR_PISTOL_CLIP
             - STR_PISTOL_CLIP
-      - alienRank: 5
+      - alienRank: 5 #STR_MIB_AGENT
         lowQty: 7
         highQty: 12
         dQty: 4
         percentageOutsideUfo: 50
-        itemSets:
+        itemSets: &mibAgentLightItems
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
@@ -310,10 +310,10 @@ alienDeployments:
             - STR_FLASHBANG_GRENADE
             - STR_FLASHBANG_GRENADE
           -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
           -
             - STR_SEMI_AUTO_SHOTGUN
@@ -323,11 +323,10 @@ alienDeployments:
             - STR_SHOTGUN_SHELLS_BATON
             - STR_SHOTGUN_SHELLS_BATON
           -
-            - STR_PISTOL
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
           -
             - STR_PDW
             - STR_PDW_CLIP
@@ -359,6 +358,7 @@ alienDeployments:
     alertBackground: MIB_BACKGROUND.SCR
     alertDescription: STR_ALERT_MIB_REGIONAL_HQ_DESCRIPTION
     battleScript: mibHqSurface
+    unlockedResearchOnFailure: STR_FAILED_MIB_HQ_ASSAULT
     alienBase: true
     keepCraftAfterFailedMission: true
     escapeType: 1
@@ -433,7 +433,7 @@ alienDeployments:
         highQty: 6
         dQty: 1
         percentageOutsideUfo: 0
-        itemSets:
+        itemSets: 
           -
             - STR_HEAVY_PISTOL
             - STR_HEAVY_PISTOL_CLIP
@@ -854,6 +854,7 @@ alienDeployments:
     objectiveFailed: [STR_MIB_CONTROL_CENTER_NOT_DESTROYED, -750]
     objectivePopup: STR_CONTROL_CENTER_DESTROYED #string from vanilla
     unlockedResearch: STR_MIB_HQ_DESTROYED #would be hardcoded, do not rename!!
+    unlockedResearchOnFailure: STR_FAILED_MIB_HQ_ASSAULT
     keepCraftAfterFailedMission: true
     turnLimit: 20
     chronoTrigger: 1
@@ -1600,7 +1601,7 @@ alienDeployments:
         highQty: 6
         dQty: 2
         percentageOutsideUfo: 90
-        itemSets:
+        itemSets: &mibAgentMediumItems
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
@@ -1658,12 +1659,12 @@ alienDeployments:
         highQty: 5
         dQty: 1
         percentageOutsideUfo: 100
-        itemSets:
+        itemSets: &mibArmoredAgentMediumItems
           -
-            - STR_PISTOL 
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
             - STR_GRENADE
           -
             - STR_HEAVY_PISTOL
@@ -1671,11 +1672,13 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_EXP_CLIP
             - STR_GRENADE
+            - STR_GRENADE
           -
             - STR_SEMI_AUTO_SHOTGUN
             - STR_SHOTGUN_SHELLS_AP
             - STR_SHOTGUN_SHELLS_AP
             - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BATON
           -
             - STR_SMG
             - STR_SMG_CLIP
@@ -1699,6 +1702,7 @@ alienDeployments:
             - STR_RIFLE_EXP_CLIP
           -
             - STR_RIFLE
+            - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
           -
@@ -1934,63 +1938,7 @@ alienDeployments:
         highQty: 6
         dQty: 2
         percentageOutsideUfo: 90
-        itemSets:
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_ASSAULT_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_GRENADE
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_GRENADE
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_RIFLE
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_GRENADE
-          -
-            - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_AP  
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_FLASHBANG_GRENADE
+        itemSets: *mibAgentMediumItems
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
         lowQty: 2
         highQty: 4
@@ -2449,63 +2397,7 @@ alienDeployments:
         highQty: 4
         dQty: 2
         percentageOutsideUfo: 100
-        itemSets:
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_ASSAULT_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_GRENADE
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_GRENADE 
-          -
-            - STR_RIFLE
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_GRENADE
-          -
-            - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_AP
-            - STR_SHOTGUN_SHELLS_BATON 
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE 
+        itemSets: *mibAgentMediumItems 
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
         lowQty: 1
         highQty: 4
@@ -3842,74 +3734,7 @@ alienDeployments:
         highQty: 8
         dQty: 3
         percentageOutsideUfo: 50
-        itemSets:
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-            - STR_GRENADE
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_GRENADE
-          -
-            - STR_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_BS
-            - STR_SHOTGUN_SHELLS_DRAGON
-            - STR_SHOTGUN_SHELLS_BATON
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_GRENADE
-          -
-            - STR_ASSAULT_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-          -
-            - STR_PDW
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP
-            - STR_FLASHBANG_GRENADE
-            - STR_GRENADE
+        itemSets: *mibAgentLightItems
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
         lowQty: 2
         medQty: 3
@@ -4790,60 +4615,7 @@ alienDeployments:
         highQty: 4
         dQty: 1
         percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CASH_PACK
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CASH_PACK
-            - STR_CASH_PACK
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CASH_PACK_BIG
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CREDIT_CARD
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CREDIT_CARD
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_CREDIT_CARD_SILVER 
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE 
+        itemSets: *mibAgentLightItems
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
         lowQty: 1
         medQty: 2
@@ -4935,60 +4707,7 @@ alienDeployments:
         highQty: 6
         dQty: 2
         percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CASH_PACK
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CASH_PACK
-            - STR_CASH_PACK
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CASH_PACK_BIG
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CREDIT_CARD
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_CREDIT_CARD
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_CREDIT_CARD_SILVER 
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE 
+        itemSets: *mibAgentLightItems
       - alienRank: 4 #STR_MIB_ARMORED_AGENT
         lowQty: 2
         medQty: 2
@@ -5107,6 +4826,164 @@ alienDeployments:
             - STR_SMALL_ROCKET
             - STR_INCENDIARY_ROCKET
 
+  - type: STR_CALL_OF_DUTY_EASY
+    race: STR_MIB
+    width: 40
+    length: 40
+    height: 6
+    #isHidden: true
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_EASY_BRIEFING
+    terrains:
+      - URBAN_LOW
+    shade: 3
+    script: mibChasing #TODO
+    startingCondition: STR_COVERT_AGENT_GEAR
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        medQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *mibAgentLightItems
+      - alienRank: 4 #STR_MIB_ARMORED_AGENT
+        lowQty: 0
+        medQty: 0
+        highQty: 1
+        percentageOutsideUfo: 100
+        itemSets: 
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP 
+            - STR_FLASHBANG_GRENADE 
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP 
+            - STR_GRENADE 
+
+  - type: STR_CALL_OF_DUTY_HARD
+    race: STR_MIB
+    width: 50
+    length: 50
+    height: 6
+    isHidden: true
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_HARD_BRIEFING
+    terrains:
+      - URBAN_LOW
+    shade: 6
+    script: mibChasing  #TODO
+    startingCondition: STR_COVERT_AGENT_GEAR
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        medQty: 3
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *mibAgentLightItems
+      - alienRank: 4 #STR_MIB_ARMORED_AGENT
+        lowQty: 0
+        medQty: 1
+        highQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PDW
+            - STR_PDW_CLIP
+            - STR_PDW_CLIP 
+            - STR_FLASHBANG_GRENADE 
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_AP 
+            - STR_GRENADE 
+
   - type: STR_ABANDONED_BASE
     race: STR_ZOMBIE
     isHiddentXcomBase: true
@@ -5163,127 +5040,18 @@ alienDeployments:
       STR_MIB_CHASING_FAIL: 100
     startingCondition: STR_COVERT_AGENT_GEAR
     data:
-      - alienRank: 5
-        lowQty: 2
-        highQty: 4
-        dQty: 1
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-          -
-            - STR_PISTOL
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP 
-            - STR_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-          -
-            - STR_ASSAULT_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-          -
-            - STR_PDW
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP 
-            - STR_PDW_CLIP 
-      - alienRank: 5
+      - alienRank: 5 #STR_MIB_AGENT
         lowQty: 2
         highQty: 4
         dQty: 2
         percentageOutsideUfo: 100
-        itemSets:
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-            - STR_PISTOL_EXP_CLIP
-          -
-            - STR_HEAVY_PISTOL
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_CLIP
-            - STR_HEAVY_PISTOL_EXP_CLIP
-            - STR_GRENADE
-          -
-            - STR_PISTOL
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_FLASHBANG_GRENADE
-          -
-            - STR_SMG
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-            - STR_SMG_CLIP
-          -
-            - STR_PDW
-            - STR_PDW_CLIP
-            - STR_PDW_CLIP 
-            - STR_PDW_CLIP 
-            - STR_GRENADE
-          -
-            - STR_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_ASSAULT_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP
-          -
-            - STR_RIFLE
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-            - STR_RIFLE_EXP_CLIP
-          -
-            - STR_PRECISION_RIFLE
-            - STR_RIFLE_CLIP
-            - STR_RIFLE_CLIP 
-            - STR_RIFLE_CLIP
+        itemSets: *mibAgentLightItems
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *mibAgentMediumItems
       - alienRank: 4
         lowQty: 1
         highQty: 4

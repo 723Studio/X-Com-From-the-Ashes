@@ -92,6 +92,20 @@ events:
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
 
+  - name: STR_CALL_OF_DUTY_EVENT
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    background: BACK01.SCR
+    timer: 600
+    timerRandom: 10080
+    researchList: [STR_CALL_OF_DUTY_PREREQ]
+  - name: STR_CALL_OF_DUTY_ENABLER
+    description: STR_CALL_OF_DUTY_ENABLER_DESCRIPTION
+    background: BACK01.SCR
+    timer: 600
+    timerRandom: 10080
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_OPERATION]
+
+
   - name: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT
     description: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT_DESCRIPTION
     background: BACK01.SCR
@@ -655,6 +669,205 @@ events:
     loyalty: -15
     timer: 21600
     timerRandom: 17280
+#intel #TODO CLUE EVENTS
+  - name: STR_MIB_CONVOY_OPERATION_ENABLER
+    description: STR_MIB_CONVOY_OPERATION_ENABLER_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    researchList: [STR_MIB_CONVOY_OPERATION_PREREQ]
+    timer: 60
+    timerRandom: 129600 #90 days
+    removedCovertOperationsList:
+      - STR_MIB_CONVOY_OPERATION
+  - name: STR_MIB_HIDEOUT_OPERATION_ENABLER
+    description: STR_MIB_HIDEOUT_OPERATION_ENABLER_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    researchList: [STR_MIB_HIDEOUT_OPERATION_PREREQ]
+    timer: 60
+    timerRandom: 129600 #90 days
+    removedCovertOperationsList:
+      - STR_MIB_HIDEOUT_OPERATION
+  - name: STR_MIB_CLUE_EVENT_1
+    description: STR_MIB_CLUE_EVENT_1_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    spawnedPersons: 1
+    spawnedPersonType: STR_SCIENTIST
+    spawnedPersonName: STR_HERO_NAME_MARIA_PEREZ
+    spawnedSoldier:
+      type: STR_SCIENTIST
+      nationality: 12
+      gender: 1
+      look: 2
+      lookVariant: 28
+      missions: 0
+      kills: 0
+      stuns: 0
+      armor: STR_XCOM_LABCOAT_UC
+      roles:
+        - role: 4
+          rank: 1
+          experience: 8
+      initialStats: &mariaPerezStats
+          tu: 62
+          stamina: 54
+          health: 18
+          bravery: 40
+          reactions: 20
+          firing: 27
+          throwing: 17
+          strength: 24
+          psiStrength: 31
+          psiSkill: 0
+          melee: 19
+          mana: 0
+          physics: 110
+          chemistry: 67
+          biology: 54
+          insight: 90
+          data: 105
+          computers: 75
+          tactics: 0
+          materials: 15
+          designing: 44
+          alienTech: 10
+          psionics: 0
+          xenolinguistics: 0
+          diligence: 20
+          stealth: 57
+          perception: 48
+          charisma: 41
+          investigation: 19
+          deception: 15
+          interrogation: 8
+      currentStats: *mariaPerezStats
+    timer: 60
+    timerRandom: 129600 #90 days
+  - name: STR_MIB_CLUE_EVENT_2
+    description: STR_MIB_CLUE_EVENT_2_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    #researchList: [STR_MIB_HIDEOUT_OPERATION_PREREQ]
+    # loyalty: 0
+    # funds: 0
+    timer: 60
+    timerRandom: 129600 #90 days
+  - name: STR_MIB_CLUE_EVENT_3
+    description: STR_MIB_CLUE_EVENT_3_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    spawnedPersons: 1
+    spawnedPersonType: STR_PILOT
+    spawnedPersonName: STR_HERO_NAME_JACK_NIGHT
+    spawnedSoldier:
+      type: STR_PILOT
+      nationality: 0
+      gender: 0
+      look: 0
+      lookVariant: 38
+      missions: 0
+      kills: 0
+      stuns: 0
+      armor: STR_FLIGHTSUIT_UC
+      roles:
+        - role: 2
+          rank: 1
+          experience: 8
+      initialStats: &andreyZaharovStats
+          tu: 75
+          stamina: 81
+          health: 40
+          bravery: 50
+          reactions: 40
+          firing: 45
+          throwing: 63
+          strength: 35
+          psiStrength: 62
+          psiSkill: 0
+          melee: 45
+          mana: 0
+          maneuvering: 84
+          missiles: 95
+          dogfight: 102
+          tracking: 84
+          cooperation: 45
+          insight: 32
+          weaponry: 11
+          explosives: 20
+          efficiency: 15
+          microelectronics: 12
+          metallurgy: 18
+          processing: 28
+          hacking: 7
+          robotics: 9
+          diligence: 20
+          stealth: 45
+          perception: 52
+          charisma: 34
+          investigation: 42
+          deception: 38
+          interrogation: 12
+      currentStats: *andreyZaharovStats
+    timer: 60
+    timerRandom: 129600 #90 days
+  - name: STR_MIB_CLUE_EVENT_4
+    description: STR_MIB_CLUE_EVENT_4_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    #researchList: [STR_MIB_HIDEOUT_OPERATION_PREREQ]
+    # loyalty: 0
+    # funds: 0
+    timer: 60
+    timerRandom: 129600 #90 days
+  - name: STR_MIB_CLUE_EVENT_5
+    description: STR_MIB_CLUE_EVENT_5_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    researchList: [STR_MIB_CLUE_EVENT_5]
+    spawnedPersons: 1
+    spawnedPersonType: STR_SOLDIER
+    spawnedPersonName: STR_HERO_NAME_ANDREY_ZAHAROV
+    spawnedSoldier:
+      type: STR_SOLDIER
+      nationality: 2
+      gender: 0
+      look: 2
+      lookVariant: 39
+      missions: 0
+      kills: 0
+      stuns: 0
+      armor: STR_JUMPSUIT_UC
+      roles:
+        - role: 0
+          rank: 1
+          experience: 8
+      initialStats: &andreyZaharovStats
+          tu: 100
+          stamina: 122
+          health: 50
+          bravery: 90
+          reactions: 25
+          firing: 30
+          throwing: 90
+          strength: 78
+          psiStrength: 95
+          psiSkill: 0
+          melee: 100
+          mana: 0
+          insight: 4
+          weaponry: 6
+          explosives: 3
+          efficiency: 9
+          microelectronics: 0
+          metallurgy: 5
+          processing: 13
+          hacking: 2
+          robotics: 0
+          diligence: 3
+          stealth: 4
+          perception: 20
+          charisma: 65
+          investigation: 5
+          deception: 
+          interrogation: 45
+      currentStats: *andreyZaharovStats
+    timer: 60
+    timerRandom: 129600 #90 days
+
 #xcom base activity
   - name: STR_IMPROVE_LIVING_FACILITY
     description: STR_IMPROVE_LIVING_FACILITY_DESCRIPTION
@@ -675,6 +888,16 @@ events:
   - name: STR_IMPROVE_LIVING_FACILITY_NO
     description: STR_IMPROVE_LIVING_FACILITY_NO_DESCRIPTION
     loyalty: -100
+
+  - name: STR_LOW_FUNDS_EVENT
+    description: STR_LOW_FUNDS_EVENT_DESCRIPTION
+    #background: MIB_BACKGROUND.SCR
+    researchList: [STR_LOW_FUNDS]
+    funds: 35500
+    loyalty: -10
+    timer: 600
+    timerRandom: 600
+
 #chocolate factory
   - name: STR_CHOCOLATE_FACTORY_1
     description: STR_CHOCOLATE_FACTORY_1_DESCRIPTION

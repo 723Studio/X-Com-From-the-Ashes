@@ -88,8 +88,8 @@ eventScripts:
   - type: mibstoryMilestone1
     oneTimeSequentialEvents: [STR_MIB_STORY_MILESTONE_1_EVENT]
     missionMarkerName: mibActivityKnowlege
-    allowedProcessor: 2 #xcom
     counterMin: 10
+    allowedProcessor: 2 #xcom
     executionOdds: 90
   - &xcomFundamentalStudiesScript
     type: xcomFundamentalStudiesScript
@@ -272,7 +272,58 @@ eventScripts:
       STR_EX_COUNCIL_MEMBER_INITIAL: true
       STR_COVERT_OPERATIONS: true
     allowedProcessor: 2 #xcom
+  - type: lowFunds
+    oneTimeSequentialEvents: [STR_LOW_FUNDS_EVENT]
+    firstMonth: 0
+    lastMonth: 6
+    executionOdds: 25
+    maxFunds: 10000
+    minLoyalty: 200
+    allowedProcessor: 2 #xcom
 
+#intel scripts
+  - type: mibClue
+    oneTimeSequentialEvents:
+      - STR_MIB_CLUE_EVENT_1
+      - STR_MIB_CLUE_EVENT_2
+      - STR_MIB_CLUE_EVENT_3
+      - STR_MIB_CLUE_EVENT_4
+      - STR_MIB_CLUE_EVENT_5
+    allowedProcessor: 3 #OTHER_SCRIPT
+    executionOdds: 50
+  - type: mibRandom
+    eventWeights:
+      0:
+        STR_MIB_RANDOM_EVENT_1: 100
+    allowedProcessor: 3 #OTHER_SCRIPT
+    executionOdds: 50
+  - type: mibConvoyRaid
+    eventWeights:
+      0:
+        STR_MIB_CONVOY_OPERATION_ENABLER: 100
+    allowedProcessor: 3 #OTHER_SCRIPT
+    executionOdds: 40
+  - type: mibHideoutRaid
+    eventWeights:
+      0:
+        STR_MIB_HIDEOUT_OPERATION_ENABLER: 100
+    allowedProcessor: 3 #OTHER_SCRIPT
+    executionOdds: 20
+
+  - type: callOfDutyInitial
+    oneTimeSequentialEvents: [STR_CALL_OF_DUTY_EVENT]
+    firstMonth: 1
+    lastMonth: 6
+    executionOdds: 100
+    allowedProcessor: 3 #OTHER_SCRIPT
+  - type: callOfDutyInitial
+    eventWeights:
+      0:
+        STR_CALL_OF_DUTY_ENABLER: 100
+    firstMonth: 1
+    lastMonth: 6
+    executionOdds: 90
+    allowedProcessor: 3 #OTHER_SCRIPT
 
 #resistance
   - type: resistanceShareCommonEquipmentData

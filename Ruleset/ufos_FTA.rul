@@ -2,7 +2,8 @@ ufos:
 #real ufos
   - delete: STR_SMALL_SCOUT
   - delete: STR_ABDUCTOR
-  - type: STR_SMALL_SCOUT
+  - &smallScout
+    type: STR_SMALL_SCOUT
     size: STR_VERY_SMALL
     sprite: 0
     damageMax: 45
@@ -35,8 +36,10 @@ ufos:
         - name: UFO1C
           width: 10
           length: 10
+  - type: STR_SMALL_SCOUT_EARLY
+    refNode: *smallScout
     tags:
-      UFO_DETECTION_CHANGE: 2
+      UFO_DETECTION_CHANGE: 3
   - type: STR_MEDIUM_SCOUT
     size: STR_SMALL
     sprite: 1
