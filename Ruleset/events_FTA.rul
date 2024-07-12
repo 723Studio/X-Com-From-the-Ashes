@@ -92,6 +92,7 @@ events:
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
 
+#Check it
   - name: STR_CALL_OF_DUTY_EVENT
     description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
     background: BACK01.SCR
@@ -104,6 +105,36 @@ events:
     timer: 600
     timerRandom: 10080
     removedCovertOperationsList: [STR_CALL_OF_DUTY_OPERATION]
+#Check it end
+
+  - name: STR_MIB_AGENT_INTERROGATION
+    description: STR_MIB_AGENT_INTERROGATION_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 1
+    timer: 0
+    timerRandom: 0
+  - name: STR_MIB_SPECIALIST_INTERROGATION
+    description: STR_MIB_SPECIALIST_INTERROGATION_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 2
+    timer: 0
+    timerRandom: 0
+  - name: STR_FLOPPY_SCIENTISTS_LOG_MIB
+    description: STR_FLOPPY_SCIENTISTS_LOG_MIB_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 2
+    timer: 0
+    timerRandom: 0
+  - name: STR_MIB_DATA_CONTAINER
+    description: STR_MIB_DATA_CONTAINER_MIB_DESCRIPTION
+    background: INTEL_BACKGROUND.SCR
+    increaseCounter: [mibActivityKnowledge]
+    counterValue: 3
+    timer: 0
+    timerRandom: 0
 
 
   - name: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT
@@ -272,6 +303,45 @@ events:
     removedCovertOperationsList: [STR_MONSTER_HUNT_RUMORS_SWARMID]
     timer: 43800 #1 month
     timerRandom: 43800 #another 1 month
+
+#Call of Duty
+  - name: STR_CALL_OF_DUTY_SOLDIER
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_SOLDIER
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_SOLDIER]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_AGENT
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_AGENT
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_AGENT]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_PILOT
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_PILOT
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_PILOT]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_ENGINEER
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_ENGINEER
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_ENGINEER]
+    timer: 5760
+    timerRandom: 30240
+  - name: STR_CALL_OF_DUTY_SCIENTIST
+    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+    researchList:
+      - STR_CALL_OF_DUTY_SCIENTIST
+    removedCovertOperationsList: [STR_CALL_OF_DUTY_SCIENTIST]
+    timer: 5760
+    timerRandom: 30240
+
+
 
 #Resistance
   - name: STR_RESISTANCE_DISCOVER

@@ -3,7 +3,7 @@ covertOperations:
   - name: STR_CHASING_MIB
     description: STR_CHASING_MIB_DESCRIPTION
     categories: [STR_INVESTIGATION]
-    allowedRoles: &militaryRoles [0, 2]
+    allowedRoles: &militaryRoles [0, 3]
     requires:
       - STR_COVERT_OPERATIONS
     soldiersMin: 2
@@ -598,6 +598,29 @@ covertOperations:
       STR_BIOLOGY_EQUIPMENT: 1
     successEvent: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
     failureEvent: STR_BIOLAB_EQUIPMENT_ACQUISITION_REPEAT_OPERATION
+#call of duty
+  - name: STR_CALL_OF_DUTY_SOLDIER
+    description: STR_CALL_OF_DUTY_OPERATION_DESCRIPTION
+    categories: [STR_INFILTRATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_CALL_OF_DUTY_SOLDIER
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [HQ]
+    # baseChances: 50
+    # danger: 5
+    # costs: 160
+    baseChances: 100
+    costs: 20 
+    allowedArmor: *StandardXcomArmors
+    addSoldiers:
+      STR_SOLDIER: 1
+    instantSuccessDeployment: 
+      STR_CALL_OF_DUTY_SOLDIER: 100
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
+    trapChance: 100
 
 #resistance
   - name: STR_RESISTANCE_CONTACT

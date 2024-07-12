@@ -2640,13 +2640,6 @@ ufopaedia:
       - STR_EMPTY_MIB_EARLY_LORE9
     text: STR_EMPTY_MIB_EARLY_LORE9_UFOPEDIA
     listOrder: 45090
-  # - id: STR_EMPTY_MIB_EARLY_LORE10
-  #   type_id: 8
-  #   section: STR_ADVERSARY_KNOWLEDGE_UC
-  #   requires:
-  #     - STR_EMPTY_MIB_EARLY_LORE10
-  #   text: STR_EMPTY_MIB_EARLY_LORE10_UFOPEDIA
-  #   listOrder: 45250
   - id: STR_FRESH_MIB_AGENT
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC
@@ -2677,6 +2670,79 @@ ufopaedia:
       - STR_MIB_DATA_TRANSFER_DECRYPTION
     text: STR_MIB_DATA_TRANSFER_DECRYPTION_UFOPEDIA
     listOrder: 45130
+
+  - id: STR_MIB_SCIENTIST_LORE1
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_SCIENTIST_LORE1
+    text: STR_MIB_SCIENTIST_LORE1_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_SCIENTIST_LORE2
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_SCIENTIST_LORE2
+    text: STR_MIB_SCIENTIST_LORE2_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_SCIENTIST_LORE3
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_SCIENTIST_LORE3
+    text: STR_MIB_SCIENTIST_LORE3_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_SCIENTIST_LORE4
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_SCIENTIST_LORE4
+    text: STR_MIB_SCIENTIST_LORE4_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_SCIENTIST_LORE5
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_SCIENTIST_LORE5
+    text: STR_MIB_SCIENTIST_LORE5_UFOPEDIA
+    listOrder: 45130
+
+  - id: STR_MIB_MEDIC_LORE1
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_MEDIC_LORE1
+    text: STR_MIB_MEDIC_LORE1_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_MEDIC_LORE2
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_MEDIC_LORE2
+    text: STR_MIB_MEDIC_LORE2_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_MEDIC_LORE3
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_MEDIC_LORE3
+    text: STR_MIB_MEDIC_LORE3_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_MEDIC_LORE4
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_MEDIC_LORE4
+    text: STR_MIB_MEDIC_LORE4_UFOPEDIA
+    listOrder: 45130
+  - id: STR_MIB_MEDIC_LORE5
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_MIB_MEDIC_LORE5
+    text: STR_MIB_MEDIC_LORE5_UFOPEDIA
+    listOrder: 45130
+
   - id: STR_MIB_INTERROGATION
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC
@@ -2847,6 +2913,24 @@ ufopaedia:
     text_width: 158
     requires:
       - STR_MIB_ENFORCER
+    listOrder: 65040
+  - id: STR_MIB_SCIENTIST
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_MIB_SCIENTIST_CPAL
+    text: STR_MIB_SCIENTIST_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_SCIENTIST
+    listOrder: 65040
+  - id: STR_MIB_MEDIC
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_MIB_SCIENTIST_CPAL #TODO separate visual assets
+    text: STR_MIB_MEDIC_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_MEDIC
     listOrder: 65040
   - id: STR_SEEKER_DRONE_TERRORIST
     type_id: 7
@@ -3047,6 +3131,55 @@ ufopaedia:
 
 ## STR_ALIEN_RESEARCH_UC 160-230k
     #listOrder: 161000
+  - id: STR_GENERAL_CATTLE_SAMPLE_RESULT_1
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_1
+    text: STR_GENERAL_CATTLE_SAMPLE_RESULT_1_UFOPEDIA
+    listOrder: 161000
+  - id: STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+    text: STR_GENERAL_CATTLE_SAMPLE_RESULT_2_UFOPEDIA
+    listOrder: 161000
+  - id: STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+    text: STR_GENERAL_CATTLE_SAMPLE_RESULT_3_UFOPEDIA
+    listOrder: 161000
+  - id: STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+    text: STR_GENERAL_CATTLE_SAMPLE_RESULT_4_UFOPEDIA
+    listOrder: 161000
+  - id: STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+    text: STR_GENERAL_CATTLE_SAMPLE_RESULT_5_UFOPEDIA
+    listOrder: 161000
+  - id: STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+    text: STR_GENERAL_CATTLE_SAMPLE_RESULT_6_UFOPEDIA
+    listOrder: 161000
+  - id: STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+    text: STR_GENERAL_CATTLE_SAMPLE_RESULT_7_UFOPEDIA
+    listOrder: 161000
   - id: STR_FARM_CATTLE_SAMPLE_RESULT_1
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -3082,42 +3215,6 @@ ufopaedia:
       - STR_FARM_CATTLE_SAMPLE_RESULT_5
     text: STR_FARM_CATTLE_SAMPLE_RESULT_5_UFOPEDIA
     listOrder: 161000
-  - id: STR_FARM_CATTLE_SAMPLE_RESULT_6
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_FARM_CATTLE_SAMPLE_RESULT_6
-    text: STR_FARM_CATTLE_SAMPLE_RESULT_6_UFOPEDIA
-    listOrder: 161000
-  - id: STR_FARM_CATTLE_SAMPLE_RESULT_7
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_FARM_CATTLE_SAMPLE_RESULT_7
-    text: STR_FARM_CATTLE_SAMPLE_RESULT_7_UFOPEDIA
-    listOrder: 161000
-  - id: STR_FARM_CATTLE_SAMPLE_RESULT_8
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_FARM_CATTLE_SAMPLE_RESULT_8
-    text: STR_FARM_CATTLE_SAMPLE_RESULT_8_UFOPEDIA
-    listOrder: 161000
-  - id: STR_FARM_CATTLE_SAMPLE_RESULT_9
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_FARM_CATTLE_SAMPLE_RESULT_9
-    text: STR_FARM_CATTLE_SAMPLE_RESULT_9_UFOPEDIA
-    listOrder: 161000
-  - id: STR_FARM_CATTLE_SAMPLE_RESULT_10
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_FARM_CATTLE_SAMPLE_RESULT_10
-    text: STR_FARM_CATTLE_SAMPLE_RESULT_10_UFOPEDIA
-    listOrder: 161000
-
   - id: STR_FOREST_CATTLE_SAMPLE_RESULT_1
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -3152,6 +3249,20 @@ ufopaedia:
     requires:
       - STR_FOREST_CATTLE_SAMPLE_RESULT_5
     text: STR_FOREST_CATTLE_SAMPLE_RESULT_5_UFOPEDIA
+    listOrder: 161000
+  - id: STR_ADVANCED_HEALING
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ADVANCED_HEALING
+    text: STR_ADVANCED_HEALING_UFOPEDIA
+    listOrder: 161000
+  - id: STR_CATTLE_MUTILATION_AGENDA
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_CATTLE_MUTILATION_AGENDA
+    text: STR_CATTLE_MUTILATION_AGENDA_UFOPEDIA
     listOrder: 161000
 
   - id: STR_CROP_CIRCLES_SAMPLE_RESULT_1
@@ -3388,6 +3499,13 @@ ufopaedia:
     text: STR_MIB_ENFORCER_ARMOR_UFOPEDIA
     requires:
       - STR_MIB_ENFORCER_ARMOR
+    listOrder: 250200
+  - id: STR_MIB_SCIENTIST_ARMOR
+    type_id: 5
+    section: STR_TACTICAL_ANALYSIS
+    text: STR_MIB_SCIENTIST_ARMOR_UFOPEDIA
+    requires:
+      - STR_MIB_SCIENTIST_ARMOR
     listOrder: 250200
   - id: STR_SEEKER_DRONE_ARMOR
     type_id: 5

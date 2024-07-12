@@ -156,6 +156,16 @@ research:
     hidden: true
   - name: STR_CULT_GANG_DEN
     hidden: true
+  - name: STR_CALL_OF_DUTY_SOLDIER
+    hidden: true
+  - name: STR_CALL_OF_DUTY_AGENT
+    hidden: true
+  - name: STR_CALL_OF_DUTY_PILOT
+    hidden: true
+  - name: STR_CALL_OF_DUTY_ENGINEER
+    hidden: true
+  - name: STR_CALL_OF_DUTY_SCIENTIST
+    hidden: true
   - name: STR_MILITARY_EQUIPMENT_ACQUISITION #TODO add way to unlock this
     hidden: true
   - name: STR_CHOCOLATE_FACTORY_OPEN
@@ -1515,8 +1525,28 @@ research:
     hidden: true
   - name: STR_EMPTY_MIB_EARLY_LORE9
     hidden: true
-  # - name: STR_EMPTY_MIB_EARLY_LORE10
-  #   hidden: true
+
+  - name: STR_MIB_SCIENTIST_LORE1
+    hidden: true
+  - name: STR_MIB_SCIENTIST_LORE2
+    hidden: true
+  - name: STR_MIB_SCIENTIST_LORE3
+    hidden: true
+  - name: STR_MIB_SCIENTIST_LORE4
+    hidden: true
+  - name: STR_MIB_SCIENTIST_LORE5
+    hidden: true
+  - name: STR_MIB_MEDIC_LORE1
+    hidden: true
+  - name: STR_MIB_MEDIC_LORE2
+    hidden: true
+  - name: STR_MIB_MEDIC_LORE3
+    hidden: true
+  - name: STR_MIB_MEDIC_LORE4
+    hidden: true
+  - name: STR_MIB_MEDIC_LORE5
+    hidden: true
+
 
 #shared creatures arc
   - name: STR_MONSTER_HUNT_START_PREREQ
@@ -1656,85 +1686,110 @@ research:
     listOrder: 3020
 
 #samples
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+    #increaseCounter: [alienEarlyLore]
+
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+
   - name: STR_FARM_CATTLE_SAMPLE
-    cost: 600
+    cost: 1600
     stats:
-      biology: 150
-      alienTech: 50
+      biology: 100
+    points: 100
     needItem: true
     destroyItem: true
-    getOneFree: #TODO в случае простого распределения лора, иначе поменять
+    sequentialGetOneFree: true
+    getOneFree:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_1
       - STR_FARM_CATTLE_SAMPLE_RESULT_1
       - STR_FARM_CATTLE_SAMPLE_RESULT_2
       - STR_FARM_CATTLE_SAMPLE_RESULT_3
       - STR_FARM_CATTLE_SAMPLE_RESULT_4
       - STR_FARM_CATTLE_SAMPLE_RESULT_5
-      - STR_FARM_CATTLE_SAMPLE_RESULT_6
-      - STR_FARM_CATTLE_SAMPLE_RESULT_7
-      - STR_FARM_CATTLE_SAMPLE_RESULT_8
-      - STR_FARM_CATTLE_SAMPLE_RESULT_9
-      - STR_FARM_CATTLE_SAMPLE_RESULT_10
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
     listOrder: 3020
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_1
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_2
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_3
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_4
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_5
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_6
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_7
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_8
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_9
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_10
-    hidden: true
-    increaseCounter: [alienEarlyLore]
 
   - name: STR_FOREST_CATTLE_SAMPLE
-    cost: 600
+    cost: 1600
     stats:
-      biology: 150
-      alienTech: 50
+      biology: 100
+    points: 100
     needItem: true
     destroyItem: true
-    getOneFree: #TODO в случае простого распределения лора, иначе поменять
+    sequentialGetOneFree: true
+    getOneFree:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_1
       - STR_FOREST_CATTLE_SAMPLE_RESULT_1
       - STR_FOREST_CATTLE_SAMPLE_RESULT_2
       - STR_FOREST_CATTLE_SAMPLE_RESULT_3
       - STR_FOREST_CATTLE_SAMPLE_RESULT_4
       - STR_FOREST_CATTLE_SAMPLE_RESULT_5
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
     listOrder: 3020
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_1
-    hidden: true
+  - name: STR_CATTLE_MUTILATION_AGENDA
+    cost: 3500
     increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_2
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_3
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_4
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_5
-    hidden: true
-    increaseCounter: [alienEarlyLore]
+    counterValue: 10
+    stats:
+      tactics: 100
+    points: 100
+    dependencies:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_5
+      - STR_FARM_CATTLE_SAMPLE_RESULT_5
+    listOrder: 1020
+
+  - name: STR_ADVANCED_HEALING
+    cost: 3000
+    counterValue: 10
+    stats:
+      biology: 100
+    points: 1000
+    dependencies:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+    listOrder: 1020
 
   - name: STR_CROP_CIRCLES_SAMPLE
     cost: 600
@@ -1832,12 +1887,12 @@ research:
     hidden: true
   - name: STR_XCOM_EX_COMMANDER
     hidden: true
-    increaseCounter: [mibActivityKnowlege]
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
   - name: STR_MIB_AGENT
     hidden: true
-    increaseCounter: [mibActivityKnowlege]
+    spawnedEvents:
+      STR_MIB_AGENT_INTERROGATION: 100
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1856,7 +1911,8 @@ research:
         - STR_FRESH_MIB_AGENT
   - name: STR_MIB_SPECOPS
     hidden: true
-    increaseCounter: [mibActivityKnowlege]
+    spawnedEvents:
+      STR_MIB_AGENT_INTERROGATION: 100
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1875,7 +1931,8 @@ research:
         - STR_FRESH_MIB_AGENT
   - name: STR_MIB_BUTCHER
     hidden: true
-    increaseCounter: [mibActivityKnowlege]
+    spawnedEvents:
+      STR_MIB_AGENT_INTERROGATION: 100
     getOneFreeProtected: #FIXME - more specific lore, not agent
       STR_MIB_BUTCHER:
         - STR_EMPTY_MIB_EARLY_LORE_STAGE
@@ -1892,9 +1949,8 @@ research:
         - STR_FRESH_MIB_AGENT
   - name: STR_MIB_ENFORCER #TODO - only specific lore as enforcer, not agent
     hidden: true
-    increaseCounter: [mibActivityKnowlege]
-    dependencies:
-      - STR_INTEL_STATUS_REPORT
+    spawnedEvents:
+      STR_MIB_AGENT_INTERROGATION: 100
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1914,22 +1970,27 @@ research:
     listOrder: 6040
   - name: STR_MIB_SCIENTIST
     hidden: true
-    increaseCounter: [mibActivityKnowlege]
-    # getOneFreeProtected:
-    #   STR_MIB_SCIENTIST:
-    #     - STR_EMPTY_MIB_EARLY_LORE_STAGE
-    #     - STR_EMPTY_MIB_EARLY_LORE1
-    #     - STR_EMPTY_MIB_EARLY_LORE2
-    #     - STR_EMPTY_MIB_EARLY_LORE3
-    #     - STR_EMPTY_MIB_EARLY_LORE4
-    #     - STR_EMPTY_MIB_EARLY_LORE5
-    #     - STR_EMPTY_MIB_EARLY_LORE6
-    #     - STR_EMPTY_MIB_EARLY_LORE7
-    #     - STR_EMPTY_MIB_EARLY_LORE8
-    #     - STR_EMPTY_MIB_EARLY_LORE9
-    #   STR_MIB_STORY_MILESTONE_1:
-    #     - STR_FRESH_MIB_AGENT
-
+    spawnedEvents:
+      STR_MIB_SPECIALIST_INTERROGATION: 100
+    getOneFreeProtected:
+      STR_MIB_SCIENTIST:
+        - STR_MIB_SCIENTIST_LORE1
+        - STR_MIB_SCIENTIST_LORE2
+        - STR_MIB_SCIENTIST_LORE3
+        - STR_MIB_SCIENTIST_LORE4
+        - STR_MIB_SCIENTIST_LORE5
+    listOrder: 6040
+  - name: STR_MIB_MEDIC
+    hidden: true
+    spawnedEvents:
+      STR_MIB_SPECIALIST_INTERROGATION: 100
+    getOneFreeProtected:
+      STR_MIB_SCIENTIST:
+        - STR_MIB_MEDIC_LORE1
+        - STR_MIB_MEDIC_LORE2
+        - STR_MIB_MEDIC_LORE3
+        - STR_MIB_MEDIC_LORE4
+        - STR_MIB_MEDIC_LORE5
     listOrder: 6040
 
   #MiB-Procured
@@ -2311,6 +2372,22 @@ research:
     dependencies:
       - STR_MIB_ENFORCER
     listOrder: 6250
+  - name: STR_MIB_SCIENTIST_ARMOR
+    cost: 100
+    stats:
+      tactics: 100
+    points: 15
+    dependencies:
+      - STR_MIB_SCIENTIST
+    listOrder: 6250
+  # - name: STR_MIB_MEDIC_ARMOR
+  #   cost: 100
+  #   stats:
+  #     tactics: 100
+  #   points: 15
+  #   dependencies:
+  #     - STR_MIB_MEDIC
+  #   listOrder: 6250
   - name: STR_SEEKER_DRONE_ARMOR
     cost: 600
     stats:
@@ -2873,11 +2950,11 @@ research:
     cost: 12
     stats:
       data: 100
-    points: 60
+    points: 600
     needItem: true
     destroyItem: true
-    dependencies: #TODO!! remove
-      - STR_TODOIUM
+    spawnedEvents: 
+      STR_FLOPPY_SCIENTISTS_LOG_MIB: 100
     # getOneFree: #TODO!! add
     #   - ""
     listOrder: 5000
@@ -2886,7 +2963,9 @@ research:
     stats:
       computers: 100
       data: 150
-    points: 150
+    points: 400
+    spawnedEvents: 
+      STR_MIB_DATA_CONTAINER: 100
     needItem: true
     destroyItem: true
     listOrder: 5010
@@ -2945,7 +3024,7 @@ research:
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowlege]
+    increaseCounter: [mibActivityKnowledge]
     listOrder: 5020
   - name: STR_MIB_INTERROGATION
     cost: 600
@@ -2954,7 +3033,7 @@ research:
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowlege]
+    increaseCounter: [mibActivityKnowledge]
     listOrder: 5020
   - name: STR_MIB_CONDITIONING
     cost: 600
@@ -2963,7 +3042,7 @@ research:
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowlege]
+    increaseCounter: [mibActivityKnowledge]
     listOrder: 5020
   - name: STR_MIB_LAB_EQUIPMENT
     cost: 600
@@ -2972,7 +3051,7 @@ research:
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowlege]
+    increaseCounter: [mibActivityKnowledge]
     listOrder: 5020
   - name: STR_MIB_HYPER_COMMUNICATOR
     cost: 600
@@ -2981,7 +3060,7 @@ research:
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowlege]
+    increaseCounter: [mibActivityKnowledge]
     listOrder: 5020
   - name: STR_MIB_COMMUNICATION_EQUIPMENT
     cost: 600
@@ -2990,7 +3069,7 @@ research:
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowlege]
+    increaseCounter: [mibActivityKnowledge]
     listOrder: 5020
 
   #crafts

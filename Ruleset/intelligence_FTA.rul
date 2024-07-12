@@ -113,6 +113,7 @@ intelligence:
         # spawnMission: STR_TEST_MISSTION
         finalStage: false
 
+
   # - name: STR_MONSTER_ACTIVITY
   #   description: STR_MONSTER_ACTIVITY_DESCRIPTION
   #   cost: 400
@@ -133,3 +134,25 @@ intelligence:
   #       eventScripts: [testScript]
   #       spawnMission: STR_TEST_MISSTION
   #       finalStage: false
+
+
+  - name: STR_COMMUNICATIONS
+    description: STR_COMMUNICATIONS_DESCRIPTION
+    cost: 400
+    costIncrease: 2
+    requiredResearch: STR_INTEL_STATUS_REPORT
+    specialRule: 3 #INTEL_DEPLOYMENT_HINTS = 3
+    stats:
+      data: 80
+      computers: 120
+    listOrder: 400
+    stages:
+      - stageName: callOfDuty
+        odds: 5
+        requireRolls: 10
+        disabledByResearch: STR_TODOIUM
+        requiresBaseFunc: [INTEL]
+        eventScripts: [callOfDutyScript]
+        #spawnMission: STR_TEST_MISSTION
+        finalStage: false
+
