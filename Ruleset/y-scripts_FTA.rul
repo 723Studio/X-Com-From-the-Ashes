@@ -1895,23 +1895,37 @@ extended:
           return;
 
     returnFromMissionUnit:
-      - offset: 23   # Handle field surgeon main effect
+      - offset: 10   # Handle field surgeon main effect
         code: |
           var int healed_by_field_surgeon;
           var int factor;
-          var int max_health;
-          var int recover_min;
-          var int recover_max;
 
           unit.getTag healed_by_field_surgeon Tag.HEALED_BY_FIELD_SURGEON;
 
           if gt healed_by_field_surgeon 0;
-            unit.getHealthMax max_health;
             debug_log unit " is under Field Surgeon effect. Recovery time changed from" recovery_time;
             set factor 100;
             sub factor healed_by_field_surgeon;
             muldiv recovery_time factor 100;
             debug_log unit " - to" recovery_time;
+          end;
+
+          return;
+
+      - offset: 20   # Handle advanced healing effect
+        code: |
+          var int factor;
+          var int temp;
+          var ptr RuleResearch project;
+          var ptr GeoscapeGame game;
+
+          set temp 0;
+          set factor 90; #reducing recovery time by 10%
+          rules.getRuleResearch project "STR_ADVANCED_HEALING";
+          battle_game.getGeoscapeGame game;
+          game.isResearched temp project;
+          if eq temp 1;
+            muldiv recovery_time factor 100;
           end;
 
           return;

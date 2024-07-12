@@ -5,10 +5,10 @@ cutscenes:
     customCutscene: true
     audioTracks:
       - GMGEO3
-      - DISCOVERY
+      #- GMDEFEND
     videos:
       - Resources/Slides/intro.flc
-      - Resources/Slides/intro_blue.flc
+      #- Resources/Slides/intro_blue.flc
   - type: intro2
     slideshow:
       transitionSeconds: 50
