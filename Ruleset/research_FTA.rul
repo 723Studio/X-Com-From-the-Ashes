@@ -1674,86 +1674,110 @@ research:
     listOrder: 3020
 
 #samples
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+    #increaseCounter: [alienEarlyLore]
+
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+    hidden: true
+  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+  - name: STR_FARM_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_1
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_2
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_3
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_4
+    hidden: true
+  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_5
+    hidden: true
+
   - name: STR_FARM_CATTLE_SAMPLE
-    cost: 600
+    cost: 1600
     stats:
-      biology: 150
-      alienTech: 50
+      biology: 100
+    points: 100
     needItem: true
     destroyItem: true
     sequentialGetOneFree: true
     getOneFree:
       - STR_GENERAL_CATTLE_SAMPLE_RESULT_1
+      - STR_FARM_CATTLE_SAMPLE_RESULT_1
       - STR_FARM_CATTLE_SAMPLE_RESULT_2
       - STR_FARM_CATTLE_SAMPLE_RESULT_3
       - STR_FARM_CATTLE_SAMPLE_RESULT_4
       - STR_FARM_CATTLE_SAMPLE_RESULT_5
-      - STR_FARM_CATTLE_SAMPLE_RESULT_6
-      - STR_FARM_CATTLE_SAMPLE_RESULT_7
-      - STR_FARM_CATTLE_SAMPLE_RESULT_8
-      - STR_FARM_CATTLE_SAMPLE_RESULT_9
-      - STR_FARM_CATTLE_SAMPLE_RESULT_10
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
     listOrder: 3020
-  - name: STR_GENERAL_CATTLE_SAMPLE_RESULT_1
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_2
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_3
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_4
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_5
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_6
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_7
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_8
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_9
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FARM_CATTLE_SAMPLE_RESULT_10
-    hidden: true
-    increaseCounter: [alienEarlyLore]
 
   - name: STR_FOREST_CATTLE_SAMPLE
-    cost: 600
+    cost: 1600
     stats:
-      biology: 150
-      alienTech: 50
+      biology: 100
+    points: 100
     needItem: true
     destroyItem: true
-    getOneFree: #TODO в случае простого распределения лора, иначе поменять
+    sequentialGetOneFree: true
+    getOneFree:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_1
       - STR_FOREST_CATTLE_SAMPLE_RESULT_1
       - STR_FOREST_CATTLE_SAMPLE_RESULT_2
       - STR_FOREST_CATTLE_SAMPLE_RESULT_3
       - STR_FOREST_CATTLE_SAMPLE_RESULT_4
       - STR_FOREST_CATTLE_SAMPLE_RESULT_5
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_2
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_3
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_4
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_5
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_6
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
     listOrder: 3020
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_1
-    hidden: true
+  - name: STR_CATTLE_MUTILATION_AGENDA
+    cost: 3500
     increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_2
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_3
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_4
-    hidden: true
-    increaseCounter: [alienEarlyLore]
-  - name: STR_FOREST_CATTLE_SAMPLE_RESULT_5
-    hidden: true
-    increaseCounter: [alienEarlyLore]
+    counterValue: 10
+    stats:
+      tactics: 100
+    points: 100
+    dependencies:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+      - STR_FOREST_CATTLE_SAMPLE_RESULT_5
+      - STR_FARM_CATTLE_SAMPLE_RESULT_5
+    listOrder: 1020
+
+  - name: STR_ADVANCED_HEALING
+    cost: 3000
+    counterValue: 10
+    stats:
+      biology: 100
+    points: 1000
+    dependencies:
+      - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
+    listOrder: 1020
 
   - name: STR_CROP_CIRCLES_SAMPLE
     cost: 600
