@@ -8,7 +8,7 @@ covertOperations:
       - STR_COVERT_OPERATIONS
     soldiersMin: 2
     soldiersMax: 4
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 70
     successLoyalty: 100
     failureLoyalty: -100
@@ -36,7 +36,7 @@ covertOperations:
       - STR_MIB_CHASING_SUCCESS
     soldiersMin: 3
     soldiersMax: 5
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 60
     danger: 800
     costs: 432
@@ -60,7 +60,7 @@ covertOperations:
       - STR_MIB_CHASING_FAIL
     soldiersMin: 3
     soldiersMax: 5
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 45
     danger: 10
     costs: 600
@@ -86,7 +86,7 @@ covertOperations:
     soldiersMin: 3
     soldiersMax: 4
     baseChances: 45
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 13
     costs: 220
     allowedArmor: *StandardXcomArmors
@@ -109,7 +109,7 @@ covertOperations:
     soldiersMin: 3
     soldiersMax: 4
     baseChances: 70
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 11
     costs: 320
     allowedArmor: *StandardXcomArmors
@@ -130,7 +130,7 @@ covertOperations:
     soldiersMin: 4
     soldiersMax: 5
     baseChances: 60
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 14
     costs: 390
     allowedArmor: *StandardXcomArmors
@@ -150,7 +150,7 @@ covertOperations:
       - STR_RESISTANCE_CELL_CREATION_PREREQ
     soldiersMin: 2
     soldiersMax: 3
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 60
     danger: 14
     costs: 220
@@ -168,6 +168,48 @@ covertOperations:
     trapChance: 70
     instantTrapDeployment:
       STR_MIB_EARLY_TRAP_ESCAPE: 100
+  - name: STR_MIB_CONVOY_OPERATION
+    description: STR_MIB_CONVOY_OPERATION_DESCRIPTION
+    categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_MIB_CONVOY_OPERATION_PREREQ
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [INTEL]
+    baseChances: 65
+    danger: 8
+    costs: 350
+    allowedArmor: *StandardXcomArmors
+    successDescription: STR_MIB_CONVOY_OPERATION_SUCCESS_DESCRIPTION
+    successMissions: 
+      STR_MIB_CONVOY: 100
+    failureDescription: STR_MIB_CONVOY_OPERATION_FAILURE_DESCRIPTION
+    failureScore: -150
+    trapChance: 70
+    instantTrapDeployment:
+      STR_MIB_EARLY_TRAP_ESCAPE: 100
+  - name: STR_MIB_HIDEOUT_OPERATION
+    description: STR_MIB_HIDEOUT_OPERATION_DESCRIPTION
+    categories: [STR_INVESTIGATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_MIB_HIDEOUT_OPERATION_PREREQ
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [INTEL]
+    baseChances: 65
+    danger: 8
+    costs: 350
+    allowedArmor: *StandardXcomArmors
+    successDescription: STR_MIB_HIDEOUT_OPERATION_SUCCESS_DESCRIPTION
+    successMissions: 
+      STR_MIB_CONVOY: 100
+    failureDescription: STR_MIB_HIDEOUT_OPERATION_FAILURE_DESCRIPTION
+    failureScore: -150
+    trapChance: 70
+    instantTrapDeployment:
+      STR_MIB_EARLY_TRAP_ESCAPE: 100
 #side operations
   - name: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION
     description: STR_EX_COUNCIL_DATA_VAULT_EXTRACTION_DESCRIPTION
@@ -177,7 +219,7 @@ covertOperations:
       - STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
     soldiersMin: 2
     soldiersMax: 4
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 40
     danger: 0
     costs: 60
@@ -195,7 +237,7 @@ covertOperations:
       - STR_EX_COUNCIL_DATA_VAULT_SUCCESS
     soldiersMin: 2
     soldiersMax: 4
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     requiredItems:
       STR_DATA_VAULT: 1
     baseChances: 60
@@ -218,7 +260,7 @@ covertOperations:
       - STR_STEAL_OSPREY_PREREQ
     soldiersMin: 4
     soldiersMax: 6
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 45
     danger: 0
     costs: 300
@@ -238,7 +280,7 @@ covertOperations:
       - STR_INFILTRATING_MILITARY_RND_PREREQ
     soldiersMin: 4
     soldiersMax: 8
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 60
     concealedItemsBonus: 5 #default 4
     danger: 2
@@ -256,6 +298,29 @@ covertOperations:
     trapChance: 100
     instantTrapDeployment:
       STR_INFILTRATING_MILITARY_RND: 100
+  - name: STR_CALL_OF_DUTY_OPERATION
+    description: STR_CALL_OF_DUTY_OPERATION_DESCRIPTION
+    categories: [STR_NEGOTIATION, STR_INFILTRATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_CALL_OF_DUTY_PREREQ
+    soldiersMin: 2
+    soldiersMax: 4
+    optionalSoldierEffect: -5
+    requiresBaseFunc: [INTEL]
+    baseChances: 65
+    danger: 6
+    costs: 300
+    allowedArmor: *StandardXcomArmors
+    successDescription: STR_CALL_OF_DUTY_OPERATION_SUCCESS_DESCRIPTION
+    successMissions: 
+      STR_CALL_OF_DUTY_EASY: 80
+      STR_CALL_OF_DUTY_HARD: 20
+    failureDescription: STR_CALL_OF_DUTY_OPERATION_FAILURE_DESCRIPTION
+    failureScore: -10
+    trapChance: 25
+    instantTrapDeployment:
+      STR_MIB_EARLY_TRAP_ESCAPE: 100
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
@@ -268,7 +333,7 @@ covertOperations:
     costs: 130
     soldiersMin: 2
     soldiersMax: 5
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 0
     requiredItems:
       STR_FAKE_AGENT_ID: 2
@@ -293,7 +358,7 @@ covertOperations:
     costs: 420
     soldiersMin: 3
     soldiersMax: 5
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 2
     allowedArmor: *StandardXcomArmors
     allowAllEquipment: true
@@ -322,7 +387,7 @@ covertOperations:
     costs: 460
     soldiersMin: 3
     soldiersMax: 5
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 2
     allowedArmor: *StandardXcomArmors
     allowAllEquipment: true
@@ -351,7 +416,7 @@ covertOperations:
     costs: 520
     soldiersMin: 3
     soldiersMax: 5
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 2
     allowedArmor: *StandardXcomArmors
     allowAllEquipment: true
@@ -380,7 +445,7 @@ covertOperations:
     costs: 420
     soldiersMin: 3
     soldiersMax: 5
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     danger: 2
     allowedArmor: *StandardXcomArmors
     allowAllEquipment: true
@@ -408,7 +473,7 @@ covertOperations:
       - STR_CULT_INVESTIGATION
     soldiersMin: 2
     soldiersMax: 4
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     removeRequiredItemsOnSuccess: false
     removeRequiredItemsOnFailure: false
     baseChances: 50
@@ -430,7 +495,7 @@ covertOperations:
       - STR_IMPROVISED_MANUFACTURING
     soldiersMin: 2
     soldiersMax: 3
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     allowedArmor: *StandardXcomArmors
     baseChances: 80
     requiredItems:
@@ -457,7 +522,7 @@ covertOperations:
       - STR_HIGH_TECH_MANUFACTURING
     soldiersMin: 2
     soldiersMax: 3
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     allowedArmor: *StandardXcomArmors
     baseChances: 80
     requiredItems:
@@ -484,7 +549,7 @@ covertOperations:
       - STR_BIOLAB_PREREQ
     soldiersMin: 2
     soldiersMax: 3
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     allowedArmor: *StandardXcomArmors
     baseChances: 70
     requiredItems:
@@ -513,7 +578,7 @@ covertOperations:
       - STR_BIOLAB_PREREQ
     soldiersMin: 2
     soldiersMax: 3
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     allowedArmor: *StandardXcomArmors
     baseChances: 70
     requiredItems:
@@ -566,7 +631,7 @@ covertOperations:
       - STR_COVERT_OPERATIONS
     soldiersMin: 1
     soldiersMax: 3
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     baseChances: 70
     successLoyalty: 50
     failureLoyalty: -30
@@ -590,7 +655,7 @@ covertOperations:
     soldiersMin: 2
     soldiersMax: 3
     baseChances: 70
-    requiresBaseFunc: [HQ]
+    requiresBaseFunc: [INTEL]
     allowedArmor: *StandardXcomArmors
     danger: 15
     costs: 30
@@ -617,7 +682,7 @@ covertOperations:
   #   soldiersMin: 2
   #   soldiersMax: 2
   #   danger: 5
-  #   requiresBaseFunc: [HQ]
+  #   requiresBaseFunc: [INTEL]
   #   requiredReputationLvl:
   #     STR_RESISTANCE: 1
   #   requiredItems:

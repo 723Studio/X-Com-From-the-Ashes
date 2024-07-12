@@ -63,7 +63,7 @@ missionScripts:
     useTable: false
     randomDelay: 7200
 
-#alien-related
+#mib
   - type: cropCirclesInitial
     missionWeights:
       0:
@@ -90,7 +90,7 @@ missionScripts:
         STR_MIB: 100
     researchTriggers:
       STR_CROP_CIRCLES_PREREQ: false
-    firstMonth: 1
+    firstMonth: 2
     useTable: false
     spawnGap: 30
     randomSpawnGap: 15
@@ -120,6 +120,26 @@ missionScripts:
     randomDelay: 43500
     avoidRepeats: 1
     varName: cropCircles
+  - type: mibConvoy
+    missionWeights:
+      0:
+        STR_MIB_CONVOY: 100
+    regionWeights:
+      0:
+        STR_MIB_CONVOY: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    executionOdds: 2 #very rare to spawn via script
+    firstMonth: 2
+    lastMonth: 14
+    useTable: false
+    spawnGap: 90
+    randomSpawnGap: 60
+    startDelay: 4320
+    randomDelay: 43500
+    avoidRepeats: 1
+    varName: mibConvoy
 
 #monsters
   - type: chupaTerror

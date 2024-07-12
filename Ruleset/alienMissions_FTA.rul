@@ -44,7 +44,7 @@ alienMissions:
   - type: STR_EARLY_GAME_TROLLING
     points: 2
     waves:
-      - ufo: STR_SMALL_SCOUT
+      - ufo: STR_SMALL_SCOUT_EARLY
         count: 1
         trajectory: F1
         timer: 10080 #7 days
@@ -98,6 +98,18 @@ alienMissions:
     refNode: *TerrorLike
   - type: STR_MIB_HIDEOUT
     refNode: *TerrorLike
+    regionWeights:
+      0:
+        STR_MIB_HIDEOUT: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
   - type: STR_MIB_CONVOY
     refNode: *TerrorLike
+    regionWeights:
+      0:
+        STR_MIB_CONVOY: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
     

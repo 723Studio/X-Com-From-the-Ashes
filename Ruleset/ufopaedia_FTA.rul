@@ -234,6 +234,15 @@ ufopaedia:
       - STR_SUPPLIES
     text: STR_SUPPLIES_UFOPEDIA
     listOrder: 110
+  - id: STR_LOW_FUNDS_EVENT
+    type_id: 7
+    image_id: STORE_CHIEF_CPAL.SPK
+    text_width: 158
+    section: STR_XCOM_REPORTS_UC
+    requires:
+      - STR_LOW_FUNDS
+    text: STR_LOW_FUNDS_EVENT_UFOPEDIA
+    listOrder: 110
   - id: STR_SEALED_CRATE_BREACHING
     type_id: 7
     section: STR_XCOM_REPORTS_UC
