@@ -5675,7 +5675,7 @@ items:
     weight: 7
     bigSprite: 502
     bulletSprite: 4
-    fireSound: 187
+    fireSound: 4
     compatibleAmmo:
       - STR_DRONE_LAUNCHER_FRAG_AMMO
       - STR_DRONE_LAUNCHER_SMOKE_AMMO

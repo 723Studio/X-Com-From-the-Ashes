@@ -96,24 +96,26 @@ eventScripts:
       STR_COVERT_OPERATIONS: true
       STR_COMMUNICATION: true
     firstMonth: 2
-    executionOdds: 15
+    executionOdds: 10
     maxDifficulty: 3
   - type: callOfDutyScript_SH
     refNode: *callOfDutyScript
     firstMonth: 3
-    executionOdds: 3
+    executionOdds: 2
     minDifficulty: 4
 
 #xcom
   - type: mibstoryMilestone1
     oneTimeSequentialEvents: [STR_MIB_STORY_MILESTONE_1_EVENT]
     missionMarkerName: mibActivityKnowlege
-    counterMin: 10
+    counterMin: 1
+    counterMax: 10
     allowedProcessor: 2 #xcom
     executionOdds: 90
+
   - &xcomFundamentalStudiesScript
     type: xcomFundamentalStudiesScript
-    oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ]
+    oneTimeSequentialEvents: [STR_XCOM_FUNDAMENTAL_STUDIES]
     researchTriggers:
       STR_UFOPEDIA_DECRYPTION: true
       STR_FACILITIES_BLUEPRINTS: true
@@ -322,21 +324,6 @@ eventScripts:
         STR_MIB_HIDEOUT_OPERATION_ENABLER: 100
     allowedProcessor: 3 #OTHER_SCRIPT
     executionOdds: 20
-
-  - type: callOfDutyInitial
-    oneTimeSequentialEvents: [STR_CALL_OF_DUTY_EVENT]
-    firstMonth: 1
-    lastMonth: 6
-    executionOdds: 100
-    allowedProcessor: 3 #OTHER_SCRIPT
-  - type: callOfDutyInitial
-    eventWeights:
-      0:
-        STR_CALL_OF_DUTY_ENABLER: 100
-    firstMonth: 1
-    lastMonth: 6
-    executionOdds: 90
-    allowedProcessor: 3 #OTHER_SCRIPT
 
 #resistance
   - type: resistanceShareCommonEquipmentData

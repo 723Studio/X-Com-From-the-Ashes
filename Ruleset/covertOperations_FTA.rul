@@ -298,29 +298,6 @@ covertOperations:
     trapChance: 100
     instantTrapDeployment:
       STR_INFILTRATING_MILITARY_RND: 100
-  - name: STR_CALL_OF_DUTY_OPERATION
-    description: STR_CALL_OF_DUTY_OPERATION_DESCRIPTION
-    categories: [STR_NEGOTIATION, STR_INFILTRATION]
-    allowedRoles: *militaryRoles
-    requires:
-      - STR_CALL_OF_DUTY_PREREQ
-    soldiersMin: 2
-    soldiersMax: 4
-    optionalSoldierEffect: -5
-    requiresBaseFunc: [INTEL]
-    baseChances: 65
-    danger: 6
-    costs: 300
-    allowedArmor: *StandardXcomArmors
-    successDescription: STR_CALL_OF_DUTY_OPERATION_SUCCESS_DESCRIPTION
-    successMissions: 
-      STR_CALL_OF_DUTY_EASY: 80
-      STR_CALL_OF_DUTY_HARD: 20
-    failureDescription: STR_CALL_OF_DUTY_OPERATION_FAILURE_DESCRIPTION
-    failureScore: -10
-    trapChance: 25
-    instantTrapDeployment:
-      STR_MIB_EARLY_TRAP_ESCAPE: 100
 
 #monster hunt
   - name: STR_MONSTER_HUNT_INVESTIGATION
@@ -607,17 +584,95 @@ covertOperations:
       - STR_CALL_OF_DUTY_SOLDIER
     soldiersMin: 2
     soldiersMax: 3
-    requiresBaseFunc: [HQ]
-    # baseChances: 50
-    # danger: 5
-    # costs: 160
-    baseChances: 100
-    costs: 20 
+    requiresBaseFunc: [INTEL]
+    baseChances: 50
+    danger: 5
+    costs: 160
     allowedArmor: *StandardXcomArmors
     addSoldiers:
       STR_SOLDIER: 1
     instantSuccessDeployment: 
       STR_CALL_OF_DUTY_SOLDIER: 100
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
+    trapChance: 100
+  - name: STR_CALL_OF_DUTY_AGENT
+    description: STR_CALL_OF_DUTY_OPERATION_DESCRIPTION
+    categories: [STR_INFILTRATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_CALL_OF_DUTY_AGENT
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [INTEL]
+    baseChances: 40
+    danger: 6
+    costs: 170
+    allowedArmor: *StandardXcomArmors
+    addSoldiers:
+      STR_AGENT: 1
+    instantSuccessDeployment: 
+      STR_CALL_OF_DUTY_AGENT: 100
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
+    trapChance: 100
+  - name: STR_CALL_OF_DUTY_PILOT
+    description: STR_CALL_OF_DUTY_OPERATION_DESCRIPTION
+    categories: [STR_INFILTRATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_CALL_OF_DUTY_PILOT
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [INTEL]
+    baseChances: 55
+    danger: 4
+    costs: 160
+    allowedArmor: *StandardXcomArmors
+    addSoldiers:
+      STR_PILOT: 1
+    instantSuccessDeployment: 
+      STR_CALL_OF_DUTY_PILOT: 100
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
+    trapChance: 100
+  - name: STR_CALL_OF_DUTY_ENGINEER
+    description: STR_CALL_OF_DUTY_OPERATION_DESCRIPTION
+    categories: [STR_INFILTRATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_CALL_OF_DUTY_ENGINEER
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [INTEL]
+    baseChances: 55
+    danger: 4
+    costs: 140
+    allowedArmor: *StandardXcomArmors
+    addSoldiers:
+      STR_ENGINEER: 1
+    instantSuccessDeployment: 
+      STR_CALL_OF_DUTY_ENGINEER: 100
+    instantTrapDeployment: 
+      STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
+    trapChance: 100
+  - name: STR_CALL_OF_DUTY_SCIENTIST
+    description: STR_CALL_OF_DUTY_OPERATION_DESCRIPTION
+    categories: [STR_INFILTRATION]
+    allowedRoles: *militaryRoles
+    requires:
+      - STR_CALL_OF_DUTY_SCIENTIST
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [INTEL]
+    baseChances: 45
+    danger: 8
+    costs: 250
+    allowedArmor: *StandardXcomArmors
+    addSoldiers:
+      STR_SCIENTIST: 1
+    instantSuccessDeployment: 
+      STR_CALL_OF_DUTY_SCIENTIST: 100
     instantTrapDeployment: 
       STR_MIB_EARLY_TRAP_ESCAPE_EASY: 100
     trapChance: 100

@@ -38,23 +38,7 @@ events:
     timer: 2880
     timerRandom: 2880
     researchList: [STR_MIB_STORY_MILESTONE_1]
-  - name: STR_MONSTER_HUNT_START_EVENT
-    description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
-    timer: 15840 # 11 days
-    timerRandom: 2880 # 2 days
-    customAnswers:
-      0:
-        title: STR_WE_DONT_NEED_THAT
-        #spawnEvents: [STR_ANSWER1_EVENT]
-      1:
-        title: STR_CONTINUE_INVESTIGATION
-        spawnEvents: [STR_MONSTER_HUNT_START_EVENT_YES]
-        description: STR_CONTINUE_INVESTIGATION_DESCRIPTION
-  - name: STR_MONSTER_HUNT_START_EVENT_YES
-    description: STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION
-    timer: 0
-    timerRandom: 0
-    researchList: [STR_MONSTER_HUNT_START_PREREQ]
+
   - name: STR_NO_SUPPLY_WARNING_EVENT
     description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION
     timer: 20160 # 14 days
@@ -91,22 +75,14 @@ events:
     timer: 0
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
-
-#Check it
-  - name: STR_CALL_OF_DUTY_EVENT
-    description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
+  - name: STR_ABANDONED_BASE_DESPAWNED
+    description: STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION
     background: BACK01.SCR
-    timer: 600
-    timerRandom: 10080
-    researchList: [STR_CALL_OF_DUTY_PREREQ]
-  - name: STR_CALL_OF_DUTY_ENABLER
-    description: STR_CALL_OF_DUTY_ENABLER_DESCRIPTION
-    background: BACK01.SCR
-    timer: 600
-    timerRandom: 10080
-    removedCovertOperationsList: [STR_CALL_OF_DUTY_OPERATION]
-#Check it end
+    timer: 30
+    timerRandom: 0
+    loyalty: -300
 
+#MIB
   - name: STR_MIB_AGENT_INTERROGATION
     description: STR_MIB_AGENT_INTERROGATION_DESCRIPTION
     background: INTEL_BACKGROUND.SCR
@@ -136,7 +112,7 @@ events:
     timer: 0
     timerRandom: 0
 
-
+#councilor
   - name: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT
     description: STR_EX_COUNCIL_MEMBER_INITIAL_EVENT_DESCRIPTION
     background: BACK01.SCR
@@ -169,7 +145,6 @@ events:
     timerRandom: 120
     loyalty: -100
     researchList: [STR_EX_COUNCIL_DATA_VAULT_FAIL]
-
   - name: STR_INFILTRATING_MILITARY_RND_PREREQ
     description: STR_INFILTRATING_MILITARY_RND_PREREQ_DESCRIPTION
     background: BACK01.SCR
@@ -192,13 +167,6 @@ events:
     timer: 0
     timerRandom: 0
     researchList: [STR_CULT_INVESTIGATION_PREREQ]
-
-  - name: STR_ABANDONED_BASE_DESPAWNED
-    description: STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION
-    background: BACK01.SCR
-    timer: 30
-    timerRandom: 0
-    loyalty: -200
 
 #covertOperation events 
   - name: STR_MONSTER_HUNT_INVESTIGATION_FAILED
@@ -256,6 +224,23 @@ events:
       - STR_CULT_INVESTIGATION
 
 #Monsters
+  - name: STR_MONSTER_HUNT_START_EVENT
+    description: STR_MONSTER_HUNT_START_EVENT_DESCRIPTION
+    timer: 15840 # 11 days
+    timerRandom: 2880 # 2 days
+    customAnswers:
+      0:
+        title: STR_WE_DONT_NEED_THAT
+        #spawnEvents: [STR_ANSWER1_EVENT]
+      1:
+        title: STR_CONTINUE_INVESTIGATION
+        spawnEvents: [STR_MONSTER_HUNT_START_EVENT_YES]
+        description: STR_CONTINUE_INVESTIGATION_DESCRIPTION
+  - name: STR_MONSTER_HUNT_START_EVENT_YES
+    description: STR_MONSTER_HUNT_START_EVENT_YES_DESCRIPTION
+    timer: 0
+    timerRandom: 0
+    researchList: [STR_MONSTER_HUNT_START_PREREQ]
   - name: STR_MONSTER_HUNT_RUMORS_CHUPA
     description: STR_MONSTER_HUNT_RUMORS_DESCRIPTION
     researchList:
@@ -340,8 +325,6 @@ events:
     removedCovertOperationsList: [STR_CALL_OF_DUTY_SCIENTIST]
     timer: 5760
     timerRandom: 30240
-
-
 
 #Resistance
   - name: STR_RESISTANCE_DISCOVER

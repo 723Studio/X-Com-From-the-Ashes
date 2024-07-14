@@ -15,7 +15,7 @@ intelligence:
       - stageName: firstUFOstage
         odds: 5
         requireRolls: 10
-        requiredResearch: STR_INTEL_STATUS_REPORT
+        requiredResearch: STR_TODOIUM
         disabledByResearch: STR_TROLLIUM
         requiresBaseFunc: [INTEL]
         eventScripts: [testScript]
@@ -32,22 +32,12 @@ intelligence:
       investigation: 80
     listOrder: 200
     stages:
-      - stageName: callOfDutyInitial
-        odds: 40
-        requireRolls: 1
-        #requiredResearch: STR_COMMUNICATION
-        disabledByResearch: STR_CALL_OF_DUTY_PREREQ
-        requiresBaseFunc: [INTEL]
-        eventScripts: [callOfDutyInitial]
-        #spawnMission: STR_TEST_MISSTION
-        finalStage: false
-      - stageName: callOfDutyRepeat
+      - stageName: callOfDuty
         odds: 40
         requireRolls: 5
-        #requiredResearch: STR_COMMUNICATION
-        #disabledByResearch: STR_CALL_OF_DUTY_PREREQ
+        disabledByResearch: STR_TODOIUM
         requiresBaseFunc: [INTEL]
-        eventScripts: [callOfDutyInitial]
+        eventScripts: [callOfDutyScript]
         #spawnMission: STR_TEST_MISSTION
         finalStage: false
 

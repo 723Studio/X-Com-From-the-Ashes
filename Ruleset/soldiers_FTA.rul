@@ -288,8 +288,8 @@ soldiers:
       bravery: 100
       reactions: 0
       firing: 0
-      maneuvering: 200
-      missiles: 200
+      maneuvering: 40
+      missiles: 100
       dogfight: 200
       tracking: 10
       tactics: 10
@@ -378,12 +378,7 @@ soldiers:
       interrogation: 20
       #scientist - inherit soldier
       #engineer - inherit soldier
-    # dogfightExperience:
-    #   maneuvering: 30
-    #   missiles: 25
-    #   dogfight: 25
-    #   tracking: 10
-    #   tactics: 10
+    # dogfightExperience - inherit soldier
     armor: STR_FLIGHTSUIT_UC
     armorForAvatar: STR_FLIGHTSUIT_UC
     femaleFrequency: 15

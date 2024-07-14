@@ -18,8 +18,8 @@ en-US:
   STR_COST_TITLE: "COST"
   STR_TOTAL_UC_ARG: "TOTAL>{ALT}{0}"
   STR_NOT_ENOUGH_SPACE: "NOT ENOUGH SPACE!"
-  STR_PILOT_PANICING: "PILOT PANICKED!"
-  STR_PILOT_PANICING_OVER: "PILOT PANIC OVER"
+  STR_PILOT_PANICKING: "PILOT PANICKED!"
+  STR_PILOT_PANICKING_OVER: "PILOT PANIC OVER"
   STR_BUTTON_HINT: "RMB for details"
   STR_BONUSES_BUTTON: " " #add special symbol for bonuses in Soldier Info State
   STR_CONTAINMENTLIMITSENFORCED: "Containment limits for captured enemies" #containmentLimitsEnforced
@@ -1113,10 +1113,6 @@ en-US:
   STR_GREAT_PLAN: "Great plan!"
   STR_STEAL_OSPREY_EVENT_YES: "Steal the Osprey"
   STR_STEAL_OSPREY_EVENT_YES_DESCRIPTION: "Okay, we need to carefully plan the operation. Most importantly, we have to do everything completely undetected and in no way reveal the location of our base in the action. Not such an easy task given the size of the craft.{NEWLINE}{ALT}New covert operation available."
-  STR_CALL_OF_DUTY_EVENT: "Call of Duty"
-  STR_CALL_OF_DUTY_EVENT_DESCRIPTION: "Многие сотрудники XCOM были уволены за последние полгода из-за острой нехватки финансирования проекта XCOM, которого не хватало даже на зарплаты. Тем не менее, среди них было много самоотверженных людей, которые могут захотеть вернуться на службу в текущих условиях. С развитием нашей продвинутой системы скрытой связи, мы могли бы связаться с добровольцами и доставить их на базу, не привлекая ненужного внимания.{NEWLINE}{ALT}New covert operation available." #TODO
-  STR_CALL_OF_DUTY_ENABLER: "Call Of Duty"
-  STR_CALL_OF_DUTY_ENABLER_DESCRIPTION: "Мы вышли на связь с ещё одни ранее уволенным сотрудником XCOM, который бы хотел вернуться в наши ряды. Требуется организовать тайную операцию, что бы незаметно доставить его на нашу базу.{NEWLINE}{ALT}New covert operation available." #TODO
   STR_EX_COUNCIL_MEMBER_INITIAL_EVENT: "Incoming encrypted message!"
   STR_EX_COUNCIL_MEMBER_INITIAL_EVENT_DESCRIPTION: "Commander, we are receiving an encrypted message through one of our secure communication channels. Would you like to display it on the main screen?"
   STR_EX_COUNCIL_MEMBER_INITIAL_MISSION_EVENT: "Transmission decoding completed!"

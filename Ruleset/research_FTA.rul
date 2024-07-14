@@ -106,8 +106,6 @@ research:
     hidden: true
   - name: STR_LOW_FUNDS
     hidden: true
-  - name: STR_CALL_OF_DUTY_PREREQ
-    hidden: true
   - name: STR_RESISTANCE_FIRST_HELP
     hidden: true
   - name: STR_RESISTANCE_SCIENTIST
@@ -2955,8 +2953,6 @@ research:
     destroyItem: true
     spawnedEvents: 
       STR_FLOPPY_SCIENTISTS_LOG_MIB: 100
-    # getOneFree: #TODO!! add
-    #   - ""
     listOrder: 5000
   - name: STR_MIB_DATA_CONTAINER
     cost: 500
