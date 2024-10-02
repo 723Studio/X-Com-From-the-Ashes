@@ -3661,7 +3661,7 @@ alienDeployments:
             - STR_PDW_CLIP
             - STR_FLASHBANG_GRENADE
             - STR_GRENADE
-  - type: STR_CROP_CIRCLES_SAMPLES_AND_LOOT
+  - type: STR_CROP_CIRCLE_LOOT_AND_SAMPLING
     race: STR_MIB
     width: 60
     length: 60
@@ -5098,6 +5098,30 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 100
         itemSets: *callOfDutyMiBLoadout 
+
+  - type: STR_OFFICE_CITIZENS
+    race: STR_MIB
+    width: 20
+    length: 30
+    height: 3
+    keepCraftAfterFailedMission: true #in case will be used as mission site
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR #
+      showTarget: false
+      desc: STR_CALL_OF_DUTY_BRIEFING #
+    terrains:
+      - OFFICE_SMALL
+    script: smallOffice
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 3
+        medQty: 5
+        highQty: 7
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *callOfDutyMiBLoadout 
+
 
 #traps 
   - type: STR_MIB_CHASING_TRAP

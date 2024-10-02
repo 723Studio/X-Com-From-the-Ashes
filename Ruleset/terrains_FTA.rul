@@ -3139,11 +3139,11 @@ terrains:
             - [24, 5, 0]
           STR_MILITARY_DATA_TERMINAL:
             - [5, 2, 0]
-        # randomizedItems:
-        #   - position: [22, 1, 0]
-        #     amount: 1
-        #     mixed: true
-        #     itemList: [STR_TRADIUM] #TODO replace it with something valuable
+        randomizedItems:
+          - position: [22, 1, 0]
+            amount: 1
+            mixed: true
+            itemList: [STR_MONEY_BAG, STR_ANCIENT_ARTIFACT, STR_SEALED_CRATE] #TODO add valuable items
       - name: MIL_OFFICE_END00
         width: 30
         length: 20
@@ -3158,7 +3158,7 @@ terrains:
           - position: [5, 9, 0]
             amount: 1
             mixed: true
-            itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+            itemList: [STR_MOTION_SCANNER_PROTOTYPE, STR_ADVANCED_WEAPON_PROTOTYPE, STR_ADVANCED_WEAPON_PROTOTYPE]
       - name: MIL_OFFICE_END01
         width: 30
         length: 20
@@ -3171,7 +3171,72 @@ terrains:
           - position: [24, 16, 0]
             amount: 1
             mixed: true
-            itemList: [STR_MOTION_SCANNER_PROTOTYPE]
+            itemList: [STR_MOTION_SCANNER_PROTOTYPE, STR_ADVANCED_WEAPON_PROTOTYPE, STR_ADVANCED_WEAPON_PROTOTYPE]
+
+  - name: OFFICE_SMALL
+    mapDataSets:
+      - BLANKS
+      - OFFICE_EXTRA
+      - OFFICE
+    mapBlocks:
+      - name: SMALL_OFFICE_00
+        width: 20
+        length: 20
+        groups: 5 #objective layer
+        objects:
+            STR_OFFICE_DATA_TERMINAL:
+              - [0, 4, 0]
+        randomizedItems:
+          - position: [5, 0, 0]
+            amount: 1
+            mixed: true
+            itemList: [STR_TECH_PARTS_PACK] #FIXME more variations here pls
+      - name: SMALL_OFFICE_01
+        width: 20
+        length: 20
+        groups: 5 #objective layer
+        objects:
+            STR_OFFICE_DATA_TERMINAL:
+              - [13, 4, 0]
+        randomizedItems:
+          - position: [7, 0, 0]
+            amount: 1
+            mixed: true
+            itemList: [STR_TECH_PARTS_PACK] #FIXME more variations here pls
+      - name: SMALL_OFFICE_02
+        width: 20
+        length: 20
+        groups: 6 #starting layer
+      - name: SMALL_OFFICE_03
+        width: 20
+        length: 20
+        groups: 7 #bottom layer
+        objects:
+            STR_MILITARY_BASE_DOOR_LOCKER_WESTWALL:
+              - [7, 0, 0]
+            STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL:
+              - [4, 5, 0]
+        randomizedItems:
+          - position: [2, 1, 0]
+            amount: 3
+            mixed: true
+            itemList: [STR_CASH_PACK_BIG, STR_BRIEFCASE_CASH, STR_BRIEFCASE_CASH, STR_BRIEFCASE_CASH, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_GOLD_BAR, STR_GOLD_BAR] #FIXME more variations here pls
+      - name: SMALL_OFFICE_04
+        width: 20
+        length: 20
+        groups: 7 #bottom layer
+      - name: SMALL_OFFICE_05
+        width: 20
+        length: 20
+        groups: 6 #starting layer
+        objects:
+            STR_MILITARY_BASE_DOOR_LOCKER_NORTHWALL:
+              - [10, 2, 0]
+        randomizedItems:
+          - position: [17, 1, 0]
+            amount: 3
+            mixed: true
+            itemList: [STR_CASH_PACK_BIG, STR_BRIEFCASE_CASH, STR_BRIEFCASE_CASH, STR_BRIEFCASE_CASH, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_GOLD_BAR, STR_GOLD_BAR] #FIXME more variations here pls
 
   - name: MIB_SEWERS
     mapDataSets:

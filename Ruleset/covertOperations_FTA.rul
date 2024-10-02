@@ -38,7 +38,7 @@ covertOperations:
     soldiersMax: 5
     requiresBaseFunc: [INTEL]
     baseChances: 60
-    danger: 800
+    danger: 5
     costs: 432
     allowedArmor: *StandardXcomArmors
     successDescription: STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION
@@ -690,9 +690,11 @@ covertOperations:
     baseChances: 70
     successLoyalty: 50
     failureLoyalty: -30
-    danger: 3
+    danger: 2
     costs: 80
     allowedArmor: *StandardXcomArmors
+    successReputationScore:
+      STR_RESISTANCE: 100
     successResearchList:
       - STR_RESISTANCE_CONTACT
     failureResearchList:

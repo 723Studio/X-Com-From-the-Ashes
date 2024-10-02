@@ -1185,17 +1185,49 @@ research:
       physics: 120
     points: 50
     needItem: true
+    sequentialGetOneFree: true
+    getOneFree:
+      - STR_MOTION_SCANNER_PREREQ
+      - STR_ADVANCED_MOTION_SCANNER_PREREQ
     listOrder: 25025
+  - name: STR_MOTION_SCANNER_PREREQ
+    hidden: true
+  - name: STR_ADVANCED_MOTION_SCANNER_PREREQ
+    hidden: true
   - name: STR_MOTION_SCANNER
-    cost: 1000
+    cost: 1500
     stats:
       designing: 80
       computers: 100
       physics: 120
     points: 50
     dependencies:
-      - STR_MOTION_SCANNER_PROTOTYPE
+      - STR_MOTION_SCANNER_PREREQ
       - STR_HIGH_TECH_PARTS
+    listOrder: 25025
+  - name: STR_ADVANCED_MOTION_SCANNER
+    cost: 2000
+    stats:
+      designing: 80
+      computers: 100
+      physics: 120
+    points: 70
+    dependencies:
+      - STR_MOTION_SCANNER
+      - STR_ADVANCED_MOTION_SCANNER_PREREQ
+    listOrder: 25025
+  - name: STR_ADVANCED_WEAPON_PROTOTYPE
+    cost: 500
+    stats:
+      designing: 100
+      tactics: 120
+      physics: 80
+    points: 50
+    needItem: true
+    getOneFree:
+      - STR_ADVANCED_COOLING_SYSTEMS
+      - STR_HIGH_DENSITY_CAPACITORS
+      - STR_ADVANCED_BATTERIES
     listOrder: 25025
 
   - name: STR_CHEMICAL_WEAPONS_PREREQ #TODO ways to unlock
@@ -1865,7 +1897,7 @@ research:
       tactics: 100
     points: 100
     dependencies:
-      - STR_MILITARY_RECRUITING_PREREQ #TODO add ways to unlock
+      - STR_MILITARY_RECRUITING_PREREQ
     listOrder: 1020
   - name: STR_OFFICIALS_RECRUITING
     requiresBaseFunc: [HQ]
@@ -1874,7 +1906,7 @@ research:
       tactics: 100
     points: 100
     dependencies:
-      - STR_OFFICIALS_RECRUITING_PREREQ #TODO add ways to unlock
+      - STR_OFFICIALS_RECRUITING_PREREQ
     listOrder: 1020
 #MIB
   - name: STR_MIB_STORY_MILESTONE_1
@@ -1889,8 +1921,7 @@ research:
       - STR_PRISONER_INTERROGATIONS
   - name: STR_MIB_AGENT
     hidden: true
-    spawnedEvents:
-      STR_MIB_AGENT_INTERROGATION: 100
+    spawnedEvent: STR_MIB_AGENT_INTERROGATION
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1909,8 +1940,7 @@ research:
         - STR_FRESH_MIB_AGENT
   - name: STR_MIB_SPECOPS
     hidden: true
-    spawnedEvents:
-      STR_MIB_AGENT_INTERROGATION: 100
+    spawnedEvent: STR_MIB_AGENT_INTERROGATION
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1929,9 +1959,8 @@ research:
         - STR_FRESH_MIB_AGENT
   - name: STR_MIB_BUTCHER
     hidden: true
-    spawnedEvents:
-      STR_MIB_AGENT_INTERROGATION: 100
-    getOneFreeProtected: #FIXME - more specific lore, not agent
+    spawnedEvent: STR_MIB_AGENT_INTERROGATION
+    getOneFreeProtected: #TODO - more specific lore, not agent
       STR_MIB_BUTCHER:
         - STR_EMPTY_MIB_EARLY_LORE_STAGE
         - STR_EMPTY_MIB_EARLY_LORE1
@@ -1947,8 +1976,7 @@ research:
         - STR_FRESH_MIB_AGENT
   - name: STR_MIB_ENFORCER #TODO - only specific lore as enforcer, not agent
     hidden: true
-    spawnedEvents:
-      STR_MIB_AGENT_INTERROGATION: 100
+    spawnedEvent: STR_MIB_AGENT_INTERROGATION
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
@@ -1968,8 +1996,7 @@ research:
     listOrder: 6040
   - name: STR_MIB_SCIENTIST
     hidden: true
-    spawnedEvents:
-      STR_MIB_SPECIALIST_INTERROGATION: 100
+    spawnedEvent: STR_MIB_SPECIALIST_INTERROGATION
     getOneFreeProtected:
       STR_MIB_SCIENTIST:
         - STR_MIB_SCIENTIST_LORE1
@@ -1980,8 +2007,7 @@ research:
     listOrder: 6040
   - name: STR_MIB_MEDIC
     hidden: true
-    spawnedEvents:
-      STR_MIB_SPECIALIST_INTERROGATION: 100
+    spawnedEvent: STR_MIB_SPECIALIST_INTERROGATION
     getOneFreeProtected:
       STR_MIB_SCIENTIST:
         - STR_MIB_MEDIC_LORE1
@@ -1996,43 +2022,59 @@ research:
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6070
   - name: STR_MIB_OFFICE_WORKER
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6080
   - name: STR_MIB_OFFICE_MANAGER
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6090
-  - name: STR_MIB_OFFICE_SECURITY #TODO - add more lore
+  - name: STR_MIB_OFFICE_SECURITY
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6100
-  - name: STR_MIB_VIP_BODYGUARD #TODO - add more lore
+  - name: STR_MIB_VIP_BODYGUARD
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6110
   - name: MIB_BANKER
     hidden: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
       - STR_PRISONER_INTERROGATIONS #TODO - add more lore
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_OFFICIALS_RECRUITING_PREREQ
     listOrder: 6120
   - name: STR_MIB_VIP
     hidden: true
     spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
       - STR_PRISONER_INTERROGATIONS #TODO - add more lore
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_OFFICIALS_RECRUITING_PREREQ
     listOrder: 6120
 
 #Cultists
@@ -2040,7 +2082,9 @@ research:
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_CRIMINAL_RECRUITING_PREREQ
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_CRIMINAL_RECRUITING_PREREQ
     listOrder: 6121
   - name: STR_CULT_COORDINATOR
     hidden: true
@@ -2048,6 +2092,7 @@ research:
       - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
       STR_PRISONER_INTERROGATIONS:
+        - STR_CRIMINAL_RECRUITING_PREREQ
         - STR_CULT_GANG_DEN
     listOrder: 6122
 #Other humans
@@ -2056,18 +2101,18 @@ research:
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_MILITARY_TECH
-    # getOneFreeProtected: #army interrogation lore pls
-    #   STR_PRISONER_INTERROGATIONS:
-    #     - STR_CULT_GANG_DEN
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_MILITARY_RECRUITING_PREREQ
     listOrder: 6122
   - name: STR_ARMY_FIELD_SOLDIER
     hidden: true
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
       - STR_MILITARY_TECH
-    # getOneFreeProtected: #TODO
-    #   STR_PRISONER_INTERROGATIONS:
-    #     - STR_CULT_GANG_DEN
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_MILITARY_RECRUITING_PREREQ
     listOrder: 6122
   - name: STR_MAD_CIVILIAN
     hidden: true
@@ -2087,30 +2132,39 @@ research:
         - STR_SPORTS_BOW
         - STR_THROWING_KNIFE
         - STR_MACHETE
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
   - name: STR_MALE_POLICE
     hidden: true
     points: 10
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
   - name: STR_CIVILIAN_FARMER
     hidden: true
     points: 10
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
   - name: STR_CIVILIAN_HUNTER
     hidden: true
     points: 10
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-    # getOneFreeProtected: #army interrogation lore pls
-    #   STR_PRISONER_INTERROGATIONS:
-    #     - STR_CULT_GANG_DEN
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
   - name: STR_BANDIT
     hidden: true
     points: 5
     getOneFree:
       - STR_PRISONER_INTERROGATIONS
-      - STR_CRIMINAL_RECRUITING_PREREQ
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_CRIMINAL_RECRUITING_PREREQ
 #Vanilla-like enemies study
 #MiB
   - name: STR_SEEKER_DRONE_TERRORIST #TODO - add more tech about it
@@ -2951,8 +3005,7 @@ research:
     points: 600
     needItem: true
     destroyItem: true
-    spawnedEvents: 
-      STR_FLOPPY_SCIENTISTS_LOG_MIB: 100
+    spawnedEvent: STR_FLOPPY_SCIENTISTS_LOG_MIB
     listOrder: 5000
   - name: STR_MIB_DATA_CONTAINER
     cost: 500
@@ -2960,17 +3013,19 @@ research:
       computers: 100
       data: 150
     points: 400
-    spawnedEvents: 
-      STR_MIB_DATA_CONTAINER: 100
+    spawnedEvent: STR_MIB_DATA_CONTAINER
     needItem: true
     destroyItem: true
     listOrder: 5010
-
-  - name: STR_CREDIT_CARD_BREACHING_PREREQ
+  - name: STR_TECH_PARTS_PACK
+    cost: 15
+    stats:
+      computers: 100
+    points: 20
+    needItem: true
+    listOrder: 5020
   - name: STR_CREDIT_CARD_BREACHING
     hidden: true
-    disables:
-      - STR_CREDIT_CARD_BREACHING_PREREQ
   - name: STR_CREDIT_CARD
     lookup: STR_CREDIT_CARD_BREACHING
     cost: 400
@@ -2978,9 +3033,6 @@ research:
       computers: 100
     points: 20
     needItem: true
-    dependencies:
-      - STR_SUPPLIES
-      - STR_CREDIT_CARD_BREACHING_PREREQ
     listOrder: 5020
   - name: STR_CREDIT_CARD_SILVER
     lookup: STR_CREDIT_CARD_BREACHING
@@ -2989,9 +3041,6 @@ research:
       computers: 100
     points: 20
     needItem: true
-    dependencies:
-      - STR_SUPPLIES
-      - STR_CREDIT_CARD_BREACHING_PREREQ
     listOrder: 5030
   - name: STR_CREDIT_CARD_GOLD
     lookup: STR_CREDIT_CARD_BREACHING
@@ -3000,9 +3049,6 @@ research:
     cost: 300
     points: 20
     needItem: true
-    dependencies:
-      - STR_SUPPLIES
-      - STR_CREDIT_CARD_BREACHING_PREREQ
     listOrder: 5040
   - name: STR_ANCIENT_ARTIFACT
     cost: 10

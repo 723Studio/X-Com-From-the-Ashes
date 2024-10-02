@@ -5115,6 +5115,19 @@ items:
     floorSprite: 23
     handSprite: 1018
     battleType: 7
+    tuUse: 30
+    flatRate: true
+    listOrder: 22000
+  - type: STR_ADVANCED_MOTION_SCANNER
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE]
+    size: 0.1
+    landOnly: true
+    costSell: 42200
+    weight: 3
+    bigSprite: 608
+    floorSprite: 23
+    handSprite: 1018
+    battleType: 7
     tuUse: 15
     flatRate: true
     listOrder: 22000
@@ -5135,7 +5148,7 @@ items:
     flatRate: false
     attraction: 5
     hackingHp: 20
-    hackingTu: 100
+    hackingTu: 30
     LOSRequired: true
     #experienceTrainingMode: 19 - hacking experince is hardcoded
     listOrder: 48150
@@ -5820,7 +5833,7 @@ items:
     flatRate: false
     attraction: 5
     hackingHp: 15
-    hackingTu: 120
+    hackingTu: 35
     LOSRequired: true
     #experienceTrainingMode: 19 - hacking experince is hardcoded
     listOrder: 48150
@@ -5850,7 +5863,7 @@ items:
     weight: 6
     bigSprite: 509
     bulletSprite: 13
-    fireSound: 188
+    fireSound: 107
     compatibleAmmo:
       - STR_DRONE_TASER_CLIP
     accuracyCloseQuarters: 133
@@ -6368,6 +6381,20 @@ items:
     invHeight: 1
     recoveryPoints: 100
     listOrder: 31006
+  - type: STR_ADVANCED_WEAPON_PROTOTYPE
+    categories: [STR_EVIDENCE]
+    landOnly: true
+    size: 0.1
+    missionObjective: true
+    tuThrow: 0
+    battleType: 0
+    weight: 4
+    bigSprite: 23
+    floorSprite: 23
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 100
+    listOrder: 31006
   - type: STR_FLOPPY_SCIENTISTS_LOG
     categories: [STR_EVIDENCE]
     landOnly: true
@@ -6442,6 +6469,20 @@ items:
     invHeight: 3
     recoveryPoints: 4
     listOrder: 31040
+  - type: STR_TECH_PARTS_PACK
+    categories: [STR_LOOT]
+    size: 3
+    weight: 20
+    bigSprite: 609
+    floorSprite: 609
+    costSell: 24000
+    tuThrow: 0
+    battleType: 0
+    armor: 18
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 6
+    listOrder: 31040
   - type: STR_CREDIT_CARD
     categories: [STR_LOOT]
     landOnly: true
@@ -6509,8 +6550,8 @@ items:
     costSell: 50000
     weight: 0
     battleType: 0
-    bigSprite: 428 #TODO
-    floorSprite: 428 #TODO
+    bigSprite: 610
+    floorSprite: 428
     handSprite: 842
     invWidth: 1
     invHeight: 1
@@ -6545,6 +6586,20 @@ items:
     invHeight: 2
     recoveryPoints: 20
     listOrder: 31100
+  - type: STR_GOLD_BAR
+    categories: [STR_LOOT, STR_CONCEALABLE]
+    size: 0.1
+    landOnly: true
+    costBuy: 260000
+    costSell: 220000
+    bigSprite: 499
+    floorSprite: 499
+    weight: 1
+    battleType: 10
+    invWidth: 1
+    invHeight: 1
+    recoveryPoints: 20
+    listOrder: 31100
   - type: STR_JEWEL
     categories: [STR_LOOT, STR_CONCEALABLE]
     size: 0.1
@@ -6564,7 +6619,7 @@ items:
     size: 0.1
     landOnly: true
     costBuy: 1900000
-    costSell: 1300000
+    costSell: 1500000
     bigSprite: 500
     floorSprite: 500
     weight: 1
@@ -6578,7 +6633,7 @@ items:
     size: 0.1
     landOnly: true
     costBuy: 45000
-    costSell: 35000
+    costSell: 41000
     bigSprite: 501
     floorSprite: 501
     weight: 1

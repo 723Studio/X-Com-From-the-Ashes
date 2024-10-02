@@ -448,6 +448,10 @@ extraSprites:
       604: Resources/UI/Blanks/Null_Void_1x1.png
       605: Resources/UI/Blanks/Null_Void_2x3.png
       606: Resources/UI/Blanks/Null_Void_3x3.png
+      607: Resources/MiscItems/bigob_Gold_bar.png
+      608: Resources/Weapons/Earthbound/Utilities/bigob_AdvancedScanner.png
+      609: Resources/MiscItems/bigob_PartsPack.png
+      610: Resources/MiscItems/bigob_cash_pack_big.png
 
   - type: FLOOROB.PCK
     files:
@@ -669,6 +673,8 @@ extraSprites:
       499: Resources/MiscItems/floorob_Jewel.png
       500: Resources/MiscItems/floorob_StoneOfAtlantis.png
       501: Resources/MiscItems/floorob_Drugs.png
+      607: Resources/MiscItems/floorob_Gold_bar.png
+      609: Resources/MiscItems/floorob_Parts_pack.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40

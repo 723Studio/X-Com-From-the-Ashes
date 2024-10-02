@@ -297,6 +297,28 @@ eventScripts:
     allowedProcessor: 2 #xcom
 
 #intel scripts
+  - type: callOfDutyIntelScript
+    refNode: *callOfDutyScript
+    firstMonth: 0
+    executionOdds: 100
+    allowedProcessor: 3 #OTHER_SCRIPT
+
+  - type: intelNetworkingScript
+    eventWeights:
+      0:
+        STR_INTEL_NETWORKING_RANDOM_EVENT_1: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_2: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_3: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_4: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_5: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_6: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_7: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_8: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_9: 10
+        STR_INTEL_NETWORKING_RANDOM_EVENT_10: 10
+    firstMonth: 0
+    executionOdds: 100
+    allowedProcessor: 3 #OTHER_SCRIPT
   - type: mibClue
     oneTimeSequentialEvents:
       - STR_MIB_CLUE_EVENT_1
@@ -305,25 +327,25 @@ eventScripts:
       - STR_MIB_CLUE_EVENT_4
       - STR_MIB_CLUE_EVENT_5
     allowedProcessor: 3 #OTHER_SCRIPT
-    executionOdds: 50
+    executionOdds: 100
   - type: mibRandom
     eventWeights:
       0:
-        STR_MIB_RANDOM_EVENT_1: 100
+        STR_MIB_RANDOM_EVENT_1: 100 #TODO ADD MORE EVENTS!
     allowedProcessor: 3 #OTHER_SCRIPT
-    executionOdds: 50
+    executionOdds: 100
   - type: mibConvoyRaid
     eventWeights:
       0:
         STR_MIB_CONVOY_OPERATION_ENABLER: 100
     allowedProcessor: 3 #OTHER_SCRIPT
-    executionOdds: 40
+    executionOdds: 100
   - type: mibHideoutRaid
     eventWeights:
       0:
         STR_MIB_HIDEOUT_OPERATION_ENABLER: 100
     allowedProcessor: 3 #OTHER_SCRIPT
-    executionOdds: 20
+    executionOdds: 100
 
 #resistance
   - type: resistanceShareCommonEquipmentData

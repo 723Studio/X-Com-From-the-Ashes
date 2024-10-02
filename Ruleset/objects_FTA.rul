@@ -17,6 +17,23 @@ objects:
         STR_MILITARY_DATA_TERMINAL_EVENT_3: 30
         STR_MILITARY_DATA_TERMINAL_EVENT_4: 10
 
+  - type: STR_OFFICE_DOOR_LOCKER_WESTWALL
+    hackingDefence: 20
+    alterationMCDNumber: 50
+    alterationMCDRadius: 2
+  - type: STR_OFFICE_BASE_DOOR_LOCKER_NORTHWALL
+    hackingDefence: 20
+    alterationMCDNumber: 52
+    alterationMCDRadius: 2
+  - type: STR_OFFICE_DATA_TERMINAL
+    hackingDefence: 30
+    eventWeights:
+      0:
+        STR_OFFICE_DATA_TERMINAL_EVENT_1: 90 #TODO
+        STR_OFFICE_DATA_TERMINAL_EVENT_2: 60
+        STR_OFFICE_DATA_TERMINAL_EVENT_3: 30
+        STR_OFFICE_DATA_TERMINAL_EVENT_4: 10
+
   - type: STR_MIB_CORP_BLASTDOOR_LOCKER
     hackingDefence: 70
     alterationMCDNumber: 43

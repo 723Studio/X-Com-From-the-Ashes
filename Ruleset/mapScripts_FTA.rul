@@ -1321,6 +1321,27 @@ mapScripts:
       - type: ceiling
         terrain: DESERT
         size: [1, 1, 2]
+
+  - type: smallOffice
+    commands:
+    - type: addBlock #main block
+      rects:
+          - [0, 0, 2, 2]
+      verticalLevels:
+      - type: ground
+        blocks: [3, 4]
+        size: [2, 2, 1]
+      - type: middle
+        blocks: [0, 1]
+        size: [2, 2, 1]
+      - type: ceiling
+        blocks: [2, 5]
+        size: [2, 2, 1]
+    - type: addBlock
+      executions: 2
+      terrain: URBAN_ROADS
+      groups: [2]
+
   # - type: TEST_SCRIPT
   #   commands:
   #   - type: addCraft

@@ -663,6 +663,7 @@ en-US:
   STR_SHOT_TYPE_SNAP: "Snap (x{0})"
   STR_SHOT_TYPE_AIMED: "Aimed (x{0})"
   STR_BOUNTY: "GATHERED"
+  STR_LOW_FUNDS: "Low Funds"
   STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY_1: "Captive has been executed as there is no free prison space."
   STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO ALIEN CONTAINMENT FOR TRANSFER!{SMALLLINE}For security reasons, live aliens can only be kept in specially appointed alien containment facility."
   STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER_1: "NO PRISON SPACE FOR TRANSFER!{SMALLLINE}Holding captives requires special facilities on site."
@@ -777,9 +778,13 @@ en-US:
   STR_UFO_TRACKING: "UFO Tracking"
   STR_UFO_TRACKING_DESCRIPTION: "Radar installations have shown their relatively poor ability to detect alien craft flying in the Earth's atmosphere. However, with the development of communication systems and the Internet in particular, portable video recorders, the growing popularity of such a new phenomenon as social media, we can collect data by analyzing large amounts of public data. The reporting of simple eyewitnesses and the development of a conspiratorial network of observers will allow us to expand the search and tracking of UFOs activity globally."
   STR_INTEL_NETWORKING: "Building an Intelligence Network"
-  STR_INTEL_NETWORKING_DESCRIPTION: "After the formal shutdown of the XCOM project, our methods of information gathering changed drastically - covert information gathering, covert operations and espionage took center stage. To succeed in this arena, a well-developed intelligence network is essential."
+  STR_INTEL_NETWORKING_DESCRIPTION: "After the formal shutdown of the XCOM project, our methods of information gathering changed drastically - disguised information gathering, covert operations and espionage took center stage. To succeed in this arena, a well-developed intelligence network is essential."
   STR_MIB_ACTIVITY: "M.I.B. Activity"
   STR_MIB_ACTIVITY_DESCRIPTION: "We need to get as much information as we can about an enemy as powerful and insidious as the Men in Black. Obviously, they are linked to extraterrestrial activity, but their motives, capabilities and goals are still unclear. Efforts must be devoted to analyzing the known information and seeking new leads."
+  STR_CULT_ACTIVITY: "Cult Activity"
+  STR_CULT_ACTIVITY_DESCRIPTION: #TODO
+  STR_MONSTERS_ACTIVITY: "Monsters Activity"
+  STR_MONSTER_ACTIVITY_DESCRIPTION: #TODO
 #facilities
   STR_HQ: "Headquarters"
   STR_HQ_UFOPEDIA: "The headquarters staff collects reports on abnormal activity in human society from around the world and analyzes media reports. Headquarters contain a variety of high-tech communication and computing equipment and have everything you need to run X-COM, including our fantastic holographic globe! Up to 7 scientists can conduct analytical work here, and there's even a small room for interrogations."
@@ -910,7 +915,7 @@ en-US:
   STR_CROP_CIRCLES_LOOT: "Crop Circles Anomaly"
   STR_CROP_CIRCLES_NO_LOOT: "Crop Circles Anomaly"
   STR_CROP_CIRCLES_SAMPLES: "Crop Circles Anomaly"
-  STR_CROP_CIRCLES_SAMPLES_AND_LOOT: "Crop Circles Anomaly"
+  STR_CROP_CIRCLE_LOOT_AND_SAMPLING: "Crop Circles Anomaly"
   STR_CROP_CIRCLES_NO_LOOT_MIB_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area, retrieve all signs of alien activity, if any, and extract. According to our information, there is a substantial concentration of M.I.B. forces in the area. We must consider our capabilities carefully before engaging.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
   STR_CROP_CIRCLES_ZOMBIES_NO_LOOT: "Crop Circles Anomaly"
   STR_CROP_CIRCLES_ZOMBIES_BRIEFING: "We are receiving reports of anomalous circles appearing overnight in the fields. Our objective is to survey the area, retrieve all signs of alien activity, if any, and extract. On approach, we see no sign of M.I.B. in the area, but the farm is swarming with erratic human-looking figures.{NEWLINE}To abort the mission return X-Com operatives to the transport and click on the 'Abort Mission' icon."
@@ -1141,11 +1146,33 @@ en-US:
   STR_ROCKET_GLOVE_TINKERING_DESCRIPTION: "Our engineers have developed an promising prototype of a portable launcher for shooting unguided rockets. The technical specifications of the device are included in the Ufopedia database."
   STR_KATANA_TINKERING: "Oriental Blade"
   STR_KATANA_TINKERING_DESCRIPTION: "Analyzing possible application of full-size blade weapons in encounters our soldiers might engage in, we have concluded that it is possible to produce more effective weapons than conventional swords. Traditional oriental swords have greater potential to penetrate armor, and the narrower cutting edge will do more damage to unarmored targets. We are ready to start producing new swords based on the new design.{NEWLINE}New technology> {ALT}Oriental Blade"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_1: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_1_DESCRIPTION: "We were able to expand the capabilities of our intelligence capabilities by infiltrating the local network of a local police station. A computer worm we created collects case data and discreetly transmits encrypted information to our proxy servers every time someone in the office surfs the Internet.{NEWLINE}Loyalty score>{ALT} +30"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_2: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_2_DESCRIPTION: "We were able to significantly improve the mechanism of imperceptible data transmission in the global network. The new mechanism for allocating proxy servers on public domains and the encrypted data chaining method will reduce the risk of detection of our intelligence activities.{NEWLINE}Loyalty score>{ALT} +50"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_3: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_3_DESCRIPTION: "The cybersecurity service of a non-governmental organization has discovered a computer virus that we recently injected into their network to gather intelligence. The defense protocols have been significantly enhanced, so now we'll have to find another vulnerability.{NEWLINE}Loyalty score>{ALT} -20"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_4: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_4_DESCRIPTION: "A failed attempt to hack into the network of a government security agency nearly turned into huge trouble. The investigation of the incident by government agents was close to uncovering the source of the hack, which could have jeopardized our base. Fortunately, we were able to steer the investigation down the wrong path, compromising an anarchic group of dissident hackers. We must be more careful in the future.{NEWLINE}Loyalty score>{ALT} -100"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_5: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_5_DESCRIPTION: "Due to a recently discovered vulnerability we found in a government department server, we were able to implement and set up a leak of classified information to our proxy server.{NEWLINE}Loyalty score>{ALT} +100"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_6: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_6_DESCRIPTION: "The amount of data we collect on our main server is growing exponentially, we have experienced a dramatic degradation in performance due to overheating of the hardware. An urgent investment in an integrated server cooling system is necessary, otherwise our entire digital infrastructure is in danger of collapsing.{NEWLINE}Funds>{ALT} -45000"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_7: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_7_DESCRIPTION: The capacity of our database, which stores raw intelligence information, is almost exhausted. If we want to continue our work, we must invest in additional server hardware, network disks, and routers. In the meantime, our engineers will improve the sharding mechanisms to ensure that data can be accessed quickly by analysts.{NEWLINE}Funds>{ALT} -235000"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_8: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_8_DESCRIPTION: "We have managed to connect to a network of CCTV cameras in a major metropolitan area. The images from the cameras can be fed into our system, but now we will need to focus on a system to recognize faces and objects in the image. If successful, this will be a major aid to intelligence gathering in the area.{NEWLINE}Loyalty score>{ALT} +100"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_9: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_9_DESCRIPTION: "It seems as if the operating system developers are alien agents. After a recent update, we've seen constant crashes, critical errors, and data loss. However, it seems that we are not the only ones with problems - airports, banks, cash registers and many other things that you would normally want to see in working order are affected. Fortunately, server software is intact, but the update on personal computers will have to be rolled back.{NEWLINE}Loyalty score>{ALT} -5"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_10: "Intel Networking"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_10_DESCRIPTION: "We hacked into the internal network of a major media outlet. What kind of lying scoundrels are in charge of the news?! All news is distorted for the benefit of sponsors and supported political forces, some news is silenced, and some minor events are inflated to unbelievable proportions! At least we now have access to the original information, which will make it much easier to search the open data.{NEWLINE}Loyalty score>{ALT} +100"
+
   STR_CALL_OF_DUTY_SOLDIER: "Call of Duty"
   STR_CALL_OF_DUTY_AGENT: "Call of Duty"
   STR_CALL_OF_DUTY_PILOT: "Call of Duty"
   STR_CALL_OF_DUTY_ENGINEER: "Call of Duty"
   STR_CALL_OF_DUTY_SCIENTIST: "Call of Duty"
+  STR_SMALL_OFFICE: "Small Office"
   STR_CALL_OF_DUTY_EVENT_DESCRIPTION: "Due to lack of funding in the past, we had to lay off an excellent staff member. We have managed to covertly contact the former employee and have gotten an agreement to rejoin X-COM. We need to organize a covert operation for covert transportation to our base.{NEWLINE}{ALT}New covert operation available."
   STR_MYSTERIOUS_SPONSOR_50000: "Mysterious Sponsor"
   STR_MYSTERIOUS_SPONSOR_50000_DESCRIPTION: "$50,000 was deposited into one of our clandestine accounts. It is unclear whether this is a banking error, a well-wisher who desires to remain anonymous, or an insidious attempt of the Men in Black to get to our accounts. Either way, we must remain vigilant."
@@ -1175,15 +1202,17 @@ en-US:
   STR_MIB_CLUE_EVENT_1_DESCRIPTION: "We've managed to contact a radio astronomer being hunted by M.I.B. agents. She was able to detect a strange object at the L1 point of the Earth-Sun system by filtering out the reflected signal from the noise emitted by the Sun. From its signature, the object appeared to be at least several kilometers in diameter and composed of metal. She was preparing to publish the results, but someone deleted all the data from her work computer. She's in grave danger, and we've prepared a safe passage to base."
   STR_MIB_CLUE_EVENT_2: #TODO
   STR_MIB_CLUE_EVENT_2_DESCRIPTION: #TODO
-  STR_MIB_CLUE_EVENT_3: "Пилот в Отставке"
-  STR_MIB_CLUE_EVENT_3_DESCRIPTION: "Лётчик ВВС США во время тренировочных полётов с военной базы в Калифорнии в 1988 году несколько раз сталкивался с НЛО, которые по его описанию очень похожи на корабли пришельцев. Его доклады начальству в то время замялись. После отставки он решил написать книгу, подробно описав свой опыт. Но она книга так и не вышла - в издательстве начали происходить странные события, а за самим пилотом началась слежка агентов M.I.B. Очевидно, он в смертельной опасности."
+  STR_MIB_CLUE_EVENT_3: "Retired Pilot"
+  STR_MIB_CLUE_EVENT_3_DESCRIPTION: "A U.S. Air Force pilot on training flights from a military base in California in 1988 had several encounters with UFOs that he described as looking very much like alien craft. His reports to his superiors at the time faltered. After his retirement, he decided to write a book detailing his experiences. But the book was never published - strange events began to happen at the publishing house, perhaps he began to be watched by M.I.B. agents. Obviously, he is in mortal danger, and we have prepared a safe transfer for him to our base."
   STR_MIB_CLUE_EVENT_4: #TODO
   STR_MIB_CLUE_EVENT_4_DESCRIPTION: #TODO
   STR_MIB_CLUE_EVENT_5: "The Alien Killer"
   STR_MIB_CLUE_EVENT_5_DESCRIPTION: "We've managed to contact a man who's being actively hunted by M.I.B. agents. He works as a logger and claims to have seen an alien ship landing in the woods. Moreover, he says that he managed to kill one of the aliens with bare hands! He describes this alien as follows - gray skin, short, with a large head and giant black eyes. While he was choking the alien, horrible pictures flashed before his eyes that made his blood run cold. Nevertheless, our hero was not intimidated and did not loosen his grip. He will soon arrive at our base."
-  STR_LOW_FUNDS_EVENT: "Заканчиваются Деньги"
-  STR_LOW_FUNDS_EVENT_DESCRIPTION: "Коммандер, поступил Quartermaster's report.{NEWLINE}{NEWLINE}{NEWLINE}Funds>{ALT} -+35500{NEWLINE}Loyalty score>{ALT} -10"
-  STR_LOW_FUNDS_EVENT_UFOPEDIA: "Ежемесячного финансирования проекта XCOM больше нет и наши банковские счета  счета почти пусты. У нас может нехватить денег на обслуживание базы. Я проверил наши запасы, и мне удалось собрать некоторое количество ненужного барахла на продажу. Однако, вырученных денег на долго не хватит. Вам нужно внимательно следить за содержимым наших складов и стараться продавать всё, кроме самого необходимово, что бы keep positive funding."
+  STR_MIB_RANDOM_EVENT_1: #TODO
+  STR_MIB_RANDOM_EVENT_1_DESCRIPTION: #TODO
+  STR_LOW_FUNDS_EVENT: "Running out of money"
+  STR_LOW_FUNDS_EVENT_DESCRIPTION: "Commander, the Quartermaster's report came in.{NEWLINE}{NEWLINE}{NEWLINE}Funds>{ALT} +35500{NEWLINE}Loyalty score>{ALT} -10"
+  STR_LOW_FUNDS_EVENT_UFOPEDIA: "Monthly funding for the XCOM project is no longer available and our bank accounts are almost empty. We may not have enough money to maintain the base. I've checked our supplies, and I've managed to collect some junk to sell. However, the proceeds won't last long. You need to keep a close eye on the contents of our warehouses and try to sell everything but the essentials to keep positive funding."
   STR_IMPROVE_LIVING_FACILITY: "Improving base living conditions"
   STR_IMPROVE_LIVING_FACILITY_DESCRIPTION: "For safety reasons, we strive to reduce contact with the outside world, so our team found itself almost completely isolated at the base. To make it easier to tolerate the new conditions, the staff is requesting new equipment for the gym and additional recreational areas with upholstered furniture, TV and audio equipment. This will help to relieve mental stress and boost morale on the team."
   STR_IMPROVE_LIVING_FACILITY_YES: "Improving base living conditions"
@@ -1286,6 +1315,10 @@ en-US:
   STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_1_DESCRIPTION: "By hacking into the terminal of the financial organization that covered M.I.B.'s activities, we learned that it was also involved in financing their clandestine operations. The data we obtained allowed us to access the funds from the secret accounts and through a complex chain to safely transfer the funds to the accounts under our control.{NEWLINE}Funds income> {ALT}+480 000"
   STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_2: "Results of the terminal hack"
   STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_2_DESCRIPTION: "By hacking into the terminal of the financial organization that was covering M.I.B.'s activities, we learned that it was also involved in funding their clandestine operations. Unfortunately, we didn't have a way to safely transfer funds to our accounts, but we published the data in the public domain and hackers from all over the world swooped in. This way, at least it would inflict some damage on our adversary, which boosted our team's morale.{NEWLINE}Loyalty score> {ALT}+100"
+  STR_XCOM_SOLDIER_PRISONER_RECRUITED_EVENT: "Soldier recruited"
+  STR_XCOM_SOLDIER_PRISONER_RECRUITED_DESCRIPTION: "We manage gain loyalty of a solder being recruited."
+  STR_XCOM_EX_COMMANDER_SUICIDE_EVENT: "The suicide of a former XCOM commander"
+  STR_XCOM_EX_COMMANDER_SUICIDE_EVENT_DESCRIPTION: "After breaking the psionic link holding the mind of the former commander of XCOM he was able to regain his self-awareness and free will. Upon learning that he had been the victim of manipulation by alien agents and had brought his life's work to the brink of complete failure, he fell into a deep depression, exacerbated by the mental abnormalities caused by prolonged psionic control. Unfortunately, we failed to help him and, unable to contain his feelings, he committed suicide."
 
   STR_CHOCOLATE_FACTORY_1: "Chocolate Factory"
   STR_CHOCOLATE_FACTORY_1_DESCRIPTION: "One of our scientists has learned his favourite chocolate factory is shutting down. He claims this chocolate is essential for his thought process and asks if we could stock up on it while there's still a chance."
@@ -1454,6 +1487,7 @@ en-US:
   STR_MIB_VIP: "V.I.P."
   STR_MIB_VIP_CORPSE: "V.I.P. corpse"
   MIB_BANKER_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts."
+  STR_OFFICE_CITIZENS: "Office Citizens"
   STR_CULT_BANDITS: "Cult Bandits"
   STR_CULT_GANGER: "Cult Ganger"
   STR_CULT_GANGER_CORPSE: "Cult Ganger Corpse"
@@ -1581,6 +1615,7 @@ en-US:
   STR_RESISTANCE_COMPUTER_REMAINS: "Resistance Computer Remains"
   
   STR_HUMAN: "Human"
+  STR_CIVILIAN_FARMER: "Farmer"
   STR_MALE_CIVILIAN_FARMER: "Farmer"
   STR_MALE_CIVILIAN_FARMER_ARMOR: "Farmer"
   STR_MALE_CIVILIAN_FARMER_CORPSE: "Farmer Corpse"
@@ -1606,7 +1641,10 @@ en-US:
   STR_DOGE_CORPSE: "Dog Corpse"
   STR_MAD_DOGE: "Mad Dog"
   STR_MAD_DOGE_UFOPEDIA: "The unfortunate animal is terribly frightened, which has a strong effect on its mind. It is obviously a domestic dog, but in spite of this, it does not stop pouncing on humans, hardly eats or sleeps, and does not stop barking. We ran all the tests, but found no signs of diseases like rabies. We are most likely seeing the result of alien psionic exposure to the dogs, but we haven't documented anything like that before."
-
+#heroes
+  STR_HERO_NAME_MARIA_PEREZ: "Maria Perez"
+  STR_HERO_NAME_JACK_NIGHT: "Jack Night"
+  STR_HERO_NAME_ANDREY_ZAHAROV: "Andrey Zaharov"
 #races
   STR_MIB_BASE_EARLY: "Men In Black (base early game)"
   STR_INITIAL_BASE_DEFENSE_RACE: "First mission race"
@@ -1911,11 +1949,16 @@ en-US:
   STR_EXPLOSIVE_CHARGE: "Explosive Charge"
   STR_EXPLOSIVE_CHARGE_UFOPEDIA: "A simple plastic explosive charge with timer mechanism. Very useful for removing obstacles and destroying objects, as it creates a dense explosion that quickly loses its destructive power with distance."
   STR_HIGH_EXPLOSIVE: "High Explosive"
-  STR_HIGH_EXPLOSIVE_UFOPEDIA: "This explosive should only be used for demolition purposes. Keep personnel clear of demolition sites." #TODO переделать описание ваниллы
+  STR_HIGH_EXPLOSIVE_UFOPEDIA: "This powerful explosive is used to create large breaches in buildings and demolish fortifications. The fuse does not have a remote detonation function, so before setting the explosive, it is necessary to set the detonation delay timer and leave the dangerous area as soon as possible."
+  STR_MOTION_SCANNER_PREREQ: STR_MOTION_SCANNER_PREREQ
+  STR_ADVANCED_MOTION_SCANNER_PREREQ: STR_ADVANCED_MOTION_SCANNER_PREREQ
   STR_MOTION_SCANNER_PROTOTYPE: "Motion Scanner Prototype"
-  STR_MOTION_SCANNER_PROTOTYPE_UFOPEDIA: #TODO прототип военных, работает плохо, но можно доработать самим.
+  STR_ADVANCED_WEAPON_PROTOTYPE: "Advanced Weapon Prototype"
+  STR_ADVANCED_WEAPON_PROTOTYPE_UFOPEDIA: "The design of this weapon incorporates breakthrough military technologies designed to bring small arms to a fundamentally new level. This is only an early prototype, and from our point of view it is quite unsuccessful. Nevertheless, with reverse engineering, we can get our own insights related to the technology to develop our own advanced firearms."
   STR_MOTION_SCANNER: "Motion Scanner"
-  STR_MOTION_SCANNER_UFOPEDIA: "This sophisticated device uses a variety of detectors and advanced computer algorithms to identify moving enemy units. However, it requires some practice to use effectively. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected." #TODO переделать описание ваниллы
+  STR_MOTION_SCANNER_UFOPEDIA: "This sophisticated device uses a variety of detectors and advanced computer algorithms to identify moving enemy units. However, it requires some practice to use effectively. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected."
+  STR_ADVANCED_MOTION_SCANNER: "Advanced Motion Scanner"
+  STR_ADVANCED_MOTION_SCANNER_UFOPEDIA: "This device uses an experimental neural network chip to process sensor readings for more accurate and faster data interpretation. As a result, this scanner is much easier to use in an intense combat environments. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected."
   STR_HACKING_COMPUTER: "Hacking Computer"
   STR_HACKING_COMPUTER_UFOPEDIA: "A high-performance handheld computer designed for wireless hacking of terminals and servers. Equipped with a rugged, waterproof case that allows tactical use in direct engagement. The smart system recognizes any type of wireless network and makes it easy for the operator to connect and program a virus to defeat the target's cyber defenses. Nevertheless, practical skills in hacking are necessary to use the device effectively. The skill of the operator, the quality of the hacking device, the degree of the target's defense depend on the parameters of the virus and the ease of its injection. To perform hacking, click the Hacking Computer icon and select 'Use Hacking Tool' action, then click on the terminal to be hacked. You need to route the virus through the target's RAM nodes to a key vulnerability in the system. Each move consumes the virus's Time Units. Firewalls block the path in adjacent nodes, but sometimes it's worth attacking the firewall core, spending some Health Points of the virus."
   STR_SAMPLING_TOOL: "Sampling Toolset"
@@ -1957,7 +2000,8 @@ en-US:
   STR_DRONE_MEDICINE_UFOPEDIA: "A drone module equipped with a set of precision manipulators for applying a tourniquet to a wounded limb or a hemostatic compress. In addition, the kit includes a system for injecting stimulant and anesthetic drugs. A camera on the flexible arm allows the drone operator to accurately and quickly assess injuries and select a program to perform first aid for our soldiers on the battlefield."
   STR_DRONE_MOTION_SCANNER: "Drone Motion Scanner"
   STR_DRONE_MOTION_SCANNER_UFOPEDIA: "Modification of the motion scanner for installation on our drone. The received information is output on the display for the soldiers following the drone, as well as transmitted via an additional communication channel to the mission command center."
-  STR_DRONE_HACKING_COMPUTER: "A version of the hacking computer adapted for installation on a drone. It has a more powerful wide-wave transmitter for connecting to the enemy's data channels. The hacking process is controlled remotely from our base, and the resulting signal delay negatively affects the virus' Health Points. However, the increased transmitter power boosts the number of Time Units of the virus.{NEWLINE}In order to use it, a special chip must be installed in the drone's main system, increasing its processing power. Without it, using the hacking computer will be practically useless."
+  STR_DRONE_HACKING_COMPUTER: "Drone Hacking Computer"
+  STR_DRONE_HACKING_COMPUTER_UFOPEDIA: "A version of the hacking computer adapted for installation on a drone. It has a more powerful wide-wave transmitter for connecting to the enemy's data channels. The hacking process is controlled remotely from our base, and the resulting signal delay negatively affects the virus' Health Points. However, the increased transmitter power boosts the number of Time Units of the virus.{NEWLINE}In order to use it, a special chip must be installed in the drone's main system, increasing its processing power. Without it, using the hacking computer will be practically useless."
   STR_DRONE_SAMPLING_TOOL: "Drone Sampling Tool"
   STR_DRONE_SAMPLING_TOOL_UFOPEDIA: "The device is a set of precision hydraulic manipulators with multiple degrees of freedom and various tools. Combined with several high-resolution digital cameras on the flexible arms, it allows our drone to collect samples for further analysis. The samples are placed in special protected containers with an inert argon atmosphere. Packed sample containers can be moved into the drone's quick access compartment (if available). To be used, a special chip with manipulator control programs must be installed in the drone's main computer. Without it, sample collection will be very inefficient."
   STR_DRONE_TASER: "Drone Taser"
@@ -1997,6 +2041,7 @@ en-US:
   STR_DATA_VAULT: "Data Vault"
   STR_SUPPLIES_1: "Supplies Pack"
   STR_SEALED_CRATE: "Sealed Crate"
+  STR_TECH_PARTS_PACK: "Tech Parts Pack"
   STR_CREDIT_CARD: "Credit Card"
   STR_CREDIT_CARD_SILVER: "Silver Credit Card"
   STR_CREDIT_CARD_GOLD: "Golden Credit Card"
@@ -2009,6 +2054,7 @@ en-US:
   STR_BRIEFCASE_CASH: "Briefcase with Cash ($100 000)"
   STR_MONEY_BAG: "Money Bag ($500 000)"
   STR_JEWEL: "Jewel"
+  STR_GOLD_BAR: "Gold Bar"
   STR_DRUGS_PACK: "Drugs Pack"
   STR_ANCIENT_ARTIFACT: "Ancient Artifact"
   STR_ANCIENT_ARTIFACT_UFOPEDIA: "Stone tablet with roughly engraved pictograms, approximate age is from 25 to 28 thousand years. Obviously, the drawings were made by ancient people. The drawings themselves are extremely curious and have no other interpretation - they depict alien vessels as we know them."
@@ -2079,7 +2125,8 @@ en-US:
   STR_DRONE_SCOUT_ARMOR: "CRAWLER CHASSIS"
   STR_DRONE_SCOUT_CORPSE: "Drone Wreck"
   STR_DRONE_SCOUT_UFOPEDIA: "This small rugged drone is designed for scout and reconnaissance. Although lacking in offensive weaponry or heavy armor, it is fast and allows ground units to quickly scout out enemy positions and act as a spotter without risk to X-Com personnel."
-
+  STR_RECRUITED_MALE: "Recruit"
+  STR_RECRUITED_FEMALE: "Recruit"
 #crafts
   STR_LIGHT_MISSILES: "Light Missiles"
   STR_STINGRAY_MISSILE: "Stingray Missle"
@@ -2328,7 +2375,6 @@ en-US:
   STR_XCOM_FILES_6_UFOPEDIA: #TODO
   STR_ABANDONED_BASE: "ABANDONED XCOM BASE"
   STR_ABANDONED_BASE_UFOPEDIA: 
-  STR_CULT_ACTIVITY: "Cult Activity"
   STR_CULT_INVESTIGATION_UFOPEDIA: "Over the past 15 years cases of mysterious murders have been documented all over the world - slashed, exsanguinated bodies found in forests, ditches, and garbage dumps. The only connection between the victims was the intricate pattern of cuts on the bodies. We suspect that some mysterious cult is behind this.{NEWLINE}Interestingly, the dynamics of murder intensity is cyclical, with peaks coinciding with an increase in neurological disorder complaints and the admission of new patients to mental hospitals. Common symptoms are acute schizophrenia, hallucinations and panic attacks."
   STR_CROP_CIRCLES: "Crop Circles"
   STR_CROP_CIRCLES_UFOPEDIA: "We have analyzed the records in the Ufopedia Archive related to the reports of crop circles. The evidence is extremely confusing and contradictory, at least somewhat reliable evidence is few. Someone talks about a mysterious noise or flashes in the field, which preceded the appearance of circles. Many potential witnesses complain of memory lapses. Often the discovery of the circles is accompanied by the appearance of men in black suits posing as government agents. They cordon off the scene, but give no intelligible explanation to the locals. At the end of the 90s, a persistent refutation of all conspiracy theories related to crop circles emerged. According to this interpretation, the authors of the crop circles are a community of people who, as a joke or for advertising purposes, trample crop circles at night with a simple device made of a wooden board and rope."
@@ -2462,6 +2508,14 @@ en-US:
   STR_CROP_CIRCLES_SAMPLE_RESULT_9_UFOPEDIA: 
   STR_CROP_CIRCLES_SAMPLE_RESULT_10: 
   STR_CROP_CIRCLES_SAMPLE_RESULT_10_UFOPEDIA: 
+  STR_RECRUIT_CIVILIAN_PRISONERS: "Recruitment of civilians"
+  STR_RECRUIT_CIVILIAN_PRISONERS_UFOPEDIA: "The civilians who have been captured by our operatives are most often victims of circumstance, and if they assist the alien agents, they do so without conscious intent. Properly working with them, telling them about the real state of affairs and the imminent threat hanging over all of us, we could try to gain their support. Most of them have no special skills, but with proper military training, we can count on them in case of dire need.{NEWLINE}{ALT}We can recruit captured civilians."
+  STR_CRIMINAL_RECRUITING: "Recruiting criminals"
+  STR_CRIMINAL_RECRUITING_UFOPEDIA: "The criminals we capture are often not incorrigible villains. Yes, sometimes they are violent people with their own peculiar notions of morality. But few choose the outlaw path because of the good life, often they simply have no other choice. Once captured by us, they may choose another alternative. After all, we can provide an outlet for their aggression, there are always enough of our enemies. Of course, getting them to agree to cooperate requires some serious discipline, but in return we could take advantage of their unique skills. Successful criminals are not stupid people, and skills such as stealth or hacking are often the basis of their craft.{NEWLINE}{ALT}We can recruit captured criminal."
+  STR_MILITARY_RECRUITING: "Recruiting military"
+  STR_MILITARY_RECRUITING_UFOPEDIA: "The military we are capturing are not our implacable adversaries, but rather temporal conditions have put us on opposite sides of a confrontation. We can explain our motives to them and gain their support by providing irrefutable evidence of the global threat posed by the alien invaders and their minions. The military recruits have well-developed combat skills that will certainly be of use to us on the battlefield, and the officers may have advanced theoretical knowledge of tactics.{NEWLINE}{ALT}We can recruit captured militaries."
+  STR_OFFICIALS_RECRUITING: "Recruitment of the elites"
+  STR_OFFICIALS_RECRUITING_UFOPEDIA: "In the course of missions, we may capture a member of society's elite - an influential politician or businessman. They can be victims of insidious manipulations of M.I.B. agents, but as a rule they do not cooperate with aliens willingly. Once we have their support, they can provide us with invaluable assistance, including financial aid. There is no point in leaving them on the base, as long as they are completely loyal to us.{NEWLINE}{ALT}We can recruit captured elites."
 
 #UFOs
   STR_SMALL_SCOUT_EARLY: "Small Scout"
@@ -2496,9 +2550,6 @@ en-US:
   UTILITY_SPECIALIST: "Utility Specialist"
   UTILITY_SPECIALIST_DESCRIPTION: "Enables additional accuracy of utility grenades throwing, using utilities refund 2-4% TU."
   STR_UNARMED_FIGHTER_DESCRIPTION: "Bonus for unarmed hit accuracy, doubles if both hands are free."
-  STR_HERO_NAME_ANDREY_ZAHAROV: "Andrei Zakharov"
-  STR_HERO_NAME_JACK_NIGHT: "Jack Night"
-  STR_HERO_NAME_MARIA_PEREZ: "Maria Perez"
 #cities
   # ARCTIC CITIES
   STR_INUVIK: "Inuvik"
@@ -2903,7 +2954,6 @@ en-US:
   STR_LIVE_INFECTOR: STR_LIVE_INFECTOR
   STR_ZOMBIE_AUTOPSY: STR_ZOMBIE_AUTOPSY
   STR_LIVE_ZOMBIE: STR_LIVE_ZOMBIE
-  STR_CREDIT_CARD_BREACHING_PREREQ: STR_CREDIT_CARD_BREACHING_PREREQ
   STR_RESISTANCE_TECH_TREE_START: STR_RESISTANCE_TECH_TREE_START
   STR_RESISTANCE_DUTY: STR_RESISTANCE_DUTY
   STR_XCOM_EQUIPMENT_ACQUISITION: STR_XCOM_EQUIPMENT_ACQUISITION
@@ -2924,8 +2974,17 @@ en-US:
   STR_SWARMID_DESERT_TERROR: STR_SWARMID_DESERT_TERROR
   STR_SMALL_GROUND_CONVOY: STR_SMALL_GROUND_CONVOY
   STR_MEDIUM_GROUND_CONVOY: STR_MEDIUM_GROUND_CONVOY
-  
-  
+  STR_SAMPLING_PREREQ: STR_SAMPLING_PREREQ
+  STR_MIB_HIDEOUT_OPERATION_PREREQ: STR_MIB_HIDEOUT_OPERATION_PREREQ
+  STR_MIB_CRATE_CASH_SMALL: STR_MIB_CRATE_CASH_SMALL
+  STR_MIB_CRATE_CASH_BIG: STR_MIB_CRATE_CASH_BIG
+  STR_MIB_CRATE_EQUIPMENT: STR_MIB_CRATE_EQUIPMENT
+  STR_MIB_CRATE_WEAPONS_LIGHT: STR_MIB_CRATE_WEAPONS_LIGHT
+  STR_MIB_CRATE_WEAPONS_MEDIUM: STR_MIB_CRATE_WEAPONS_MEDIUM
+  STR_MIB_CRATE_WEAPONS_HEAVY: STR_MIB_CRATE_WEAPONS_HEAVY
+  STR_MIB_CRATE_SUPPLIES: STR_MIB_CRATE_SUPPLIES
+  STR_MIB_CRATE_RARE_ITEMS: STR_MIB_CRATE_RARE_ITEMS
+  STR_MIB_CRATE_MONSTER_CORPSE: STR_MIB_CRATE_MONSTER_CORPSE
   STR_RESISTANCE_FIRST_HELP: STR_RESISTANCE_FIRST_HELP
   STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED: STR_RESISTANCE_WEAPONRY_EVENT_SPAWNED
   STR_RESISTANCE_WEAPONRY_PREREQ: STR_RESISTANCE_WEAPONRY_PREREQ
@@ -2935,12 +2994,14 @@ en-US:
   STR_UNLEASH_SWARMID_TRIGGER: STR_UNLEASH_SWARMID_TRIGGER
   STR_MIB_HQ_DESTROYED: STR_MIB_HQ_DESTROYED
   STR_CROP_CIRCLES_PREREQ: STR_CROP_CIRCLES_PREREQ
+  STR_FAILED_MIB_HQ_ASSAULT: STR_FAILED_MIB_HQ_ASSAULT
   STR_EX_COUNCIL_MEMBER_INITIAL_MISSION: STR_EX_COUNCIL_MEMBER_INITIAL_MISSION
   STR_MIB_TRAP_DATA_VAULT_SUCCESS: STR_MIB_TRAP_DATA_VAULT_SUCCESS
   STR_MIB_TRAP_DATA_VAULT_FAIL: STR_MIB_TRAP_DATA_VAULT_FAIL
   STR_EX_COUNCIL_DATA_VAULT_SUCCESS: STR_EX_COUNCIL_DATA_VAULT_SUCCESS
   STR_EX_COUNCIL_DATA_VAULT_FAIL: STR_EX_COUNCIL_DATA_VAULT_FAIL
   STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ: STR_EX_COUNCIL_MEMBER_MISSIONS_PREREQ
+  STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ: STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
   STR_CULT_GANG_DEN: STR_CULT_GANG_DEN
   STR_MILITARY_EQUIPMENT_ACQUISITION: STR_MILITARY_EQUIPMENT_ACQUISITION
   STR_STARTING_EQUIPMENT_PREREQ: STR_STARTING_EQUIPMENT_PREREQ
@@ -2982,7 +3043,9 @@ en-US:
   STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ: STR_XCOM_FUNDAMENTAL_STUDIES_PREREQ
   STR_MIB_CONVOY_LEAD_OPERATION_PREREQ: STR_MIB_CONVOY_LEAD_OPERATION_PREREQ
   STR_WEAPON_COMPONENTS: STR_WEAPON_COMPONENTS
-  STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ: STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+  STR_MIB_STORY_MILESTONE_1: STR_MIB_STORY_MILESTONE_1
+  STR_MIB_STORY_MILESTONE_2: STR_MIB_STORY_MILESTONE_2
+  STR_MIB_STORY_MILESTONE_3: STR_MIB_STORY_MILESTONE_3
   STR_CRIMINAL_RECRUITING_PREREQ: STR_CRIMINAL_RECRUITING_PREREQ
   STR_MIB_CONVOY_OPERATION_PREREQ: STR_MIB_CONVOY_OPERATION_PREREQ
   STR_ABANDONED_BASE_DONE: STR_ABANDONED_BASE_DONE

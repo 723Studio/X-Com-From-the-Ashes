@@ -289,7 +289,48 @@ events:
     timer: 43800 #1 month
     timerRandom: 43800 #another 1 month
 
-#Call of Duty
+#Intel Networking
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_1
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_1_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_2
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_2_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_3
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_3_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_4
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_4_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_5
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_5_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_6
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_6_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_7
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_7_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_8
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_8_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_9
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_9_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+  - name: STR_INTEL_NETWORKING_RANDOM_EVENT_10
+    description: STR_INTEL_NETWORKING_RANDOM_EVENT_10_DESCRIPTION
+    timer: 120
+    timerRandom: 30240
+
   - name: STR_CALL_OF_DUTY_SOLDIER
     description: STR_CALL_OF_DUTY_EVENT_DESCRIPTION
     researchList:
@@ -918,6 +959,14 @@ events:
           deception: 
           interrogation: 45
       currentStats: *andreyZaharovStats
+    timer: 60
+    timerRandom: 129600 #90 days
+  - name: STR_MIB_RANDOM_EVENT_1 #TODO add more events
+    description: STR_MIB_RANDOM_EVENT_1_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    #researchList: [STR_MIB_HIDEOUT_OPERATION_PREREQ]
+    # loyalty: 0
+    # funds: 0
     timer: 60
     timerRandom: 129600 #90 days
 
