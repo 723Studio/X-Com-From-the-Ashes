@@ -2041,6 +2041,7 @@ en-US:
   STR_DATA_VAULT: "Data Vault"
   STR_SUPPLIES_1: "Supplies Pack"
   STR_SEALED_CRATE: "Sealed Crate"
+  STR_SEALED_CRATE_HACKING: "Sealed Crate Hacking"
   STR_TECH_PARTS_PACK: "Tech Parts Pack"
   STR_CREDIT_CARD: "Credit Card"
   STR_CREDIT_CARD_SILVER: "Silver Credit Card"

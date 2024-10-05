@@ -812,7 +812,6 @@ manufacture:
     producedItems:
       STR_DRONE_TASER_CLIP: 1
     listOrder: 220040
-
   - name: STR_DRONE_ROCKET_LAUNCHER
     category: STR_ROBOT_EQUIPMENT
     requires:
@@ -845,9 +844,8 @@ manufacture:
     producedItems:
       STR_DRONE_TASER_CLIP: 1
     listOrder: 220040
-
   - name: STR_DRONE_COMBAT_CHIP
-    category: STR_ROBOT_UPGRADES
+    category: STR_ROBOT_EQUIPMENT
     requires:
       - STR_DRONE_UPGRADES
     space: 2
@@ -859,7 +857,7 @@ manufacture:
       STR_DRONE_COMBAT_CHIP: 1
     listOrder: 220040
   - name: STR_DRONE_AGILITY_CHIP
-    category: STR_ROBOT_UPGRADES
+    category: STR_ROBOT_EQUIPMENT
     requires:
       - STR_DRONE_UPGRADES
     space: 2
@@ -871,7 +869,7 @@ manufacture:
       STR_DRONE_AGILITY_CHIP: 1
     listOrder: 220040
   - name: STR_DRONE_HACKING_CHIP
-    category: STR_ROBOT_UPGRADES
+    category: STR_ROBOT_EQUIPMENT
     requires:
       - STR_DRONE_HACKING
     space: 2
@@ -883,7 +881,7 @@ manufacture:
       STR_DRONE_HACKING_CHIP: 1
     listOrder: 220040
   - name: STR_DRONE_SAMPLING_CHIP
-    category: STR_ROBOT_UPGRADES
+    category: STR_ROBOT_EQUIPMENT
     requires:
       - STR_DRONE_SAMPLING
     space: 2
@@ -895,41 +893,6 @@ manufacture:
       STR_DRONE_SAMPLING_CHIP: 1
     listOrder: 220040
 #components
-  - name: STR_METAL_SCRAPS_PROCESSING
-    category: STR_COMPONENTS
-    requires:
-      - STR_ENGINEER_STATUS_REPORT
-    requiredItems:
-      STR_METAL_SCRAPS: 10
-    stats:
-      processing: 100
-    space: 6
-    time: 480
-    cost: 0
-    randomProducedItems:
-      - [5, {STR_SPARE_PARTS: 12}]
-      - [5, {STR_SPARE_PARTS: 19}]
-      - [5, {STR_SPARE_PARTS: 23}]
-      - [5, {STR_SPARE_PARTS: 31}]
-      - [5, {STR_SPARE_PARTS: 39}]
-      - [5, {STR_SPARE_PARTS: 44}]
-      - [5, {STR_SPARE_PARTS: 32, STR_CHEMICALS: 1}]
-      - [5, {STR_SPARE_PARTS: 26, STR_CHEMICALS: 5}]
-      - [5, {STR_SPARE_PARTS: 21, STR_CHEMICALS: 9}]
-      - [5, {STR_SPARE_PARTS: 9, STR_CHEMICALS: 13}]
-      - [5, {STR_SPARE_PARTS: 16, STR_CHEMICALS: 3, STR_HIGH_TECH_PARTS: 1}]
-      - [5, {STR_SPARE_PARTS: 17, STR_CHEMICALS: 2, STR_HIGH_TECH_PARTS: 3}]
-      - [5, {STR_SPARE_PARTS: 22, STR_CHEMICALS: 1, STR_HIGH_TECH_PARTS: 4}]
-      - [5, {STR_SPARE_PARTS: 25, STR_CHEMICALS: 5, STR_HIGH_TECH_PARTS: 5}]
-      - [5, {STR_SPARE_PARTS: 29, STR_CHEMICALS: 4, STR_HIGH_TECH_PARTS: 2}]
-      - [5, {STR_SPARE_PARTS: 27, STR_HIGH_TECH_PARTS: 2}]
-      - [5, {STR_SPARE_PARTS: 18, STR_HIGH_TECH_PARTS: 4}]
-      - [5, {STR_SPARE_PARTS: 15, STR_HIGH_TECH_PARTS: 6}]
-      - [5, {STR_SPARE_PARTS: 11, STR_HIGH_TECH_PARTS: 8}]
-      - [5, {STR_SPARE_PARTS: 8, STR_HIGH_TECH_PARTS: 10}]
-    producedItems:
-      STR_SPARE_PARTS: 1
-    listOrder: 220030
   - name: STR_SPARE_PARTS
     category: STR_COMPONENTS
     requires:
@@ -969,20 +932,74 @@ manufacture:
     producedItems:
       STR_HIGH_TECH_PARTS: 1
     listOrder: 220050
-#special
-  - name: STR_FAKE_AGENT_ID
-    category: STR_COVERT_TOOLS
+#refining
+  - name: STR_METAL_SCRAPS_PROCESSING
+    category: STR_LOOT
     requires:
-      - STR_MONSTER_HUNT_START
+      - STR_ENGINEER_STATUS_REPORT
+    requiredItems:
+      STR_METAL_SCRAPS: 10
     stats:
       processing: 100
-    space: 1
-    time: 25
-    cost: 21000
+    space: 6
+    time: 480
+    cost: 0
     producedItems:
-      STR_FAKE_AGENT_ID: 1
+      STR_SPARE_PARTS: 1
+    randomProducedItems:
+      - [5, {STR_SPARE_PARTS: 12}]
+      - [5, {STR_SPARE_PARTS: 19}]
+      - [5, {STR_SPARE_PARTS: 23}]
+      - [5, {STR_SPARE_PARTS: 31}]
+      - [5, {STR_SPARE_PARTS: 39}]
+      - [5, {STR_SPARE_PARTS: 44}]
+      - [5, {STR_SPARE_PARTS: 32, STR_CHEMICALS: 1}]
+      - [5, {STR_SPARE_PARTS: 26, STR_CHEMICALS: 5}]
+      - [5, {STR_SPARE_PARTS: 21, STR_CHEMICALS: 9}]
+      - [5, {STR_SPARE_PARTS: 9, STR_CHEMICALS: 13}]
+      - [5, {STR_SPARE_PARTS: 16, STR_CHEMICALS: 3, STR_HIGH_TECH_PARTS: 1}]
+      - [5, {STR_SPARE_PARTS: 17, STR_CHEMICALS: 2, STR_HIGH_TECH_PARTS: 3}]
+      - [5, {STR_SPARE_PARTS: 22, STR_CHEMICALS: 1, STR_HIGH_TECH_PARTS: 4}]
+      - [5, {STR_SPARE_PARTS: 25, STR_CHEMICALS: 5, STR_HIGH_TECH_PARTS: 5}]
+      - [5, {STR_SPARE_PARTS: 29, STR_CHEMICALS: 4, STR_HIGH_TECH_PARTS: 2}]
+      - [5, {STR_SPARE_PARTS: 27, STR_HIGH_TECH_PARTS: 2}]
+      - [5, {STR_SPARE_PARTS: 18, STR_HIGH_TECH_PARTS: 4}]
+      - [5, {STR_SPARE_PARTS: 15, STR_HIGH_TECH_PARTS: 6}]
+      - [5, {STR_SPARE_PARTS: 11, STR_HIGH_TECH_PARTS: 8}]
+      - [5, {STR_SPARE_PARTS: 8, STR_HIGH_TECH_PARTS: 10}]
     listOrder: 220030
-#refining
+  - name: STR_SEALED_CRATE_HACKING
+    category: STR_LOOT
+    requires:
+      - STR_SEALED_CRATE_BREACHING
+    stats:
+      hacking: 100
+    requiredItems:
+      STR_SEALED_CRATE: 1
+    space: 1
+    time: 750
+    producedItems:
+      STR_HIGH_TECH_PARTS: 1
+    randomProducedItems:
+      - [20, {STR_POLICE_BATON: 4, STR_TASER: 4, STR_TASER_CLIP: 12, STR_SHOTGUN_SHELLS_BATON: 20}]
+      - [40, {STR_GRENADE: 10, STR_SMOKE_GRENADE: 10, STR_FLASHBANG_GRENADE: 10, STR_INCENDIARY_GRENADE: 10, STR_PROXIMITY_GRENADE: 10}]
+      - [40, {STR_COMBAT_SHIELD: 10}]
+      - [40, {STR_TRAUMA_PACK: 2, STR_PERSONAL_AID_KIT: 10, STR_STIMS_INJECTOR: 15}]
+      - [20, {STR_PDW: 3, STR_PDW_CLIP: 10, STR_SMG: 2, STR_SMG_CLIP: 8}]
+      - [20, {STR_ASSAULT_RIFLE: 3, STR_RIFLE: 4, STR_PRECISION_RIFLE: 3, STR_RIFLE_CLIP: 12, STR_RIFLE_EXP_CLIP: 8}]
+      - [20, {STR_SNIPER_RIFLE: 2, STR_SNIPER_RIFLE_CLIP: 10}]
+      - [20, {STR_SHOTGUN: 2, STR_SEMI_AUTO_SHOTGUN: 2, STR_SHOTGUN_SHELLS_BS: 10, STR_SHOTGUN_SHELLS_AP: 10, STR_SHOTGUN_SHELLS_BATON: 8, STR_SHOTGUN_SHELLS_DRAGON: 6}]
+      - [35, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 6, STR_LARGE_ROCKET: 6, STR_INCENDIARY_ROCKET: 6}]
+      - [35, {STR_AUTO_CANNON: 1, STR_AC_AP_AMMO: 6, STR_AC_BS_AMMO: 6, STR_AC_HE_AMMO: 6, STR_AC_I_AMMO: 6}]
+      - [35, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 6, STR_LC_BS_AMMO: 6, STR_LC_HE_AMMO: 6, STR_LC_I_AMMO: 6}]
+      - [30, {STR_LMG: 1, STR_LMG_CLIP: 8}]
+      - [30, {STR_ASSAULT_CANNON: 1, STR_ASSAULT_CANNON_CLIP_AP: 6}]
+      - [20, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 6, STR_LC_BS_AMMO: 6, STR_LC_HE_AMMO: 6, STR_LC_I_AMMO: 6}]
+      - [20, {STR_HEAVY_CANNON: 1, STR_HC_AP_AMMO: 4, STR_HC_BS_AMMO: 4, STR_HC_HE_AMMO: 4, STR_HC_I_AMMO: 4}]
+      - [20, {STR_AUTO_CANNON: 1, STR_AC_AP_AMMO: 4, STR_AC_BS_AMMO: 4, STR_AC_HE_AMMO: 4, STR_AC_I_AMMO: 4}]
+      - [30, {STR_MGL: 1, STR_MGL_CLIP: 6, STR_MGL_CLIP_SMOKE: 6, STR_MGL_CLIP_FLASHBANG: 6}]
+      - [30, {STR_STINGRAY_MISSILE: 8, STR_CANNON_ROUNDS_X50: 4}]
+    listOrder: 220040
   - name: STR_TECH_PARTS_PACK
     category: STR_LOOT
     requires:
@@ -1004,7 +1021,7 @@ manufacture:
       - [20, {STR_HIGH_TECH_PARTS: 30}]
     listOrder: 220040
   - name: STR_CREDIT_CARD
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_CREDIT_CARD_BREACHING
     stats:
@@ -1016,7 +1033,7 @@ manufacture:
     cost: -22000
     listOrder: 220040
   - name: STR_CREDIT_CARD_SILVER
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_CREDIT_CARD
     stats:
@@ -1028,7 +1045,7 @@ manufacture:
     cost: -47000
     listOrder: 220040
   - name: STR_CREDIT_CARD_GOLD
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_CREDIT_CARD_BREACHING
     requiredItems:
@@ -1038,7 +1055,7 @@ manufacture:
     cost: -110000
     listOrder: 220040
   - name: STR_FACEHUGGER_REFINING
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_ZOMBIE_BIOLOGY
     stats:
@@ -1051,7 +1068,7 @@ manufacture:
     time: 520
     listOrder: 220040
   - name: STR_FACEHUGGER_CORPSE_REFINING
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_ZOMBIE_BIOLOGY
     stats:
@@ -1064,7 +1081,7 @@ manufacture:
     time: 320
     listOrder: 220040
   - name: STR_ZOMBIE_REFINING
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_ZOMBIE_BIOLOGY
     stats:
@@ -1077,7 +1094,7 @@ manufacture:
     time: 520
     listOrder: 220040
   - name: STR_ZOMBIE_CORPSE_REFINING
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_ZOMBIE_BIOLOGY
     stats:
@@ -1103,7 +1120,7 @@ manufacture:
     time: 520
     listOrder: 220040
   - name: STR_FAT_ZOMBIE_CORPSE_REFINING
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_ZOMBIE_BIOLOGY
     stats:
@@ -1115,9 +1132,8 @@ manufacture:
     space: 1
     time: 320
     listOrder: 220040
-
   - name: STR_CHUPACABRA_REFINING
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_CHUPACABRA_BIOLOGY
     stats:
@@ -1130,7 +1146,7 @@ manufacture:
     time: 520
     listOrder: 220040
   - name: STR_CHUPACABRA_CORPSE_REFINING
-    category: STR_REFINING
+    category: STR_LOOT
     requires:
       - STR_CHUPACABRA_BIOLOGY
     stats:
@@ -1143,3 +1159,16 @@ manufacture:
     time: 320
     listOrder: 220040
 
+#special
+  - name: STR_FAKE_AGENT_ID
+    category: STR_COVERT_TOOLS
+    requires:
+      - STR_MONSTER_HUNT_START
+    stats:
+      processing: 100
+    space: 1
+    time: 25
+    cost: 21000
+    producedItems:
+      STR_FAKE_AGENT_ID: 1
+    listOrder: 220100
