@@ -16,6 +16,7 @@ config:
     - STR_EXTRACTION
     #- STR_FRIENDLY_VIP
     - STR_ITEM_EXTRACTION
+    - STR_HACKING
     units.specialObjectiveType:
     - STR_FRIENDLY_VIP
     covertOperations.specialRule:
@@ -151,6 +152,8 @@ config:
     - events
     armor.allowedItemCategories:
     - itemCategories
+    research.randomEvents:
+    - events
   keyReferenceTypes:
     - covertOperations.instantSuccessDeployment
     - covertOperations.instantTrapDeployment

@@ -26,6 +26,7 @@ objects:
     alterationMCDNumber: 52
     alterationMCDRadius: 2
   - type: STR_OFFICE_DATA_TERMINAL
+    isMissionObjective: true
     hackingDefence: 30
     eventWeights:
       0:

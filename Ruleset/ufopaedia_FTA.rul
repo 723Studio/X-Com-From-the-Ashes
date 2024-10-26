@@ -2841,12 +2841,12 @@ ufopaedia:
       - STR_MIB_VIP_BODYGUARD
     text: STR_MIB_VIP_BODYGUARD_UFOPEDIA
     listOrder: 45180
-  - id: MIB_BANKER
+  - id: STR_MIB_BANKER_LORE1
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC
     requires:
-      - MIB_BANKER
-    text: MIB_BANKER_UFOPEDIA
+      - STR_MIB_BANKER_LORE1
+    text: STR_MIB_BANKER_LORE1_UFOPEDIA
     listOrder: 45190
   - id: STR_INFO_UPLOAD
     type_id: 7
@@ -2866,6 +2866,55 @@ ufopaedia:
       - STR_MAD_DOGE
     text: STR_MAD_DOGE_UFOPEDIA
     listOrder: 45200
+  - id: STR_CIVILLIAN_LORE1
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_CIVILLIAN_LORE1
+    text: STR_CIVILLIAN_LORE1_UFOPEDIA
+    listOrder: 45210
+  - id: STR_CIVILLIAN_LORE2
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_CIVILLIAN_LORE2
+    text: STR_CIVILLIAN_LORE2_UFOPEDIA
+    listOrder: 45210
+  - id: STR_OFFICE_BOSS_LORE1
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_OFFICE_BOSS_LORE1
+    text: STR_OFFICE_BOSS_LORE1_UFOPEDIA
+    listOrder: 45000
+  - id: STR_OFFICE_BOSS_LORE2
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_OFFICE_BOSS_LORE2
+    text: STR_OFFICE_BOSS_LORE2_UFOPEDIA
+    listOrder: 45000
+  - id: STR_OFFICE_BOSS_LORE3
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_OFFICE_BOSS_LORE3
+    text: STR_OFFICE_BOSS_LORE3_UFOPEDIA
+    listOrder: 45000
+  - id: STR_OFFICE_BOSS_LORE4
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_OFFICE_BOSS_LORE4
+    text: STR_OFFICE_BOSS_LORE4_UFOPEDIA
+    listOrder: 45000
+  - id: STR_OFFICE_BOSS_LORE5
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_OFFICE_BOSS_LORE5
+    text: STR_OFFICE_BOSS_LORE5_UFOPEDIA
+    listOrder: 45000
   - id: STR_CULT_GANGER
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC

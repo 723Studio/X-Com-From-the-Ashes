@@ -148,6 +148,8 @@ research:
     hidden: true
   - name: STR_STEAL_OSPREY_PREREQ
     hidden: true
+  - name: STR_CITY_OFFICE_OPERATION_PREREQ
+    hidden: true
   - name: STR_CULT_INVESTIGATION_PREREQ
     hidden: true
   - name: STR_CULT_INVESTIGATION
@@ -1828,7 +1830,8 @@ research:
       alienTech: 50
     needItem: true
     destroyItem: true
-    getOneFree: #TODO в случае простого распределения лора, иначе поменять
+    sequentialGetOneFree: true
+    getOneFree:
       - STR_CROP_CIRCLES_SAMPLE_RESULT_1
       - STR_CROP_CIRCLES_SAMPLE_RESULT_2
       - STR_CROP_CIRCLES_SAMPLE_RESULT_3
@@ -1842,34 +1845,25 @@ research:
     listOrder: 3020
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_1
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_2
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_3
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_4
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_5
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_6
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_7
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_8
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_9
     hidden: true
-    increaseCounter: [alienEarlyLore]
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_10
     hidden: true
-    increaseCounter: [alienEarlyLore]
+
 
 #Prisoner interrogation research
   - name: STR_RECRUIT_CIVILIAN_PRISONERS
@@ -2058,24 +2052,76 @@ research:
       STR_PRISONER_INTERROGATIONS:
         - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
     listOrder: 6110
-  - name: MIB_BANKER
+  - name: STR_MIB_BANKER
+    lookup: STR_VIP
     hidden: true
-    spawnedEvent: STR_MIB_BANKER_ACCOUNTS
+    randomEvents: 
+      STR_MIB_BANKER_ACCOUNTS1: 100
+      STR_MIB_BANKER_ACCOUNTS2: 100
+      STR_MIB_BANKER_ACCOUNTS3: 100
     getOneFree:
-      - STR_PRISONER_INTERROGATIONS #TODO - add more lore
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_MIB_BANKER_LORE1 #TODO add more
+    listOrder: 6120
+  - name: STR_MIB_BANKER_LORE1
+    hidden: true
+  - name: STR_MIB_VIP #TODO
+    lookup: STR_VIP
+    hidden: true
+    spawnedEvent: STR_MIB_VIP
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    listOrder: 6120
+  - name: STR_OFFICE_BOSS
+    lookup: STR_VIP
+    hidden: true
+    randomEvents:
+      STR_OFFICE_BOSS_EVENT1: 50
+      STR_OFFICE_BOSS_EVENT2: 30
+      STR_OFFICE_BOSS_EVENT3: 15
+      STR_OFFICE_BOSS_EVENT4: 5
+    getOneFree:
+      - STR_PRISONER_INTERROGATIONS
+    getOneFreeProtected:
+      STR_PRISONER_INTERROGATIONS:
+        - STR_OFFICE_BOSS_LORE1
+        - STR_OFFICE_BOSS_LORE2
+        - STR_OFFICE_BOSS_LORE3
+        - STR_OFFICE_BOSS_LORE4
+        - STR_OFFICE_BOSS_LORE5
+    listOrder: 6120
+  - name: STR_OFFICE_BOSS_LORE1
+    hidden: true
+  - name: STR_OFFICE_BOSS_LORE2
+    hidden: true
+  - name: STR_OFFICE_BOSS_LORE3
+    hidden: true
+  - name: STR_OFFICE_BOSS_LORE4
+    hidden: true
+  - name: STR_OFFICE_BOSS_LORE5
+    hidden: true
+  - name: STR_VIP
+    hidden: true
     getOneFreeProtected:
       STR_PRISONER_INTERROGATIONS:
         - STR_OFFICIALS_RECRUITING_PREREQ
     listOrder: 6120
-  - name: STR_MIB_VIP
+  - name: STR_CIVILLIAN
     hidden: true
-    spawnedEvent: STR_MIB_BANKER_ACCOUNTS
     getOneFree:
-      - STR_PRISONER_INTERROGATIONS #TODO - add more lore
+      - STR_PRISONER_INTERROGATIONS
     getOneFreeProtected:
       STR_PRISONER_INTERROGATIONS:
-        - STR_OFFICIALS_RECRUITING_PREREQ
+        - STR_RECRUIT_CIVILIAN_PRISONERS_PREREQ
+        - STR_CIVILLIAN_LORE1
+        - STR_CIVILLIAN_LORE2
     listOrder: 6120
+  - name: STR_CIVILLIAN_LORE1
+    hidden: true
+  - name: STR_CIVILLIAN_LORE2
+    hidden: true
 
 #Cultists
   - name: STR_CULT_GANGER

@@ -675,7 +675,8 @@ units:
     aggression: 0
     canSurrender: true
     pickUpWeaponsMoreActively: 0
-  - type: STR_MIB_OFFICE_MANAGER
+  - &STR_MIB_OFFICE_MANAGER
+    type: STR_MIB_OFFICE_MANAGER
     refNode: *MIB_PROCURED_CIVILIAN
     roles: [-1]
     armor: STR_MIB_OFFICE_MANAGER_ARMOR
@@ -702,7 +703,8 @@ units:
         - STR_CASH_PACK
         - STR_SHOTGUN_SHELLS_BS
       - - STR_CREDIT_CARD_GOLD
-  - type: STR_MIB_OFFICE_SECURITY
+  - &STR_MIB_OFFICE_SECURITY
+    type: STR_MIB_OFFICE_SECURITY
     refNode: *MIB_PROCURED_CIVILIAN
     roles: [0]
     stats:
@@ -732,25 +734,23 @@ units:
     prisoner: STR_MIB_OFFICE_SECURITY
     value: -15
     aggression: 3
-  - type: STR_MIB_OFFICE_WORKER
+  - &STR_MIB_OFFICE_WORKER
+    type: STR_MIB_OFFICE_WORKER
     refNode: *MIB_PROCURED_CIVILIAN
     roles: [-1]
     armor: STR_MIB_OFFICE_WORKER_ARMOR
     prisoner: STR_MIB_OFFICE_WORKER
-  - type: STR_MIB_VIP
+  - &STR_MIB_VIP
+    type: STR_MIB_VIP
     refNode: *MIB_PROCURED_CIVILIAN
     roles: [-1]
     armor: STR_MIB_VIP_ARMOR
     prisoner: STR_MIB_VIP
     value: 60
     pickUpWeaponsMoreActively: 1
-  - type: MIB_BANKER
-    refNode: *MIB_PROCURED_CIVILIAN
-    roles: [-1]
-    armor: STR_MIB_VIP_ARMOR
-    prisoner: STR_MIB_VIP #TODO - no difference for now
-    value: 30
-    pickUpWeaponsMoreActively: 1
+  - type: STR_MIB_BANKER
+    refNode: *STR_MIB_VIP
+    prisoner: STR_MIB_BANKER
   - type: STR_MIB_VIP_BODYGUARD
     refNode: *MIB_PROCURED_CIVILIAN
     roles: [0]
@@ -782,6 +782,20 @@ units:
     value: 10
     aggression: 4
     pickUpWeaponsMoreActively: 1
+
+  - type: STR_OFFICE_WORKER
+    refNode: *STR_MIB_OFFICE_WORKER
+    prisoner: STR_OFFICE_WORKER
+  - type: STR_OFFICE_MANAGER
+    refNode: *STR_MIB_OFFICE_MANAGER
+    prisoner: STR_OFFICE_MANAGER
+  - type: STR_OFFICE_SECURITY
+    refNode: *STR_MIB_OFFICE_SECURITY
+    prisoner: STR_OFFICE_SECURITY
+  - type: STR_OFFICE_BOSS
+    refNode: *STR_MIB_VIP
+    prisoner: STR_OFFICE_BOSS
+    value: 20
 
 #Cultists
   - type: STR_CULT_GANGER

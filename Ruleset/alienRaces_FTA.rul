@@ -50,7 +50,7 @@ alienRaces:
       - STR_MIB_OFFICE_SECURITY # 4 - Navigator
       - STR_MIB_OFFICE_WORKER # 5 - Soldier
       - STR_MIB_VIP_BODYGUARD # 6 - Terrorist 1
-      - MIB_BANKER # 7 - Terrorist 2
+      - STR_MIB_BANKER # 7 - Terrorist 2
       - STR_FREE_SPOT # 8 - Special Guest 1
       - STR_FREE_SPOT # 9 - Heavy Trooper / Underwater Terrorist 1
       - STR_FREE_SPOT # 10 - Assault Trooper / Underwater Terrorist 2
@@ -65,14 +65,13 @@ alienRaces:
       - [STR_MIB_OFFICE_SECURITY] # 4 - Navigator
       - [STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_WORKER, STR_MIB_OFFICE_MANAGER] # 5 - Soldier
       - [STR_MIB_VIP_BODYGUARD] # 6 - Terrorist 1
-      - [MIB_BANKER] # 7 - Terrorist 2
+      - [STR_MIB_BANKER] # 7 - Terrorist 2
       - [STR_FREE_SPOT] # 8 - Special Guest 1
       - [STR_FREE_SPOT] # 9 - Heavy Trooper / Underwater Terrorist 1
       - [STR_FREE_SPOT] # 10 - Assault Trooper / Underwater Terrorist 2
       - [STR_FREE_SPOT] # 11 - Special Guest 2 / Non-Combatant 1
       - [STR_FREE_SPOT] # 12 - Non-Combatant 2
       - [STR_FREE_SPOT] # 13 - Special Guest 3
-
   - id: STR_MIB
     raceType: 1
     members:
@@ -131,7 +130,7 @@ alienRaces:
       - [STR_OFFICE_BOSS] # 1 - Leader
       - [STR_FREE_SPOT] # 2 - Engineer
       - [STR_FREE_SPOT] # 3 - scientist!
-      - [STR_MIB_OFFICE_SECURITY] # 4 - Navigator
+      - [STR_OFFICE_SECURITY] # 4 - Navigator
       - [STR_OFFICE_WORKER, STR_OFFICE_WORKER, STR_OFFICE_WORKER, STR_OFFICE_WORKER, STR_OFFICE_MANAGER] # 5 - Soldier
       - [STR_FREE_SPOT] # 6 - Terrorist 1
       - [STR_FREE_SPOT] # 7 - Terrorist 2

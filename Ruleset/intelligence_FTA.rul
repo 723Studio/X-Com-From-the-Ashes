@@ -64,11 +64,18 @@ intelligence:
         disabledByResearch: STR_MIB_CLUE_EVENT_5
         eventScripts: [mibClue]
         finalStage: false
+      - stageName: cityOffice
+        odds: 20
+        requireRolls: 1
+        requiredResearch: STR_HACKING_COMPUTER
+        #disabledByResearch: STR_MIB_HQ_DESTROYED
+        eventScripts: [cityOfficeScript]
+        finalStage: false
       - stageName: mibRandom
         odds: 30
         requireRolls: 1
         #disabledByResearch: STR_MIB_HQ_DESTROYED
-        eventScripts: [mibClue]
+        eventScripts: [mibRandom]
         finalStage: false
       - stageName: mibConvoyRaid
         odds: 20

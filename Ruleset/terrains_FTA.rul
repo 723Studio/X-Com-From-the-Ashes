@@ -3238,6 +3238,20 @@ terrains:
             mixed: true
             itemList: [STR_CASH_PACK_BIG, STR_BRIEFCASE_CASH, STR_BRIEFCASE_CASH, STR_BRIEFCASE_CASH, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_GOLD_BAR, STR_GOLD_BAR] #FIXME more variations here pls
 
+  - name: OFFICE_PARKING
+    mapDataSets:
+      - BLANKS
+      - URBAN_ROADS2
+      - OFFICE_PARKING
+    mapBlocks:
+    #railroad
+      - name: OFFICEPARKING00
+        width: 20
+        length: 10
+      - name: OFFICEPARKING01
+        width: 20
+        length: 10
+
   - name: MIB_SEWERS
     mapDataSets:
       - BLANKS

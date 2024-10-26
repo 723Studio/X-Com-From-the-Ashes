@@ -379,7 +379,6 @@ prisoners:
     startingCooperation: -10
     interrogation:
       unlockResearches: [STR_MIB_OFFICE_WORKER]
-      #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
       baseResistance: 30
     recruiting:
@@ -407,13 +406,41 @@ prisoners:
     contain:
       funds: -800
       cooperationChange: 5
+  - type: STR_MIB_BANKER
+    startingCooperation: -5
+    interrogation:
+      unlockResearches: [STR_MIB_BANKER]
+      baseResistance: 10
+      diesAfter: true
+    recruiting:
+      requiredResearch: STR_TROLLIUM #TODO - consider if worth putting something here
+    torture:
+      difficulty: 20
+      loyaltyChange: 10
+      moraleChange: 30
+      cooperationChange: 100
+      eventChance: 60
+      eventWeights: #TODO - add more content pls
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 30
+          STR_RANDOM_TORTURE_EVENT_4: 30
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 1
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 30
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 80
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 100
+    contain:
+      funds: -1000
+      cooperationChange: 5
   - type: STR_MIB_VIP
     startingCooperation: -5
     interrogation:
       unlockResearches: [STR_MIB_VIP]
-      #requiredResearch: STR_INTEL_STATUS_REPORT
-      diesAfter: false
       baseResistance: 10
+      diesAfter: true
     recruiting:
       requiredResearch: STR_TROLLIUM #TODO - consider if worth putting something here
     torture:
@@ -579,7 +606,7 @@ prisoners:
       diesAfter: false
       baseResistance: 40
     recruiting:
-      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      requiredResearch: STR_MILITARY_RECRUITING
       spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
     torture:
@@ -611,7 +638,7 @@ prisoners:
       diesAfter: false
       baseResistance: 50
     recruiting:
-      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      requiredResearch: STR_MILITARY_RECRUITING
       spawnedSoldierRule: STR_RECRUITED_MALE
       difficulty: 70
     torture:
@@ -825,4 +852,127 @@ prisoners:
       cooperationChange: 5
       requiredResearch: STR_TODOIUM
     damageOverTime: 1
-# Resistance - do I even need it?
+
+#Civillians
+  - type: STR_OFFICE_WORKER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_CIVILLIAN]
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR_RECRUITED_MALE
+      difficulty: 60
+    torture:
+      difficulty: 30
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 120
+      eventChance: 40
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 40
+          STR_RANDOM_TORTURE_EVENT_2: 50
+          STR_RANDOM_TORTURE_EVENT_3: 60
+          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+  - type: STR_OFFICE_SECURITY
+    startingCooperation: -20
+    interrogation:
+      unlockResearches: [STR_ARMY_FIELD_SOLDIER]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 40
+    recruiting:
+      requiredResearch: STR_MILITARY_RECRUITING
+      spawnedSoldierRule: STR_RECRUITED_MALE
+      difficulty: 70
+    torture:
+      difficulty: 50
+      loyaltyChange: 20
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 40
+          STR_RANDOM_TORTURE_EVENT_4: 50
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+  - type: STR_OFFICE_MANAGER
+    startingCooperation: -10
+    interrogation:
+      unlockResearches: [STR_CIVILLIAN]
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
+      spawnedSoldierRule: STR_RECRUITED_MALE
+      difficulty: 60
+    torture:
+      difficulty: 30
+      loyaltyChange: 25
+      moraleChange: 30
+      cooperationChange: 120
+      eventChance: 40
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 40
+          STR_RANDOM_TORTURE_EVENT_2: 50
+          STR_RANDOM_TORTURE_EVENT_3: 60
+          STR_RANDOM_TORTURE_EVENT_4: 70
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 15
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 3
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+  - type: STR_OFFICE_BOSS
+    startingCooperation: -5
+    interrogation:
+      unlockResearches: [STR_OFFICE_BOSS]
+      baseResistance: 10
+    recruiting:
+      requiredResearch: STR_TROLLIUM #TODO - consider if worth putting something here
+    torture:
+      difficulty: 20
+      loyaltyChange: 10
+      moraleChange: 30
+      cooperationChange: 100
+      eventChance: 60
+      eventWeights: #TODO - add more content pls
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 30
+          STR_RANDOM_TORTURE_EVENT_4: 30
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 80
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 80
+          STR_RANDOM_TORTURE_EVENT_FUNDS_5: 30
+          STR_RANDOM_TORTURE_EVENT_FUNDS_6: 10
+    contain:
+      funds: -1000
+      cooperationChange: 5

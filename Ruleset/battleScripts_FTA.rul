@@ -470,6 +470,39 @@ battleScripts:
           title: STR_MIB_HIDEOUT_MINE
           content: STR_MIB_HIDEOUT_SMALL_MINE_DESCRIPTION
 
+  - type: smallOffice
+    commands:
+    - type: spawnUnit #med
+      executionChances: 40
+      maxDifficulty: 3
+      packSize: 4
+      randomPackSize: true
+      startTurn: 7
+      unitSide: 1
+      minAlarmLevel: 3
+      #spawnNodeRanks: [8]
+      spawnBlocks: [SOUTH]
+      unitSet: [ARMY_FIELD_OFFICER_SPAWN]
+    - type: spawnUnit #sh
+      executionChances: 70
+      minDifficulty: 4
+      packSize: 5
+      randomPackSize: true
+      startTurn: 4
+      unitSide: 1
+      minAlarmLevel: 3
+      spawnBlocks: [SOUTH]
+      unitSet: [ARMY_FIELD_OFFICER_SPAWN]
+    - type: showMessage
+      maxRuns: 1
+      variable: alarm
+      minAlarmLevel: 3
+      startTurn: 0
+      messages:
+        0:
+          title: STR_POLICE_INCOMING
+          content: STR_POLICE_INCOMING_CONTENT
+
   # - type: TEST_SCRIPT
   #   commands:
   #   - type: showMessage

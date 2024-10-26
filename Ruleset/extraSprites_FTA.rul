@@ -1110,6 +1110,12 @@ extraSprites:
     height: 200
     files:
       0: Resources/Backgrounds/FOREST_DARK.png
+  - type: NUAR_OFFICE_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/NUAR_OFFICE_BACKGROUND.png
 
 #enemies
   - type: UFOPEDIA_IMG_MIB_AGENT_CPAL

@@ -5148,7 +5148,7 @@ items:
     flatRate: false
     attraction: 5
     hackingHp: 20
-    hackingTu: 30
+    hackingTu: 40
     LOSRequired: true
     #experienceTrainingMode: 19 - hacking experince is hardcoded
     listOrder: 48150
@@ -5833,7 +5833,7 @@ items:
     flatRate: false
     attraction: 5
     hackingHp: 15
-    hackingTu: 35
+    hackingTu: 45
     LOSRequired: true
     #experienceTrainingMode: 19 - hacking experince is hardcoded
     listOrder: 48150
@@ -6540,7 +6540,7 @@ items:
     handSprite: 842
     invWidth: 1
     invHeight: 1
-    stackSize: 20
+    stackSize: 10
     recoveryPoints: 1
     listOrder: 31080
   - type: STR_CASH_PACK_BIG
@@ -6555,7 +6555,7 @@ items:
     handSprite: 842
     invWidth: 1
     invHeight: 1
-    stackSize: 20
+    stackSize: 5
     recoveryPoints: 3
     listOrder: 31080
   - type: STR_BRIEFCASE_CASH

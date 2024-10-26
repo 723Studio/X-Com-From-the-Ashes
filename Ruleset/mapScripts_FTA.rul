@@ -1336,11 +1336,10 @@ mapScripts:
         size: [2, 2, 1]
       - type: ceiling
         blocks: [2, 5]
-        size: [2, 2, 1]
+        size: [2, 2, 3]
     - type: addBlock
-      executions: 2
-      terrain: URBAN_ROADS
-      groups: [2]
+      size: [2, 1]
+      terrain: OFFICE_PARKING
 
   # - type: TEST_SCRIPT
   #   commands:

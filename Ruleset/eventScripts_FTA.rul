@@ -101,6 +101,26 @@ eventScripts:
   - type: callOfDutyScript_SH
     refNode: *callOfDutyScript
     firstMonth: 3
+    executionOdds: 5
+    minDifficulty: 4
+  - &cityOfficeScript
+    type: cityOfficeScript
+    eventWeights:
+      0:
+        STR_CALL_OF_DUTY_SOLDIER: 100
+        STR_CALL_OF_DUTY_AGENT: 70
+        STR_CALL_OF_DUTY_PILOT: 50
+        STR_CALL_OF_DUTY_ENGINEER: 30
+        STR_CALL_OF_DUTY_SCIENTIST: 10
+    researchTriggers:
+      STR_COVERT_OPERATIONS: true
+      STR_COMMUNICATION: true
+      STR_HACKING_COMPUTER: true
+    firstMonth: 1
+    executionOdds: 5
+    maxDifficulty: 3
+  - type: cityOfficeScript_SH
+    refNode: *callOfDutyScript
     executionOdds: 2
     minDifficulty: 4
 
@@ -302,6 +322,11 @@ eventScripts:
     firstMonth: 0
     executionOdds: 100
     allowedProcessor: 3 #OTHER_SCRIPT
+  - type: cityOfficeIntelScript
+    refNode: *cityOfficeScript
+    firstMonth: 0
+    executionOdds: 100
+    allowedProcessor: 3 #OTHER_SCRIPT
 
   - type: intelNetworkingScript
     eventWeights:
@@ -479,8 +504,9 @@ eventScripts:
     spawnGap: 60
   - type: chocolateFactory
     oneTimeSequentialEvents: [STR_CHOCOLATE_FACTORY_1]
-    firstMonth: 0
-    executionOdds: 35
+    firstMonth: 1
+    lastMonth: 3
+    executionOdds: 5
   - type: chocolateFactoryBought
     eventWeights:
       0:
@@ -495,8 +521,9 @@ eventScripts:
     executionOdds: 100
   - type: stonksStart
     oneTimeSequentialEvents: [STR_STONKS_START]
-    firstMonth: 0
-    executionOdds: 30
+    firstMonth: 4
+    lastMonth: 8
+    executionOdds: 5
   - type: stonks
     eventWeights:
       0:

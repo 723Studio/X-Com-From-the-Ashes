@@ -805,7 +805,7 @@ alienDeployments:
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_CLIP
             - STR_HEAVY_PISTOL_EXP_CLIP
-      - alienRank: 7 #MIB_BANKER
+      - alienRank: 7 #STR_MIB_BANKER
         lowQty: 1
         highQty: 1
         dQty: 0
@@ -840,18 +840,18 @@ alienDeployments:
             - STR_PISTOL
             - STR_PISTOL_CLIP
             - STR_CREDIT_CARD_GOLD
-            - STR_BRIEFCASE_CASH
+            - STR_MONEY_BAG
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
             - STR_CREDIT_CARD_GOLD
-            - STR_BRIEFCASE_CASH
+            - STR_MONEY_BAG
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
             - STR_PISTOL_CLIP
             - STR_CREDIT_CARD_GOLD
-            - STR_BRIEFCASE_CASH
+            - STR_MONEY_BAG
           -
             - STR_PISTOL
             - STR_PISTOL_CLIP
@@ -915,7 +915,7 @@ alienDeployments:
     turnLimit: 20
     chronoTrigger: 1
     data:
-      - alienRank: 1 #STR_MIB_SCIENTIST, FIXME - replace with MIB Leader
+      - alienRank: 1 #STR_MIB_SCIENTIST, #TODO - replace with MIB Leader
         lowQty: 1
         highQty: 1
         dQty: 0
@@ -4180,7 +4180,6 @@ alienDeployments:
             - STR_MILITARY_RIFLE_CLIP
             - STR_MILITARY_RIFLE_CLIP
             - STR_GRENADE
-
   - type: STR_INFILTRATING_MILITARY_RND
     race: STR_ARMY
     width: 30
@@ -4645,7 +4644,6 @@ alienDeployments:
             - STR_CHEMPISTOL
             - STR_CHEMPISTOL_CLIP
             - STR_CHEMPISTOL_CLIP 
-
   - type: STR_MIB_SMALL_GROUND_CONVOY
     race: STR_MIB
     width: 50
@@ -4738,7 +4736,6 @@ alienDeployments:
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
-
   - type: STR_MIB_MEDIUM_GROUND_CONVOY
     race: STR_MIB
     width: 50
@@ -5099,29 +5096,180 @@ alienDeployments:
         percentageOutsideUfo: 100
         itemSets: *callOfDutyMiBLoadout 
 
-  - type: STR_OFFICE_CITIZENS
-    race: STR_MIB
+  - type: STR_CITY_OFFICE
+    race: STR_OFFICE_CITIZENS
     width: 20
     length: 30
-    height: 3
+    shade: 5
+    height: 5
     keepCraftAfterFailedMission: true #in case will be used as mission site
+    objectiveComplete: [STR_DATA_GATHERED, 150]
+    extendedObjectiveType: STR_HACKING
     briefing:
       textOffset: -16
-      background: MIB_BACKGROUND.SCR #
+      background: NUAR_OFFICE_BACKGROUND.SCR
       showTarget: false
-      desc: STR_CALL_OF_DUTY_BRIEFING #
+      desc: STR_CITY_OFFICE_BRIEFING
     terrains:
       - OFFICE_SMALL
     script: smallOffice
+    battleScript: smallOffice
     data:
-      - alienRank: 5 #STR_MIB_AGENT
+      - alienRank: 5 #STR_OFFICE_WORKER
+        lowQty: 10
+        medQty: 12
+        highQty: 14
+        dQty: 3
+        extraQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            - STR_CASH_PACK
+          -
+            - STR_CASH_PACK
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_CREDIT_CARD
+          -
+            - STR_CREDIT_CARD
+          -
+            - STR_CREDIT_CARD_SILVER
+          -
+            - STR_CASH_PACK
+          -
+            []
+          -
+            []
+      - alienRank: 4 #STR_OFFICE_SECURITY
         lowQty: 3
-        medQty: 5
-        highQty: 7
-        dQty: 1
-        percentageOutsideUfo: 100
-        itemSets: *callOfDutyMiBLoadout 
-
+        medQty: 4
+        highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_CREDIT_CARD
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_POLICE_BATON
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+            - STR_CASH_PACK
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+            - STR_CREDIT_CARD
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_POLICE_BATON
+            - STR_CREDIT_CARD
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_POLICE_BATON
+            - STR_CASH_PACK
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+            - STR_CREDIT_CARD
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_CREDIT_CARD
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+            - STR_CREDIT_CARD
+      - alienRank: 1 #STR_OFFICE_BOSS
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_CASH_PACK_BIG
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_CASH_PACK_BIG
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_CASH_PACK_BIG
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_CASH_PACK
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_CREDIT_CARD_GOLD
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_CREDIT_CARD_GOLD
+            - STR_BRIEFCASE_CASH
 
 #traps 
   - type: STR_MIB_CHASING_TRAP

@@ -965,12 +965,17 @@ en-US:
   MIB_TRAP_ESCAPE_MAP_ALARM_CONTENT: "Local police frequencies broadcast a report of dangerous criminals fleeing from pursuit. The supposed search location corresponds to our current position. We need to get out of here as soon as possible!"
   MILITARY_RND_ALARM_TITLE: "Alarm raised!"
   MILITARY_RND_ALARM_CONTENT: "The base is on alert, and reinforcements from adjacent sectors will be arriving soon. We need to evacuate our soldiers as quickly as possible!"
+  STR_POLICE_INCOMING: "Police on Alert"
+  STR_POLICE_INCOMING_CONTENT: "Local police communications have been intercepted, interceptor forces are converging on the operation, and an APB has been issued for our agents with orders to make an arrest. We must act quickly!"
   STR_LOCALS_TRAP: "Cover blown"
   STR_LOCALS_TRAP_BRIEFING: "The cover for our agents is compromised and the locals are livid. We need to evacuate our people immediately before the locals and police get to them. Get to the car parked at the roadside - it is our only chance of survival.{NEWLINE}To complete the mission place the soldiers on the green tiles and click on the 'Abort Mission' icon."
   STR_TERMINAL: "Terminal"
   STR_FARM_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
   STR_FOREST_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
   STR_CROP_CIRCLES_SAMPLING_SITE: "Crop Circle Sampling Site"
+  STR_CITY_OFFICE: "City Office"
+  STR_CITY_OFFICE_BRIEFING: We have carefully planned everything - our operatives will enter the office building through the roof, they will get there through a temporary structure built to repair the adjacent building. The server room is somewhere in the building, we need to access the terminal. Caution is required - if our agents are discovered, the security guards will surely call for backup and local police. Try to avoid unnecessary civilian casualties - we have no reason to suspect ordinary employees of aiding and abetting alien agents. Retreat from the area of the operation is supposed to be carried out by the same route, through the roof. To end the mission, place the soldiers on the green tiles and click on the 'Abort Mission' icon."
+  STR_DATA_GATHERED: "DATA GATHERED"
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
   STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals and attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
@@ -991,6 +996,9 @@ en-US:
   STR_RESISTANCE_CELL_CREATION_DESCRIPTION: "We need to help the Resistance establish a new cell in the vicinity of M.I.B. headquarters. Despite the great risk, this could greatly help us in preparing for the coming assault."
   STR_RESISTANCE_CELL_CREATION_SUCCESS_DESCRIPTION: "Resistance agents managed to set up a new cell near the M.I.B. headquarters. Now we can count on their support."
   STR_RESISTANCE_CELL_CREATION_FAILURE_DESCRIPTION: "We failed to organize a new Resistance cell close to the M.I.B. headquarters. We were to meet at the safe house, but as we approached it there was an agreed upon sign. A flower on the windowsill - signifying danger, a complete failure of the operation. Apparently, one of the Resistance agents had managed to put it up before the Men in Black raided the place."
+  STR_CITY_OFFICE_OPERATION: "Suspicious Organization"
+  STR_CITY_OFFICE_OPERATION_DESCRIPTION: "We suspect a private commercial organization in relation with M.I.B. They're quite conspiratorial, and their internal corporate network is impossible to penetrate from the outside. Our agents are confident that by infiltrating the building where the organization's headquarters are located, we can obtain valuable information. The operation will require a security breach, so both high hacking skills and the appropriate equipment will be required for this to be successful."
+  STR_CITY_OFFICE_OPERATION_FAIL_DESCRIPTION: "Upon closer examination of the activities of our suspected organization, we found no evidence of any connection to M.I.B. activity. It seems that the original information was wrong and we were led astray."
   STR_MIB_CONVOY_OPERATION: "M.I.B. Activity Investigation"
   STR_MIB_CONVOY_OPERATION_DESCRIPTION: "We need to follow up on an important lead in the M.I.B. investigation. We must proceed with caution."
   STR_MIB_CONVOY_OPERATION_SUCCESS_DESCRIPTION: "We've managed to find a weak spot in our enemy's operations! The M.I.B. agents are driving in a small convoy of several vehicles, carrying important assets. We're tracking their movements, if our assault team is dispatched now, they can be intercepted while on the move.{NEWLINE}{ALT}New mission available."
@@ -1028,6 +1036,7 @@ en-US:
   STR_MONSTER_HUNT_TROPIC_DESERT_DESCRIPTION: "We should proceed to investigation of the monsters' activity. It is unknown what the creatures that are our objective are capable of, so we must be prepared for anything. The area of investigation is in the desert enviroment. We need to gather information about these monsters, hunt them down, and neutralize the threat.{NEWLINE}{ALT}Any equipment is available for the operation."
   STR_MONSTER_HUNT_FAILURE_DESCRIPTION: "Our operatives failed in their mission; they could not find any sign of the mysterious monster terrorizing locals. Alas, we can only wait for the next report of paranormal activity - we have done all we can here."
   STR_CALL_OF_DUTY_OPERATION_DESCRIPTION: "A former X-COM employee has agreed to rejoin our ranks. We need to organize a covert transfer of the objective person to our base. According to our information, M.I.B. agents have organized surveillance on the objective."
+  STR_CALL_OF_DUTY_OPERATION_FAIL_DESCRIPTION: "We are late. On arriving at the rendezvous point, we found no one. When we checked the last location of the former X-COM employee, we found signs of kidnapping. It is highly likely that our former colleague was kidnapped by M.I.B. agents who have taken him by surprise. Unfortunately, there's no trace to continue the search."
   STR_IMPROVISED_MANUFACTURING_SUPPLIMENT: "Supplies for Improvised Manufacturing"
   STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_DESCRIPTION: "Our agents need to organize a covert network of diversified shipments of equipment and raw materials to our base for improvised manufacturing. To do this, we need to enter into agreements with suppliers through proxies and set up covert supply chains. It is important that the established logistics network maintains a high level of secrecy for a long period of time."
   STR_IMPROVISED_MANUFACTURING_SUPPLIMENT_SUCCESS_DESCRIPTION: "We managed to achieve all our goals - all the necessary equipment is at the base, our engineers are already unpacking it and preparing for work."
@@ -1172,7 +1181,7 @@ en-US:
   STR_CALL_OF_DUTY_PILOT: "Call of Duty"
   STR_CALL_OF_DUTY_ENGINEER: "Call of Duty"
   STR_CALL_OF_DUTY_SCIENTIST: "Call of Duty"
-  STR_SMALL_OFFICE: "Small Office"
+
   STR_CALL_OF_DUTY_EVENT_DESCRIPTION: "Due to lack of funding in the past, we had to lay off an excellent staff member. We have managed to covertly contact the former employee and have gotten an agreement to rejoin X-COM. We need to organize a covert operation for covert transportation to our base.{NEWLINE}{ALT}New covert operation available."
   STR_MYSTERIOUS_SPONSOR_50000: "Mysterious Sponsor"
   STR_MYSTERIOUS_SPONSOR_50000_DESCRIPTION: "$50,000 was deposited into one of our clandestine accounts. It is unclear whether this is a banking error, a well-wisher who desires to remain anonymous, or an insidious attempt of the Men in Black to get to our accounts. Either way, we must remain vigilant."
@@ -1194,22 +1203,24 @@ en-US:
   STR_OLD_CROP_CIRCLES_DESCRIPTION: "Some crop circles were reported, but apparently our opponents got to them before we even learned of them. Whatever had been there to uncover, it is now beyond our grasp - forever...{NEWLINE}Loyalty score>{ALT} -20"
   STR_UFO_SIGNS: "UFO Signs"
   STR_UFO_SIGNS_DESCRIPTION: "We get scattered information about the observation from the ground of a strange phenomenon in the upper atmosphere, published in the 'yellow press'. Apparently, this is evidence of an alien ship passing through. Unfortunately, we were not able to react to this event in time.{NEWLINE}Loyalty score>{ALT} -15"
+  STR_CITY_OFFICE_OPERATION_ENABLER: "M.I.B. Investigation lead."
+  STR_CITY_OFFICE_OPERATION_ENABLER_DESCRIPTION: "We've received an important lead in the Men in Black investigation. It would be wise to pursue it - to further the inquiry, we need to send our agents out to gather further evidence.{NEWLINE}{ALT}New covert operations available."
   STR_MIB_CONVOY_OPERATION_ENABLER: "M.I.B. Investigation lead."
   STR_MIB_CONVOY_OPERATION_ENABLER_DESCRIPTION: "We've received an important lead in the Men in Black investigation. It would be wise to pursue it - to further the inquiry, we need to send our agents out to gather further evidence.{NEWLINE}{ALT}New covert operations available."
   STR_MIB_HIDEOUT_OPERATION_ENABLER: "M.I.B. Investigation lead."
   STR_MIB_HIDEOUT_OPERATION_ENABLER_DESCRIPTION: "We've received an important lead in the Men in Black investigation. It would be wise to pursue it - to further the inquiry, we need to send our agents out to gather further evidence.{NEWLINE}{ALT}New covert operations available."
-  STR_MIB_CLUE_EVENT_1: "Опасная Астрономия"
+  STR_MIB_CLUE_EVENT_1: "Dangerous Astronomy"
   STR_MIB_CLUE_EVENT_1_DESCRIPTION: "We've managed to contact a radio astronomer being hunted by M.I.B. agents. She was able to detect a strange object at the L1 point of the Earth-Sun system by filtering out the reflected signal from the noise emitted by the Sun. From its signature, the object appeared to be at least several kilometers in diameter and composed of metal. She was preparing to publish the results, but someone deleted all the data from her work computer. She's in grave danger, and we've prepared a safe passage to base."
-  STR_MIB_CLUE_EVENT_2: #TODO
-  STR_MIB_CLUE_EVENT_2_DESCRIPTION: #TODO
+  STR_MIB_CLUE_EVENT_2: "Placeholder_name" #TODO
+  STR_MIB_CLUE_EVENT_2_DESCRIPTION: "MIB Clue lore bit here, pls..." #TODO
   STR_MIB_CLUE_EVENT_3: "Retired Pilot"
   STR_MIB_CLUE_EVENT_3_DESCRIPTION: "A U.S. Air Force pilot on training flights from a military base in California in 1988 had several encounters with UFOs that he described as looking very much like alien craft. His reports to his superiors at the time faltered. After his retirement, he decided to write a book detailing his experiences. But the book was never published - strange events began to happen at the publishing house, perhaps he began to be watched by M.I.B. agents. Obviously, he is in mortal danger, and we have prepared a safe transfer for him to our base."
-  STR_MIB_CLUE_EVENT_4: #TODO
-  STR_MIB_CLUE_EVENT_4_DESCRIPTION: #TODO
+  STR_MIB_CLUE_EVENT_4: "Placeholder_name" #TODO
+  STR_MIB_CLUE_EVENT_4_DESCRIPTION: "MIB Clue lore bit here, pls..." #TODO
   STR_MIB_CLUE_EVENT_5: "The Alien Killer"
   STR_MIB_CLUE_EVENT_5_DESCRIPTION: "We've managed to contact a man who's being actively hunted by M.I.B. agents. He works as a logger and claims to have seen an alien ship landing in the woods. Moreover, he says that he managed to kill one of the aliens with bare hands! He describes this alien as follows - gray skin, short, with a large head and giant black eyes. While he was choking the alien, horrible pictures flashed before his eyes that made his blood run cold. Nevertheless, our hero was not intimidated and did not loosen his grip. He will soon arrive at our base."
-  STR_MIB_RANDOM_EVENT_1: #TODO
-  STR_MIB_RANDOM_EVENT_1_DESCRIPTION: #TODO
+  STR_MIB_RANDOM_EVENT_1: "Placeholder_name" #TODO
+  STR_MIB_RANDOM_EVENT_1_DESCRIPTION: "MIB random lore bit here, pls..." #TODO
   STR_LOW_FUNDS_EVENT: "Running out of money"
   STR_LOW_FUNDS_EVENT_DESCRIPTION: "Commander, the Quartermaster's report came in.{NEWLINE}{NEWLINE}{NEWLINE}Funds>{ALT} +35500{NEWLINE}Loyalty score>{ALT} -10"
   STR_LOW_FUNDS_EVENT_UFOPEDIA: "Monthly funding for the XCOM project is no longer available and our bank accounts are almost empty. We may not have enough money to maintain the base. I've checked our supplies, and I've managed to collect some junk to sell. However, the proceeds won't last long. You need to keep a close eye on the contents of our warehouses and try to sell everything but the essentials to keep positive funding."
@@ -1278,17 +1289,28 @@ en-US:
   STR_RESISTANCE_GIFT_4_SOLDIERS_DESCRIPTION: "Your success and high morale in the X-Com inspired four Resistance agents to join our ranks."
   STR_RESISTANCE_GIFT_5_SOLDIERS: "Support from the Resistance"
   STR_RESISTANCE_GIFT_5_SOLDIERS_DESCRIPTION: "Your success and high morale in the X-Com inspired five Resistance agents to join our ranks."
-  STR_MIB_BANKER_ACCOUNTS: "M.I.B. Secret Bank Accounts"
-  STR_MIB_BANKER_ACCOUNTS_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. With his help we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+2 832 548"
-  
+  STR_MIB_BANKER_ACCOUNTS1: "M.I.B. Secret Bank Accounts"
+  STR_MIB_BANKER_ACCOUNTS1_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. Analyzing the sources of funds flowing into this account allowed us to better understand the pattern in the funding patterns of M.I.B. activity. And of course we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+2 832 548{NEWLINE}Loyalty score> {ALT}+200{NEWLINE}{ALT}The knowledge about M.I.B. has been slightly improved."
+  STR_MIB_BANKER_ACCOUNTS2: "M.I.B. Secret Bank Accounts"
+  STR_MIB_BANKER_ACCOUNTS2_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. Analyzing the sources of funds flowing into this account allowed us to better understand the pattern in the funding patterns of M.I.B. activity. And of course we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+2 573 396{NEWLINE}Loyalty score> {ALT}+200{NEWLINE}{ALT}The knowledge about M.I.B. has been slightly improved."
+  STR_MIB_BANKER_ACCOUNTS3: "M.I.B. Secret Bank Accounts"
+  STR_MIB_BANKER_ACCOUNTS3_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. Analyzing the sources of funds flowing into this account allowed us to better understand the pattern in the funding patterns of M.I.B. activity. And of course we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+3 587 823{NEWLINE}Loyalty score> {ALT}+250{NEWLINE}{ALT}The knowledge about M.I.B. has been slightly improved."
+  STR_OFFICE_BOSS_EVENT1: "STR_OFFICE_BOSS_EVENT1" #TODO
+  STR_OFFICE_BOSS_EVENT1_DESCRIPTION: "STR_OFFICE_BOSS_EVENT1_DESCRIPTION"
+  STR_OFFICE_BOSS_EVENT2: "STR_OFFICE_BOSS_EVENT2" #TODO
+  STR_OFFICE_BOSS_EVENT2_DESCRIPTION: "STR_OFFICE_BOSS_EVENT2_DESCRIPTION"
+  STR_OFFICE_BOSS_EVENT3: "STR_OFFICE_BOSS_EVENT3" #TODO
+  STR_OFFICE_BOSS_EVENT3_DESCRIPTION: "STR_OFFICE_BOSS_EVENT3_DESCRIPTION"
+  STR_OFFICE_BOSS_EVENT4: "STR_OFFICE_BOSS_EVENT4" #TODO
+  STR_OFFICE_BOSS_EVENT4_DESCRIPTION: STR_OFFICE_BOSS_EVENT4_DESCRIPTION""
   STR_MILITARY_DATA_TERMINAL_EVENT_1: "Results of the military terminal hack"
-  STR_MILITARY_DATA_TERMINAL_EVENT_1_DESCRIPTION: #TODO funds: +600000
+  STR_MILITARY_DATA_TERMINAL_EVENT_1_DESCRIPTION: "Lore text here pls...{NEWLINE}Funds income> {ALT}+600 000" #TODO
   STR_MILITARY_DATA_TERMINAL_EVENT_2: "Results of the military terminal hack"
-  STR_MILITARY_DATA_TERMINAL_EVENT_2_DESCRIPTION: #TODO funds: +1120000
+  STR_MILITARY_DATA_TERMINAL_EVENT_2_DESCRIPTION: "Lore text here pls...{NEWLINE}Funds income> {ALT}+1 120 000" #TODO
   STR_MILITARY_DATA_TERMINAL_EVENT_3: "Results of the military terminal hack"
-  STR_MILITARY_DATA_TERMINAL_EVENT_3_DESCRIPTION: #TODO funds: +1350000
+  STR_MILITARY_DATA_TERMINAL_EVENT_3_DESCRIPTION: "Lore text here pls...{NEWLINE}Funds income> {ALT}+1 350 000" #TODO
   STR_MILITARY_DATA_TERMINAL_EVENT_4: "Results of the military terminal hack"
-  STR_MILITARY_DATA_TERMINAL_EVENT_4_DESCRIPTION: #TODO funds: +2100000
+  STR_MILITARY_DATA_TERMINAL_EVENT_4_DESCRIPTION: "Lore text here pls...{NEWLINE}Funds income> {ALT}+2 100 000" #TODO
 
   STR_MIB_HIDEOUT_TERMINAL_EVENT_1: "Results of the M.I.B. terminal hack"
   STR_MIB_HIDEOUT_TERMINAL_EVENT_1_DESCRIPTION: #TODO
@@ -1394,25 +1416,25 @@ en-US:
   STR_CHOCOLATE_PARANOID_DESCRIPTION: "The figurehead's hunch proved wrong as the MIB never showed up. It was certainly a risk but it paid off and made our people trust in your leadership even more.{NEWLINE}Loyalty score> {ALT}+50"
   #torture events
   STR_RANDOM_TORTURE_EVENT_1: "Useless wimp"
-  STR_RANDOM_TORTURE_EVENT_1_DESCRIPTION: "Turns out this prisoner had surprisingly low pain tolerance. As soon as the first few lacerations were applied, the subject hollered. They immediately agreed to tell us everything - which sounded good. Unfortunately, 'everything' was confusing and contradictory. The poor sod was just trying to avoid pain. A pretty natural reaction, to be fair.{NEWLINE}That scream was something else, though! I feel chills even now just remembering it. And, unfortunately, so do other nearby personnel.{NEWLINE}Loyalty score> {ALT}-10"   #Loyalty -10
+  STR_RANDOM_TORTURE_EVENT_1_DESCRIPTION: "Turns out this prisoner had surprisingly low pain tolerance. As soon as the first few lacerations were applied, the subject hollered. They immediately agreed to tell us everything - which sounded good. Unfortunately, 'everything' was confusing and contradictory. The poor sod was just trying to avoid pain. A pretty natural reaction, to be fair.{NEWLINE}That scream was something else, though! I feel chills even now just remembering it. And, unfortunately, so do other nearby personnel.{NEWLINE}Loyalty score> {ALT}-10"
   STR_RANDOM_TORTURE_EVENT_2: "Unnerving look"
-  STR_RANDOM_TORTURE_EVENT_2_DESCRIPTION: "So that last prisoner was something else, really. During whole interrogation he didn't spoke a word, only stared at our interrogators while they were doing their job.{NEWLINE}And that stare, it really reached deep in our soul. Honestly, i dont want to talk about that experience ever again, Commander. {NEWLINE}Loyalty score> {ALT}-25" #Loyalty -25
+  STR_RANDOM_TORTURE_EVENT_2_DESCRIPTION: "So that last prisoner was something else, really. During whole interrogation he didn't spoke a word, only stared at our interrogators while they were doing their job.{NEWLINE}And that stare, it really reached deep in our soul. Honestly, i dont want to talk about that experience ever again, Commander. {NEWLINE}Loyalty score> {ALT}-25"
   STR_RANDOM_TORTURE_EVENT_3: "Beria's legacy"
-  STR_RANDOM_TORTURE_EVENT_3_DESCRIPTION: "It appears that grandfather of one of out interrogators have served in NKVD during Stalin's regime and has told his grandsom some of his ... working methods. They didnt help to get new information from prisoner, but turned him into bloody mess.{NEWLINE}I had a talk with interrogator, but some of our soldiers are questioning our methods now.{NEWLINE}Loyalty score> {ALT}-50" #Loyalty -50
+  STR_RANDOM_TORTURE_EVENT_3_DESCRIPTION: "It appears that grandfather of one of out interrogators have served in NKVD during Stalin's regime and has told his grandsom some of his ... working methods. They didnt help to get new information from prisoner, but turned him into bloody mess.{NEWLINE}I had a talk with interrogator, but some of our soldiers are questioning our methods now.{NEWLINE}Loyalty score> {ALT}-50"
   STR_RANDOM_TORTURE_EVENT_4: "Car Battery Enthusiast"
-  STR_RANDOM_TORTURE_EVENT_4_DESCRIPTION: "Well, this one could have gone much better. Seems that our interrogator decided to test the rumored 'car battery and nipples' approach to torture. Of course, that didn't work quite as intended: skin was breached, and current turned from nonexistent to heart-stopping instantly. The scream was short, but very loud. Now, I know you didn't authorise this, Commander, but some of our people don't - and are now doubting your sanity.{NEWLINE}Loyalty score> {ALT}-100" #Loyalty -100
+  STR_RANDOM_TORTURE_EVENT_4_DESCRIPTION: "Well, this one could have gone much better. Seems that our interrogator decided to test the rumored 'car battery and nipples' approach to torture. Of course, that didn't work quite as intended: skin was breached, and current turned from nonexistent to heart-stopping instantly. The scream was short, but very loud. Now, I know you didn't authorise this, Commander, but some of our people don't - and are now doubting your sanity.{NEWLINE}Loyalty score> {ALT}-100"
   STR_RANDOM_TORTURE_EVENT_FUNDS_1: "Interesting stash"
-  STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "That prisoner died during interrogation, so we decided to cut him open because he gave us strange readings during medical examination. And inside his stomach area we found some gold and silver jewelry. While they are certainlly gonna be useful for our funds, process of extracting them was not a pleasant one.{NEWLINE}Oh, and interrogation room now stinks to the point of causing your eyes to tear.{NEWLINE}Loyalty score> {ALT}-5{NEWLINE}Funds> {ALT}+25k" #Loyalty -5, Funds +25k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_2: "" #TODO
-  STR_RANDOM_TORTURE_EVENT_FUNDS_2_DESCRIPTION: "" #Loyalty -10, Funds +50k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_3: "" #TODO
-  STR_RANDOM_TORTURE_EVENT_FUNDS_3_DESCRIPTION: "" #Loyalty -15, Funds +84k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_4: "" #TODO
-  STR_RANDOM_TORTURE_EVENT_FUNDS_4_DESCRIPTION: "" #Loyalty -20, Funds +125k
-  STR_RANDOM_TORTURE_EVENT_FUNDS_5: "" #TODO
-  STR_RANDOM_TORTURE_EVENT_FUNDS_5_DESCRIPTION: "" #Loyalty -25, Funds +174k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_1_DESCRIPTION: "That prisoner died during interrogation, so we decided to cut him open because he gave us strange readings during medical examination. And inside his stomach area we found some gold and silver jewelry. While they are certainlly gonna be useful for our funds, process of extracting them was not a pleasant one.{NEWLINE}Oh, and interrogation room now stinks to the point of causing your eyes to tear.{NEWLINE}Loyalty score> {ALT}-5{NEWLINE}Funds> {ALT}+25k"
+  STR_RANDOM_TORTURE_EVENT_FUNDS_2: "Placeholder_name" #TODO
+  STR_RANDOM_TORTURE_EVENT_FUNDS_2_DESCRIPTION: "Some lore here pls...{NEWLINE}Loyalty score> {ALT}-10{NEWLINE}Funds> {ALT}+43k"
+  STR_RANDOM_TORTURE_EVENT_FUNDS_3: "Placeholder_name" #TODO
+  STR_RANDOM_TORTURE_EVENT_FUNDS_3_DESCRIPTION: "Some lore here pls...{NEWLINE}Loyalty score> {ALT}-15{NEWLINE}Funds> {ALT}+84k"
+  STR_RANDOM_TORTURE_EVENT_FUNDS_4: "Placeholder_name" #TODO
+  STR_RANDOM_TORTURE_EVENT_FUNDS_4_DESCRIPTION: "Some lore here pls...{NEWLINE}Loyalty score> {ALT}-20{NEWLINE}Funds> {ALT}+125k"
+  STR_RANDOM_TORTURE_EVENT_FUNDS_5: "Placeholder_name" #TODO
+  STR_RANDOM_TORTURE_EVENT_FUNDS_5_DESCRIPTION: "Some lore here pls...{NEWLINE}Loyalty score> {ALT}-25{NEWLINE}Funds> {ALT}+174k"
   STR_RANDOM_TORTURE_EVENT_FUNDS_6: "Black gold successor"
-  STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION: "So last prisoner didn't knew anything useful, but we checked his background and it turns out that his parents are actually very rich people in Arabian Emirates. So we did only thing that we thought of at that moment - we ransomed him for a hefty sum of money.{NEWLINE}Looking back now i must say - that was not our brightest idea. People are questioning our goals now.{NEWLINE}Loyalty score> {ALT}-30{NEWLINE}Funds> {ALT}+240k" #Loyalty -30, Funds +240k
+  STR_RANDOM_TORTURE_EVENT_FUNDS_6_DESCRIPTION: "So last prisoner didn't knew anything useful, but we checked his background and it turns out that his parents are actually very rich people in Arabian Emirates. So we did only thing that we thought of at that moment - we ransomed him for a hefty sum of money.{NEWLINE}Looking back now i must say - that was not our brightest idea. People are questioning our goals now.{NEWLINE}Loyalty score> {ALT}-30{NEWLINE}Funds> {ALT}+240k"
   STR_MIB_TORTURE_EVENT_CONVOY_LEAD: "Lead on the M.I.B. convoy"
   STR_MIB_TORTURE_EVENT_CONVOY_LEAD_DESCRIPTION: "A strong adrenaline rush from the pain caused by the torture broke through the mental barrier that kept the M.I.B. agent from confessing. He was involved in the preparation of the transportation of a valuable shipment. We need to verify this information, because if it's true, we could be looking at an unprecedented opportunity.{NEWLINE}New covert operation available."
 #enemies
@@ -1468,7 +1490,11 @@ en-US:
   STR_XCOM_EX_COMMANDER_CORPSE: "Former X-COM Commander Corpse"
   STR_XCOM_EX_COMMANDER_EXAMINATION: "Former X-COM Commander Examination"
   STR_XCOM_EX_COMMANDER_EXAMINATION_UFOPEDIA: "Apparently, the former Commander's mind is still under alien control, despite the loss of consciousness and prolonged imprisonment. He refuses to communicate and shows aggression at every opportunity. All of our interrogation methods have proven ineffective and the method aliens use to maintain control is still unclear to us. During the physical examination there were no signs of any surgical intervention, with all medical tests within the normal range (except for adrenaline). Safekeeping can be problematic as, for example, he had a chance to bite off a finger of a former colleague which he took, successfully."
+  STR_OFFICE_WORKER: "Office Worker"
+  STR_OFFICE_MANAGER: "Office Manager"
+  STR_OFFICE_SECURITY: "Office Securuty"
   STR_MIB_OFFICE_ENGINEER: "Office Engineer"
+  STR_OFFICE_BOSS: "Office Boss"
   STR_MIB_OFFICE_ENGINEER_CORPSE: "Office Engineer corpse"
   STR_MIB_OFFICE_ENGINEER_UFOPEDIA: "The engineer who maintains the building of the financial organization covering the M.I.B. headquarters did not tell us anything particularly important, except for one curious fact - there were unusually powerful directional transmitters on the roof of the building for an unknown purpose."
   STR_MIB_OFFICE_WORKER: "Office Worker"
@@ -1483,10 +1509,22 @@ en-US:
   STR_MIB_VIP_BODYGUARD: "Bodyguard"
   STR_MIB_VIP_BODYGUARD_CORPSE: "Bodyguard corpse"
   STR_MIB_VIP_BODYGUARD_UFOPEDIA: "This tough guy had spent the last two years as personal security guard and driver for the director of the office that served as a front for M.I.B. headquarters. He always wondered why his boss was so afraid and avoided internal security agents. These guys are weird in general - always silent, wearing the same black suits and always wearing sunglasses."
-  MIB_BANKER: "Banker"
+  STR_VIP: "V.I.P."
+  STR_MIB_BANKER: "Banker"
   STR_MIB_VIP: "V.I.P."
   STR_MIB_VIP_CORPSE: "V.I.P. corpse"
-  MIB_BANKER_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts."
+  STR_MIB_BANKER_LORE1: "M.I.B. V.I.P. Interrogation Report #01127"
+  STR_MIB_BANKER_LORE1_UFOPEDIA: "During the interrogation, the director of the financial organization told us how he was involved in organizing the cover-up and financing of the M.I.B. headquarters. He was convinced that it was a top-secret government organization, they had managed to bribe and intimidate him, so the banker did not ask too many questions. Through a sophisticated manipulation of the financial flows, he was able to transfer substantial funds to the M.I.B. accounts. He knew nothing about the M.I.B. headquarters under his bank building, and had never been in the so-called 'restricted area'. When we tried to find out the details of his recruitment, his attempts to recall the details gave him a severe migraine. He began to confuse his thoughts and speech became slurred. Soon his health began to deteriorate rapidly - the heart rate increased up to 200 beats, and 7 minutes later he died of a massive heart attack."
+  STR_OFFICE_BOSS_LORE1: "STR_OFFICE_BOSS_LORE" #TODO
+  STR_OFFICE_BOSS_LORE1_UFOPEDIA: "STR_OFFICE_BOSS_LORE_UFOPEDIA" #TODO
+  STR_OFFICE_BOSS_LORE2: "STR_OFFICE_BOSS_LORE" #TODO
+  STR_OFFICE_BOSS_LORE2_UFOPEDIA: "STR_OFFICE_BOSS_LORE_UFOPEDIA" #TODO
+  STR_OFFICE_BOSS_LORE3: "STR_OFFICE_BOSS_LORE" #TODO
+  STR_OFFICE_BOSS_LORE3_UFOPEDIA: "STR_OFFICE_BOSS_LORE_UFOPEDIA" #TODO
+  STR_OFFICE_BOSS_LORE4: "STR_OFFICE_BOSS_LORE" #TODO
+  STR_OFFICE_BOSS_LORE4_UFOPEDIA: "STR_OFFICE_BOSS_LORE_UFOPEDIA" #TODO
+  STR_OFFICE_BOSS_LORE5: "STR_OFFICE_BOSS_LORE" #TODO
+  STR_OFFICE_BOSS_LORE5_UFOPEDIA: "STR_OFFICE_BOSS_LORE_UFOPEDIA" #TODO
   STR_OFFICE_CITIZENS: "Office Citizens"
   STR_CULT_BANDITS: "Cult Bandits"
   STR_CULT_GANGER: "Cult Ganger"
@@ -2486,29 +2524,29 @@ en-US:
   STR_FOREST_CATTLE_SAMPLE_RESULT_5: "Biological Sample Study Report #450161"
   STR_FOREST_CATTLE_SAMPLE_RESULT_5_UFOPEDIA: "We found the body of a female rabbit that had died in a painful labor. One cub was able to get out by rupturing the uterus and uterine canal, but the second one remained in the uterus, having died during labor. Apparently, the rabbit was artificially inseminated, and the cubs are extremely altered genetically.{NEWLINE}In the first place, they clearly developed in the body much longer than normal, allowing them to become more robust and be born much more adapted to independent living. In the second place, their lungs have a more complex structure and larger size, and their alveoli are more efficient at trapping oxygen. This combination would allow them to breathe air with much less oxygen and more carbon dioxide."
   STR_ADVANCED_HEALING: "Advanced Treatments"
-  STR_ADVANCED_HEALING_UFOPEDIA: "We have done an excellent job, finally managed to synthesize the full analog of the found alien substance in our laboratory!{NEWLINE}It has all the properties of the original - shows excellent antiseptic effect against both bacteria, fungi and viruses.{NEWLINE}We have conducted the minimum necessary (and possible under current conditions) tests on laboratory mice and on volunteers, which proved that the resulting drug is not only extremely effective, but also has no toxicity. We can confidently state that it is completely safe for humans and can be used for healing various types of wounds and burns, including infected ones, as a pre- and post-operative antiseptic and even for treatment of hands of medical personnel before surgery. At the same time, there is an acceleration of healing time and reduction of tissue scarring. This will significantly increase the efficiency of medical services at our base, resulting in reduced recovery time for soldiers.{NEWLINE}{ALT}Wound recovery is reduced by 10%."
+  STR_ADVANCED_HEALING_UFOPEDIA: "We have done an excellent job, finally managed to synthesize the full analog of the found alien substance in our laboratory!{NEWLINE}It has all the properties of the original - shows excellent antiseptic effect against both bacteria, fungi and viruses.{NEWLINE}We have conducted the minimum necessary (and possible under current conditions) tests on laboratory mice and on volunteers, which proved that the resulting drug is not only extremely effective, but also has no toxicity. We can confidently state that it is completely safe for humans and can be used for healing various types of wounds and burns, including infected ones, as a pre- and post-operative antiseptic and even for treatment of hands of medical personnel before surgery. At the same time, there is an acceleration of healing time and reduction of tissue scarring. This will significantly increase the efficiency of medical services at our base, resulting in reduced recovery time for soldiers.{NEWLINE}{ALT}Wound recovery time is reduced by 10%."
   STR_CATTLE_MUTILATION_AGENDA: "Cattle Mutilation Agenda"
   STR_CATTLE_MUTILATION_AGENDA_UFOPEDIA: "We conducted a meta-analysis of all previously collected data and came to the following conclusion. The collected materials exclude all versions of the causes of cattle mutilation, except for the actions of extraterrestrials. Apparently, they are actively studying the Earth's flora and fauna, conducting genetic and population experiments. Extremely disturbing are the indications that they are conducting experiments to establish mass mind control and to adapt alien flora and breed new species of animals adapted to conditions different from those on Earth.{NEWLINE}The ultimate goals of these studies are unclear, it is unlikely that the aliens are driven by mere scientific curiosity. They may be working on scenarios to transform the Earth's ecosystem. Are they capable of doing that? And if so, what will become of our civilization? How long could it take, and can we stop them? It seems there are more questions than before our research began...{NEWLINE}{ALT}Alien knowledge has been improved.{ALT}{NEWLINE}It doesn't seem likely that the study of new samples of alien mutilated animals will fundamentally increase our understanding of the alien's methods and objectives, but the samples collected at the evidence sites may be valuable to our allies. Perhaps they may be able to glimpse something we've missed."
-  STR_CROP_CIRCLES_SAMPLE_RESULT_1:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_1_UFOPEDIA: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_2: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_2_UFOPEDIA: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_3:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_3_UFOPEDIA: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_4:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_4_UFOPEDIA: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_5:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_5_UFOPEDIA:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_6:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_6_UFOPEDIA:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_7:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_7_UFOPEDIA:
-  STR_CROP_CIRCLES_SAMPLE_RESULT_8: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_8_UFOPEDIA: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_9: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_9_UFOPEDIA: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_10: 
-  STR_CROP_CIRCLES_SAMPLE_RESULT_10_UFOPEDIA: 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_1: "Blue Goo Sample Study Record #12"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_1_UFOPEDIA: "A sample of blue substance collected from the suspected landing site of an alien ship behaves very unusually. Its density gradually changes within a wide range, becoming for a short time, then less than air (from which the sample begins to float), then more than lead. Its composition is a complex organic polymer that constantly changes its conformation due to the auto-catalytic reactions. Unfortunately, due to the constant degradation of the substance, apparently caused by contact with oxygen from the air at the extraction site, the sample quickly disintegrates into its constituent parts, losing its original properties. We need to collect more samples to continue our research."
+  STR_CROP_CIRCLES_SAMPLE_RESULT_2: "Blue Goo Sample Study Record #00001"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_2_UFOPEDIA: "During the extraction process, the sample was immediately placed in an inert helium environment, which slowed down its chemical degradation. Detailed spectroscopic analysis of the sample revealed the presence of heavy radioactive metals (mainly isotopes of plutonium-241 and thorium-234) working in polymers as active centers for reconfiguration. In addition, we detected radioactive isotopes of fluorine-18 and gallium-68 within the polymer chains. The total alpha radiation level of the sample does not exceed 0.1 sievert, nevertheless, it is necessary to apply appropriate safety measures against hazardous ionizing radiation when working with the sample. Radioactive decay and corresponding isotope transformations may be the reason for the evolution of the chemical system of the sample, but cannot explain the fantastic changes in its physical properties."
+  STR_CROP_CIRCLES_SAMPLE_RESULT_3: "Blue Goo Sample Study Record #00012"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_3_UFOPEDIA: "The isotopic composition of the researched sample does not differ much from the previous one. Short values of half-lives of some radioactive components that play an important role in the conformation of organic polymers can indirectly indicate that the sample is 'fresh' from the physicochemical point of view. Radioactive decay of some isotopes leads to extinction of vibrational changes in such physical properties of the sample as density and viscosity. In the process of studying the macro-properties of the sample, we noticed another interesting feature - when the sample is stretched, ions in its fluid begin to polarize, due to which a significant amount of static electricity accumulates in the sample. When closing the ends with a copper conductor, an electric current discharge occurred, which caused an incomprehensible chain reaction that destroyed the polymer structure of the entire sample."
+  STR_CROP_CIRCLES_SAMPLE_RESULT_4: "Blue Goo Sample Study Record #00056"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_4_UFOPEDIA: "This sample does not change density as much as the previous ones, but it changes thermal conductivity and hardness greatly, and the chemical composition contains a significant amount of sodium-24 and phosphorus-32 isotopes. Due to the rapidity and constant variability of the chemical reaction cascade of a complex and heterogeneous chemical polymer, it is extremely difficult to isolate the key processes that change the physical properties of the sample. It is impossible to identify neither patterns nor any strict regularities in the turbulent chaos. And the rapidity of the processes leading to polymer degradation do not allow for careful measurements. Perhaps, when studying a considerable number of collected samples, it will be possible to apply methods of statistical analysis, but so far we just limit ourselves to fixing the whole variety of observed effects."
+  STR_CROP_CIRCLES_SAMPLE_RESULT_5: "Blue Goo Sample Study Record #00102"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_5_UFOPEDIA: "We have obtained a new sample of the mysterious substance found at the landing site of the alien ship. This time we divided the collected material into several parts and placed the samples in different conditions, varying in temperature and pressure. Not surprisingly, the polymerization reactions proceeded completely differently in the samples, but it is not yet clear how much contribution was made by the difference in external conditions and the random factor of radioactive decay of short-lived isotopes. It may take years to analyze the maelstrom of physicochemical reactions we observed. The nature and purpose of the observed matter is still unclear to us. It is equally likely to be a substance for terraforming the Earth, and the waste products of the alien engine. It is hard to realize that just as a forest badger cannot understand the nature of a puddle of brake fluid on the side of the road, so we cannot understand the nature of this substance."
+  STR_CROP_CIRCLES_SAMPLE_RESULT_6: "Blue Goo Sample Study Record #00001"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_6_UFOPEDIA: "Blue Goo lore here pls..." #TODO
+  STR_CROP_CIRCLES_SAMPLE_RESULT_7: "Blue Goo Sample Study Record #00001"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_7_UFOPEDIA: "Blue Goo lore here pls..." #TODO
+  STR_CROP_CIRCLES_SAMPLE_RESULT_8: "Blue Goo Sample Study Record #00001"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_8_UFOPEDIA: "Blue Goo lore here pls..." #TODO
+  STR_CROP_CIRCLES_SAMPLE_RESULT_9: "Blue Goo Sample Study Record #00001"
+  STR_CROP_CIRCLES_SAMPLE_RESULT_9_UFOPEDIA: "Blue Goo lore here pls..." #TODO
+  STR_CROP_CIRCLES_SAMPLE_RESULT_10: "Blue Goo Sample Study Record #00001" 
+  STR_CROP_CIRCLES_SAMPLE_RESULT_10_UFOPEDIA: "Blue Goo lore here pls..." #TODO
   STR_RECRUIT_CIVILIAN_PRISONERS: "Recruitment of civilians"
   STR_RECRUIT_CIVILIAN_PRISONERS_UFOPEDIA: "The civilians who have been captured by our operatives are most often victims of circumstance, and if they assist the alien agents, they do so without conscious intent. Properly working with them, telling them about the real state of affairs and the imminent threat hanging over all of us, we could try to gain their support. Most of them have no special skills, but with proper military training, we can count on them in case of dire need.{NEWLINE}{ALT}We can recruit captured civilians."
   STR_CRIMINAL_RECRUITING: "Recruiting criminals"
@@ -2517,7 +2555,6 @@ en-US:
   STR_MILITARY_RECRUITING_UFOPEDIA: "The military we are capturing are not our implacable adversaries, but rather temporal conditions have put us on opposite sides of a confrontation. We can explain our motives to them and gain their support by providing irrefutable evidence of the global threat posed by the alien invaders and their minions. The military recruits have well-developed combat skills that will certainly be of use to us on the battlefield, and the officers may have advanced theoretical knowledge of tactics.{NEWLINE}{ALT}We can recruit captured militaries."
   STR_OFFICIALS_RECRUITING: "Recruitment of the elites"
   STR_OFFICIALS_RECRUITING_UFOPEDIA: "In the course of missions, we may capture a member of society's elite - an influential politician or businessman. They can be victims of insidious manipulations of M.I.B. agents, but as a rule they do not cooperate with aliens willingly. Once we have their support, they can provide us with invaluable assistance, including financial aid. There is no point in leaving them on the base, as long as they are completely loyal to us.{NEWLINE}{ALT}We can recruit captured elites."
-
 #UFOs
   STR_SMALL_SCOUT_EARLY: "Small Scout"
 
@@ -2949,7 +2986,6 @@ en-US:
   STR_CROP_CIRCLE_NO_LOOT: STR_CROP_CIRCLE_NO_LOOT
   STR_CROP_CIRCLE_LOOT: STR_CROP_CIRCLE_LOOT
   STR_CROP_CIRCLE_SAMPLING: STR_CROP_CIRCLE_SAMPLING
-  STR_CROP_CIRCLE_LOOT_AND_SAMPLING: STR_CROP_CIRCLE_LOOT_AND_SAMPLING
   STR_STRANGE_CREATURE: STR_STRANGE_CREATURE
   STR_INFECTOR_AUTOPSY: STR_INFECTOR_AUTOPSY
   STR_LIVE_INFECTOR: STR_LIVE_INFECTOR
@@ -3018,6 +3054,7 @@ en-US:
   STR_RESISTANCE_CELL_CREATION_PREREQ: STR_RESISTANCE_CELL_CREATION_PREREQ
   STR_RESISTANCE_CELL_CREATED: STR_RESISTANCE_CELL_CREATED
   STR_STEAL_OSPREY_PREREQ: STR_STEAL_OSPREY_PREREQ
+  STR_CITY_OFFICE_OPERATION_PREREQ: STR_CITY_OFFICE_OPERATION_PREREQ
   STR_CULT_INVESTIGATION_PREREQ: STR_CULT_INVESTIGATION_PREREQ
   STR_MONSTER_HUNT_START_PREREQ: STR_MONSTER_HUNT_START_PREREQ
   STR_MONSTER_HUNT_RUMORS_PREREQ: STR_MONSTER_HUNT_RUMORS_PREREQ
