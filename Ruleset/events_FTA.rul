@@ -75,6 +75,17 @@ events:
     timer: 0
     timerRandom: 0
     researchList: [STR_STEAL_OSPREY_PREREQ]
+  - name: STR_ASSETS_GATHERING_SUPPLIES_EVENT
+    description: STR_ASSETS_GATHERING_SUPPLIES_EVENT_DESCRIPTION
+    timer: 1440 # 1 day
+    timerRandom: 4320 # 3 days
+    researchList: [STR_ASSETS_GATHERING_SUPPLIES_PREREQ]
+  - name: STR_ASSETS_GATHERING_SUPPLIES_ENABLER
+    description: STR_ASSETS_GATHERING_SUPPLIES_EVENT_DESCRIPTION
+    timer: 7200 # 5 day
+    timerRandom: 34560 # 24 days
+    interruptResearch: STR_TODOIUM #FIXME - some milestone for midgame
+    removedCovertOperationsList: [STR_ASSETS_GATHERING_SUPPLIES]
   - name: STR_ABANDONED_BASE_DESPAWNED
     description: STR_ABANDONED_BASE_DESPAWNED_DESCRIPTION
     background: BACK01.SCR

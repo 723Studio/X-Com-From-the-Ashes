@@ -1371,6 +1371,38 @@ items:
     attraction: 15
     recoveryPoints: 4
     listOrder: 5140
+  - type: STR_CHEMPISTOL_CLIP
+    categories: [STR_CHEMICAL, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
+    requires:
+      - STR_CHEMPISTOL
+    size: 0.1
+    landOnly: true
+    costSell: 2900
+    weight: 3
+    bigSprite: 407
+    floorSprite: 407
+    hitSound: 19
+    hitAnimation: -1
+    power: 20
+    damageType: 8
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.2
+      ToArmor: 0.4
+      ToStun: 0.4
+      ToMorale: 2.0
+      ToTime: 0.5
+      SmokeThreshold: 1
+    clipSize: 4
+    costThrow:
+      energy: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 25
+    attraction: 15
+    recoveryPoints: 1
+    listOrder: 5150
   - type: STR_COIL_PISTOL
     categories: [STR_ALIEN_TECH, STR_MASS_DRIVER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE]
     requires:
@@ -1427,38 +1459,7 @@ items:
     armor: 30
     attraction: 15
     listOrder: 20430
-  - type: STR_CHEMPISTOL_CLIP
-    categories: [STR_CHEMICAL, STR_SMOKE, STR_PISTOLS, STR_CLIPS]
-    requires:
-      - STR_CHEMPISTOL
-    size: 0.1
-    landOnly: true
-    costSell: 2900
-    weight: 3
-    bigSprite: 407
-    floorSprite: 407
-    hitSound: 19
-    hitAnimation: -1
-    power: 20
-    damageType: 8
-    damageAlter:
-      IgnoreOverKill: false
-      ToArmorPre: 0.2
-      ToArmor: 0.4
-      ToStun: 0.4
-      ToMorale: 2.0
-      ToTime: 0.5
-      SmokeThreshold: 1
-    clipSize: 4
-    costThrow:
-      energy: 6
-    battleType: 2
-    invWidth: 1
-    invHeight: 1
-    armor: 25
-    attraction: 15
-    recoveryPoints: 1
-    listOrder: 5150
+
 #SMG
   - type: STR_MACHINE_PISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE]
@@ -6368,7 +6369,7 @@ items:
     recoveryPoints: 80
     listOrder: 31005
   - type: STR_MOTION_SCANNER_PROTOTYPE
-    categories: [STR_EVIDENCE]
+    categories: [STR_EVIDENCE, STR_CONCEALABLE]
     landOnly: true
     size: 0.1
     missionObjective: true
@@ -6396,7 +6397,7 @@ items:
     recoveryPoints: 100
     listOrder: 31006
   - type: STR_FLOPPY_SCIENTISTS_LOG
-    categories: [STR_EVIDENCE]
+    categories: [STR_EVIDENCE, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
     costSell: 150000 #Should be only sellable to VOID only or add research
@@ -6412,7 +6413,7 @@ items:
     recoveryPoints: 80
     listOrder: 31010
   - type: STR_FLOPPY_RESISTANCE
-    categories: [STR_LOOT]
+    categories: [STR_LOOT, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
     costSell: 55000
@@ -6475,7 +6476,7 @@ items:
     weight: 20
     bigSprite: 609
     floorSprite: 609
-    costSell: 24000
+    costSell: 18000
     tuThrow: 0
     battleType: 0
     armor: 18
@@ -6484,7 +6485,7 @@ items:
     recoveryPoints: 6
     listOrder: 31040
   - type: STR_CREDIT_CARD
-    categories: [STR_LOOT]
+    categories: [STR_LOOT, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
     costSell: 12000
@@ -6499,7 +6500,7 @@ items:
     recoveryPoints: 10
     listOrder: 31050
   - type: STR_CREDIT_CARD_SILVER
-    categories: [STR_LOOT]
+    categories: [STR_LOOT, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
     costSell: 25000
@@ -6514,7 +6515,7 @@ items:
     recoveryPoints: 12
     listOrder: 31060
   - type: STR_CREDIT_CARD_GOLD
-    categories: [STR_LOOT]
+    categories: [STR_LOOT, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
     costSell: 80000
@@ -6529,7 +6530,7 @@ items:
     recoveryPoints: 15
     listOrder: 31070
   - type: STR_CASH_PACK
-    categories: [STR_LOOT]
+    categories: [STR_LOOT, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
     costSell: 5000
@@ -6544,7 +6545,7 @@ items:
     recoveryPoints: 1
     listOrder: 31080
   - type: STR_CASH_PACK_BIG
-    categories: [STR_LOOT]
+    categories: [STR_LOOT, STR_CONCEALABLE]
     landOnly: true
     size: 0.01
     costSell: 50000

@@ -255,7 +255,7 @@ covertOperations:
   - name: STR_STEAL_OSPREY_OPERATION
     description: STR_STEAL_OSPREY_OPERATION_DESCRIPTION
     categories: [STR_NEGOTIATION, STR_DECEPTION, STR_ENGINEERING]
-    allowedRoles: *militaryRoles
+    allowedRoles: &militaryAndCivilRoles [0, 3, 4, 5]
     requires:
       - STR_STEAL_OSPREY_PREREQ
     soldiersMin: 4
@@ -267,11 +267,66 @@ covertOperations:
     allowedArmor: *StandardXcomArmors
     successDescription: STR_STEAL_OSPREY_OPERATION_SUCCESS_DESCRIPTION
     successScore: 100
-    successWeightedItemList:
-      STR_CRATED_OSPREY: 100
+    successItemsNames:
+      - [100, {STR_CRATED_OSPREY: 1}]
     failureDescription: STR_STEAL_OSPREY_OPERATION_FAILURE_DESCRIPTION
     failureScore: -200
     failureFunds: -42000
+
+  - name: STR_ASSETS_GATHERING_SUPPLIES
+    description: STR_ASSETS_GATHERING_DESCRIPTION
+    categories: [STR_ENGINEERING]
+    allowedRoles: *militaryAndCivilRoles
+    requires:
+      - STR_ASSETS_GATHERING_SUPPLIES_PREREQ
+    soldiersMin: 2
+    soldiersMax: 3
+    requiresBaseFunc: [INTEL]
+    baseChances: 70
+    danger: 1
+    costs: 100
+    allowedArmor: *StandardXcomArmors
+    successDescription: STR_ASSETS_GATHERING_SUPPLIES_SUCCESS_DESCRIPTION
+    successScore: 50
+    successEvent: STR_ASSETS_GATHERING_SUPPLIES_ENABLER
+    successItemsNames: 
+      - [10, {STR_SUPPLIES_1: 3}]
+      - [5, {STR_SUPPLIES_1: 5}]
+      - [5, {STR_TECH_PARTS_PACK: 2}]
+      - [10, {STR_TECH_PARTS_PACK: 3}]
+      - [5, {STR_CASH_PACK: 8}]
+      - [4, {STR_CASH_PACK_BIG: 2}]
+      - [3, {STR_BRIEFCASE_CASH: 1}]
+      - [1, {STR_MONEY_BAG: 1}]
+      - [2, {STR_GOLD_BAR: 1}]
+      - [1, {STR_GOLD_BAR: 2}]
+      - [5, {STR_JEWEL: 3}]
+      - [5, {STR_JEWEL: 5}]
+      - [1, {STR_ANCIENT_ARTIFACT: 1}]
+      - [8, {STR_DRUGS_PACK: 5}]
+      - [5, {STR_DRUGS_PACK: 9}]
+      - [2, {STR_DRUGS_PACK: 12}]
+    failureDescription: STR_ASSETS_GATHERING_FAILURE_DESCRIPTION
+    failureEvent: STR_ASSETS_GATHERING_SUPPLIES_ENABLER
+    failureItemsNames: #only items with considerable weight
+      - [10, {STR_SUPPLIES_1: 1}]
+      - [5, {STR_SUPPLIES_1: 2}]
+      - [5, {STR_METAL_SCRAPS: 8}]
+      - [5, {STR_METAL_SCRAPS: 19}]
+      - [5, {STR_METAL_SCRAPS: 27}]
+      - [5, {STR_METAL_SCRAPS: 36}]
+      - [5, {STR_METAL_SCRAPS: 42}]
+      - [5, {STR_METAL_SCRAPS: 49}]
+      - [5, {STR_METAL_SCRAPS: 53}]
+      - [5, {STR_METAL_SCRAPS: 61}]
+      - [10, {STR_TECH_PARTS_PACK: 1}]
+      - [5, {STR_TECH_PARTS_PACK: 2}]
+    trapChance: 30
+    instantTrapDeployment:
+      STR_ASSETS_GATHERING_TRAP_MIB: 10
+      STR_ASSETS_GATHERING_TRAP_BANDITS: 40
+      STR_ASSETS_GATHERING_TRAP_POLICE: 50     
+
   - name: STR_INFILTRATING_MILITARY_RND
     description: STR_INFILTRATING_MILITARY_RND_DESCRIPTION
     categories: [STR_INFILTRATION, STR_DECEPTION]

@@ -21,6 +21,13 @@ config:
     - STR_FRIENDLY_VIP
     covertOperations.specialRule:
     - STR_REGIONAL_HQ_DISCOVERY
+    covertOperations.categories:
+    - STR_INVESTIGATION
+    - STR_INFILTRATION
+    - STR_NEGOTIATION
+    - STR_DECEPTION
+    - STR_ENGINEERING
+    - STR_SCIENCE
     battleScripts.commands[].type:
     - spawnUnit
     - showMessage

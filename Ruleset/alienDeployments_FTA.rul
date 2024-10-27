@@ -5679,6 +5679,238 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets: *gangerMediumLoadout
 
+  - type: STR_ASSETS_GATHERING_TRAP_POLICE
+    race: STR_POLICE
+    width: 30
+    length: 30
+    height: 8
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR #TODO
+      showTarget: false
+      desc: STR_ASSETS_GATHERING_TRAP_POLICE_BRIEFING
+    terrains:
+      - URBAN_LOW
+      - URBAN
+      - URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_MALE_POLICE
+        lowQty: 2
+        medQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+          -
+            - STR_POLICE_PISTOL
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_PISTOL_CLIP
+            - STR_POLICE_BATON
+            - STR_CASH_PACK
+
+  - type: STR_ASSETS_GATHERING_TRAP_BANDITS
+    race: STR_BANDITS
+    width: 30
+    length: 30
+    height: 8
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR #TODO
+      showTarget: false
+      desc: STR_ASSETS_GATHERING_TRAP_BANDITS_BRIEFING
+    terrains:
+      - URBAN_LOW
+      - URBAN
+      - URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_BANDIT
+        lowQty: 3
+        medQty: 4
+        highQty: 7
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_BASEBALL_BAT
+          -
+            - STR_MACHETE
+            - STR_THROWING_KNIFE
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_HEAVY_REVOLVER
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_HEAVY_REVOLVER_DRUM
+            - STR_CASH_PACK
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_CASH_PACK
+            - STR_CASH_PACK
+          -
+            - STR_LEVER_ACTION_CARBINE
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_CASH_PACK_BIG
+          -
+            - STR_SAWED_OFF
+            - STR_SAWED_OFF
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_CASH_PACK_BIG
+          -
+            - STR_PUMP_ACTION_SHOTGUN
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_CASH_PACK
+            - STR_CASH_PACK
+            - STR_CASH_PACK
+
+  - type: STR_ASSETS_GATHERING_TRAP_MIB
+    race: STR_MIB
+    width: 30
+    length: 30
+    height: 8
+    briefing:
+      textOffset: -16
+      background: MIB_BACKGROUND.SCR
+      showTarget: false
+      desc: STR_ASSETS_GATHERING_TRAP_MIB_BRIEFING
+    terrains:
+      - URBAN_LOW
+      - URBAN
+      - URBAN_DAWN
+    script: callOfDuty3x3
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 2
+        medQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_PISTOL
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_PISTOL_EXP_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_FLASHBANG_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_SMOKE_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_PROXIMITY_GRENADE
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_SMOKE_GRENADE
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+
   # - type: STR_MIB_CHASING_INTRO
   #   race: STR_MIB
   #   width: 100

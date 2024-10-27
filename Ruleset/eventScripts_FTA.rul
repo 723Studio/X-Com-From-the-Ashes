@@ -316,6 +316,30 @@ eventScripts:
     minLoyalty: 200
     allowedProcessor: 2 #xcom
 
+  - type: mibstoryMilestone1
+    oneTimeSequentialEvents: [STR_MIB_STORY_MILESTONE_1_EVENT]
+    missionMarkerName: mibActivityKnowlege
+    counterMin: 1
+    counterMax: 10
+    allowedProcessor: 2 #xcom
+    executionOdds: 90
+
+  - &xcomAssetsGathgeringScript
+    type: xcomAssetsGathgeringScript
+    oneTimeSequentialEvents: [STR_ASSETS_GATHERING_SUPPLIES_ENABLER]
+    researchTriggers:
+      STR_COVERT_OPERATIONS: true
+      STR_TODOIUM: false #FIXME - some milestone for midgame
+    allowedProcessor: 2 #xcom
+    executionOdds: 80
+    maxDifficulty: 3
+    maxFunds: 70000
+  - type: xcomAssetsGathgeringScripttSH #extra SH copy
+    refNode: *xcomAssetsGathgeringScript
+    executionOdds: 10
+    minDifficulty: 4
+    maxFunds: 0
+
 #intel scripts
   - type: callOfDutyIntelScript
     refNode: *callOfDutyScript
