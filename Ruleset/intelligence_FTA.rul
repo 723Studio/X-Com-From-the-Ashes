@@ -10,9 +10,9 @@ intelligence:
       computers: 120
     listOrder: 100
     stages: #TODO add new radar sattelites event here, 4 more stages
-      - stageName: earlyGameUFOs
-        odds: 50
-        requireRolls: 1
+      - stageName: earlyGameUFOs #FIXME - delayed for alpha 3
+        odds: 1
+        requireRolls: 100
         # requiredResearch: STR_TODOIUM
         # disabledByResearch: STR_TROLLIUM
         requiresBaseFunc: [INTEL]
@@ -92,25 +92,25 @@ intelligence:
         # spawnMission: STR_TEST_MISSTION
         finalStage: false
 
-  - name: STR_CULT_ACTIVITY
-    description: STR_CULT_ACTIVITY_DESCRIPTION
-    cost: 400
-    costIncrease: 2
-    requiredResearch: STR_CULT_INVESTIGATION_PREREQ
-    specialRule: 0 #only stages
-    stats:
-      data: 80
-      computers: 120
-    listOrder: 300
-    stages:
-      - stageName: firstCultStage
-        odds: 20
-        requireRolls: 1
-        requiredResearch: STR_CULT_INVESTIGATION_PREREQ
-        # requiresBaseFunc: [INTEL]
-        # eventScripts: [testScript]
-        # spawnMission: STR_TEST_MISSTION
-        finalStage: false
+  # - name: STR_CULT_ACTIVITY #FIXME - delayed for alpha 3
+  #   description: STR_CULT_ACTIVITY_DESCRIPTION
+  #   cost: 400
+  #   costIncrease: 2
+  #   requiredResearch: STR_CULT_INVESTIGATION_PREREQ
+  #   specialRule: 0 #only stages
+  #   stats:
+  #     data: 80
+  #     computers: 120
+  #   listOrder: 300
+  #   stages:
+  #     - stageName: firstCultStage
+  #       odds: 20
+  #       requireRolls: 1
+  #       requiredResearch: STR_CULT_INVESTIGATION_PREREQ
+  #       # requiresBaseFunc: [INTEL]
+  #       # eventScripts: [testScript]
+  #       # spawnMission: STR_TEST_MISSTION
+  #       finalStage: false
 
   # - name: STR_MONSTERS_ACTIVITY
   #   description: STR_MONSTER_ACTIVITY_DESCRIPTION

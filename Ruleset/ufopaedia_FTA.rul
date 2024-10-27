@@ -2742,7 +2742,13 @@ ufopaedia:
       - STR_MIB_MEDIC_LORE5
     text: STR_MIB_MEDIC_LORE5_UFOPEDIA
     listOrder: 45130
-
+  - id: STR_TOOTHPASTE_PACKET
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_TOOTHPASTE_PACKET
+    text: STR_TOOTHPASTE_PACKET_UFOPEDIA
+    listOrder: 45130
   - id: STR_MIB_INTERROGATION
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC

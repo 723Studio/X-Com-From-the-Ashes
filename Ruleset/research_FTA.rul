@@ -3105,16 +3105,16 @@ research:
     points: 40
     needItem: true
     destroyItem: false
-    increaseCounter: [alienEarlyLore]
+    increaseCounter: [alienEarlyLore] #TODO
     listOrder: 5020
-  - name: STR_TOOTHPASTE_PACKET
+  - name: STR_TOOTHPASTE_PACKET #FIXME - expand toothpaste arc
     cost: 600
     stats:
       biology: 100
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowledge]
+    increaseCounter: [mibActivityKnowledge] #FIXME - alter to a covert operation perereq
     listOrder: 5020
   - name: STR_MIB_INTERROGATION
     cost: 600
@@ -3124,8 +3124,9 @@ research:
     needItem: true
     destroyItem: false
     increaseCounter: [mibActivityKnowledge]
+    counterValue: 1
     listOrder: 5020
-  - name: STR_MIB_CONDITIONING
+  - name: STR_MIB_CONDITIONING #FIXME - MIB Juice and MIB Biology
     cost: 600
     stats:
       biology: 100
@@ -3133,6 +3134,7 @@ research:
     needItem: true
     destroyItem: false
     increaseCounter: [mibActivityKnowledge]
+    counterValue: 2
     listOrder: 5020
   - name: STR_MIB_LAB_EQUIPMENT
     cost: 600
@@ -3142,6 +3144,7 @@ research:
     needItem: true
     destroyItem: false
     increaseCounter: [mibActivityKnowledge]
+    counterValue: 1
     listOrder: 5020
   - name: STR_MIB_HYPER_COMMUNICATOR
     cost: 600
@@ -3150,9 +3153,8 @@ research:
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter: [mibActivityKnowledge]
     listOrder: 5020
-  - name: STR_MIB_COMMUNICATION_EQUIPMENT
+  - name: STR_MIB_COMMUNICATION_EQUIPMENT #FIXME - trigger clue for office hacking raid mission
     cost: 600
     stats:
       computers: 100
@@ -3160,6 +3162,7 @@ research:
     needItem: true
     destroyItem: false
     increaseCounter: [mibActivityKnowledge]
+    counterValue: 1
     listOrder: 5020
 
   #crafts

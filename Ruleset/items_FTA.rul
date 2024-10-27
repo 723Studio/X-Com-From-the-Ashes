@@ -5584,7 +5584,6 @@ items:
     #Gun Butt segment end
     attraction: 15
     listOrder: 25030
-
 #robots
   - type: STR_DRONE_FLASHLIGHT
     categories: [STR_HUMAN_TECH, STR_ROBOT_EQUIPMENT]
