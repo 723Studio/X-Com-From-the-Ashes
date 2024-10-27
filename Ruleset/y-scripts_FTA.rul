@@ -1322,6 +1322,8 @@ extended:
           var ptr RuleItem shieldRuleset;
           var ptr RuleDamageType ruleDamage;
           var int catCheck;
+          var int unitDirection;
+          var int attackerDirection;
           var int hp;
           var int shieldArmor;
           var int shieldResistCoeff;
@@ -1329,10 +1331,9 @@ extended:
           var int toItem;
           var int armorEffect;
           var int toArmorPre;
-          var int unitMelee;
-          var int unitReactions;
-          var int attackerMelee;
-          var int attackerReactions;
+          var int unitMelee; #not used yet
+          var int unitReactions; #not used yet
+          var int attackerMelee; #not used yet
           var int temp;
 
           # Check for shield in left hand first, then right.  If no shield, skip the script
@@ -1341,71 +1342,102 @@ extended:
           shieldRuleset.hasCategory catCheck "STR_SHIELDS";
 
           if eq catCheck 0;
-            return power part side;
+            debug_log "We don't have arm shield in left hand";
+            unit.getRightHandWeapon shieldItem;
+            shieldItem.getRuleItem shieldRuleset;
+            shieldRuleset.hasCategory catCheck "STR_SHIELDS";
+            if eq catCheck 0;
+              debug_log "We don't have arm shield in right hand";
+              return power part side;
+            end;
           end;
+
+          debug_log "Calculating arm shield mechanic";
 
           # Check which damage type and set shield's 'resistance'
           #Skip shield code for special, choke (smoke), EMP, Electric, Psi, Warp, 
           if or eq damaging_type 0 eq damaging_type 6 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11; 
             if or eq damaging_type 12 eq damaging_type 13 eq damaging_type 14 eq damaging_type 15;
+              debug_log "We cant resist damaging_type: " damaging_type;
               return power part side;
             end;
           end;
 
-          if neq side 0;
+          if or eq attacker null eq side SIDE_UNDER; # no valid attacker or from below
+            debug_log "No valid attacker or from below";
             return power part side;
           end;
 
           shieldItem.getAmmoQuantity hp;
           if le hp 1;
+            debug_log "We have low shield hp:" hp;
             return power part side;
           end;
 
-          # Default resistances for all physical shields
-          if eq damaging_type 3; # Explosive
-            set shieldResistCoeff 90;
-          else eq damaging_type 7; # Cutting
-            set shieldResistCoeff 85;
-          else eq damaging_type 8; # Acid
-            set shieldResistCoeff 120;
-          else; # All other damage types
-            set shieldResistCoeff 100;
-          end;
+          unit.getDirection unitDirection; # {0-7}
+          attacker.getDirection attackerDirection;
+          add attackerDirection 4; # Offset for attacker so A+D "face the same direction"
+          mod attackerDirection 8; # (7+4) % 8 = 3 # in other words limit to {0-7}
+          sub unitDirection attackerDirection; # check if both face the same direction
+          abs unitDirection; # range should be {-1, 0, +1} to take effect
 
-          set shieldArmor hp; 
+          #if neq side 0; #only frontal facing
+          #  return power part side;
+          #end;
+
+          if lt unitDirection 2; # {abs(-1), 0, +1} # hitting shield facing
+            debug_log "Hitting shield facing!";
+            # Default resistances for all physical shields
+            if eq damaging_type 3; # Explosive
+              set shieldResistCoeff 80;
+            else eq damaging_type 7; # Cutting
+              set shieldResistCoeff 70;
+            else eq damaging_type 8; # Acid
+              set shieldResistCoeff 130;
+            else; # All other damage types
+              set shieldResistCoeff 100;
+            end;
+
+            debug_log "Calculated shieldResistCoeff: " shieldResistCoeff;
+
+            set shieldArmor hp; 
       
-          damaging_item.getRuleItem damagingRuleset;
-          damagingRuleset.getDamageType ruleDamage;
-          ruleDamage.getDamageToArmor toArmor power;
-          ruleDamage.getDamageToItem toItem power;
-          ruleDamage.getDamageToArmorPre toArmorPre power;
-          ruleDamage.getArmorEffectiveness armorEffect;
-          add toArmor toItem;
+            damaging_item.getRuleItem damagingRuleset;
+            damagingRuleset.getDamageType ruleDamage;
+            ruleDamage.getDamageToArmor toArmor power;
+            ruleDamage.getDamageToItem toItem power;
+            ruleDamage.getDamageToArmorPre toArmorPre power;
+            ruleDamage.getArmorEffectiveness armorEffect;
+            add toArmor toItem;
 
-          # let's subtract pure damage from power, we will add it in the end
-          sub power toArmorPre;
+            # let's subtract pure damage from power, we will add it in the end
+            sub power toArmorPre;
 
-          # Calculate the shield's effectiveness and subtract it from the damage
-          if gt armorEffect 0;
-            add shieldResistCoeff armorEffect;
-            sub shieldResistCoeff 100;
+            # Calculate the shield's effectiveness and subtract it from the damage
+            if gt armorEffect 0;
+              add shieldResistCoeff armorEffect;
+              sub shieldResistCoeff 100;
+            end;
+            muldiv shieldArmor shieldResistCoeff 100;
+
+            # Calculate resulting power reduction
+            if gt shieldArmor power;
+              set shieldArmor power;
+            end;
+            
+            sub power shieldArmor;
+
+            #Calculate damage to the shield
+            add shieldArmor toArmor;
+            sub hp shieldArmor;
+            shieldItem.setAmmoQuantity hp;
+            # Don't forget to add ToArmorPre in the end!
+            add power toArmorPre;
+
+            return power part side;
           end;
-          muldiv shieldArmor shieldResistCoeff 100;
 
-          # Calculate resulting power reduction
-          if gt shieldArmor power;
-            set shieldArmor power;
-          end;
-          
-          sub power shieldArmor;
-
-          #Calculate damage to the shield
-          add shieldArmor toArmor;
-          sub hp shieldArmor;
-          shieldItem.setAmmoQuantity hp;
-          # Don't forget to add ToArmorPre in the end!
-          add power toArmorPre;
-
+          debug_log "Wrong facing, direct hit without shield protection!";
           return power part side;
 
       - offset: 38    # Handle aim reset
