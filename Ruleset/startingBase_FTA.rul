@@ -39,7 +39,7 @@ startingBase:
       x: 3
       y: 3
   items:
-    STR_COMBAT_KNIFE: 2
+    STR_COMBAT_KNIFE: 3
     STR_PISTOL: 3
     STR_PISTOL_CLIP: 10
     STR_HEAVY_PISTOL: 2

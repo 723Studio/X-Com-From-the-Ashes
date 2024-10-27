@@ -1638,7 +1638,7 @@ items:
     recoveryPoints: 2
     listOrder: 7050
   - type: STR_SMG_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE]
     requiresBuy:
       - STR_XCOM_EQUIPMENT_ACQUISITION
     size: 0.05

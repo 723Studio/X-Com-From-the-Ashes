@@ -393,15 +393,15 @@ soldiers:
     value: 60
     minStats:
       #soldier
-      tu: 46
+      tu: 58
       stamina: 50
-      health: 24
+      health: 28
       bravery: 10
-      reactions: 15
-      firing: 20
-      throwing: 15
-      strength: 15
-      melee: 10
+      reactions: 30
+      firing: 35
+      throwing: 25
+      strength: 25
+      melee: 30
       mana: 0
       psiStrength: 30
       psiSkill: 0
@@ -438,15 +438,15 @@ soldiers:
       alienTech: 0
       reverseEngineering: 0
     maxStats:
-      tu: 54
-      stamina: 60
-      health: 30
-      bravery: 30
-      reactions: 25
-      firing: 30
-      throwing: 25
-      strength: 25
-      melee: 25
+      tu: 68
+      stamina: 70
+      health: 35
+      bravery: 60
+      reactions: 50
+      firing: 55
+      throwing: 60
+      strength: 45
+      melee: 60
       psiStrength: 60
       psiSkill: 0
       mana: 0
