@@ -55,7 +55,7 @@ prisoners:
       unlockResearches: [STR_MIB_AGENT]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
-      baseResistance: 100
+      baseResistance: 50
     recruiting:
       requiredResearch: STR_TODOIUM #TODO
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -101,7 +101,7 @@ prisoners:
     interrogation:
       unlockResearches: [STR_MIB_SPECOPS]
       diesAfter: true
-      baseResistance: 100
+      baseResistance: 60
     recruiting:
       requiredResearch: STR_TODOIUM #TODO
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -148,7 +148,7 @@ prisoners:
       unlockResearches: [STR_MIB_BUTCHER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
-      baseResistance: 100
+      baseResistance: 50
     recruiting:
       requiredResearch: STR_TODOIUM #no recruit ever
     torture:
@@ -180,7 +180,7 @@ prisoners:
         #TODO
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
-      baseResistance: 100
+      baseResistance: 40
     recruiting:
       requiredResearch: STR_TODOIUM #no recruit ever
     torture:
@@ -210,7 +210,7 @@ prisoners:
         [STR_MIB_MEDIC]
         #TODO
       diesAfter: true
-      baseResistance: 100
+      baseResistance: 70
     recruiting:
       requiredResearch: STR_TODOIUM #no recruit ever
     torture:
@@ -240,7 +240,7 @@ prisoners:
       unlockResearches: [STR_MIB_ENFORCER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: true
-      baseResistance: 100
+      baseResistance: 70
     recruiting:
       requiredResearch: STR_TODOIUM #TODO
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -286,7 +286,7 @@ prisoners:
       unlockResearches: [STR_MIB_OFFICE_ENGINEER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 20
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -317,7 +317,7 @@ prisoners:
     interrogation:
       unlockResearches: [STR_MIB_OFFICE_MANAGER]
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 15
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_FEMALE
@@ -349,7 +349,7 @@ prisoners:
       unlockResearches: [STR_MIB_OFFICE_SECURITY]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 40
+      baseResistance: 30
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -380,7 +380,7 @@ prisoners:
     interrogation:
       unlockResearches: [STR_MIB_OFFICE_WORKER]
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 20
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -504,7 +504,7 @@ prisoners:
       unlockResearches: [STR_CULT_GANGER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 40
+      baseResistance: 30
     recruiting:
       requiredResearch: STR_CRIMINAL_RECRUITING
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -536,7 +536,7 @@ prisoners:
       unlockResearches: [STR_CULT_COORDINATOR]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 50
     recruiting:
       requiredResearch: STR_CRIMINAL_RECRUITING
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -604,7 +604,7 @@ prisoners:
       unlockResearches: [STR_ARMY_FIELD_SOLDIER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 40
+      baseResistance: 50
     recruiting:
       requiredResearch: STR_MILITARY_RECRUITING
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -636,7 +636,7 @@ prisoners:
       unlockResearches: [STR_ARMY_FIELD_OFFICER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 50
+      baseResistance: 55
     recruiting:
       requiredResearch: STR_MILITARY_RECRUITING
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -670,7 +670,7 @@ prisoners:
       #unlockResearches: [STR_MALE_MILITIA_CITIZEN]
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 25
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -736,7 +736,7 @@ prisoners:
         #TODO
       #requiredResearch: STR_INTEL_STATUS_REPORT
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 20
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -859,7 +859,7 @@ prisoners:
     interrogation:
       unlockResearches: [STR_CIVILLIAN]
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 20
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
@@ -922,7 +922,7 @@ prisoners:
     interrogation:
       unlockResearches: [STR_CIVILLIAN]
       diesAfter: false
-      baseResistance: 30
+      baseResistance: 20
     recruiting:
       requiredResearch: STR_RECRUIT_CIVILIAN_PRISONERS
       spawnedSoldierRule: STR_RECRUITED_MALE
