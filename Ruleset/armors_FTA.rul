@@ -683,7 +683,7 @@ armors:
     loftempsSet: [ 1 ]
   - type: STR_FRESH_ZOMBIE_ARMOR
     spriteSheet: FRESH_ZOMBIE.PCK
-    spriteInv: inventory_ZOMBIE
+    spriteInv: inventory_FRESH_ZOMBIE
     allowInv: false
     corpseBattle:
       - STR_FRESH_ZOMBIE_CORPSE

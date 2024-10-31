@@ -1479,7 +1479,7 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors/Enemies/Zombies/FRESH_ZOMBIE.png
-  - type: inventory_ZOMBIE
+  - type: inventory_FRESH_ZOMBIE
     fileSingle: Resources/Armors/Enemies/Zombies/inventory_ZOMBIE.png
   - type: ZOMBIE_GRUBAS.PCK
     subX: 32

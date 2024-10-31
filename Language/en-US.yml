@@ -700,19 +700,19 @@ en-US:
   STR_COUNCIL_IS_DISSATISFIED: "We don't seem to be able to cope with the problems we have, Commander. Our resources are stretched thin and it's undermining the morale of our personnel. You must be more responsible in your planning and management, or the last hope for the X-COM project's revival will be lost."
   STR_SNIPER_TRAINING: "Sniper Specialization"
   STR_SNIPER_TRAINING_DESC: "The soldier will be able to handle assault and sniper rifles much better, aiming at the most vulnerable parts of the enemy, as well as to get the most out of an advantageous sniper position."
-  STR_SNIPER_TRAINING_UFOPEDIA: 
+  STR_SNIPER_TRAINING_UFOPEDIA: "Having a sniper in your squad can provide an important advantage in certain situations. By taking a suitable shooting position, the sniper can inflict enormous damage to the enemy through accurate shots at vulnerable spots. It is recommended that a trained sniper be equipped with a precision weapon and positioned on high ground for better fire control of the space in which the operation is being conducted."
   STR_HEAVY_TRAINING: "Heavy Specialization"
   STR_HEAVY_TRAINING_DESC: "The specialization includes an extended physical training program, which will allow the soldier to wield heavy weapons more confidently."
-  STR_HEAVY_TRAINING_UFOPEDIA: 
+  STR_HEAVY_TRAINING_UFOPEDIA: "Supporting the squad with large-caliber weapons allows you to effectively fight against well-defended targets, trained gunners are able to fire long bursts with a fairly high heap."
   STR_ASSAULT_TRAINING: "Assault Specialization"
   STR_ASSAULT_TRAINING_DESC: "The unique assault program develops the tactical skills necessary for close-range and confined firefighting. It allows the soldier to fire much more accurately from the hip and to be ever vigilant."
-  STR_ASSAULT_TRAINING_UFOPEDIA: 
+  STR_ASSAULT_TRAINING_UFOPEDIA: "Stormtroopers are the spearhead of an attacking formation. Well-trained fighters fight effectively at mid-range in intense combat; during battle, trained stormtroopers are much harder to catch off guard."
   STR_RANGER_TRAINING: "Ranger Specialization"
   STR_RANGER_TRAINING_DESC: "The program includes survival courses, stealth movement, as well as mastery of bladed and throwing weapons."
-  STR_RANGER_TRAINING_UFOPEDIA:
+  STR_RANGER_TRAINING_UFOPEDIA: "Rangers in their training emphasize effective close combat, hand-to-hand combat techniques and the use of throwing weapons. Such skills can be indispensable in special operations that require silently neutralizing opponents or capturing important targets for interrogation."
   STR_SUPPORT_TRAINING: "Support Specialization"
   STR_SUPPORT_TRAINING_DESC: "The program includes an advanced course in field medicine as well as training in the use of utility equipment such as smoke and flashbang grenades."
-  STR_SUPPORT_TRAINING_UFOPEDIA: 
+  STR_SUPPORT_TRAINING_UFOPEDIA: "Support specialists are needed by the squad to provide emergency medical care to combat casualties. In addition, the training package places an important emphasis on techniques for handling combat utilities."
   STR_UNARMED_COMBAT_TRAINING: "Unarmed Combat Training"
   STR_UNARMED_COMBAT_TRAINING_DESC: "Additional combat training for non-armed combat includes techniques effective when both hands of the soldier are unoccupied."
   STR_RAPID_DEPLOYMENT_TRAINING: "Rapid Deployment Training"
@@ -1556,6 +1556,7 @@ en-US:
   STR_CULT_COORDINATOR_ARMOR: "Cult Coordinator Combat Analysis"
   STR_CULT_COORDINATOR_ARMOR_UFOPEDIA: "The coordinator leads small groups, acts as a field commander in combat operations of his gang. He has good physical attributes and street fighting skills, but usually does not possess any significant equipment."
   STR_CULTISTS: "Cultists"
+  STR_POLICE: "Police"
 
   STR_BANDIT: "Bandit"
   STR_BANDIT_CORPSE: "Bandit Corpse"
