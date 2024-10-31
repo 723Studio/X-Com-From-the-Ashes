@@ -78,7 +78,6 @@ research:
   - name: STR_LOYALTY
     hidden: true
   - name: STR_XCOM_EQUIPMENT_UNLOCKED
-    hidden: true
     dependencies:
       - STR_XCOM_EQUIPMENT
   - name: STR_XCOM_FILES_1
@@ -192,10 +191,11 @@ research:
   - name: STR_MIB_CONVOY_LEAD_OPERATION_PREREQ
     hidden: true
 
+
 #game start
   - name: STR_UFOPEDIA_DECRYPTION
     requiresBaseFunc: [HQ]
-    cost: 3500
+    cost: 700
     stats:
       data: 120
       computers: 80
@@ -205,7 +205,7 @@ research:
     listOrder: 10
   - name: STR_XCOM_EQUIPMENT
     requiresBaseFunc: [HQ]
-    cost: 2500
+    cost: 500
     stats:
       data: 120
       computers: 80
@@ -217,7 +217,7 @@ research:
     listOrder: 20
   - name: STR_XCOM_LORE
     requiresBaseFunc: [HQ]
-    cost: 10000
+    cost: 2000
     stats:
       data: 120
       computers: 80
@@ -237,7 +237,7 @@ research:
     listOrder: 30
   - name: STR_XCOM_FUNDAMENTAL_STUDIES
     requiresBaseFunc: [HQ]
-    cost: 2000
+    cost: 400
     stats:
       data: 120
       computers: 80
@@ -247,7 +247,7 @@ research:
     listOrder: 10
   - name: STR_COMMUNICATION
     requiresBaseFunc: [HQ]
-    cost: 1000
+    cost: 200
     stats:
       data: 100
       computers: 80
@@ -257,7 +257,7 @@ research:
     listOrder: 40
   - name: STR_BASE_DEFENSE_COMBAT_ANALYSIS
     requiresBaseFunc: [HQ]
-    cost: 2000
+    cost: 400
     stats:
       tactics: 100
     points: 15
@@ -266,7 +266,7 @@ research:
     listOrder: 50
   - name: STR_SUPPLIES
     requiresBaseFunc: [HQ]
-    cost: 750
+    cost: 150
     stats:
       data: 100
     points: 120
@@ -276,7 +276,7 @@ research:
       - STR_LOYALTY
     listOrder: 80
   - name: STR_IMPROVISED_MANUFACTURING
-    cost: 1250
+    cost: 250
     stats:
       designing: 100
     points: 100
@@ -286,7 +286,7 @@ research:
   - name: STR_IMPROVISED_MANUFACTURING_POSTREQ
     hidden: true
   - name: STR_IMPROVISED_GRENADES
-    cost: 750
+    cost: 150
     stats:
       designing: 100
     points: 100
@@ -294,7 +294,7 @@ research:
       - STR_IMPROVISED_MANUFACTURING_POSTREQ
     listOrder: 80
   - name: STR_HIGH_TECH_MANUFACTURING
-    cost: 1250
+    cost: 250
     stats:
       designing: 100
       materials: 100
@@ -307,7 +307,7 @@ research:
     hidden: true
   - name: STR_FACILITIES_BLUEPRINTS
     requiresBaseFunc: [HQ]
-    cost: 4000
+    cost: 800
     stats:
       data: 120
       computers: 80
@@ -317,7 +317,7 @@ research:
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 90
   - name: STR_CROP_CIRCLES
-    cost: 2000
+    cost: 400
     stats:
       data: 100
       tactics: 80
@@ -329,7 +329,7 @@ research:
 
 #tactics
   - name: STR_ADVANCED_WARFARE
-    cost: 2500
+    cost: 500
     stats:
       tactics: 100
     points: 10
@@ -337,7 +337,7 @@ research:
       - STR_XCOM_FUNDAMENTAL_STUDIES
     listOrder: 10
   - name: STR_SOLDIER_SPECS
-    cost: 2500
+    cost: 500
     stats:
       tactics: 100
     points: 10
@@ -345,7 +345,7 @@ research:
       - STR_ADVANCED_WARFARE
     listOrder: 10
   - name: STR_SNIPER_TRAINING
-    cost: 2000
+    cost: 400
     stats:
       tactics: 100
     points: 10
@@ -353,7 +353,7 @@ research:
       - STR_SOLDIER_SPECS
     listOrder: 10
   - name: STR_HEAVY_TRAINING
-    cost: 2000
+    cost: 400
     stats:
       tactics: 100
     points: 10
@@ -361,7 +361,7 @@ research:
       - STR_SOLDIER_SPECS
     listOrder: 10
   - name: STR_ASSAULT_TRAINING
-    cost: 2000
+    cost: 400
     stats:
       tactics: 100
     points: 10
@@ -369,7 +369,7 @@ research:
       - STR_SOLDIER_SPECS
     listOrder: 10
   - name: STR_RANGER_TRAINING
-    cost: 2000
+    cost: 400
     stats:
       tactics: 100
     points: 10
@@ -377,7 +377,7 @@ research:
       - STR_SOLDIER_SPECS
     listOrder: 10
   - name: STR_SUPPORT_TRAINING
-    cost: 2000
+    cost: 400
     stats:
       tactics: 100
     points: 10
@@ -385,7 +385,7 @@ research:
       - STR_SOLDIER_SPECS
     listOrder: 10
   - name: STR_ADDITIONAL_COURSES
-    cost: 2000
+    cost: 400
     stats:
       tactics: 100
     points: 10
@@ -393,7 +393,7 @@ research:
       - STR_SOLDIER_SPECS
     listOrder: 10
   - name: STR_AGENT_TRAINING
-    cost: 3000
+    cost: 600
     stats:
       tactics: 100
     points: 10
@@ -402,7 +402,7 @@ research:
     listOrder: 10
 
   - name: STR_SUPPORT_DRONES
-    cost: 2500
+    cost: 500
     stats:
       tactics: 100
     points: 10
@@ -410,7 +410,7 @@ research:
       - STR_ADVANCED_WARFARE
     listOrder: 10
   - name: STR_DRONES_REMOTE_CONTROL
-    cost: 4500
+    cost: 900
     stats:
       computers: 100
       designing: 100
@@ -420,7 +420,7 @@ research:
       - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 10
   - name: STR_DRONES_MANUFACTURING
-    cost: 3500
+    cost: 700
     stats:
       tactics: 120
       designing: 80
@@ -430,7 +430,7 @@ research:
       - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 10
   - name: STR_DRONE_LAUNCHER
-    cost: 3500
+    cost: 700
     stats:
       tactics: 120
       designing: 80
@@ -440,7 +440,7 @@ research:
       - STR_IMPROVISED_GRENADES
     listOrder: 10
   - name: STR_DRONE_MEDICINE
-    cost: 10000
+    cost: 2000
     stats:
       tactics: 120
       designing: 80
@@ -451,7 +451,7 @@ research:
       - STR_XCOM_EQUIPMENT
     listOrder: 10
   - name: STR_DRONE_TASER
-    cost: 6000
+    cost: 1200
     stats:
       tactics: 120
       designing: 80
@@ -461,7 +461,7 @@ research:
       - STR_ROCKET_GLOVE
     listOrder: 10
   - name: STR_DRONE_ROCKET_LAUNCHER
-    cost: 4500
+    cost: 900
     stats:
       tactics: 120
       designing: 80
@@ -472,7 +472,7 @@ research:
     listOrder: 10
 
   - name: STR_DRONE_UPGRADES
-    cost: 6000
+    cost: 1200
     stats:
       computers: 100
     points: 20
@@ -480,7 +480,7 @@ research:
       - STR_DRONES_MANUFACTURING
     listOrder: 10
   - name: STR_DRONE_HACKING
-    cost: 4000
+    cost: 800
     stats:
       computers: 100
     points: 20
@@ -490,7 +490,7 @@ research:
       - STR_DRONE_UPGRADES
     listOrder: 10
   - name: STR_DRONE_SAMPLING
-    cost: 12500
+    cost: 2500
     stats:
       biology: 100
       designing: 100
@@ -502,7 +502,7 @@ research:
     listOrder: 10
 #high energy study
   - name: STR_ENERGY_WEAPONS
-    cost: 6000
+    cost: 1200
     stats:
       physics: 100
     points: 30
@@ -510,7 +510,7 @@ research:
       - STR_XCOM_FUNDAMENTAL_STUDIES
     listOrder: 10
   - name: STR_ADVANCED_COOLING_SYSTEMS
-    cost: 15000
+    cost: 3000
     stats:
       materials: 80
       chemistry: 100
@@ -519,7 +519,7 @@ research:
     dependencies:
       - STR_WEAPON_COMPONENTS
   - name: STR_HIGH_DENSITY_CAPACITORS
-    cost: 15000
+    cost: 3000
     stats:
       physics: 120
       chemistry: 80
@@ -527,7 +527,7 @@ research:
     dependencies:
       - STR_WEAPON_COMPONENTS
   - name: STR_ULTRA_DENSE_CAPACITORS
-    cost: 22500
+    cost: 4500
     stats:
       chemistry: 80
       physics: 100
@@ -536,7 +536,7 @@ research:
     dependencies:
       - STR_HIGH_DENSITY_CAPACITORS
   - name: STR_ADVANCED_BATTERIES
-    cost: 15000
+    cost: 3000
     stats:
       chemistry: 80
       materials: 120
@@ -544,7 +544,7 @@ research:
     dependencies:
       - STR_WEAPON_COMPONENTS
   - name: STR_HIGH_PERFORMANCE_BATTERIES
-    cost: 22500
+    cost: 4500
     stats:
       chemistry: 80
       physics: 100
@@ -555,7 +555,7 @@ research:
 
 #electric weapons
   - name: STR_ELECTRIC_WEAPONS_CONCEPT
-    cost: 6000
+    cost: 1200
     stats:
       physics: 80
       designing: 100
@@ -567,7 +567,7 @@ research:
       - STR_ENERGY_WEAPONS
     listOrder: 10
   - name: STR_ELECTRIC_WEAPONS_PRODUCTION
-    cost: 13500
+    cost: 2700
     stats:
       physics: 120
       materials: 100
@@ -578,7 +578,7 @@ research:
       - STR_ADVANCED_BATTERIES
       - STR_PRODUCTION
   - name: STR_ELECTRIC_STICK
-    cost: 6000
+    cost: 1200
     stats:
       designing: 100
     points: 20
@@ -586,7 +586,7 @@ research:
       - STR_ELECTRIC_WEAPONS_PRODUCTION
     listOrder: 25002
   - name: STR_ARC_TROWER
-    cost: 6500
+    cost: 1300
     stats:
       physics: 100
     points: 15
@@ -596,7 +596,7 @@ research:
       - STR_HIGH_DENSITY_CAPACITORS
       - STR_HIGH_TECH_MANUFACTURING_POSTREQ
   - name: STR_TASER_CANNON
-    cost: 32000
+    cost: 6400
     stats:
       physics: 120
       designing: 100
@@ -615,16 +615,16 @@ research:
 
 #electro-magnet weapons
   - name: STR_ELECTROMAGNETIC_WEAPONS_CONCEPT
-    cost: 6000
+    cost: 1200
     stats:
       physics: 100
       tactics: 100
     points: 30
     dependencies:
       - STR_FIREARMS_STUDY
-    listOrder: 10
+    listOrder: 10  
   - name: STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
-    cost: 13500
+    cost: 2700
     stats:
       physics: 120
       materials: 100
@@ -638,7 +638,7 @@ research:
       - STR_HIGH_DENSITY_CAPACITORS
       - STR_ADVANCED_BATTERIES
   - name: STR_RAILGUN
-    cost: 15000
+    cost: 3000
     stats:
       designing: 100
     points: 100
@@ -648,7 +648,7 @@ research:
   - name: STR_SUPERCONDUCTIVITY_THEORY_PREREQ
     hidden: true
   - name: STR_SUPERCONDUCTIVITY_THEORY
-    cost: 13500
+    cost: 2700
     stats:
       physics: 100
       chemistry: 100
@@ -656,7 +656,7 @@ research:
     dependencies:
       - STR_SUPERCONDUCTIVITY_THEORY_PREREQ
   - name: STR_LOOKING_FOR_HIGHT_TEMP_SUPERCONDUCTOR
-    cost: 21500
+    cost: 4300
     requiresBaseFunc: [LAB]
     stats:
       physics: 80
@@ -700,7 +700,7 @@ research:
     dependencies:
       - STR_TROLLIUM
   - name: STR_COIL_WEAPONS
-    cost: 13500
+    cost: 2700
     stats:
       designing: 80
       materials: 120
@@ -710,7 +710,7 @@ research:
       - STR_ELECTROMAGNETIC_WEAPONS_PRODUCTION
       - STR_ULTRA_DENSE_CAPACITORS
   - name: STR_COIL_RIFLE
-    cost: 13500
+    cost: 2700
     stats:
       designing: 100
     points: 15
@@ -720,7 +720,7 @@ research:
     dependencies:
       - STR_COIL_RIFLE
   - name: STR_COIL_PISTOL
-    cost: 13500
+    cost: 2700
     stats:
       designing: 100
     points: 15
@@ -730,7 +730,7 @@ research:
     dependencies:
       - STR_COIL_PISTOL
   - name: STR_COIL_SNIPER_RIFLE
-    cost: 13500
+    cost: 2700
     stats:
       designing: 100
     points: 15
@@ -740,7 +740,7 @@ research:
     dependencies:
       - STR_COIL_SNIPER_RIFLE
   - name: STR_COIL_CANNON
-    cost: 13500
+    cost: 2700
     stats:
       designing: 100
     points: 15
@@ -752,7 +752,7 @@ research:
 
 #lasers
   - name: STR_LASER_WEAPONS_CONCEPT
-    cost: 6000
+    cost: 1200
     stats:
       physics: 80
       designing: 100
@@ -764,7 +764,7 @@ research:
       - STR_ENERGY_WEAPONS
     listOrder: 10
   - name: STR_LASER_SCATTERING_PROBLEM
-    cost: 17500
+    cost: 3500
     stats:
       physics: 100
     points: 30
@@ -772,7 +772,7 @@ research:
       - STR_LASER_WEAPONS_CONCEPT
     listOrder: 10
   - name: STR_PULSE_LASER
-    cost: 17500
+    cost: 3500
     stats:
       physics: 100
     points: 30
@@ -783,7 +783,7 @@ research:
       - STR_TODOIUM #advanced alien power sourge required
     listOrder: 10
   - name: STR_PHASE_LASER
-    cost: 17500
+    cost: 3500
     stats:
       physics: 100
     points: 30
@@ -795,7 +795,7 @@ research:
   - name: STR_LASER_WEAPONS
     hidden: true
   - name: STR_NON_LINEAR_OPTICS
-    cost: 10000
+    cost: 2000
     stats:
       materials: 100
     points: 30
@@ -803,7 +803,7 @@ research:
       - STR_PHASE_LASER
     listOrder: 10
   - name: STR_PHASER_MIRROR
-    cost: 10000
+    cost: 2000
     stats:
       materials: 100
     points: 30
@@ -812,7 +812,7 @@ research:
       - STR_ADVANCED_COOLING_SYSTEMS
     listOrder: 10
   - name: STR_PHASER_TARGETTING_SYSTEM
-    cost: 10000
+    cost: 2000
     stats:
       computers: 100
     points: 30
@@ -821,7 +821,7 @@ research:
       - STR_SMART_TARGETING
     listOrder: 10
   - name: STR_PHASERS_PRODUCTION
-    cost: 13500
+    cost: 2700
     stats:
       physics: 120
       materials: 100
@@ -835,7 +835,7 @@ research:
       - STR_ADVANCED_COOLING_SYSTEMS
       - STR_PRODUCTION
   - name: STR_PHASER_CANNON #TODO manufacture
-    cost: 13500
+    cost: 2700
     stats:
       designing: 100
     points: 15
@@ -845,7 +845,7 @@ research:
 #smart weapons
   - name: STR_FIREARMS_STUDY
     requiresBaseFunc: [HQ]
-    cost: 4000
+    cost: 800
     stats:
       tactics: 100
       designing: 100
@@ -854,7 +854,7 @@ research:
       - STR_XCOM_FUNDAMENTAL_STUDIES
     listOrder: 10
   - name: STR_SMART_WEAPONS
-    cost: 6000
+    cost: 1200
     stats:
       tactics: 100
       designing: 80
@@ -864,7 +864,7 @@ research:
       - STR_FIREARMS_STUDY
     listOrder: 10
   - name: STR_SMART_TARGETING
-    cost: 7500
+    cost: 1500
     stats:
       computers: 80
       tactics: 120
@@ -874,7 +874,7 @@ research:
       - STR_SMART_WEAPONS
     listOrder: 10
   - name: STR_SMART_ROUNDS
-    cost: 7500
+    cost: 1500
     stats:
       computers: 80
       tactics: 120
@@ -884,7 +884,7 @@ research:
       - STR_SMART_WEAPONS
     listOrder: 10
   - name: STR_SMART_WEAPONS_PRODUCTION
-    cost: 7500
+    cost: 1500
     stats:
       designing: 100
       computers: 100
@@ -895,7 +895,7 @@ research:
       - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 10
   - name: STR_SMART_RIFLE #TODO manufacturing
-    cost: 6000
+    cost: 1200
     stats:
       designing: 80
       computers: 100
@@ -915,7 +915,7 @@ research:
   #     - STR_SMART_RIFLE
   #   listOrder: 10
   - name: STR_SMART_SNIPER_RIFLE #TODO manufacturing
-    cost: 6000
+    cost: 1200
     stats:
       designing: 80
       computers: 100
@@ -935,7 +935,7 @@ research:
   #     - STR_SMART_RIFLE
   #   listOrder: 10
   - name: STR_SMART_PISTOL
-    cost: 6000
+    cost: 1200
     stats:
       designing: 80
       computers: 100
@@ -945,7 +945,7 @@ research:
       - STR_SMART_RIFLE
     listOrder: 10
   - name: STR_SMART_LMG #TODO manufacturing
-    cost: 6000
+    cost: 1200
     stats:
       designing: 80
       computers: 100
@@ -958,7 +958,7 @@ research:
 #other items
   - name: STR_BATTLE_COCKTAIL
     requiresBaseFunc: [HQ]
-    cost: 3250
+    cost: 650
     stats:
       tactics: 100
       biology: 100
@@ -968,7 +968,7 @@ research:
     listOrder: 10
   - name: STR_ENERGY_BOOSTER
     requiresBaseFunc: [HQ]
-    cost: 2500
+    cost: 500
     stats:
       tactics: 100
       biology: 100
@@ -1023,7 +1023,7 @@ research:
 
 #technology
   - name: STR_SEALED_CRATE_BREACHING
-    cost: 750
+    cost: 150
     stats:
       computers: 100
     points: 25
@@ -1031,7 +1031,7 @@ research:
       - STR_UFOPEDIA_DECRYPTION
     listOrder: 25002
   - name: STR_HIGH_TECH_PARTS
-    cost: 500
+    cost: 100
     stats:
       designing: 100
     points: 50
@@ -1039,7 +1039,7 @@ research:
       - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 25002
   - name: STR_HACKING_COMPUTER
-    cost: 500
+    cost: 100
     stats:
       designing: 120
       computers: 80
@@ -1048,7 +1048,7 @@ research:
       - STR_HIGH_TECH_PARTS
     listOrder: 25002
   - name: STR_SAMPLING_TOOL
-    cost: 500
+    cost: 100
     points: 50
     dependencies:
       - STR_SAMPLING_PREREQ
@@ -1060,7 +1060,7 @@ research:
     listOrder: 25002
 
   - name: STR_ROCKET_GLOVE
-    cost: 2000
+    cost: 400
     stats:
       designing: 100
     points: 50
@@ -1068,7 +1068,7 @@ research:
       - STR_IMPROVISED_MANUFACTURING_POSTREQ
 
   - name: STR_ARMORED_VEST
-    cost: 2000
+    cost: 400
     stats:
       designing: 80
       tactics: 120
@@ -1079,7 +1079,7 @@ research:
   - name: STR_STARTING_EQUIPMENT_PREREQ #TODO add ways to unlock!
     hidden: true
   - name: STR_STARTING_EQUIPMENT
-    cost: 300
+    cost: 60
     stats:
       tactics: 100
     points: 15
@@ -1106,7 +1106,7 @@ research:
       - STR_FIRE_EXTINGUISHER
     listOrder: 25002
   - name: STR_NON_LETHAL_EQUIPMENT
-    cost: 1750
+    cost: 350
     stats:
       tactics: 100
     points: 15
@@ -1146,7 +1146,7 @@ research:
   - name: STR_RESISTANCE_BASIC_EQUIPMENT_PREREQ
     hidden: true
   - name: STR_RESISTANCE_BASIC_EQUIPMENT
-    cost: 500
+    cost: 100
     stats:
       tactics: 100
     points: 35
@@ -1182,7 +1182,7 @@ research:
       - STR_MILITARY_RIFLE
       - STR_MILITARY_SNIPER_RIFLE
   - name: STR_MOTION_SCANNER_PROTOTYPE
-    cost: 5000
+    cost: 1000
     stats:
       designing: 80
       tactics: 100
@@ -1199,7 +1199,7 @@ research:
   - name: STR_ADVANCED_MOTION_SCANNER_PREREQ
     hidden: true
   - name: STR_MOTION_SCANNER
-    cost: 7500
+    cost: 1500
     stats:
       designing: 80
       computers: 100
@@ -1210,7 +1210,7 @@ research:
       - STR_HIGH_TECH_PARTS
     listOrder: 25025
   - name: STR_ADVANCED_MOTION_SCANNER
-    cost: 10000
+    cost: 2000
     stats:
       designing: 80
       computers: 100
@@ -1221,7 +1221,7 @@ research:
       - STR_ADVANCED_MOTION_SCANNER_PREREQ
     listOrder: 25025
   - name: STR_ADVANCED_WEAPON_PROTOTYPE
-    cost: 2500
+    cost: 500
     stats:
       designing: 100
       tactics: 120
@@ -1237,7 +1237,7 @@ research:
   - name: STR_CHEMICAL_WEAPONS_PREREQ #TODO ways to unlock
     hidden: true
   - name: STR_CHEMICAL_WEAPONS
-    cost: 14400
+    cost: 2880
     stats:
       chemistry: 100
       designing: 120
@@ -1247,7 +1247,7 @@ research:
       - STR_PRODUCTION
     listOrder: 25030
   - name: STR_ACID_SYNTHESIS
-    cost: 44000
+    cost: 8800
     stats:
       chemistry: 100
     points: 35
@@ -1255,7 +1255,7 @@ research:
       - STR_CHEMICAL_WEAPONS
     listOrder: 25040
   - name: STR_CHEMPISTOL_MANUFACTURING
-    cost: 84000
+    cost: 16800
     stats:
       chemistry: 100
       designing: 80
@@ -1265,7 +1265,7 @@ research:
       - STR_CHEMPISTOL
     listOrder: 25050
   - name: STR_CHEMPISTOL_CLIP_MANUFACTURING
-    cost: 12000
+    cost: 2400
     stats:
       chemistry: 100
       designing: 80
@@ -1274,6 +1274,8 @@ research:
       - STR_CHEMPISTOL
       - STR_ACID_SYNTHESIS
     listOrder: 25060
+
+
 
   - name: STR_EXPANDABLE_AMMO
     hidden: true
@@ -1287,7 +1289,7 @@ research:
     dependencies:
       - STR_EXPANDABLE_AMMO
   - name: STR_ALLOY_AMMO
-    cost: 100000
+    cost: 20000
     stats:
       metallurgy: 100
       designing: 120
@@ -1297,7 +1299,7 @@ research:
       - STR_XCOM_EQUIPMENT
     listOrder: 25110
   - name: STR_PISTOL_AA_CLIP
-    cost: 16000
+    cost: 3200
     stats:
       metallurgy: 100
       designing: 120
@@ -1306,7 +1308,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25120
   - name: STR_SMART_PISTOL_AA_CLIP
-    cost: 16000
+    cost: 3200
     stats:
       metallurgy: 100
       designing: 120
@@ -1315,7 +1317,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25120
   - name: STR_HEAVY_PISTOL_AA_CLIP
-    cost: 16000
+    cost: 3200
     stats:
       metallurgy: 100
       designing: 120
@@ -1324,7 +1326,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25120
   - name: STR_PDW_AA_CLIP
-    cost: 17000
+    cost: 3400
     stats:
       metallurgy: 100
       designing: 120
@@ -1333,7 +1335,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25130
   - name: STR_SMG_AA_CLIP
-    cost: 17000
+    cost: 3400
     stats:
       metallurgy: 100
       designing: 120
@@ -1342,7 +1344,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25140
   - name: STR_RIFLE_AA_CLIP
-    cost: 18000
+    cost: 3600
     stats:
       metallurgy: 100
       designing: 120
@@ -1351,7 +1353,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25150
   - name: STR_SMART_RIFLE_AA_CLIP
-    cost: 18000
+    cost: 3600
     stats:
       metallurgy: 100
       designing: 120
@@ -1360,7 +1362,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25150
   - name: STR_SNIPER_RIFLE_AA_CLIP
-    cost: 18000
+    cost: 3600
     stats:
       metallurgy: 100
       designing: 120
@@ -1369,7 +1371,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25160
   - name: STR_SMART_SNIPER_RIFLE_AA_CLIP
-    cost: 18000
+    cost: 3600
     stats:
       metallurgy: 100
       designing: 120
@@ -1378,7 +1380,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25160
   - name: STR_SHOTGUN_SHELLS_AA
-    cost: 18000
+    cost: 3600
     stats:
       metallurgy: 100
       designing: 120
@@ -1387,7 +1389,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25170
   - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA
-    cost: 18000
+    cost: 3600
     stats:
       metallurgy: 100
       designing: 120
@@ -1396,7 +1398,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25180
   - name: STR_LMG_AA_CLIP
-    cost: 18400
+    cost: 3680
     stats:
       metallurgy: 100
       designing: 120
@@ -1405,7 +1407,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25190
   - name: STR_SMART_LMG_AA_CLIP
-    cost: 18400
+    cost: 3680
     stats:
       metallurgy: 100
       designing: 120
@@ -1414,7 +1416,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25190
   - name: STR_ASSAULT_CANNON_CLIP_AA
-    cost: 18400
+    cost: 3680
     stats:
       metallurgy: 100
       designing: 120
@@ -1423,7 +1425,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25190
   - name: STR_LC_AA_AMMO
-    cost: 19000
+    cost: 3800
     stats:
       metallurgy: 100
       designing: 120
@@ -1432,7 +1434,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25200
   - name: STR_HC_AA_AMMO
-    cost: 20000
+    cost: 4000
     stats:
       metallurgy: 100
       designing: 120
@@ -1441,7 +1443,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25210
   - name: STR_AC_AA_AMMO
-    cost: 20000
+    cost: 4000
     stats:
       metallurgy: 100
       designing: 120
@@ -1450,7 +1452,7 @@ research:
       - STR_ALLOY_AMMO
     listOrder: 25220
   - name: STR_MINIGUN_AA_CLIP
-    cost: 20000
+    cost: 4000
     stats:
       metallurgy: 100
       designing: 120
@@ -1460,7 +1462,7 @@ research:
     listOrder: 25230
 
   - name: STR_PSIONIC #FIXME add pedia and lore
-    cost: 22000
+    cost: 4400
     stats:
       biology: 100
       psionics: 60
@@ -1482,7 +1484,7 @@ research:
   - name: STR_REGIONAL_HQ_AREA_SURVEY_COMPLETED
     hidden: true
   - name: STR_REGIONAL_HQ_LOCATION
-    cost: 600
+    cost: 120
     stats:
       data: 100
     points: 20
@@ -1495,7 +1497,7 @@ research:
     hidden: true
   - name: STR_MIB_AGENT_LOBOTOMY
     requiresBaseFunc: [SURGERY]
-    cost: 3500
+    cost: 700
     stats:
       biology: 100
     points: 50
@@ -1503,7 +1505,7 @@ research:
       - STR_FRESH_MIB_AGENT
     listOrder: 1010
   - name: STR_MIB_HEAD_CHIP
-    cost: 13500
+    cost: 2700
     stats:
       biology: 100
     points: 100
@@ -1511,7 +1513,7 @@ research:
       - STR_MIB_AGENT_LOBOTOMY
     listOrder: 1020
   - name: STR_MIB_DATA_TRANSFER_DECRYPTION
-    cost: 7500
+    cost: 1500
     stats:
       computers: 100
     points: 180
@@ -1579,6 +1581,7 @@ research:
   - name: STR_MIB_MEDIC_LORE5
     hidden: true
 
+
 #shared creatures arc
   - name: STR_MONSTER_HUNT_START_PREREQ
     hidden: true
@@ -1596,7 +1599,7 @@ research:
     hidden: true
   - name: STR_MONSTER_HUNT_START
     requiresBaseFunc: [HQ]
-    cost: 1800
+    cost: 360
     stats:
       data: 100
     points: 3
@@ -1606,7 +1609,7 @@ research:
     listOrder: 3000
   - name: STR_MONSTER_HUNT_RUMORS
     requiresBaseFunc: [HQ]
-    cost: 2600
+    cost: 520
     stats:
       data: 100
     points: 15
@@ -1616,7 +1619,7 @@ research:
     listOrder: 3010
   - name: STR_MONSTER_HUNT_RUMORS_ANALYSIS
     requiresBaseFunc: [HQ]
-    cost: 10080
+    cost: 2016
     stats:
       data: 100
     points: 10
@@ -1640,7 +1643,7 @@ research:
       - STR_ENERGY_WISP_CORPSE
     listOrder: 3020
   - name: STR_LIVE_CREATURES_RESEARCH #probably, would be more ways to reach it
-    cost: 2000
+    cost: 400
     stats:
       biology: 100
     points: 17
@@ -1678,7 +1681,7 @@ research:
   - name: STR_ZOMBIE_PARASITE_PREREQ
     hidden: true
   - name: STR_ZOMBIE_PARASITE
-    cost: 4000
+    cost: 800
     stats:
       biology: 100
     points: 50
@@ -1686,7 +1689,7 @@ research:
       - STR_ZOMBIE_PARASITE_PREREQ
     listOrder: 3020
   - name: STR_ZOMBIE_BIOLOGY
-    cost: 15000
+    cost: 3000
     stats:
       biology: 100
     points: 75
@@ -1696,7 +1699,7 @@ research:
       - STR_ZOMBIE_PARASITE
     listOrder: 3020
   - name: STR_ZOMBIE_SOURCE
-    cost: 6000
+    cost: 1200
     stats:
       biology: 100
     points: 200
@@ -1707,7 +1710,7 @@ research:
       #- STR_EMPTY_ALIEN_CONTAINER #TODO add item, research and pedia
     listOrder: 3020
   - name: STR_ZOMBIE_AGENDA
-    cost: 5000
+    cost: 1000
     stats:
       psionics: 100
       biology: 100
@@ -1755,7 +1758,7 @@ research:
     hidden: true
 
   - name: STR_FARM_CATTLE_SAMPLE
-    cost: 8000
+    cost: 1600
     stats:
       biology: 100
     points: 100
@@ -1778,7 +1781,7 @@ research:
     listOrder: 3020
 
   - name: STR_FOREST_CATTLE_SAMPLE
-    cost: 8000
+    cost: 1600
     stats:
       biology: 100
     points: 100
@@ -1800,7 +1803,7 @@ research:
       - STR_GENERAL_CATTLE_SAMPLE_RESULT_7
     listOrder: 3020
   - name: STR_CATTLE_MUTILATION_AGENDA
-    cost: 17500
+    cost: 3500
     increaseCounter: [alienEarlyLore]
     counterValue: 10
     stats:
@@ -1813,7 +1816,7 @@ research:
     listOrder: 1020
 
   - name: STR_ADVANCED_HEALING
-    cost: 15000
+    cost: 3000
     counterValue: 10
     stats:
       biology: 100
@@ -1823,7 +1826,7 @@ research:
     listOrder: 1020
 
   - name: STR_CROP_CIRCLES_SAMPLE
-    cost: 3000
+    cost: 600
     stats:
       biology: 150
       alienTech: 50
@@ -1863,10 +1866,11 @@ research:
   - name: STR_CROP_CIRCLES_SAMPLE_RESULT_10
     hidden: true
 
+
 #Prisoner interrogation research
   - name: STR_RECRUIT_CIVILIAN_PRISONERS
     requiresBaseFunc: [HQ]
-    cost: 12500
+    cost: 2500
     stats:
       tactics: 100
     points: 100
@@ -1875,7 +1879,7 @@ research:
     listOrder: 1020
   - name: STR_CRIMINAL_RECRUITING
     requiresBaseFunc: [HQ]
-    cost: 16000
+    cost: 3200
     stats:
       tactics: 100
     points: 100
@@ -1884,7 +1888,7 @@ research:
     listOrder: 1020
   - name: STR_MILITARY_RECRUITING
     requiresBaseFunc: [HQ]
-    cost: 16000
+    cost: 3200
     stats:
       tactics: 100
     points: 100
@@ -1893,7 +1897,7 @@ research:
     listOrder: 1020
   - name: STR_OFFICIALS_RECRUITING
     requiresBaseFunc: [HQ]
-    cost: 16000
+    cost: 3200
     stats:
       tactics: 100
     points: 100
@@ -2053,7 +2057,7 @@ research:
   - name: STR_MIB_BANKER
     lookup: STR_VIP
     hidden: true
-    randomEvents:
+    randomEvents: 
       STR_MIB_BANKER_ACCOUNTS1: 100
       STR_MIB_BANKER_ACCOUNTS2: 100
       STR_MIB_BANKER_ACCOUNTS3: 100
@@ -2212,7 +2216,7 @@ research:
 #Vanilla-like enemies study
 #MiB
   - name: STR_SEEKER_DRONE_TERRORIST #TODO - add more tech about it
-    cost: 17500
+    cost: 3500
     stats:
       computers: 100
     points: 150
@@ -2221,7 +2225,7 @@ research:
     spawnedItem: STR_SEEKER_DRONE_CORPSE
     listOrder: 6050
   - name: STR_SEEKER_DRONE_CORPSE
-    cost: 13500
+    cost: 2700
     stats:
       computers: 100
     points: 40
@@ -2231,7 +2235,7 @@ research:
 #Zombies
   - name: STR_FACEHUGGER_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 3000
+    cost: 600
     stats:
       biology: 100
     points: 20
@@ -2245,7 +2249,7 @@ research:
     requiresBaseFunc: [BIOLAB]
     stats:
       biology: 100
-    cost: 3500
+    cost: 700
     points: 30
     needItem: true
     destroyItem: true
@@ -2255,7 +2259,7 @@ research:
     listOrder: 6140
   - name: STR_FRESH_ZOMBIE_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 3750
+    cost: 750
     stats:
       biology: 100
     points: 15
@@ -2267,7 +2271,7 @@ research:
     listOrder: 6150
   - name: STR_FRESH_ZOMBIE
     requiresBaseFunc: [BIOLAB]
-    cost: 3900
+    cost: 780
     stats:
       biology: 100
     points: 25
@@ -2279,7 +2283,7 @@ research:
     listOrder: 6160
   - name: STR_ZOMBIE_GRUBAS_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 4000
+    cost: 800
     stats:
       biology: 100
     points: 20
@@ -2291,7 +2295,7 @@ research:
     listOrder: 6170
   - name: STR_ZOMBIE_GRUBAS_TERRORIST
     requiresBaseFunc: [BIOLAB]
-    cost: 4250
+    cost: 850
     stats:
       biology: 100
     points: 30
@@ -2304,7 +2308,7 @@ research:
 #Monsters
   - name: STR_CHUPACABRA_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 3750
+    cost: 750
     stats:
       biology: 100
     points: 30
@@ -2315,7 +2319,7 @@ research:
     listOrder: 6190
   - name: STR_CHUPACABRA
     requiresBaseFunc: [BIOLAB]
-    cost: 4100
+    cost: 820
     stats:
       biology: 100
     points: 40
@@ -2325,7 +2329,7 @@ research:
       - STR_STRANGE_CREATURE
     listOrder: 6200
   - name: STR_CHUPACABRA_BIOLOGY
-    cost: 7000
+    cost: 1400
     stats:
       biology: 100
     points: 30
@@ -2335,7 +2339,7 @@ research:
     listOrder: 6200
   - name: STR_ARMADILLO_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 3750
+    cost: 750
     stats:
       biology: 100
     points: 30
@@ -2346,7 +2350,7 @@ research:
     listOrder: 6210
   - name: STR_ARMADILLO
     requiresBaseFunc: [BIOLAB]
-    cost: 4100
+    cost: 820
     stats:
       biology: 100
     points: 40
@@ -2357,7 +2361,7 @@ research:
     listOrder: 6220
   - name: STR_AMPHIBIAN_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 3750
+    cost: 750
     stats:
       biology: 100
     points: 30
@@ -2368,7 +2372,7 @@ research:
     listOrder: 6230
   - name: STR_AMPHIBIAN
     requiresBaseFunc: [BIOLAB]
-    cost: 4100
+    cost: 820
     stats:
       biology: 100
     points: 40
@@ -2379,7 +2383,7 @@ research:
     listOrder: 6240
   - name: STR_SWARMIDS_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 4000
+    cost: 800
     stats:
       biology: 100
     points: 30
@@ -2388,7 +2392,7 @@ research:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SWARMIDS_SMALL
     requiresBaseFunc: [BIOLAB]
-    cost: 4500
+    cost: 900
     stats:
       biology: 100
     points: 50
@@ -2398,7 +2402,7 @@ research:
       - STR_STRANGE_CREATURE_AUTOPSY
     listOrder: 6250
   - name: STR_MAD_DOGE
-    cost: 500
+    cost: 100
     stats:
       biology: 100
     points: 8
@@ -2408,7 +2412,7 @@ research:
     listOrder: 6180
   - name: STR_ENERGY_WISP_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 6000
+    cost: 1200
     stats:
       biology: 100
     points: 30
@@ -2419,7 +2423,7 @@ research:
     listOrder: 6190
   - name: STR_ENERGY_WISP
     requiresBaseFunc: [BIOLAB]
-    cost: 7500
+    cost: 1500
     stats:
       biology: 100
     points: 40
@@ -2432,7 +2436,7 @@ research:
 #Aliens
 #combat analysis
   - name: STR_MIB_AGENT_ARMOR
-    cost: 600
+    cost: 120
     stats:
       tactics: 100
     points: 7
@@ -2444,7 +2448,7 @@ research:
       - STR_TROLLIUM
     listOrder: 6220
   - name: STR_MIB_SPECOPS_ARMOR
-    cost: 750
+    cost: 150
     stats:
       tactics: 100
     points: 11
@@ -2452,7 +2456,7 @@ research:
       - STR_MIB_SPECOPS
     listOrder: 6230
   - name: STR_MIB_BUTCHER_ARMOR
-    cost: 850
+    cost: 170
     stats:
       tactics: 100
     points: 11
@@ -2461,7 +2465,7 @@ research:
       - STR_TODOIUM #TODO - something about MIB body enchantment here pls
     listOrder: 6240
   - name: STR_MIB_ENFORCER_ARMOR
-    cost: 950
+    cost: 190
     stats:
       tactics: 100
     points: 11
@@ -2469,7 +2473,7 @@ research:
       - STR_MIB_ENFORCER
     listOrder: 6250
   - name: STR_MIB_SCIENTIST_ARMOR
-    cost: 500
+    cost: 100
     stats:
       tactics: 100
     points: 15
@@ -2485,7 +2489,7 @@ research:
   #     - STR_MIB_MEDIC
   #   listOrder: 6250
   - name: STR_SEEKER_DRONE_ARMOR
-    cost: 3000
+    cost: 600
     stats:
       tactics: 100
     points: 15
@@ -2496,7 +2500,7 @@ research:
     listOrder: 6260
 
   - name: STR_CULT_GANGER_ARMOR
-    cost: 400
+    cost: 80
     stats:
       tactics: 100
     points: 5
@@ -2504,7 +2508,7 @@ research:
       - STR_CULT_GANGER
     listOrder: 6261
   - name: STR_CULT_COORDINATOR_ARMOR
-    cost: 450
+    cost: 90
     stats:
       tactics: 100
     points: 6
@@ -2513,7 +2517,7 @@ research:
     listOrder: 6262
 
   - name: STR_FACEHUGGER_ARMOR
-    cost: 1250
+    cost: 250
     stats:
       tactics: 100
     points: 25
@@ -2522,7 +2526,7 @@ research:
       - STR_FACEHUGGER_CORPSE
     listOrder: 6270
   - name: STR_FRESH_ZOMBIE_ARMOR
-    cost: 1500
+    cost: 300
     stats:
       tactics: 100
     points: 5
@@ -2530,7 +2534,7 @@ research:
       - STR_ZOMBIE_BIOLOGY
     listOrder: 6280
   - name: STR_ZOMBIE_GRUBAS_ARMOR
-    cost: 1750
+    cost: 350
     stats:
       tactics: 100
     points: 5
@@ -2538,7 +2542,7 @@ research:
       - STR_ZOMBIE_BIOLOGY
     listOrder: 6290
   - name: STR_CHUPACABRA_ARMOR
-    cost: 1500
+    cost: 300
     stats:
       tactics: 100
     points: 5
@@ -2547,7 +2551,7 @@ research:
       - STR_CHUPACABRA_CORPSE
     listOrder: 6300
   - name: STR_ARMADILLO_ARMOR
-    cost: 1500
+    cost: 300
     stats:
       tactics: 100
     points: 5
@@ -2556,7 +2560,7 @@ research:
       - STR_ARMADILLO_CORPSE
     listOrder: 6310
   - name: STR_AMPHIBIAN_ARMOR
-    cost: 1500
+    cost: 300
     stats:
       tactics: 100
     points: 5
@@ -2565,7 +2569,7 @@ research:
       - STR_AMPHIBIAN_CORPSE
     listOrder: 6300
   - name: STR_SWARMIDS_SMALL_ARMOR
-    cost: 2500
+    cost: 500
     stats:
       tactics: 100
     points: 5
@@ -2573,7 +2577,7 @@ research:
       - STR_SWARMIDS_SMALL
       - STR_SWARMIDS_CORPSE
   - name: STR_ENERGY_WISP_ARMOR
-    cost: 4500
+    cost: 900
     stats:
       tactics: 100
     points: 5
@@ -2582,84 +2586,84 @@ research:
       - STR_ENERGY_WISP_CORPSE
 #weapons and equipment
   - name: STR_RESISTANCE_SUITE
-    cost: 150
+    cost: 30
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30000
   - name: STR_WRENCH
-    cost: 50
+    cost: 10
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30000
   - name: STR_CROWBAR
-    cost: 40
+    cost: 8
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30005
   - name: STR_POLICE_BATON
-    cost: 50
+    cost: 10
     stats:
       tactics: 100
     points: 2
     needItem: true
     listOrder: 30005
   - name: STR_HATCHET
-    cost: 45
+    cost: 9
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30008
   - name: STR_BASEBALL_BAT
-    cost: 25
+    cost: 5
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30009
   - name: STR_MACHETE
-    cost: 30
+    cost: 6
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30010
   - name: STR_SWORD
-    cost: 35
+    cost: 7
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30020
   - name: STR_KATANA
-    cost: 75
+    cost: 15
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30025
   - name: STR_STUN_ROD_2
-    cost: 100
+    cost: 20
     stats:
       tactics: 100
     points: 2
     needItem: true
     listOrder: 30030
   - name: STR_THROWING_KNIFE
-    cost: 50
+    cost: 10
     stats:
       tactics: 100
     points: 1
     needItem: true
     listOrder: 30040
   - name: STR_SPORTS_BOW
-    cost: 75
+    cost: 15
     stats:
       tactics: 100
     points: 1
@@ -2682,7 +2686,7 @@ research:
       - STR_SPORTS_BOW_TINKERING
     listOrder: 30100
   - name: STR_SNUBNOSE_PISTOL
-    cost: 40
+    cost: 8
     stats:
       tactics: 100
     points: 1
@@ -2695,7 +2699,7 @@ research:
       - STR_SNUBNOSE_PISTOL
     listOrder: 30120
   - name: STR_RIOT_PISTOL
-    cost: 40
+    cost: 8
     stats:
       tactics: 100
     points: 1
@@ -2708,7 +2712,7 @@ research:
       - STR_RIOT_PISTOL
     listOrder: 30132
   - name: STR_POLICE_PISTOL
-    cost: 50
+    cost: 10
     stats:
       tactics: 100
     points: 1
@@ -2721,7 +2725,7 @@ research:
       - STR_POLICE_PISTOL
     listOrder: 30136
   - name: STR_TASER
-    cost: 100
+    cost: 20
     stats:
       tactics: 100
     points: 1
@@ -2734,7 +2738,7 @@ research:
       - STR_TASER
     listOrder: 30136
   - name: STR_HEAVY_REVOLVER
-    cost: 50
+    cost: 10
     stats:
       tactics: 100
     points: 1
@@ -2747,7 +2751,7 @@ research:
       - STR_HEAVY_REVOLVER
     listOrder: 30145
   - name: STR_WOUNDGUN
-    cost: 500
+    cost: 100
     stats:
       tactics: 100
     points: 2
@@ -2760,7 +2764,7 @@ research:
       - STR_WOUNDGUN
     listOrder: 30160
   - name: STR_CHEMPISTOL
-    cost: 6000
+    cost: 1200
     stats:
       tactics: 100
       chemistry: 100
@@ -2771,7 +2775,7 @@ research:
       - STR_CHEMICAL_WEAPONS_PREREQ
     listOrder: 30170
   - name: STR_CHEMOGUN
-    cost: 11000
+    cost: 2200
     stats:
       tactics: 100
       chemistry: 100
@@ -2782,7 +2786,7 @@ research:
       - STR_CHEMICAL_WEAPONS_PREREQ
     listOrder: 30180
   - name: STR_MACHINE_PISTOL
-    cost: 50
+    cost: 10
     stats:
       tactics: 100
     points: 2
@@ -2795,7 +2799,7 @@ research:
       - STR_MACHINE_PISTOL
     listOrder: 30200
   - name: STR_RIOT_RIFLE
-    cost: 80
+    cost: 16
     stats:
       tactics: 100
     points: 2
@@ -2808,7 +2812,7 @@ research:
       - STR_RIOT_RIFLE
     listOrder: 30220
   - name: STR_LEVER_ACTION_CARBINE
-    cost: 80
+    cost: 16
     stats:
       tactics: 100
     points: 2
@@ -2821,7 +2825,7 @@ research:
       - STR_LEVER_ACTION_CARBINE
     listOrder: 30220
   - name: STR_MILITARY_RIFLE
-    cost: 200
+    cost: 40
     stats:
       tactics: 100
     points: 10
@@ -2834,7 +2838,7 @@ research:
       - STR_MILITARY_RIFLE
     listOrder: 30225
   - name: STR_HUNTING_RIFLE
-    cost: 75
+    cost: 15
     stats:
       tactics: 100
     points: 2
@@ -2847,7 +2851,7 @@ research:
       - STR_HUNTING_RIFLE
     listOrder: 30240
   - name: STR_SAWED_OFF
-    cost: 70
+    cost: 14
     stats:
       tactics: 100
     points: 2
@@ -2856,7 +2860,7 @@ research:
       - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 30250
   - name: STR_MILITARY_SNIPER_RIFLE
-    cost: 250
+    cost: 50
     stats:
       tactics: 100
     points: 10
@@ -2869,7 +2873,7 @@ research:
       - STR_MILITARY_SNIPER_RIFLE
     listOrder: 30265
   - name: STR_DOUBLE_BARRELED
-    cost: 70
+    cost: 14
     stats:
       tactics: 100
     points: 2
@@ -2883,7 +2887,7 @@ research:
       - STR_SAWED_OFF
     listOrder: 30275
   - name: STR_PUMP_ACTION_SHOTGUN
-    cost: 75
+    cost: 15
     stats:
       tactics: 100
     points: 2
@@ -2896,7 +2900,7 @@ research:
       - STR_PUMP_ACTION_SHOTGUN
     listOrder: 30290
   - name: STR_RIOT_GUN
-    cost: 125
+    cost: 25
     stats:
       tactics: 100
     points: 4
@@ -2909,7 +2913,7 @@ research:
       - STR_RIOT_GUN
     listOrder: 30292
   - name: STR_FLAMETHROWER
-    cost: 600
+    cost: 120
     stats:
       tactics: 120
       designing: 100
@@ -2919,7 +2923,7 @@ research:
       - STR_IMPROVISED_MANUFACTURING_POSTREQ
     listOrder: 30300
   - name: STR_LIQUID_FLAME
-    cost: 75
+    cost: 15
     stats:
       tactics: 100
       chemistry: 100
@@ -2927,7 +2931,7 @@ research:
     needItem: true
     listOrder: 30305
   - name: STR_EXPLOSIVE_CHARGE
-    cost: 200
+    cost: 40
     stats:
       tactics: 100
       chemistry: 100
@@ -2935,7 +2939,7 @@ research:
     needItem: true
     listOrder: 30310
   - name: STR_SINGLE_ROCKET_LAUNCHER
-    cost: 225
+    cost: 45
     stats:
       tactics: 100
       chemistry: 100
@@ -2943,7 +2947,7 @@ research:
     needItem: true
     listOrder: 30320
   - name: STR_GRENADE_LAUNCHER
-    cost: 175
+    cost: 35
     stats:
       tactics: 100
     points: 5
@@ -2962,7 +2966,7 @@ research:
       - STR_GRENADE_LAUNCHER
     listOrder: 30322
   - name: STR_HIGH_EXPLOSIVE
-    cost: 1800
+    cost: 360
     stats:
       tactics: 100
       chemistry: 100
@@ -2970,42 +2974,42 @@ research:
     needItem: true
     listOrder: 30330
   - name: STR_FIRST_AID
-    cost: 240
+    cost: 48
     stats:
       tactics: 100
     points: 20
     needItem: true
     listOrder: 30340
   - name: STR_PAINKILLER
-    cost: 200
+    cost: 40
     stats:
       tactics: 100
     points: 10
     needItem: true
     listOrder: 30350
   - name: STR_STIMS
-    cost: 200
+    cost: 40
     stats:
       tactics: 100
     points: 10
     needItem: true
     listOrder: 30360
   - name: STR_MEDI_PACK
-    cost: 275
+    cost: 55
     stats:
       tactics: 100
     points: 25
     needItem: true
     listOrder: 30370
   - name: STR_FIRE_EXTINGUISHER
-    cost: 75
+    cost: 15
     stats:
       tactics: 100
     points: 5
     needItem: true
     listOrder: 30380
   - name: STR_MEDI_KIT
-    cost: 10500
+    cost: 2100
     stats:
       tactics: 100
     points: 200
@@ -3015,7 +3019,7 @@ research:
 
   #alien
   - name: STR_ALIEN_ARTIFACT_OPENER
-    cost: 20000
+    cost: 4000
     stats:
       physics: 150
       chemistry: 150
@@ -3024,7 +3028,7 @@ research:
     needItem: true
     listOrder: 40000
   - name: STR_ALIEN_ARTIFACT_SNAKE_EYE
-    cost: 20000
+    cost: 4000
     stats:
       physics: 150
       chemistry: 150
@@ -3033,7 +3037,7 @@ research:
     needItem: true
     listOrder: 40010
   - name: STR_ALIEN_ARTIFACT_DUMMY
-    cost: 20000
+    cost: 4000
     stats:
       physics: 150
       chemistry: 150
@@ -3043,7 +3047,7 @@ research:
     listOrder: 40020
   #evidence
   - name: STR_FLOPPY_SCIENTISTS_LOG
-    cost: 60
+    cost: 12
     stats:
       data: 100
     points: 600
@@ -3052,7 +3056,7 @@ research:
     spawnedEvent: STR_FLOPPY_SCIENTISTS_LOG_MIB
     listOrder: 5000
   - name: STR_MIB_DATA_CONTAINER
-    cost: 2500
+    cost: 500
     stats:
       computers: 100
       data: 150
@@ -3062,7 +3066,7 @@ research:
     destroyItem: true
     listOrder: 5010
   - name: STR_TECH_PARTS_PACK
-    cost: 75
+    cost: 15
     stats:
       computers: 100
     points: 20
@@ -3072,7 +3076,7 @@ research:
     hidden: true
   - name: STR_CREDIT_CARD
     lookup: STR_CREDIT_CARD_BREACHING
-    cost: 2000
+    cost: 400
     stats:
       computers: 100
     points: 20
@@ -3080,7 +3084,7 @@ research:
     listOrder: 5020
   - name: STR_CREDIT_CARD_SILVER
     lookup: STR_CREDIT_CARD_BREACHING
-    cost: 750
+    cost: 150
     stats:
       computers: 100
     points: 20
@@ -3090,34 +3094,30 @@ research:
     lookup: STR_CREDIT_CARD_BREACHING
     stats:
       computers: 100
-    cost: 1500
+    cost: 300
     points: 20
     needItem: true
     listOrder: 5040
   - name: STR_ANCIENT_ARTIFACT
-    cost: 50
+    cost: 10
     stats:
       alienTech: 100
     points: 40
     needItem: true
     destroyItem: false
-    increaseCounter:
-      [alienEarlyLore]
-      #TODO
+    increaseCounter: [alienEarlyLore] #TODO
     listOrder: 5020
   - name: STR_TOOTHPASTE_PACKET #FIXME - expand toothpaste arc
-    cost: 3000
+    cost: 600
     stats:
       biology: 100
     points: 50
     needItem: true
     destroyItem: false
-    increaseCounter:
-      [mibActivityKnowledge]
-      #FIXME - alter to a covert operation perereq
+    increaseCounter: [mibActivityKnowledge] #FIXME - alter to a covert operation perereq
     listOrder: 5020
   - name: STR_MIB_INTERROGATION
-    cost: 3000
+    cost: 600
     stats:
       biology: 100
     points: 50
@@ -3127,7 +3127,7 @@ research:
     counterValue: 1
     listOrder: 5020
   - name: STR_MIB_CONDITIONING #FIXME - MIB Juice and MIB Biology
-    cost: 3000
+    cost: 600
     stats:
       biology: 100
     points: 50
@@ -3137,7 +3137,7 @@ research:
     counterValue: 2
     listOrder: 5020
   - name: STR_MIB_LAB_EQUIPMENT
-    cost: 3000
+    cost: 600
     stats:
       data: 100
     points: 50
@@ -3147,7 +3147,7 @@ research:
     counterValue: 1
     listOrder: 5020
   - name: STR_MIB_HYPER_COMMUNICATOR
-    cost: 3000
+    cost: 600
     stats:
       physics: 100
     points: 50
@@ -3155,7 +3155,7 @@ research:
     destroyItem: false
     listOrder: 5020
   - name: STR_MIB_COMMUNICATION_EQUIPMENT #FIXME - trigger clue for office hacking raid mission
-    cost: 3000
+    cost: 600
     stats:
       computers: 100
     points: 50
@@ -3173,7 +3173,7 @@ research:
     hidden: true
     listOrder: 7460
   - name: STR_INTERCEPTOR
-    cost: 25000
+    cost: 5000
     stats:
       designing: 100
     points: 100
@@ -3181,7 +3181,7 @@ research:
       - STR_TODOIUM
     listOrder: 7460
   - name: STR_SKYRANGER
-    cost: 25000
+    cost: 5000
     stats:
       designing: 100
     points: 100
@@ -3194,7 +3194,7 @@ research:
   - name: STR_WORKSHOP_PREREQ
     hidden: true
   - name: STR_WORKSHOP
-    cost: 8000
+    cost: 1600
     stats:
       designing: 100
       biology: 120
@@ -3209,7 +3209,7 @@ research:
   - name: STR_BIOLAB_PREREQ
     hidden: true
   - name: STR_BIOLAB
-    cost: 8000
+    cost: 1600
     stats:
       designing: 100
       biology: 120
@@ -3220,7 +3220,7 @@ research:
   - name: STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
     hidden: true
   - name: STR_CREATURES_CONTAINMENT
-    cost: 9500
+    cost: 1900
     stats:
       designing: 100
       biology: 120
@@ -3229,7 +3229,7 @@ research:
       - STR_FACILITIES_BLUEPRINTS
       - STR_STRANGE_CREATURE_AUTOPSY_POSTEVENT
   - name: STR_LARGE_RADAR_SYSTEM
-    cost: 10000
+    cost: 2000
     stats:
       designing: 100
       computers: 120
@@ -3237,14 +3237,14 @@ research:
     dependencies:
       - STR_TODOIUM
   - name: STR_BASE_DEFENSE_SYSTEMS
-    cost: 3500
+    cost: 700
     stats:
       tactics: 100
     points: 10
     dependencies:
       - STR_TODOIUM
   - name: STR_MISSILE_DEFENSES
-    cost: 15000
+    cost: 3000
     stats:
       designing: 100
       computers: 120
@@ -3252,7 +3252,7 @@ research:
     dependencies:
       - STR_BASE_DEFENSE_SYSTEMS
   - name: STR_ALIEN_CONTAINMENT
-    cost: 25000
+    cost: 5000
     stats:
       designing: 100
       biology: 120
@@ -3261,7 +3261,7 @@ research:
       - STR_FACILITIES_BLUEPRINTS
       - STR_TODOIUM
   - name: STR_BASE_CONSTRUCTION
-    cost: 3500
+    cost: 700
     stats:
       designing: 100
     points: 15
@@ -3270,7 +3270,7 @@ research:
       - STR_TODOIUM
     listOrder: 7460
   - name: STR_UNDERWATER_BASES
-    cost: 12500
+    cost: 2500
     stats:
       designing: 100
     points: 15
@@ -3284,13 +3284,13 @@ research:
     dependencies:
       - STR_TROLLIUM
   - name: STR_RESISTANCE_DUTY
-    cost: 75
+    cost: 15
     points: 15
     dependencies:
       - STR_RESISTANCE_TECH_TREE_START
 
   - name: STR_XCOM_EQUIPMENT_ACQUISITION #FIXME - add ways to unlock it
-    cost: 2500
+    cost: 500
     points: 800
     dependencies:
       - STR_TODOIUM
