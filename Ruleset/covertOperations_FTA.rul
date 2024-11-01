@@ -4,8 +4,6 @@ covertOperations:
     description: STR_CHASING_MIB_DESCRIPTION
     categories: [STR_INVESTIGATION]
     allowedRoles: &militaryRoles [0, 3]
-    requires:
-      - STR_COVERT_OPERATIONS
     soldiersMin: 2
     soldiersMax: 4
     requiresBaseFunc: [INTEL]
@@ -34,6 +32,7 @@ covertOperations:
     allowedRoles: *militaryRoles
     requires:
       - STR_MIB_CHASING_SUCCESS
+      - STR_COVERT_OPERATIONS
     soldiersMin: 3
     soldiersMax: 5
     requiresBaseFunc: [INTEL]
@@ -58,6 +57,7 @@ covertOperations:
     allowedRoles: *militaryRoles
     requires:
       - STR_MIB_CHASING_FAIL
+      - STR_COVERT_OPERATIONS
     soldiersMin: 3
     soldiersMax: 5
     requiresBaseFunc: [INTEL]
@@ -148,6 +148,7 @@ covertOperations:
     allowedRoles: *militaryRoles
     requires:
       - STR_RESISTANCE_CELL_CREATION_PREREQ
+      - STR_COVERT_OPERATIONS
     soldiersMin: 2
     soldiersMax: 3
     requiresBaseFunc: [INTEL]

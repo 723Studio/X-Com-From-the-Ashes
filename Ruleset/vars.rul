@@ -48,10 +48,13 @@ pilotTacticsZeroPoint: 20
 pilotTacticsRange: 20
 covertOpsExperienceFactor: 20
 covertOpsIntelBonusFactor: 50
-researchTrainingFactor: 30
-engineeringTrainingFactor: 30
-intelTrainingFactor: 30
-
+researchTrainingFactor: 10
+engineeringTrainingFactor: 10
+intelTrainingFactor: 60
+researchSpeedFactor: 90
+engineeringSpeedFactor: 100
+intelSpeedFactor: 100
+prisonerActionsSpeedFactor: 100
 #Interception
 drawEnemyRadarCircles: 0
 showDogfightDistanceInKm: true
