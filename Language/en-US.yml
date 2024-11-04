@@ -333,6 +333,7 @@ en-US:
   STR_TORTURE: "Torture"
   STR_CONTAIN: "Contain"
   STR_IMRISONED: "IMRISONED"
+  STR_PRISON_REPORT: "Prison Report"
   STR_PRISONER_DIED_PT1: "Prisoner"
   STR_PRISONER_DIED_PT2: "dies in prison cell."
   STR_PRISONER_INTERROGATED_PT1: "Interrogation of the prisoner"

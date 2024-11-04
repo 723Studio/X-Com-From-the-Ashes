@@ -3,34 +3,34 @@ events:
   - name: STR_RND_STATUS_REPORT_EVENT
     description: STR_RND_STATUS_REPORT_EVENT_DESCRIPTION
     #backgroundColor: 5
-    timer: 90
-    timerRandom: 0
+    timer: 60
+    timerRandom: 60
     researchList: [STR_RND_STATUS_REPORT] 
   - name: STR_INTEL_STATUS_REPORT_EVENT
     description: STR_INTEL_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 120
-    timerRandom: 60
+    timerRandom: 120
     researchList: [STR_INTEL_STATUS_REPORT]
   - name: STR_ENGINEER_STATUS_REPORT_EVENT
     description: STR_ENGINEER_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 210
-    timerRandom: 60
+    timerRandom: 120
     researchList: [STR_ENGINEER_STATUS_REPORT]
   - name: STR_QUARTERMASTER_STATUS_REPORT_EVENT
     description: STR_QUARTERMASTER_STATUS_REPORT_EVENT_DESCRIPTION
     timer: 300
-    timerRandom: 60
+    timerRandom: 120
     researchList: [STR_QUARTERMASTER_STATUS_REPORT]
-  - name: STR_VEHICLES_STATUS_REPORT_EVENT
-    description: STR_VEHICLES_STATUS_REPORT_DESCRIPTION
-    timer: 480
-    timerRandom: 0
-    researchList: [STR_VEHICLES_STATUS_REPORT]
   - name: STR_MILITARY_STATUS_REPORT_EVENT
     description: STR_MILITARY_STATUS_REPORT_EVENT_DESCRIPTION
-    timer: 700
-    timerRandom: 400
+    timer: 400
+    timerRandom: 120
     researchList: [STR_MILITARY_STATUS_REPORT]
+  - name: STR_VEHICLES_STATUS_REPORT_EVENT
+    description: STR_VEHICLES_STATUS_REPORT_DESCRIPTION
+    timer: 540
+    timerRandom: 0
+    researchList: [STR_VEHICLES_STATUS_REPORT]
 #Story
   - name: STR_MIB_STORY_MILESTONE_1_EVENT
     description: STR_MIB_STORY_MILESTONE_1_EVENT_DESCRIPTION

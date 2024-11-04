@@ -376,17 +376,17 @@ interfaces:
         color2: 40
         border: 32
       - id: barInvestigation
-        color: 68
-        color2: 72
+        color: 84
+        color2: 88
         border: 80
       - id: barDeception
         color: 148
         color2: 151
         border: 144
       - id: barInterrogation
-        color: 240
-        color2: 15
-        border: 241
+        color: 84
+        color2: 88
+        border: 80
       - id: barPhysics
         color: 220
         color2: 138

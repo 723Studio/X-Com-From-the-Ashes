@@ -320,14 +320,6 @@ eventScripts:
     minLoyalty: 200
     allowedProcessor: 2 #xcom
 
-  - type: mibstoryMilestone1
-    oneTimeSequentialEvents: [STR_MIB_STORY_MILESTONE_1_EVENT]
-    missionMarkerName: mibActivityKnowlege
-    counterMin: 1
-    counterMax: 10
-    allowedProcessor: 2 #xcom
-    executionOdds: 90
-
   - &xcomAssetsGathgeringScript
     type: xcomAssetsGathgeringScript
     oneTimeSequentialEvents: [STR_ASSETS_GATHERING_SUPPLIES_ENABLER]

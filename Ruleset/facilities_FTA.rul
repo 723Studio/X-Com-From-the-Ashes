@@ -93,7 +93,7 @@ facilities:
     ftaPrisonSpace: 10
     storage: 15
     storageTiles: [[-1, -1, -1]]
-    rightClickActionType: 1
+    rightClickActionType: 9
     mapName: XBASF_03
     listOrder: 7030
   - type: STR_CREATURES_CONTAINMENT

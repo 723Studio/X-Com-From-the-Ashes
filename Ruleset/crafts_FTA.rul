@@ -16,9 +16,10 @@ crafts:
     speedMax: 380
     accel: 1
     avoidBonus: -15
-    soldiers: 8
+    soldiers: 9
     vehicles: 0
     pilots: 1
+    requiredRole: 1
     relay: 1
     radarRange: 300
     radarChance: 20

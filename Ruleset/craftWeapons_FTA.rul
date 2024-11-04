@@ -29,12 +29,12 @@ craftWeapons:
     sound: 5
     damage: 60
     range: 38 #30
-    accuracy: 70
+    accuracy: 75 #70
     reloadCautious: 64
-    reloadStandard: 58 #48
-    reloadAggressive: 50 #32
+    reloadStandard: 60 #48
+    reloadAggressive: 58 #32
     ammoMax: 6
     launcher: STR_STINGRAY_LAUNCHER
     clip: STR_STINGRAY_MISSILE
     projectileType: 0
-    projectileSpeed: 8
+    projectileSpeed: 9 #8

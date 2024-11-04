@@ -4,6 +4,8 @@ covertOperations:
     description: STR_CHASING_MIB_DESCRIPTION
     categories: [STR_INVESTIGATION]
     allowedRoles: &militaryRoles [0, 3]
+    requires:
+      - STR_COVERT_OPERATIONS
     soldiersMin: 2
     soldiersMax: 4
     requiresBaseFunc: [INTEL]

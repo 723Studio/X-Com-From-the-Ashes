@@ -39,7 +39,7 @@ costHireScientist: 120000
 displayCustomCategories: 1
 pilotBraveryThresholds: [80, 50, 20]
 pilotAccuracyZeroPoint: 30 #used for both dogfight and missiles
-pilotAccuracyRange: 40
+pilotAccuracyRange: 35
 pilotReactionsZeroPoint: 40 #used for manuevering
 pilotReactionsRange: 60
 pilotTrackingZeroPoint: 35
@@ -51,10 +51,10 @@ covertOpsIntelBonusFactor: 50
 researchTrainingFactor: 10
 engineeringTrainingFactor: 10
 intelTrainingFactor: 60
-researchSpeedFactor: 90
-engineeringSpeedFactor: 100
+researchSpeedFactor: 150
+engineeringSpeedFactor: 150
 intelSpeedFactor: 100
-prisonerActionsSpeedFactor: 100
+prisonerActionsSpeedFactor: 450
 #Interception
 drawEnemyRadarCircles: 0
 showDogfightDistanceInKm: true
